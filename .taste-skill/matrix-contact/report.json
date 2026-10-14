@@ -1,0 +1,662 @@
+{
+ "url": ".\\contact.html",
+ "at": "2026-10-14T04:08:16.443Z",
+ "allow": [
+  "no-footage",
+  "still-page"
+ ],
+ "viewports": [
+  {
+   "width": 375,
+   "height": 812,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.96,
+    0.56,
+    0.66,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 0,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "page": {
+     "height": 3523,
+     "screens": 4.3,
+     "words": 172,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "bienedu-hero-study.png",
+      "bienedu-hero-study.png",
+      "bienedu-course-notes.png",
+      "bienedu-documents.png",
+      "bienedu-quiz.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Trao đổi về lộ trình",
+     "words": 5,
+     "chars": 20,
+     "lines": 2,
+     "size": 51.9,
+     "vw": 13.8,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.91,
+     "top": 308,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Trao đổi về lộ trình",
+     "words": 5,
+     "lines": 2,
+     "size": 51.9,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "Trao đổi về lộ trình",
+      "words": 5,
+      "chars": 20,
+      "lines": 2,
+      "size": 51.9,
+      "vw": 13.8,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 308,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Trạng thái hiện tại",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 32.1,
+      "vw": 8.6,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 978,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BienEdu",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 90,
+      "vw": 24,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2809,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      16,
+      18,
+      20,
+      32,
+      52,
+      90
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 16.1,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.9
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 90,
+      "vw": 24,
+      "font": "Be Vietnam Pro",
+      "text": "BienEdu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#061b38",
+       "top": 76,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#f1f5f9",
+       "top": 1196,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#d8e8ff",
+       "share": 0.34
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.31
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.15
+      },
+      {
+       "color": "#334155",
+       "share": 0.12
+      },
+      {
+       "color": "#bcd4f4",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#0f172a",
+      "hsl": {
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 51,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.24
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 1024,
+   "height": 768,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.73,
+    0.44,
+    0.82,
+    1
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 0,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1024,
+     "h": 768
+    },
+    "page": {
+     "height": 3008,
+     "screens": 3.9,
+     "words": 181,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "bienedu-hero-study.png",
+      "bienedu-hero-study.png",
+      "bienedu-course-notes.png",
+      "bienedu-documents.png",
+      "bienedu-quiz.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Trao đổi về lộ trình",
+     "words": 5,
+     "chars": 20,
+     "lines": 2,
+     "size": 86.3,
+     "vw": 8.4,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.54,
+     "top": 271,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Trao đổi về lộ trình",
+     "words": 5,
+     "lines": 2,
+     "size": 86.3,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "Trao đổi về lộ trình",
+      "words": 5,
+      "chars": 20,
+      "lines": 2,
+      "size": 86.3,
+      "vw": 8.4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 271,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Trạng thái hiện tại",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 51.5,
+      "vw": 5,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 787,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BienEdu",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 204.8,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2489,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      20,
+      24,
+      52,
+      86,
+      205
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 17.4,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.9
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 204.8,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "text": "BienEdu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#061b38",
+       "top": 88,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#f1f5f9",
+       "top": 787,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#d8e8ff",
+       "share": 0.32
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.3
+      },
+      {
+       "color": "#334155",
+       "share": 0.15
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.15
+      },
+      {
+       "color": "#bcd4f4",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0f172a",
+      "hsl": {
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "mobile",
+   "width": 375,
+   "fold": "D:\\BienEdu\\.taste-skill\\matrix-contact\\mobile-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\matrix-contact\\mobile-page-01.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 1024,
+   "fold": "D:\\BienEdu\\.taste-skill\\matrix-contact\\tablet-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\matrix-contact\\tablet-page-01.jpg"
+   ]
+  }
+ ]
+}

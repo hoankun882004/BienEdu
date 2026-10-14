@@ -1,0 +1,793 @@
+{
+ "url": "contact.html",
+ "at": "2026-10-14T08:40:56.681Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.82,
+    0.8,
+    1
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 5,
+    "transitions": 11,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2589,
+     "screens": 2.9,
+     "words": 148,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "bienedu-course-notes.png",
+      "bienedu-quiz.png",
+      "bienedu-documents.png",
+      "bienedu-hero-study.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Thầy Trần Thanh Tùng",
+     "words": 4,
+     "chars": 20,
+     "lines": 2,
+     "size": 100.8,
+     "vw": 7,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.39,
+     "top": 240,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Thầy Trần Thanh Tùng",
+     "words": 4,
+     "lines": 2,
+     "size": 100.8,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "Thầy Trần Thanh Tùng",
+      "words": 4,
+      "chars": 20,
+      "lines": 2,
+      "size": 100.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 240,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Hình thức học",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 875,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HN",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.06,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 1016,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "ON",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.06,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 1168,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Zalo · 0943 943 151",
+      "words": 5,
+      "chars": 19,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 2099,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Kết nối với thầy Trần Thanh Tùng",
+      "words": 7,
+      "chars": 32,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2180,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      18,
+      26,
+      58,
+      64,
+      72,
+      101
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 86,
+     "max": {
+      "size": 100.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "text": "Thầy Trần"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f1f5f9",
+       "top": 76,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#2563eb",
+       "top": 76,
+       "hsl": {
+        "h": 221,
+        "s": 0.83,
+        "l": 0.53
+       }
+      },
+      {
+       "color": "#061b38",
+       "top": 1984,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f172a",
+       "share": 0.53
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.27
+      },
+      {
+       "color": "#334155",
+       "share": 0.16
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#2563eb",
+      "hsl": {
+       "h": 221,
+       "s": 0.83,
+       "l": 0.53
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 4,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng",
+      "Liên hệ qua Zalo",
+      "Xem lộ trình Toán 12"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.96,
+    0.73,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 5,
+    "transitions": 11,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2816,
+     "screens": 3.3,
+     "words": 133,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "bienedu-course-notes.png",
+      "bienedu-quiz.png",
+      "bienedu-documents.png",
+      "bienedu-hero-study.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Thầy Trần Thanh Tùng",
+     "words": 4,
+     "chars": 20,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.68,
+     "top": 124,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Thầy Trần Thanh Tùng",
+     "words": 4,
+     "lines": 2,
+     "size": 48,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "Thầy Trần Thanh Tùng",
+      "words": 4,
+      "chars": 20,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 124,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Hình thức học",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1079,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HN",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.06,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 1268,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "ON",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.06,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 1436,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Kết nối với thầy Trần Thanh Tùng",
+      "words": 7,
+      "chars": 32,
+      "lines": 2,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.7,
+      "top": 2327,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Zalo · 0943 943 151",
+      "words": 5,
+      "chars": 19,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2454,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      16,
+      20,
+      32,
+      33,
+      40,
+      48
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 16.1,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "Be Vietnam Pro",
+      "text": "Thầy Trần"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f1f5f9",
+       "top": 76,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#2563eb",
+       "top": 559,
+       "hsl": {
+        "h": 221,
+        "s": 0.83,
+        "l": 0.53
+       }
+      },
+      {
+       "color": "#061b38",
+       "top": 2255,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f172a",
+       "share": 0.58
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.3
+      },
+      {
+       "color": "#334155",
+       "share": 0.07
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#2563eb",
+      "hsl": {
+       "h": 221,
+       "s": 0.83,
+       "l": 0.53
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 4,
+     "height": 49,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng",
+      "Liên hệ qua Zalo",
+      "Xem lộ trình Toán 12"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\BienEdu\\.taste-skill\\polish-v2-baseline\\desktop-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\polish-v2-baseline\\desktop-page-01.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\BienEdu\\.taste-skill\\polish-v2-baseline\\mobile-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\polish-v2-baseline\\mobile-page-01.jpg"
+   ]
+  }
+ ]
+}

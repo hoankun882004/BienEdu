@@ -1,0 +1,1658 @@
+{
+  "counts": {
+    "topics": 8,
+    "lessons": 24,
+    "questions": 100,
+    "documents": 0,
+    "sessions": 8,
+    "slides": 26,
+    "exams": 8
+  },
+  "topics": [
+    {
+      "id": "dao-ham",
+      "slug": "dao-ham",
+      "title": "Ứng dụng đạo hàm",
+      "grade": 12,
+      "grade_label": "12",
+      "subject": "math",
+      "description": "Tính đơn điệu, cực trị và giá trị lớn nhất, nhỏ nhất của hàm số.",
+      "study_tip": "Xét dấu đạo hàm trên từng khoảng trước khi kết luận tính đơn điệu.",
+      "symbol": "f′(x)",
+      "sort_order": 1
+    },
+    {
+      "id": "tich-phan",
+      "slug": "tich-phan",
+      "title": "Nguyên hàm & tích phân",
+      "grade": 12,
+      "grade_label": "12",
+      "subject": "math",
+      "description": "Công thức nguyên hàm, tính tích phân và ứng dụng tính diện tích.",
+      "study_tip": "Đừng quên hằng số C khi tính nguyên hàm; chú ý cận khi tính tích phân.",
+      "symbol": "∫",
+      "sort_order": 2
+    },
+    {
+      "id": "mu-logarit",
+      "slug": "mu-logarit",
+      "title": "Mũ & lôgarit",
+      "grade": 11,
+      "grade_label": "11",
+      "subject": "math",
+      "description": "Hàm số mũ, hàm số lôgarit và các phương trình cơ bản.",
+      "study_tip": "Kiểm tra điều kiện của cơ số và biểu thức trong lôgarit trước khi biến đổi.",
+      "symbol": "logₐx",
+      "sort_order": 3
+    },
+    {
+      "id": "oxyz",
+      "slug": "oxyz",
+      "title": "Vectơ & tọa độ Oxyz",
+      "grade": 12,
+      "grade_label": "12",
+      "subject": "math",
+      "description": "Tích vô hướng, tọa độ trong không gian và phương trình mặt phẳng.",
+      "study_tip": "Viết đúng tọa độ vectơ trước khi tính tích vô hướng hoặc độ dài.",
+      "symbol": "Oxyz",
+      "sort_order": 4
+    },
+    {
+      "id": "xac-suat",
+      "slug": "xac-suat",
+      "title": "Xác suất",
+      "grade": 12,
+      "grade_label": "11–12",
+      "subject": "math",
+      "description": "Biến cố, xác suất có điều kiện và các biến cố độc lập.",
+      "study_tip": "Phân biệt biến cố độc lập với biến cố xung khắc trước khi chọn công thức.",
+      "symbol": "P(A)",
+      "sort_order": 5
+    },
+    {
+      "id": "thong-ke",
+      "slug": "thong-ke",
+      "title": "Thống kê",
+      "grade": 12,
+      "grade_label": "11–12",
+      "subject": "math",
+      "description": "Số trung bình, phương sai, độ lệch chuẩn và mức độ phân tán.",
+      "study_tip": "Phương sai dùng bình phương độ lệch; độ lệch chuẩn là căn bậc hai của phương sai.",
+      "symbol": "x̄",
+      "sort_order": 6
+    },
+    {
+      "id": "khong-gian",
+      "slug": "khong-gian",
+      "title": "Hình học không gian",
+      "grade": 12,
+      "grade_label": "11–12",
+      "subject": "math",
+      "description": "Thể tích khối đa diện và các quan hệ vuông góc trong không gian.",
+      "study_tip": "Chiều cao là khoảng cách vuông góc đến mặt đáy, không nhất thiết là cạnh bên.",
+      "symbol": "V",
+      "sort_order": 7
+    },
+    {
+      "id": "cap-so",
+      "slug": "cap-so",
+      "title": "Dãy số & cấp số",
+      "grade": 11,
+      "grade_label": "11",
+      "subject": "math",
+      "description": "Cấp số cộng, cấp số nhân và tổng các số hạng đầu tiên.",
+      "study_tip": "Trong công thức số hạng tổng quát, chỉ số là n − 1, không phải n.",
+      "symbol": "uₙ",
+      "sort_order": 8
+    }
+  ],
+  "resources": [],
+  "sessions": [
+    {
+      "id": "cap-so-session-1",
+      "topic_id": "cap-so",
+      "title": "Kiến thức trọng tâm · Dãy số & cấp số",
+      "summary": "Cấp số cộng, cấp số nhân và tổng các số hạng đầu tiên.",
+      "sort_order": 0
+    },
+    {
+      "id": "dao-ham-session-1",
+      "topic_id": "dao-ham",
+      "title": "Kiến thức trọng tâm · Ứng dụng đạo hàm",
+      "summary": "Tính đơn điệu, cực trị và giá trị lớn nhất, nhỏ nhất của hàm số.",
+      "sort_order": 0
+    },
+    {
+      "id": "khong-gian-session-1",
+      "topic_id": "khong-gian",
+      "title": "Kiến thức trọng tâm · Hình học không gian",
+      "summary": "Thể tích khối đa diện và các quan hệ vuông góc trong không gian.",
+      "sort_order": 0
+    },
+    {
+      "id": "mu-logarit-session-1",
+      "topic_id": "mu-logarit",
+      "title": "Kiến thức trọng tâm · Mũ & lôgarit",
+      "summary": "Hàm số mũ, hàm số lôgarit và các phương trình cơ bản.",
+      "sort_order": 0
+    },
+    {
+      "id": "oxyz-session-1",
+      "topic_id": "oxyz",
+      "title": "Kiến thức trọng tâm · Vectơ & tọa độ Oxyz",
+      "summary": "Tích vô hướng, tọa độ trong không gian và phương trình mặt phẳng.",
+      "sort_order": 0
+    },
+    {
+      "id": "thong-ke-session-1",
+      "topic_id": "thong-ke",
+      "title": "Kiến thức trọng tâm · Thống kê",
+      "summary": "Số trung bình, phương sai, độ lệch chuẩn và mức độ phân tán.",
+      "sort_order": 0
+    },
+    {
+      "id": "tich-phan-session-1",
+      "topic_id": "tich-phan",
+      "title": "Kiến thức trọng tâm · Nguyên hàm & tích phân",
+      "summary": "Công thức nguyên hàm, tính tích phân và ứng dụng tính diện tích.",
+      "sort_order": 0
+    },
+    {
+      "id": "xac-suat-session-1",
+      "topic_id": "xac-suat",
+      "title": "Kiến thức trọng tâm · Xác suất",
+      "summary": "Biến cố, xác suất có điều kiện và các biến cố độc lập.",
+      "sort_order": 0
+    }
+  ],
+  "exams": [
+    {
+      "id": "cap-so-exam-1",
+      "session_id": "cap-so-session-1",
+      "title": "Kiểm tra cuối buổi · Dãy số & cấp số",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "dao-ham-exam-1",
+      "session_id": "dao-ham-session-1",
+      "title": "Kiểm tra cuối buổi · Ứng dụng đạo hàm",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "khong-gian-exam-1",
+      "session_id": "khong-gian-session-1",
+      "title": "Kiểm tra cuối buổi · Hình học không gian",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "mu-logarit-exam-1",
+      "session_id": "mu-logarit-session-1",
+      "title": "Kiểm tra cuối buổi · Mũ & lôgarit",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "oxyz-exam-1",
+      "session_id": "oxyz-session-1",
+      "title": "Kiểm tra cuối buổi · Vectơ & tọa độ Oxyz",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "thong-ke-exam-1",
+      "session_id": "thong-ke-session-1",
+      "title": "Kiểm tra cuối buổi · Thống kê",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "tich-phan-exam-1",
+      "session_id": "tich-phan-session-1",
+      "title": "Kiểm tra cuối buổi · Nguyên hàm & tích phân",
+      "duration_seconds": 900,
+      "question_count": 6
+    },
+    {
+      "id": "xac-suat-exam-1",
+      "session_id": "xac-suat-session-1",
+      "title": "Kiểm tra cuối buổi · Xác suất",
+      "duration_seconds": 900,
+      "question_count": 6
+    }
+  ],
+  "questions": [
+    {
+      "id": "cap-so-flash-1",
+      "topic_id": "cap-so",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Số hạng tổng quát của cấp số cộng",
+      "level": 1,
+      "stem_html": "<div>u<sub>n</sub> = u₁ + (n − 1)d</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-mc-1",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cấp số cộng có u₁ = 2, d = 3. Số hạng u₅ bằng bao nhiêu?",
+      "options": [
+        "11",
+        "12",
+        "14",
+        "17"
+      ],
+      "options_html": [
+        "11",
+        "12",
+        "14",
+        "17"
+      ]
+    },
+    {
+      "id": "cap-so-short-1",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cấp số cộng có u₁ = 1, d = 2. Tính u₁₀.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-tf-1",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về cấp số cộng và cấp số nhân.",
+      "options": [
+        "Hiệu hai số hạng liên tiếp của cấp số cộng là một hằng số.",
+        "Cấp số nhân u₁ = 3, q = 2 có u₄ = 24.",
+        "Cấp số cộng có số hạng tổng quát uₙ = u₁ + nd.",
+        "Cấp số nhân có q = 1 là dãy số không đổi."
+      ],
+      "options_html": [
+        "Hiệu hai số hạng liên tiếp của cấp số cộng là một hằng số.",
+        "Cấp số nhân u₁ = 3, q = 2 có u₄ = 24.",
+        "Cấp số cộng có số hạng tổng quát uₙ = u₁ + nd.",
+        "Cấp số nhân có q = 1 là dãy số không đổi."
+      ]
+    },
+    {
+      "id": "dao-ham-flash-1",
+      "topic_id": "dao-ham",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Tính đơn điệu của hàm số",
+      "level": 1,
+      "stem_html": "<div>f′(x) &gt; 0 <span class=\"relation\">⇒</span><small>f đồng biến</small></div><div>f′(x) &lt; 0 <span class=\"relation\">⇒</span><small>f nghịch biến</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-mc-1",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Hàm số <span class=\"math\">y = x³ − 3x</span> nghịch biến trên khoảng nào?",
+      "options": [
+        "(−∞; −1)",
+        "(−1; 1)",
+        "(1; +∞)",
+        "(−∞; +∞)"
+      ],
+      "options_html": [
+        "(−∞; −1)",
+        "(−1; 1)",
+        "(1; +∞)",
+        "(−∞; +∞)"
+      ]
+    },
+    {
+      "id": "dao-ham-short-1",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tìm giá trị nhỏ nhất của <span class=\"math\">f(x) = x² − 6x + 10</span> trên ℝ.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-tf-1",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Cho hàm số <span class=\"math\">f(x) = x³ − 3x</span>. Xét tính đúng/sai của các khẳng định.",
+      "options": [
+        "<span class=\"math\">f′(x) = 3x² − 3.</span>",
+        "Hàm số nghịch biến trên (−∞; −1).",
+        "Hàm số đạt cực đại tại x = −1.",
+        "Giá trị cực tiểu của hàm số bằng 2."
+      ],
+      "options_html": [
+        "<span class=\"math\">f′(x) = 3x² − 3.</span>",
+        "Hàm số nghịch biến trên (−∞; −1).",
+        "Hàm số đạt cực đại tại x = −1.",
+        "Giá trị cực tiểu của hàm số bằng 2."
+      ]
+    },
+    {
+      "id": "khong-gian-flash-1",
+      "topic_id": "khong-gian",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Thể tích khối lăng trụ",
+      "level": 1,
+      "stem_html": "<div>V = S<sub>đáy</sub> · h</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-mc-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Hình lập phương cạnh 2 cm có thể tích bằng bao nhiêu?",
+      "options": [
+        "4 cm³",
+        "6 cm³",
+        "8 cm³",
+        "12 cm³"
+      ],
+      "options_html": [
+        "4 cm³",
+        "6 cm³",
+        "8 cm³",
+        "12 cm³"
+      ]
+    },
+    {
+      "id": "khong-gian-short-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Lăng trụ có diện tích đáy 5 cm², chiều cao 4 cm. Tính thể tích (cm³).",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-tf-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về thể tích và hình lập phương cạnh a &gt; 0.",
+      "options": [
+        "<span class=\"math\">Thể tích hình lập phương là a³.</span>",
+        "Thể tích khối chóp bằng Sđáy · h.",
+        "Thể tích khối chóp bằng 1/3 thể tích lăng trụ cùng diện tích đáy và chiều cao.",
+        "<span class=\"math\">Đường chéo không gian của hình lập phương bằng a√2.</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">Thể tích hình lập phương là a³.</span>",
+        "Thể tích khối chóp bằng Sđáy · h.",
+        "Thể tích khối chóp bằng 1/3 thể tích lăng trụ cùng diện tích đáy và chiều cao.",
+        "<span class=\"math\">Đường chéo không gian của hình lập phương bằng a√2.</span>"
+      ]
+    },
+    {
+      "id": "mu-logarit-flash-1",
+      "topic_id": "mu-logarit",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Định nghĩa lôgarit",
+      "level": 1,
+      "stem_html": "<div>log<sub>a</sub> b = c ⇔ a<sup>c</sup> = b</div><div><small>a &gt; 0, a ≠ 1, b &gt; 0</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-mc-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Giá trị <span class=\"math\">log₂ 8</span> bằng bao nhiêu?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_html": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "mu-logarit-short-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Giải phương trình <span class=\"math\">3ˣ = 27</span>. Nhập giá trị x.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-tf-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về hàm số mũ và lôgarit.",
+      "options": [
+        "<span class=\"math\">log₂ 1 = 0.</span>",
+        "ln(−1) xác định trong tập số thực.",
+        "<span class=\"math\">Hàm y = 2ˣ đồng biến trên ℝ.</span>",
+        "<span class=\"math\">log₂(x + y) = log₂x + log₂y với mọi x, y > 0.</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">log₂ 1 = 0.</span>",
+        "ln(−1) xác định trong tập số thực.",
+        "<span class=\"math\">Hàm y = 2ˣ đồng biến trên ℝ.</span>",
+        "<span class=\"math\">log₂(x + y) = log₂x + log₂y với mọi x, y &gt; 0.</span>"
+      ]
+    },
+    {
+      "id": "oxyz-flash-1",
+      "topic_id": "oxyz",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Tích vô hướng của hai vectơ",
+      "level": 1,
+      "stem_html": "<div>a⃗ · b⃗ = a₁b₁ + a₂b₂ + a₃b₃</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-mc-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cho <span class=\"math\">a⃗ = (1; 2; 0), b⃗ = (2; −1; 3)</span>. Tích vô hướng <span class=\"math\">a⃗ · b⃗</span> bằng bao nhiêu?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "options_html": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "oxyz-short-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính khoảng cách từ O đến điểm <span class=\"math\">A(2; 3; 6)</span>.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-tf-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Trong hệ tọa độ Oxyz, xét các khẳng định sau.",
+      "options": [
+        "Hai vectơ khác vectơ-không có tích vô hướng bằng 0 thì vuông góc.",
+        "(2; 1; −1) là vectơ pháp tuyến của 2x + y − z = 0.",
+        "A(1; 0; 0) thuộc mặt phẳng x + y + z = 0.",
+        "<span class=\"math\">Mặt cầu x² + y² + z² = 9 có bán kính 3.</span>"
+      ],
+      "options_html": [
+        "Hai vectơ khác vectơ-không có tích vô hướng bằng 0 thì vuông góc.",
+        "(2; 1; −1) là vectơ pháp tuyến của 2x + y − z = 0.",
+        "A(1; 0; 0) thuộc mặt phẳng x + y + z = 0.",
+        "<span class=\"math\">Mặt cầu x² + y² + z² = 9 có bán kính 3.</span>"
+      ]
+    },
+    {
+      "id": "thong-ke-flash-1",
+      "topic_id": "thong-ke",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Số trung bình của mẫu số liệu",
+      "level": 1,
+      "stem_html": "<div>x̄ = <span class=\"fraction\"><span>x₁ + x₂ + … + xₙ</span><span>n</span></span></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-mc-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Số trung bình của mẫu số liệu 2, 4, 6 bằng bao nhiêu?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "12"
+      ],
+      "options_html": [
+        "2",
+        "4",
+        "6",
+        "12"
+      ]
+    },
+    {
+      "id": "thong-ke-short-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính số trung bình của mẫu số liệu 4, 6, 8, 10.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-tf-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về mẫu số liệu chưa ghép nhóm.",
+      "options": [
+        "Số trung bình của 1, 3, 5 bằng 3.",
+        "Phương sai của mẫu số liệu luôn âm.",
+        "Mọi giá trị bằng nhau thì phương sai bằng 0.",
+        "Số trung bình có thể bị ảnh hưởng bởi giá trị ngoại lệ."
+      ],
+      "options_html": [
+        "Số trung bình của 1, 3, 5 bằng 3.",
+        "Phương sai của mẫu số liệu luôn âm.",
+        "Mọi giá trị bằng nhau thì phương sai bằng 0.",
+        "Số trung bình có thể bị ảnh hưởng bởi giá trị ngoại lệ."
+      ]
+    },
+    {
+      "id": "tich-phan-flash-1",
+      "topic_id": "tich-phan",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Nguyên hàm của hàm lũy thừa",
+      "level": 1,
+      "stem_html": "<div>∫ x<sup>n</sup> dx = <span class=\"fraction\"><span>x<sup>n+1</sup></span><span>n + 1</span></span> + C</div><div><small>Điều kiện: n ≠ −1</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-mc-1",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Giá trị của <span class=\"math\">∫₀¹ 2x dx</span> bằng bao nhiêu?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "options_html": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "id": "tich-phan-short-1",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính <span class=\"math\">∫₀² x dx</span>.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-tf-1",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về nguyên hàm và tích phân của hàm liên tục.",
+      "options": [
+        "<span class=\"math\">x³ là một nguyên hàm của 3x².</span>",
+        "<span class=\"math\">∫ₐᵇ f(x) dx = ∫ᵦᵃ f(x) dx luôn đúng.</span>",
+        "<span class=\"math\">∫₀¹ x dx = 0,5.</span>",
+        "<span class=\"math\">∫₁¹ f(x) dx = 1.</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">x³ là một nguyên hàm của 3x².</span>",
+        "<span class=\"math\">∫ₐᵇ f(x) dx = ∫ᵦᵃ f(x) dx luôn đúng.</span>",
+        "<span class=\"math\">∫₀¹ x dx = 0,5.</span>",
+        "<span class=\"math\">∫₁¹ f(x) dx = 1.</span>"
+      ]
+    },
+    {
+      "id": "xac-suat-flash-1",
+      "topic_id": "xac-suat",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Xác suất cổ điển",
+      "level": 1,
+      "stem_html": "<div>P(A) = <span class=\"fraction\"><span>n(A)</span><span>n(Ω)</span></span></div><div><small>Kết quả đồng khả năng</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-mc-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Gieo một xúc xắc cân đối. Xác suất xuất hiện số chẵn bằng bao nhiêu?",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "options_html": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ]
+    },
+    {
+      "id": "xac-suat-short-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Một túi có 3 viên bi đỏ và 2 viên bi xanh. Lấy ngẫu nhiên 1 viên. Tính xác suất lấy được bi đỏ.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-tf-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "true_false",
+      "title": "",
+      "level": 2,
+      "stem_html": "Xét các khẳng định về xác suất của biến cố.",
+      "options": [
+        "Xác suất biến cố đối của A bằng 1 − P(A).",
+        "Hai biến cố độc lập luôn xung khắc.",
+        "Gieo một xúc xắc: xác suất ra số lớn hơn 6 bằng 0.",
+        "P(A ∪ B) = P(A) + P(B) luôn đúng."
+      ],
+      "options_html": [
+        "Xác suất biến cố đối của A bằng 1 − P(A).",
+        "Hai biến cố độc lập luôn xung khắc.",
+        "Gieo một xúc xắc: xác suất ra số lớn hơn 6 bằng 0.",
+        "P(A ∪ B) = P(A) + P(B) luôn đúng."
+      ]
+    },
+    {
+      "id": "cap-so-flash-2",
+      "topic_id": "cap-so",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Số hạng tổng quát của cấp số nhân",
+      "level": 1,
+      "stem_html": "<div>u<sub>n</sub> = u₁ · q<sup>n−1</sup></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-mc-2",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cấp số nhân có u₁ = 3, q = 2. Số hạng u₃ bằng bao nhiêu?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "options_html": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ]
+    },
+    {
+      "id": "cap-so-short-2",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cấp số nhân có u₁ = 2, q = 3. Tính u₄.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-flash-2",
+      "topic_id": "dao-ham",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Dấu hiệu nhận biết cực trị",
+      "level": 1,
+      "stem_html": "<div>f′: + <span class=\"relation\">→</span> −<small>cực đại</small></div><div>f′: − <span class=\"relation\">→</span> +<small>cực tiểu</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-mc-2",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Đạo hàm của <span class=\"math\">y = x³ − 3x</span> là biểu thức nào?",
+      "options": [
+        "<span class=\"math\">3x² − 3</span>",
+        "<span class=\"math\">x² − 3</span>",
+        "<span class=\"math\">3x² + 3</span>",
+        "<span class=\"math\">3x − 3</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">3x² − 3</span>",
+        "<span class=\"math\">x² − 3</span>",
+        "<span class=\"math\">3x² + 3</span>",
+        "<span class=\"math\">3x − 3</span>"
+      ]
+    },
+    {
+      "id": "dao-ham-short-2",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Cho <span class=\"math\">f(x) = x³ − 3x</span>. Tính giá trị cực tiểu của hàm số.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-flash-2",
+      "topic_id": "khong-gian",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Thể tích khối chóp",
+      "level": 1,
+      "stem_html": "<div>V = <span class=\"fraction\"><span>1</span><span>3</span></span> S<sub>đáy</sub> · h</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-mc-2",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Khối chóp có diện tích đáy 6 cm², chiều cao 3 cm. Thể tích bằng bao nhiêu?",
+      "options": [
+        "3 cm³",
+        "6 cm³",
+        "9 cm³",
+        "18 cm³"
+      ],
+      "options_html": [
+        "3 cm³",
+        "6 cm³",
+        "9 cm³",
+        "18 cm³"
+      ]
+    },
+    {
+      "id": "khong-gian-short-2",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Khối chóp có diện tích đáy 12 cm² và chiều cao 5 cm. Tính thể tích (cm³).",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-flash-2",
+      "topic_id": "mu-logarit",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Lôgarit của tích và thương",
+      "level": 1,
+      "stem_html": "<div>log<sub>a</sub>(uv) = log<sub>a</sub>u + log<sub>a</sub>v</div><div>log<sub>a</sub><span class=\"fraction\"><span>u</span><span>v</span></span> = log<sub>a</sub>u − log<sub>a</sub>v</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-mc-2",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Nghiệm của phương trình <span class=\"math\">2ˣ = 8</span> là gì?",
+      "options": [
+        "x = 2",
+        "x = 3",
+        "x = 4",
+        "x = 8"
+      ],
+      "options_html": [
+        "x = 2",
+        "x = 3",
+        "x = 4",
+        "x = 8"
+      ]
+    },
+    {
+      "id": "mu-logarit-short-2",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính <span class=\"math\">log₃ 81</span>.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-flash-2",
+      "topic_id": "oxyz",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Phương trình mặt phẳng",
+      "level": 1,
+      "stem_html": "<div>Ax + By + Cz + D = 0</div><div><small>Vectơ pháp tuyến: n⃗ = (A; B; C)</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-mc-2",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Khoảng cách từ O đến <span class=\"math\">A(1; 2; 2)</span> bằng bao nhiêu?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "9"
+      ],
+      "options_html": [
+        "2",
+        "3",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "id": "oxyz-short-2",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính tích vô hướng của <span class=\"math\">a⃗ = (1; 2; 3)</span> và <span class=\"math\">b⃗ = (2; 0; 1)</span>.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-flash-2",
+      "topic_id": "thong-ke",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Phương sai của mẫu số liệu",
+      "level": 1,
+      "stem_html": "<div>s² = <span class=\"fraction\"><span>1</span><span>n</span></span> ∑ (x<sub>i</sub> − x̄)²</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-mc-2",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Một mẫu số liệu có phương sai bằng 9. Độ lệch chuẩn bằng bao nhiêu?",
+      "options": [
+        "9",
+        "81",
+        "3",
+        "4,5"
+      ],
+      "options_html": [
+        "9",
+        "81",
+        "3",
+        "4,5"
+      ]
+    },
+    {
+      "id": "thong-ke-short-2",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính phương sai của mẫu số liệu 1, 3 (dùng công thức chia cho n).",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-flash-2",
+      "topic_id": "tich-phan",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Công thức Newton – Leibniz",
+      "level": 1,
+      "stem_html": "<div>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)</div><div><small>Trong đó F′(x) = f(x)</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-mc-2",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Một nguyên hàm của <span class=\"math\">f(x) = cos x</span> là gì?",
+      "options": [
+        "<span class=\"math\">sin x + C</span>",
+        "<span class=\"math\">−sin x + C</span>",
+        "<span class=\"math\">tan x + C</span>",
+        "<span class=\"math\">cos x + C</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">sin x + C</span>",
+        "<span class=\"math\">−sin x + C</span>",
+        "<span class=\"math\">tan x + C</span>",
+        "<span class=\"math\">cos x + C</span>"
+      ]
+    },
+    {
+      "id": "tich-phan-short-2",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính diện tích giới hạn bởi <span class=\"math\">y = x</span>, trục hoành và hai đường thẳng <span class=\"math\">x = 0, x = 2</span>.",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-flash-2",
+      "topic_id": "xac-suat",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Xác suất có điều kiện",
+      "level": 1,
+      "stem_html": "<div>P(A | B) = <span class=\"fraction\"><span>P(A ∩ B)</span><span>P(B)</span></span></div><div><small>Điều kiện: P(B) &gt; 0</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-mc-2",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tung một đồng xu cân đối hai lần độc lập. Xác suất cả hai lần đều ngửa bằng bao nhiêu?",
+      "options": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "1"
+      ],
+      "options_html": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "1"
+      ]
+    },
+    {
+      "id": "xac-suat-short-2",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "A và B độc lập, P(A) = 0,3; P(B) = 0,4. Tính P(A ∩ B).",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-flash-3",
+      "topic_id": "cap-so",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Tổng n số hạng của cấp số cộng",
+      "level": 1,
+      "stem_html": "<div>S<sub>n</sub> = <span class=\"fraction\"><span>n(u₁ + uₙ)</span><span>2</span></span></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-mc-3",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tổng 1 + 2 + … + 10 bằng bao nhiêu?",
+      "options": [
+        "45",
+        "50",
+        "55",
+        "60"
+      ],
+      "options_html": [
+        "45",
+        "50",
+        "55",
+        "60"
+      ]
+    },
+    {
+      "id": "dao-ham-flash-3",
+      "topic_id": "dao-ham",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Giá trị lớn nhất, nhỏ nhất trên đoạn",
+      "level": 1,
+      "stem_html": "<div>f(a), f(b), f(x<sub>i</sub>)</div><div><small>So sánh các giá trị tìm được</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-mc-3",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Giá trị nhỏ nhất của <span class=\"math\">f(x) = x² − 4x + 5</span> trên đoạn [0; 3] bằng bao nhiêu?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "5"
+      ],
+      "options_html": [
+        "0",
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "khong-gian-flash-3",
+      "topic_id": "khong-gian",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Đường thẳng vuông góc mặt phẳng",
+      "level": 1,
+      "stem_html": "<div>d ⟂ a, d ⟂ b <span class=\"relation\">⇒</span> d ⟂ (P)</div><div><small>a, b cắt nhau và cùng thuộc (P)</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-mc-3",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Đường chéo của hình lập phương cạnh 3 có độ dài bằng bao nhiêu?",
+      "options": [
+        "<span class=\"math\">3√3</span>",
+        "<span class=\"math\">3√2</span>",
+        "9",
+        "6"
+      ],
+      "options_html": [
+        "<span class=\"math\">3√3</span>",
+        "<span class=\"math\">3√2</span>",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "id": "mu-logarit-flash-3",
+      "topic_id": "mu-logarit",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Tính đơn điệu của hàm số mũ",
+      "level": 1,
+      "stem_html": "<div>a &gt; 1<small>hàm aˣ đồng biến</small></div><div>0 &lt; a &lt; 1<small>hàm aˣ nghịch biến</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-mc-3",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính <span class=\"math\">ln(e²)</span>.",
+      "options": [
+        "2",
+        "e",
+        "e²",
+        "1"
+      ],
+      "options_html": [
+        "2",
+        "e",
+        "e²",
+        "1"
+      ]
+    },
+    {
+      "id": "oxyz-flash-3",
+      "topic_id": "oxyz",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Khoảng cách giữa hai điểm",
+      "level": 1,
+      "stem_html": "<div>AB = √(Δx² + Δy² + Δz²)</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-mc-3",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Một vectơ pháp tuyến của mặt phẳng <span class=\"math\">2x − y + 3z − 1 = 0</span> là gì?",
+      "options": [
+        "<span class=\"math\">(2; −1; 3)</span>",
+        "<span class=\"math\">(2; 1; 3)</span>",
+        "<span class=\"math\">(−1; 3; −1)</span>",
+        "<span class=\"math\">(2; −1; −1)</span>"
+      ],
+      "options_html": [
+        "<span class=\"math\">(2; −1; 3)</span>",
+        "<span class=\"math\">(2; 1; 3)</span>",
+        "<span class=\"math\">(−1; 3; −1)</span>",
+        "<span class=\"math\">(2; −1; −1)</span>"
+      ]
+    },
+    {
+      "id": "thong-ke-flash-3",
+      "topic_id": "thong-ke",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Độ lệch chuẩn",
+      "level": 1,
+      "stem_html": "<div>s = √s²</div><div><small>Cùng đơn vị với dữ liệu ban đầu</small></div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-mc-3",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Trung vị của mẫu số liệu 2, 4, 5, 8, 10 bằng bao nhiêu?",
+      "options": [
+        "4",
+        "4,5",
+        "5",
+        "8"
+      ],
+      "options_html": [
+        "4",
+        "4,5",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "id": "tich-phan-flash-3",
+      "topic_id": "tich-phan",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Diện tích hình phẳng",
+      "level": 1,
+      "stem_html": "<div>S = ∫<sub>a</sub><sup>b</sup> |f(x) − g(x)| dx</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-mc-3",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "Tính <span class=\"math\">∫₁² 3x² dx</span>.",
+      "options": [
+        "3",
+        "6",
+        "7",
+        "8"
+      ],
+      "options_html": [
+        "3",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "xac-suat-flash-3",
+      "topic_id": "xac-suat",
+      "session_id": null,
+      "kind": "flashcard",
+      "title": "Hai biến cố độc lập",
+      "level": 1,
+      "stem_html": "<div>P(A ∩ B) = P(A) · P(B)</div>",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-mc-3",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "A và B độc lập, P(A) = 0,4 và P(B) = 0,5. Tính P(A ∩ B).",
+      "options": [
+        "0,9",
+        "0,1",
+        "0,2",
+        "0,4"
+      ],
+      "options_html": [
+        "0,9",
+        "0,1",
+        "0,2",
+        "0,4"
+      ]
+    },
+    {
+      "id": "khong-gian-supplement-practice-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "mcq",
+      "title": "",
+      "level": 1,
+      "stem_html": "<p>Hai đường thẳng <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em\"></span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord mathnormal\">b</span></span></span></span> cắt nhau và cùng nằm trong <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span>. Nếu <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">⊥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">a</span></span></span></span> và <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">⊥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">b</span></span></span></span>, kết luận nào đúng?</p>\n",
+      "options": [
+        "$d\\parallel(P)$",
+        "$d$ nằm trong $(P)$",
+        "$d\\perp(P)$",
+        "Chưa đủ điều kiện kết luận"
+      ],
+      "options_html": [
+        "<p><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">∥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span></p>\n",
+        "<p><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span></span></span></span> nằm trong <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span></p>\n",
+        "<p><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">⊥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span></p>\n",
+        "<p>Chưa đủ điều kiện kết luận</p>\n"
+      ]
+    },
+    {
+      "id": "mu-logarit-supplement-practice-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "<p>Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mop\"><span class=\"mop\">lo<span style=\"margin-right:0.0139em\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em\"><span style=\"top:-2.4559em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\">4</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord\">8</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-supplement-practice-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 1,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">∩</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">2</span></span></span></span> và <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">5</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-density-1-1",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cấp số cộng có <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">4</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">−</span><span class=\"mord\">2</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">6</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em\"><span></span></span></span></span></span></span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "cap-so-density-2-1",
+      "topic_id": "cap-so",
+      "session_id": "cap-so-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cấp số nhân có <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">5</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em\">q</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord\">1/2</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em\"><span></span></span></span></span></span></span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-density-1-1",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1076em\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8974em;vertical-align:-0.0833em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em\"></span><span class=\"mord\">6</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>. Nghiệm khác <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">0</span></span></span></span> của <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1076em\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">0</span></span></span></span> bằng bao nhiêu?</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "dao-ham-density-3-1",
+      "topic_id": "dao-ham",
+      "session_id": "dao-ham-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tìm giá trị lớn nhất của <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1076em\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8974em;vertical-align:-0.0833em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">4</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">5</span></span></span></span> trên <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">3</span><span class=\"mclose\">]</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-density-1-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Lăng trụ có diện tích đáy <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">7</span></span></span></span> cm² và chiều cao <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">3</span></span></span></span> cm. Tính thể tích theo cm³.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-density-2-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Khối chóp có diện tích đáy <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">15</span></span></span></span> cm² và chiều cao <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">6</span></span></span></span> cm. Tính thể tích theo cm³.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-density-3-1",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Nếu <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">⊥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span>, góc giữa <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\">d</span></span></span></span> và <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mclose\">)</span></span></span></span> bằng bao nhiêu độ?</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-density-2-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mop\"><span class=\"mop\">lo<span style=\"margin-right:0.0139em\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em\"><span style=\"top:-2.4559em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\">16/4</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-density-3-1",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Giải <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">x</span><span class=\"mbin mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">32</span></span></span></span>. Nhập giá trị <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">x</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-density-1-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.714em\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.714em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">a</span></span><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord\">2</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9774em\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9774em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">b</span></span><span style=\"top:-3.2634em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">4</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">−</span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.714em\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.714em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">a</span></span><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9774em\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9774em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">b</span></span><span style=\"top:-3.2634em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-density-2-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Mặt phẳng <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7778em;vertical-align:-0.1944em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em\">y</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">3</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em\">z</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em\">D</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">0</span></span></span></span> đi qua <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em\">O</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em\">D</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-density-3-1",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">1</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span>. Tính độ dài <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-density-1-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tính số trung bình của mẫu số liệu <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">3</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">5</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">7</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">9</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-density-2-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tính phương sai của mẫu <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">4</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">6</span></span></span></span>, dùng công thức chia cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-density-3-1",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Một mẫu có phương sai <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">s</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">2</span></span></span></span>. Tính độ lệch chuẩn <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">s</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-density-1-1",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">x</span></span></span></span> và <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">3</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"mopen\">(</span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-density-1-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Xếp ngẫu nhiên <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">5</span></span></span></span> bạn thành một hàng. Tính xác suất bạn An đứng đầu hàng.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-density-2-1",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Gieo một xúc xắc cân đối, biết số chấm là số chẵn. Tính xác suất số chấm lớn hơn <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">3</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "khong-gian-density-3-2",
+      "topic_id": "khong-gian",
+      "session_id": "khong-gian-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em\">S</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">⊥</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em\">C</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em\">D</span><span class=\"mclose\">)</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em\">S</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">3</span></span></span></span> cm, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">4</span></span></span></span> cm. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span></span></span></span> theo cm.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "mu-logarit-density-2-2",
+      "topic_id": "mu-logarit",
+      "session_id": "mu-logarit-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mop\"><span class=\"mop\">lo<span style=\"margin-right:0.0139em\">g</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.207em\"><span style=\"top:-2.4559em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\">9</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord\">27</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "oxyz-density-2-2",
+      "topic_id": "oxyz",
+      "session_id": "oxyz-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Mặt phẳng <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7778em;vertical-align:-0.1944em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em\">y</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em\"></span><span class=\"mord\">3</span><span class=\"mord mathnormal\" style=\"margin-right:0.044em\">z</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">0</span></span></span></span> có vectơ pháp tuyến <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.714em\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.714em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">n</span></span><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mopen\">(</span><span class=\"mord\">2</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord\">∣</span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.714em\"><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"mord mathnormal\">n</span></span><span style=\"top:-3em\"><span class=\"pstrut\" style=\"height:3em\"></span><span class=\"accent-body\"><span class=\"overlay\" style=\"height:0.714em;width:0.471em\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" viewBox=\"0 0 471 714\" preserveAspectRatio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mord\">∣</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-density-2-2",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Tính phương sai của mẫu <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">5</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">5</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">5</span></span></span></span>, dùng công thức chia cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "thong-ke-density-3-2",
+      "topic_id": "thong-ke",
+      "session_id": "thong-ke-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Một mẫu có phương sai <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em\"></span><span class=\"mord\"><span class=\"mord mathnormal\">s</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">25</span></span></span></span>. Tính độ lệch chuẩn <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em\"></span><span class=\"mord mathnormal\">s</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "tich-phan-density-1-2",
+      "topic_id": "tich-phan",
+      "session_id": "tich-phan-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em\"></span><span class=\"mord\">3</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em\"><span style=\"top:-3.063em;margin-right:0.05em\"><span class=\"pstrut\" style=\"height:2.7em\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> và <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em\"></span><span class=\"mord\">1</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">F</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    },
+    {
+      "id": "xac-suat-density-2-2",
+      "topic_id": "xac-suat",
+      "session_id": "xac-suat-session-1",
+      "kind": "short",
+      "title": "",
+      "level": 2,
+      "stem_html": "<p>Cho <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span><span class=\"mbin\">∩</span><span class=\"mspace\" style=\"margin-right:0.2222em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">24</span></span></span></span>, <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em\"></span><span class=\"mord\">8</span></span></span></span>. Tính <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0502em\">B</span><span class=\"mclose\">)</span></span></span></span>.</p>\n",
+      "options": [],
+      "options_html": []
+    }
+  ]
+}

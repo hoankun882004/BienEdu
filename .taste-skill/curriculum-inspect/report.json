@@ -1,0 +1,1351 @@
+{
+ "url": ".\\documents.html",
+ "at": "2026-10-14T04:40:43.722Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.81,
+    0.62,
+    0.86,
+    0.9,
+    0.86,
+    0.86,
+    0.84,
+    0.87,
+    1
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 7,
+    "transitions": 44,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7687,
+     "screens": 8.5,
+     "words": 1320,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "39 chuyên đề ôn thi Toán 12",
+     "words": 7,
+     "chars": 27,
+     "lines": 2,
+     "size": 100.8,
+     "vw": 7,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.49,
+     "top": 351,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "39 chuyên đề ôn thi Toán 12",
+     "words": 7,
+     "lines": 2,
+     "size": 100.8,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 86.4,
+      "vw": 6,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 146,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "39",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 86.4,
+      "vw": 6,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 317,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "39 chuyên đề ôn thi Toán 12",
+      "words": 7,
+      "chars": 27,
+      "lines": 2,
+      "size": 100.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 351,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "347",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 86.4,
+      "vw": 6,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 489,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh mục chương trình",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 945,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lộ trình có trước, tài liệu bổ sung sau",
+      "words": 9,
+      "chars": 39,
+      "lines": 3,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6574,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BienEdu",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 288,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7098,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      18,
+      20,
+      26,
+      64,
+      101,
+      288
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.8
+     },
+     "measureChars": 62,
+     "max": {
+      "size": 288,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "text": "BienEdu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.21,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f1f5f9",
+       "top": 88,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#2563eb",
+       "top": 88,
+       "hsl": {
+        "h": 221,
+        "s": 0.83,
+        "l": 0.53
+       }
+      },
+      {
+       "color": "#dbeafe",
+       "top": 6402,
+       "hsl": {
+        "h": 214,
+        "s": 0.95,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#061b38",
+       "top": 6969,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f172a",
+       "share": 0.55
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.21
+      },
+      {
+       "color": "#334155",
+       "share": 0.15
+      },
+      {
+       "color": "#d8e8ff",
+       "share": 0.04
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#dbeafe",
+      "hsl": {
+       "h": 214,
+       "s": 0.95,
+       "l": 0.93
+      },
+      "fg": "#0f172a"
+     },
+     "lowContrast": [
+      {
+       "text": "Đây là danh mục chương trình từ Excel, c",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 14,
+       "fg": "#d8e8ff",
+       "bg": "#2563eb"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 2,
+     "radius": 0,
+     "height": 61,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng",
+      "Làm bài thử"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 39,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1245
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 7,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.88,
+    0.83,
+    0.89,
+    0.89,
+    0.89,
+    0.89,
+    0.9,
+    1
+   ],
+   "motion": {
+    "elements": 50,
+    "css": 7,
+    "transitions": 43,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7974,
+     "screens": 7.8,
+     "words": 1202,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "39 chuyên đề ôn thi Toán 12",
+     "words": 7,
+     "chars": 27,
+     "lines": 2,
+     "size": 56,
+     "vw": 7.3,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.51,
+     "top": 550,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "39 chuyên đề ôn thi Toán 12",
+     "words": 7,
+     "lines": 2,
+     "size": 56,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 120,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "39",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.09,
+      "top": 330,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "347",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.13,
+      "top": 540,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "39 chuyên đề ôn thi Toán 12",
+      "words": 7,
+      "chars": 27,
+      "lines": 2,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 550,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh mục chương trình",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 43.8,
+      "vw": 5.7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 948,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lộ trình có trước, tài liệu bổ sung sau",
+      "words": 9,
+      "chars": 39,
+      "lines": 3,
+      "size": 43.8,
+      "vw": 5.7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 7072,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BienEdu",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 153.6,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7497,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      17,
+      20,
+      23,
+      44,
+      56,
+      154
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 22.5,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 37,
+     "max": {
+      "size": 153.6,
+      "vw": 20,
+      "font": "Be Vietnam Pro",
+      "text": "BienEdu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.16,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f1f5f9",
+       "top": 88,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#2563eb",
+       "top": 88,
+       "hsl": {
+        "h": 221,
+        "s": 0.83,
+        "l": 0.53
+       }
+      },
+      {
+       "color": "#dbeafe",
+       "top": 6979,
+       "hsl": {
+        "h": 214,
+        "s": 0.95,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#061b38",
+       "top": 7428,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f172a",
+       "share": 0.52
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.23
+      },
+      {
+       "color": "#334155",
+       "share": 0.17
+      },
+      {
+       "color": "#d8e8ff",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#0f172a",
+      "hsl": {
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Đây là danh mục chương trình từ Excel, c",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 13.4,
+       "fg": "#d8e8ff",
+       "bg": "#2563eb"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.96,
+    0.62,
+    0.92,
+    0.92,
+    0.86,
+    0.79,
+    0.86,
+    0.79,
+    0.92,
+    0.92,
+    0.92,
+    0.79
+   ],
+   "motion": {
+    "elements": 47,
+    "css": 7,
+    "transitions": 40,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 11700,
+     "screens": 13.9,
+     "words": 1193,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "347",
+     "words": 1,
+     "chars": 3,
+     "lines": 1,
+     "size": 58.5,
+     "vw": 15,
+     "font": "Be Vietnam Pro",
+     "weight": 700,
+     "tracking": -0.07,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.26,
+     "top": 652,
+     "tag": "strong",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "39 chuyên đề ôn thi Toán 12",
+     "words": 7,
+     "lines": 2,
+     "size": 48,
+     "font": "Be Vietnam Pro"
+    },
+    "headings": [
+     {
+      "text": "39 chuyên đề ôn thi Toán 12",
+      "words": 7,
+      "chars": 27,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 347,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 652,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "39",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.19,
+      "top": 652,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "347",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.07,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.26,
+      "top": 652,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh mục chương trình",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1124,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lộ trình có trước, tài liệu bổ sung sau",
+      "words": 9,
+      "chars": 39,
+      "lines": 2,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10536,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BienEdu",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 93.6,
+      "vw": 24,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10983,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Be Vietnam Pro",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      16,
+      18,
+      20,
+      33,
+      48,
+      94
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Be Vietnam Pro",
+      "size": 20.3,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 93.6,
+      "vw": 24,
+      "font": "Be Vietnam Pro",
+      "text": "BienEdu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.16,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f1f5f9",
+       "top": 76,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#2563eb",
+       "top": 620,
+       "hsl": {
+        "h": 221,
+        "s": 0.83,
+        "l": 0.53
+       }
+      },
+      {
+       "color": "#dbeafe",
+       "top": 10424,
+       "hsl": {
+        "h": 214,
+        "s": 0.95,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#061b38",
+       "top": 10919,
+       "hsl": {
+        "h": 215,
+        "s": 0.81,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f172a",
+       "share": 0.52
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.23
+      },
+      {
+       "color": "#334155",
+       "share": 0.16
+      },
+      {
+       "color": "#d8e8ff",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#0f172a",
+      "hsl": {
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Đây là danh mục chương trình từ Excel, c",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 13,
+       "fg": "#d8e8ff",
+       "bg": "#2563eb"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 51,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Bỏ qua điều hướng"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "be vietnam pro"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Lộ trình có trước, tài liệu bổ sung sau\" → 3 lines (9 words, 64px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Đây là danh mục chương trình từ Excel, c\" 4.2:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Lộ trình có trước, tài liệu bổ sung sau\" → 3 lines (9 words, 43.8px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\desktop-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\desktop-page-01.jpg",
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\desktop-page-02.jpg",
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\desktop-page-03.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\tablet-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\tablet-page-01.jpg",
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\tablet-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\mobile-fold.jpg",
+   "pages": [
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\mobile-page-01.jpg",
+    "D:\\BienEdu\\.taste-skill\\curriculum-inspect\\mobile-page-02.jpg"
+   ]
+  }
+ ]
+}

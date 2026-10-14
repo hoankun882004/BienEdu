@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi" class="js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lộ trình 39 chuyên đề và 347 dạng bài Toán 12, kèm không gian học theo từng nội dung.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Lộ trình Toán 12 · BienEdu</title>
+  <link rel="icon" href="assets/images/bienedu-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=6.2">
+  <script type="module" src="assets/js/main.js?v=6.2"></script>
+  <script type="module">
+    import("./assets/js/curriculum.js?v=6.2").catch((error) => {
+      document.documentElement.classList.add("curriculum-load-error");
+      console.error("Không thể tải trang Lộ trình:", error);
+    });
+  </script>
+</head>
+<body data-page="documents">
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+  <div data-site-header></div>
+  <main id="main-content" tabindex="-1" class="curriculum-app-shell">
+    <div data-curriculum-app>
+      <section class="roadmap-loading" aria-live="polite">
+        <p class="roadmap-loading__progress">Đang tải lộ trình…</p>
+        <div class="roadmap-loading__error" role="alert">
+          <h1>Không thể tải lộ trình</h1>
+          <p>Hãy tải lại trang. Nếu bạn mở file trực tiếp, hãy chạy website bằng local server.</p>
+        </div>
+      </section>
+      <noscript><p class="roadmap-noscript">Trang Lộ trình cần JavaScript để hiển thị dữ liệu.</p></noscript>
+    </div>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

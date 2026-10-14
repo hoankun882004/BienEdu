@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi" class="js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thư viện tài liệu PDF Toán 12 BienEdu, sẵn sàng tìm kiếm, lọc và xem trước khi có tài liệu gốc.">
+  <title>Tài liệu Toán 12 · BienEdu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/documents.js"></script>
+</head>
+<body data-page="documents">
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+  <div data-site-header></div>
+  <main id="main-content" tabindex="-1">
+    <section class="page-hero page-hero--documents">
+      <div data-reveal>
+        <h1>Thư viện chuyên đề</h1>
+        <p>Khung thư viện cho bộ 39 chuyên đề Toán 12. Hiện workspace chưa có PDF nên danh sách không được dựng giả.</p>
+      </div>
+      <figure class="page-hero__image shutter is-in" data-reveal>
+        <img src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Phiếu ôn tập Toán được sắp xếp cùng compa và thước">
+      </figure>
+    </section>
+
+    <section class="document-library section" aria-labelledby="library-title">
+      <div class="document-library__heading" data-reveal>
+        <h2 id="library-title">Tìm tài liệu</h2>
+        <span data-document-count>0 tài liệu</span>
+      </div>
+      <div class="document-toolbar" data-ui data-reveal>
+        <label>
+          <span>Tìm theo tên</span>
+          <input type="search" data-document-search placeholder="Nhập tên chuyên đề" autocomplete="off">
+        </label>
+        <label>
+          <span>Nhóm kiến thức</span>
+          <select data-document-category>
+            <option value="all">Tất cả nhóm</option>
+          </select>
+        </label>
+      </div>
+      <div class="document-list" data-document-list></div>
+    </section>
+
+    <section class="document-principle section">
+      <h2 data-reveal>Giữ nguyên tài liệu gốc</h2>
+      <p data-reveal>PDF sẽ được tải khi người học chọn xem, giữ nguyên công thức và hình ảnh. Metadata tài liệu nằm trong file dữ liệu riêng, không hardcode vào HTML.</p>
+    </section>
+
+    <section class="study-gallery" aria-label="Hình ảnh minh họa tài liệu học">
+      <img data-reveal src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Bộ phiếu học Toán trên bàn">
+      <img data-reveal src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Sổ ghi chép công thức giải tích">
+      <img data-reveal src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="Phiếu trắc nghiệm Toán">
+      <img data-reveal src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="Học sinh đang tự học Toán">
+    </section>
+  </main>
+
+  <dialog class="pdf-dialog" data-pdf-dialog>
+    <div class="pdf-dialog__header">
+      <h2 data-pdf-title>Tài liệu</h2>
+      <form method="dialog"><button class="text-button" type="submit">Đóng</button></form>
+    </div>
+    <iframe data-pdf-viewer title="Trình xem tài liệu PDF"></iframe>
+  </dialog>
+
+  <div data-site-footer></div>
+</body>
+</html>

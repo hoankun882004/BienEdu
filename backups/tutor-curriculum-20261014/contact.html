@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi" class="js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Form tư vấn BienEdu với kiểm tra dữ liệu minh bạch; hiện chưa kết nối backend tiếp nhận.">
+  <title>Liên hệ · BienEdu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/contact.js"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+  <div data-site-header></div>
+  <main id="main-content" tabindex="-1">
+    <section class="contact-hero">
+      <div>
+        <h1 data-reveal>Trao đổi về lộ trình</h1>
+        <p data-reveal>Hãy để lại nhu cầu học tập. Form sẽ kiểm tra dữ liệu ngay trên thiết bị nhưng chưa gửi đi vì dự án chưa có backend.</p>
+      </div>
+      <figure class="contact-hero__image shutter is-in" data-reveal>
+        <img src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="Góc học Toán trong ánh sáng ban ngày">
+      </figure>
+    </section>
+
+    <section class="contact-layout section">
+      <div class="contact-context">
+        <h2 data-reveal>Trạng thái hiện tại</h2>
+        <p data-reveal>BienEdu chưa có email, hotline, địa chỉ hoặc mạng xã hội được cung cấp trong source.</p>
+        <p data-reveal>Vì vậy giao diện không tự tạo thông tin liên hệ và không thông báo đã gửi thành công.</p>
+      </div>
+
+      <form class="contact-form" data-contact-form novalidate data-ui>
+        <div class="field-group" data-reveal>
+          <label for="name">Họ và tên</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <span class="field-error" id="name-error" data-error-for="name"></span>
+        </div>
+        <div class="field-group" data-reveal>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <span class="field-error" id="email-error" data-error-for="email"></span>
+        </div>
+        <div class="field-group" data-reveal>
+          <label for="phone">Số điện thoại <span>không bắt buộc</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="phone-error">
+          <span class="field-error" id="phone-error" data-error-for="phone"></span>
+        </div>
+        <div class="field-group" data-reveal>
+          <label for="message">Nội dung tư vấn</label>
+          <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+          <span class="field-error" id="message-error" data-error-for="message"></span>
+        </div>
+        <button class="button" type="submit" data-reveal>Kiểm tra thông tin</button>
+        <p class="form-note" data-reveal>Form demo chưa kết nối hệ thống tiếp nhận. Dữ liệu không được gửi hoặc lưu.</p>
+        <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="study-gallery" aria-label="Hình ảnh minh họa học tập">
+      <img data-reveal src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="Học sinh học Toán tại bàn">
+      <img data-reveal src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Sổ ghi bài Toán">
+      <img data-reveal src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Tài liệu học Toán">
+      <img data-reveal src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="Bài kiểm tra Toán">
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
