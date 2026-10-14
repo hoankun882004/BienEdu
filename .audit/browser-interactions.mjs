@@ -38,21 +38,37 @@ try {
 
   await page.goto(`${origin}/documents.html?topic=CD20&type=20.1&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 350 });
   assert.equal(await page.eval("document.querySelectorAll('.lesson-sidebar li').length"), 3);
-  assert.equal(await page.eval("document.querySelector('.knowledge-stage img').getAttribute('src')"), "assets/lesson-slides/cd20/20-1-k01.webp");
+  assert.equal(await page.eval("document.querySelector('.knowledge-reader h2').textContent"), "Quy tắc cộng");
+  assert.equal(await page.eval("document.querySelector('.knowledge-reader__formulae strong').textContent"), "N = n₁ + n₂ + … + nₖ");
+  assert.equal(await page.eval("document.querySelector('.knowledge-stage img')"), null);
   assert.equal(await page.eval("document.querySelector('.lesson-progress strong').textContent"), "17%");
   assert.equal(await page.eval("document.body.textContent.includes('Đọc trước')"), false);
 
   await page.goto(`${origin}/documents.html?topic=CD20&type=20.8&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 300 });
-  assert.equal(await page.eval("document.querySelectorAll('.source-slide-pager a').length"), 2);
+  assert.equal(await page.eval("document.querySelectorAll('.source-slide-pager a').length"), 0);
+  assert.equal(await page.eval("document.querySelector('.lesson-sidebar li:first-child small').textContent"), "1/1 bài đọc");
+  assert.equal(await page.eval("document.querySelectorAll('.knowledge-reader__formulae dl > div').length"), 4);
   assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Tiếp theo')"), false);
-  await page.eval("document.querySelector('.source-slide-pager a:nth-child(2)').click()");
-  await sleep(120);
-  assert.equal(await page.eval("new URLSearchParams(location.search).get('item')"), "2");
-  assert.equal(await page.eval("document.querySelector('.source-slide-pager a[aria-current=\"page\"]').textContent"), "2");
 
   await page.goto(`${origin}/documents.html?topic=CD20&type=20.1&section=example&item=1`, { timeoutMs: 30000, settleMs: 300 });
-  assert.equal(await page.eval("document.querySelector('.example-stage img').getAttribute('src')"), "assets/lesson-slides/cd20/20-1-e01.webp");
-  assert.equal(await page.eval("document.body.textContent.includes('Ví dụ · 1/2')"), true);
+  assert.equal(await page.eval("document.querySelector('.example-reader h2').textContent"), "Quên làm bài tập");
+  assert.equal(await page.eval("document.querySelector('.example-reader__result strong').textContent"), "Có 8 cách chọn lý do.");
+  assert.equal(await page.eval("document.querySelector('.example-stage img')"), null);
+  assert.equal(await page.eval("document.body.textContent.includes('Ví dụ 1/2')"), true);
+
+  await page.goto(`${origin}/documents.html?topic=CD20&type=20.8&section=example&item=1`, { timeoutMs: 30000, settleMs: 300 });
+  assert.equal(await page.eval("document.querySelector('.example-reader h2').textContent"), "Chia kẹo cho bốn bạn");
+  assert.equal(await page.eval("document.querySelector('.example-reader__question').getAttribute('aria-label')"), "Đề bài");
+  assert.equal(await page.eval("document.querySelector('.example-reader__question p').textContent.includes('10 viên kẹo')"), true);
+  assert.equal(await page.eval("document.querySelectorAll('.example-reader__solution li').length"), 4);
+  assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "20.8 example must not overflow on mobile");
+  await page.screenshot({ path: ".audit/v66-20-8-example-390.jpg", quality: 88 });
+  assert.equal(await page.eval("document.querySelector('.lesson-navigation button:last-child').textContent.trim()"), "Làm bài tập →");
+  await page.eval("document.querySelector('.lesson-navigation button:last-child').click()");
+  await sleep(120);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('section')"), "practice");
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('item')"), "1");
+  assert.equal(await page.eval("document.querySelector('.practice-stage') !== null"), true, "20.8 example must advance to practice question 1");
 
   await page.goto(`${origin}/documents.html?topic=CD20&type=20.1&section=practice&item=1`, { timeoutMs: 30000, settleMs: 300 });
   await page.eval("document.querySelector('[data-practice-answer]').click()");
@@ -75,7 +91,7 @@ try {
     const topic = curriculum.curriculumTopics.find((item) => item.id === 'CD20');
     const lessons = {};
     for (const exercise of topic.exerciseTypes) lessons[exercise.code] = {
-      viewedKnowledge: slides.knowledgeSections[exercise.code].knowledgeSlides.map((slide) => slide.id),
+      viewedKnowledge: [slides.knowledgeSections[exercise.code].knowledgeSlides[0].id],
       viewedExamples: slides.knowledgeSections[exercise.code].exampleSlides.map((slide) => slide.id),
       practiceAnswers: { a: { selectedIndex: 0 }, b: { selectedIndex: 0 }, c: { selectedIndex: 0 } }
     };
@@ -122,10 +138,10 @@ try {
     if ([390, 768, 1440].includes(size.width)) await page.screenshot({ path: `.audit/v6-workspace-${size.width}.jpg`, quality: 86 });
   }
 
-  const desktopSizes = [{ width: 1024, height: 768 }, { width: 1280, height: 720 }, { width: 1440, height: 900 }, { width: 1920, height: 1080 }];
+  const desktopSizes = [{ width: 1024, height: 768 }, { width: 1280, height: 720 }, { width: 1440, height: 900 }, { width: 1920, height: 1080 }, { width: 2048, height: 768 }];
   for (const size of desktopSizes) {
     await page.setViewport({ ...size, mobile: false });
-    for (const route of ["topic=CD20&type=20.1&section=knowledge&item=1", "topic=CD20&type=20.1&section=example&item=1", "topic=CD20&type=20.2&section=practice&item=1"]) {
+    for (const route of ["topic=CD20&type=20.1&section=knowledge&item=1", "topic=CD20&type=20.8&section=knowledge&item=1", "topic=CD20&type=20.1&section=example&item=1", "topic=CD20&type=20.2&section=example&item=3", "topic=CD20&type=20.5&section=example&item=1", "topic=CD20&type=20.8&section=example&item=1", "topic=CD20&type=20.2&section=practice&item=1"]) {
       await page.goto(`${origin}/documents.html?${route}`, { timeoutMs: 30000, settleMs: 180 });
       const fitted = await page.eval(`(() => { const stage = document.querySelector('.lesson-content'); const image = document.querySelector('.knowledge-stage img'); const canvas = document.querySelector('.knowledge-stage__canvas'); const ib = image?.getBoundingClientRect(); const cb = canvas?.getBoundingClientRect(); return { page: document.documentElement.scrollHeight <= document.documentElement.clientHeight + 1, stage: stage.scrollHeight <= stage.clientHeight + 1, image: !image || (ib.top >= cb.top - 1 && ib.bottom <= cb.bottom + 1) }; })()`);
       assert.deepEqual(fitted, { page: true, stage: true, image: true }, `${size.width} ${route}`);
@@ -138,20 +154,46 @@ try {
   }
 
   await page.setViewport({ width: 1440, height: 900, mobile: false });
+  await page.goto(`${origin}/documents.html?topic=CD20&type=20.5&section=example&item=1`, { timeoutMs: 30000, settleMs: 180 });
+  const compactExample = await page.eval(`(() => {
+    const bar = document.querySelector('.example-reader__bar').getBoundingClientRect();
+    const intro = document.querySelector('.example-reader__intro').getBoundingClientRect();
+    const analysis = document.querySelector('.example-reader__analysis').getBoundingClientRect();
+    const answer = document.querySelector('.example-reader__result').getBoundingClientRect();
+    const solution = document.querySelector('.example-reader__solution').getBoundingClientRect();
+    const takeaway = document.querySelector('.example-reader__takeaway').getBoundingClientRect();
+    return {
+      topGap: Math.round(intro.top - bar.bottom),
+      leftGap: Math.round(answer.top - analysis.bottom),
+      rightGap: Math.round(takeaway.top - solution.bottom),
+      horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth + 1
+    };
+  })()`);
+  assert.ok(compactExample.topGap <= 24, `example top gap is ${compactExample.topGap}px`);
+  assert.ok(compactExample.leftGap <= 16, `example left stack gap is ${compactExample.leftGap}px`);
+  assert.ok(compactExample.rightGap <= 16, `example right stack gap is ${compactExample.rightGap}px`);
+  assert.equal(compactExample.horizontalOverflow, false, "compact example must not overflow horizontally");
+
   for (const [route, filename] of [
-    ["topic=CD20&type=20.1&section=knowledge&item=1", "v62-20-1-knowledge-1440.jpg"],
-    ["topic=CD20&type=20.8&section=knowledge&item=1", "v62-20-8-knowledge-page1-1440.jpg"],
-    ["topic=CD20&type=20.1&section=practice&item=3", "v62-final-practice-1440.jpg"]
+    ["topic=CD20&type=20.1&section=knowledge&item=1", "v63-20-1-reading-1440.jpg"],
+    ["topic=CD20&type=20.8&section=knowledge&item=1", "v63-20-8-reading-1440.jpg"],
+    ["topic=CD20&type=20.2&section=example&item=3", "v66-20-2-example-1440.jpg"],
+    ["topic=CD20&type=20.5&section=example&item=1", "v66-20-5-compact-1440.jpg"],
+    ["topic=CD20&type=20.8&section=example&item=1", "v66-20-8-example-1440.jpg"],
+    ["topic=CD20&type=20.1&section=practice&item=3", "v63-final-practice-1440.jpg"]
   ]) {
     await page.goto(`${origin}/documents.html?${route}`, { timeoutMs: 30000, settleMs: 180 });
     await page.screenshot({ path: `.audit/${filename}`, quality: 88 });
   }
+  await page.setViewport({ width: 2048, height: 768, mobile: false });
+  await page.goto(`${origin}/documents.html?topic=CD20&type=20.5&section=example&item=1`, { timeoutMs: 30000, settleMs: 180 });
+  await page.screenshot({ path: ".audit/v66-20-5-compact-2048x768.jpg", quality: 88 });
   for (const route of ["topic=CD20&type=20.17&section=knowledge&item=1", "topic=CD20&type=20.17&section=example&item=1", "topic=CD21&type=21.1&section=example&item=1", "topic=CD21&type=21.8&section=knowledge&item=1", "topic=CD21&type=21.8&section=example&item=1"]) {
     await page.goto(`${origin}/documents.html?${route}`, { timeoutMs: 30000, settleMs: 180 });
     await page.screenshot({ path: `.audit/v61-edge-${route.match(/type=([^&]+)/)[1]}-${route.includes('example') ? 'example' : 'knowledge'}.jpg`, quality: 86 });
   }
 
-  console.log("Browser interactions passed: compact 1-2 page knowledge, numeric pager, topic completion route, persistent feedback, final exams, strict no-scroll desktop matrix and 7 responsive widths.");
+  console.log("Browser interactions passed: structured knowledge and worked examples, fixed 20.8 practice transition, compact example stacks, topic completion route, persistent feedback, final exams, strict no-scroll desktop matrix (including 2048x768) and 7 responsive widths.");
 } finally {
   await browser.close();
   await new Promise((done) => server.close(done));

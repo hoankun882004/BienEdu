@@ -4,12 +4,23 @@ export const LESSON_SECTIONS = Object.freeze([
   { id: "practice", label: "Bài tập" }
 ]);
 
-export function createLessonSlides({ topic, exercise, knowledgeSection, questions = [] }) {
+export function createLessonSlides({ topic, exercise, knowledgeSection, reading = null, examples = null, questions = [] }) {
   if (!knowledgeSection) {
     return [{ id: "unavailable", section: "knowledge", label: "Nội dung", kind: "unavailable", title: exercise.title }];
   }
+  const knowledgeSlides = reading ? [{
+    ...knowledgeSection.knowledgeSlides[0],
+    id: `${exercise.code}-knowledge-1`,
+    sourcePages: [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))],
+    reading
+  }] : knowledgeSection.knowledgeSlides;
+  const exampleSlides = examples ? examples.map((workedExample, index) => ({
+    id: `${exercise.code}-example-${index + 1}`,
+    sourcePages: workedExample.sourcePages,
+    workedExample
+  })) : knowledgeSection.exampleSlides;
   return [
-    ...knowledgeSection.knowledgeSlides.map((slide, index) => ({
+    ...knowledgeSlides.map((slide, index) => ({
       ...slide,
       id: slide.id,
       section: "knowledge",
@@ -20,7 +31,7 @@ export function createLessonSlides({ topic, exercise, knowledgeSection, question
       topicId: topic.id,
       exerciseId: exercise.id
     })),
-    ...knowledgeSection.exampleSlides.map((slide, index) => ({
+    ...exampleSlides.map((slide, index) => ({
       ...slide,
       id: slide.id,
       section: "example",

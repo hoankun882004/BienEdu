@@ -1,0 +1,27 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { exampleContent, getExampleContent } from "../assets/js/data/example-content.js";
+import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
+
+test("all mapped lessons expose complete worked examples", () => {
+  assert.deepEqual(Object.keys(exampleContent), Object.keys(knowledgeSections));
+  assert.equal(Object.values(exampleContent).flat().length, 28);
+  for (const [code, examples] of Object.entries(exampleContent)) {
+    assert.ok(examples.length >= 1, `${code} examples`);
+    for (const example of examples) {
+      assert.ok(example.prompt.length >= 30, `${code} prompt`);
+      assert.ok(example.analysis.length >= 2, `${code} analysis`);
+      assert.ok(example.steps.length >= 2, `${code} steps`);
+      assert.ok(example.steps.every((step) => step.label && step.expression && step.text), `${code} step detail`);
+      assert.ok(example.answer && example.takeaway, `${code} conclusion`);
+      assert.ok(example.sourcePages.length >= 1, `${code} provenance`);
+    }
+  }
+});
+
+test("worked examples preserve important multi-step source cases", () => {
+  assert.equal(getExampleContent("20.1").length, 2);
+  assert.equal(getExampleContent("20.2").length, 3);
+  assert.equal(getExampleContent("20.8")[0].answer, "Có 84 cách chia kẹo.");
+  assert.equal(getExampleContent("not-mapped"), null);
+});

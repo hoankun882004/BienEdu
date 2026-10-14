@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { curriculumGroups } from "../assets/js/data/curriculum.js";
+import { getExampleContent } from "../assets/js/data/example-content.js";
+import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { getKnowledgeSection } from "../assets/js/data/knowledge-slides.js";
 import { generatePracticeSet } from "../assets/js/domain/exercise-generators.js";
 import { findExerciseType, findTopic } from "../assets/js/domain/curriculum-filter.js";
@@ -9,7 +11,7 @@ import { createLessonSlides, createLessonState, getNextSlide, getPreviousSlide, 
 test("a lesson contains exactly knowledge, example and practice sections", () => {
   const topic = findTopic(curriculumGroups, "CD20");
   const exercise = findExerciseType(curriculumGroups, "CD20", "20.1");
-  const slides = createLessonSlides({ topic, exercise, knowledgeSection: getKnowledgeSection("20.1"), questions: generatePracticeSet("20.1") });
+  const slides = createLessonSlides({ topic, exercise, knowledgeSection: getKnowledgeSection("20.1"), reading: getKnowledgeContent("20.1"), examples: getExampleContent("20.1"), questions: generatePracticeSet("20.1") });
   assert.equal(slides.length, 6);
   assert.deepEqual([...new Set(slides.map((slide) => slide.section))], ["knowledge", "example", "practice"]);
   assert.equal(slides.some((slide) => ["preview", "assessment"].includes(slide.kind)), false);
@@ -18,8 +20,9 @@ test("a lesson contains exactly knowledge, example and practice sections", () =>
 test("workspace navigation flows from knowledge to examples to practice", () => {
   const topic = findTopic(curriculumGroups, "CD20");
   const exercise = findExerciseType(curriculumGroups, "CD20", "20.8");
-  const slides = createLessonSlides({ topic, exercise, knowledgeSection: getKnowledgeSection("20.8"), questions: generatePracticeSet("20.8") });
-  let state = createLessonState(slides, "knowledge", 2);
+  const slides = createLessonSlides({ topic, exercise, knowledgeSection: getKnowledgeSection("20.8"), reading: getKnowledgeContent("20.8"), examples: getExampleContent("20.8"), questions: generatePracticeSet("20.8") });
+  let state = createLessonState(slides, "knowledge", 1);
+  assert.deepEqual(getSectionPosition(slides, state.currentIndex), { section: "knowledge", current: 1, total: 1 });
   state = getNextSlide(state, slides.length);
   assert.deepEqual(getSectionPosition(slides, state.currentIndex), { section: "example", current: 1, total: 1 });
   state = getNextSlide(state, slides.length);

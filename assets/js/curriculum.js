@@ -1,9 +1,11 @@
-import { curriculumGroups, curriculumMeta } from "./data/curriculum.js?v=6.1";
-import { getDocumentForTopic } from "./data/document-mappings.js?v=6.1";
-import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=6.1";
-import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=6.1";
-import { generatePracticeSet } from "./domain/exercise-generators.js?v=6.1";
-import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=6.1";
+import { curriculumGroups, curriculumMeta } from "./data/curriculum.js?v=6.4";
+import { getDocumentForTopic } from "./data/document-mappings.js?v=6.4";
+import { getExampleContent } from "./data/example-content.js?v=6.4";
+import { getKnowledgeContent } from "./data/knowledge-content.js?v=6.4";
+import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=6.4";
+import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=6.4";
+import { generatePracticeSet } from "./domain/exercise-generators.js?v=6.4";
+import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=6.4";
 import {
   getLessonProgress,
   getTopicProgress,
@@ -15,13 +17,13 @@ import {
   saveExamAnswer,
   saveLearningProgress,
   submitExam
-} from "./domain/learning-progress.js?v=6.1";
-import { createLessonSlides, createLessonState, getNextSlide, getPreviousSlide, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=6.1";
-import { initializeMotion } from "./motion.js?v=6.1";
+} from "./domain/learning-progress.js?v=6.4";
+import { createLessonSlides, createLessonState, getNextSlide, getPreviousSlide, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=6.4";
+import { initializeMotion } from "./motion.js?v=6.4";
 
 const app = document.querySelector("[data-curriculum-app]");
 const filterState = { query: "", groupId: "all" };
-const knowledgeCounts = Object.fromEntries(Object.entries(knowledgeSections).map(([code, section]) => [code, { knowledge: section.knowledgeSlides.length, examples: section.exampleSlides.length }]));
+const knowledgeCounts = Object.fromEntries(Object.entries(knowledgeSections).map(([code, section]) => [code, { knowledge: getKnowledgeContent(code) ? 1 : section.knowledgeSlides.length, examples: getExampleContent(code)?.length ?? section.exampleSlides.length }]));
 let progressState = loadLearningProgress();
 let confirmExamSubmit = false;
 
@@ -100,7 +102,7 @@ function renderTopicDetail(topic) {
     <nav class="type-list" aria-label="Các dạng bài của ${escapeHtml(topic.title)}">
       ${topic.exerciseTypes.map((exercise) => {
         const section = getKnowledgeSection(exercise.code);
-        const lessonProgress = section ? getLessonProgress(progressState, exercise.code, section.knowledgeSlides.length, section.exampleSlides.length) : null;
+        const lessonProgress = section ? getLessonProgress(progressState, exercise.code, getKnowledgeContent(exercise.code) ? 1 : section.knowledgeSlides.length, getExampleContent(exercise.code)?.length ?? section.exampleSlides.length) : null;
         return `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })}" data-route class="${lessonProgress?.isComplete ? "is-complete" : ""}">
           <span>${escapeHtml(exercise.code)}</span><strong>${escapeHtml(exercise.title)}</strong>
           <small>${lessonProgress ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.percent}% · Kiến thức + Bài tập`) : "Đang bổ sung"}</small><b aria-hidden="true">→</b>
@@ -131,6 +133,74 @@ function renderSourceSlide(slide, position, topic, exercise) {
   </section>`;
 }
 
+function renderKnowledgeReading(slide, exercise) {
+  const reading = slide.reading;
+  const readMinutes = Math.max(2, Math.ceil((reading.lead.length + reading.formulae.reduce((total, item) => total + item.detail.length, 0) + reading.points.reduce((total, item) => total + item.text.length, 0)) / 550));
+  return `<article class="knowledge-reader" aria-labelledby="lesson-content-title">
+    <header class="knowledge-reader__bar">
+      <p><span aria-hidden="true">¶</span> Bài đọc trọng tâm</p>
+      <div><span>${readMinutes} phút đọc</span><span>Nguồn · Trang ${slide.sourcePages.join("–")}</span></div>
+    </header>
+    <div class="knowledge-reader__content">
+      <section class="knowledge-reader__lead">
+        <p class="lesson-kicker">${escapeHtml(exercise.code)} · Kiến thức cốt lõi</p>
+        <h2 id="lesson-content-title">${escapeHtml(exercise.title)}</h2>
+        <p>${escapeHtml(reading.lead)}</p>
+      </section>
+      <section class="knowledge-reader__formulae" aria-labelledby="formula-title">
+        <h3 id="formula-title">Công thức & nguyên tắc</h3>
+        <dl>${reading.formulae.map((item) => `<div><dt>${escapeHtml(item.label)}</dt><dd><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.detail)}</span></dd></div>`).join("")}</dl>
+      </section>
+      <section class="knowledge-reader__points" aria-labelledby="points-title">
+        <h3 id="points-title">Cách hiểu nhanh</h3>
+        <ol>${reading.points.map((item) => `<li><span>${escapeHtml(item.label)}</span><p>${escapeHtml(item.text)}</p></li>`).join("")}</ol>
+      </section>
+      <aside class="knowledge-reader__note knowledge-reader__note--${reading.note.tone}" aria-label="${escapeHtml(reading.note.label)}">
+        <span aria-hidden="true">${reading.note.tone === "warning" ? "!" : "✓"}</span>
+        <p><strong>${escapeHtml(reading.note.label)}</strong>${escapeHtml(reading.note.text)}</p>
+      </aside>
+    </div>
+  </article>`;
+}
+
+function renderExampleReading(slide, position, exercise) {
+  const example = slide.workedExample;
+  return `<article class="example-reader" aria-labelledby="lesson-content-title">
+    <header class="example-reader__bar">
+      <p><span aria-hidden="true">ƒ</span> Ví dụ minh họa</p>
+      <div><span>Ví dụ ${position.current}/${position.total}</span><span>Nguồn · Trang ${example.sourcePages.join("–")}</span></div>
+    </header>
+    <div class="example-reader__content">
+      <header class="example-reader__intro">
+        <p class="lesson-kicker">${escapeHtml(exercise.code)} · Áp dụng từng bước</p>
+        <h2 id="lesson-content-title">${escapeHtml(example.title)}</h2>
+        <div class="example-reader__question" aria-label="Đề bài">
+          <span aria-hidden="true"><b>?</b><small>Đề bài</small></span>
+          <p>${escapeHtml(example.prompt)}</p>
+        </div>
+      </header>
+      <div class="example-reader__columns">
+        <div class="example-reader__track">
+          <section class="example-reader__analysis" aria-labelledby="analysis-title">
+            <h3 id="analysis-title">Phân tích đề</h3>
+            <ul>${example.analysis.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          </section>
+          <section class="example-reader__result" aria-label="Đáp số">
+            <span>Đáp số</span><strong>${escapeHtml(example.answer)}</strong>
+          </section>
+        </div>
+        <div class="example-reader__track">
+          <section class="example-reader__solution" aria-labelledby="solution-title">
+            <h3 id="solution-title">Lời giải từng bước</h3>
+            <ol>${example.steps.map((step, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><p>${escapeHtml(step.label)}</p><strong>${escapeHtml(step.expression)}</strong><small>${escapeHtml(step.text)}</small></div></li>`).join("")}</ol>
+          </section>
+          <aside class="example-reader__takeaway" aria-label="Điểm cần nhớ"><span aria-hidden="true">→</span><b>Điểm cần nhớ</b><p>${escapeHtml(example.takeaway)}</p></aside>
+        </div>
+      </div>
+    </div>
+  </article>`;
+}
+
 function renderPractice(slide, answer) {
   const question = slide.question;
   const answered = Boolean(answer);
@@ -146,8 +216,12 @@ function renderPractice(slide, answer) {
 function renderWorkspace(topic, exercise, route) {
   const knowledge = getKnowledgeSection(exercise.code);
   if (!knowledge) return renderUnavailable(topic, exercise);
+  const reading = getKnowledgeContent(exercise.code);
+  const examples = getExampleContent(exercise.code);
+  const knowledgeSlideCount = reading ? 1 : knowledge.knowledgeSlides.length;
+  const exampleSlideCount = examples?.length ?? knowledge.exampleSlides.length;
   const questions = generatePracticeSet(exercise.code, "PRACTICE_V1");
-  const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, questions });
+  const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, reading, examples, questions });
   const state = createLessonState(slides, route.section, route.item);
   const active = slides[state.currentIndex];
   if (active.kind === "knowledge") {
@@ -156,7 +230,7 @@ function renderWorkspace(topic, exercise, route) {
   if (active.kind === "example") {
     persist(markExampleViewed(progressState, exercise.code, active.id));
   }
-  const lessonProgress = getLessonProgress(progressState, exercise.code, knowledge.knowledgeSlides.length, knowledge.exampleSlides.length, questions.length);
+  const lessonProgress = getLessonProgress(progressState, exercise.code, knowledgeSlideCount, exampleSlideCount, questions.length);
   const position = getSectionPosition(slides, state.currentIndex);
   const storedLesson = progressState.lessons[exercise.code] || { practiceAnswers: {} };
   const answer = active.kind === "practice" ? storedLesson.practiceAnswers[active.question.id] : null;
@@ -165,13 +239,13 @@ function renderWorkspace(topic, exercise, route) {
     <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Quay lại ${topic.id}">←</a><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div>
       <div class="lesson-progress"><span><b>Tiến độ bài học</b><strong>${lessonProgress.percent}%</strong></span><progress value="${lessonProgress.completed}" max="${lessonProgress.total}">${lessonProgress.percent}%</progress><small>${lessonProgress.completed}/${lessonProgress.total} nội dung</small></div>
     </header>
-    <div class="workspace-mobile-nav"><label><span>Nội dung</span><select data-section-select><option value="knowledge" ${active.section === "knowledge" ? "selected" : ""}>Kiến thức (${knowledge.knowledgeSlides.length})</option><option value="example" ${active.section === "example" ? "selected" : ""}>Ví dụ (${knowledge.exampleSlides.length})</option><option value="practice" ${active.section === "practice" ? "selected" : ""}>Bài tập (3)</option></select></label></div>
+    <div class="workspace-mobile-nav"><label><span>Nội dung</span><select data-section-select><option value="knowledge" ${active.section === "knowledge" ? "selected" : ""}>Kiến thức (${knowledgeSlideCount})</option><option value="example" ${active.section === "example" ? "selected" : ""}>Ví dụ (${exampleSlideCount})</option><option value="practice" ${active.section === "practice" ? "selected" : ""}>Bài tập (3)</option></select></label></div>
     <div class="workspace-frame"><nav class="lesson-sidebar" aria-label="Nội dung bài học"><p>Nội dung buổi học</p><ol>
-      <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === knowledge.knowledgeSlides.length ? "is-completed" : ""}"><span>${lessonProgress.viewed === knowledge.knowledgeSlides.length ? "✓" : "1"}</span><b>Kiến thức<small>${lessonProgress.viewed}/${knowledge.knowledgeSlides.length} phần</small></b></button></li>
-      <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${lessonProgress.examplesViewed === knowledge.exampleSlides.length ? "is-completed" : ""}"><span>${lessonProgress.examplesViewed === knowledge.exampleSlides.length ? "✓" : "2"}</span><b>Ví dụ<small>${lessonProgress.examplesViewed}/${knowledge.exampleSlides.length} ví dụ</small></b></button></li>
+      <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === knowledgeSlideCount ? "is-completed" : ""}"><span>${lessonProgress.viewed === knowledgeSlideCount ? "✓" : "1"}</span><b>Kiến thức<small>${lessonProgress.viewed}/${knowledgeSlideCount} bài đọc</small></b></button></li>
+      <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${lessonProgress.examplesViewed === exampleSlideCount ? "is-completed" : ""}"><span>${lessonProgress.examplesViewed === exampleSlideCount ? "✓" : "2"}</span><b>Ví dụ<small>${lessonProgress.examplesViewed}/${exampleSlideCount} ví dụ</small></b></button></li>
       <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${lessonProgress.answered === questions.length ? "is-completed" : ""}"><span>${lessonProgress.answered === questions.length ? "✓" : "3"}</span><b>Bài tập<small>${lessonProgress.answered}/${questions.length} câu</small></b></button></li>
     </ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a></nav>
-      <main class="lesson-content" tabindex="-1" data-lesson-content>${active.kind === "practice" ? renderPractice(active, answer) : renderSourceSlide(active, position, topic, exercise)}</main>
+      <main class="lesson-content" tabindex="-1" data-lesson-content>${active.kind === "practice" ? renderPractice(active, answer) : active.kind === "knowledge" && active.reading ? renderKnowledgeReading(active, exercise) : active.kind === "example" && active.workedExample ? renderExampleReading(active, position, exercise) : renderSourceSlide(active, position, topic, exercise)}</main>
     </div>
     <footer class="lesson-navigation">
       <button type="button" data-slide-index="${state.currentIndex - 1}" ${state.currentIndex === 0 || active.section === "knowledge" ? "disabled" : ""}>← Trước</button>
@@ -250,9 +324,23 @@ app?.addEventListener("click", (event) => {
   if (sectionButton) { const route = readRoute(); navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: sectionButton.dataset.section, item: 1 })); return; }
   const slideButton = event.target.closest("[data-slide-index]");
   if (slideButton) {
-    const route = readRoute(); const topic = findTopic(curriculumGroups, route.topicId); const exercise = findExerciseType(curriculumGroups, route.topicId, route.typeCode); const knowledge = getKnowledgeSection(route.typeCode); const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, questions: generatePracticeSet(route.typeCode, "PRACTICE_V1") });
-    const target = selectLessonSlide(createLessonState(slides, route.section, route.item), Number(slideButton.dataset.slideIndex), slides.length); const active = slides[target.currentIndex]; const position = getSectionPosition(slides, target.currentIndex);
-    navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: active.section, item: position.current })); return;
+    const route = readRoute();
+    const topic = findTopic(curriculumGroups, route.topicId);
+    const exercise = findExerciseType(curriculumGroups, route.topicId, route.typeCode);
+    const knowledge = getKnowledgeSection(route.typeCode);
+    const slides = createLessonSlides({
+      topic,
+      exercise,
+      knowledgeSection: knowledge,
+      reading: getKnowledgeContent(route.typeCode),
+      examples: getExampleContent(route.typeCode),
+      questions: generatePracticeSet(route.typeCode, "PRACTICE_V1")
+    });
+    const target = selectLessonSlide(createLessonState(slides, route.section, route.item), Number(slideButton.dataset.slideIndex), slides.length);
+    const active = slides[target.currentIndex];
+    const position = getSectionPosition(slides, target.currentIndex);
+    navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: active.section, item: position.current }));
+    return;
   }
   const practiceButton = event.target.closest("[data-practice-answer]");
   if (practiceButton) { const route = readRoute(); const question = generatePracticeSet(route.typeCode, "PRACTICE_V1")[route.item - 1]; persist(recordPracticeAnswer(progressState, route.typeCode, question.id, Number(practiceButton.dataset.practiceAnswer), question.correctIndex)); renderRoute(); return; }
