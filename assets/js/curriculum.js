@@ -1,11 +1,11 @@
-import { curriculumGroups, curriculumMeta } from "./data/curriculum.js?v=6.4";
-import { getDocumentForTopic } from "./data/document-mappings.js?v=6.4";
-import { getExampleContent } from "./data/example-content.js?v=6.4";
-import { getKnowledgeContent } from "./data/knowledge-content.js?v=6.4";
-import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=6.4";
-import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=6.4";
-import { generatePracticeSet } from "./domain/exercise-generators.js?v=6.4";
-import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=6.4";
+import { curriculumGroups, curriculumMeta } from "./data/curriculum.js?v=8.1";
+import { getDocumentForTopic } from "./data/document-mappings.js?v=8.1";
+import { getExampleContent } from "./data/example-content.js?v=8.1";
+import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.1";
+import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=8.1";
+import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=8.1";
+import { generatePracticeSet } from "./domain/exercise-generators.js?v=8.1";
+import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.1";
 import {
   getLessonProgress,
   getTopicProgress,
@@ -17,24 +17,35 @@ import {
   saveExamAnswer,
   saveLearningProgress,
   submitExam
-} from "./domain/learning-progress.js?v=6.4";
-import { createLessonSlides, createLessonState, getNextSlide, getPreviousSlide, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=6.4";
-import { initializeMotion } from "./motion.js?v=6.4";
+} from "./domain/learning-progress.js?v=8.1";
+import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.1";
+import { initializeMotion } from "./motion.js?v=8.1";
 
+const PRACTICE_SEED = "PRACTICE_V1";
+const FINAL_EXAM_ID = "final";
+const LESSON_SECTION_IDS = new Set(["knowledge", "example", "practice"]);
 const app = document.querySelector("[data-curriculum-app]");
 const filterState = { query: "", groupId: "all" };
-const knowledgeCounts = Object.fromEntries(Object.entries(knowledgeSections).map(([code, section]) => [code, { knowledge: getKnowledgeContent(code) ? 1 : section.knowledgeSlides.length, examples: getExampleContent(code)?.length ?? section.exampleSlides.length }]));
+const knowledgeCounts = Object.fromEntries(
+  Object.entries(knowledgeSections).map(([code, section]) => [code, {
+    knowledge: getKnowledgeContent(code) ? 1 : section.knowledgeSlides.length,
+    examples: getExampleContent(code)?.length ?? section.exampleSlides.length
+  }])
+);
 let progressState = loadLearningProgress();
 let confirmExamSubmit = false;
-
-if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 
 function resetRouteScroll() {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
 function escapeHtml(value) {
-  return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function routeUrl({ topicId = "", typeCode = "", section = "", item = "", exam = "", question = "" } = {}) {
@@ -51,10 +62,11 @@ function routeUrl({ topicId = "", typeCode = "", section = "", item = "", exam =
 
 function readRoute() {
   const parameters = new URLSearchParams(location.search);
+  const requestedSection = parameters.get("section");
   return {
     topicId: parameters.get("topic")?.toUpperCase() || "",
     typeCode: parameters.get("type") || "",
-    section: ["knowledge", "example", "practice"].includes(parameters.get("section")) ? parameters.get("section") : "knowledge",
+    section: LESSON_SECTION_IDS.has(requestedSection) ? requestedSection : "knowledge",
     item: Math.max(1, Number(parameters.get("item")) || 1),
     exam: parameters.get("exam") || "",
     question: Math.max(1, Number(parameters.get("question")) || 1)
@@ -123,7 +135,7 @@ function renderTopicDetail(topic) {
     </nav>
     ${supported ? `<section class="final-exam-card ${topicProgress.isComplete ? "is-unlocked" : "is-locked"}">
       <div><p>Bài kiểm tra cuối chuyên đề</p><h2>20 câu · Bao quát ${topic.exerciseTypes.length} dạng</h2><span>${topicProgress.isComplete ? "Bạn đã mở khóa bài kiểm tra." : `Hoàn thành ${topicProgress.totalLessons - topicProgress.completedLessons} bài còn lại để mở khóa.`}</span></div>
-      ${topicProgress.isComplete ? `<a class="button button--small" href="${routeUrl({ topicId: topic.id, exam: "final", question: 1 })}" data-route>Bắt đầu kiểm tra →</a>` : `<span class="exam-lock" aria-label="Đang khóa">🔒</span>`}
+      ${topicProgress.isComplete ? `<a class="button button--small" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: 1 })}" data-route>Bắt đầu kiểm tra →</a>` : `<span class="exam-lock" aria-label="Đang khóa">🔒</span>`}
     </section>` : ""}
   </section>`;
   initializeMotion();
@@ -232,7 +244,7 @@ function renderWorkspace(topic, exercise, route) {
   const examples = getExampleContent(exercise.code);
   const knowledgeSlideCount = reading ? 1 : knowledge.knowledgeSlides.length;
   const exampleSlideCount = examples?.length ?? knowledge.exampleSlides.length;
-  const questions = generatePracticeSet(exercise.code, "PRACTICE_V1");
+  const questions = generatePracticeSet(exercise.code, PRACTICE_SEED);
   const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, reading, examples, questions });
   const state = createLessonState(slides, route.section, route.item);
   const active = slides[state.currentIndex];
@@ -291,81 +303,199 @@ function renderFinalExam(topic, route) {
   document.body.classList.add("learning-mode");
   app.innerHTML = `<article class="learning-workspace exam-workspace" data-topic="${topic.id}">
     <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route>←</a><div><h1>Kiểm tra cuối chuyên đề</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div><div class="lesson-progress"><span><b>${exam.submitted ? "Kết quả" : "Đã trả lời"}</b><strong>${exam.submitted ? `${result.score}/${result.total}` : `${answered}/20`}</strong></span><progress value="${exam.submitted ? result.score : answered}" max="20"></progress><small>${exam.submitted ? `${result.percent}% chính xác` : "Cần trả lời đủ 20 câu"}</small></div></header>
-    <div class="exam-frame"><aside class="exam-navigator"><p>${exam.submitted ? "Xem lại bài" : "Danh sách câu"}</p><div>${questions.map((_item, questionIndex) => `<a href="${routeUrl({ topicId: topic.id, exam: "final", question: questionIndex + 1 })}" data-route class="${questionIndex === index ? "is-current" : ""} ${Object.hasOwn(exam.answers, questionIndex) ? "is-answered" : ""}">${questionIndex + 1}</a>`).join("")}</div>${exam.submitted ? `<button type="button" class="text-button" data-action="reset-exam">Làm lại bài</button>` : ""}</aside>
+    <div class="exam-frame"><aside class="exam-navigator"><p>${exam.submitted ? "Xem lại bài" : "Danh sách câu"}</p><div>${questions.map((_item, questionIndex) => `<a href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: questionIndex + 1 })}" data-route class="${questionIndex === index ? "is-current" : ""} ${Object.hasOwn(exam.answers, questionIndex) ? "is-answered" : ""}">${questionIndex + 1}</a>`).join("")}</div>${exam.submitted ? `<button type="button" class="text-button" data-action="reset-exam">Làm lại bài</button>` : ""}</aside>
       <main class="lesson-content exam-content" tabindex="-1" data-lesson-content>${exam.submitted && index === 0 ? `<div class="exam-result"><span>${result.percent}%</span><div><p>Kết quả</p><h2>${result.score}/${result.total} câu đúng</h2><small>Xem từng câu để đọc lời giải và ôn lại bài cần cải thiện.</small></div></div>` : ""}${examQuestionMarkup(question, selected, exam.submitted)}</main></div>
-    <footer class="lesson-navigation"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: "final", question: Math.max(1, index) })}" data-route>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: "final", question: index + 2 })}" data-route>Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
+    <footer class="lesson-navigation"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: Math.max(1, index) })}" data-route>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: index + 2 })}" data-route>Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
     ${confirmExamSubmit ? `<div class="exam-confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><div><p class="lesson-kicker">Xác nhận</p><h2 id="confirm-title">Nộp bài kiểm tra?</h2><p>Sau khi nộp, bạn sẽ xem điểm và lời giải chi tiết.</p><div><button type="button" data-action="cancel-submit">Xem lại</button><button type="button" data-action="confirm-submit">Nộp bài</button></div></div></div>` : ""}
   </article>`;
 }
 
-function renderRoute() {
+function renderRoute({ scrollToTop = false } = {}) {
   if (!app) return;
   const route = readRoute();
   const topic = route.topicId ? findTopic(curriculumGroups, route.topicId) : null;
   const exercise = topic && route.typeCode ? findExerciseType(curriculumGroups, topic.id, route.typeCode) : null;
-  if (topic && route.exam === "final") renderFinalExam(topic, route);
+
+  if (topic && route.exam === FINAL_EXAM_ID) renderFinalExam(topic, route);
   else if (topic && exercise) renderWorkspace(topic, exercise, route);
   else if (topic) renderTopicDetail(topic);
   else renderCatalog();
+
+  if (scrollToTop) resetRouteScroll();
 }
 
-function navigate(href, replace = false) {
+function navigate(href, { replace = false } = {}) {
   confirmExamSubmit = false;
   if (replace) history.replaceState(null, "", href); else history.pushState(null, "", href);
-  renderRoute();
-  resetRouteScroll();
+  renderRoute({ scrollToTop: true });
 }
 
-app?.addEventListener("input", (event) => {
+function handleSearchInput(event) {
   if (!event.target.matches("[data-curriculum-search]")) return;
-  filterState.query = event.target.value; renderCatalog();
-  const input = document.querySelector("[data-curriculum-search]"); input?.focus(); input?.setSelectionRange(filterState.query.length, filterState.query.length);
-});
 
-app?.addEventListener("change", (event) => {
-  if (event.target.matches("[data-curriculum-group]")) { filterState.groupId = event.target.value; renderCatalog(); }
-  if (event.target.matches("[data-section-select]")) {
-    const route = readRoute(); navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: event.target.value, item: 1 }));
-  }
-});
+  filterState.query = event.target.value;
+  renderCatalog();
 
-app?.addEventListener("click", (event) => {
-  const routeLink = event.target.closest("[data-route]");
-  if (routeLink && !routeLink.classList.contains("is-disabled")) { event.preventDefault(); navigate(routeLink.href); return; }
-  if (event.target.closest("[data-clear-filters]")) { filterState.query = ""; filterState.groupId = "all"; renderCatalog(); return; }
-  const sectionButton = event.target.closest("[data-section]");
-  if (sectionButton) { const route = readRoute(); navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: sectionButton.dataset.section, item: 1 })); return; }
-  const slideButton = event.target.closest("[data-slide-index]");
-  if (slideButton) {
-    const route = readRoute();
-    const topic = findTopic(curriculumGroups, route.topicId);
-    const exercise = findExerciseType(curriculumGroups, route.topicId, route.typeCode);
-    const knowledge = getKnowledgeSection(route.typeCode);
-    const slides = createLessonSlides({
-      topic,
-      exercise,
-      knowledgeSection: knowledge,
-      reading: getKnowledgeContent(route.typeCode),
-      examples: getExampleContent(route.typeCode),
-      questions: generatePracticeSet(route.typeCode, "PRACTICE_V1")
-    });
-    const target = selectLessonSlide(createLessonState(slides, route.section, route.item), Number(slideButton.dataset.slideIndex), slides.length);
-    const active = slides[target.currentIndex];
-    const position = getSectionPosition(slides, target.currentIndex);
-    navigate(routeUrl({ topicId: route.topicId, typeCode: route.typeCode, section: active.section, item: position.current }));
+  const input = document.querySelector("[data-curriculum-search]");
+  input?.focus();
+  input?.setSelectionRange(filterState.query.length, filterState.query.length);
+}
+
+function handleSelectionChange(event) {
+  if (event.target.matches("[data-curriculum-group]")) {
+    filterState.groupId = event.target.value;
+    renderCatalog();
     return;
   }
-  const practiceButton = event.target.closest("[data-practice-answer]");
-  if (practiceButton) { const route = readRoute(); const question = generatePracticeSet(route.typeCode, "PRACTICE_V1")[route.item - 1]; persist(recordPracticeAnswer(progressState, route.typeCode, question.id, Number(practiceButton.dataset.practiceAnswer), question.correctIndex)); renderRoute(); return; }
-  const examButton = event.target.closest("[data-exam-answer]");
-  if (examButton) { const route = readRoute(); persist(saveExamAnswer(progressState, route.topicId, route.question - 1, Number(examButton.dataset.examAnswer))); renderRoute(); return; }
-  const action = event.target.closest("[data-action]")?.dataset.action;
-  if (action === "request-submit") { confirmExamSubmit = true; renderRoute(); }
-  if (action === "cancel-submit") { confirmExamSubmit = false; renderRoute(); }
-  if (action === "confirm-submit") { const route = readRoute(); const questions = createFinalExam(route.topicId); const exam = progressState.exams[route.topicId]; persist(submitExam(progressState, route.topicId, gradeFinalExam(questions, exam.answers))); confirmExamSubmit = false; navigate(routeUrl({ topicId: route.topicId, exam: "final", question: 1 }), true); }
-  if (action === "reset-exam") { const route = readRoute(); persist(resetExam(progressState, route.topicId)); navigate(routeUrl({ topicId: route.topicId, exam: "final", question: 1 }), true); }
-});
 
-addEventListener("popstate", () => { confirmExamSubmit = false; renderRoute(); resetRouteScroll(); });
-renderRoute();
-resetRouteScroll();
+  if (event.target.matches("[data-section-select]")) {
+    const route = readRoute();
+    navigate(routeUrl({
+      topicId: route.topicId,
+      typeCode: route.typeCode,
+      section: event.target.value,
+      item: 1
+    }));
+  }
+}
+
+function createSlidesForRoute(route) {
+  return createLessonSlides({
+    topic: findTopic(curriculumGroups, route.topicId),
+    exercise: findExerciseType(curriculumGroups, route.topicId, route.typeCode),
+    knowledgeSection: getKnowledgeSection(route.typeCode),
+    reading: getKnowledgeContent(route.typeCode),
+    examples: getExampleContent(route.typeCode),
+    questions: generatePracticeSet(route.typeCode, PRACTICE_SEED)
+  });
+}
+
+function handleSlideNavigation(slideButton) {
+  const route = readRoute();
+  const slides = createSlidesForRoute(route);
+  const currentState = createLessonState(slides, route.section, route.item);
+  const targetState = selectLessonSlide(currentState, Number(slideButton.dataset.slideIndex), slides.length);
+  const activeSlide = slides[targetState.currentIndex];
+  const position = getSectionPosition(slides, targetState.currentIndex);
+
+  navigate(routeUrl({
+    topicId: route.topicId,
+    typeCode: route.typeCode,
+    section: activeSlide.section,
+    item: position.current
+  }));
+}
+
+function handlePracticeAnswer(practiceButton) {
+  const route = readRoute();
+  const question = generatePracticeSet(route.typeCode, PRACTICE_SEED)[route.item - 1];
+  const nextProgress = recordPracticeAnswer(
+    progressState,
+    route.typeCode,
+    question.id,
+    Number(practiceButton.dataset.practiceAnswer),
+    question.correctIndex
+  );
+  persist(nextProgress);
+  renderRoute();
+}
+
+function handleExamAnswer(examButton) {
+  const route = readRoute();
+  persist(saveExamAnswer(
+    progressState,
+    route.topicId,
+    route.question - 1,
+    Number(examButton.dataset.examAnswer)
+  ));
+  renderRoute();
+}
+
+function handleExamAction(action) {
+  if (action === "request-submit" || action === "cancel-submit") {
+    confirmExamSubmit = action === "request-submit";
+    renderRoute();
+    return;
+  }
+
+  const route = readRoute();
+  if (action === "confirm-submit") {
+    const questions = createFinalExam(route.topicId);
+    const exam = progressState.exams[route.topicId];
+    persist(submitExam(progressState, route.topicId, gradeFinalExam(questions, exam.answers)));
+    confirmExamSubmit = false;
+    navigate(routeUrl({ topicId: route.topicId, exam: FINAL_EXAM_ID, question: 1 }), { replace: true });
+  }
+
+  if (action === "reset-exam") {
+    persist(resetExam(progressState, route.topicId));
+    navigate(routeUrl({ topicId: route.topicId, exam: FINAL_EXAM_ID, question: 1 }), { replace: true });
+  }
+}
+
+function handleAppClick(event) {
+  const routeLink = event.target.closest("[data-route]");
+  if (routeLink && !routeLink.classList.contains("is-disabled")) {
+    event.preventDefault();
+    navigate(routeLink.href);
+    return;
+  }
+
+  if (event.target.closest("[data-clear-filters]")) {
+    filterState.query = "";
+    filterState.groupId = "all";
+    renderCatalog();
+    return;
+  }
+
+  const sectionButton = event.target.closest("[data-section]");
+  if (sectionButton) {
+    const route = readRoute();
+    navigate(routeUrl({
+      topicId: route.topicId,
+      typeCode: route.typeCode,
+      section: sectionButton.dataset.section,
+      item: 1
+    }));
+    return;
+  }
+
+  const slideButton = event.target.closest("[data-slide-index]");
+  if (slideButton) {
+    handleSlideNavigation(slideButton);
+    return;
+  }
+
+  const practiceButton = event.target.closest("[data-practice-answer]");
+  if (practiceButton) {
+    handlePracticeAnswer(practiceButton);
+    return;
+  }
+
+  const examButton = event.target.closest("[data-exam-answer]");
+  if (examButton) {
+    handleExamAnswer(examButton);
+    return;
+  }
+
+  const action = event.target.closest("[data-action]")?.dataset.action;
+  if (action) handleExamAction(action);
+}
+
+function handleHistoryNavigation() {
+  confirmExamSubmit = false;
+  renderRoute({ scrollToTop: true });
+}
+
+function initializeCurriculumApp() {
+  if (!app) return;
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+  app.addEventListener("input", handleSearchInput);
+  app.addEventListener("change", handleSelectionChange);
+  app.addEventListener("click", handleAppClick);
+  addEventListener("popstate", handleHistoryNavigation);
+  renderRoute({ scrollToTop: true });
+}
+
+initializeCurriculumApp();

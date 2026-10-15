@@ -1,9 +1,25 @@
-import { quizQuestions } from "./data/quiz-data.js?v=7.2";
-import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js?v=7.2";
-import { initializeMotion } from "./motion.js?v=7.2";
+import { quizQuestions } from "./data/quiz-data.js?v=8.1";
+import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js?v=8.1";
+import { initializeMotion } from "./motion.js?v=8.1";
 
 const root = document.querySelector("[data-quiz-root]");
 let state = createQuizState(quizQuestions.length);
+const PHASE_RENDERERS = {
+  intro: quizIntro,
+  questions: quizQuestion,
+  review: quizReview,
+  results: quizResults
+};
+
+function answeredCount() {
+  return state.answers.filter((answer) => answer !== null).length;
+}
+
+function resultSummary(percentage) {
+  if (percentage >= 80) return "Nền tảng đang khá chắc. Hãy xem lời giải để khóa lại các điểm dễ nhầm.";
+  if (percentage >= 50) return "Bạn đã có nền tảng. Phần lời giải bên dưới sẽ chỉ ra nội dung cần ôn tiếp.";
+  return "Hãy dùng phần lời giải như một bản đồ ôn tập trước khi làm lại.";
+}
 
 function setState(nextState) {
   state = nextState;
@@ -36,7 +52,7 @@ function questionNavigation() {
 
 function quizQuestion() {
   const question = quizQuestions[state.currentIndex];
-  const answered = state.answers.filter((answer) => answer !== null).length;
+  const answered = answeredCount();
   const percent = Math.round((answered / quizQuestions.length) * 100);
   const hintIsOpen = state.hintVisibility[state.currentIndex];
   return `
@@ -110,7 +126,7 @@ function quizResults() {
         <span>${result.correct}/${result.total}</span>
         <div>
           <h2>Kết quả của bạn</h2>
-          <p>${percentage >= 80 ? "Nền tảng đang khá chắc. Hãy xem lời giải để khóa lại các điểm dễ nhầm." : percentage >= 50 ? "Bạn đã có nền tảng. Phần lời giải bên dưới sẽ chỉ ra nội dung cần ôn tiếp." : "Hãy dùng phần lời giải như một bản đồ ôn tập trước khi làm lại."}</p>
+          <p>${resultSummary(percentage)}</p>
         </div>
       </div>
       <ol class="result-list">
@@ -137,12 +153,38 @@ function quizResults() {
 
 function render() {
   if (!root) return;
-  if (state.phase === "intro") root.innerHTML = quizIntro();
-  if (state.phase === "questions") root.innerHTML = quizQuestion();
-  if (state.phase === "review") root.innerHTML = quizReview();
-  if (state.phase === "results") root.innerHTML = quizResults();
+  root.innerHTML = PHASE_RENDERERS[state.phase]?.() ?? quizIntro();
   initializeMotion();
   root.focus({ preventScroll: true });
+}
+
+function handleQuizAction(action) {
+  switch (action) {
+    case "start":
+      setState({ ...state, phase: "questions" });
+      break;
+    case "previous":
+      setState({ ...state, currentIndex: Math.max(0, state.currentIndex - 1) });
+      break;
+    case "next":
+      setState({ ...state, currentIndex: Math.min(quizQuestions.length - 1, state.currentIndex + 1) });
+      break;
+    case "toggle-hint":
+      setState(toggleHint(state, state.currentIndex));
+      break;
+    case "review":
+      setState({ ...state, phase: "review" });
+      break;
+    case "back-to-questions":
+      setState({ ...state, phase: "questions" });
+      break;
+    case "submit":
+      setState({ ...state, phase: "results" });
+      break;
+    case "restart":
+      setState(createQuizState(quizQuestions.length));
+      break;
+  }
 }
 
 root?.addEventListener("change", (event) => {
@@ -159,14 +201,7 @@ root?.addEventListener("click", (event) => {
 
   const action = event.target.closest("[data-action]")?.dataset.action;
   if (!action) return;
-  if (action === "start") setState({ ...state, phase: "questions" });
-  if (action === "previous") setState({ ...state, currentIndex: Math.max(0, state.currentIndex - 1) });
-  if (action === "next") setState({ ...state, currentIndex: Math.min(quizQuestions.length - 1, state.currentIndex + 1) });
-  if (action === "toggle-hint") setState(toggleHint(state, state.currentIndex));
-  if (action === "review") setState({ ...state, phase: "review" });
-  if (action === "back-to-questions") setState({ ...state, phase: "questions" });
-  if (action === "submit") setState({ ...state, phase: "results" });
-  if (action === "restart") setState(createQuizState(quizQuestions.length));
+  handleQuizAction(action);
 });
 
 render();

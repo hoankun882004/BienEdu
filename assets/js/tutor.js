@@ -1,5 +1,5 @@
-import { tutorProfile } from "./data/tutor-profile.js";
-import { initializeMotion } from "./motion.js";
+import { tutorProfile } from "./data/tutor-profile.js?v=8.1";
+import { initializeMotion } from "./motion.js?v=8.1";
 
 const root = document.querySelector("[data-tutor-profile]");
 

@@ -1,4 +1,4 @@
-import { tutorProfile } from "./data/tutor-profile.js";
+import { tutorProfile } from "./data/tutor-profile.js?v=8.1";
 
 const dialog = document.querySelector("[data-registration-dialog]");
 let registrationTrigger = null;

@@ -1,12 +1,12 @@
-import { getKnowledgeSection } from "../data/knowledge-slides.js";
+import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.1";
 
-export function factorial(value) {
+function factorial(value) {
   let result = 1;
   for (let number = 2; number <= value; number += 1) result *= number;
   return result;
 }
 
-export function combination(total, selected) {
+function combination(total, selected) {
   if (selected < 0 || selected > total) return 0;
   const k = Math.min(selected, total - selected);
   let result = 1;
@@ -16,7 +16,7 @@ export function combination(total, selected) {
   return Math.round(result);
 }
 
-export function arrangement(total, selected) {
+function arrangement(total, selected) {
   return factorial(total) / factorial(total - selected);
 }
 

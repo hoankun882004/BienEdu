@@ -1,14 +1,22 @@
 export const LEARNING_STORAGE_KEY = "bienedu.learning.v2";
 export const LEARNING_STORAGE_VERSION = 2;
 
+function createLessonProgress() {
+  return { viewedKnowledge: [], viewedExamples: [], practiceAnswers: {} };
+}
+
 export function createLearningProgress() {
   return { version: LEARNING_STORAGE_VERSION, lessons: {}, exams: {} };
 }
 
 function normalize(progress) {
-  return progress?.version === LEARNING_STORAGE_VERSION
-    ? { ...createLearningProgress(), ...progress, lessons: { ...progress.lessons }, exams: { ...progress.exams } }
-    : createLearningProgress();
+  if (progress?.version !== LEARNING_STORAGE_VERSION) return createLearningProgress();
+  return {
+    ...createLearningProgress(),
+    ...progress,
+    lessons: { ...(progress.lessons ?? {}) },
+    exams: { ...(progress.exams ?? {}) }
+  };
 }
 
 export function loadLearningProgress(storage = globalThis.localStorage) {
@@ -21,12 +29,23 @@ export function loadLearningProgress(storage = globalThis.localStorage) {
 
 export function saveLearningProgress(progress, storage = globalThis.localStorage) {
   const normalized = normalize(progress);
-  try { storage?.setItem(LEARNING_STORAGE_KEY, JSON.stringify(normalized)); } catch { /* Storage may be disabled. */ }
+  try {
+    storage?.setItem(LEARNING_STORAGE_KEY, JSON.stringify(normalized));
+  } catch {
+    // Storage can be unavailable in private browsing or restricted embeds.
+  }
   return normalized;
 }
 
 function lesson(progress, code) {
-  return progress.lessons[code] || { viewedKnowledge: [], viewedExamples: [], practiceAnswers: {} };
+  const current = progress.lessons[code] ?? {};
+  return {
+    ...createLessonProgress(),
+    ...current,
+    viewedKnowledge: [...(current.viewedKnowledge ?? [])],
+    viewedExamples: [...(current.viewedExamples ?? [])],
+    practiceAnswers: { ...(current.practiceAnswers ?? {}) }
+  };
 }
 
 export function markKnowledgeViewed(progress, code, slideId) {
@@ -44,7 +63,7 @@ export function markExampleViewed(progress, code, slideId) {
   const current = lesson(next, code);
   next.lessons[code] = {
     ...current,
-    viewedExamples: [...new Set([...(current.viewedExamples || []), slideId])]
+    viewedExamples: [...new Set([...current.viewedExamples, slideId])]
   };
   return next;
 }
@@ -63,13 +82,24 @@ export function recordPracticeAnswer(progress, code, questionId, selectedIndex, 
   return next;
 }
 
-export function getLessonProgress(progress, code, knowledgeCount, exampleCount = 0, practiceCount = 3) {
+export function getLessonProgress(
+  progress,
+  code,
+  knowledgeCount,
+  exampleCount = 0,
+  practiceCount = 3
+) {
   const current = lesson(normalize(progress), code);
   const viewed = Math.min(new Set(current.viewedKnowledge).size, knowledgeCount);
-  const examplesViewed = Math.min(new Set(current.viewedExamples || []).size, exampleCount);
+  const examplesViewed = Math.min(new Set(current.viewedExamples).size, exampleCount);
   const answered = Math.min(Object.keys(current.practiceAnswers).length, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
   const completed = viewed + examplesViewed + answered;
+  const hasCompletedAllSections = knowledgeCount > 0
+    && viewed === knowledgeCount
+    && examplesViewed === exampleCount
+    && answered === practiceCount;
+
   return {
     viewed,
     examplesViewed,
@@ -77,14 +107,14 @@ export function getLessonProgress(progress, code, knowledgeCount, exampleCount =
     completed,
     total,
     percent: total ? Math.round(completed / total * 100) : 0,
-    isComplete: knowledgeCount > 0 && viewed === knowledgeCount && examplesViewed === exampleCount && answered === practiceCount
+    isComplete: hasCompletedAllSections
   };
 }
 
 export function getTopicProgress(progress, topic, knowledgeCounts) {
   const lessons = topic.exerciseTypes.map((item) => {
-    const counts = knowledgeCounts[item.code] || {};
-    return getLessonProgress(progress, item.code, counts.knowledge || 0, counts.examples || 0);
+    const counts = knowledgeCounts[item.code] ?? {};
+    return getLessonProgress(progress, item.code, counts.knowledge ?? 0, counts.examples ?? 0);
   });
   const completedLessons = lessons.filter((item) => item.isComplete).length;
   return {
@@ -97,16 +127,24 @@ export function getTopicProgress(progress, topic, knowledgeCounts) {
 
 export function saveExamAnswer(progress, topicId, questionIndex, selectedIndex) {
   const next = normalize(progress);
-  const current = next.exams[topicId] || { answers: {}, submitted: false };
+  const current = next.exams[topicId] ?? { answers: {}, submitted: false };
   if (current.submitted) return next;
-  next.exams[topicId] = { ...current, answers: { ...current.answers, [questionIndex]: selectedIndex } };
+  next.exams[topicId] = {
+    ...current,
+    answers: { ...current.answers, [questionIndex]: selectedIndex }
+  };
   return next;
 }
 
 export function submitExam(progress, topicId, result) {
   const next = normalize(progress);
-  const current = next.exams[topicId] || { answers: {} };
-  next.exams[topicId] = { ...current, submitted: true, result, submittedAt: new Date().toISOString() };
+  const current = next.exams[topicId] ?? { answers: {} };
+  next.exams[topicId] = {
+    ...current,
+    submitted: true,
+    result,
+    submittedAt: new Date().toISOString()
+  };
   return next;
 }
 

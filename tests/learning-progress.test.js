@@ -4,7 +4,25 @@ import { curriculumGroups } from "../assets/js/data/curriculum.js";
 import { exampleContent } from "../assets/js/data/example-content.js";
 import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 import { findTopic } from "../assets/js/domain/curriculum-filter.js";
-import { createLearningProgress, getLessonProgress, getTopicProgress, markExampleViewed, markKnowledgeViewed, recordPracticeAnswer, LEARNING_STORAGE_KEY, LEARNING_STORAGE_VERSION } from "../assets/js/domain/learning-progress.js";
+import {
+  createLearningProgress,
+  getLessonProgress,
+  getTopicProgress,
+  loadLearningProgress,
+  markExampleViewed,
+  markKnowledgeViewed,
+  recordPracticeAnswer,
+  LEARNING_STORAGE_KEY,
+  LEARNING_STORAGE_VERSION
+} from "../assets/js/domain/learning-progress.js";
+
+test("invalid or outdated saved data falls back to a clean progress state", () => {
+  const invalidJsonStorage = { getItem: () => "not-json" };
+  const outdatedStorage = { getItem: () => JSON.stringify({ version: 1, lessons: { stale: true } }) };
+
+  assert.deepEqual(loadLearningProgress(invalidJsonStorage), createLearningProgress());
+  assert.deepEqual(loadLearningProgress(outdatedStorage), createLearningProgress());
+});
 
 test("opening a lesson cannot complete it", () => {
   let state = createLearningProgress();

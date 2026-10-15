@@ -1,4 +1,4 @@
-const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+import { prefersReducedMotion, revealElementsOnce } from "./motion.js?v=8.1";
 
 function isInInitialViewport(element) {
   const bounds = element.getBoundingClientRect();
@@ -9,7 +9,7 @@ export function initializeHomeScrollExperience() {
   if (document.body.dataset.page !== "home") return;
 
   const revealElements = [...document.querySelectorAll("[data-home-reveal]")];
-  if (!revealElements.length || reducedMotion() || !("IntersectionObserver" in window)) {
+  if (!revealElements.length || prefersReducedMotion() || !("IntersectionObserver" in window)) {
     revealElements.forEach((element) => element.classList.add("is-visible"));
     return;
   }
@@ -20,13 +20,5 @@ export function initializeHomeScrollExperience() {
   const pendingElements = revealElements.filter((element) => !element.classList.contains("is-visible"));
   if (!pendingElements.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
-
-  pendingElements.forEach((element) => observer.observe(element));
+  revealElementsOnce(pendingElements, { visibleClass: "is-visible", threshold: 0.16 });
 }

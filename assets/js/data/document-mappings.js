@@ -1,4 +1,4 @@
-export const documentSources = [
+const documentSources = [
   {
     id: "cd20-cd21-theory",
     filePath: "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
@@ -53,7 +53,7 @@ export const documentSources = [
   }
 ];
 
-export const documentMappings = documentSources.flatMap((source) =>
+const documentMappings = documentSources.flatMap((source) =>
   Object.entries(source.topics).map(([topicId, metadata]) => ({
     topicId,
     documentId: source.id,
@@ -69,11 +69,4 @@ export const documentMappings = documentSources.flatMap((source) =>
 export function getDocumentForTopic(topicId) {
   const mapping = documentMappings.find((item) => item.topicId === topicId);
   return mapping ? { ...mapping, exercisePages: { ...mapping.exercisePages } } : null;
-}
-
-export function getDocumentForExercise(topicId, exerciseCode) {
-  const mapping = getDocumentForTopic(topicId);
-  if (!mapping) return null;
-  const page = mapping.exercisePages[exerciseCode] ?? mapping.pageStart;
-  return { ...mapping, page };
 }

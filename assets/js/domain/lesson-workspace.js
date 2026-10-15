@@ -1,24 +1,37 @@
-export const LESSON_SECTIONS = Object.freeze([
-  { id: "knowledge", label: "Kiến thức" },
-  { id: "example", label: "Ví dụ" },
-  { id: "practice", label: "Bài tập" }
-]);
-
-export function createLessonSlides({ topic, exercise, knowledgeSection, reading = null, examples = null, questions = [] }) {
+export function createLessonSlides({
+  topic,
+  exercise,
+  knowledgeSection,
+  reading = null,
+  examples = null,
+  questions = []
+}) {
   if (!knowledgeSection) {
-    return [{ id: "unavailable", section: "knowledge", label: "Nội dung", kind: "unavailable", title: exercise.title }];
+    return [{
+      id: "unavailable",
+      section: "knowledge",
+      label: "Nội dung",
+      kind: "unavailable",
+      title: exercise.title
+    }];
   }
-  const knowledgeSlides = reading ? [{
-    ...knowledgeSection.knowledgeSlides[0],
-    id: `${exercise.code}-knowledge-1`,
-    sourcePages: [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))],
-    reading
-  }] : knowledgeSection.knowledgeSlides;
-  const exampleSlides = examples ? examples.map((workedExample, index) => ({
-    id: `${exercise.code}-example-${index + 1}`,
-    sourcePages: workedExample.sourcePages,
-    workedExample
-  })) : knowledgeSection.exampleSlides;
+
+  const knowledgeSlides = reading
+    ? [{
+        ...knowledgeSection.knowledgeSlides[0],
+        id: `${exercise.code}-knowledge-1`,
+        sourcePages: [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))],
+        reading
+      }]
+    : knowledgeSection.knowledgeSlides;
+  const exampleSlides = examples
+    ? examples.map((workedExample, index) => ({
+        id: `${exercise.code}-example-${index + 1}`,
+        sourcePages: workedExample.sourcePages,
+        workedExample
+      }))
+    : knowledgeSection.exampleSlides;
+
   return [
     ...knowledgeSlides.map((slide, index) => ({
       ...slide,
@@ -58,7 +71,8 @@ export function createLessonSlides({ topic, exercise, knowledgeSection, reading 
 
 export function createLessonState(slides, section = "knowledge", item = 1) {
   const candidates = slides.filter((slide) => slide.section === section);
-  const active = candidates[Math.max(0, Math.min(Number(item) - 1, candidates.length - 1))] || slides[0];
+  const requestedIndex = Math.max(0, Math.min(Number(item) - 1, candidates.length - 1));
+  const active = candidates[requestedIndex] || slides[0];
   return { currentIndex: Math.max(0, slides.indexOf(active)) };
 }
 
@@ -77,5 +91,9 @@ export function getPreviousSlide(state, slideCount) {
 export function getSectionPosition(slides, currentIndex) {
   const active = slides[currentIndex];
   const sectionSlides = slides.filter((slide) => slide.section === active.section);
-  return { section: active.section, current: sectionSlides.findIndex((slide) => slide.id === active.id) + 1, total: sectionSlides.length };
+  return {
+    section: active.section,
+    current: sectionSlides.findIndex((slide) => slide.id === active.id) + 1,
+    total: sectionSlides.length
+  };
 }

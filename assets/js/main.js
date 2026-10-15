@@ -1,6 +1,6 @@
-import { bindNavigation, renderLayout } from "./components/layout.js";
-import { initializeHomeScrollExperience } from "./home-motion.js";
-import { initializeMotion } from "./motion.js";
+import { bindNavigation, renderLayout } from "./components/layout.js?v=8.1";
+import { initializeHomeScrollExperience } from "./home-motion.js?v=8.1";
+import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.1";
 
 const isDuplicateHomeRoute = location.protocol !== "file:" && /\/index\.html$/i.test(location.pathname);
 
@@ -19,9 +19,10 @@ if (isDuplicateHomeRoute) {
 document.addEventListener("click", (event) => {
   const anchor = event.target.closest('a[href^="#"]');
   if (!anchor) return;
-  const target = document.querySelector(anchor.getAttribute("href"));
+  const targetId = decodeURIComponent(anchor.hash.slice(1));
+  const target = targetId ? document.getElementById(targetId) : null;
   if (!target) return;
   event.preventDefault();
-  target.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  target.scrollIntoView({ behavior: prefersReducedMotion() ? "auto" : "smooth" });
   target.focus({ preventScroll: true });
 });
