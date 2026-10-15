@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "test:browser": "node .audit/browser-interactions.mjs",
+    "test:home-scroll": "node .audit/home-scroll-experience.mjs",
     "test:polish": "node .audit/polish-pass.mjs"
   }
 }

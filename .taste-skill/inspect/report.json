@@ -1,28 +1,21 @@
 {
- "url": ".\\index.html",
- "at": "2026-10-14T03:58:08.664Z",
+ "url": "index.html",
+ "at": "2026-10-15T03:17:00.622Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 9,
+   "screens": 2,
    "filled": [
-    0.55,
-    0.48,
-    0.63,
-    0.43,
-    0.78,
-    0.44,
-    0.5,
-    1,
-    1
+    0.51,
+    0.73
    ],
    "motion": {
-    "elements": 29,
-    "css": 13,
-    "transitions": 16,
+    "elements": 9,
+    "css": 5,
+    "transitions": 4,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -33,29 +26,26 @@
      "h": 900
     },
     "page": {
-     "height": 7736,
-     "screens": 8.6,
-     "words": 544,
-     "img": 12,
+     "height": 1648,
+     "screens": 1.8,
+     "words": 167,
+     "img": 7,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 8,
+     "sections": 3,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 12,
+     "realPictures": 5,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 0,
      "pictureSamples": [
       "bienedu-hero-study.png",
       "bienedu-course-notes.png",
       "bienedu-documents.png",
       "bienedu-quiz.png",
-      "bienedu-course-notes.png",
-      "bienedu-documents.png",
-      "bienedu-documents.png",
       "bienedu-course-notes.png"
      ],
      "blendText": 0,
@@ -64,28 +54,28 @@
      "emoji": []
     },
     "hero": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
-     "words": 6,
-     "chars": 31,
+     "text": "Học có hệ thống",
+     "words": 4,
+     "chars": 15,
      "lines": 2,
-     "size": 63.4,
+     "size": 64,
      "vw": 4.4,
      "font": "Be Vietnam Pro",
      "weight": 700,
      "tracking": -0.035,
-     "leading": 0.97,
+     "leading": 1.03,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.4,
-     "top": 151,
-     "tag": "h1",
+     "widthRatio": 0.29,
+     "top": 675,
+     "tag": "h2",
      "kind": "heading"
     },
     "h1": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
+     "text": "Học Toán 12 theo từng phần",
      "words": 6,
      "lines": 2,
      "size": 63.4,
@@ -109,14 +99,14 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 88,
+      "top": 75,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Chinh phục Toán 12 cùng BienEdu",
+      "text": "Học Toán 12 theo từng phần",
       "words": 6,
-      "chars": 31,
+      "chars": 26,
       "lines": 2,
       "size": 63.4,
       "vw": 4.4,
@@ -129,8 +119,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.4,
-      "top": 151,
+      "widthRatio": 0.31,
+      "top": 183,
       "tag": "h1",
       "kind": "heading"
      },
@@ -150,8 +140,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.31,
-      "top": 1346,
+      "widthRatio": 0.29,
+      "top": 675,
       "tag": "h2",
       "kind": "heading"
      },
@@ -171,8 +161,8 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.47,
-      "top": 1346,
+      "widthRatio": 0.45,
+      "top": 675,
       "tag": "p",
       "kind": "statement"
      },
@@ -193,7 +183,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.25,
-      "top": 1688,
+      "top": 1097,
       "tag": "h2",
       "kind": "heading"
      },
@@ -202,8 +192,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 115.2,
-      "vw": 8,
+      "size": 86.4,
+      "vw": 6,
       "font": "Be Vietnam Pro",
       "weight": 700,
       "tracking": -0.07,
@@ -212,335 +202,20 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "right",
-      "widthRatio": 0.19,
-      "top": 2014,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Không cần tài khoản để thử bài kiểm tra.",
-      "words": 9,
-      "chars": 40,
-      "lines": 2,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Be Vietnam Pro",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.3,
-      "top": 2341,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "Các vùng kiến thức",
-      "words": 4,
-      "chars": 18,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.39,
-      "top": 2694,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "f′(x)",
-      "words": 1,
-      "chars": 5,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 2917,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "∫",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 3045,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Oxyz",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 3174,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "P(A)",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 3303,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "x̄",
-      "words": 1,
-      "chars": 2,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 3432,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "V",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 3561,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Thư viện trung thực",
-      "words": 4,
-      "chars": 19,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
       "position": "center",
-      "widthRatio": 0.25,
-      "top": 3911,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "0",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 230.4,
-      "vw": 16,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.08,
-      "leading": 0.7,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.1,
-      "top": 4033,
+      "widthRatio": 0.32,
+      "top": 1210,
       "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Giá trị nhỏ nhất của f(x) = x² − 6x + 10?",
-      "words": 12,
-      "chars": 41,
-      "lines": 2,
-      "size": 43.2,
-      "vw": 3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.46,
-      "top": 4638,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Tự kiểm tra ngay",
-      "words": 4,
-      "chars": 16,
-      "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.39,
-      "top": 4707,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Một vòng học hoàn chỉnh",
-      "words": 5,
-      "chars": 23,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.31,
-      "top": 5269,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Cần một lộ trình phù hợp? Xem form tư vấn và trạng thái kết nối.",
-      "words": 15,
-      "chars": 64,
-      "lines": 2,
-      "size": 34.6,
-      "vw": 2.4,
-      "font": "Be Vietnam Pro",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.25,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.49,
-      "top": 6845,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "BienEdu",
-      "words": 1,
-      "chars": 7,
-      "lines": 1,
-      "size": 288,
-      "vw": 20,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.09,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.96,
-      "top": 7147,
-      "tag": "div",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 21,
+     "count": 6,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 3,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 4,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -553,23 +228,18 @@
      ],
      "familyCount": 1,
      "sizes": [
+      12,
+      13,
       14,
       18,
-      20,
-      22,
       26,
-      32,
-      35,
       36,
-      43,
       58,
       63,
       64,
-      115,
-      230,
-      288
+      86
      ],
-     "sizeCount": 15,
+     "sizeCount": 10,
      "notLoaded": [],
      "body": {
       "font": "Be Vietnam Pro",
@@ -577,27 +247,50 @@
       "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 14.6
+      "contrast": 13.8
      },
-     "measureChars": 87,
+     "measureChars": 42,
      "max": {
-      "size": 288,
-      "vw": 20,
+      "size": 86.4,
+      "vw": 6,
       "font": "Be Vietnam Pro",
-      "text": "BienEdu"
+      "text": "10"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 0,
-     "microLabelShare": 0,
-     "microSamples": [],
-     "upperShare": 0,
+     "microLabels": 1,
+     "microLabelShare": 0.031,
+     "microSamples": [
+      "Học · luyện · kiểm tra"
+     ],
+     "upperShare": 0.08,
      "centerShare": 0,
-     "smallText": 0
+     "smallText": 4
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Học · luyện · kiểm tra",
+      "above": "Một nhịp học rõ ràng",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1068
+     },
+     {
+      "text": "Bài kiểm tra nhanh",
+      "above": "10",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1182
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#ffffff",
@@ -609,127 +302,98 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#f1f5f9",
-       "top": 88,
+       "color": "#f8fafc",
+       "top": 887,
        "hsl": {
         "h": 210,
         "s": 0.4,
-        "l": 0.96
-       }
-      },
-      {
-       "color": "#dbeafe",
-       "top": 3738,
-       "hsl": {
-        "h": 214,
-        "s": 0.95,
-        "l": 0.93
-       }
-      },
-      {
-       "color": "#061b38",
-       "top": 4540,
-       "hsl": {
-        "h": 215,
-        "s": 0.81,
-        "l": 0.12
-       }
-      },
-      {
-       "color": "#2563eb",
-       "top": 6639,
-       "hsl": {
-        "h": 221,
-        "s": 0.83,
-        "l": 0.53
+        "l": 0.98
        }
       }
      ],
      "textColors": [
       {
        "color": "#0f172a",
-       "share": 0.53
+       "share": 0.55
       },
       {
-       "color": "#ffffff",
-       "share": 0.24
-      },
-      {
-       "color": "#475569",
-       "share": 0.14
+       "color": "#334155",
+       "share": 0.18
       },
       {
        "color": "#d8e8ff",
-       "share": 0.06
+       "share": 0.1
       },
       {
-       "color": "#bcd4f4",
-       "share": 0.03
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#2563eb",
+      "bg": "#0f172a",
       "hsl": {
-       "h": 221,
-       "s": 0.83,
-       "l": 0.53
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
+     "count": 2,
      "inHero": 2,
-     "radius": 4,
-     "height": 52,
+     "radius": 0,
+     "height": 53,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Bỏ qua điều hướng",
-      "Làm bài thử"
+      "Xem nội dung khóa học"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "div.study-rhythm__shell → rgba(15, 37, 67, 0.08) 0px 16px 40px 0px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 0,
-     "hairlineSamples": [],
-     "outlinedBoxes": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "footer.site-footer 1440px",
+      "div.footer-meta 1376px"
+     ],
+     "outlinedBoxes": 2,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 10,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 12,
+     "squareMedia": 1,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
      "textShadow": 0,
-     "cardRows": [
-      {
-       "count": 6,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 2890
-      }
-     ]
+     "cardRows": []
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.21
+      "ratio": 0.1
      }
     ],
     "nav": {
-     "links": 7,
-     "fixed": false,
-     "height": 88,
+     "links": 5,
+     "fixed": true,
+     "height": 75,
      "floatingPill": false,
      "blur": false
     },
@@ -743,22 +407,15 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 9,
+   "screens": 2,
    "filled": [
-    0.56,
-    1,
-    0.93,
-    0.59,
-    0.5,
-    0.74,
-    0.57,
-    1,
-    1
+    0.72,
+    0.7
    ],
    "motion": {
-    "elements": 28,
-    "css": 12,
-    "transitions": 16,
+    "elements": 7,
+    "css": 5,
+    "transitions": 2,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -769,29 +426,26 @@
      "h": 1024
     },
     "page": {
-     "height": 8538,
-     "screens": 8.3,
-     "words": 524,
-     "img": 12,
+     "height": 1755,
+     "screens": 1.7,
+     "words": 166,
+     "img": 7,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 8,
+     "sections": 3,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 12,
+     "realPictures": 5,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 0,
      "pictureSamples": [
       "bienedu-hero-study.png",
       "bienedu-course-notes.png",
       "bienedu-documents.png",
       "bienedu-quiz.png",
-      "bienedu-course-notes.png",
-      "bienedu-documents.png",
-      "bienedu-documents.png",
       "bienedu-course-notes.png"
      ],
      "blendText": 0,
@@ -800,10 +454,10 @@
      "emoji": []
     },
     "hero": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
+     "text": "Học Toán 12 theo từng phần",
      "words": 6,
-     "chars": 31,
-     "lines": 2,
+     "chars": 26,
+     "lines": 3,
      "size": 48,
      "vw": 6.3,
      "font": "Be Vietnam Pro",
@@ -815,40 +469,19 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.57,
-     "top": 160,
+     "widthRatio": 0.37,
+     "top": 133,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
+     "text": "Học Toán 12 theo từng phần",
      "words": 6,
-     "lines": 2,
+     "lines": 3,
      "size": 48,
      "font": "Be Vietnam Pro"
     },
     "headings": [
-     {
-      "text": "Chinh phục Toán 12 cùng BienEdu",
-      "words": 6,
-      "chars": 31,
-      "lines": 2,
-      "size": 48,
-      "vw": 6.3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 0.97,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.57,
-      "top": 160,
-      "tag": "h1",
-      "kind": "heading"
-     },
      {
       "text": "f′(x) ∫",
       "words": 2,
@@ -864,10 +497,31 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 1,
-      "top": 696,
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 75,
       "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Học Toán 12 theo từng phần",
+      "words": 6,
+      "chars": 26,
+      "lines": 3,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.97,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 133,
+      "tag": "h1",
       "kind": "heading"
      },
      {
@@ -887,7 +541,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.31,
-      "top": 3082,
+      "top": 647,
       "tag": "h2",
       "kind": "heading"
      },
@@ -908,7 +562,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 3319,
+      "top": 1086,
       "tag": "h2",
       "kind": "heading"
      },
@@ -917,8 +571,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 64,
-      "vw": 8.3,
+      "size": 56,
+      "vw": 7.3,
       "font": "Be Vietnam Pro",
       "weight": 700,
       "tracking": -0.07,
@@ -927,272 +581,20 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.18,
-      "top": 3583,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Các vùng kiến thức",
-      "words": 4,
-      "chars": 18,
-      "lines": 2,
-      "size": 43.8,
-      "vw": 5.7,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.39,
-      "top": 4087,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "f′(x)",
-      "words": 1,
-      "chars": 5,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4279,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "∫",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4408,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Oxyz",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4537,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "P(A)",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4666,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "x̄",
-      "words": 1,
-      "chars": 2,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4795,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "V",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 4923,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Thư viện trung thực",
-      "words": 4,
-      "chars": 19,
-      "lines": 2,
-      "size": 43.8,
-      "vw": 5.7,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
       "position": "right",
-      "widthRatio": 0.32,
-      "top": 5179,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "0",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 122.9,
-      "vw": 16,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.08,
-      "leading": 0.7,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.1,
-      "top": 5348,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Tự kiểm tra ngay",
-      "words": 4,
-      "chars": 16,
-      "lines": 2,
-      "size": 43.8,
-      "vw": 5.7,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
       "widthRatio": 0.39,
-      "top": 5700,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Một vòng học hoàn chỉnh",
-      "words": 5,
-      "chars": 23,
-      "lines": 2,
-      "size": 43.8,
-      "vw": 5.7,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.4,
-      "top": 6167,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "BienEdu",
-      "words": 1,
-      "chars": 7,
-      "lines": 1,
-      "size": 153.6,
-      "vw": 20,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.09,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.96,
-      "top": 8062,
-      "tag": "div",
+      "top": 1137,
+      "tag": "strong",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 17,
-     "maxLines": 2,
-     "over2Lines": 0,
+     "count": 5,
+     "maxLines": 3,
+     "over2Lines": 1,
      "statements": 0,
      "centered": 0,
-     "medianWords": 1,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1205,50 +607,68 @@
      ],
      "familyCount": 1,
      "sizes": [
+      12,
       13,
       17,
-      18,
-      20,
-      22,
       23,
       24,
-      28,
       32,
       44,
       48,
-      64,
-      123,
-      154
+      56
      ],
-     "sizeCount": 14,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "Be Vietnam Pro",
-      "size": 16.9,
-      "leading": 1.55,
+      "size": 24,
+      "leading": 1.3,
       "weight": 400,
-      "tracking": 0,
-      "contrast": 14.6
+      "tracking": -0.025,
+      "contrast": 17.9
      },
-     "measureChars": 50,
+     "measureChars": 30,
      "max": {
-      "size": 153.6,
-      "vw": 20,
+      "size": 56,
+      "vw": 7.3,
       "font": "Be Vietnam Pro",
-      "text": "BienEdu"
+      "text": "10"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 0,
-     "microLabelShare": 0,
-     "microSamples": [],
-     "upperShare": 0,
+     "microLabels": 1,
+     "microLabelShare": 0.031,
+     "microSamples": [
+      "Học · luyện · kiểm tra"
+     ],
+     "upperShare": 0.08,
      "centerShare": 0,
-     "smallText": 0
+     "smallText": 4
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Học · luyện · kiểm tra",
+      "above": "Một nhịp học rõ ràng",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1057
+     },
+     {
+      "text": "Bài kiểm tra nhanh",
+      "above": "10",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1109
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#ffffff",
@@ -1260,127 +680,102 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#f1f5f9",
-       "top": 696,
+       "color": "#f8fafc",
+       "top": 816,
        "hsl": {
         "h": 210,
         "s": 0.4,
-        "l": 0.96
-       }
-      },
-      {
-       "color": "#dbeafe",
-       "top": 706,
-       "hsl": {
-        "h": 214,
-        "s": 0.95,
-        "l": 0.93
-       }
-      },
-      {
-       "color": "#2563eb",
-       "top": 7563,
-       "hsl": {
-        "h": 221,
-        "s": 0.83,
-        "l": 0.53
-       }
-      },
-      {
-       "color": "#061b38",
-       "top": 7993,
-       "hsl": {
-        "h": 215,
-        "s": 0.81,
-        "l": 0.12
+        "l": 0.98
        }
       }
      ],
      "textColors": [
       {
        "color": "#0f172a",
-       "share": 0.53
+       "share": 0.55
       },
       {
-       "color": "#ffffff",
-       "share": 0.23
-      },
-      {
-       "color": "#475569",
-       "share": 0.15
+       "color": "#334155",
+       "share": 0.18
       },
       {
        "color": "#d8e8ff",
-       "share": 0.06
+       "share": 0.1
       },
       {
-       "color": "#bcd4f4",
-       "share": 0.03
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#2563eb",
+      "bg": "#0f172a",
       "hsl": {
-       "h": 221,
-       "s": 0.83,
-       "l": 0.53
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 4,
+     "count": 2,
      "inHero": 2,
-     "radius": 4,
-     "height": 50,
+     "radius": 0,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Bỏ qua điều hướng",
-      "Khám phá khóa học"
+      "Xem nội dung khóa học"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "div.study-rhythm__shell → rgba(15, 37, 67, 0.08) 0px 16px 40px 0px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 0,
-     "hairlineSamples": [],
-     "outlinedBoxes": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "footer.site-footer 768px",
+      "div.footer-meta 734px"
+     ],
+     "outlinedBoxes": 2,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 11,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 12,
+     "squareMedia": 1,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
      "textShadow": 0,
-     "cardRows": [
-      {
-       "count": 6,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 4241
-      }
-     ]
+     "cardRows": []
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.2
+      "ratio": 0.08
+     },
+     {
+      "type": "img",
+      "ratio": 0.08
      }
     ],
     "nav": {
-     "links": 6,
-     "fixed": false,
-     "height": 88,
+     "links": 5,
+     "fixed": true,
+     "height": 75,
      "floatingPill": false,
      "blur": false
     },
@@ -1394,24 +789,16 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 11,
+   "screens": 3,
    "filled": [
-    0.38,
-    0.73,
-    0.79,
-    0.78,
-    0.24,
-    0.83,
-    0.62,
-    0.8,
-    0.8,
-    0.99,
-    0.99
+    0.59,
+    0.68,
+    0.78
    ],
    "motion": {
-    "elements": 26,
-    "css": 10,
-    "transitions": 16,
+    "elements": 9,
+    "css": 4,
+    "transitions": 5,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1422,30 +809,24 @@
      "h": 844
     },
     "page": {
-     "height": 8841,
-     "screens": 10.5,
-     "words": 436,
-     "img": 12,
+     "height": 2063,
+     "screens": 2.4,
+     "words": 159,
+     "img": 7,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 8,
+     "sections": 3,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
+     "realPictures": 2,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 0,
      "pictureSamples": [
       "bienedu-hero-study.png",
-      "bienedu-course-notes.png",
-      "bienedu-course-notes.png",
-      "bienedu-documents.png",
-      "bienedu-documents.png",
-      "bienedu-course-notes.png",
-      "bienedu-quiz.png",
-      "bienedu-hero-study.png"
+      "bienedu-course-notes.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1453,9 +834,9 @@
      "emoji": []
     },
     "hero": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
+     "text": "Học Toán 12 theo từng phần",
      "words": 6,
-     "chars": 31,
+     "chars": 26,
      "lines": 2,
      "size": 36.1,
      "vw": 9.3,
@@ -1467,14 +848,14 @@
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "center",
-     "widthRatio": 0.84,
-     "top": 132,
+     "position": "left",
+     "widthRatio": 0.66,
+     "top": 111,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Chinh phục Toán 12 cùng BienEdu",
+     "text": "Học Toán 12 theo từng phần",
      "words": 6,
      "lines": 2,
      "size": 36.1,
@@ -1482,9 +863,9 @@
     },
     "headings": [
      {
-      "text": "Chinh phục Toán 12 cùng BienEdu",
+      "text": "Học Toán 12 theo từng phần",
       "words": 6,
-      "chars": 31,
+      "chars": 26,
       "lines": 2,
       "size": 36.1,
       "vw": 9.3,
@@ -1496,9 +877,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.84,
-      "top": 132,
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 111,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1519,7 +900,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 1,
-      "top": 652,
+      "top": 427,
       "tag": "div",
       "kind": "heading"
      },
@@ -1540,7 +921,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1412,
+      "top": 823,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1561,7 +942,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1489,
+      "top": 901,
       "tag": "p",
       "kind": "statement"
      },
@@ -1582,7 +963,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.47,
-      "top": 1722,
+      "top": 1152,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1591,8 +972,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 64,
-      "vw": 16.4,
+      "size": 56,
+      "vw": 14.4,
       "font": "Be Vietnam Pro",
       "weight": 700,
       "tracking": -0.07,
@@ -1601,333 +982,18 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.35,
-      "top": 2442,
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1405,
       "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Không cần tài khoản để thử bài kiểm tra.",
-      "words": 9,
-      "chars": 40,
-      "lines": 2,
-      "size": 22.4,
-      "vw": 5.7,
-      "font": "Be Vietnam Pro",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.78,
-      "top": 2731,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "Các vùng kiến thức",
-      "words": 4,
-      "chars": 18,
-      "lines": 1,
-      "size": 32.5,
-      "vw": 8.3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 3223,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "f′(x)",
-      "words": 1,
-      "chars": 5,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 3875,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "∫",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 3959,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Oxyz",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 4043,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "P(A)",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 4127,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "x̄",
-      "words": 1,
-      "chars": 2,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 4212,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "V",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Be Vietnam Pro",
-      "weight": 600,
-      "tracking": -0.05,
-      "leading": 1.55,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.21,
-      "top": 4296,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Thư viện trung thực",
-      "words": 4,
-      "chars": 19,
-      "lines": 2,
-      "size": 32.5,
-      "vw": 8.3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.47,
-      "top": 4516,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "0",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 128,
-      "vw": 32.8,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.08,
-      "leading": 0.7,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.2,
-      "top": 4718,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "Tự kiểm tra ngay",
-      "words": 4,
-      "chars": 16,
-      "lines": 1,
-      "size": 32.5,
-      "vw": 8.3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 5021,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Giá trị nhỏ nhất của f(x) = x² − 6x + 10?",
-      "words": 12,
-      "chars": 41,
-      "lines": 2,
-      "size": 24,
-      "vw": 6.2,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.79,
-      "top": 5335,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Một vòng học hoàn chỉnh",
-      "words": 5,
-      "chars": 23,
-      "lines": 2,
-      "size": 32.5,
-      "vw": 8.3,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.58,
-      "top": 5801,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Cần một lộ trình phù hợp? Xem form tư vấn và trạng thái kết nối.",
-      "words": 15,
-      "chars": 64,
-      "lines": 3,
-      "size": 23.2,
-      "vw": 5.9,
-      "font": "Be Vietnam Pro",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.25,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 7580,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "BienEdu",
-      "words": 1,
-      "chars": 7,
-      "lines": 1,
-      "size": 93.6,
-      "vw": 24,
-      "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.09,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 8124,
-      "tag": "div",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 21,
+     "count": 6,
      "maxLines": 4,
      "over2Lines": 0,
-     "statements": 3,
+     "statements": 1,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -1942,51 +1008,68 @@
      ],
      "familyCount": 1,
      "sizes": [
+      12,
       13,
       16,
       17,
-      18,
-      20,
-      22,
-      23,
       24,
-      28,
       32,
       33,
       36,
-      64,
-      94,
-      128
+      56
      ],
-     "sizeCount": 15,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "Be Vietnam Pro",
-      "size": 16.1,
-      "leading": 1.55,
+      "size": 24,
+      "leading": 1.3,
       "weight": 400,
-      "tracking": 0,
-      "contrast": 14.6
+      "tracking": -0.025,
+      "contrast": 17.9
      },
-     "measureChars": 44,
+     "measureChars": 30,
      "max": {
-      "size": 128,
-      "vw": 32.8,
+      "size": 56,
+      "vw": 14.4,
       "font": "Be Vietnam Pro",
-      "text": "0"
+      "text": "10"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 0,
-     "microLabelShare": 0,
-     "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0,
-     "smallText": 0
+     "microLabels": 1,
+     "microLabelShare": 0.032,
+     "microSamples": [
+      "Học · luyện · kiểm tra"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0.01,
+     "smallText": 4
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Học · luyện · kiểm tra",
+      "above": "Một nhịp học rõ ràng",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1123
+     },
+     {
+      "text": "Bài kiểm tra nhanh",
+      "above": "10",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1378
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#ffffff",
@@ -1999,7 +1082,7 @@
      "sectionBgs": [
       {
        "color": "#f1f5f9",
-       "top": 652,
+       "top": 427,
        "hsl": {
         "h": 210,
         "s": 0.4,
@@ -2007,111 +1090,109 @@
        }
       },
       {
-       "color": "#dbeafe",
-       "top": 662,
+       "color": "#f8fafc",
+       "top": 1069,
        "hsl": {
-        "h": 214,
-        "s": 0.95,
-        "l": 0.93
-       }
-      },
-      {
-       "color": "#061b38",
-       "top": 1702,
-       "hsl": {
-        "h": 215,
-        "s": 0.81,
-        "l": 0.12
-       }
-      },
-      {
-       "color": "#2563eb",
-       "top": 7548,
-       "hsl": {
-        "h": 221,
-        "s": 0.83,
-        "l": 0.53
+        "h": 210,
+        "s": 0.4,
+        "l": 0.98
        }
       }
      ],
      "textColors": [
       {
        "color": "#0f172a",
-       "share": 0.48
+       "share": 0.58
       },
       {
-       "color": "#ffffff",
-       "share": 0.25
-      },
-      {
-       "color": "#475569",
-       "share": 0.16
+       "color": "#334155",
+       "share": 0.14
       },
       {
        "color": "#d8e8ff",
-       "share": 0.08
+       "share": 0.1
       },
       {
-       "color": "#bcd4f4",
-       "share": 0.03
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#2563eb",
+      "bg": "#0f172a",
       "hsl": {
-       "h": 221,
-       "s": 0.83,
-       "l": 0.53
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 4,
+     "count": 6,
      "inHero": 2,
-     "radius": 4,
-     "height": 49,
+     "radius": 8,
+     "height": 43,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Bỏ qua điều hướng",
-      "Khám phá khóa học"
+      "Xem nội dung khóa học"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "div.study-rhythm__shell → rgba(15, 37, 67, 0.08) 0px 16px 40px 0px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 0,
-     "hairlineSamples": [],
-     "outlinedBoxes": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "footer.site-footer 390px",
+      "div.footer-meta 358px"
+     ],
+     "outlinedBoxes": 2,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 7,
+     "roundedBoxes": 4,
+     "boxRadius": 12,
+     "squareMedia": 1,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
-     "cardRows": []
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1082
+      }
+     ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.2
+      "ratio": 0.18
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
      }
     ],
     "nav": {
      "links": 1,
-     "fixed": false,
-     "height": 76,
+     "fixed": true,
+     "height": 67,
      "floatingPill": false,
      "blur": false
     },
@@ -2124,11 +1205,11 @@
  ],
  "findings": [
   {
-   "level": "WARN",
-   "id": "size-count",
+   "level": "FAIL",
+   "id": "eyebrow",
    "width": 1440,
-   "message": "15 different font sizes (14, 18, 20, 22, 26, 32, 35, 36, 43, 58, 63, 64, 115, 230, 288).",
-   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "message": "2 eyebrow/kicker label(s) above headings: \"Học · luyện · kiểm tra\" above \"Một nhịp học rõ ràng\"; \"Bài kiểm tra nhanh\" above \"10\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
    "alsoAt": [
     768,
     390
@@ -2136,10 +1217,93 @@
   },
   {
    "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "1 tiny uppercase letter-spaced label(s): \"Học · luyện · kiểm tra\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "1 box-shadow(s) on elements at rest: div.study-rhythm__shell → rgba(15, 37, 67, 0.08) 0px 16px 40px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): footer.site-footer 1440px | div.footer-meta 1376px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "2 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (12, 13, 14, 18, 26, 36, 58, 63, 64, 86).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
    "id": "no-footage",
    "width": 1440,
    "message": "No video anywhere on the page.",
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "4 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 64px (4.4vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 9 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Học Toán 12 theo từng phần\" → 3 lines (6 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
   }
  ],
  "images": [
@@ -2148,9 +1312,7 @@
    "width": 1440,
    "fold": "D:\\BienEdu\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
-    "D:\\BienEdu\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "D:\\BienEdu\\.taste-skill\\inspect\\desktop-page-02.jpg",
-    "D:\\BienEdu\\.taste-skill\\inspect\\desktop-page-03.jpg"
+    "D:\\BienEdu\\.taste-skill\\inspect\\desktop-page-01.jpg"
    ]
   },
   {
@@ -2158,8 +1320,7 @@
    "width": 768,
    "fold": "D:\\BienEdu\\.taste-skill\\inspect\\tablet-fold.jpg",
    "pages": [
-    "D:\\BienEdu\\.taste-skill\\inspect\\tablet-page-01.jpg",
-    "D:\\BienEdu\\.taste-skill\\inspect\\tablet-page-02.jpg"
+    "D:\\BienEdu\\.taste-skill\\inspect\\tablet-page-01.jpg"
    ]
   },
   {
@@ -2167,8 +1328,7 @@
    "width": 390,
    "fold": "D:\\BienEdu\\.taste-skill\\inspect\\mobile-fold.jpg",
    "pages": [
-    "D:\\BienEdu\\.taste-skill\\inspect\\mobile-page-01.jpg",
-    "D:\\BienEdu\\.taste-skill\\inspect\\mobile-page-02.jpg"
+    "D:\\BienEdu\\.taste-skill\\inspect\\mobile-page-01.jpg"
    ]
   }
  ]

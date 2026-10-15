@@ -1,4 +1,5 @@
 import { bindNavigation, renderLayout } from "./components/layout.js";
+import { initializeHomeScrollExperience } from "./home-motion.js";
 import { initializeMotion } from "./motion.js";
 
 const isDuplicateHomeRoute = location.protocol !== "file:" && /\/index\.html$/i.test(location.pathname);
@@ -11,7 +12,8 @@ if (isDuplicateHomeRoute) {
   const page = document.body.dataset.page ?? "home";
   renderLayout(page);
   bindNavigation();
-  initializeMotion();
+  if (page === "home") initializeHomeScrollExperience();
+  else initializeMotion();
 }
 
 document.addEventListener("click", (event) => {

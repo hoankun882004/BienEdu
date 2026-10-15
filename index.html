@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi" class="js">
+<html lang="vi" class="js home-page">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=7.1">
-  <script type="module" src="assets/js/main.js?v=7.1"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=8.0">
+  <script type="module" src="assets/js/main.js?v=8.0"></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
   <div data-site-header></div>
 
   <main id="main-content" tabindex="-1">
-    <section class="home-hero">
+    <section class="home-hero" id="home" data-scroll-section>
       <div class="home-hero__copy">
         <h1 class="hero-title lines"><span class="line"><span data-line style="--i:0">Học Toán 12</span></span><span class="line"><span data-line style="--i:1">theo từng phần</span></span></h1>
         <p>Ôn lại phần chưa chắc, luyện theo chuyên đề rồi tự kiểm tra bằng lời giải rõ ràng.</p>
@@ -48,29 +48,29 @@
       </div>
     </section>
 
-    <section class="section section--intro" data-reveal>
-      <div>
+    <section class="section section--intro" id="study-system" data-scroll-section>
+      <div data-home-reveal>
         <h2>Học có hệ thống</h2>
       </div>
-      <p class="statement">BienEdu gom kiến thức, luyện tập và tự kiểm tra vào một đường học liền mạch dành riêng cho học sinh lớp 12.</p>
+      <p class="statement" data-home-reveal>BienEdu gom kiến thức, luyện tập và tự kiểm tra vào một đường học liền mạch dành riêng cho học sinh lớp 12.</p>
     </section>
 
-    <section class="study-rhythm section" aria-labelledby="benefit-title">
+    <section class="study-rhythm section" id="study-rhythm" aria-labelledby="benefit-title" data-scroll-section>
       <div class="study-rhythm__shell">
-        <div class="study-rhythm__intro" data-reveal>
+        <div class="study-rhythm__intro" data-home-reveal>
           <p class="section-eyebrow">Học · luyện · kiểm tra</p>
           <h2 id="benefit-title">Một nhịp học rõ ràng</h2>
           <p>Mỗi chặng đủ ngắn để bắt đầu ngay, đủ rõ để biết phần nào cần học tiếp.</p>
         </div>
-        <figure class="study-rhythm__image drift" data-reveal>
+        <figure class="study-rhythm__image drift" data-home-reveal>
           <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Trang ghi chú Toán với đồ thị và công thức">
         </figure>
-        <div class="study-rhythm__stat" data-reveal>
+        <div class="study-rhythm__stat" data-home-reveal>
           <span>Bài kiểm tra nhanh</span>
           <strong>10</strong>
           <p>câu hỏi bao quát các vùng kiến thức chính</p>
         </div>
-        <div class="study-rhythm__benefits" data-reveal>
+        <div class="study-rhythm__benefits" data-home-reveal>
           <h3>Trong một lượt học</h3>
           <ul>
             <li>Đọc kiến thức cô đọng</li>

@@ -27,9 +27,10 @@ async function open(page, route, settleMs = 220) {
   await page.goto(`${origin}${route}`, { timeoutMs: 30000, settleMs });
   await page.eval(`(() => {
     const style = document.createElement('style');
-    style.textContent = '* { animation-duration: 0s !important; animation-delay: 0s !important; transition-duration: 0s !important; } .js [data-reveal], .js .home-hero__copy > p, .js .tutor-hero__copy > p, .js .hero-actions { opacity: 1 !important; transform: none !important; } .js .shutter { clip-path: inset(0) !important; } .js .shutter img, .js .lines [data-line] { transform: none !important; }';
+    style.textContent = '* { animation-duration: 0s !important; animation-delay: 0s !important; transition-duration: 0s !important; } .js [data-reveal], .home-motion-enabled [data-home-reveal], .js .home-hero__copy > p, .js .tutor-hero__copy > p, .js .hero-actions { opacity: 1 !important; transform: none !important; } .js .shutter { clip-path: inset(0) !important; } .js .shutter img, .js .lines [data-line] { transform: none !important; }';
     document.head.append(style);
     document.querySelectorAll('[data-reveal]').forEach((element) => element.classList.add('is-in'));
+    document.querySelectorAll('[data-home-reveal]').forEach((element) => element.classList.add('is-visible'));
   })()`);
 }
 
