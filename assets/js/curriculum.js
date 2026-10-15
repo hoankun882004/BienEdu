@@ -27,6 +27,12 @@ const knowledgeCounts = Object.fromEntries(Object.entries(knowledgeSections).map
 let progressState = loadLearningProgress();
 let confirmExamSubmit = false;
 
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+function resetRouteScroll() {
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+}
+
 function escapeHtml(value) {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
@@ -307,6 +313,7 @@ function navigate(href, replace = false) {
   confirmExamSubmit = false;
   if (replace) history.replaceState(null, "", href); else history.pushState(null, "", href);
   renderRoute();
+  resetRouteScroll();
 }
 
 app?.addEventListener("input", (event) => {
@@ -359,5 +366,6 @@ app?.addEventListener("click", (event) => {
   if (action === "reset-exam") { const route = readRoute(); persist(resetExam(progressState, route.topicId)); navigate(routeUrl({ topicId: route.topicId, exam: "final", question: 1 }), true); }
 });
 
-addEventListener("popstate", () => { confirmExamSubmit = false; renderRoute(); });
+addEventListener("popstate", () => { confirmExamSubmit = false; renderRoute(); resetRouteScroll(); });
 renderRoute();
+resetRouteScroll();

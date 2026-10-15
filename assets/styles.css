@@ -849,12 +849,15 @@ ul, ol { margin: 0; padding: 0; }
 
 .back-link {
   display: inline-flex;
-  min-height: 2.75rem;
+  min-height: 3.25rem;
   align-items: center;
+  gap: 0.45rem;
   color: var(--accent-strong);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
   text-decoration: none;
+  text-underline-offset: 0.22em;
 }
 .topic-detail__header {
   display: grid;

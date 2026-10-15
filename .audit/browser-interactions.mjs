@@ -32,6 +32,23 @@ try {
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic').length"), 1);
   assert.equal(await page.eval("document.querySelector('.roadmap-topic__code').textContent"), "CD20");
 
+  await page.eval(`(() => {
+    const input = document.querySelector('[data-curriculum-search]');
+    input.value = '';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  })()`);
+  await sleep(100);
+  const routeScrollBefore = await page.eval(`(() => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, left: 0, behavior: 'instant' });
+    return window.scrollY;
+  })()`);
+  assert.ok(routeScrollBefore > 0, "catalog should be scrolled before opening CD20");
+  await page.eval("document.querySelector('.roadmap-topic[href*=\"topic=CD20\"]').click()");
+  await sleep(120);
+  assert.ok(await page.eval("window.scrollY <= 1"), "opening CD20 should reset the document to the top");
+  assert.equal(await page.eval("document.querySelector('#topic-detail-title').textContent"), "Quy tắc đếm – tổ hợp nâng cao");
+  assert.ok(await page.eval("parseFloat(getComputedStyle(document.querySelector('.back-link')).fontSize) >= 16.8"), "topic back links should use the larger shared size");
+
   await page.goto(`${origin}/documents.html?topic=CD20`, { timeoutMs: 30000, settleMs: 350 });
   assert.equal(await page.eval("document.querySelectorAll('.type-list a').length"), 17);
   assert.ok(await page.eval("document.querySelector('.final-exam-card').classList.contains('is-locked')"));
