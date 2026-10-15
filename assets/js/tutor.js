@@ -12,7 +12,7 @@ if (root) {
           <span class="line"><span data-line style="--i:1">Thanh Tùng</span></span>
         </h1>
         <p class="tutor-role">${tutorProfile.title}</p>
-        <p class="tutor-intro">Thầy sinh năm ${tutorProfile.birthYear}, tốt nghiệp ${tutorProfile.education.toLocaleLowerCase("vi")} và đã có ${tutorProfile.experience}.</p>
+        <p class="tutor-intro">Thầy sinh năm ${tutorProfile.birthYear}, tốt nghiệp ${tutorProfile.education} và đã có ${tutorProfile.experience}.</p>
         <div class="hero-actions">
           <a class="button" href="documents.html">Xem lộ trình Toán 12</a>
         </div>
@@ -39,22 +39,10 @@ if (root) {
       </div>
     </section>
 
-    <section class="study-gallery" aria-label="Hình ảnh minh họa môi trường học Toán, không phải ảnh cá nhân của gia sư">
-      <img data-reveal src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Sổ ghi chép Toán trong hình ảnh minh họa học tập">
-      <img data-reveal src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="Phiếu trắc nghiệm trong hình ảnh minh họa học tập">
-      <img data-reveal src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Phiếu chuyên đề trong hình ảnh minh họa học tập">
-      <img data-reveal src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="Góc tự học trong hình ảnh minh họa học tập">
-    </section>
-
-    <section class="tutor-contact section" aria-labelledby="tutor-contact-title">
-      <div data-reveal>
-        <h2 id="tutor-contact-title">Kết nối với thầy Trần Thanh Tùng</h2>
-      </div>
-      <div class="tutor-contact__action" data-reveal>
-        <p>Nếu cần trao đổi về cách học phù hợp, bạn có thể nhắn trực tiếp qua Zalo.</p>
-        <a class="button" href="${tutorProfile.contact.url}" target="_blank" rel="noopener noreferrer" aria-label="Nhắn tin với thầy Trần Thanh Tùng qua Zalo">Nhắn qua Zalo</a>
-      </div>
-    </section>`;
+    <a class="zalo-chat-bubble" href="${tutorProfile.contact.url}" target="_blank" rel="noopener noreferrer" aria-label="Nhắn tin với thầy Trần Thanh Tùng qua Zalo">
+      <span aria-hidden="true">Zalo</span>
+      <small>Nhắn tin qua Zalo</small>
+    </a>`;
 
   initializeMotion();
 }

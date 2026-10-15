@@ -1,6 +1,6 @@
-import { quizQuestions } from "./data/quiz-data.js";
-import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js";
-import { initializeMotion } from "./motion.js";
+import { quizQuestions } from "./data/quiz-data.js?v=7.2";
+import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js?v=7.2";
+import { initializeMotion } from "./motion.js?v=7.2";
 
 const root = document.querySelector("[data-quiz-root]");
 let state = createQuizState(quizQuestions.length);
@@ -50,14 +50,14 @@ function quizQuestion() {
       <div class="question-panel">
         <p class="question-topic">${question.topic}</p>
         <h2>Câu ${state.currentIndex + 1}</h2>
-        <p class="question-prompt">${question.prompt}</p>
+        <p class="question-prompt math-text">${question.prompt}</p>
         <fieldset>
           <legend class="sr-only">Chọn một đáp án</legend>
           ${question.options.map((option, index) => `
             <label class="answer-option ${state.answers[state.currentIndex] === index ? "is-selected" : ""}">
               <input type="radio" name="answer" value="${index}" ${state.answers[state.currentIndex] === index ? "checked" : ""}>
               <span aria-hidden="true">${String.fromCharCode(65 + index)}</span>
-              <b>${option}</b>
+              <b class="math-text">${option}</b>
             </label>
           `).join("")}
         </fieldset>
@@ -119,12 +119,15 @@ function quizResults() {
           const isCorrect = selected === question.correctIndex;
           return `
             <li class="result-item ${isCorrect ? "is-correct" : "is-wrong"}">
-              <div>
+              <header>
                 <span>Câu ${index + 1} · ${question.topic}</span>
-                <h3>${question.prompt}</h3>
+                <b class="result-verdict">${isCorrect ? "Đúng" : "Cần xem lại"}</b>
+              </header>
+              <h3 class="math-text">${question.prompt}</h3>
+              <div class="result-item__details">
+                <div class="result-answer"><span>Đáp án đúng</span><p class="math-text"><b>${String.fromCharCode(65 + question.correctIndex)}</b>${question.options[question.correctIndex]}</p></div>
+                <div class="result-explanation"><span>Lời giải</span><p class="math-text">${question.explanation}</p></div>
               </div>
-              <p><strong>${isCorrect ? "Đúng" : "Chưa đúng"}.</strong> Đáp án đúng: ${String.fromCharCode(65 + question.correctIndex)}. ${question.options[question.correctIndex]}</p>
-              <p>${question.explanation}</p>
             </li>`;
         }).join("")}
       </ol>

@@ -6,13 +6,13 @@
   <meta name="description" content="BienEdu là nền tảng học Toán 12 với lộ trình kiến thức, tài liệu, bài kiểm tra và tư vấn minh bạch.">
   <meta name="theme-color" content="#ffffff">
   <title>BienEdu · Học Toán 12 có lộ trình</title>
+  <link rel="canonical" href="https://bienedu.vercel.app/">
   <link rel="icon" href="assets/images/bienedu-logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script type="module" src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/home.js"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=7.1">
+  <script type="module" src="assets/js/main.js?v=7.1"></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
@@ -55,88 +55,29 @@
       <p class="statement">BienEdu gom kiến thức, luyện tập và tự kiểm tra vào một đường học liền mạch dành riêng cho học sinh lớp 12.</p>
     </section>
 
-    <section class="benefit-mosaic section" aria-labelledby="benefit-title">
-      <div class="benefit-tile benefit-tile--heading" data-reveal>
-        <h2 id="benefit-title">Một nhịp học rõ ràng</h2>
-      </div>
-      <figure class="benefit-tile benefit-tile--image drift" data-reveal>
-        <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Trang ghi chú Toán với đồ thị và công thức">
-      </figure>
-      <div class="benefit-tile benefit-tile--number" data-reveal>
-        <strong>10</strong>
-        <span>câu trong bài kiểm tra kiến thức</span>
-      </div>
-      <div class="benefit-tile benefit-tile--list" data-reveal>
-        <ul>
-          <li>Kiến thức cô đọng</li>
-          <li>Công thức dễ đọc</li>
-          <li>Trạng thái tiến độ rõ</li>
-          <li>Lời giải sau khi nộp</li>
-        </ul>
-      </div>
-      <div class="benefit-tile benefit-tile--statement" data-reveal>
-        <p>Không cần tài khoản để thử bài kiểm tra.</p>
-      </div>
-    </section>
-
-    <section class="topic-catalogue section" aria-labelledby="topics-title">
-      <header data-reveal>
-        <h2 id="topics-title">Các vùng kiến thức</h2>
-      </header>
-      <div class="topic-catalogue__layout">
-        <div class="topic-index" data-topic-index></div>
-        <figure class="topic-catalogue__image shutter" data-reveal>
-          <img src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Tài liệu ôn tập hình học và giải tích được sắp xếp trên bàn">
+    <section class="study-rhythm section" aria-labelledby="benefit-title">
+      <div class="study-rhythm__shell">
+        <div class="study-rhythm__intro" data-reveal>
+          <p class="section-eyebrow">Học · luyện · kiểm tra</p>
+          <h2 id="benefit-title">Một nhịp học rõ ràng</h2>
+          <p>Mỗi chặng đủ ngắn để bắt đầu ngay, đủ rõ để biết phần nào cần học tiếp.</p>
+        </div>
+        <figure class="study-rhythm__image drift" data-reveal>
+          <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Trang ghi chú Toán với đồ thị và công thức">
         </figure>
-      </div>
-      <a class="button" href="course.html">Xem lộ trình học</a>
-    </section>
-
-    <section class="quiz-preview section" aria-labelledby="quiz-preview-title">
-      <div class="quiz-preview__copy" data-reveal>
-        <h2 id="quiz-preview-title">Tự kiểm tra ngay</h2>
-        <p>Một bài trắc nghiệm 10 câu đi qua đạo hàm, tích phân, lôgarit, Oxyz, thống kê, xác suất và hình học không gian.</p>
-        <a class="button" href="quiz.html">Làm bài kiểm tra</a>
-      </div>
-      <div class="mini-question" data-ui data-reveal>
-        <span>Ứng dụng đạo hàm</span>
-        <h3>Giá trị nhỏ nhất của f(x) = x² − 6x + 10?</h3>
-        <div><b>A</b><span>−1</span></div>
-        <div><b>B</b><span>0</span></div>
-        <div class="is-selected"><b>C</b><span>1</span></div>
-        <div><b>D</b><span>3</span></div>
-      </div>
-    </section>
-
-    <section class="learning-path section" aria-labelledby="path-title">
-      <h2 id="path-title" data-reveal>Một vòng học hoàn chỉnh</h2>
-      <div class="learning-path__tiles">
-        <article class="path-stage path-stage--small" data-reveal>
-          <figure><img src="assets/images/bienedu-documents.png" width="1024" height="1536" alt="Các phiếu kiến thức Toán đã được sắp xếp"></figure>
-          <h3>Nắm kiến thức</h3>
-          <p>Đọc công thức, điều kiện và ví dụ theo từng chủ đề.</p>
-        </article>
-        <article class="path-stage path-stage--medium" data-reveal>
-          <figure><img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Bài giải đạo hàm và tích phân được ghi trong sổ"></figure>
-          <h3>Luyện có mục tiêu</h3>
-          <p>Chuyển từ nhận biết sang vận dụng bằng bài tập ngắn.</p>
-        </article>
-        <article class="path-stage path-stage--large" data-reveal>
-          <figure><img src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="Phiếu trắc nghiệm Toán đang được hoàn thành"></figure>
-          <h3>Kiểm tra và xem lại</h3>
-          <p>Nộp bài, xem điểm, đáp án đúng và lời giải cho từng câu.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact-cta" data-reveal>
-      <div class="photo-strip" aria-hidden="true">
-        <img src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="">
-        <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="">
-        <img src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="">
-      </div>
-      <div class="contact-cta__field">
-        <p>Cần người cùng xem lại phần chưa hiểu? <a href="contact.html">Xem hồ sơ gia sư</a>.</p>
+        <div class="study-rhythm__stat" data-reveal>
+          <span>Bài kiểm tra nhanh</span>
+          <strong>10</strong>
+          <p>câu hỏi bao quát các vùng kiến thức chính</p>
+        </div>
+        <div class="study-rhythm__benefits" data-reveal>
+          <h3>Trong một lượt học</h3>
+          <ul>
+            <li>Đọc kiến thức cô đọng</li>
+            <li>Xem ví dụ từng bước</li>
+            <li>Làm bài và nhận lời giải</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

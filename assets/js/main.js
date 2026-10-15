@@ -1,10 +1,18 @@
 import { bindNavigation, renderLayout } from "./components/layout.js";
 import { initializeMotion } from "./motion.js";
 
-const page = document.body.dataset.page ?? "home";
-renderLayout(page);
-bindNavigation();
-initializeMotion();
+const isDuplicateHomeRoute = location.protocol !== "file:" && /\/index\.html$/i.test(location.pathname);
+
+if (isDuplicateHomeRoute) {
+  const canonical = new URL(location.href);
+  canonical.pathname = canonical.pathname.replace(/index\.html$/i, "");
+  location.replace(canonical.href);
+} else {
+  const page = document.body.dataset.page ?? "home";
+  renderLayout(page);
+  bindNavigation();
+  initializeMotion();
+}
 
 document.addEventListener("click", (event) => {
   const anchor = event.target.closest('a[href^="#"]');

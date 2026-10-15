@@ -52,11 +52,11 @@ export const quizQuestions = [
   {
     id: "q6",
     topic: "Vectơ và tọa độ Oxyz",
-    prompt: "Cho a⃗ = (2; −1; 3) và b⃗ = (1; 4; −2). Tích vô hướng a⃗ · b⃗ bằng bao nhiêu?",
+    prompt: "Cho a⃗ = (2; −1; 3) và b⃗ = (1; 4; −2). Tích vô hướng a⃗ × b⃗ bằng bao nhiêu?",
     options: ["−10", "−8", "0", "8"],
     correctIndex: 1,
     hint: "Nhân từng tọa độ tương ứng của hai vectơ, sau đó cộng ba kết quả lại.",
-    explanation: "a⃗ · b⃗ = 2·1 + (−1)·4 + 3·(−2) = 2 − 4 − 6 = −8."
+    explanation: "a⃗ × b⃗ = 2 × 1 + (−1) × 4 + 3 × (−2) = 2 − 4 − 6 = −8."
   },
   {
     id: "q7",
@@ -92,6 +92,6 @@ export const quizQuestions = [
     options: ["12 cm³", "20 cm³", "30 cm³", "60 cm³"],
     correctIndex: 1,
     hint: "Nhớ công thức thể tích khối chóp bằng một phần ba diện tích đáy nhân chiều cao.",
-    explanation: "V = (1/3)Sđáy·h = (1/3)·12·5 = 20 cm³."
+    explanation: "V = (1/3)Sđáy × h = (1/3) × 12 × 5 = 20 cm³."
   }
 ];

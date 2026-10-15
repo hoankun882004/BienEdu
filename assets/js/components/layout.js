@@ -6,7 +6,7 @@ const navigation = [
 ];
 
 const brand = `
-  <a class="brand" href="index.html" aria-label="BienEdu, về trang chủ">
+  <a class="brand" href="./" aria-label="BienEdu, về trang chủ">
     <img src="assets/images/bienedu-logo.png" width="1672" height="941" alt="BienEdu">
   </a>`;
 
@@ -33,11 +33,12 @@ export function renderLayout(activePage) {
     footerTarget.innerHTML = `
       <footer class="site-footer">
         <div class="footer-grid">
-          ${brand}
-          <nav aria-label="Điều hướng cuối trang">${navigation.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}</nav>
+          <div class="footer-brand">${brand}<p>Học Toán 12 theo từng phần, có lộ trình và lời giải rõ ràng.</p></div>
+          <nav aria-label="Điều hướng cuối trang">${navigation.map((item) => `<a href="${item.href}" ${item.id === activePage ? 'aria-current="page"' : ""}>${item.label}</a>`).join("")}</nav>
         </div>
         <div class="footer-meta">
           <span>© 2026 BienEdu</span>
+          <span>Chương trình Toán 12</span>
         </div>
       </footer>`;
   }

@@ -27,7 +27,7 @@ try {
   await page.goto(`${origin}/documents.html`, { timeoutMs: 30000, settleMs: 350 });
 
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic').length"), 39);
-  assert.equal(await page.eval("document.querySelector('[data-curriculum-status]').textContent"), "39 chuyên đề");
+  assert.equal(await page.eval("document.querySelector('[data-curriculum-status]').textContent.replace(/\\s+/g, ' ').trim()"), "Đang hiển thị 39 chuyên đề");
   await page.eval(`(() => { const input = document.querySelector('[data-curriculum-search]'); input.value = '20.1'; input.dispatchEvent(new Event('input', { bubbles: true })); })()`);
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic').length"), 1);
   assert.equal(await page.eval("document.querySelector('.roadmap-topic__code').textContent"), "CD20");

@@ -23,9 +23,12 @@ Sau đó mở `http://localhost:8000/`. Không mở trực tiếp bằng `file:/
 ```powershell
 npm.cmd test
 npm.cmd run test:browser
+npm.cmd run test:polish
 ```
 
-`npm.cmd test` kiểm tra dữ liệu lộ trình, 61 slide nguồn, 75 bài luyện tập, tiến độ, đề cuối chuyên đề, hồ sơ gia sư và logic quiz. `npm.cmd run test:browser` kiểm tra luồng học, khóa/mở đề, không rò đáp án trước khi nộp và responsive trên Chromium.
+`npm.cmd test` kiểm tra dữ liệu lộ trình, 61 slide nguồn, 75 bài luyện tập, tiến độ, đề cuối chuyên đề, hồ sơ gia sư và logic quiz. `npm.cmd run test:browser` kiểm tra luồng học, khóa/mở đề, không rò đáp án trước khi nộp và responsive trên Chromium. `npm.cmd run test:polish` kiểm tra điều hướng chuẩn, catalog khóa học 13/39, modal đăng ký, trạng thái Lộ trình, CTA gia sư và tràn ngang trên bảy kích thước màn hình.
+
+URL trang chủ chuẩn là `/`. Cấu hình Vercel chuyển hướng vĩnh viễn `/index.html` về `/`; các trang công khai đều có thẻ canonical tương ứng.
 
 ## Dữ liệu lộ trình Toán 12
 

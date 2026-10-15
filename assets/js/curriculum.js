@@ -59,16 +59,22 @@ function persist(next) {
   progressState = saveLearningProgress(next);
 }
 
+function sentenceCase(value) {
+  const lower = String(value).toLocaleLowerCase("vi");
+  return lower.charAt(0).toLocaleUpperCase("vi") + lower.slice(1);
+}
+
 function renderGroupOptions() {
-  return `<option value="all">Tất cả nhóm · ${curriculumMeta.topicCount}</option>${curriculumGroups.map((group) => `<option value="${group.id}" ${filterState.groupId === group.id ? "selected" : ""}>${group.id} · ${escapeHtml(group.name)} · ${group.topics.length}</option>`).join("")}`;
+  return `<option value="all" ${filterState.groupId === "all" ? "selected" : ""}>Tất cả nhóm kiến thức</option>${curriculumGroups.map((group) => `<option value="${group.id}" ${filterState.groupId === group.id ? "selected" : ""}>${group.id} · ${escapeHtml(sentenceCase(group.name))} (${group.topics.length})</option>`).join("")}`;
 }
 
 function renderTopicRow(topic) {
   const source = getDocumentForTopic(topic.id);
   const topicProgress = source ? getTopicProgress(progressState, topic, knowledgeCounts) : null;
-  return `<a class="roadmap-topic" href="${routeUrl({ topicId: topic.id })}" data-route>
+  return `<a class="roadmap-topic ${source ? "is-ready" : "is-pending"}" href="${routeUrl({ topicId: topic.id })}" data-route>
     <span class="roadmap-topic__code">${topic.id}</span>
     <span class="roadmap-topic__name"><strong>${escapeHtml(topic.title)}</strong><small>${escapeHtml(topic.groupName)}</small></span>
+    <span class="roadmap-topic__state">${source ? "Bài học sẵn sàng" : "Đang bổ sung"}</span>
     <span class="roadmap-topic__meta">${topicProgress ? `${topicProgress.completedLessons}/${topicProgress.totalLessons} hoàn thành` : `${topic.exerciseTypes.length} dạng bài`}</span>
     <span class="roadmap-topic__arrow" aria-hidden="true">→</span>
   </a>`;
@@ -78,12 +84,12 @@ function renderCatalog() {
   const topics = filterCurriculum(curriculumGroups, filterState);
   document.body.classList.remove("learning-mode");
   app.innerHTML = `<section class="roadmap-view" aria-labelledby="roadmap-title">
-    <header class="roadmap-intro"><p class="roadmap-intro__eyebrow">Chương trình Toán 12</p><h1 id="roadmap-title">Lộ trình Toán 12</h1><p>Chọn chuyên đề, học kiến thức trọng tâm và luyện tập ngay.</p></header>
+    <header class="roadmap-intro"><p class="roadmap-intro__eyebrow">Chương trình Toán 12</p><h1 id="roadmap-title">Lộ trình Toán 12</h1><p>Danh mục có đủ ${curriculumMeta.topicCount} chuyên đề từ catalog gốc. CD20–CD21 hiện đã có bài đọc, ví dụ và bài luyện tập.</p></header>
     <div class="roadmap-toolbar" data-ui>
-      <label class="roadmap-field roadmap-field--group"><span>Nhóm kiến thức</span><select data-curriculum-group>${renderGroupOptions()}</select></label>
+      <label class="roadmap-field roadmap-field--group"><span>Nhóm kiến thức</span><select data-curriculum-group>${renderGroupOptions()}</select><small>${curriculumMeta.groupCount} nhóm trong chương trình</small></label>
       <label class="roadmap-field roadmap-field--search"><span>Tìm chuyên đề</span><input type="search" data-curriculum-search value="${escapeHtml(filterState.query)}" placeholder="Mã, chuyên đề hoặc dạng bài" autocomplete="off"></label>
       <button class="text-button roadmap-clear" type="button" data-clear-filters ${!filterState.query && filterState.groupId === "all" ? "hidden" : ""}>Xóa lọc</button>
-      <p class="roadmap-status" data-curriculum-status aria-live="polite">${topics.length} chuyên đề</p>
+      <p class="roadmap-status" data-curriculum-status aria-live="polite"><span>Đang hiển thị</span> <strong>${topics.length} chuyên đề</strong></p>
     </div>
     <div class="roadmap-list">${topics.length ? topics.map(renderTopicRow).join("") : `<section class="roadmap-empty"><h2>Không tìm thấy chuyên đề</h2><p>Thử từ khóa khác hoặc xóa bộ lọc.</p></section>`}</div>
   </section>`;
@@ -103,9 +109,9 @@ function renderTopicDetail(topic) {
       ${topic.exerciseTypes.map((exercise) => {
         const section = getKnowledgeSection(exercise.code);
         const lessonProgress = section ? getLessonProgress(progressState, exercise.code, getKnowledgeContent(exercise.code) ? 1 : section.knowledgeSlides.length, getExampleContent(exercise.code)?.length ?? section.exampleSlides.length) : null;
-        return `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })}" data-route class="${lessonProgress?.isComplete ? "is-complete" : ""}">
+        return `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })}" data-route class="${lessonProgress?.isComplete ? "is-complete" : ""} ${section ? "is-ready" : "is-pending"}">
           <span>${escapeHtml(exercise.code)}</span><strong>${escapeHtml(exercise.title)}</strong>
-          <small>${lessonProgress ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.percent}% · Kiến thức + Bài tập`) : "Đang bổ sung"}</small><b aria-hidden="true">→</b>
+          <small>${lessonProgress ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.percent}% · Kiến thức + Bài tập`) : "Bài học đang được biên soạn"}</small><b aria-hidden="true">→</b>
         </a>`;
       }).join("")}
     </nav>
