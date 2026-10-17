@@ -1,4 +1,4 @@
-import { generatePracticeSet } from "./exercise-generators.js?v=8.1";
+import { generatePracticeSet } from "./exercise-generators.js?v=8.2";
 
 export const finalExamBlueprints = Object.freeze({
   CD20: [

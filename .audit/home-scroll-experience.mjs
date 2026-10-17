@@ -38,7 +38,7 @@ try {
 
   for (const size of sizes) {
     await page.setViewport(size);
-    await page.goto(`${origin}/`, { timeoutMs: 30000, settleMs: 220 });
+    await page.goto(`${origin}/?grade=12`, { timeoutMs: 30000, settleMs: 220 });
     const state = await page.eval(`(() => {
       const main = document.querySelector('main');
       const nestedScrollers = [...main.querySelectorAll('*')].filter((element) => {

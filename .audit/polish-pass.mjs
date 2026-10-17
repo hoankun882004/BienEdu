@@ -37,9 +37,9 @@ async function open(page, route, settleMs = 220) {
 try {
   const page = await browser.newPage({ width: 1440, height: 900, dsf: 1, mobile: false });
 
-  await open(page, "/index.html", 350);
+  await open(page, "/index.html?grade=12", 350);
   assert.equal(await page.eval("location.pathname"), "/", "/index.html must redirect to the canonical root");
-  assert.equal(await page.eval("document.querySelector('.site-nav a').getAttribute('href')"), "course.html");
+  assert.equal(await page.eval("new URL(document.querySelector('.site-nav a').href).searchParams.get('grade')"), "12");
   assert.equal(await page.eval("document.querySelectorAll('.footer-grid nav a').length"), 4);
   assert.equal(await page.eval("document.querySelector('.study-rhythm') !== null"), true, "home must keep the concise study rhythm");
   assert.equal(await page.eval("document.querySelector('.study-rhythm__note')"), null, "home must remove the no-account note");

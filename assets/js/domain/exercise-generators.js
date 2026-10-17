@@ -1,4 +1,4 @@
-import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.1";
+import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.2";
 
 function factorial(value) {
   let result = 1;

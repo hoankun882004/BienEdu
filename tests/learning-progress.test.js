@@ -7,11 +7,13 @@ import { findTopic } from "../assets/js/domain/curriculum-filter.js";
 import {
   createLearningProgress,
   getLessonProgress,
+  getLearningStorageKey,
   getTopicProgress,
   loadLearningProgress,
   markExampleViewed,
   markKnowledgeViewed,
   recordPracticeAnswer,
+  LEGACY_LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_VERSION
 } from "../assets/js/domain/learning-progress.js";
@@ -62,7 +64,28 @@ test("final exams unlock only after every subtopic is complete", () => {
   }
 });
 
-test("V6.1 uses a new incompatible storage namespace", () => {
+test("progress uses a separate namespace for every grade", () => {
   assert.equal(LEARNING_STORAGE_VERSION, 2);
-  assert.equal(LEARNING_STORAGE_KEY, "bienedu.learning.v2");
+  assert.equal(LEARNING_STORAGE_KEY, "bienedu:progress:v2:grade12");
+  assert.equal(getLearningStorageKey("9"), "bienedu:progress:v2:grade9");
+  assert.equal(getLearningStorageKey("10"), "bienedu:progress:v2:grade10");
+  assert.equal(getLearningStorageKey("11"), "bienedu:progress:v2:grade11");
+});
+
+test("legacy Grade 12 progress is migrated without leaking into other grades", () => {
+  const values = new Map();
+  const storage = {
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => values.set(key, value)
+  };
+  const legacy = markKnowledgeViewed(createLearningProgress(), "20.1", "20.1-knowledge-1");
+  values.set(LEGACY_LEARNING_STORAGE_KEY, JSON.stringify(legacy));
+
+  const grade12 = loadLearningProgress(storage, "12");
+  const grade10 = loadLearningProgress(storage, "10");
+
+  assert.deepEqual(grade12.lessons["20.1"].viewedKnowledge, ["20.1-knowledge-1"]);
+  assert.deepEqual(grade10, createLearningProgress());
+  assert.ok(values.has(getLearningStorageKey("12")));
+  assert.ok(values.has(LEGACY_LEARNING_STORAGE_KEY));
 });

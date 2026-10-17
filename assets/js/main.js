@@ -1,6 +1,14 @@
-import { bindNavigation, renderLayout } from "./components/layout.js?v=8.1";
-import { initializeHomeScrollExperience } from "./home-motion.js?v=8.1";
-import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.1";
+import { bindNavigation, renderLayout, updateLayoutGrade } from "./components/layout.js?v=8.2";
+import { applyGradePage } from "./components/grade-page.js?v=8.3";
+import { initializeGradeSelector } from "./components/grade-selector.js?v=8.2";
+import {
+  isGradeEntryUrl,
+  normalizeGradeUrl,
+  resolveCurrentGrade,
+  setSelectedGrade
+} from "./domain/grade-context.js?v=8.2";
+import { initializeHomeScrollExperience } from "./home-motion.js?v=8.2";
+import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
 
 const isDuplicateHomeRoute = location.protocol !== "file:" && /\/index\.html$/i.test(location.pathname);
 
@@ -10,8 +18,41 @@ if (isDuplicateHomeRoute) {
   location.replace(canonical.href);
 } else {
   const page = document.body.dataset.page ?? "home";
-  renderLayout(page);
+  const gradeResolution = isGradeEntryUrl(location.href)
+    ? { gradeId: null, source: "grade-entry" }
+    : resolveCurrentGrade();
+  let currentGradeId = gradeResolution.gradeId;
+
+  if (currentGradeId) {
+    const normalizedUrl = normalizeGradeUrl(location.href, currentGradeId);
+    if (`${location.pathname}${location.search}${location.hash}` !== normalizedUrl) {
+      history.replaceState(null, "", normalizedUrl);
+    }
+  }
+
+  renderLayout(page, currentGradeId);
   bindNavigation();
+  if (currentGradeId) applyGradePage(page, currentGradeId);
+
+  const gradeSelector = initializeGradeSelector({
+    gradeId: currentGradeId,
+    onGradeChange(nextGradeId) {
+      currentGradeId = setSelectedGrade(nextGradeId);
+      const nextUrl = normalizeGradeUrl(location.href, currentGradeId);
+
+      if (page !== "home") {
+        location.replace(nextUrl);
+        return;
+      }
+
+      history.replaceState(null, "", nextUrl);
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      updateLayoutGrade(currentGradeId);
+      gradeSelector.syncGrade(currentGradeId);
+      applyGradePage(page, currentGradeId);
+    }
+  });
+
   if (page === "home") initializeHomeScrollExperience();
   else initializeMotion();
 }

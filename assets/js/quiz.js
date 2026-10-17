@@ -1,8 +1,9 @@
-import { quizQuestions } from "./data/quiz-data.js?v=8.1";
-import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js?v=8.1";
-import { initializeMotion } from "./motion.js?v=8.1";
+import { getQuizForGrade } from "./data/quiz-by-grade.js?v=8.2";
+import { answerQuestion, createQuizState, scoreQuiz, toggleHint, unansweredIndexes } from "./domain/quiz-engine.js?v=8.2";
+import { initializeMotion } from "./motion.js?v=8.2";
 
 const root = document.querySelector("[data-quiz-root]");
+const quizQuestions = getQuizForGrade(document.body.dataset.grade);
 let state = createQuizState(quizQuestions.length);
 const PHASE_RENDERERS = {
   intro: quizIntro,

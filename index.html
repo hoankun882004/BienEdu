@@ -2,7 +2,7 @@
 <html lang="vi" class="js home-page">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="BienEdu là nền tảng học Toán 12 với lộ trình kiến thức, tài liệu, bài kiểm tra và tư vấn minh bạch.">
   <meta name="theme-color" content="#ffffff">
   <title>BienEdu · Học Toán 12 có lộ trình</title>
@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=8.1">
-  <script type="module" src="assets/js/main.js?v=8.1"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=8.3">
+  <script type="module" src="assets/js/main.js?v=8.3"></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
@@ -21,15 +21,15 @@
   <main id="main-content" tabindex="-1">
     <section class="home-hero" id="home" data-scroll-section>
       <div class="home-hero__copy">
-        <h1 class="hero-title lines"><span class="line"><span data-line style="--i:0">Học Toán 12</span></span><span class="line"><span data-line style="--i:1">theo từng phần</span></span></h1>
-        <p>Ôn lại phần chưa chắc, luyện theo chuyên đề rồi tự kiểm tra bằng lời giải rõ ràng.</p>
-        <div class="hero-actions">
+        <h1 class="hero-title lines"><span class="line"><span data-home-grade-title data-line style="--i:0">Học Toán 12</span></span><span class="line"><span data-home-grade-subtitle data-line style="--i:1">theo từng phần</span></span></h1>
+        <p data-home-grade-description>Ôn lại phần chưa chắc, luyện theo chuyên đề rồi tự kiểm tra bằng lời giải rõ ràng.</p>
+        <div class="hero-actions" data-home-grade-actions>
           <a class="button" href="course.html">Xem nội dung khóa học</a>
           <a class="text-link" href="documents.html">Xem lộ trình Toán 12</a>
         </div>
       </div>
 
-      <div class="specimen-mosaic" aria-label="Các hình ảnh và chủ đề Toán 12">
+      <div class="specimen-mosaic" data-grade-12-only aria-label="Các hình ảnh và chủ đề Toán 12">
         <figure class="specimen specimen--hero shutter is-in">
           <img src="assets/images/bienedu-hero-study.png" width="1536" height="1024" alt="Học sinh đang giải bài tích phân trong sổ ô ly" fetchpriority="high">
         </figure>
@@ -46,16 +46,29 @@
           <img src="assets/images/bienedu-quiz.png" width="1536" height="1024" alt="Học sinh làm phiếu trắc nghiệm Toán trên bàn thư viện">
         </figure>
       </div>
+      <aside class="home-grade-overview" data-home-grade-empty hidden>
+        <div class="home-grade-overview__intro">
+          <p class="section-eyebrow" data-home-overview-eyebrow>Lộ trình dành cho lớp 9</p>
+          <span class="home-grade-overview__number" data-home-overview-number aria-hidden="true">09</span>
+          <h2 data-home-overview-title>Học chắc nền tảng, ôn đúng trọng tâm</h2>
+          <p data-home-overview-description>Tập trung vào phần kiến thức cần nắm, duy trì nhịp luyện tập đều và nhận ra nội dung cần ôn thêm.</p>
+        </div>
+        <ol class="home-grade-overview__steps" aria-label="Ba bước học tại BienEdu">
+          <li><span>01</span><b>Hiểu kiến thức</b></li>
+          <li><span>02</span><b>Luyện từng dạng</b></li>
+          <li><span>03</span><b>Tự kiểm tra</b></li>
+        </ol>
+      </aside>
     </section>
 
-    <section class="section section--intro" id="study-system" data-scroll-section>
+    <section class="section section--intro" id="study-system" data-scroll-section data-grade-12-only>
       <div data-home-reveal>
         <h2>Học có hệ thống</h2>
       </div>
       <p class="statement" data-home-reveal>BienEdu gom kiến thức, luyện tập và tự kiểm tra vào một đường học liền mạch dành riêng cho học sinh lớp 12.</p>
     </section>
 
-    <section class="study-rhythm section" id="study-rhythm" aria-labelledby="benefit-title" data-scroll-section>
+    <section class="study-rhythm section" id="study-rhythm" aria-labelledby="benefit-title" data-scroll-section data-grade-12-only>
       <div class="study-rhythm__shell">
         <div class="study-rhythm__intro" data-home-reveal>
           <p class="section-eyebrow">Học · luyện · kiểm tra</p>

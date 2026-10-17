@@ -1,5 +1,12 @@
-export const LEARNING_STORAGE_KEY = "bienedu.learning.v2";
+export const LEGACY_LEARNING_STORAGE_KEY = "bienedu.learning.v2";
+export const LEARNING_STORAGE_PREFIX = "bienedu:progress:v2:grade";
 export const LEARNING_STORAGE_VERSION = 2;
+
+export function getLearningStorageKey(gradeId = "12") {
+  return `${LEARNING_STORAGE_PREFIX}${gradeId}`;
+}
+
+export const LEARNING_STORAGE_KEY = getLearningStorageKey("12");
 
 function createLessonProgress() {
   return { viewedKnowledge: [], viewedExamples: [], practiceAnswers: {} };
@@ -19,18 +26,32 @@ function normalize(progress) {
   };
 }
 
-export function loadLearningProgress(storage = globalThis.localStorage) {
+function readStoredProgress(storage, key) {
   try {
-    return normalize(JSON.parse(storage?.getItem(LEARNING_STORAGE_KEY) || "null"));
+    return JSON.parse(storage?.getItem(key) || "null");
   } catch {
-    return createLearningProgress();
+    return null;
   }
 }
 
-export function saveLearningProgress(progress, storage = globalThis.localStorage) {
+export function loadLearningProgress(storage = globalThis.localStorage, gradeId = "12") {
+  const storageKey = getLearningStorageKey(gradeId);
+  const storedProgress = readStoredProgress(storage, storageKey);
+  if (storedProgress) return normalize(storedProgress);
+
+  if (String(gradeId) === "12") {
+    const legacyProgress = readStoredProgress(storage, LEGACY_LEARNING_STORAGE_KEY);
+    if (legacyProgress?.version === LEARNING_STORAGE_VERSION) {
+      return saveLearningProgress(legacyProgress, storage, gradeId);
+    }
+  }
+  return createLearningProgress();
+}
+
+export function saveLearningProgress(progress, storage = globalThis.localStorage, gradeId = "12") {
   const normalized = normalize(progress);
   try {
-    storage?.setItem(LEARNING_STORAGE_KEY, JSON.stringify(normalized));
+    storage?.setItem(getLearningStorageKey(gradeId), JSON.stringify(normalized));
   } catch {
     // Storage can be unavailable in private browsing or restricted embeds.
   }

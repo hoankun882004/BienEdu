@@ -1,4 +1,4 @@
-import { prefersReducedMotion, revealElementsOnce } from "./motion.js?v=8.1";
+import { prefersReducedMotion, revealElementsOnce } from "./motion.js?v=8.2";
 
 function isInInitialViewport(element) {
   const bounds = element.getBoundingClientRect();

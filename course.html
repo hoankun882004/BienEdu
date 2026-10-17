@@ -2,7 +2,7 @@
 <html lang="vi" class="js">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Tổng quan khóa học Toán 12 BienEdu và lộ trình học theo các chủ đề hiện có.">
   <title>Khóa học Toán 12 · BienEdu</title>
   <link rel="canonical" href="https://bienedu.vercel.app/course.html">
@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=8.1">
-  <script type="module" src="assets/js/main.js?v=8.1"></script>
-  <script type="module" src="assets/js/course.js?v=8.1"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=8.2">
+  <script type="module" src="assets/js/main.js?v=8.3"></script>
+  <script type="module" src="assets/js/course.js?v=8.2"></script>
 </head>
 <body data-page="course">
   <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
@@ -20,26 +20,26 @@
   <main id="main-content" tabindex="-1">
     <section class="page-hero page-hero--course">
       <div data-reveal>
-        <h1>Khóa học Toán 12</h1>
-        <p>Ôn phần còn hổng, luyện theo từng chuyên đề rồi kiểm tra lại sau mỗi chặng.</p>
+        <h1 data-course-title>Khóa học Toán 12</h1>
+        <p data-course-description>Ôn phần còn hổng, luyện theo từng chuyên đề rồi kiểm tra lại sau mỗi chặng.</p>
         <div class="hero-actions">
-          <a class="button" href="documents.html">Xem lộ trình chi tiết</a>
+          <a class="button" href="documents.html" data-course-curriculum-link>Xem lộ trình chi tiết</a>
           <button class="button button--secondary" type="button" data-registration-open>Hướng dẫn đăng ký</button>
         </div>
       </div>
       <figure class="page-hero__image shutter is-in" data-reveal>
-        <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Sổ học Toán với bài đạo hàm và tích phân">
+        <img src="assets/images/bienedu-course-notes.png" width="1536" height="1024" alt="Sổ ghi chép và bài luyện tập môn Toán" data-course-image>
       </figure>
     </section>
 
     <section class="course-audience section" data-reveal>
       <h2>Khóa học dành cho ai?</h2>
       <div>
-        <p class="statement">Dành cho học sinh lớp 12 muốn ôn lại kiến thức, luyện từng dạng bài và biết phần nào mình còn chưa chắc.</p>
+        <p class="statement" data-course-audience>Dành cho học sinh lớp 12 muốn ôn lại kiến thức, luyện từng dạng bài và biết phần nào mình còn chưa chắc.</p>
         <ul class="plain-list">
-          <li>Đang chuẩn bị cho kỳ thi tốt nghiệp THPT.</li>
-          <li>Cần một lộ trình học rõ thay vì tài liệu rời rạc.</li>
-          <li>Muốn tự kiểm tra và xem lời giải ngay sau khi làm.</li>
+          <li data-course-audience-item>Đang chuẩn bị cho kỳ thi tốt nghiệp THPT.</li>
+          <li data-course-audience-item>Cần một lộ trình học rõ thay vì tài liệu rời rạc.</li>
+          <li data-course-audience-item>Muốn tự kiểm tra và xem lời giải ngay sau khi làm.</li>
         </ul>
       </div>
     </section>
@@ -48,9 +48,9 @@
       <div class="course-goals__title" data-reveal>
         <h2 id="goals-title">Mục tiêu học tập</h2>
       </div>
-      <div class="course-goals__item" data-reveal><strong>Hiểu</strong><p>Nắm công thức, điều kiện áp dụng và cách đọc bài toán.</p></div>
-      <div class="course-goals__item" data-reveal><strong>Làm</strong><p>Thực hành theo từng chủ đề với phản hồi đủ rõ để tự sửa.</p></div>
-      <div class="course-goals__item" data-reveal><strong>Kiểm tra</strong><p>Nhận diện phần vững và phần cần ôn lại qua bài trắc nghiệm.</p></div>
+      <div class="course-goals__item" data-reveal><strong>Hiểu</strong><p data-course-goal="understand">Nắm công thức, điều kiện áp dụng và cách đọc bài toán.</p></div>
+      <div class="course-goals__item" data-reveal><strong>Làm</strong><p data-course-goal="practice">Thực hành theo từng chủ đề với phản hồi đủ rõ để tự sửa.</p></div>
+      <div class="course-goals__item" data-reveal><strong>Kiểm tra</strong><p data-course-goal="assess">Nhận diện phần vững và phần cần ôn lại qua bài trắc nghiệm.</p></div>
     </section>
 
     <dialog class="registration-dialog" data-registration-dialog aria-labelledby="registration-dialog-title"></dialog>

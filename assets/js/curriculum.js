@@ -1,12 +1,15 @@
-import { curriculumGroups, curriculumMeta } from "./data/curriculum.js?v=8.1";
-import { getDocumentForTopic } from "./data/document-mappings.js?v=8.1";
-import { getExampleContent } from "./data/example-content.js?v=8.1";
-import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.1";
-import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=8.1";
-import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=8.1";
-import { generatePracticeSet } from "./domain/exercise-generators.js?v=8.1";
-import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.1";
+import { getCurriculumForGrade } from "./data/curriculum-by-grade.js?v=8.2";
+import { getDocumentForTopic } from "./data/document-mappings.js?v=8.2";
+import { getExampleContent } from "./data/example-content.js?v=8.2";
+import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.2";
+import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=8.2";
+import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
+import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
+import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=8.2";
+import { generatePracticeSet } from "./domain/exercise-generators.js?v=8.2";
+import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.2";
 import {
+  createLearningProgress,
   getLessonProgress,
   getTopicProgress,
   loadLearningProgress,
@@ -17,14 +20,16 @@ import {
   saveExamAnswer,
   saveLearningProgress,
   submitExam
-} from "./domain/learning-progress.js?v=8.1";
-import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.1";
-import { initializeMotion } from "./motion.js?v=8.1";
+} from "./domain/learning-progress.js?v=8.2";
+import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.2";
+import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
 
 const PRACTICE_SEED = "PRACTICE_V1";
 const FINAL_EXAM_ID = "final";
 const LESSON_SECTION_IDS = new Set(["knowledge", "example", "practice"]);
 const app = document.querySelector("[data-curriculum-app]");
+const currentGradeId = document.body.dataset.grade ?? null;
+const { groups: curriculumGroups, meta: curriculumMeta } = getCurriculumForGrade(currentGradeId);
 const filterState = { query: "", groupId: "all" };
 const knowledgeCounts = Object.fromEntries(
   Object.entries(knowledgeSections).map(([code, section]) => [code, {
@@ -32,8 +37,12 @@ const knowledgeCounts = Object.fromEntries(
     examples: getExampleContent(code)?.length ?? section.exampleSlides.length
   }])
 );
-let progressState = loadLearningProgress();
+let progressState = currentGradeId
+  ? loadLearningProgress(globalThis.localStorage, currentGradeId)
+  : createLearningProgress();
 let confirmExamSubmit = false;
+let lessonTransitionLock = false;
+let lastRenderedRoute = null;
 
 function resetRouteScroll() {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -50,6 +59,7 @@ function escapeHtml(value) {
 
 function routeUrl({ topicId = "", typeCode = "", section = "", item = "", exam = "", question = "" } = {}) {
   const parameters = new URLSearchParams();
+  if (currentGradeId) parameters.set("grade", currentGradeId);
   if (topicId) parameters.set("topic", topicId);
   if (typeCode) parameters.set("type", typeCode);
   if (section) parameters.set("section", section);
@@ -60,8 +70,8 @@ function routeUrl({ topicId = "", typeCode = "", section = "", item = "", exam =
   return `documents.html${query ? `?${query}` : ""}`;
 }
 
-function readRoute() {
-  const parameters = new URLSearchParams(location.search);
+function readRoute(url = location.href) {
+  const parameters = new URL(url, location.href).searchParams;
   const requestedSection = parameters.get("section");
   return {
     topicId: parameters.get("topic")?.toUpperCase() || "",
@@ -74,7 +84,7 @@ function readRoute() {
 }
 
 function persist(next) {
-  progressState = saveLearningProgress(next);
+  progressState = saveLearningProgress(next, globalThis.localStorage, currentGradeId ?? "12");
 }
 
 function sentenceCase(value) {
@@ -237,9 +247,8 @@ function renderPractice(slide, answer) {
   </section>`;
 }
 
-function renderWorkspace(topic, exercise, route) {
+function createLessonView(topic, exercise, route) {
   const knowledge = getKnowledgeSection(exercise.code);
-  if (!knowledge) return renderUnavailable(topic, exercise);
   const reading = getKnowledgeContent(exercise.code);
   const examples = getExampleContent(exercise.code);
   const knowledgeSlideCount = reading ? 1 : knowledge.knowledgeSlides.length;
@@ -248,38 +257,122 @@ function renderWorkspace(topic, exercise, route) {
   const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, reading, examples, questions });
   const state = createLessonState(slides, route.section, route.item);
   const active = slides[state.currentIndex];
-  if (active.kind === "knowledge") {
-    persist(markKnowledgeViewed(progressState, exercise.code, active.id));
-  }
-  if (active.kind === "example") {
-    persist(markExampleViewed(progressState, exercise.code, active.id));
-  }
-  const lessonProgress = getLessonProgress(progressState, exercise.code, knowledgeSlideCount, exampleSlideCount, questions.length);
+
+  if (active.kind === "knowledge") persist(markKnowledgeViewed(progressState, exercise.code, active.id));
+  if (active.kind === "example") persist(markExampleViewed(progressState, exercise.code, active.id));
+
+  const lessonProgress = getLessonProgress(
+    progressState,
+    exercise.code,
+    knowledgeSlideCount,
+    exampleSlideCount,
+    questions.length
+  );
   const position = getSectionPosition(slides, state.currentIndex);
-  const storedLesson = progressState.lessons[exercise.code] || { practiceAnswers: {} };
+  const storedLesson = progressState.lessons[exercise.code] ?? { practiceAnswers: {} };
   const answer = active.kind === "practice" ? storedLesson.practiceAnswers[active.question.id] : null;
+
+  return {
+    topic,
+    exercise,
+    slides,
+    state,
+    active,
+    answer,
+    position,
+    lessonProgress,
+    counts: { knowledge: knowledgeSlideCount, example: exampleSlideCount, practice: questions.length }
+  };
+}
+
+function lessonProgressMarkup(view) {
+  const { lessonProgress } = view;
+  return `<span><b>Tiến độ bài học</b><strong>${lessonProgress.percent}%</strong></span>
+    <progress value="${lessonProgress.completed}" max="${lessonProgress.total}">${lessonProgress.percent}%</progress>
+    <small>${lessonProgress.completed}/${lessonProgress.total} nội dung</small>`;
+}
+
+function phaseButtonMarkup(view, section, label, completed, total) {
+  return `<button type="button" data-section="${section}" aria-current="${view.active.section === section ? "step" : "false"}">
+    <span>${label}</span><small>${completed}/${total}</small>
+  </button>`;
+}
+
+function phaseNavigationMarkup(view) {
+  const { counts, lessonProgress } = view;
+  return `${phaseButtonMarkup(view, "knowledge", "Kiến thức", lessonProgress.viewed, counts.knowledge)}
+    ${phaseButtonMarkup(view, "example", "Ví dụ", lessonProgress.examplesViewed, counts.example)}
+    ${phaseButtonMarkup(view, "practice", "Bài tập", lessonProgress.answered, counts.practice)}`;
+}
+
+function lessonSidebarMarkup(view) {
+  const { active, counts, lessonProgress, topic } = view;
+  return `<p>Nội dung buổi học</p><ol>
+    <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === counts.knowledge ? "is-completed" : ""}"><span>${lessonProgress.viewed === counts.knowledge ? "✓" : "1"}</span><b>Kiến thức<small>${lessonProgress.viewed}/${counts.knowledge} bài đọc</small></b></button></li>
+    <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${lessonProgress.examplesViewed === counts.example ? "is-completed" : ""}"><span>${lessonProgress.examplesViewed === counts.example ? "✓" : "2"}</span><b>Ví dụ<small>${lessonProgress.examplesViewed}/${counts.example} ví dụ</small></b></button></li>
+    <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${lessonProgress.answered === counts.practice ? "is-completed" : ""}"><span>${lessonProgress.answered === counts.practice ? "✓" : "3"}</span><b>Bài tập<small>${lessonProgress.answered}/${counts.practice} câu</small></b></button></li>
+  </ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>`;
+}
+
+function lessonStageMarkup(view) {
+  const { active, answer, position, topic, exercise } = view;
+  if (active.kind === "practice") return renderPractice(active, answer);
+  if (active.kind === "knowledge" && active.reading) return renderKnowledgeReading(active, exercise);
+  if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise);
+  return renderSourceSlide(active, position, topic, exercise);
+}
+
+function lessonNavigationMarkup(view) {
+  const { active, position, state, topic, exercise } = view;
+  const positionLabel = active.section === "practice"
+    ? `Bài ${position.current} / ${position.total}`
+    : `${position.current} / ${position.total}`;
+  const nextControl = active.section === "practice" && position.current === position.total
+    ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Hoàn thành →</a>`
+    : active.section === "knowledge" && position.current === position.total
+      ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "example", item: 1 })}" data-route>Xem ví dụ →</a>`
+      : `<button type="button" data-slide-index="${state.currentIndex + 1}">${active.section === "example" && position.current === position.total ? "Làm bài tập →" : active.section === "practice" ? "Câu tiếp theo →" : "Tiếp theo →"}</button>`;
+
+  return `<button type="button" data-slide-index="${state.currentIndex - 1}" ${state.currentIndex === 0 ? "disabled" : ""}>← Trước</button>
+    <p><strong>${positionLabel}</strong><span>${active.label}</span></p>${nextControl}`;
+}
+
+function updateLessonWorkspace(view, { announce = false } = {}) {
+  const workspace = app.querySelector(`.learning-workspace[data-topic="${view.topic.id}"][data-type="${view.exercise.code}"]`);
+  if (!workspace) return false;
+
+  workspace.querySelector("[data-lesson-progress]").innerHTML = lessonProgressMarkup(view);
+  workspace.querySelector("[data-phase-navigation]").innerHTML = phaseNavigationMarkup(view);
+  workspace.querySelector("[data-lesson-sidebar]").innerHTML = lessonSidebarMarkup(view);
+  workspace.querySelector("[data-lesson-stage]").innerHTML = lessonStageMarkup(view);
+  workspace.querySelector("[data-lesson-navigation]").innerHTML = lessonNavigationMarkup(view);
+  workspace.dataset.section = view.active.section;
+  workspace.dataset.item = String(view.position.current);
+
+  if (announce) {
+    workspace.querySelector("[data-lesson-announcer]").textContent = `Đã chuyển sang ${view.active.label} ${view.position.current} trên ${view.position.total}.`;
+  }
+  return true;
+}
+
+function renderWorkspace(topic, exercise, route, options = {}) {
+  const knowledge = getKnowledgeSection(exercise.code);
+  if (!knowledge) return renderUnavailable(topic, exercise);
+  const view = createLessonView(topic, exercise, route);
   document.body.classList.add("learning-mode");
-  app.innerHTML = `<article class="learning-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-type="${exercise.code}">
+
+  if (updateLessonWorkspace(view, options)) return;
+
+  app.innerHTML = `<article class="learning-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-type="${exercise.code}" data-section="${view.active.section}" data-item="${view.position.current}">
     <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Quay lại ${topic.id}">←</a><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div>
-      <div class="lesson-progress"><span><b>Tiến độ bài học</b><strong>${lessonProgress.percent}%</strong></span><progress value="${lessonProgress.completed}" max="${lessonProgress.total}">${lessonProgress.percent}%</progress><small>${lessonProgress.completed}/${lessonProgress.total} nội dung</small></div>
+      <div class="lesson-progress" data-lesson-progress>${lessonProgressMarkup(view)}</div>
     </header>
-    <div class="workspace-mobile-nav"><label><span>Nội dung</span><select data-section-select><option value="knowledge" ${active.section === "knowledge" ? "selected" : ""}>Kiến thức (${knowledgeSlideCount})</option><option value="example" ${active.section === "example" ? "selected" : ""}>Ví dụ (${exampleSlideCount})</option><option value="practice" ${active.section === "practice" ? "selected" : ""}>Bài tập (3)</option></select></label></div>
-    <div class="workspace-frame"><nav class="lesson-sidebar" aria-label="Nội dung bài học"><p>Nội dung buổi học</p><ol>
-      <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === knowledgeSlideCount ? "is-completed" : ""}"><span>${lessonProgress.viewed === knowledgeSlideCount ? "✓" : "1"}</span><b>Kiến thức<small>${lessonProgress.viewed}/${knowledgeSlideCount} bài đọc</small></b></button></li>
-      <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${lessonProgress.examplesViewed === exampleSlideCount ? "is-completed" : ""}"><span>${lessonProgress.examplesViewed === exampleSlideCount ? "✓" : "2"}</span><b>Ví dụ<small>${lessonProgress.examplesViewed}/${exampleSlideCount} ví dụ</small></b></button></li>
-      <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${lessonProgress.answered === questions.length ? "is-completed" : ""}"><span>${lessonProgress.answered === questions.length ? "✓" : "3"}</span><b>Bài tập<small>${lessonProgress.answered}/${questions.length} câu</small></b></button></li>
-    </ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a></nav>
-      <main class="lesson-content" tabindex="-1" data-lesson-content>${active.kind === "practice" ? renderPractice(active, answer) : active.kind === "knowledge" && active.reading ? renderKnowledgeReading(active, exercise) : active.kind === "example" && active.workedExample ? renderExampleReading(active, position, exercise) : renderSourceSlide(active, position, topic, exercise)}</main>
+    <nav class="workspace-phase-nav" data-phase-navigation aria-label="Các phần của bài học">${phaseNavigationMarkup(view)}</nav>
+    <div class="workspace-frame"><nav class="lesson-sidebar" data-lesson-sidebar aria-label="Nội dung bài học">${lessonSidebarMarkup(view)}</nav>
+      <main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${lessonStageMarkup(view)}</main>
     </div>
-    <footer class="lesson-navigation">
-      <button type="button" data-slide-index="${state.currentIndex - 1}" ${state.currentIndex === 0 || active.section === "knowledge" ? "disabled" : ""}>← Trước</button>
-      <p><strong>${active.section === "practice" ? `Bài ${position.current} / ${position.total}` : `${position.current} / ${position.total}`}</strong><span>${active.label}</span></p>
-      ${active.section === "practice" && position.current === position.total
-        ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Hoàn thành →</a>`
-        : active.section === "knowledge"
-          ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "example", item: 1 })}" data-route>Xem ví dụ →</a>`
-          : `<button type="button" data-slide-index="${state.currentIndex + 1}">${active.section === "example" && position.current === position.total ? "Làm bài tập →" : "Tiếp theo →"}</button>`}
-    </footer>
+    <footer class="lesson-navigation" data-lesson-navigation>${lessonNavigationMarkup(view)}</footer>
+    <p class="sr-only" aria-live="polite" aria-atomic="true" data-lesson-announcer></p>
   </article>`;
 }
 
@@ -292,7 +385,10 @@ function examQuestionMarkup(question, selected, submitted) {
 
 function renderFinalExam(topic, route) {
   const topicProgress = getTopicProgress(progressState, topic, knowledgeCounts);
-  if (!topicProgress.isComplete) return renderTopicDetail(topic);
+  if (!topicProgress.isComplete) {
+    renderTopicDetail(topic);
+    return false;
+  }
   const questions = createFinalExam(topic.id);
   const index = Math.min(route.question - 1, questions.length - 1);
   const exam = progressState.exams[topic.id] || { answers: {}, submitted: false };
@@ -308,24 +404,133 @@ function renderFinalExam(topic, route) {
     <footer class="lesson-navigation"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: Math.max(1, index) })}" data-route>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: index + 2 })}" data-route>Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
     ${confirmExamSubmit ? `<div class="exam-confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><div><p class="lesson-kicker">Xác nhận</p><h2 id="confirm-title">Nộp bài kiểm tra?</h2><p>Sau khi nộp, bạn sẽ xem điểm và lời giải chi tiết.</p><div><button type="button" data-action="cancel-submit">Xem lại</button><button type="button" data-action="confirm-submit">Nộp bài</button></div></div></div>` : ""}
   </article>`;
+  return true;
 }
 
-function renderRoute({ scrollToTop = false } = {}) {
+function setGradeSwitchLocked(locked) {
+  const switcher = document.querySelector(".grade-switcher");
+  if (!switcher) return;
+  switcher.disabled = locked;
+  switcher.setAttribute("aria-disabled", String(locked));
+  switcher.title = locked ? "Hoàn thành hoặc nộp bài kiểm tra trước khi đổi lớp." : "Đổi khối lớp";
+}
+
+function renderRoute({ scrollToTop = false, announce = false } = {}) {
   if (!app) return;
   const route = readRoute();
+
+  if (!currentGradeId) {
+    document.body.classList.remove("learning-mode");
+    app.innerHTML = "";
+    lastRenderedRoute = route;
+    return;
+  }
+
+  if (!hasGradeContent(currentGradeId, "curriculum")) {
+    document.body.classList.remove("learning-mode");
+    setGradeSwitchLocked(false);
+    app.innerHTML = renderGradeEmptyState("documents", currentGradeId);
+    lastRenderedRoute = route;
+    if (scrollToTop) resetRouteScroll();
+    return;
+  }
+
   const topic = route.topicId ? findTopic(curriculumGroups, route.topicId) : null;
   const exercise = topic && route.typeCode ? findExerciseType(curriculumGroups, topic.id, route.typeCode) : null;
 
-  if (topic && route.exam === FINAL_EXAM_ID) renderFinalExam(topic, route);
-  else if (topic && exercise) renderWorkspace(topic, exercise, route);
-  else if (topic) renderTopicDetail(topic);
-  else renderCatalog();
+  if (topic && route.exam === FINAL_EXAM_ID) {
+    const examIsActive = renderFinalExam(topic, route);
+    const exam = progressState.exams[topic.id];
+    setGradeSwitchLocked(Boolean(examIsActive && !exam?.submitted));
+  } else if (topic && exercise) {
+    setGradeSwitchLocked(false);
+    renderWorkspace(topic, exercise, route, { announce });
+  } else if (topic) {
+    setGradeSwitchLocked(false);
+    renderTopicDetail(topic);
+  } else {
+    setGradeSwitchLocked(false);
+    renderCatalog();
+  }
 
+  lastRenderedRoute = route;
   if (scrollToTop) resetRouteScroll();
+}
+
+function isSameLessonRoute(left, right) {
+  return Boolean(
+    left?.topicId &&
+    right?.topicId &&
+    left.topicId === right.topicId &&
+    left.typeCode &&
+    left.typeCode === right.typeCode &&
+    !left.exam &&
+    !right.exam
+  );
+}
+
+function waitForTransition(milliseconds) {
+  if (prefersReducedMotion()) return Promise.resolve();
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+
+function getLessonViewportOffset() {
+  const headerHeight = document.querySelector(".site-header")?.getBoundingClientRect().height ?? 0;
+  const phaseHeight = app.querySelector(".workspace-phase-nav")?.getBoundingClientRect().height ?? 0;
+  return headerHeight + phaseHeight + 12;
+}
+
+function revealLessonStage(stage) {
+  if (!stage) return;
+  const offset = getLessonViewportOffset();
+  const stageTop = stage.getBoundingClientRect().top;
+  const isStartVisible = stageTop >= offset - 8 && stageTop <= Math.min(innerHeight * 0.52, offset + 180);
+  if (isStartVisible) return;
+
+  const targetTop = Math.max(0, scrollY + stageTop - offset);
+  window.scrollTo({ top: targetTop, left: 0, behavior: "instant" });
+}
+
+async function transitionLessonRoute(href, { replace = false, updateHistory = true } = {}) {
+  if (lessonTransitionLock) return;
+  lessonTransitionLock = true;
+
+  try {
+    const stage = app.querySelector("[data-lesson-stage]");
+    if (stage) {
+      stage.style.minHeight = `${Math.ceil(stage.getBoundingClientRect().height)}px`;
+      stage.classList.add("is-leaving");
+    }
+
+    await waitForTransition(110);
+    if (updateHistory) {
+      if (replace) history.replaceState(null, "", href);
+      else history.pushState(null, "", href);
+    }
+
+    renderRoute({ announce: true });
+    const nextStage = app.querySelector("[data-lesson-stage]");
+    revealLessonStage(nextStage);
+    nextStage?.classList.remove("is-leaving");
+    nextStage?.classList.add("is-entering");
+
+    requestAnimationFrame(() => requestAnimationFrame(() => nextStage?.classList.remove("is-entering")));
+    await waitForTransition(210);
+    if (nextStage) nextStage.style.minHeight = "";
+  } finally {
+    lessonTransitionLock = false;
+  }
 }
 
 function navigate(href, { replace = false } = {}) {
   confirmExamSubmit = false;
+  const currentRoute = lastRenderedRoute ?? readRoute();
+  const nextRoute = readRoute(href);
+  if (isSameLessonRoute(currentRoute, nextRoute)) {
+    transitionLessonRoute(href, { replace });
+    return;
+  }
+
   if (replace) history.replaceState(null, "", href); else history.pushState(null, "", href);
   renderRoute({ scrollToTop: true });
 }
@@ -434,6 +639,11 @@ function handleExamAction(action) {
 }
 
 function handleAppClick(event) {
+  if (lessonTransitionLock) {
+    if (event.target.closest("[data-route], [data-section], [data-slide-index]")) event.preventDefault();
+    return;
+  }
+
   const routeLink = event.target.closest("[data-route]");
   if (routeLink && !routeLink.classList.contains("is-disabled")) {
     event.preventDefault();
@@ -448,7 +658,7 @@ function handleAppClick(event) {
     return;
   }
 
-  const sectionButton = event.target.closest("[data-section]");
+  const sectionButton = event.target.closest("button[data-section]");
   if (sectionButton) {
     const route = readRoute();
     navigate(routeUrl({
@@ -484,6 +694,11 @@ function handleAppClick(event) {
 
 function handleHistoryNavigation() {
   confirmExamSubmit = false;
+  const nextRoute = readRoute();
+  if (isSameLessonRoute(lastRenderedRoute, nextRoute)) {
+    transitionLessonRoute(location.href, { updateHistory: false });
+    return;
+  }
   renderRoute({ scrollToTop: true });
 }
 

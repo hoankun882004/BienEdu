@@ -22,8 +22,8 @@ const browser = await Browser.launch();
 
 try {
   const page = await browser.newPage({ width: 390, height: 844, dsf: 1, mobile: true });
-  await page.goto(`${origin}/documents.html`, { timeoutMs: 30000, settleMs: 500 });
-  await page.eval("localStorage.removeItem('bienedu.learning.v2')");
+  await page.goto(`${origin}/documents.html?grade=12`, { timeoutMs: 30000, settleMs: 500 });
+  await page.eval("localStorage.removeItem('bienedu:progress:v2:grade12')");
   await page.goto(`${origin}/documents.html`, { timeoutMs: 30000, settleMs: 350 });
 
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic').length"), 39);
@@ -114,7 +114,7 @@ try {
     };
     return JSON.stringify({ version: 2, lessons, exams: {} });
   })()`);
-  await page.eval(`localStorage.setItem('bienedu.learning.v2', ${JSON.stringify(completionState)})`);
+  await page.eval(`localStorage.setItem('bienedu:progress:v2:grade12', ${JSON.stringify(completionState)})`);
   await page.goto(`${origin}/documents.html?topic=CD20`, { timeoutMs: 30000, settleMs: 350 });
   assert.ok(await page.eval("document.querySelector('.final-exam-card').classList.contains('is-unlocked')"));
 
@@ -125,7 +125,7 @@ try {
   await page.eval("document.querySelector('[data-exam-answer=\"0\"]').click()");
   assert.equal(await page.eval("document.querySelector('.practice-feedback')"), null, "exam must not reveal correctness before submit");
 
-  await page.eval(`(() => { const value = JSON.parse(localStorage.getItem('bienedu.learning.v2')); value.exams.CD20 = { answers: Object.fromEntries(Array.from({length: 20}, (_, index) => [index, 0])), submitted: false }; localStorage.setItem('bienedu.learning.v2', JSON.stringify(value)); })()`);
+  await page.eval(`(() => { const key = 'bienedu:progress:v2:grade12'; const value = JSON.parse(localStorage.getItem(key)); value.exams.CD20 = { answers: Object.fromEntries(Array.from({length: 20}, (_, index) => [index, 0])), submitted: false }; localStorage.setItem(key, JSON.stringify(value)); })()`);
   await page.goto(`${origin}/documents.html?topic=CD20&exam=final&question=20`, { timeoutMs: 30000, settleMs: 300 });
   assert.equal(await page.eval("document.querySelector('[data-action=\"request-submit\"]').disabled"), false);
   await page.eval("document.querySelector('[data-action=\"request-submit\"]').click()");
@@ -144,7 +144,7 @@ try {
   for (const size of sizes) {
     await page.setViewport(size);
     await page.goto(`${origin}/documents.html?topic=CD21&type=21.8&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 220 });
-    const layout = await page.eval(`(() => { const stage = document.querySelector('.lesson-content'); const image = document.querySelector('.knowledge-stage img'); const canvas = document.querySelector('.knowledge-stage__canvas'); const imageBox = image?.getBoundingClientRect(); const canvasBox = canvas?.getBoundingClientRect(); return { horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth + 1, verticalOverflow: document.documentElement.scrollHeight > window.innerHeight + 1, stageOverflow: stage.scrollHeight > stage.clientHeight + 1, imageContained: !image || (imageBox.top >= canvasBox.top - 1 && imageBox.bottom <= canvasBox.bottom + 1), mobileNav: getComputedStyle(document.querySelector('.workspace-mobile-nav')).display !== 'none' }; })()`);
+    const layout = await page.eval(`(() => { const stage = document.querySelector('.lesson-content'); const image = document.querySelector('.knowledge-stage img'); const canvas = document.querySelector('.knowledge-stage__canvas'); const imageBox = image?.getBoundingClientRect(); const canvasBox = canvas?.getBoundingClientRect(); return { horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth + 1, verticalOverflow: document.documentElement.scrollHeight > window.innerHeight + 1, stageOverflow: stage.scrollHeight > stage.clientHeight + 1, imageContained: !image || (imageBox.top >= canvasBox.top - 1 && imageBox.bottom <= canvasBox.bottom + 1), mobileNav: getComputedStyle(document.querySelector('.workspace-phase-nav')).display !== 'none' }; })()`);
     assert.equal(layout.horizontalOverflow, false, `horizontal overflow at ${size.width}px`);
     if (size.width >= 1024) {
       assert.equal(layout.verticalOverflow, false, `desktop page scroll at ${size.width}px`);
