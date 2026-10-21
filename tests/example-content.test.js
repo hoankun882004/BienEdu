@@ -5,7 +5,7 @@ import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all mapped lessons expose complete worked examples", () => {
   assert.deepEqual(Object.keys(exampleContent), Object.keys(knowledgeSections));
-  assert.equal(Object.values(exampleContent).flat().length, 28);
+  assert.equal(Object.values(exampleContent).flat().length, 54);
   for (const [code, examples] of Object.entries(exampleContent)) {
     assert.ok(examples.length >= 1, `${code} examples`);
     for (const example of examples) {
@@ -23,5 +23,7 @@ test("worked examples preserve important multi-step source cases", () => {
   assert.equal(getExampleContent("20.1").length, 2);
   assert.equal(getExampleContent("20.2").length, 3);
   assert.equal(getExampleContent("20.8")[0].answer, "Có 84 cách chia kẹo.");
+  assert.equal(getExampleContent("12.6")[0].answer, "I=sin(x²+1)+C.");
+  assert.equal(getExampleContent("14.5")[0].answer, "Quãng đường bằng 5 đơn vị.");
   assert.equal(getExampleContent("not-mapped"), null);
 });

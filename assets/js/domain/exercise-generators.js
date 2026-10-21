@@ -1,4 +1,5 @@
-import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.2";
+import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.6";
+import { calculusPracticeBank } from "../data/calculus-lessons.js?v=8.6";
 
 function factorial(value) {
   let result = 1;
@@ -400,7 +401,24 @@ function generate218(ctx) {
   ];
 }
 
+function generateCuratedPracticeSet(sourceTopic, items, ctx) {
+  return items.map((item, index) => ctx.question(index + 1, {
+    prompt: item.prompt,
+    calculation: { kind: "identity", input: { value: item.answer } },
+    distractors: item.distractors,
+    solution: item.solution
+  }));
+}
+
+const calculusGenerators = Object.fromEntries(
+  Object.entries(calculusPracticeBank).map(([sourceTopic, items]) => [
+    sourceTopic,
+    (ctx) => generateCuratedPracticeSet(sourceTopic, items, ctx)
+  ])
+);
+
 export const exerciseGeneratorRegistry = {
+  ...calculusGenerators,
   "20.1": generate201, "20.2": generate202, "20.3": generate203, "20.4": generate204,
   "20.5": generate205, "20.6": generate206, "20.7": generate207, "20.8": generate208,
   "20.9": generate209, "20.10": generate2010, "20.11": generate2011, "20.12": generate2012,

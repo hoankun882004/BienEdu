@@ -1,22 +1,20 @@
 {
- "url": "http://127.0.0.1:8123/documents.html?topic=CD20",
- "at": "2026-10-15T07:25:53.493Z",
+ "url": "documents.html",
+ "at": "2026-10-21T01:43:37.766Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 3,
+   "screens": 1,
    "filled": [
-    0.58,
-    0.43,
-    0.69
+    1
    ],
    "motion": {
-    "elements": 0,
+    "elements": 2,
     "css": 0,
-    "transitions": 0,
+    "transitions": 2,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -27,14 +25,14 @@
      "h": 900
     },
     "page": {
-     "height": 2269,
-     "screens": 2.5,
-     "words": 306,
+     "height": 900,
+     "screens": 1,
+     "words": 56,
      "img": 2,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 2,
+     "sections": 1,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -46,89 +44,144 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "🔒"
-     ]
+     "emoji": []
     },
     "hero": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "chars": 29,
+     "text": "10",
+     "words": 1,
+     "chars": 2,
      "lines": 1,
-     "size": 57.6,
-     "vw": 4,
+     "size": 96,
+     "vw": 6.7,
      "font": "Be Vietnam Pro",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 1.03,
+     "tracking": 0,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "left",
-     "position": "center",
-     "widthRatio": 0.8,
-     "top": 223,
-     "tag": "h1",
+     "align": "center",
+     "position": "left",
+     "widthRatio": 0.17,
+     "top": 374,
+     "tag": "span",
      "kind": "heading"
     },
-    "h1": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "lines": 1,
-     "size": 57.6,
-     "font": "Be Vietnam Pro"
-    },
+    "h1": null,
     "headings": [
      {
-      "text": "Quy tắc đếm – tổ hợp nâng cao",
-      "words": 8,
-      "chars": 29,
+      "text": "Bạn đang học lớp mấy?",
+      "words": 5,
+      "chars": 21,
       "lines": 1,
-      "size": 57.6,
-      "vw": 4,
+      "size": 72,
+      "vw": 5,
       "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.02,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.8,
-      "top": 223,
-      "tag": "h1",
+      "widthRatio": 0.71,
+      "top": 247,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "20 câu · Bao quát 17 dạng",
-      "words": 7,
-      "chars": 25,
+      "text": "9",
+      "words": 1,
+      "chars": 1,
       "lines": 1,
-      "size": 28,
-      "vw": 1.9,
+      "size": 96,
+      "vw": 6.7,
       "font": "Be Vietnam Pro",
       "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
+      "tracking": 0,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.77,
-      "top": 1789,
-      "tag": "h2",
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 371,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 374,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "11",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 374,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "12",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 374,
+      "tag": "span",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 2,
+     "count": 5,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
-     "medianWords": 7,
+     "centered": 5,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -141,59 +194,35 @@
      ],
      "familyCount": 1,
      "sizes": [
-      12,
+      11,
       13,
       14,
-      15,
       18,
-      21,
-      22,
-      26,
-      28,
-      58
+      72,
+      96
      ],
-     "sizeCount": 10,
+     "sizeCount": 6,
      "notLoaded": [],
-     "body": {
-      "font": "Be Vietnam Pro",
-      "size": 12.5,
-      "leading": 1.55,
-      "weight": 400,
-      "tracking": 0,
-      "contrast": 9.5
-     },
-     "measureChars": 56,
+     "body": null,
+     "measureChars": null,
      "max": {
-      "size": 57.6,
-      "vw": 4,
+      "size": 96,
+      "vw": 6.7,
       "font": "Be Vietnam Pro",
-      "text": "Quy tắc đếm – tổ hợp nâng cao"
+      "text": "9"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 1,
-     "microLabelShare": 0.024,
-     "microSamples": [
-      "Bài kiểm tra cuối chuyên đề"
-     ],
-     "upperShare": 0.03,
-     "centerShare": 0,
-     "smallText": 20
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.28,
+     "smallText": 1
     },
-    "eyebrows": [
-     {
-      "text": "Bài kiểm tra cuối chuyên đề",
-      "above": "20 câu · Bao quát 17 dạng",
-      "upper": true,
-      "tracked": true,
-      "mono": false,
-      "pill": false,
-      "size": 11.5,
-      "top": 1765
-     }
-    ],
+    "eyebrows": [],
     "numbered": [],
     "color": {
      "bodyBg": "#ffffff",
@@ -205,31 +234,35 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#f8fafc",
-       "top": 75,
+       "color": "#071a36",
+       "top": 0,
        "hsl": {
-        "h": 210,
-        "s": 0.4,
-        "l": 0.98
+        "h": 216,
+        "s": 0.77,
+        "l": 0.12
        }
       }
      ],
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.56
-      },
-      {
-       "color": "#0f172a",
-       "share": 0.32
-      },
-      {
-       "color": "#1d4ed8",
-       "share": 0.1
+       "share": 0.47
       },
       {
        "color": "#ffffff",
-       "share": 0.01
+       "share": 0.2
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.14
+      },
+      {
+       "color": "#b7c2d2",
+       "share": 0.08
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.04
       }
      ],
      "button": {
@@ -244,8 +277,8 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 2,
-     "inHero": 1,
+     "count": 3,
+     "inHero": 3,
      "radius": 0,
      "height": 53,
      "withShadow": 0,
@@ -253,7 +286,9 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Bỏ qua điều hướng"
+      "Bỏ qua điều hướng",
+      "Chọn lớp ⌄",
+      "Lộ trình"
      ]
     },
     "surfaces": {
@@ -264,17 +299,16 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 3,
+     "hairlines": 2,
      "hairlineSamples": [
-      "div.topic-progress 1249px",
       "footer.site-footer 1440px",
       "div.footer-meta 1376px"
      ],
-     "outlinedBoxes": 1,
+     "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 7,
      "squareMedia": 0,
      "roundedMedia": 0,
      "mediaRadius": 0,
@@ -299,16 +333,14 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 3,
+   "screens": 1,
    "filled": [
-    0.5,
-    0.53,
-    0.49
+    1
    ],
    "motion": {
-    "elements": 0,
+    "elements": 2,
     "css": 0,
-    "transitions": 0,
+    "transitions": 2,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -319,14 +351,14 @@
      "h": 1024
     },
     "page": {
-     "height": 2138,
-     "screens": 2.1,
-     "words": 306,
+     "height": 1024,
+     "screens": 1,
+     "words": 56,
      "img": 2,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 2,
+     "sections": 1,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -338,68 +370,144 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "🔒"
-     ]
+     "emoji": []
     },
     "hero": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "chars": 29,
+     "text": "10",
+     "words": 1,
+     "chars": 2,
      "lines": 1,
-     "size": 32,
-     "vw": 4.2,
+     "size": 53.8,
+     "vw": 7,
      "font": "Be Vietnam Pro",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 1.03,
+     "tracking": 0,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "left",
-     "position": "center",
-     "widthRatio": 0.83,
-     "top": 191,
-     "tag": "h1",
+     "align": "center",
+     "position": "left",
+     "widthRatio": 0.22,
+     "top": 459,
+     "tag": "span",
      "kind": "heading"
     },
-    "h1": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "lines": 1,
-     "size": 32,
-     "font": "Be Vietnam Pro"
-    },
+    "h1": null,
     "headings": [
      {
-      "text": "Quy tắc đếm – tổ hợp nâng cao",
-      "words": 8,
-      "chars": 29,
+      "text": "Bạn đang học lớp mấy?",
+      "words": 5,
+      "chars": 21,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
+      "size": 38.4,
+      "vw": 5,
       "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.02,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.83,
-      "top": 191,
-      "tag": "h1",
+      "widthRatio": 0.96,
+      "top": 358,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "9",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 456,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 459,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "11",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 459,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "12",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 459,
+      "tag": "span",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 1,
+     "count": 5,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
-     "medianWords": null,
+     "centered": 5,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -412,45 +520,33 @@
      ],
      "familyCount": 1,
      "sizes": [
-      12,
+      11,
       13,
       14,
-      15,
       17,
-      19,
-      22,
-      26,
-      32
+      38,
+      54
      ],
-     "sizeCount": 9,
+     "sizeCount": 6,
      "notLoaded": [],
-     "body": {
-      "font": "Be Vietnam Pro",
-      "size": 12.5,
-      "leading": 1.55,
-      "weight": 400,
-      "tracking": 0,
-      "contrast": 9.5
-     },
-     "measureChars": 56,
+     "body": null,
+     "measureChars": null,
      "max": {
-      "size": 32,
-      "vw": 4.2,
+      "size": 53.8,
+      "vw": 7,
       "font": "Be Vietnam Pro",
-      "text": "Quy tắc đếm – tổ hợp nâng cao"
+      "text": "9"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 1,
-     "microLabelShare": 0.024,
-     "microSamples": [
-      "Bài kiểm tra cuối chuyên đề"
-     ],
-     "upperShare": 0.03,
-     "centerShare": 0,
-     "smallText": 20
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.28,
+     "smallText": 1
     },
     "eyebrows": [],
     "numbered": [],
@@ -464,59 +560,61 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#f8fafc",
-       "top": 75,
+       "color": "#071a36",
+       "top": 0,
        "hsl": {
-        "h": 210,
-        "s": 0.4,
-        "l": 0.98
+        "h": 216,
+        "s": 0.77,
+        "l": 0.12
        }
       }
      ],
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.56
-      },
-      {
-       "color": "#0f172a",
-       "share": 0.32
-      },
-      {
-       "color": "#1d4ed8",
-       "share": 0.1
+       "share": 0.47
       },
       {
        "color": "#ffffff",
-       "share": 0.01
+       "share": 0.2
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.14
+      },
+      {
+       "color": "#b7c2d2",
+       "share": 0.08
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.04
       }
      ],
      "button": {
-      "bg": "#ffffff",
+      "bg": "#0f172a",
       "hsl": {
-       "h": 0,
-       "s": 0,
-       "l": 1
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
       },
-      "fg": "#0f172a"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 19,
-     "inHero": 10,
-     "radius": 12,
-     "height": 68,
+     "count": 3,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Bỏ qua điều hướng",
-      "20.1 Quy tắc cộng 0% · Kiến thức + Bài t",
-      "20.2 Quy tắc nhân 0% · Kiến thức + Bài t",
-      "20.3 Hoán vị 0% · Kiến thức + Bài tập →",
-      "20.4 Chỉnh hợp 0% · Kiến thức + Bài tập "
+      "Chọn lớp ⌄",
+      "Lộ trình"
      ]
     },
     "surfaces": {
@@ -527,17 +625,16 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 3,
+     "hairlines": 2,
      "hairlineSamples": [
-      "div.topic-progress 734px",
       "footer.site-footer 768px",
       "div.footer-meta 734px"
      ],
-     "outlinedBoxes": 1,
+     "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 7,
      "squareMedia": 0,
      "roundedMedia": 0,
      "mediaRadius": 0,
@@ -562,16 +659,14 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 3,
+   "screens": 1,
    "filled": [
-    0.71,
-    0.45,
-    0.78
+    1
    ],
    "motion": {
-    "elements": 0,
+    "elements": 2,
     "css": 0,
-    "transitions": 0,
+    "transitions": 2,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -582,14 +677,14 @@
      "h": 844
     },
     "page": {
-     "height": 2507,
-     "screens": 3,
-     "words": 299,
+     "height": 844,
+     "screens": 1,
+     "words": 49,
      "img": 2,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 2,
+     "sections": 1,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -601,88 +696,143 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "🔒"
-     ]
+     "emoji": []
     },
     "hero": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "chars": 29,
-     "lines": 2,
-     "size": 32,
-     "vw": 8.2,
+     "text": "10",
+     "words": 1,
+     "chars": 2,
+     "lines": 1,
+     "size": 70.2,
+     "vw": 18,
      "font": "Be Vietnam Pro",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 1.03,
+     "tracking": 0,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "left",
-     "position": "center",
-     "widthRatio": 0.92,
-     "top": 216,
-     "tag": "h1",
+     "align": "center",
+     "position": "right",
+     "widthRatio": 0.44,
+     "top": 284,
+     "tag": "span",
      "kind": "heading"
     },
-    "h1": {
-     "text": "Quy tắc đếm – tổ hợp nâng cao",
-     "words": 8,
-     "lines": 2,
-     "size": 32,
-     "font": "Be Vietnam Pro"
-    },
+    "h1": null,
     "headings": [
      {
-      "text": "Quy tắc đếm – tổ hợp nâng cao",
-      "words": 8,
-      "chars": 29,
+      "text": "Bạn đang học lớp mấy?",
+      "words": 5,
+      "chars": 21,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
+      "size": 37.1,
+      "vw": 9.5,
       "font": "Be Vietnam Pro",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.03,
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.02,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 216,
-      "tag": "h1",
+      "top": 172,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "🔒",
+      "text": "9",
       "words": 1,
-      "chars": 2,
+      "chars": 1,
       "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 70.2,
+      "vw": 18,
       "font": "Be Vietnam Pro",
-      "weight": 400,
+      "weight": 700,
       "tracking": 0,
-      "leading": 1.55,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.81,
-      "top": 2006,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 281,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 70.2,
+      "vw": 18,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 284,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "11",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 70.2,
+      "vw": 18,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 506,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "12",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 70.2,
+      "vw": 18,
+      "font": "Be Vietnam Pro",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 506,
       "tag": "span",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 2,
+     "count": 5,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
+     "centered": 5,
      "medianWords": 1,
      "mixedFontHeadings": 0
     },
@@ -696,46 +846,33 @@
      ],
      "familyCount": 1,
      "sizes": [
-      12,
+      11,
       13,
       14,
-      15,
       16,
-      17,
-      19,
-      22,
-      26,
-      32
+      37,
+      70
      ],
-     "sizeCount": 10,
+     "sizeCount": 6,
      "notLoaded": [],
-     "body": {
-      "font": "Be Vietnam Pro",
-      "size": 12.5,
-      "leading": 1.55,
-      "weight": 400,
-      "tracking": 0,
-      "contrast": 9.5
-     },
-     "measureChars": 56,
+     "body": null,
+     "measureChars": null,
      "max": {
-      "size": 32,
-      "vw": 8.2,
+      "size": 70.2,
+      "vw": 18,
       "font": "Be Vietnam Pro",
-      "text": "Quy tắc đếm – tổ hợp nâng cao"
+      "text": "9"
      },
      "monoShare": 0,
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 1,
-     "microLabelShare": 0.024,
-     "microSamples": [
-      "Bài kiểm tra cuối chuyên đề"
-     ],
-     "upperShare": 0.03,
-     "centerShare": 0,
-     "smallText": 20
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.34,
+     "smallText": 1
     },
     "eyebrows": [],
     "numbered": [],
@@ -749,68 +886,72 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#f8fafc",
-       "top": 67,
-       "hsl": {
-        "h": 210,
-        "s": 0.4,
-        "l": 0.98
-       }
-      },
-      {
        "color": "#f1f5f9",
-       "top": 2171,
+       "top": 119,
        "hsl": {
         "h": 210,
         "s": 0.4,
         "l": 0.96
+       }
+      },
+      {
+       "color": "#071a36",
+       "top": 0,
+       "hsl": {
+        "h": 216,
+        "s": 0.77,
+        "l": 0.12
        }
       }
      ],
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.56
-      },
-      {
-       "color": "#0f172a",
-       "share": 0.32
-      },
-      {
-       "color": "#1d4ed8",
-       "share": 0.1
+       "share": 0.41
       },
       {
        "color": "#ffffff",
-       "share": 0.02
+       "share": 0.23
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.14
+      },
+      {
+       "color": "#b7c2d2",
+       "share": 0.1
+      },
+      {
+       "color": "#1d4ed8",
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#ffffff",
+      "bg": "#0f172a",
       "hsl": {
-       "h": 0,
-       "s": 0,
-       "l": 1
+       "h": 222,
+       "s": 0.47,
+       "l": 0.11
       },
-      "fg": "#0f172a"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 22,
+     "count": 6,
      "inHero": 6,
-     "radius": 12,
-     "height": 76,
+     "radius": 8,
+     "height": 43,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Bỏ qua điều hướng",
-      "20.1 Quy tắc cộng 0% · Kiến thức + Bài t",
-      "20.2 Quy tắc nhân 0% · Kiến thức + Bài t",
-      "20.3 Hoán vị 0% · Kiến thức + Bài tập →",
-      "20.4 Chỉnh hợp 0% · Kiến thức + Bài tập "
+      "Chọn lớp ⌄",
+      "Khóa học",
+      "Lộ trình",
+      "Kiểm tra"
      ]
     },
     "surfaces": {
@@ -821,17 +962,16 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 3,
+     "hairlines": 2,
      "hairlineSamples": [
-      "div.topic-progress 358px",
       "footer.site-footer 390px",
       "div.footer-meta 358px"
      ],
-     "outlinedBoxes": 1,
+     "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 7,
      "squareMedia": 0,
      "roundedMedia": 0,
      "mediaRadius": 0,
@@ -856,71 +996,10 @@
  "findings": [
   {
    "level": "FAIL",
-   "id": "eyebrow",
-   "width": 1440,
-   "message": "1 eyebrow/kicker label(s) above headings: \"Bài kiểm tra cuối chuyên đề\" above \"20 câu · Bao quát 17 dạng\"",
-   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
-  },
-  {
-   "level": "WARN",
-   "id": "micro-label",
-   "width": 1440,
-   "message": "1 tiny uppercase letter-spaced label(s): \"Bài kiểm tra cuối chuyên đề\"",
-   "fix": "Prefer sentence case at body size.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
-   "id": "emoji",
-   "width": 1440,
-   "message": "Emoji in the page: 🔒",
-   "fix": "Remove. Use words or real imagery.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
    "id": "hairline",
    "width": 1440,
-   "message": "3 thin rule(s)/divider line(s): div.topic-progress 1249px | footer.site-footer 1440px | div.footer-meta 1376px",
+   "message": "2 thin rule(s)/divider line(s): footer.site-footer 1440px | div.footer-meta 1376px",
    "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "outlined-box",
-   "width": 1440,
-   "message": "1 box(es) drawn with a 1px outline.",
-   "fix": "Prefer a filled surface or no box.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "size-count",
-   "width": 1440,
-   "message": "10 different font sizes (12, 13, 14, 15, 18, 21, 22, 26, 28, 58).",
-   "fix": "A page needs about five: display, heading, lead, body, small.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
-   "id": "body-size",
-   "width": 1440,
-   "message": "Body text is 12.5px (the size most of the running text is set in).",
-   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
    "alsoAt": [
     768,
     390
@@ -941,10 +1020,10 @@
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
   },
   {
-   "level": "FAIL",
+   "level": "WARN",
    "id": "small-text",
    "width": 1440,
-   "message": "20 text blocks under 13px.",
+   "message": "1 text block(s) under 13px.",
    "fix": "Nothing meant to be read goes below 13px.",
    "alsoAt": [
     768,
@@ -953,19 +1032,9 @@
   },
   {
    "level": "FAIL",
-   "id": "focal-point",
-   "width": 1440,
-   "message": "The first screen has no dominant element: the largest type is 57.6px (4vw) and no single picture holds a third of the viewport.",
-   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw.",
-   "alsoAt": [
-    768
-   ]
-  },
-  {
-   "level": "FAIL",
    "id": "still-page",
    "width": 1440,
-   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "message": "Only 2 element(s) moved while the page loaded and scrolled.",
    "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
   }
  ],

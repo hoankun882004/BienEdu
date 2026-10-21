@@ -1,5 +1,5 @@
-import { bindNavigation, renderLayout, updateLayoutGrade } from "./components/layout.js?v=8.2";
-import { applyGradePage } from "./components/grade-page.js?v=8.3";
+import { bindNavigation, renderLayout, updateLayoutGrade } from "./components/layout.js?v=8.8";
+import { applyGradePage } from "./components/grade-page.js?v=8.7";
 import { initializeGradeSelector } from "./components/grade-selector.js?v=8.2";
 import {
   isGradeEntryUrl,

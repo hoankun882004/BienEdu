@@ -4,11 +4,16 @@
   "type": "module",
   "scripts": {
     "check": "node scripts/check-source.mjs",
+    "content:scan": "node scripts/content-pipeline.mjs scan",
+    "content:import": "node scripts/content-pipeline.mjs import",
+    "content:validate": "node scripts/content-pipeline.mjs validate",
     "test": "node --test tests/*.test.js",
     "test:browser": "node .audit/browser-interactions.mjs",
     "test:home-scroll": "node .audit/home-scroll-experience.mjs",
     "test:polish": "node .audit/polish-pass.mjs",
     "test:v8": "node .audit/v8-experience.mjs",
-    "verify": "npm run check && npm test && npm run test:v8 && npm run test:browser && npm run test:home-scroll && npm run test:polish"
+    "test:v9": "node .audit/v9-refinement.mjs",
+    "test:knowledge-layout": "node .audit/knowledge-layout.mjs",
+    "verify": "npm run check && npm run content:validate && npm test && npm run test:v8 && npm run test:v9 && npm run test:knowledge-layout && npm run test:browser && npm run test:home-scroll && npm run test:polish"
   }
 }

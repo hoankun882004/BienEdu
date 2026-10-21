@@ -10,7 +10,7 @@ const COURSE_BY_GRADE = Object.freeze({
     goals: Object.freeze({
       understand: "Nắm chắc kiến thức nền và điều kiện áp dụng của từng dạng toán.",
       practice: "Luyện theo từng dạng từ cơ bản đến vận dụng, bám sát mục tiêu lớp 9.",
-      assess: "Nhận diện phần còn yếu để điều chỉnh kế hoạch ôn thi vào lớp 10."
+      assess: "Luyện đề để nhận diện phần còn yếu và điều chỉnh kế hoạch ôn thi vào lớp 10."
     })
   }),
   "10": Object.freeze({
@@ -24,7 +24,7 @@ const COURSE_BY_GRADE = Object.freeze({
     goals: Object.freeze({
       understand: "Hiểu bản chất khái niệm, ký hiệu và điều kiện áp dụng trong Toán 10.",
       practice: "Luyện từng dạng bài để hình thành phương pháp giải chắc chắn.",
-      assess: "Phát hiện sớm phần chưa vững trước khi chuyển sang chủ đề mới."
+      assess: "Làm quen với nhịp luyện đề và phát hiện phần chưa vững trước chủ đề mới."
     })
   }),
   "11": Object.freeze({
@@ -38,7 +38,7 @@ const COURSE_BY_GRADE = Object.freeze({
     goals: Object.freeze({
       understand: "Nắm mối liên hệ giữa công thức, điều kiện và cách lựa chọn phương pháp.",
       practice: "Luyện bài theo mức độ để tăng khả năng phân tích và vận dụng.",
-      assess: "Xác định phần cần ôn thêm trước khi chuyển tiếp lên lớp 12."
+      assess: "Luyện đề để xác định phần cần ôn thêm trước khi chuyển tiếp lên lớp 12."
     })
   }),
   "12": Object.freeze({
@@ -52,7 +52,7 @@ const COURSE_BY_GRADE = Object.freeze({
     goals: Object.freeze({
       understand: "Nắm công thức, điều kiện áp dụng và cách đọc bài toán.",
       practice: "Thực hành theo từng chủ đề với phản hồi đủ rõ để tự sửa.",
-      assess: "Nhận diện phần vững và phần cần ôn lại qua bài trắc nghiệm."
+      assess: "Luyện đề để nhận diện phần vững và phần cần ôn lại sau mỗi chặng."
     })
   })
 });

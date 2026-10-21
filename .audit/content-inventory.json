@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "sourceDirectory": "39 chuyên đề",
+  "scannedAt": "2026-10-21T11:01:02.458Z",
+  "extractor": "C:\\Program Files\\Git\\mingw64\\bin\\pdftotext.exe",
+  "documents": [
+    {
+      "relativePath": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "fileName": "C12-CD13-CD14.pdf",
+      "size": 220310,
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "change": "unchanged",
+      "pageCount": 49,
+      "extraction": "ok",
+      "extractionPath": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "textCharacterCount": 82995,
+      "headingCandidates": [
+        {
+          "code": "12.1",
+          "title": "Nguyên hàm cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.2",
+          "title": "Nguyên hàm đa thức . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.3",
+          "title": "Nguyên hàm phân thức . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.4",
+          "title": "Nguyên hàm lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.5",
+          "title": "Nguyên hàm mũ – logarit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.6",
+          "title": "Đổi biến số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.7",
+          "title": "Từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.8",
+          "title": "Tìm hàm số khi biết đạo hàm . . . . . . . . . . . . . . . . . . . . . . . . . . . 14",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.9",
+          "title": "Tìm nguyên hàm có điều kiện ban đầu . . . . . . . . . . . . . . . . . . . . . . 16",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.1",
+          "title": "Tính tích phân cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.2",
+          "title": "Tính chất của tích phân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.3",
+          "title": "Đổi biến trong tích phân xác định . . . . . . . . . . . . . . . . . . . . . . . . 21",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.4",
+          "title": "Tích phân từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.5",
+          "title": "Tích phân hàm chứa trị tuyệt đối . . . . . . . . . . . . . . . . . . . . . . . . . 24",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.6",
+          "title": "Tích phân dựa vào đồ thị . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.7",
+          "title": "Tích phân có tham số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.8",
+          "title": "Tích phân kết hợp tính đối xứng . . . . . . . . . . . . . . . . . . . . . . . . . 30",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.1",
+          "title": "Diện tích hình phẳng với trục Ox . . . . . . . . . . . . . . . . . . . . . . . . 33",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.2",
+          "title": "Diện tích giữa hai đồ thị . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.3",
+          "title": "Thể tích khối tròn xoay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.4",
+          "title": "Vật thể bị khoét/rỗng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.5",
+          "title": "Quãng đường từ vận tốc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.6",
+          "title": "Đại lượng tích lũy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.7",
+          "title": "Công suất −→ năng lượng . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.8",
+          "title": "Lưu lượng −→ thể tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.9",
+          "title": "Bài toán thực tế nhiều giai đoạn . . . . . . . . . . . . . . . . . . . . . . . . . 45",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.1",
+          "title": "Nguyên hàm cơ bản",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.2",
+          "title": "Nguyên hàm đa thức",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.3",
+          "title": "Nguyên hàm phân thức",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.4",
+          "title": "Nguyên hàm lượng giác",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.5",
+          "title": "Nguyên hàm mũ – logarit",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.6",
+          "title": "Đổi biến số",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.7",
+          "title": "Từng phần",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.8",
+          "title": "Tìm hàm số khi biết đạo hàm",
+          "kind": "subtopic"
+        },
+        {
+          "code": "12.9",
+          "title": "Tìm nguyên hàm có điều kiện ban đầu",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.1",
+          "title": "Tính tích phân cơ bản",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.2",
+          "title": "Tính chất của tích phân",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.3",
+          "title": "Đổi biến trong tích phân xác định",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.4",
+          "title": "Tích phân từng phần",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.5",
+          "title": "Tích phân hàm chứa trị tuyệt đối",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.6",
+          "title": "Tích phân dựa vào đồ thị",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.7",
+          "title": "Tích phân có tham số",
+          "kind": "subtopic"
+        },
+        {
+          "code": "13.8",
+          "title": "Tích phân kết hợp tính đối xứng",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.1",
+          "title": "Diện tích hình phẳng với trục Ox",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.2",
+          "title": "Diện tích giữa hai đồ thị",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.3",
+          "title": "Thể tích khối tròn xoay",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.4",
+          "title": "Vật thể bị khoét/rỗng",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.5",
+          "title": "Quãng đường từ vận tốc",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.6",
+          "title": "Đại lượng tích lũy",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.7",
+          "title": "Công suất −→ năng lượng",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.8",
+          "title": "Lưu lượng −→ thể tích",
+          "kind": "subtopic"
+        },
+        {
+          "code": "14.9",
+          "title": "Bài toán thực tế nhiều giai đoạn",
+          "kind": "subtopic"
+        }
+      ]
+    },
+    {
+      "relativePath": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "fileName": "Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "size": 2925340,
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "change": "unchanged",
+      "pageCount": 18,
+      "extraction": "ok",
+      "extractionPath": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "textCharacterCount": 29660,
+      "headingCandidates": [
+        {
+          "code": "CD20",
+          "title": "QUY TẮC ĐẾM - TỔ HỢP NÂNG CAO 3",
+          "kind": "topic"
+        },
+        {
+          "code": "CD21",
+          "title": "CÁC QUY TẮC XÁC SUẤT 14",
+          "kind": "topic"
+        },
+        {
+          "code": "CD20",
+          "title": "QUY TẮC ĐẾM - TỔ HỢP NÂNG CAO",
+          "kind": "topic"
+        },
+        {
+          "code": "20.1",
+          "title": "Quy tắc cộng",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.2",
+          "title": "Quy tắc nhân",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.3",
+          "title": "Hoán vị",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.4",
+          "title": "Chỉnh hợp",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.5",
+          "title": "Tổ hợp",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.6",
+          "title": "Sắp xếp có điều kiện",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.7",
+          "title": "Chọn người - chọn vật có điều kiện",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.8",
+          "title": "Phân phối vật vào hộp - ngăn",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.9",
+          "title": "Chia nhóm",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.10",
+          "title": "Đếm gián tiếp",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.11",
+          "title": "Nguyên lý bù trừ",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.12",
+          "title": "Bài toán hàng - cột",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.13",
+          "title": "Bố trí trên đa giác",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.14",
+          "title": "Phân lớp theo phần dư",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.15",
+          "title": "Bài toán modulo",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.16",
+          "title": "Bài toán nhiều giai đoạn",
+          "kind": "subtopic"
+        },
+        {
+          "code": "20.17",
+          "title": "Tổ hợp kết hợp hình học",
+          "kind": "subtopic"
+        },
+        {
+          "code": "CD21",
+          "title": "CÁC QUY TẮC XÁC SUẤT",
+          "kind": "topic"
+        },
+        {
+          "code": "21.1",
+          "title": "Biến cố",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.2",
+          "title": "Biến cố đối",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.3",
+          "title": "Biến cố hợp",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.4",
+          "title": "Biến cố giao",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.5",
+          "title": "Biến cố xung khắc",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.6",
+          "title": "Biến cố độc lập",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.7",
+          "title": "Công thức cộng xác suất",
+          "kind": "subtopic"
+        },
+        {
+          "code": "21.8",
+          "title": "Công thức nhân xác suất",
+          "kind": "subtopic"
+        }
+      ]
+    }
+  ]
+}

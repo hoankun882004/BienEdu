@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { createFinalExam, finalExamBlueprints, gradeFinalExam } from "../assets/js/domain/exam-engine.js";
 
 test("final exams contain 20 questions and cover every required subtopic", () => {
+  assert.deepEqual(Object.keys(finalExamBlueprints), ["CD12", "CD13", "CD14", "CD20", "CD21"]);
   for (const [topicId, blueprint] of Object.entries(finalExamBlueprints)) {
     const exam = createFinalExam(topicId);
     assert.equal(exam.length, 20);

@@ -1,4 +1,6 @@
-const documentSources = [
+// This manifest records only mappings that were checked against the actual PDF
+// headings and page boundaries. A filename is never treated as proof of scope.
+export const documentSources = Object.freeze([
   {
     id: "cd20-cd21-theory",
     filePath: "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
@@ -7,6 +9,11 @@ const documentSources = [
     pageCount: 18,
     sourceSha256: "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
     availabilityStatus: "available",
+    verification: {
+      status: "verified",
+      auditedAt: "2026-10-21",
+      note: "The 18-page file ends at 21.8. Despite the filename and cover mentioning CD20-CD23, no CD22 or CD23 lesson pages are present."
+    },
     topics: {
       CD20: {
         pageStart: 4,
@@ -50,23 +57,95 @@ const documentSources = [
         }
       }
     }
+  },
+  {
+    id: "cd12-cd14-calculus",
+    filePath: "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+    fileName: "Nguyên hàm – Tích phân CD12–CD14",
+    mimeType: "application/pdf",
+    pageCount: 49,
+    sourceSha256: "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+    availabilityStatus: "available",
+    verification: {
+      status: "verified",
+      auditedAt: "2026-10-21",
+      note: "All 49 pages were inspected. The document contains CD12-01 through CD14-09 in the same order as the curriculum."
+    },
+    topics: {
+      CD12: {
+        pageStart: 3,
+        pageEnd: 18,
+        printedPageStart: 2,
+        printedPageEnd: 17,
+        exercisePages: {
+          "12.1": 3,
+          "12.2": 5,
+          "12.3": 7,
+          "12.4": 8,
+          "12.5": 10,
+          "12.6": 12,
+          "12.7": 13,
+          "12.8": 15,
+          "12.9": 17
+        }
+      },
+      CD13: {
+        pageStart: 19,
+        pageEnd: 33,
+        printedPageStart: 18,
+        printedPageEnd: 32,
+        exercisePages: {
+          "13.1": 19,
+          "13.2": 20,
+          "13.3": 22,
+          "13.4": 24,
+          "13.5": 25,
+          "13.6": 27,
+          "13.7": 29,
+          "13.8": 31
+        }
+      },
+      CD14: {
+        pageStart: 34,
+        pageEnd: 49,
+        printedPageStart: 33,
+        printedPageEnd: 48,
+        exercisePages: {
+          "14.1": 34,
+          "14.2": 35,
+          "14.3": 37,
+          "14.4": 38,
+          "14.5": 40,
+          "14.6": 42,
+          "14.7": 43,
+          "14.8": 45,
+          "14.9": 46
+        }
+      }
+    }
   }
-];
+]);
 
-const documentMappings = documentSources.flatMap((source) =>
+export const documentMappings = Object.freeze(documentSources.flatMap((source) =>
   Object.entries(source.topics).map(([topicId, metadata]) => ({
     topicId,
     documentId: source.id,
     filePath: source.filePath,
     fileName: source.fileName,
     mimeType: source.mimeType,
+    pageCount: source.pageCount,
     sourceSha256: source.sourceSha256,
     availabilityStatus: source.availabilityStatus,
+    verification: { ...source.verification },
     ...metadata
   }))
-);
+));
 
 export function getDocumentForTopic(topicId) {
   const mapping = documentMappings.find((item) => item.topicId === topicId);
   return mapping ? { ...mapping, exercisePages: { ...mapping.exercisePages } } : null;
+}
+
+export function getDocumentSource(documentId) {
+  return documentSources.find((item) => item.id === documentId) ?? null;
 }

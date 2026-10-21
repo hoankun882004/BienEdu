@@ -45,7 +45,7 @@ try {
   assert.equal(await page.eval("document.querySelector('.study-rhythm__note')"), null, "home must remove the no-account note");
   assert.equal(await page.eval("document.querySelector('.topic-catalogue, .quiz-preview, .learning-path, .contact-cta')"), null, "home must stop after the concise study rhythm");
 
-  await open(page, "/course.html", 350);
+  await open(page, "/course.html?grade=12", 350);
   assert.equal(await page.eval("document.querySelector('.course-program, .course-method, .registration-cta')"), null, "course page must stop after the learning goals");
   await page.eval("document.querySelector('[data-registration-open]').click()");
   assert.equal(await page.eval("document.querySelector('[data-registration-dialog]').open"), true, "registration guidance must open on demand");
@@ -54,35 +54,30 @@ try {
   await page.screenshot({ path: ".audit/polish-after-registration-modal-1440.jpg", quality: 86 });
   await page.eval("document.querySelector('[data-registration-dialog]').close()");
 
-  await open(page, "/documents.html", 400);
+  await open(page, "/documents.html?grade=12", 400);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-group] option').textContent"), "Tất cả nhóm kiến thức");
-  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-ready').length"), 2);
-  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-pending').length"), 37);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-ready').length"), 5);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-source').length"), 0);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-pending').length"), 34);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-status]').textContent.replace(/\\s+/g, ' ').trim()"), "Đang hiển thị 39 chuyên đề");
 
-  await open(page, "/contact.html", 350);
+  await open(page, "/contact.html?grade=12", 350);
+  assert.deepEqual(await page.eval("[...document.querySelectorAll('.site-nav a')].map((link) => link.textContent.trim())"), ["Khóa học", "Lộ trình", "Luyện đề", "Đăng ký học"]);
+  assert.equal(await page.eval("document.querySelector('.tutor-hero h1').textContent.replace(/\\s+/g, ' ').trim()"), "Đăng ký học");
   assert.equal(await page.eval("document.querySelectorAll('.teaching-band__action').length"), 0, "contact methods must not repeat large action buttons");
   assert.equal(await page.eval("document.querySelectorAll('.zalo-chat-bubble').length"), 1, "contact page must expose one floating Zalo bubble");
   assert.equal(await page.eval("document.querySelector('.zalo-chat-bubble').href.includes('zalo.me/0943943151')"), true);
   assert.equal(await page.eval("getComputedStyle(document.querySelector('.zalo-chat-bubble')).position"), "fixed");
   assert.equal(await page.eval("document.querySelectorAll('.study-gallery').length"), 0, "internal tutor page must not repeat the large collage");
 
-  await open(page, "/quiz.html", 300);
-  assert.equal(await page.eval("document.querySelectorAll('.study-gallery').length"), 0, "quiz page must stay utility-focused");
-  await page.eval("document.querySelector('[data-action=start]').click()");
-  for (let index = 0; index < 10; index += 1) {
-    await page.eval("document.querySelector('input[name=answer]').click()");
-    if (index < 9) await page.eval("document.querySelector('[data-action=next]').click()");
-  }
-  await page.eval("document.querySelector('[data-action=review]').click()");
-  await page.eval("document.querySelector('[data-action=submit]').click()");
-  assert.equal(await page.eval("document.querySelectorAll('.result-item').length"), 10);
-  assert.equal(await page.eval("document.querySelectorAll('.result-item__details').length"), 10);
-  assert.equal(await page.eval("document.querySelectorAll('.result-item')[5].textContent.includes('a⃗ × b⃗')"), true, "question 6 must use the multiplication sign between vectors");
-  assert.equal(await page.eval("document.querySelectorAll('.result-item')[5].textContent.includes('2 × 1')"), true, "question 6 explanation must use multiplication signs");
-  assert.equal(await page.eval("document.querySelectorAll('.result-item')[9].textContent.includes('Sđáy × h')"), true, "question 10 formula must use the multiplication sign");
-  assert.equal(await page.eval("document.querySelectorAll('.result-item')[9].textContent.includes('(1/3) × 12 × 5')"), true, "question 10 calculation must use multiplication signs");
-  await page.screenshot({ path: ".audit/polish-after-quiz-results-1440.jpg", quality: 84, fullPage: true });
+  await open(page, "/quiz.html?grade=12", 300);
+  assert.equal(await page.eval("document.querySelectorAll('.study-gallery').length"), 0, "practice-paper page must stay focused");
+  assert.equal(await page.eval("document.querySelector('[data-practice-page-title]').textContent"), "Luyện đề Toán 12");
+  assert.equal(await page.eval("document.querySelector('.practice-paper-empty') !== null"), true);
+  assert.equal(await page.eval("document.querySelectorAll('.practice-paper-item').length"), 0, "practice-paper page must not fabricate content");
+  assert.equal(await page.eval("document.querySelector('.practice-paper-empty').textContent.includes('đang được cập nhật')"), true);
+  assert.equal(await page.eval("document.querySelector('.practice-paper-empty__actions a').textContent"), "Quay lại lộ trình");
+  await page.screenshot({ path: ".audit/polish-after-practice-papers-1440.jpg", quality: 84, fullPage: true });
 
   const desktopPages = [["/", "home"], ["/course.html", "course"], ["/documents.html", "roadmap"], ["/quiz.html", "quiz"], ["/contact.html", "contact"]];
   await page.setViewport({ width: 1440, height: 900, mobile: false });
@@ -99,9 +94,20 @@ try {
     await page.screenshot({ path: `.audit/polish-after-${name}-1440.jpg`, quality: 82, fullPage: true });
   }
 
-  const widths = [375, 390, 768, 1024, 1280, 1440, 1920];
-  for (const width of widths) {
-    await page.setViewport({ width, height: width <= 390 ? 844 : width <= 768 ? 900 : 900, mobile: width <= 390 });
+  const sizes = [
+    { width: 360, height: 800, mobile: true },
+    { width: 375, height: 812, mobile: true },
+    { width: 390, height: 844, mobile: true },
+    { width: 414, height: 896, mobile: true },
+    { width: 430, height: 932, mobile: true },
+    { width: 768, height: 1024, mobile: false },
+    { width: 1024, height: 768, mobile: false },
+    { width: 1280, height: 720, mobile: false },
+    { width: 1440, height: 900, mobile: false },
+    { width: 1920, height: 1080, mobile: false }
+  ];
+  for (const size of sizes) {
+    await page.setViewport(size);
     for (const route of ["/", "/course.html", "/documents.html", "/quiz.html", "/contact.html"]) {
       await open(page, route, 160);
       const health = await page.eval(`(() => ({
@@ -109,23 +115,23 @@ try {
         navPresent: document.querySelectorAll('.site-nav a').length === 4,
         footerPresent: document.querySelectorAll('.footer-grid nav a').length === 4
       }))()`);
-      assert.equal(health.horizontalOverflow, false, `${route} horizontal overflow at ${width}px`);
-      assert.equal(health.navPresent, true, `${route} navigation missing at ${width}px`);
-      assert.equal(health.footerPresent, true, `${route} footer missing at ${width}px`);
+      assert.equal(health.horizontalOverflow, false, `${route} horizontal overflow at ${size.width}x${size.height}`);
+      assert.equal(health.navPresent, true, `${route} navigation missing at ${size.width}x${size.height}`);
+      assert.equal(health.footerPresent, true, `${route} footer missing at ${size.width}x${size.height}`);
     }
   }
 
   await page.setViewport({ width: 390, height: 844, mobile: true });
-  for (const [route, name] of [["/", "home"], ["/course.html", "course"], ["/documents.html", "roadmap"], ["/contact.html", "contact"]]) {
+  for (const [route, name] of [["/", "home"], ["/course.html", "course"], ["/documents.html", "roadmap"], ["/quiz.html?grade=12", "practice-papers"], ["/contact.html", "contact"]]) {
     await open(page, route, 240);
     await page.screenshot({ path: `.audit/polish-after-${name}-390.jpg`, quality: 82, fullPage: true });
   }
-  await open(page, "/course.html?register=online", 240);
+  await open(page, "/course.html?grade=12&register=online", 240);
   assert.equal(await page.eval("document.querySelector('[data-registration-dialog]').open"), true);
   assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "registration dialog must fit at 390px");
   await page.screenshot({ path: ".audit/polish-after-registration-modal-390.jpg", quality: 84 });
 
-  console.log("Polish pass checks passed: concise home and course pages, registration dialog, clear roadmap states, quiz multiplication signs, tutor CTAs, and no horizontal overflow across 7 widths.");
+  console.log("Polish pass checks passed: concise home and course pages, registration dialog, clear roadmap states, honest practice-paper shell, tutor CTAs, and no horizontal overflow across 10 viewports.");
 } finally {
   await browser.close();
   await new Promise((done) => server.close(done));

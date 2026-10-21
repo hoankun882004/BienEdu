@@ -1,6 +1,8 @@
+import { calculusExampleContent } from "./calculus-lessons.js?v=8.6";
+
 // Worked examples transcribed and clarified from the verified CD20–CD21 source PDF.
 // Each example is a complete learning unit rather than a crop of the source page.
-export const exampleContent = Object.freeze({
+const probabilityExampleContent = Object.freeze({
   "20.1": [
     {
       title: "Quên làm bài tập",
@@ -362,6 +364,11 @@ export const exampleContent = Object.freeze({
     takeaway: "Trong phép rút không hoàn lại, mẫu số và số trường hợp thuận lợi phải được cập nhật sau mỗi bước.",
     sourcePages: [18]
   }]
+});
+
+export const exampleContent = Object.freeze({
+  ...calculusExampleContent,
+  ...probabilityExampleContent
 });
 
 export function getExampleContent(sourceTopic) {

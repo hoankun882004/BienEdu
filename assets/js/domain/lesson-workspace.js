@@ -2,6 +2,7 @@ export function createLessonSlides({
   topic,
   exercise,
   knowledgeSection,
+  contentRecord = null,
   reading = null,
   examples = null,
   questions = []
@@ -16,17 +17,19 @@ export function createLessonSlides({
     }];
   }
 
+  const sourcePages = [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))];
+  const readingPages = reading?.pages ?? (reading ? [reading] : []);
   const knowledgeSlides = reading
-    ? [{
-        ...knowledgeSection.knowledgeSlides[0],
-        id: `${exercise.code}-knowledge-1`,
-        sourcePages: [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))],
-        reading
-      }]
+    ? readingPages.map((readingPage, index) => ({
+        ...knowledgeSection.knowledgeSlides[Math.min(index, knowledgeSection.knowledgeSlides.length - 1)],
+        id: contentRecord?.sections.knowledge.units[index]?.id ?? `${exercise.code}-knowledge-${index + 1}`,
+        sourcePages: readingPage.sourcePages ?? sourcePages,
+        reading: readingPage
+      }))
     : knowledgeSection.knowledgeSlides;
   const exampleSlides = examples
     ? examples.map((workedExample, index) => ({
-        id: `${exercise.code}-example-${index + 1}`,
+        id: contentRecord?.sections.examples.units[index]?.id ?? `${exercise.code}-example-${index + 1}`,
         sourcePages: workedExample.sourcePages,
         workedExample
       }))

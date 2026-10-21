@@ -1,0 +1,1316 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T11:01:01.138Z",
+  "policy": "proposal-only: verified content is never overwritten automatically",
+  "documents": [
+    {
+      "relativePath": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "change": "unchanged",
+      "registeredDocumentId": "cd12-cd14-calculus",
+      "action": "preserve-verified-content",
+      "affectedTopics": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "candidates": [
+        {
+          "code": "12.1",
+          "title": "Nguyên hàm cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-01",
+            "code": "12.1",
+            "title": "Nguyên hàm cơ bản",
+            "order": 1
+          }
+        },
+        {
+          "code": "12.2",
+          "title": "Nguyên hàm đa thức . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-02",
+            "code": "12.2",
+            "title": "Nguyên hàm đa thức",
+            "order": 2
+          }
+        },
+        {
+          "code": "12.3",
+          "title": "Nguyên hàm phân thức . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-03",
+            "code": "12.3",
+            "title": "Nguyên hàm phân thức",
+            "order": 3
+          }
+        },
+        {
+          "code": "12.4",
+          "title": "Nguyên hàm lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-04",
+            "code": "12.4",
+            "title": "Nguyên hàm lượng giác",
+            "order": 4
+          }
+        },
+        {
+          "code": "12.5",
+          "title": "Nguyên hàm mũ – logarit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-05",
+            "code": "12.5",
+            "title": "Nguyên hàm mũ – logarit",
+            "order": 5
+          }
+        },
+        {
+          "code": "12.6",
+          "title": "Đổi biến số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-06",
+            "code": "12.6",
+            "title": "Đổi biến số",
+            "order": 6
+          }
+        },
+        {
+          "code": "12.7",
+          "title": "Từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-07",
+            "code": "12.7",
+            "title": "Từng phần",
+            "order": 7
+          }
+        },
+        {
+          "code": "12.8",
+          "title": "Tìm hàm số khi biết đạo hàm . . . . . . . . . . . . . . . . . . . . . . . . . . . 14",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-08",
+            "code": "12.8",
+            "title": "Tìm hàm số khi biết đạo hàm",
+            "order": 8
+          }
+        },
+        {
+          "code": "12.9",
+          "title": "Tìm nguyên hàm có điều kiện ban đầu . . . . . . . . . . . . . . . . . . . . . . 16",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-09",
+            "code": "12.9",
+            "title": "Tìm nguyên hàm khi biết điều kiện ban đầu F(x0)=a",
+            "order": 9
+          }
+        },
+        {
+          "code": "13.1",
+          "title": "Tính tích phân cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-01",
+            "code": "13.1",
+            "title": "Tính tích phân cơ bản",
+            "order": 1
+          }
+        },
+        {
+          "code": "13.2",
+          "title": "Tính chất của tích phân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-02",
+            "code": "13.2",
+            "title": "Tính chất của tích phân",
+            "order": 2
+          }
+        },
+        {
+          "code": "13.3",
+          "title": "Đổi biến trong tích phân xác định . . . . . . . . . . . . . . . . . . . . . . . . 21",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-03",
+            "code": "13.3",
+            "title": "Đổi biến",
+            "order": 3
+          }
+        },
+        {
+          "code": "13.4",
+          "title": "Tích phân từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-04",
+            "code": "13.4",
+            "title": "Tích phân từng phần",
+            "order": 4
+          }
+        },
+        {
+          "code": "13.5",
+          "title": "Tích phân hàm chứa trị tuyệt đối . . . . . . . . . . . . . . . . . . . . . . . . . 24",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-05",
+            "code": "13.5",
+            "title": "Tích phân hàm chứa trị tuyệt đối",
+            "order": 5
+          }
+        },
+        {
+          "code": "13.6",
+          "title": "Tích phân dựa vào đồ thị . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-06",
+            "code": "13.6",
+            "title": "Tích phân dựa vào đồ thị",
+            "order": 6
+          }
+        },
+        {
+          "code": "13.7",
+          "title": "Tích phân có tham số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-07",
+            "code": "13.7",
+            "title": "Tích phân có tham số",
+            "order": 7
+          }
+        },
+        {
+          "code": "13.8",
+          "title": "Tích phân kết hợp tính đối xứng . . . . . . . . . . . . . . . . . . . . . . . . . 30",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-08",
+            "code": "13.8",
+            "title": "Tích phân kết hợp tính đối xứng",
+            "order": 8
+          }
+        },
+        {
+          "code": "14.1",
+          "title": "Diện tích hình phẳng với trục Ox . . . . . . . . . . . . . . . . . . . . . . . . 33",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-01",
+            "code": "14.1",
+            "title": "Diện tích hình phẳng với trục Ox",
+            "order": 1
+          }
+        },
+        {
+          "code": "14.2",
+          "title": "Diện tích giữa hai đồ thị . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-02",
+            "code": "14.2",
+            "title": "Diện tích giữa hai đồ thị",
+            "order": 2
+          }
+        },
+        {
+          "code": "14.3",
+          "title": "Thể tích khối tròn xoay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-03",
+            "code": "14.3",
+            "title": "Thể tích khối tròn xoay",
+            "order": 3
+          }
+        },
+        {
+          "code": "14.4",
+          "title": "Vật thể bị khoét/rỗng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-04",
+            "code": "14.4",
+            "title": "Vật thể bị khoét/rỗng",
+            "order": 4
+          }
+        },
+        {
+          "code": "14.5",
+          "title": "Quãng đường từ vận tốc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-05",
+            "code": "14.5",
+            "title": "Quãng đường từ vận tốc",
+            "order": 5
+          }
+        },
+        {
+          "code": "14.6",
+          "title": "Đại lượng tích lũy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-06",
+            "code": "14.6",
+            "title": "Đại lượng tích lũy F(b)-F(a)=∫f(t)dt",
+            "order": 6
+          }
+        },
+        {
+          "code": "14.7",
+          "title": "Công suất −→ năng lượng . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-07",
+            "code": "14.7",
+            "title": "Công suất → năng lượng",
+            "order": 7
+          }
+        },
+        {
+          "code": "14.8",
+          "title": "Lưu lượng −→ thể tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-08",
+            "code": "14.8",
+            "title": "Lưu lượng → thể tích",
+            "order": 8
+          }
+        },
+        {
+          "code": "14.9",
+          "title": "Bài toán thực tế nhiều giai đoạn . . . . . . . . . . . . . . . . . . . . . . . . . 45",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-09",
+            "code": "14.9",
+            "title": "Bài toán thực tế nhiều giai đoạn",
+            "order": 9
+          }
+        },
+        {
+          "code": "12.1",
+          "title": "Nguyên hàm cơ bản",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-01",
+            "code": "12.1",
+            "title": "Nguyên hàm cơ bản",
+            "order": 1
+          }
+        },
+        {
+          "code": "12.2",
+          "title": "Nguyên hàm đa thức",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-02",
+            "code": "12.2",
+            "title": "Nguyên hàm đa thức",
+            "order": 2
+          }
+        },
+        {
+          "code": "12.3",
+          "title": "Nguyên hàm phân thức",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-03",
+            "code": "12.3",
+            "title": "Nguyên hàm phân thức",
+            "order": 3
+          }
+        },
+        {
+          "code": "12.4",
+          "title": "Nguyên hàm lượng giác",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-04",
+            "code": "12.4",
+            "title": "Nguyên hàm lượng giác",
+            "order": 4
+          }
+        },
+        {
+          "code": "12.5",
+          "title": "Nguyên hàm mũ – logarit",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-05",
+            "code": "12.5",
+            "title": "Nguyên hàm mũ – logarit",
+            "order": 5
+          }
+        },
+        {
+          "code": "12.6",
+          "title": "Đổi biến số",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-06",
+            "code": "12.6",
+            "title": "Đổi biến số",
+            "order": 6
+          }
+        },
+        {
+          "code": "12.7",
+          "title": "Từng phần",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-07",
+            "code": "12.7",
+            "title": "Từng phần",
+            "order": 7
+          }
+        },
+        {
+          "code": "12.8",
+          "title": "Tìm hàm số khi biết đạo hàm",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-08",
+            "code": "12.8",
+            "title": "Tìm hàm số khi biết đạo hàm",
+            "order": 8
+          }
+        },
+        {
+          "code": "12.9",
+          "title": "Tìm nguyên hàm có điều kiện ban đầu",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD12",
+            "id": "CD12-09",
+            "code": "12.9",
+            "title": "Tìm nguyên hàm khi biết điều kiện ban đầu F(x0)=a",
+            "order": 9
+          }
+        },
+        {
+          "code": "13.1",
+          "title": "Tính tích phân cơ bản",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-01",
+            "code": "13.1",
+            "title": "Tính tích phân cơ bản",
+            "order": 1
+          }
+        },
+        {
+          "code": "13.2",
+          "title": "Tính chất của tích phân",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-02",
+            "code": "13.2",
+            "title": "Tính chất của tích phân",
+            "order": 2
+          }
+        },
+        {
+          "code": "13.3",
+          "title": "Đổi biến trong tích phân xác định",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-03",
+            "code": "13.3",
+            "title": "Đổi biến",
+            "order": 3
+          }
+        },
+        {
+          "code": "13.4",
+          "title": "Tích phân từng phần",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-04",
+            "code": "13.4",
+            "title": "Tích phân từng phần",
+            "order": 4
+          }
+        },
+        {
+          "code": "13.5",
+          "title": "Tích phân hàm chứa trị tuyệt đối",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-05",
+            "code": "13.5",
+            "title": "Tích phân hàm chứa trị tuyệt đối",
+            "order": 5
+          }
+        },
+        {
+          "code": "13.6",
+          "title": "Tích phân dựa vào đồ thị",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-06",
+            "code": "13.6",
+            "title": "Tích phân dựa vào đồ thị",
+            "order": 6
+          }
+        },
+        {
+          "code": "13.7",
+          "title": "Tích phân có tham số",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-07",
+            "code": "13.7",
+            "title": "Tích phân có tham số",
+            "order": 7
+          }
+        },
+        {
+          "code": "13.8",
+          "title": "Tích phân kết hợp tính đối xứng",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD13",
+            "id": "CD13-08",
+            "code": "13.8",
+            "title": "Tích phân kết hợp tính đối xứng",
+            "order": 8
+          }
+        },
+        {
+          "code": "14.1",
+          "title": "Diện tích hình phẳng với trục Ox",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-01",
+            "code": "14.1",
+            "title": "Diện tích hình phẳng với trục Ox",
+            "order": 1
+          }
+        },
+        {
+          "code": "14.2",
+          "title": "Diện tích giữa hai đồ thị",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-02",
+            "code": "14.2",
+            "title": "Diện tích giữa hai đồ thị",
+            "order": 2
+          }
+        },
+        {
+          "code": "14.3",
+          "title": "Thể tích khối tròn xoay",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-03",
+            "code": "14.3",
+            "title": "Thể tích khối tròn xoay",
+            "order": 3
+          }
+        },
+        {
+          "code": "14.4",
+          "title": "Vật thể bị khoét/rỗng",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-04",
+            "code": "14.4",
+            "title": "Vật thể bị khoét/rỗng",
+            "order": 4
+          }
+        },
+        {
+          "code": "14.5",
+          "title": "Quãng đường từ vận tốc",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-05",
+            "code": "14.5",
+            "title": "Quãng đường từ vận tốc",
+            "order": 5
+          }
+        },
+        {
+          "code": "14.6",
+          "title": "Đại lượng tích lũy",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-06",
+            "code": "14.6",
+            "title": "Đại lượng tích lũy F(b)-F(a)=∫f(t)dt",
+            "order": 6
+          }
+        },
+        {
+          "code": "14.7",
+          "title": "Công suất −→ năng lượng",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-07",
+            "code": "14.7",
+            "title": "Công suất → năng lượng",
+            "order": 7
+          }
+        },
+        {
+          "code": "14.8",
+          "title": "Lưu lượng −→ thể tích",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-08",
+            "code": "14.8",
+            "title": "Lưu lượng → thể tích",
+            "order": 8
+          }
+        },
+        {
+          "code": "14.9",
+          "title": "Bài toán thực tế nhiều giai đoạn",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD14",
+            "id": "CD14-09",
+            "code": "14.9",
+            "title": "Bài toán thực tế nhiều giai đoạn",
+            "order": 9
+          }
+        }
+      ],
+      "conflict": null
+    },
+    {
+      "relativePath": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "change": "unchanged",
+      "registeredDocumentId": "cd20-cd21-theory",
+      "action": "preserve-verified-content",
+      "affectedTopics": [
+        "CD20",
+        "CD21"
+      ],
+      "candidates": [
+        {
+          "code": "CD20",
+          "title": "QUY TẮC ĐẾM - TỔ HỢP NÂNG CAO 3",
+          "kind": "topic",
+          "curriculumMatch": {
+            "id": "CD20",
+            "title": "Quy tắc đếm – tổ hợp nâng cao",
+            "groupId": "F",
+            "order": 20,
+            "documentStatus": "not_uploaded",
+            "exerciseTypes": [
+              {
+                "id": "CD20-01",
+                "code": "20.1",
+                "title": "Quy tắc cộng",
+                "order": 1
+              },
+              {
+                "id": "CD20-02",
+                "code": "20.2",
+                "title": "Quy tắc nhân",
+                "order": 2
+              },
+              {
+                "id": "CD20-03",
+                "code": "20.3",
+                "title": "Hoán vị",
+                "order": 3
+              },
+              {
+                "id": "CD20-04",
+                "code": "20.4",
+                "title": "Chỉnh hợp",
+                "order": 4
+              },
+              {
+                "id": "CD20-05",
+                "code": "20.5",
+                "title": "Tổ hợp",
+                "order": 5
+              },
+              {
+                "id": "CD20-06",
+                "code": "20.6",
+                "title": "Sắp xếp có điều kiện",
+                "order": 6
+              },
+              {
+                "id": "CD20-07",
+                "code": "20.7",
+                "title": "Chọn người/chọn vật",
+                "order": 7
+              },
+              {
+                "id": "CD20-08",
+                "code": "20.8",
+                "title": "Phân phối vật vào hộp/ngăn",
+                "order": 8
+              },
+              {
+                "id": "CD20-09",
+                "code": "20.9",
+                "title": "Chia nhóm",
+                "order": 9
+              },
+              {
+                "id": "CD20-10",
+                "code": "20.10",
+                "title": "Đếm gián tiếp",
+                "order": 10
+              },
+              {
+                "id": "CD20-11",
+                "code": "20.11",
+                "title": "Nguyên lý bù trừ",
+                "order": 11
+              },
+              {
+                "id": "CD20-12",
+                "code": "20.12",
+                "title": "Bài toán hàng – cột",
+                "order": 12
+              },
+              {
+                "id": "CD20-13",
+                "code": "20.13",
+                "title": "Bố trí trên đa giác",
+                "order": 13
+              },
+              {
+                "id": "CD20-14",
+                "code": "20.14",
+                "title": "Phân lớp theo phần dư",
+                "order": 14
+              },
+              {
+                "id": "CD20-15",
+                "code": "20.15",
+                "title": "Bài toán modulo",
+                "order": 15
+              },
+              {
+                "id": "CD20-16",
+                "code": "20.16",
+                "title": "Bài toán nhiều giai đoạn",
+                "order": 16
+              },
+              {
+                "id": "CD20-17",
+                "code": "20.17",
+                "title": "Tổ hợp kết hợp hình học",
+                "order": 17
+              }
+            ]
+          }
+        },
+        {
+          "code": "CD21",
+          "title": "CÁC QUY TẮC XÁC SUẤT 14",
+          "kind": "topic",
+          "curriculumMatch": {
+            "id": "CD21",
+            "title": "Các quy tắc xác suất",
+            "groupId": "F",
+            "order": 21,
+            "documentStatus": "not_uploaded",
+            "exerciseTypes": [
+              {
+                "id": "CD21-01",
+                "code": "21.1",
+                "title": "Biến cố",
+                "order": 1
+              },
+              {
+                "id": "CD21-02",
+                "code": "21.2",
+                "title": "Biến cố đối",
+                "order": 2
+              },
+              {
+                "id": "CD21-03",
+                "code": "21.3",
+                "title": "Biến cố hợp",
+                "order": 3
+              },
+              {
+                "id": "CD21-04",
+                "code": "21.4",
+                "title": "Biến cố giao",
+                "order": 4
+              },
+              {
+                "id": "CD21-05",
+                "code": "21.5",
+                "title": "Biến cố xung khắc",
+                "order": 5
+              },
+              {
+                "id": "CD21-06",
+                "code": "21.6",
+                "title": "Biến cố độc lập",
+                "order": 6
+              },
+              {
+                "id": "CD21-07",
+                "code": "21.7",
+                "title": "Công thức cộng xác suất",
+                "order": 7
+              },
+              {
+                "id": "CD21-08",
+                "code": "21.8",
+                "title": "Công thức nhân xác suất",
+                "order": 8
+              }
+            ]
+          }
+        },
+        {
+          "code": "CD20",
+          "title": "QUY TẮC ĐẾM - TỔ HỢP NÂNG CAO",
+          "kind": "topic",
+          "curriculumMatch": {
+            "id": "CD20",
+            "title": "Quy tắc đếm – tổ hợp nâng cao",
+            "groupId": "F",
+            "order": 20,
+            "documentStatus": "not_uploaded",
+            "exerciseTypes": [
+              {
+                "id": "CD20-01",
+                "code": "20.1",
+                "title": "Quy tắc cộng",
+                "order": 1
+              },
+              {
+                "id": "CD20-02",
+                "code": "20.2",
+                "title": "Quy tắc nhân",
+                "order": 2
+              },
+              {
+                "id": "CD20-03",
+                "code": "20.3",
+                "title": "Hoán vị",
+                "order": 3
+              },
+              {
+                "id": "CD20-04",
+                "code": "20.4",
+                "title": "Chỉnh hợp",
+                "order": 4
+              },
+              {
+                "id": "CD20-05",
+                "code": "20.5",
+                "title": "Tổ hợp",
+                "order": 5
+              },
+              {
+                "id": "CD20-06",
+                "code": "20.6",
+                "title": "Sắp xếp có điều kiện",
+                "order": 6
+              },
+              {
+                "id": "CD20-07",
+                "code": "20.7",
+                "title": "Chọn người/chọn vật",
+                "order": 7
+              },
+              {
+                "id": "CD20-08",
+                "code": "20.8",
+                "title": "Phân phối vật vào hộp/ngăn",
+                "order": 8
+              },
+              {
+                "id": "CD20-09",
+                "code": "20.9",
+                "title": "Chia nhóm",
+                "order": 9
+              },
+              {
+                "id": "CD20-10",
+                "code": "20.10",
+                "title": "Đếm gián tiếp",
+                "order": 10
+              },
+              {
+                "id": "CD20-11",
+                "code": "20.11",
+                "title": "Nguyên lý bù trừ",
+                "order": 11
+              },
+              {
+                "id": "CD20-12",
+                "code": "20.12",
+                "title": "Bài toán hàng – cột",
+                "order": 12
+              },
+              {
+                "id": "CD20-13",
+                "code": "20.13",
+                "title": "Bố trí trên đa giác",
+                "order": 13
+              },
+              {
+                "id": "CD20-14",
+                "code": "20.14",
+                "title": "Phân lớp theo phần dư",
+                "order": 14
+              },
+              {
+                "id": "CD20-15",
+                "code": "20.15",
+                "title": "Bài toán modulo",
+                "order": 15
+              },
+              {
+                "id": "CD20-16",
+                "code": "20.16",
+                "title": "Bài toán nhiều giai đoạn",
+                "order": 16
+              },
+              {
+                "id": "CD20-17",
+                "code": "20.17",
+                "title": "Tổ hợp kết hợp hình học",
+                "order": 17
+              }
+            ]
+          }
+        },
+        {
+          "code": "20.1",
+          "title": "Quy tắc cộng",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-01",
+            "code": "20.1",
+            "title": "Quy tắc cộng",
+            "order": 1
+          }
+        },
+        {
+          "code": "20.2",
+          "title": "Quy tắc nhân",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-02",
+            "code": "20.2",
+            "title": "Quy tắc nhân",
+            "order": 2
+          }
+        },
+        {
+          "code": "20.3",
+          "title": "Hoán vị",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-03",
+            "code": "20.3",
+            "title": "Hoán vị",
+            "order": 3
+          }
+        },
+        {
+          "code": "20.4",
+          "title": "Chỉnh hợp",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-04",
+            "code": "20.4",
+            "title": "Chỉnh hợp",
+            "order": 4
+          }
+        },
+        {
+          "code": "20.5",
+          "title": "Tổ hợp",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-05",
+            "code": "20.5",
+            "title": "Tổ hợp",
+            "order": 5
+          }
+        },
+        {
+          "code": "20.6",
+          "title": "Sắp xếp có điều kiện",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-06",
+            "code": "20.6",
+            "title": "Sắp xếp có điều kiện",
+            "order": 6
+          }
+        },
+        {
+          "code": "20.7",
+          "title": "Chọn người - chọn vật có điều kiện",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-07",
+            "code": "20.7",
+            "title": "Chọn người/chọn vật",
+            "order": 7
+          }
+        },
+        {
+          "code": "20.8",
+          "title": "Phân phối vật vào hộp - ngăn",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-08",
+            "code": "20.8",
+            "title": "Phân phối vật vào hộp/ngăn",
+            "order": 8
+          }
+        },
+        {
+          "code": "20.9",
+          "title": "Chia nhóm",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-09",
+            "code": "20.9",
+            "title": "Chia nhóm",
+            "order": 9
+          }
+        },
+        {
+          "code": "20.10",
+          "title": "Đếm gián tiếp",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-10",
+            "code": "20.10",
+            "title": "Đếm gián tiếp",
+            "order": 10
+          }
+        },
+        {
+          "code": "20.11",
+          "title": "Nguyên lý bù trừ",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-11",
+            "code": "20.11",
+            "title": "Nguyên lý bù trừ",
+            "order": 11
+          }
+        },
+        {
+          "code": "20.12",
+          "title": "Bài toán hàng - cột",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-12",
+            "code": "20.12",
+            "title": "Bài toán hàng – cột",
+            "order": 12
+          }
+        },
+        {
+          "code": "20.13",
+          "title": "Bố trí trên đa giác",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-13",
+            "code": "20.13",
+            "title": "Bố trí trên đa giác",
+            "order": 13
+          }
+        },
+        {
+          "code": "20.14",
+          "title": "Phân lớp theo phần dư",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-14",
+            "code": "20.14",
+            "title": "Phân lớp theo phần dư",
+            "order": 14
+          }
+        },
+        {
+          "code": "20.15",
+          "title": "Bài toán modulo",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-15",
+            "code": "20.15",
+            "title": "Bài toán modulo",
+            "order": 15
+          }
+        },
+        {
+          "code": "20.16",
+          "title": "Bài toán nhiều giai đoạn",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-16",
+            "code": "20.16",
+            "title": "Bài toán nhiều giai đoạn",
+            "order": 16
+          }
+        },
+        {
+          "code": "20.17",
+          "title": "Tổ hợp kết hợp hình học",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD20",
+            "id": "CD20-17",
+            "code": "20.17",
+            "title": "Tổ hợp kết hợp hình học",
+            "order": 17
+          }
+        },
+        {
+          "code": "CD21",
+          "title": "CÁC QUY TẮC XÁC SUẤT",
+          "kind": "topic",
+          "curriculumMatch": {
+            "id": "CD21",
+            "title": "Các quy tắc xác suất",
+            "groupId": "F",
+            "order": 21,
+            "documentStatus": "not_uploaded",
+            "exerciseTypes": [
+              {
+                "id": "CD21-01",
+                "code": "21.1",
+                "title": "Biến cố",
+                "order": 1
+              },
+              {
+                "id": "CD21-02",
+                "code": "21.2",
+                "title": "Biến cố đối",
+                "order": 2
+              },
+              {
+                "id": "CD21-03",
+                "code": "21.3",
+                "title": "Biến cố hợp",
+                "order": 3
+              },
+              {
+                "id": "CD21-04",
+                "code": "21.4",
+                "title": "Biến cố giao",
+                "order": 4
+              },
+              {
+                "id": "CD21-05",
+                "code": "21.5",
+                "title": "Biến cố xung khắc",
+                "order": 5
+              },
+              {
+                "id": "CD21-06",
+                "code": "21.6",
+                "title": "Biến cố độc lập",
+                "order": 6
+              },
+              {
+                "id": "CD21-07",
+                "code": "21.7",
+                "title": "Công thức cộng xác suất",
+                "order": 7
+              },
+              {
+                "id": "CD21-08",
+                "code": "21.8",
+                "title": "Công thức nhân xác suất",
+                "order": 8
+              }
+            ]
+          }
+        },
+        {
+          "code": "21.1",
+          "title": "Biến cố",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-01",
+            "code": "21.1",
+            "title": "Biến cố",
+            "order": 1
+          }
+        },
+        {
+          "code": "21.2",
+          "title": "Biến cố đối",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-02",
+            "code": "21.2",
+            "title": "Biến cố đối",
+            "order": 2
+          }
+        },
+        {
+          "code": "21.3",
+          "title": "Biến cố hợp",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-03",
+            "code": "21.3",
+            "title": "Biến cố hợp",
+            "order": 3
+          }
+        },
+        {
+          "code": "21.4",
+          "title": "Biến cố giao",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-04",
+            "code": "21.4",
+            "title": "Biến cố giao",
+            "order": 4
+          }
+        },
+        {
+          "code": "21.5",
+          "title": "Biến cố xung khắc",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-05",
+            "code": "21.5",
+            "title": "Biến cố xung khắc",
+            "order": 5
+          }
+        },
+        {
+          "code": "21.6",
+          "title": "Biến cố độc lập",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-06",
+            "code": "21.6",
+            "title": "Biến cố độc lập",
+            "order": 6
+          }
+        },
+        {
+          "code": "21.7",
+          "title": "Công thức cộng xác suất",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-07",
+            "code": "21.7",
+            "title": "Công thức cộng xác suất",
+            "order": 7
+          }
+        },
+        {
+          "code": "21.8",
+          "title": "Công thức nhân xác suất",
+          "kind": "subtopic",
+          "curriculumMatch": {
+            "topicId": "CD21",
+            "id": "CD21-08",
+            "code": "21.8",
+            "title": "Công thức nhân xác suất",
+            "order": 8
+          }
+        }
+      ],
+      "conflict": null
+    }
+  ]
+}

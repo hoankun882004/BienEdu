@@ -25,7 +25,7 @@ export const GRADE_CATALOG = Object.freeze([
     label: "Lớp 12",
     status: "active",
     statusLabel: "Đã có lộ trình học",
-    content: Object.freeze({ course: true, curriculum: true, quiz: true })
+    content: Object.freeze({ course: true, curriculum: true, quiz: false })
   })
 ]);
 

@@ -1,6 +1,8 @@
+import { calculusKnowledgeContent } from "./calculus-lessons.js?v=8.6";
+
 // Structured reading content transcribed from the verified CD20–CD21 source PDF.
 // Keep this module text-only so the lesson remains readable, searchable and accessible.
-export const knowledgeContent = Object.freeze({
+const probabilityKnowledgeContent = Object.freeze({
   "20.1": {
     lead: "Nếu một công việc có thể hoàn thành theo một trong các phương án không đồng thời, số cách thực hiện bằng tổng số cách của từng phương án.",
     formulae: [
@@ -297,6 +299,18 @@ export const knowledgeContent = Object.freeze({
     ],
     note: { label: "Sai lầm hay gặp", text: "Không hoàn lại làm xác suất bước sau thay đổi; không được lặp lại xác suất ban đầu cho mọi bước.", tone: "warning" }
   }
+});
+
+const probabilityKnowledgeReadings = Object.fromEntries(
+  Object.entries(probabilityKnowledgeContent).map(([code, reading]) => [
+    code,
+    Object.freeze({ ...reading, layout: "principles-split" })
+  ])
+);
+
+export const knowledgeContent = Object.freeze({
+  ...calculusKnowledgeContent,
+  ...probabilityKnowledgeReadings
 });
 
 export function getKnowledgeContent(sourceTopic) {

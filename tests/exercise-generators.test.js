@@ -2,8 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { evaluateCalculation, generatePracticeSet, supportedPracticeTopics, validateGeneratedQuestion } from "../assets/js/domain/exercise-generators.js";
 
-test("all 25 mapped subtopics generate exactly three valid questions", () => {
-  assert.equal(supportedPracticeTopics.length, 25);
+test("all 51 mapped subtopics generate exactly three valid questions", () => {
+  assert.equal(supportedPracticeTopics.length, 51);
   for (const code of supportedPracticeTopics) {
     const questions = generatePracticeSet(code, "TEST_V1");
     assert.equal(questions.length, 3, code);
@@ -20,4 +20,5 @@ test("all 25 mapped subtopics generate exactly three valid questions", () => {
 
 test("generation is deterministic for a seed", () => {
   assert.deepEqual(generatePracticeSet("21.8", "same-seed"), generatePracticeSet("21.8", "same-seed"));
+  assert.deepEqual(generatePracticeSet("13.5", "same-seed"), generatePracticeSet("13.5", "same-seed"));
 });

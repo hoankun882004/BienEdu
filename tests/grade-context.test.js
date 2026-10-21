@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { getCurriculumForGrade } from "../assets/js/data/curriculum-by-grade.js";
-import { getQuizForGrade } from "../assets/js/data/quiz-by-grade.js";
+import { getPracticePapersForGrade } from "../assets/js/data/practice-papers.js";
 import { getCourseForGrade } from "../assets/js/data/course-by-grade.js";
 import { hasGradeContent } from "../assets/js/data/grade-catalog.js";
 import { getGradeCatalog } from "../assets/js/domain/grade-context.js";
@@ -23,7 +23,7 @@ function createStorage(entries = []) {
   };
 }
 
-test("Grades 9 to 12 have tailored course pages while only Grade 12 exposes curriculum and quiz data", () => {
+test("Grades 9 to 12 have tailored course pages while only Grade 12 exposes curriculum data", () => {
   const catalog = getGradeCatalog();
   assert.deepEqual(catalog.map(({ id, status }) => ({ id, status })), [
     { id: "9", status: "updating" },
@@ -43,9 +43,10 @@ test("Grades 9 to 12 have tailored course pages while only Grade 12 exposes curr
   assert.equal(getCurriculumForGrade("10").groups.length, 0);
   assert.equal(getCurriculumForGrade("11").groups.length, 0);
   assert.ok(getCurriculumForGrade("12").groups.length > 0);
-  assert.equal(getQuizForGrade("10").length, 0);
-  assert.equal(getQuizForGrade("9").length, 0);
-  assert.ok(getQuizForGrade("12").length > 0);
+  assert.equal(getPracticePapersForGrade("10").length, 0);
+  assert.equal(getPracticePapersForGrade("9").length, 0);
+  assert.equal(getPracticePapersForGrade("11").length, 0);
+  assert.equal(getPracticePapersForGrade("12").length, 0);
 });
 
 test("grade selection persists and an explicit URL takes priority", () => {

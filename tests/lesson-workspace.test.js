@@ -31,6 +31,16 @@ test("workspace navigation flows from knowledge to examples to practice", () => 
   assert.deepEqual(getSectionPosition(slides, state.currentIndex), { section: "example", current: 1, total: 1 });
 });
 
+test("a long text lesson keeps two numbered knowledge pages before its example", () => {
+  const topic = findTopic(curriculumGroups, "CD12");
+  const exercise = findExerciseType(curriculumGroups, "CD12", "12.1");
+  const slides = createLessonSlides({ topic, exercise, knowledgeSection: getKnowledgeSection("12.1"), reading: getKnowledgeContent("12.1"), examples: getExampleContent("12.1"), questions: generatePracticeSet("12.1") });
+  assert.equal(slides.filter((slide) => slide.section === "knowledge").length, 2);
+  assert.deepEqual(slides.filter((slide) => slide.section === "knowledge").map((slide) => slide.id), ["12.1-knowledge-1", "12.1-knowledge-2"]);
+  assert.deepEqual(slides.filter((slide) => slide.section === "knowledge").map((slide) => slide.sourcePages), [[3], [3, 4]]);
+  assert.equal(slides[2].section, "example");
+});
+
 test("a topic without mapped content gets a truthful unavailable state", () => {
   const topic = findTopic(curriculumGroups, "CD01");
   const exercise = findExerciseType(curriculumGroups, "CD01", "1.1");

@@ -65,6 +65,11 @@ try {
   for (const grade of ["9", "10", "11"]) {
     await open(page, `/?grade=${grade}`);
     assert.equal(await page.eval("document.body.dataset.grade"), grade);
+    assert.deepEqual(
+      await page.eval("[...document.querySelectorAll('.site-nav a')].map((link) => link.textContent.trim())"),
+      ["Khóa học", "Lộ trình", "Luyện đề", "Đăng ký học"],
+      `Grade ${grade} uses the shared navigation labels`
+    );
     assert.equal(await page.eval("document.querySelector('[data-home-grade-title]').textContent"), `Học Toán ${grade}`);
     assert.equal(await page.eval("document.querySelector('[data-home-grade-empty]').hidden"), false);
     assert.equal(await page.eval("document.querySelector('[data-home-overview-title]').textContent.trim().length > 0"), true);
@@ -81,14 +86,32 @@ try {
     assert.equal(await page.eval("document.body.textContent.includes('CD20')"), false, `Grade ${grade} course must not leak Grade 12 curriculum`);
     if (grade === "9") await page.screenshot({ path: join(tmpdir(), "bienedu-v8-grade9-course.jpg"), quality: 86 });
 
-    for (const pageName of ["documents", "quiz"]) {
-      const route = `/${pageName}.html?grade=${grade}`;
-      await open(page, route);
-      assert.equal(await page.eval("document.querySelector('.grade-empty-state') !== null"), true, `${route} must show an honest empty state`);
-      assert.equal(await page.eval("document.body.textContent.includes('CD20')"), false, `${route} must not leak Grade 12 content`);
-      if (grade === "9") await page.screenshot({ path: join(tmpdir(), `bienedu-v8-grade9-${pageName}.jpg`), quality: 86 });
-    }
+    const curriculumRoute = `/documents.html?grade=${grade}`;
+    await open(page, curriculumRoute);
+    assert.equal(await page.eval("document.querySelector('.grade-empty-state') !== null"), true, `${curriculumRoute} must show an honest empty state`);
+    assert.equal(await page.eval("document.body.textContent.includes('CD20')"), false, `${curriculumRoute} must not leak Grade 12 content`);
+    if (grade === "9") await page.screenshot({ path: join(tmpdir(), "bienedu-v8-grade9-documents.jpg"), quality: 86 });
+
+    const practiceRoute = `/quiz.html?grade=${grade}`;
+    await open(page, practiceRoute);
+    assert.equal(await page.eval("document.querySelector('.practice-paper-empty') !== null"), true, `${practiceRoute} must show the practice-paper shell`);
+    assert.equal(await page.eval("document.querySelector('.grade-empty-state')"), null, `${practiceRoute} must use the shared practice-paper base`);
+    assert.equal(await page.eval("document.querySelectorAll('.practice-paper-item').length"), 0, `${practiceRoute} must not fabricate papers`);
+    assert.equal(await page.eval("document.querySelector('[data-practice-page-title]').textContent"), `Luyện đề Toán ${grade}`);
+    assert.equal(await page.eval("[...document.querySelectorAll('.site-nav a')].some((link) => link.textContent === 'Luyện đề')"), true);
+    if (grade === "9") await page.screenshot({ path: join(tmpdir(), "bienedu-v8-grade9-practice-papers.jpg"), quality: 86 });
   }
+
+  await open(page, "/quiz.html?grade=12");
+  assert.equal(await page.eval("document.querySelector('.practice-paper-empty') !== null"), true);
+  assert.equal(await page.eval("document.querySelectorAll('.practice-paper-item').length"), 0, "Grade 12 must also remain an honest empty practice-paper shell");
+  assert.equal(await page.eval("document.querySelector('.site-nav [aria-current=\"page\"]').textContent.trim()"), "Luyện đề");
+  assert.equal(await page.eval("[...document.querySelectorAll('.site-nav a')].some((link) => link.textContent.trim() === 'Kiểm tra')"), false);
+
+  await open(page, "/contact.html?grade=12");
+  assert.equal(await page.eval("document.querySelector('.site-nav [aria-current=\"page\"]').textContent.trim()"), "Đăng ký học");
+  assert.equal(await page.eval("document.querySelector('.tutor-hero h1').textContent.replace(/\\s+/g, ' ').trim()"), "Đăng ký học");
+  assert.equal(await page.eval("new URL(document.querySelector('.tutor-hero .button').href).hostname"), "zalo.me");
 
   await open(page, "/?grade=12");
   await page.eval("window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' })");

@@ -3,8 +3,8 @@ import { buildGradeAwareUrl } from "../domain/grade-context.js?v=8.2";
 const NAVIGATION_ITEMS = [
   { id: "course", label: "Khóa học", href: "course.html" },
   { id: "documents", label: "Lộ trình", href: "documents.html" },
-  { id: "quiz", label: "Kiểm tra", href: "quiz.html" },
-  { id: "contact", label: "Gia sư", href: "contact.html" }
+  { id: "quiz", label: "Luyện đề", href: "quiz.html" },
+  { id: "contact", label: "Đăng ký học", href: "contact.html" }
 ];
 
 function brandMarkup(gradeId) {

@@ -15,10 +15,10 @@ const PAGE_COPY = Object.freeze({
     description: "Lộ trình sẽ hiển thị theo từng chuyên đề và dạng bài khi nguồn nội dung đã được kiểm tra đầy đủ."
   },
   quiz: {
-    eyebrow: "Kiểm tra",
-    title: "Kiểm tra Toán",
-    statusTitle: "Bộ câu hỏi đang được cập nhật",
-    description: "Bài kiểm tra sẽ được mở khi câu hỏi và lời giải của khối lớp này đã được kiểm tra đầy đủ."
+    eyebrow: "Luyện đề",
+    title: "Luyện đề Toán",
+    statusTitle: "Nội dung luyện đề đang được cập nhật",
+    description: "BienEdu đang chuẩn bị các bộ đề để bạn luyện tập theo nhịp làm bài thật."
   }
 });
 

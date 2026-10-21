@@ -108,7 +108,8 @@ export function getLessonProgress(
   code,
   knowledgeCount,
   exampleCount = 0,
-  practiceCount = 3
+  practiceCount = 3,
+  materialStatus = "available"
 ) {
   const current = lesson(normalize(progress), code);
   const viewed = Math.min(new Set(current.viewedKnowledge).size, knowledgeCount);
@@ -116,10 +117,11 @@ export function getLessonProgress(
   const answered = Math.min(Object.keys(current.practiceAnswers).length, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
   const completed = viewed + examplesViewed + answered;
-  const hasCompletedAllSections = knowledgeCount > 0
+  const availableContentComplete = knowledgeCount > 0
     && viewed === knowledgeCount
     && examplesViewed === exampleCount
     && answered === practiceCount;
+  const isMaterialComplete = materialStatus === "available";
 
   return {
     viewed,
@@ -128,21 +130,41 @@ export function getLessonProgress(
     completed,
     total,
     percent: total ? Math.round(completed / total * 100) : 0,
-    isComplete: hasCompletedAllSections
+    availableContentComplete,
+    isMaterialComplete,
+    isComplete: availableContentComplete && isMaterialComplete
   };
 }
 
 export function getTopicProgress(progress, topic, knowledgeCounts) {
-  const lessons = topic.exerciseTypes.map((item) => {
+  const applicableExercises = topic.exerciseTypes.filter((item) => {
+    const counts = knowledgeCounts[item.code];
+    if (!counts) return false;
+    return counts.available ?? ((counts.knowledge ?? 0) + (counts.examples ?? 0) + (counts.practice ?? 3) > 0);
+  });
+  const lessons = applicableExercises.map((item) => {
     const counts = knowledgeCounts[item.code] ?? {};
-    return getLessonProgress(progress, item.code, counts.knowledge ?? 0, counts.examples ?? 0);
+    return getLessonProgress(
+      progress,
+      item.code,
+      counts.knowledge ?? 0,
+      counts.examples ?? 0,
+      counts.practice ?? 3,
+      counts.materialStatus ?? "available"
+    );
   });
   const completedLessons = lessons.filter((item) => item.isComplete).length;
+  const availableLessons = lessons.length;
+  const materialComplete = availableLessons === topic.exerciseTypes.length
+    && lessons.every((item) => item.isMaterialComplete);
   return {
     completedLessons,
-    totalLessons: lessons.length,
-    percent: lessons.length ? Math.round(completedLessons / lessons.length * 100) : 0,
-    isComplete: lessons.length > 0 && completedLessons === lessons.length
+    availableLessons,
+    declaredLessons: topic.exerciseTypes.length,
+    totalLessons: availableLessons,
+    percent: availableLessons ? Math.round(completedLessons / availableLessons * 100) : 0,
+    materialComplete,
+    isComplete: materialComplete && availableLessons > 0 && completedLessons === availableLessons
   };
 }
 

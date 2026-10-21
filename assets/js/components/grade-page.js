@@ -1,8 +1,7 @@
-import { getGrade, hasGradeContent } from "../data/grade-catalog.js?v=8.3";
-import { getCourseForGrade } from "../data/course-by-grade.js?v=8.3";
+import { getGrade } from "../data/grade-catalog.js?v=8.7";
+import { getCourseForGrade } from "../data/course-by-grade.js?v=8.7";
 import { getHomeForGrade } from "../data/home-by-grade.js?v=8.3";
 import { buildGradeAwareUrl } from "../domain/grade-context.js?v=8.2";
-import { renderGradeEmptyState } from "./grade-empty-state.js?v=8.2";
 
 const home = {
   titleLine: document.querySelector("[data-home-grade-title]"),
@@ -27,7 +26,7 @@ function applyHomeGrade(gradeId) {
   home.titleLine.textContent = `Học Toán ${grade.id}`;
   home.subtitleLine.textContent = isGrade12 ? "theo từng phần" : gradeHome.subtitle;
   home.description.textContent = isGrade12
-    ? "Ôn lại phần chưa chắc, luyện theo chuyên đề rồi tự kiểm tra bằng lời giải rõ ràng."
+    ? "Ôn lại phần chưa chắc, luyện theo chuyên đề rồi làm quen với nhịp luyện đề."
     : gradeHome.description;
   home.actions.innerHTML = isGrade12
     ? grade12HomeActions
@@ -44,7 +43,7 @@ function applyHomeGrade(gradeId) {
 }
 
 function updatePageMetadata(page, gradeId) {
-  const pageNames = { home: "Học Toán", course: "Khóa học Toán", documents: "Lộ trình Toán", quiz: "Kiểm tra Toán" };
+  const pageNames = { home: "Học Toán", course: "Khóa học Toán", documents: "Lộ trình Toán", quiz: "Luyện đề Toán" };
   if (pageNames[page]) document.title = `${pageNames[page]} ${gradeId} · BienEdu`;
 }
 
@@ -90,10 +89,5 @@ export function applyGradePage(page, gradeId) {
   if (page === "course") {
     applyCourseGrade(grade.id);
     return;
-  }
-
-  if (page === "quiz" && !hasGradeContent(grade.id, page)) {
-    document.querySelector("main")?.replaceChildren();
-    document.querySelector("main")?.insertAdjacentHTML("afterbegin", renderGradeEmptyState(page, grade.id));
   }
 }

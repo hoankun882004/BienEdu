@@ -1,13 +1,20 @@
 import { getCurriculumForGrade } from "./data/curriculum-by-grade.js?v=8.2";
-import { getDocumentForTopic } from "./data/document-mappings.js?v=8.2";
-import { getExampleContent } from "./data/example-content.js?v=8.2";
-import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.2";
-import { getKnowledgeSection, knowledgeSections } from "./data/knowledge-slides.js?v=8.2";
+import { getDocumentForTopic } from "./data/document-mappings.js?v=8.6";
+import {
+  CONTENT_STATUS,
+  getAvailabilitySummary,
+  getSubtopicAvailability,
+  getTopicAvailability,
+  learningContentRegistry
+} from "./data/content-registry.js?v=11.1";
+import { getExampleContent } from "./data/example-content.js?v=8.6";
+import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.9";
+import { getKnowledgeSection } from "./data/knowledge-slides.js?v=8.6";
 import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
 import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
 import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=8.2";
-import { generatePracticeSet } from "./domain/exercise-generators.js?v=8.2";
-import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.2";
+import { generatePracticeSet } from "./domain/exercise-generators.js?v=8.6";
+import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.6";
 import {
   createLearningProgress,
   getLessonProgress,
@@ -21,7 +28,7 @@ import {
   saveLearningProgress,
   submitExam
 } from "./domain/learning-progress.js?v=8.2";
-import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.2";
+import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.6";
 import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
 
 const PRACTICE_SEED = "PRACTICE_V1";
@@ -31,11 +38,17 @@ const app = document.querySelector("[data-curriculum-app]");
 const currentGradeId = document.body.dataset.grade ?? null;
 const { groups: curriculumGroups, meta: curriculumMeta } = getCurriculumForGrade(currentGradeId);
 const filterState = { query: "", groupId: "all" };
+const availabilitySummary = getAvailabilitySummary();
 const knowledgeCounts = Object.fromEntries(
-  Object.entries(knowledgeSections).map(([code, section]) => [code, {
-    knowledge: getKnowledgeContent(code) ? 1 : section.knowledgeSlides.length,
-    examples: getExampleContent(code)?.length ?? section.exampleSlides.length
-  }])
+  Object.values(learningContentRegistry.topics).flatMap((topic) =>
+    Object.values(topic.subtopics).map((subtopic) => [subtopic.code, {
+      knowledge: subtopic.sections.knowledge.count ?? 0,
+      examples: subtopic.sections.examples.count ?? 0,
+      practice: subtopic.sections.practice.count ?? 0,
+      available: subtopic.status !== CONTENT_STATUS.COMING_SOON,
+      materialStatus: subtopic.status
+    }])
+  )
 );
 let progressState = currentGradeId
   ? loadLearningProgress(globalThis.localStorage, currentGradeId)
@@ -92,18 +105,43 @@ function sentenceCase(value) {
   return lower.charAt(0).toLocaleUpperCase("vi") + lower.slice(1);
 }
 
+function hasStructuredLessons(topic) {
+  return topic.exerciseTypes.every((item) => {
+    const record = getSubtopicAvailability(item.code);
+    return record?.sections.knowledge.status === CONTENT_STATUS.AVAILABLE;
+  });
+}
+
+function statusPresentation(status) {
+  if (status === CONTENT_STATUS.AVAILABLE) return { className: "is-ready", label: "Bài học sẵn sàng" };
+  if (status === CONTENT_STATUS.PARTIAL) return { className: "is-partial", label: "Có nội dung một phần" };
+  if (status === CONTENT_STATUS.NEEDS_REVIEW) return { className: "is-review", label: "Đang kiểm tra nguồn" };
+  return { className: "is-pending", label: "Đang bổ sung" };
+}
+
+function sourcePageHref(source, page = source.pageStart) {
+  return `${source.filePath}#page=${page}`;
+}
+
+function getPrintedSourcePage(source, pdfPage) {
+  return pdfPage - (source.pageStart - source.printedPageStart);
+}
+
 function renderGroupOptions() {
   return `<option value="all" ${filterState.groupId === "all" ? "selected" : ""}>Tất cả nhóm kiến thức</option>${curriculumGroups.map((group) => `<option value="${group.id}" ${filterState.groupId === group.id ? "selected" : ""}>${group.id} · ${escapeHtml(sentenceCase(group.name))} (${group.topics.length})</option>`).join("")}`;
 }
 
 function renderTopicRow(topic) {
-  const source = getDocumentForTopic(topic.id);
-  const topicProgress = source ? getTopicProgress(progressState, topic, knowledgeCounts) : null;
-  return `<a class="roadmap-topic ${source ? "is-ready" : "is-pending"}" href="${routeUrl({ topicId: topic.id })}" data-route>
+  const availability = getTopicAvailability(topic.id);
+  const presentation = statusPresentation(availability?.status);
+  const topicProgress = availability?.status !== CONTENT_STATUS.COMING_SOON
+    ? getTopicProgress(progressState, topic, knowledgeCounts)
+    : null;
+  return `<a class="roadmap-topic ${presentation.className}" href="${routeUrl({ topicId: topic.id })}" data-route>
     <span class="roadmap-topic__code">${topic.id}</span>
     <span class="roadmap-topic__name"><strong>${escapeHtml(topic.title)}</strong><small>${escapeHtml(topic.groupName)}</small></span>
-    <span class="roadmap-topic__state">${source ? "Bài học sẵn sàng" : "Đang bổ sung"}</span>
-    <span class="roadmap-topic__meta">${topicProgress ? `${topicProgress.completedLessons}/${topicProgress.totalLessons} hoàn thành` : `${topic.exerciseTypes.length} dạng bài`}</span>
+    <span class="roadmap-topic__state">${presentation.label}</span>
+    <span class="roadmap-topic__meta">${topicProgress ? `${topicProgress.completedLessons}/${topicProgress.availableLessons} bài khả dụng` : `${topic.exerciseTypes.length} dạng bài`}</span>
     <span class="roadmap-topic__arrow" aria-hidden="true">→</span>
   </a>`;
 }
@@ -112,7 +150,7 @@ function renderCatalog() {
   const topics = filterCurriculum(curriculumGroups, filterState);
   document.body.classList.remove("learning-mode");
   app.innerHTML = `<section class="roadmap-view" aria-labelledby="roadmap-title">
-    <header class="roadmap-intro"><p class="roadmap-intro__eyebrow">Chương trình Toán 12</p><h1 id="roadmap-title">Lộ trình Toán 12</h1><p>Danh mục có đủ ${curriculumMeta.topicCount} chuyên đề từ catalog gốc. CD20–CD21 hiện đã có bài đọc, ví dụ và bài luyện tập.</p></header>
+    <header class="roadmap-intro"><p class="roadmap-intro__eyebrow">Chương trình Toán 12</p><h1 id="roadmap-title">Lộ trình Toán 12</h1><p>Đủ ${curriculumMeta.topicCount} chuyên đề và ${curriculumMeta.exerciseTypeCount} dạng bài từ catalog gốc. Hiện có ${availabilitySummary.topics.available} chuyên đề với bài học đã kiểm chứng; các mục còn lại hiển thị đúng trạng thái cập nhật.</p></header>
     <div class="roadmap-toolbar" data-ui>
       <label class="roadmap-field roadmap-field--group"><span>Nhóm kiến thức</span><select data-curriculum-group>${renderGroupOptions()}</select><small>${curriculumMeta.groupCount} nhóm trong chương trình</small></label>
       <label class="roadmap-field roadmap-field--search"><span>Tìm chuyên đề</span><input type="search" data-curriculum-search value="${escapeHtml(filterState.query)}" placeholder="Mã, chuyên đề hoặc dạng bài" autocomplete="off"></label>
@@ -126,24 +164,45 @@ function renderCatalog() {
 
 function renderTopicDetail(topic) {
   const source = getDocumentForTopic(topic.id);
-  const supported = Boolean(source && topic.exerciseTypes.every((item) => getKnowledgeSection(item.code)));
+  const availability = getTopicAvailability(topic.id);
+  const supported = availability?.status !== CONTENT_STATUS.COMING_SOON
+    && Object.values(availability.subtopics).some((item) => item.sections.knowledge.count);
+  const presentation = statusPresentation(availability?.status);
   const topicProgress = supported ? getTopicProgress(progressState, topic, knowledgeCounts) : null;
   document.body.classList.remove("learning-mode");
   app.innerHTML = `<section class="topic-detail" aria-labelledby="topic-detail-title">
     <a class="back-link" href="documents.html" data-route>← Lộ trình</a>
-    <header class="topic-detail__header"><span>${topic.id}</span><div><h1 id="topic-detail-title">${escapeHtml(topic.title)}</h1><p>${topic.exerciseTypes.length} dạng bài${source ? ` · Tài liệu trang ${source.printedPageStart}–${source.printedPageEnd}` : ""}</p></div></header>
-    ${topicProgress ? `<div class="topic-progress"><div><span>Tiến độ chuyên đề</span><strong>${topicProgress.completedLessons}/${topicProgress.totalLessons} bài</strong></div><progress value="${topicProgress.completedLessons}" max="${topicProgress.totalLessons}">${topicProgress.percent}%</progress></div>` : ""}
+    <header class="topic-detail__header"><span>${topic.id}</span><div><h1 id="topic-detail-title">${escapeHtml(topic.title)}</h1><p>${topic.exerciseTypes.length} dạng bài${source ? ` · Tài liệu trang ${source.printedPageStart}–${source.printedPageEnd}` : ""}</p><small class="topic-availability ${presentation.className}">${presentation.label}</small></div></header>
+    ${topicProgress ? `<div class="topic-progress"><div><span>Tiến độ nội dung khả dụng</span><strong>${topicProgress.completedLessons}/${topicProgress.availableLessons} bài</strong></div><progress value="${topicProgress.completedLessons}" max="${Math.max(topicProgress.availableLessons, 1)}">${topicProgress.percent}%</progress></div>` : ""}
+    ${source ? `<section class="topic-source-card" aria-labelledby="topic-source-title">
+      <div><p>Tài liệu nguồn đã tải lên</p><h2 id="topic-source-title">${escapeHtml(source.fileName)}</h2><span>PDF ${source.pageCount} trang · Phần ${topic.id} ở trang in ${source.printedPageStart}–${source.printedPageEnd}</span></div>
+      <a class="button button--small" href="${sourcePageHref(source)}" target="_blank" rel="noopener noreferrer">Mở tài liệu PDF →</a>
+    </section>` : ""}
     <nav class="type-list" aria-label="Các dạng bài của ${escapeHtml(topic.title)}">
       ${topic.exerciseTypes.map((exercise) => {
         const section = getKnowledgeSection(exercise.code);
-        const lessonProgress = section ? getLessonProgress(progressState, exercise.code, getKnowledgeContent(exercise.code) ? 1 : section.knowledgeSlides.length, getExampleContent(exercise.code)?.length ?? section.exampleSlides.length) : null;
-        return `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })}" data-route class="${lessonProgress?.isComplete ? "is-complete" : ""} ${section ? "is-ready" : "is-pending"}">
+        const content = getSubtopicAvailability(exercise.code);
+        const sourcePage = source?.exercisePages[exercise.code];
+        const counts = knowledgeCounts[exercise.code] ?? {};
+        const isAvailable = Boolean(section && content?.sections.knowledge.count);
+        const lessonProgress = isAvailable ? getLessonProgress(progressState, exercise.code, counts.knowledge, counts.examples, counts.practice, content.status) : null;
+        const href = isAvailable
+          ? routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })
+          : routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 });
+        const linkAttributes = "data-route";
+        const subtopicPresentation = statusPresentation(content?.status);
+        const stateLabel = lessonProgress
+          ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.percent}% · ${subtopicPresentation.label}`)
+          : sourcePage
+            ? `Nguồn trang ${getPrintedSourcePage(source, sourcePage)} · ${subtopicPresentation.label}`
+            : subtopicPresentation.label;
+        return `<a href="${href}" ${linkAttributes} class="${lessonProgress?.isComplete ? "is-complete" : ""} ${subtopicPresentation.className}">
           <span>${escapeHtml(exercise.code)}</span><strong>${escapeHtml(exercise.title)}</strong>
-          <small>${lessonProgress ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.percent}% · Kiến thức + Bài tập`) : "Bài học đang được biên soạn"}</small><b aria-hidden="true">→</b>
+          <small>${stateLabel}</small><b aria-hidden="true">→</b>
         </a>`;
       }).join("")}
     </nav>
-    ${supported ? `<section class="final-exam-card ${topicProgress.isComplete ? "is-unlocked" : "is-locked"}">
+    ${availability?.status === CONTENT_STATUS.AVAILABLE ? `<section class="final-exam-card ${topicProgress.isComplete ? "is-unlocked" : "is-locked"}">
       <div><p>Bài kiểm tra cuối chuyên đề</p><h2>20 câu · Bao quát ${topic.exerciseTypes.length} dạng</h2><span>${topicProgress.isComplete ? "Bạn đã mở khóa bài kiểm tra." : `Hoàn thành ${topicProgress.totalLessons - topicProgress.completedLessons} bài còn lại để mở khóa.`}</span></div>
       ${topicProgress.isComplete ? `<a class="button button--small" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: 1 })}" data-route>Bắt đầu kiểm tra →</a>` : `<span class="exam-lock" aria-label="Đang khóa">🔒</span>`}
     </section>` : ""}
@@ -153,7 +212,17 @@ function renderTopicDetail(topic) {
 
 function renderUnavailable(topic, exercise) {
   document.body.classList.remove("learning-mode");
-  app.innerHTML = `<section class="topic-detail lesson-unavailable"><a class="back-link" href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a><h1>${escapeHtml(exercise.title)}</h1><p>Nội dung chi tiết đang được bổ sung.</p></section>`;
+  const availability = getSubtopicAvailability(exercise.code);
+  const presentation = statusPresentation(availability?.status);
+  app.innerHTML = `<section class="topic-detail lesson-unavailable" aria-labelledby="unavailable-title">
+    <a class="back-link" href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>
+    <p class="lesson-kicker">${escapeHtml(exercise.code)} · Toán 12</p>
+    <h1 id="unavailable-title">${escapeHtml(exercise.title)}</h1>
+    <span class="topic-availability ${presentation.className}">${presentation.label}</span>
+    <div class="lesson-unavailable__message"><h2>Nội dung đang được cập nhật</h2><p>Bài học của dạng này sẽ xuất hiện tại đây sau khi tài liệu nguồn được nhập và kiểm chứng. Tiến độ của bạn không bị tính cho nội dung chưa có.</p></div>
+    <div class="lesson-unavailable__actions"><a class="button" href="${routeUrl({ topicId: topic.id })}" data-route>Quay lại chuyên đề</a><a class="text-button" href="documents.html?grade=12" data-route>Chọn chuyên đề khác →</a></div>
+  </section>`;
+  initializeMotion();
 }
 
 function renderSourceSlide(slide, position, topic, exercise) {
@@ -167,13 +236,43 @@ function renderSourceSlide(slide, position, topic, exercise) {
   </section>`;
 }
 
-function renderKnowledgeReading(slide, exercise) {
+function sourceBadgeMarkup(topic, pages) {
+  const source = getDocumentForTopic(topic.id);
+  if (!source || !pages?.length) return "";
+  const firstPage = pages[0];
+  return `<a class="source-reference" href="${sourcePageHref(source, firstPage)}" target="_blank" rel="noopener noreferrer">Nguồn · Trang ${pages.join("–")} · Xem PDF gốc</a>`;
+}
+
+function renderKnowledgeReading(slide, exercise, topic) {
   const reading = slide.reading;
-  const readMinutes = Math.max(2, Math.ceil((reading.lead.length + reading.formulae.reduce((total, item) => total + item.detail.length, 0) + reading.points.reduce((total, item) => total + item.text.length, 0)) / 550));
-  return `<article class="knowledge-reader" aria-labelledby="lesson-content-title">
+  const formulae = reading.formulae ?? [];
+  const points = reading.points ?? [];
+  const readMinutes = Math.max(2, Math.ceil((reading.lead.length + formulae.reduce((total, item) => total + item.detail.length, 0) + points.reduce((total, item) => total + item.text.length, 0)) / 550));
+  const usesPrinciplesLayout = reading.layout === "principles-split";
+  const formulaMarkup = formulae.length ? `<section class="knowledge-reader__formulae" aria-labelledby="formula-title">
+    <h3 id="formula-title">Công thức & nguyên tắc</h3>
+    <dl>${formulae.map((item) => `<div><dt>${escapeHtml(item.label)}</dt><dd><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.detail)}</span></dd></div>`).join("")}</dl>
+  </section>` : "";
+  const pointsMarkup = points.length ? `<section class="knowledge-reader__points" aria-labelledby="points-title">
+    <h3 id="points-title">Cách hiểu nhanh</h3>
+    <ol>${points.map((item) => `<li><span>${escapeHtml(item.label)}</span><p>${escapeHtml(item.text)}</p></li>`).join("")}</ol>
+  </section>` : "";
+  const noteMarkup = reading.note ? `<aside class="knowledge-reader__note knowledge-reader__note--${reading.note.tone}" aria-label="${escapeHtml(reading.note.label)}">
+    <span aria-hidden="true">${reading.note.tone === "warning" ? "!" : "✓"}</span>
+    <p><strong>${escapeHtml(reading.note.label)}</strong>${escapeHtml(reading.note.text)}</p>
+  </aside>` : "";
+  const principlesMarkup = formulaMarkup || noteMarkup
+    ? `<div class="knowledge-reader__principles">${formulaMarkup}${noteMarkup}</div>`
+    : "";
+  const studyPanels = [principlesMarkup, pointsMarkup].filter(Boolean);
+  const studyMarkup = usesPrinciplesLayout
+    ? `<div class="knowledge-reader__study-grid${studyPanels.length === 1 ? " knowledge-reader__study-grid--single" : ""}">${studyPanels.join("")}</div>`
+    : `${formulaMarkup}${pointsMarkup}${noteMarkup}`;
+
+  return `<article class="knowledge-reader knowledge-reader--${escapeHtml(reading.layout ?? "standard")}" aria-labelledby="lesson-content-title">
     <header class="knowledge-reader__bar">
       <p><span aria-hidden="true">¶</span> Bài đọc trọng tâm</p>
-      <div><span>${readMinutes} phút đọc</span><span>Nguồn · Trang ${slide.sourcePages.join("–")}</span></div>
+      <div><span>${readMinutes} phút đọc</span>${sourceBadgeMarkup(topic, slide.sourcePages)}</div>
     </header>
     <div class="knowledge-reader__content">
       <section class="knowledge-reader__lead">
@@ -181,28 +280,17 @@ function renderKnowledgeReading(slide, exercise) {
         <h2 id="lesson-content-title">${escapeHtml(exercise.title)}</h2>
         <p>${escapeHtml(reading.lead)}</p>
       </section>
-      <section class="knowledge-reader__formulae" aria-labelledby="formula-title">
-        <h3 id="formula-title">Công thức & nguyên tắc</h3>
-        <dl>${reading.formulae.map((item) => `<div><dt>${escapeHtml(item.label)}</dt><dd><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.detail)}</span></dd></div>`).join("")}</dl>
-      </section>
-      <section class="knowledge-reader__points" aria-labelledby="points-title">
-        <h3 id="points-title">Cách hiểu nhanh</h3>
-        <ol>${reading.points.map((item) => `<li><span>${escapeHtml(item.label)}</span><p>${escapeHtml(item.text)}</p></li>`).join("")}</ol>
-      </section>
-      <aside class="knowledge-reader__note knowledge-reader__note--${reading.note.tone}" aria-label="${escapeHtml(reading.note.label)}">
-        <span aria-hidden="true">${reading.note.tone === "warning" ? "!" : "✓"}</span>
-        <p><strong>${escapeHtml(reading.note.label)}</strong>${escapeHtml(reading.note.text)}</p>
-      </aside>
+      ${studyMarkup}
     </div>
   </article>`;
 }
 
-function renderExampleReading(slide, position, exercise) {
+function renderExampleReading(slide, position, exercise, topic) {
   const example = slide.workedExample;
   return `<article class="example-reader" aria-labelledby="lesson-content-title">
     <header class="example-reader__bar">
       <p><span aria-hidden="true">ƒ</span> Ví dụ minh họa</p>
-      <div><span>Ví dụ ${position.current}/${position.total}</span><span>Nguồn · Trang ${example.sourcePages.join("–")}</span></div>
+      <div><span>Ví dụ ${position.current}/${position.total}</span>${sourceBadgeMarkup(topic, example.sourcePages)}</div>
     </header>
     <div class="example-reader__content">
       <header class="example-reader__intro">
@@ -249,12 +337,15 @@ function renderPractice(slide, answer) {
 
 function createLessonView(topic, exercise, route) {
   const knowledge = getKnowledgeSection(exercise.code);
+  const contentRecord = getSubtopicAvailability(exercise.code);
   const reading = getKnowledgeContent(exercise.code);
   const examples = getExampleContent(exercise.code);
-  const knowledgeSlideCount = reading ? 1 : knowledge.knowledgeSlides.length;
-  const exampleSlideCount = examples?.length ?? knowledge.exampleSlides.length;
-  const questions = generatePracticeSet(exercise.code, PRACTICE_SEED);
-  const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, reading, examples, questions });
+  const knowledgeSlideCount = contentRecord?.sections.knowledge.count ?? 0;
+  const exampleSlideCount = contentRecord?.sections.examples.count ?? 0;
+  const questions = contentRecord?.sections.practice.status === CONTENT_STATUS.AVAILABLE
+    ? generatePracticeSet(exercise.code, PRACTICE_SEED)
+    : [];
+  const slides = createLessonSlides({ topic, exercise, knowledgeSection: knowledge, contentRecord, reading, examples, questions });
   const state = createLessonState(slides, route.section, route.item);
   const active = slides[state.currentIndex];
 
@@ -266,7 +357,8 @@ function createLessonView(topic, exercise, route) {
     exercise.code,
     knowledgeSlideCount,
     exampleSlideCount,
-    questions.length
+    questions.length,
+    contentRecord?.status ?? CONTENT_STATUS.COMING_SOON
   );
   const position = getSectionPosition(slides, state.currentIndex);
   const storedLesson = progressState.lessons[exercise.code] ?? { practiceAnswers: {} };
@@ -281,20 +373,21 @@ function createLessonView(topic, exercise, route) {
     answer,
     position,
     lessonProgress,
-    counts: { knowledge: knowledgeSlideCount, example: exampleSlideCount, practice: questions.length }
+    counts: { knowledge: knowledgeSlideCount, example: exampleSlideCount, practice: questions.length },
+    contentRecord
   };
 }
 
 function lessonProgressMarkup(view) {
-  const { lessonProgress } = view;
+  const { lessonProgress, contentRecord } = view;
   return `<span><b>Tiến độ bài học</b><strong>${lessonProgress.percent}%</strong></span>
     <progress value="${lessonProgress.completed}" max="${lessonProgress.total}">${lessonProgress.percent}%</progress>
-    <small>${lessonProgress.completed}/${lessonProgress.total} nội dung</small>`;
+    <small>${lessonProgress.completed}/${lessonProgress.total} nội dung khả dụng${contentRecord.status === CONTENT_STATUS.PARTIAL ? " · Học liệu chưa đầy đủ" : ""}</small>`;
 }
 
 function phaseButtonMarkup(view, section, label, completed, total) {
-  return `<button type="button" data-section="${section}" aria-current="${view.active.section === section ? "step" : "false"}">
-    <span>${label}</span><small>${completed}/${total}</small>
+  return `<button type="button" data-section="${section}" aria-current="${view.active.section === section ? "step" : "false"}" ${total ? "" : "disabled"}>
+    <span>${label}</span><small>${total ? `${completed}/${total}` : "Đang cập nhật"}</small>
   </button>`;
 }
 
@@ -308,32 +401,39 @@ function phaseNavigationMarkup(view) {
 function lessonSidebarMarkup(view) {
   const { active, counts, lessonProgress, topic } = view;
   return `<p>Nội dung buổi học</p><ol>
-    <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === counts.knowledge ? "is-completed" : ""}"><span>${lessonProgress.viewed === counts.knowledge ? "✓" : "1"}</span><b>Kiến thức<small>${lessonProgress.viewed}/${counts.knowledge} bài đọc</small></b></button></li>
-    <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${lessonProgress.examplesViewed === counts.example ? "is-completed" : ""}"><span>${lessonProgress.examplesViewed === counts.example ? "✓" : "2"}</span><b>Ví dụ<small>${lessonProgress.examplesViewed}/${counts.example} ví dụ</small></b></button></li>
-    <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${lessonProgress.answered === counts.practice ? "is-completed" : ""}"><span>${lessonProgress.answered === counts.practice ? "✓" : "3"}</span><b>Bài tập<small>${lessonProgress.answered}/${counts.practice} câu</small></b></button></li>
+    <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${counts.knowledge && lessonProgress.viewed === counts.knowledge ? "is-completed" : ""}" ${counts.knowledge ? "" : "disabled"}><span>${counts.knowledge && lessonProgress.viewed === counts.knowledge ? "✓" : "1"}</span><b>Kiến thức<small>${counts.knowledge ? `${lessonProgress.viewed}/${counts.knowledge} bài đọc` : "Đang cập nhật"}</small></b></button></li>
+    <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${counts.example && lessonProgress.examplesViewed === counts.example ? "is-completed" : ""}" ${counts.example ? "" : "disabled"}><span>${counts.example && lessonProgress.examplesViewed === counts.example ? "✓" : "2"}</span><b>Ví dụ<small>${counts.example ? `${lessonProgress.examplesViewed}/${counts.example} ví dụ` : "Đang cập nhật"}</small></b></button></li>
+    <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${counts.practice && lessonProgress.answered === counts.practice ? "is-completed" : ""}" ${counts.practice ? "" : "disabled"}><span>${counts.practice && lessonProgress.answered === counts.practice ? "✓" : "3"}</span><b>Bài tập<small>${counts.practice ? `${lessonProgress.answered}/${counts.practice} câu` : "Đang cập nhật"}</small></b></button></li>
   </ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>`;
 }
 
 function lessonStageMarkup(view) {
   const { active, answer, position, topic, exercise } = view;
   if (active.kind === "practice") return renderPractice(active, answer);
-  if (active.kind === "knowledge" && active.reading) return renderKnowledgeReading(active, exercise);
-  if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise);
+  if (active.kind === "knowledge" && active.reading) return renderKnowledgeReading(active, exercise, topic);
+  if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise, topic);
   return renderSourceSlide(active, position, topic, exercise);
 }
 
 function lessonNavigationMarkup(view) {
-  const { active, position, state, topic, exercise } = view;
+  const { active, position, state, topic, exercise, slides } = view;
   const positionLabel = active.section === "practice"
     ? `Bài ${position.current} / ${position.total}`
     : `${position.current} / ${position.total}`;
-  const nextControl = active.section === "practice" && position.current === position.total
-    ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Hoàn thành →</a>`
-    : active.section === "knowledge" && position.current === position.total
-      ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "example", item: 1 })}" data-route>Xem ví dụ →</a>`
-      : `<button type="button" data-slide-index="${state.currentIndex + 1}">${active.section === "example" && position.current === position.total ? "Làm bài tập →" : active.section === "practice" ? "Câu tiếp theo →" : "Tiếp theo →"}</button>`;
+  const nextSlide = slides[state.currentIndex + 1] ?? null;
+  let nextControl = `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route aria-keyshortcuts="ArrowRight">Hoàn thành →</a>`;
+  if (active.section === "knowledge" && position.total > 1 && position.current < position.total) {
+    nextControl = `<nav class="lesson-page-picker" aria-label="Chọn trang kiến thức; dùng mũi tên phải để sang trang tiếp theo">${Array.from({ length: position.total }, (_item, index) => `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: index + 1 })}" data-route aria-current="${position.current === index + 1 ? "page" : "false"}">${index + 1}</a>`).join("")}</nav>`;
+  } else if (nextSlide) {
+    const nextLabel = nextSlide.section === "example"
+      ? "Xem ví dụ →"
+      : nextSlide.section === "practice"
+        ? (active.section === "practice" ? "Câu tiếp theo →" : "Làm bài tập →")
+        : "Tiếp theo →";
+    nextControl = `<button type="button" data-slide-index="${state.currentIndex + 1}" aria-keyshortcuts="ArrowRight">${nextLabel}</button>`;
+  }
 
-  return `<button type="button" data-slide-index="${state.currentIndex - 1}" ${state.currentIndex === 0 ? "disabled" : ""}>← Trước</button>
+  return `<button type="button" data-slide-index="${state.currentIndex - 1}" aria-keyshortcuts="ArrowLeft" ${state.currentIndex === 0 ? "disabled" : ""}>← Trước</button>
     <p><strong>${positionLabel}</strong><span>${active.label}</span></p>${nextControl}`;
 }
 
@@ -371,7 +471,7 @@ function renderWorkspace(topic, exercise, route, options = {}) {
     <div class="workspace-frame"><nav class="lesson-sidebar" data-lesson-sidebar aria-label="Nội dung bài học">${lessonSidebarMarkup(view)}</nav>
       <main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${lessonStageMarkup(view)}</main>
     </div>
-    <footer class="lesson-navigation" data-lesson-navigation>${lessonNavigationMarkup(view)}</footer>
+    <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng bài học bằng nút hoặc phím mũi tên trái và phải">${lessonNavigationMarkup(view)}</footer>
     <p class="sr-only" aria-live="polite" aria-atomic="true" data-lesson-announcer></p>
   </article>`;
 }
@@ -401,7 +501,7 @@ function renderFinalExam(topic, route) {
     <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route>←</a><div><h1>Kiểm tra cuối chuyên đề</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div><div class="lesson-progress"><span><b>${exam.submitted ? "Kết quả" : "Đã trả lời"}</b><strong>${exam.submitted ? `${result.score}/${result.total}` : `${answered}/20`}</strong></span><progress value="${exam.submitted ? result.score : answered}" max="20"></progress><small>${exam.submitted ? `${result.percent}% chính xác` : "Cần trả lời đủ 20 câu"}</small></div></header>
     <div class="exam-frame"><aside class="exam-navigator"><p>${exam.submitted ? "Xem lại bài" : "Danh sách câu"}</p><div>${questions.map((_item, questionIndex) => `<a href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: questionIndex + 1 })}" data-route class="${questionIndex === index ? "is-current" : ""} ${Object.hasOwn(exam.answers, questionIndex) ? "is-answered" : ""}">${questionIndex + 1}</a>`).join("")}</div>${exam.submitted ? `<button type="button" class="text-button" data-action="reset-exam">Làm lại bài</button>` : ""}</aside>
       <main class="lesson-content exam-content" tabindex="-1" data-lesson-content>${exam.submitted && index === 0 ? `<div class="exam-result"><span>${result.percent}%</span><div><p>Kết quả</p><h2>${result.score}/${result.total} câu đúng</h2><small>Xem từng câu để đọc lời giải và ôn lại bài cần cải thiện.</small></div></div>` : ""}${examQuestionMarkup(question, selected, exam.submitted)}</main></div>
-    <footer class="lesson-navigation"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: Math.max(1, index) })}" data-route>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: index + 2 })}" data-route>Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
+    <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng câu hỏi bằng nút hoặc phím mũi tên trái và phải"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: Math.max(1, index) })}" data-route aria-keyshortcuts="ArrowLeft" ${index === 0 ? 'aria-disabled="true" tabindex="-1"' : ""}>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: index + 2 })}" data-route aria-keyshortcuts="ArrowRight">Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
     ${confirmExamSubmit ? `<div class="exam-confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><div><p class="lesson-kicker">Xác nhận</p><h2 id="confirm-title">Nộp bài kiểm tra?</h2><p>Sau khi nộp, bạn sẽ xem điểm và lời giải chi tiết.</p><div><button type="button" data-action="cancel-submit">Xem lại</button><button type="button" data-action="confirm-submit">Nộp bài</button></div></div></div>` : ""}
   </article>`;
   return true;
@@ -565,13 +665,17 @@ function handleSelectionChange(event) {
 }
 
 function createSlidesForRoute(route) {
+  const contentRecord = getSubtopicAvailability(route.typeCode);
   return createLessonSlides({
     topic: findTopic(curriculumGroups, route.topicId),
     exercise: findExerciseType(curriculumGroups, route.topicId, route.typeCode),
     knowledgeSection: getKnowledgeSection(route.typeCode),
+    contentRecord,
     reading: getKnowledgeContent(route.typeCode),
     examples: getExampleContent(route.typeCode),
-    questions: generatePracticeSet(route.typeCode, PRACTICE_SEED)
+    questions: contentRecord?.sections.practice.status === CONTENT_STATUS.AVAILABLE
+      ? generatePracticeSet(route.typeCode, PRACTICE_SEED)
+      : []
   });
 }
 
@@ -589,6 +693,52 @@ function handleSlideNavigation(slideButton) {
     section: activeSlide.section,
     item: position.current
   }));
+}
+
+function getAdjacentLessonUrl(direction) {
+  const route = readRoute();
+  if (!route.topicId) return null;
+
+  if (route.exam === FINAL_EXAM_ID) {
+    const targetQuestion = route.question + direction;
+    return targetQuestion >= 1 && targetQuestion <= 20
+      ? routeUrl({ topicId: route.topicId, exam: FINAL_EXAM_ID, question: targetQuestion })
+      : null;
+  }
+
+  if (!route.typeCode) return null;
+
+  const slides = createSlidesForRoute(route);
+  const currentState = createLessonState(slides, route.section, route.item);
+  const targetIndex = currentState.currentIndex + direction;
+
+  if (targetIndex < 0) return null;
+  if (targetIndex >= slides.length) return direction > 0 ? routeUrl({ topicId: route.topicId }) : null;
+
+  const activeSlide = slides[targetIndex];
+  const position = getSectionPosition(slides, targetIndex);
+  return routeUrl({
+    topicId: route.topicId,
+    typeCode: route.typeCode,
+    section: activeSlide.section,
+    item: position.current
+  });
+}
+
+function isTypingTarget(target) {
+  return target instanceof Element && Boolean(target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [data-practice-answer], [data-exam-answer]'));
+}
+
+function handleLessonKeyboardNavigation(event) {
+  if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+  if (event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+  if (lessonTransitionLock || isTypingTarget(event.target)) return;
+  if (!app.querySelector(".learning-workspace [data-lesson-navigation]")) return;
+
+  const href = getAdjacentLessonUrl(event.key === "ArrowLeft" ? -1 : 1);
+  if (!href) return;
+  event.preventDefault();
+  navigate(href);
 }
 
 function handlePracticeAnswer(practiceButton) {
@@ -709,6 +859,7 @@ function initializeCurriculumApp() {
   app.addEventListener("input", handleSearchInput);
   app.addEventListener("change", handleSelectionChange);
   app.addEventListener("click", handleAppClick);
+  addEventListener("keydown", handleLessonKeyboardNavigation);
   addEventListener("popstate", handleHistoryNavigation);
   renderRoute({ scrollToTop: true });
 }

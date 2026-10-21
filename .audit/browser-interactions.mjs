@@ -32,6 +32,74 @@ try {
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic').length"), 1);
   assert.equal(await page.eval("document.querySelector('.roadmap-topic__code').textContent"), "CD20");
 
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD13`, { timeoutMs: 30000, settleMs: 350 });
+  assert.equal(await page.eval("document.querySelector('#topic-detail-title').textContent"), "Tích phân");
+  assert.equal(await page.eval("document.querySelectorAll('.type-list a.is-ready').length"), 8);
+  assert.equal(await page.eval("document.querySelector('.topic-source-card')"), null);
+  assert.equal(await page.eval("document.querySelector('.type-list a').getAttribute('href').includes('type=13.1')"), true);
+  assert.equal(await page.eval("document.querySelector('.final-exam-card').classList.contains('is-locked')"), true);
+  assert.equal(await page.eval(`fetch('assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf').then((response) => response.ok)`), true);
+
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD13&type=13.1&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 350 });
+  assert.equal(await page.eval("document.querySelector('.knowledge-reader h2').textContent"), "Tính tích phân cơ bản");
+  assert.equal(await page.eval("document.querySelector('.knowledge-reader__formulae strong').textContent"), "∫ₐᵇf(x)dx=F(b)−F(a)");
+  assert.equal(await page.eval("document.querySelector('.knowledge-stage img')"), null);
+  const quickNoteStyle = await page.eval(`(() => {
+    const note = document.querySelector('.knowledge-reader__points');
+    const style = getComputedStyle(note);
+    return { background: style.backgroundColor, borderTop: style.borderTopWidth, title: note.querySelector('h3').textContent };
+  })()`);
+  assert.equal(quickNoteStyle.title, "Cách hiểu nhanh");
+  assert.equal(quickNoteStyle.background, "rgb(255, 247, 207)", "quick-understanding note must use the soft yellow surface");
+  assert.equal(quickNoteStyle.borderTop, "3px", "quick-understanding note must keep a visible amber accent");
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD13&type=13.1&section=example&item=1`, { timeoutMs: 30000, settleMs: 300 });
+  assert.equal(await page.eval("document.querySelector('.example-reader h2').textContent"), "Áp dụng công thức Newton–Leibniz");
+  assert.equal(await page.eval("document.querySelectorAll('.example-reader__solution li').length"), 2);
+  const navigationSize = await page.eval(`(() => {
+    const controls = document.querySelector('.lesson-navigation');
+    const previous = controls.firstElementChild.getBoundingClientRect();
+    const next = controls.lastElementChild.getBoundingClientRect();
+    return { widthDifference: Math.abs(previous.width - next.width), heightDifference: Math.abs(previous.height - next.height) };
+  })()`);
+  assert.ok(navigationSize.widthDifference <= 1, "lesson navigation actions must have balanced widths");
+  assert.ok(navigationSize.heightDifference <= 1, "lesson navigation actions must have matching heights");
+  await page.eval("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true }))");
+  await sleep(380);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('section')"), "knowledge", "Left Arrow returns to knowledge");
+  await page.eval("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true }))");
+  await sleep(380);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('section')"), "example", "Right Arrow follows the natural lesson flow");
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD13&type=13.1&section=practice&item=1`, { timeoutMs: 30000, settleMs: 300 });
+  assert.equal(await page.eval("document.querySelectorAll('[data-practice-answer]').length"), 4);
+  await page.eval(`(() => {
+    const answer = document.querySelector('[data-practice-answer]');
+    answer.focus();
+    answer.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true }));
+  })()`);
+  await sleep(180);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('item')"), "1", "arrow keys must not hijack a focused answer control");
+  await page.eval(`(() => {
+    document.querySelector('[data-practice-answer]').blur();
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true }));
+  })()`);
+  await sleep(380);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('item')"), "2", "Right Arrow advances when focus is outside an answer control");
+
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD12&type=12.1&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 350 });
+  assert.equal(await page.eval("document.querySelectorAll('.knowledge-reader__formulae dl > div').length"), 6);
+  assert.equal(await page.eval("document.querySelector('.lesson-sidebar li:first-child small').textContent"), "1/2 bài đọc");
+  assert.equal(await page.eval("document.querySelectorAll('.lesson-page-picker a').length"), 2);
+  assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Tiếp theo')"), false);
+  assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "12.1 page 1 must not overflow horizontally");
+  await page.screenshot({ path: ".audit/cd12-1-knowledge-complete-390.jpg", quality: 88, fullPage: true });
+  await page.eval("document.querySelector('.lesson-page-picker a:last-child').click()");
+  await sleep(140);
+  assert.equal(await page.eval("new URLSearchParams(location.search).get('item')"), "2");
+  assert.equal(await page.eval("document.querySelectorAll('.knowledge-reader__formulae dl > div').length"), 3);
+  assert.equal(await page.eval("document.querySelector('.lesson-sidebar li:first-child small').textContent"), "2/2 bài đọc");
+  assert.equal(await page.eval("document.querySelector('.lesson-navigation .nav-button').textContent.trim()"), "Xem ví dụ →");
+
+  await page.goto(`${origin}/documents.html?grade=12`, { timeoutMs: 30000, settleMs: 350 });
   await page.eval(`(() => {
     const input = document.querySelector('[data-curriculum-search]');
     input.value = '';
@@ -158,10 +226,11 @@ try {
   const desktopSizes = [{ width: 1024, height: 768 }, { width: 1280, height: 720 }, { width: 1440, height: 900 }, { width: 1920, height: 1080 }, { width: 2048, height: 768 }];
   for (const size of desktopSizes) {
     await page.setViewport({ ...size, mobile: false });
-    for (const route of ["topic=CD20&type=20.1&section=knowledge&item=1", "topic=CD20&type=20.8&section=knowledge&item=1", "topic=CD20&type=20.1&section=example&item=1", "topic=CD20&type=20.2&section=example&item=3", "topic=CD20&type=20.5&section=example&item=1", "topic=CD20&type=20.8&section=example&item=1", "topic=CD20&type=20.2&section=practice&item=1"]) {
+    for (const route of ["topic=CD12&type=12.1&section=knowledge&item=1", "topic=CD20&type=20.1&section=knowledge&item=1", "topic=CD20&type=20.8&section=knowledge&item=1", "topic=CD20&type=20.1&section=example&item=1", "topic=CD20&type=20.2&section=example&item=3", "topic=CD20&type=20.5&section=example&item=1", "topic=CD20&type=20.8&section=example&item=1", "topic=CD20&type=20.2&section=practice&item=1"]) {
       await page.goto(`${origin}/documents.html?${route}`, { timeoutMs: 30000, settleMs: 180 });
       const fitted = await page.eval(`(() => { const stage = document.querySelector('.lesson-content'); const image = document.querySelector('.knowledge-stage img'); const canvas = document.querySelector('.knowledge-stage__canvas'); const ib = image?.getBoundingClientRect(); const cb = canvas?.getBoundingClientRect(); return { page: document.documentElement.scrollHeight <= document.documentElement.clientHeight + 1, stage: stage.scrollHeight <= stage.clientHeight + 1, image: !image || (ib.top >= cb.top - 1 && ib.bottom <= cb.bottom + 1) }; })()`);
       assert.deepEqual(fitted, { page: true, stage: true, image: true }, `${size.width} ${route}`);
+      if (size.width === 1440 && route.startsWith("topic=CD12")) await page.screenshot({ path: ".audit/cd12-1-knowledge-complete-1440.jpg", quality: 88 });
       if (route.includes("practice")) {
         await page.eval("document.querySelector('[data-practice-answer]').click()");
         const gradedFits = await page.eval(`(() => { const stage = document.querySelector('.lesson-content'); const feedback = document.querySelector('.practice-feedback'); return stage.scrollHeight <= stage.clientHeight + 1 && feedback.getBoundingClientRect().bottom <= stage.getBoundingClientRect().bottom + 1; })()`);
@@ -210,7 +279,7 @@ try {
     await page.screenshot({ path: `.audit/v61-edge-${route.match(/type=([^&]+)/)[1]}-${route.includes('example') ? 'example' : 'knowledge'}.jpg`, quality: 86 });
   }
 
-  console.log("Browser interactions passed: structured knowledge and worked examples, fixed 20.8 practice transition, compact example stacks, topic completion route, persistent feedback, final exams, strict no-scroll desktop matrix (including 2048x768) and 7 responsive widths.");
+  console.log("Browser interactions passed: structured knowledge and worked examples, yellow quick notes, balanced controls, guarded arrow-key navigation, fixed 20.8 practice transition, persistent feedback, final exams and responsive workspace checks.");
 } finally {
   await browser.close();
   await new Promise((done) => server.close(done));
