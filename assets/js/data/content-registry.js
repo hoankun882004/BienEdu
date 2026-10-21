@@ -1,4 +1,5 @@
 import { curriculumMeta, curriculumTopics } from "./curriculum.js";
+import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./document-mappings.js?v=11.1";
 import { getExampleContent } from "./example-content.js?v=8.6";
 import { getKnowledgeContent } from "./knowledge-content.js?v=8.9";
@@ -57,12 +58,14 @@ function createExampleSection(code, topicId, document) {
   if (!examples.length) return Object.freeze({ status: CONTENT_STATUS.COMING_SOON, units: Object.freeze([]) });
 
   const units = examples.map((example, index) => Object.freeze({
-    id: `${code}-example-${index + 1}`,
+    id: example.id ?? `${code}-example-${index + 1}`,
     title: example.title,
     source: sourceReference(document, example.sourcePages ?? []),
-    verification: "verified"
+    sourceBlockId: example.sourceBlockId ?? null,
+    origin: example.origin ?? "verified-source",
+    verification: example.verification ?? "verified"
   }));
-  const sourceCoverage = calculusTopics.has(topicId) ? "partial" : "complete";
+  const sourceCoverage = "complete";
 
   return Object.freeze({
     status: CONTENT_STATUS.AVAILABLE,
@@ -71,24 +74,38 @@ function createExampleSection(code, topicId, document) {
     count: units.length,
     origin: "verified-source",
     sourceCoverage,
-    coverageNote: sourceCoverage === "partial"
-      ? "The source contains a second worked example for this lesson; the current structured lesson retains one fully verified example."
-      : null
+    coverageNote: null
   });
 }
 
 function createPracticeSection(code, topicId) {
   if (!practiceCodes.has(code)) return Object.freeze({ status: CONTENT_STATUS.COMING_SOON, units: Object.freeze([]) });
-  const sourceCoverage = calculusTopics.has(topicId) ? "partial" : "not-applicable";
+  const sourceExercises = calculusTopics.has(topicId) ? getCalculusSourcePractice(code) : [];
+  const sourceUnits = Object.freeze(sourceExercises.map((exercise) => Object.freeze({
+    id: exercise.id,
+    sourceBlockId: exercise.sourceBlockId,
+    sourcePages: exercise.sourcePages,
+    type: exercise.type,
+    answerKeyStatus: exercise.answerKeyStatus,
+    automatedGrading: exercise.automatedGrading,
+    verification: exercise.verification
+  })));
+  const needsReviewCount = sourceExercises.filter((exercise) => exercise.verification !== "verified").length;
+  const sourceCoverage = calculusTopics.has(topicId) ? "complete" : "not-applicable";
   return Object.freeze({
     status: CONTENT_STATUS.AVAILABLE,
     verification: "validated",
     count: 3,
     units: Object.freeze([]),
-    origin: "generated-practice",
+    sourceUnits,
+    sourceCount: sourceUnits.length,
+    sourceAnswerKeyCount: sourceExercises.filter((exercise) => exercise.answerKey).length,
+    sourceAutoGradableCount: sourceExercises.filter((exercise) => exercise.automatedGrading === "supported").length,
+    needsReviewCount,
+    origin: sourceUnits.length ? "generated-practice-and-verified-source-bank" : "generated-practice",
     sourceCoverage,
-    coverageNote: sourceCoverage === "partial"
-      ? "Three validated practice questions are available; the ten-item PDF self-practice bank is not fully transcribed."
+    coverageNote: sourceUnits.length
+      ? "Ten PDF self-practice questions are available for self-check; generated auto-graded practice remains separate."
       : "Generated practice is intentionally separate from the PDF examples."
   });
 }
@@ -108,11 +125,10 @@ function createSubtopicRecord(topic, exercise, document) {
     practice: createPracticeSection(exercise.code, topic.id)
   });
   const status = deriveStatus(sections);
-  const sourceCoverage = calculusTopics.has(topic.id) && status === CONTENT_STATUS.AVAILABLE
-    ? "partial"
-    : status === CONTENT_STATUS.AVAILABLE
+  const sourceCoverage = status === CONTENT_STATUS.AVAILABLE
       ? "complete"
       : "none";
+  const verificationStatus = sections.practice.needsReviewCount > 0 ? "needs-review" : "verified";
 
   return Object.freeze({
     id: exercise.id,
@@ -120,6 +136,7 @@ function createSubtopicRecord(topic, exercise, document) {
     title: exercise.title,
     status,
     sourceCoverage,
+    verificationStatus,
     sections
   });
 }
@@ -137,17 +154,21 @@ function createTopicRecord(topic) {
       : statuses.every((item) => item === CONTENT_STATUS.COMING_SOON)
         ? CONTENT_STATUS.COMING_SOON
         : CONTENT_STATUS.PARTIAL;
-  const sourceCoverage = calculusTopics.has(topic.id) && status === CONTENT_STATUS.AVAILABLE
-    ? "partial"
-    : status === CONTENT_STATUS.AVAILABLE
+  const sourceCoverage = status === CONTENT_STATUS.AVAILABLE
       ? "complete"
       : "none";
+  const verificationStatus = Object.values(subtopics).some((item) => item.verificationStatus === "needs-review")
+    ? "needs-review"
+    : status === CONTENT_STATUS.COMING_SOON
+      ? "not-reviewed"
+      : "verified";
 
   return Object.freeze({
     id: topic.id,
     title: topic.title,
     status,
     sourceCoverage,
+    verificationStatus,
     documentId: document?.documentId ?? null,
     subtopics
   });

@@ -45,9 +45,9 @@ Script dùng thư viện chuẩn Python, kiểm tra số lượng, mã CD01–CD
 
 ## Tài liệu và không gian học
 
-Trang Lộ trình dùng query parameter để mở chuyên đề và dạng bài, ví dụ `documents.html?topic=CD12&type=12.1&section=knowledge&item=1`. Cả 39 chuyên đề dùng chung một Learning Workspace; nội dung chưa có nguồn hiển thị empty state trung thực thay vì slide giả. Mỗi dạng CD12–CD14 và CD20–CD21 hiện có ba phần: Kiến thức, Ví dụ nguồn và ba Bài tập đã kiểm tra. Logic điều hướng, tiến độ và slide nằm tách khỏi phần render trong `assets/js/domain/lesson-workspace.js`; tiến độ được giữ theo từng lớp trong namespace `bienedu:progress:v2:grade{grade}`.
+Trang Lộ trình dùng query parameter để mở chuyên đề và dạng bài, ví dụ `documents.html?topic=CD12&type=12.1&section=knowledge&item=1`. Cả 39 chuyên đề dùng chung một Learning Workspace; nội dung chưa có nguồn hiển thị empty state trung thực thay vì slide giả. Mỗi dạng CD12–CD14 và CD20–CD21 hiện có ba phần: Kiến thức, Ví dụ và Bài tập. Logic điều hướng, tiến độ và slide nằm tách khỏi phần render trong `assets/js/domain/lesson-workspace.js`; tiến độ được giữ theo từng lớp trong namespace `bienedu:progress:v2:grade{grade}`.
 
-Các PDF nguồn được quản lý tập trung trong `assets/js/data/document-mappings.js`; trạng thái từng chuyên đề, dạng bài và từng phần học nằm trong `assets/js/data/content-registry.js`. Tệp `bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf` gồm 49 trang và được xác minh chứa CD12-01 đến CD14-09. 26 phần Kiến thức đã được đối chiếu theo trang; 12.1 được chia thành hai trang đọc. Mỗi dạng hiện giữ một ví dụ đã kiểm chứng và ba câu luyện tập đã kiểm tra, nên báo cáo vẫn ghi rõ phần ví dụ/bài tự luyện còn lại của PDF là coverage một phần. Tệp `ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf` có 18 trang và thực tế kết thúc ở 21.8: website chỉ ánh xạ CD20–CD21, không suy đoán CD22–CD23 từ tên tệp hoặc trang bìa.
+Các PDF nguồn được quản lý tập trung trong `assets/js/data/document-mappings.js`; trạng thái từng chuyên đề, dạng bài và từng phần học nằm trong `assets/js/data/content-registry.js`. Tệp `bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf` gồm 49 trang và được xác minh chứa CD12-01 đến CD14-09. Toàn bộ 26 phần Kiến thức, 52 ví dụ nguồn, 260 bài tự luyện và 260 đáp số đã được kiểm kê; 12.1 được chia thành hai trang đọc. Mỗi dạng vẫn giữ riêng ba câu luyện sinh tự động để chấm điểm. Bài tự luyện PDF chỉ dùng tự kiểm tra vì chưa có bộ so khớp biểu thức toán; chín đáp số nguồn có xung đột hoặc diễn đạt mơ hồ được hiển thị với trạng thái cần rà soát và không bị âm thầm sửa. Tệp `ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf` có 18 trang và thực tế kết thúc ở 21.8: website chỉ ánh xạ CD20–CD21, không suy đoán CD22–CD23 từ tên tệp hoặc trang bìa.
 
 ## Nhập thêm PDF theo cách an toàn
 
@@ -62,7 +62,7 @@ npm.cmd run content:validate
 - `content:scan` tính SHA-256, đếm trang và trích các tiêu đề có thể đối chiếu với catalog. Công cụ dùng `pdftotext`; có thể đặt đường dẫn riêng qua biến môi trường `PDFTOTEXT_PATH`.
 - `content:import` chỉ tạo `.audit/content-import-proposals.json`. Nó không sửa hoặc ghi đè học liệu đã xác minh.
 - Người biên tập kiểm tra đề xuất, trang nguồn, công thức, ranh giới ví dụ và lời giải rồi mới cập nhật mapping/dữ liệu bài học. Slide mới phải có ID ổn định, tham chiếu `documentId` và trang PDF.
-- `content:validate` kiểm tra đủ 39/347, hash nguồn, ID trùng, traceability và sinh `.audit/content-coverage.md`.
+- `content:validate` kiểm tra đủ 39/347, hash nguồn, ID trùng, traceability, đủ 52 ví dụ/260 bài nguồn CD12–CD14 và sinh `.audit/content-coverage.md` cùng `.audit/v11-2-source-manifest.json`.
 
 Sau khi review, chạy server cục bộ, mở trực tiếp route của bài vừa thêm ở desktop/mobile, rồi chạy `npm.cmd run verify`. Chỉ commit/deploy sau khi báo cáo coverage không còn lỗi và nội dung toán đã được người biên tập duyệt.
 

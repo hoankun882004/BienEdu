@@ -5,7 +5,8 @@ export function createLessonSlides({
   contentRecord = null,
   reading = null,
   examples = null,
-  questions = []
+  questions = [],
+  sourceExercises = []
 }) {
   if (!knowledgeSection) {
     return [{
@@ -29,7 +30,7 @@ export function createLessonSlides({
     : knowledgeSection.knowledgeSlides;
   const exampleSlides = examples
     ? examples.map((workedExample, index) => ({
-        id: contentRecord?.sections.examples.units[index]?.id ?? `${exercise.code}-example-${index + 1}`,
+        id: workedExample.id ?? contentRecord?.sections.examples.units[index]?.id ?? `${exercise.code}-example-${index + 1}`,
         sourcePages: workedExample.sourcePages,
         workedExample
       }))
@@ -65,6 +66,18 @@ export function createLessonSlides({
       label: "Bài tập",
       index,
       question,
+      title: exercise.title,
+      topicId: topic.id,
+      exerciseId: exercise.id
+    })),
+    ...sourceExercises.map((sourceExercise, index) => ({
+      id: sourceExercise.id,
+      section: "practice",
+      kind: "source-practice",
+      label: "Bài tập nguồn",
+      index: questions.length + index,
+      sourceIndex: index,
+      sourceExercise,
       title: exercise.title,
       topicId: topic.id,
       exerciseId: exercise.id

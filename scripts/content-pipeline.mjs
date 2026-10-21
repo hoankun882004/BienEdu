@@ -5,7 +5,11 @@ import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 
 import { curriculumMeta, curriculumTopics } from "../assets/js/data/curriculum.js";
+import { calculusSourceExamples } from "../assets/js/data/calculus-source-examples.js";
+import { calculusSourcePractice } from "../assets/js/data/calculus-source-practice.js";
 import { documentSources } from "../assets/js/data/document-mappings.js";
+import { getExampleContent } from "../assets/js/data/example-content.js";
+import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import {
   CONTENT_STATUS,
   getAvailabilitySummary,
@@ -17,6 +21,7 @@ const auditDirectory = join(projectRoot, ".audit");
 const inventoryPath = join(auditDirectory, "content-inventory.json");
 const proposalsPath = join(auditDirectory, "content-import-proposals.json");
 const coveragePath = join(auditDirectory, "content-coverage.md");
+const sourceManifestPath = join(auditDirectory, "v11-2-source-manifest.json");
 const sourceDirectory = join(projectRoot, "39 chuyên đề");
 const command = process.argv[2] ?? "validate";
 
@@ -201,6 +206,30 @@ function validateRegistry(inventory) {
   const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
   if (duplicateIds.length) errors.push(`Duplicate stable content IDs: ${duplicateIds.join(", ")}`);
 
+  const sourceExamples = Object.values(calculusSourceExamples).flat();
+  const sourcePractice = Object.values(calculusSourcePractice).flat();
+  if (Object.keys(calculusSourceExamples).length !== 26) errors.push("Source worked examples do not cover all 26 CD12-CD14 subtopics.");
+  if (sourceExamples.length !== 52) errors.push(`Expected 52 source worked examples, found ${sourceExamples.length}.`);
+  if (Object.keys(calculusSourcePractice).length !== 26) errors.push("Source self-practice does not cover all 26 CD12-CD14 subtopics.");
+  if (sourcePractice.length !== 260) errors.push(`Expected 260 source self-practice items, found ${sourcePractice.length}.`);
+  for (const [code, examples] of Object.entries(calculusSourceExamples)) {
+    if (examples.length !== 2) errors.push(`${code} must account for exactly two source worked examples.`);
+  }
+  for (const [code, exercises] of Object.entries(calculusSourcePractice)) {
+    if (exercises.length !== 10) errors.push(`${code} must account for exactly ten source self-practice items.`);
+  }
+  const sourceIds = [...sourceExamples, ...sourcePractice].map((item) => item.sourceBlockId);
+  const duplicateSourceIds = [...new Set(sourceIds.filter((id, index) => sourceIds.indexOf(id) !== index))];
+  if (sourceIds.some((id) => !id)) errors.push("A CD12-CD14 source item is missing sourceBlockId.");
+  if (duplicateSourceIds.length) errors.push(`Duplicate source block IDs: ${duplicateSourceIds.join(", ")}`);
+  for (const exercise of sourcePractice) {
+    if (!exercise.answerKey) errors.push(`${exercise.id} is missing its source answer key.`);
+    if (exercise.automatedGrading !== "unsupported") errors.push(`${exercise.id} must not be auto-graded without a symbolic equivalence validator.`);
+    if (!exercise.sourcePages.length || exercise.sourcePages.some((page) => page < 1 || page > 49)) errors.push(`${exercise.id} has an invalid source page reference.`);
+  }
+  const conflicts = sourcePractice.filter((exercise) => exercise.verification === "source-conflict");
+  if (conflicts.length) warnings.push(`${conflicts.length} source answer keys are preserved but marked needs-review; none are auto-graded.`);
+
   for (const source of documentSources) {
     const assetPath = join(projectRoot, source.filePath);
     if (!existsSync(assetPath)) errors.push(`Missing published source asset: ${source.filePath}`);
@@ -210,6 +239,164 @@ function validateRegistry(inventory) {
     if (original?.pageCount !== null && original?.pageCount !== source.pageCount) errors.push(`Page count mismatch for ${source.id}: expected ${source.pageCount}, scanned ${original.pageCount}.`);
   }
   return { errors, warnings, allSubtopics };
+}
+
+function topicSourceMetrics(topicId) {
+  const record = learningContentRegistry.topics[topicId];
+  const subtopics = Object.values(record.subtopics);
+  const codePrefix = topicId.slice(2);
+  const sourceExamples = Object.entries(calculusSourceExamples)
+    .filter(([code]) => code.startsWith(`${codePrefix}.`))
+    .flatMap(([, examples]) => examples);
+  const sourcePractice = Object.entries(calculusSourcePractice)
+    .filter(([code]) => code.startsWith(`${codePrefix}.`))
+    .flatMap(([, exercises]) => exercises);
+  return {
+    knowledgeUnits: subtopics.reduce((total, item) => total + (item.sections.knowledge.count ?? 0), 0),
+    displayedExamples: subtopics.reduce((total, item) => total + (item.sections.examples.count ?? 0), 0),
+    sourceExamples: sourceExamples.length,
+    sourcePractice: sourcePractice.length,
+    answerKeys: sourcePractice.filter((item) => item.answerKey).length,
+    autoGradable: sourcePractice.filter((item) => item.automatedGrading === "supported").length,
+    needsReview: sourcePractice.filter((item) => item.verification !== "verified").length
+  };
+}
+
+function buildSourceManifest() {
+  const auditedTopicIds = ["CD12", "CD13", "CD14", "CD20", "CD21"];
+  const knowledgeUnits = auditedTopicIds.flatMap((topicId) =>
+    Object.values(learningContentRegistry.topics[topicId].subtopics).flatMap((subtopic) => {
+      const reading = getKnowledgeContent(subtopic.code);
+      const readingPages = reading?.pages ?? (reading ? [reading] : []);
+      return subtopic.sections.knowledge.units.map((unit, pageIndex) => {
+        const page = readingPages[pageIndex] ?? reading;
+        const common = {
+          topicId,
+          code: subtopic.code,
+          destinationSection: "knowledge",
+          destinationSlideId: unit.id,
+          sourceDocumentId: unit.source.documentId,
+          sourcePages: unit.source.pages,
+          status: "imported-and-verified"
+        };
+        const blocks = [{
+          ...common,
+          id: `${unit.id}-lead`,
+          kind: "knowledge-introduction",
+          heading: unit.title
+        }];
+        (page?.formulae ?? []).forEach((formula, index) => blocks.push({
+          ...common,
+          id: `${unit.id}-formula-${String(index + 1).padStart(2, "0")}`,
+          kind: "formula-or-property",
+          heading: formula.label
+        }));
+        (page?.points ?? []).forEach((point, index) => blocks.push({
+          ...common,
+          id: `${unit.id}-method-${String(index + 1).padStart(2, "0")}`,
+          kind: "method-or-recognition-tip",
+          heading: point.label
+        }));
+        if (page?.note) blocks.push({
+          ...common,
+          id: `${unit.id}-note`,
+          kind: page.note.tone === "warning" ? "warning" : "note",
+          heading: page.note.label
+        });
+        return blocks;
+      });
+    })
+  ).flat();
+  const workedExamples = Object.entries(calculusSourceExamples).flatMap(([code, examples]) => examples.map((example) => ({
+    id: example.sourceBlockId,
+    runtimeId: example.id,
+    kind: "worked-example",
+    topicId: `CD${code.split(".")[0]}`,
+    code,
+    title: example.title,
+    sourceDocumentId: "cd12-cd14-calculus",
+    sourcePages: example.sourcePages,
+    destinationSection: "examples",
+    destinationSlideId: example.id,
+    status: "imported-and-verified"
+  })));
+  const selfPractice = Object.entries(calculusSourcePractice).flatMap(([code, exercises]) => exercises.map((exercise) => ({
+    id: exercise.sourceBlockId,
+    runtimeId: exercise.id,
+    kind: "self-practice",
+    topicId: `CD${code.split(".")[0]}`,
+    code,
+    questionNumber: exercise.number,
+    sourceDocumentId: "cd12-cd14-calculus",
+    sourcePages: exercise.sourcePages,
+    destinationSection: "practice-source-bank",
+    destinationSlideId: exercise.id,
+    answerKeyStatus: exercise.answerKeyStatus,
+    automatedGrading: exercise.automatedGrading,
+    verification: exercise.verification,
+    status: exercise.verification === "verified" ? "imported-and-verified" : "imported-needs-review"
+  })));
+  const probabilityExamples = ["CD20", "CD21"].flatMap((topicId) =>
+    Object.values(learningContentRegistry.topics[topicId].subtopics).flatMap((subtopic) =>
+      (getExampleContent(subtopic.code) ?? []).map((example, index) => {
+        const destinationSlideId = subtopic.sections.examples.units[index]?.id ?? `${subtopic.code}-example-${index + 1}`;
+        return {
+        id: destinationSlideId,
+        kind: "worked-example",
+        topicId,
+        code: subtopic.code,
+        title: example.title,
+        sourceDocumentId: learningContentRegistry.topics[topicId].documentId,
+        sourcePages: example.sourcePages,
+        destinationSection: "examples",
+        destinationSlideId,
+        status: "imported-and-verified"
+      }})
+    )
+  );
+  return {
+    schemaVersion: 1,
+    generatedAt: new Date().toISOString(),
+    documents: documentSources.map((document) => ({
+      id: document.id,
+      filePath: document.filePath,
+      pageCount: document.pageCount,
+      sha256: document.sourceSha256,
+      auditedTopics: Object.keys(document.topics)
+    })),
+    summary: {
+      knowledgeSlides: auditedTopicIds.reduce((total, topicId) => total + Object.values(learningContentRegistry.topics[topicId].subtopics).reduce((sum, subtopic) => sum + subtopic.sections.knowledge.count, 0), 0),
+      knowledgeSourceBlocks: knowledgeUnits.length,
+      calculusWorkedExamples: workedExamples.length,
+      cd20Cd21WorkedExamples: probabilityExamples.length,
+      selfPractice: selfPractice.length,
+      answerKeys: selfPractice.filter((item) => item.answerKeyStatus).length,
+      needsReview: selfPractice.filter((item) => item.verification !== "verified").length,
+      excludedWithReason: 1
+    },
+    blocks: [...knowledgeUnits, ...workedExamples, ...probabilityExamples, ...selfPractice, {
+      id: "cd12-cd14-formula-summary-page",
+      kind: "summary",
+      topicId: null,
+      sourcePages: [49],
+      status: "excluded-with-reason",
+      reason: "The final formula summary duplicates formulas already represented in the per-subtopic Knowledge lessons."
+    }]
+  };
+}
+
+function validateSourceManifest(manifest) {
+  const errors = [];
+  const ids = manifest.blocks.map((block) => block.id);
+  const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+  if (duplicateIds.length) errors.push(`Duplicate manifest block IDs: ${duplicateIds.join(", ")}`);
+  for (const block of manifest.blocks) {
+    if (!block.sourcePages?.length) errors.push(`${block.id} has no source page.`);
+    if (block.status !== "excluded-with-reason" && (!block.destinationSection || !block.destinationSlideId)) {
+      errors.push(`${block.id} has no runtime destination.`);
+    }
+  }
+  return errors;
 }
 
 function coverageReport(inventory, validation) {
@@ -224,7 +411,8 @@ function coverageReport(inventory, validation) {
     `- Curriculum: ${curriculumMeta.topicCount} topics / ${curriculumMeta.exerciseTypeCount} subtopics.`,
     `- Source PDFs discovered: ${inventory.documents.length}.`,
     `- Topic availability: ${summary.topics.available} available, ${summary.topics.partial} partial, ${summary.topics["coming-soon"]} coming soon, ${summary.topics["needs-review"]} needs review.`,
-    "- CD12-CD14: all Knowledge blocks are represented; one verified worked example and three validated practice items per subtopic are currently structured. The additional source examples/self-practice bank remain explicitly recorded as partial source coverage.",
+    "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. Source exercises are self-check only and remain separate from the three generated auto-graded questions per subtopic.",
+    "- Source completeness and mathematical verification are independent: nine answer keys are imported but explicitly marked needs-review because the printed answer conflicts with direct calculation or is ambiguous.",
     "- CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.",
     "",
     "## Source documents",
@@ -238,8 +426,8 @@ function coverageReport(inventory, validation) {
     "",
     "## Topic coverage",
     "",
-    "| Topic | Declared subtopics | Available subtopics | Knowledge slides | Example slides | Source | Source coverage | Status | Missing / review |",
-    "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- |"
+    "| Topic | Subtopics | Available | Knowledge | Displayed examples | Source examples | Source practice | Answer keys | Auto-graded source | Needs review | Source coverage | Runtime |",
+    "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |"
   ];
 
   for (const topic of curriculumTopics) {
@@ -248,14 +436,10 @@ function coverageReport(inventory, validation) {
     const available = subtopics.filter((item) => item.status === CONTENT_STATUS.AVAILABLE);
     const knowledge = subtopics.reduce((total, item) => total + (item.sections.knowledge.count ?? 0), 0);
     const examples = subtopics.reduce((total, item) => total + (item.sections.examples.count ?? 0), 0);
-    const missing = topic.exerciseTypes.length - available.length;
-    const source = documentSources.find((item) => item.id === record.documentId);
-    const note = record.sourceCoverage === "partial"
-      ? "Additional PDF examples/self-practice remain to be structured"
-      : missing
-        ? `${missing} subtopics have no verified imported lesson`
-        : "None";
-    lines.push(`| ${topic.id} | ${topic.exerciseTypes.length} | ${available.length} | ${knowledge} | ${examples} | ${source?.id ?? "—"} | ${record.sourceCoverage} | ${record.status} | ${note} |`);
+    const metrics = ["CD12", "CD13", "CD14"].includes(topic.id)
+      ? topicSourceMetrics(topic.id)
+      : { sourceExamples: examples, sourcePractice: 0, answerKeys: 0, autoGradable: 0, needsReview: 0 };
+    lines.push(`| ${topic.id} | ${topic.exerciseTypes.length} | ${available.length} | ${knowledge} | ${examples} | ${metrics.sourceExamples} | ${metrics.sourcePractice} | ${metrics.answerKeys} | ${metrics.autoGradable} | ${metrics.needsReview} | ${record.sourceCoverage} | ${record.status} |`);
   }
 
   lines.push("", "## Validation", "");
@@ -263,7 +447,8 @@ function coverageReport(inventory, validation) {
   else lines.push(...validation.errors.map((error) => `- ERROR: ${error}`));
   if (!validation.warnings.length) lines.push("- No source warnings.");
   else lines.push(...validation.warnings.map((warning) => `- WARNING: ${warning}`));
-  lines.push("", "## Manual review queue", "", "- CD12-CD14: transcribe and verify the remaining second worked example and source self-practice items before changing source coverage from partial to complete.", "- New or changed PDFs: review `.audit/content-import-proposals.json`; never replace a verified stable unit solely from an automatic match.", "");
+  const reviewItems = Object.values(calculusSourcePractice).flat().filter((item) => item.verification !== "verified");
+  lines.push("", "## Manual review queue", "", ...reviewItems.map((item) => `- ${item.id}: ${item.auditNote}`), "- New or changed PDFs: review `.audit/content-import-proposals.json`; never replace a verified stable unit solely from an automatic match.", "");
   return `${lines.join("\n")}\n`;
 }
 
@@ -283,8 +468,12 @@ if (command === "scan") {
 } else if (command === "validate") {
   writeJson(inventoryPath, inventory);
   const validation = validateRegistry(inventory);
+  const sourceManifest = buildSourceManifest();
+  validation.errors.push(...validateSourceManifest(sourceManifest));
+  writeJson(sourceManifestPath, sourceManifest);
   writeFileSync(coveragePath, coverageReport(inventory, validation), "utf8");
   console.log(`Coverage report: ${relative(projectRoot, coveragePath)}`);
+  console.log(`Source manifest: ${relative(projectRoot, sourceManifestPath)}`);
   for (const warning of validation.warnings) console.warn(`WARNING: ${warning}`);
   if (validation.errors.length) {
     for (const error of validation.errors) console.error(`ERROR: ${error}`);

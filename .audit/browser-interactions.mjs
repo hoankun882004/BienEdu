@@ -173,12 +173,13 @@ try {
   const completionState = await page.eval(`(async () => {
     const curriculum = await import('/assets/js/data/curriculum.js');
     const slides = await import('/assets/js/data/knowledge-slides.js');
+    const generators = await import('/assets/js/domain/exercise-generators.js');
     const topic = curriculum.curriculumTopics.find((item) => item.id === 'CD20');
     const lessons = {};
     for (const exercise of topic.exerciseTypes) lessons[exercise.code] = {
       viewedKnowledge: [slides.knowledgeSections[exercise.code].knowledgeSlides[0].id],
       viewedExamples: slides.knowledgeSections[exercise.code].exampleSlides.map((slide) => slide.id),
-      practiceAnswers: { a: { selectedIndex: 0 }, b: { selectedIndex: 0 }, c: { selectedIndex: 0 } }
+      practiceAnswers: Object.fromEntries(generators.generatePracticeSet(exercise.code, 'PRACTICE_V1').map((question) => [question.id, { selectedIndex: 0 }]))
     };
     return JSON.stringify({ version: 2, lessons, exams: {} });
   })()`);

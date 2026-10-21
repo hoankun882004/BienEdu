@@ -41,9 +41,23 @@ test("section availability and source coverage remain independent", () => {
   assert.equal(calculus.sections.knowledge.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(calculus.sections.examples.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(calculus.sections.practice.status, CONTENT_STATUS.AVAILABLE);
-  assert.equal(calculus.sourceCoverage, "partial");
+  assert.equal(calculus.sourceCoverage, "complete");
+  assert.equal(calculus.sections.practice.sourceCount, 10);
+  assert.equal(calculus.sections.practice.sourceAnswerKeyCount, 10);
+  assert.equal(calculus.sections.practice.sourceAutoGradableCount, 0);
   assert.equal(probability.sourceCoverage, "complete");
   assert.equal(unavailable.sections.knowledge.status, CONTENT_STATUS.COMING_SOON);
+});
+
+test("source completeness and mathematical verification are reported independently", () => {
+  const verified = getSubtopicAvailability("12.1");
+  const review = getSubtopicAvailability("12.3");
+
+  assert.equal(verified.sourceCoverage, "complete");
+  assert.equal(verified.verificationStatus, "verified");
+  assert.equal(review.sourceCoverage, "complete");
+  assert.equal(review.verificationStatus, "needs-review");
+  assert.equal(review.sections.practice.needsReviewCount, 1);
 });
 
 test("imported slides have stable unique IDs and verified source references", () => {

@@ -109,12 +109,19 @@ export function getLessonProgress(
   knowledgeCount,
   exampleCount = 0,
   practiceCount = 3,
-  materialStatus = "available"
+  materialStatus = "available",
+  validUnitIds = null
 ) {
   const current = lesson(normalize(progress), code);
-  const viewed = Math.min(new Set(current.viewedKnowledge).size, knowledgeCount);
-  const examplesViewed = Math.min(new Set(current.viewedExamples).size, exampleCount);
-  const answered = Math.min(Object.keys(current.practiceAnswers).length, practiceCount);
+  const countValid = (values, validIds, maximum) => {
+    const unique = [...new Set(values)];
+    if (!validIds) return Math.min(unique.length, maximum);
+    const valid = new Set(validIds);
+    return unique.filter((id) => valid.has(id)).length;
+  };
+  const viewed = countValid(current.viewedKnowledge, validUnitIds?.knowledge, knowledgeCount);
+  const examplesViewed = countValid(current.viewedExamples, validUnitIds?.examples, exampleCount);
+  const answered = countValid(Object.keys(current.practiceAnswers), validUnitIds?.practice, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
   const completed = viewed + examplesViewed + answered;
   const availableContentComplete = knowledgeCount > 0
@@ -150,7 +157,8 @@ export function getTopicProgress(progress, topic, knowledgeCounts) {
       counts.knowledge ?? 0,
       counts.examples ?? 0,
       counts.practice ?? 3,
-      counts.materialStatus ?? "available"
+      counts.materialStatus ?? "available",
+      counts.validUnitIds ?? null
     );
   });
   const completedLessons = lessons.filter((item) => item.isComplete).length;

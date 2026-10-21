@@ -50,6 +50,47 @@ test("knowledge and practice cannot complete a lesson while examples are incompl
   assert.equal(locked.lessons["20.1"].practiceAnswers.q1.selectedIndex, 0);
 });
 
+test("finishing available units is distinct from completing partially imported material", () => {
+  let state = createLearningProgress();
+  state = markKnowledgeViewed(state, "future.1", "future.1-knowledge-source-a");
+  state = recordPracticeAnswer(state, "future.1", "future.1-q1", 0, 0);
+
+  const lesson = getLessonProgress(state, "future.1", 1, 0, 1, "partial");
+  assert.equal(lesson.availableContentComplete, true);
+  assert.equal(lesson.isMaterialComplete, false);
+  assert.equal(lesson.isComplete, false);
+
+  const topic = { exerciseTypes: [{ code: "future.1" }, { code: "future.2" }] };
+  const progress = getTopicProgress(state, topic, {
+    "future.1": { knowledge: 1, examples: 0, practice: 1, available: true, materialStatus: "partial" }
+  });
+  assert.equal(progress.availableLessons, 1);
+  assert.equal(progress.declaredLessons, 2);
+  assert.equal(progress.materialComplete, false);
+  assert.equal(progress.isComplete, false);
+});
+
+test("progress counts only stable IDs that still exist in the current lesson", () => {
+  let state = createLearningProgress();
+  state = markKnowledgeViewed(state, "12.1", "12.1-knowledge-1");
+  state = markKnowledgeViewed(state, "12.1", "removed-knowledge-id");
+  state = markExampleViewed(state, "12.1", "12.1-example-1");
+  state = markExampleViewed(state, "12.1", "removed-example-id");
+  state = recordPracticeAnswer(state, "12.1", "12.1-practice-1", 0, 0);
+  state = recordPracticeAnswer(state, "12.1", "removed-practice-id", 0, 0);
+
+  const lesson = getLessonProgress(state, "12.1", 2, 3, 3, "available", {
+    knowledge: ["12.1-knowledge-1", "12.1-knowledge-2"],
+    examples: ["12.1-example-1", "12.1-source-example-2", "12.1-source-example-3"],
+    practice: ["12.1-practice-1", "12.1-practice-2", "12.1-practice-3"]
+  });
+
+  assert.equal(lesson.viewed, 1);
+  assert.equal(lesson.examplesViewed, 1);
+  assert.equal(lesson.answered, 1);
+  assert.equal(lesson.percent, 38);
+});
+
 test("final exams unlock only after every subtopic is complete", () => {
   let state = createLearningProgress();
   const counts = Object.fromEntries(Object.entries(knowledgeSections).map(([code]) => [code, { knowledge: knowledgeContent[code].pages?.length ?? 1, examples: exampleContent[code].length }]));

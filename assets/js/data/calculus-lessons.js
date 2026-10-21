@@ -1,4 +1,5 @@
 import { calculusKnowledgeDetails } from "./calculus-knowledge-details.js?v=8.6";
+import { calculusSourceExamples } from "./calculus-source-examples.js?v=11.2";
 
 // Structured lessons adapted from the verified CD12–CD14 calculus source PDF.
 // The source page numbers below refer to pages in the bundled 49-page PDF.
@@ -852,8 +853,41 @@ export const calculusKnowledgeContent = Object.freeze(Object.fromEntries(
   calculusLessonEntries.map(([code, item]) => [code, createCompleteReading(code, item)])
 ));
 
+// These legacy examples keep their original IDs so previously viewed progress
+// remains valid. A match means the curated slide already represents that exact
+// worked-example block from the PDF; otherwise it remains a reviewed, additional
+// BienEdu example beside the two verbatim-source examples.
+const legacySourceExampleMatches = Object.freeze({
+  "12.1": 1,
+  "12.2": 1,
+  "12.3": 2,
+  "12.4": 2,
+  "12.5": 1,
+  "12.6": 1,
+  "12.7": 1,
+  "12.8": 1,
+  "12.9": 1,
+  "13.1": 1,
+  "13.4": 1,
+  "14.3": 1
+});
+
+function createCompleteExamples(code, item) {
+  const matchedSourceNumber = legacySourceExampleMatches[code] ?? null;
+  const legacy = Object.freeze({
+    ...item.examples[0],
+    id: `${code}-example-1`,
+    sourceBlockId: matchedSourceNumber ? `${code}-worked-example-${matchedSourceNumber}` : null,
+    origin: matchedSourceNumber ? "verified-source" : "curated-example",
+    verification: "verified"
+  });
+  const sourceExamples = calculusSourceExamples[code]
+    .filter((_example, index) => index + 1 !== matchedSourceNumber);
+  return Object.freeze([legacy, ...sourceExamples]);
+}
+
 export const calculusExampleContent = Object.freeze(Object.fromEntries(
-  calculusLessonEntries.map(([code, item]) => [code, item.examples])
+  calculusLessonEntries.map(([code, item]) => [code, createCompleteExamples(code, item)])
 ));
 
 export const calculusPracticeBank = Object.freeze(Object.fromEntries(
@@ -871,12 +905,12 @@ export const calculusKnowledgeSections = Object.freeze(Object.fromEntries(
       sourcePages: item.pages,
       crops: []
     }],
-    exampleSlides: [{
-      id: `${code}-example-1`,
+    exampleSlides: calculusExampleContent[code].map((example) => ({
+      id: example.id,
       src: null,
-      sourcePages: item.examples[0].sourcePages,
+      sourcePages: example.sourcePages,
       crops: []
-    }],
+    })),
     slides: [{
       id: `${code}-knowledge-1`,
       src: null,

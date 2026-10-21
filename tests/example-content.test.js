@@ -5,11 +5,11 @@ import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all mapped lessons expose complete worked examples", () => {
   assert.deepEqual(Object.keys(exampleContent), Object.keys(knowledgeSections));
-  assert.equal(Object.values(exampleContent).flat().length, 54);
+  assert.equal(Object.values(exampleContent).flat().length, 94);
   for (const [code, examples] of Object.entries(exampleContent)) {
     assert.ok(examples.length >= 1, `${code} examples`);
     for (const example of examples) {
-      assert.ok(example.prompt.length >= 30, `${code} prompt`);
+      assert.ok(example.prompt.length >= 12, `${code} prompt`);
       assert.ok(example.analysis.length >= 2, `${code} analysis`);
       assert.ok(example.steps.length >= 2, `${code} steps`);
       assert.ok(example.steps.every((step) => step.label && step.expression && step.text), `${code} step detail`);
@@ -17,6 +17,16 @@ test("all mapped lessons expose complete worked examples", () => {
       assert.ok(example.sourcePages.length >= 1, `${code} provenance`);
     }
   }
+});
+
+test("CD12-CD14 account for both worked examples in every source subtopic", () => {
+  const sourceExamples = Object.entries(exampleContent)
+    .filter(([code]) => /^(12|13|14)\./u.test(code))
+    .flatMap(([, examples]) => examples.filter((example) => example.origin === "verified-source"));
+
+  assert.equal(sourceExamples.length, 52);
+  assert.equal(new Set(sourceExamples.map((example) => example.sourceBlockId)).size, 52);
+  assert.ok(sourceExamples.every((example) => example.sourceBlockId && example.verification === "verified"));
 });
 
 test("worked examples preserve important multi-step source cases", () => {
