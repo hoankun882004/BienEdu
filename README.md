@@ -49,6 +49,14 @@ Trang Lộ trình dùng query parameter để mở chuyên đề và dạng bài
 
 Các PDF nguồn được quản lý tập trung trong `assets/js/data/document-mappings.js`; trạng thái từng chuyên đề, dạng bài và từng phần học nằm trong `assets/js/data/content-registry.js`. Tệp `bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf` gồm 49 trang và được xác minh chứa CD12-01 đến CD14-09. Toàn bộ 26 phần Kiến thức, 52 ví dụ nguồn, 260 bài tự luyện và 260 đáp số đã được kiểm kê; 12.1 được chia thành hai trang đọc. Mỗi dạng vẫn giữ riêng ba câu luyện sinh tự động để chấm điểm. Bài tự luyện PDF chỉ dùng tự kiểm tra vì chưa có bộ so khớp biểu thức toán; chín đáp số nguồn có xung đột hoặc diễn đạt mơ hồ được hiển thị với trạng thái cần rà soát và không bị âm thầm sửa. Tệp `ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf` có 18 trang và thực tế kết thúc ở 21.8: website chỉ ánh xạ CD20–CD21, không suy đoán CD22–CD23 từ tên tệp hoặc trang bìa.
 
+## Hệ thống slide Kiến thức V12
+
+`assets/js/domain/lesson-workspace.js` biến từng trang nội dung đã kiểm chứng thành một slide có ID ổn định, tham chiếu trang nguồn và `slideType`. Bộ kiểu dùng chung gồm `concept`, `definition`, `formula`, `properties`, `method`, `steps`, `comparison`, `recognition`, `common-mistakes`, `summary` và `diagram`; dữ liệu có thể khai báo kiểu rõ ràng hoặc để domain suy ra kiểu bảo thủ từ các block hiện có. `assets/js/components/knowledge-slide-renderer.js` là renderer HTML/CSS dùng chung cho chế độ học và chế độ trình chiếu, vì vậy không có bộ dữ liệu hoặc bản sao nội dung thứ hai.
+
+Nút **Trình chiếu** chỉ xuất hiện ở slide Kiến thức. Chế độ này ưu tiên Fullscreen API; nếu trình duyệt từ chối hoặc không hỗ trợ, workspace chuyển sang lớp phủ mở rộng cùng chức năng. `←`, `→` và `Space` điều hướng trong phạm vi các slide Kiến thức, `Escape` hoặc nút **Thoát** đưa người dùng về workspace và giữ nguyên URL, slide hiện tại cùng tiến độ. Mỗi slide chỉ được tính đã xem sau khi chính slide đó được render; mở trình chiếu không tự đánh dấu toàn bộ bài.
+
+Luồng nội dung tương lai vẫn là: PDF → block đã kiểm chứng → `knowledge-slides.js`/content registry → `createLessonSlides()` → renderer dùng chung → hai chế độ học/trình chiếu. Chủ đề chưa có nội dung kiểm chứng vẫn dùng empty state “Nội dung đang được cập nhật”, không tạo slide giả. Chạy riêng ma trận trình chiếu bằng `npm.cmd run test:knowledge-presentation`; bài kiểm tra bao phủ bảy viewport, tám bài đại diện, history/deep link, tiến độ, bàn phím và reduced motion.
+
 ## Nhập thêm PDF theo cách an toàn
 
 Đặt PDF mới vào thư mục `39 chuyên đề/`, giữ nguyên tệp gốc, rồi chạy lần lượt:

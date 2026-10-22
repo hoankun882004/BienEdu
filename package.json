@@ -15,6 +15,13 @@
     "test:v9": "node .audit/v9-refinement.mjs",
     "test:v11-2": "node .audit/v11-2-browser.mjs",
     "test:knowledge-layout": "node .audit/knowledge-layout.mjs",
-    "verify": "npm run check && npm run content:validate && npm test && npm run test:v8 && npm run test:v9 && npm run test:knowledge-layout && npm run test:v11-2 && npm run test:browser && npm run test:home-scroll && npm run test:polish"
+    "test:knowledge-presentation": "node .audit/knowledge-presentation.mjs",
+    "verify": "npm run check && npm run content:validate && npm test && npm run test:v8 && npm run test:v9 && npm run test:knowledge-layout && npm run test:knowledge-presentation && npm run test:v11-2 && npm run test:browser && npm run test:home-scroll && npm run test:polish"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.4.299"
+  },
+  "devDependencies": {
+    "playwright-core": "1.64.1"
   }
 }

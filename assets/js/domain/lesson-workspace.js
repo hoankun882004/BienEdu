@@ -1,14 +1,40 @@
+export const KNOWLEDGE_SLIDE_TYPES = Object.freeze([
+  "concept",
+  "definition",
+  "formula",
+  "properties",
+  "method",
+  "steps",
+  "comparison",
+  "recognition",
+  "common-mistakes",
+  "summary",
+  "diagram"
+]);
+
+export function getKnowledgeSlideType(reading = {}) {
+  if (KNOWLEDGE_SLIDE_TYPES.includes(reading.type)) return reading.type;
+  const formulae = reading.formulae ?? [];
+  const points = reading.points ?? [];
+  if (formulae.length) return "formula";
+  if (points.length > 1) return "method";
+  if (reading.note?.tone === "warning") return "common-mistakes";
+  if (points.length === 1) return "recognition";
+  return "concept";
+}
+
 export function createLessonSlides({
   topic,
   exercise,
   knowledgeSection,
+  knowledgePdfMapping = null,
   contentRecord = null,
   reading = null,
   examples = null,
   questions = [],
   sourceExercises = []
 }) {
-  if (!knowledgeSection) {
+  if (!knowledgeSection && !knowledgePdfMapping) {
     return [{
       id: "unavailable",
       section: "knowledge",
@@ -18,14 +44,21 @@ export function createLessonSlides({
     }];
   }
 
-  const sourcePages = [...new Set(knowledgeSection.knowledgeSlides.flatMap((slide) => slide.sourcePages))];
+  const sourcePages = [...new Set(knowledgeSection?.knowledgeSlides.flatMap((slide) => slide.sourcePages) ?? [])];
   const readingPages = reading?.pages ?? (reading ? [reading] : []);
-  const knowledgeSlides = reading
+  const knowledgeSlides = knowledgePdfMapping?.verified
+    ? [{
+        id: `${exercise.code}-knowledge-pdf`,
+        sourcePages: knowledgePdfMapping.regions.map((region) => region.page),
+        pdfMapping: knowledgePdfMapping
+      }]
+    : reading
     ? readingPages.map((readingPage, index) => ({
         ...knowledgeSection.knowledgeSlides[Math.min(index, knowledgeSection.knowledgeSlides.length - 1)],
         id: contentRecord?.sections.knowledge.units[index]?.id ?? `${exercise.code}-knowledge-${index + 1}`,
         sourcePages: readingPage.sourcePages ?? sourcePages,
-        reading: readingPage
+        reading: readingPage,
+        slideType: getKnowledgeSlideType(readingPage)
       }))
     : knowledgeSection.knowledgeSlides;
   const exampleSlides = examples
@@ -41,7 +74,7 @@ export function createLessonSlides({
       ...slide,
       id: slide.id,
       section: "knowledge",
-      kind: "knowledge",
+      kind: slide.pdfMapping ? "knowledge-pdf" : "knowledge",
       label: "Kiến thức",
       index,
       title: exercise.title,

@@ -89,7 +89,7 @@ try {
   assert.equal(await page.eval("document.querySelectorAll('.knowledge-reader__formulae dl > div').length"), 6);
   assert.equal(await page.eval("document.querySelector('.lesson-sidebar li:first-child small').textContent"), "1/2 bài đọc");
   assert.equal(await page.eval("document.querySelectorAll('.lesson-page-picker a').length"), 2);
-  assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Tiếp theo')"), false);
+  assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Tiếp theo')"), true);
   assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "12.1 page 1 must not overflow horizontally");
   await page.screenshot({ path: ".audit/cd12-1-knowledge-complete-390.jpg", quality: 88, fullPage: true });
   await page.eval("document.querySelector('.lesson-page-picker a:last-child').click()");
@@ -133,7 +133,7 @@ try {
   assert.equal(await page.eval("document.querySelectorAll('.source-slide-pager a').length"), 0);
   assert.equal(await page.eval("document.querySelector('.lesson-sidebar li:first-child small').textContent"), "1/1 bài đọc");
   assert.equal(await page.eval("document.querySelectorAll('.knowledge-reader__formulae dl > div').length"), 4);
-  assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Tiếp theo')"), false);
+  assert.equal(await page.eval("document.querySelector('.lesson-navigation').textContent.includes('Xem ví dụ')"), true);
 
   await page.goto(`${origin}/documents.html?topic=CD20&type=20.1&section=example&item=1`, { timeoutMs: 30000, settleMs: 300 });
   assert.equal(await page.eval("document.querySelector('.example-reader h2').textContent"), "Quên làm bài tập");

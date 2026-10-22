@@ -211,7 +211,7 @@ try {
     assert.equal(health.horizontalOverflow, false, `no horizontal overflow at ${size.width}x${size.height}`);
     assert.equal(health.brokenImages, 0, `no broken images at ${size.width}x${size.height}`);
     assert.ok(health.bottomNavHeight >= 48, `bottom navigation remains usable at ${size.width}x${size.height}`);
-    assert.equal(health.phaseVisible, size.width <= 900, `lesson tabs visibility at ${size.width}px`);
+    assert.equal(health.phaseVisible, size.width <= 1120, `lesson tabs visibility at ${size.width}px`);
 
     await page.eval("document.querySelector('.grade-switcher').click()");
     await sleep(30);

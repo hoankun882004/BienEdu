@@ -10,6 +10,7 @@ import { calculusSourcePractice } from "../assets/js/data/calculus-source-practi
 import { documentSources } from "../assets/js/data/document-mappings.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
+import { knowledgePdfMappings } from "../assets/js/data/knowledge-pdf-mappings.js";
 import {
   CONTENT_STATUS,
   getAvailabilitySummary,
@@ -22,6 +23,7 @@ const inventoryPath = join(auditDirectory, "content-inventory.json");
 const proposalsPath = join(auditDirectory, "content-import-proposals.json");
 const coveragePath = join(auditDirectory, "content-coverage.md");
 const sourceManifestPath = join(auditDirectory, "v11-2-source-manifest.json");
+const pdfMappingReviewPath = join(auditDirectory, "pdf-mapping-review.md");
 const sourceDirectory = join(projectRoot, "39 chuyên đề");
 const command = process.argv[2] ?? "validate";
 
@@ -238,6 +240,37 @@ function validateRegistry(inventory) {
     if (!original) warnings.push(`No original PDF with the registered hash was found in 39 chuyên đề for ${source.id}.`);
     if (original?.pageCount !== null && original?.pageCount !== source.pageCount) errors.push(`Page count mismatch for ${source.id}: expected ${source.pageCount}, scanned ${original.pageCount}.`);
   }
+
+  const requiredPdfTopics = new Set(["CD12", "CD13", "CD14", "CD20", "CD21"]);
+  const requiredPdfCodes = curriculumTopics
+    .filter((topic) => requiredPdfTopics.has(topic.id))
+    .flatMap((topic) => topic.exerciseTypes.map((exercise) => exercise.code));
+  if (Object.keys(knowledgePdfMappings).length !== requiredPdfCodes.length) {
+    errors.push(`Expected ${requiredPdfCodes.length} verified Knowledge PDF mappings, found ${Object.keys(knowledgePdfMappings).length}.`);
+  }
+  for (const code of requiredPdfCodes) {
+    const mapping = knowledgePdfMappings[code];
+    if (!mapping) {
+      errors.push(`${code} has no Knowledge PDF mapping.`);
+      continue;
+    }
+    const source = documentSources.find((item) => item.id === mapping.documentId);
+    if (!mapping.verified || mapping.precision !== "exact-region") errors.push(`${code} is not an exact verified PDF mapping.`);
+    if (!source || source.sourceSha256 !== mapping.sourceSha256) errors.push(`${code} references an unknown or changed source PDF.`);
+    if (mapping.startPage !== mapping.regions[0]?.page || mapping.endPage !== mapping.regions.at(-1)?.page) {
+      errors.push(`${code} page boundaries do not match its rendered regions.`);
+    }
+    for (const [index, region] of mapping.regions.entries()) {
+      if (region.page < 1 || region.page > mapping.pageCount) errors.push(`${region.id} uses an invalid PDF page.`);
+      if (region.x < 0 || region.y < 0 || region.width <= 0 || region.height <= 0 || region.x + region.width > 1.0001 || region.y + region.height > 1.0001) {
+        errors.push(`${region.id} has invalid normalized crop coordinates.`);
+      }
+      if (index && region.page !== mapping.regions[index - 1].page + 1) errors.push(`${code} has a non-contiguous page sequence.`);
+    }
+  }
+  for (const code of Object.keys(knowledgePdfMappings)) {
+    if (!requiredPdfCodes.includes(code)) warnings.push(`${code} has a PDF mapping outside the currently audited topic set.`);
+  }
   return { errors, warnings, allSubtopics };
 }
 
@@ -372,8 +405,20 @@ function buildSourceManifest() {
       selfPractice: selfPractice.length,
       answerKeys: selfPractice.filter((item) => item.answerKeyStatus).length,
       needsReview: selfPractice.filter((item) => item.verification !== "verified").length,
-      excludedWithReason: 1
+      excludedWithReason: 1,
+      verifiedKnowledgePdfMappings: Object.keys(knowledgePdfMappings).length,
+      verifiedKnowledgePdfRegions: Object.values(knowledgePdfMappings).reduce((total, mapping) => total + mapping.regions.length, 0)
     },
+    knowledgePdfMappings: Object.values(knowledgePdfMappings).map((mapping) => ({
+      topicId: mapping.topicId,
+      subtopicId: mapping.subtopicId,
+      documentId: mapping.documentId,
+      startPage: mapping.startPage,
+      endPage: mapping.endPage,
+      precision: mapping.precision,
+      verified: mapping.verified,
+      regions: mapping.regions
+    })),
     blocks: [...knowledgeUnits, ...workedExamples, ...probabilityExamples, ...selfPractice, {
       id: "cd12-cd14-formula-summary-page",
       kind: "summary",
@@ -383,6 +428,31 @@ function buildSourceManifest() {
       reason: "The final formula summary duplicates formulas already represented in the per-subtopic Knowledge lessons."
     }]
   };
+}
+
+function pdfMappingReviewReport() {
+  const mappings = Object.values(knowledgePdfMappings);
+  const lines = [
+    "# BienEdu Knowledge PDF mapping review",
+    "",
+    "Generated from the checked-in verified mapping. Coordinates use normalized top-left PDF page space.",
+    "",
+    `- Verified subtopics: ${mappings.length}.`,
+    `- Verified page regions: ${mappings.reduce((total, mapping) => total + mapping.regions.length, 0)}.`,
+    "- Precision: exact heading-to-next-heading region boundaries.",
+    "- CD14.9 ends on original page 48; page 49 is a document-wide formula summary and remains excluded.",
+    "- The CD20–CD23-named source ends at CD21.8; no CD22/CD23 lesson mapping is claimed.",
+    "",
+    "| Topic | Subtopic | Document | Start | End | Regions | Status |",
+    "| --- | --- | --- | ---: | ---: | --- | --- |"
+  ];
+  for (const mapping of mappings) {
+    const regions = mapping.regions
+      .map((region) => `p${region.page} [${region.x.toFixed(3)}, ${region.y.toFixed(3)}, ${region.width.toFixed(3)}, ${region.height.toFixed(3)}]`)
+      .join("<br>");
+    lines.push(`| ${mapping.topicId} | ${mapping.subtopicId} | ${mapping.documentId} | ${mapping.startPage} | ${mapping.endPage} | ${regions} | verified exact-region |`);
+  }
+  return `${lines.join("\n")}\n`;
 }
 
 function validateSourceManifest(manifest) {
@@ -472,8 +542,10 @@ if (command === "scan") {
   validation.errors.push(...validateSourceManifest(sourceManifest));
   writeJson(sourceManifestPath, sourceManifest);
   writeFileSync(coveragePath, coverageReport(inventory, validation), "utf8");
+  writeFileSync(pdfMappingReviewPath, pdfMappingReviewReport(), "utf8");
   console.log(`Coverage report: ${relative(projectRoot, coveragePath)}`);
   console.log(`Source manifest: ${relative(projectRoot, sourceManifestPath)}`);
+  console.log(`PDF mapping review: ${relative(projectRoot, pdfMappingReviewPath)}`);
   for (const warning of validation.warnings) console.warn(`WARNING: ${warning}`);
   if (validation.errors.length) {
     for (const error of validation.errors) console.error(`ERROR: ${error}`);

@@ -1,6 +1,6 @@
 # BienEdu content coverage
 
-Generated: 2026-10-21T14:14:51.662Z
+Generated: 2026-10-22T07:58:19.697Z
 
 ## Audit summary
 

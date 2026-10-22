@@ -7,7 +7,18 @@ import { getKnowledgeSection } from "../assets/js/data/knowledge-slides.js";
 import { getCalculusSourcePractice } from "../assets/js/data/calculus-source-practice.js";
 import { generatePracticeSet } from "../assets/js/domain/exercise-generators.js";
 import { findExerciseType, findTopic } from "../assets/js/domain/curriculum-filter.js";
-import { createLessonSlides, createLessonState, getNextSlide, getPreviousSlide, getSectionPosition } from "../assets/js/domain/lesson-workspace.js";
+import { createLessonSlides, createLessonState, getKnowledgeSlideType, getNextSlide, getPreviousSlide, getSectionPosition, KNOWLEDGE_SLIDE_TYPES } from "../assets/js/domain/lesson-workspace.js";
+
+test("the generic Knowledge model exposes stable content-aware slide types", () => {
+  assert.ok(KNOWLEDGE_SLIDE_TYPES.includes("concept"));
+  assert.ok(KNOWLEDGE_SLIDE_TYPES.includes("formula"));
+  assert.ok(KNOWLEDGE_SLIDE_TYPES.includes("method"));
+  assert.ok(KNOWLEDGE_SLIDE_TYPES.includes("comparison"));
+  assert.equal(getKnowledgeSlideType({ type: "comparison" }), "comparison");
+  assert.equal(getKnowledgeSlideType({ formulae: [{ value: "x" }] }), "formula");
+  assert.equal(getKnowledgeSlideType({ points: [{}, {}] }), "method");
+  assert.equal(getKnowledgeSlideType({ lead: "Khái niệm" }), "concept");
+});
 
 test("a lesson contains exactly knowledge, example and practice sections", () => {
   const topic = findTopic(curriculumGroups, "CD20");
@@ -39,6 +50,7 @@ test("a long text lesson keeps two numbered knowledge pages before its example",
   assert.equal(slides.filter((slide) => slide.section === "knowledge").length, 2);
   assert.deepEqual(slides.filter((slide) => slide.section === "knowledge").map((slide) => slide.id), ["12.1-knowledge-1", "12.1-knowledge-2"]);
   assert.deepEqual(slides.filter((slide) => slide.section === "knowledge").map((slide) => slide.sourcePages), [[3], [3, 4]]);
+  assert.ok(slides.filter((slide) => slide.section === "knowledge").every((slide) => slide.slideType === "formula"));
   assert.equal(slides[2].section, "example");
 });
 
