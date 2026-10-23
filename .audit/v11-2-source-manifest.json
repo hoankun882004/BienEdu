@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T07:58:19.690Z",
+  "generatedAt": "2026-10-23T08:59:52.947Z",
   "documents": [
     {
       "id": "cd20-cd21-theory",
@@ -32,8 +32,1536 @@
     "selfPractice": 260,
     "answerKeys": 260,
     "needsReview": 9,
-    "excludedWithReason": 1
+    "excludedWithReason": 1,
+    "verifiedKnowledgePdfMappings": 51,
+    "verifiedKnowledgePdfRegions": 107
   },
+  "knowledgePdfMappings": [
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.1",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 3,
+      "endPage": 5,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.1-pdf-1",
+          "x": 0.055,
+          "y": 0.1126,
+          "width": 0.89,
+          "height": 0.8524,
+          "page": 3,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.1-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 4,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.1-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2532,
+          "page": 5,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.2",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 5,
+      "endPage": 7,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.2-pdf-1",
+          "x": 0.055,
+          "y": 0.3082,
+          "width": 0.89,
+          "height": 0.6568,
+          "page": 5,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.2-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 6,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.2-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.0057,
+          "page": 7,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.3",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 7,
+      "endPage": 8,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.3-pdf-1",
+          "x": 0.055,
+          "y": 0.0607,
+          "width": 0.89,
+          "height": 0.9043,
+          "page": 7,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.3-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.6627,
+          "page": 8,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.4",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 8,
+      "endPage": 10,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.4-pdf-1",
+          "x": 0.055,
+          "y": 0.7177,
+          "width": 0.89,
+          "height": 0.2473,
+          "page": 8,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.4-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 9,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.4-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.4731,
+          "page": 10,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.5",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 10,
+      "endPage": 12,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.5-pdf-1",
+          "x": 0.055,
+          "y": 0.5281,
+          "width": 0.89,
+          "height": 0.4369,
+          "page": 10,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.5-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 11,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.5-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2457,
+          "page": 12,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.6",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 12,
+      "endPage": 13,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.6-pdf-1",
+          "x": 0.055,
+          "y": 0.3007,
+          "width": 0.89,
+          "height": 0.6643,
+          "page": 12,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.6-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.8262,
+          "page": 13,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.7",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 13,
+      "endPage": 15,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.7-pdf-1",
+          "x": 0.055,
+          "y": 0.8812,
+          "width": 0.89,
+          "height": 0.0838,
+          "page": 13,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.7-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 14,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.7-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.5055,
+          "page": 15,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.8",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 15,
+      "endPage": 17,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.8-pdf-1",
+          "x": 0.055,
+          "y": 0.5605,
+          "width": 0.89,
+          "height": 0.4045,
+          "page": 15,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.8-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 16,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "12.8-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.1315,
+          "page": 17,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD12",
+      "subtopicId": "12.9",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 17,
+      "endPage": 18,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "12.9-pdf-1",
+          "x": 0.055,
+          "y": 0.1865,
+          "width": 0.89,
+          "height": 0.7785,
+          "page": 17,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "12.9-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 18,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.1",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 19,
+      "endPage": 20,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.1-pdf-1",
+          "x": 0.055,
+          "y": 0.1129,
+          "width": 0.89,
+          "height": 0.8521,
+          "page": 19,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.1-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.832,
+          "page": 20,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.2",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 20,
+      "endPage": 22,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.2-pdf-1",
+          "x": 0.055,
+          "y": 0.887,
+          "width": 0.89,
+          "height": 0.078,
+          "page": 20,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.2-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 21,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.2-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.4266,
+          "page": 22,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.3",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 22,
+      "endPage": 24,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.3-pdf-1",
+          "x": 0.055,
+          "y": 0.4816,
+          "width": 0.89,
+          "height": 0.4834,
+          "page": 22,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.3-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 23,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.3-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.1628,
+          "page": 24,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.4",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 24,
+      "endPage": 25,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.4-pdf-1",
+          "x": 0.055,
+          "y": 0.2178,
+          "width": 0.89,
+          "height": 0.7472,
+          "page": 24,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.4-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.73,
+          "page": 25,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.5",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 25,
+      "endPage": 27,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.5-pdf-1",
+          "x": 0.055,
+          "y": 0.785,
+          "width": 0.89,
+          "height": 0.18,
+          "page": 25,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.5-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 26,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.5-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.5458,
+          "page": 27,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.6",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 27,
+      "endPage": 29,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.6-pdf-1",
+          "x": 0.055,
+          "y": 0.6008,
+          "width": 0.89,
+          "height": 0.3642,
+          "page": 27,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.6-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 28,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.6-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.5845,
+          "page": 29,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.7",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 29,
+      "endPage": 31,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.7-pdf-1",
+          "x": 0.055,
+          "y": 0.6395,
+          "width": 0.89,
+          "height": 0.3255,
+          "page": 29,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.7-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 30,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.7-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2627,
+          "page": 31,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD13",
+      "subtopicId": "13.8",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 31,
+      "endPage": 33,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "13.8-pdf-1",
+          "x": 0.055,
+          "y": 0.3177,
+          "width": 0.89,
+          "height": 0.6473,
+          "page": 31,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "13.8-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 32,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "13.8-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 33,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.1",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 34,
+      "endPage": 35,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.1-pdf-1",
+          "x": 0.055,
+          "y": 0.1134,
+          "width": 0.89,
+          "height": 0.8516,
+          "page": 34,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.1-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.5184,
+          "page": 35,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.2",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 35,
+      "endPage": 37,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.2-pdf-1",
+          "x": 0.055,
+          "y": 0.5734,
+          "width": 0.89,
+          "height": 0.3916,
+          "page": 35,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.2-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 36,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "14.2-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.1218,
+          "page": 37,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.3",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 37,
+      "endPage": 38,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.3-pdf-1",
+          "x": 0.055,
+          "y": 0.1768,
+          "width": 0.89,
+          "height": 0.7882,
+          "page": 37,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.3-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.6345,
+          "page": 38,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.4",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 38,
+      "endPage": 40,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.4-pdf-1",
+          "x": 0.055,
+          "y": 0.6895,
+          "width": 0.89,
+          "height": 0.2755,
+          "page": 38,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.4-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 39,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "14.4-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.3442,
+          "page": 40,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.5",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 40,
+      "endPage": 42,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.5-pdf-1",
+          "x": 0.055,
+          "y": 0.3992,
+          "width": 0.89,
+          "height": 0.5658,
+          "page": 40,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.5-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 41,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "14.5-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.0538,
+          "page": 42,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.6",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 42,
+      "endPage": 43,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.6-pdf-1",
+          "x": 0.055,
+          "y": 0.1088,
+          "width": 0.89,
+          "height": 0.8562,
+          "page": 42,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.6-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.4481,
+          "page": 43,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.7",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 43,
+      "endPage": 45,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.7-pdf-1",
+          "x": 0.055,
+          "y": 0.5031,
+          "width": 0.89,
+          "height": 0.4619,
+          "page": 43,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.7-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 44,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "14.7-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.0427,
+          "page": 45,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.8",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 45,
+      "endPage": 46,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.8-pdf-1",
+          "x": 0.055,
+          "y": 0.0977,
+          "width": 0.89,
+          "height": 0.8673,
+          "page": 45,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.8-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.4868,
+          "page": 46,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD14",
+      "subtopicId": "14.9",
+      "documentId": "cd12-cd14-calculus",
+      "startPage": 46,
+      "endPage": 48,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "14.9-pdf-1",
+          "x": 0.055,
+          "y": 0.5418,
+          "width": 0.89,
+          "height": 0.4232,
+          "page": 46,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "14.9-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 47,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "14.9-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 48,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.1",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 4,
+      "endPage": 5,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.1-pdf-1",
+          "x": 0.055,
+          "y": 0.2162,
+          "width": 0.89,
+          "height": 0.7488,
+          "page": 4,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.1-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.384,
+          "page": 5,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.2",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 5,
+      "endPage": 7,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.2-pdf-1",
+          "x": 0.055,
+          "y": 0.439,
+          "width": 0.89,
+          "height": 0.526,
+          "page": 5,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.2-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 6,
+          "isBoundaryPage": false
+        },
+        {
+          "id": "20.2-pdf-3",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.1364,
+          "page": 7,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.3",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 7,
+      "endPage": 7,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.3-pdf-1",
+          "x": 0.055,
+          "y": 0.1914,
+          "width": 0.89,
+          "height": 0.4753,
+          "page": 7,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.4",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 7,
+      "endPage": 8,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.4-pdf-1",
+          "x": 0.055,
+          "y": 0.6667,
+          "width": 0.89,
+          "height": 0.2983,
+          "page": 7,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.4-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.098,
+          "page": 8,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.5",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 8,
+      "endPage": 8,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.5-pdf-1",
+          "x": 0.055,
+          "y": 0.153,
+          "width": 0.89,
+          "height": 0.4226,
+          "page": 8,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.6",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 8,
+      "endPage": 9,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.6-pdf-1",
+          "x": 0.055,
+          "y": 0.5756,
+          "width": 0.89,
+          "height": 0.3894,
+          "page": 8,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.6-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.101,
+          "page": 9,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.7",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 9,
+      "endPage": 9,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.7-pdf-1",
+          "x": 0.055,
+          "y": 0.156,
+          "width": 0.89,
+          "height": 0.4416,
+          "page": 9,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.8",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 9,
+      "endPage": 10,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.8-pdf-1",
+          "x": 0.055,
+          "y": 0.5976,
+          "width": 0.89,
+          "height": 0.3674,
+          "page": 9,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.8-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2818,
+          "page": 10,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.9",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 10,
+      "endPage": 10,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.9-pdf-1",
+          "x": 0.055,
+          "y": 0.3368,
+          "width": 0.89,
+          "height": 0.4181,
+          "page": 10,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.10",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 10,
+      "endPage": 11,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.10-pdf-1",
+          "x": 0.055,
+          "y": 0.7549,
+          "width": 0.89,
+          "height": 0.2101,
+          "page": 10,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.10-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2324,
+          "page": 11,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.11",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 11,
+      "endPage": 11,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.11-pdf-1",
+          "x": 0.055,
+          "y": 0.2874,
+          "width": 0.89,
+          "height": 0.4243,
+          "page": 11,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.12",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 11,
+      "endPage": 12,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.12-pdf-1",
+          "x": 0.055,
+          "y": 0.7117,
+          "width": 0.89,
+          "height": 0.2533,
+          "page": 11,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.12-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.2707,
+          "page": 12,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.13",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 12,
+      "endPage": 12,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.13-pdf-1",
+          "x": 0.055,
+          "y": 0.3257,
+          "width": 0.89,
+          "height": 0.4985,
+          "page": 12,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.14",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 12,
+      "endPage": 13,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.14-pdf-1",
+          "x": 0.055,
+          "y": 0.8242,
+          "width": 0.89,
+          "height": 0.1408,
+          "page": 12,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.14-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.3623,
+          "page": 13,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.15",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 13,
+      "endPage": 13,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.15-pdf-1",
+          "x": 0.055,
+          "y": 0.4173,
+          "width": 0.89,
+          "height": 0.4235,
+          "page": 13,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.16",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 13,
+      "endPage": 14,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.16-pdf-1",
+          "x": 0.055,
+          "y": 0.8408,
+          "width": 0.89,
+          "height": 0.1242,
+          "page": 13,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "20.16-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.3414,
+          "page": 14,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD20",
+      "subtopicId": "20.17",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 14,
+      "endPage": 14,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "20.17-pdf-1",
+          "x": 0.055,
+          "y": 0.3964,
+          "width": 0.89,
+          "height": 0.5686,
+          "page": 14,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.1",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 15,
+      "endPage": 15,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.1-pdf-1",
+          "x": 0.055,
+          "y": 0.2107,
+          "width": 0.89,
+          "height": 0.4268,
+          "page": 15,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.2",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 15,
+      "endPage": 16,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.2-pdf-1",
+          "x": 0.055,
+          "y": 0.6375,
+          "width": 0.89,
+          "height": 0.3275,
+          "page": 15,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "21.2-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.1011,
+          "page": 16,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.3",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 16,
+      "endPage": 16,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.3-pdf-1",
+          "x": 0.055,
+          "y": 0.1561,
+          "width": 0.89,
+          "height": 0.2508,
+          "page": 16,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.4",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 16,
+      "endPage": 16,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.4-pdf-1",
+          "x": 0.055,
+          "y": 0.4069,
+          "width": 0.89,
+          "height": 0.2328,
+          "page": 16,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.5",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 16,
+      "endPage": 17,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.5-pdf-1",
+          "x": 0.055,
+          "y": 0.6397,
+          "width": 0.89,
+          "height": 0.3253,
+          "page": 16,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "21.5-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.0018,
+          "page": 17,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.6",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 17,
+      "endPage": 17,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.6-pdf-1",
+          "x": 0.055,
+          "y": 0.0568,
+          "width": 0.89,
+          "height": 0.4237,
+          "page": 17,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.7",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 17,
+      "endPage": 17,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.7-pdf-1",
+          "x": 0.055,
+          "y": 0.4805,
+          "width": 0.89,
+          "height": 0.3154,
+          "page": 17,
+          "isBoundaryPage": true
+        }
+      ]
+    },
+    {
+      "topicId": "CD21",
+      "subtopicId": "21.8",
+      "documentId": "cd20-cd21-theory",
+      "startPage": 17,
+      "endPage": 18,
+      "precision": "exact-region",
+      "verified": true,
+      "regions": [
+        {
+          "id": "21.8-pdf-1",
+          "x": 0.055,
+          "y": 0.7959,
+          "width": 0.89,
+          "height": 0.1691,
+          "page": 17,
+          "isBoundaryPage": true
+        },
+        {
+          "id": "21.8-pdf-2",
+          "x": 0.055,
+          "y": 0.055,
+          "width": 0.89,
+          "height": 0.91,
+          "page": 18,
+          "isBoundaryPage": true
+        }
+      ]
+    }
+  ],
   "blocks": [
     {
       "topicId": "CD12",
@@ -288,8 +1816,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-lead",
@@ -303,8 +1830,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-formula-01",
@@ -318,8 +1844,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-formula-02",
@@ -333,8 +1858,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-formula-03",
@@ -348,8 +1872,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-method-01",
@@ -363,8 +1886,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-method-02",
@@ -378,8 +1900,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-method-03",
@@ -393,8 +1914,7 @@
       "destinationSlideId": "12.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        5,
-        6
+        5
       ],
       "status": "imported-and-verified",
       "id": "12.2-knowledge-1-note",
@@ -534,8 +2054,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-lead",
@@ -549,8 +2068,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-01",
@@ -564,8 +2082,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-02",
@@ -579,8 +2096,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-03",
@@ -594,8 +2110,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-04",
@@ -609,8 +2124,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-05",
@@ -624,8 +2138,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-06",
@@ -639,8 +2152,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-method-01",
@@ -654,8 +2166,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-method-02",
@@ -669,8 +2180,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-method-03",
@@ -684,8 +2194,7 @@
       "destinationSlideId": "12.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-note",
@@ -699,8 +2208,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-lead",
@@ -714,8 +2222,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-formula-01",
@@ -729,8 +2236,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-formula-02",
@@ -744,8 +2250,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-formula-03",
@@ -759,8 +2264,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-formula-04",
@@ -774,8 +2278,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-formula-05",
@@ -789,8 +2292,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-method-01",
@@ -804,8 +2306,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-method-02",
@@ -819,8 +2320,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-method-03",
@@ -834,8 +2334,7 @@
       "destinationSlideId": "12.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "12.5-knowledge-1-note",
@@ -961,8 +2460,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-lead",
@@ -976,8 +2474,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-formula-01",
@@ -991,8 +2488,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-formula-02",
@@ -1006,8 +2502,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-formula-03",
@@ -1021,8 +2516,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-method-01",
@@ -1036,8 +2530,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-method-02",
@@ -1051,8 +2544,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-method-03",
@@ -1066,8 +2558,7 @@
       "destinationSlideId": "12.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "12.7-knowledge-1-note",
@@ -1081,8 +2572,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-lead",
@@ -1096,8 +2586,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-formula-01",
@@ -1111,8 +2600,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-formula-02",
@@ -1126,8 +2614,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-formula-03",
@@ -1141,8 +2628,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-formula-04",
@@ -1156,8 +2642,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-method-01",
@@ -1171,8 +2656,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-method-02",
@@ -1186,8 +2670,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-method-03",
@@ -1201,8 +2684,7 @@
       "destinationSlideId": "12.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "12.8-knowledge-1-note",
@@ -1216,8 +2698,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-lead",
@@ -1231,8 +2712,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-formula-01",
@@ -1246,8 +2726,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-formula-02",
@@ -1261,8 +2740,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-formula-03",
@@ -1276,8 +2754,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-formula-04",
@@ -1291,8 +2768,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-method-01",
@@ -1306,8 +2782,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-method-02",
@@ -1321,8 +2796,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-method-03",
@@ -1336,8 +2810,7 @@
       "destinationSlideId": "12.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        17,
-        18
+        17
       ],
       "status": "imported-and-verified",
       "id": "12.9-knowledge-1-note",
@@ -1505,8 +2978,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-lead",
@@ -1520,8 +2992,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-formula-01",
@@ -1535,8 +3006,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-formula-02",
@@ -1550,8 +3020,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-formula-03",
@@ -1565,8 +3034,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-formula-04",
@@ -1580,8 +3048,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-formula-05",
@@ -1595,8 +3062,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-method-01",
@@ -1610,8 +3076,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-method-02",
@@ -1625,8 +3090,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-method-03",
@@ -1640,8 +3104,7 @@
       "destinationSlideId": "13.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        20,
-        21
+        20
       ],
       "status": "imported-and-verified",
       "id": "13.2-knowledge-1-note",
@@ -1655,8 +3118,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-lead",
@@ -1670,8 +3132,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-formula-01",
@@ -1685,8 +3146,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-formula-02",
@@ -1700,8 +3160,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-formula-03",
@@ -1715,8 +3174,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-method-01",
@@ -1730,8 +3188,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-method-02",
@@ -1745,8 +3202,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-method-03",
@@ -1760,8 +3216,7 @@
       "destinationSlideId": "13.3-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        22,
-        23
+        22
       ],
       "status": "imported-and-verified",
       "id": "13.3-knowledge-1-note",
@@ -1873,8 +3328,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-lead",
@@ -1888,8 +3342,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-formula-01",
@@ -1903,8 +3356,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-formula-02",
@@ -1918,8 +3370,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-method-01",
@@ -1933,8 +3384,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-method-02",
@@ -1948,8 +3398,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-method-03",
@@ -1963,8 +3412,7 @@
       "destinationSlideId": "13.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        25,
-        26
+        25
       ],
       "status": "imported-and-verified",
       "id": "13.5-knowledge-1-note",
@@ -1978,8 +3426,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-lead",
@@ -1993,8 +3440,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-formula-01",
@@ -2008,8 +3454,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-formula-02",
@@ -2023,8 +3468,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-formula-03",
@@ -2038,8 +3482,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-method-01",
@@ -2053,8 +3496,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-method-02",
@@ -2068,8 +3510,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-method-03",
@@ -2083,8 +3524,7 @@
       "destinationSlideId": "13.6-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        27,
-        28
+        27
       ],
       "status": "imported-and-verified",
       "id": "13.6-knowledge-1-note",
@@ -2098,8 +3538,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-lead",
@@ -2113,8 +3552,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-formula-01",
@@ -2128,8 +3566,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-formula-02",
@@ -2143,8 +3580,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-method-01",
@@ -2158,8 +3594,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-method-02",
@@ -2173,8 +3608,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-method-03",
@@ -2188,8 +3622,7 @@
       "destinationSlideId": "13.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        29,
-        30
+        29
       ],
       "status": "imported-and-verified",
       "id": "13.7-knowledge-1-note",
@@ -2203,9 +3636,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-lead",
@@ -2219,9 +3650,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-formula-01",
@@ -2235,9 +3664,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-formula-02",
@@ -2251,9 +3678,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-formula-03",
@@ -2267,9 +3692,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-formula-04",
@@ -2283,9 +3706,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-method-01",
@@ -2299,9 +3720,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-method-02",
@@ -2315,9 +3734,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-method-03",
@@ -2331,9 +3748,7 @@
       "destinationSlideId": "13.8-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        31,
-        32,
-        33
+        31
       ],
       "status": "imported-and-verified",
       "id": "13.8-knowledge-1-note",
@@ -2459,8 +3874,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-lead",
@@ -2474,8 +3888,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-formula-01",
@@ -2489,8 +3902,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-formula-02",
@@ -2504,8 +3916,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-method-01",
@@ -2519,8 +3930,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-method-02",
@@ -2534,8 +3944,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-method-03",
@@ -2549,8 +3958,7 @@
       "destinationSlideId": "14.2-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        35,
-        36
+        35
       ],
       "status": "imported-and-verified",
       "id": "14.2-knowledge-1-note",
@@ -2676,8 +4084,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-lead",
@@ -2691,8 +4098,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-formula-01",
@@ -2706,8 +4112,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-formula-02",
@@ -2721,8 +4126,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-formula-03",
@@ -2736,8 +4140,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-method-01",
@@ -2751,8 +4154,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-method-02",
@@ -2766,8 +4168,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-method-03",
@@ -2781,8 +4182,7 @@
       "destinationSlideId": "14.4-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        38,
-        39
+        38
       ],
       "status": "imported-and-verified",
       "id": "14.4-knowledge-1-note",
@@ -2796,8 +4196,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-lead",
@@ -2811,8 +4210,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-formula-01",
@@ -2826,8 +4224,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-formula-02",
@@ -2841,8 +4238,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-formula-03",
@@ -2856,8 +4252,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-method-01",
@@ -2871,8 +4266,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-method-02",
@@ -2886,8 +4280,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-method-03",
@@ -2901,8 +4294,7 @@
       "destinationSlideId": "14.5-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        40,
-        41
+        40
       ],
       "status": "imported-and-verified",
       "id": "14.5-knowledge-1-note",
@@ -3028,8 +4420,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-lead",
@@ -3043,8 +4434,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-formula-01",
@@ -3058,8 +4448,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-formula-02",
@@ -3073,8 +4462,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-formula-03",
@@ -3088,8 +4476,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-formula-04",
@@ -3103,8 +4490,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-method-01",
@@ -3118,8 +4504,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-method-02",
@@ -3133,8 +4518,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-method-03",
@@ -3148,8 +4532,7 @@
       "destinationSlideId": "14.7-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        43,
-        44
+        43
       ],
       "status": "imported-and-verified",
       "id": "14.7-knowledge-1-note",
@@ -3289,10 +4672,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-lead",
@@ -3306,10 +4686,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-formula-01",
@@ -3323,10 +4700,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-formula-02",
@@ -3340,10 +4714,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-formula-03",
@@ -3357,10 +4728,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-formula-04",
@@ -3374,10 +4742,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-method-01",
@@ -3391,10 +4756,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-method-02",
@@ -3408,10 +4770,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-method-03",
@@ -3425,10 +4784,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-method-04",
@@ -3442,10 +4798,7 @@
       "destinationSlideId": "14.9-knowledge-1",
       "sourceDocumentId": "cd12-cd14-calculus",
       "sourcePages": [
-        46,
-        47,
-        48,
-        49
+        46
       ],
       "status": "imported-and-verified",
       "id": "14.9-knowledge-1-note",
@@ -3459,8 +4812,7 @@
       "destinationSlideId": "20.1-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        4,
-        5
+        4
       ],
       "status": "imported-and-verified",
       "id": "20.1-knowledge-1-lead",
@@ -3474,8 +4826,7 @@
       "destinationSlideId": "20.1-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        4,
-        5
+        4
       ],
       "status": "imported-and-verified",
       "id": "20.1-knowledge-1-formula-01",
@@ -3489,8 +4840,7 @@
       "destinationSlideId": "20.1-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        4,
-        5
+        4
       ],
       "status": "imported-and-verified",
       "id": "20.1-knowledge-1-method-01",
@@ -3504,8 +4854,7 @@
       "destinationSlideId": "20.1-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        4,
-        5
+        4
       ],
       "status": "imported-and-verified",
       "id": "20.1-knowledge-1-method-02",
@@ -3519,8 +4868,7 @@
       "destinationSlideId": "20.1-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        4,
-        5
+        4
       ],
       "status": "imported-and-verified",
       "id": "20.1-knowledge-1-note",
@@ -3884,8 +5232,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-lead",
@@ -3899,8 +5246,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-formula-01",
@@ -3914,8 +5260,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-formula-02",
@@ -3929,8 +5274,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-method-01",
@@ -3944,8 +5288,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-method-02",
@@ -3959,8 +5302,7 @@
       "destinationSlideId": "20.6-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        8,
-        9
+        8
       ],
       "status": "imported-and-verified",
       "id": "20.6-knowledge-1-note",
@@ -4254,8 +5596,7 @@
       "destinationSlideId": "20.10-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "20.10-knowledge-1-lead",
@@ -4269,8 +5610,7 @@
       "destinationSlideId": "20.10-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "20.10-knowledge-1-formula-01",
@@ -4284,8 +5624,7 @@
       "destinationSlideId": "20.10-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "20.10-knowledge-1-method-01",
@@ -4299,8 +5638,7 @@
       "destinationSlideId": "20.10-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "20.10-knowledge-1-method-02",
@@ -4314,8 +5652,7 @@
       "destinationSlideId": "20.10-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        10,
-        11
+        10
       ],
       "status": "imported-and-verified",
       "id": "20.10-knowledge-1-note",
@@ -4399,8 +5736,7 @@
       "destinationSlideId": "20.12-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        11,
-        12
+        11
       ],
       "status": "imported-and-verified",
       "id": "20.12-knowledge-1-lead",
@@ -4414,8 +5750,7 @@
       "destinationSlideId": "20.12-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        11,
-        12
+        11
       ],
       "status": "imported-and-verified",
       "id": "20.12-knowledge-1-formula-01",
@@ -4429,8 +5764,7 @@
       "destinationSlideId": "20.12-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        11,
-        12
+        11
       ],
       "status": "imported-and-verified",
       "id": "20.12-knowledge-1-formula-02",
@@ -4444,8 +5778,7 @@
       "destinationSlideId": "20.12-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        11,
-        12
+        11
       ],
       "status": "imported-and-verified",
       "id": "20.12-knowledge-1-method-01",
@@ -4459,8 +5792,7 @@
       "destinationSlideId": "20.12-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        11,
-        12
+        11
       ],
       "status": "imported-and-verified",
       "id": "20.12-knowledge-1-note",
@@ -4572,8 +5904,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-lead",
@@ -4587,8 +5918,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-formula-01",
@@ -4602,8 +5932,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-formula-02",
@@ -4617,8 +5946,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-method-01",
@@ -4632,8 +5960,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-method-02",
@@ -4647,8 +5974,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-method-03",
@@ -4662,8 +5988,7 @@
       "destinationSlideId": "20.14-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        12,
-        13
+        12
       ],
       "status": "imported-and-verified",
       "id": "20.14-knowledge-1-note",
@@ -4761,8 +6086,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-lead",
@@ -4776,8 +6100,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-formula-01",
@@ -4791,8 +6114,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-formula-02",
@@ -4806,8 +6128,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-method-01",
@@ -4821,8 +6142,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-method-02",
@@ -4836,8 +6156,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-method-03",
@@ -4851,8 +6170,7 @@
       "destinationSlideId": "20.16-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        13,
-        14
+        13
       ],
       "status": "imported-and-verified",
       "id": "20.16-knowledge-1-note",
@@ -5020,8 +6338,7 @@
       "destinationSlideId": "21.2-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "21.2-knowledge-1-lead",
@@ -5035,8 +6352,7 @@
       "destinationSlideId": "21.2-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "21.2-knowledge-1-formula-01",
@@ -5050,8 +6366,7 @@
       "destinationSlideId": "21.2-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "21.2-knowledge-1-method-01",
@@ -5065,8 +6380,7 @@
       "destinationSlideId": "21.2-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "21.2-knowledge-1-method-02",
@@ -5080,8 +6394,7 @@
       "destinationSlideId": "21.2-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        15,
-        16
+        15
       ],
       "status": "imported-and-verified",
       "id": "21.2-knowledge-1-note",
@@ -5459,7 +6772,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",
@@ -5474,7 +6786,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",
@@ -5489,7 +6800,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",
@@ -5504,7 +6814,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",
@@ -5519,7 +6828,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",
@@ -5534,7 +6842,6 @@
       "destinationSlideId": "21.8-knowledge-1",
       "sourceDocumentId": "cd20-cd21-theory",
       "sourcePages": [
-        17,
         18
       ],
       "status": "imported-and-verified",

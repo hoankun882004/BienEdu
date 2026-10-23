@@ -986,11 +986,6 @@ ul, ol { margin: 0; padding: 0; }
 .lesson-empty .text-link,
 .lesson-empty .button { margin-top: 1.5rem; }
 
-.document-stage { display: grid; height: 100%; min-height: 0; grid-template-rows: auto minmax(0, 1fr); }
-.document-stage > header { display: flex; min-height: 4.5rem; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.65rem 1.25rem; border-bottom: 1px solid #d8e1ec; }
-.document-stage h2 { max-width: none; margin-top: 0.2rem; font-size: 1.25rem; }
-.document-stage .text-link { flex: none; font-size: 0.76rem; }
-.document-stage iframe { width: 100%; height: 100%; min-height: 0; border: 0; background: #e9eef5; }
 
 .lesson-navigation { display: grid; grid-template-columns: minmax(0, 13.5rem) minmax(4.5rem, auto) minmax(0, 13.5rem); align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid #d8e1ec; padding: 0.55rem 1rem; background: #f8fafc; }
 .lesson-navigation button { display: inline-flex; width: 100%; min-width: 0; min-height: 3rem; align-items: center; justify-content: center; border: 1px solid #c4d1df; border-radius: var(--radius); padding: 0.55rem 0.9rem; background: white; color: var(--ink); font-size: 0.82rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 180ms ease, transform 160ms ease; }
@@ -1029,7 +1024,6 @@ ul, ol { margin: 0; padding: 0; }
   .workspace-frame { grid-template-columns: 1fr; }
   .lesson-sidebar { display: none; }
   .lesson-content { min-height: 32rem; overflow: visible; }
-  .document-stage { min-height: 42rem; }
   .lesson-navigation { position: sticky; z-index: 10; bottom: 0; }
 }
 
@@ -1057,9 +1051,6 @@ ul, ol { margin: 0; padding: 0; }
   .lesson-empty h2 { font-size: clamp(2rem, 9vw, 3rem); }
   .lesson-overview dl { grid-template-columns: 1fr; }
   .lesson-overview dl > div + div { border-top: 1px solid #d8e1ec; }
-  .document-stage { min-height: 38rem; }
-  .document-stage > header { align-items: flex-start; flex-direction: column; padding-block: 0.85rem; }
-  .document-stage iframe { min-height: 31rem; }
   .lesson-navigation { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 0.45rem; padding-inline: 0.65rem; }
   .lesson-navigation p span { display: none; }
 }
@@ -1206,7 +1197,8 @@ ul, ol { margin: 0; padding: 0; }
 .practice-stage header h2, .exam-question > h2 { max-width: 36ch; margin-top: .55rem; font-size: clamp(1.25rem, 2.5vw, 2rem); line-height: 1.4; }
 .practice-options { display: grid; gap: .65rem; margin-top: 1.5rem; }
 .practice-options button { display: grid; width: 100%; min-height: 3.35rem; grid-template-columns: 2rem 1fr; align-items: center; gap: .8rem; border: 1px solid #cdd8e5; border-radius: .35rem; padding: .65rem .8rem; background: white; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
-.practice-options button span { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; background: #edf3fa; color: var(--accent-strong); font-size: .75rem; font-weight: 700; }
+.practice-options button > span:first-child { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; background: #edf3fa; color: var(--accent-strong); font-size: .75rem; font-weight: 700; }
+.practice-options button > span:last-child { min-width: 0; overflow-wrap: anywhere; }
 .practice-options button.is-selected { border-color: var(--accent); background: #f4f8ff; }
 .practice-options button.is-correct { border-color: #3ca576; background: #f0faf5; }
 .practice-options button.is-wrong { border-color: #d46868; background: #fff5f5; }
@@ -1230,7 +1222,6 @@ ul, ol { margin: 0; padding: 0; }
 }
 .source-practice-stage > header { display: flex; align-items: start; justify-content: space-between; gap: 1.5rem; }
 .source-practice-stage h2 { max-width: 32ch; margin-top: .55rem; color: var(--navy); font-size: clamp(1.3rem, 2.6vw, 2.15rem); line-height: 1.35; text-wrap: balance; }
-.source-practice-stage .source-reference { flex: none; }
 .source-practice-stage__status { display: grid; grid-template-columns: 2.15rem minmax(0, 1fr); gap: .85rem; border-left: 4px solid #398e68; padding: 1rem; background: #eff8f4; }
 .source-practice-stage__status > span { display: grid; width: 2rem; height: 2rem; place-items: center; background: #d8eee4; color: #21684c; font-weight: 800; }
 .source-practice-stage__status strong { color: #163d30; font-size: .86rem; }
@@ -1325,7 +1316,6 @@ ul, ol { margin: 0; padding: 0; }
   .source-practice-stage { min-height: 32rem; height: auto; align-content: start; padding: 1.35rem var(--margin) 2rem; }
   .source-practice-stage > header { display: grid; gap: .85rem; }
   .source-practice-stage h2 { font-size: 1.35rem; }
-  .source-practice-stage .source-reference { max-width: none; justify-self: start; }
   .practice-stage header h2, .exam-question > h2 { font-size: 1.2rem; }
   .exam-navigator { overflow-x: auto; }
   .exam-navigator > div { width: 31rem; }
@@ -1632,7 +1622,6 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
 .topic-source-card span { display: block; margin-top: .5rem; color: var(--muted); font-size: .82rem; }
 .topic-availability { display: inline-flex; width: max-content; margin-top: .75rem; border: 1px solid #acd7c3; border-radius: var(--radius-sm); padding: .3rem .55rem; background: #edf8f2; color: #176c4a; font-size: .7rem; font-weight: 700; }
 .topic-availability.is-pending { border-color: var(--border); background: #f5f7fa; color: var(--muted); }
-.source-reference { color: #315fbb; font-weight: 650; text-decoration: underline; text-decoration-color: #b7c9ef; text-underline-offset: .18em; }
 .lesson-unavailable { display: grid; min-height: min(66vh, 38rem); align-content: center; justify-items: start; }
 .lesson-unavailable h1 { max-width: 18ch; margin-top: .45rem; }
 .lesson-unavailable > .lesson-kicker { margin-top: 2rem; }
@@ -1876,7 +1865,6 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .lesson-unavailable__actions { width: 100%; align-items: stretch; flex-direction: column; }
   .lesson-unavailable__actions .button,
   .lesson-unavailable__actions .text-button { justify-content: center; text-align: center; }
-  .source-reference { display: block; max-width: 15rem; }
 }
 
 @media (max-width: 900px) {
@@ -1969,45 +1957,13 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .page-hero--practice-papers .page-hero__image { min-height: 52vw; max-height: 17rem; }
 }
 
-/* Knowledge presentation system V12 */
-[data-presentation-toolbar] { display: none; }
-.knowledge-reader__tools { align-items: center; flex-wrap: wrap; justify-content: flex-end; }
-.knowledge-slide__meta { min-width: 0; }
-.knowledge-presentation-trigger {
-  display: inline-flex;
-  min-height: 2.25rem;
-  align-items: center;
-  gap: .4rem;
-  border: 1px solid #b8c9dc;
-  border-radius: .35rem;
-  padding: .35rem .65rem;
-  background: white;
-  color: #174fc9;
-  font: inherit;
-  font-size: .72rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease, transform 160ms ease;
-}
-.knowledge-presentation-trigger svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
-.knowledge-presentation-trigger:active { transform: scale(.97); }
-.knowledge-presentation-trigger:focus-visible,
-.knowledge-presentation-toolbar button:focus-visible { outline: 3px solid #8ab8ff; outline-offset: 3px; }
-.knowledge-slide--focused .knowledge-reader__formulae dd strong { font-size: clamp(1.12rem, 1.65vw, 1.45rem); }
+/* Shared numbered page navigation for multi-page native lessons. */
 .lesson-navigation__position { display: grid; min-width: 4.5rem; justify-items: center; gap: .3rem; }
 .lesson-navigation__position > p { display: grid; justify-items: center; font-size: .72rem; line-height: 1.2; }
 .lesson-navigation__position > p strong { font-variant-numeric: tabular-nums; }
 .lesson-navigation__position > p span { margin-top: .15rem; color: var(--muted); }
 .lesson-navigation__position .lesson-page-picker { justify-content: center; }
 .lesson-page-picker a { width: 2.75rem; height: 2.75rem; }
-
-@media (hover: hover) and (pointer: fine) {
-  .knowledge-presentation-trigger:hover { border-color: #75a7eb; background: #edf5ff; }
-}
-
-@media (min-width: 64rem) and (min-height: 50.0625rem) {
-  .knowledge-slide--focused .knowledge-reader__content { align-content: center; padding-block: clamp(1.5rem, 4vh, 3.25rem); }
-}
 
 @media (min-width: 56.3125rem) and (max-width: 70rem) {
   .learning-workspace { grid-template-rows: auto auto minmax(0, 1fr) 4.25rem; }
@@ -2048,110 +2004,6 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .example-reader { overflow-y: auto; }
 }
 
-.presentation-mode { overflow: hidden; background: #e8eff7; }
-.presentation-mode .site-header,
-.presentation-mode .site-footer { display: none; }
-.presentation-mode .curriculum-app-shell,
-.presentation-mode [data-curriculum-app] { width: 100%; height: 100dvh; min-height: 0; overflow: hidden; }
-.presentation-mode .learning-workspace,
-.learning-workspace:fullscreen {
-  position: fixed;
-  z-index: 100;
-  inset: 0;
-  width: 100%;
-  max-width: none;
-  height: 100dvh;
-  min-height: 0;
-  grid-template-rows: auto minmax(0, 1fr) auto;
-  background: #edf2f7;
-}
-.presentation-mode [data-presentation-toolbar],
-.learning-workspace:fullscreen [data-presentation-toolbar] { display: block; }
-.presentation-mode .workspace-top,
-.presentation-mode .workspace-phase-nav,
-.presentation-mode .lesson-sidebar,
-.learning-workspace:fullscreen .workspace-top,
-.learning-workspace:fullscreen .workspace-phase-nav,
-.learning-workspace:fullscreen .lesson-sidebar { display: none; }
-.presentation-mode .workspace-frame,
-.learning-workspace:fullscreen .workspace-frame { min-height: 0; grid-template-columns: 1fr; }
-.presentation-mode .lesson-content,
-.learning-workspace:fullscreen .lesson-content { min-height: 0; overflow: hidden; }
-.knowledge-presentation-toolbar {
-  display: grid;
-  min-height: 4.5rem;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  align-items: center;
-  gap: 1rem;
-  padding: .75rem clamp(1rem, 3vw, 2.5rem);
-  background: #071f3c;
-  color: white;
-}
-.knowledge-presentation-toolbar__brand { display: grid; min-width: 0; gap: .18rem; }
-.knowledge-presentation-toolbar__brand strong { color: #7cb2ff; font-size: .85rem; letter-spacing: .08em; }
-.knowledge-presentation-toolbar__brand span { overflow: hidden; color: #c4d7ef; font-size: .75rem; text-overflow: ellipsis; white-space: nowrap; }
-.knowledge-presentation-toolbar > p { display: grid; justify-items: center; gap: .12rem; font-variant-numeric: tabular-nums; }
-.knowledge-presentation-toolbar > p span { color: #9fb9d8; font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; }
-.knowledge-presentation-toolbar > p strong { font-size: .9rem; }
-.knowledge-presentation-toolbar button {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  justify-self: end;
-  gap: .45rem;
-  border: 1px solid #45698f;
-  border-radius: .35rem;
-  padding: .45rem .85rem;
-  background: #102d50;
-  color: white;
-  font: inherit;
-  font-size: .78rem;
-  font-weight: 650;
-  cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease, transform 160ms ease;
-}
-.knowledge-presentation-toolbar button svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.8; }
-.knowledge-presentation-toolbar button:active { transform: scale(.97); }
-.presentation-mode .knowledge-reader__bar,
-.learning-workspace:fullscreen .knowledge-reader__bar { display: none; }
-.presentation-mode .knowledge-reader,
-.learning-workspace:fullscreen .knowledge-reader { min-height: 0; overflow-x: hidden; overflow-y: auto; background: #edf2f7; scrollbar-gutter: stable; }
-.presentation-mode .knowledge-reader__content,
-.learning-workspace:fullscreen .knowledge-reader__content {
-  width: min(100%, 88rem);
-  align-content: center;
-  gap: clamp(1rem, 2.4vh, 1.75rem) clamp(1.5rem, 4vw, 3.5rem);
-  padding: clamp(1.5rem, 4vh, 3.5rem) clamp(1.5rem, 5vw, 5rem);
-}
-.presentation-mode .knowledge-reader__lead h2,
-.learning-workspace:fullscreen .knowledge-reader__lead h2 { font-size: clamp(2rem, 4.2vw, 4.5rem); letter-spacing: -.04em; line-height: 1.02; }
-.presentation-mode .knowledge-reader__lead > p:last-child,
-.learning-workspace:fullscreen .knowledge-reader__lead > p:last-child { max-width: 68ch; margin-top: .85rem; font-size: clamp(1rem, 1.55vw, 1.4rem); line-height: 1.55; }
-.presentation-mode .knowledge-reader__formulae,
-.presentation-mode .knowledge-reader__points,
-.learning-workspace:fullscreen .knowledge-reader__formulae,
-.learning-workspace:fullscreen .knowledge-reader__points { padding: clamp(1rem, 2.2vw, 1.75rem); }
-.presentation-mode .knowledge-reader__formulae dd strong,
-.learning-workspace:fullscreen .knowledge-reader__formulae dd strong { font-size: clamp(1.2rem, 2vw, 2rem); }
-.presentation-mode .knowledge-reader__formulae dt,
-.presentation-mode .knowledge-reader__formulae dd span,
-.presentation-mode .knowledge-reader__points li span,
-.presentation-mode .knowledge-reader__points li p,
-.presentation-mode .knowledge-reader__note p,
-.learning-workspace:fullscreen .knowledge-reader__formulae dt,
-.learning-workspace:fullscreen .knowledge-reader__formulae dd span,
-.learning-workspace:fullscreen .knowledge-reader__points li span,
-.learning-workspace:fullscreen .knowledge-reader__points li p,
-.learning-workspace:fullscreen .knowledge-reader__note p { font-size: clamp(.82rem, 1.15vw, 1.05rem); line-height: 1.5; }
-.presentation-mode .source-reference,
-.learning-workspace:fullscreen .source-reference { display: none; }
-.presentation-mode .lesson-navigation,
-.learning-workspace:fullscreen .lesson-navigation { min-height: 4.5rem; padding-inline: clamp(1rem, 3vw, 2.5rem); background: white; box-shadow: 0 -.75rem 2rem rgba(18, 47, 82, .08); }
-
-@media (hover: hover) and (pointer: fine) {
-  .knowledge-presentation-toolbar button:hover { border-color: #7cb2ff; background: #173b64; }
-}
-
 @media (max-width: 40rem) {
   .workspace-top { min-height: 4.55rem; padding-block: .55rem; }
   .workspace-phase-nav { top: 3.75rem; padding-block: .3rem; }
@@ -2160,248 +2012,106 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .knowledge-reader__bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
   .knowledge-reader__bar > p { min-width: 0; font-size: .67rem; }
   .knowledge-reader__bar > p > span:first-child { flex: 0 0 auto; }
-  .knowledge-reader__tools { display: contents; }
-  .knowledge-reader__tools > span:first-child { display: none; }
-  .knowledge-reader__tools .source-reference { grid-column: 1 / -1; grid-row: 2; justify-self: start; max-width: none; margin-top: -.1rem; }
-  .knowledge-presentation-trigger { min-width: 2.75rem; min-height: 2.75rem; justify-content: center; padding: .35rem; }
-  .knowledge-presentation-trigger > span { display: none; }
   .lesson-navigation__position .lesson-page-picker { display: none; }
-  .knowledge-presentation-toolbar { min-height: 3.75rem; grid-template-columns: minmax(0, 1fr) auto; padding: .5rem max(var(--margin), env(safe-area-inset-left)); }
-  .knowledge-presentation-toolbar > p { display: none; }
-  .knowledge-presentation-toolbar button { min-width: 2.75rem; min-height: 2.75rem; padding: .4rem .6rem; }
-  .knowledge-presentation-toolbar button span { display: none; }
-  .presentation-mode .knowledge-reader__content,
-  .learning-workspace:fullscreen .knowledge-reader__content { grid-template-columns: 1fr; grid-template-areas: "lead" "formula" "points" "note"; align-content: start; padding: 1.25rem var(--margin) calc(5rem + env(safe-area-inset-bottom)); }
-  .presentation-mode .knowledge-reader__study-grid,
-  .learning-workspace:fullscreen .knowledge-reader__study-grid { grid-template-columns: 1fr; }
-  .presentation-mode .knowledge-reader--principles-split .knowledge-reader__content,
-  .learning-workspace:fullscreen .knowledge-reader--principles-split .knowledge-reader__content { grid-template-areas: "lead" "study"; }
-  .presentation-mode .knowledge-reader__lead h2,
-  .learning-workspace:fullscreen .knowledge-reader__lead h2 { font-size: clamp(2rem, 10vw, 3rem); }
-  .presentation-mode .lesson-navigation,
-  .learning-workspace:fullscreen .lesson-navigation { position: relative; padding-inline: var(--margin); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .knowledge-presentation-trigger,
-  .knowledge-presentation-toolbar button { transition: none; }
-}
-
-/* Direct PDF knowledge viewer V12.1 */
-.pdf-reader {
-  display: grid;
-  height: 100%;
-  min-height: 0;
-  grid-template-rows: auto auto minmax(0, 1fr) auto;
-  background: #dfe7ef;
-  color: var(--ink);
-}
-.pdf-reader__header {
-  display: flex;
-  min-height: 4.7rem;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  border-bottom: 1px solid #cfdae7;
-  padding: .7rem 1.1rem .75rem 1.25rem;
-  background: white;
-}
-.pdf-reader__header > div { min-width: 0; }
-.pdf-reader__header .lesson-kicker { color: #315f93; font-size: .65rem; letter-spacing: .055em; }
-.pdf-reader__header h2 { max-width: none; margin-top: .12rem; overflow: hidden; font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
-.pdf-reader__source { display: flex; min-width: 0; gap: .45rem; margin-top: .26rem; color: #65758a; font-size: .67rem; }
-.pdf-reader__source span { flex: none; color: #27735b; font-weight: 700; }
-.pdf-reader__source b { overflow: hidden; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
-.pdf-reader button { font: inherit; }
-.pdf-reader button svg { width: 1.05rem; height: 1.05rem; flex: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
-.pdf-reader__expand,
-.pdf-reader__toolbar button,
-.pdf-reader__navigation button,
-.pdf-reader__error button {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  justify-content: center;
-  gap: .42rem;
-  border: 1px solid #b8c7d8;
-  border-radius: .35rem;
-  padding: .45rem .7rem;
-  background: white;
-  color: #173b64;
-  font-size: .72rem;
-  font-weight: 680;
-  cursor: pointer;
-  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, transform 140ms ease;
-}
-.pdf-reader__expand { flex: none; border-color: #2b65aa; background: #1e5a9d; color: white; }
-.pdf-reader__toolbar {
-  display: flex;
-  min-width: 0;
-  min-height: 3.5rem;
-  align-items: center;
-  gap: .55rem;
-  border-bottom: 1px solid #c8d4e1;
-  padding: .38rem .75rem;
-  overflow-x: auto;
-  background: #f6f8fb;
-  scrollbar-width: thin;
-}
-.pdf-reader__zoom-group,
-.pdf-reader__fit-group { display: flex; flex: none; align-items: center; gap: .28rem; }
-.pdf-reader__zoom-group output {
-  display: grid;
-  min-width: 3.5rem;
-  height: 2.75rem;
-  place-items: center;
-  border-block: 1px solid #c8d4e1;
-  color: #304b68;
-  font-size: .7rem;
-  font-variant-numeric: tabular-nums;
-  font-weight: 700;
-}
-.pdf-reader__toolbar button { min-width: 2.75rem; padding-inline: .62rem; }
-.pdf-reader__toolbar button[aria-pressed="true"] { border-color: #78a8df; background: #e7f0fb; color: #174fc9; }
-.pdf-reader__page { flex: none; margin-left: auto; padding-inline: .4rem; color: #53677e; font-size: .7rem; font-variant-numeric: tabular-nums; font-weight: 650; white-space: nowrap; }
-.pdf-reader__viewport {
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  overflow: auto;
-  overscroll-behavior: contain;
-  padding: 1rem;
-  background: #cfd9e4;
-  outline: none;
-  scrollbar-color: #8ea2b8 #dfe7ef;
-  scrollbar-width: thin;
-  touch-action: pan-x pan-y;
-}
-.pdf-reader__viewport::-webkit-scrollbar { width: .7rem; height: .7rem; }
-.pdf-reader__viewport::-webkit-scrollbar-track { background: #dfe7ef; }
-.pdf-reader__viewport::-webkit-scrollbar-thumb { border: 2px solid #dfe7ef; background: #8ea2b8; }
-.pdf-reader__canvas-wrap { width: max-content; min-width: 100%; min-height: 100%; }
-.pdf-reader__canvas-wrap canvas {
-  display: block;
-  max-width: none;
-  margin-inline: auto;
-  background: white;
-  box-shadow: 0 .8rem 2.2rem rgba(22, 48, 78, .18);
-}
-.pdf-reader__loading,
-.pdf-reader__error {
-  display: grid;
-  width: min(100%, 34rem);
-  min-height: 14rem;
-  place-content: center;
-  justify-items: center;
-  gap: .7rem;
-  margin: min(8vh, 4rem) auto;
-  padding: 2rem;
-  background: #edf2f7;
-  color: #52677f;
-  text-align: center;
-}
-.pdf-reader__loading[hidden],
-.pdf-reader__error[hidden],
-.pdf-reader__canvas-wrap[hidden] { display: none; }
-.pdf-reader__loading > span {
-  width: 12rem;
-  height: .4rem;
-  overflow: hidden;
-  background: #d5dee8;
-}
-.pdf-reader__loading > span::after {
-  display: block;
-  width: 45%;
-  height: 100%;
-  background: #4f89ca;
-  content: "";
-  animation: pdf-loading 1.1s cubic-bezier(.2, .75, .3, 1) infinite alternate;
-}
-.pdf-reader__loading p,
-.pdf-reader__error p { max-width: 42ch; font-size: .78rem; line-height: 1.55; }
-.pdf-reader__error strong { color: #8a3e32; }
-.pdf-reader__navigation {
-  display: grid;
-  min-height: 4rem;
-  grid-template-columns: minmax(8rem, 1fr) auto minmax(8rem, 1fr);
-  align-items: center;
-  gap: .75rem;
-  border-top: 1px solid #c8d4e1;
-  padding: .45rem .75rem calc(.45rem + env(safe-area-inset-bottom));
-  background: #f6f8fb;
-}
-.pdf-reader__navigation > div { display: grid; justify-items: center; gap: .14rem; }
-.pdf-reader__navigation strong,
-.pdf-reader__navigation small { font-variant-numeric: tabular-nums; }
-.pdf-reader__navigation strong { color: #263e58; font-size: .72rem; }
-.pdf-reader__navigation small { color: #65758a; font-size: .64rem; }
-.pdf-reader__navigation button:first-child { justify-self: start; }
-.pdf-reader__navigation button:last-child { justify-self: end; border-color: #2b65aa; background: #1e5a9d; color: white; }
-.pdf-reader__navigation button:disabled { cursor: not-allowed; opacity: .38; }
-.pdf-reader__expand:active,
-.pdf-reader__toolbar button:active,
-.pdf-reader__navigation button:active,
-.pdf-reader__error button:active { transform: scale(.97); }
-.pdf-reader button:focus-visible,
-.pdf-reader__viewport:focus-visible { outline: 3px solid #2e75c5; outline-offset: 2px; }
-.pdf-unavailable { display: grid; height: 100%; place-content: center; padding: clamp(2rem, 7vw, 6rem); background: #f2f5f8; }
-.pdf-unavailable h2 { max-width: 24ch; margin-top: .7rem; font-size: clamp(1.8rem, 4vw, 3.6rem); text-wrap: balance; }
-.pdf-unavailable > p:last-child { max-width: 62ch; margin-top: 1rem; color: var(--muted); line-height: 1.65; }
-
-@keyframes pdf-loading { from { transform: translateX(-100%); } to { transform: translateX(225%); } }
-
-@media (hover: hover) and (pointer: fine) {
-  .pdf-reader__expand:hover,
-  .pdf-reader__navigation button:last-child:hover:not(:disabled) { background: #164a83; }
-  .pdf-reader__toolbar button:hover,
-  .pdf-reader__navigation button:hover:not(:disabled),
-  .pdf-reader__error button:hover { border-color: #77a5d8; background: #e9f1fa; }
-}
-
-.presentation-mode .learning-workspace,
-.learning-workspace:fullscreen { grid-template-rows: auto minmax(0, 1fr); }
-.presentation-mode .lesson-navigation,
-.learning-workspace:fullscreen .lesson-navigation { display: none; }
-.presentation-mode .pdf-reader,
-.learning-workspace:fullscreen .pdf-reader { height: 100%; grid-template-rows: auto minmax(0, 1fr) auto; }
-.presentation-mode .pdf-reader__header,
-.learning-workspace:fullscreen .pdf-reader__header { display: none; }
-.presentation-mode .pdf-reader__viewport,
-.learning-workspace:fullscreen .pdf-reader__viewport { padding: clamp(.6rem, 1.5vw, 1.25rem); }
+/* V13 native Markdown + LaTeX learning reader */
+.math-lesson { display: grid; height: 100%; min-height: 0; grid-template-rows: auto minmax(0, 1fr); overflow: auto; background: #f3f6fa; color: var(--ink); }
+.math-lesson__bar { position: sticky; z-index: 2; top: 0; display: flex; min-height: 3rem; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #d9e2ec; padding: .55rem clamp(1.25rem, 3vw, 2.5rem); background: rgba(255, 255, 255, .94); backdrop-filter: blur(.65rem); }
+.math-lesson__bar > p { display: flex; min-width: 0; align-items: center; gap: .6rem; color: var(--accent-strong); font-size: .72rem; font-weight: 700; letter-spacing: .045em; }
+.math-lesson__bar > p > span:first-child { display: grid; width: 1.65rem; height: 1.65rem; flex: 0 0 auto; place-items: center; background: #e4edff; font-variant-numeric: tabular-nums; }
+.math-lesson__bar > div { display: flex; flex: 0 0 auto; gap: 1.1rem; color: #617086; font-size: .7rem; }
+.math-lesson__bar > div span + span { position: relative; }
+.math-lesson__bar > div span + span::before { position: absolute; left: -.65rem; color: #a9b7c7; content: "·"; }
+.math-lesson__content { width: min(100%, 75rem); margin: 0 auto; padding: clamp(1.1rem, 2.4vw, 2rem) clamp(1.25rem, 3vw, 2.75rem) 2.25rem; }
+.math-lesson__heading { max-width: 70ch; }
+.math-lesson__heading h2 { margin-top: .28rem; color: #0b1f3a; font-size: clamp(1.75rem, 3vw, 2.55rem); letter-spacing: -.038em; line-height: 1.12; text-wrap: balance; }
+.math-lesson__intro { max-width: 72ch; margin-top: .65rem; color: #405169; font-size: clamp(.98rem, 1.2vw, 1.08rem); line-height: 1.72; text-wrap: pretty; }
+.math-lesson__intro p { margin: 0; }
+.math-lesson__study-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(18rem, .88fr); align-items: start; gap: clamp(.85rem, 2vw, 1.5rem); margin-top: 1.15rem; }
+.math-lesson__primary { display: grid; min-width: 0; align-content: start; gap: .85rem; }
+.math-lesson__formula-card { min-width: 0; border-top: 3px solid var(--accent); padding: clamp(1rem, 1.8vw, 1.3rem); background: white; box-shadow: 0 .8rem 2rem rgba(24, 52, 82, .075); }
+.math-lesson__formula-card > h3,
+.math-lesson__quick > h3 { color: #21364f; font-size: 1rem; line-height: 1.3; }
+.math-lesson__formula-card dl { display: grid; gap: .75rem; margin-top: .8rem; }
+.math-lesson__formula-card dl > div { display: grid; grid-template-columns: minmax(7.5rem, .6fr) minmax(0, 1.4fr); align-items: start; gap: .9rem; border-top: 1px solid #e4eaf1; padding-top: .75rem; }
+.math-lesson__formula-card dl > div:first-child { border-top: 0; padding-top: 0; }
+.math-lesson__formula-card dt { color: #52637a; font-size: .8rem; font-weight: 650; line-height: 1.45; }
+.math-lesson__formula-card dd { min-width: 0; margin: 0; }
+.math-lesson__formula-card dd > strong { color: #0b2e63; font-size: 1rem; line-height: 1.45; }
+.math-lesson__formula-card dd > p { margin-top: .28rem; color: #627188; font-size: .78rem; line-height: 1.55; text-wrap: pretty; }
+.math-lesson__quick { border-top: 3px solid #b78c2e; padding: clamp(1rem, 1.8vw, 1.3rem); background: #fff7d7; }
+.math-lesson__quick > h3 { color: #684a09; }
+.math-lesson__quick ol { display: grid; gap: .85rem; margin-top: .85rem; list-style: none; counter-reset: quick-point; }
+.math-lesson__quick li { position: relative; min-width: 0; padding-left: 2.15rem; counter-increment: quick-point; }
+.math-lesson__quick li::before { position: absolute; top: .02rem; left: 0; display: grid; width: 1.45rem; height: 1.45rem; place-items: center; background: #f2dfa3; color: #684a09; content: counter(quick-point, decimal-leading-zero); font-size: .6rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.math-lesson__quick li > span { color: #1d334f; font-size: .82rem; font-weight: 700; }
+.math-lesson__quick li > p { margin-top: .18rem; color: #5a6170; font-size: .8rem; line-height: 1.58; text-wrap: pretty; }
+.math-lesson__callout { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr); align-items: start; gap: .75rem; border-left: 3px solid; padding: .78rem .95rem; }
+.math-lesson__callout > span { display: grid; width: 1.65rem; height: 1.65rem; place-items: center; font-size: .75rem; font-weight: 800; }
+.math-lesson__callout h3 { color: #23364e; font-size: .82rem; }
+.math-lesson__callout p { margin-top: .16rem; color: #53647a; font-size: .78rem; line-height: 1.55; }
+.math-lesson__callout--warning { border-color: #bd665c; background: #fff2ef; }
+.math-lesson__callout--warning > span { background: #f3d6d1; color: #8e392f; }
+.math-lesson__callout--tip { border-color: #398b68; background: #edf8f2; }
+.math-lesson__callout--tip > span { background: #d4ecdf; color: #176648; }
+.math-markdown__body { min-width: 0; max-width: 76ch; margin: 1rem auto 0; overflow-wrap: anywhere; color: #34465e; font-size: clamp(.98rem, 1.2vw, 1.08rem); line-height: 1.75; }
+.math-markdown__body--source { border-top: 3px solid var(--accent); padding: clamp(1rem, 2.5vw, 1.75rem); background: white; box-shadow: 0 .8rem 2rem rgba(24, 52, 82, .07); }
+.math-markdown__body h2 { margin: 2rem 0 .75rem; color: #0b1f3a; font-size: clamp(1.3rem, 2.3vw, 1.75rem); }
+.math-markdown__body h3 { margin: 1.5rem 0 .6rem; color: #1c3657; font-size: clamp(1.05rem, 1.8vw, 1.3rem); }
+.math-markdown__body h2:first-child,
+.math-markdown__body h3:first-child { margin-top: 0; }
+.math-markdown__body p { margin: 0 0 .9rem; }
+.math-markdown__body ul,
+.math-markdown__body ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+.math-markdown__body li + li { margin-top: .4rem; }
+.math-markdown__note { margin: 0 0 1.2rem; border-left: 3px solid var(--accent); padding: .8rem 1rem; background: #eef4ff; }
+.math-markdown__note p { margin: 0; }
+.math-markdown__display { width: 100%; max-width: 100%; margin: 1rem 0; padding: .85rem; overflow-x: auto; overscroll-behavior-inline: contain; border: 1px solid #dfe6ef; background: #fbfcfe; color: #0b2e63; text-align: center; scrollbar-width: thin; }
+.math-markdown__display--compact { margin: 0; padding: .55rem .65rem; border: 0; background: #f7f9fc; text-align: left; }
+.math-markdown__display:focus-visible,
+.math-markdown__table-wrap:focus-visible { outline: 3px solid #7ea7ef; outline-offset: 2px; }
+.math-expression { display: inline-flex; max-width: 100%; vertical-align: middle; }
+.math-expression--display { display: block; width: 100%; overflow-x: auto; padding-block: .15rem; }
+.math-markdown__figure { margin: 1.25rem 0; }
+.math-markdown__figure img { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; }
+.math-markdown__figure figcaption { margin-top: .45rem; color: #657089; font-size: .78rem; text-align: center; }
+.math-markdown__table-wrap { margin: 1.25rem 0; overflow-x: auto; }
+.math-markdown table { width: 100%; border-collapse: collapse; }
+.math-markdown th,
+.math-markdown td { padding: .65rem .75rem; border: 1px solid #dce4ee; text-align: left; vertical-align: top; }
+.math-markdown th { background: #eef3f8; }
+.math-markdown .katex-display,
+.math-lesson .katex-display { margin: 0; }
+.math-render-error { color: #8a3e32; font-size: .84rem; font-weight: 650; }
+.lesson-inline-empty { display: grid; min-height: 22rem; place-content: center; gap: .65rem; padding: 2rem; text-align: center; }
+.lesson-inline-empty p { color: var(--muted); }
 
 @media (max-width: 56.25rem) {
-  .pdf-reader { height: auto; min-height: 0; grid-template-rows: auto auto minmax(32rem, 68dvh) auto; }
-  .learning-workspace:has(.pdf-reader) .lesson-navigation { position: relative; }
-  .pdf-reader__header { padding-inline: var(--margin); }
-  .pdf-reader__toolbar { padding-inline: var(--margin); }
-  .pdf-reader__viewport { min-height: 32rem; }
+  .math-lesson { height: auto; min-height: 32rem; overflow: visible; }
+  .math-lesson__bar { top: var(--header-height, 0); }
+  .math-lesson__study-grid { grid-template-columns: 1fr; }
+  .math-lesson__content { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
 }
 
 @media (max-width: 40rem) {
-  .pdf-reader { grid-template-rows: auto auto minmax(28rem, 62dvh) auto; }
-  .pdf-reader__header { min-height: 4rem; gap: .65rem; padding-block: .55rem; }
-  .pdf-reader__header h2 { font-size: .94rem; }
-  .pdf-reader__source b { display: none; }
-  .pdf-reader__source span { font-size: .62rem; }
-  .pdf-reader__expand { min-width: 2.75rem; padding: .4rem; }
-  .pdf-reader__expand span { display: none; }
-  .pdf-reader__toolbar { min-height: 3.4rem; gap: .38rem; }
-  .pdf-reader__fit-group button span { display: none; }
-  .pdf-reader__page { margin-left: 0; }
-  .pdf-reader__viewport { min-height: 28rem; padding: .55rem; }
-  .pdf-reader__navigation { min-height: 4.4rem; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: .35rem; padding-inline: .5rem; }
-  .pdf-reader__navigation button { min-width: 2.75rem; padding-inline: .55rem; }
-  .pdf-reader__navigation button span { display: none; }
-  .presentation-mode .pdf-reader,
-  .learning-workspace:fullscreen .pdf-reader { min-height: 0; grid-template-rows: auto minmax(0, 1fr) auto; }
-  .presentation-mode .pdf-reader__viewport,
-  .learning-workspace:fullscreen .pdf-reader__viewport { min-height: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .pdf-reader__loading > span::after { animation: none; transform: none; }
-  .pdf-reader__expand,
-  .pdf-reader__toolbar button,
-  .pdf-reader__navigation button,
-  .pdf-reader__error button { transition: none; }
+  .math-lesson__bar { align-items: flex-start; padding: .55rem var(--margin); }
+  .math-lesson__bar > p > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .math-lesson__bar > div { display: grid; justify-items: end; gap: .1rem; text-align: right; }
+  .math-lesson__bar > div span + span::before { content: none; }
+  .math-lesson__content { padding: 1.15rem var(--margin) calc(1.75rem + env(safe-area-inset-bottom)); }
+  .math-lesson__heading h2 { font-size: clamp(1.65rem, 7.5vw, 2rem); }
+  .math-lesson__intro { font-size: 1rem; line-height: 1.67; }
+  .math-lesson__formula-card,
+  .math-lesson__quick { padding: 1rem; }
+  .math-lesson__formula-card dl > div { grid-template-columns: 1fr; gap: .25rem; }
+  .math-lesson__formula-card dt,
+  .math-lesson__formula-card dd > p,
+  .math-lesson__quick li > span,
+  .math-lesson__quick li > p,
+  .math-lesson__callout h3,
+  .math-lesson__callout p { font-size: .92rem; }
+  .math-markdown__body--source { margin-top: .85rem; padding: 1rem; }
+  .math-markdown__display { margin-inline: calc(-1 * var(--margin)); width: calc(100% + 2 * var(--margin)); max-width: none; border-inline: 0; }
+  .math-markdown__display--compact { width: 100%; max-width: 100%; margin: 0; border-inline: 0; }
 }

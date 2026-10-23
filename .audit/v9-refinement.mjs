@@ -5,7 +5,7 @@ import { extname, join, resolve, sep } from "node:path";
 import { Browser } from "../.agents/skills/design-taste-frontend/scripts/lib/cdp.mjs";
 
 const root = resolve(".");
-const mime = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".png": "image/png", ".webp": "image/webp" };
+const mime = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".woff": "font/woff", ".woff2": "font/woff2", ".ttf": "font/ttf" };
 const server = createServer((request, response) => {
   try {
     let file = resolve(join(root, decodeURIComponent(new URL(request.url, "http://local").pathname)));
@@ -55,15 +55,24 @@ try {
     await page.goto(`${origin}/documents.html?grade=12&topic=CD13&type=13.1&section=knowledge&item=1`, { timeoutMs: 30000, settleMs: 220 });
     const note = await page.eval(`(() => {
       const element = document.querySelector('.knowledge-reader__points');
+      if (!element) return {
+        mode: document.querySelector('[data-pdf-viewer]') ? 'pdf' : 'missing',
+        horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1
+      };
       const style = getComputedStyle(element);
       return {
+        mode: 'note',
         background: style.backgroundColor,
         borderTop: style.borderTopWidth,
         horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1
       };
     })()`);
-    assert.equal(note.background, "rgb(255, 247, 207)");
-    assert.equal(note.borderTop, "3px");
+    if (note.mode === "note") {
+      assert.equal(note.background, "rgb(255, 247, 207)");
+      assert.equal(note.borderTop, "3px");
+    } else {
+      assert.equal(note.mode, "pdf", "mapped source lessons may use the verified PDF reader");
+    }
     assert.equal(note.horizontalOverflow, false, `yellow note must fit ${size.width}x${size.height}`);
 
     await page.goto(`${origin}/documents.html?grade=12&topic=CD13&type=13.1&section=example&item=1`, { timeoutMs: 30000, settleMs: 220 });

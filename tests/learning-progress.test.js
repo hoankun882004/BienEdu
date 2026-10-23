@@ -13,6 +13,7 @@ import {
   loadLearningProgress,
   markExampleViewed,
   markKnowledgeViewed,
+  preserveVerifiedPdfProgress,
   recordPracticeAnswer,
   LEGACY_LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_KEY,
@@ -89,6 +90,21 @@ test("progress counts only stable IDs that still exist in the current lesson", (
   assert.equal(lesson.examplesViewed, 1);
   assert.equal(lesson.answered, 1);
   assert.equal(lesson.percent, 38);
+});
+
+test("native Markdown preserves completed legacy PDF progress without requiring the old viewer", () => {
+  const state = createLearningProgress();
+  const segments = ["20.2-pdf-1", "20.2-pdf-2", "20.2-pdf-3"];
+  state.lessons["20.2"] = {
+    viewedKnowledge: [],
+    viewedExamples: [],
+    practiceAnswers: {},
+    knowledgePdfProgress: { viewedSegments: segments, completed: true }
+  };
+  const migrated = preserveVerifiedPdfProgress(state, [{ code: "20.2", targetKnowledgeIds: ["20.2-knowledge-1", "20.2-knowledge-2"], pdfSegmentIds: segments }]);
+  assert.deepEqual(migrated.lessons["20.2"].viewedKnowledge, ["20.2-knowledge-1", "20.2-knowledge-2"]);
+  assert.deepEqual(migrated.lessons["20.2"].knowledgePdfProgress.viewedSegments, segments);
+  assert.equal(migrated.lessons["20.2"].knowledgePdfProgress.completed, true);
 });
 
 test("final exams unlock only after every subtopic is complete", () => {

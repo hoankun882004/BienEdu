@@ -13,6 +13,7 @@ function createLessonProgress() {
     viewedKnowledge: [],
     viewedExamples: [],
     practiceAnswers: {},
+    // Read-only legacy state retained so V12 learners can migrate without losing progress.
     knowledgePdfProgress: { viewedSegments: [], completed: false }
   };
 }
@@ -88,21 +89,22 @@ export function markKnowledgeViewed(progress, code, slideId) {
   return next;
 }
 
-export function markKnowledgePdfSegmentViewed(progress, code, segmentId, validSegmentIds = []) {
+export function preserveVerifiedPdfProgress(progress, migrations = []) {
   const next = normalize(progress);
-  const current = lesson(next, code);
-  const valid = new Set(validSegmentIds);
-  if (valid.size && !valid.has(segmentId)) return next;
-  const viewedSegments = [...new Set([...current.knowledgePdfProgress.viewedSegments, segmentId])]
-    .filter((id) => !valid.size || valid.has(id));
-  next.lessons[code] = {
-    ...current,
-    knowledgePdfProgress: {
-      viewedSegments,
-      completed: valid.size > 0 && [...valid].every((id) => viewedSegments.includes(id))
-    }
-  };
-  return next;
+  let changed = false;
+  for (const migration of migrations) {
+    if (!next.lessons[migration.code] || !migration.targetKnowledgeIds?.length || !migration.pdfSegmentIds?.length) continue;
+    const current = lesson(next, migration.code);
+    const viewedSegments = current.knowledgePdfProgress?.viewedSegments ?? [];
+    const pdfWasComplete = current.knowledgePdfProgress?.completed
+      || migration.pdfSegmentIds.every((id) => viewedSegments.includes(id));
+    if (!pdfWasComplete) continue;
+    const migratedKnowledge = [...new Set([...current.viewedKnowledge, ...migration.targetKnowledgeIds])];
+    if (migratedKnowledge.length === current.viewedKnowledge.length) continue;
+    next.lessons[migration.code] = { ...current, viewedKnowledge: migratedKnowledge };
+    changed = true;
+  }
+  return changed ? next : progress;
 }
 
 export function markExampleViewed(progress, code, slideId) {
@@ -145,14 +147,7 @@ export function getLessonProgress(
     const valid = new Set(validIds);
     return unique.filter((id) => valid.has(id)).length;
   };
-  const pdfSegmentIds = validUnitIds?.knowledgePdfSegments ?? null;
-  const viewedPdfSegments = pdfSegmentIds
-    ? countValid(current.knowledgePdfProgress.viewedSegments, pdfSegmentIds, pdfSegmentIds.length)
-    : 0;
-  const pdfComplete = Boolean(pdfSegmentIds?.length) && viewedPdfSegments === pdfSegmentIds.length;
-  const viewed = pdfSegmentIds
-    ? (pdfComplete ? knowledgeCount : 0)
-    : countValid(current.viewedKnowledge, validUnitIds?.knowledge, knowledgeCount);
+  const viewed = countValid(current.viewedKnowledge, validUnitIds?.knowledge, knowledgeCount);
   const examplesViewed = countValid(current.viewedExamples, validUnitIds?.examples, exampleCount);
   const answered = countValid(Object.keys(current.practiceAnswers), validUnitIds?.practice, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
@@ -165,9 +160,6 @@ export function getLessonProgress(
 
   return {
     viewed,
-    viewedPdfSegments,
-    pdfSegmentCount: pdfSegmentIds?.length ?? 0,
-    pdfComplete,
     examplesViewed,
     answered,
     completed,

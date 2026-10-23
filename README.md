@@ -27,7 +27,7 @@ npm.cmd run verify
 
 `npm.cmd run check` kiểm tra cú pháp JavaScript, đường dẫn import/asset và phát hiện module không còn được dùng. `npm.cmd run verify` còn xác thực registry học liệu trước khi chạy unit test và các luồng Chromium: không gian học, tiến độ, quiz, hiệu ứng cuộn, reduced motion và responsive trên nhiều kích thước màn hình.
 
-Khi chỉ cần chạy một nhóm kiểm thử, dùng `npm.cmd test`, `npm.cmd run test:browser`, `npm.cmd run test:home-scroll` hoặc `npm.cmd run test:polish`.
+Khi chỉ cần chạy một nhóm kiểm thử, dùng `npm.cmd test`, `npm.cmd run test:v13`, `npm.cmd run test:home-scroll` hoặc `npm.cmd run test:polish`.
 
 URL trang chủ chuẩn là `/`. Cấu hình Vercel chuyển hướng vĩnh viễn `/index.html` về `/`; các trang công khai đều có thẻ canonical tương ứng.
 
@@ -49,13 +49,30 @@ Trang Lộ trình dùng query parameter để mở chuyên đề và dạng bài
 
 Các PDF nguồn được quản lý tập trung trong `assets/js/data/document-mappings.js`; trạng thái từng chuyên đề, dạng bài và từng phần học nằm trong `assets/js/data/content-registry.js`. Tệp `bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf` gồm 49 trang và được xác minh chứa CD12-01 đến CD14-09. Toàn bộ 26 phần Kiến thức, 52 ví dụ nguồn, 260 bài tự luyện và 260 đáp số đã được kiểm kê; 12.1 được chia thành hai trang đọc. Mỗi dạng vẫn giữ riêng ba câu luyện sinh tự động để chấm điểm. Bài tự luyện PDF chỉ dùng tự kiểm tra vì chưa có bộ so khớp biểu thức toán; chín đáp số nguồn có xung đột hoặc diễn đạt mơ hồ được hiển thị với trạng thái cần rà soát và không bị âm thầm sửa. Tệp `ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf` có 18 trang và thực tế kết thúc ở 21.8: website chỉ ánh xạ CD20–CD21, không suy đoán CD22–CD23 từ tên tệp hoặc trang bìa.
 
-## Hệ thống slide Kiến thức V12
+## Learning Workspace native V13
 
-`assets/js/domain/lesson-workspace.js` biến từng trang nội dung đã kiểm chứng thành một slide có ID ổn định, tham chiếu trang nguồn và `slideType`. Bộ kiểu dùng chung gồm `concept`, `definition`, `formula`, `properties`, `method`, `steps`, `comparison`, `recognition`, `common-mistakes`, `summary` và `diagram`; dữ liệu có thể khai báo kiểu rõ ràng hoặc để domain suy ra kiểu bảo thủ từ các block hiện có. `assets/js/components/knowledge-slide-renderer.js` là renderer HTML/CSS dùng chung cho chế độ học và chế độ trình chiếu, vì vậy không có bộ dữ liệu hoặc bản sao nội dung thứ hai.
+Học viên không tải, xem hoặc thao tác với PDF. `assets/js/domain/lesson-workspace.js` tạo các mục Kiến thức có ID ổn định từ dữ liệu đã kiểm chứng; `assets/js/components/markdown-math-renderer.js` escape HTML trước khi render tập Markdown giới hạn và dùng KaTeX cục bộ cho công thức. Bố cục đọc chung gồm phần dẫn, thẻ công thức gọn, ghi chú vàng **Cách hiểu nhanh** và callout lỗi/mẹo. Nội dung dài dùng cuộn tự nhiên; bảng và công thức rộng chỉ cuộn ngang trong chính vùng của chúng.
 
-Nút **Trình chiếu** chỉ xuất hiện ở slide Kiến thức. Chế độ này ưu tiên Fullscreen API; nếu trình duyệt từ chối hoặc không hỗ trợ, workspace chuyển sang lớp phủ mở rộng cùng chức năng. `←`, `→` và `Space` điều hướng trong phạm vi các slide Kiến thức, `Escape` hoặc nút **Thoát** đưa người dùng về workspace và giữ nguyên URL, slide hiện tại cùng tiến độ. Mỗi slide chỉ được tính đã xem sau khi chính slide đó được render; mở trình chiếu không tự đánh dấu toàn bộ bài.
+Hiện CD12–CD14 và CD20–CD21 có 51 bài học native, 52 trang đọc, 148 mục công thức/nguyên tắc, 125 điểm hiểu nhanh, 94 ví dụ có lời giải, 153 câu luyện sinh xác định và 260 bài tự luyện nguồn. Deep link, tiến độ và đáp án cũ được giữ nguyên; tiến độ PDF legacy chỉ được đọc một lần để chuyển sang ID Kiến thức native tương ứng, không còn là trạng thái runtime.
 
-Luồng nội dung tương lai vẫn là: PDF → block đã kiểm chứng → `knowledge-slides.js`/content registry → `createLessonSlides()` → renderer dùng chung → hai chế độ học/trình chiếu. Chủ đề chưa có nội dung kiểm chứng vẫn dùng empty state “Nội dung đang được cập nhật”, không tạo slide giả. Chạy riêng ma trận trình chiếu bằng `npm.cmd run test:knowledge-presentation`; bài kiểm tra bao phủ bảy viewport, tám bài đại diện, history/deep link, tiến độ, bàn phím và reduced motion.
+Nội dung chưa được kiểm chứng dùng empty state “Nội dung đang được cập nhật”, không mở PDF và không tạo bài giả. `←`/`→` chuyển tuần tự giữa Kiến thức, Ví dụ và Bài tập khi focus không nằm trong điều khiển nhập liệu. Chạy ma trận native bằng `npm.cmd run test:v13`; bài test dùng Playwright thật trên 7 viewport, 8 route đại diện và quét toàn bộ 51 bài ở mobile/desktop.
+
+## Pipeline PDF toán V13
+
+Marker là provider cục bộ mặc định để chuyển PDF thành block có tọa độ, Markdown, LaTeX, bảng và ảnh. Bản trích xuất luôn đi qua `content/review` với trạng thái `needs-source-review`; frontend chỉ nhận dữ liệu đã được đối chiếu và xác minh. PDF gốc chỉ phục vụ pipeline/reviewer ngoại tuyến, không được publish thành viewer hay fallback cho học viên. Pipeline không chạy OCR trong trình duyệt; Mathpix chỉ là provider tooling tùy chọn dùng biến môi trường.
+
+Các lệnh chính:
+
+```powershell
+npm.cmd run content:math:doctor
+npm.cmd run content:math:extract -- --subtopic 20.2 --provider marker --force-ocr --debug
+npm.cmd run content:math:validate -- --subtopic 20.2
+npm.cmd run content:math:approve -- --subtopic 20.2 --reviewer "Tên người kiểm tra" --source-verified --formulas-verified --boundaries-verified
+npm.cmd run content:math:publish -- --subtopic 20.2
+npm.cmd run test:math-visual
+```
+
+Xem schema, chính sách không ghi đè, cấu hình Mathpix và quy trình review tại [`docs/MATH_PDF_PIPELINE.md`](docs/MATH_PDF_PIPELINE.md).
 
 ## Nhập thêm PDF theo cách an toàn
 

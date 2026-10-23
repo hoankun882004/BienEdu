@@ -158,7 +158,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   "13.2": {
     formulae: [
       { label: "Tuyến tính", value: "∫ₐᵇ(αf+βg)dx=α∫ₐᵇf dx+β∫ₐᵇg dx", detail: "α và β là hằng số." },
-      { label: "Cộng đoạn", value: "∫ₐᵇf dx=∫ₐᶜf dx+∫ᶜᵇf dx", detail: "Điểm c có thể dùng để ghép hoặc tách khoảng." },
+      { label: "Cộng đoạn", value: String.raw`\int_a^b f(x)\,dx=\int_a^c f(x)\,dx+\int_c^b f(x)\,dx`, detail: "Điểm c có thể dùng để ghép hoặc tách khoảng." },
       { label: "Đổi cận", value: "∫ₐᵇf dx=−∫ᵇₐf dx; ∫ₐᵃf dx=0", detail: "Đưa các tích phân về cùng chiều trước khi kết hợp." },
       { label: "Bảo toàn thứ tự", value: "f≤g trên [a,b] ⇒ ∫ₐᵇf≤∫ₐᵇg", detail: "Giả sử a≤b; đặc biệt f≥0 thì tích phân không âm." },
       { label: "Hàm hằng", value: "∫ₐᵇk dx=k(b−a)", detail: "Dùng khi biểu thức có thêm một hằng số." }
@@ -171,7 +171,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "13.3": {
     formulae: [
-      { label: "Đổi biến có cận", value: "∫ₐᵇf(g(x))g′(x)dx=∫g(a)g(b)f(u)du", detail: "Đặt u=g(x) rồi đổi cả hai cận theo u." },
+      { label: "Đổi biến có cận", value: String.raw`\int_a^b f(g(x))g'(x)\,dx=\int_{g(a)}^{g(b)}f(u)\,du`, detail: "Đặt u=g(x) rồi đổi cả hai cận theo u." },
       { label: "Cách 1", value: "Đổi biểu thức, vi phân và cận sang u", detail: "Khi đã đổi cận, tính trực tiếp theo u và không cần quay lại x." },
       { label: "Cách 2", value: "Tìm nguyên hàm theo u rồi trở về x trước khi thế cận", detail: "Dùng lại cận gốc theo x; không trộn biến u với cận x." }
     ],
@@ -195,7 +195,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   "13.5": {
     formulae: [
       { label: "Khử trị tuyệt đối", value: "|h(x)|=h(x) nếu h(x)≥0; |h(x)|=−h(x) nếu h(x)≤0", detail: "Xét dấu riêng trên từng khoảng." },
-      { label: "Chia đoạn", value: "∫ₐᵇ|h(x)|dx=Σ∫xₖxₖ₊₁ ±h(x)dx", detail: "Chọn dấu để hàm dưới tích phân không âm trên mỗi khoảng." }
+      { label: "Chia đoạn", value: String.raw`\int_a^b |h(x)|\,dx=\sum_k\int_{x_k}^{x_{k+1}}\!\pm h(x)\,dx`, detail: "Chọn dấu để hàm dưới tích phân không âm trên mỗi khoảng." }
     ],
     points: [
       { label: "Tìm nghiệm trong đoạn", text: "Giải h(x)=0 và chỉ giữ các nghiệm thuộc [a,b]." },
@@ -339,8 +339,8 @@ export const calculusKnowledgeDetails = Object.freeze({
   "14.9": {
     formulae: [
       { label: "Tốc độ từng phần", value: "r(t)=r₁(t), r₂(t), … trên các khoảng liên tiếp", detail: "Mỗi công thức chỉ dùng trong đúng giai đoạn đã cho." },
-      { label: "Tổng biến thiên", value: "ΔF=Σₖ∫ₜₖ₋₁ᵗₖrₖ(t)dt", detail: "Các khoảng phải ghép kín, không chồng lấn và dùng chung hệ đơn vị." },
-      { label: "Quãng đường nhiều chặng", value: "S=Σₖ∫ₜₖ₋₁ᵗₖ|vₖ(t)|dt", detail: "Dùng giá trị tuyệt đối khi vận tốc có thể đổi chiều." },
+      { label: "Tổng biến thiên", value: String.raw`\Delta F=\sum_{k=1}^{n}\int_{t_{k-1}}^{t_k}r_k(t)\,dt`, detail: "Các khoảng phải ghép kín, không chồng lấn và dùng chung hệ đơn vị." },
+      { label: "Quãng đường nhiều chặng", value: String.raw`S=\sum_{k=1}^{n}\int_{t_{k-1}}^{t_k}|v_k(t)|\,dt`, detail: "Dùng giá trị tuyệt đối khi vận tốc có thể đổi chiều." },
       { label: "Giá trị cuối", value: "F(tₙ)=F(t₀)+ΔF", detail: "Giữ đúng dấu của phần tăng và phần giảm ở từng chặng." }
     ],
     points: [

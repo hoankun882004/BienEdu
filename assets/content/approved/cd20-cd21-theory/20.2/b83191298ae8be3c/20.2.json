@@ -1,0 +1,928 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "20.2",
+    "id": "CD20-02",
+    "title": "Quy tắc nhân",
+    "topicId": "CD20",
+    "topicTitle": "Quy tắc đếm – tổ hợp nâng cao"
+  },
+  "source": {
+    "documentId": "cd20-cd21-theory",
+    "fileName": "Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+    "relativeDirectory": "39 chuyên đề",
+    "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+    "pageCount": 18,
+    "pages": [
+      5,
+      6,
+      7
+    ],
+    "regions": [
+      {
+        "id": "20.2-pdf-1",
+        "x": 0.055,
+        "y": 0.439,
+        "width": 0.89,
+        "height": 0.526,
+        "page": 5,
+        "isBoundaryPage": true
+      },
+      {
+        "id": "20.2-pdf-2",
+        "x": 0.055,
+        "y": 0.055,
+        "width": 0.89,
+        "height": 0.91,
+        "page": 6,
+        "isBoundaryPage": false
+      },
+      {
+        "id": "20.2-pdf-3",
+        "x": 0.055,
+        "y": 0.055,
+        "width": 0.89,
+        "height": 0.1364,
+        "page": 7,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "marker",
+    "startedAt": null,
+    "finishedAt": "2026-10-23T03:58:17.889Z",
+    "providerJobId": null,
+    "command": "renormalize .content-work\\runs\\2026-10-23T03-43-19-687Z-marker-20-2\\Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2)\\Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).json"
+  },
+  "blocks": [
+    {
+      "id": "20.2-b-a82d851ecf42",
+      "providerBlockId": "/page/4/SectionHeader/12",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.08438287153652392,
+        "y": 0.44970703125,
+        "width": 0.2997481108312342,
+        "height": 0.0263671875
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "### 20.2 Quy tắc nhân",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-4458d68e1505",
+      "providerBlockId": "/page/4/Text/13",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.08312342569269521,
+        "y": 0.48876953125,
+        "width": 0.8350125944584382,
+        "height": 0.0498046875
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Nếu để hoàn thành công việc phải thực hiện liên tiếp nhiều bước, số cách bằng tích số lựa chọn ở các bước. Số lựa chọn ở bước sau có thể phụ thuộc vào kết quả bước trước.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-62aac1733dc9",
+      "providerBlockId": "/page/4/Text/14",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.25818639798488663,
+        "y": 0.55908203125,
+        "width": 0.48740554156171284,
+        "height": 0.0244140625
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Một công việc có thể chia làm k giai đoạn :",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-a9c728f75122",
+      "providerBlockId": "/page/4/ListItem/15",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.2607052896725441,
+        "y": 0.5771484375,
+        "width": 0.47858942065491183,
+        "height": 0.021484375
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Giai đoạn thứ nhất có $n_1$ cách giải quyết,",
+      "latex": [
+        "n_1"
+      ]
+    },
+    {
+      "id": "20.2-b-31429e06ceff",
+      "providerBlockId": "/page/4/ListItem/16",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.267578125,
+        "y": 0.59375,
+        "width": 0.4641599102644836,
+        "height": 0.021484375
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Giai đoạn thứ hai có $n_2$ cách giải quyết,",
+      "latex": [
+        "n_2"
+      ]
+    },
+    {
+      "id": "20.2-b-0d3fcaf993a4",
+      "providerBlockId": "/page/4/Text/17",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.20410156249999997,
+        "y": 0.62548828125,
+        "width": 0.5880898732682619,
+        "height": 0.0400390625
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Giai đoạn thứ k có $n_k$ cách giải quyết,\n- Khi đó có $n_1 \\times n_2 \\times \\cdots \\times n_k$ cách giải quyết công việc trên.",
+      "latex": [
+        "n_k",
+        "n_1 \\times n_2 \\times \\cdots \\times n_k"
+      ]
+    },
+    {
+      "id": "20.2-b-0ae4819b508e",
+      "providerBlockId": "/page/4/SectionHeader/18",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10327455919395465,
+        "y": 0.68505859375,
+        "width": 0.2002518891687657,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": "MẸO NHẬN DẠNG",
+      "markdown": "### MẸO NHẬN DẠNG",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-7b216e5c44db",
+      "providerBlockId": "/page/4/Text/19",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10058593749999999,
+        "y": 0.71337890625,
+        "width": 0.8049556242128463,
+        "height": 0.0361328125
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "\"Hoàn thành bằng phương án này hoặc phương án kia\" thường là cộng; \"hoàn thành bước 1 và bước 2\" thường là nhân.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-61fa184541d3",
+      "providerBlockId": "/page/4/SectionHeader/20",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10156249999999999,
+        "y": 0.76904296875,
+        "width": 0.15914278967254408,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": "VÍ DỤ NHANH",
+      "markdown": "### VÍ DỤ NHANH",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-a5deb758fb39",
+      "providerBlockId": "/page/4/SectionHeader/21",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10302734374999999,
+        "y": 0.796875,
+        "width": 0.30251421796284633,
+        "height": 0.021484375
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Quy trình nhắn tin cho ẻm",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-1b8717a32842",
+      "providerBlockId": "/page/4/Text/22",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10253906249999999,
+        "y": 0.81494140625,
+        "width": 0.6972090483312342,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Để soạn một tin nhắn làm quen với ẻm, Đức phải thực hiện ba bước:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-63d413b528a8",
+      "providerBlockId": "/page/4/ListItem/23",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.10986328125,
+        "y": 0.845703125,
+        "width": 0.7931593887751889,
+        "height": 0.03515625
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Chọn 1 trong 3 câu mở đầu: \"Chào em\", \"Em ăn cơm chưa?\" hoặc \"Anh đứng đây từ chiều\".",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-dec70d7fbcec",
+      "providerBlockId": "/page/4/ListItem/24",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.1103515625,
+        "y": 0.89013671875,
+        "width": 0.7951899992128463,
+        "height": 0.0361328125
+      },
+      "regionId": "20.2-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Chọn 1 trong 4 câu tiếp theo để mở câu chuyện: anh học hust, phim mới ra, trời hôm nay đẹp nhỉ hoặc em ăn cơm với gì.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-541072061224",
+      "providerBlockId": "/page/5/Text/2",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.109375,
+        "y": 0.078125,
+        "width": 0.5178290302267002,
+        "height": 0.017578125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-7ba1d92f87d3",
+      "providerBlockId": "/page/5/Text/3",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10009765624999999,
+        "y": 0.11083984375,
+        "width": 0.4339073815333753,
+        "height": 0.0185546875
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Theo quy tắc nhân, Đức có thể soạn được:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-32f36f905167",
+      "providerBlockId": "/page/5/Equation/4",
+      "page": 6,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.31298828125,
+        "y": 0.14208984375,
+        "width": 0.3734097036366498,
+        "height": 0.0224609375
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\nN = 3 \\cdot 4 \\cdot 2 = 24\n$$\n\ntin nhắn khác nhau.",
+      "latex": [
+        "N = 3 \\cdot 4 \\cdot 2 = 24"
+      ]
+    },
+    {
+      "id": "20.2-b-28cff43959ae",
+      "providerBlockId": "/page/5/Text/5",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10201511335012593,
+        "y": 0.1689453125,
+        "width": 0.6876574307304785,
+        "height": 0.01953125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Đức có 24 cách nhắn tin, nhưng em ấy chỉ có đúng một cách trả lời:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-8efba9a43c56",
+      "providerBlockId": "/page/5/Text/6",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.40554156171284633,
+        "y": 0.20263671875,
+        "width": 0.1914357682619647,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Đã xem lúc 22:47",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-8ff803037630",
+      "providerBlockId": "/page/5/SectionHeader/7",
+      "page": 6,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10107421874999999,
+        "y": 0.2431640625,
+        "width": 0.15585273339105793,
+        "height": 0.017578125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": "VÍ DỤ NHANH",
+      "markdown": "### VÍ DỤ NHANH",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-8498c66f8f18",
+      "providerBlockId": "/page/5/SectionHeader/8",
+      "page": 6,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10205078124999999,
+        "y": 0.27197265625,
+        "width": 0.22540513814546598,
+        "height": 0.0185546875
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Số quần áo của Lan",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-b305c63bf543",
+      "providerBlockId": "/page/5/Text/9",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10156249999999999,
+        "y": 0.2890625,
+        "width": 0.2674551322418136,
+        "height": 0.01953125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Trong tủ quần áo, Lan có:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-4f223287af5b",
+      "providerBlockId": "/page/5/ListItem/10",
+      "page": 6,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.11083123425692695,
+        "y": 0.322265625,
+        "width": 0.1309823677581864,
+        "height": 0.017578125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- 6 chiếc áo;",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-90406b7ab0fe",
+      "providerBlockId": "/page/5/ListItem/11",
+      "page": 6,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.109375,
+        "y": 0.35107421875,
+        "width": 0.3112799118387909,
+        "height": 0.0185546875
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- 5 chiếc quần hoặc chân váy;",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-a83650d16e52",
+      "providerBlockId": "/page/5/ListItem/12",
+      "page": 6,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.109375,
+        "y": 0.3798828125,
+        "width": 0.12488192695214105,
+        "height": 0.01953125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- 4 đôi giày.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-3d28b097540f",
+      "providerBlockId": "/page/5/Text/13",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10205078124999999,
+        "y": 0.41259765625,
+        "width": 0.8009718887751889,
+        "height": 0.0361328125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Mỗi bộ trang phục gồm một chiếc áo, một chiếc quần hoặc chân váy và một đôi giày. Theo quy tắc nhân, Lan có thể phối được:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-0435e98e0cc6",
+      "providerBlockId": "/page/5/Equation/14",
+      "page": 6,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.2795969773299748,
+        "y": 0.46044921875,
+        "width": 0.43954659949622166,
+        "height": 0.0244140625
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\nN = 6 \\cdot 5 \\cdot 4 = 120\n$$\n\nbộ trang phục khác nhau.",
+      "latex": [
+        "N = 6 \\cdot 5 \\cdot 4 = 120"
+      ]
+    },
+    {
+      "id": "20.2-b-a6c6d3c1fa5e",
+      "providerBlockId": "/page/5/Text/15",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10058593749999999,
+        "y": 0.4931640625,
+        "width": 0.8024367325251889,
+        "height": 0.03515625
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Tuy có 120 cách phối đồ nhưng sau khi đứng trước tủ quần áo 2 tiếng, Lan vẫn : Không có gì để mặc cả",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-39198c9b5be2",
+      "providerBlockId": "/page/5/SectionHeader/16",
+      "page": 6,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10009765624999999,
+        "y": 0.5478515625,
+        "width": 0.16060763342254408,
+        "height": 0.01953125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": "VÍ DỤ NHANH",
+      "markdown": "### VÍ DỤ NHANH",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-14b4670381c3",
+      "providerBlockId": "/page/5/SectionHeader/17",
+      "page": 6,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10156249999999999,
+        "y": 0.57666015625,
+        "width": 0.1704778022670025,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Đường đến lớp",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-ce7b1407794c",
+      "providerBlockId": "/page/5/Text/18",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10201511335012593,
+        "y": 0.59228515625,
+        "width": 0.5025188916876574,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Từ ký túc xá đến lớp học, Nam có hai phương án:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-f4a8ba006b07",
+      "providerBlockId": "/page/5/ListItem/19",
+      "page": 6,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.11181640625,
+        "y": 0.62451171875,
+        "width": 0.6514077751102014,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Phương án 1: Đi thẳng đến lớp bằng một trong 2 con đường.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-bbd6924f4e4b",
+      "providerBlockId": "/page/5/ListItem/20",
+      "page": 6,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.10888671875,
+        "y": 0.654296875,
+        "width": 0.7941359512751889,
+        "height": 0.037109375
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Phương án 2: Đi qua căng tin. Có 3 đường từ ký túc xá đến căng tin và 2 đường từ căng tin đến lớp.",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-c2b69e3ed0a3",
+      "providerBlockId": "/page/5/Figure/21",
+      "page": 6,
+      "type": "Figure",
+      "polygon": {
+        "x": 0.16976162264162029,
+        "y": 0.702880859375,
+        "width": 0.6624298797167593,
+        "height": 0.14501953125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "_[Hình ảnh nguồn tại trang 6]_\n\n![Hình nguồn trang 6](assets/20.2-asset-c2b69e3ed0a3.jpg)",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-69a3da6101ba",
+      "providerBlockId": "/page/5/Text/22",
+      "page": 6,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10156249999999999,
+        "y": 0.86181640625,
+        "width": 0.6314349811083123,
+        "height": 0.0205078125
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Nếu Nam đi qua căng tin thì theo quy tắc nhân, số cách đi là:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-c2a830d65463",
+      "providerBlockId": "/page/5/Equation/23",
+      "page": 6,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.43212890625,
+        "y": 0.89892578125,
+        "width": 0.13588116931675057,
+        "height": 0.0146484375
+      },
+      "regionId": "20.2-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\n3 \\cdot 2 = 6\n$$\n\ncách.",
+      "latex": [
+        "3 \\cdot 2 = 6"
+      ]
+    },
+    {
+      "id": "20.2-b-5a6d1c7fa3e1",
+      "providerBlockId": "/page/6/Text/2",
+      "page": 7,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10156249999999999,
+        "y": 0.078125,
+        "width": 0.8014601700251889,
+        "height": 0.037109375
+      },
+      "regionId": "20.2-pdf-3",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Nam có thể đi thẳng hoặc đi qua căng tin nên theo quy tắc cộng, tổng số cách đến lớp là:",
+      "latex": []
+    },
+    {
+      "id": "20.2-b-cbcd02e36f3d",
+      "providerBlockId": "/page/6/Equation/3",
+      "page": 7,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.38720703124999994,
+        "y": 0.12841796875,
+        "width": 0.22362420300692695,
+        "height": 0.0224609375
+      },
+      "regionId": "20.2-pdf-3",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\nN = 2 + 3 \\cdot 2 = 8 \\text{ cách}.\n$$",
+      "latex": [
+        "N = 2 + 3 \\cdot 2 = 8 \\text{ cách}."
+      ]
+    },
+    {
+      "id": "20.2-b-2246554bed4d",
+      "providerBlockId": "/page/6/Text/4",
+      "page": 7,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10201511335012593,
+        "y": 0.15673828125,
+        "width": 0.5226700251889169,
+        "height": 0.0185546875
+      },
+      "regionId": "20.2-pdf-3",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Dù có nhiều đường nhưng mà Nam thấy trời mưa...",
+      "latex": []
+    }
+  ],
+  "headings": [
+    {
+      "blockId": "20.2-b-0ae4819b508e",
+      "page": 5,
+      "section": "knowledge",
+      "text": "MẸO NHẬN DẠNG"
+    },
+    {
+      "blockId": "20.2-b-61fa184541d3",
+      "page": 5,
+      "section": "worked_examples",
+      "text": "VÍ DỤ NHANH"
+    },
+    {
+      "blockId": "20.2-b-8ff803037630",
+      "page": 6,
+      "section": "worked_examples",
+      "text": "VÍ DỤ NHANH"
+    },
+    {
+      "blockId": "20.2-b-39198c9b5be2",
+      "page": 6,
+      "section": "worked_examples",
+      "text": "VÍ DỤ NHANH"
+    }
+  ],
+  "sections": {
+    "knowledge": [
+      "20.2-b-a82d851ecf42",
+      "20.2-b-4458d68e1505",
+      "20.2-b-62aac1733dc9",
+      "20.2-b-a9c728f75122",
+      "20.2-b-31429e06ceff",
+      "20.2-b-0d3fcaf993a4",
+      "20.2-b-0ae4819b508e",
+      "20.2-b-7b216e5c44db"
+    ],
+    "workedExamples": [
+      "20.2-b-61fa184541d3",
+      "20.2-b-a5deb758fb39",
+      "20.2-b-1b8717a32842",
+      "20.2-b-63d413b528a8",
+      "20.2-b-dec70d7fbcec",
+      "20.2-b-541072061224",
+      "20.2-b-7ba1d92f87d3",
+      "20.2-b-32f36f905167",
+      "20.2-b-28cff43959ae",
+      "20.2-b-8efba9a43c56",
+      "20.2-b-8ff803037630",
+      "20.2-b-8498c66f8f18",
+      "20.2-b-b305c63bf543",
+      "20.2-b-4f223287af5b",
+      "20.2-b-90406b7ab0fe",
+      "20.2-b-a83650d16e52",
+      "20.2-b-3d28b097540f",
+      "20.2-b-0435e98e0cc6",
+      "20.2-b-a6c6d3c1fa5e",
+      "20.2-b-39198c9b5be2",
+      "20.2-b-14b4670381c3",
+      "20.2-b-ce7b1407794c",
+      "20.2-b-f4a8ba006b07",
+      "20.2-b-bbd6924f4e4b",
+      "20.2-b-c2b69e3ed0a3",
+      "20.2-b-69a3da6101ba",
+      "20.2-b-c2a830d65463",
+      "20.2-b-5a6d1c7fa3e1",
+      "20.2-b-cbcd02e36f3d",
+      "20.2-b-2246554bed4d"
+    ],
+    "practice": []
+  },
+  "assets": [
+    {
+      "id": "20.2-asset-c2b69e3ed0a3",
+      "fileName": "assets/20.2-asset-c2b69e3ed0a3.jpg",
+      "page": 6,
+      "sourceBlockKey": "/page/5/Figure/21",
+      "mimeType": "image/jpeg"
+    }
+  ],
+  "flags": [],
+  "verification": {
+    "status": "verified",
+    "reviewer": "Codex visual PDF review",
+    "reviewedAt": "2026-10-23T03:59:45.010Z",
+    "sourceHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+    "formulasChecked": true,
+    "boundariesChecked": true,
+    "notes": [
+      "Đối chiếu ảnh Marker debug trang PDF 5-7; 6 correction có provenance; ranh giới kết thúc trước 20.3."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 20.2\ntitle: Quy tắc nhân\nsourceSha256: 66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293\nprovider: marker\nverification: verified\n---\n\n# 20.2 Quy tắc nhân\n\n> Nguồn: Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf, trang PDF 5, 6, 7. Nội dung máy trích xuất; phải đối chiếu PDF trước khi xuất bản.\n\n## Kiến thức\n\n<!-- source-block:20.2-b-a82d851ecf42 page:5 region:20.2-pdf-1 -->\n### 20.2 Quy tắc nhân\n\n<!-- source-block:20.2-b-4458d68e1505 page:5 region:20.2-pdf-1 -->\nNếu để hoàn thành công việc phải thực hiện liên tiếp nhiều bước, số cách bằng tích số lựa chọn ở các bước. Số lựa chọn ở bước sau có thể phụ thuộc vào kết quả bước trước.\n\n<!-- source-block:20.2-b-62aac1733dc9 page:5 region:20.2-pdf-1 -->\nMột công việc có thể chia làm k giai đoạn :\n\n<!-- source-block:20.2-b-a9c728f75122 page:5 region:20.2-pdf-1 -->\n- Giai đoạn thứ nhất có $n_1$ cách giải quyết,\n\n<!-- source-block:20.2-b-31429e06ceff page:5 region:20.2-pdf-1 -->\n- Giai đoạn thứ hai có $n_2$ cách giải quyết,\n\n<!-- source-block:20.2-b-0d3fcaf993a4 page:5 region:20.2-pdf-1 -->\n- Giai đoạn thứ k có $n_k$ cách giải quyết,\n- Khi đó có $n_1 \\times n_2 \\times \\cdots \\times n_k$ cách giải quyết công việc trên.\n\n<!-- source-block:20.2-b-0ae4819b508e page:5 region:20.2-pdf-1 -->\n### MẸO NHẬN DẠNG\n\n<!-- source-block:20.2-b-7b216e5c44db page:5 region:20.2-pdf-1 -->\n\"Hoàn thành bằng phương án này hoặc phương án kia\" thường là cộng; \"hoàn thành bước 1 và bước 2\" thường là nhân.\n\n## Ví dụ có lời giải\n\n<!-- source-block:20.2-b-61fa184541d3 page:5 region:20.2-pdf-1 -->\n### VÍ DỤ NHANH\n\n<!-- source-block:20.2-b-a5deb758fb39 page:5 region:20.2-pdf-1 -->\n### Quy trình nhắn tin cho ẻm\n\n<!-- source-block:20.2-b-1b8717a32842 page:5 region:20.2-pdf-1 -->\nĐể soạn một tin nhắn làm quen với ẻm, Đức phải thực hiện ba bước:\n\n<!-- source-block:20.2-b-63d413b528a8 page:5 region:20.2-pdf-1 -->\n- Chọn 1 trong 3 câu mở đầu: \"Chào em\", \"Em ăn cơm chưa?\" hoặc \"Anh đứng đây từ chiều\".\n\n<!-- source-block:20.2-b-dec70d7fbcec page:5 region:20.2-pdf-1 -->\n- Chọn 1 trong 4 câu tiếp theo để mở câu chuyện: anh học hust, phim mới ra, trời hôm nay đẹp nhỉ hoặc em ăn cơm với gì.\n\n<!-- source-block:20.2-b-541072061224 page:6 region:20.2-pdf-2 -->\n- Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".\n\n<!-- source-block:20.2-b-7ba1d92f87d3 page:6 region:20.2-pdf-2 -->\nTheo quy tắc nhân, Đức có thể soạn được:\n\n<!-- source-block:20.2-b-32f36f905167 page:6 region:20.2-pdf-2 -->\n$$\nN = 3 \\cdot 4 \\cdot 2 = 24\n$$\n\ntin nhắn khác nhau.\n\n<!-- source-block:20.2-b-28cff43959ae page:6 region:20.2-pdf-2 -->\nĐức có 24 cách nhắn tin, nhưng em ấy chỉ có đúng một cách trả lời:\n\n<!-- source-block:20.2-b-8efba9a43c56 page:6 region:20.2-pdf-2 -->\nĐã xem lúc 22:47\n\n<!-- source-block:20.2-b-8ff803037630 page:6 region:20.2-pdf-2 -->\n### VÍ DỤ NHANH\n\n<!-- source-block:20.2-b-8498c66f8f18 page:6 region:20.2-pdf-2 -->\n### Số quần áo của Lan\n\n<!-- source-block:20.2-b-b305c63bf543 page:6 region:20.2-pdf-2 -->\nTrong tủ quần áo, Lan có:\n\n<!-- source-block:20.2-b-4f223287af5b page:6 region:20.2-pdf-2 -->\n- 6 chiếc áo;\n\n<!-- source-block:20.2-b-90406b7ab0fe page:6 region:20.2-pdf-2 -->\n- 5 chiếc quần hoặc chân váy;\n\n<!-- source-block:20.2-b-a83650d16e52 page:6 region:20.2-pdf-2 -->\n- 4 đôi giày.\n\n<!-- source-block:20.2-b-3d28b097540f page:6 region:20.2-pdf-2 -->\nMỗi bộ trang phục gồm một chiếc áo, một chiếc quần hoặc chân váy và một đôi giày. Theo quy tắc nhân, Lan có thể phối được:\n\n<!-- source-block:20.2-b-0435e98e0cc6 page:6 region:20.2-pdf-2 -->\n$$\nN = 6 \\cdot 5 \\cdot 4 = 120\n$$\n\nbộ trang phục khác nhau.\n\n<!-- source-block:20.2-b-a6c6d3c1fa5e page:6 region:20.2-pdf-2 -->\nTuy có 120 cách phối đồ nhưng sau khi đứng trước tủ quần áo 2 tiếng, Lan vẫn : Không có gì để mặc cả\n\n<!-- source-block:20.2-b-39198c9b5be2 page:6 region:20.2-pdf-2 -->\n### VÍ DỤ NHANH\n\n<!-- source-block:20.2-b-14b4670381c3 page:6 region:20.2-pdf-2 -->\n### Đường đến lớp\n\n<!-- source-block:20.2-b-ce7b1407794c page:6 region:20.2-pdf-2 -->\nTừ ký túc xá đến lớp học, Nam có hai phương án:\n\n<!-- source-block:20.2-b-f4a8ba006b07 page:6 region:20.2-pdf-2 -->\n- Phương án 1: Đi thẳng đến lớp bằng một trong 2 con đường.\n\n<!-- source-block:20.2-b-bbd6924f4e4b page:6 region:20.2-pdf-2 -->\n- Phương án 2: Đi qua căng tin. Có 3 đường từ ký túc xá đến căng tin và 2 đường từ căng tin đến lớp.\n\n<!-- source-block:20.2-b-c2b69e3ed0a3 page:6 region:20.2-pdf-2 -->\n_[Hình ảnh nguồn tại trang 6]_\n\n![Hình nguồn trang 6](assets/20.2-asset-c2b69e3ed0a3.jpg)\n\n<!-- source-block:20.2-b-69a3da6101ba page:6 region:20.2-pdf-2 -->\nNếu Nam đi qua căng tin thì theo quy tắc nhân, số cách đi là:\n\n<!-- source-block:20.2-b-c2a830d65463 page:6 region:20.2-pdf-2 -->\n$$\n3 \\cdot 2 = 6\n$$\n\ncách.\n\n<!-- source-block:20.2-b-5a6d1c7fa3e1 page:7 region:20.2-pdf-3 -->\nNam có thể đi thẳng hoặc đi qua căng tin nên theo quy tắc cộng, tổng số cách đến lớp là:\n\n<!-- source-block:20.2-b-cbcd02e36f3d page:7 region:20.2-pdf-3 -->\n$$\nN = 2 + 3 \\cdot 2 = 8 \\text{ cách}.\n$$\n\n<!-- source-block:20.2-b-2246554bed4d page:7 region:20.2-pdf-3 -->\nDù có nhiều đường nhưng mà Nam thấy trời mưa...\n",
+  "corrections": [
+    {
+      "blockId": "20.2-b-0d3fcaf993a4",
+      "sourcePage": 5,
+      "from": "- Giai đoạn thứ k có $n_k$ cách giải quyết, Khi đó có $n_1$x$n_2$x...x$n_k$ cách giải quyết công việc trên",
+      "to": "- Giai đoạn thứ k có $n_k$ cách giải quyết,\n- Khi đó có $n_1 \\times n_2 \\times \\cdots \\times n_k$ cách giải quyết công việc trên.",
+      "reason": "Đối chiếu ảnh trang 5: OCR tách sai delimiter và nhận ký hiệu nhân thành chữ x.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    },
+    {
+      "blockId": "20.2-b-0ae4819b508e",
+      "sourcePage": 5,
+      "from": "### MEO NHẬN DẠNG",
+      "to": "### MẸO NHẬN DẠNG",
+      "reason": "Khôi phục dấu tiếng Việt theo heading in trên trang 5.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    },
+    {
+      "blockId": "20.2-b-541072061224",
+      "sourcePage": 6,
+      "from": "• Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".",
+      "to": "- Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".",
+      "reason": "Chuẩn hóa đúng bullet nguồn mà không đổi nội dung.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    },
+    {
+      "blockId": "20.2-b-32f36f905167",
+      "sourcePage": 6,
+      "from": "$$\nN = 3 \\cdot 4 \\cdot 2 = 24 \\operatorname{tin} \\operatorname{nhắn khác nhau}.\n$$",
+      "to": "$$\nN = 3 \\cdot 4 \\cdot 2 = 24\n$$\n\ntin nhắn khác nhau.",
+      "reason": "Đối chiếu ảnh trang 6: phần số là công thức; nhãn tiếng Việt nằm ngoài biểu thức toán.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    },
+    {
+      "blockId": "20.2-b-0435e98e0cc6",
+      "sourcePage": 6,
+      "from": "$$\nN=6\\cdot 5\\cdot 4= \\boxed{120 \\ {\\rm b\\^o} \\ {\\rm trang \\ phục \\ khác \\ nhau}}.\n$$",
+      "to": "$$\nN = 6 \\cdot 5 \\cdot 4 = 120\n$$\n\nbộ trang phục khác nhau.",
+      "reason": "Đối chiếu ảnh trang 6: OCR làm hỏng chữ 'bộ'; tách nhãn tiếng Việt khỏi LaTeX.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    },
+    {
+      "blockId": "20.2-b-c2a830d65463",
+      "sourcePage": 6,
+      "from": "$$\n3 \\cdot 2 = 6\n$$\n cách.",
+      "to": "$$\n3 \\cdot 2 = 6\n$$\n\ncách.",
+      "reason": "Bỏ khoảng trắng OCR thừa trước nhãn đơn vị, giữ nguyên công thức nguồn.",
+      "appliedAt": "2026-10-23T03:59:13.824Z",
+      "reviewer": "Codex visual source review"
+    }
+  ],
+  "resolvedFlags": [
+    {
+      "severity": "error",
+      "code": "uncertain-formula",
+      "blockId": "20.2-b-0d3fcaf993a4",
+      "page": 5,
+      "message": "Ký hiệu nhân OCR thành chữ x giữa các biểu thức; phải đối chiếu nguồn.",
+      "resolvedAt": "2026-10-23T03:59:13.822Z",
+      "resolution": "Đối chiếu ảnh trang 5: OCR tách sai delimiter và nhận ký hiệu nhân thành chữ x."
+    },
+    {
+      "severity": "error",
+      "code": "uncertain-formula",
+      "blockId": "20.2-b-0435e98e0cc6",
+      "page": 6,
+      "message": "Công thức cần đối chiếu nguồn: N=6\\cdot 5\\cdot 4= \\boxed{120 \\ {\\rm b\\^o} \\ {\\rm trang \\ phục \\ khác \\ nhau}}.",
+      "resolvedAt": "2026-10-23T03:59:13.824Z",
+      "resolution": "Đối chiếu ảnh trang 6: OCR làm hỏng chữ 'bộ'; tách nhãn tiếng Việt khỏi LaTeX."
+    }
+  ]
+}

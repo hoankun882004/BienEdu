@@ -1,10 +1,8 @@
 import { curriculumMeta, curriculumTopics } from "./curriculum.js";
 import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./document-mappings.js?v=12.1";
-import { getKnowledgePdfMapping } from "./knowledge-pdf-mappings.js?v=12.1";
 import { getExampleContent } from "./example-content.js?v=8.6";
 import { getKnowledgeContent } from "./knowledge-content.js?v=8.9";
-import { getKnowledgeSection } from "./knowledge-slides.js?v=8.6";
 import { supportedPracticeTopics } from "../domain/exercise-generators.js?v=8.6";
 
 export const CONTENT_STATUS = Object.freeze({
@@ -28,24 +26,19 @@ function sourceReference(document, pages = []) {
 }
 
 function createKnowledgeSection(code, document) {
-  const section = getKnowledgeSection(code);
   const reading = getKnowledgeContent(code);
-  const pdf = getKnowledgePdfMapping(code);
-  if (!pdf?.verified) return Object.freeze({
+  if (!reading) return Object.freeze({
     status: CONTENT_STATUS.COMING_SOON,
-    units: Object.freeze([]),
-    pdf: null
+    units: Object.freeze([])
   });
 
-  const readingPages = reading?.pages ?? (reading ? [reading] : [null]);
-  const fallbackPages = section?.knowledgeSlides.flatMap((slide) => slide.sourcePages ?? []) ?? [];
+  const readingPages = reading.pages ?? [reading];
   const units = readingPages.map((page, index) => {
-    const sourceSlide = section?.knowledgeSlides[Math.min(index, section.knowledgeSlides.length - 1)];
     return Object.freeze({
       // These legacy IDs are intentionally retained so existing localStorage progress is not reset.
       id: `${code}-knowledge-${index + 1}`,
       title: page?.title ?? reading?.title ?? null,
-      source: sourceReference(document, page?.sourcePages ?? sourceSlide?.sourcePages ?? fallbackPages),
+      source: sourceReference(document, page?.sourcePages ?? [document?.exercisePages?.[code]].filter(Boolean)),
       verification: "verified"
     });
   });
@@ -55,8 +48,7 @@ function createKnowledgeSection(code, document) {
     verification: "verified",
     units: Object.freeze(units),
     count: units.length,
-    origin: "verified-source",
-    pdf
+    origin: "verified-markdown"
   });
 }
 

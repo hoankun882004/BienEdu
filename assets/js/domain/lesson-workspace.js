@@ -26,15 +26,16 @@ export function getKnowledgeSlideType(reading = {}) {
 export function createLessonSlides({
   topic,
   exercise,
-  knowledgeSection,
-  knowledgePdfMapping = null,
+  approvedMathContent = null,
   contentRecord = null,
   reading = null,
   examples = null,
   questions = [],
   sourceExercises = []
 }) {
-  if (!knowledgeSection && !knowledgePdfMapping) {
+  const hasApprovedKnowledge = approvedMathContent?.verification?.status === "verified"
+    && approvedMathContent.blocks?.some((block) => block.section === "knowledge");
+  if (!reading && !hasApprovedKnowledge) {
     return [{
       id: "unavailable",
       section: "knowledge",
@@ -44,37 +45,34 @@ export function createLessonSlides({
     }];
   }
 
-  const sourcePages = [...new Set(knowledgeSection?.knowledgeSlides.flatMap((slide) => slide.sourcePages) ?? [])];
   const readingPages = reading?.pages ?? (reading ? [reading] : []);
-  const knowledgeSlides = knowledgePdfMapping?.verified
-    ? [{
-        id: `${exercise.code}-knowledge-pdf`,
-        sourcePages: knowledgePdfMapping.regions.map((region) => region.page),
-        pdfMapping: knowledgePdfMapping
-      }]
-    : reading
+  const knowledgeSlides = reading
     ? readingPages.map((readingPage, index) => ({
-        ...knowledgeSection.knowledgeSlides[Math.min(index, knowledgeSection.knowledgeSlides.length - 1)],
         id: contentRecord?.sections.knowledge.units[index]?.id ?? `${exercise.code}-knowledge-${index + 1}`,
-        sourcePages: readingPage.sourcePages ?? sourcePages,
+        sourcePages: readingPage.sourcePages ?? [],
         reading: readingPage,
+        approvedMathContent: index === 0 && hasApprovedKnowledge ? approvedMathContent : null,
         slideType: getKnowledgeSlideType(readingPage)
       }))
-    : knowledgeSection.knowledgeSlides;
+    : [{
+        id: contentRecord?.sections.knowledge.units[0]?.id ?? `${exercise.code}-knowledge-1`,
+        sourcePages: approvedMathContent.source.pages,
+        approvedMathContent
+      }];
   const exampleSlides = examples
     ? examples.map((workedExample, index) => ({
         id: workedExample.id ?? contentRecord?.sections.examples.units[index]?.id ?? `${exercise.code}-example-${index + 1}`,
         sourcePages: workedExample.sourcePages,
         workedExample
       }))
-    : knowledgeSection.exampleSlides;
+    : [];
 
   return [
     ...knowledgeSlides.map((slide, index) => ({
       ...slide,
       id: slide.id,
       section: "knowledge",
-      kind: slide.pdfMapping ? "knowledge-pdf" : "knowledge",
+      kind: "knowledge-markdown",
       label: "Kiến thức",
       index,
       title: exercise.title,

@@ -111,7 +111,7 @@ function createMapping(documentId, topicId, code, start, next, finalPage) {
     verified: true,
     precision: "exact-region",
     auditedAt: "2026-10-22",
-    auditMethod: "PDF.js text-layer heading coordinates plus rendered-page visual review"
+    auditMethod: "Offline text-layer heading coordinates plus independent rendered-page review"
   });
 }
 

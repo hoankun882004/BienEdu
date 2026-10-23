@@ -7,19 +7,28 @@
     "content:scan": "node scripts/content-pipeline.mjs scan",
     "content:import": "node scripts/content-pipeline.mjs import",
     "content:validate": "node scripts/content-pipeline.mjs validate",
+    "content:math:doctor": "node scripts/math-pdf/cli.mjs doctor",
+    "content:math:extract": "node scripts/math-pdf/cli.mjs extract",
+    "content:math:renormalize": "node scripts/math-pdf/cli.mjs renormalize",
+    "content:math:correct": "node scripts/math-pdf/cli.mjs correct",
+    "content:math:validate": "node scripts/math-pdf/cli.mjs validate",
+    "content:math:approve": "node scripts/math-pdf/cli.mjs approve",
+    "content:math:publish": "node scripts/math-pdf/cli.mjs publish",
     "test": "node --test tests/*.test.js",
-    "test:browser": "node .audit/browser-interactions.mjs",
+    "test:browser": "node .audit/v13-native-learning.mjs",
     "test:home-scroll": "node .audit/home-scroll-experience.mjs",
     "test:polish": "node .audit/polish-pass.mjs",
     "test:v8": "node .audit/v8-experience.mjs",
     "test:v9": "node .audit/v9-refinement.mjs",
     "test:v11-2": "node .audit/v11-2-browser.mjs",
-    "test:knowledge-layout": "node .audit/knowledge-layout.mjs",
-    "test:knowledge-presentation": "node .audit/knowledge-presentation.mjs",
-    "verify": "npm run check && npm run content:validate && npm test && npm run test:v8 && npm run test:v9 && npm run test:knowledge-layout && npm run test:knowledge-presentation && npm run test:v11-2 && npm run test:browser && npm run test:home-scroll && npm run test:polish"
+    "test:knowledge-layout": "node .audit/v13-native-learning.mjs",
+    "test:knowledge-presentation": "node .audit/v13-native-learning.mjs",
+    "test:math-visual": "node .audit/math-pdf-visual.mjs",
+    "test:v13": "node .audit/v13-native-learning.mjs",
+    "verify": "npm run check && npm run content:scan && npm run content:validate && npm test && npm run test:v13 && npm run test:home-scroll && npm run test:polish"
   },
   "dependencies": {
-    "pdfjs-dist": "6.4.299"
+    "katex": "^0.19.0"
   },
   "devDependencies": {
     "playwright-core": "1.64.1"

@@ -10,8 +10,13 @@ const mime = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
+  ".mjs": "text/javascript; charset=utf-8",
   ".png": "image/png",
-  ".webp": "image/webp"
+  ".jpg": "image/jpeg",
+  ".webp": "image/webp",
+  ".woff": "font/woff",
+  ".woff2": "font/woff2",
+  ".ttf": "font/ttf"
 };
 const server = createServer((request, response) => {
   try {
@@ -47,6 +52,28 @@ function lessonUrl(origin, code) {
 
 async function inspectLayout(page) {
   return page.eval(`(() => {
+    const markdown = document.querySelector('[data-approved-math-content]');
+    const pdf = document.querySelector('[data-pdf-viewer]');
+    const navigation = document.querySelector('.lesson-navigation');
+    const box = (element) => {
+      const rect = element.getBoundingClientRect();
+      return { top: rect.top, right: rect.right, bottom: rect.bottom, left: rect.left, width: rect.width, height: rect.height };
+    };
+    if (markdown && navigation) return {
+      mode: 'markdown',
+      reader: box(markdown),
+      navigation: box(navigation),
+      formulaCount: markdown.querySelectorAll('.katex').length,
+      hasSourceButton: Boolean(markdown.querySelector('[data-action="show-source-pdf"]')),
+      horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1
+    };
+    if (pdf && navigation) return {
+      mode: 'pdf',
+      reader: box(pdf),
+      navigation: box(navigation),
+      hasViewport: Boolean(pdf.querySelector('[data-pdf-viewport]')),
+      horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1
+    };
     const reader = document.querySelector('.knowledge-reader');
     const content = document.querySelector('.knowledge-reader__content');
     const study = document.querySelector('.knowledge-reader__study-grid');
@@ -54,16 +81,12 @@ async function inspectLayout(page) {
     const formula = document.querySelector('.knowledge-reader__formulae');
     const points = document.querySelector('.knowledge-reader__points');
     const note = document.querySelector('.knowledge-reader__note');
-    const navigation = document.querySelector('.lesson-navigation');
     if (![reader, content, study, principles, formula, points, note, navigation].every(Boolean)) {
       return { missing: true, body: document.body.innerText.slice(0, 300) };
     }
-    const box = (element) => {
-      const rect = element.getBoundingClientRect();
-      return { top: rect.top, right: rect.right, bottom: rect.bottom, left: rect.left, width: rect.width, height: rect.height };
-    };
     const style = getComputedStyle(reader);
     return {
+      mode: 'note',
       layoutClass: reader?.classList.contains('knowledge-reader--principles-split'),
       nested: principles?.contains(formula) && principles?.contains(note) && study?.contains(points),
       reader: box(reader),
@@ -84,6 +107,18 @@ async function inspectLayout(page) {
 
 function assertSharedLayout(layout, code, viewport) {
   const label = `${code} at ${viewport.width}x${viewport.height}`;
+  if (layout.mode === "markdown") {
+    assert.equal(code, "20.2", `${label} only uses approved Markdown for the published pilot`);
+    assert.ok(layout.formulaCount > 0, `${label} renders KaTeX formulae`);
+    assert.equal(layout.hasSourceButton, true, `${label} keeps the PDF source fallback`);
+    assert.equal(layout.horizontalOverflow, false, `${label} has no horizontal page overflow`);
+    return;
+  }
+  if (layout.mode === "pdf") {
+    assert.equal(layout.hasViewport, true, `${label} renders the verified PDF.js viewport`);
+    assert.equal(layout.horizontalOverflow, false, `${label} has no horizontal page overflow`);
+    return;
+  }
   assert.notEqual(layout.missing, true, `${label} renders every knowledge layout region`);
   assert.equal(layout.layoutClass, true, `${label} uses the shared principles layout`);
   assert.equal(layout.nested, true, `${label} keeps formula/note left and quick note right`);
@@ -117,7 +152,7 @@ try {
       const layout = await inspectLayout(page);
       assertSharedLayout(layout, code, viewport);
 
-      if (viewport.width >= 1024 && ["20.1", "20.2"].includes(code)) {
+      if (layout.mode === "note" && viewport.width >= 1024 && ["20.1", "20.2"].includes(code)) {
         assert.ok(layout.readerScrollOverflow <= 2, `${code} fits without an unnecessary lesson scrollbar at ${viewport.width}x${viewport.height}`);
       }
     }
@@ -148,10 +183,11 @@ try {
       const layout = await inspectLayout(page);
       assertSharedLayout(layout, code, viewport);
 
-      if (viewport.width <= 640) {
+      if (viewport.width <= 640 && layout.mode !== "pdf") {
         const bottomClearance = await page.eval(`(() => {
           scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' });
-          const lastBlock = document.querySelector('.knowledge-reader__points').getBoundingClientRect();
+          const lastElement = document.querySelector('.math-markdown > footer, .knowledge-reader__points');
+          const lastBlock = lastElement.getBoundingClientRect();
           const navigation = document.querySelector('.lesson-navigation').getBoundingClientRect();
           return navigation.top - lastBlock.bottom;
         })()`);

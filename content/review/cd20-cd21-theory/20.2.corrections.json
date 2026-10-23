@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "bienedu.math-pdf.corrections.v1",
+  "subtopic": "20.2",
+  "sourceSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+  "reviewer": "Codex visual source review",
+  "corrections": [
+    {
+      "blockId": "20.2-b-0d3fcaf993a4",
+      "sourcePage": 5,
+      "from": "- Giai đoạn thứ k có $n_k$ cách giải quyết, Khi đó có $n_1$x$n_2$x...x$n_k$ cách giải quyết công việc trên",
+      "to": "- Giai đoạn thứ k có $n_k$ cách giải quyết,\n- Khi đó có $n_1 \\times n_2 \\times \\cdots \\times n_k$ cách giải quyết công việc trên.",
+      "reason": "Đối chiếu ảnh trang 5: OCR tách sai delimiter và nhận ký hiệu nhân thành chữ x."
+    },
+    {
+      "blockId": "20.2-b-0ae4819b508e",
+      "sourcePage": 5,
+      "from": "### MEO NHẬN DẠNG",
+      "to": "### MẸO NHẬN DẠNG",
+      "reason": "Khôi phục dấu tiếng Việt theo heading in trên trang 5."
+    },
+    {
+      "blockId": "20.2-b-541072061224",
+      "sourcePage": 6,
+      "from": "• Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".",
+      "to": "- Chọn 1 trong 2 cách kết thúc: \"Hehe\" hoặc \":))\".",
+      "reason": "Chuẩn hóa đúng bullet nguồn mà không đổi nội dung."
+    },
+    {
+      "blockId": "20.2-b-32f36f905167",
+      "sourcePage": 6,
+      "from": "$$\nN = 3 \\cdot 4 \\cdot 2 = 24 \\operatorname{tin} \\operatorname{nhắn khác nhau}.\n$$",
+      "to": "$$\nN = 3 \\cdot 4 \\cdot 2 = 24\n$$\n\ntin nhắn khác nhau.",
+      "reason": "Đối chiếu ảnh trang 6: phần số là công thức; nhãn tiếng Việt nằm ngoài biểu thức toán."
+    },
+    {
+      "blockId": "20.2-b-0435e98e0cc6",
+      "sourcePage": 6,
+      "from": "$$\nN=6\\cdot 5\\cdot 4= \\boxed{120 \\ {\\rm b\\^o} \\ {\\rm trang \\ phục \\ khác \\ nhau}}.\n$$",
+      "to": "$$\nN = 6 \\cdot 5 \\cdot 4 = 120\n$$\n\nbộ trang phục khác nhau.",
+      "reason": "Đối chiếu ảnh trang 6: OCR làm hỏng chữ 'bộ'; tách nhãn tiếng Việt khỏi LaTeX."
+    },
+    {
+      "blockId": "20.2-b-c2a830d65463",
+      "sourcePage": 6,
+      "from": "$$\n3 \\cdot 2 = 6\n$$\n cách.",
+      "to": "$$\n3 \\cdot 2 = 6\n$$\n\ncách.",
+      "reason": "Bỏ khoảng trắng OCR thừa trước nhãn đơn vị, giữ nguyên công thức nguồn."
+    }
+  ]
+}
+

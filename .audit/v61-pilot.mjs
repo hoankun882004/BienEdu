@@ -5,7 +5,7 @@ import assert from "node:assert/strict";
 import { Browser } from "../.agents/skills/design-taste-frontend/scripts/lib/cdp.mjs";
 
 const root = resolve(".");
-const types = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".webp": "image/webp", ".png": "image/png" };
+const types = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8", ".webp": "image/webp", ".png": "image/png", ".jpg": "image/jpeg", ".woff": "font/woff", ".woff2": "font/woff2", ".ttf": "font/ttf" };
 const server = createServer((request, response) => {
   try {
     let file = resolve(join(root, decodeURIComponent(new URL(request.url, "http://local").pathname)));

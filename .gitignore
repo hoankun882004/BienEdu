@@ -1,0 +1,7 @@
+.venv-marker/
+node_modules/
+.content-work/
+.content-work-*.log
+.env
+.env.*
+!.env.example

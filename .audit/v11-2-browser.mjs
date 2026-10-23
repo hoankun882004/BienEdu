@@ -10,9 +10,14 @@ const mime = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
+  ".mjs": "text/javascript; charset=utf-8",
   ".pdf": "application/pdf",
   ".png": "image/png",
-  ".webp": "image/webp"
+  ".jpg": "image/jpeg",
+  ".webp": "image/webp",
+  ".woff": "font/woff",
+  ".woff2": "font/woff2",
+  ".ttf": "font/ttf"
 };
 
 const server = createServer((request, response) => {
