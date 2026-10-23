@@ -24,8 +24,9 @@
     "test:knowledge-layout": "node .audit/v13-native-learning.mjs",
     "test:knowledge-presentation": "node .audit/v13-native-learning.mjs",
     "test:math-visual": "node .audit/math-pdf-visual.mjs",
+    "test:latex": "node --test tests/latex-rendering.test.js && node .audit/v13-1-latex.mjs",
     "test:v13": "node .audit/v13-native-learning.mjs",
-    "verify": "npm run check && npm run content:scan && npm run content:validate && npm test && npm run test:v13 && npm run test:home-scroll && npm run test:polish"
+    "verify": "npm run check && npm run content:scan && npm run content:validate && npm test && npm run test:latex && npm run test:v13 && npm run test:home-scroll && npm run test:polish"
   },
   "dependencies": {
     "katex": "^0.19.0"

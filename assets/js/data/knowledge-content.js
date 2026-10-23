@@ -212,7 +212,7 @@ const probabilityKnowledgeContent = Object.freeze({
   "21.1": {
     lead: "Phép thử ngẫu nhiên có tập kết quả biết trước nhưng chưa biết kết quả cụ thể. Tập tất cả kết quả là không gian mẫu Ω; biến cố A là một tập con của Ω.",
     formulae: [
-      { label: "Mô hình hữu hạn đồng khả năng", value: "P(A) = |A| / |Ω|", detail: "Luôn có 0 ≤ P(A) ≤ 1 và P(Ω) = 1." }
+      { label: "Mô hình hữu hạn đồng khả năng", value: String.raw`\mathrm{P}(A)=\frac{|A|}{|\Omega|}`, detail: "Luôn có 0 ≤ P(A) ≤ 1 và P(Ω) = 1." }
     ],
     points: [
       { label: "Biến cố đặc biệt", text: "Biến cố chắc chắn là Ω; biến cố không thể là ∅." },

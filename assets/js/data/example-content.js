@@ -153,7 +153,7 @@ const probabilityExampleContent = Object.freeze({
     analysis: ["Chọn 4 người cho một nhóm thì 4 người còn lại tự tạo nhóm kia.", "Hai nhóm không có tên nên mỗi cách bị đếm hai lần khi đổi vai trò hai nhóm."],
     steps: [
       { label: "Tạm phân biệt hai nhóm", expression: "C(8,4) = 70", text: "Chọn bốn người cho nhóm thứ nhất." },
-      { label: "Bỏ nhãn nhóm", expression: "N = C(8,4) / 2! = 35", text: "Chia cho hai cách hoán đổi tên hai nhóm." }
+      { label: "Bỏ nhãn nhóm", expression: String.raw`N=\frac{\mathrm{C}(8,4)}{2!}=35`, text: "Chia cho hai cách hoán đổi tên hai nhóm." }
     ],
     answer: "Có 35 cách chia nhóm.",
     takeaway: "Nếu gọi tên nhóm A, B thì có 70 cách; bỏ tên nhóm phải chia cho 2!.",

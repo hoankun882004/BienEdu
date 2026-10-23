@@ -23,7 +23,7 @@ const criticalSourceCoverage = {
   "13.2": ["f≤g", "k(b−a)"],
   "13.3": ["Đổi biểu thức, vi phân và cận", "trở về x"],
   "13.4": ["[uv]ₐᵇ"],
-  "13.5": ["Σ∫"],
+  "13.5": [String.raw`\sum`, String.raw`\int`],
   "13.6": ["S₊+S₋", "bán nguyệt"],
   "13.7": ["F[b(m)]−F[a(m)]"],
   "13.8": ["f(a+b−x)", "k(b−a)/2"],
@@ -35,7 +35,7 @@ const criticalSourceCoverage = {
   "14.6": ["F(b)=F(a)+", "°C/giờ"],
   "14.7": ["3,6×10⁶", "1 W=1 J/s"],
   "14.8": ["q_vào(t)−q_ra(t)", "q(t)=V′(t)"],
-  "14.9": ["Σₖ∫", "|vₖ(t)|"]
+  "14.9": [String.raw`\sum`, String.raw`\int`, String.raw`|v_k(t)|`]
 };
 
 test("all CD12-CD14 and CD20-CD21 lessons expose structured reading content", () => {

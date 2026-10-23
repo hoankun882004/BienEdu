@@ -173,9 +173,9 @@ const rawCalculusLessons = Object.freeze({
       analysis: ["Tách tích phân thành phần hàm mũ và phần 1/x.", "Dùng đúng công thức cho cơ số 2 và giữ giá trị tuyệt đối trong logarit."],
       steps: [
         { label: "Tách tích phân", expression: "I=∫2ˣdx+3∫dx/x", text: "Hệ số 3 được đưa ra ngoài dấu tích phân." },
-        { label: "Áp dụng bảng", expression: "I=2ˣ/ln2+3ln|x|+C", text: "Hai họ hằng số được gộp thành một hằng số C." }
+        { label: "Áp dụng bảng", expression: String.raw`I=\frac{2^x}{\ln 2}+3\ln|x|+C`, text: "Hai họ hằng số được gộp thành một hằng số C." }
       ],
-      answer: "I=2ˣ/ln2+3ln|x|+C.",
+      answer: String.raw`I=\frac{2^x}{\ln 2}+3\ln|x|+C.`,
       takeaway: "Nhớ mẫu ln a với aˣ và giá trị tuyệt đối với ln|x|.",
       sourcePages: [10]
     },

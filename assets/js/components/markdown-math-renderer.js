@@ -24,13 +24,7 @@ function convertUnicodeRun(run, table) {
   return [...run].map((character) => table[character] ?? character).join("");
 }
 
-const CONTROL_WORD_PATTERN = /\\[A-Za-z@]+/g;
 const COMPACT_FUNCTION_PATTERN = /(?<!\\)(arctan|arcsin|arccos|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|ln|log)(?=[A-Za-z0-9(])/g;
-const TOKEN_BOUNDARY_COMMANDS = Object.freeze([
-  "int", "sum", "sqrt", "pi", "alpha", "beta", "Omega", "Delta", "varnothing", "in", "cup", "cap",
-  "Rightarrow", "Leftrightarrow", "le", "ge", "ne", "equiv", "times", "cdot", "cdots", "ldots",
-  "sin", "cos", "tan", "cot", "sec", "csc", "ln", "log", "arcsin", "arccos", "arctan"
-]);
 
 function command(name) {
   // TeX control words consume every following ASCII letter. The trailing space
@@ -66,15 +60,6 @@ function convertSimpleFractions(value) {
     converted = next;
   }
   return converted;
-}
-
-function malformedControlWord(formula) {
-  for (const match of String(formula).matchAll(CONTROL_WORD_PATTERN)) {
-    const name = match[0].slice(1);
-    if (TOKEN_BOUNDARY_COMMANDS.includes(name)) continue;
-    if (TOKEN_BOUNDARY_COMMANDS.some((known) => name.startsWith(known) && name !== known)) return match[0];
-  }
-  return null;
 }
 
 export function mathTextToLatex(value) {
@@ -126,8 +111,6 @@ export function mathTextToLatex(value) {
 
 export function validateLatexExpression(formula) {
   const source = String(formula ?? "").trim();
-  const malformed = malformedControlWord(source);
-  if (malformed) return Object.freeze({ valid: false, error: `Malformed LaTeX control word: ${malformed}` });
   try {
     katex.renderToString(source, {
       displayMode: false,

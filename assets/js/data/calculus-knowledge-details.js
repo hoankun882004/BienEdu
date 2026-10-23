@@ -5,11 +5,11 @@ export const calculusKnowledgeDetails = Object.freeze({
     formulae: [
       { label: "Định nghĩa & hằng số", value: "F′=f ⇒ ∫f dx=F+C; ∫0dx=C; ∫kdx=kx+C", detail: "Mọi nguyên hàm trên cùng một khoảng chỉ khác nhau một hằng số; k là hằng số thực." },
       { label: "Lũy thừa & logarit", value: "∫xⁿdx=xⁿ⁺¹/(n+1)+C; ∫dx/x=ln|x|+C", detail: "Công thức lũy thừa cần n≠−1; dạng 1/x dùng trên từng khoảng không chứa 0." },
-      { label: "Hàm mũ", value: "∫eˣdx=eˣ+C; ∫aˣdx=aˣ/ln(a)+C", detail: "Điều kiện của cơ số: a dương và a≠1." },
+      { label: "Hàm mũ", value: String.raw`\int e^x\,dx=e^x+C;\quad \int a^x\,dx=\frac{a^x}{\ln(a)}+C`, detail: "Điều kiện của cơ số: a dương và a≠1." },
       { label: "Sin – cos", value: "∫sinx dx=−cosx+C; ∫cosx dx=sinx+C", detail: "Chú ý dấu âm trong nguyên hàm của sin." },
       { label: "Lượng giác mở rộng", value: "∫sec²x dx=tanx+C; ∫csc²x dx=−cotx+C; ∫tanx dx=−ln|cosx|+C; ∫cotx dx=ln|sinx|+C", detail: "Áp dụng trên từng khoảng xác định và giữ giá trị tuyệt đối trong logarit." },
-      { label: "Arctan – arcsin", value: "∫dx/(1+x²)=arctanx+C; ∫dx/√(1−x²)=arcsinx+C; ∫dx/(a²+x²)=arctan(x/a)/a+C", detail: "Công thức cuối cần a>0; công thức arcsin dùng trong miền xác định của căn." },
-      { label: "Hàm hợp lũy thừa – logarit", value: "∫f′(x)[f(x)]ⁿdx=[f(x)]ⁿ⁺¹/(n+1)+C; ∫f′(x)/f(x)dx=ln|f(x)|+C", detail: "Công thức lũy thừa cần n≠−1; công thức logarit dùng trên từng khoảng f(x) khác 0." },
+      { label: "Arctan – arcsin", value: String.raw`\int\frac{dx}{1+x^2}=\arctan x+C;\quad \int\frac{dx}{\sqrt{1-x^2}}=\arcsin x+C;\quad \int\frac{dx}{a^2+x^2}=\frac{1}{a}\arctan\left(\frac{x}{a}\right)+C`, detail: "Công thức cuối cần a>0; công thức arcsin dùng trong miền xác định của căn." },
+      { label: "Hàm hợp lũy thừa – logarit", value: String.raw`\int f'(x)[f(x)]^n\,dx=\frac{[f(x)]^{n+1}}{n+1}+C;\quad \int\frac{f'(x)}{f(x)}\,dx=\ln|f(x)|+C`, detail: "Công thức lũy thừa cần n≠−1; công thức logarit dùng trên từng khoảng f(x) khác 0." },
       { label: "Hàm hợp mũ – lượng giác", value: "∫f′eᶠdx=eᶠ+C; ∫f′cos(f)dx=sin(f)+C; ∫f′sin(f)dx=−cos(f)+C", detail: "Nhận dạng đủ biểu thức f(x) và thừa số đạo hàm f′(x)." },
       { label: "Tính tuyến tính", value: "∫[af(x)+bg(x)]dx=a∫f(x)dx+b∫g(x)dx", detail: "a và b là các hằng số." }
     ],
@@ -40,7 +40,7 @@ export const calculusKnowledgeDetails = Object.freeze({
     formulae: [
       { label: "Đa thức", value: "∫P(x)dx=∑aₖxᵏ⁺¹/(k+1)+C", detail: "Lấy nguyên hàm riêng từng đơn thức của P(x)." },
       { label: "Tích hoặc lũy thừa", value: "Khai triển và gộp hạng tử trước khi tích phân", detail: "Có thể giữ nguyên dạng nếu nhận ra trực tiếp cấu trúc u′(x)[u(x)]ⁿ." },
-      { label: "Dạng hàm hợp", value: "∫u′(x)[u(x)]ⁿdx=[u(x)]ⁿ⁺¹/(n+1)+C", detail: "Dùng khi đạo hàm u′ xuất hiện đủ trong biểu thức." }
+      { label: "Dạng hàm hợp", value: String.raw`\int u'(x)[u(x)]^n\,dx=\frac{[u(x)]^{n+1}}{n+1}+C`, detail: "Dùng khi đạo hàm u′ xuất hiện đủ trong biểu thức." }
     ],
     points: [
       { label: "Khai triển", text: "Khai triển tích, hằng đẳng thức hoặc lũy thừa và gộp các số hạng cùng bậc." },
@@ -64,9 +64,9 @@ export const calculusKnowledgeDetails = Object.freeze({
   "12.4": {
     formulae: [
       { label: "Sin – cos", value: "∫sinx dx=−cosx+C; ∫cosx dx=sinx+C", detail: "Hai công thức lượng giác cơ bản." },
-      { label: "Sec² – csc²", value: "∫dx/cos²x=tanx+C; ∫dx/sin²x=−cotx+C", detail: "Chỉ áp dụng trên khoảng xác định." },
+      { label: "Sec² – csc²", value: String.raw`\int\frac{dx}{\cos^2 x}=\tan x+C;\quad \int\frac{dx}{\sin^2 x}=-\cot x+C`, detail: "Chỉ áp dụng trên khoảng xác định." },
       { label: "Tan – cot", value: "∫tanx dx=−ln|cosx|+C; ∫cotx dx=ln|sinx|+C", detail: "Kết quả có dạng logarit." },
-      { label: "Đối số tuyến tính", value: "∫sin(ax+b)dx=−cos(ax+b)/a+C", detail: "Tương tự ∫cos(ax+b)dx=sin(ax+b)/a+C, với a≠0." },
+      { label: "Đối số tuyến tính", value: String.raw`\int\sin(ax+b)\,dx=-\frac{\cos(ax+b)}{a}+C`, detail: "Tương tự ∫cos(ax+b)dx=sin(ax+b)/a+C, với a≠0." },
       { label: "Hạ bậc", value: "sin²x=(1−cos2x)/2; cos²x=(1+cos2x)/2", detail: "Đưa bình phương lượng giác về tổng các hàm cơ bản." },
       { label: "Nhân đôi", value: "2sinx cosx=sin2x", detail: "Dùng khi tích sin và cos có cùng đối số." }
     ],
