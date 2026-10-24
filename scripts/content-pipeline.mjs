@@ -13,6 +13,11 @@ import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { knowledgePdfMappings } from "../assets/js/data/knowledge-pdf-mappings.js";
 import {
+  buildActivePracticeSet,
+  getExerciseCoverageRows,
+  MAX_ACTIVE_QUESTIONS
+} from "../assets/js/domain/practice-bank.js";
+import {
   CONTENT_STATUS,
   getAvailabilitySummary,
   learningContentRegistry
@@ -26,6 +31,8 @@ const coveragePath = join(auditDirectory, "content-coverage.md");
 const sourceManifestPath = join(auditDirectory, "v11-2-source-manifest.json");
 const v14TraceabilityPath = join(auditDirectory, "v14-source-traceability.json");
 const v14AuditPath = join(auditDirectory, "v14-source-fidelity-audit.md");
+const v15ExerciseCoverageJsonPath = join(auditDirectory, "v15-exercise-coverage.json");
+const v15ExerciseCoverageMarkdownPath = join(auditDirectory, "v15-exercise-coverage.md");
 const pdfMappingReviewPath = join(auditDirectory, "pdf-mapping-review.md");
 const sourceDirectory = join(projectRoot, "39 chuyên đề");
 const command = process.argv[2] ?? "validate";
@@ -294,6 +301,62 @@ function validateRegistry(inventory) {
     }
   }
   return { errors, warnings, allSubtopics };
+}
+
+function validateV15ExerciseCoverage(rows) {
+  const errors = [];
+  if (rows.length !== 51) errors.push(`Expected 51 V15 exercise coverage rows, found ${rows.length}.`);
+  for (const row of rows) {
+    if (row.totalReadyQuestions > MAX_ACTIVE_QUESTIONS) errors.push(`${row.subtopicId} exceeds the ${MAX_ACTIVE_QUESTIONS}-question cap.`);
+    if (row.readySourceQuestions + row.readyGeneratedQuestions !== row.totalReadyQuestions) errors.push(`${row.subtopicId} has inconsistent ready counts.`);
+    if (row.pendingVerification < 0) errors.push(`${row.subtopicId} has a negative pending-verification count.`);
+    const active = buildActivePracticeSet(row.subtopicId);
+    for (const question of active) {
+      if (question.subtopicId !== row.subtopicId || question.sourceTopic !== row.subtopicId) errors.push(`${question.id} is assigned to the wrong subtopic.`);
+      if (question.gradeId !== "12" || question.topicId !== `CD${row.subtopicId.split(".")[0]}`) errors.push(`${question.id} is missing its grade/topic identity.`);
+      if (!question.blueprintId || !question.sourceDocumentId || !question.patternId) errors.push(`${question.id} has incomplete provenance metadata.`);
+      if (!question.solutionSteps?.length) errors.push(`${question.id} has no complete solution steps.`);
+      if (!['verified', 'programmatically-verified'].includes(question.verificationStatus)) errors.push(`${question.id} is active without an accepted verification status.`);
+    }
+  }
+  const firstCalculus = rows.find((row) => row.subtopicId === "12.1");
+  if (!firstCalculus || firstCalculus.readySourceQuestions !== 10 || firstCalculus.readyGeneratedQuestions !== 0 || firstCalculus.totalReadyQuestions !== 10) {
+    errors.push("12.1 must publish exactly ten verified PDF-source exercises and stop before generation.");
+  }
+  for (const row of rows.filter((item) => /^(?:20|21)\./u.test(item.subtopicId))) {
+    if (row.readyGeneratedQuestions !== 3 || row.totalReadyQuestions !== 3) errors.push(`${row.subtopicId} must publish its three independently verified generated questions.`);
+  }
+  for (const row of rows.filter((item) => /^(?:12|13|14)\./u.test(item.subtopicId) && item.subtopicId !== "12.1")) {
+    if (row.totalReadyQuestions !== 0 || row.pendingVerification !== 10 || row.exactTypeValidationStatus !== "needs-review") {
+      errors.push(`${row.subtopicId} must remain unpublished until its source solutions and exact-type blueprint are verified.`);
+    }
+  }
+  return errors;
+}
+
+function v15ExerciseCoverageReport(rows) {
+  const totals = rows.reduce((summary, row) => ({
+    sourceFound: summary.sourceFound + row.sourceQuestionsFound,
+    readySource: summary.readySource + row.readySourceQuestions,
+    readyGenerated: summary.readyGenerated + row.readyGeneratedQuestions,
+    totalReady: summary.totalReady + row.totalReadyQuestions,
+    pending: summary.pending + row.pendingVerification
+  }), { sourceFound: 0, readySource: 0, readyGenerated: 0, totalReady: 0, pending: 0 });
+  const lines = [
+    "# BienEdu V15 — Exercise coverage",
+    "",
+    `Generated: ${new Date().toISOString()}`,
+    "",
+    `Active-bank policy: source first, exact subtopic only, independently verified answer, complete solution, maximum ${MAX_ACTIVE_QUESTIONS} questions per subtopic.`,
+    "",
+    `Totals: ${totals.sourceFound} source exercises found; ${totals.readySource} ready source; ${totals.readyGenerated} ready generated; ${totals.totalReady} ready overall; ${totals.pending} pending verification.`,
+    "",
+    "| Subtopic | Source found | Ready source | Ready generated | Total ready | Pending verification | Exact-type status |",
+    "| --- | ---: | ---: | ---: | ---: | ---: | --- |",
+    ...rows.map((row) => `| ${row.subtopicId} | ${row.sourceQuestionsFound} | ${row.readySourceQuestions} | ${row.readyGeneratedQuestions} | ${row.totalReadyQuestions} | ${row.pendingVerification} | ${row.exactTypeValidationStatus} |`),
+    ""
+  ];
+  return `${lines.join("\n")}\n`;
 }
 
 function topicSourceMetrics(topicId) {
@@ -629,8 +692,8 @@ function coverageReport(inventory, validation) {
     `- Curriculum: ${curriculumMeta.topicCount} topics / ${curriculumMeta.exerciseTypeCount} subtopics.`,
     `- Source PDFs discovered: ${inventory.documents.length}.`,
     `- Topic availability: ${summary.topics.available} available, ${summary.topics.partial} partial, ${summary.topics["coming-soon"]} coming soon, ${summary.topics["needs-review"]} needs review.`,
-    "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. Source exercises are self-check only and remain separate from the three generated auto-graded questions per subtopic.",
-    "- Source completeness and mathematical verification are independent: nine answer keys are imported but explicitly marked needs-review because the printed answer conflicts with direct calculation or is ambiguous.",
+    "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.",
+    "- Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.",
     "- CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.",
     `- V14 source-fidelity: ${v14VerifiedCodes.length}/${mappedCodes.length} mapped subtopics have immutable block-level source approval (${v14VerifiedCodes.join(", ") || "none"}); the remaining ${mappedCodes.length - v14VerifiedCodes.length} stay needs-review and are not silently promoted by coverage counts.`,
     "",
@@ -689,17 +752,27 @@ if (command === "scan") {
   const validation = validateRegistry(inventory);
   const sourceManifest = buildSourceManifest();
   const v14Traceability = buildV14Traceability();
+  const v15ExerciseCoverage = getExerciseCoverageRows();
   validation.errors.push(...validateSourceManifest(sourceManifest));
   validation.errors.push(...validateV14Traceability(v14Traceability));
+  validation.errors.push(...validateV15ExerciseCoverage(v15ExerciseCoverage));
   writeJson(sourceManifestPath, sourceManifest);
   writeJson(v14TraceabilityPath, v14Traceability);
   writeFileSync(v14AuditPath, v14AuditReport(v14Traceability), "utf8");
+  writeJson(v15ExerciseCoverageJsonPath, {
+    schemaVersion: 1,
+    generatedAt: new Date().toISOString(),
+    maximumActiveQuestions: MAX_ACTIVE_QUESTIONS,
+    rows: v15ExerciseCoverage
+  });
+  writeFileSync(v15ExerciseCoverageMarkdownPath, v15ExerciseCoverageReport(v15ExerciseCoverage), "utf8");
   writeFileSync(coveragePath, coverageReport(inventory, validation), "utf8");
   writeFileSync(pdfMappingReviewPath, pdfMappingReviewReport(), "utf8");
   console.log(`Coverage report: ${relative(projectRoot, coveragePath)}`);
   console.log(`Source manifest: ${relative(projectRoot, sourceManifestPath)}`);
   console.log(`V14 traceability: ${relative(projectRoot, v14TraceabilityPath)}`);
   console.log(`V14 source-fidelity audit: ${relative(projectRoot, v14AuditPath)}`);
+  console.log(`V15 exercise coverage: ${relative(projectRoot, v15ExerciseCoverageMarkdownPath)}`);
   console.log(`PDF mapping review: ${relative(projectRoot, pdfMappingReviewPath)}`);
   for (const warning of validation.warnings) console.warn(`WARNING: ${warning}`);
   if (validation.errors.length) {

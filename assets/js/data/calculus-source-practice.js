@@ -3,12 +3,57 @@
 // The PDF supplies answer keys, but symbolic/free-response equivalence is not
 // auto-graded by BienEdu. Learners may reveal the source answer for self-check.
 
+const verifiedSolutions121 = Object.freeze([
+  {
+    steps: ["Tách tích phân theo từng hạng tử: ∫5x⁴dx−∫6x dx+∫1dx.", "Lấy nguyên hàm từng hạng tử được x⁵−3x²+x+C."],
+    verificationSpec: { integrand: [{ kind: "power", coefficient: 5, power: 4 }, { kind: "power", coefficient: -6, power: 1 }, { kind: "constant", coefficient: 1 }], candidate: [{ kind: "power", coefficient: 1, power: 5 }, { kind: "power", coefficient: -3, power: 2 }, { kind: "power", coefficient: 1, power: 1 }] }
+  },
+  {
+    steps: ["Với x>0, viết 1/√x=x^(−1/2) rồi dùng tính tuyến tính.", "Ta có ∫x^(−1/2)dx=2√x và ∫x²dx=x³/3, nên kết quả là 2√x+x³/3+C."],
+    verificationSpec: { domain: "x>0", integrand: [{ kind: "power", coefficient: 1, power: -0.5 }, { kind: "power", coefficient: 1, power: 2 }], candidate: [{ kind: "power", coefficient: 2, power: 0.5 }, { kind: "power", coefficient: 1 / 3, power: 3 }] }
+  },
+  {
+    steps: ["Tách I=3∫dx/x−2∫sinx dx trên miền x>0.", "Dùng ∫dx/x=lnx và ∫sinx dx=−cosx, suy ra I=3lnx+2cosx+C."],
+    verificationSpec: { domain: "x>0", integrand: [{ kind: "reciprocal", coefficient: 3 }, { kind: "sin", coefficient: -2 }], candidate: [{ kind: "lnAbs", coefficient: 3 }, { kind: "cos", coefficient: 2 }] }
+  },
+  {
+    steps: ["Áp dụng tính tuyến tính cho 4cosx và 1/(1+x²).", "Hai nguyên hàm tương ứng là 4sinx và arctanx, nên I=4sinx+arctanx+C."],
+    verificationSpec: { integrand: [{ kind: "cos", coefficient: 4 }, { kind: "reciprocalQuadratic", coefficient: 1 }], candidate: [{ kind: "sin", coefficient: 4 }, { kind: "arctan", coefficient: 1 }] }
+  },
+  {
+    steps: ["Lấy đạo hàm F′(x)=4x³−6x; hằng số 7 có đạo hàm bằng 0.", "Vì F′(x)=f(x), F là một nguyên hàm của f."],
+    verificationSpec: { integrand: [{ kind: "power", coefficient: 4, power: 3 }, { kind: "power", coefficient: -6, power: 1 }], candidate: [{ kind: "power", coefficient: 1, power: 4 }, { kind: "power", coefficient: -3, power: 2 }, { kind: "constant", coefficient: 7 }] }
+  },
+  {
+    steps: ["Trên x>0, tách I=7∫x⁶dx−∫dx/x+4∫dx.", "Tính từng phần được I=x⁷−lnx+4x+C."],
+    verificationSpec: { domain: "x>0", integrand: [{ kind: "power", coefficient: 7, power: 6 }, { kind: "reciprocal", coefficient: -1 }, { kind: "constant", coefficient: 4 }], candidate: [{ kind: "power", coefficient: 1, power: 7 }, { kind: "lnAbs", coefficient: -1 }, { kind: "power", coefficient: 4, power: 1 }] }
+  },
+  {
+    steps: ["Với x≠0, dùng ∫x^(−2)dx=−x^(−1) và ∫cosx dx=sinx.", "Suy ra I=x+3/x+2sinx+C."],
+    verificationSpec: { domain: "x!=0", integrand: [{ kind: "constant", coefficient: 1 }, { kind: "power", coefficient: -3, power: -2 }, { kind: "cos", coefficient: 2 }], candidate: [{ kind: "power", coefficient: 1, power: 1 }, { kind: "power", coefficient: 3, power: -1 }, { kind: "sin", coefficient: 2 }] }
+  },
+  {
+    steps: ["Dùng ∫dx/(1+x²)=arctanx và ∫eˣdx=eˣ.", "Nhân các hệ số tương ứng, ta được I=2arctanx−5eˣ+C."],
+    verificationSpec: { integrand: [{ kind: "reciprocalQuadratic", coefficient: 2 }, { kind: "exp", coefficient: -5 }], candidate: [{ kind: "arctan", coefficient: 2 }, { kind: "exp", coefficient: -5 }] }
+  },
+  {
+    steps: ["Tách I=∫x^(−3)dx+∫sinx dx−∫1dx.", "Các nguyên hàm lần lượt là −1/(2x²), −cosx và −x, nên I=−1/(2x²)−cosx−x+C."],
+    verificationSpec: { domain: "x!=0", integrand: [{ kind: "power", coefficient: 1, power: -3 }, { kind: "sin", coefficient: 1 }, { kind: "constant", coefficient: -1 }], candidate: [{ kind: "power", coefficient: -0.5, power: -2 }, { kind: "cos", coefficient: -1 }, { kind: "power", coefficient: -1, power: 1 }] }
+  },
+  {
+    steps: ["Trên (0,+∞), một nguyên hàm là F(x)=x²−lnx+C.", "Thay F(1)=3: 1−ln1+C=3 nên C=2; do đó F(x)=x²−lnx+2."],
+    verificationSpec: { domain: "x>0", integrand: [{ kind: "power", coefficient: 2, power: 1 }, { kind: "reciprocal", coefficient: -1 }], candidate: [{ kind: "power", coefficient: 1, power: 2 }, { kind: "lnAbs", coefficient: -1 }, { kind: "constant", coefficient: 2 }], condition: { x: 1, value: 3 } }
+  }
+]);
+
 function inferType(prompt) {
   return /^(Chứng minh|Kiểm tra|Có tồn tại)/u.test(prompt) ? "essay" : "short-answer";
 }
 
 function exerciseSet(code, sourcePages, rows) {
-  return Object.freeze(rows.map(([prompt, answerKey, review], index) => Object.freeze({
+  return Object.freeze(rows.map(([prompt, answerKey, review], index) => {
+    const verifiedSolution = code === "12.1" ? verifiedSolutions121[index] : null;
+    return Object.freeze({
     id: `${code}-source-exercise-${String(index + 1).padStart(2, "0")}`,
     sourceBlockId: `${code}-self-practice-${String(index + 1).padStart(2, "0")}`,
     number: index + 1,
@@ -16,12 +61,17 @@ function exerciseSet(code, sourcePages, rows) {
     type: inferType(prompt),
     answerKey,
     answerKeyStatus: review ? "needs-review" : "verified",
-    detailedSolutionStatus: "not-provided",
+    detailedSolutionStatus: verifiedSolution ? "derived-verified" : "not-provided",
+    solutionOrigin: verifiedSolution ? "bienedu-derived" : null,
+    solutionSteps: Object.freeze(verifiedSolution?.steps ?? []),
+    verificationSpec: verifiedSolution?.verificationSpec ?? null,
     automatedGrading: "unsupported",
     verification: review ? "source-conflict" : "verified",
+    readyStatus: !review && verifiedSolution ? "ready-self-check" : "pending-review",
     auditNote: review ?? null,
     sourcePages: Object.freeze(sourcePages)
-  })));
+    });
+  }));
 }
 
 export const calculusSourcePractice = Object.freeze({

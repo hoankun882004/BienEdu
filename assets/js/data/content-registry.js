@@ -3,7 +3,7 @@ import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2"
 import { getDocumentForTopic } from "./document-mappings.js?v=12.1";
 import { getExampleContent } from "./example-content.js?v=8.6";
 import { getKnowledgeContent } from "./knowledge-content.js?v=14.0";
-import { supportedPracticeTopics } from "../domain/exercise-generators.js?v=8.6";
+import { buildActivePracticeSet } from "../domain/practice-bank.js?v=15.0";
 
 export const CONTENT_STATUS = Object.freeze({
   AVAILABLE: "available",
@@ -12,8 +12,8 @@ export const CONTENT_STATUS = Object.freeze({
   NEEDS_REVIEW: "needs-review"
 });
 
-const practiceCodes = new Set(supportedPracticeTopics);
 const calculusTopics = new Set(["CD12", "CD13", "CD14"]);
+const PRACTICE_SEED = "PRACTICE_V15";
 
 function sourceReference(document, pages = []) {
   if (!document) return null;
@@ -78,8 +78,8 @@ function createExampleSection(code, topicId, document) {
 }
 
 function createPracticeSection(code, topicId) {
-  if (!practiceCodes.has(code)) return Object.freeze({ status: CONTENT_STATUS.COMING_SOON, units: Object.freeze([]) });
   const sourceExercises = calculusTopics.has(topicId) ? getCalculusSourcePractice(code) : [];
+  const activeQuestions = buildActivePracticeSet(code, PRACTICE_SEED);
   const sourceUnits = Object.freeze(sourceExercises.map((exercise) => Object.freeze({
     id: exercise.id,
     sourceBlockId: exercise.sourceBlockId,
@@ -87,25 +87,42 @@ function createPracticeSection(code, topicId) {
     type: exercise.type,
     answerKeyStatus: exercise.answerKeyStatus,
     automatedGrading: exercise.automatedGrading,
-    verification: exercise.verification
+    verification: exercise.verification,
+    readyStatus: exercise.readyStatus,
+    detailedSolutionStatus: exercise.detailedSolutionStatus
   })));
-  const needsReviewCount = sourceExercises.filter((exercise) => exercise.verification !== "verified").length;
+  const needsReviewCount = sourceExercises.filter((exercise) => exercise.readyStatus !== "ready-self-check").length;
   const sourceCoverage = calculusTopics.has(topicId) ? "complete" : "not-applicable";
   return Object.freeze({
-    status: CONTENT_STATUS.AVAILABLE,
-    verification: "validated",
-    count: 3,
-    units: Object.freeze([]),
+    status: activeQuestions.length ? CONTENT_STATUS.AVAILABLE : CONTENT_STATUS.COMING_SOON,
+    verification: activeQuestions.length ? "validated" : "needs-review",
+    count: activeQuestions.length,
+    units: Object.freeze(activeQuestions.map((question) => Object.freeze({
+      id: question.id,
+      gradeId: question.gradeId,
+      topicId: question.topicId,
+      subtopicId: question.subtopicId,
+      origin: question.origin,
+      sourceDocumentId: question.sourceDocumentId,
+      sourcePages: question.sourcePages ?? [],
+      patternId: question.patternId,
+      blueprintId: question.blueprintId,
+      automatedGrading: question.automatedGrading,
+      verificationStatus: question.verificationStatus,
+      contentVersion: question.contentVersion
+    }))),
     sourceUnits,
     sourceCount: sourceUnits.length,
     sourceAnswerKeyCount: sourceExercises.filter((exercise) => exercise.answerKey).length,
-    sourceAutoGradableCount: sourceExercises.filter((exercise) => exercise.automatedGrading === "supported").length,
+    sourceAutoGradableCount: activeQuestions.filter((question) => question.origin === "pdf" && question.automatedGrading).length,
+    readySourceCount: activeQuestions.filter((question) => question.origin === "pdf").length,
+    readyGeneratedCount: activeQuestions.filter((question) => question.origin === "generated").length,
     needsReviewCount,
-    origin: sourceUnits.length ? "generated-practice-and-verified-source-bank" : "generated-practice",
+    origin: activeQuestions.some((question) => question.origin === "pdf") ? "source-first-ready-bank" : activeQuestions.length ? "verified-generated-bank" : "review-bank-only",
     sourceCoverage,
-    coverageNote: sourceUnits.length
-      ? "Ten PDF self-practice questions are available for self-check; generated auto-graded practice remains separate."
-      : "Generated practice is intentionally separate from the PDF examples."
+    coverageNote: activeQuestions.length
+      ? `Active set contains ${activeQuestions.length} ready question(s), capped at 10.`
+      : "No question is published until an exact-type blueprint, verified answer and complete solution are available."
   });
 }
 
@@ -124,9 +141,9 @@ function createSubtopicRecord(topic, exercise, document) {
     practice: createPracticeSection(exercise.code, topic.id)
   });
   const status = deriveStatus(sections);
-  const sourceCoverage = status === CONTENT_STATUS.AVAILABLE
-      ? "complete"
-      : "none";
+  const sourceCoverage = sections.knowledge.count > 0 && sections.examples.count > 0
+    ? "complete"
+    : "none";
   const verificationStatus = sections.practice.needsReviewCount > 0 ? "needs-review" : "verified";
 
   return Object.freeze({

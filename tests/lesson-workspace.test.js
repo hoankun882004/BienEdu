@@ -4,8 +4,8 @@ import { curriculumGroups } from "../assets/js/data/curriculum.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { getKnowledgeSection } from "../assets/js/data/knowledge-slides.js";
-import { getCalculusSourcePractice } from "../assets/js/data/calculus-source-practice.js";
 import { generatePracticeSet } from "../assets/js/domain/exercise-generators.js";
+import { buildActivePracticeSet } from "../assets/js/domain/practice-bank.js";
 import { findExerciseType, findTopic } from "../assets/js/domain/curriculum-filter.js";
 import { createLessonSlides, createLessonState, getKnowledgeSlideType, getNextSlide, getPreviousSlide, getSectionPosition, KNOWLEDGE_SLIDE_TYPES } from "../assets/js/domain/lesson-workspace.js";
 
@@ -54,26 +54,24 @@ test("a long text lesson keeps two numbered knowledge pages before its example",
   assert.equal(slides[2].section, "example");
 });
 
-test("source practice is appended without changing the generated practice sequence", () => {
+test("the active practice sequence is source-first and capped at ten", () => {
   const topic = findTopic(curriculumGroups, "CD12");
   const exercise = findExerciseType(curriculumGroups, "CD12", "12.1");
-  const questions = generatePracticeSet("12.1");
-  const sourceExercises = getCalculusSourcePractice("12.1");
+  const questions = buildActivePracticeSet("12.1");
   const slides = createLessonSlides({
     topic,
     exercise,
     knowledgeSection: getKnowledgeSection("12.1"),
     reading: getKnowledgeContent("12.1"),
     examples: getExampleContent("12.1"),
-    questions,
-    sourceExercises
+    questions
   });
   const practiceSlides = slides.filter((slide) => slide.section === "practice");
 
-  assert.equal(practiceSlides.length, 13);
-  assert.deepEqual(practiceSlides.slice(0, 3).map((slide) => slide.kind), ["practice", "practice", "practice"]);
-  assert.ok(practiceSlides.slice(3).every((slide) => slide.kind === "source-practice"));
-  assert.deepEqual(practiceSlides.slice(0, 3).map((slide) => slide.id), questions.map((question) => question.id));
+  assert.equal(practiceSlides.length, 10);
+  assert.ok(practiceSlides.every((slide) => slide.kind === "practice"));
+  assert.ok(questions.every((question) => question.origin === "pdf"));
+  assert.deepEqual(practiceSlides.map((slide) => slide.id), questions.map((question) => question.id));
 });
 
 test("a topic without mapped content gets a truthful unavailable state", () => {

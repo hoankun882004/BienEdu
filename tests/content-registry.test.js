@@ -25,9 +25,10 @@ test("content registry covers every declared topic and subtopic without a second
 
 test("availability is derived from verified content instead of topic number", () => {
   const summary = getAvailabilitySummary();
-  assert.equal(summary.topics.available, 5);
+  assert.equal(summary.topics.available, 2);
+  assert.equal(summary.topics.partial, 3);
   assert.equal(summary.topics["coming-soon"], 34);
-  assert.equal(getTopicAvailability("CD12").status, CONTENT_STATUS.AVAILABLE);
+  assert.equal(getTopicAvailability("CD12").status, CONTENT_STATUS.PARTIAL);
   assert.equal(getTopicAvailability("CD20").status, CONTENT_STATUS.AVAILABLE);
   assert.equal(getTopicAvailability("CD22").status, CONTENT_STATUS.COMING_SOON);
   assert.equal(getTopicAvailability("CD01").status, CONTENT_STATUS.COMING_SOON);
@@ -45,6 +46,10 @@ test("section availability and source coverage remain independent", () => {
   assert.equal(calculus.sections.practice.sourceCount, 10);
   assert.equal(calculus.sections.practice.sourceAnswerKeyCount, 10);
   assert.equal(calculus.sections.practice.sourceAutoGradableCount, 0);
+  assert.equal(calculus.sections.practice.readySourceCount, 10);
+  assert.equal(calculus.sections.practice.readyGeneratedCount, 0);
+  assert.equal(calculus.sections.practice.count, 10);
+  assert.equal(probability.sections.practice.readyGeneratedCount, 3);
   assert.equal(probability.sourceCoverage, "complete");
   assert.equal(unavailable.sections.knowledge.status, CONTENT_STATUS.COMING_SOON);
 });
@@ -57,7 +62,9 @@ test("source completeness and mathematical verification are reported independent
   assert.equal(verified.verificationStatus, "verified");
   assert.equal(review.sourceCoverage, "complete");
   assert.equal(review.verificationStatus, "needs-review");
-  assert.equal(review.sections.practice.needsReviewCount, 1);
+  assert.equal(review.sections.practice.needsReviewCount, 10);
+  assert.equal(review.sections.practice.count, 0);
+  assert.equal(review.sections.practice.status, CONTENT_STATUS.COMING_SOON);
 });
 
 test("imported slides have stable unique IDs and verified source references", () => {

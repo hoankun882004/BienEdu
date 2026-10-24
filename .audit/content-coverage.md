@@ -1,14 +1,14 @@
 # BienEdu content coverage
 
-Generated: 2026-10-24T04:40:58.228Z
+Generated: 2026-10-24T09:30:42.470Z
 
 ## Audit summary
 
 - Curriculum: 39 topics / 347 subtopics.
 - Source PDFs discovered: 2.
-- Topic availability: 5 available, 0 partial, 34 coming soon, 0 needs review.
-- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. Source exercises are self-check only and remain separate from the three generated auto-graded questions per subtopic.
-- Source completeness and mathematical verification are independent: nine answer keys are imported but explicitly marked needs-review because the printed answer conflicts with direct calculation or is ambiguous.
+- Topic availability: 2 available, 3 partial, 34 coming soon, 0 needs review.
+- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
+- Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.
 - CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.
 - V14 source-fidelity: 3/51 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 48 stay needs-review and are not silently promoted by coverage counts.
 
@@ -34,9 +34,9 @@ Generated: 2026-10-24T04:40:58.228Z
 | CD09 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD10 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD11 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD12 | 9 | 9 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | complete | available |
-| CD13 | 8 | 8 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | complete | available |
-| CD14 | 9 | 9 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | complete | available |
+| CD12 | 9 | 1 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | none | partial |
+| CD13 | 8 | 0 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | none | partial |
+| CD14 | 9 | 0 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | none | partial |
 | CD15 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD16 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |

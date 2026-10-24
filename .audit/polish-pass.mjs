@@ -56,7 +56,8 @@ try {
 
   await open(page, "/documents.html?grade=12", 400);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-group] option').textContent"), "Tất cả nhóm kiến thức");
-  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-ready').length"), 5);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-ready').length"), 2);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-partial').length"), 3);
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-source').length"), 0);
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-pending').length"), 34);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-status]').textContent.replace(/\\s+/g, ' ').trim()"), "Đang hiển thị 39 chuyên đề");

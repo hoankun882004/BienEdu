@@ -252,16 +252,6 @@ export function renderMarkdownMath(markdown) {
   return output.join("\n");
 }
 
-function contentLength(reading) {
-  return [
-    reading.lead,
-    ...(reading.formulae ?? []).flatMap((item) => [item.label, item.value, item.detail]),
-    ...(reading.points ?? []).flatMap((item) => [item.label, item.text]),
-    reading.note?.label,
-    reading.note?.text
-  ].filter(Boolean).join(" ").length;
-}
-
 function approvedKnowledgeMarkdown(record) {
   return record.blocks
     .filter((block) => block.section === "knowledge")
@@ -318,13 +308,12 @@ function renderStructuredKnowledge(reading) {
 export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const record = slide.approvedMathContent ?? null;
   const reading = slide.reading ?? null;
-  const readMinutes = Math.max(2, Math.ceil((reading ? contentLength(reading) : approvedKnowledgeMarkdown(record).length) / 550));
   const body = reading
     ? renderStructuredKnowledge(reading)
     : `<div class="math-markdown__body math-markdown__body--source">${renderMarkdownMath(approvedKnowledgeMarkdown(record))}</div>`;
   const layout = reading ? knowledgeLayout(reading) : "article";
   return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="verified" aria-labelledby="lesson-content-title">
-    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p><div><span>${readMinutes} phút đọc</span><span>Đã kiểm chứng</span></div></header>
+    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p></header>
     <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">Kiến thức trọng tâm</h2><p>${escapeHtml(exercise.title)}</p></header>${body}</div>
   </article>`;
 }

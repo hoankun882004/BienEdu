@@ -151,6 +151,23 @@ try {
       assert.ok(bottomClearance >= 12, `20.2 final card clears sticky navigation at ${viewport.width}px`);
       await page.screenshot({ path: `.audit/v13-native-20-2-${viewport.width}x${viewport.height}-bottom.png` });
     }
+    await openLesson(page, origin, "12.1");
+    await page.screenshot({
+      path: `.audit/v13-2-after-12-1-${viewport.width}x${viewport.height}.png`,
+      fullPage: viewport.width <= 768
+    });
+    if (viewport.width <= 430) {
+      await page.evaluate(() => scrollTo({ top: document.documentElement.scrollHeight, behavior: "instant" }));
+      await page.waitForTimeout(80);
+      const bottomClearance = await page.evaluate(() => {
+        const studyGrid = document.querySelector(".math-lesson__study-grid");
+        const navigation = document.querySelector(".lesson-navigation");
+        if (!studyGrid || !navigation) return -1;
+        return navigation.getBoundingClientRect().top - studyGrid.getBoundingClientRect().bottom;
+      });
+      assert.ok(bottomClearance >= 12, `12.1 final Knowledge content clears sticky navigation at ${viewport.width}px`);
+      await page.screenshot({ path: `.audit/v13-2-after-12-1-${viewport.width}x${viewport.height}-bottom.png` });
+    }
     if ([390, 1440].includes(viewport.width)) {
       await openLesson(page, origin, "12.1");
       await page.screenshot({

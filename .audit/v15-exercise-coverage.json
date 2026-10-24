@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-24T09:30:42.469Z",
+  "maximumActiveQuestions": 10,
+  "rows": [
+    {
+      "subtopicId": "12.1",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 10,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 10,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "12.2",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.3",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.4",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.5",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.6",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.7",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.8",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "12.9",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.1",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.2",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.3",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.4",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.5",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.6",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.7",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "13.8",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.1",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.2",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.3",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.4",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.5",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.6",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.7",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.8",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "14.9",
+      "sourceQuestionsFound": 10,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 0,
+      "totalReadyQuestions": 0,
+      "pendingVerification": 10,
+      "exactTypeValidationStatus": "needs-review"
+    },
+    {
+      "subtopicId": "20.1",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.2",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.3",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.4",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.5",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.6",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.7",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.8",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.9",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.10",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.11",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.12",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.13",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.14",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.15",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.16",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "20.17",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.1",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.2",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.3",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.4",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.5",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.6",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.7",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    },
+    {
+      "subtopicId": "21.8",
+      "sourceQuestionsFound": 0,
+      "readySourceQuestions": 0,
+      "readyGeneratedQuestions": 3,
+      "totalReadyQuestions": 3,
+      "pendingVerification": 0,
+      "exactTypeValidationStatus": "verified"
+    }
+  ]
+}

@@ -131,6 +131,20 @@ export function recordPracticeAnswer(progress, code, questionId, selectedIndex, 
   return next;
 }
 
+export function recordPracticeReview(progress, code, questionId) {
+  const next = normalize(progress);
+  const current = lesson(next, code);
+  if (current.practiceAnswers[questionId]) return next;
+  next.lessons[code] = {
+    ...current,
+    practiceAnswers: {
+      ...current.practiceAnswers,
+      [questionId]: { mode: "self-check", reviewed: true, correct: null }
+    }
+  };
+  return next;
+}
+
 export function getLessonProgress(
   progress,
   code,

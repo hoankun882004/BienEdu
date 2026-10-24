@@ -15,10 +15,12 @@ import {
   markKnowledgeViewed,
   preserveVerifiedPdfProgress,
   recordPracticeAnswer,
+  recordPracticeReview,
   LEGACY_LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_VERSION
 } from "../assets/js/domain/learning-progress.js";
+import { buildActivePracticeSet } from "../assets/js/domain/practice-bank.js";
 
 test("invalid or outdated saved data falls back to a clean progress state", () => {
   const invalidJsonStorage = { getItem: () => "not-json" };
@@ -92,6 +94,15 @@ test("progress counts only stable IDs that still exist in the current lesson", (
   assert.equal(lesson.percent, 38);
 });
 
+test("reviewing a verified self-check exercise counts once without inventing a grade", () => {
+  let state = createLearningProgress();
+  state = recordPracticeReview(state, "12.1", "12.1-source-exercise-01");
+  state = recordPracticeReview(state, "12.1", "12.1-source-exercise-01");
+  const answer = state.lessons["12.1"].practiceAnswers["12.1-source-exercise-01"];
+  assert.deepEqual(answer, { mode: "self-check", reviewed: true, correct: null });
+  assert.equal(Object.keys(state.lessons["12.1"].practiceAnswers).length, 1);
+});
+
 test("native Markdown preserves completed legacy PDF progress without requiring the old viewer", () => {
   const state = createLearningProgress();
   const segments = ["20.2-pdf-1", "20.2-pdf-2", "20.2-pdf-3"];
@@ -107,18 +118,30 @@ test("native Markdown preserves completed legacy PDF progress without requiring 
   assert.equal(migrated.lessons["20.2"].knowledgePdfProgress.completed, true);
 });
 
-test("final exams unlock only after every subtopic is complete", () => {
+test("final exams unlock only for topics whose every subtopic has ready content", () => {
   let state = createLearningProgress();
-  const counts = Object.fromEntries(Object.entries(knowledgeSections).map(([code]) => [code, { knowledge: knowledgeContent[code].pages?.length ?? 1, examples: exampleContent[code].length }]));
-  for (const topicId of ["CD12", "CD13", "CD14", "CD20", "CD21"]) {
+  const counts = Object.fromEntries(Object.entries(knowledgeSections).map(([code]) => {
+    const practice = buildActivePracticeSet(code);
+    return [code, {
+      knowledge: knowledgeContent[code].pages?.length ?? 1,
+      examples: exampleContent[code].length,
+      practice: practice.length,
+      available: practice.length > 0,
+      materialStatus: practice.length > 0 ? "available" : "partial"
+    }];
+  }));
+  for (const topicId of ["CD20", "CD21"]) {
     const topic = findTopic(curriculumGroups, topicId);
     assert.equal(getTopicProgress(state, topic, counts).isComplete, false);
     for (const exercise of topic.exerciseTypes) {
       for (let index = 0; index < counts[exercise.code].knowledge; index += 1) state = markKnowledgeViewed(state, exercise.code, `${exercise.code}-knowledge-${index + 1}`);
       for (let index = 0; index < exampleContent[exercise.code].length; index += 1) state = markExampleViewed(state, exercise.code, `${exercise.code}-example-${index + 1}`);
-      for (let index = 1; index <= 3; index += 1) state = recordPracticeAnswer(state, exercise.code, `${exercise.code}-q${index}`, 0, 0);
+      for (const question of buildActivePracticeSet(exercise.code)) state = recordPracticeAnswer(state, exercise.code, question.id, 0, 0);
     }
     assert.equal(getTopicProgress(state, topic, counts).isComplete, true);
+  }
+  for (const topicId of ["CD12", "CD13", "CD14"]) {
+    assert.equal(getTopicProgress(state, findTopic(curriculumGroups, topicId), counts).isComplete, false);
   }
 });
 
