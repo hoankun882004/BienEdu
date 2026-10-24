@@ -57,10 +57,38 @@ test("normalizer flags malformed LaTeX without repairing or inventing it", () =>
   assert.equal(validateRecord(record).valid, false);
 });
 
+test("verified records require complete source-review evidence", () => {
+  const record = normalizeExtraction(fixture());
+  record.verification.status = "verified";
+  const invalid = validateRecord(record);
+  assert.equal(invalid.valid, false);
+  assert.ok(invalid.issues.some((issue) => issue.code === "missing-verification-reviewer"));
+  assert.ok(invalid.issues.some((issue) => issue.code === "formulas-not-source-checked"));
+
+  record.verification = {
+    status: "verified",
+    reviewer: "Source reviewer",
+    reviewedAt: "2026-10-24T00:00:00.000Z",
+    sourceHash: record.source.sha256,
+    formulasChecked: true,
+    boundariesChecked: true,
+    notes: []
+  };
+  assert.equal(validateRecord(record).valid, true);
+});
+
+test("source-scoped notation policy catches unsupported sec and csc substitutions", () => {
+  const record = normalizeExtraction(fixture());
+  record.source.documentId = "cd12-cd14-calculus";
+  record.blocks[1].markdown = String.raw`$\sec^2 x$`;
+  const result = validateRecord(record);
+  assert.equal(result.valid, false);
+  assert.ok(result.issues.some((issue) => issue.code === "source-notation-substitution"));
+});
+
 test("Markdown renderer escapes HTML and renders KaTeX", () => {
   const html = renderMarkdownMath("# Mục\n\n<script>alert(1)</script> và $x^2$.");
   assert.doesNotMatch(html, /<script>/);
   assert.match(html, /&lt;script&gt;/);
   assert.match(html, /class=\"katex\"/);
 });
-

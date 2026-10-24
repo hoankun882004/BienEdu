@@ -1,4 +1,4 @@
-import { calculusKnowledgeContent } from "./calculus-lessons.js?v=8.6";
+import { calculusKnowledgeContent } from "./calculus-lessons.js?v=14.0";
 
 // Structured reading content transcribed from the verified CD20–CD21 source PDF.
 // Keep this module text-only so the lesson remains readable, searchable and accessible.
@@ -163,7 +163,7 @@ const probabilityKnowledgeContent = Object.freeze({
     lead: "Với m ≥ 2, mọi số nguyên thuộc đúng một trong m lớp dư 0, 1, …, m − 1 theo modulo m.",
     formulae: [
       { label: "Đồng dư", value: "a ≡ r (mod m) ⇔ m | (a − r)", detail: "a và r có cùng phần dư khi chia cho m." },
-      { label: "Phép toán", value: "a + b ≡ r + s; ab ≡ rs (mod m)", detail: "Khi a ≡ r và b ≡ s theo modulo m." }
+      { label: "Phép toán", value: "a + b ≡ r + s; ab ≡ rs (mod m)", expressions: ["a + b ≡ r + s", "ab ≡ rs (mod m)"], detail: "Khi a ≡ r và b ≡ s theo modulo m." }
     ],
     points: [
       { label: "Tổng chia hết", text: "Ghép các lớp dư có tổng đồng dư 0." },
@@ -200,7 +200,7 @@ const probabilityKnowledgeContent = Object.freeze({
   "20.17": {
     lead: "Trong hình học tổ hợp, một đối tượng thường được xác định bởi một tập điểm hoặc tập đường. Đếm tất cả rồi loại cấu hình suy biến.",
     formulae: [
-      { label: "n điểm tổng quát", value: "Đường thẳng C(n,2); tam giác C(n,3)", detail: "Giả sử không có ba điểm thẳng hàng." },
+      { label: "n điểm tổng quát", value: "Đường thẳng C(n,2); tam giác C(n,3)", expressions: ["Đường thẳng C(n,2)", "Tam giác C(n,3)"], detail: "Giả sử không có ba điểm thẳng hàng." },
       { label: "Có m điểm thẳng hàng", value: "C(n,3) − C(m,3)", detail: "Loại các bộ ba không tạo thành tam giác." },
       { label: "n đường thẳng tổng quát", value: "C(n,2) giao điểm", detail: "Không đôi nào song song và không ba đường đồng quy." }
     ],

@@ -269,12 +269,46 @@ function approvedKnowledgeMarkdown(record) {
     .join("\n\n");
 }
 
+function formulaExpressionMarkup(value) {
+  return looksLikeStandaloneMath(value)
+    ? `<div class="math-markdown__display math-markdown__display--compact" tabindex="0">${renderFormula(mathTextToLatex(value), true)}</div>`
+    : `<strong>${renderMarkdownInline(value)}</strong>`;
+}
+
+function renderFormulaItem(item) {
+  if (Array.isArray(item.aligned) && item.aligned.length) {
+    const aligned = String.raw`\begin{aligned}${item.aligned.join(String.raw`\\`)}\end{aligned}`;
+    return `<div class="math-lesson__formula-card math-lesson__formula-card--wide" data-expression-count="1" data-multiline="true">
+      <dt>${renderMarkdownInline(item.label)}</dt>
+      <dd><div class="math-lesson__expressions"><div class="math-lesson__equation math-lesson__equation--aligned"><div class="math-markdown__display math-markdown__display--compact" tabindex="0">${renderFormula(aligned, true)}</div></div></div><p>${renderMarkdownInline(item.detail)}</p></dd>
+    </div>`;
+  }
+  const expressions = Array.isArray(item.expressions) && item.expressions.length
+    ? item.expressions
+    : [item.value];
+  const expressionClass = expressions.length > 1 ? " math-lesson__expressions--group" : "";
+  const cardClass = item.cardLayout === "wide" ? " math-lesson__formula-card--wide" : "";
+  return `<div class="math-lesson__formula-card${cardClass}" data-expression-count="${expressions.length}">
+    <dt>${renderMarkdownInline(item.label)}</dt>
+    <dd><div class="math-lesson__expressions${expressionClass}">${expressions.map((value) => `<div class="math-lesson__equation">${formulaExpressionMarkup(value)}</div>`).join("")}</div><p>${renderMarkdownInline(item.detail)}</p></dd>
+  </div>`;
+}
+
+function knowledgeLayout(reading) {
+  const formulae = reading.formulae ?? [];
+  const points = reading.points ?? [];
+  const expressionCount = formulae.reduce((total, item) => total + (item.expressions?.length ?? 1), 0);
+  if (reading.layout === "formula-grid" || formulae.length >= 4 || expressionCount >= 7) return "formula-heavy";
+  if (reading.layout === "principles-split" || (formulae.length <= 2 && points.length <= 2)) return "compact";
+  return "balanced";
+}
+
 function renderStructuredKnowledge(reading) {
   const formulae = reading.formulae ?? [];
   const points = reading.points ?? [];
-  const formulaMarkup = formulae.length ? `<section class="math-lesson__formula-card" aria-labelledby="formula-title">
+  const formulaMarkup = formulae.length ? `<section class="math-lesson__formula-section" aria-labelledby="formula-title">
     <h3 id="formula-title">Công thức &amp; nguyên tắc</h3>
-    <dl>${formulae.map((item) => `<div><dt>${renderMarkdownInline(item.label)}</dt><dd>${looksLikeStandaloneMath(item.value) ? `<div class="math-markdown__display math-markdown__display--compact" tabindex="0">${renderFormula(mathTextToLatex(item.value), true)}</div>` : `<strong>${renderMarkdownInline(item.value)}</strong>`}<p>${renderMarkdownInline(item.detail)}</p></dd></div>`).join("")}</dl>
+    <dl>${formulae.map(renderFormulaItem).join("")}</dl>
   </section>` : "";
   const quickMarkup = points.length ? `<aside class="math-lesson__quick" aria-labelledby="quick-title"><h3 id="quick-title">Cách hiểu nhanh</h3><ol>${points.map((item) => `<li><span>${renderMarkdownInline(item.label)}</span><p>${renderMarkdownInline(item.text)}</p></li>`).join("")}</ol></aside>` : "";
   const noteMarkup = reading.note ? `<aside class="math-lesson__callout math-lesson__callout--${reading.note.tone === "warning" ? "warning" : "tip"}"><span aria-hidden="true">${reading.note.tone === "warning" ? "!" : "✓"}</span><div><h3>${renderMarkdownInline(reading.note.label)}</h3><p>${renderMarkdownInline(reading.note.text)}</p></div></aside>` : "";
@@ -288,8 +322,9 @@ export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const body = reading
     ? renderStructuredKnowledge(reading)
     : `<div class="math-markdown__body math-markdown__body--source">${renderMarkdownMath(approvedKnowledgeMarkdown(record))}</div>`;
-  return `<article class="math-lesson" data-markdown-lesson data-verification="verified" aria-labelledby="lesson-content-title">
+  const layout = reading ? knowledgeLayout(reading) : "article";
+  return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="verified" aria-labelledby="lesson-content-title">
     <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p><div><span>${readMinutes} phút đọc</span><span>Đã kiểm chứng</span></div></header>
-    <div class="math-lesson__content"><header class="math-lesson__heading"><p class="lesson-kicker">Kiến thức trọng tâm</p><h2 id="lesson-content-title">${escapeHtml(exercise.title)}</h2></header>${body}</div>
+    <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">Kiến thức trọng tâm</h2><p>${escapeHtml(exercise.title)}</p></header>${body}</div>
   </article>`;
 }

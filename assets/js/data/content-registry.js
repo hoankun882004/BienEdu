@@ -2,7 +2,7 @@ import { curriculumMeta, curriculumTopics } from "./curriculum.js";
 import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./document-mappings.js?v=12.1";
 import { getExampleContent } from "./example-content.js?v=8.6";
-import { getKnowledgeContent } from "./knowledge-content.js?v=8.9";
+import { getKnowledgeContent } from "./knowledge-content.js?v=14.0";
 import { supportedPracticeTopics } from "../domain/exercise-generators.js?v=8.6";
 
 export const CONTENT_STATUS = Object.freeze({

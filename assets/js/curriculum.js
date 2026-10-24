@@ -2,7 +2,7 @@ import { getCurriculumForGrade } from "./data/curriculum-by-grade.js?v=8.2";
 import { getCalculusSourcePractice } from "./data/calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./data/document-mappings.js?v=12.1";
 import { getKnowledgePdfMapping } from "./data/knowledge-pdf-mappings.js?v=12.1";
-import { getApprovedMathContent } from "./data/approved-math-content.js?v=13.0";
+import { getApprovedMathContent } from "./data/approved-math-content.js?v=14.0";
 import {
   CONTENT_STATUS,
   getAvailabilitySummary,
@@ -11,7 +11,7 @@ import {
   learningContentRegistry
 } from "./data/content-registry.js?v=11.1";
 import { getExampleContent } from "./data/example-content.js?v=8.6";
-import { getKnowledgeContent } from "./data/knowledge-content.js?v=8.9";
+import { getKnowledgeContent } from "./data/knowledge-content.js?v=14.0";
 import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
 import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
 import { renderKnowledgeMarkdown, renderMathText } from "./components/markdown-math-renderer.js?v=13.1";
@@ -47,8 +47,10 @@ const knowledgeCounts = Object.fromEntries(
   Object.values(learningContentRegistry.topics).flatMap((topic) =>
     Object.values(topic.subtopics).map((subtopic) => {
       const approvedMath = getApprovedMathContent(subtopic.code);
+      const structuredReading = getKnowledgeContent(subtopic.code);
+      const structuredKnowledgeCount = structuredReading?.pages?.length ?? (structuredReading ? 1 : 0);
       return [subtopic.code, {
-      knowledge: approvedMath?.verification?.status === "verified" ? 1 : (subtopic.sections.knowledge.count ?? 0),
+      knowledge: structuredKnowledgeCount || (approvedMath?.verification?.status === "verified" ? 1 : (subtopic.sections.knowledge.count ?? 0)),
       examples: subtopic.sections.examples.count ?? 0,
       practice: subtopic.sections.practice.count ?? 0,
       available: subtopic.status !== CONTENT_STATUS.COMING_SOON,
@@ -316,7 +318,8 @@ function createLessonView(topic, exercise, route) {
   const contentRecord = getSubtopicAvailability(exercise.code);
   const reading = getKnowledgeContent(exercise.code);
   const examples = getExampleContent(exercise.code);
-  const knowledgeSlideCount = approvedMathContent?.verification?.status === "verified" ? 1 : (contentRecord?.sections.knowledge.count ?? 0);
+  const knowledgeSlideCount = reading?.pages?.length
+    ?? (reading ? 1 : (approvedMathContent?.verification?.status === "verified" ? 1 : (contentRecord?.sections.knowledge.count ?? 0)));
   const exampleSlideCount = contentRecord?.sections.examples.count ?? 0;
   const questions = contentRecord?.sections.practice.status === CONTENT_STATUS.AVAILABLE
     ? generatePracticeSet(exercise.code, PRACTICE_SEED)

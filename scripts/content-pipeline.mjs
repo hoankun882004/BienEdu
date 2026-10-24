@@ -7,6 +7,7 @@ import { spawnSync } from "node:child_process";
 import { curriculumMeta, curriculumTopics } from "../assets/js/data/curriculum.js";
 import { calculusSourceExamples } from "../assets/js/data/calculus-source-examples.js";
 import { calculusSourcePractice } from "../assets/js/data/calculus-source-practice.js";
+import { approvedMathContent } from "../assets/js/data/approved-math-content.js";
 import { documentSources } from "../assets/js/data/document-mappings.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
@@ -23,6 +24,8 @@ const inventoryPath = join(auditDirectory, "content-inventory.json");
 const proposalsPath = join(auditDirectory, "content-import-proposals.json");
 const coveragePath = join(auditDirectory, "content-coverage.md");
 const sourceManifestPath = join(auditDirectory, "v11-2-source-manifest.json");
+const v14TraceabilityPath = join(auditDirectory, "v14-source-traceability.json");
+const v14AuditPath = join(auditDirectory, "v14-source-fidelity-audit.md");
 const pdfMappingReviewPath = join(auditDirectory, "pdf-mapping-review.md");
 const sourceDirectory = join(projectRoot, "39 chuyên đề");
 const command = process.argv[2] ?? "validate";
@@ -271,6 +274,25 @@ function validateRegistry(inventory) {
   for (const code of Object.keys(knowledgePdfMappings)) {
     if (!requiredPdfCodes.includes(code)) warnings.push(`${code} has a PDF mapping outside the currently audited topic set.`);
   }
+
+  for (const code of requiredPdfCodes.filter((item) => /^(?:12|13|14)\./.test(item))) {
+    const reading = getKnowledgeContent(code);
+    const notation = (reading?.formulae ?? [])
+      .flatMap((formula) => [formula.value, ...(formula.expressions ?? [])])
+      .join(" ");
+    if (/(?:\\(?:sec|csc)\b|\b(?:sec|csc)\s*[²^])/i.test(notation)) {
+      errors.push(`${code} contains sec/csc although the registered CD12–CD14 source uses fractional sin/cos notation.`);
+    }
+  }
+
+  for (const [code, record] of Object.entries(approvedMathContent)) {
+    if (record.verification?.status !== "verified") continue;
+    if (!record.verification.reviewer || !record.verification.reviewedAt) errors.push(`${code} is verified without reviewer evidence.`);
+    if (record.verification.sourceHash !== record.source?.sha256) errors.push(`${code} verified source hash does not match its record.`);
+    if (record.verification.formulasChecked !== true || record.verification.boundariesChecked !== true) {
+      errors.push(`${code} is verified without formula and boundary checks.`);
+    }
+  }
   return { errors, warnings, allSubtopics };
 }
 
@@ -430,6 +452,130 @@ function buildSourceManifest() {
   };
 }
 
+function runtimeFormulaExpressions(reading) {
+  const pages = reading?.pages ?? (reading ? [reading] : []);
+  return pages.flatMap((page) => (page.formulae ?? []).flatMap((formula) => formula.expressions ?? [formula.value]));
+}
+
+function hasImmutableSourceApproval(code) {
+  const record = approvedMathContent[code];
+  return Boolean(
+    record?.verification?.status === "verified"
+    && record.verification.reviewer
+    && record.verification.reviewedAt
+    && record.verification.sourceHash === record.source?.sha256
+    && record.verification.formulasChecked === true
+    && record.verification.boundariesChecked === true
+  );
+}
+
+function buildV14Traceability() {
+  const codes = Object.keys(knowledgePdfMappings);
+  const subtopics = codes.map((code) => {
+    const mapping = knowledgePdfMappings[code];
+    const reading = getKnowledgeContent(code);
+    const pages = reading?.pages ?? (reading ? [reading] : []);
+    const approved = approvedMathContent[code] ?? null;
+    const verified = hasImmutableSourceApproval(code);
+    const blocks = pages.flatMap((page, pageIndex) => {
+      const sourcePages = page.sourcePages?.length ? page.sourcePages : mapping.regions.map((region) => region.page);
+      const common = {
+        documentId: mapping.documentId,
+        sourcePages,
+        topicId: mapping.topicId,
+        subtopicId: code,
+        destinationSection: "knowledge",
+        destinationSlideId: learningContentRegistry.topics[mapping.topicId].subtopics[code].sections.knowledge.units[pageIndex]?.id ?? `${code}-knowledge-${pageIndex + 1}`,
+        status: verified ? "verified" : "needs-review"
+      };
+      return [
+        { ...common, id: `${code}-knowledge-${pageIndex + 1}-lead`, kind: "definition-or-explanation", sourceHeading: "Kiến thức trọng tâm" },
+        ...(page.formulae ?? []).map((formula, index) => ({ ...common, id: `${code}-knowledge-${pageIndex + 1}-formula-${String(index + 1).padStart(2, "0")}`, kind: "formula-or-property", sourceHeading: formula.label })),
+        ...(page.points ?? []).map((point, index) => ({ ...common, id: `${code}-knowledge-${pageIndex + 1}-method-${String(index + 1).padStart(2, "0")}`, kind: "method", sourceHeading: point.label })),
+        ...(page.note ? [{ ...common, id: `${code}-knowledge-${pageIndex + 1}-note`, kind: "note-or-warning", sourceHeading: page.note.label }] : [])
+      ];
+    });
+    return {
+      topicId: mapping.topicId,
+      subtopicId: code,
+      sourceDocumentId: mapping.documentId,
+      sourcePages: [...new Set(mapping.regions.map((region) => region.page))],
+      sourceRegionIds: mapping.regions.map((region) => region.id),
+      destinationKnowledgeSlides: learningContentRegistry.topics[mapping.topicId].subtopics[code].sections.knowledge.units.map((unit) => unit.id),
+      runtimeFormulaExpressions: runtimeFormulaExpressions(reading).length,
+      approvedSourceBlocks: approved?.blocks?.length ?? 0,
+      verification: verified ? "verified" : "needs-review",
+      reviewEvidence: verified ? {
+        reviewer: approved.verification.reviewer,
+        reviewedAt: approved.verification.reviewedAt,
+        sourceHash: approved.verification.sourceHash
+      } : null,
+      blocks
+    };
+  });
+  const verifiedSubtopics = subtopics.filter((item) => item.verification === "verified");
+  const needsReviewSubtopics = subtopics.filter((item) => item.verification === "needs-review");
+  return {
+    schemaVersion: "bienedu.source-fidelity.v14",
+    generatedAt: new Date().toISOString(),
+    allowedStatuses: ["verified", "needs-review", "not-imported", "extraction-error", "excluded-with-reason"],
+    documents: documentSources.map((document) => ({
+      id: document.id,
+      filePath: document.filePath,
+      pageCount: document.pageCount,
+      sha256: document.sourceSha256,
+      topics: Object.keys(document.topics)
+    })),
+    summary: {
+      sourcePagesInspected: documentSources.reduce((total, document) => total + document.pageCount, 0),
+      mappedSubtopics: subtopics.length,
+      verifiedSubtopics: verifiedSubtopics.length,
+      needsReviewSubtopics: needsReviewSubtopics.length,
+      runtimeFormulaExpressions: subtopics.reduce((total, item) => total + item.runtimeFormulaExpressions, 0),
+      verifiedRuntimeFormulaExpressions: verifiedSubtopics.reduce((total, item) => total + item.runtimeFormulaExpressions, 0),
+      traceabilityBlocks: subtopics.reduce((total, item) => total + item.blocks.length, 0)
+    },
+    subtopics,
+    exclusions: [{
+      id: "cd12-cd14-formula-summary-page",
+      documentId: "cd12-cd14-calculus",
+      sourcePages: [49],
+      status: "excluded-with-reason",
+      reason: "Trang 49 là bảng công thức tổng hợp lặp lại các công thức đã được ánh xạ vào các bài CD12–CD14; trang vẫn được kiểm kê và đối chiếu, không tạo lesson ID mới."
+    }],
+    unsupportedFilenameClaims: [
+      { topicId: "CD22", documentId: "cd20-cd21-theory", status: "not-imported", reason: "PDF 18 trang kết thúc ở CD21.8 và không có trang bài học CD22." },
+      { topicId: "CD23", documentId: "cd20-cd21-theory", status: "not-imported", reason: "PDF 18 trang kết thúc ở CD21.8 và không có trang bài học CD23." }
+    ]
+  };
+}
+
+function validateV14Traceability(traceability) {
+  const errors = [];
+  const statuses = new Set(traceability.allowedStatuses);
+  const blockIds = traceability.subtopics.flatMap((subtopic) => subtopic.blocks.map((block) => block.id));
+  const duplicates = [...new Set(blockIds.filter((id, index) => blockIds.indexOf(id) !== index))];
+  if (duplicates.length) errors.push(`Duplicate V14 traceability block IDs: ${duplicates.join(", ")}`);
+  for (const subtopic of traceability.subtopics) {
+    if (!statuses.has(subtopic.verification)) errors.push(`${subtopic.subtopicId} has invalid V14 verification status.`);
+    if (!subtopic.sourcePages.length || !subtopic.sourceRegionIds.length) errors.push(`${subtopic.subtopicId} is missing source traceability.`);
+    if (!subtopic.destinationKnowledgeSlides.length) errors.push(`${subtopic.subtopicId} is missing a runtime Knowledge destination.`);
+    if (subtopic.verification === "verified" && !subtopic.reviewEvidence) errors.push(`${subtopic.subtopicId} is verified without review evidence.`);
+    for (const block of subtopic.blocks) if (!statuses.has(block.status)) errors.push(`${block.id} has invalid status ${block.status}.`);
+  }
+  return errors;
+}
+
+function v14AuditReport(traceability) {
+  const verifiedCodes = traceability.subtopics.filter((item) => item.verification === "verified").map((item) => item.subtopicId);
+  const pendingCodes = traceability.subtopics.filter((item) => item.verification === "needs-review").map((item) => item.subtopicId);
+  const perTopic = ["CD12", "CD13", "CD14", "CD20", "CD21"].map((topicId) => {
+    const rows = traceability.subtopics.filter((item) => item.topicId === topicId);
+    return `| ${topicId} | ${rows.length} | ${rows.filter((item) => item.verification === "verified").length} | ${rows.filter((item) => item.verification === "needs-review").length} | ${rows.reduce((sum, item) => sum + item.runtimeFormulaExpressions, 0)} |`;
+  });
+  return `# BIENEDU V14 — Kiểm toán độ trung thành nguồn\n\nGenerated: ${traceability.generatedAt}\n\n## Kết luận kiểm toán\n\n- Đã mở và kiểm tra đủ 67/67 trang của hai PDF bằng text/geometry extraction và bộ ảnh page review.\n- Đã lập traceability cho ${traceability.summary.mappedSubtopics} bài có nguồn, ${traceability.summary.traceabilityBlocks} block Knowledge và ${traceability.summary.runtimeFormulaExpressions} biểu thức công thức đang render.\n- Chỉ ${traceability.summary.verifiedSubtopics}/${traceability.summary.mappedSubtopics} bài hiện có immutable review record đủ reviewer, source hash, formula check và boundary check: ${verifiedCodes.join(", ") || "không có"}.\n- ${traceability.summary.needsReviewSubtopics} bài còn lại không được V14 tự động nâng thành verified: ${pendingCodes.join(", ")}.\n- Vì còn hàng đợi review, báo cáo này không tuyên bố migration V14 đã hoàn tất toàn bộ.\n\n## 1. PDF đã kiểm tra\n\n| Tài liệu | Trang | SHA-256 | Phạm vi xác nhận |\n| --- | ---: | --- | --- |\n${traceability.documents.map((document) => `| ${document.filePath} | ${document.pageCount} | \`${document.sha256}\` | ${document.topics.join(", ")} |`).join("\n")}\n\n## 2. Trang nguồn đã xem\n\n- C12-CD13-CD14.pdf: trang 1–49; nội dung bài học ở trang 3–48, trang 49 là bảng tổng hợp được ghi nhận bằng trạng thái excluded-with-reason.\n- PDF tổ hợp–xác suất: trang 1–18; bài học thực tế dừng ở CD21.8, không có bài CD22/CD23.\n\n## 3. Chủ đề và bài đã audit\n\n| Chủ đề | Bài có mapping | Verified V14 | Needs review | Biểu thức runtime |\n| --- | ---: | ---: | ---: | ---: |\n${perTopic.join("\n")}\n\n## 4. Công thức đối chiếu\n\n- Inventory runtime: ${traceability.summary.runtimeFormulaExpressions} biểu thức.\n- Có immutable source approval: ${traceability.summary.verifiedRuntimeFormulaExpressions} biểu thức thuộc ${verifiedCodes.join(", ")}.\n- 12.1 đã khôi phục bảng nguyên hàm, hàng $\\int 1\\,dx=x+C$, dạng $1/\\cos^2x$, $1/\\sin^2x$ và các điều kiện $n\\ne-1$, $a>0$, $a\\ne1$.\n- Các biểu thức thuộc bài chưa approved vẫn ở trạng thái needs-review dù KaTeX có thể parse thành công.\n\n## 5. Công thức đã sửa\n\n- 12.1: bỏ hai thay thế ký hiệu sec²/csc²; khôi phục đúng hai dạng phân thức lượng giác nguồn.\n- 12.1: khôi phục hàng nguyên hàm của 1 và toàn bộ bảng bốn cột bị Marker làm mất.\n- 12.1: sửa các phân số, số mũ và delimiter hỏng trong ví dụ, bài tự luyện và đáp số; 23 correction có provenance.\n\n## 6. Công thức bị thiếu đã khôi phục\n\n- $\\int 1\\,dx=x+C$.\n- Toàn bộ hàng của bảng công thức trang 3 trong immutable review record 12.1.\n\n## 7. Thay đổi ký hiệu đã hoàn nguyên\n\n- $\\sec^2x$ → $1/\\cos^2x$.\n- $\\csc^2x$ → $1/\\sin^2x$.\n- Rule kiểm tra chỉ áp dụng cho document CD12–CD14; không cấm sec/csc ở tài liệu tương lai có bằng chứng nguồn.\n\n## 8. Điều kiện đã khôi phục\n\n- $n\\ne-1$.\n- $a>0$, $a\\ne1$ cho $a^x$.\n- $a>0$ cho $\\int dx/(a^2+x^2)$.\n- Điều kiện từng bài tự luyện 12.1 được giữ cùng biểu thức liên quan.\n\n## 9. Định nghĩa và giải thích\n\n- Định nghĩa nguyên hàm và mệnh đề các nguyên hàm chỉ sai khác hằng số ở 12.1 đã trở về câu nguồn.\n- Các bài chưa có immutable review record vẫn phải đối chiếu nguyên văn prose; không được xem nhãn verified cũ là bằng chứng V14.\n\n## 10. Ví dụ có lời giải\n\n- Immutable record 12.1 giữ Ví dụ 1, Ví dụ 2 và phép kiểm tra đạo hàm.\n- Immutable record 20.2 giữ ba ví dụ nguồn và hình sơ đồ trang 6.\n- Các example object còn lại có mapping và source pages nhưng prose dựng lại vẫn nằm trong hàng đợi review V14.\n\n## 11. Hạng mục còn phải review\n\n- ${traceability.summary.needsReviewSubtopics} subtopic chưa có immutable source approval.\n- 9 đáp số tự luyện calculus có xung đột hoặc mơ hồ đã biết; giữ nguyên đáp số nguồn, không auto-grade.\n- Không publish record Marker/PyMuPDF còn formula flag hoặc thiếu reviewer evidence.\n\n## 12. Coverage theo chủ đề\n\nBảng ở mục 3 là trạng thái source-fidelity. Coverage cấu trúc và trạng thái runtime tiếp tục được báo cáo riêng trong \`.audit/content-coverage.md\`.\n\n## 13. Tệp thay đổi chính\n\n- \`assets/js/data/calculus-knowledge-details.js\`\n- \`assets/content/approved/cd12-cd14-calculus/12.1/\`\n- \`assets/js/data/approved-math-content.js\`\n- \`scripts/math-pdf/normalize.mjs\`\n- \`scripts/content-pipeline.mjs\`\n- Các test Knowledge, LaTeX và PDF pipeline liên quan.\n\n## 14. KaTeX\n\nChạy \`npm.cmd run test:latex\`. Mọi raw LaTeX trong immutable approved records phải parse strict; số lượng parse được báo bởi test, không thay cho source review.\n\n## 15. Playwright\n\nChạy \`npm.cmd run test:v13\` sau mỗi đợt publish để kiểm tra 12.1, 12.4, 13.1, 14.1, 20.1, 20.2, 20.17, 21.1 và 21.8 trên mobile/desktop.\n\n## 16. Regression\n\nChạy \`npm.cmd run verify\` và \`git diff --check\`. Progress ID, direct links và navigation phải giữ nguyên.\n\n## 17. Quy trình nhập PDF tương lai\n\n\`\`\`powershell\nnpm.cmd run content:scan\nnpm.cmd run content:math:doctor\nnpm.cmd run content:math:extract -- --subtopic 12.1 --provider marker --disable-ocr\nnpm.cmd run content:math:validate -- --subtopic 12.1\nnpm.cmd run content:math:correct -- --subtopic 12.1 --corrections content/review/<document>/<code>.corrections.json\nnpm.cmd run content:math:approve -- --subtopic 12.1 --reviewer "Tên người review" --source-verified --formulas-verified --boundaries-verified\nnpm.cmd run content:math:publish -- --subtopic 12.1\nnpm.cmd run content:validate\nnpm.cmd run verify\n\`\`\`\n\nKhông dùng \`--replace-review\` với record verified. Nội dung mới chỉ được publish sau khi source hash, ranh giới và toàn bộ công thức đã được đối chiếu.\n`;
+}
+
 function pdfMappingReviewReport() {
   const mappings = Object.values(knowledgePdfMappings);
   const lines = [
@@ -471,6 +617,8 @@ function validateSourceManifest(manifest) {
 
 function coverageReport(inventory, validation) {
   const summary = getAvailabilitySummary();
+  const mappedCodes = Object.keys(knowledgePdfMappings);
+  const v14VerifiedCodes = mappedCodes.filter(hasImmutableSourceApproval);
   const lines = [
     "# BienEdu content coverage",
     "",
@@ -484,6 +632,7 @@ function coverageReport(inventory, validation) {
     "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. Source exercises are self-check only and remain separate from the three generated auto-graded questions per subtopic.",
     "- Source completeness and mathematical verification are independent: nine answer keys are imported but explicitly marked needs-review because the printed answer conflicts with direct calculation or is ambiguous.",
     "- CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.",
+    `- V14 source-fidelity: ${v14VerifiedCodes.length}/${mappedCodes.length} mapped subtopics have immutable block-level source approval (${v14VerifiedCodes.join(", ") || "none"}); the remaining ${mappedCodes.length - v14VerifiedCodes.length} stay needs-review and are not silently promoted by coverage counts.`,
     "",
     "## Source documents",
     "",
@@ -539,12 +688,18 @@ if (command === "scan") {
   writeJson(inventoryPath, inventory);
   const validation = validateRegistry(inventory);
   const sourceManifest = buildSourceManifest();
+  const v14Traceability = buildV14Traceability();
   validation.errors.push(...validateSourceManifest(sourceManifest));
+  validation.errors.push(...validateV14Traceability(v14Traceability));
   writeJson(sourceManifestPath, sourceManifest);
+  writeJson(v14TraceabilityPath, v14Traceability);
+  writeFileSync(v14AuditPath, v14AuditReport(v14Traceability), "utf8");
   writeFileSync(coveragePath, coverageReport(inventory, validation), "utf8");
   writeFileSync(pdfMappingReviewPath, pdfMappingReviewReport(), "utf8");
   console.log(`Coverage report: ${relative(projectRoot, coveragePath)}`);
   console.log(`Source manifest: ${relative(projectRoot, sourceManifestPath)}`);
+  console.log(`V14 traceability: ${relative(projectRoot, v14TraceabilityPath)}`);
+  console.log(`V14 source-fidelity audit: ${relative(projectRoot, v14AuditPath)}`);
   console.log(`PDF mapping review: ${relative(projectRoot, pdfMappingReviewPath)}`);
   for (const warning of validation.warnings) console.warn(`WARNING: ${warning}`);
   if (validation.errors.length) {

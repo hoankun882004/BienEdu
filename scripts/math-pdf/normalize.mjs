@@ -294,6 +294,30 @@ export function validateRecord(record) {
       catch (error) { issues.push({ severity: "error", code: "unsupported-formula", blockId: block.id, formula, message: error.message }); }
     }
   }
+  if (record.source?.documentId === "cd12-cd14-calculus") {
+    const sourceNotation = (record.blocks ?? []).map((block) => block.markdown).join("\n");
+    if (/(?:\\(?:sec|csc)\b|\b(?:sec|csc)\s*\^?\s*2\b)/i.test(sourceNotation)) {
+      issues.push({
+        severity: "error",
+        code: "source-notation-substitution",
+        message: "Nguồn CD12–CD14 dùng dạng phân thức theo sin/cos; sec/csc chỉ được xuất bản khi có bằng chứng nguồn riêng."
+      });
+    }
+  }
+  if (record.verification?.status === "verified") {
+    if (!record.verification.reviewer || !record.verification.reviewedAt) {
+      issues.push({ severity: "error", code: "missing-verification-reviewer" });
+    }
+    if (record.verification.sourceHash !== record.source?.sha256) {
+      issues.push({ severity: "error", code: "verification-source-hash-mismatch" });
+    }
+    if (record.verification.formulasChecked !== true) {
+      issues.push({ severity: "error", code: "formulas-not-source-checked" });
+    }
+    if (record.verification.boundariesChecked !== true) {
+      issues.push({ severity: "error", code: "boundaries-not-source-checked" });
+    }
+  }
   issues.push(...(record.flags ?? []).filter((flag) => flag.severity === "error"));
   return { valid: !issues.length, issues };
 }

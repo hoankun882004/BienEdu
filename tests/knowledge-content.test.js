@@ -4,13 +4,13 @@ import { knowledgeContent, getKnowledgeContent } from "../assets/js/data/knowled
 import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 const calculusFormulaCounts = {
-  "12.1": 9, "12.2": 3, "12.3": 4, "12.4": 6, "12.5": 5, "12.6": 3, "12.7": 3, "12.8": 4, "12.9": 4,
+  "12.1": 12, "12.2": 3, "12.3": 4, "12.4": 6, "12.5": 5, "12.6": 3, "12.7": 3, "12.8": 4, "12.9": 4,
   "13.1": 6, "13.2": 5, "13.3": 3, "13.4": 2, "13.5": 2, "13.6": 3, "13.7": 2, "13.8": 4,
   "14.1": 3, "14.2": 2, "14.3": 3, "14.4": 3, "14.5": 3, "14.6": 3, "14.7": 4, "14.8": 4, "14.9": 4
 };
 
 const criticalSourceCoverage = {
-  "12.1": ["arcsin", "arctan", "tanx", "cotx", "∫f′eᶠ"],
+  "12.1": ["arcsin", "arctan", String.raw`\frac{1}{\cos^2 x}`, String.raw`\frac{1}{\sin^2 x}`, String.raw`\int f'(x)e^{f(x)}`],
   "12.2": ["u′(x)[u(x)]ⁿ"],
   "12.3": ["A₁/(x−a)", "M/(x−α)"],
   "12.4": ["∫cotx", "sin²x", "sin(ax+b)"],
@@ -55,7 +55,7 @@ test("reading content stays text-only and safe to render", () => {
     assert.ok(values.every((value) => typeof value === "string" && !value.includes("<")), `${code} plain text`);
   }
   assert.equal(getKnowledgeContent("20.1").formulae[0].value, "N = n₁ + n₂ + … + nₖ");
-  assert.equal(getKnowledgeContent("12.1").formulae[0].value, "F′=f ⇒ ∫f dx=F+C; ∫0dx=C; ∫kdx=kx+C");
+  assert.equal(getKnowledgeContent("12.1").formulae[0].value, String.raw`F'(x)=f(x),\quad x\in I`);
   assert.equal(getKnowledgeContent("14.9").note.tone, "warning");
   assert.equal(getKnowledgeContent("not-mapped"), null);
 });
@@ -76,4 +76,26 @@ test("12.1 splits its complete formula table into two readable pages", () => {
   assert.equal(reading.pages.length, 2);
   assert.equal(reading.pages.flatMap((page) => page.formulae).length, reading.formulae.length);
   assert.deepEqual(reading.pages.map((page) => page.sourcePages), [[3], [3, 4]]);
+});
+
+test("compound formula groups expose reviewed expression boundaries", () => {
+  const reading = getKnowledgeContent("12.1");
+  assert.deepEqual(reading.formulae[6].expressions, [
+    String.raw`\int\frac{1}{\cos^2 x}\,dx=\tan x+C`,
+    String.raw`\int\frac{1}{\sin^2 x}\,dx=-\cot x+C`,
+    String.raw`\int\tan x\,dx=-\ln|\cos x|+C`,
+    String.raw`\int\cot x\,dx=\ln|\sin x|+C`
+  ]);
+  assert.equal(reading.formulae[7].expressions.length, 3);
+  assert.ok(reading.formulae.every((item) => !item.expressions || item.expressions.every((value) => typeof value === "string" && value.length > 0)));
+});
+
+test("CD12–CD14 runtime content preserves the source trigonometric notation", () => {
+  const sourceText = Object.entries(knowledgeContent)
+    .filter(([code]) => /^(?:12|13|14)\./.test(code))
+    .flatMap(([, reading]) => reading.formulae.flatMap((item) => [item.value, ...(item.expressions ?? [])]))
+    .join(" ");
+  assert.doesNotMatch(sourceText, /\b(?:sec|csc)\b/i);
+  assert.match(sourceText, /\\frac\{1\}\{\\cos\^2 x\}/);
+  assert.match(sourceText, /\\frac\{1\}\{\\sin\^2 x\}/);
 });

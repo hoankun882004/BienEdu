@@ -3,35 +3,38 @@
 export const calculusKnowledgeDetails = Object.freeze({
   "12.1": {
     formulae: [
-      { label: "Định nghĩa & hằng số", value: "F′=f ⇒ ∫f dx=F+C; ∫0dx=C; ∫kdx=kx+C", detail: "Mọi nguyên hàm trên cùng một khoảng chỉ khác nhau một hằng số; k là hằng số thực." },
-      { label: "Lũy thừa & logarit", value: "∫xⁿdx=xⁿ⁺¹/(n+1)+C; ∫dx/x=ln|x|+C", detail: "Công thức lũy thừa cần n≠−1; dạng 1/x dùng trên từng khoảng không chứa 0." },
-      { label: "Hàm mũ", value: String.raw`\int e^x\,dx=e^x+C;\quad \int a^x\,dx=\frac{a^x}{\ln(a)}+C`, detail: "Điều kiện của cơ số: a dương và a≠1." },
-      { label: "Sin – cos", value: "∫sinx dx=−cosx+C; ∫cosx dx=sinx+C", detail: "Chú ý dấu âm trong nguyên hàm của sin." },
-      { label: "Lượng giác mở rộng", value: "∫sec²x dx=tanx+C; ∫csc²x dx=−cotx+C; ∫tanx dx=−ln|cosx|+C; ∫cotx dx=ln|sinx|+C", detail: "Áp dụng trên từng khoảng xác định và giữ giá trị tuyệt đối trong logarit." },
-      { label: "Arctan – arcsin", value: String.raw`\int\frac{dx}{1+x^2}=\arctan x+C;\quad \int\frac{dx}{\sqrt{1-x^2}}=\arcsin x+C;\quad \int\frac{dx}{a^2+x^2}=\frac{1}{a}\arctan\left(\frac{x}{a}\right)+C`, detail: "Công thức cuối cần a>0; công thức arcsin dùng trong miền xác định của căn." },
-      { label: "Hàm hợp lũy thừa – logarit", value: String.raw`\int f'(x)[f(x)]^n\,dx=\frac{[f(x)]^{n+1}}{n+1}+C;\quad \int\frac{f'(x)}{f(x)}\,dx=\ln|f(x)|+C`, detail: "Công thức lũy thừa cần n≠−1; công thức logarit dùng trên từng khoảng f(x) khác 0." },
-      { label: "Hàm hợp mũ – lượng giác", value: "∫f′eᶠdx=eᶠ+C; ∫f′cos(f)dx=sin(f)+C; ∫f′sin(f)dx=−cos(f)+C", detail: "Nhận dạng đủ biểu thức f(x) và thừa số đạo hàm f′(x)." },
-      { label: "Tính tuyến tính", value: "∫[af(x)+bg(x)]dx=a∫f(x)dx+b∫g(x)dx", detail: "a và b là các hằng số." }
+      { label: "Định nghĩa nguyên hàm", value: String.raw`F'(x)=f(x),\quad x\in I`, expressions: [String.raw`F'(x)=f(x),\quad x\in I`, String.raw`\int f(x)\,dx=F(x)+C,\quad C\in\mathbb{R}`], detail: "Một hàm số F là nguyên hàm của f trên khoảng I nếu F′(x) = f(x) với mọi x ∈ I." },
+      { label: "Hàm hằng", value: String.raw`\int 0\,dx=C;\quad \int 1\,dx=x+C;\quad \int k\,dx=kx+C`, expressions: [String.raw`\int 0\,dx=C`, String.raw`\int 1\,dx=x+C`, String.raw`\int k\,dx=kx+C`], detail: "Các hàng đầu tiên trong bảng công thức nguyên hàm cơ bản thường dùng." },
+      { label: "Lũy thừa", value: String.raw`\int x^n\,dx=\frac{x^{n+1}}{n+1}+C`, detail: "n ≠ −1." },
+      { label: "Hàm nghịch đảo", value: String.raw`\int\frac{1}{x}\,dx=\ln|x|+C`, detail: "Công thức được dùng trên từng khoảng xác định." },
+      { label: "Hàm mũ", value: String.raw`\int e^x\,dx=e^x+C;\quad \int a^x\,dx=\frac{a^x}{\ln a}+C`, expressions: [String.raw`\int e^x\,dx=e^x+C`, String.raw`\int a^x\,dx=\frac{a^x}{\ln a}+C`], detail: "a > 0, a ≠ 1." },
+      { label: "Sin – cos", value: String.raw`\int\sin x\,dx=-\cos x+C;\quad \int\cos x\,dx=\sin x+C`, expressions: [String.raw`\int\sin x\,dx=-\cos x+C`, String.raw`\int\cos x\,dx=\sin x+C`], detail: "Giữ nguyên dấu âm trong nguyên hàm của sin x." },
+      { label: "Phân thức lượng giác", value: String.raw`\int\frac{1}{\cos^2 x}\,dx=\tan x+C;\quad \int\frac{1}{\sin^2 x}\,dx=-\cot x+C`, expressions: [String.raw`\int\frac{1}{\cos^2 x}\,dx=\tan x+C`, String.raw`\int\frac{1}{\sin^2 x}\,dx=-\cot x+C`, String.raw`\int\tan x\,dx=-\ln|\cos x|+C`, String.raw`\int\cot x\,dx=\ln|\sin x|+C`], detail: "Các công thức trong bảng nguyên hàm cơ bản thường dùng." },
+      { label: "Arcsin – arctan", value: String.raw`\int\frac{1}{\sqrt{1-x^2}}\,dx=\arcsin x+C`, expressions: [String.raw`\int\frac{1}{\sqrt{1-x^2}}\,dx=\arcsin x+C`, String.raw`\int\frac{1}{1+x^2}\,dx=\arctan x+C`, String.raw`\int\frac{1}{a^2+x^2}\,dx=\frac{1}{a}\arctan\frac{x}{a}+C`], detail: "Công thức cuối có điều kiện a > 0." },
+      { label: "Hàm hợp lũy thừa", value: String.raw`\int f'(x)[f(x)]^n\,dx=\frac{[f(x)]^{n+1}}{n+1}+C`, detail: "n ≠ −1." },
+      { label: "Hàm hợp logarit – mũ", value: String.raw`\int\frac{f'(x)}{f(x)}\,dx=\ln|f(x)|+C;\quad \int f'(x)e^{f(x)}\,dx=e^{f(x)}+C`, expressions: [String.raw`\int\frac{f'(x)}{f(x)}\,dx=\ln|f(x)|+C`, String.raw`\int f'(x)e^{f(x)}\,dx=e^{f(x)}+C`], detail: "Giữ nguyên f(x), f′(x) và dấu giá trị tuyệt đối như nguồn." },
+      { label: "Hàm hợp lượng giác", value: String.raw`\int f'(x)\cos(f(x))\,dx=\sin(f(x))+C`, expressions: [String.raw`\int f'(x)\cos(f(x))\,dx=\sin(f(x))+C`, String.raw`\int f'(x)\sin(f(x))\,dx=-\cos(f(x))+C`], detail: "Hai công thức được trình bày liền nhau trong phần công thức mở rộng." },
+      { label: "Tính tuyến tính", value: String.raw`\int(af(x)+bg(x))\,dx=a\int f(x)\,dx+b\int g(x)\,dx`, detail: "a, b là hằng số." }
     ],
     points: [
-      { label: "Viết về dạng quen thuộc", text: "Rút gọn hàm dưới dấu tích phân thành tổng các biểu thức trong bảng công thức." },
-      { label: "Tính từng hạng tử", text: "Dùng tính tuyến tính và kiểm tra riêng trường hợp số mũ −1 trước khi áp dụng quy tắc lũy thừa." },
-      { label: "Hoàn tất và kiểm tra", text: "Ghi hằng số C rồi lấy đạo hàm kết quả để xác nhận thu lại đúng hàm ban đầu." }
+      { label: "Bước 1", text: "Viết hàm dưới dạng tổng những biểu thức quen thuộc." },
+      { label: "Bước 2", text: "Tính nguyên hàm từng hạng tử; kiểm tra trường hợp đặc biệt x⁻¹." },
+      { label: "Bước 3", text: "Ghi +C và lấy đạo hàm để kiểm tra." }
     ],
     pages: [
       {
-        lead: "Trang 1 hệ thống đầy đủ các nguyên hàm sơ cấp cần dùng trực tiếp. Hãy nhận dạng đúng nhóm hàm và kiểm tra điều kiện xác định trước khi áp dụng.",
-        formulaeRange: [0, 6],
-        pointsRange: [0, 1],
+        lead: "Một hàm số F là nguyên hàm của f trên khoảng I nếu F′(x) = f(x) với mọi x ∈ I. Mọi nguyên hàm của cùng một hàm số trên cùng một khoảng chỉ sai khác nhau một hằng số.",
+        formulaeRange: [0, 8],
+        pointsRange: [0, 0],
         layout: "formula-grid",
-        note: { label: "Bảng công thức cơ bản", text: "Không chỉ có lũy thừa và logarit; cần nhớ cả mũ, lượng giác và hai dạng arctan – arcsin.", tone: "tip" },
+        note: { label: "Điều kiện nguồn", text: "n ≠ −1; a > 0 và a ≠ 1 trong công thức hàm mũ; a > 0 trong công thức arctan có tham số.", tone: "tip" },
         sourcePages: [3]
       },
       {
-        lead: "Trang 2 mở rộng bảng cơ bản sang các hàm hợp và trình bày quy trình giải hoàn chỉnh cho một nguyên hàm bất định.",
-        formulaeRange: [6, 9],
+        lead: "Các công thức mở rộng rất hay dùng và phương pháp giải được giữ theo đúng thứ tự của tài liệu nguồn.",
+        formulaeRange: [8, 12],
         pointsRange: [0, 3],
-        note: { label: "Cần nhớ", text: "Không được bỏ hằng số C; với dạng hàm hợp phải kiểm tra thừa số đạo hàm bên ngoài có khớp hay không.", tone: "warning" },
+        note: { label: "Bước cuối", text: "Ghi +C và lấy đạo hàm để kiểm tra.", tone: "warning" },
         sourcePages: [3, 4]
       }
     ]
@@ -63,11 +66,11 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "12.4": {
     formulae: [
-      { label: "Sin – cos", value: "∫sinx dx=−cosx+C; ∫cosx dx=sinx+C", detail: "Hai công thức lượng giác cơ bản." },
-      { label: "Sec² – csc²", value: String.raw`\int\frac{dx}{\cos^2 x}=\tan x+C;\quad \int\frac{dx}{\sin^2 x}=-\cot x+C`, detail: "Chỉ áp dụng trên khoảng xác định." },
-      { label: "Tan – cot", value: "∫tanx dx=−ln|cosx|+C; ∫cotx dx=ln|sinx|+C", detail: "Kết quả có dạng logarit." },
+      { label: "Sin – cos", value: "∫sinx dx=−cosx+C; ∫cosx dx=sinx+C", expressions: ["∫sinx dx=−cosx+C", "∫cosx dx=sinx+C"], detail: "Hai công thức lượng giác cơ bản." },
+      { label: "Nghịch đảo bình phương sin – cos", value: String.raw`\int\frac{dx}{\cos^2 x}=\tan x+C;\quad \int\frac{dx}{\sin^2 x}=-\cot x+C`, expressions: [String.raw`\int\frac{dx}{\cos^2 x}=\tan x+C`, String.raw`\int\frac{dx}{\sin^2 x}=-\cot x+C`], detail: "Chỉ áp dụng trên khoảng xác định." },
+      { label: "Tan – cot", value: "∫tanx dx=−ln|cosx|+C; ∫cotx dx=ln|sinx|+C", expressions: ["∫tanx dx=−ln|cosx|+C", "∫cotx dx=ln|sinx|+C"], detail: "Kết quả có dạng logarit." },
       { label: "Đối số tuyến tính", value: String.raw`\int\sin(ax+b)\,dx=-\frac{\cos(ax+b)}{a}+C`, detail: "Tương tự ∫cos(ax+b)dx=sin(ax+b)/a+C, với a≠0." },
-      { label: "Hạ bậc", value: "sin²x=(1−cos2x)/2; cos²x=(1+cos2x)/2", detail: "Đưa bình phương lượng giác về tổng các hàm cơ bản." },
+      { label: "Hạ bậc", value: "sin²x=(1−cos2x)/2; cos²x=(1+cos2x)/2", expressions: ["sin²x=(1−cos2x)/2", "cos²x=(1+cos2x)/2"], detail: "Đưa bình phương lượng giác về tổng các hàm cơ bản." },
       { label: "Nhân đôi", value: "2sinx cosx=sin2x", detail: "Dùng khi tích sin và cos có cùng đối số." }
     ],
     points: [
@@ -92,7 +95,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "12.6": {
     formulae: [
-      { label: "Đổi biến tổng quát", value: "u=g(x), du=g′(x)dx ⇒ ∫f(g(x))g′(x)dx=∫f(u)du", detail: "Sau khi tính theo u, thay u=g(x) và thêm C." },
+      { label: "Đổi biến tổng quát", value: "u=g(x), du=g′(x)dx ⇒ ∫f(g(x))g′(x)dx=∫f(u)du", aligned: [String.raw`u&=g(x),\quad du=g'(x)\,dx`, String.raw`\int f(g(x))g'(x)\,dx&=\int f(u)\,du`], detail: "Sau khi tính theo u, thay u=g(x) và thêm C." },
       { label: "Mẫu lũy thừa", value: "∫u′uⁿdx=uⁿ⁺¹/(n+1)+C", detail: "Điều kiện n≠−1." },
       { label: "Mẫu logarit", value: "∫u′/u dx=ln|u|+C", detail: "Áp dụng trên từng khoảng u khác 0." }
     ],
@@ -146,7 +149,7 @@ export const calculusKnowledgeDetails = Object.freeze({
       { label: "Lũy thừa", value: "∫ₐᵇxⁿdx=[xⁿ⁺¹/(n+1)]ₐᵇ", detail: "Điều kiện n≠−1." },
       { label: "Logarit", value: "∫ₐᵇdx/x=[ln|x|]ₐᵇ", detail: "Đoạn tích phân không đi qua 0." },
       { label: "Hàm mũ", value: "∫ₐᵇeˣdx=[eˣ]ₐᵇ", detail: "Thế cận trên rồi trừ cận dưới." },
-      { label: "Lượng giác", value: "∫ₐᵇcosx dx=[sinx]ₐᵇ; ∫ₐᵇsinx dx=[−cosx]ₐᵇ", detail: "Nếu cận là góc, dùng đơn vị radian." },
+      { label: "Lượng giác", value: "∫ₐᵇcosx dx=[sinx]ₐᵇ; ∫ₐᵇsinx dx=[−cosx]ₐᵇ", expressions: ["∫ₐᵇcosx dx=[sinx]ₐᵇ", "∫ₐᵇsinx dx=[−cosx]ₐᵇ"], detail: "Nếu cận là góc, dùng đơn vị radian." },
       { label: "Arctan", value: "∫ₐᵇdx/(1+x²)=[arctanx]ₐᵇ", detail: "Một tích phân cơ bản thường gặp." }
     ],
     points: [
@@ -159,7 +162,7 @@ export const calculusKnowledgeDetails = Object.freeze({
     formulae: [
       { label: "Tuyến tính", value: "∫ₐᵇ(αf+βg)dx=α∫ₐᵇf dx+β∫ₐᵇg dx", detail: "α và β là hằng số." },
       { label: "Cộng đoạn", value: String.raw`\int_a^b f(x)\,dx=\int_a^c f(x)\,dx+\int_c^b f(x)\,dx`, detail: "Điểm c có thể dùng để ghép hoặc tách khoảng." },
-      { label: "Đổi cận", value: "∫ₐᵇf dx=−∫ᵇₐf dx; ∫ₐᵃf dx=0", detail: "Đưa các tích phân về cùng chiều trước khi kết hợp." },
+      { label: "Đổi cận", value: "∫ₐᵇf dx=−∫ᵇₐf dx; ∫ₐᵃf dx=0", expressions: ["∫ₐᵇf dx=−∫ᵇₐf dx", "∫ₐᵃf dx=0"], detail: "Đưa các tích phân về cùng chiều trước khi kết hợp." },
       { label: "Bảo toàn thứ tự", value: "f≤g trên [a,b] ⇒ ∫ₐᵇf≤∫ₐᵇg", detail: "Giả sử a≤b; đặc biệt f≥0 thì tích phân không âm." },
       { label: "Hàm hằng", value: "∫ₐᵇk dx=k(b−a)", detail: "Dùng khi biểu thức có thêm một hằng số." }
     ],
@@ -194,7 +197,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "13.5": {
     formulae: [
-      { label: "Khử trị tuyệt đối", value: "|h(x)|=h(x) nếu h(x)≥0; |h(x)|=−h(x) nếu h(x)≤0", detail: "Xét dấu riêng trên từng khoảng." },
+      { label: "Khử trị tuyệt đối", value: "|h(x)|=h(x) nếu h(x)≥0; |h(x)|=−h(x) nếu h(x)≤0", expressions: ["|h(x)|=h(x) nếu h(x)≥0", "|h(x)|=−h(x) nếu h(x)≤0"], detail: "Xét dấu riêng trên từng khoảng." },
       { label: "Chia đoạn", value: String.raw`\int_a^b |h(x)|\,dx=\sum_k\int_{x_k}^{x_{k+1}}\!\pm h(x)\,dx`, detail: "Chọn dấu để hàm dưới tích phân không âm trên mỗi khoảng." }
     ],
     points: [
@@ -217,7 +220,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "13.7": {
     formulae: [
-      { label: "Tham số như hằng số", value: "∫ₐᵇ[mg(x)+h(x)]dx=m∫ₐᵇg(x)dx+∫ₐᵇh(x)dx", detail: "m không phải biến tích phân." },
+      { label: "Tham số như hằng số", value: "∫ₐᵇ[mg(x)+h(x)]dx=m∫ₐᵇg(x)dx+∫ₐᵇh(x)dx", aligned: [String.raw`\int_a^b[mg(x)+h(x)]\,dx`, String.raw`{}&=m\int_a^b g(x)\,dx`, String.raw`{}&\quad+\int_a^b h(x)\,dx`], detail: "m không phải biến tích phân." },
       { label: "Cận phụ thuộc tham số", value: "Tìm F rồi tính F[b(m)]−F[a(m)]", detail: "Sau khi giải phải kiểm tra điều kiện của tham số và miền xác định." }
     ],
     points: [
@@ -231,7 +234,7 @@ export const calculusKnowledgeDetails = Object.freeze({
       { label: "Hàm chẵn", value: "f(−x)=f(x) ⇒ ∫₋ₐᵃf(x)dx=2∫₀ᵃf(x)dx", detail: "Hai nửa đối xứng đóng góp bằng nhau." },
       { label: "Hàm lẻ", value: "f(−x)=−f(x) ⇒ ∫₋ₐᵃf(x)dx=0", detail: "Hai nửa đối xứng triệt tiêu nhau." },
       { label: "Đối xứng qua trung điểm", value: "∫ₐᵇf(x)dx=∫ₐᵇf(a+b−x)dx", detail: "Phép đổi biến u=a+b−x phản chiếu đoạn qua trung điểm." },
-      { label: "Tổng đối xứng không đổi", value: "f(x)+f(a+b−x)=k ⇒ ∫ₐᵇf(x)dx=k(b−a)/2", detail: "Cộng hai biểu thức tích phân rồi chia đôi." }
+      { label: "Tổng đối xứng không đổi", value: "f(x)+f(a+b−x)=k ⇒ ∫ₐᵇf(x)dx=k(b−a)/2", expressions: ["f(x)+f(a+b−x)=k", "∫ₐᵇf(x)dx=k(b−a)/2"], detail: "Cộng hai biểu thức tích phân rồi chia đôi." }
     ],
     points: [
       { label: "Nhận diện tâm đối xứng", text: "Kiểm tra đoạn đối xứng qua 0 hoặc qua trung điểm (a+b)/2." },

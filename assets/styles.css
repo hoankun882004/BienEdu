@@ -931,14 +931,14 @@ ul, ol { margin: 0; padding: 0; }
   width: min(100%, 100rem);
   height: calc(100dvh - 4.6875rem);
   min-height: 36rem;
-  grid-template-rows: auto minmax(0, 1fr) 4.25rem;
+  grid-template-rows: auto minmax(0, 1fr) 3.75rem;
   margin-inline: auto;
   overflow: hidden;
   background: white;
 }
 .workspace-top {
   display: grid;
-  min-height: 5.25rem;
+  min-height: 4.5rem;
   grid-template-columns: minmax(0, 1fr) minmax(15rem, 20rem);
   align-items: center;
   gap: 2rem;
@@ -988,7 +988,7 @@ ul, ol { margin: 0; padding: 0; }
 
 
 .lesson-navigation { display: grid; grid-template-columns: minmax(0, 13.5rem) minmax(4.5rem, auto) minmax(0, 13.5rem); align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid #d8e1ec; padding: 0.55rem 1rem; background: #f8fafc; }
-.lesson-navigation button { display: inline-flex; width: 100%; min-width: 0; min-height: 3rem; align-items: center; justify-content: center; border: 1px solid #c4d1df; border-radius: var(--radius); padding: 0.55rem 0.9rem; background: white; color: var(--ink); font-size: 0.82rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 180ms ease, transform 160ms ease; }
+.lesson-navigation button { display: inline-flex; width: 100%; min-width: 0; min-height: 2.65rem; align-items: center; justify-content: center; border: 1px solid #c4d1df; border-radius: var(--radius); padding: 0.45rem 0.9rem; background: white; color: var(--ink); font-size: 0.82rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 180ms ease, transform 160ms ease; }
 .lesson-navigation > :first-child { justify-self: start; }
 .lesson-navigation > :last-child { justify-self: end; }
 .lesson-navigation button:last-child { justify-self: end; border-color: var(--accent); background: var(--accent); color: white; }
@@ -2016,42 +2016,49 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .lesson-navigation__position .lesson-page-picker { display: none; }
 }
 
-/* V13 native Markdown + LaTeX learning reader */
-.math-lesson { display: grid; height: 100%; min-height: 0; grid-template-rows: auto minmax(0, 1fr); overflow: auto; background: #f3f6fa; color: var(--ink); }
-.math-lesson__bar { position: sticky; z-index: 2; top: 0; display: flex; min-height: 3rem; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #d9e2ec; padding: .55rem clamp(1.25rem, 3vw, 2.5rem); background: rgba(255, 255, 255, .94); backdrop-filter: blur(.65rem); }
+/* V13.4 native Markdown + LaTeX knowledge reader */
+.math-lesson { display: grid; width: 100%; min-width: 0; height: 100%; min-height: 0; grid-template-rows: auto minmax(0, 1fr); overflow: auto; background: #f3f6fa; color: var(--ink); }
+.math-lesson__bar { position: sticky; z-index: 2; top: 0; display: flex; width: 100%; min-width: 0; min-height: 2.75rem; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #d9e2ec; padding: .45rem clamp(1rem, 2.4vw, 2rem); background: rgba(255, 255, 255, .94); backdrop-filter: blur(.65rem); }
 .math-lesson__bar > p { display: flex; min-width: 0; align-items: center; gap: .6rem; color: var(--accent-strong); font-size: .72rem; font-weight: 700; letter-spacing: .045em; }
 .math-lesson__bar > p > span:first-child { display: grid; width: 1.65rem; height: 1.65rem; flex: 0 0 auto; place-items: center; background: #e4edff; font-variant-numeric: tabular-nums; }
 .math-lesson__bar > div { display: flex; flex: 0 0 auto; gap: 1.1rem; color: #617086; font-size: .7rem; }
 .math-lesson__bar > div span + span { position: relative; }
 .math-lesson__bar > div span + span::before { position: absolute; left: -.65rem; color: #a9b7c7; content: "·"; }
-.math-lesson__content { width: min(100%, 75rem); margin: 0 auto; padding: clamp(1.1rem, 2.4vw, 2rem) clamp(1.25rem, 3vw, 2.75rem) 2.25rem; }
-.math-lesson__heading { max-width: 70ch; }
-.math-lesson__heading h2 { margin-top: .28rem; color: #0b1f3a; font-size: clamp(1.75rem, 3vw, 2.55rem); letter-spacing: -.038em; line-height: 1.12; text-wrap: balance; }
-.math-lesson__intro { max-width: 72ch; margin-top: .65rem; color: #405169; font-size: clamp(.98rem, 1.2vw, 1.08rem); line-height: 1.72; text-wrap: pretty; }
+.math-lesson__content { width: min(100%, 84rem); min-width: 0; margin: 0 auto; padding: clamp(.85rem, 1.8vw, 1.35rem) clamp(1rem, 2.4vw, 2rem) 1.5rem; }
+.math-lesson__heading { display: flex; max-width: 76ch; align-items: baseline; gap: .55rem; }
+.math-lesson__heading h2 { color: #164a9f; font-size: .76rem; font-weight: 750; letter-spacing: .075em; line-height: 1.3; text-transform: uppercase; white-space: nowrap; }
+.math-lesson__heading p { overflow: hidden; color: #68788d; font-size: .76rem; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.math-lesson__heading p::before { margin-right: .55rem; color: #a5b2c2; content: "·"; }
+.math-lesson__intro { max-width: 82ch; margin-top: .4rem; color: #344860; font-size: clamp(.98rem, 1.1vw, 1.05rem); line-height: 1.58; text-wrap: pretty; }
 .math-lesson__intro p { margin: 0; }
-.math-lesson__study-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(18rem, .88fr); align-items: start; gap: clamp(.85rem, 2vw, 1.5rem); margin-top: 1.15rem; }
-.math-lesson__primary { display: grid; min-width: 0; align-content: start; gap: .85rem; }
-.math-lesson__formula-card { min-width: 0; border-top: 3px solid var(--accent); padding: clamp(1rem, 1.8vw, 1.3rem); background: white; box-shadow: 0 .8rem 2rem rgba(24, 52, 82, .075); }
-.math-lesson__formula-card > h3,
-.math-lesson__quick > h3 { color: #21364f; font-size: 1rem; line-height: 1.3; }
-.math-lesson__formula-card dl { display: grid; gap: .75rem; margin-top: .8rem; }
-.math-lesson__formula-card dl > div { display: grid; grid-template-columns: minmax(5.5rem, .45fr) minmax(0, 1.55fr); align-items: start; gap: .8rem; border-top: 1px solid #e4eaf1; padding-top: .75rem; }
-.math-lesson__formula-card dl > div:first-child { border-top: 0; padding-top: 0; }
-.math-lesson__formula-card dt { color: #52637a; font-size: .8rem; font-weight: 650; line-height: 1.45; }
+.math-lesson__study-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(17rem, .65fr); align-items: start; gap: clamp(.75rem, 1.5vw, 1.15rem); margin-top: .8rem; }
+.math-lesson__primary { display: grid; min-width: 0; align-content: start; gap: .65rem; }
+.math-lesson__formula-section { min-width: 0; container: formula-cards / inline-size; }
+.math-lesson__formula-section > h3,
+.math-lesson__quick > h3 { color: #21364f; font-size: .94rem; line-height: 1.3; }
+.math-lesson__formula-section > h3 { display: flex; align-items: center; gap: .55rem; color: #173b68; }
+.math-lesson__formula-section > h3::after { height: 1px; flex: 1; background: #cfdaea; content: ""; }
+.math-lesson__formula-section dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: clamp(.75rem, 1.2vw, 1rem); margin-top: .6rem; }
+.math-lesson__formula-card { display: grid; min-width: 0; gap: .45rem; border: 1px solid #d6e0ec; border-radius: .7rem; padding: clamp(.75rem, 1.15vw, .95rem); background: #fff; box-shadow: 0 .25rem .8rem rgba(24, 52, 82, .045); }
+.math-lesson__formula-card--wide { grid-column: 1 / -1; }
+.math-lesson__formula-card dt { border-left: 2px solid #76a5e9; padding-left: .5rem; color: #183a63; font-size: .84rem; font-weight: 700; line-height: 1.35; text-wrap: balance; }
 .math-lesson__formula-card dd { min-width: 0; margin: 0; }
 .math-lesson__formula-card dd > strong { color: #0b2e63; font-size: 1rem; line-height: 1.45; }
-.math-lesson__formula-card dd > p { margin-top: .28rem; color: #627188; font-size: .78rem; line-height: 1.55; text-wrap: pretty; }
-.math-lesson__quick { border-top: 3px solid #b78c2e; padding: clamp(1rem, 1.8vw, 1.3rem); background: #fff7d7; }
+.math-lesson__formula-card dd > p { margin-top: .5rem; border-top: 1px solid #e8edf4; padding-top: .45rem; color: #5c6d83; font-size: .84rem; line-height: 1.48; text-wrap: pretty; }
+.math-lesson__expressions { display: grid; min-width: 0; gap: .35rem; }
+.math-lesson__expressions--group { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.math-lesson__equation { min-width: 0; }
+.math-lesson__quick { align-self: start; border-top: 2px solid #b78c2e; padding: clamp(.8rem, 1.35vw, 1rem); background: #fff7d7; }
 .math-lesson__quick > h3 { color: #684a09; }
-.math-lesson__quick ol { display: grid; gap: .85rem; margin-top: .85rem; list-style: none; counter-reset: quick-point; }
-.math-lesson__quick li { position: relative; min-width: 0; padding-left: 2.15rem; counter-increment: quick-point; }
-.math-lesson__quick li::before { position: absolute; top: .02rem; left: 0; display: grid; width: 1.45rem; height: 1.45rem; place-items: center; background: #f2dfa3; color: #684a09; content: counter(quick-point, decimal-leading-zero); font-size: .6rem; font-weight: 750; font-variant-numeric: tabular-nums; }
-.math-lesson__quick li > span { color: #1d334f; font-size: .82rem; font-weight: 700; }
-.math-lesson__quick li > p { margin-top: .18rem; color: #5a6170; font-size: .8rem; line-height: 1.58; text-wrap: pretty; }
-.math-lesson__callout { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr); align-items: start; gap: .75rem; border-left: 3px solid; padding: .78rem .95rem; }
+.math-lesson__quick ol { display: grid; gap: .65rem; margin-top: .6rem; list-style: none; counter-reset: quick-point; }
+.math-lesson__quick li { position: relative; min-width: 0; padding-left: 1.9rem; counter-increment: quick-point; }
+.math-lesson__quick li::before { position: absolute; top: .02rem; left: 0; display: grid; width: 1.3rem; height: 1.3rem; place-items: center; background: #f2dfa3; color: #684a09; content: counter(quick-point, decimal-leading-zero); font-size: .58rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.math-lesson__quick li > span { color: #1d334f; font-size: .86rem; font-weight: 700; }
+.math-lesson__quick li > p { margin-top: .12rem; color: #565f6d; font-size: .84rem; line-height: 1.5; text-wrap: pretty; }
+.math-lesson__callout { display: grid; grid-template-columns: 1.7rem minmax(0, 1fr); align-items: start; gap: .65rem; border-left: 3px solid; padding: .65rem .8rem; }
 .math-lesson__callout > span { display: grid; width: 1.65rem; height: 1.65rem; place-items: center; font-size: .75rem; font-weight: 800; }
-.math-lesson__callout h3 { color: #23364e; font-size: .82rem; }
-.math-lesson__callout p { margin-top: .16rem; color: #53647a; font-size: .78rem; line-height: 1.55; }
+.math-lesson__callout h3 { color: #23364e; font-size: .84rem; }
+.math-lesson__callout p { margin-top: .12rem; color: #53647a; font-size: .82rem; line-height: 1.48; }
 .math-lesson__callout--warning { border-color: #bd665c; background: #fff2ef; }
 .math-lesson__callout--warning > span { background: #f3d6d1; color: #8e392f; }
 .math-lesson__callout--tip { border-color: #398b68; background: #edf8f2; }
@@ -2069,9 +2076,18 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
 .math-markdown__note { margin: 0 0 1.2rem; border-left: 3px solid var(--accent); padding: .8rem 1rem; background: #eef4ff; }
 .math-markdown__note p { margin: 0; }
 .math-markdown__display { display: flex; width: 100%; max-width: 100%; justify-content: center; margin: 1rem 0; padding: .85rem; overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; border: 1px solid #dfe6ef; background: #fbfcfe; color: #0b2e63; text-align: center; scrollbar-width: thin; }
-.math-markdown__display--compact { justify-content: flex-start; margin: 0; padding: .55rem .65rem; border: 0; background: #f7f9fc; text-align: left; }
+.math-markdown__display--compact { justify-content: flex-start; margin: 0; padding: .48rem .58rem; border: 0; background: #f6f8fb; text-align: left; }
 .math-markdown__display > .katex-display { width: max-content; flex: 0 0 auto; }
 .math-markdown__display--compact .katex { font-size: clamp(.9rem, 1.25vw, 1rem); }
+.math-lesson--formula-heavy .math-lesson__study-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "formula formula" "quick note"; }
+.math-lesson--formula-heavy .math-lesson__primary { display: contents; }
+.math-lesson--formula-heavy .math-lesson__formula-section { grid-area: formula; }
+.math-lesson--formula-heavy .math-lesson__quick { grid-area: quick; }
+.math-lesson--formula-heavy .math-lesson__callout { grid-area: note; align-self: start; }
+.math-lesson--compact .math-lesson__study-grid { grid-template-columns: minmax(0, 1.1fr) minmax(17rem, .9fr); }
+@container formula-cards (max-width: 48rem) {
+  .math-lesson__formula-section dl { grid-template-columns: minmax(0, 1fr); }
+}
 .math-markdown__display:focus-visible,
 .math-markdown__table-wrap:focus-visible { outline: 3px solid #7ea7ef; outline-offset: 2px; }
 .math-expression { display: inline-flex; max-width: 100%; vertical-align: middle; }
@@ -2094,6 +2110,8 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .math-lesson { height: auto; min-height: 32rem; overflow: visible; }
   .math-lesson__bar { top: var(--header-height, 0); }
   .math-lesson__study-grid { grid-template-columns: 1fr; }
+  .math-lesson--compact .math-lesson__study-grid { grid-template-columns: 1fr; }
+  .math-lesson--formula-heavy .math-lesson__study-grid { grid-template-columns: 1fr; grid-template-areas: "formula" "quick" "note"; }
   .math-lesson__content { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
 }
 
@@ -2102,12 +2120,13 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .math-lesson__bar > p > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .math-lesson__bar > div { display: grid; justify-items: end; gap: .1rem; text-align: right; }
   .math-lesson__bar > div span + span::before { content: none; }
-  .math-lesson__content { padding: 1.15rem var(--margin) calc(1.75rem + env(safe-area-inset-bottom)); }
-  .math-lesson__heading h2 { font-size: clamp(1.65rem, 7.5vw, 2rem); }
-  .math-lesson__intro { font-size: 1rem; line-height: 1.67; }
-  .math-lesson__formula-card,
-  .math-lesson__quick { padding: 1rem; }
-  .math-lesson__formula-card dl > div { grid-template-columns: 1fr; gap: .25rem; }
+  .math-lesson__content { padding: .9rem var(--margin) calc(5.75rem + env(safe-area-inset-bottom)); }
+  .math-lesson__heading { align-items: center; }
+  .math-lesson__heading h2 { font-size: .72rem; }
+  .math-lesson__heading p { font-size: .72rem; }
+  .math-lesson__intro { font-size: 1rem; line-height: 1.58; }
+  .math-lesson__quick { padding: .85rem; }
+  .math-lesson__formula-card { gap: .4rem; padding: .78rem; }
   .math-lesson__formula-card dt,
   .math-lesson__formula-card dd > p,
   .math-lesson__quick li > span,
@@ -2118,4 +2137,5 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .math-markdown__display { margin-inline: calc(-1 * var(--margin)); width: calc(100% + 2 * var(--margin)); max-width: none; border-inline: 0; }
   .math-markdown__display--compact { width: 100%; max-width: 100%; margin: 0; border-inline: 0; }
   .math-markdown__display--compact .katex { font-size: .94rem; }
+  .math-lesson__expressions--group { grid-template-columns: 1fr; }
 }

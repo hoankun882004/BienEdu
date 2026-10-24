@@ -75,3 +75,32 @@ test("approved 20.2 Knowledge excludes source examples and PDF controls", () => 
   assert.match(html, /Giai đoạn thứ nhất/);
   assert.doesNotMatch(html, /Quy trình nhắn tin|Xem PDF|Trang gốc|data-pdf/);
 });
+
+test("structured Knowledge uses content-aware layout and separate equation nodes", () => {
+  const reading = getKnowledgeContent("12.1").pages[0];
+  const html = renderKnowledgeMarkdown({
+    slide: { reading },
+    position: { current: 1, total: 2 },
+    exercise: { code: "12.1", title: "Nguyên hàm cơ bản" }
+  });
+
+  assert.match(html, /data-knowledge-layout="formula-heavy"/);
+  assert.equal((html.match(/class="math-lesson__formula-card(?:\s|"?)/g) ?? []).length, 8);
+  assert.equal((html.match(/class="math-lesson__formula-section"/g) ?? []).length, 1);
+  assert.equal((html.match(/class="math-lesson__equation"/g) ?? []).length, 18);
+  assert.match(html, /data-expression-count="4"/);
+  assert.doesNotMatch(html, /class="math-lesson__equation"[^>]*>[^<]*;[^<]*</);
+});
+
+test("reviewed long derivations render as KaTeX aligned blocks", () => {
+  const html = renderKnowledgeMarkdown({
+    slide: { reading: getKnowledgeContent("12.6") },
+    position: { current: 1, total: 1 },
+    exercise: { code: "12.6", title: "Phương pháp đổi biến số" }
+  });
+
+  assert.match(html, /data-multiline="true"/);
+  assert.match(html, /math-lesson__formula-card--wide/);
+  assert.match(html, /class="katex-display"/);
+  assert.doesNotMatch(html, /math-render-error|katex-error/);
+});

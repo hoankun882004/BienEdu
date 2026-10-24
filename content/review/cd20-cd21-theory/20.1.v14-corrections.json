@@ -1,0 +1,28 @@
+{
+  "subtopic": "20.1",
+  "sourceSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+  "reviewer": "Codex V14 visual source review",
+  "corrections": [
+    {
+      "blockId": "20.1-b-f447718dc69b",
+      "sourcePage": 4,
+      "from": "Một công việc có thể chia làm k trường hợp : - Trường hợp thứ nhất có n1 cách giải quyết, - Trường hợp thứ hai có n2 cách giải quyết,",
+      "to": "Một công việc có thể chia làm $k$ trường hợp:\n\n- Trường hợp thứ nhất có $n_1$ cách giải quyết,\n- Trường hợp thứ hai có $n_2$ cách giải quyết,",
+      "reason": "Khôi phục danh sách và chỉ số dưới n₁, n₂ theo khung công thức trang PDF 4."
+    },
+    {
+      "blockId": "20.1-b-9878eec6dba6",
+      "sourcePage": 4,
+      "from": "... - Trường hợp thứ k có nk cách giải quyết, Khi đó có n1+n2+...+nk cách giải quyết công việc trên",
+      "to": "- Trường hợp thứ $k$ có $n_k$ cách giải quyết.\n\nKhi đó có $n_1+n_2+\\cdots+n_k$ cách giải quyết công việc trên.",
+      "reason": "Khôi phục chỉ số dưới và dấu ba chấm toán học theo khung công thức trang PDF 4."
+    },
+    {
+      "blockId": "20.1-b-b352d834e256",
+      "sourcePage": 4,
+      "from": "- Mở rộng: nếu có r phương án đôi một rời nhau với n1, n2, ..., nr cách thì tổng là n1 + n2 + ... + nr.",
+      "to": "- Mở rộng: nếu có $r$ phương án đôi một rời nhau với $n_1,n_2,\\ldots,n_r$ cách thì tổng là $n_1+n_2+\\cdots+n_r$.",
+      "reason": "Mã hóa LaTeX tương đương trực quan cho các chỉ số và tổng mở rộng trong nguồn."
+    }
+  ]
+}

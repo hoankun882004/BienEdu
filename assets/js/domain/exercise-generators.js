@@ -1,5 +1,5 @@
 import { getKnowledgeSection } from "../data/knowledge-slides.js?v=8.6";
-import { calculusPracticeBank } from "../data/calculus-lessons.js?v=8.6";
+import { calculusPracticeBank } from "../data/calculus-lessons.js?v=14.0";
 
 function factorial(value) {
   let result = 1;

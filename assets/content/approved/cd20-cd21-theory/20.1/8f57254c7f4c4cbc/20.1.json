@@ -1,0 +1,650 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "20.1",
+    "id": "CD20-01",
+    "title": "Quy tắc cộng",
+    "topicId": "CD20",
+    "topicTitle": "Quy tắc đếm – tổ hợp nâng cao"
+  },
+  "source": {
+    "documentId": "cd20-cd21-theory",
+    "fileName": "Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+    "relativeDirectory": "39 chuyên đề",
+    "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+    "pageCount": 18,
+    "pages": [
+      4,
+      5
+    ],
+    "regions": [
+      {
+        "id": "20.1-pdf-1",
+        "x": 0.055,
+        "y": 0.2162,
+        "width": 0.89,
+        "height": 0.7488,
+        "page": 4,
+        "isBoundaryPage": true
+      },
+      {
+        "id": "20.1-pdf-2",
+        "x": 0.055,
+        "y": 0.055,
+        "width": 0.89,
+        "height": 0.384,
+        "page": 5,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "marker",
+    "startedAt": "2026-10-24T04:28:17.095Z",
+    "finishedAt": "2026-10-24T04:31:13.920Z",
+    "providerJobId": null,
+    "command": "marker_single.exe \"D:\\\\BienEdu\\\\39 chuyên đề\\\\Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf\" \"--output_dir\" \"D:\\\\BienEdu\\\\.content-work\\\\runs\\\\2026-10-24T04-28-17-085Z-marker-20-1\" \"--output_format\" \"json\" \"--page_range\" \"3-4\" \"--disable_multiprocessing\" \"--disable_ocr\""
+  },
+  "blocks": [
+    {
+      "id": "20.1-b-a73eabe3b876",
+      "providerBlockId": "/page/3/SectionHeader/4",
+      "page": 4,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.0849609375,
+        "y": 0.228515625,
+        "width": 0.2946980879610817,
+        "height": 0.025390625
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "### 20.1 Quy tắc cộng",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-949a1b4abc55",
+      "providerBlockId": "/page/3/Text/5",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.08349609375,
+        "y": 0.2666015625,
+        "width": 0.8296619389681208,
+        "height": 0.03515625
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Nếu một công việc có thể hoàn thành theo một trong các phương án không đồng thời, số cách của công việc bằng tổng số cách của từng phương án.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-f447718dc69b",
+      "providerBlockId": "/page/3/Text/6",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.2470703125,
+        "y": 0.32080078125,
+        "width": 0.5120868042811452,
+        "height": 0.0537109375
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Một công việc có thể chia làm $k$ trường hợp:\n\n- Trường hợp thứ nhất có $n_1$ cách giải quyết,\n- Trường hợp thứ hai có $n_2$ cách giải quyết,",
+      "latex": [
+        "k",
+        "n_1",
+        "n_2"
+      ]
+    },
+    {
+      "id": "20.1-b-9878eec6dba6",
+      "providerBlockId": "/page/3/Text/7",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.203125,
+        "y": 0.3765274011607408,
+        "width": 0.5920782921298239,
+        "height": 0.04930179985571927
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Trường hợp thứ $k$ có $n_k$ cách giải quyết.\n\nKhi đó có $n_1+n_2+\\cdots+n_k$ cách giải quyết công việc trên.",
+      "latex": [
+        "k",
+        "n_k",
+        "n_1+n_2+\\cdots+n_k"
+      ]
+    },
+    {
+      "id": "20.1-b-b352d834e256",
+      "providerBlockId": "/page/3/ListItem/8",
+      "page": 4,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.09228523305598521,
+        "y": 0.44287109375,
+        "width": 0.8208744381898202,
+        "height": 0.03779732529737604
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Mở rộng: nếu có $r$ phương án đôi một rời nhau với $n_1,n_2,\\ldots,n_r$ cách thì tổng là $n_1+n_2+\\cdots+n_r$.",
+      "latex": [
+        "r",
+        "n_1,n_2,\\ldots,n_r",
+        "n_1+n_2+\\cdots+n_r"
+      ]
+    },
+    {
+      "id": "20.1-b-6546a62ed2da",
+      "providerBlockId": "/page/3/ListItem/9",
+      "page": 4,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.09228523305598521,
+        "y": 0.48583984375,
+        "width": 0.8208150415612547,
+        "height": 0.035242366111193586
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "- Nếu các phương án có giao nhau, cộng trực tiếp sẽ đếm lặp. Khi đó phải tách lại thành các trường hợp rời nhau hoặc dùng nguyên lý bù trừ.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-63ea27535476",
+      "providerBlockId": "/page/3/SectionHeader/10",
+      "page": 4,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10107421875,
+        "y": 0.533203125,
+        "width": 0.1553473248577758,
+        "height": 0.017027576292495548
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": "VÍ DỤ NHANH",
+      "markdown": "### VÍ DỤ NHANH",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-18ac19228d2f",
+      "providerBlockId": "/page/3/SectionHeader/11",
+      "page": 4,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.1015625,
+        "y": 0.56005859375,
+        "width": 0.1961819949566118,
+        "height": 0.01801417842330389
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Quên làm bài tập",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-693d315497fa",
+      "providerBlockId": "/page/3/Text/12",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10205078125,
+        "y": 0.57666015625,
+        "width": 0.7968248200896603,
+        "height": 0.0361328125
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Trước giờ nộp bài đúng 5 phút, một học sinh cần chọn đúng một lý do để xin thầy gia hạn:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-d3be3c9f7760",
+      "providerBlockId": "/page/3/ListItem/13",
+      "page": 4,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.1103515625,
+        "y": 0.62451171875,
+        "width": 0.788543701171875,
+        "height": 0.03669046506179483
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Nhóm lý do công nghệ: mất điện, mất mạng, laptop cập nhật đến 99% rồi quay về 0%.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-974264f5c940",
+      "providerBlockId": "/page/3/ListItem/14",
+      "page": 4,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.1103515625,
+        "y": 0.6708984375,
+        "width": 0.791717529296875,
+        "height": 0.03622884138746103
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Nhóm lý do cá nhân: ngủ quên, nhớ nhầm hạn nộp, bị covid ốm chưa làm, chó gặm.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-e2d2482767b9",
+      "providerBlockId": "/page/3/ListItem/15",
+      "page": 4,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.11083984375,
+        "y": 0.71630859375,
+        "width": 0.5556640625,
+        "height": 0.0205078125
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Nhóm lý do tưởng: Em tưởng hôm nay là Chủ nhật",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-750b43092910",
+      "providerBlockId": "/page/3/Text/16",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1025390625,
+        "y": 0.748046875,
+        "width": 0.796875,
+        "height": 0.036664786078301294
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Hỏi học sinh có bao nhiêu cách chọn lý do, biết rằng mỗi lần chỉ được dùng một lý do",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-2ccfa2b5d7ab",
+      "providerBlockId": "/page/3/SectionHeader/17",
+      "page": 4,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.103515625,
+        "y": 0.78515625,
+        "width": 0.09287041785733012,
+        "height": 0.016712161537587217
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Lời giải:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-e85504af33dc",
+      "providerBlockId": "/page/3/Text/18",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1025390625,
+        "y": 0.80126953125,
+        "width": 0.796875,
+        "height": 0.05206797185249963
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Có 3 cách chọn lý do thuộc nhóm công nghệ, 4 cách chọn lý do thuộc nhóm cá nhân và 1 cách chọn lý do thuộc nhóm lên đường. Ba nhóm lý do không trùng nhau nên theo quy tắc cộng:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-3cfafe897bbd",
+      "providerBlockId": "/page/3/Equation/19",
+      "page": 4,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.3837890625,
+        "y": 0.86767578125,
+        "width": 0.23239862838847525,
+        "height": 0.0205078125
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\nN = 3 + 4 + 1 = 8 \\text{ cách}\n$$\n.",
+      "latex": [
+        "N = 3 + 4 + 1 = 8 \\text{ cách}"
+      ]
+    },
+    {
+      "id": "20.1-b-47ab8b98cd4b",
+      "providerBlockId": "/page/3/Text/20",
+      "page": 4,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1015625,
+        "y": 0.89501953125,
+        "width": 0.7973219084259647,
+        "height": 0.03430616147727694
+      },
+      "regionId": "20.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Vậy học sinh có 8 cách xin gia hạn, còn thầy có đồng ý hay không lại là một bài toán xác suất khác!",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-1e38d52a6c34",
+      "providerBlockId": "/page/4/SectionHeader/2",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.0986328125,
+        "y": 0.07373046875,
+        "width": 0.1577887311077758,
+        "height": 0.017217495662299586
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": "VÍ DỤ NHANH",
+      "markdown": "### VÍ DỤ NHANH",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-b68d63f704e4",
+      "providerBlockId": "/page/4/SectionHeader/3",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.1025390625,
+        "y": 0.1025390625,
+        "width": 0.36652983595060823,
+        "height": 0.01727599372773159
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### Bữa tối cuối tháng của sinh viên",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-fed08e5dee7e",
+      "providerBlockId": "/page/4/Text/4",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1044921875,
+        "y": 0.119140625,
+        "width": 0.607421875,
+        "height": 0.017831181687017517
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Một sinh viên đang phân vân chọn đúng một món để ăn tối:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-8f1d0b084e5e",
+      "providerBlockId": "/page/4/ListItem/5",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.10986328125,
+        "y": 0.1494140625,
+        "width": 0.5612942484401217,
+        "height": 0.020095788951157958
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Món nước: hảo hảo, mì giấy, omaichi, mì cung đình.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-376bde218759",
+      "providerBlockId": "/page/4/ListItem/6",
+      "page": 5,
+      "type": "ListItem",
+      "polygon": {
+        "x": 0.10986328125,
+        "y": 0.1787109375,
+        "width": 0.7034917229774015,
+        "height": 0.019786988754453682
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "- Món khô: cơm không người lái, bánh mì ông thọ, cơm ké nhà bạn.",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-12c282c47e07",
+      "providerBlockId": "/page/4/Text/7",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.10205078125,
+        "y": 0.2119140625,
+        "width": 0.7968236936018771,
+        "height": 0.05343540943716597
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Hỏi sinh viên có bao nhiêu cách chọn bữa tối, biết rằng bạn ấy chỉ chọn một món và chưa tính phương án \"uống nước lọc rồi đi ngủ bảo toàn năng lượng\"? Lời giải:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-8671327aad2f",
+      "providerBlockId": "/page/4/Text/8",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1015625,
+        "y": 0.26318359375,
+        "width": 0.7972933365994652,
+        "height": 0.03647945159404691
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "Có 4 cách chọn món nước và 3 cách chọn món khô. Hai nhóm lựa chọn không trùng nhau nên theo quy tắc cộng:",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-dcb4ad118a09",
+      "providerBlockId": "/page/4/Equation/9",
+      "page": 5,
+      "type": "Equation",
+      "polygon": {
+        "x": 0.40185546875,
+        "y": 0.3115234375,
+        "width": 0.19732548246447673,
+        "height": 0.0234375
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "$$\nN = 4 + 3 = 7\n$$\n cách.",
+      "latex": [
+        "N = 4 + 3 = 7"
+      ]
+    },
+    {
+      "id": "20.1-b-50a2ae4583f3",
+      "providerBlockId": "/page/4/SectionHeader/10",
+      "page": 5,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.10302734375,
+        "y": 0.35400390625,
+        "width": 0.2001953125,
+        "height": 0.02120906440209323
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": "SAI LẦM HAY GẶP",
+      "markdown": "### SAI LẦM HAY GẶP",
+      "latex": []
+    },
+    {
+      "id": "20.1-b-8b2e1395ab8c",
+      "providerBlockId": "/page/4/Text/11",
+      "page": 5,
+      "type": "Text",
+      "polygon": {
+        "x": 0.099609375,
+        "y": 0.384765625,
+        "width": 0.7992443110318792,
+        "height": 0.037109375
+      },
+      "regionId": "20.1-pdf-2",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Thấy từ \"hoặc\" chưa đủ để cộng. Phải kiểm tra một kết quả có thể thuộc đồng thời hai trường hợp hay không.",
+      "latex": []
+    }
+  ],
+  "headings": [
+    {
+      "blockId": "20.1-b-63ea27535476",
+      "page": 4,
+      "section": "worked_examples",
+      "text": "VÍ DỤ NHANH"
+    },
+    {
+      "blockId": "20.1-b-1e38d52a6c34",
+      "page": 5,
+      "section": "worked_examples",
+      "text": "VÍ DỤ NHANH"
+    },
+    {
+      "blockId": "20.1-b-50a2ae4583f3",
+      "page": 5,
+      "section": "knowledge",
+      "text": "SAI LẦM HAY GẶP"
+    }
+  ],
+  "sections": {
+    "knowledge": [
+      "20.1-b-a73eabe3b876",
+      "20.1-b-949a1b4abc55",
+      "20.1-b-f447718dc69b",
+      "20.1-b-9878eec6dba6",
+      "20.1-b-b352d834e256",
+      "20.1-b-6546a62ed2da",
+      "20.1-b-50a2ae4583f3",
+      "20.1-b-8b2e1395ab8c"
+    ],
+    "workedExamples": [
+      "20.1-b-63ea27535476",
+      "20.1-b-18ac19228d2f",
+      "20.1-b-693d315497fa",
+      "20.1-b-d3be3c9f7760",
+      "20.1-b-974264f5c940",
+      "20.1-b-e2d2482767b9",
+      "20.1-b-750b43092910",
+      "20.1-b-2ccfa2b5d7ab",
+      "20.1-b-e85504af33dc",
+      "20.1-b-3cfafe897bbd",
+      "20.1-b-47ab8b98cd4b",
+      "20.1-b-1e38d52a6c34",
+      "20.1-b-b68d63f704e4",
+      "20.1-b-fed08e5dee7e",
+      "20.1-b-8f1d0b084e5e",
+      "20.1-b-376bde218759",
+      "20.1-b-12c282c47e07",
+      "20.1-b-8671327aad2f",
+      "20.1-b-dcb4ad118a09"
+    ],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "verification": {
+    "status": "verified",
+    "reviewer": "Codex V14 visual source review",
+    "reviewedAt": "2026-10-24T04:39:31.720Z",
+    "sourceHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+    "formulasChecked": true,
+    "boundariesChecked": true,
+    "notes": [
+      "Đối chiếu ảnh PDF trang 4-5; khôi phục chỉ số n₁…nₖ, tổng mở rộng, hai ví dụ và khối sai lầm thường gặp."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 20.1\ntitle: Quy tắc cộng\nsourceSha256: 66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293\nprovider: marker\nverification: verified\n---\n\n# 20.1 Quy tắc cộng\n\n> Nguồn: Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf, trang PDF 4, 5. Nội dung máy trích xuất; phải đối chiếu PDF trước khi xuất bản.\n\n## Kiến thức\n\n<!-- source-block:20.1-b-a73eabe3b876 page:4 region:20.1-pdf-1 -->\n### 20.1 Quy tắc cộng\n\n<!-- source-block:20.1-b-949a1b4abc55 page:4 region:20.1-pdf-1 -->\nNếu một công việc có thể hoàn thành theo một trong các phương án không đồng thời, số cách của công việc bằng tổng số cách của từng phương án.\n\n<!-- source-block:20.1-b-f447718dc69b page:4 region:20.1-pdf-1 -->\nMột công việc có thể chia làm $k$ trường hợp:\n\n- Trường hợp thứ nhất có $n_1$ cách giải quyết,\n- Trường hợp thứ hai có $n_2$ cách giải quyết,\n\n<!-- source-block:20.1-b-9878eec6dba6 page:4 region:20.1-pdf-1 -->\n- Trường hợp thứ $k$ có $n_k$ cách giải quyết.\n\nKhi đó có $n_1+n_2+\\cdots+n_k$ cách giải quyết công việc trên.\n\n<!-- source-block:20.1-b-b352d834e256 page:4 region:20.1-pdf-1 -->\n- Mở rộng: nếu có $r$ phương án đôi một rời nhau với $n_1,n_2,\\ldots,n_r$ cách thì tổng là $n_1+n_2+\\cdots+n_r$.\n\n<!-- source-block:20.1-b-6546a62ed2da page:4 region:20.1-pdf-1 -->\n- Nếu các phương án có giao nhau, cộng trực tiếp sẽ đếm lặp. Khi đó phải tách lại thành các trường hợp rời nhau hoặc dùng nguyên lý bù trừ.\n\n## Ví dụ có lời giải\n\n<!-- source-block:20.1-b-63ea27535476 page:4 region:20.1-pdf-1 -->\n### VÍ DỤ NHANH\n\n<!-- source-block:20.1-b-18ac19228d2f page:4 region:20.1-pdf-1 -->\n### Quên làm bài tập\n\n<!-- source-block:20.1-b-693d315497fa page:4 region:20.1-pdf-1 -->\nTrước giờ nộp bài đúng 5 phút, một học sinh cần chọn đúng một lý do để xin thầy gia hạn:\n\n<!-- source-block:20.1-b-d3be3c9f7760 page:4 region:20.1-pdf-1 -->\n- Nhóm lý do công nghệ: mất điện, mất mạng, laptop cập nhật đến 99% rồi quay về 0%.\n\n<!-- source-block:20.1-b-974264f5c940 page:4 region:20.1-pdf-1 -->\n- Nhóm lý do cá nhân: ngủ quên, nhớ nhầm hạn nộp, bị covid ốm chưa làm, chó gặm.\n\n<!-- source-block:20.1-b-e2d2482767b9 page:4 region:20.1-pdf-1 -->\n- Nhóm lý do tưởng: Em tưởng hôm nay là Chủ nhật\n\n<!-- source-block:20.1-b-750b43092910 page:4 region:20.1-pdf-1 -->\nHỏi học sinh có bao nhiêu cách chọn lý do, biết rằng mỗi lần chỉ được dùng một lý do\n\n<!-- source-block:20.1-b-2ccfa2b5d7ab page:4 region:20.1-pdf-1 -->\n### Lời giải:\n\n<!-- source-block:20.1-b-e85504af33dc page:4 region:20.1-pdf-1 -->\nCó 3 cách chọn lý do thuộc nhóm công nghệ, 4 cách chọn lý do thuộc nhóm cá nhân và 1 cách chọn lý do thuộc nhóm lên đường. Ba nhóm lý do không trùng nhau nên theo quy tắc cộng:\n\n<!-- source-block:20.1-b-3cfafe897bbd page:4 region:20.1-pdf-1 -->\n$$\nN = 3 + 4 + 1 = 8 \\text{ cách}\n$$\n.\n\n<!-- source-block:20.1-b-47ab8b98cd4b page:4 region:20.1-pdf-1 -->\nVậy học sinh có 8 cách xin gia hạn, còn thầy có đồng ý hay không lại là một bài toán xác suất khác!\n\n<!-- source-block:20.1-b-1e38d52a6c34 page:5 region:20.1-pdf-2 -->\n### VÍ DỤ NHANH\n\n<!-- source-block:20.1-b-b68d63f704e4 page:5 region:20.1-pdf-2 -->\n### Bữa tối cuối tháng của sinh viên\n\n<!-- source-block:20.1-b-fed08e5dee7e page:5 region:20.1-pdf-2 -->\nMột sinh viên đang phân vân chọn đúng một món để ăn tối:\n\n<!-- source-block:20.1-b-8f1d0b084e5e page:5 region:20.1-pdf-2 -->\n- Món nước: hảo hảo, mì giấy, omaichi, mì cung đình.\n\n<!-- source-block:20.1-b-376bde218759 page:5 region:20.1-pdf-2 -->\n- Món khô: cơm không người lái, bánh mì ông thọ, cơm ké nhà bạn.\n\n<!-- source-block:20.1-b-12c282c47e07 page:5 region:20.1-pdf-2 -->\nHỏi sinh viên có bao nhiêu cách chọn bữa tối, biết rằng bạn ấy chỉ chọn một món và chưa tính phương án \"uống nước lọc rồi đi ngủ bảo toàn năng lượng\"? Lời giải:\n\n<!-- source-block:20.1-b-8671327aad2f page:5 region:20.1-pdf-2 -->\nCó 4 cách chọn món nước và 3 cách chọn món khô. Hai nhóm lựa chọn không trùng nhau nên theo quy tắc cộng:\n\n<!-- source-block:20.1-b-dcb4ad118a09 page:5 region:20.1-pdf-2 -->\n$$\nN = 4 + 3 = 7\n$$\n cách.\n\n## Kiến thức\n\n<!-- source-block:20.1-b-50a2ae4583f3 page:5 region:20.1-pdf-2 -->\n### SAI LẦM HAY GẶP\n\n<!-- source-block:20.1-b-8b2e1395ab8c page:5 region:20.1-pdf-2 -->\nThấy từ \"hoặc\" chưa đủ để cộng. Phải kiểm tra một kết quả có thể thuộc đồng thời hai trường hợp hay không.\n",
+  "corrections": [
+    {
+      "blockId": "20.1-b-f447718dc69b",
+      "sourcePage": 4,
+      "from": "Một công việc có thể chia làm k trường hợp : - Trường hợp thứ nhất có n1 cách giải quyết, - Trường hợp thứ hai có n2 cách giải quyết,",
+      "to": "Một công việc có thể chia làm $k$ trường hợp:\n\n- Trường hợp thứ nhất có $n_1$ cách giải quyết,\n- Trường hợp thứ hai có $n_2$ cách giải quyết,",
+      "reason": "Khôi phục danh sách và chỉ số dưới n₁, n₂ theo khung công thức trang PDF 4.",
+      "appliedAt": "2026-10-24T04:39:31.482Z",
+      "reviewer": "Codex V14 visual source review"
+    },
+    {
+      "blockId": "20.1-b-9878eec6dba6",
+      "sourcePage": 4,
+      "from": "... - Trường hợp thứ k có nk cách giải quyết, Khi đó có n1+n2+...+nk cách giải quyết công việc trên",
+      "to": "- Trường hợp thứ $k$ có $n_k$ cách giải quyết.\n\nKhi đó có $n_1+n_2+\\cdots+n_k$ cách giải quyết công việc trên.",
+      "reason": "Khôi phục chỉ số dưới và dấu ba chấm toán học theo khung công thức trang PDF 4.",
+      "appliedAt": "2026-10-24T04:39:31.483Z",
+      "reviewer": "Codex V14 visual source review"
+    },
+    {
+      "blockId": "20.1-b-b352d834e256",
+      "sourcePage": 4,
+      "from": "- Mở rộng: nếu có r phương án đôi một rời nhau với n1, n2, ..., nr cách thì tổng là n1 + n2 + ... + nr.",
+      "to": "- Mở rộng: nếu có $r$ phương án đôi một rời nhau với $n_1,n_2,\\ldots,n_r$ cách thì tổng là $n_1+n_2+\\cdots+n_r$.",
+      "reason": "Mã hóa LaTeX tương đương trực quan cho các chỉ số và tổng mở rộng trong nguồn.",
+      "appliedAt": "2026-10-24T04:39:31.484Z",
+      "reviewer": "Codex V14 visual source review"
+    }
+  ],
+  "resolvedFlags": []
+}

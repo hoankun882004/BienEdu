@@ -40,7 +40,7 @@ const viewports = [
   { width: 1280, height: 720 }, { width: 1440, height: 900 },
   { width: 1920, height: 1080 }
 ];
-const representatives = ["12.1", "13.1", "14.1", "20.1", "20.2", "20.17", "21.1", "21.8"];
+const representatives = ["12.1", "12.4", "13.1", "14.1", "20.1", "20.2", "20.17", "21.1", "21.8"];
 const allCodes = Object.keys(knowledgeContent).filter((code) => /^(?:12|13|14|20|21)\./.test(code));
 
 function topicFor(code) {
@@ -62,8 +62,10 @@ async function inspectNativeLesson(page) {
     const content = reader?.querySelector(".math-lesson__content");
     const nav = document.querySelector(".lesson-navigation");
     const quick = reader?.querySelector(".math-lesson__quick");
-    const formula = reader?.querySelector(".math-lesson__formula-card");
+    const formula = reader?.querySelector(".math-lesson__formula-section");
     const callout = reader?.querySelector(".math-lesson__callout");
+    const equations = [...(reader?.querySelectorAll(".math-markdown__display--compact") ?? [])];
+    const formulaCards = [...(reader?.querySelectorAll(".math-lesson__formula-card") ?? [])];
     const box = (element) => element ? element.getBoundingClientRect().toJSON() : null;
     const visibleClone = reader?.cloneNode(true);
     visibleClone?.querySelectorAll(".katex-mathml, annotation").forEach((node) => node.remove());
@@ -72,6 +74,14 @@ async function inspectNativeLesson(page) {
       quick: box(quick), formula: box(formula), callout: box(callout),
       quickBackground: quick ? getComputedStyle(quick).backgroundColor : null,
       katexCount: reader?.querySelectorAll(".katex").length ?? 0,
+      layout: reader?.getAttribute("data-knowledge-layout"),
+      formulaCardCount: formulaCards.length,
+      boundedFormulaCardCount: formulaCards.filter((card) => {
+        const style = getComputedStyle(card);
+        return parseFloat(style.borderTopWidth) >= 1 && parseFloat(style.borderRadius) >= 10 && style.backgroundColor === "rgb(255, 255, 255)";
+      }).length,
+      equationCount: equations.length,
+      equationOverflowCount: equations.filter((equation) => equation.scrollWidth > equation.clientWidth + 1).length,
       forbiddenNodes: document.querySelectorAll("iframe, embed, object, canvas, [data-pdf-viewer], [class*='pdf-reader']").length,
       forbiddenText: /Xem PDF|Mở tài liệu PDF|Trang gốc|Vừa chiều rộng|PDF\.js/i.test(document.body.innerText),
       rawMath: (visibleClone?.textContent ?? "").match(/\$\$|\\(?:frac|int|sum|sqrt)\b/)?.[0] ?? null,
@@ -106,11 +116,22 @@ try {
       assert.equal(state.forbiddenText, false, `${label} contains no PDF viewer controls`);
       assert.equal(state.rawMath, null, `${label} does not expose raw LaTeX delimiters or commands`);
       assert.equal(state.horizontalOverflow, false, `${label} has no page-level horizontal overflow`);
+      assert.equal(state.equationOverflowCount, 0, `${label} keeps ordinary Knowledge equations fully readable`);
       if (state.quick) assert.equal(state.quickBackground, "rgb(255, 247, 215)", `${label} keeps the yellow quick-note block`);
       if (state.formula && state.callout) {
         assert.ok(state.callout.top >= state.formula.bottom - 1, `${label} places the callout below its formula card`);
       }
       if (state.formula) assert.ok(state.katexCount > 0, `${label} renders mathematical notation through KaTeX`);
+      if (code === "12.1") {
+        assert.equal(state.layout, "formula-heavy", `${label} uses the wide formula-heavy composition`);
+        assert.equal(state.formulaCardCount, 8, `${label} keeps all eight source-faithful formula categories on page one`);
+        assert.equal(state.equationCount, 18, `${label} renders every source identity separately`);
+        if (viewport.width >= 1024) assert.ok(state.formula.width >= state.content.width * .9, `${label} gives formulas the primary reading width`);
+      }
+      if (code === "12.4") {
+        assert.equal(state.formulaCardCount, 6, `${label} renders six standalone formula cards`);
+        assert.equal(state.boundedFormulaCardCount, 6, `${label} gives every formula category a clear card boundary`);
+      }
     }
 
     await openLesson(page, origin, "20.2");
@@ -130,6 +151,18 @@ try {
       assert.ok(bottomClearance >= 12, `20.2 final card clears sticky navigation at ${viewport.width}px`);
       await page.screenshot({ path: `.audit/v13-native-20-2-${viewport.width}x${viewport.height}-bottom.png` });
     }
+    if ([390, 1440].includes(viewport.width)) {
+      await openLesson(page, origin, "12.1");
+      await page.screenshot({
+        path: `.audit/v14-source-faithful-12-1-${viewport.width}x${viewport.height}.png`,
+        fullPage: viewport.width <= 768
+      });
+      await openLesson(page, origin, "12.4");
+      await page.screenshot({
+        path: `.audit/v13-4-knowledge-12-4-${viewport.width}x${viewport.height}.png`,
+        fullPage: viewport.width <= 768
+      });
+    }
   }
 
   for (const viewport of [viewports[0], viewports[5]]) {
@@ -140,6 +173,7 @@ try {
       assert.ok(state.reader, `${code} renders native Markdown at ${viewport.width}px`);
       assert.equal(state.forbiddenNodes, 0, `${code} has no PDF runtime at ${viewport.width}px`);
       assert.equal(state.horizontalOverflow, false, `${code} fits ${viewport.width}px without page overflow`);
+      assert.equal(state.equationOverflowCount, 0, `${code} needs no Knowledge equation scrolling at ${viewport.width}px`);
       assert.equal(state.rawMath, null, `${code} hides raw math syntax at ${viewport.width}px (found ${state.rawMath ?? "none"})`);
     }
   }

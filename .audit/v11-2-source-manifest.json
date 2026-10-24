@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T16:49:30.790Z",
+  "generatedAt": "2026-10-24T04:40:58.217Z",
   "documents": [
     {
       "id": "cd20-cd21-theory",
@@ -26,7 +26,7 @@
   ],
   "summary": {
     "knowledgeSlides": 52,
-    "knowledgeSourceBlocks": 377,
+    "knowledgeSourceBlocks": 379,
     "calculusWorkedExamples": 52,
     "cd20Cd21WorkedExamples": 28,
     "selfPractice": 260,
@@ -1589,7 +1589,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-01",
       "kind": "formula-or-property",
-      "heading": "Định nghĩa & hằng số"
+      "heading": "Định nghĩa nguyên hàm"
     },
     {
       "topicId": "CD12",
@@ -1603,7 +1603,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-02",
       "kind": "formula-or-property",
-      "heading": "Lũy thừa & logarit"
+      "heading": "Hàm hằng"
     },
     {
       "topicId": "CD12",
@@ -1617,7 +1617,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-03",
       "kind": "formula-or-property",
-      "heading": "Hàm mũ"
+      "heading": "Lũy thừa"
     },
     {
       "topicId": "CD12",
@@ -1631,7 +1631,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-04",
       "kind": "formula-or-property",
-      "heading": "Sin – cos"
+      "heading": "Hàm nghịch đảo"
     },
     {
       "topicId": "CD12",
@@ -1645,7 +1645,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-05",
       "kind": "formula-or-property",
-      "heading": "Lượng giác mở rộng"
+      "heading": "Hàm mũ"
     },
     {
       "topicId": "CD12",
@@ -1659,7 +1659,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-formula-06",
       "kind": "formula-or-property",
-      "heading": "Arctan – arcsin"
+      "heading": "Sin – cos"
     },
     {
       "topicId": "CD12",
@@ -1671,9 +1671,23 @@
         3
       ],
       "status": "imported-and-verified",
-      "id": "12.1-knowledge-1-method-01",
-      "kind": "method-or-recognition-tip",
-      "heading": "Viết về dạng quen thuộc"
+      "id": "12.1-knowledge-1-formula-07",
+      "kind": "formula-or-property",
+      "heading": "Phân thức lượng giác"
+    },
+    {
+      "topicId": "CD12",
+      "code": "12.1",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "12.1-knowledge-1",
+      "sourceDocumentId": "cd12-cd14-calculus",
+      "sourcePages": [
+        3
+      ],
+      "status": "imported-and-verified",
+      "id": "12.1-knowledge-1-formula-08",
+      "kind": "formula-or-property",
+      "heading": "Arcsin – arctan"
     },
     {
       "topicId": "CD12",
@@ -1687,7 +1701,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-1-note",
       "kind": "note",
-      "heading": "Bảng công thức cơ bản"
+      "heading": "Điều kiện nguồn"
     },
     {
       "topicId": "CD12",
@@ -1717,7 +1731,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-formula-01",
       "kind": "formula-or-property",
-      "heading": "Hàm hợp lũy thừa – logarit"
+      "heading": "Hàm hợp lũy thừa"
     },
     {
       "topicId": "CD12",
@@ -1732,7 +1746,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-formula-02",
       "kind": "formula-or-property",
-      "heading": "Hàm hợp mũ – lượng giác"
+      "heading": "Hàm hợp logarit – mũ"
     },
     {
       "topicId": "CD12",
@@ -1746,6 +1760,21 @@
       ],
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-formula-03",
+      "kind": "formula-or-property",
+      "heading": "Hàm hợp lượng giác"
+    },
+    {
+      "topicId": "CD12",
+      "code": "12.1",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "12.1-knowledge-2",
+      "sourceDocumentId": "cd12-cd14-calculus",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "status": "imported-and-verified",
+      "id": "12.1-knowledge-2-formula-04",
       "kind": "formula-or-property",
       "heading": "Tính tuyến tính"
     },
@@ -1762,7 +1791,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-method-01",
       "kind": "method-or-recognition-tip",
-      "heading": "Viết về dạng quen thuộc"
+      "heading": "Bước 1"
     },
     {
       "topicId": "CD12",
@@ -1777,7 +1806,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-method-02",
       "kind": "method-or-recognition-tip",
-      "heading": "Tính từng hạng tử"
+      "heading": "Bước 2"
     },
     {
       "topicId": "CD12",
@@ -1792,7 +1821,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-method-03",
       "kind": "method-or-recognition-tip",
-      "heading": "Hoàn tất và kiểm tra"
+      "heading": "Bước 3"
     },
     {
       "topicId": "CD12",
@@ -1807,7 +1836,7 @@
       "status": "imported-and-verified",
       "id": "12.1-knowledge-2-note",
       "kind": "warning",
-      "heading": "Cần nhớ"
+      "heading": "Bước cuối"
     },
     {
       "topicId": "CD12",
@@ -2087,7 +2116,7 @@
       "status": "imported-and-verified",
       "id": "12.4-knowledge-1-formula-02",
       "kind": "formula-or-property",
-      "heading": "Sec² – csc²"
+      "heading": "Nghịch đảo bình phương sin – cos"
     },
     {
       "topicId": "CD12",

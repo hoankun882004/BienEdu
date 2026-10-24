@@ -1,4 +1,4 @@
-import { calculusExampleContent } from "./calculus-lessons.js?v=8.6";
+import { calculusExampleContent } from "./calculus-lessons.js?v=14.0";
 
 // Worked examples transcribed and clarified from the verified CD20–CD21 source PDF.
 // Each example is a complete learning unit rather than a crop of the source page.

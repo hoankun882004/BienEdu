@@ -1,0 +1,168 @@
+{
+  "subtopic": "12.1",
+  "sourceSha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+  "reviewer": "Codex V14 visual source review",
+  "corrections": [
+    {
+      "blockId": "12.1-b-d6aca710ce02",
+      "sourcePage": 3,
+      "from": "$$\n\\begin{array}{c|ccccccccccccccccccccccccccccccccccc\n$$",
+      "to": "| $f(x)$ | $\\int f(x)\\,dx$ | $f(x)$ | $\\int f(x)\\,dx$ |\n| --- | --- | --- | --- |\n| $0$ | $C$ | $1$ | $x+C$ |\n| $k$ | $kx+C$ | $x^n$ $(n\\ne-1)$ | $\\dfrac{x^{n+1}}{n+1}+C$ |\n| $\\dfrac{1}{x}$ | $\\ln|x|+C$ | $e^x$ | $e^x+C$ |\n| $a^x$ $(a>0, a\\ne1)$ | $\\dfrac{a^x}{\\ln a}+C$ | $\\sin x$ | $-\\cos x+C$ |\n| $\\cos x$ | $\\sin x+C$ | $\\dfrac{1}{\\cos^2x}$ | $\\tan x+C$ |\n| $\\dfrac{1}{\\sin^2x}$ | $-\\cot x+C$ | $\\tan x$ | $-\\ln|\\cos x|+C$ |\n| $\\cot x$ | $\\ln|\\sin x|+C$ | $\\dfrac{1}{1+x^2}$ | $\\arctan x+C$ |\n| $\\dfrac{1}{\\sqrt{1-x^2}}$ | $\\arcsin x+C$ | $\\dfrac{1}{a^2+x^2}$ | $\\dfrac{1}{a}\\arctan\\dfrac{x}{a}+C$ $(a>0)$ |",
+      "reason": "Đối chiếu trực tiếp bảng bốn cột trên trang PDF 3; Marker chỉ giữ phần mở đầu của môi trường array và làm mất toàn bộ hàng công thức."
+    },
+    {
+      "blockId": "12.1-b-2bd6e0b7e261",
+      "sourcePage": 3,
+      "from": "- 2. Tính nguyên hàm từng hạng tử; kiểm tra trường hợp đặc biệt x −1 .",
+      "to": "2. Tính nguyên hàm từng hạng tử; kiểm tra trường hợp đặc biệt $x^{-1}$.",
+      "reason": "Khôi phục số mũ âm theo bản in trang PDF 3."
+    },
+    {
+      "blockId": "12.1-b-74736f3d8244",
+      "sourcePage": 4,
+      "from": "$$\nVí dụ 1. Tính \n$$\n\\int (3x^2 - 4x + 5) dx\n$$\n.\n$$",
+      "to": "Ví dụ 1. Tính\n\n$$\n\\int(3x^2-4x+5)\\,dx.\n$$",
+      "reason": "Tách nhãn tiếng Việt khỏi LaTeX và giữ nguyên đề ví dụ 1 trên trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-43948db957f3",
+      "sourcePage": 4,
+      "from": "$$\n= x^3 - 2x^2 + 5x + C.\n$$",
+      "to": "$$\n=x^3-2x^2+5x+C.\n$$",
+      "reason": "Chuẩn hóa khoảng trắng LaTeX, không đổi biểu thức nguồn."
+    },
+    {
+      "blockId": "12.1-b-bfbdda14dce9",
+      "sourcePage": 4,
+      "from": "$$\nThật vậy, \n$$\n(x^3 - 2x^2 + 5x + C)' = 3x^2 - 4x + 5\n$$\n.\n$$",
+      "to": "Thật vậy,\n\n$$\n(x^3-2x^2+5x+C)'=3x^2-4x+5.\n$$",
+      "reason": "Tách câu dẫn khỏi LaTeX và khôi phục phép kiểm tra đạo hàm đúng như trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-8c309fe74834",
+      "sourcePage": 4,
+      "from": "$$\nVí dụ 2. Tính \n$$\n\\int \\left(\\sqrt{x} + \\frac{2}{x}\\right) dx\n$$\n $(x > 0)$.\n$$",
+      "to": "Ví dụ 2. Tính\n\n$$\n\\int\\left(\\sqrt{x}+\\frac{2}{x}\\right)\\,dx\\quad(x>0).\n$$",
+      "reason": "Khôi phục đề và điều kiện x>0 của ví dụ 2 theo trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-62c9166aaeeb",
+      "sourcePage": 4,
+      "from": "$$\n1. \n$$\n\\int (5x^4 - 6x + 1) \\, \\mathrm{d}x\n$$\n.\n$$",
+      "to": "1. $\\int(5x^4-6x+1)\\,dx$.",
+      "reason": "Giữ nguyên bài tự luyện 1, sửa cấu trúc delimiter bị lồng."
+    },
+    {
+      "blockId": "12.1-b-02a9f4cef84b",
+      "sourcePage": 4,
+      "from": "$$\n4. \n$$\n\\int \\left( 4\\cos x + \\frac{1}{1+x^2} \\right) dx\n$$\n.\n$$",
+      "to": "4. $\\int\\left(4\\cos x+\\dfrac{1}{1+x^2}\\right)\\,dx$.",
+      "reason": "Giữ nguyên bài tự luyện 4, sửa cấu trúc delimiter bị lồng."
+    },
+    {
+      "blockId": "12.1-b-646bbc3dc6cb",
+      "sourcePage": 4,
+      "from": "$$\n5. Kiểm tra xem \n$$\nF(x)=x^4-3x^2+7\n$$\n có phải nguyên hàm của $f(x)=4x^3-6x$ không.\n$$",
+      "to": "5. Kiểm tra xem $F(x)=x^4-3x^2+7$ có phải nguyên hàm của $f(x)=4x^3-6x$ không.",
+      "reason": "Khôi phục câu hỏi văn bản và hai biểu thức inline theo trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-b44878babb99",
+      "sourcePage": 4,
+      "from": "$$\n6. \n$$\n\\int \\left(7x^6 - \\frac{1}{x} + 4\\right) dx (x > 0)\n$$\n.\n$$",
+      "to": "6. $\\int\\left(7x^6-\\dfrac{1}{x}+4\\right)\\,dx$ $(x>0)$.",
+      "reason": "Giữ nguyên bài tự luyện 6 và điều kiện x>0, sửa delimiter bị lồng."
+    },
+    {
+      "blockId": "12.1-b-aef19cdd8351",
+      "sourcePage": 4,
+      "from": "$$\n7. \n$$\n\\int \\left(1 - \\frac{3}{x^2} + 2\\cos x\\right) dx (x \\neq 0)\n$$\n.\n$$",
+      "to": "7. $\\int\\left(1-\\dfrac{3}{x^2}+2\\cos x\\right)\\,dx$ $(x\\ne0)$.",
+      "reason": "Giữ nguyên bài tự luyện 7 và điều kiện x khác 0, sửa delimiter bị lồng."
+    },
+    {
+      "blockId": "12.1-b-c8f307c4722e",
+      "sourcePage": 4,
+      "from": "$$\n9. \n$$\n\\int (x^{-3} + \\sin x - 1) dx\n$$\n.\n$$",
+      "to": "9. $\\int(x^{-3}+\\sin x-1)\\,dx$.",
+      "reason": "Giữ nguyên bài tự luyện 9, sửa cấu trúc delimiter bị lồng."
+    },
+    {
+      "blockId": "12.1-b-3cfafe897bbd",
+      "sourcePage": 4,
+      "from": "$$\n10. Tìm một nguyên hàm \n$$\nF\n$$\n của $f(x)=2x-\\frac{1}{x}$ trên $(0,+\\infty)$ thỏa $F(1)=3$.\n$$",
+      "to": "10. Tìm một nguyên hàm $F$ của $f(x)=2x-\\dfrac{1}{x}$ trên $(0,+\\infty)$ thỏa $F(1)=3$.",
+      "reason": "Khôi phục câu hỏi văn bản với các biểu thức inline theo trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-bce72296c952",
+      "sourcePage": 4,
+      "from": "$$\n1. \n$$\nx^5 - 3x^2 + x + C\n$$\n.\n$$",
+      "to": "1. $x^5-3x^2+x+C$.",
+      "reason": "Khôi phục đáp số 1 theo trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-d17ce0221bc5",
+      "sourcePage": 4,
+      "from": "$$\n2. \n$$\n2\\sqrt{x} + \\frac{x^3}{3} + C\n$$\n.\n$$",
+      "to": "2. $2\\sqrt{x}+\\dfrac{x^3}{3}+C$.",
+      "reason": "Khôi phục đáp số 2 theo trang PDF 4."
+    },
+    {
+      "blockId": "12.1-b-d7f9cc5a6d70",
+      "sourcePage": 5,
+      "from": "- 3. 3 ln x + 2 cos x + C.",
+      "to": "3. $3\\ln x+2\\cos x+C$.",
+      "reason": "Khôi phục ký hiệu hàm trong đáp số 3 theo trang PDF 5."
+    },
+    {
+      "blockId": "12.1-b-82a67fdc2768",
+      "sourcePage": 5,
+      "from": "- 4. 4 sin x + arctan x + C.",
+      "to": "4. $4\\sin x+\\arctan x+C$.",
+      "reason": "Khôi phục ký hiệu hàm trong đáp số 4 theo trang PDF 5."
+    },
+    {
+      "blockId": "12.1-b-80d0c6ceeb3f",
+      "sourcePage": 5,
+      "from": "- 5. Có, vì F ′ (x) = 4x 3 − 6x = f(x).",
+      "to": "5. Có, vì $F'(x)=4x^3-6x=f(x)$.",
+      "reason": "Khôi phục dấu phẩy đạo hàm và số mũ trong đáp số 5 theo trang PDF 5."
+    },
+    {
+      "blockId": "12.1-b-8f1d0b084e5e",
+      "sourcePage": 5,
+      "from": "- 6. x 7 − ln x + 4x + C.",
+      "to": "6. $x^7-\\ln x+4x+C$.",
+      "reason": "Khôi phục số mũ và logarit trong đáp số 6 theo trang PDF 5."
+    },
+    {
+      "blockId": "12.1-b-376bde218759",
+      "sourcePage": 5,
+      "from": "- 7. x + 3 x + 2 sin x + C.",
+      "to": "7. $x+\\dfrac{3}{x}+2\\sin x+C$.",
+      "reason": "Khôi phục phân số 3/x bị Marker làm phẳng trong đáp số 7."
+    },
+    {
+      "blockId": "12.1-b-85f8db7e7d0f",
+      "sourcePage": 5,
+      "from": "- 8. 2 arctan x − 5e x + C.",
+      "to": "8. $2\\arctan x-5e^x+C$.",
+      "reason": "Khôi phục số mũ của e và tên hàm trong đáp số 8."
+    },
+    {
+      "blockId": "12.1-b-e38a5bcd8287",
+      "sourcePage": 5,
+      "from": "- 9. − 1 2x 2 − cos x − x + C.",
+      "to": "9. $-\\dfrac{1}{2x^2}-\\cos x-x+C$.",
+      "reason": "Khôi phục phân số và số mũ bị Marker làm phẳng trong đáp số 9."
+    },
+    {
+      "blockId": "12.1-b-9ca2bb68db71",
+      "sourcePage": 5,
+      "from": "- 10. F(x) = x 2 − ln x + 2.",
+      "to": "10. $F(x)=x^2-\\ln x+2$.",
+      "reason": "Khôi phục số mũ và logarit trong đáp số 10 theo trang PDF 5."
+    }
+  ]
+}

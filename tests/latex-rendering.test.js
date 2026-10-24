@@ -50,7 +50,7 @@ function surroundingContent() {
 
 test("all imported Knowledge and Example formula slots render without KaTeX errors", () => {
   const rows = formulaSlots();
-  assert.equal(rows.length, 357, "the complete V13.1 source formula inventory changed unexpectedly");
+  assert.equal(rows.length, 360, "the complete source formula inventory changed unexpectedly");
 
   for (const row of rows) {
     const html = renderMathText(row.value, { display: true });
@@ -69,7 +69,7 @@ test("all approved raw LaTeX expressions pass strict KaTeX parsing", () => {
   const formulas = Object.values(approvedMathContent)
     .flatMap((record) => record.blocks)
     .flatMap((block) => block.latex ?? []);
-  assert.equal(formulas.length, 8);
+  assert.equal(formulas.length, 93);
   formulas.forEach((formula) => assert.deepEqual(validateLatexExpression(formula), { valid: true, error: null }, formula));
 });
 

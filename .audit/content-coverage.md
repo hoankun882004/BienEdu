@@ -1,6 +1,6 @@
 # BienEdu content coverage
 
-Generated: 2026-10-23T16:49:30.800Z
+Generated: 2026-10-24T04:40:58.228Z
 
 ## Audit summary
 
@@ -10,6 +10,7 @@ Generated: 2026-10-23T16:49:30.800Z
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. Source exercises are self-check only and remain separate from the three generated auto-graded questions per subtopic.
 - Source completeness and mathematical verification are independent: nine answer keys are imported but explicitly marked needs-review because the printed answer conflicts with direct calculation or is ambiguous.
 - CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.
+- V14 source-fidelity: 3/51 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 48 stay needs-review and are not silently promoted by coverage counts.
 
 ## Source documents
 
