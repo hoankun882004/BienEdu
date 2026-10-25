@@ -27,7 +27,7 @@ async function open(page, route, settleMs = 220) {
   await page.goto(`${origin}${route}`, { timeoutMs: 30000, settleMs });
   await page.eval(`(() => {
     const style = document.createElement('style');
-    style.textContent = '* { animation-duration: 0s !important; animation-delay: 0s !important; transition-duration: 0s !important; } .js [data-reveal], .home-motion-enabled [data-home-reveal], .js .home-hero__copy > p, .js .tutor-hero__copy > p, .js .hero-actions { opacity: 1 !important; transform: none !important; } .js .shutter { clip-path: inset(0) !important; } .js .shutter img, .js .lines [data-line] { transform: none !important; }';
+    style.textContent = '* { animation-duration: 0s !important; animation-delay: 0s !important; transition-duration: 0s !important; } .js [data-reveal], .home-motion-enabled [data-home-reveal], .js .home-hero__copy > p, .js .hero-actions { opacity: 1 !important; transform: none !important; } .js .shutter { clip-path: inset(0) !important; } .js .shutter img, .js .lines [data-line] { transform: none !important; }';
     document.head.append(style);
     document.querySelectorAll('[data-reveal]').forEach((element) => element.classList.add('is-in'));
     document.querySelectorAll('[data-home-reveal]').forEach((element) => element.classList.add('is-visible'));
@@ -47,12 +47,8 @@ try {
 
   await open(page, "/course.html?grade=12", 350);
   assert.equal(await page.eval("document.querySelector('.course-program, .course-method, .registration-cta')"), null, "course page must stop after the learning goals");
-  await page.eval("document.querySelector('[data-registration-open]').click()");
-  assert.equal(await page.eval("document.querySelector('[data-registration-dialog]').open"), true, "registration guidance must open on demand");
-  assert.equal(await page.eval("document.querySelector('[data-registration-dialog] .zalo-button').href.includes('zalo.me/0943943151')"), true);
-  assert.equal(await page.eval("document.querySelector('[data-registration-dialog] .text-link, [data-registration-dialog] .registration-dialog__note')"), null, "registration guidance must not repeat the roadmap link or channel note");
-  await page.screenshot({ path: ".audit/polish-after-registration-modal-1440.jpg", quality: 86 });
-  await page.eval("document.querySelector('[data-registration-dialog]').close()");
+  assert.equal(await page.eval("new URL(document.querySelector('[data-registration-link]').href).pathname"), "/contact.html");
+  assert.equal(await page.eval("new URL(document.querySelector('[data-registration-link]').href).hash"), "#registration");
 
   await open(page, "/documents.html?grade=12", 400);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-group] option').textContent"), "Tất cả nhóm kiến thức");
@@ -64,12 +60,16 @@ try {
 
   await open(page, "/contact.html?grade=12", 350);
   assert.deepEqual(await page.eval("[...document.querySelectorAll('.site-nav a')].map((link) => link.textContent.trim())"), ["Khóa học", "Lộ trình", "Luyện đề", "Đăng ký học"]);
-  assert.equal(await page.eval("document.querySelector('.tutor-hero h1').textContent.replace(/\\s+/g, ' ').trim()"), "Đăng ký học");
-  assert.equal(await page.eval("document.querySelectorAll('.teaching-band__action').length"), 0, "contact methods must not repeat large action buttons");
-  assert.equal(await page.eval("document.querySelectorAll('.zalo-chat-bubble').length"), 1, "contact page must expose one floating Zalo bubble");
-  assert.equal(await page.eval("document.querySelector('.zalo-chat-bubble').href.includes('zalo.me/0943943151')"), true);
-  assert.equal(await page.eval("getComputedStyle(document.querySelector('.zalo-chat-bubble')).position"), "fixed");
+  assert.equal(await page.eval("document.querySelector('#registration-page-title').textContent.trim()"), "Chọn cách học phù hợp với em.");
+  assert.equal(await page.eval("document.querySelector('.tutor-profile, .tutor-profile__portrait')"), null, "contact page must remove the personal tutor profile");
+  assert.equal(await page.eval("document.querySelectorAll('.learning-format-card').length"), 2, "contact page must explain both learning formats");
+  assert.equal(await page.eval("document.querySelectorAll('.registration-guide__steps li').length"), 3, "contact page must explain three concise registration steps");
+  assert.equal(await page.eval("document.querySelectorAll('[data-registration-form]').length"), 1, "contact page must expose one reusable registration form");
+  assert.equal(await page.eval("document.querySelector('[data-registration-submit]').disabled"), true, "unconfigured delivery must not pretend to submit");
+  assert.equal(await page.eval("document.querySelector('.registration-contact .zalo-button').href.includes('zalo.me/0943943151')"), true);
+  assert.equal(await page.eval("document.querySelectorAll('.zalo-chat-bubble').length"), 0, "the registration area replaces the old floating contact bubble");
   assert.equal(await page.eval("document.querySelectorAll('.study-gallery').length"), 0, "internal tutor page must not repeat the large collage");
+  await page.screenshot({ path: ".audit/polish-after-registration-1440.jpg", quality: 86, fullPage: true });
 
   await open(page, "/quiz.html?grade=12", 300);
   assert.equal(await page.eval("document.querySelectorAll('.study-gallery').length"), 0, "practice-paper page must stay focused");
@@ -127,12 +127,12 @@ try {
     await open(page, route, 240);
     await page.screenshot({ path: `.audit/polish-after-${name}-390.jpg`, quality: 82, fullPage: true });
   }
-  await open(page, "/course.html?grade=12&register=online", 240);
-  assert.equal(await page.eval("document.querySelector('[data-registration-dialog]').open"), true);
-  assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "registration dialog must fit at 390px");
-  await page.screenshot({ path: ".audit/polish-after-registration-modal-390.jpg", quality: 84 });
+  await open(page, "/contact.html?grade=12#registration", 240);
+  assert.equal(await page.eval("document.querySelector('[data-registration-form]') !== null"), true);
+  assert.equal(await page.eval("document.documentElement.scrollWidth > window.innerWidth + 1"), false, "registration form must fit at 390px");
+  await page.screenshot({ path: ".audit/polish-after-registration-390.jpg", quality: 84, fullPage: true });
 
-  console.log("Polish pass checks passed: concise home and course pages, registration dialog, clear roadmap states, honest practice-paper shell, tutor CTAs, and no horizontal overflow across 10 viewports.");
+  console.log("Polish pass checks passed: concise pages, two learning formats, one registration destination, verified Zalo contact, honest practice-paper shell and no horizontal overflow across 10 viewports.");
 } finally {
   await browser.close();
   await new Promise((done) => server.close(done));

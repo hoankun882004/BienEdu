@@ -59,4 +59,3 @@ Totals: 260 source exercises found; 10 ready source; 75 ready generated; 85 read
 | 21.6 | 0 | 0 | 3 | 3 | 0 | verified |
 | 21.7 | 0 | 0 | 3 | 3 | 0 | verified |
 | 21.8 | 0 | 0 | 3 | 3 | 0 | verified |
-

@@ -2,7 +2,6 @@ import { bindNavigation, renderLayout, updateLayoutGrade } from "./components/la
 import { applyGradePage } from "./components/grade-page.js?v=8.7";
 import { initializeGradeSelector } from "./components/grade-selector.js?v=8.2";
 import {
-  isGradeEntryUrl,
   normalizeGradeUrl,
   resolveCurrentGrade,
   setSelectedGrade
@@ -18,9 +17,7 @@ if (isDuplicateHomeRoute) {
   location.replace(canonical.href);
 } else {
   const page = document.body.dataset.page ?? "home";
-  const gradeResolution = isGradeEntryUrl(location.href)
-    ? { gradeId: null, source: "grade-entry" }
-    : resolveCurrentGrade();
+  const gradeResolution = resolveCurrentGrade();
   let currentGradeId = gradeResolution.gradeId;
 
   if (currentGradeId) {

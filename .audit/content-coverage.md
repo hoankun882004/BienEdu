@@ -80,4 +80,3 @@ Generated: 2026-10-24T09:30:42.470Z
 - 14.4-source-exercise-07: Tính π∫₀²[9−(x+1)²]dx cho 28π/3; đáp số nguồn cần xác nhận.
 - 14.4-source-exercise-10: Tính π∫₀²[16−(4−x²)²]dx cho 224π/15; đáp số nguồn cần xác nhận.
 - New or changed PDFs: review `.audit/content-import-proposals.json`; never replace a verified stable unit solely from an automatic match.
-

@@ -38,27 +38,30 @@ try {
   assert.equal(await page.eval("location.search"), "", "the grade entry URL stays clean before selection");
   assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').dataset.required"), "true");
   assert.deepEqual(await page.eval("[...document.querySelectorAll('[data-grade-choice]')].map((button) => button.dataset.gradeChoice)"), ["9", "10", "11", "12"]);
+  assert.equal(await page.eval("document.querySelector('[data-grade-dialog-title], #grade-dialog-title').textContent"), "Em đang học lớp mấy nhỉ?");
+  assert.equal(await page.eval("document.querySelector('[data-grade-continue]').disabled"), true);
   assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').textContent.includes('Nội dung đang cập nhật')"), false, "the profile chooser stays intentionally simple");
   assert.equal(await page.eval("document.body.dataset.grade ?? null"), null, "Grade 12 must not be assumed before selection");
   await page.screenshot({ path: join(tmpdir(), "bienedu-v8-grade-dialog-mobile.jpg"), quality: 88 });
 
   await page.eval("document.querySelector('[data-grade-choice=\"12\"]').click()");
+  assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').open"), true, "choosing a grade waits for explicit confirmation");
+  await page.eval("document.querySelector('[data-grade-continue]').click()");
   await sleep(120);
   assert.equal(await page.eval("localStorage.getItem('bienedu:selected-grade:v1')"), "12");
   assert.equal(await page.eval("document.body.dataset.grade"), "12");
   assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').open"), false);
   assert.equal(await page.eval("new URLSearchParams(location.search).get('grade')"), "12");
   await open(page, "/");
-  assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').open"), true, "opening the clean root always starts at grade selection");
-  assert.equal(await page.eval("document.body.dataset.grade ?? null"), null);
-  await page.eval("document.querySelector('[data-grade-choice=\"12\"]').click()");
-  await sleep(100);
+  assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').open"), false, "the stored grade skips onboarding after the first visit");
+  assert.equal(await page.eval("document.body.dataset.grade"), "12");
   await open(page, "/?grade=12");
   assert.equal(await page.eval("document.querySelector('[data-grade-dialog]').open"), false, "a grade-aware URL opens its content directly");
   assert.equal(await page.eval("document.body.dataset.grade"), "12");
 
   await page.eval("document.querySelector('.grade-switcher').click()");
   await page.eval("document.querySelector('[data-grade-choice=\"10\"]').click()");
+  await page.eval("document.querySelector('[data-grade-continue]').click()");
   await sleep(100);
   assert.equal(await page.eval("localStorage.getItem('bienedu:selected-grade:v1')"), "10", "the shared switcher changes grade later");
 
@@ -110,13 +113,15 @@ try {
 
   await open(page, "/contact.html?grade=12");
   assert.equal(await page.eval("document.querySelector('.site-nav [aria-current=\"page\"]').textContent.trim()"), "Đăng ký học");
-  assert.equal(await page.eval("document.querySelector('.tutor-hero h1').textContent.replace(/\\s+/g, ' ').trim()"), "Đăng ký học");
-  assert.equal(await page.eval("new URL(document.querySelector('.tutor-hero .button').href).hostname"), "zalo.me");
+  assert.equal(await page.eval("document.querySelector('.tutor-profile h1').textContent.trim()"), "Thầy Trần Thanh Tùng");
+  assert.equal(await page.eval("new URL(document.querySelector('.tutor-profile .zalo-button').href).hostname"), "zalo.me");
+  assert.equal(await page.eval("document.querySelector('[data-registration-form] select[name=grade]').value"), "12");
 
   await open(page, "/?grade=12");
   await page.eval("window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' })");
   await page.eval("document.querySelector('.grade-switcher').click()");
   await page.eval("document.querySelector('[data-grade-choice=\"9\"]').click()");
+  await page.eval("document.querySelector('[data-grade-continue]').click()");
   await sleep(120);
   assert.ok(await page.eval("window.scrollY <= 1"), "changing grade on the home page returns to the complete hero");
 

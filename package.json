@@ -27,7 +27,9 @@
     "test:latex": "node --test tests/latex-rendering.test.js && node .audit/v13-1-latex.mjs",
     "test:v13": "node .audit/v13-native-learning.mjs",
     "test:v15": "node .audit/v15-learning-workspace.mjs",
-    "verify": "npm run check && npm run content:scan && npm run content:validate && npm test && npm run test:latex && npm run test:v13 && npm run test:v15 && npm run test:home-scroll && npm run test:polish"
+    "test:v16": "node .audit/v16-onboarding-registration.mjs",
+    "test:v16-1": "node .audit/v16-1-registration.mjs",
+    "verify": "npm run check && npm run content:scan && npm run content:validate && npm test && npm run test:latex && npm run test:v13 && npm run test:v15 && npm run test:v16 && npm run test:v16-1 && npm run test:home-scroll && npm run test:polish"
   },
   "dependencies": {
     "katex": "^0.19.0"

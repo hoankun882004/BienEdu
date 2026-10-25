@@ -2198,3 +2198,220 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
   .math-markdown__display--compact .katex { font-size: .94rem; }
   .math-lesson__expressions--group { grid-template-columns: 1fr; }
 }
+
+/* V16 friendly onboarding, tutor profile and registration */
+.grade-dialog {
+  width: min(calc(100% - 2rem), 58rem);
+  height: fit-content;
+  max-width: 58rem;
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  overflow: auto;
+  border: 0;
+  border-radius: 1.25rem;
+  padding: 0;
+  background: white;
+  color: var(--ink);
+  box-shadow: 0 2rem 6rem rgba(3, 20, 44, .35);
+}
+.grade-dialog::backdrop { background: rgba(6, 27, 56, .86); backdrop-filter: blur(.35rem); }
+.grade-dialog__panel {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: 0;
+  align-content: start;
+  justify-items: center;
+  margin: 0;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  text-align: center;
+}
+.grade-dialog__logo { width: auto; height: 3rem; object-fit: contain; }
+.grade-dialog__welcome { margin-top: 1rem; color: var(--accent-strong); font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 700; }
+.grade-dialog__description { max-width: 53rem; margin-top: .55rem; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.grade-dialog__panel h2 { margin-top: 1.35rem; color: var(--ink); font-size: clamp(1.75rem, 3.8vw, 3.1rem); font-weight: 700; letter-spacing: -.05em; line-height: 1.05; }
+.grade-dialog__panel h2:focus { outline: 0; }
+.grade-dialog__support { margin-top: .55rem; color: var(--muted); font-size: .82rem; }
+.grade-dialog__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: white;
+  color: var(--ink);
+  font-size: 1.25rem;
+}
+.grade-dialog__close:hover,
+.grade-dialog__close:focus-visible { border-color: var(--accent); background: #f3f7fd; color: var(--accent-strong); }
+.grade-dialog__options { display: grid; width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1.25rem; }
+.grade-dialog__options button {
+  display: flex;
+  min-width: 0;
+  min-height: 5.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  border: 1px solid var(--border);
+  border-radius: .8rem;
+  padding: .8rem;
+  background: #f8fafc;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms var(--ease-out);
+}
+.grade-dialog__options button span {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #e6efff;
+  color: var(--accent-strong);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.grade-dialog__options button strong { font-size: .9rem; font-weight: 600; }
+.grade-dialog__options button:hover,
+.grade-dialog__options button:focus-visible { border-color: #7da7ef; background: #f3f7ff; color: var(--ink); outline: 3px solid transparent; transform: translateY(-2px); }
+.grade-dialog__options button:hover span,
+.grade-dialog__options button:focus-visible span { border: 0; background: #dce9ff; }
+.grade-dialog__options button.is-selected { border-color: var(--accent); background: #eaf2ff; box-shadow: inset 0 0 0 1px var(--accent); }
+.grade-dialog__options button.is-selected span { background: var(--accent); color: white; }
+.grade-dialog__selection { margin-top: .75rem; color: var(--accent-strong); font-size: .75rem; font-weight: 600; }
+.grade-dialog__continue { min-width: 12rem; margin-top: .65rem; }
+
+body[data-page="contact"] main { background: #f7f9fc; }
+.registration-hero,
+.learning-options,
+.registration-guide,
+.registration-section { width: min(calc(100% - 2 * var(--margin)), 82rem); margin-inline: auto; }
+.registration-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(19rem, .6fr);
+  align-items: end;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+}
+.registration-hero__copy h1 { max-width: 13ch; margin-top: .6rem; font-size: clamp(2.75rem, 6vw, 5.75rem); letter-spacing: -.06em; line-height: .98; text-wrap: balance; }
+.registration-hero__copy > p:last-child { max-width: 43rem; margin-top: 1.1rem; color: var(--muted); font-size: clamp(.95rem, 1.5vw, 1.12rem); line-height: 1.65; }
+.registration-hero__summary { display: grid; border-top: 1px solid var(--border); }
+.registration-hero__summary > div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); align-items: baseline; gap: 1rem; border-bottom: 1px solid var(--border); padding: .9rem 0; }
+.registration-hero__summary dt { color: var(--accent-strong); font-size: 1.25rem; font-weight: 700; letter-spacing: -.03em; }
+.registration-hero__summary dd { margin: 0; color: var(--muted); font-size: .78rem; font-weight: 600; }
+.learning-options { scroll-margin-top: 6rem; border-top: 1px solid var(--border); padding-block: clamp(2.5rem, 5vw, 4rem); }
+.learning-options__heading { display: grid; grid-template-columns: minmax(15rem, .8fr) minmax(0, 1.2fr); gap: .4rem clamp(2rem, 6vw, 5rem); align-items: end; }
+.learning-options__heading .section-eyebrow { grid-column: 1; }
+.learning-options__heading h2 { grid-column: 1; max-width: 14ch; font-size: clamp(2rem, 4vw, 3.5rem); text-wrap: balance; }
+.learning-options__heading > p:last-child { grid-column: 2; grid-row: 1 / 3; max-width: 36rem; color: var(--muted); font-size: .95rem; line-height: 1.65; }
+.learning-options__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.learning-format-card { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: 1fr auto; gap: 0 1rem; border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); background: white; }
+.learning-format-card__icon { display: grid; width: 3.25rem; height: 3.25rem; place-items: center; border-radius: .75rem; background: #e8f0ff; color: var(--accent-strong); }
+.learning-format-card__icon svg { width: 1.55rem; height: 1.55rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.learning-format-card__label { color: var(--accent-strong); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.learning-format-card h3 { margin-top: .3rem; font-size: clamp(1.45rem, 2.5vw, 2rem); letter-spacing: -.035em; }
+.learning-format-card__body > p:last-of-type { max-width: 32rem; margin-top: .55rem; color: var(--muted); font-size: .84rem; line-height: 1.6; }
+.learning-format-card__facts { display: grid; margin-top: 1.2rem; border-top: 1px solid var(--border); }
+.learning-format-card__facts > div { display: grid; grid-template-columns: 6.25rem minmax(0, 1fr); gap: 1rem; border-bottom: 1px solid var(--border); padding: .62rem 0; }
+.learning-format-card__facts dt { color: var(--muted); font-size: .7rem; }
+.learning-format-card__facts dd { margin: 0; font-size: .74rem; font-weight: 600; text-align: right; }
+.learning-format-card__action { grid-column: 1 / -1; justify-self: start; margin-top: 1.25rem; }
+.zalo-button { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; gap: .65rem; border: 1px solid #2f67e8; border-radius: var(--radius); padding: .6rem 1rem; background: white; color: #1d54c8; font-size: .8rem; text-decoration: none; }
+.zalo-button > span { position: relative; display: grid; min-width: 2.6rem; height: 1.8rem; place-items: center; border-radius: .65rem .65rem .65rem .2rem; background: #1769e0; color: white; font-size: .6rem; font-weight: 700; }
+.zalo-button > span::after { position: absolute; bottom: -.2rem; left: .3rem; width: .45rem; height: .45rem; background: #1769e0; content: ""; transform: rotate(45deg); }
+.registration-guide { border-top: 1px solid var(--border); padding-block: clamp(2.5rem, 5vw, 4rem); }
+.registration-guide__heading { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; }
+.registration-guide__heading h2 { max-width: 16ch; font-size: clamp(2rem, 4vw, 3.5rem); }
+.registration-guide__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.75rem; border-block: 1px solid var(--border); list-style: none; }
+.registration-guide__steps li { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .8rem; padding: 1.2rem; }
+.registration-guide__steps li + li { border-left: 1px solid var(--border); }
+.registration-guide__steps li > span { color: var(--accent-strong); font-size: .7rem; font-weight: 700; }
+.registration-guide__steps h3 { font-size: .95rem; line-height: 1.35; }
+.registration-guide__steps p { margin-top: .4rem; color: var(--muted); font-size: .78rem; line-height: 1.55; }
+.registration-section { scroll-margin-top: 6rem; border-top: 1px solid var(--border); padding-block: clamp(2.75rem, 6vw, 5rem); }
+.registration-section:focus { outline: 0; }
+.registration-section__heading { display: grid; grid-template-columns: minmax(14rem, .7fr) minmax(0, 1.3fr); gap: .5rem clamp(2rem, 6vw, 5rem); align-items: end; }
+.registration-section__heading .section-eyebrow { grid-column: 1; }
+.registration-section__heading h2 { grid-column: 1; max-width: 13ch; font-size: clamp(2rem, 4vw, 3.75rem); }
+.registration-section__heading > p:last-child { grid-column: 2; grid-row: 1 / 3; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+.registration-section__layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(16rem, .55fr); align-items: start; gap: 1rem; margin-top: 2rem; }
+.registration-card { border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); background: white; }
+.registration-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.registration-form__field { display: grid; min-width: 0; align-content: start; gap: .4rem; }
+.registration-form__field--wide { grid-column: 1 / -1; }
+.registration-form label { color: #172b47; font-size: .78rem; font-weight: 700; }
+.registration-form label > span:not([aria-hidden]) { color: var(--muted); font-size: .66rem; font-weight: 500; }
+.registration-form input,
+.registration-form select,
+.registration-form textarea { width: 100%; min-height: 3rem; border: 1px solid #c7d3e1; border-radius: .6rem; padding: .7rem .8rem; background: white; color: var(--ink); font-size: .9rem; }
+.registration-form textarea { min-height: 6rem; resize: vertical; }
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus { border-color: var(--accent); outline: 3px solid rgba(37, 99, 235, .16); }
+.registration-form [aria-invalid="true"] { border-color: var(--error); }
+.registration-form__error { min-height: 1.1rem; color: var(--error); font-size: .68rem; }
+.registration-form__footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.registration-form__privacy { max-width: 48rem; color: var(--muted); font-size: .7rem; line-height: 1.5; }
+.registration-form__footer .button { flex: 0 0 auto; }
+.registration-form__status { min-height: 1.2rem; color: var(--muted); font-size: .74rem; font-weight: 600; }
+.registration-contact { border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); background: var(--navy); color: white; }
+.registration-contact .section-eyebrow { color: #93c5fd; }
+.registration-contact h3 { margin-top: .65rem; font-size: clamp(1.4rem, 2.5vw, 2rem); }
+.registration-contact > p:not(.section-eyebrow) { margin-top: .75rem; color: #ccdbef; font-size: .82rem; line-height: 1.6; }
+.registration-contact .zalo-button { width: 100%; margin-top: 1.25rem; }
+.registration-contact > span { display: block; margin-top: .75rem; color: #ccdbef; font-size: .76rem; text-align: center; }
+
+@media (max-width: 56.25rem) {
+  .registration-hero { grid-template-columns: minmax(0, 1.2fr) minmax(15rem, .8fr); gap: 2rem; }
+  .registration-guide__steps { grid-template-columns: 1fr; }
+  .registration-guide__steps li + li { border-top: 1px solid var(--border); border-left: 0; }
+  .registration-section__layout { grid-template-columns: 1fr; }
+  .registration-contact { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .5rem 1rem; }
+  .registration-contact .section-eyebrow,
+  .registration-contact h3,
+  .registration-contact > p:not(.section-eyebrow) { grid-column: 1; }
+  .registration-contact .zalo-button { grid-column: 2; grid-row: 1 / 4; margin: 0; }
+  .registration-contact > span { grid-column: 2; margin: 0; }
+}
+
+@media (max-width: 47.5rem) {
+  .grade-dialog { width: min(calc(100% - 1rem), 31rem); max-height: calc(100dvh - 1rem); border-radius: 1rem; }
+  .grade-dialog__panel { min-height: 0; padding: 1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom)); }
+  .grade-dialog__logo { height: 2.5rem; }
+  .grade-dialog__welcome { margin-top: .7rem; font-size: .95rem; }
+  .grade-dialog__description { font-size: .78rem; line-height: 1.5; }
+  .grade-dialog__panel h2 { margin-top: .9rem; font-size: clamp(1.55rem, 7vw, 2.25rem); }
+  .grade-dialog__support { font-size: .72rem; }
+  .grade-dialog__close { top: .65rem; right: .65rem; width: 2.5rem; height: 2.5rem; }
+  .grade-dialog__options { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; margin-top: 1rem; }
+  .grade-dialog__options button { min-height: 3.75rem; padding: .55rem; }
+  .grade-dialog__options button span { width: 2rem; height: 2rem; font-size: 1rem; }
+  .grade-dialog__continue { width: 100%; margin-top: .5rem; }
+  .registration-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 2rem; }
+  .registration-hero__copy h1 { font-size: clamp(2.4rem, 12vw, 3.75rem); }
+  .registration-hero__summary > div { grid-template-columns: 4.75rem minmax(0, 1fr); }
+  .learning-options__heading,
+  .registration-section__heading { grid-template-columns: 1fr; align-items: start; }
+  .learning-options__heading .section-eyebrow,
+  .learning-options__heading h2,
+  .learning-options__heading > p:last-child,
+  .registration-section__heading .section-eyebrow,
+  .registration-section__heading h2,
+  .registration-section__heading > p:last-child { grid-column: 1; grid-row: auto; }
+  .learning-options__grid { grid-template-columns: 1fr; }
+  .learning-format-card { grid-template-columns: auto minmax(0, 1fr); padding: 1.1rem; }
+  .learning-format-card__action { width: 100%; }
+  .registration-guide__heading { display: grid; align-items: start; }
+  .registration-form { grid-template-columns: 1fr; }
+  .registration-form__field,
+  .registration-form__field--wide { grid-column: 1; }
+  .registration-form__footer { align-items: stretch; flex-direction: column; }
+  .registration-form__footer .button { width: 100%; }
+  .registration-contact { display: block; }
+  .registration-contact .zalo-button { width: 100%; margin-top: 1.25rem; }
+  .registration-contact > span { margin-top: .75rem; }
+}

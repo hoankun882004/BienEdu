@@ -60,7 +60,7 @@ test("grade selection persists and an explicit URL takes priority", () => {
   assert.equal(storage.values.get(SELECTED_GRADE_STORAGE_KEY), "12");
 });
 
-test("the root URL remains the grade entry screen even when a grade was stored", () => {
+test("a stored grade is reused on the root URL after first-visit onboarding", () => {
   const storage = createStorage([[SELECTED_GRADE_STORAGE_KEY, "12"]]);
   assert.equal(isGradeEntryUrl("https://bienedu.test/"), true);
   assert.equal(isGradeEntryUrl("https://bienedu.test/index.html"), true);

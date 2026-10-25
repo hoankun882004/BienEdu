@@ -95,4 +95,6 @@ Route tương thích `quiz.html` hiện là nền tảng **Luyện đề** cho l
 
 ## Đăng ký học
 
-Thông tin công khai được quản lý tập trung tại `assets/js/data/tutor-profile.js`. Liên hệ duy nhất hiện được cung cấp là Zalo `0943 943 151`.
+Thông tin hình thức học, khu vực học trực tiếp và Zalo công khai được quản lý tập trung tại `assets/js/data/registration-config.js`. Kênh đã xác minh hiện có là Zalo `0943 943 151`; khu vực học trực tiếp là Hà Nội, còn lịch và địa điểm cụ thể được trao đổi khi đăng ký.
+
+Biểu mẫu đăng ký dùng component chung tại `assets/js/components/registration-form.js` và được chuẩn bị cho Formspree qua `assets/js/data/registration-config.js`. Khi chưa có endpoint thật, nút gửi được vô hiệu hóa và website hướng người học sang Zalo, không hiển thị thành công giả. Xem hướng dẫn kết nối tại `docs/V16_REGISTRATION_SETUP.md`.
