@@ -212,7 +212,7 @@ try {
   await page.locator(".practice-feedback").waitFor();
   assert.equal(await page.locator("[data-practice-answer]:disabled").count(), 4, "practice feedback and answer locking remain intact");
 
-  await page.goto(`${origin}/documents.html?grade=12&topic=CD01&type=1.1&section=knowledge&item=1`, { waitUntil: "domcontentloaded" });
+  await page.goto(`${origin}/documents.html?grade=12&topic=CD15&type=15.1&section=knowledge&item=1`, { waitUntil: "domcontentloaded" });
   await page.locator(".lesson-unavailable").waitFor();
   assert.match(await page.locator(".lesson-unavailable").innerText(), /Nội dung đang được cập nhật/);
   assert.equal(await page.locator("iframe, embed, object, canvas, [data-pdf-viewer]").count(), 0, "missing lessons use an honest native empty state");

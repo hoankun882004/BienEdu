@@ -1,4 +1,5 @@
 import { calculusKnowledgeContent } from "./calculus-lessons.js?v=14.0";
+import { foundationKnowledgeContent } from "./foundation-lessons.generated.js?v=16.2";
 
 // Structured reading content transcribed from the verified CD20–CD21 source PDF.
 // Keep this module text-only so the lesson remains readable, searchable and accessible.
@@ -309,6 +310,7 @@ const probabilityKnowledgeReadings = Object.fromEntries(
 );
 
 export const knowledgeContent = Object.freeze({
+  ...foundationKnowledgeContent,
   ...calculusKnowledgeContent,
   ...probabilityKnowledgeReadings
 });

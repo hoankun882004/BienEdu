@@ -24,7 +24,8 @@ test("student runtime has no PDF viewer, embed, canvas, or PDF.js dependency", (
   assert.equal(packageJson.dependencies?.["pdfjs-dist"], undefined);
 });
 
-test("all 51 verified source mappings publish native Markdown knowledge slides", () => {
+test("all 158 verified source mappings publish native Markdown knowledge slides", () => {
+  assert.equal(Object.keys(knowledgePdfMappings).length, 158);
   const exercises = curriculumGroups.flatMap((group) => group.topics).flatMap((topic) =>
     topic.exerciseTypes.map((exercise) => ({ topic, exercise }))
   );

@@ -251,7 +251,7 @@ function validateRegistry(inventory) {
     if (original?.pageCount !== null && original?.pageCount !== source.pageCount) errors.push(`Page count mismatch for ${source.id}: expected ${source.pageCount}, scanned ${original.pageCount}.`);
   }
 
-  const requiredPdfTopics = new Set(["CD12", "CD13", "CD14", "CD20", "CD21"]);
+  const requiredPdfTopics = new Set(documentSources.flatMap((source) => Object.keys(source.topics)));
   const requiredPdfCodes = curriculumTopics
     .filter((topic) => requiredPdfTopics.has(topic.id))
     .flatMap((topic) => topic.exerciseTypes.map((exercise) => exercise.code));
@@ -353,8 +353,7 @@ function v15ExerciseCoverageReport(rows) {
     "",
     "| Subtopic | Source found | Ready source | Ready generated | Total ready | Pending verification | Exact-type status |",
     "| --- | ---: | ---: | ---: | ---: | ---: | --- |",
-    ...rows.map((row) => `| ${row.subtopicId} | ${row.sourceQuestionsFound} | ${row.readySourceQuestions} | ${row.readyGeneratedQuestions} | ${row.totalReadyQuestions} | ${row.pendingVerification} | ${row.exactTypeValidationStatus} |`),
-    ""
+    ...rows.map((row) => `| ${row.subtopicId} | ${row.sourceQuestionsFound} | ${row.readySourceQuestions} | ${row.readyGeneratedQuestions} | ${row.totalReadyQuestions} | ${row.pendingVerification} | ${row.exactTypeValidationStatus} |`)
   ];
   return `${lines.join("\n")}\n`;
 }
@@ -381,7 +380,7 @@ function topicSourceMetrics(topicId) {
 }
 
 function buildSourceManifest() {
-  const auditedTopicIds = ["CD12", "CD13", "CD14", "CD20", "CD21"];
+  const auditedTopicIds = [...new Set(documentSources.flatMap((source) => Object.keys(source.topics)))];
   const knowledgeUnits = auditedTopicIds.flatMap((topicId) =>
     Object.values(learningContentRegistry.topics[topicId].subtopics).flatMap((subtopic) => {
       const reading = getKnowledgeContent(subtopic.code);
@@ -472,6 +471,25 @@ function buildSourceManifest() {
       }})
     )
   );
+  const foundationExamples = auditedTopicIds
+    .filter((topicId) => /^CD(?:0[1-9]|1[01])$/u.test(topicId))
+    .flatMap((topicId) => Object.values(learningContentRegistry.topics[topicId].subtopics).flatMap((subtopic) =>
+      (getExampleContent(subtopic.code) ?? []).map((example, index) => {
+        const destinationSlideId = subtopic.sections.examples.units[index]?.id ?? `${subtopic.code}-example-${index + 1}`;
+        return {
+          id: example.sourceBlockId ?? destinationSlideId,
+          kind: "worked-example",
+          topicId,
+          code: subtopic.code,
+          title: example.title,
+          sourceDocumentId: learningContentRegistry.topics[topicId].documentId,
+          sourcePages: example.sourcePages,
+          destinationSection: "examples",
+          destinationSlideId,
+          status: "imported-from-verified-source"
+        };
+      })
+    ));
   return {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
@@ -486,6 +504,7 @@ function buildSourceManifest() {
       knowledgeSlides: auditedTopicIds.reduce((total, topicId) => total + Object.values(learningContentRegistry.topics[topicId].subtopics).reduce((sum, subtopic) => sum + subtopic.sections.knowledge.count, 0), 0),
       knowledgeSourceBlocks: knowledgeUnits.length,
       calculusWorkedExamples: workedExamples.length,
+      cd01Cd11WorkedExamples: foundationExamples.length,
       cd20Cd21WorkedExamples: probabilityExamples.length,
       selfPractice: selfPractice.length,
       answerKeys: selfPractice.filter((item) => item.answerKeyStatus).length,
@@ -504,7 +523,7 @@ function buildSourceManifest() {
       verified: mapping.verified,
       regions: mapping.regions
     })),
-    blocks: [...knowledgeUnits, ...workedExamples, ...probabilityExamples, ...selfPractice, {
+    blocks: [...knowledgeUnits, ...foundationExamples, ...workedExamples, ...probabilityExamples, ...selfPractice, {
       id: "cd12-cd14-formula-summary-page",
       kind: "summary",
       topicId: null,
@@ -632,7 +651,7 @@ function validateV14Traceability(traceability) {
 function v14AuditReport(traceability) {
   const verifiedCodes = traceability.subtopics.filter((item) => item.verification === "verified").map((item) => item.subtopicId);
   const pendingCodes = traceability.subtopics.filter((item) => item.verification === "needs-review").map((item) => item.subtopicId);
-  const perTopic = ["CD12", "CD13", "CD14", "CD20", "CD21"].map((topicId) => {
+  const perTopic = [...new Set(documentSources.flatMap((document) => Object.keys(document.topics)))].map((topicId) => {
     const rows = traceability.subtopics.filter((item) => item.topicId === topicId);
     return `| ${topicId} | ${rows.length} | ${rows.filter((item) => item.verification === "verified").length} | ${rows.filter((item) => item.verification === "needs-review").length} | ${rows.reduce((sum, item) => sum + item.runtimeFormulaExpressions, 0)} |`;
   });
@@ -692,6 +711,7 @@ function coverageReport(inventory, validation) {
     `- Curriculum: ${curriculumMeta.topicCount} topics / ${curriculumMeta.exerciseTypeCount} subtopics.`,
     `- Source PDFs discovered: ${inventory.documents.length}.`,
     `- Topic availability: ${summary.topics.available} available, ${summary.topics.partial} partial, ${summary.topics["coming-soon"]} coming soon, ${summary.topics["needs-review"]} needs review.`,
+    "- CD01-CD11: all 107 catalog Knowledge lessons are published from the two newly registered source PDFs. 95 text-complete worked examples are published; 12 diagram-dependent examples are intentionally withheld rather than shown without their figures.",
     "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.",
     "- Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.",
     "- CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.",
@@ -730,7 +750,7 @@ function coverageReport(inventory, validation) {
   if (!validation.warnings.length) lines.push("- No source warnings.");
   else lines.push(...validation.warnings.map((warning) => `- WARNING: ${warning}`));
   const reviewItems = Object.values(calculusSourcePractice).flat().filter((item) => item.verification !== "verified");
-  lines.push("", "## Manual review queue", "", ...reviewItems.map((item) => `- ${item.id}: ${item.auditNote}`), "- New or changed PDFs: review `.audit/content-import-proposals.json`; never replace a verified stable unit solely from an automatic match.", "");
+  lines.push("", "## Manual review queue", "", ...reviewItems.map((item) => `- ${item.id}: ${item.auditNote}`), "- New or changed PDFs: review `.audit/content-import-proposals.json`; never replace a verified stable unit solely from an automatic match.");
   return `${lines.join("\n")}\n`;
 }
 
@@ -758,7 +778,20 @@ if (command === "scan") {
   validation.errors.push(...validateV15ExerciseCoverage(v15ExerciseCoverage));
   writeJson(sourceManifestPath, sourceManifest);
   writeJson(v14TraceabilityPath, v14Traceability);
-  writeFileSync(v14AuditPath, v14AuditReport(v14Traceability), "utf8");
+  const sourceFidelityReport = v14AuditReport(v14Traceability)
+    .replace(
+      "Đã mở và kiểm tra đủ 67/67 trang của hai PDF bằng text/geometry extraction và bộ ảnh page review.",
+      `Đã kiểm kê ${v14Traceability.summary.sourcePagesInspected} trang của ${v14Traceability.documents.length} PDF nguồn bằng text/geometry extraction và kiểm tra hiển thị chọn mẫu.`
+    )
+    .replace(
+      "## 2. Trang nguồn đã xem",
+      "## 2. Phạm vi trang nguồn"
+    )
+    .replace(
+      "- C12-CD13-CD14.pdf: trang 1–49; nội dung bài học ở trang 3–48, trang 49 là bảng tổng hợp được ghi nhận bằng trạng thái excluded-with-reason.\n- PDF tổ hợp–xác suất: trang 1–18; bài học thực tế dừng ở CD21.8, không có bài CD22/CD23.",
+      `${v14Traceability.documents.map((document) => `- ${document.filePath}: ${document.pageCount} trang; ánh xạ cho ${document.topics.join(", ")}.`).join("\n")}\n- C12-CD13-CD14.pdf: trang 49 là bảng tổng hợp được ghi nhận bằng trạng thái excluded-with-reason.\n- PDF tổ hợp–xác suất: bài học thực tế dừng ở CD21.8, không có bài CD22/CD23.`
+    );
+  writeFileSync(v14AuditPath, sourceFidelityReport, "utf8");
   writeJson(v15ExerciseCoverageJsonPath, {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),

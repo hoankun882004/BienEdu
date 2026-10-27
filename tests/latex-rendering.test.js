@@ -50,7 +50,7 @@ function surroundingContent() {
 
 test("all imported Knowledge and Example formula slots render without KaTeX errors", () => {
   const rows = formulaSlots();
-  assert.equal(rows.length, 360, "the complete source formula inventory changed unexpectedly");
+  assert.equal(rows.length, 455, "the complete source formula inventory changed unexpectedly");
 
   for (const row of rows) {
     const html = renderMathText(row.value, { display: true });

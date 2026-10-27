@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { curriculumTopics } from "../assets/js/data/curriculum.js";
-import { getDocumentForTopic } from "../assets/js/data/document-mappings.js";
+import { documentSources, getDocumentForTopic } from "../assets/js/data/document-mappings.js";
 
 const calculusTopicIds = ["CD12", "CD13", "CD14"];
 
@@ -30,5 +30,20 @@ test("CD12, CD13 and CD14 map every catalog exercise to a valid PDF page", () =>
   }
 
   assert.deepEqual([getDocumentForTopic("CD12").pageStart, getDocumentForTopic("CD13").pageStart, getDocumentForTopic("CD14").pageStart], [3, 19, 34]);
-  assert.equal(getDocumentForTopic("CD11"), null);
+});
+
+test("the two newest PDFs are hash-locked and map every CD01-CD11 catalog lesson", () => {
+  const foundationTopics = curriculumTopics.filter((topic) => /^CD(?:0[1-9]|1[01])$/u.test(topic.id));
+  for (const topic of foundationTopics) {
+    const source = getDocumentForTopic(topic.id);
+    assert.ok(source, topic.id);
+    assert.deepEqual(Object.keys(source.exercisePages), topic.exerciseTypes.map((item) => item.code), `${topic.id} codes`);
+    assert.ok(Object.values(source.exercisePages).every((page) => page >= source.pageStart && page <= source.pageEnd), `${topic.id} pages`);
+  }
+
+  for (const source of documentSources.filter((item) => ["cd01-cd07-functions", "cd08-cd11-exponential-logarithm"].includes(item.id))) {
+    const file = resolve(source.filePath);
+    assert.equal(existsSync(file), true, source.id);
+    assert.equal(createHash("sha256").update(readFileSync(file)).digest("hex").toUpperCase(), source.sourceSha256, source.id);
+  }
 });

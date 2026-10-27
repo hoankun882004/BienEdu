@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceDirectory": "39 chuyên đề",
-  "scannedAt": "2026-10-24T09:30:42.427Z",
+  "scannedAt": "2026-10-27T11:02:24.660Z",
   "extractor": "C:\\Program Files\\Git\\mingw64\\bin\\pdftotext.exe",
   "documents": [
     {
@@ -278,6 +278,104 @@
       ]
     },
     {
+      "relativePath": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "fileName": "Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "size": 961062,
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "change": "unchanged",
+      "pageCount": 98,
+      "extraction": "ok",
+      "extractionPath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "textCharacterCount": 225788,
+      "headingCandidates": [
+        {
+          "code": "CD01",
+          "title": "– Đạo hàm và ứng dụng cơ bản 4",
+          "kind": "topic"
+        },
+        {
+          "code": "CD02",
+          "title": "– Tính đơn điệu của hàm số 9",
+          "kind": "topic"
+        },
+        {
+          "code": "CD03",
+          "title": "– Cực trị hàm số 20",
+          "kind": "topic"
+        },
+        {
+          "code": "CD04",
+          "title": "– GTLN, GTNN và bài toán tối ưu 32",
+          "kind": "topic"
+        },
+        {
+          "code": "CD05",
+          "title": "– Tiệm cận 41",
+          "kind": "topic"
+        },
+        {
+          "code": "CD06",
+          "title": "– Đồ thị, bảng biến thiên và tương giao 49",
+          "kind": "topic"
+        },
+        {
+          "code": "CD07",
+          "title": "– Tiếp tuyến 62",
+          "kind": "topic"
+        },
+        {
+          "code": "CD01",
+          "title": "– Đạo hàm và ứng dụng cơ bản",
+          "kind": "topic"
+        },
+        {
+          "code": "CD02",
+          "title": "– Tính đơn điệu của hàm số",
+          "kind": "topic"
+        },
+        {
+          "code": "2.5",
+          "title": "2 1 0x 1 2",
+          "kind": "subtopic"
+        },
+        {
+          "code": "CD03",
+          "title": "– Cực trị hàm số",
+          "kind": "topic"
+        },
+        {
+          "code": "2.5",
+          "title": "2 1 0 1 2",
+          "kind": "subtopic"
+        },
+        {
+          "code": "CD04",
+          "title": "– GTLN, GTNN và bài toán tối ưu",
+          "kind": "topic"
+        },
+        {
+          "code": "CD05",
+          "title": "– Tiệm cận",
+          "kind": "topic"
+        },
+        {
+          "code": "1.5",
+          "title": "6 4 2 0 2 4 6",
+          "kind": "subtopic"
+        },
+        {
+          "code": "CD06",
+          "title": "– Đồ thị, bảng biến thiên và tương giao",
+          "kind": "topic"
+        },
+        {
+          "code": "CD07",
+          "title": "– Tiếp tuyến",
+          "kind": "topic"
+        }
+      ]
+    },
+    {
       "relativePath": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
       "fileName": "Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
       "size": 2925340,
@@ -434,6 +532,18 @@
           "kind": "subtopic"
         }
       ]
+    },
+    {
+      "relativePath": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "fileName": "Mũ-Logarit CD08-CD11.pdf",
+      "size": 391957,
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "change": "unchanged",
+      "pageCount": 78,
+      "extraction": "ok",
+      "extractionPath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "textCharacterCount": 107985,
+      "headingCandidates": []
     }
   ]
 }

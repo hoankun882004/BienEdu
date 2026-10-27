@@ -4,8 +4,10 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { getKnowledgeSection, knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
-test("CD12-CD14 and CD20-CD21 expose bounded knowledge sections", () => {
-  assert.equal(Object.keys(knowledgeSections).length, 51);
+test("all registered source topics expose bounded knowledge sections", () => {
+  assert.equal(Object.keys(knowledgeSections).length, 158);
+  assert.equal(getKnowledgeSection("1.1").sourceId, "cd01-cd07-functions");
+  assert.equal(getKnowledgeSection("8.1").sourceId, "cd08-cd11-exponential-logarithm");
   assert.equal(getKnowledgeSection("12.1").sourceId, "cd12-cd14-calculus");
   assert.equal(getKnowledgeSection("13.8").sourceId, "cd12-cd14-calculus");
   assert.equal(getKnowledgeSection("14.9").sourceId, "cd12-cd14-calculus");
@@ -22,7 +24,7 @@ test("theory and source examples are separate for every mapped subtopic", () => 
   for (const [code, section] of Object.entries(knowledgeSections)) {
     assert.ok(section.knowledgeSlides.length >= 1, `${code} knowledge`);
     assert.ok(section.knowledgeSlides.length <= 2, `${code} knowledge fits within two pages`);
-    assert.ok(section.exampleSlides.length >= 1, `${code} source example`);
+    if (!/^(?:[1-9]|10|11)\./u.test(code)) assert.ok(section.exampleSlides.length >= 1, `${code} source example`);
     assert.ok(section.knowledgeSlides.every((slide) => slide.src === null || slide.src.includes("-k")));
     assert.ok(section.exampleSlides.every((slide) => slide.src === null || slide.src.includes("-e")));
     assert.ok([...section.knowledgeSlides, ...section.exampleSlides].every((slide) => slide.sourcePages.length >= 1));

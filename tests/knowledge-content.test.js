@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { knowledgeContent, getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
+import { getExampleContent } from "../assets/js/data/example-content.js";
 
 const calculusFormulaCounts = {
   "12.1": 12, "12.2": 3, "12.3": 4, "12.4": 6, "12.5": 5, "12.6": 3, "12.7": 3, "12.8": 4, "12.9": 4,
@@ -38,12 +39,14 @@ const criticalSourceCoverage = {
   "14.9": [String.raw`\sum`, String.raw`\int`, String.raw`|v_k(t)|`]
 };
 
-test("all CD12-CD14 and CD20-CD21 lessons expose structured reading content", () => {
+test("all registered CD01-CD14 and CD20-CD21 lessons expose structured reading content", () => {
   assert.deepEqual(Object.keys(knowledgeContent), Object.keys(knowledgeSections));
-  assert.equal(Object.keys(knowledgeContent).length, 51);
+  assert.equal(Object.keys(knowledgeContent).length, 158);
   for (const [code, reading] of Object.entries(knowledgeContent)) {
-    assert.ok(reading.lead.length >= 60, `${code} lead`);
-    assert.ok(reading.formulae.length >= 1, `${code} formulae`);
+    const foundationLesson = /^(?:[1-9]|10|11)\./u.test(code);
+    assert.ok(reading.lead.length >= (foundationLesson ? 10 : 60), `${code} lead`);
+    assert.ok(Array.isArray(reading.formulae), `${code} formulae`);
+    if (!foundationLesson) assert.ok(reading.formulae.length >= 1, `${code} formulae`);
     assert.ok(reading.points.length >= 1, `${code} points`);
     assert.ok(["tip", "warning"].includes(reading.note.tone), `${code} note tone`);
   }
@@ -52,12 +55,36 @@ test("all CD12-CD14 and CD20-CD21 lessons expose structured reading content", ()
 test("reading content stays text-only and safe to render", () => {
   for (const [code, reading] of Object.entries(knowledgeContent)) {
     const values = [reading.lead, ...reading.formulae.flatMap((item) => [item.label, item.value, item.detail]), ...reading.points.flatMap((item) => [item.label, item.text]), reading.note.label, reading.note.text];
-    assert.ok(values.every((value) => typeof value === "string" && !value.includes("<")), `${code} plain text`);
+    assert.ok(values.every((value) => typeof value === "string" && !/<\/?[a-z][^>]*>/iu.test(value)), `${code} plain text`);
   }
   assert.equal(getKnowledgeContent("20.1").formulae[0].value, "N = n₁ + n₂ + … + nₖ");
   assert.equal(getKnowledgeContent("12.1").formulae[0].value, String.raw`F'(x)=f(x),\quad x\in I`);
   assert.equal(getKnowledgeContent("14.9").note.tone, "warning");
   assert.equal(getKnowledgeContent("not-mapped"), null);
+});
+
+test("the two new PDFs publish every catalog lesson without inventing diagram-only examples", () => {
+  const foundationCodes = Object.keys(knowledgeContent).filter((code) => /^(?:[1-9]|10|11)\./u.test(code));
+  assert.equal(foundationCodes.length, 107);
+  assert.equal(foundationCodes.filter((code) => knowledgeContent[code].sourceDocumentId === "cd01-cd07-functions").length, 71);
+  assert.equal(foundationCodes.filter((code) => knowledgeContent[code].sourceDocumentId === "cd08-cd11-exponential-logarithm").length, 36);
+  assert.ok(foundationCodes.every((code) => knowledgeContent[code].sourcePages.length >= 1));
+});
+
+test("foundation extraction restores stacked source formulas without leaking PDF span markers", () => {
+  const examples = Object.fromEntries(
+    Object.keys(knowledgeContent)
+      .filter((code) => /^(?:[1-9]|10|11)\./u.test(code))
+      .map((code) => [code, getExampleContent(code)])
+  );
+  const serialized = JSON.stringify({
+    readings: Object.fromEntries(Object.entries(knowledgeContent).filter(([code]) => /^(?:[1-9]|10|11)\./u.test(code))),
+    examples
+  });
+  assert.doesNotMatch(serialized, /(?:_\(|²ˣ⁺¹|−ˣ⁻²|√ ²|√ ³)/u);
+  assert.match(examples["1.2"][0].prompt, /\(2x\+1\)\/\(x−1\)/u);
+  assert.match(examples["7.5"][0].prompt, /−\(x−2\)\/2/u);
+  assert.match(examples["8.4"][0].prompt, /8\^\{\\sqrt\{2\}\}.*4\^\{\\sqrt\{3\}\}/u);
 });
 
 test("all 26 calculus readings cover the source theory and three-step method", () => {

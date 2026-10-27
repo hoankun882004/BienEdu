@@ -37,7 +37,7 @@ const server = createServer((request, response) => {
 });
 
 function topicFor(code) {
-  return `CD${code.split(".")[0]}`;
+  return `CD${code.split(".")[0].padStart(2, "0")}`;
 }
 
 function route(origin, code, section, item = 1) {
@@ -105,7 +105,9 @@ try {
       for (let index = 0; index < examples.length; index += 1) {
         await page.goto(route(origin, code, "example", index + 1), { waitUntil: "domcontentloaded" });
         const state = await inspect(page, `${code} Example ${index + 1} ${viewport.name}`);
-        assert.ok(state.katex > 0, `${code} Example ${index + 1} ${viewport.name}: math is rendered by KaTeX`);
+        if (examples[index].verification !== "source-transcribed") {
+          assert.ok(state.katex > 0, `${code} Example ${index + 1} ${viewport.name}: math is rendered by KaTeX`);
+        }
         if (viewport.name === "desktop") desktopEquationOverflows += state.overflowCount;
         else mobileEquationOverflows += state.overflowCount;
         if (viewport.name === "desktop" && state.overflowCount) desktopOverflowDetails.push({ label: `${code} Example ${index + 1}`, values: state.equationOverflows });

@@ -2,6 +2,150 @@
 // headings and page boundaries. A filename is never treated as proof of scope.
 export const documentSources = Object.freeze([
   {
+    id: "cd01-cd07-functions",
+    filePath: "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+    fileName: "Hàm số – Đạo hàm CD01–CD07",
+    mimeType: "application/pdf",
+    pageCount: 98,
+    sourceSha256: "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    availabilityStatus: "available",
+    verification: {
+      status: "verified",
+      auditedAt: "2026-10-27",
+      note: "All 98 pages were inspected. Curriculum lessons CD01–CD07 occupy pages 4–65; source solutions occupy pages 66–98. The 71 lesson headings match the curriculum catalog."
+    },
+    topics: {
+      CD01: {
+        pageStart: 4,
+        pageEnd: 8,
+        printedPageStart: 4,
+        printedPageEnd: 8,
+        exercisePages: {
+          "1.1": 4, "1.2": 5, "1.3": 5, "1.4": 5, "1.5": 6,
+          "1.6": 6, "1.7": 6, "1.8": 7, "1.9": 7, "1.10": 8
+        }
+      },
+      CD02: {
+        pageStart: 9,
+        pageEnd: 19,
+        printedPageStart: 9,
+        printedPageEnd: 19,
+        exercisePages: {
+          "2.1": 9, "2.2": 9, "2.3": 10, "2.4": 11, "2.5": 14,
+          "2.6": 18, "2.7": 18, "2.8": 19, "2.9": 19
+        }
+      },
+      CD03: {
+        pageStart: 20,
+        pageEnd: 31,
+        printedPageStart: 20,
+        printedPageEnd: 31,
+        exercisePages: {
+          "3.1": 20, "3.2": 20, "3.3": 21, "3.4": 22, "3.5": 26,
+          "3.6": 29, "3.7": 30, "3.8": 30, "3.9": 30, "3.10": 31
+        }
+      },
+      CD04: {
+        pageStart: 32,
+        pageEnd: 40,
+        printedPageStart: 32,
+        printedPageEnd: 40,
+        exercisePages: {
+          "4.1": 32, "4.2": 32, "4.3": 33, "4.4": 34, "4.5": 37,
+          "4.6": 38, "4.7": 38, "4.8": 39, "4.9": 39, "4.10": 40, "4.11": 40
+        }
+      },
+      CD05: {
+        pageStart: 41,
+        pageEnd: 48,
+        printedPageStart: 41,
+        printedPageEnd: 48,
+        exercisePages: {
+          "5.1": 41, "5.2": 41, "5.3": 42, "5.4": 42, "5.5": 43,
+          "5.6": 44, "5.7": 47, "5.8": 48, "5.9": 48
+        }
+      },
+      CD06: {
+        pageStart: 49,
+        pageEnd: 61,
+        printedPageStart: 49,
+        printedPageEnd: 61,
+        exercisePages: {
+          "6.1": 49, "6.2": 52, "6.3": 54, "6.4": 57, "6.5": 58,
+          "6.6": 58, "6.7": 59, "6.8": 59, "6.9": 59, "6.10": 60,
+          "6.11": 60, "6.12": 61, "6.13": 61
+        }
+      },
+      CD07: {
+        pageStart: 62,
+        pageEnd: 65,
+        printedPageStart: 62,
+        printedPageEnd: 65,
+        exercisePages: {
+          "7.1": 62, "7.2": 62, "7.3": 63, "7.4": 63, "7.5": 64,
+          "7.6": 64, "7.7": 64, "7.8": 65, "7.9": 65
+        }
+      }
+    }
+  },
+  {
+    id: "cd08-cd11-exponential-logarithm",
+    filePath: "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+    fileName: "Mũ – Logarit CD08–CD11",
+    mimeType: "application/pdf",
+    pageCount: 78,
+    sourceSha256: "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+    availabilityStatus: "available",
+    verification: {
+      status: "verified",
+      auditedAt: "2026-10-27",
+      note: "All 78 pages were inspected. This mapping publishes the 36 headings present in the curriculum catalog. Fourteen additional source headings outside the 347-type catalog remain excluded pending a catalog revision."
+    },
+    topics: {
+      CD08: {
+        pageStart: 9,
+        pageEnd: 17,
+        printedPageStart: 9,
+        printedPageEnd: 17,
+        exercisePages: {
+          "8.1": 9, "8.2": 10, "8.3": 11, "8.4": 12, "8.5": 13,
+          "8.6": 14, "8.7": 15, "8.8": 16, "8.9": 17
+        }
+      },
+      CD09: {
+        pageStart: 23,
+        pageEnd: 30,
+        printedPageStart: 23,
+        printedPageEnd: 30,
+        exercisePages: {
+          "9.1": 23, "9.2": 24, "9.3": 25, "9.4": 26,
+          "9.5": 27, "9.6": 28, "9.7": 29, "9.8": 30
+        }
+      },
+      CD10: {
+        pageStart: 34,
+        pageEnd: 41,
+        printedPageStart: 34,
+        printedPageEnd: 41,
+        exercisePages: {
+          "10.1": 34, "10.2": 35, "10.3": 36, "10.4": 37,
+          "10.5": 38, "10.6": 39, "10.7": 40, "10.8": 41
+        }
+      },
+      CD11: {
+        pageStart: 44,
+        pageEnd: 54,
+        printedPageStart: 44,
+        printedPageEnd: 54,
+        exercisePages: {
+          "11.1": 44, "11.2": 45, "11.3": 46, "11.4": 47, "11.5": 48,
+          "11.6": 49, "11.7": 50, "11.8": 51, "11.9": 52, "11.10": 53,
+          "11.11": 54
+        }
+      }
+    }
+  },
+  {
     id: "cd20-cd21-theory",
     filePath: "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
     fileName: "Lý thuyết Tổ hợp – Xác suất – Thống kê CD20–CD23",

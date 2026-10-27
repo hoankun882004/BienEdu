@@ -1,39 +1,42 @@
 # BienEdu content coverage
 
-Generated: 2026-10-24T09:30:42.470Z
+Generated: 2026-10-27T11:02:24.701Z
 
 ## Audit summary
 
 - Curriculum: 39 topics / 347 subtopics.
-- Source PDFs discovered: 2.
-- Topic availability: 2 available, 3 partial, 34 coming soon, 0 needs review.
+- Source PDFs discovered: 4.
+- Topic availability: 2 available, 14 partial, 23 coming soon, 0 needs review.
+- CD01-CD11: all 107 catalog Knowledge lessons are published from the two newly registered source PDFs. 95 text-complete worked examples are published; 12 diagram-dependent examples are intentionally withheld rather than shown without their figures.
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
 - Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.
 - CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.
-- V14 source-fidelity: 3/51 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 48 stay needs-review and are not silently promoted by coverage counts.
+- V14 source-fidelity: 3/158 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 155 stay needs-review and are not silently promoted by coverage counts.
 
 ## Source documents
 
 | File | Pages | SHA-256 | Change | Registered coverage |
 | --- | ---: | --- | --- | --- |
 | C12-CD13-CD14.pdf | 49 | `4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59` | unchanged | CD12, CD13, CD14 |
+| Hàm số-Đạo Hàm-CD01-CD07.pdf | 98 | `2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0` | unchanged | CD01, CD02, CD03, CD04, CD05, CD06, CD07 |
 | Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf | 18 | `66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293` | unchanged | CD20, CD21 |
+| Mũ-Logarit CD08-CD11.pdf | 78 | `27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7` | unchanged | CD08, CD09, CD10, CD11 |
 
 ## Topic coverage
 
 | Topic | Subtopics | Available | Knowledge | Displayed examples | Source examples | Source practice | Answer keys | Auto-graded source | Needs review | Source coverage | Runtime |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| CD01 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD02 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD03 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD04 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD05 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD06 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD07 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD08 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD09 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD10 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
-| CD11 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
+| CD01 | 10 | 0 | 10 | 10 | 10 | 0 | 0 | 0 | 0 | none | partial |
+| CD02 | 9 | 0 | 9 | 6 | 6 | 0 | 0 | 0 | 0 | none | partial |
+| CD03 | 10 | 0 | 10 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
+| CD04 | 11 | 0 | 11 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
+| CD05 | 9 | 0 | 9 | 7 | 7 | 0 | 0 | 0 | 0 | none | partial |
+| CD06 | 13 | 0 | 13 | 10 | 10 | 0 | 0 | 0 | 0 | none | partial |
+| CD07 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
+| CD08 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
+| CD09 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
+| CD10 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
+| CD11 | 11 | 0 | 11 | 11 | 11 | 0 | 0 | 0 | 0 | none | partial |
 | CD12 | 9 | 1 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | none | partial |
 | CD13 | 8 | 0 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | none | partial |
 | CD14 | 9 | 0 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | none | partial |

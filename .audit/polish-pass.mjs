@@ -34,6 +34,15 @@ async function open(page, route, settleMs = 220) {
   })()`);
 }
 
+async function waitForSelector(page, selector, timeoutMs = 5000) {
+  const startedAt = Date.now();
+  while (Date.now() - startedAt < timeoutMs) {
+    if (await page.eval(`document.querySelector(${JSON.stringify(selector)}) !== null`)) return;
+    await sleep(100);
+  }
+  throw new Error(`Timed out waiting for ${selector}`);
+}
+
 try {
   const page = await browser.newPage({ width: 1440, height: 900, dsf: 1, mobile: false });
 
@@ -51,11 +60,12 @@ try {
   assert.equal(await page.eval("new URL(document.querySelector('[data-registration-link]').href).hash"), "#registration");
 
   await open(page, "/documents.html?grade=12", 400);
+  await waitForSelector(page, "[data-curriculum-group]");
   assert.equal(await page.eval("document.querySelector('[data-curriculum-group] option').textContent"), "Tất cả nhóm kiến thức");
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-ready').length"), 2);
-  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-partial').length"), 3);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-partial').length"), 14);
   assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-source').length"), 0);
-  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-pending').length"), 34);
+  assert.equal(await page.eval("document.querySelectorAll('.roadmap-topic.is-pending').length"), 23);
   assert.equal(await page.eval("document.querySelector('[data-curriculum-status]').textContent.replace(/\\s+/g, ' ').trim()"), "Đang hiển thị 39 chuyên đề");
 
   await open(page, "/contact.html?grade=12", 350);

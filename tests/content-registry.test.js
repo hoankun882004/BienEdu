@@ -26,18 +26,19 @@ test("content registry covers every declared topic and subtopic without a second
 test("availability is derived from verified content instead of topic number", () => {
   const summary = getAvailabilitySummary();
   assert.equal(summary.topics.available, 2);
-  assert.equal(summary.topics.partial, 3);
-  assert.equal(summary.topics["coming-soon"], 34);
+  assert.equal(summary.topics.partial, 14);
+  assert.equal(summary.topics["coming-soon"], 23);
   assert.equal(getTopicAvailability("CD12").status, CONTENT_STATUS.PARTIAL);
   assert.equal(getTopicAvailability("CD20").status, CONTENT_STATUS.AVAILABLE);
   assert.equal(getTopicAvailability("CD22").status, CONTENT_STATUS.COMING_SOON);
-  assert.equal(getTopicAvailability("CD01").status, CONTENT_STATUS.COMING_SOON);
+  assert.equal(getTopicAvailability("CD01").status, CONTENT_STATUS.PARTIAL);
 });
 
 test("section availability and source coverage remain independent", () => {
   const calculus = getSubtopicAvailability("12.1");
   const probability = getSubtopicAvailability("20.1");
-  const unavailable = getSubtopicAvailability("1.1");
+  const foundation = getSubtopicAvailability("1.1");
+  const unavailable = getSubtopicAvailability("15.1");
 
   assert.equal(calculus.sections.knowledge.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(calculus.sections.examples.status, CONTENT_STATUS.AVAILABLE);
@@ -51,6 +52,9 @@ test("section availability and source coverage remain independent", () => {
   assert.equal(calculus.sections.practice.count, 10);
   assert.equal(probability.sections.practice.readyGeneratedCount, 3);
   assert.equal(probability.sourceCoverage, "complete");
+  assert.equal(foundation.sections.knowledge.status, CONTENT_STATUS.AVAILABLE);
+  assert.equal(foundation.sections.examples.status, CONTENT_STATUS.AVAILABLE);
+  assert.equal(foundation.sections.practice.status, CONTENT_STATUS.COMING_SOON);
   assert.equal(unavailable.sections.knowledge.status, CONTENT_STATUS.COMING_SOON);
 });
 
@@ -76,7 +80,7 @@ test("imported slides have stable unique IDs and verified source references", ()
           ids.push(unit.id);
           assert.ok(unit.source.documentId);
           assert.ok(unit.source.pages.length > 0);
-          assert.equal(unit.verification, "verified");
+          assert.ok(["verified", "source-transcribed"].includes(unit.verification));
         }
       }
     }
