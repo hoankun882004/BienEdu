@@ -122,6 +122,19 @@ SPACE_FIXES = {
     "kỳnhỏ": "kỳ nhỏ", "cơ sốnhỏ": "cơ số nhỏ", "giá trịlớn": "giá trị lớn",
     "giá trịlà": "giá trị là", "đểcòn": "để còn",
     "trịcủa": "trị của", "trịtương": "trị tương",
+    "thứnhất": "thứ nhất", "thứhai": "thứ hai", "lẻlàm": "lẻ làm",
+    "thịđạo": "thị đạo", "độdốc": "độ dốc", "từtrái": "từ trái",
+    "độtăng": "độ tăng", "cảu′": "cả u′", "vềđạo": "về đạo",
+    "Chỉđọc": "Chỉ đọc", "Chỉlấy": "Chỉ lấy", "Giữnghiệm": "Giữ nghiệm",
+    "tất cảgiá": "tất cả giá", "độcao": "độ cao", "kềvà": "kề và",
+    "khảthi": "khả thi", "ngờtừ": "ngờ từ", "tửtử": "tử tử",
+    "Giữmiền": "Giữ miền", "thịtheo": "thị theo", "Chỉsử": "Chỉ sử",
+    "tung độtiếp": "tung độ tiếp", "thểđổi": "thể đổi", "Chỉrút": "Chỉ rút",
+    "đủbác": "đủ bác", "tửchung": "tử chung", "vềx": "về x",
+    "vềđiều": "về điều", "thịnằm": "thị nằm", "bỏsót": "bỏ sót",
+    "độkhông": "độ không", "tựđộng": "tự động", "lệqua": "lệ qua",
+    "hoành độtiếp": "hoành độ tiếp", "tựthay": "tự thay", "đềkhông": "đề không",
+    "giờtrước": "giờ trước", "tỷ lệkhông": "tỷ lệ không", "không ởt": "không ở t",
 }
 
 SUPERSCRIPT_MAP = str.maketrans({
@@ -150,13 +163,14 @@ def clean_text(value: str) -> str:
     value = re.sub(r"(\d+)\s+_\(\(([^()]+)\)2\)", r"\1/(\2)²", value)
     value = re.sub(r"(\d+)\s+_\(\(([^()]+)\)\)2", r"\1/(\2)²", value)
     value = value.replace("log_(a(x))", "logₐ₍ₓ₎")
-    for old, new in SPACE_FIXES.items():
-        def preserve_case(match: re.Match[str]) -> str:
-            replacement = new
-            if match.group(0)[:1].isupper():
-                replacement = replacement[:1].upper() + replacement[1:]
-            return replacement
-        value = re.sub(re.escape(old), preserve_case, value, flags=re.IGNORECASE)
+    for _ in range(2):
+        for old, new in SPACE_FIXES.items():
+            def preserve_case(match: re.Match[str]) -> str:
+                replacement = new
+                if match.group(0)[:1].isupper():
+                    replacement = replacement[:1].upper() + replacement[1:]
+                return replacement
+            value = re.sub(re.escape(old), preserve_case, value, flags=re.IGNORECASE)
     value = re.sub(r"\^\(([^()]*)\)", lambda match: match.group(1).translate(SUPERSCRIPT_MAP), value)
     value = re.sub(r"_\(([^()]*)\)", lambda match: match.group(1).translate(SUBSCRIPT_MAP), value)
     # A few two-dimensional expressions are split into separate PDF spans.
@@ -165,7 +179,12 @@ def clean_text(value: str) -> str:
     value = value.replace("−ˣ⁻² ₂", "−(x−2)/2")
     value = value.replace("8 √ ²", "8^(√2)").replace("4 √ ³", "4^(√3)")
     value = value.replace("2³ √ ²", "2^(3√2)").replace("2² √ ³", "2^(2√3)")
-    return value
+    value = value.replace("A = P(1 + r)N", r"\(A=P(1+r)^N\)")
+    value = value.replace("N(t) = N₀qᵗ⁄T", r"\(N(t)=N_0q^{t/T}\)")
+    value = value.replace("M(t) = M₀ 2⁻ᵗ⁄T", r"\(M(t)=M_0 2^{-t/T}\)")
+    value = value.replace("C = y₁e⁻ᵏᵗ¹", r"\(C=y_1e^{-kt_1}\)")
+    value = value.replace("sau đó Thử", "sau đó thử").replace("hai Dữ kiện", "hai dữ kiện")
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def block_text(block: dict) -> str:
@@ -308,6 +327,105 @@ def concise_title(prompt: str, number: int) -> str:
     return first or f"Ví dụ {number}"
 
 
+FOUNDATION_FORMULA_SPECS: dict[str, list[dict]] = {
+    "1.7": [
+        {"match": "Tích:", "expressions": [r"(uv)'=u'v+uv'"]},
+        {"match": "Thương:", "expressions": [r"\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2},\quad v\ne0"]},
+    ],
+    "3.6": [{"match": "f′=0", "expressions": [r"f'(x)=0"]}],
+    "3.8": [{"match": "f=0", "expressions": [r"f(x)=0"]}],
+    "3.9": [
+        {"match": "f′(t)=0", "expressions": [r"f'(t)=0,\quad t>0"]},
+        {"match": "x=0", "expressions": [r"x=0"]},
+    ],
+    "7.1": [{"match": "f(x0)", "expressions": [r"f(x_0)", r"f'(x_0)"]}],
+    "7.3": [{"match": "f′(x0)=k", "expressions": [r"f'(x_0)=k"]}],
+    "8.3": [{
+        "match": "logₐ₍ₓ₎",
+        "expressions": [r"\log_{a(x)}u(x)", r"a(x)>0,\quad a(x)\ne1,\quad u(x)>0"],
+    }],
+    "8.6": [{"match": "y = aˣ", "expressions": [r"y=a^x"]}],
+    "8.7": [{"match": "x > 0", "expressions": [r"x>0"]}],
+    "9.3": [
+        {"match": "t = aˣ > 0", "expressions": [r"t=a^x>0"]},
+        {"match": "t = logₐ x", "expressions": [r"t=\log_a x"]},
+    ],
+    "9.4": [{"match": "ln(aᵘ) = u ln a", "expressions": [r"\ln(a^u)=u\ln a"]}],
+    "9.7": [{"match": "t > 0", "expressions": [r"t>0"]}],
+    "9.8": [{"match": "t = aˣ", "expressions": [r"t=a^x,\quad t>0"]}],
+    "10.2": [{
+        "match": "f(x) > f(x₀)",
+        "expressions": [r"f(x)>f(x_0)", r"f(x)\le f(x_0)"],
+    }],
+    "10.3": [{
+        "match": "t = aˣ > 0",
+        "expressions": [r"t=a^x>0", r"t=\log_a x"],
+    }],
+    "10.5": [{"match": "aᵘ > 0", "expressions": [r"a^u>0"]}],
+    "11.1": [{
+        "match": "A = P(1 + nr)",
+        "expressions": [r"A=P(1+nr)", r"I=Pnr"],
+    }],
+    "11.2": [
+        {"match": "A=P(1+r)^N", "expressions": [r"A=P(1+r)^N"]},
+        {"match": "A = P(1 + r/m)ᵐᵗ", "expressions": [r"A=P\left(1+\frac{r}{m}\right)^{mt}"]},
+    ],
+    "11.3": [
+        {"match": "Pₙ = P₀(1+r)ⁿ", "expressions": [r"P_n=P_0(1+r)^n"]},
+        {"match": "P(t) = P₀eʳᵗ", "expressions": [r"P(t)=P_0e^{rt}"]},
+    ],
+    "11.4": [
+        {"match": "N(t) = N₀eᵏᵗ", "expressions": [r"N(t)=N_0e^{kt}"]},
+        {"match": "N(t)=N_0q^{t/T}", "expressions": [r"N(t)=N_0q^{t/T}"]},
+    ],
+    "11.5": [
+        {"match": "M(t) = M₀e⁻ᵏᵗ", "expressions": [r"M(t)=M_0e^{-kt},\quad k>0"]},
+        {"match": "M(t)=M_0 2^{-t/T}", "expressions": [r"M(t)=M_0 2^{-t/T}", r"k=\frac{\ln 2}{T}"]},
+    ],
+    "11.6": [{
+        "match": "Vₙ = V₀(1 −r)ⁿ",
+        "expressions": [r"V_n=V_0(1-r)^n,\quad 0<r<1"],
+    }],
+    "11.8": [
+        {"match": "C = y(0) > 0", "expressions": [r"C=y(0)>0"]},
+        {"match": "k > 0 tăng", "expressions": [r"k>0", r"k<0", r"k=0"]},
+        {"match": "y = L + Ceᵏᵗ", "expressions": [r"y=L+Ce^{kt}", r"y(0)=L+C"]},
+    ],
+    "11.9": [
+        {"match": "y′(t) = ky(t)", "expressions": [r"y'(t)=ky(t)"]},
+        {"match": "y(t) = y₀eᵏᵗ", "expressions": [r"y(t)=y_0e^{kt}"]},
+        {"match": "g(t) = ln y(t)", "expressions": [r"g(t)=\ln y(t)", r"g'(t)=k", r"g(t)=kt+\ln y_0"]},
+    ],
+    "11.10": [
+        {
+            "match": "k = ln(y₂/y₁)/(t₂ −t₁)",
+            "expressions": [
+                r"y(t)=Ce^{kt}>0",
+                r"k=\frac{\ln\left(\frac{y_2}{y_1}\right)}{t_2-t_1}",
+            ],
+        },
+        {"match": "C=y_1e^{-kt_1}", "expressions": [r"C=y_1e^{-kt_1}"]},
+    ],
+}
+
+
+def source_formulae(code: str, method_sentences: list[str]) -> list[dict]:
+    """Build verified KaTeX cards from exact formulae in the source method."""
+    formulae: list[dict] = []
+    for spec in FOUNDATION_FORMULA_SPECS.get(code, []):
+        source = next((sentence for sentence in method_sentences if spec["match"] in sentence), None)
+        if source is None:
+            raise ValueError(f"{code}: source formula fragment not found: {spec['match']}")
+        expressions = spec["expressions"]
+        formulae.append({
+            "label": "Công thức & điều kiện",
+            "value": expressions[0],
+            "expressions": expressions,
+            "detail": source,
+        })
+    return formulae
+
+
 def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_id: str) -> tuple[dict, list[dict]]:
     method, note = method_from(theory)
     source_page = theory[0]["page"]
@@ -316,7 +434,7 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
         method_sentences = ["Đọc kỹ điều kiện và thực hiện theo đúng quy trình của dạng bài trong tài liệu nguồn."]
     reading = {
         "lead": method,
-        "formulae": [],
+        "formulae": source_formulae(code, method_sentences),
         "points": [
             {"label": f"Bước {index + 1:02d}", "text": sentence}
             for index, sentence in enumerate(method_sentences[:4])

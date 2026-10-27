@@ -147,7 +147,24 @@ const knowledge = {
   },
   "1.7": {
     "lead": "Tích: (uv)′ = u′v + uv′. Thương: (u/v)′ = (u′v −uv′)/v², với v≠ 0.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "(uv)'=u'v+uv'",
+        "expressions": [
+          "(uv)'=u'v+uv'"
+        ],
+        "detail": "Tích: (uv)′ = u′v + uv′."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2},\\quad v\\ne0",
+        "expressions": [
+          "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2},\\quad v\\ne0"
+        ],
+        "detail": "Thương: (u/v)′ = (u′v −uv′)/v², với v≠ 0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -170,12 +187,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "1.8": {
-    "lead": "Tính đạo hàm lần thứnhất rồi lần thứhai.",
+    "lead": "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Tính đạo hàm lần thứnhất rồi lần thứhai."
+        "text": "Tính đạo hàm lần thứ nhất rồi lần thứ hai."
       }
     ],
     "note": {
@@ -258,12 +275,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "2.2": {
-    "lead": "Nghiệm bội lẻlàm đổi dấu, bội chẵn không đổi dấu.",
+    "lead": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Nghiệm bội lẻlàm đổi dấu, bội chẵn không đổi dấu."
+        "text": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu."
       }
     ],
     "note": {
@@ -302,12 +319,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "2.4": {
-    "lead": "Đọc vị trí đồ thịđạo hàm so với trục Ox, không đọc độdốc của nó.",
+    "lead": "Đọc vị trí đồ thị đạo hàm so với trục Ox, không đọc độ dốc của nó.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đọc vị trí đồ thịđạo hàm so với trục Ox, không đọc độdốc của nó."
+        "text": "Đọc vị trí đồ thị đạo hàm so với trục Ox, không đọc độ dốc của nó."
       }
     ],
     "note": {
@@ -322,12 +339,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "2.5": {
-    "lead": "Đi từtrái sang phải và quan sát tung độtăng hay giảm.",
+    "lead": "Đi từ trái sang phải và quan sát tung độ tăng hay giảm.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đi từtrái sang phải và quan sát tung độtăng hay giảm."
+        "text": "Đi từ trái sang phải và quan sát tung độ tăng hay giảm."
       }
     ],
     "note": {
@@ -362,12 +379,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "2.7": {
-    "lead": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cảu′.",
+    "lead": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cảu′."
+        "text": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′."
       }
     ],
     "note": {
@@ -382,12 +399,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "2.8": {
-    "lead": "Đưa vềđạo hàm không âm hoặc không dương trên toàn R; kiểm tra trường hợp bằng 0.",
+    "lead": "Đưa về đạo hàm không âm hoặc không dương trên toàn R; kiểm tra trường hợp bằng 0.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đưa vềđạo hàm không âm hoặc không dương trên toàn R"
+        "text": "Đưa về đạo hàm không âm hoặc không dương trên toàn R"
       },
       {
         "label": "Bước 02",
@@ -470,12 +487,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "3.3": {
-    "lead": "Chỉđọc những mốc mũi tên đảo chiều.",
+    "lead": "Chỉ đọc những mốc mũi tên đảo chiều.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Chỉđọc những mốc mũi tên đảo chiều."
+        "text": "Chỉ đọc những mốc mũi tên đảo chiều."
       }
     ],
     "note": {
@@ -490,12 +507,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "3.4": {
-    "lead": "Chỉlấy giao điểm với Ox mà đồ thịđạo hàm đổi dấu.",
+    "lead": "Chỉ lấy giao điểm với Ox mà đồ thị đạo hàm đổi dấu.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Chỉlấy giao điểm với Ox mà đồ thịđạo hàm đổi dấu."
+        "text": "Chỉ lấy giao điểm với Ox mà đồ thị đạo hàm đổi dấu."
       }
     ],
     "note": {
@@ -531,7 +548,16 @@ const knowledge = {
   },
   "3.6": {
     "lead": "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f'(x)=0",
+        "expressions": [
+          "f'(x)=0"
+        ],
+        "detail": "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -571,7 +597,16 @@ const knowledge = {
   },
   "3.8": {
     "lead": "Tách miền f dương, f âm; kiểm tra thêm các nghiệm f=0.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f(x)=0",
+        "expressions": [
+          "f(x)=0"
+        ],
+        "detail": "kiểm tra thêm các nghiệm f=0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -594,12 +629,29 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "3.9": {
-    "lead": "Giữnghiệm của f′(t)=0 với t>0; mỗi t tạo hai x, xét riêng x=0.",
-    "formulae": [],
+    "lead": "Giữ nghiệm của f′(t)=0 với t>0; mỗi t tạo hai x, xét riêng x=0.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f'(t)=0,\\quad t>0",
+        "expressions": [
+          "f'(t)=0,\\quad t>0"
+        ],
+        "detail": "Giữ nghiệm của f′(t)=0 với t>0"
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "x=0",
+        "expressions": [
+          "x=0"
+        ],
+        "detail": "mỗi t tạo hai x, xét riêng x=0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Giữnghiệm của f′(t)=0 với t>0"
+        "text": "Giữ nghiệm của f′(t)=0 với t>0"
       },
       {
         "label": "Bước 02",
@@ -638,7 +690,7 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "4.1": {
-    "lead": "Tìm các điểm tới hạn và hai đầu đoạn; so sánh tất cảgiá trị.",
+    "lead": "Tìm các điểm tới hạn và hai đầu đoạn; so sánh tất cả giá trị.",
     "formulae": [],
     "points": [
       {
@@ -647,7 +699,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "so sánh tất cảgiá trị."
+        "text": "so sánh tất cả giá trị."
       }
     ],
     "note": {
@@ -682,12 +734,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "4.3": {
-    "lead": "So sánh các độcao được đạt; phân biệt đầu mút đóng và mở.",
+    "lead": "So sánh các độ cao được đạt; phân biệt đầu mút đóng và mở.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "So sánh các độcao được đạt"
+        "text": "So sánh các độ cao được đạt"
       },
       {
         "label": "Bước 02",
@@ -830,12 +882,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "4.10": {
-    "lead": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kềvà biên.",
+    "lead": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kềvà biên."
+        "text": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên."
       }
     ],
     "note": {
@@ -850,12 +902,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "4.11": {
-    "lead": "Lấy giao các điều kiện, tối ưu trên miền khảthi sau cùng.",
+    "lead": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Lấy giao các điều kiện, tối ưu trên miền khảthi sau cùng."
+        "text": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng."
       }
     ],
     "note": {
@@ -870,12 +922,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "5.1": {
-    "lead": "Tìm điểm nghi ngờtừmiền xác định rồi tính giới hạn một phía.",
+    "lead": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Tìm điểm nghi ngờtừmiền xác định rồi tính giới hạn một phía."
+        "text": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía."
       }
     ],
     "note": {
@@ -958,12 +1010,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "5.5": {
-    "lead": "Đọc độcao ở vô cực và các giới hạn vô cực tại mốc hữu hạn.",
+    "lead": "Đọc độ cao ở vô cực và các giới hạn vô cực tại mốc hữu hạn.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đọc độcao ở vô cực và các giới hạn vô cực tại mốc hữu hạn."
+        "text": "Đọc độ cao ở vô cực và các giới hạn vô cực tại mốc hữu hạn."
       }
     ],
     "note": {
@@ -1018,12 +1070,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "5.8": {
-    "lead": "Tách trường hợp nhân tửtửvà mẫu triệt tiêu hoặc bậc giảm.",
+    "lead": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Tách trường hợp nhân tửtửvà mẫu triệt tiêu hoặc bậc giảm."
+        "text": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm."
       }
     ],
     "note": {
@@ -1038,12 +1090,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "5.9": {
-    "lead": "Giữmiền ban đầu; giới hạn hữu hạn là điểm khuyết, vô cực là TCĐ.",
+    "lead": "Giữ miền ban đầu; giới hạn hữu hạn là điểm khuyết, vô cực là TCĐ.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Giữmiền ban đầu"
+        "text": "Giữ miền ban đầu"
       },
       {
         "label": "Bước 02",
@@ -1234,12 +1286,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "6.9": {
-    "lead": "Tách phần đồ thịtheo dấu tung độ, không theo dấu hoành độ.",
+    "lead": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Tách phần đồ thịtheo dấu tung độ, không theo dấu hoành độ."
+        "text": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ."
       }
     ],
     "note": {
@@ -1254,12 +1306,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "6.10": {
-    "lead": "Chỉsửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
+    "lead": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Chỉsửdụng nửa đồ thịbên phải rồi đối xứng qua Oy."
+        "text": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy."
       }
     ],
     "note": {
@@ -1343,7 +1395,17 @@ const knowledge = {
   },
   "7.1": {
     "lead": "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f(x_0)",
+        "expressions": [
+          "f(x_0)",
+          "f'(x_0)"
+        ],
+        "detail": "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1362,12 +1424,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "7.2": {
-    "lead": "Giải phương trình tung độtiếp điểm; lập tiếp tuyến tại từng nghiệm.",
+    "lead": "Giải phương trình tung độ tiếp điểm; lập tiếp tuyến tại từng nghiệm.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Giải phương trình tung độtiếp điểm"
+        "text": "Giải phương trình tung độ tiếp điểm"
       },
       {
         "label": "Bước 02",
@@ -1387,7 +1449,16 @@ const knowledge = {
   },
   "7.3": {
     "lead": "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f'(x_0)=k",
+        "expressions": [
+          "f'(x_0)=k"
+        ],
+        "detail": "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1470,12 +1541,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "7.7": {
-    "lead": "Đặt hoành độtiếp điểm t; thay tọa độđiểm đã cho vào tiếp tuyến.",
+    "lead": "Đặt hoành độ tiếp điểm t; thay tọa độđiểm đã cho vào tiếp tuyến.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đặt hoành độtiếp điểm t"
+        "text": "Đặt hoành độ tiếp điểm t"
       },
       {
         "label": "Bước 02",
@@ -1534,12 +1605,12 @@ const knowledge = {
     "sourceDocumentId": "cd01-cd07-functions"
   },
   "8.1": {
-    "lead": "Đưa căn về  số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
+    "lead": "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Đưa căn về  số mũ hữu tỉ"
+        "text": "Đưa căn về số mũ hữu tỉ"
       },
       {
         "label": "Bước 02",
@@ -1587,7 +1658,17 @@ const knowledge = {
   },
   "8.3": {
     "lead": "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0. Có căn, mẫu số thì thêm điều kiện tương ứng.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "\\log_{a(x)}u(x)",
+        "expressions": [
+          "\\log_{a(x)}u(x)",
+          "a(x)>0,\\quad a(x)\\ne1,\\quad u(x)>0"
+        ],
+        "detail": "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1638,7 +1719,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "8.5": {
-    "lead": "Cùng cơ số thì dùng tính đơn điệu. Khác cơ số có thểđổi cơ số hoặc so sánh với 0, 1.",
+    "lead": "Cùng cơ số thì dùng tính đơn điệu. Khác cơ số có thể đổi cơ số hoặc so sánh với 0, 1.",
     "formulae": [],
     "points": [
       {
@@ -1647,7 +1728,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Khác cơ số có thểđổi cơ số hoặc so sánh với 0, 1."
+        "text": "Khác cơ số có thể đổi cơ số hoặc so sánh với 0, 1."
       }
     ],
     "note": {
@@ -1663,7 +1744,16 @@ const knowledge = {
   },
   "8.6": {
     "lead": "Nhận dạng y = aˣ; xét cơ số; lập các điểm (−1; 1/a), (0; 1), (1; a). Đồ thị luôn phía trên trục hoành.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "y=a^x",
+        "expressions": [
+          "y=a^x"
+        ],
+        "detail": "Nhận dạng y = aˣ"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1695,7 +1785,16 @@ const knowledge = {
   },
   "8.7": {
     "lead": "Ghi x > 0; lấy các điểm (1; 0), (a; 1), (1/a; −1); xét chiều biến thiên theo cơ số.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "x>0",
+        "expressions": [
+          "x>0"
+        ],
+        "detail": "Ghi x > 0"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1726,7 +1825,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "8.8": {
-    "lead": "Ghi điều kiện; dùng quy tắc tích, thương và lũy thừa; khi cần dùng đổi cơ số. Chỉrút gọn trong tập xác định ban đầu.",
+    "lead": "Ghi điều kiện; dùng quy tắc tích, thương và lũy thừa; khi cần dùng đổi cơ số. Chỉ rút gọn trong tập xác định ban đầu.",
     "formulae": [],
     "points": [
       {
@@ -1743,7 +1842,7 @@ const knowledge = {
       },
       {
         "label": "Bước 04",
-        "text": "Chỉrút gọn trong tập xác định ban đầu."
+        "text": "Chỉ rút gọn trong tập xác định ban đầu."
       }
     ],
     "note": {
@@ -1758,7 +1857,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "8.9": {
-    "lead": "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên. Một phản ví dụ đủbác bỏ một mệnh đề sai.",
+    "lead": "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên. Một phản ví dụ đủ bác bỏ một mệnh đề sai.",
     "formulae": [],
     "points": [
       {
@@ -1767,7 +1866,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Một phản ví dụ đủbác bỏ một mệnh đề sai."
+        "text": "Một phản ví dụ đủ bác bỏ một mệnh đề sai."
       }
     ],
     "note": {
@@ -1806,7 +1905,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "9.2": {
-    "lead": "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện. Với lũy thừa lệch số mũ, đặt nhân tửchung.",
+    "lead": "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện. Với lũy thừa lệch số mũ, đặt nhân tử chung.",
     "formulae": [],
     "points": [
       {
@@ -1815,7 +1914,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Với lũy thừa lệch số mũ, đặt nhân tửchung."
+        "text": "Với lũy thừa lệch số mũ, đặt nhân tử chung."
       }
     ],
     "note": {
@@ -1830,8 +1929,25 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "9.3": {
-    "lead": "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0. Gặp bình phương lôgarit thì đặt t = logₐ x, với điều kiện của x; giải theo t rồi quay vềx.",
-    "formulae": [],
+    "lead": "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0. Gặp bình phương lôgarit thì đặt t = logₐ x, với điều kiện của x; giải theo t rồi quay về x.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "t=a^x>0",
+        "expressions": [
+          "t=a^x>0"
+        ],
+        "detail": "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "t=\\log_a x",
+        "expressions": [
+          "t=\\log_a x"
+        ],
+        "detail": "Gặp bình phương lôgarit thì đặt t = logₐ x, với điều kiện của x"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1843,7 +1959,7 @@ const knowledge = {
       },
       {
         "label": "Bước 03",
-        "text": "giải theo t rồi quay vềx."
+        "text": "giải theo t rồi quay về x."
       }
     ],
     "note": {
@@ -1859,7 +1975,16 @@ const knowledge = {
   },
   "9.4": {
     "lead": "Khi hai vế dương, lấy lôgarit cùng một cơ số thích hợp. Dùng ln(aᵘ) = u ln a.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "\\ln(a^u)=u\\ln a",
+        "expressions": [
+          "\\ln(a^u)=u\\ln a"
+        ],
+        "detail": "Dùng ln(aᵘ) = u ln a."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -1910,7 +2035,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "9.6": {
-    "lead": "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm. Chứng minh có nhiều nhất một nghiệm, sau đó Thử một nghiệm cụ thể.",
+    "lead": "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm. Chứng minh có nhiều nhất một nghiệm, sau đó thử một nghiệm cụ thể.",
     "formulae": [],
     "points": [
       {
@@ -1919,7 +2044,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Chứng minh có nhiều nhất một nghiệm, sau đó Thử một nghiệm cụ thể."
+        "text": "Chứng minh có nhiều nhất một nghiệm, sau đó thử một nghiệm cụ thể."
       }
     ],
     "note": {
@@ -1934,12 +2059,21 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "9.7": {
-    "lead": "Chuyển vềđiều kiện của vế phải hoặc đặt ẩn phụ. Phân biệt số nghiệm theo điều kiện t > 0, miền của x và số nghiệm của phương trình sau biến đổi.",
-    "formulae": [],
+    "lead": "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ. Phân biệt số nghiệm theo điều kiện t > 0, miền của x và số nghiệm của phương trình sau biến đổi.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "t>0",
+        "expressions": [
+          "t>0"
+        ],
+        "detail": "Phân biệt số nghiệm theo điều kiện t > 0, miền của x và số nghiệm của phương trình sau biến đổi."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Chuyển vềđiều kiện của vế phải hoặc đặt ẩn phụ."
+        "text": "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ."
       },
       {
         "label": "Bước 02",
@@ -1959,7 +2093,16 @@ const knowledge = {
   },
   "9.8": {
     "lead": "Đếm nghiệm sau khi đặt ẩn phụ và kiểm tra điều kiện. Với t = aˣ, mỗi t > 0 cho đúng một x. Nếu số mũ là x², cần đếm lại số giá trị của x.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "t=a^x,\\quad t>0",
+        "expressions": [
+          "t=a^x,\\quad t>0"
+        ],
+        "detail": "Với t = aˣ, mỗi t > 0 cho đúng một x."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2015,7 +2158,17 @@ const knowledge = {
   },
   "10.2": {
     "lead": "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀); chứng minh f đơn điệu trên miền xét rồi suy ra điều kiện của x.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "f(x)>f(x_0)",
+        "expressions": [
+          "f(x)>f(x_0)",
+          "f(x)\\le f(x_0)"
+        ],
+        "detail": "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀)"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2038,8 +2191,18 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "10.3": {
-    "lead": "Đặt t = aˣ > 0 hoặc t = logₐ x. Giải bất phương trình theo t, giao điều kiện rồi chuyển lại vềx.",
-    "formulae": [],
+    "lead": "Đặt t = aˣ > 0 hoặc t = logₐ x. Giải bất phương trình theo t, giao điều kiện rồi chuyển lại về x.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "t=a^x>0",
+        "expressions": [
+          "t=a^x>0",
+          "t=\\log_a x"
+        ],
+        "detail": "Đặt t = aˣ > 0 hoặc t = logₐ x."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2047,7 +2210,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Giải bất phương trình theo t, giao điều kiện rồi chuyển lại vềx."
+        "text": "Giải bất phương trình theo t, giao điều kiện rồi chuyển lại về x."
       }
     ],
     "note": {
@@ -2091,7 +2254,16 @@ const knowledge = {
   },
   "10.5": {
     "lead": "Xét dấu vế phải trước. Nếu dương, viết thành lũy thừa cùng cơ số hoặc lấy lôgarit; nếu không dương, dùng aᵘ > 0.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "a^u>0",
+        "expressions": [
+          "a^u>0"
+        ],
+        "detail": "nếu không dương, dùng aᵘ > 0."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2108,7 +2280,7 @@ const knowledge = {
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Chỉlấy lôgarit sau khi kiểm tra vế phải dương.",
+      "text": "Chỉ lấy lôgarit sau khi kiểm tra vế phải dương.",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2174,16 +2346,16 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "10.8": {
-    "lead": "Xác định giao điểm, chiều biến thiên và vùng đồ thịnằm trên/dưới đường ngang. Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏsót giao điểm.",
+    "lead": "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang. Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏ sót giao điểm.",
     "formulae": [],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Xác định giao điểm, chiều biến thiên và vùng đồ thịnằm trên/dưới đường ngang."
+        "text": "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang."
       },
       {
         "label": "Bước 02",
-        "text": "Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏsót giao điểm."
+        "text": "Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏ sót giao điểm."
       }
     ],
     "note": {
@@ -2199,7 +2371,17 @@ const knowledge = {
   },
   "11.1": {
     "lead": "Lãi mỗi kỳ chỉtính trên vốn gốc. Với P > 0, lãi suất r mỗi kỳ không đổi và n kỳ: A = P(1 + nr), tiền lãi I = Pnr. Công thức được suy ra từ tổng các khoản lãi bằng nhau.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "A=P(1+nr)",
+        "expressions": [
+          "A=P(1+nr)",
+          "I=Pnr"
+        ],
+        "detail": "Với P > 0, lãi suất r mỗi kỳ không đổi và n kỳ: A = P(1 + nr), tiền lãi I = Pnr."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2226,8 +2408,25 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.2": {
-    "lead": "Lãi được nhập gốc cuối mỗi kỳ. Công thức: A = P(1 + r)N, trong đó r là lãi suất mỗi kỳ, N là số kỳ. Nếu lãi suất năm là r, chia m kỳ/năm: A = P(1 + r/m)ᵐᵗ; giả thiết mức lãi mỗi kỳ bằng r/m.",
-    "formulae": [],
+    "lead": "Lãi được nhập gốc cuối mỗi kỳ. Công thức: \\(A=P(1+r)^N\\), trong đó r là lãi suất mỗi kỳ, N là số kỳ. Nếu lãi suất năm là r, chia m kỳ/năm: A = P(1 + r/m)ᵐᵗ; giả thiết mức lãi mỗi kỳ bằng r/m.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "A=P(1+r)^N",
+        "expressions": [
+          "A=P(1+r)^N"
+        ],
+        "detail": "Công thức: \\(A=P(1+r)^N\\), trong đó r là lãi suất mỗi kỳ, N là số kỳ."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "A=P\\left(1+\\frac{r}{m}\\right)^{mt}",
+        "expressions": [
+          "A=P\\left(1+\\frac{r}{m}\\right)^{mt}"
+        ],
+        "detail": "Nếu lãi suất năm là r, chia m kỳ/năm: A = P(1 + r/m)ᵐᵗ"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2235,7 +2434,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Công thức: A = P(1 + r)N, trong đó r là lãi suất mỗi kỳ, N là số kỳ."
+        "text": "Công thức: \\(A=P(1+r)^N\\), trong đó r là lãi suất mỗi kỳ, N là số kỳ."
       },
       {
         "label": "Bước 03",
@@ -2258,8 +2457,25 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.3": {
-    "lead": "Đọc đúng mô hình đề cho. Tăng theo phần trăm sau mỗi năm: Pₙ = P₀(1+r)ⁿ. Mô hình liên tục: P(t) = P₀eʳᵗ. Hai cách hiểu về tốc độkhông tựđộng giống nhau.",
-    "formulae": [],
+    "lead": "Đọc đúng mô hình đề cho. Tăng theo phần trăm sau mỗi năm: Pₙ = P₀(1+r)ⁿ. Mô hình liên tục: P(t) = P₀eʳᵗ. Hai cách hiểu về tốc độ không tự động giống nhau.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "P_n=P_0(1+r)^n",
+        "expressions": [
+          "P_n=P_0(1+r)^n"
+        ],
+        "detail": "Tăng theo phần trăm sau mỗi năm: Pₙ = P₀(1+r)ⁿ."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "P(t)=P_0e^{rt}",
+        "expressions": [
+          "P(t)=P_0e^{rt}"
+        ],
+        "detail": "Mô hình liên tục: P(t) = P₀eʳᵗ."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2275,12 +2491,12 @@ const knowledge = {
       },
       {
         "label": "Bước 04",
-        "text": "Hai cách hiểu về tốc độkhông tựđộng giống nhau."
+        "text": "Hai cách hiểu về tốc độ không tự động giống nhau."
       }
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Không tựthay (1 + r)ᵗ bằng eʳᵗ khi đềkhông cho phép.",
+      "text": "Không tự thay (1 + r)ᵗ bằng eʳᵗ khi đề không cho phép.",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2290,8 +2506,25 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.4": {
-    "lead": "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ. Nếu mỗi khoảng T số lượng nhân q, dùng N(t) = N₀qᵗ⁄T trong mô hình được giả thiết; thời điểm quan sát rời rạc thì xét số kỳ nguyên.",
-    "formulae": [],
+    "lead": "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ. Nếu mỗi khoảng T số lượng nhân q, dùng \\(N(t)=N_0q^{t/T}\\) trong mô hình được giả thiết; thời điểm quan sát rời rạc thì xét số kỳ nguyên.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "N(t)=N_0e^{kt}",
+        "expressions": [
+          "N(t)=N_0e^{kt}"
+        ],
+        "detail": "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "N(t)=N_0q^{t/T}",
+        "expressions": [
+          "N(t)=N_0q^{t/T}"
+        ],
+        "detail": "Nếu mỗi khoảng T số lượng nhân q, dùng \\(N(t)=N_0q^{t/T}\\) trong mô hình được giả thiết"
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2299,7 +2532,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Nếu mỗi khoảng T số lượng nhân q, dùng N(t) = N₀qᵗ⁄T trong mô hình được giả thiết"
+        "text": "Nếu mỗi khoảng T số lượng nhân q, dùng \\(N(t)=N_0q^{t/T}\\) trong mô hình được giả thiết"
       },
       {
         "label": "Bước 03",
@@ -2308,7 +2541,7 @@ const knowledge = {
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Đổi phút sang giờtrước khi chia cho thời gian nhân đôi.",
+      "text": "Đổi phút sang giờ trước khi chia cho thời gian nhân đôi.",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2318,8 +2551,26 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.5": {
-    "lead": "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0. Nếu chu kỳ bán rã là T > 0, suy ra M(t) = M₀ 2⁻ᵗ⁄T và k = ln 2/T.",
-    "formulae": [],
+    "lead": "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0. Nếu chu kỳ bán rã là T > 0, suy ra \\(M(t)=M_0 2^{-t/T}\\) và k = ln 2/T.",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "M(t)=M_0e^{-kt},\\quad k>0",
+        "expressions": [
+          "M(t)=M_0e^{-kt},\\quad k>0"
+        ],
+        "detail": "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "M(t)=M_0 2^{-t/T}",
+        "expressions": [
+          "M(t)=M_0 2^{-t/T}",
+          "k=\\frac{\\ln 2}{T}"
+        ],
+        "detail": "Nếu chu kỳ bán rã là T > 0, suy ra \\(M(t)=M_0 2^{-t/T}\\) và k = ln 2/T."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2327,7 +2578,7 @@ const knowledge = {
       },
       {
         "label": "Bước 02",
-        "text": "Nếu chu kỳ bán rã là T > 0, suy ra M(t) = M₀ 2⁻ᵗ⁄T và k = ln 2/T."
+        "text": "Nếu chu kỳ bán rã là T > 0, suy ra \\(M(t)=M_0 2^{-t/T}\\) và k = ln 2/T."
       }
     ],
     "note": {
@@ -2343,7 +2594,16 @@ const knowledge = {
   },
   "11.6": {
     "lead": "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1. Nếu đề nói giảm cùng một số tiền mỗi năm, đó là mô hình tuyến tính khác.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "V_n=V_0(1-r)^n,\\quad 0<r<1",
+        "expressions": [
+          "V_n=V_0(1-r)^n,\\quad 0<r<1"
+        ],
+        "detail": "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2366,7 +2626,7 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.7": {
-    "lead": "Tăng r nhân (1 + r); giảm r nhân (1 −r). Nhiều giai đoạn nhân các hệ số liên tiếp. Nếu cùng tỷ lệqua n kỳ, dùng lũy thừa.",
+    "lead": "Tăng r nhân (1 + r); giảm r nhân (1 −r). Nhiều giai đoạn nhân các hệ số liên tiếp. Nếu cùng tỷ lệ qua n kỳ, dùng lũy thừa.",
     "formulae": [],
     "points": [
       {
@@ -2383,12 +2643,12 @@ const knowledge = {
       },
       {
         "label": "Bước 04",
-        "text": "Nếu cùng tỷ lệqua n kỳ, dùng lũy thừa."
+        "text": "Nếu cùng tỷ lệ qua n kỳ, dùng lũy thừa."
       }
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Tăng và giảm cùng tỷ lệkhông triệt tiêu nhau vì tính trên hai mức gốc khác nhau.",
+      "text": "Tăng và giảm cùng tỷ lệ không triệt tiêu nhau vì tính trên hai mức gốc khác nhau.",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2399,7 +2659,35 @@ const knowledge = {
   },
   "11.8": {
     "lead": "Trong mô hình lượng dương, C = y(0) > 0; k > 0 tăng, k < 0 giảm, k = 0 không đổi. Nếu có mức nền L, dạng y = L + Ceᵏᵗ có y(0) = L + C.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "C=y(0)>0",
+        "expressions": [
+          "C=y(0)>0"
+        ],
+        "detail": "Trong mô hình lượng dương, C = y(0) > 0"
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "k>0",
+        "expressions": [
+          "k>0",
+          "k<0",
+          "k=0"
+        ],
+        "detail": "k > 0 tăng, k < 0 giảm, k = 0 không đổi."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "y=L+Ce^{kt}",
+        "expressions": [
+          "y=L+Ce^{kt}",
+          "y(0)=L+C"
+        ],
+        "detail": "Nếu có mức nền L, dạng y = L + Ceᵏᵗ có y(0) = L + C."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2427,7 +2715,34 @@ const knowledge = {
   },
   "11.9": {
     "lead": "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số. Với điều kiện y(0) = y₀, nghiệm là y(t) = y₀eᵏᵗ. Đặt g(t) = ln y(t) thì g′(t) = k, nên g(t) = kt + ln y₀.",
-    "formulae": [],
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "y'(t)=ky(t)",
+        "expressions": [
+          "y'(t)=ky(t)"
+        ],
+        "detail": "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "y(t)=y_0e^{kt}",
+        "expressions": [
+          "y(t)=y_0e^{kt}"
+        ],
+        "detail": "Với điều kiện y(0) = y₀, nghiệm là y(t) = y₀eᵏᵗ."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "g(t)=\\ln y(t)",
+        "expressions": [
+          "g(t)=\\ln y(t)",
+          "g'(t)=k",
+          "g(t)=kt+\\ln y_0"
+        ],
+        "detail": "Đặt g(t) = ln y(t) thì g′(t) = k, nên g(t) = kt + ln y₀."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
@@ -2454,21 +2769,39 @@ const knowledge = {
     "sourceDocumentId": "cd08-cd11-exponential-logarithm"
   },
   "11.10": {
-    "lead": "Với y(t) = Ceᵏᵗ > 0 và hai Dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁). Sau đó C = y₁e⁻ᵏᵗ¹.",
-    "formulae": [],
+    "lead": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁). Sau đó \\(C=y_1e^{-kt_1}\\).",
+    "formulae": [
+      {
+        "label": "Công thức & điều kiện",
+        "value": "y(t)=Ce^{kt}>0",
+        "expressions": [
+          "y(t)=Ce^{kt}>0",
+          "k=\\frac{\\ln\\left(\\frac{y_2}{y_1}\\right)}{t_2-t_1}"
+        ],
+        "detail": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁)."
+      },
+      {
+        "label": "Công thức & điều kiện",
+        "value": "C=y_1e^{-kt_1}",
+        "expressions": [
+          "C=y_1e^{-kt_1}"
+        ],
+        "detail": "Sau đó \\(C=y_1e^{-kt_1}\\)."
+      }
+    ],
     "points": [
       {
         "label": "Bước 01",
-        "text": "Với y(t) = Ceᵏᵗ > 0 và hai Dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁)."
+        "text": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁)."
       },
       {
         "label": "Bước 02",
-        "text": "Sau đó C = y₁e⁻ᵏᵗ¹."
+        "text": "Sau đó \\(C=y_1e^{-kt_1}\\)."
       }
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Không mặc định C bằng Dữ kiện thứnhất khi Dữ kiện đó không ởt = 0.",
+      "text": "Không mặc định C bằng Dữ kiện thứ nhất khi Dữ kiện đó không ở t = 0.",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2703,7 +3036,7 @@ const examples = {
       "title": "Cho f(x) = x⁴ −2x² + 3.",
       "prompt": "Cho f(x) = x⁴ −2x² + 3. Tính f′′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Tính đạo hàm lần thứnhất rồi lần thứhai.",
+        "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -2714,7 +3047,7 @@ const examples = {
         }
       ],
       "answer": "f′(x) = 4x (x −1) (x + 1). f′′(x) = 4 ( 3x² −1 ) trên R.",
-      "takeaway": "Tính đạo hàm lần thứnhất rồi lần thứhai.",
+      "takeaway": "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
       "sourcePages": [
         7,
         68
@@ -2811,7 +3144,7 @@ const examples = {
       "title": "Hàm f có đạo hàm trên R, f′(x) = 1.",
       "prompt": "Hàm f có đạo hàm trên R, f′(x) = 1. Tìm các khoảng đơn điệu.",
       "analysis": [
-        "Nghiệm bội lẻlàm đổi dấu, bội chẵn không đổi dấu.",
+        "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -2822,7 +3155,7 @@ const examples = {
         }
       ],
       "answer": "f′(x) = 1. Đồng biến: (−∞; ∞); nghịch biến: không có.",
-      "takeaway": "Nghiệm bội lẻlàm đổi dấu, bội chẵn không đổi dấu.",
+      "takeaway": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
       "sourcePages": [
         9,
         70
@@ -2868,7 +3201,7 @@ const examples = {
       "title": "Biết f′(t) > 0 trên R.",
       "prompt": "Biết f′(t) > 0 trên R. Xét đơn điệu của g(x) = f(2x −1).",
       "analysis": [
-        "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cảu′.",
+        "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -2879,7 +3212,7 @@ const examples = {
         }
       ],
       "answer": "g′ = 2f′(2x −1) > 0, nên g đồng biến trên R.",
-      "takeaway": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cảu′.",
+      "takeaway": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
       "sourcePages": [
         18,
         72
@@ -2895,7 +3228,7 @@ const examples = {
       "title": "Tìm m để f(x) = x³ + mx đồng biến trên R.",
       "prompt": "Tìm m để f(x) = x³ + mx đồng biến trên R.",
       "analysis": [
-        "Đưa vềđạo hàm không âm hoặc không dương trên toàn R",
+        "Đưa về đạo hàm không âm hoặc không dương trên toàn R",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -2906,7 +3239,7 @@ const examples = {
         }
       ],
       "answer": "f′ = 3x² + m ≥0 với mọi x khi và chỉkhi m ≥0. Khi m = 0, hàm vẫn đồng biến.",
-      "takeaway": "Đưa vềđạo hàm không âm hoặc không dương trên toàn R",
+      "takeaway": "Đưa về đạo hàm không âm hoặc không dương trên toàn R",
       "sourcePages": [
         19,
         72
@@ -3003,7 +3336,7 @@ const examples = {
       "title": "Tìm hoành độ, loại và giá trị cực trị từbảng sau.",
       "prompt": "Tìm hoành độ, loại và giá trị cực trị từbảng sau. Điểm có ký hiệu ∥không thuộc miền xác định. x −∞ 1 ∞ f′ − 0 + f ∞ ↘ −1 ↗ ∞",
       "analysis": [
-        "Chỉđọc những mốc mũi tên đảo chiều.",
+        "Chỉ đọc những mốc mũi tên đảo chiều.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3014,7 +3347,7 @@ const examples = {
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
-      "takeaway": "Chỉđọc những mốc mũi tên đảo chiều.",
+      "takeaway": "Chỉ đọc những mốc mũi tên đảo chiều.",
       "sourcePages": [
         21,
         74
@@ -3113,7 +3446,7 @@ const examples = {
       "title": "Cho f(t) = t.",
       "prompt": "Cho f(t) = t. Tìm cực trị của g(x) = f(x²).",
       "analysis": [
-        "Giữnghiệm của f′(t)=0 với t>0",
+        "Giữ nghiệm của f′(t)=0 với t>0",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3124,7 +3457,7 @@ const examples = {
         }
       ],
       "answer": "g′(x) = 2x. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-      "takeaway": "Giữnghiệm của f′(t)=0 với t>0",
+      "takeaway": "Giữ nghiệm của f′(t)=0 với t>0",
       "sourcePages": [
         30,
         77
@@ -3358,7 +3691,7 @@ const examples = {
       "title": "Với n nguyên, 0 ≤n ≤10, tìm lớn nhất của P(n) = −(n −4,4)² + 20.",
       "prompt": "Với n nguyên, 0 ≤n ≤10, tìm lớn nhất của P(n) = −(n −4,4)² + 20.",
       "analysis": [
-        "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kềvà biên.",
+        "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3369,7 +3702,7 @@ const examples = {
         }
       ],
       "answer": "Đỉnh liên tục 4,4. Thửn = 4, 5: P(4) = 19,84, P(5) = 19,64. Chọn 4.",
-      "takeaway": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kềvà biên.",
+      "takeaway": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
       "sourcePages": [
         40,
         82
@@ -3385,7 +3718,7 @@ const examples = {
       "title": "Hình chữnhật có chu vi 40 m, hai cạnh ít nhất 3 m.",
       "prompt": "Hình chữnhật có chu vi 40 m, hai cạnh ít nhất 3 m. Tìm diện tích lớn nhất.",
       "analysis": [
-        "Lấy giao các điều kiện, tối ưu trên miền khảthi sau cùng.",
+        "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3396,7 +3729,7 @@ const examples = {
         }
       ],
       "answer": "Đặt x ∈[3; 17], S = x(20 −x). Đỉnh 10 thuộc miền; chọn hình vuông cạnh 10, diện tích 100 m².",
-      "takeaway": "Lấy giao các điều kiện, tối ưu trên miền khảthi sau cùng.",
+      "takeaway": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
       "sourcePages": [
         40,
         83
@@ -3412,7 +3745,7 @@ const examples = {
       "title": "Tìm tiệm cận đứng của y = 1/(x −2).",
       "prompt": "Tìm tiệm cận đứng của y = 1/(x −2).",
       "analysis": [
-        "Tìm điểm nghi ngờtừmiền xác định rồi tính giới hạn một phía.",
+        "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3423,7 +3756,7 @@ const examples = {
         }
       ],
       "answer": "Giới hạn khi x →2⁻bằng −∞, khi x →2⁺ bằng +∞. TCĐ x = 2.",
-      "takeaway": "Tìm điểm nghi ngờtừmiền xác định rồi tính giới hạn một phía.",
+      "takeaway": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
       "sourcePages": [
         41,
         83
@@ -3549,7 +3882,7 @@ const examples = {
       "title": "Tìm m để y = (x + m)/(x −2) không có TCĐ.",
       "prompt": "Tìm m để y = (x + m)/(x −2) không có TCĐ.",
       "analysis": [
-        "Tách trường hợp nhân tửtửvà mẫu triệt tiêu hoặc bậc giảm.",
+        "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3560,7 +3893,7 @@ const examples = {
         }
       ],
       "answer": "Tửphải triệt tiêu tại 2: 2 + m = 0, nên m = −2. Khi đó hàm bằng 1 trên x≠ 2.",
-      "takeaway": "Tách trường hợp nhân tửtửvà mẫu triệt tiêu hoặc bậc giảm.",
+      "takeaway": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
       "sourcePages": [
         48,
         86
@@ -3576,7 +3909,7 @@ const examples = {
       "title": "Phân loại điểm bị loại của y = (x² −1)/(x −1).",
       "prompt": "Phân loại điểm bị loại của y = (x² −1)/(x −1).",
       "analysis": [
-        "Giữmiền ban đầu",
+        "Giữ miền ban đầu",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3587,7 +3920,7 @@ const examples = {
         }
       ],
       "answer": "Miền loại 1. Rút gọn x + 1, giới hạn tại 1 bằng 2; điểm khuyết (1; 2), không có TCĐ.",
-      "takeaway": "Giữmiền ban đầu",
+      "takeaway": "Giữ miền ban đầu",
       "sourcePages": [
         48,
         87
@@ -3741,7 +4074,7 @@ const examples = {
       "title": "Viết công thức từng phần của y = |x² −2x|.",
       "prompt": "Viết công thức từng phần của y = |x² −2x|.",
       "analysis": [
-        "Tách phần đồ thịtheo dấu tung độ, không theo dấu hoành độ.",
+        "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3752,7 +4085,7 @@ const examples = {
         }
       ],
       "answer": "Khi x ≤0 hoặc x ≥2, y = x² −2x. Khi 0 < x < 2, y = 2x −x².",
-      "takeaway": "Tách phần đồ thịtheo dấu tung độ, không theo dấu hoành độ.",
+      "takeaway": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
       "sourcePages": [
         60,
         92
@@ -3768,7 +4101,7 @@ const examples = {
       "title": "Viết công thức của f(|x|) khi f(x) = x + 1.",
       "prompt": "Viết công thức của f(|x|) khi f(x) = x + 1.",
       "analysis": [
-        "Chỉsửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
+        "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3779,7 +4112,7 @@ const examples = {
         }
       ],
       "answer": "Hàm mới |x| + 1, bằng x + 1 với x ≥0, bằng 1 −x với x < 0.",
-      "takeaway": "Chỉsửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
+      "takeaway": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
       "sourcePages": [
         60,
         92
@@ -3903,7 +4236,7 @@ const examples = {
       "title": "Viết tất cảcác tiếp tuyến tại những điểm của y = x² có tung độ4.",
       "prompt": "Viết tất cảcác tiếp tuyến tại những điểm của y = x² có tung độ4.",
       "analysis": [
-        "Giải phương trình tung độtiếp điểm",
+        "Giải phương trình tung độ tiếp điểm",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -3914,7 +4247,7 @@ const examples = {
         }
       ],
       "answer": "Giải f(x₀) = 4. x₀ = −2: f(x₀) = 4, f′(x₀) = −4, tiếp tuyến y = −4 (x + 1); x₀ = 2: f(x₀) = 4, f′(x₀) = 4, tiếp tuyến y = 4 (x −1).",
-      "takeaway": "Giải phương trình tung độtiếp điểm",
+      "takeaway": "Giải phương trình tung độ tiếp điểm",
       "sourcePages": [
         62,
         94
@@ -4038,7 +4371,7 @@ const examples = {
       "title": "Viết các tiếp tuyến của y = x² đi qua A(0; −1).",
       "prompt": "Viết các tiếp tuyến của y = x² đi qua A(0; −1).",
       "analysis": [
-        "Đặt hoành độtiếp điểm t",
+        "Đặt hoành độ tiếp điểm t",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -4049,7 +4382,7 @@ const examples = {
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = −1, tức 1−t² = 0. x₀ = −1: f(x₀) = 1, f′(x₀) = −2, tiếp tuyến y = −2x −1; x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-      "takeaway": "Đặt hoành độtiếp điểm t",
+      "takeaway": "Đặt hoành độ tiếp điểm t",
       "sourcePages": [
         64,
         96
@@ -4119,7 +4452,7 @@ const examples = {
       "title": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
       "prompt": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
       "analysis": [
-        "Đưa căn về  số mũ hữu tỉ",
+        "Đưa căn về số mũ hữu tỉ",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -4130,7 +4463,7 @@ const examples = {
         }
       ],
       "answer": "16³⁄⁴ = (2⁴)³⁄⁴ = 2³ = 8. Mặt khác 27⁻²⁄³ = (3³)⁻²⁄³ = 3⁻² = 1/9. Vậy A = 73/9.",
-      "takeaway": "Đưa căn về  số mũ hữu tỉ",
+      "takeaway": "Đưa căn về số mũ hữu tỉ",
       "sourcePages": [
         9,
         60
@@ -4524,7 +4857,7 @@ const examples = {
       "title": "Tìm m để2ˣ = m −1 có nghiệm thực.",
       "prompt": "Tìm m để2ˣ = m −1 có nghiệm thực.",
       "analysis": [
-        "Chuyển vềđiều kiện của vế phải hoặc đặt ẩn phụ.",
+        "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -4535,7 +4868,7 @@ const examples = {
         }
       ],
       "answer": "Vì 2ˣ > 0 và nhận mọi giá trị dương, phương trình có nghiệm khi và chỉkhi m −1 > 0, tức m > 1. Khi đó nghiệm duy nhất x = log₂(m −1).",
-      "takeaway": "Chuyển vềđiều kiện của vế phải hoặc đặt ẩn phụ.",
+      "takeaway": "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ.",
       "sourcePages": [
         29,
         67
@@ -4767,7 +5100,7 @@ const examples = {
       "title": "Tìm m để2ˣ ≤m có đúng 1 nghiệm nguyên x ≥0.",
       "prompt": "Tìm m để2ˣ ≤m có đúng 1 nghiệm nguyên x ≥0.",
       "analysis": [
-        "Xác định giao điểm, chiều biến thiên và vùng đồ thịnằm trên/dưới đường ngang.",
+        "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang.",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -4778,7 +5111,7 @@ const examples = {
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 1 nghiệm x = 0, cần 1 ≤m < 2.",
-      "takeaway": "Xác định giao điểm, chiều biến thiên và vùng đồ thịnằm trên/dưới đường ngang.",
+      "takeaway": "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang.",
       "sourcePages": [
         43,
         72
@@ -5037,7 +5370,7 @@ const examples = {
       "title": "Cho N(t) = N₀eᵏᵗ, N(0) = 200, N(3) = 400.",
       "prompt": "Cho N(t) = N₀eᵏᵗ, N(0) = 200, N(3) = 400. Tìm k và N(6).",
       "analysis": [
-        "Với y(t) = Ceᵏᵗ > 0 và hai Dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁).",
+        "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁).",
         "Đối chiếu điều kiện trước khi kết luận."
       ],
       "steps": [
@@ -5048,7 +5381,7 @@ const examples = {
         }
       ],
       "answer": "N₀ = 200. 400 = 200e³ᵏ ⇒k = ln 2/3. Sau 6 đơn vị thời gian, N(6) = 200e²lⁿ² = 800.",
-      "takeaway": "Với y(t) = Ceᵏᵗ > 0 và hai Dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁).",
+      "takeaway": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁).",
       "sourcePages": [
         53,
         75

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T11:02:24.672Z",
+  "generatedAt": "2026-10-27T17:48:49.996Z",
   "documents": [
     {
       "id": "cd01-cd07-functions",
@@ -53,7 +53,7 @@
   ],
   "summary": {
     "knowledgeSlides": 159,
-    "knowledgeSourceBlocks": 791,
+    "knowledgeSourceBlocks": 828,
     "calculusWorkedExamples": 52,
     "cd01Cd11WorkedExamples": 95,
     "cd20Cd21WorkedExamples": 28,
@@ -4874,6 +4874,34 @@
         6
       ],
       "status": "imported-and-verified",
+      "id": "1.7-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD01",
+      "code": "1.7",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "1.7-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        6
+      ],
+      "status": "imported-and-verified",
+      "id": "1.7-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD01",
+      "code": "1.7",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "1.7-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        6
+      ],
+      "status": "imported-and-verified",
       "id": "1.7-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -5714,6 +5742,20 @@
         29
       ],
       "status": "imported-and-verified",
+      "id": "3.6-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD03",
+      "code": "3.6",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "3.6-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        29
+      ],
+      "status": "imported-and-verified",
       "id": "3.6-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -5798,6 +5840,20 @@
         30
       ],
       "status": "imported-and-verified",
+      "id": "3.8-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD03",
+      "code": "3.8",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "3.8-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        30
+      ],
+      "status": "imported-and-verified",
       "id": "3.8-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -5843,6 +5899,34 @@
       "id": "3.9-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD03",
+      "code": "3.9",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "3.9-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        30
+      ],
+      "status": "imported-and-verified",
+      "id": "3.9-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD03",
+      "code": "3.9",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "3.9-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        30
+      ],
+      "status": "imported-and-verified",
+      "id": "3.9-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD03",
@@ -7492,6 +7576,20 @@
         62
       ],
       "status": "imported-and-verified",
+      "id": "7.1-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD07",
+      "code": "7.1",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "7.1-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        62
+      ],
+      "status": "imported-and-verified",
       "id": "7.1-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -7579,6 +7677,20 @@
       "id": "7.3-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD07",
+      "code": "7.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "7.3-knowledge-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourcePages": [
+        63
+      ],
+      "status": "imported-and-verified",
+      "id": "7.3-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD07",
@@ -8038,6 +8150,20 @@
         11
       ],
       "status": "imported-and-verified",
+      "id": "8.3-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD08",
+      "code": "8.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "8.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        11
+      ],
+      "status": "imported-and-verified",
       "id": "8.3-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -8220,6 +8346,20 @@
         14
       ],
       "status": "imported-and-verified",
+      "id": "8.6-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD08",
+      "code": "8.6",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "8.6-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        14
+      ],
+      "status": "imported-and-verified",
       "id": "8.6-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -8293,6 +8433,20 @@
       "id": "8.7-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD08",
+      "code": "8.7",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "8.7-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        15
+      ],
+      "status": "imported-and-verified",
+      "id": "8.7-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD08",
@@ -8640,6 +8794,34 @@
         25
       ],
       "status": "imported-and-verified",
+      "id": "9.3-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD09",
+      "code": "9.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "9.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        25
+      ],
+      "status": "imported-and-verified",
+      "id": "9.3-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD09",
+      "code": "9.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "9.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        25
+      ],
+      "status": "imported-and-verified",
       "id": "9.3-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -8699,6 +8881,20 @@
       "id": "9.4-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD09",
+      "code": "9.4",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "9.4-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        26
+      ],
+      "status": "imported-and-verified",
+      "id": "9.4-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD09",
@@ -8892,6 +9088,20 @@
         29
       ],
       "status": "imported-and-verified",
+      "id": "9.7-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD09",
+      "code": "9.7",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "9.7-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        29
+      ],
+      "status": "imported-and-verified",
       "id": "9.7-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -8937,6 +9147,20 @@
       "id": "9.8-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD09",
+      "code": "9.8",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "9.8-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        30
+      ],
+      "status": "imported-and-verified",
+      "id": "9.8-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD09",
@@ -9088,6 +9312,20 @@
         35
       ],
       "status": "imported-and-verified",
+      "id": "10.2-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD10",
+      "code": "10.2",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "10.2-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        35
+      ],
+      "status": "imported-and-verified",
       "id": "10.2-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -9133,6 +9371,20 @@
       "id": "10.3-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD10",
+      "code": "10.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "10.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        36
+      ],
+      "status": "imported-and-verified",
+      "id": "10.3-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD10",
@@ -9259,6 +9511,20 @@
       "id": "10.5-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD10",
+      "code": "10.5",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "10.5-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        38
+      ],
+      "status": "imported-and-verified",
+      "id": "10.5-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD10",
@@ -9536,6 +9802,20 @@
         44
       ],
       "status": "imported-and-verified",
+      "id": "11.1-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.1",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.1-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        44
+      ],
+      "status": "imported-and-verified",
       "id": "11.1-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -9595,6 +9875,34 @@
       "id": "11.2-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.2",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.2-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        45
+      ],
+      "status": "imported-and-verified",
+      "id": "11.2-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.2",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.2-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        45
+      ],
+      "status": "imported-and-verified",
+      "id": "11.2-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD11",
@@ -9690,6 +9998,34 @@
         46
       ],
       "status": "imported-and-verified",
+      "id": "11.3-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        46
+      ],
+      "status": "imported-and-verified",
+      "id": "11.3-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.3",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.3-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        46
+      ],
+      "status": "imported-and-verified",
       "id": "11.3-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -9774,6 +10110,34 @@
         47
       ],
       "status": "imported-and-verified",
+      "id": "11.4-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.4",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.4-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        47
+      ],
+      "status": "imported-and-verified",
+      "id": "11.4-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.4",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.4-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        47
+      ],
+      "status": "imported-and-verified",
       "id": "11.4-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -9844,6 +10208,34 @@
         48
       ],
       "status": "imported-and-verified",
+      "id": "11.5-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.5",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.5-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        48
+      ],
+      "status": "imported-and-verified",
+      "id": "11.5-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.5",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.5-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        48
+      ],
+      "status": "imported-and-verified",
       "id": "11.5-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -9889,6 +10281,20 @@
       "id": "11.6-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.6",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.6-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        49
+      ],
+      "status": "imported-and-verified",
+      "id": "11.6-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD11",
@@ -10040,6 +10446,48 @@
         51
       ],
       "status": "imported-and-verified",
+      "id": "11.8-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.8",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.8-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        51
+      ],
+      "status": "imported-and-verified",
+      "id": "11.8-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.8",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.8-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        51
+      ],
+      "status": "imported-and-verified",
+      "id": "11.8-knowledge-1-formula-03",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.8",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.8-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        51
+      ],
+      "status": "imported-and-verified",
       "id": "11.8-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -10110,6 +10558,48 @@
         52
       ],
       "status": "imported-and-verified",
+      "id": "11.9-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.9",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.9-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        52
+      ],
+      "status": "imported-and-verified",
+      "id": "11.9-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.9",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.9-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        52
+      ],
+      "status": "imported-and-verified",
+      "id": "11.9-knowledge-1-formula-03",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.9",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.9-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        52
+      ],
+      "status": "imported-and-verified",
       "id": "11.9-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -10169,6 +10659,34 @@
       "id": "11.10-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.10",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.10-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        53
+      ],
+      "status": "imported-and-verified",
+      "id": "11.10-knowledge-1-formula-01",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
+    },
+    {
+      "topicId": "CD11",
+      "code": "11.10",
+      "destinationSection": "knowledge",
+      "destinationSlideId": "11.10-knowledge-1",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        53
+      ],
+      "status": "imported-and-verified",
+      "id": "11.10-knowledge-1-formula-02",
+      "kind": "formula-or-property",
+      "heading": "Công thức & điều kiện"
     },
     {
       "topicId": "CD11",
