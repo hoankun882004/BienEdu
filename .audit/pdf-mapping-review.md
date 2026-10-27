@@ -10,7 +10,7 @@ Generated from the checked-in verified mapping. Coordinates use normalized top-l
 
 | Topic | Subtopic | Document | Start | End | Regions | Status |
 | --- | --- | --- | ---: | ---: | --- | --- |
-| CD01 | 1.1 | cd01-cd07-functions | 4 | 5 | p4 [0.055, 0.629, 0.890, 0.336]<br>p5 [0.055, 0.055, 0.890, 0.057] | verified exact-region |
+| CD01 | 1.1 | cd01-cd07-functions | 4 | 5 | p4 [0.055, 0.112, 0.890, 0.853]<br>p5 [0.055, 0.055, 0.890, 0.057] | verified exact-region |
 | CD01 | 1.2 | cd01-cd07-functions | 5 | 5 | p5 [0.055, 0.112, 0.890, 0.332] | verified exact-region |
 | CD01 | 1.3 | cd01-cd07-functions | 5 | 5 | p5 [0.055, 0.443, 0.890, 0.308] | verified exact-region |
 | CD01 | 1.4 | cd01-cd07-functions | 5 | 6 | p5 [0.055, 0.751, 0.890, 0.214]<br>p6 [0.055, 0.055, 0.890, 0.171] | verified exact-region |

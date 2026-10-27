@@ -2080,6 +2080,8 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
 .math-lesson__bar { position: sticky; z-index: 2; top: 0; display: flex; width: 100%; min-width: 0; min-height: 2.75rem; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #d9e2ec; padding: .45rem clamp(1rem, 2.4vw, 2rem); background: rgba(255, 255, 255, .94); backdrop-filter: blur(.65rem); }
 .math-lesson__bar > p { display: flex; min-width: 0; align-items: center; gap: .6rem; color: var(--accent-strong); font-size: .72rem; font-weight: 700; letter-spacing: .045em; }
 .math-lesson__bar > p > span:first-child { display: grid; width: 1.65rem; height: 1.65rem; flex: 0 0 auto; place-items: center; background: #e4edff; font-variant-numeric: tabular-nums; }
+.math-lesson__bar > small { flex: 0 0 auto; border: 1px solid #bdd0ee; padding: .22rem .48rem; background: #edf4ff; color: #2456a6; font-size: .62rem; font-weight: 700; letter-spacing: .025em; line-height: 1.2; }
+.math-lesson[data-verification="needs-review"] .math-lesson__bar > small { border-color: #e6d7a4; background: #fff7d7; color: #745817; }
 .math-lesson__bar > div { display: flex; flex: 0 0 auto; gap: 1.1rem; color: #617086; font-size: .7rem; }
 .math-lesson__bar > div span + span { position: relative; }
 .math-lesson__bar > div span + span::before { position: absolute; left: -.65rem; color: #a9b7c7; content: "·"; }
@@ -2176,6 +2178,7 @@ body[data-page="quiz"] .site-footer { margin-top: 0; }
 
 @media (max-width: 40rem) {
   .math-lesson__bar { align-items: flex-start; padding: .55rem var(--margin); }
+  .math-lesson__bar > small { max-width: 8.5rem; text-align: center; }
   .math-lesson__bar > p > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .math-lesson__bar > div { display: grid; justify-items: end; gap: .1rem; text-align: right; }
   .math-lesson__bar > div span + span::before { content: none; }

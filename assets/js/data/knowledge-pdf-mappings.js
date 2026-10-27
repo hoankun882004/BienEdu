@@ -2,7 +2,8 @@ import { getDocumentSource } from "./document-mappings.js?v=12.1";
 
 // Coordinates are normalized against the unrotated PDF page, with the origin at
 // the top-left. Every heading anchor below was checked against the source PDF's
-// text layer and a rendered page image on 2026-10-22. The small outer crop keeps
+// text layer and a rendered page image; CD01's topic overview boundary was
+// rechecked on 2026-10-28. The small outer crop keeps
 // the original page furniture while removing unused paper margins.
 const PAGE_CROP = Object.freeze({ x: 0.055, top: 0.055, width: 0.89, bottom: 0.965 });
 
@@ -10,7 +11,7 @@ const DOCUMENT_SECTIONS = Object.freeze({
   "cd01-cd07-functions": Object.freeze({
     topicEnds: Object.freeze({ CD01: 8, CD02: 19, CD03: 31, CD04: 40, CD05: 48, CD06: 61, CD07: 65 }),
     anchors: Object.freeze([
-      ["CD01", "1.1", 4, 0.6295],
+      ["CD01", "1.1", 4, 0.1117],
       ["CD01", "1.2", 5, 0.1115],
       ["CD01", "1.3", 5, 0.4432],
       ["CD01", "1.4", 5, 0.7508],

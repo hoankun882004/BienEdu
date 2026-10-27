@@ -48,13 +48,13 @@ test("all registered CD01-CD14 and CD20-CD21 lessons expose structured reading c
     assert.ok(Array.isArray(reading.formulae), `${code} formulae`);
     if (!foundationLesson) assert.ok(reading.formulae.length >= 1, `${code} formulae`);
     assert.ok(reading.points.length >= 1, `${code} points`);
-    assert.ok(["tip", "warning"].includes(reading.note.tone), `${code} note tone`);
+    if (reading.note) assert.ok(["tip", "warning"].includes(reading.note.tone), `${code} note tone`);
   }
 });
 
 test("reading content stays text-only and safe to render", () => {
   for (const [code, reading] of Object.entries(knowledgeContent)) {
-    const values = [reading.lead, ...reading.formulae.flatMap((item) => [item.label, item.value, item.detail]), ...reading.points.flatMap((item) => [item.label, item.text]), reading.note.label, reading.note.text];
+    const values = [reading.lead, ...reading.formulae.flatMap((item) => [item.label, item.value, item.detail]), ...reading.points.flatMap((item) => [item.label, item.text]), ...(reading.note ? [reading.note.label, reading.note.text] : [])];
     assert.ok(values.every((value) => typeof value === "string" && !/<\/?[a-z][^>]*>/iu.test(value)), `${code} plain text`);
   }
   assert.equal(getKnowledgeContent("20.1").formulae[0].value, "N = n₁ + n₂ + … + nₖ");
@@ -85,6 +85,16 @@ test("foundation extraction restores stacked source formulas without leaking PDF
   assert.match(examples["1.2"][0].prompt, /\(2x\+1\)\/\(x−1\)/u);
   assert.match(examples["7.5"][0].prompt, /−\(x−2\)\/2/u);
   assert.match(examples["8.4"][0].prompt, /8\^\{\\sqrt\{2\}\}.*4\^\{\\sqrt\{3\}\}/u);
+});
+
+test("CD01 exposes the source topic overview instead of reducing Knowledge to one method sentence", () => {
+  const reading = getKnowledgeContent("1.1");
+  assert.equal(reading.pages.length, 2);
+  assert.deepEqual(reading.pages.map((page) => page.sourcePages), [[4], [4]]);
+  assert.match(reading.lead, /f'\(x_0\).*lim_/u);
+  assert.ok(reading.formulae.length >= 6);
+  assert.equal(reading.reviewStatus, "needs-review");
+  assert.equal(reading.conversionStatus, "imported");
 });
 
 test("all 26 calculus readings cover the source theory and three-step method", () => {

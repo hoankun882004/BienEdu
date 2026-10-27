@@ -1,6 +1,6 @@
 {
   "schemaVersion": "bienedu.source-fidelity.v14",
-  "generatedAt": "2026-10-27T17:48:49.998Z",
+  "generatedAt": "2026-10-27T18:20:16.824Z",
   "allowedStatuses": [
     "verified",
     "needs-review",
@@ -63,9 +63,9 @@
     "mappedSubtopics": 158,
     "verifiedSubtopics": 3,
     "needsReviewSubtopics": 155,
-    "runtimeFormulaExpressions": 222,
+    "runtimeFormulaExpressions": 243,
     "verifiedRuntimeFormulaExpressions": 26,
-    "traceabilityBlocks": 828
+    "traceabilityBlocks": 768
   },
   "subtopics": [
     {
@@ -81,9 +81,10 @@
         "1.1-pdf-2"
       ],
       "destinationKnowledgeSlides": [
-        "1.1-knowledge-1"
+        "1.1-knowledge-1",
+        "1.1-knowledge-2"
       ],
-      "runtimeFormulaExpressions": 0,
+      "runtimeFormulaExpressions": 21,
       "approvedSourceBlocks": 0,
       "verification": "needs-review",
       "reviewEvidence": null,
@@ -112,9 +113,93 @@
           "destinationSection": "knowledge",
           "destinationSlideId": "1.1-knowledge-1",
           "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-01",
+          "kind": "formula-or-property",
+          "sourceHeading": "Quy tắc đại số"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-02",
+          "kind": "formula-or-property",
+          "sourceHeading": "Hàm hợp và căn thức"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-03",
+          "kind": "formula-or-property",
+          "sourceHeading": "Lượng giác"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-04",
+          "kind": "formula-or-property",
+          "sourceHeading": "Mũ và lôgarit"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-05",
+          "kind": "formula-or-property",
+          "sourceHeading": "Đạo hàm cấp hai và chuyển động"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-formula-06",
+          "kind": "formula-or-property",
+          "sourceHeading": "Công thức mở rộng"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
           "id": "1.1-knowledge-1-method-01",
           "kind": "method",
-          "sourceHeading": "Bước 01"
+          "sourceHeading": "Miền áp dụng"
         },
         {
           "documentId": "cd01-cd07-functions",
@@ -128,7 +213,21 @@
           "status": "needs-review",
           "id": "1.1-knowledge-1-method-02",
           "kind": "method",
-          "sourceHeading": "Bước 02"
+          "sourceHeading": "Biên và giá trị tuyệt đối"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-1",
+          "status": "needs-review",
+          "id": "1.1-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Đạo hàm cấp hai"
         },
         {
           "documentId": "cd01-cd07-functions",
@@ -143,6 +242,48 @@
           "id": "1.1-knowledge-1-note",
           "kind": "note-or-warning",
           "sourceHeading": "Lưu ý từ tài liệu"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-2",
+          "status": "needs-review",
+          "id": "1.1-knowledge-2-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-2",
+          "status": "needs-review",
+          "id": "1.1-knowledge-2-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd01-cd07-functions",
+          "sourcePages": [
+            4
+          ],
+          "topicId": "CD01",
+          "subtopicId": "1.1",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "1.1-knowledge-2",
+          "status": "needs-review",
+          "id": "1.1-knowledge-2-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
         }
       ]
     },
@@ -205,20 +346,6 @@
           "id": "1.2-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            5
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.2-knowledge-1",
-          "status": "needs-review",
-          "id": "1.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -281,20 +408,6 @@
           "id": "1.3-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            5
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.3-knowledge-1",
-          "status": "needs-review",
-          "id": "1.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -359,20 +472,6 @@
           "id": "1.4-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            5
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.4-knowledge-1",
-          "status": "needs-review",
-          "id": "1.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -435,20 +534,6 @@
           "id": "1.5-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            6
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.5-knowledge-1",
-          "status": "needs-review",
-          "id": "1.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -511,20 +596,6 @@
           "id": "1.6-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            6
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.6-knowledge-1",
-          "status": "needs-review",
-          "id": "1.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -617,20 +688,6 @@
           "id": "1.7-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            6
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.7-knowledge-1",
-          "status": "needs-review",
-          "id": "1.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -679,20 +736,6 @@
           "id": "1.8-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            7
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.8-knowledge-1",
-          "status": "needs-review",
-          "id": "1.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -757,20 +800,6 @@
           "id": "1.9-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            7
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.9-knowledge-1",
-          "status": "needs-review",
-          "id": "1.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -819,20 +848,6 @@
           "id": "1.10-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            8
-          ],
-          "topicId": "CD01",
-          "subtopicId": "1.10",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "1.10-knowledge-1",
-          "status": "needs-review",
-          "id": "1.10-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -895,20 +910,6 @@
           "id": "2.1-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            9
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.1-knowledge-1",
-          "status": "needs-review",
-          "id": "2.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -959,20 +960,6 @@
           "id": "2.2-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            9
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.2-knowledge-1",
-          "status": "needs-review",
-          "id": "2.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1037,20 +1024,6 @@
           "id": "2.3-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            10
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.3-knowledge-1",
-          "status": "needs-review",
-          "id": "2.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1105,20 +1078,6 @@
           "id": "2.4-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            11
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.4-knowledge-1",
-          "status": "needs-review",
-          "id": "2.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1175,20 +1134,6 @@
           "id": "2.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            14
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.5-knowledge-1",
-          "status": "needs-review",
-          "id": "2.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1237,20 +1182,6 @@
           "id": "2.6-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            18
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.6-knowledge-1",
-          "status": "needs-review",
-          "id": "2.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1301,20 +1232,6 @@
           "id": "2.7-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            18
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.7-knowledge-1",
-          "status": "needs-review",
-          "id": "2.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1377,20 +1294,6 @@
           "id": "2.8-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            19
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.8-knowledge-1",
-          "status": "needs-review",
-          "id": "2.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1453,20 +1356,6 @@
           "id": "2.9-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            19
-          ],
-          "topicId": "CD02",
-          "subtopicId": "2.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "2.9-knowledge-1",
-          "status": "needs-review",
-          "id": "2.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1515,20 +1404,6 @@
           "id": "3.1-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            20
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.1-knowledge-1",
-          "status": "needs-review",
-          "id": "3.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1579,20 +1454,6 @@
           "id": "3.2-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            20
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.2-knowledge-1",
-          "status": "needs-review",
-          "id": "3.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1643,20 +1504,6 @@
           "id": "3.3-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            21
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.3-knowledge-1",
-          "status": "needs-review",
-          "id": "3.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1713,20 +1560,6 @@
           "id": "3.4-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            22
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.4-knowledge-1",
-          "status": "needs-review",
-          "id": "3.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1781,20 +1614,6 @@
           "id": "3.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            26
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.5-knowledge-1",
-          "status": "needs-review",
-          "id": "3.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1859,20 +1678,6 @@
           "id": "3.6-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            29
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.6-knowledge-1",
-          "status": "needs-review",
-          "id": "3.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -1921,20 +1726,6 @@
           "id": "3.7-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            30
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.7-knowledge-1",
-          "status": "needs-review",
-          "id": "3.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2011,20 +1802,6 @@
           "id": "3.8-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            30
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.8-knowledge-1",
-          "status": "needs-review",
-          "id": "3.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2117,20 +1894,6 @@
           "id": "3.9-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            30
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.9-knowledge-1",
-          "status": "needs-review",
-          "id": "3.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2179,20 +1942,6 @@
           "id": "3.10-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            31
-          ],
-          "topicId": "CD03",
-          "subtopicId": "3.10",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "3.10-knowledge-1",
-          "status": "needs-review",
-          "id": "3.10-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2255,20 +2004,6 @@
           "id": "4.1-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            32
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.1-knowledge-1",
-          "status": "needs-review",
-          "id": "4.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2319,20 +2054,6 @@
           "id": "4.2-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            32
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.2-knowledge-1",
-          "status": "needs-review",
-          "id": "4.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2397,20 +2118,6 @@
           "id": "4.3-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            33
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.3-knowledge-1",
-          "status": "needs-review",
-          "id": "4.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2465,20 +2172,6 @@
           "id": "4.4-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            34
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.4-knowledge-1",
-          "status": "needs-review",
-          "id": "4.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2529,20 +2222,6 @@
           "id": "4.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            37
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.5-knowledge-1",
-          "status": "needs-review",
-          "id": "4.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2591,20 +2270,6 @@
           "id": "4.6-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            38
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.6-knowledge-1",
-          "status": "needs-review",
-          "id": "4.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2655,20 +2320,6 @@
           "id": "4.7-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            38
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.7-knowledge-1",
-          "status": "needs-review",
-          "id": "4.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2717,20 +2368,6 @@
           "id": "4.8-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            39
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.8-knowledge-1",
-          "status": "needs-review",
-          "id": "4.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2795,20 +2432,6 @@
           "id": "4.9-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            39
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.9-knowledge-1",
-          "status": "needs-review",
-          "id": "4.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2857,20 +2480,6 @@
           "id": "4.10-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            40
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.10",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.10-knowledge-1",
-          "status": "needs-review",
-          "id": "4.10-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2919,20 +2528,6 @@
           "id": "4.11-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            40
-          ],
-          "topicId": "CD04",
-          "subtopicId": "4.11",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "4.11-knowledge-1",
-          "status": "needs-review",
-          "id": "4.11-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -2981,20 +2576,6 @@
           "id": "5.1-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            41
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.1-knowledge-1",
-          "status": "needs-review",
-          "id": "5.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3045,20 +2626,6 @@
           "id": "5.2-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            41
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.2-knowledge-1",
-          "status": "needs-review",
-          "id": "5.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3107,20 +2674,6 @@
           "id": "5.3-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            42
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.3-knowledge-1",
-          "status": "needs-review",
-          "id": "5.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3199,20 +2752,6 @@
           "id": "5.4-knowledge-1-method-03",
           "kind": "method",
           "sourceHeading": "Bước 03"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            42
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.4-knowledge-1",
-          "status": "needs-review",
-          "id": "5.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3263,20 +2802,6 @@
           "id": "5.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            43
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.5-knowledge-1",
-          "status": "needs-review",
-          "id": "5.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3331,20 +2856,6 @@
           "id": "5.6-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            44
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.6-knowledge-1",
-          "status": "needs-review",
-          "id": "5.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3395,20 +2906,6 @@
           "id": "5.7-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            47
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.7-knowledge-1",
-          "status": "needs-review",
-          "id": "5.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3457,20 +2954,6 @@
           "id": "5.8-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            48
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.8-knowledge-1",
-          "status": "needs-review",
-          "id": "5.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3533,20 +3016,6 @@
           "id": "5.9-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            48
-          ],
-          "topicId": "CD05",
-          "subtopicId": "5.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "5.9-knowledge-1",
-          "status": "needs-review",
-          "id": "5.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3601,20 +3070,6 @@
           "id": "6.1-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            49
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.1-knowledge-1",
-          "status": "needs-review",
-          "id": "6.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3667,20 +3122,6 @@
           "id": "6.2-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            52
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.2-knowledge-1",
-          "status": "needs-review",
-          "id": "6.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3749,20 +3190,6 @@
           "id": "6.3-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            54
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.3-knowledge-1",
-          "status": "needs-review",
-          "id": "6.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3813,20 +3240,6 @@
           "id": "6.4-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            57
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.4-knowledge-1",
-          "status": "needs-review",
-          "id": "6.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3875,20 +3288,6 @@
           "id": "6.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            58
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.5-knowledge-1",
-          "status": "needs-review",
-          "id": "6.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -3953,20 +3352,6 @@
           "id": "6.6-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            58
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.6-knowledge-1",
-          "status": "needs-review",
-          "id": "6.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4029,20 +3414,6 @@
           "id": "6.7-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            59
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.7-knowledge-1",
-          "status": "needs-review",
-          "id": "6.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4091,20 +3462,6 @@
           "id": "6.8-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            59
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.8-knowledge-1",
-          "status": "needs-review",
-          "id": "6.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4155,20 +3512,6 @@
           "id": "6.9-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            59
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.9-knowledge-1",
-          "status": "needs-review",
-          "id": "6.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4217,20 +3560,6 @@
           "id": "6.10-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            60
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.10",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.10-knowledge-1",
-          "status": "needs-review",
-          "id": "6.10-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4295,20 +3624,6 @@
           "id": "6.11-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            60
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.11",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.11-knowledge-1",
-          "status": "needs-review",
-          "id": "6.11-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4357,20 +3672,6 @@
           "id": "6.12-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            61
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.12",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.12-knowledge-1",
-          "status": "needs-review",
-          "id": "6.12-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4433,20 +3734,6 @@
           "id": "6.13-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            61
-          ],
-          "topicId": "CD06",
-          "subtopicId": "6.13",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "6.13-knowledge-1",
-          "status": "needs-review",
-          "id": "6.13-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4509,20 +3796,6 @@
           "id": "7.1-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            62
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.1",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.1-knowledge-1",
-          "status": "needs-review",
-          "id": "7.1-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4587,20 +3860,6 @@
           "id": "7.2-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            62
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.2",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.2-knowledge-1",
-          "status": "needs-review",
-          "id": "7.2-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4663,20 +3922,6 @@
           "id": "7.3-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            63
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.3",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.3-knowledge-1",
-          "status": "needs-review",
-          "id": "7.3-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4741,20 +3986,6 @@
           "id": "7.4-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            63
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.4",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.4-knowledge-1",
-          "status": "needs-review",
-          "id": "7.4-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4803,20 +4034,6 @@
           "id": "7.5-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            64
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.5",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.5-knowledge-1",
-          "status": "needs-review",
-          "id": "7.5-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4865,20 +4082,6 @@
           "id": "7.6-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            64
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.6",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.6-knowledge-1",
-          "status": "needs-review",
-          "id": "7.6-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -4943,20 +4146,6 @@
           "id": "7.7-knowledge-1-method-02",
           "kind": "method",
           "sourceHeading": "Bước 02"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            64
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.7",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.7-knowledge-1",
-          "status": "needs-review",
-          "id": "7.7-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -5005,20 +4194,6 @@
           "id": "7.8-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            65
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.8",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.8-knowledge-1",
-          "status": "needs-review",
-          "id": "7.8-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },
@@ -5067,20 +4242,6 @@
           "id": "7.9-knowledge-1-method-01",
           "kind": "method",
           "sourceHeading": "Bước 01"
-        },
-        {
-          "documentId": "cd01-cd07-functions",
-          "sourcePages": [
-            65
-          ],
-          "topicId": "CD07",
-          "subtopicId": "7.9",
-          "destinationSection": "knowledge",
-          "destinationSlideId": "7.9-knowledge-1",
-          "status": "needs-review",
-          "id": "7.9-knowledge-1-note",
-          "kind": "note-or-warning",
-          "sourceHeading": "Lưu ý từ tài liệu"
         }
       ]
     },

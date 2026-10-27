@@ -37,14 +37,16 @@ const server = createServer((request, response) => {
 const viewports = [
   { width: 390, height: 844 }, { width: 430, height: 932 },
   { width: 768, height: 1024 }, { width: 1024, height: 768 },
-  { width: 1280, height: 720 }, { width: 1440, height: 900 },
+  { width: 1280, height: 720 }, { width: 1366, height: 768 },
+  { width: 1440, height: 900 },
   { width: 1920, height: 1080 }
 ];
-const representatives = ["12.1", "12.4", "13.1", "14.1", "20.1", "20.2", "20.17", "21.1", "21.8"];
+const representatives = ["1.1", "12.1", "12.4", "13.1", "14.1", "20.1", "20.2", "20.17", "21.1", "21.8"];
+const immutableVerified = new Set(["12.1", "20.1", "20.2"]);
 const allCodes = Object.keys(knowledgeContent).filter((code) => /^(?:12|13|14|20|21)\./.test(code));
 
 function topicFor(code) {
-  return `CD${code.split(".")[0]}`;
+  return `CD${code.split(".")[0].padStart(2, "0")}`;
 }
 
 function lessonUrl(origin, code, section = "knowledge", item = 1) {
@@ -110,7 +112,8 @@ try {
       const state = await inspectNativeLesson(page);
       const label = `${code} at ${viewport.width}x${viewport.height}`;
       assert.ok(state.reader && state.content && state.navigation, `${label} renders the complete native reader shell`);
-      assert.equal(state.verified, "verified", `${label} exposes verified content`);
+      const expectedVerification = immutableVerified.has(code) ? "verified" : "needs-review";
+      assert.equal(state.verified, expectedVerification, `${label} exposes an honest review state`);
       assert.ok(state.title, `${label} keeps a visible lesson title`);
       assert.equal(state.forbiddenNodes, 0, `${label} contains no PDF/canvas renderer`);
       assert.equal(state.forbiddenText, false, `${label} contains no PDF viewer controls`);
@@ -168,6 +171,13 @@ try {
       assert.ok(bottomClearance >= 12, `12.1 final Knowledge content clears sticky navigation at ${viewport.width}px`);
       await page.screenshot({ path: `.audit/v13-2-after-12-1-${viewport.width}x${viewport.height}-bottom.png` });
     }
+    if ([390, 1366].includes(viewport.width)) {
+      await openLesson(page, origin, "1.1");
+      await page.screenshot({
+        path: `.audit/content-migration-cd01-1-1-${viewport.width}x${viewport.height}.png`,
+        fullPage: viewport.width <= 768
+      });
+    }
     if ([390, 1440].includes(viewport.width)) {
       await openLesson(page, origin, "12.1");
       await page.screenshot({
@@ -182,7 +192,7 @@ try {
     }
   }
 
-  for (const viewport of [viewports[0], viewports[5]]) {
+  for (const viewport of [viewports[0], viewports[6]]) {
     await page.setViewportSize(viewport);
     for (const code of allCodes) {
       await openLesson(page, origin, code);
@@ -206,6 +216,19 @@ try {
   await page.evaluate(() => document.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowLeft", bubbles: true })));
   await page.waitForFunction(() => new URLSearchParams(location.search).get("section") === "knowledge");
   assert.equal(new URL(page.url()).searchParams.get("section"), "knowledge", "Left Arrow returns to Knowledge");
+
+  for (const viewport of [viewports[0], viewports[5]]) {
+    await page.setViewportSize(viewport);
+    await openLesson(page, origin, "1.1", "knowledge", 2);
+    const state = await inspectNativeLesson(page);
+    assert.equal(state.verified, "needs-review", `CD01 method page keeps its honest review state at ${viewport.width}px`);
+    assert.equal(state.horizontalOverflow, false, `CD01 method page fits ${viewport.width}px without page overflow`);
+    assert.equal(state.equationOverflowCount, 0, `CD01 method page keeps formulas readable at ${viewport.width}px`);
+    await page.screenshot({
+      path: `.audit/content-migration-cd01-1-1-page-2-${viewport.width}x${viewport.height}.png`,
+      fullPage: viewport.width <= 768
+    });
+  }
 
   await openLesson(page, origin, "20.1", "practice", 1);
   await page.locator("[data-practice-answer]").first().click();

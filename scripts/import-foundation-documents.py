@@ -426,12 +426,99 @@ def source_formulae(code: str, method_sentences: list[str]) -> list[dict]:
     return formulae
 
 
+def cd01_source_overview() -> dict:
+    """Reviewed transcription of the CD01 “Kiến thức cần nhớ” block on page 4."""
+    return {
+        "lead": (
+            r"Đạo hàm tại \(x_0\) là "
+            r"\(f'(x_0)=\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}\) khi giới hạn hữu hạn tồn tại. "
+            "Có đạo hàm tại một điểm thì liên tục tại điểm đó; chiều ngược lại không đúng."
+        ),
+        "formulae": [
+            {
+                "label": "Quy tắc đại số",
+                "value": r"(c)'=0",
+                "expressions": [
+                    r"(c)'=0", r"(x^n)'=nx^{n-1}", r"(u+v)'=u'+v'",
+                    r"(uv)'=u'v+uv'", r"\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2}",
+                ],
+                "detail": "Các công thức được dùng trên miền có nghĩa và có đạo hàm; quy tắc thương cần mẫu khác 0.",
+            },
+            {
+                "label": "Hàm hợp và căn thức",
+                "value": r"[f(u)]'=f'(u)u'",
+                "expressions": [r"[f(u)]'=f'(u)u'", r"(\sqrt{u})'=\frac{u'}{2\sqrt{u}},\quad u>0"],
+                "detail": "Công thức đạo hàm căn chỉ áp dụng khi biểu thức dưới căn dương.",
+            },
+            {
+                "label": "Lượng giác",
+                "value": r"(\sin u)'=u'\cos u",
+                "expressions": [
+                    r"(\sin u)'=u'\cos u", r"(\cos u)'=-u'\sin u",
+                    r"(\tan u)'=\frac{u'}{\cos^2u}", r"(\cot u)'=-\frac{u'}{\sin^2u}",
+                ],
+                "detail": "Các công thức lượng giác dùng đơn vị radian.",
+            },
+            {
+                "label": "Mũ và lôgarit",
+                "value": r"(e^u)'=u'e^u",
+                "expressions": [
+                    r"(e^u)'=u'e^u", r"(a^u)'=u'a^u\ln a",
+                    r"(\ln u)'=\frac{u'}{u}", r"(\log_a u)'=\frac{u'}{u\ln a}",
+                ],
+                "detail": "Với hàm mũ và lôgarit: a > 0, a ≠ 1; lôgarit yêu cầu u > 0.",
+            },
+            {
+                "label": "Đạo hàm cấp hai và chuyển động",
+                "value": r"y''=(y')'",
+                "expressions": [r"y''=(y')'", r"v(t)=s'(t)", r"a(t)=v'(t)=s''(t)"],
+                "detail": "Tốc độ bằng |v(t)|, không phải lúc nào cũng bằng v(t); đơn vị phải nhất quán.",
+            },
+            {
+                "label": "Công thức mở rộng",
+                "value": r"(u^n)'=nu^{n-1}u'",
+                "expressions": [
+                    r"(u^n)'=nu^{n-1}u'", r"(u^\alpha)'=\alpha u^{\alpha-1}u'",
+                    r"\left(\frac{ax+b}{cx+d}\right)'=\frac{ad-bc}{(cx+d)^2}",
+                ],
+                "detail": "Lũy thừa mũ thực dùng trên u > 0; phân thức được xét tại các điểm mẫu khác 0.",
+            },
+        ],
+        "points": [
+            {
+                "label": "Miền áp dụng",
+                "text": "Luôn giữ miền có nghĩa; căn thức có thể xác định ở biên u = 0 nhưng công thức đạo hàm căn chỉ dùng với u > 0.",
+            },
+            {
+                "label": "Biên và giá trị tuyệt đối",
+                "text": "Muốn xét đạo hàm ở biên phải dùng định nghĩa phù hợp; ln|u| có đạo hàm u′/u trên u ≠ 0.",
+            },
+            {
+                "label": "Đạo hàm cấp hai",
+                "text": "Khi tính đạo hàm cấp hai, vẫn phải áp dụng lại quy tắc hàm hợp và quy tắc tích.",
+            },
+        ],
+        "note": {
+            "label": "Lưu ý từ tài liệu",
+            "text": "Trong chuyển động thẳng, tốc độ là |v(t)|; không được mặc định tốc độ luôn bằng v(t).",
+            "tone": "warning",
+        },
+        "layout": "formula-grid",
+        "sourcePages": [4],
+    }
+
+
 def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_id: str) -> tuple[dict, list[dict]]:
     method, note = method_from(theory)
     source_page = theory[0]["page"]
     method_sentences = [part.strip() for part in re.split(r";|(?<=[.!?])\s+", method) if part.strip()]
     if not method_sentences:
         method_sentences = ["Đọc kỹ điều kiện và thực hiện theo đúng quy trình của dạng bài trong tài liệu nguồn."]
+    source_note = {
+        "label": "Lưu ý từ tài liệu",
+        "text": note,
+        "tone": "warning",
+    } if note else None
     reading = {
         "lead": method,
         "formulae": source_formulae(code, method_sentences),
@@ -439,15 +526,34 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
             {"label": f"Bước {index + 1:02d}", "text": sentence}
             for index, sentence in enumerate(method_sentences[:4])
         ],
-        "note": {
-            "label": "Lưu ý từ tài liệu",
-            "text": note or "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-            "tone": "warning" if note else "tip",
-        },
+        "note": source_note,
         "layout": "principles-split",
         "sourcePages": [source_page],
         "sourceDocumentId": document_id,
+        "topicId": f"CD{code.split('.')[0].zfill(2)}",
+        "lessonId": code,
+        "sectionId": f"{code}-knowledge",
+        "contentType": "markdown-latex",
+        "sourcePdf": document_id,
+        "conversionStatus": "imported",
+        "reviewStatus": "needs-review",
+        "contentVersion": "foundation-import-v2",
     }
+    if code == "1.1":
+        overview = cd01_source_overview()
+        method_page = {
+            "lead": method,
+            "formulae": reading["formulae"],
+            "points": reading["points"],
+            "note": source_note,
+            "layout": "principles-split",
+            "sourcePages": [source_page],
+        }
+        reading["lead"] = overview["lead"]
+        reading["formulae"] = [*overview["formulae"], *reading["formulae"]]
+        reading["points"] = [*overview["points"], *reading["points"]]
+        reading["note"] = overview["note"]
+        reading["pages"] = [overview, method_page]
 
     prompts = numbered_items(theory)
     answers = numbered_items(solutions)
@@ -481,11 +587,11 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
             "id": f"{code}-source-example-{number}",
             "title": title,
             "prompt": prompt_text,
-            "analysis": [method_sentences[0], "Đối chiếu điều kiện trước khi kết luận."],
+            "analysis": [method_sentences[0]],
             "steps": [{
                 "label": "Lời giải từ tài liệu",
                 "expression": answer_text,
-                "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn.",
+                "text": f"Chép từ lời giải Ví dụ {number}, trang {answer['page']} của PDF nguồn.",
             }],
             "answer": answer_text,
             "takeaway": method_sentences[0],
@@ -493,6 +599,14 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
             "sourceBlockId": f"{code}-worked-example-{number}",
             "origin": "verified-source",
             "verification": "source-transcribed",
+            "topicId": f"CD{code.split('.')[0].zfill(2)}",
+            "lessonId": code,
+            "sectionId": f"{code}-example-{number}",
+            "contentType": "markdown-latex",
+            "sourcePdf": document_id,
+            "conversionStatus": "imported",
+            "reviewStatus": "needs-review",
+            "contentVersion": "foundation-import-v2",
         })
     return reading, examples
 
@@ -516,7 +630,24 @@ def main() -> None:
         missing_solutions = sorted(allowed - solutions.keys())
         if missing_theory or missing_solutions:
             raise RuntimeError(f"{file_name}: missing theory={missing_theory}, solutions={missing_solutions}")
+        source_prompt_count = 0
+        source_answer_count = 0
+        text_complete_candidate_count = 0
+        diagram_dependent_count = 0
         for code in sorted(allowed, key=lambda item: tuple(map(int, item.split(".")))):
+            source_prompts = numbered_items(theory[code])
+            source_answers = numbered_items(solutions[code])
+            source_prompt_count += len(source_prompts)
+            source_answer_count += len(source_answers)
+            for number, prompt in source_prompts.items():
+                visual = any(
+                    token.replace(" ", "") in prompt["text"].lower().replace(" ", "")
+                    for token in VISUAL_DEPENDENCIES
+                )
+                if visual:
+                    diagram_dependent_count += 1
+                elif number in source_answers:
+                    text_complete_candidate_count += 1
             reading, worked = make_lesson(code, theory[code], solutions[code], spec["id"])
             if not reading["lead"]:
                 raise RuntimeError(f"{file_name}: incomplete native lesson {code}")
@@ -527,6 +658,11 @@ def main() -> None:
             "lessonCount": len(allowed),
             "knowledgeCount": sum(1 for code in allowed if code in knowledge),
             "workedExampleCount": sum(len(examples.get(code, [])) for code in allowed),
+            "sourcePromptCount": source_prompt_count,
+            "sourceAnswerCount": source_answer_count,
+            "textCompleteCandidateCount": text_complete_candidate_count,
+            "diagramDependentCount": diagram_dependent_count,
+            "pendingReviewExampleCount": text_complete_candidate_count - sum(len(examples.get(code, [])) for code in allowed),
         }
 
     payload = (

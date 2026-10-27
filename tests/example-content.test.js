@@ -13,7 +13,7 @@ test("all mapped lessons expose complete worked examples", () => {
     }
     for (const example of examples) {
       assert.ok(example.prompt.length >= 12, `${code} prompt`);
-      assert.ok(example.analysis.length >= 2, `${code} analysis`);
+      assert.ok(example.analysis.length >= (example.verification === "source-transcribed" ? 1 : 2), `${code} analysis`);
       assert.ok(example.steps.length >= (example.verification === "source-transcribed" ? 1 : 2), `${code} steps`);
       assert.ok(example.steps.every((step) => step.label && step.expression && step.text), `${code} step detail`);
       assert.ok(example.answer && example.takeaway, `${code} conclusion`);

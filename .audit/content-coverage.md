@@ -1,13 +1,13 @@
 # BienEdu content coverage
 
-Generated: 2026-10-27T17:48:50.042Z
+Generated: 2026-10-27T18:20:16.888Z
 
 ## Audit summary
 
 - Curriculum: 39 topics / 347 subtopics.
 - Source PDFs discovered: 4.
 - Topic availability: 2 available, 14 partial, 23 coming soon, 0 needs review.
-- CD01-CD11: all 107 catalog Knowledge lessons are published from the two newly registered source PDFs. 95 text-complete worked examples are published; 12 diagram-dependent examples are intentionally withheld rather than shown without their figures.
+- CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. 95/900 text-complete worked-example candidates are published as source-transcribed samples; 805 remain in review. 170 examples depend on diagrams/graphs and are withheld until their assets are mapped.
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
 - Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.
 - CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.
@@ -26,20 +26,20 @@ Generated: 2026-10-27T17:48:50.042Z
 
 | Topic | Subtopics | Available | Knowledge | Displayed examples | Source examples | Source practice | Answer keys | Auto-graded source | Needs review | Source coverage | Runtime |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| CD01 | 10 | 0 | 10 | 10 | 10 | 0 | 0 | 0 | 0 | none | partial |
-| CD02 | 9 | 0 | 9 | 6 | 6 | 0 | 0 | 0 | 0 | none | partial |
-| CD03 | 10 | 0 | 10 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
-| CD04 | 11 | 0 | 11 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
-| CD05 | 9 | 0 | 9 | 7 | 7 | 0 | 0 | 0 | 0 | none | partial |
-| CD06 | 13 | 0 | 13 | 10 | 10 | 0 | 0 | 0 | 0 | none | partial |
-| CD07 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
-| CD08 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | none | partial |
-| CD09 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
-| CD10 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | none | partial |
-| CD11 | 11 | 0 | 11 | 11 | 11 | 0 | 0 | 0 | 0 | none | partial |
-| CD12 | 9 | 1 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | none | partial |
-| CD13 | 8 | 0 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | none | partial |
-| CD14 | 9 | 0 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | none | partial |
+| CD01 | 10 | 0 | 11 | 10 | 10 | 0 | 0 | 0 | 0 | complete | partial |
+| CD02 | 9 | 0 | 9 | 6 | 6 | 0 | 0 | 0 | 0 | partial | partial |
+| CD03 | 10 | 0 | 10 | 8 | 8 | 0 | 0 | 0 | 0 | partial | partial |
+| CD04 | 11 | 0 | 11 | 9 | 9 | 0 | 0 | 0 | 0 | partial | partial |
+| CD05 | 9 | 0 | 9 | 7 | 7 | 0 | 0 | 0 | 0 | partial | partial |
+| CD06 | 13 | 0 | 13 | 10 | 10 | 0 | 0 | 0 | 0 | partial | partial |
+| CD07 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | complete | partial |
+| CD08 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | complete | partial |
+| CD09 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | complete | partial |
+| CD10 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | complete | partial |
+| CD11 | 11 | 0 | 11 | 11 | 11 | 0 | 0 | 0 | 0 | complete | partial |
+| CD12 | 9 | 1 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | complete | partial |
+| CD13 | 8 | 0 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | complete | partial |
+| CD14 | 9 | 0 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | complete | partial |
 | CD15 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD16 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD17 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |

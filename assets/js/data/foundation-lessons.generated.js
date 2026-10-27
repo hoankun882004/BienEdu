@@ -2,9 +2,85 @@
 // Do not hand-edit; rerun the importer after replacing a registered source document.
 const knowledge = {
   "1.1": {
-    "lead": "Đạo hàm từng hạng; hằng số mất đi.",
-    "formulae": [],
+    "lead": "Đạo hàm tại \\(x_0\\) là \\(f'(x_0)=\\lim_{h\\to0}\\frac{f(x_0+h)-f(x_0)}{h}\\) khi giới hạn hữu hạn tồn tại. Có đạo hàm tại một điểm thì liên tục tại điểm đó; chiều ngược lại không đúng.",
+    "formulae": [
+      {
+        "label": "Quy tắc đại số",
+        "value": "(c)'=0",
+        "expressions": [
+          "(c)'=0",
+          "(x^n)'=nx^{n-1}",
+          "(u+v)'=u'+v'",
+          "(uv)'=u'v+uv'",
+          "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+        ],
+        "detail": "Các công thức được dùng trên miền có nghĩa và có đạo hàm; quy tắc thương cần mẫu khác 0."
+      },
+      {
+        "label": "Hàm hợp và căn thức",
+        "value": "[f(u)]'=f'(u)u'",
+        "expressions": [
+          "[f(u)]'=f'(u)u'",
+          "(\\sqrt{u})'=\\frac{u'}{2\\sqrt{u}},\\quad u>0"
+        ],
+        "detail": "Công thức đạo hàm căn chỉ áp dụng khi biểu thức dưới căn dương."
+      },
+      {
+        "label": "Lượng giác",
+        "value": "(\\sin u)'=u'\\cos u",
+        "expressions": [
+          "(\\sin u)'=u'\\cos u",
+          "(\\cos u)'=-u'\\sin u",
+          "(\\tan u)'=\\frac{u'}{\\cos^2u}",
+          "(\\cot u)'=-\\frac{u'}{\\sin^2u}"
+        ],
+        "detail": "Các công thức lượng giác dùng đơn vị radian."
+      },
+      {
+        "label": "Mũ và lôgarit",
+        "value": "(e^u)'=u'e^u",
+        "expressions": [
+          "(e^u)'=u'e^u",
+          "(a^u)'=u'a^u\\ln a",
+          "(\\ln u)'=\\frac{u'}{u}",
+          "(\\log_a u)'=\\frac{u'}{u\\ln a}"
+        ],
+        "detail": "Với hàm mũ và lôgarit: a > 0, a ≠ 1; lôgarit yêu cầu u > 0."
+      },
+      {
+        "label": "Đạo hàm cấp hai và chuyển động",
+        "value": "y''=(y')'",
+        "expressions": [
+          "y''=(y')'",
+          "v(t)=s'(t)",
+          "a(t)=v'(t)=s''(t)"
+        ],
+        "detail": "Tốc độ bằng |v(t)|, không phải lúc nào cũng bằng v(t); đơn vị phải nhất quán."
+      },
+      {
+        "label": "Công thức mở rộng",
+        "value": "(u^n)'=nu^{n-1}u'",
+        "expressions": [
+          "(u^n)'=nu^{n-1}u'",
+          "(u^\\alpha)'=\\alpha u^{\\alpha-1}u'",
+          "\\left(\\frac{ax+b}{cx+d}\\right)'=\\frac{ad-bc}{(cx+d)^2}"
+        ],
+        "detail": "Lũy thừa mũ thực dùng trên u > 0; phân thức được xét tại các điểm mẫu khác 0."
+      }
+    ],
     "points": [
+      {
+        "label": "Miền áp dụng",
+        "text": "Luôn giữ miền có nghĩa; căn thức có thể xác định ở biên u = 0 nhưng công thức đạo hàm căn chỉ dùng với u > 0."
+      },
+      {
+        "label": "Biên và giá trị tuyệt đối",
+        "text": "Muốn xét đạo hàm ở biên phải dùng định nghĩa phù hợp; ln|u| có đạo hàm u′/u trên u ≠ 0."
+      },
+      {
+        "label": "Đạo hàm cấp hai",
+        "text": "Khi tính đạo hàm cấp hai, vẫn phải áp dụng lại quy tắc hàm hợp và quy tắc tích."
+      },
       {
         "label": "Bước 01",
         "text": "Đạo hàm từng hạng"
@@ -16,14 +92,134 @@ const knowledge = {
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
+      "text": "Trong chuyển động thẳng, tốc độ là |v(t)|; không được mặc định tốc độ luôn bằng v(t).",
+      "tone": "warning"
     },
     "layout": "principles-split",
     "sourcePages": [
       4
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.1",
+    "sectionId": "1.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2",
+    "pages": [
+      {
+        "lead": "Đạo hàm tại \\(x_0\\) là \\(f'(x_0)=\\lim_{h\\to0}\\frac{f(x_0+h)-f(x_0)}{h}\\) khi giới hạn hữu hạn tồn tại. Có đạo hàm tại một điểm thì liên tục tại điểm đó; chiều ngược lại không đúng.",
+        "formulae": [
+          {
+            "label": "Quy tắc đại số",
+            "value": "(c)'=0",
+            "expressions": [
+              "(c)'=0",
+              "(x^n)'=nx^{n-1}",
+              "(u+v)'=u'+v'",
+              "(uv)'=u'v+uv'",
+              "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+            ],
+            "detail": "Các công thức được dùng trên miền có nghĩa và có đạo hàm; quy tắc thương cần mẫu khác 0."
+          },
+          {
+            "label": "Hàm hợp và căn thức",
+            "value": "[f(u)]'=f'(u)u'",
+            "expressions": [
+              "[f(u)]'=f'(u)u'",
+              "(\\sqrt{u})'=\\frac{u'}{2\\sqrt{u}},\\quad u>0"
+            ],
+            "detail": "Công thức đạo hàm căn chỉ áp dụng khi biểu thức dưới căn dương."
+          },
+          {
+            "label": "Lượng giác",
+            "value": "(\\sin u)'=u'\\cos u",
+            "expressions": [
+              "(\\sin u)'=u'\\cos u",
+              "(\\cos u)'=-u'\\sin u",
+              "(\\tan u)'=\\frac{u'}{\\cos^2u}",
+              "(\\cot u)'=-\\frac{u'}{\\sin^2u}"
+            ],
+            "detail": "Các công thức lượng giác dùng đơn vị radian."
+          },
+          {
+            "label": "Mũ và lôgarit",
+            "value": "(e^u)'=u'e^u",
+            "expressions": [
+              "(e^u)'=u'e^u",
+              "(a^u)'=u'a^u\\ln a",
+              "(\\ln u)'=\\frac{u'}{u}",
+              "(\\log_a u)'=\\frac{u'}{u\\ln a}"
+            ],
+            "detail": "Với hàm mũ và lôgarit: a > 0, a ≠ 1; lôgarit yêu cầu u > 0."
+          },
+          {
+            "label": "Đạo hàm cấp hai và chuyển động",
+            "value": "y''=(y')'",
+            "expressions": [
+              "y''=(y')'",
+              "v(t)=s'(t)",
+              "a(t)=v'(t)=s''(t)"
+            ],
+            "detail": "Tốc độ bằng |v(t)|, không phải lúc nào cũng bằng v(t); đơn vị phải nhất quán."
+          },
+          {
+            "label": "Công thức mở rộng",
+            "value": "(u^n)'=nu^{n-1}u'",
+            "expressions": [
+              "(u^n)'=nu^{n-1}u'",
+              "(u^\\alpha)'=\\alpha u^{\\alpha-1}u'",
+              "\\left(\\frac{ax+b}{cx+d}\\right)'=\\frac{ad-bc}{(cx+d)^2}"
+            ],
+            "detail": "Lũy thừa mũ thực dùng trên u > 0; phân thức được xét tại các điểm mẫu khác 0."
+          }
+        ],
+        "points": [
+          {
+            "label": "Miền áp dụng",
+            "text": "Luôn giữ miền có nghĩa; căn thức có thể xác định ở biên u = 0 nhưng công thức đạo hàm căn chỉ dùng với u > 0."
+          },
+          {
+            "label": "Biên và giá trị tuyệt đối",
+            "text": "Muốn xét đạo hàm ở biên phải dùng định nghĩa phù hợp; ln|u| có đạo hàm u′/u trên u ≠ 0."
+          },
+          {
+            "label": "Đạo hàm cấp hai",
+            "text": "Khi tính đạo hàm cấp hai, vẫn phải áp dụng lại quy tắc hàm hợp và quy tắc tích."
+          }
+        ],
+        "note": {
+          "label": "Lưu ý từ tài liệu",
+          "text": "Trong chuyển động thẳng, tốc độ là |v(t)|; không được mặc định tốc độ luôn bằng v(t).",
+          "tone": "warning"
+        },
+        "layout": "formula-grid",
+        "sourcePages": [
+          4
+        ]
+      },
+      {
+        "lead": "Đạo hàm từng hạng; hằng số mất đi.",
+        "formulae": [],
+        "points": [
+          {
+            "label": "Bước 01",
+            "text": "Đạo hàm từng hạng"
+          },
+          {
+            "label": "Bước 02",
+            "text": "hằng số mất đi."
+          }
+        ],
+        "note": null,
+        "layout": "principles-split",
+        "sourcePages": [
+          4
+        ]
+      }
+    ]
   },
   "1.2": {
     "lead": "Tìm mẫu khác 0; dùng quy tắc thương và rút gọn.",
@@ -38,16 +234,20 @@ const knowledge = {
         "text": "dùng quy tắc thương và rút gọn."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       5
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.2",
+    "sectionId": "1.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.3": {
     "lead": "Tìm miền của căn; công thức đạo hàm căn dùng nơi biểu thức dưới căn dương.",
@@ -62,16 +262,20 @@ const knowledge = {
         "text": "công thức đạo hàm căn dùng nơi biểu thức dưới căn dương."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       5
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.3",
+    "sectionId": "1.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.4": {
     "lead": "Đổi sang radian; đạo hàm hàm ngoài rồi nhân đạo hàm hàm trong.",
@@ -86,16 +290,20 @@ const knowledge = {
         "text": "đạo hàm hàm ngoài rồi nhân đạo hàm hàm trong."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       5
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.4",
+    "sectionId": "1.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.5": {
     "lead": "Phân biệt cơ số e và cơ số a; ghi miền của lôgarit.",
@@ -110,16 +318,20 @@ const knowledge = {
         "text": "ghi miền của lôgarit."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       6
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.5",
+    "sectionId": "1.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.6": {
     "lead": "Đặt u là biểu thức bên trong; tính f′(u) nhân u′.",
@@ -134,16 +346,20 @@ const knowledge = {
         "text": "tính f′(u) nhân u′."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       6
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.6",
+    "sectionId": "1.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.7": {
     "lead": "Tích: (uv)′ = u′v + uv′. Thương: (u/v)′ = (u′v −uv′)/v², với v≠ 0.",
@@ -175,16 +391,20 @@ const knowledge = {
         "text": "Thương: (u/v)′ = (u′v −uv′)/v², với v≠ 0."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       6
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.7",
+    "sectionId": "1.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.8": {
     "lead": "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
@@ -195,16 +415,20 @@ const knowledge = {
         "text": "Tính đạo hàm lần thứ nhất rồi lần thứ hai."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       7
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.8",
+    "sectionId": "1.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.9": {
     "lead": "Tính s′ và s′′, thay thời điểm; tốc độ là trị tuyệt đối của vận tốc.",
@@ -219,16 +443,20 @@ const knowledge = {
         "text": "tốc độ là trị tuyệt đối của vận tốc."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       7
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.9",
+    "sectionId": "1.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "1.10": {
     "lead": "Viết đúng quy tắc trước khi thay số để không nhầm f với f′.",
@@ -239,16 +467,20 @@ const knowledge = {
         "text": "Viết đúng quy tắc trước khi thay số để không nhầm f với f′."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       8
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD01",
+    "lessonId": "1.10",
+    "sectionId": "1.10-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.1": {
     "lead": "Tính đạo hàm và lập bảng dấu; kết luận trên từng khoảng xác định.",
@@ -263,16 +495,20 @@ const knowledge = {
         "text": "kết luận trên từng khoảng xác định."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       9
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.1",
+    "sectionId": "2.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.2": {
     "lead": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
@@ -283,16 +519,20 @@ const knowledge = {
         "text": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       9
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.2",
+    "sectionId": "2.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.3": {
     "lead": "Đọc mũi tên tăng giảm; tách khoảng tại mọi mốc.",
@@ -307,16 +547,20 @@ const knowledge = {
         "text": "tách khoảng tại mọi mốc."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       10
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.3",
+    "sectionId": "2.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.4": {
     "lead": "Đọc vị trí đồ thị đạo hàm so với trục Ox, không đọc độ dốc của nó.",
@@ -327,16 +571,20 @@ const knowledge = {
         "text": "Đọc vị trí đồ thị đạo hàm so với trục Ox, không đọc độ dốc của nó."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       11
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.4",
+    "sectionId": "2.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.5": {
     "lead": "Đi từ trái sang phải và quan sát tung độ tăng hay giảm.",
@@ -347,16 +595,20 @@ const knowledge = {
         "text": "Đi từ trái sang phải và quan sát tung độ tăng hay giảm."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       14
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.5",
+    "sectionId": "2.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.6": {
     "lead": "Tách miền tại nghiệm mẫu, xét dấu đạo hàm trên từng khoảng.",
@@ -367,16 +619,20 @@ const knowledge = {
         "text": "Tách miền tại nghiệm mẫu, xét dấu đạo hàm trên từng khoảng."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       18
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.6",
+    "sectionId": "2.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.7": {
     "lead": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
@@ -387,16 +643,20 @@ const knowledge = {
         "text": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       18
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.7",
+    "sectionId": "2.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.8": {
     "lead": "Đưa về đạo hàm không âm hoặc không dương trên toàn R; kiểm tra trường hợp bằng 0.",
@@ -411,16 +671,20 @@ const knowledge = {
         "text": "kiểm tra trường hợp bằng 0."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       19
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.8",
+    "sectionId": "2.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "2.9": {
     "lead": "Xét giá trị nhỏ nhất hoặc lớn nhất của đạo hàm trên khoảng; kiểm tra biên mở.",
@@ -435,16 +699,20 @@ const knowledge = {
         "text": "kiểm tra biên mở."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       19
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD02",
+    "lessonId": "2.9",
+    "sectionId": "2.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.1": {
     "lead": "Xét dấu đạo hàm qua từng nghiệm và từng điểm đạo hàm không tồn tại.",
@@ -455,16 +723,20 @@ const knowledge = {
         "text": "Xét dấu đạo hàm qua từng nghiệm và từng điểm đạo hàm không tồn tại."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       20
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.1",
+    "sectionId": "3.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.2": {
     "lead": "Tìm hoành độ trước rồi thay vào f để có giá trị cực trị.",
@@ -475,16 +747,20 @@ const knowledge = {
         "text": "Tìm hoành độ trước rồi thay vào f để có giá trị cực trị."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       20
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.2",
+    "sectionId": "3.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.3": {
     "lead": "Chỉ đọc những mốc mũi tên đảo chiều.",
@@ -495,16 +771,20 @@ const knowledge = {
         "text": "Chỉ đọc những mốc mũi tên đảo chiều."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       21
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.3",
+    "sectionId": "3.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.4": {
     "lead": "Chỉ lấy giao điểm với Ox mà đồ thị đạo hàm đổi dấu.",
@@ -515,16 +795,20 @@ const knowledge = {
         "text": "Chỉ lấy giao điểm với Ox mà đồ thị đạo hàm đổi dấu."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       22
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.4",
+    "sectionId": "3.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.5": {
     "lead": "Đọc đỉnh hoặc đáy cục bộ, phân biệt hoành độ và tung độ.",
@@ -535,16 +819,20 @@ const knowledge = {
         "text": "Đọc đỉnh hoặc đáy cục bộ, phân biệt hoành độ và tung độ."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       26
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.5",
+    "sectionId": "3.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.6": {
     "lead": "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0.",
@@ -564,16 +852,20 @@ const knowledge = {
         "text": "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       29
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.6",
+    "sectionId": "3.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.7": {
     "lead": "Dùng đạo hàm hàm hợp và kiểm tra dấu tại từng mốc.",
@@ -584,16 +876,20 @@ const knowledge = {
         "text": "Dùng đạo hàm hàm hợp và kiểm tra dấu tại từng mốc."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       30
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.7",
+    "sectionId": "3.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.8": {
     "lead": "Tách miền f dương, f âm; kiểm tra thêm các nghiệm f=0.",
@@ -617,16 +913,20 @@ const knowledge = {
         "text": "kiểm tra thêm các nghiệm f=0."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       30
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.8",
+    "sectionId": "3.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.9": {
     "lead": "Giữ nghiệm của f′(t)=0 với t>0; mỗi t tạo hai x, xét riêng x=0.",
@@ -658,16 +958,20 @@ const knowledge = {
         "text": "mỗi t tạo hai x, xét riêng x=0."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       30
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.9",
+    "sectionId": "3.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "3.10": {
     "lead": "Viết điều kiện đạo hàm có số nghiệm đổi dấu theo yêu cầu.",
@@ -678,16 +982,20 @@ const knowledge = {
         "text": "Viết điều kiện đạo hàm có số nghiệm đổi dấu theo yêu cầu."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       31
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD03",
+    "lessonId": "3.10",
+    "sectionId": "3.10-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.1": {
     "lead": "Tìm các điểm tới hạn và hai đầu đoạn; so sánh tất cả giá trị.",
@@ -702,16 +1010,20 @@ const knowledge = {
         "text": "so sánh tất cả giá trị."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       32
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.1",
+    "sectionId": "4.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.2": {
     "lead": "Tính giới hạn ở biên và xem giá trị có được đạt hay không.",
@@ -722,16 +1034,20 @@ const knowledge = {
         "text": "Tính giới hạn ở biên và xem giá trị có được đạt hay không."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       32
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.2",
+    "sectionId": "4.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.3": {
     "lead": "So sánh các độ cao được đạt; phân biệt đầu mút đóng và mở.",
@@ -746,16 +1062,20 @@ const knowledge = {
         "text": "phân biệt đầu mút đóng và mở."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       33
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.3",
+    "sectionId": "4.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.4": {
     "lead": "Quan sát cao nhất và thấp nhất trong đúng miền đang xét.",
@@ -766,16 +1086,20 @@ const knowledge = {
         "text": "Quan sát cao nhất và thấp nhất trong đúng miền đang xét."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       34
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.4",
+    "sectionId": "4.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.5": {
     "lead": "Chia trường hợp theo vị trí điểm tới hạn hoặc theo phép tịnh tiến.",
@@ -786,16 +1110,20 @@ const knowledge = {
         "text": "Chia trường hợp theo vị trí điểm tới hạn hoặc theo phép tịnh tiến."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       37
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.5",
+    "sectionId": "4.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.6": {
     "lead": "Biểu diễn diện tích theo một biến trên miền hình học.",
@@ -806,16 +1134,20 @@ const knowledge = {
         "text": "Biểu diễn diện tích theo một biến trên miền hình học."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       38
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.6",
+    "sectionId": "4.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.7": {
     "lead": "Viết kích thước, thể tích, miền dương rồi tối ưu.",
@@ -826,16 +1158,20 @@ const knowledge = {
         "text": "Viết kích thước, thể tích, miền dương rồi tối ưu."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       38
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.7",
+    "sectionId": "4.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.8": {
     "lead": "Có thể tối ưu bình phương khoảng cách vì căn tăng trên miền không âm.",
@@ -846,16 +1182,20 @@ const knowledge = {
         "text": "Có thể tối ưu bình phương khoảng cách vì căn tăng trên miền không âm."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       39
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.8",
+    "sectionId": "4.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.9": {
     "lead": "Tổng chi phí và doanh thu phải cùng đơn vị; lập lợi nhuận.",
@@ -870,16 +1210,20 @@ const knowledge = {
         "text": "lập lợi nhuận."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       39
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.9",
+    "sectionId": "4.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.10": {
     "lead": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
@@ -890,16 +1234,20 @@ const knowledge = {
         "text": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       40
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.10",
+    "sectionId": "4.10-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "4.11": {
     "lead": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
@@ -910,16 +1258,20 @@ const knowledge = {
         "text": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       40
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD04",
+    "lessonId": "4.11",
+    "sectionId": "4.11-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.1": {
     "lead": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
@@ -930,16 +1282,20 @@ const knowledge = {
         "text": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       41
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.1",
+    "sectionId": "5.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.2": {
     "lead": "Tính riêng giới hạn tại hai phía vô cực.",
@@ -950,16 +1306,20 @@ const knowledge = {
         "text": "Tính riêng giới hạn tại hai phía vô cực."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       41
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.2",
+    "sectionId": "5.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.3": {
     "lead": "Chia đa thức hoặc dùng hai giới hạn để tìm hệ số a, b.",
@@ -970,16 +1330,20 @@ const knowledge = {
         "text": "Chia đa thức hoặc dùng hai giới hạn để tìm hệ số a, b."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       42
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.3",
+    "sectionId": "5.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.4": {
     "lead": "Giữ tập xác định; xét giới hạn tại nghiệm mẫu. So sánh bậc để tìm tiệm cận ngang, chia đa thức khi bậc tử hơn bậc mẫu một đơn vị để tìm tiệm cận xiên.",
@@ -998,16 +1362,20 @@ const knowledge = {
         "text": "So sánh bậc để tìm tiệm cận ngang, chia đa thức khi bậc tử hơn bậc mẫu một đơn vị để tìm tiệm cận xiên."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       42
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.4",
+    "sectionId": "5.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.5": {
     "lead": "Đọc độ cao ở vô cực và các giới hạn vô cực tại mốc hữu hạn.",
@@ -1018,16 +1386,20 @@ const knowledge = {
         "text": "Đọc độ cao ở vô cực và các giới hạn vô cực tại mốc hữu hạn."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       43
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.5",
+    "sectionId": "5.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.6": {
     "lead": "Phân biệt đường thẳng tiệm cận và vị trí điểm khuyết.",
@@ -1038,16 +1410,20 @@ const knowledge = {
         "text": "Phân biệt đường thẳng tiệm cận và vị trí điểm khuyết."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       44
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.6",
+    "sectionId": "5.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.7": {
     "lead": "Liệt kê phương trình các đường phân biệt rồi đếm.",
@@ -1058,16 +1434,20 @@ const knowledge = {
         "text": "Liệt kê phương trình các đường phân biệt rồi đếm."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       47
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.7",
+    "sectionId": "5.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.8": {
     "lead": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
@@ -1078,16 +1458,20 @@ const knowledge = {
         "text": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       48
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.8",
+    "sectionId": "5.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "5.9": {
     "lead": "Giữ miền ban đầu; giới hạn hữu hạn là điểm khuyết, vô cực là TCĐ.",
@@ -1102,16 +1486,20 @@ const knowledge = {
         "text": "giới hạn hữu hạn là điểm khuyết, vô cực là TCĐ."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       48
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD05",
+    "lessonId": "5.9",
+    "sectionId": "5.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.1": {
     "lead": "Đối chiếu loại hàm, chiều hai nhánh, cực trị, giao trục và tiệm cận.",
@@ -1122,16 +1510,20 @@ const knowledge = {
         "text": "Đối chiếu loại hàm, chiều hai nhánh, cực trị, giao trục và tiệm cận."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       49
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.1",
+    "sectionId": "6.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.2": {
     "lead": "Tính đạo hàm, giá trị tại mốc và giới hạn để ghép đúng bảng.",
@@ -1142,16 +1534,20 @@ const knowledge = {
         "text": "Tính đạo hàm, giá trị tại mốc và giới hạn để ghép đúng bảng."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       52
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.2",
+    "sectionId": "6.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.3": {
     "lead": "Dấu f′ quyết định chiều biến thiên; f′ đổi dấu quyết định cực trị.",
@@ -1166,16 +1562,20 @@ const knowledge = {
         "text": "f′ đổi dấu quyết định cực trị."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       54
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.3",
+    "sectionId": "6.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.4": {
     "lead": "Tìm điểm uốn, cực trị và giao trục trước khi vẽ.",
@@ -1186,16 +1586,20 @@ const knowledge = {
         "text": "Tìm điểm uốn, cực trị và giao trục trước khi vẽ."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       57
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.4",
+    "sectionId": "6.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.5": {
     "lead": "Tìm tiệm cận, tâm đối xứng và chiều biến thiên từng nhánh.",
@@ -1206,16 +1610,20 @@ const knowledge = {
         "text": "Tìm tiệm cận, tâm đối xứng và chiều biến thiên từng nhánh."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       58
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.5",
+    "sectionId": "6.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.6": {
     "lead": "Tịnh tiến đứng; hoành độ của mỗi điểm giữ nguyên.",
@@ -1230,16 +1638,20 @@ const knowledge = {
         "text": "hoành độ của mỗi điểm giữ nguyên."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       58
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.6",
+    "sectionId": "6.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.7": {
     "lead": "Tịnh tiến ngang; chú ý x-a dịch sang phải a.",
@@ -1254,16 +1666,20 @@ const knowledge = {
         "text": "chú ý x-a dịch sang phải a."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       59
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.7",
+    "sectionId": "6.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.8": {
     "lead": "Đối xứng qua Ox đối với -f(x), qua Oy đối với f(-x).",
@@ -1274,16 +1690,20 @@ const knowledge = {
         "text": "Đối xứng qua Ox đối với -f(x), qua Oy đối với f(-x)."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       59
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.8",
+    "sectionId": "6.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.9": {
     "lead": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
@@ -1294,16 +1714,20 @@ const knowledge = {
         "text": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       59
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.9",
+    "sectionId": "6.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.10": {
     "lead": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
@@ -1314,16 +1738,20 @@ const knowledge = {
         "text": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       60
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.10",
+    "sectionId": "6.10-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.11": {
     "lead": "Kẻ đường ngang và đếm giao điểm; tại cực trị có thể tiếp xúc.",
@@ -1338,16 +1766,20 @@ const knowledge = {
         "text": "tại cực trị có thể tiếp xúc."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       60
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.11",
+    "sectionId": "6.11-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.12": {
     "lead": "Giải phương trình hoành độ và loại nghiệm vi phạm miền xác định.",
@@ -1358,16 +1790,20 @@ const knowledge = {
         "text": "Giải phương trình hoành độ và loại nghiệm vi phạm miền xác định."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       61
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.12",
+    "sectionId": "6.12-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "6.13": {
     "lead": "Tìm các mức tham số tại đó số giao điểm thay đổi; xét riêng mức biên.",
@@ -1382,16 +1818,20 @@ const knowledge = {
         "text": "xét riêng mức biên."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       61
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD06",
+    "lessonId": "6.13",
+    "sectionId": "6.13-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.1": {
     "lead": "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến.",
@@ -1412,16 +1852,20 @@ const knowledge = {
         "text": "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       62
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.1",
+    "sectionId": "7.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.2": {
     "lead": "Giải phương trình tung độ tiếp điểm; lập tiếp tuyến tại từng nghiệm.",
@@ -1436,16 +1880,20 @@ const knowledge = {
         "text": "lập tiếp tuyến tại từng nghiệm."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       62
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.2",
+    "sectionId": "7.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.3": {
     "lead": "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định.",
@@ -1465,16 +1913,20 @@ const knowledge = {
         "text": "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       63
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.3",
+    "sectionId": "7.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.4": {
     "lead": "Dùng hệ số góc đường thẳng đã cho; kiểm tra trùng đường nếu cần.",
@@ -1489,16 +1941,20 @@ const knowledge = {
         "text": "kiểm tra trùng đường nếu cần."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       63
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.4",
+    "sectionId": "7.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.5": {
     "lead": "Hệ số góc tiếp tuyến bằng số đối của nghịch đảo hệ số góc đã cho.",
@@ -1509,16 +1965,20 @@ const knowledge = {
         "text": "Hệ số góc tiếp tuyến bằng số đối của nghịch đảo hệ số góc đã cho."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       64
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.5",
+    "sectionId": "7.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.6": {
     "lead": "Xác định rõ góc có hướng hay góc nhọn giữa hai đường.",
@@ -1529,16 +1989,20 @@ const knowledge = {
         "text": "Xác định rõ góc có hướng hay góc nhọn giữa hai đường."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       64
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.6",
+    "sectionId": "7.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.7": {
     "lead": "Đặt hoành độ tiếp điểm t; thay tọa độđiểm đã cho vào tiếp tuyến.",
@@ -1553,16 +2017,20 @@ const knowledge = {
         "text": "thay tọa độđiểm đã cho vào tiếp tuyến."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       64
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.7",
+    "sectionId": "7.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.8": {
     "lead": "Đếm các nghiệm tiếp điểm và loại các đường trùng nhau.",
@@ -1573,16 +2041,20 @@ const knowledge = {
         "text": "Đếm các nghiệm tiếp điểm và loại các đường trùng nhau."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       65
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.8",
+    "sectionId": "7.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "7.9": {
     "lead": "Đưa điều kiện tiếp tuyến về phương trình tham số rồi xét nghiệm hợp lệ.",
@@ -1593,16 +2065,20 @@ const knowledge = {
         "text": "Đưa điều kiện tiếp tuyến về phương trình tham số rồi xét nghiệm hợp lệ."
       }
     ],
-    "note": {
-      "label": "Lưu ý từ tài liệu",
-      "text": "Giữ đầy đủ điều kiện xác định và kiểm tra lại kết quả theo yêu cầu của đề bài.",
-      "tone": "tip"
-    },
+    "note": null,
     "layout": "principles-split",
     "sourcePages": [
       65
     ],
-    "sourceDocumentId": "cd01-cd07-functions"
+    "sourceDocumentId": "cd01-cd07-functions",
+    "topicId": "CD07",
+    "lessonId": "7.9",
+    "sectionId": "7.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd01-cd07-functions",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.1": {
     "lead": "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
@@ -1630,7 +2106,15 @@ const knowledge = {
     "sourcePages": [
       9
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.1",
+    "sectionId": "8.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.2": {
     "lead": "Kiểm tra cơ số và đối số; dùng định nghĩa hoặc công thức tích, thương, lũy thừa, đổi cơ số.",
@@ -1654,7 +2138,15 @@ const knowledge = {
     "sourcePages": [
       10
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.2",
+    "sectionId": "8.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.3": {
     "lead": "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0. Có căn, mẫu số thì thêm điều kiện tương ứng.",
@@ -1688,7 +2180,15 @@ const knowledge = {
     "sourcePages": [
       11
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.3",
+    "sectionId": "8.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.4": {
     "lead": "Đưa về cùng cơ số. Cơ số lớn hơn 1 thì so sánh cùng chiều số mũ; cơ số giữa 0 và 1 thì ngược chiều.",
@@ -1716,7 +2216,15 @@ const knowledge = {
     "sourcePages": [
       12
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.4",
+    "sectionId": "8.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.5": {
     "lead": "Cùng cơ số thì dùng tính đơn điệu. Khác cơ số có thể đổi cơ số hoặc so sánh với 0, 1.",
@@ -1740,7 +2248,15 @@ const knowledge = {
     "sourcePages": [
       13
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.5",
+    "sectionId": "8.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.6": {
     "lead": "Nhận dạng y = aˣ; xét cơ số; lập các điểm (−1; 1/a), (0; 1), (1; a). Đồ thị luôn phía trên trục hoành.",
@@ -1781,7 +2297,15 @@ const knowledge = {
     "sourcePages": [
       14
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.6",
+    "sectionId": "8.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.7": {
     "lead": "Ghi x > 0; lấy các điểm (1; 0), (a; 1), (1/a; −1); xét chiều biến thiên theo cơ số.",
@@ -1822,7 +2346,15 @@ const knowledge = {
     "sourcePages": [
       15
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.7",
+    "sectionId": "8.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.8": {
     "lead": "Ghi điều kiện; dùng quy tắc tích, thương và lũy thừa; khi cần dùng đổi cơ số. Chỉ rút gọn trong tập xác định ban đầu.",
@@ -1854,7 +2386,15 @@ const knowledge = {
     "sourcePages": [
       16
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.8",
+    "sectionId": "8.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "8.9": {
     "lead": "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên. Một phản ví dụ đủ bác bỏ một mệnh đề sai.",
@@ -1878,7 +2418,15 @@ const knowledge = {
     "sourcePages": [
       17
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD08",
+    "lessonId": "8.9",
+    "sectionId": "8.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.1": {
     "lead": "Viết hai vế thành lũy thừa của một cơ số dương khác 1. Cho hai số mũ bằng nhau rồi giải.",
@@ -1902,7 +2450,15 @@ const knowledge = {
     "sourcePages": [
       23
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.1",
+    "sectionId": "9.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.2": {
     "lead": "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện. Với lũy thừa lệch số mũ, đặt nhân tử chung.",
@@ -1926,7 +2482,15 @@ const knowledge = {
     "sourcePages": [
       24
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.2",
+    "sectionId": "9.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.3": {
     "lead": "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0. Gặp bình phương lôgarit thì đặt t = logₐ x, với điều kiện của x; giải theo t rồi quay về x.",
@@ -1971,7 +2535,15 @@ const knowledge = {
     "sourcePages": [
       25
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.3",
+    "sectionId": "9.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.4": {
     "lead": "Khi hai vế dương, lấy lôgarit cùng một cơ số thích hợp. Dùng ln(aᵘ) = u ln a.",
@@ -2004,7 +2576,15 @@ const knowledge = {
     "sourcePages": [
       26
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.4",
+    "sectionId": "9.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.5": {
     "lead": "Nếu là tích hoặc thương các lũy thừa cùng số mũ, gộp cơ số. Nếu là hai lũy thừa bằng nhau, lấy lôgarit. Tổng nhiều cơ số cần xem cấu trúc, không áp dụng máy móc.",
@@ -2032,7 +2612,15 @@ const knowledge = {
     "sourcePages": [
       27
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.5",
+    "sectionId": "9.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.6": {
     "lead": "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm. Chứng minh có nhiều nhất một nghiệm, sau đó thử một nghiệm cụ thể.",
@@ -2056,7 +2644,15 @@ const knowledge = {
     "sourcePages": [
       28
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.6",
+    "sectionId": "9.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.7": {
     "lead": "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ. Phân biệt số nghiệm theo điều kiện t > 0, miền của x và số nghiệm của phương trình sau biến đổi.",
@@ -2089,7 +2685,15 @@ const knowledge = {
     "sourcePages": [
       29
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.7",
+    "sectionId": "9.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "9.8": {
     "lead": "Đếm nghiệm sau khi đặt ẩn phụ và kiểm tra điều kiện. Với t = aˣ, mỗi t > 0 cho đúng một x. Nếu số mũ là x², cần đếm lại số giá trị của x.",
@@ -2126,7 +2730,15 @@ const knowledge = {
     "sourcePages": [
       30
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD09",
+    "lessonId": "9.8",
+    "sectionId": "9.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.1": {
     "lead": "Đưa về cùng cơ số. Cơ số lớn hơn 1 giữ chiều; cơ số giữa 0 và 1 đổi chiều.",
@@ -2154,7 +2766,15 @@ const knowledge = {
     "sourcePages": [
       34
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.1",
+    "sectionId": "10.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.2": {
     "lead": "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀); chứng minh f đơn điệu trên miền xét rồi suy ra điều kiện của x.",
@@ -2188,7 +2808,15 @@ const knowledge = {
     "sourcePages": [
       35
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.2",
+    "sectionId": "10.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.3": {
     "lead": "Đặt t = aˣ > 0 hoặc t = logₐ x. Giải bất phương trình theo t, giao điều kiện rồi chuyển lại về x.",
@@ -2222,7 +2850,15 @@ const knowledge = {
     "sourcePages": [
       36
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.3",
+    "sectionId": "10.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.4": {
     "lead": "Đặt điều kiện trước. Viết số ở vế phải thành lôgarit cùng cơ số hoặc dùng định nghĩa. So sánh và giao điều kiện.",
@@ -2250,7 +2886,15 @@ const knowledge = {
     "sourcePages": [
       37
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.4",
+    "sectionId": "10.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.5": {
     "lead": "Xét dấu vế phải trước. Nếu dương, viết thành lũy thừa cùng cơ số hoặc lấy lôgarit; nếu không dương, dùng aᵘ > 0.",
@@ -2287,7 +2931,15 @@ const knowledge = {
     "sourcePages": [
       38
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.5",
+    "sectionId": "10.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.6": {
     "lead": "Lập tập điều kiện riêng; giải bất phương trình đã biến đổi; giao hai tập. Kiểm tra điểm làm đối số bằng 0 hoặc mẫu số bằng 0.",
@@ -2319,7 +2971,15 @@ const knowledge = {
     "sourcePages": [
       39
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.6",
+    "sectionId": "10.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.7": {
     "lead": "Đọc đúng yêu cầu: có nghiệm, đúng với mọi x hay có nghiệm trên một đoạn. Dùng GTLN, GTNN hoặc cận của biểu thức trên miền xét.",
@@ -2343,7 +3003,15 @@ const knowledge = {
     "sourcePages": [
       40
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.7",
+    "sectionId": "10.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "10.8": {
     "lead": "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang. Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏ sót giao điểm.",
@@ -2367,7 +3035,15 @@ const knowledge = {
     "sourcePages": [
       41
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD10",
+    "lessonId": "10.8",
+    "sectionId": "10.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.1": {
     "lead": "Lãi mỗi kỳ chỉtính trên vốn gốc. Với P > 0, lãi suất r mỗi kỳ không đổi và n kỳ: A = P(1 + nr), tiền lãi I = Pnr. Công thức được suy ra từ tổng các khoản lãi bằng nhau.",
@@ -2405,7 +3081,15 @@ const knowledge = {
     "sourcePages": [
       44
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.1",
+    "sectionId": "11.1-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.2": {
     "lead": "Lãi được nhập gốc cuối mỗi kỳ. Công thức: \\(A=P(1+r)^N\\), trong đó r là lãi suất mỗi kỳ, N là số kỳ. Nếu lãi suất năm là r, chia m kỳ/năm: A = P(1 + r/m)ᵐᵗ; giả thiết mức lãi mỗi kỳ bằng r/m.",
@@ -2454,7 +3138,15 @@ const knowledge = {
     "sourcePages": [
       45
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.2",
+    "sectionId": "11.2-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.3": {
     "lead": "Đọc đúng mô hình đề cho. Tăng theo phần trăm sau mỗi năm: Pₙ = P₀(1+r)ⁿ. Mô hình liên tục: P(t) = P₀eʳᵗ. Hai cách hiểu về tốc độ không tự động giống nhau.",
@@ -2503,7 +3195,15 @@ const knowledge = {
     "sourcePages": [
       46
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.3",
+    "sectionId": "11.3-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.4": {
     "lead": "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ. Nếu mỗi khoảng T số lượng nhân q, dùng \\(N(t)=N_0q^{t/T}\\) trong mô hình được giả thiết; thời điểm quan sát rời rạc thì xét số kỳ nguyên.",
@@ -2548,7 +3248,15 @@ const knowledge = {
     "sourcePages": [
       47
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.4",
+    "sectionId": "11.4-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.5": {
     "lead": "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0. Nếu chu kỳ bán rã là T > 0, suy ra \\(M(t)=M_0 2^{-t/T}\\) và k = ln 2/T.",
@@ -2590,7 +3298,15 @@ const knowledge = {
     "sourcePages": [
       48
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.5",
+    "sectionId": "11.5-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.6": {
     "lead": "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1. Nếu đề nói giảm cùng một số tiền mỗi năm, đó là mô hình tuyến tính khác.",
@@ -2623,7 +3339,15 @@ const knowledge = {
     "sourcePages": [
       49
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.6",
+    "sectionId": "11.6-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.7": {
     "lead": "Tăng r nhân (1 + r); giảm r nhân (1 −r). Nhiều giai đoạn nhân các hệ số liên tiếp. Nếu cùng tỷ lệ qua n kỳ, dùng lũy thừa.",
@@ -2655,7 +3379,15 @@ const knowledge = {
     "sourcePages": [
       50
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.7",
+    "sectionId": "11.7-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.8": {
     "lead": "Trong mô hình lượng dương, C = y(0) > 0; k > 0 tăng, k < 0 giảm, k = 0 không đổi. Nếu có mức nền L, dạng y = L + Ceᵏᵗ có y(0) = L + C.",
@@ -2711,7 +3443,15 @@ const knowledge = {
     "sourcePages": [
       51
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.8",
+    "sectionId": "11.8-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.9": {
     "lead": "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số. Với điều kiện y(0) = y₀, nghiệm là y(t) = y₀eᵏᵗ. Đặt g(t) = ln y(t) thì g′(t) = k, nên g(t) = kt + ln y₀.",
@@ -2766,7 +3506,15 @@ const knowledge = {
     "sourcePages": [
       52
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.9",
+    "sectionId": "11.9-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.10": {
     "lead": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁). Sau đó \\(C=y_1e^{-kt_1}\\).",
@@ -2808,7 +3556,15 @@ const knowledge = {
     "sourcePages": [
       53
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.10",
+    "sectionId": "11.10-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   },
   "11.11": {
     "lead": "Lập phương trình nếu hỏi đúng bằng; lập bất phương trình nếu hỏi ít nhất, vượt, không quá. Lấy lôgarit, xét dấu khi chia, rồi xử lý thời gian liên tục hoặc số kỳ nguyên.",
@@ -2836,7 +3592,15 @@ const knowledge = {
     "sourcePages": [
       54
     ],
-    "sourceDocumentId": "cd08-cd11-exponential-logarithm"
+    "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+    "topicId": "CD11",
+    "lessonId": "11.11",
+    "sectionId": "11.11-knowledge",
+    "contentType": "markdown-latex",
+    "sourcePdf": "cd08-cd11-exponential-logarithm",
+    "conversionStatus": "imported",
+    "reviewStatus": "needs-review",
+    "contentVersion": "foundation-import-v2"
   }
 };
 
@@ -2847,14 +3611,13 @@ const examples = {
       "title": "Cho f(x) = 3x² −2x + 5.",
       "prompt": "Cho f(x) = 3x² −2x + 5. Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Đạo hàm từng hạng",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đạo hàm từng hạng"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (3x −1) trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 2 (3x −1) trên R.",
@@ -2865,7 +3628,15 @@ const examples = {
       ],
       "sourceBlockId": "1.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.1",
+      "sectionId": "1.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.2": [
@@ -2874,14 +3645,13 @@ const examples = {
       "title": "Cho f(x) = (2x+1)/(x−1) .",
       "prompt": "Cho f(x) = (2x+1)/(x−1) . Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Tìm mẫu khác 0",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm mẫu khác 0"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² trên x≠ 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² trên x≠ 1.",
@@ -2892,7 +3662,15 @@ const examples = {
       ],
       "sourceBlockId": "1.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.2",
+      "sectionId": "1.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.3": [
@@ -2901,14 +3679,13 @@ const examples = {
       "title": "Tìm tập xác định và đạo hàm của y = √x.",
       "prompt": "Tìm tập xác định và đạo hàm của y = √x.",
       "analysis": [
-        "Tìm miền của căn",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm miền của căn"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = [0; +∞); y′ = 1/(2√x) với x > 0. Tại 0 không có đạo hàm hữu hạn theo thương sai phân bên phải.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "D = [0; +∞); y′ = 1/(2√x) với x > 0. Tại 0 không có đạo hàm hữu hạn theo thương sai phân bên phải.",
@@ -2919,7 +3696,15 @@ const examples = {
       ],
       "sourceBlockId": "1.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.3",
+      "sectionId": "1.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.4": [
@@ -2928,14 +3713,13 @@ const examples = {
       "title": "Cho f(x) = sin (x) + cos (x).",
       "prompt": "Cho f(x) = sin (x) + cos (x). Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Đổi sang radian",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đổi sang radian"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −sin (x) + cos (x) trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 67 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = −sin (x) + cos (x) trên R.",
@@ -2946,7 +3730,15 @@ const examples = {
       ],
       "sourceBlockId": "1.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.4",
+      "sectionId": "1.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.5": [
@@ -2955,14 +3747,13 @@ const examples = {
       "title": "Cho f(x) = 2ˣ + eˣ.",
       "prompt": "Cho f(x) = 2ˣ + eˣ. Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Phân biệt cơ số e và cơ số a",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Phân biệt cơ số e và cơ số a"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2ˣ ln (2) + eˣ trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 67 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 2ˣ ln (2) + eˣ trên R.",
@@ -2973,7 +3764,15 @@ const examples = {
       ],
       "sourceBlockId": "1.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.5",
+      "sectionId": "1.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.6": [
@@ -2982,14 +3781,13 @@ const examples = {
       "title": "Cho f(x) = (2x −1)⁵.",
       "prompt": "Cho f(x) = (2x −1)⁵. Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Đặt u là biểu thức bên trong",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đặt u là biểu thức bên trong"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 10 (2x −1)⁴ trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 68 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 10 (2x −1)⁴ trên R.",
@@ -3000,7 +3798,15 @@ const examples = {
       ],
       "sourceBlockId": "1.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.6",
+      "sectionId": "1.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.7": [
@@ -3009,14 +3815,13 @@ const examples = {
       "title": "Cho f(x) = x sin (x).",
       "prompt": "Cho f(x) = x sin (x). Tính f′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Tích: (uv)′ = u′v + uv′.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tích: (uv)′ = u′v + uv′."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x cos (x) + sin (x) trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 68 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = x cos (x) + sin (x) trên R.",
@@ -3027,7 +3832,15 @@ const examples = {
       ],
       "sourceBlockId": "1.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.7",
+      "sectionId": "1.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.8": [
@@ -3036,14 +3849,13 @@ const examples = {
       "title": "Cho f(x) = x⁴ −2x² + 3.",
       "prompt": "Cho f(x) = x⁴ −2x² + 3. Tính f′′(x) và nêu miền áp dụng.",
       "analysis": [
-        "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính đạo hàm lần thứ nhất rồi lần thứ hai."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x (x −1) (x + 1). f′′(x) = 4 ( 3x² −1 ) trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 68 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 4x (x −1) (x + 1). f′′(x) = 4 ( 3x² −1 ) trên R.",
@@ -3054,7 +3866,15 @@ const examples = {
       ],
       "sourceBlockId": "1.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.8",
+      "sectionId": "1.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.9": [
@@ -3063,14 +3883,13 @@ const examples = {
       "title": "Vị trí s(t) = t² + 2t (m), t ≥0 (s).",
       "prompt": "Vị trí s(t) = t² + 2t (m), t ≥0 (s). Tính vận tốc tại t = 2.",
       "analysis": [
-        "Tính s′ và s′′, thay thời điểm",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính s′ và s′′, thay thời điểm"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = s′ = 2t + 2; v(2) = 6 m/s.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "v = s′ = 2t + 2; v(2) = 6 m/s.",
@@ -3081,7 +3900,15 @@ const examples = {
       ],
       "sourceBlockId": "1.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.9",
+      "sectionId": "1.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "1.10": [
@@ -3090,14 +3917,13 @@ const examples = {
       "title": "Biết f′(2) = 3, g′(2) = −1.",
       "prompt": "Biết f′(2) = 3, g′(2) = −1. Tính (2f −g)′(2).",
       "analysis": [
-        "Viết đúng quy tắc trước khi thay số để không nhầm f với f′.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Viết đúng quy tắc trước khi thay số để không nhầm f với f′."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(2f −g)′(2) = 2f′(2) −g′(2) = 7.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "(2f −g)′(2) = 2f′(2) −g′(2) = 7.",
@@ -3108,7 +3934,15 @@ const examples = {
       ],
       "sourceBlockId": "1.10-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD01",
+      "lessonId": "1.10",
+      "sectionId": "1.10-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.1": [
@@ -3117,14 +3951,13 @@ const examples = {
       "title": "Xét các khoảng đơn điệu của f(x) = x (x −2).",
       "prompt": "Xét các khoảng đơn điệu của f(x) = x (x −2).",
       "analysis": [
-        "Tính đạo hàm và lập bảng dấu",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính đạo hàm và lập bảng dấu"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
@@ -3135,7 +3968,15 @@ const examples = {
       ],
       "sourceBlockId": "2.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.1",
+      "sectionId": "2.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.2": [
@@ -3144,14 +3985,13 @@ const examples = {
       "title": "Hàm f có đạo hàm trên R, f′(x) = 1.",
       "prompt": "Hàm f có đạo hàm trên R, f′(x) = 1. Tìm các khoảng đơn điệu.",
       "analysis": [
-        "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 70 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 1. Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -3162,7 +4002,15 @@ const examples = {
       ],
       "sourceBlockId": "2.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.2",
+      "sectionId": "2.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.3": [],
@@ -3174,14 +4022,13 @@ const examples = {
       "title": "Xét đơn điệu của f(x) = (2x+1)/(x−1) trên miền R \\ {1}.",
       "prompt": "Xét đơn điệu của f(x) = (2x+1)/(x−1) trên miền R \\ {1}.",
       "analysis": [
-        "Tách miền tại nghiệm mẫu, xét dấu đạo hàm trên từng khoảng.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tách miền tại nghiệm mẫu, xét dấu đạo hàm trên từng khoảng."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 71 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
@@ -3192,7 +4039,15 @@ const examples = {
       ],
       "sourceBlockId": "2.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.6",
+      "sectionId": "2.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.7": [
@@ -3201,14 +4056,13 @@ const examples = {
       "title": "Biết f′(t) > 0 trên R.",
       "prompt": "Biết f′(t) > 0 trên R. Xét đơn điệu của g(x) = f(2x −1).",
       "analysis": [
-        "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2f′(2x −1) > 0, nên g đồng biến trên R.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 72 của PDF nguồn."
         }
       ],
       "answer": "g′ = 2f′(2x −1) > 0, nên g đồng biến trên R.",
@@ -3219,7 +4073,15 @@ const examples = {
       ],
       "sourceBlockId": "2.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.7",
+      "sectionId": "2.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.8": [
@@ -3228,14 +4090,13 @@ const examples = {
       "title": "Tìm m để f(x) = x³ + mx đồng biến trên R.",
       "prompt": "Tìm m để f(x) = x³ + mx đồng biến trên R.",
       "analysis": [
-        "Đưa về đạo hàm không âm hoặc không dương trên toàn R",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa về đạo hàm không âm hoặc không dương trên toàn R"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3x² + m ≥0 với mọi x khi và chỉkhi m ≥0. Khi m = 0, hàm vẫn đồng biến.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 72 của PDF nguồn."
         }
       ],
       "answer": "f′ = 3x² + m ≥0 với mọi x khi và chỉkhi m ≥0. Khi m = 0, hàm vẫn đồng biến.",
@@ -3246,7 +4107,15 @@ const examples = {
       ],
       "sourceBlockId": "2.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.8",
+      "sectionId": "2.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "2.9": [
@@ -3255,14 +4124,13 @@ const examples = {
       "title": "Tìm m để x³ −3mx đồng biến trên (1; +∞).",
       "prompt": "Tìm m để x³ −3mx đồng biến trên (1; +∞).",
       "analysis": [
-        "Xét giá trị nhỏ nhất hoặc lớn nhất của đạo hàm trên khoảng",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xét giá trị nhỏ nhất hoặc lớn nhất của đạo hàm trên khoảng"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(x² −m). Với x > 1, điều kiện tương đương m ≤1, kểcảbiên.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 73 của PDF nguồn."
         }
       ],
       "answer": "f′ = 3(x² −m). Với x > 1, điều kiện tương đương m ≤1, kểcảbiên.",
@@ -3273,7 +4141,15 @@ const examples = {
       ],
       "sourceBlockId": "2.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD02",
+      "lessonId": "2.9",
+      "sectionId": "2.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.1": [
@@ -3282,14 +4158,13 @@ const examples = {
       "title": "Tìm các hoành độcực đại, cực tiểu của f(x) = x (x −2).",
       "prompt": "Tìm các hoành độcực đại, cực tiểu của f(x) = x (x −2).",
       "analysis": [
-        "Xét dấu đạo hàm qua từng nghiệm và từng điểm đạo hàm không tồn tại.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xét dấu đạo hàm qua từng nghiệm và từng điểm đạo hàm không tồn tại."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −1). cực tiểu tại x = 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 73 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 2 (x −1). cực tiểu tại x = 1.",
@@ -3300,7 +4175,15 @@ const examples = {
       ],
       "sourceBlockId": "3.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.1",
+      "sectionId": "3.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.2": [
@@ -3309,14 +4192,13 @@ const examples = {
       "title": "Tìm các giá trị cực đại, cực tiểu của f(x) = x² −4x + 1.",
       "prompt": "Tìm các giá trị cực đại, cực tiểu của f(x) = x² −4x + 1.",
       "analysis": [
-        "Tìm hoành độ trước rồi thay vào f để có giá trị cực trị.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm hoành độ trước rồi thay vào f để có giá trị cực trị."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −2). cực tiểu tại x = 2, giá trị−3.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 74 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 2 (x −2). cực tiểu tại x = 2, giá trị−3.",
@@ -3327,7 +4209,15 @@ const examples = {
       ],
       "sourceBlockId": "3.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.2",
+      "sectionId": "3.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.3": [
@@ -3336,14 +4226,13 @@ const examples = {
       "title": "Tìm hoành độ, loại và giá trị cực trị từbảng sau.",
       "prompt": "Tìm hoành độ, loại và giá trị cực trị từbảng sau. Điểm có ký hiệu ∥không thuộc miền xác định. x −∞ 1 ∞ f′ − 0 + f ∞ ↘ −1 ↗ ∞",
       "analysis": [
-        "Chỉ đọc những mốc mũi tên đảo chiều.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Chỉ đọc những mốc mũi tên đảo chiều."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 74 của PDF nguồn."
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
@@ -3354,7 +4243,15 @@ const examples = {
       ],
       "sourceBlockId": "3.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.3",
+      "sectionId": "3.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.4": [],
@@ -3365,14 +4262,13 @@ const examples = {
       "title": "Biết f′(x) = 1 trên R.",
       "prompt": "Biết f′(x) = 1 trên R. Đếm số điểm cực trị và nêu loại tại từng điểm.",
       "analysis": [
-        "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 76 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
@@ -3383,7 +4279,15 @@ const examples = {
       ],
       "sourceBlockId": "3.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.6",
+      "sectionId": "3.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.7": [
@@ -3392,14 +4296,13 @@ const examples = {
       "title": "Biết f′(t) = t −1.",
       "prompt": "Biết f′(t) = t −1. Tìm hoành độ và loại cực trị của g(x) = f(2x + 1).",
       "analysis": [
-        "Dùng đạo hàm hàm hợp và kiểm tra dấu tại từng mốc.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Dùng đạo hàm hàm hợp và kiểm tra dấu tại từng mốc."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 4x. Có cực tiểu tại 0, không có cực đại.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 76 của PDF nguồn."
         }
       ],
       "answer": "g′ = 4x. Có cực tiểu tại 0, không có cực đại.",
@@ -3410,7 +4313,15 @@ const examples = {
       ],
       "sourceBlockId": "3.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.7",
+      "sectionId": "3.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.8": [
@@ -3419,14 +4330,13 @@ const examples = {
       "title": "Tìm cực trị của y = |x|.",
       "prompt": "Tìm cực trị của y = |x|.",
       "analysis": [
-        "Tách miền f dương, f âm",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tách miền f dương, f âm"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm giảm trên (−∞; 0) và tăng trên (0; +∞). Có cực tiểu tại 0, giá trị0; đạo hàm không tồn tại tại đó.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 76 của PDF nguồn."
         }
       ],
       "answer": "Hàm giảm trên (−∞; 0) và tăng trên (0; +∞). Có cực tiểu tại 0, giá trị0; đạo hàm không tồn tại tại đó.",
@@ -3437,7 +4347,15 @@ const examples = {
       ],
       "sourceBlockId": "3.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.8",
+      "sectionId": "3.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.9": [
@@ -3446,14 +4364,13 @@ const examples = {
       "title": "Cho f(t) = t.",
       "prompt": "Cho f(t) = t. Tìm cực trị của g(x) = f(x²).",
       "analysis": [
-        "Giữ nghiệm của f′(t)=0 với t>0",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giữ nghiệm của f′(t)=0 với t>0"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2x. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 77 của PDF nguồn."
         }
       ],
       "answer": "g′(x) = 2x. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -3464,7 +4381,15 @@ const examples = {
       ],
       "sourceBlockId": "3.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.9",
+      "sectionId": "3.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "3.10": [
@@ -3473,14 +4398,13 @@ const examples = {
       "title": "Tìm m để x³ −3mx có hai điểm cực trị.",
       "prompt": "Tìm m để x³ −3mx có hai điểm cực trị.",
       "analysis": [
-        "Viết điều kiện đạo hàm có số nghiệm đổi dấu theo yêu cầu.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Viết điều kiện đạo hàm có số nghiệm đổi dấu theo yêu cầu."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(x² −m). Có hai nghiệm đơn khi và chỉkhi m > 0.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 77 của PDF nguồn."
         }
       ],
       "answer": "f′ = 3(x² −m). Có hai nghiệm đơn khi và chỉkhi m > 0.",
@@ -3491,7 +4415,15 @@ const examples = {
       ],
       "sourceBlockId": "3.10-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD03",
+      "lessonId": "3.10",
+      "sectionId": "3.10-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.1": [
@@ -3500,14 +4432,13 @@ const examples = {
       "title": "Tìm GTLN, GTNN của f(x) = x (x −2) trên [0; 3].",
       "prompt": "Tìm GTLN, GTNN của f(x) = x (x −2) trên [0; 3].",
       "analysis": [
-        "Tìm các điểm tới hạn và hai đầu đoạn",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm các điểm tới hạn và hai đầu đoạn"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 78 của PDF nguồn."
         }
       ],
       "answer": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
@@ -3518,7 +4449,15 @@ const examples = {
       ],
       "sourceBlockId": "4.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.1",
+      "sectionId": "4.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.2": [
@@ -3527,14 +4466,13 @@ const examples = {
       "title": "Tìm GTLN, GTNN của f(x) = x trên (0; 1).",
       "prompt": "Tìm GTLN, GTNN của f(x) = x trên (0; 1).",
       "analysis": [
-        "Tính giới hạn ở biên và xem giá trị có được đạt hay không.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính giới hạn ở biên và xem giá trị có được đạt hay không."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0 < f(x) < 1. Hai cận 0 và 1 đều không đạt, nên không có GTLN và GTNN.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 78 của PDF nguồn."
         }
       ],
       "answer": "0 < f(x) < 1. Hai cận 0 và 1 đều không đạt, nên không có GTLN và GTNN.",
@@ -3545,7 +4483,15 @@ const examples = {
       ],
       "sourceBlockId": "4.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.2",
+      "sectionId": "4.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.3": [],
@@ -3556,14 +4502,13 @@ const examples = {
       "title": "Tìm m đểGTNN của x² + m trên [−1; 2] bằng 3.",
       "prompt": "Tìm m đểGTNN của x² + m trên [−1; 2] bằng 3.",
       "analysis": [
-        "Chia trường hợp theo vị trí điểm tới hạn hoặc theo phép tịnh tiến.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Chia trường hợp theo vị trí điểm tới hạn hoặc theo phép tịnh tiến."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTNN là m tại 0, nên m = 3.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 80 của PDF nguồn."
         }
       ],
       "answer": "GTNN là m tại 0, nên m = 3.",
@@ -3574,7 +4519,15 @@ const examples = {
       ],
       "sourceBlockId": "4.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.5",
+      "sectionId": "4.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.6": [
@@ -3583,14 +4536,13 @@ const examples = {
       "title": "Hình chữnhật có chu vi 40 m.",
       "prompt": "Hình chữnhật có chu vi 40 m. Tìm diện tích lớn nhất.",
       "analysis": [
-        "Biểu diễn diện tích theo một biến trên miền hình học.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Biểu diễn diện tích theo một biến trên miền hình học."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai cạnh x, 20 −x, 0 < x < 20. S = x(20 −x) = 100 −(x −10)². Lớn nhất 100 m², hai cạnh đều 10 m.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 80 của PDF nguồn."
         }
       ],
       "answer": "Hai cạnh x, 20 −x, 0 < x < 20. S = x(20 −x) = 100 −(x −10)². Lớn nhất 100 m², hai cạnh đều 10 m.",
@@ -3601,7 +4553,15 @@ const examples = {
       ],
       "sourceBlockId": "4.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.6",
+      "sectionId": "4.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.7": [
@@ -3610,14 +4570,13 @@ const examples = {
       "title": "Cắt bốn hình vuông cạnh x ởtấm bìa vuông cạnh 12 cm rồi gấp hộp…",
       "prompt": "Cắt bốn hình vuông cạnh x ởtấm bìa vuông cạnh 12 cm rồi gấp hộp không nắp. Tìm thể tích lớn nhất.",
       "analysis": [
-        "Viết kích thước, thể tích, miền dương rồi tối ưu.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Viết kích thước, thể tích, miền dương rồi tối ưu."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = x(12 −2x)², 0 < x < 6. V ′ = (12 −2x)(12 −6x), đổi dương sang âm tại x = 2. Vₘₐₓ = 128 cm³.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 81 của PDF nguồn."
         }
       ],
       "answer": "V = x(12 −2x)², 0 < x < 6. V ′ = (12 −2x)(12 −6x), đổi dương sang âm tại x = 2. Vₘₐₓ = 128 cm³.",
@@ -3628,7 +4587,15 @@ const examples = {
       ],
       "sourceBlockId": "4.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.7",
+      "sectionId": "4.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.8": [
@@ -3637,14 +4604,13 @@ const examples = {
       "title": "Tìm điểm trên Ox gần A(2; 3) nhất.",
       "prompt": "Tìm điểm trên Ox gần A(2; 3) nhất.",
       "analysis": [
-        "Có thể tối ưu bình phương khoảng cách vì căn tăng trên miền không âm.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Có thể tối ưu bình phương khoảng cách vì căn tăng trên miền không âm."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với M(x; 0), AM² = (x −2)² + 9. Nhỏ nhất tại M(2; 0), khoảng cách 3.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 81 của PDF nguồn."
         }
       ],
       "answer": "Với M(x; 0), AM² = (x −2)² + 9. Nhỏ nhất tại M(2; 0), khoảng cách 3.",
@@ -3655,7 +4621,15 @@ const examples = {
       ],
       "sourceBlockId": "4.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.8",
+      "sectionId": "4.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.9": [
@@ -3664,14 +4638,13 @@ const examples = {
       "title": "Doanh thu R(x) = 20x, chi phí C(x) = x² + 16 (triệu đồng), 0 ≤x ≤20.",
       "prompt": "Doanh thu R(x) = 20x, chi phí C(x) = x² + 16 (triệu đồng), 0 ≤x ≤20. Tìm lãi lớn nhất.",
       "analysis": [
-        "Tổng chi phí và doanh thu phải cùng đơn vị",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tổng chi phí và doanh thu phải cùng đơn vị"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = −x² + 20x −16 = 84 −(x −10)². Lãi lớn nhất 84 triệu đồng tại x = 10.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 82 của PDF nguồn."
         }
       ],
       "answer": "P = −x² + 20x −16 = 84 −(x −10)². Lãi lớn nhất 84 triệu đồng tại x = 10.",
@@ -3682,7 +4655,15 @@ const examples = {
       ],
       "sourceBlockId": "4.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.9",
+      "sectionId": "4.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.10": [
@@ -3691,14 +4672,13 @@ const examples = {
       "title": "Với n nguyên, 0 ≤n ≤10, tìm lớn nhất của P(n) = −(n −4,4)² + 20.",
       "prompt": "Với n nguyên, 0 ≤n ≤10, tìm lớn nhất của P(n) = −(n −4,4)² + 20.",
       "analysis": [
-        "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh liên tục 4,4. Thửn = 4, 5: P(4) = 19,84, P(5) = 19,64. Chọn 4.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 82 của PDF nguồn."
         }
       ],
       "answer": "Đỉnh liên tục 4,4. Thửn = 4, 5: P(4) = 19,84, P(5) = 19,64. Chọn 4.",
@@ -3709,7 +4689,15 @@ const examples = {
       ],
       "sourceBlockId": "4.10-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.10",
+      "sectionId": "4.10-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "4.11": [
@@ -3718,14 +4706,13 @@ const examples = {
       "title": "Hình chữnhật có chu vi 40 m, hai cạnh ít nhất 3 m.",
       "prompt": "Hình chữnhật có chu vi 40 m, hai cạnh ít nhất 3 m. Tìm diện tích lớn nhất.",
       "analysis": [
-        "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt x ∈[3; 17], S = x(20 −x). Đỉnh 10 thuộc miền; chọn hình vuông cạnh 10, diện tích 100 m².",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 83 của PDF nguồn."
         }
       ],
       "answer": "Đặt x ∈[3; 17], S = x(20 −x). Đỉnh 10 thuộc miền; chọn hình vuông cạnh 10, diện tích 100 m².",
@@ -3736,7 +4723,15 @@ const examples = {
       ],
       "sourceBlockId": "4.11-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD04",
+      "lessonId": "4.11",
+      "sectionId": "4.11-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.1": [
@@ -3745,14 +4740,13 @@ const examples = {
       "title": "Tìm tiệm cận đứng của y = 1/(x −2).",
       "prompt": "Tìm tiệm cận đứng của y = 1/(x −2).",
       "analysis": [
-        "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giới hạn khi x →2⁻bằng −∞, khi x →2⁺ bằng +∞. TCĐ x = 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 83 của PDF nguồn."
         }
       ],
       "answer": "Giới hạn khi x →2⁻bằng −∞, khi x →2⁺ bằng +∞. TCĐ x = 2.",
@@ -3763,7 +4757,15 @@ const examples = {
       ],
       "sourceBlockId": "5.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.1",
+      "sectionId": "5.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.2": [
@@ -3772,14 +4774,13 @@ const examples = {
       "title": "Tìm tiệm cận ngang của y = (2x + 1)/(x −3).",
       "prompt": "Tìm tiệm cận ngang của y = (2x + 1)/(x −3).",
       "analysis": [
-        "Tính riêng giới hạn tại hai phía vô cực.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính riêng giới hạn tại hai phía vô cực."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai giới hạn ở vô cực bằng tỉ số hệ số đầu 2/1 = 2. Chỉ có TCN y = 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 84 của PDF nguồn."
         }
       ],
       "answer": "Hai giới hạn ở vô cực bằng tỉ số hệ số đầu 2/1 = 2. Chỉ có TCN y = 2.",
@@ -3790,7 +4791,15 @@ const examples = {
       ],
       "sourceBlockId": "5.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.2",
+      "sectionId": "5.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.3": [
@@ -3799,14 +4808,13 @@ const examples = {
       "title": "Tìm TCX của y = x + 2 + 1/x.",
       "prompt": "Tìm TCX của y = x + 2 + 1/x.",
       "analysis": [
-        "Chia đa thức hoặc dùng hai giới hạn để tìm hệ số a, b.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Chia đa thức hoặc dùng hai giới hạn để tìm hệ số a, b."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f −(x + 2) = 1/x →0 ởcảhai phía vô cực. TCX y = x + 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 84 của PDF nguồn."
         }
       ],
       "answer": "f −(x + 2) = 1/x →0 ởcảhai phía vô cực. TCX y = x + 2.",
@@ -3817,7 +4825,15 @@ const examples = {
       ],
       "sourceBlockId": "5.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.3",
+      "sectionId": "5.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.4": [
@@ -3826,14 +4842,13 @@ const examples = {
       "title": "Tìm các tiệm cận đứng, ngang và xiên (nếu có) của f(x) = (2x+1)/(x−1) .",
       "prompt": "Tìm các tiệm cận đứng, ngang và xiên (nếu có) của f(x) = (2x+1)/(x−1) .",
       "analysis": [
-        "Giữ tập xác định",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giữ tập xác định"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {1}. Tửtại 1 bằng 3 khác 0, mẫu có nghiệm đơn, nên TCĐ x = 1. Tửvà mẫu cùng bậc, TCN y = 2. Không có TCX.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 84 của PDF nguồn."
         }
       ],
       "answer": "D = R \\ {1}. Tửtại 1 bằng 3 khác 0, mẫu có nghiệm đơn, nên TCĐ x = 1. Tửvà mẫu cùng bậc, TCN y = 2. Không có TCX.",
@@ -3844,7 +4859,15 @@ const examples = {
       ],
       "sourceBlockId": "5.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.4",
+      "sectionId": "5.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.5": [],
@@ -3855,14 +4878,13 @@ const examples = {
       "title": "Đếm các đường tiệm cận của y = x².",
       "prompt": "Đếm các đường tiệm cận của y = x².",
       "analysis": [
-        "Liệt kê phương trình các đường phân biệt rồi đếm.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Liệt kê phương trình các đường phân biệt rồi đếm."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không có TCĐ do liên tục trên R; không có TCN hay TCX do tăng trưởng bậc hai. Có 0 đường.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 86 của PDF nguồn."
         }
       ],
       "answer": "Không có TCĐ do liên tục trên R; không có TCN hay TCX do tăng trưởng bậc hai. Có 0 đường.",
@@ -3873,7 +4895,15 @@ const examples = {
       ],
       "sourceBlockId": "5.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.7",
+      "sectionId": "5.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.8": [
@@ -3882,14 +4912,13 @@ const examples = {
       "title": "Tìm m để y = (x + m)/(x −2) không có TCĐ.",
       "prompt": "Tìm m để y = (x + m)/(x −2) không có TCĐ.",
       "analysis": [
-        "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tửphải triệt tiêu tại 2: 2 + m = 0, nên m = −2. Khi đó hàm bằng 1 trên x≠ 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 86 của PDF nguồn."
         }
       ],
       "answer": "Tửphải triệt tiêu tại 2: 2 + m = 0, nên m = −2. Khi đó hàm bằng 1 trên x≠ 2.",
@@ -3900,7 +4929,15 @@ const examples = {
       ],
       "sourceBlockId": "5.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.8",
+      "sectionId": "5.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "5.9": [
@@ -3909,14 +4946,13 @@ const examples = {
       "title": "Phân loại điểm bị loại của y = (x² −1)/(x −1).",
       "prompt": "Phân loại điểm bị loại của y = (x² −1)/(x −1).",
       "analysis": [
-        "Giữ miền ban đầu",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giữ miền ban đầu"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 1. Rút gọn x + 1, giới hạn tại 1 bằng 2; điểm khuyết (1; 2), không có TCĐ.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 87 của PDF nguồn."
         }
       ],
       "answer": "Miền loại 1. Rút gọn x + 1, giới hạn tại 1 bằng 2; điểm khuyết (1; 2), không có TCĐ.",
@@ -3927,7 +4963,15 @@ const examples = {
       ],
       "sourceBlockId": "5.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD05",
+      "lessonId": "5.9",
+      "sectionId": "5.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.1": [],
@@ -3939,14 +4983,13 @@ const examples = {
       "title": "Khảo sát f(x) = x ( x² −3 ) : đơn điệu, cực trị, tâm đối xứng và…",
       "prompt": "Khảo sát f(x) = x ( x² −3 ) : đơn điệu, cực trị, tâm đối xứng và giới hạn ở vô cực.",
       "analysis": [
-        "Tìm điểm uốn, cực trị và giao trục trước khi vẽ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm điểm uốn, cực trị và giao trục trước khi vẽ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 89 của PDF nguồn."
         }
       ],
       "answer": "D = R. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -3957,7 +5000,15 @@ const examples = {
       ],
       "sourceBlockId": "6.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.4",
+      "sectionId": "6.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.5": [
@@ -3966,14 +5017,13 @@ const examples = {
       "title": "Khảo sát các khoảng đơn điệu, cực trị và tiệm cận của f(x) =…",
       "prompt": "Khảo sát các khoảng đơn điệu, cực trị và tiệm cận của f(x) = (2x+1)/(x−1) trên miền gốc loại 1.",
       "analysis": [
-        "Tìm tiệm cận, tâm đối xứng và chiều biến thiên từng nhánh.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm tiệm cận, tâm đối xứng và chiều biến thiên từng nhánh."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). f′(x) = − 3/(x−1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = 1; TCN y = 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 90 của PDF nguồn."
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). f′(x) = − 3/(x−1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = 1; TCN y = 2.",
@@ -3984,7 +5034,15 @@ const examples = {
       ],
       "sourceBlockId": "6.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.5",
+      "sectionId": "6.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.6": [
@@ -3993,14 +5051,13 @@ const examples = {
       "title": "Hàm f có tập giá trị[−1; 3].",
       "prompt": "Hàm f có tập giá trị[−1; 3]. Tập giá trị của g = f + 2 là gì?",
       "analysis": [
-        "Tịnh tiến đứng",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tịnh tiến đứng"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cộng 2 vào mọi giá trị, được [1; 5].",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 3, trang 91 của PDF nguồn."
         }
       ],
       "answer": "Cộng 2 vào mọi giá trị, được [1; 5].",
@@ -4011,7 +5068,15 @@ const examples = {
       ],
       "sourceBlockId": "6.6-worked-example-3",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.6",
+      "sectionId": "6.6-example-3",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.7": [
@@ -4020,14 +5085,13 @@ const examples = {
       "title": "Hàm f xác định trên (0; 3).",
       "prompt": "Hàm f xác định trên (0; 3). Tìm miền của g(x) = f(x −2).",
       "analysis": [
-        "Tịnh tiến ngang",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tịnh tiến ngang"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 0 < x −2 < 3, nên Dg = (2; 5).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 3, trang 91 của PDF nguồn."
         }
       ],
       "answer": "Cần 0 < x −2 < 3, nên Dg = (2; 5).",
@@ -4038,7 +5102,15 @@ const examples = {
       ],
       "sourceBlockId": "6.7-worked-example-3",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.7",
+      "sectionId": "6.7-example-3",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.8": [
@@ -4047,14 +5119,13 @@ const examples = {
       "title": "Hàm f có cực đại tại (1; 4).",
       "prompt": "Hàm f có cực đại tại (1; 4). Cực trị tương ứng của −f là gì?",
       "analysis": [
-        "Đối xứng qua Ox đối với -f(x), qua Oy đối với f(-x).",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đối xứng qua Ox đối với -f(x), qua Oy đối với f(-x)."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cực tiểu tại (1; −4) vì đổi dấu tung độđảo loại cực trị.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 3, trang 91 của PDF nguồn."
         }
       ],
       "answer": "Cực tiểu tại (1; −4) vì đổi dấu tung độđảo loại cực trị.",
@@ -4065,7 +5136,15 @@ const examples = {
       ],
       "sourceBlockId": "6.8-worked-example-3",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.8",
+      "sectionId": "6.8-example-3",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.9": [
@@ -4074,14 +5153,13 @@ const examples = {
       "title": "Viết công thức từng phần của y = |x² −2x|.",
       "prompt": "Viết công thức từng phần của y = |x² −2x|.",
       "analysis": [
-        "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi x ≤0 hoặc x ≥2, y = x² −2x. Khi 0 < x < 2, y = 2x −x².",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 4, trang 92 của PDF nguồn."
         }
       ],
       "answer": "Khi x ≤0 hoặc x ≥2, y = x² −2x. Khi 0 < x < 2, y = 2x −x².",
@@ -4092,7 +5170,15 @@ const examples = {
       ],
       "sourceBlockId": "6.9-worked-example-4",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.9",
+      "sectionId": "6.9-example-4",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.10": [
@@ -4101,14 +5187,13 @@ const examples = {
       "title": "Viết công thức của f(|x|) khi f(x) = x + 1.",
       "prompt": "Viết công thức của f(|x|) khi f(x) = x + 1.",
       "analysis": [
-        "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới |x| + 1, bằng x + 1 với x ≥0, bằng 1 −x với x < 0.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 92 của PDF nguồn."
         }
       ],
       "answer": "Hàm mới |x| + 1, bằng x + 1 với x ≥0, bằng 1 −x với x < 0.",
@@ -4119,7 +5204,15 @@ const examples = {
       ],
       "sourceBlockId": "6.10-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.10",
+      "sectionId": "6.10-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.11": [
@@ -4128,14 +5221,13 @@ const examples = {
       "title": "Đếm nghiệm của x² = 4.",
       "prompt": "Đếm nghiệm của x² = 4.",
       "analysis": [
-        "Kẻ đường ngang và đếm giao điểm",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Kẻ đường ngang và đếm giao điểm"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đường ngang y = 4 cắt parabol ởx = ±2. Có 2 nghiệm.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 92 của PDF nguồn."
         }
       ],
       "answer": "Đường ngang y = 4 cắt parabol ởx = ±2. Có 2 nghiệm.",
@@ -4146,7 +5238,15 @@ const examples = {
       ],
       "sourceBlockId": "6.11-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.11",
+      "sectionId": "6.11-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.12": [
@@ -4155,14 +5255,13 @@ const examples = {
       "title": "Tìm giao điểm của y = x² và y = 2x.",
       "prompt": "Tìm giao điểm của y = x² và y = 2x.",
       "analysis": [
-        "Giải phương trình hoành độ và loại nghiệm vi phạm miền xác định.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giải phương trình hoành độ và loại nghiệm vi phạm miền xác định."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x(x −2) = 0. Các giao điểm (0; 0), (2; 4).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 93 của PDF nguồn."
         }
       ],
       "answer": "x(x −2) = 0. Các giao điểm (0; 0), (2; 4).",
@@ -4173,7 +5272,15 @@ const examples = {
       ],
       "sourceBlockId": "6.12-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.12",
+      "sectionId": "6.12-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "6.13": [
@@ -4182,14 +5289,13 @@ const examples = {
       "title": "Biện luận số nghiệm của x² = m.",
       "prompt": "Biện luận số nghiệm của x² = m.",
       "analysis": [
-        "Tìm các mức tham số tại đó số giao điểm thay đổi",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tìm các mức tham số tại đó số giao điểm thay đổi"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "m < 0: 0; m = 0: 1; m > 0: 2 nghiệm.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 93 của PDF nguồn."
         }
       ],
       "answer": "m < 0: 0; m = 0: 1; m > 0: 2 nghiệm.",
@@ -4200,7 +5306,15 @@ const examples = {
       ],
       "sourceBlockId": "6.13-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD06",
+      "lessonId": "6.13",
+      "sectionId": "6.13-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.1": [
@@ -4209,14 +5323,13 @@ const examples = {
       "title": "Viết tiếp tuyến của y = x (x −2) tại hoành độ x₀ = 1.",
       "prompt": "Viết tiếp tuyến của y = x (x −2) tại hoành độ x₀ = 1.",
       "analysis": [
-        "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 1: f(x₀) = −1, f′(x₀) = 0, tiếp tuyến y = −1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 94 của PDF nguồn."
         }
       ],
       "answer": "x₀ = 1: f(x₀) = −1, f′(x₀) = 0, tiếp tuyến y = −1.",
@@ -4227,7 +5340,15 @@ const examples = {
       ],
       "sourceBlockId": "7.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.1",
+      "sectionId": "7.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.2": [
@@ -4236,14 +5357,13 @@ const examples = {
       "title": "Viết tất cảcác tiếp tuyến tại những điểm của y = x² có tung độ4.",
       "prompt": "Viết tất cảcác tiếp tuyến tại những điểm của y = x² có tung độ4.",
       "analysis": [
-        "Giải phương trình tung độ tiếp điểm",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giải phương trình tung độ tiếp điểm"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 4. x₀ = −2: f(x₀) = 4, f′(x₀) = −4, tiếp tuyến y = −4 (x + 1); x₀ = 2: f(x₀) = 4, f′(x₀) = 4, tiếp tuyến y = 4 (x −1).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 94 của PDF nguồn."
         }
       ],
       "answer": "Giải f(x₀) = 4. x₀ = −2: f(x₀) = 4, f′(x₀) = −4, tiếp tuyến y = −4 (x + 1); x₀ = 2: f(x₀) = 4, f′(x₀) = 4, tiếp tuyến y = 4 (x −1).",
@@ -4254,7 +5374,15 @@ const examples = {
       ],
       "sourceBlockId": "7.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.2",
+      "sectionId": "7.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.3": [
@@ -4263,14 +5391,13 @@ const examples = {
       "title": "Viết các tiếp tuyến của y = x² có hệ số góc 2.",
       "prompt": "Viết các tiếp tuyến của y = x² có hệ số góc 2.",
       "analysis": [
-        "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 94 của PDF nguồn."
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -4281,7 +5408,15 @@ const examples = {
       ],
       "sourceBlockId": "7.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.3",
+      "sectionId": "7.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.4": [
@@ -4290,14 +5425,13 @@ const examples = {
       "title": "Viết các tiếp tuyến của y = x² song song với đường thẳng d : y =…",
       "prompt": "Viết các tiếp tuyến của y = x² song song với đường thẳng d : y = 2x+7 (hai đường phải phân biệt).",
       "analysis": [
-        "Dùng hệ số góc đường thẳng đã cho",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Dùng hệ số góc đường thẳng đã cho"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 95 của PDF nguồn."
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -4308,7 +5442,15 @@ const examples = {
       ],
       "sourceBlockId": "7.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.4",
+      "sectionId": "7.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.5": [
@@ -4317,14 +5459,13 @@ const examples = {
       "title": "Viết các tiếp tuyến của y = x² vuông góc với d : y = −(x−2)/2 .",
       "prompt": "Viết các tiếp tuyến của y = x² vuông góc với d : y = −(x−2)/2 .",
       "analysis": [
-        "Hệ số góc tiếp tuyến bằng số đối của nghịch đảo hệ số góc đã cho.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Hệ số góc tiếp tuyến bằng số đối của nghịch đảo hệ số góc đã cho."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 95 của PDF nguồn."
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -4335,7 +5476,15 @@ const examples = {
       ],
       "sourceBlockId": "7.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.5",
+      "sectionId": "7.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.6": [
@@ -4344,14 +5493,13 @@ const examples = {
       "title": "Viết tiếp tuyến của y = x² có góc có hướng với chiều dương Ox bằng 45◦.",
       "prompt": "Viết tiếp tuyến của y = x² có góc có hướng với chiều dương Ox bằng 45◦.",
       "analysis": [
-        "Xác định rõ góc có hướng hay góc nhọn giữa hai đường.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xác định rõ góc có hướng hay góc nhọn giữa hai đường."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = tan 45◦= 1, 2x₀ = 1 cho x₀ = 1/2. Tiếp tuyến y = x −1/4.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 96 của PDF nguồn."
         }
       ],
       "answer": "k = tan 45◦= 1, 2x₀ = 1 cho x₀ = 1/2. Tiếp tuyến y = x −1/4.",
@@ -4362,7 +5510,15 @@ const examples = {
       ],
       "sourceBlockId": "7.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.6",
+      "sectionId": "7.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.7": [
@@ -4371,14 +5527,13 @@ const examples = {
       "title": "Viết các tiếp tuyến của y = x² đi qua A(0; −1).",
       "prompt": "Viết các tiếp tuyến của y = x² đi qua A(0; −1).",
       "analysis": [
-        "Đặt hoành độ tiếp điểm t",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đặt hoành độ tiếp điểm t"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = −1, tức 1−t² = 0. x₀ = −1: f(x₀) = 1, f′(x₀) = −2, tiếp tuyến y = −2x −1; x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 96 của PDF nguồn."
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = −1, tức 1−t² = 0. x₀ = −1: f(x₀) = 1, f′(x₀) = −2, tiếp tuyến y = −2x −1; x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -4389,7 +5544,15 @@ const examples = {
       ],
       "sourceBlockId": "7.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.7",
+      "sectionId": "7.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.8": [
@@ -4398,14 +5561,13 @@ const examples = {
       "title": "Có bao nhiêu tiếp tuyến của y = x² qua A(0; −2)?",
       "prompt": "Có bao nhiêu tiếp tuyến của y = x² qua A(0; −2)?",
       "analysis": [
-        "Đếm các nghiệm tiếp điểm và loại các đường trùng nhau.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đếm các nghiệm tiếp điểm và loại các đường trùng nhau."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện −t² = −2 có hai nghiệm ± √ 2, cho hai đường khác nhau. Có 2 tiếp tuyến.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 97 của PDF nguồn."
         }
       ],
       "answer": "Điều kiện −t² = −2 có hai nghiệm ± √ 2, cho hai đường khác nhau. Có 2 tiếp tuyến.",
@@ -4416,7 +5578,15 @@ const examples = {
       ],
       "sourceBlockId": "7.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.8",
+      "sectionId": "7.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "7.9": [
@@ -4425,14 +5595,13 @@ const examples = {
       "title": "Tìm m để tiếp tuyến của y = x² + m tại x = 1 đi qua O.",
       "prompt": "Tìm m để tiếp tuyến của y = x² + m tại x = 1 đi qua O.",
       "analysis": [
-        "Đưa điều kiện tiếp tuyến về phương trình tham số rồi xét nghiệm hợp lệ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa điều kiện tiếp tuyến về phương trình tham số rồi xét nghiệm hợp lệ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến y = 2x + m −1. Qua O cho m = 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 97 của PDF nguồn."
         }
       ],
       "answer": "Tiếp tuyến y = 2x + m −1. Qua O cho m = 1.",
@@ -4443,7 +5612,15 @@ const examples = {
       ],
       "sourceBlockId": "7.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD07",
+      "lessonId": "7.9",
+      "sectionId": "7.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd01-cd07-functions",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.1": [
@@ -4452,14 +5629,13 @@ const examples = {
       "title": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
       "prompt": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
       "analysis": [
-        "Đưa căn về số mũ hữu tỉ",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa căn về số mũ hữu tỉ"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "16³⁄⁴ = (2⁴)³⁄⁴ = 2³ = 8. Mặt khác 27⁻²⁄³ = (3³)⁻²⁄³ = 3⁻² = 1/9. Vậy A = 73/9.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 60 của PDF nguồn."
         }
       ],
       "answer": "16³⁄⁴ = (2⁴)³⁄⁴ = 2³ = 8. Mặt khác 27⁻²⁄³ = (3³)⁻²⁄³ = 3⁻² = 1/9. Vậy A = 73/9.",
@@ -4470,7 +5646,15 @@ const examples = {
       ],
       "sourceBlockId": "8.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.1",
+      "sectionId": "8.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.2": [
@@ -4479,14 +5663,13 @@ const examples = {
       "title": "Tính A = log₂ 12 −log₂ 3 + log₄ 8.",
       "prompt": "Tính A = log₂ 12 −log₂ 3 + log₄ 8.",
       "analysis": [
-        "Kiểm tra cơ số và đối số",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Kiểm tra cơ số và đối số"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₂ 12 −log₂ 3 = log₂ 4 = 2. Đổi cơ số: log₄ 8 = log₂ 8/ log₂ 4 = 3/2. Vậy A = 7/2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 60 của PDF nguồn."
         }
       ],
       "answer": "log₂ 12 −log₂ 3 = log₂ 4 = 2. Đổi cơ số: log₄ 8 = log₂ 8/ log₂ 4 = 3/2. Vậy A = 7/2.",
@@ -4497,7 +5680,15 @@ const examples = {
       ],
       "sourceBlockId": "8.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.2",
+      "sectionId": "8.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.3": [
@@ -4506,14 +5697,13 @@ const examples = {
       "title": "Tìm tập xác định của y = logₓ₋₁(5 −x).",
       "prompt": "Tìm tập xác định của y = logₓ₋₁(5 −x).",
       "analysis": [
-        "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện: x−1 > 0, x−1≠ 1, 5−x > 0. Suy ra 1 < x < 5, x≠ 2. Vậy D = (1; 2)∪(2; 5).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 60 của PDF nguồn."
         }
       ],
       "answer": "Điều kiện: x−1 > 0, x−1≠ 1, 5−x > 0. Suy ra 1 < x < 5, x≠ 2. Vậy D = (1; 2)∪(2; 5).",
@@ -4524,7 +5714,15 @@ const examples = {
       ],
       "sourceBlockId": "8.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.3",
+      "sectionId": "8.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.4": [
@@ -4533,14 +5731,13 @@ const examples = {
       "title": "So sánh hai lũy thừa",
       "prompt": "So sánh \\(A=8^{\\sqrt{2}}\\) và \\(B=4^{\\sqrt{3}}\\).",
       "analysis": [
-        "Đưa về cùng cơ số.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa về cùng cơ số."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "\\(A=2^{3\\sqrt{2}},\\ B=2^{2\\sqrt{3}}\\). Hai số mũ dương và \\((3\\sqrt{2})^2=18>12=(2\\sqrt{3})^2\\), nên \\(3\\sqrt{2}>2\\sqrt{3}\\). Vì \\(2>1\\), suy ra \\(A>B\\).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 61 của PDF nguồn."
         }
       ],
       "answer": "\\(A=2^{3\\sqrt{2}},\\ B=2^{2\\sqrt{3}}\\). Hai số mũ dương và \\((3\\sqrt{2})^2=18>12=(2\\sqrt{3})^2\\), nên \\(3\\sqrt{2}>2\\sqrt{3}\\). Vì \\(2>1\\), suy ra \\(A>B\\).",
@@ -4551,7 +5748,15 @@ const examples = {
       ],
       "sourceBlockId": "8.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.4",
+      "sectionId": "8.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.5": [
@@ -4560,14 +5765,13 @@ const examples = {
       "title": "So sánh log₁/₂ 3 và log₁/₂ 5.",
       "prompt": "So sánh log₁/₂ 3 và log₁/₂ 5.",
       "analysis": [
-        "Cùng cơ số thì dùng tính đơn điệu.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Cùng cơ số thì dùng tính đơn điệu."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 0 < 1/2 < 1, hàm lôgarit nghịch biến. Do 3 < 5, suy ra log₁/₂ 3 > log₁/₂ 5.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 61 của PDF nguồn."
         }
       ],
       "answer": "Vì 0 < 1/2 < 1, hàm lôgarit nghịch biến. Do 3 < 5, suy ra log₁/₂ 3 > log₁/₂ 5.",
@@ -4578,7 +5782,15 @@ const examples = {
       ],
       "sourceBlockId": "8.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.5",
+      "sectionId": "8.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.6": [
@@ -4587,14 +5799,13 @@ const examples = {
       "title": "Nêu tập xác định và tập giá trị y = 5ˣ.",
       "prompt": "Nêu tập xác định và tập giá trị y = 5ˣ.",
       "analysis": [
-        "Nhận dạng y = aˣ",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Nhận dạng y = aˣ"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R, tập giá trị(0; +∞). Đồ thịqua (0; 1) và (1; 5).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 2, trang 61 của PDF nguồn."
         }
       ],
       "answer": "D = R, tập giá trị(0; +∞). Đồ thịqua (0; 1) và (1; 5).",
@@ -4605,7 +5816,15 @@ const examples = {
       ],
       "sourceBlockId": "8.6-worked-example-2",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.6",
+      "sectionId": "8.6-example-2",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.7": [
@@ -4614,14 +5833,13 @@ const examples = {
       "title": "Vẽy = log₃ x bằng ba điểm.",
       "prompt": "Vẽy = log₃ x bằng ba điểm.",
       "analysis": [
-        "Ghi x > 0",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Ghi x > 0"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn x = 1/3, 1, 3 thì y = −1, 0, 1. Nối theo đường cong tăng trên x > 0; không vẽ phần bên trái trục tung.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 3, trang 62 của PDF nguồn."
         }
       ],
       "answer": "Chọn x = 1/3, 1, 3 thì y = −1, 0, 1. Nối theo đường cong tăng trên x > 0; không vẽ phần bên trái trục tung.",
@@ -4632,7 +5850,15 @@ const examples = {
       ],
       "sourceBlockId": "8.7-worked-example-3",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.7",
+      "sectionId": "8.7-example-3",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.8": [
@@ -4641,14 +5867,13 @@ const examples = {
       "title": "Rút gọn A = log₂(x² −1) −log₂(x −1) với x > 1.",
       "prompt": "Rút gọn A = log₂(x² −1) −log₂(x −1) với x > 1.",
       "analysis": [
-        "Ghi điều kiện",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Ghi điều kiện"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì x > 1, các đối số đều dương. A = log₂[(x² −1)/(x −1)] = log₂(x + 1). Điều kiện vẫn là x > 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 62 của PDF nguồn."
         }
       ],
       "answer": "Vì x > 1, các đối số đều dương. A = log₂[(x² −1)/(x −1)] = log₂(x + 1). Điều kiện vẫn là x > 1.",
@@ -4659,7 +5884,15 @@ const examples = {
       ],
       "sourceBlockId": "8.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.8",
+      "sectionId": "8.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "8.9": [
@@ -4668,14 +5901,13 @@ const examples = {
       "title": "Tính t = ln(1,5)/ ln(1,06) và chọn số kỳ nguyên nhỏ nhất để1,06ⁿ ≥1,5.",
       "prompt": "Tính t = ln(1,5)/ ln(1,06) và chọn số kỳ nguyên nhỏ nhất để1,06ⁿ ≥1,5.",
       "analysis": [
-        "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Máy cho t ≈6,958515633. Bất phương trình cho n ≥t, nên số kỳ nhỏ nhất là 7; không làm tròn t trước khi xử lý điều kiện nguyên.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 64 của PDF nguồn."
         }
       ],
       "answer": "Máy cho t ≈6,958515633. Bất phương trình cho n ≥t, nên số kỳ nhỏ nhất là 7; không làm tròn t trước khi xử lý điều kiện nguyên.",
@@ -4686,7 +5918,15 @@ const examples = {
       ],
       "sourceBlockId": "8.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD08",
+      "lessonId": "8.9",
+      "sectionId": "8.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.1": [
@@ -4695,14 +5935,13 @@ const examples = {
       "title": "Giải 4ˣ⁻¹ = 8²⁻ˣ.",
       "prompt": "Giải 4ˣ⁻¹ = 8²⁻ˣ.",
       "analysis": [
-        "Viết hai vế thành lũy thừa của một cơ số dương khác 1.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Viết hai vế thành lũy thừa của một cơ số dương khác 1."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2²ˣ⁻² = 2⁶⁻³ˣ ⇔2x −2 = 6 −3x ⇔x = 8/5. Không có điều kiện loại nghiệm; vậy S = {8/5}.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 65 của PDF nguồn."
         }
       ],
       "answer": "2²ˣ⁻² = 2⁶⁻³ˣ ⇔2x −2 = 6 −3x ⇔x = 8/5. Không có điều kiện loại nghiệm; vậy S = {8/5}.",
@@ -4713,7 +5952,15 @@ const examples = {
       ],
       "sourceBlockId": "9.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.1",
+      "sectionId": "9.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.2": [
@@ -4722,14 +5969,13 @@ const examples = {
       "title": "Giải log₂(x −1) + log₂(x + 1) = 3.",
       "prompt": "Giải log₂(x −1) + log₂(x + 1) = 3.",
       "analysis": [
-        "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1. Gộp: log₂(x² −1) = 3 ⇔x² −1 = 8 ⇔x = ±3. Chỉx = 3 thỏa mãn. Vậy S = {3}.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 65 của PDF nguồn."
         }
       ],
       "answer": "Điều kiện x > 1. Gộp: log₂(x² −1) = 3 ⇔x² −1 = 8 ⇔x = ±3. Chỉx = 3 thỏa mãn. Vậy S = {3}.",
@@ -4740,7 +5986,15 @@ const examples = {
       ],
       "sourceBlockId": "9.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.2",
+      "sectionId": "9.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.3": [
@@ -4749,14 +6003,13 @@ const examples = {
       "title": "Giải 4ˣ −5 · 2ˣ + 4 = 0.",
       "prompt": "Giải 4ˣ −5 · 2ˣ + 4 = 0.",
       "analysis": [
-        "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0, ta có t² −5t + 4 = 0 ⇔t = 1 hoặc 4. Suy ra 2ˣ = 1 hoặc 2ˣ = 4, nên x = 0 hoặc 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 65 của PDF nguồn."
         }
       ],
       "answer": "Đặt t = 2ˣ > 0, ta có t² −5t + 4 = 0 ⇔t = 1 hoặc 4. Suy ra 2ˣ = 1 hoặc 2ˣ = 4, nên x = 0 hoặc 2.",
@@ -4767,7 +6020,15 @@ const examples = {
       ],
       "sourceBlockId": "9.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.3",
+      "sectionId": "9.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.4": [
@@ -4776,14 +6037,13 @@ const examples = {
       "title": "Giải 5²ˣ⁻¹ = 7.",
       "prompt": "Giải 5²ˣ⁻¹ = 7.",
       "analysis": [
-        "Khi hai vế dương, lấy lôgarit cùng một cơ số thích hợp.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Khi hai vế dương, lấy lôgarit cùng một cơ số thích hợp."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: (2x −1) ln 5 = ln 7. Vì ln 5≠ 0, được x = ¹ ₂(1 + ln 7/ ln 5).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "Lấy ln hai vế: (2x −1) ln 5 = ln 7. Vì ln 5≠ 0, được x = ¹ ₂(1 + ln 7/ ln 5).",
@@ -4794,7 +6054,15 @@ const examples = {
       ],
       "sourceBlockId": "9.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.4",
+      "sectionId": "9.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.5": [
@@ -4803,14 +6071,13 @@ const examples = {
       "title": "Giải 2ˣ3ˣ⁻¹ = 12.",
       "prompt": "Giải 2ˣ3ˣ⁻¹ = 12.",
       "analysis": [
-        "Nếu là tích hoặc thương các lũy thừa cùng số mũ, gộp cơ số.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Nếu là tích hoặc thương các lũy thừa cùng số mũ, gộp cơ số."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ3ˣ⁻¹ = 6ˣ/3. Vì vậy 6ˣ = 36 = 6², suy ra x = 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "2ˣ3ˣ⁻¹ = 6ˣ/3. Vì vậy 6ˣ = 36 = 6², suy ra x = 2.",
@@ -4821,7 +6088,15 @@ const examples = {
       ],
       "sourceBlockId": "9.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.5",
+      "sectionId": "9.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.6": [
@@ -4830,14 +6105,13 @@ const examples = {
       "title": "Giải 2ˣ + x = 3.",
       "prompt": "Giải 2ˣ + x = 3.",
       "analysis": [
-        "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 2ˣ + x đồng biến trên R vì là tổng hai hàm đồng biến. Do f(1) = 3, phương trình có nghiệm duy nhất x = 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 66 của PDF nguồn."
         }
       ],
       "answer": "Hàm f(x) = 2ˣ + x đồng biến trên R vì là tổng hai hàm đồng biến. Do f(1) = 3, phương trình có nghiệm duy nhất x = 1.",
@@ -4848,7 +6122,15 @@ const examples = {
       ],
       "sourceBlockId": "9.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.6",
+      "sectionId": "9.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.7": [
@@ -4857,14 +6139,13 @@ const examples = {
       "title": "Tìm m để2ˣ = m −1 có nghiệm thực.",
       "prompt": "Tìm m để2ˣ = m −1 có nghiệm thực.",
       "analysis": [
-        "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 2ˣ > 0 và nhận mọi giá trị dương, phương trình có nghiệm khi và chỉkhi m −1 > 0, tức m > 1. Khi đó nghiệm duy nhất x = log₂(m −1).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 67 của PDF nguồn."
         }
       ],
       "answer": "Vì 2ˣ > 0 và nhận mọi giá trị dương, phương trình có nghiệm khi và chỉkhi m −1 > 0, tức m > 1. Khi đó nghiệm duy nhất x = log₂(m −1).",
@@ -4875,7 +6156,15 @@ const examples = {
       ],
       "sourceBlockId": "9.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.7",
+      "sectionId": "9.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "9.8": [
@@ -4884,14 +6173,13 @@ const examples = {
       "title": "Tìm m để4ˣ −(m + 1)2ˣ + m = 0 có đúng hai nghiệm phân biệt.",
       "prompt": "Tìm m để4ˣ −(m + 1)2ˣ + m = 0 có đúng hai nghiệm phân biệt.",
       "analysis": [
-        "Đếm nghiệm sau khi đặt ẩn phụ và kiểm tra điều kiện.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đếm nghiệm sau khi đặt ẩn phụ và kiểm tra điều kiện."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −m) = 0. Luôn có t = 1. Có hai nghiệm dương phân biệt khi m > 0, m≠ 1. Khi m = 1 chỉmột nghiệm; khi m ≤0 chỉnhận t = 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 68 của PDF nguồn."
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −m) = 0. Luôn có t = 1. Có hai nghiệm dương phân biệt khi m > 0, m≠ 1. Khi m = 1 chỉmột nghiệm; khi m ≤0 chỉnhận t = 1.",
@@ -4902,7 +6190,15 @@ const examples = {
       ],
       "sourceBlockId": "9.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD09",
+      "lessonId": "9.8",
+      "sectionId": "9.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.1": [
@@ -4911,14 +6207,13 @@ const examples = {
       "title": "Giải (1/3)²ˣ⁻¹ ≥(1/3)ˣ⁺².",
       "prompt": "Giải (1/3)²ˣ⁻¹ ≥(1/3)ˣ⁺².",
       "analysis": [
-        "Đưa về cùng cơ số.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa về cùng cơ số."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 0 < 1/3 < 1, được 2x −1 ≤x + 2 ⇔x ≤3. Vậy S = (−∞; 3].",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 68 của PDF nguồn."
         }
       ],
       "answer": "Vì 0 < 1/3 < 1, được 2x −1 ≤x + 2 ⇔x ≤3. Vậy S = (−∞; 3].",
@@ -4929,7 +6224,15 @@ const examples = {
       ],
       "sourceBlockId": "10.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.1",
+      "sectionId": "10.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.2": [
@@ -4938,14 +6241,13 @@ const examples = {
       "title": "Giải 2ˣ + x > 3.",
       "prompt": "Giải 2ˣ + x > 3.",
       "analysis": [
-        "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀)",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀)"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(1) = 3. Vì vậy f(x) > f(1) ⇔x > 1.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(1) = 3. Vì vậy f(x) > f(1) ⇔x > 1.",
@@ -4956,7 +6258,15 @@ const examples = {
       ],
       "sourceBlockId": "10.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.2",
+      "sectionId": "10.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.3": [
@@ -4965,14 +6275,13 @@ const examples = {
       "title": "Giải 4ˣ −5 · 2ˣ + 4 ≤0.",
       "prompt": "Giải 4ˣ −5 · 2ˣ + 4 ≤0.",
       "analysis": [
-        "Đặt t = aˣ > 0 hoặc t = logₐ x.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đặt t = aˣ > 0 hoặc t = logₐ x."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 ⇔1 ≤t ≤4. Vì 2 > 1, 1 ≤2ˣ ≤4 ⇔0 ≤x ≤2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 ⇔1 ≤t ≤4. Vì 2 > 1, 1 ≤2ˣ ≤4 ⇔0 ≤x ≤2.",
@@ -4983,7 +6292,15 @@ const examples = {
       ],
       "sourceBlockId": "10.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.3",
+      "sectionId": "10.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.4": [
@@ -4992,14 +6309,13 @@ const examples = {
       "title": "Giải log₁/₂(x −1) ≥−2.",
       "prompt": "Giải log₁/₂(x −1) ≥−2.",
       "analysis": [
-        "Đặt điều kiện trước.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đặt điều kiện trước."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1. Vì −2 = log₁/₂ 4 và cơ số nhỏhơn 1, suy ra x −1 ≤4. Giao điều kiện được 1 < x ≤5.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 69 của PDF nguồn."
         }
       ],
       "answer": "Điều kiện x > 1. Vì −2 = log₁/₂ 4 và cơ số nhỏhơn 1, suy ra x −1 ≤4. Giao điều kiện được 1 < x ≤5.",
@@ -5010,7 +6326,15 @@ const examples = {
       ],
       "sourceBlockId": "10.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.4",
+      "sectionId": "10.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.5": [
@@ -5019,14 +6343,13 @@ const examples = {
       "title": "Giải 3 · 2ˣ⁻¹ ≤5.",
       "prompt": "Giải 3 · 2ˣ⁻¹ ≤5.",
       "analysis": [
-        "Xét dấu vế phải trước.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xét dấu vế phải trước."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ⁻¹ ≤5/3. Vì 2 > 1, x −1 ≤log₂(5/3). Vậy x ≤1 + log₂(5/3).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 70 của PDF nguồn."
         }
       ],
       "answer": "2ˣ⁻¹ ≤5/3. Vì 2 > 1, x −1 ≤log₂(5/3). Vậy x ≤1 + log₂(5/3).",
@@ -5037,7 +6360,15 @@ const examples = {
       ],
       "sourceBlockId": "10.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.5",
+      "sectionId": "10.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.6": [
@@ -5046,14 +6377,13 @@ const examples = {
       "title": "Giải log₂(x −1) ≤log₂(5 −x).",
       "prompt": "Giải log₂(x −1) ≤log₂(5 −x).",
       "analysis": [
-        "Lập tập điều kiện riêng",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Lập tập điều kiện riêng"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 1 < x < 5. Cơ số lớn hơn 1 nên x−1 ≤5−x ⇔x ≤3. Giao được S = (1; 3].",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 70 của PDF nguồn."
         }
       ],
       "answer": "Điều kiện 1 < x < 5. Cơ số lớn hơn 1 nên x−1 ≤5−x ⇔x ≤3. Giao được S = (1; 3].",
@@ -5064,7 +6394,15 @@ const examples = {
       ],
       "sourceBlockId": "10.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.6",
+      "sectionId": "10.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.7": [
@@ -5073,14 +6411,13 @@ const examples = {
       "title": "Tìm m để2ˣ ≤m với mọi x ∈[0; 2].",
       "prompt": "Tìm m để2ˣ ≤m với mọi x ∈[0; 2].",
       "analysis": [
-        "Đọc đúng yêu cầu: có nghiệm, đúng với mọi x hay có nghiệm trên một đoạn.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đọc đúng yêu cầu: có nghiệm, đúng với mọi x hay có nghiệm trên một đoạn."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ đồng biến nên giá trị lớn nhất trên [0; 2] là 2² = 4. Vì vậy điều kiện cần và đủ là m ≥4.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 70 của PDF nguồn."
         }
       ],
       "answer": "2ˣ đồng biến nên giá trị lớn nhất trên [0; 2] là 2² = 4. Vì vậy điều kiện cần và đủ là m ≥4.",
@@ -5091,7 +6428,15 @@ const examples = {
       ],
       "sourceBlockId": "10.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.7",
+      "sectionId": "10.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "10.8": [
@@ -5100,14 +6445,13 @@ const examples = {
       "title": "Tìm m để2ˣ ≤m có đúng 1 nghiệm nguyên x ≥0.",
       "prompt": "Tìm m để2ˣ ≤m có đúng 1 nghiệm nguyên x ≥0.",
       "analysis": [
-        "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 1 nghiệm x = 0, cần 1 ≤m < 2.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 72 của PDF nguồn."
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 1 nghiệm x = 0, cần 1 ≤m < 2.",
@@ -5118,7 +6462,15 @@ const examples = {
       ],
       "sourceBlockId": "10.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD10",
+      "lessonId": "10.8",
+      "sectionId": "10.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.1": [
@@ -5127,14 +6479,13 @@ const examples = {
       "title": "Gửi 50 triệu đồng theo lãi đơn, lãi suất 6%/năm trong 3 năm.",
       "prompt": "Gửi 50 triệu đồng theo lãi đơn, lãi suất 6%/năm trong 3 năm. Tính tổng tiền.",
       "analysis": [
-        "Lãi mỗi kỳ chỉtính trên vốn gốc.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Lãi mỗi kỳ chỉtính trên vốn gốc."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = 50, r = 0,06, n = 3. Tiền lãi I = 50 · 0,06 · 3 = 9 triệu. Tổng A = 50 + 9 = 59 triệu đồng.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 72 của PDF nguồn."
         }
       ],
       "answer": "P = 50, r = 0,06, n = 3. Tiền lãi I = 50 · 0,06 · 3 = 9 triệu. Tổng A = 50 + 9 = 59 triệu đồng.",
@@ -5145,7 +6496,15 @@ const examples = {
       ],
       "sourceBlockId": "11.1-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.1",
+      "sectionId": "11.1-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.2": [
@@ -5154,14 +6513,13 @@ const examples = {
       "title": "Gửi 100 triệu, lãi suất 6%/năm, nhập lãi hàng quý, trong 2 năm.",
       "prompt": "Gửi 100 triệu, lãi suất 6%/năm, nhập lãi hàng quý, trong 2 năm. Tính tổng tiền.",
       "analysis": [
-        "Lãi được nhập gốc cuối mỗi kỳ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Lãi được nhập gốc cuối mỗi kỳ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Mỗi năm có 4 kỳ, mỗi kỳ0,06/4 = 0,015, tổng 8 kỳ. A = 100(1,015)⁸ ≈112,65 triệu đồng.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 73 của PDF nguồn."
         }
       ],
       "answer": "Mỗi năm có 4 kỳ, mỗi kỳ0,06/4 = 0,015, tổng 8 kỳ. A = 100(1,015)⁸ ≈112,65 triệu đồng.",
@@ -5172,7 +6530,15 @@ const examples = {
       ],
       "sourceBlockId": "11.2-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.2",
+      "sectionId": "11.2-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.3": [
@@ -5181,14 +6547,13 @@ const examples = {
       "title": "Một địa phương có 200 nghìn người, mỗi năm tăng 1% so với năm trước.",
       "prompt": "Một địa phương có 200 nghìn người, mỗi năm tăng 1% so với năm trước. Ước tính sau 5 năm.",
       "analysis": [
-        "Đọc đúng mô hình đề cho.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Đọc đúng mô hình đề cho."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dữ kiện là tăng rời rạc từng năm: P₅ = 200(1,01)⁵ ≈210,20 nghìn người. Nếu yêu cầu số người, kết quảxấp xỉ210 202 người.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 73 của PDF nguồn."
         }
       ],
       "answer": "Dữ kiện là tăng rời rạc từng năm: P₅ = 200(1,01)⁵ ≈210,20 nghìn người. Nếu yêu cầu số người, kết quảxấp xỉ210 202 người.",
@@ -5199,7 +6564,15 @@ const examples = {
       ],
       "sourceBlockId": "11.3-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.3",
+      "sectionId": "11.3-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.4": [
@@ -5208,14 +6581,13 @@ const examples = {
       "title": "Có 500 vi khuẩn; cứ 2 giờ số lượng tăng gấp đôi.",
       "prompt": "Có 500 vi khuẩn; cứ 2 giờ số lượng tăng gấp đôi. Tính số lượng sau 6 giờ.",
       "analysis": [
-        "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trong 6 giờcó 6/2 = 3 chu kỳ. N(6) = 500 · 2³ = 4000 con.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 73 của PDF nguồn."
         }
       ],
       "answer": "Trong 6 giờcó 6/2 = 3 chu kỳ. N(6) = 500 · 2³ = 4000 con.",
@@ -5226,7 +6598,15 @@ const examples = {
       ],
       "sourceBlockId": "11.4-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.4",
+      "sectionId": "11.4-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.5": [
@@ -5235,14 +6615,13 @@ const examples = {
       "title": "Một chất ban đầu 80 g, chu kỳ bán rã 5 ngày.",
       "prompt": "Một chất ban đầu 80 g, chu kỳ bán rã 5 ngày. Sau 15 ngày còn bao nhiêu?",
       "analysis": [
-        "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "M(15) = 80 · 2⁻¹⁵⁄⁵ = 80/8 = 10 g. Sốchu kỳ bán rã là 3.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 74 của PDF nguồn."
         }
       ],
       "answer": "M(15) = 80 · 2⁻¹⁵⁄⁵ = 80/8 = 10 g. Sốchu kỳ bán rã là 3.",
@@ -5253,7 +6632,15 @@ const examples = {
       ],
       "sourceBlockId": "11.5-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.5",
+      "sectionId": "11.5-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.6": [
@@ -5262,14 +6649,13 @@ const examples = {
       "title": "Máy giá 200 triệu, mỗi năm giảm 10% giá trị còn lại.",
       "prompt": "Máy giá 200 triệu, mỗi năm giảm 10% giá trị còn lại. Sau 3 năm còn bao nhiêu?",
       "analysis": [
-        "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V₃ = 200(1 −0,1)³ = 200 · 0,9³ = 145,8 triệu đồng.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 74 của PDF nguồn."
         }
       ],
       "answer": "V₃ = 200(1 −0,1)³ = 200 · 0,9³ = 145,8 triệu đồng.",
@@ -5280,7 +6666,15 @@ const examples = {
       ],
       "sourceBlockId": "11.6-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.6",
+      "sectionId": "11.6-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.7": [
@@ -5289,14 +6683,13 @@ const examples = {
       "title": "Giá 100 nghìn tăng 20%, sau đó giảm 20%.",
       "prompt": "Giá 100 nghìn tăng 20%, sau đó giảm 20%. Giá cuối là bao nhiêu?",
       "analysis": [
-        "Tăng r nhân (1 + r)",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Tăng r nhân (1 + r)"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 100(1 + 0,2)(1 −0,2) = 96 nghìn đồng. So với ban đầu giảm 4%.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 74 của PDF nguồn."
         }
       ],
       "answer": "A = 100(1 + 0,2)(1 −0,2) = 96 nghìn đồng. So với ban đầu giảm 4%.",
@@ -5307,7 +6700,15 @@ const examples = {
       ],
       "sourceBlockId": "11.7-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.7",
+      "sectionId": "11.7-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.8": [
@@ -5316,14 +6717,13 @@ const examples = {
       "title": "Cho y(t) = 40e⁻⁰˒²ᵗ.",
       "prompt": "Cho y(t) = 40e⁻⁰˒²ᵗ. Tìm lượng ban đầu và thời gian để còn 10.",
       "analysis": [
-        "Trong mô hình lượng dương, C = y(0) > 0",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Trong mô hình lượng dương, C = y(0) > 0"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 40. Giải 40e⁻⁰˒²ᵗ = 10: −0,2t = ln(1/4) = −ln 4. Vậy t = 5 ln 4 ≈6,93 đơn vị thời gian.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 75 của PDF nguồn."
         }
       ],
       "answer": "y(0) = 40. Giải 40e⁻⁰˒²ᵗ = 10: −0,2t = ln(1/4) = −ln 4. Vậy t = 5 ln 4 ≈6,93 đơn vị thời gian.",
@@ -5334,7 +6734,15 @@ const examples = {
       ],
       "sourceBlockId": "11.8-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.8",
+      "sectionId": "11.8-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.9": [
@@ -5343,14 +6751,13 @@ const examples = {
       "title": "Cho y′ = 0,2y, y(0) = 100.",
       "prompt": "Cho y′ = 0,2y, y(0) = 100. Tìm y(5).",
       "analysis": [
-        "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số.",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Theo mô hình, y(t) = 100e⁰˒²ᵗ. Vì thế y(5) = 100e ≈271,83. Kiểm tra: đạo hàm của 100e⁰˒²ᵗ là 20e⁰˒²ᵗ = 0,2y(t).",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 75 của PDF nguồn."
         }
       ],
       "answer": "Theo mô hình, y(t) = 100e⁰˒²ᵗ. Vì thế y(5) = 100e ≈271,83. Kiểm tra: đạo hàm của 100e⁰˒²ᵗ là 20e⁰˒²ᵗ = 0,2y(t).",
@@ -5361,7 +6768,15 @@ const examples = {
       ],
       "sourceBlockId": "11.9-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.9",
+      "sectionId": "11.9-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.10": [
@@ -5370,14 +6785,13 @@ const examples = {
       "title": "Cho N(t) = N₀eᵏᵗ, N(0) = 200, N(3) = 400.",
       "prompt": "Cho N(t) = N₀eᵏᵗ, N(0) = 200, N(3) = 400. Tìm k và N(6).",
       "analysis": [
-        "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁).",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁)."
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N₀ = 200. 400 = 200e³ᵏ ⇒k = ln 2/3. Sau 6 đơn vị thời gian, N(6) = 200e²lⁿ² = 800.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 75 của PDF nguồn."
         }
       ],
       "answer": "N₀ = 200. 400 = 200e³ᵏ ⇒k = ln 2/3. Sau 6 đơn vị thời gian, N(6) = 200e²lⁿ² = 800.",
@@ -5388,7 +6802,15 @@ const examples = {
       ],
       "sourceBlockId": "11.10-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.10",
+      "sectionId": "11.10-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ],
   "11.11": [
@@ -5397,14 +6819,13 @@ const examples = {
       "title": "Gửi 100 triệu, lãi kép 6%/năm, nhập lãi hàng năm.",
       "prompt": "Gửi 100 triệu, lãi kép 6%/năm, nhập lãi hàng năm. Sau ít nhất bao nhiêu năm nguyên được không dưới 150 triệu?",
       "analysis": [
-        "Lập phương trình nếu hỏi đúng bằng",
-        "Đối chiếu điều kiện trước khi kết luận."
+        "Lập phương trình nếu hỏi đúng bằng"
       ],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "20 + 80e⁻⁰˒¹ᵗ ≤40 ⇔e⁻⁰˒¹ᵗ ≤1/4. Lấy ln: −0,1t ≤−ln 4, nên t ≥10 ln 4 ≈13,86.",
-          "text": "Nội dung được chuyển đổi từ phần lời giải của đúng ví dụ trong PDF nguồn."
+          "text": "Chép từ lời giải Ví dụ 1, trang 77 của PDF nguồn."
         }
       ],
       "answer": "20 + 80e⁻⁰˒¹ᵗ ≤40 ⇔e⁻⁰˒¹ᵗ ≤1/4. Lấy ln: −0,1t ≤−ln 4, nên t ≥10 ln 4 ≈13,86.",
@@ -5415,7 +6836,15 @@ const examples = {
       ],
       "sourceBlockId": "11.11-worked-example-1",
       "origin": "verified-source",
-      "verification": "source-transcribed"
+      "verification": "source-transcribed",
+      "topicId": "CD11",
+      "lessonId": "11.11",
+      "sectionId": "11.11-example-1",
+      "contentType": "markdown-latex",
+      "sourcePdf": "cd08-cd11-exponential-logarithm",
+      "conversionStatus": "imported",
+      "reviewStatus": "needs-review",
+      "contentVersion": "foundation-import-v2"
     }
   ]
 };
@@ -5425,13 +6854,23 @@ export const foundationImportAudit = Object.freeze({
     "fileName": "Hàm số-Đạo Hàm-CD01-CD07.pdf",
     "lessonCount": 71,
     "knowledgeCount": 71,
-    "workedExampleCount": 59
+    "workedExampleCount": 59,
+    "sourcePromptCount": 710,
+    "sourceAnswerCount": 710,
+    "textCompleteCandidateCount": 556,
+    "diagramDependentCount": 154,
+    "pendingReviewExampleCount": 497
   },
   "cd08-cd11-exponential-logarithm": {
     "fileName": "Mũ-Logarit CD08-CD11.pdf",
     "lessonCount": 36,
     "knowledgeCount": 36,
-    "workedExampleCount": 36
+    "workedExampleCount": 36,
+    "sourcePromptCount": 360,
+    "sourceAnswerCount": 360,
+    "textCompleteCandidateCount": 344,
+    "diagramDependentCount": 16,
+    "pendingReviewExampleCount": 308
   }
 });
 export const foundationKnowledgeContent = Object.freeze(knowledge);

@@ -55,6 +55,9 @@ test("section availability and source coverage remain independent", () => {
   assert.equal(foundation.sections.knowledge.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(foundation.sections.examples.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(foundation.sections.practice.status, CONTENT_STATUS.COMING_SOON);
+  assert.equal(foundation.sections.knowledge.verification, "needs-review");
+  assert.equal(foundation.sections.examples.verification, "needs-review");
+  assert.equal(foundation.verificationStatus, "needs-review");
   assert.equal(unavailable.sections.knowledge.status, CONTENT_STATUS.COMING_SOON);
 });
 
@@ -80,7 +83,7 @@ test("imported slides have stable unique IDs and verified source references", ()
           ids.push(unit.id);
           assert.ok(unit.source.documentId);
           assert.ok(unit.source.pages.length > 0);
-          assert.ok(["verified", "source-transcribed"].includes(unit.verification));
+          assert.ok(["verified", "source-transcribed", "needs-review"].includes(unit.verification));
         }
       }
     }

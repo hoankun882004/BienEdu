@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
@@ -11,6 +11,7 @@ import { approvedMathContent } from "../assets/js/data/approved-math-content.js"
 import { documentSources } from "../assets/js/data/document-mappings.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
+import { foundationImportAudit } from "../assets/js/data/foundation-lessons.generated.js";
 import { knowledgePdfMappings } from "../assets/js/data/knowledge-pdf-mappings.js";
 import {
   buildActivePracticeSet,
@@ -34,6 +35,11 @@ const v14AuditPath = join(auditDirectory, "v14-source-fidelity-audit.md");
 const v15ExerciseCoverageJsonPath = join(auditDirectory, "v15-exercise-coverage.json");
 const v15ExerciseCoverageMarkdownPath = join(auditDirectory, "v15-exercise-coverage.md");
 const pdfMappingReviewPath = join(auditDirectory, "pdf-mapping-review.md");
+const contentDocsDirectory = join(projectRoot, "docs", "content");
+const contentManifestPath = join(contentDocsDirectory, "content-manifest.json");
+const pdfInventoryReportPath = join(contentDocsDirectory, "pdf-inventory.md");
+const topicCoverageReportPath = join(contentDocsDirectory, "topic-coverage-report.md");
+const migrationReportPath = join(contentDocsDirectory, "content-migration-report.md");
 const sourceDirectory = join(projectRoot, "39 chuyên đề");
 const command = process.argv[2] ?? "validate";
 
@@ -394,7 +400,7 @@ function buildSourceManifest() {
           destinationSlideId: unit.id,
           sourceDocumentId: unit.source.documentId,
           sourcePages: unit.source.pages,
-          status: "imported-and-verified"
+          status: unit.verification === "verified" ? "imported-and-verified" : "imported-needs-review"
         };
         const blocks = [{
           ...common,
@@ -435,7 +441,7 @@ function buildSourceManifest() {
     sourcePages: example.sourcePages,
     destinationSection: "examples",
     destinationSlideId: example.id,
-    status: "imported-and-verified"
+    status: hasImmutableSourceApproval(code) ? "imported-and-verified" : "imported-needs-review"
   })));
   const selfPractice = Object.entries(calculusSourcePractice).flatMap(([code, exercises]) => exercises.map((exercise) => ({
     id: exercise.sourceBlockId,
@@ -467,7 +473,7 @@ function buildSourceManifest() {
         sourcePages: example.sourcePages,
         destinationSection: "examples",
         destinationSlideId,
-        status: "imported-and-verified"
+        status: hasImmutableSourceApproval(subtopic.code) ? "imported-and-verified" : "imported-needs-review"
       }})
     )
   );
@@ -486,7 +492,7 @@ function buildSourceManifest() {
           sourcePages: example.sourcePages,
           destinationSection: "examples",
           destinationSlideId,
-          status: "imported-from-verified-source"
+          status: example.reviewStatus === "verified" ? "imported-and-verified" : "imported-needs-review"
         };
       })
     ));
@@ -697,10 +703,257 @@ function validateSourceManifest(manifest) {
   return errors;
 }
 
+function documentSectionProfile(documentId) {
+  const profiles = {
+    "cd01-cd07-functions": {
+      knowledge: "Trang 4–65: khối Kiến thức cần nhớ cấp chuyên đề và Cách làm theo từng dạng.",
+      examples: "Trang 4–65: 710 đề Ví dụ; trang 66–98: 710 lời giải tương ứng.",
+      practice: "Không có ngân hàng bài tập độc lập; các mục được ghi rõ là Ví dụ trong nguồn.",
+      conversion: "Text PDF; PyMuPDF extraction khả dụng. Công thức xếp chồng và hình/đồ thị cần review thủ công."
+    },
+    "cd08-cd11-exponential-logarithm": {
+      knowledge: "Trang 9–54: khối Kiến thức cần nhớ cấp chuyên đề và Cách làm theo từng dạng.",
+      examples: "Trang 9–54: 360 đề Ví dụ; trang 60–78: 360 lời giải tương ứng.",
+      practice: "Không có ngân hàng bài tập độc lập; các mục được ghi rõ là Ví dụ trong nguồn.",
+      conversion: "Text PDF; PyMuPDF extraction khả dụng. Đồ thị và ký hiệu mũ/lôgarit cần review thủ công."
+    },
+    "cd12-cd14-calculus": {
+      knowledge: "Trang 3–48: Kiến thức trọng tâm và phương pháp giải theo CD12–CD14.",
+      examples: "Trang 3–48: 52 ví dụ nguồn đã được lập block provenance.",
+      practice: "260 bài tự luyện và 260 đáp số đã được kiểm kê; chỉ 10 bài 12.1 đang đủ điều kiện phát hành.",
+      conversion: "Text PDF; Markdown/LaTeX có pipeline review bất biến. Trang 49 là bảng tổng hợp được loại trừ có lý do."
+    },
+    "cd20-cd21-theory": {
+      knowledge: "Trang 4–18: kiến thức CD20 và CD21.",
+      examples: "Trang 4–18: ví dụ theo từng mục CD20–CD21.",
+      practice: "PDF không chứa bài học CD22/CD23 dù tên file có nhắc đến; bài tập runtime CD20–CD21 là ngân hàng sinh đã kiểm chứng độc lập.",
+      conversion: "Text PDF; Markdown/LaTeX và asset hình đã được mapping."
+    }
+  };
+  return profiles[documentId] ?? {
+    knowledge: "Chưa phân loại.", examples: "Chưa phân loại.", practice: "Chưa phân loại.", conversion: "Cần review thủ công."
+  };
+}
+
+function buildContentMigrationManifest(inventory, traceability) {
+  const topics = curriculumTopics.map((topic) => {
+    const record = learningContentRegistry.topics[topic.id];
+    const subtopics = Object.values(record.subtopics);
+    const document = documentSources.find((item) => Object.hasOwn(item.topics, topic.id)) ?? null;
+    const traceRows = traceability.subtopics.filter((item) => item.topicId === topic.id);
+    const knowledgeUnits = subtopics.reduce((total, item) => total + (item.sections.knowledge.count ?? 0), 0);
+    const exampleUnits = subtopics.reduce((total, item) => total + (item.sections.examples.count ?? 0), 0);
+    const practiceUnits = subtopics.reduce((total, item) => total + (item.sections.practice.count ?? 0), 0);
+    const verifiedSubtopics = traceRows.filter((item) => item.verification === "verified").length;
+    return {
+      topicId: topic.id,
+      title: topic.title,
+      declaredSubtopics: topic.exerciseTypes.length,
+      source: document ? {
+        documentId: document.id,
+        filePath: document.filePath,
+        pages: [document.topics[topic.id].pageStart, document.topics[topic.id].pageEnd],
+        sha256: document.sourceSha256
+      } : null,
+      sections: {
+        knowledge: { units: knowledgeUnits, status: knowledgeUnits ? "imported" : "not-imported" },
+        examples: { units: exampleUnits, status: exampleUnits ? "imported" : "not-imported" },
+        practice: { units: practiceUnits, status: practiceUnits ? "published" : "not-published" }
+      },
+      stages: {
+        converted: knowledgeUnits || exampleUnits ? "converted" : "not-converted",
+        imported: knowledgeUnits || exampleUnits ? "imported" : "not-imported",
+        validated: traceRows.length && verifiedSubtopics === traceRows.length
+          ? "validated"
+          : verifiedSubtopics ? "partially-validated" : document ? "needs-review" : "not-applicable",
+        published: knowledgeUnits || exampleUnits || practiceUnits ? "partially-published" : "not-published"
+      },
+      review: {
+        mappedSubtopics: traceRows.length,
+        verifiedSubtopics,
+        needsReviewSubtopics: traceRows.length - verifiedSubtopics,
+        runtimeVerification: record.verificationStatus
+      },
+      runtimeStatus: record.status,
+      sourceCoverage: record.sourceCoverage
+    };
+  });
+  return {
+    schemaVersion: "bienedu.content-migration.v1",
+    generatedAt: new Date().toISOString(),
+    policy: {
+      sourceOfTruth: "PDF source + immutable review evidence",
+      studentFormat: "Markdown + LaTeX",
+      pdfViewer: false,
+      statuses: ["converted", "imported", "validated", "published"]
+    },
+    curriculum: { topics: curriculumMeta.topicCount, subtopics: curriculumMeta.exerciseTypeCount },
+    documents: inventory.documents.map((item) => {
+      const registered = documentSources.find((source) => source.sourceSha256 === item.sha256) ?? null;
+      return {
+        relativePath: item.relativePath,
+        fileName: item.fileName,
+        pageCount: item.pageCount,
+        size: item.size,
+        sha256: item.sha256,
+        textLayer: item.extraction === "ok" && item.textCharacterCount > 0 ? "extractable" : "unavailable",
+        textCharacterCount: item.textCharacterCount,
+        registeredDocumentId: registered?.id ?? null,
+        topics: registered ? Object.keys(registered.topics) : [],
+        sectionProfile: registered ? documentSectionProfile(registered.id) : null,
+        conversionStatus: registered ? "registered" : "manual-review-required"
+      };
+    }),
+    foundationImportAudit,
+    topics
+  };
+}
+
+function pdfInventoryReport(manifest) {
+  const lines = [
+    "# PDF inventory",
+    "",
+    `Generated: ${manifest.generatedAt}`,
+    "",
+    "Inventory chỉ quét thư mục tài liệu của dự án; các bản sao trong `assets/documents` được kiểm tra bằng hash nhưng không tính là tài liệu nguồn mới.",
+    "",
+    "| PDF nguồn | Trang | Text layer | Chuyên đề mapping | Trạng thái chuyển đổi |",
+    "| --- | ---: | --- | --- | --- |",
+    ...manifest.documents.map((document) => `| ${document.relativePath} | ${document.pageCount ?? "?"} | ${document.textLayer} (${document.textCharacterCount} ký tự) | ${document.topics.join(", ") || "Chưa mapping"} | ${document.conversionStatus} |`),
+    "",
+    "## Phạm vi section",
+    ""
+  ];
+  for (const document of manifest.documents) {
+    lines.push(`### ${document.fileName}`, "");
+    if (!document.sectionProfile) {
+      lines.push("- Chưa có profile; cần review thủ công.", "");
+      continue;
+    }
+    lines.push(
+      `- Kiến thức: ${document.sectionProfile.knowledge}`,
+      `- Ví dụ: ${document.sectionProfile.examples}`,
+      `- Bài tập: ${document.sectionProfile.practice}`,
+      `- Khả năng chuyển đổi: ${document.sectionProfile.conversion}`,
+      ""
+    );
+  }
+  return `${lines.join("\n")}\n`;
+}
+
+function topicCoverageMigrationReport(manifest) {
+  const lines = [
+    "# Topic coverage report",
+    "",
+    `Generated: ${manifest.generatedAt}`,
+    "",
+    "`Imported` không đồng nghĩa `Validated`. Cột kiểm duyệt chỉ dùng trạng thái validated khi có bằng chứng review bất biến.",
+    "",
+    "| CD | PDF nguồn | Kiến thức | Ví dụ | Bài tập | Kiểm duyệt | Published |",
+    "| --- | --- | ---: | ---: | ---: | --- | --- |",
+    ...manifest.topics.map((topic) => `| ${topic.topicId} | ${topic.source?.documentId ?? "Thiếu PDF"} | ${topic.sections.knowledge.units} | ${topic.sections.examples.units} | ${topic.sections.practice.units} | ${topic.stages.validated} (${topic.review.verifiedSubtopics}/${topic.review.mappedSubtopics}) | ${topic.stages.published} |`)
+  ];
+  return `${lines.join("\n")}\n`;
+}
+
+function contentMigrationReport(manifest, validation) {
+  const foundation = Object.values(manifest.foundationImportAudit);
+  const promptCount = foundation.reduce((total, row) => total + row.sourcePromptCount, 0);
+  const answerCount = foundation.reduce((total, row) => total + row.sourceAnswerCount, 0);
+  const textCandidates = foundation.reduce((total, row) => total + row.textCompleteCandidateCount, 0);
+  const diagramDependent = foundation.reduce((total, row) => total + row.diagramDependentCount, 0);
+  const publishedFoundationExamples = foundation.reduce((total, row) => total + row.workedExampleCount, 0);
+  return `# Content migration report
+
+Generated: ${manifest.generatedAt}
+
+## 1. Root Cause Analysis — CD01
+
+- PDF CD01–CD07 trang 4 có khối **Kiến thức cần nhớ** trước heading **Dạng 1.1**.
+- Importer cũ chia section bắt đầu từ heading dạng bài, vì vậy toàn bộ khối kiến thức cấp chuyên đề đứng trước 1.1 không đi vào lesson data.
+- Hàm **make_lesson** chỉ lấy câu sau nhãn **Cách làm** làm **reading.lead**; đây là lý do 1.1 chỉ hiển thị “Đạo hàm từng hạng; hằng số mất đi.”
+- Renderer và content ID không làm mất dữ liệu. **createLessonSlides** nhận một reading không có trường **pages** nên tạo đúng một knowledge slide; sidebar vì thế hiển thị 1/1 bài đọc.
+- Bài tập CD01 trống vì nguồn phân loại 10 mục mỗi dạng là **Ví dụ**, không phải ngân hàng bài tập độc lập, và runtime không có câu hỏi CD01 đã kiểm chứng. Hệ thống fail-closed thay vì tạo đáp án giả.
+- Không có fallback từ tiêu đề registry. Nội dung ngắn là dữ liệu thật nhưng bị dùng sai vai trò như toàn bộ bài giảng.
+
+### Sửa đã triển khai
+
+- Khôi phục khối Kiến thức cần nhớ CD01 từ trang 4 thành Markdown + LaTeX có source page.
+- 1.1 hiện có hai bài đọc: tổng quan kiến thức nguồn và phương pháp riêng của dạng 1.1.
+- Mở rộng boundary mapping 1.1 từ tọa độ heading Kiến thức cần nhớ, không chỉ từ heading Dạng 1.1.
+- Xóa ghi chú fallback chung khi PDF không có lưu ý cụ thể.
+- Nội dung foundation được gắn **conversionStatus=imported** và **reviewStatus=needs-review**; không tự nâng thành verified.
+
+## 2. CD12 làm chuẩn tham chiếu
+
+- Nguồn: **cd12-cd14-calculus**, 49 trang.
+- Kiến trúc tốt được tái sử dụng: registry duy nhất, source page mapping, structured reading, KaTeX strict parsing, example/practice tách riêng, stable progress ID và immutable approval record.
+- CD12 không được xem là đúng tuyệt đối: hiện chỉ 12.1 có đủ reviewer, source hash, formula check và boundary check. Các mục còn lại tiếp tục ở trạng thái needs-review.
+
+## 3. PDF inventory
+
+- ${manifest.documents.length} PDF nguồn, ${manifest.documents.reduce((total, row) => total + (row.pageCount ?? 0), 0)} trang.
+- Chi tiết: [pdf-inventory.md](./pdf-inventory.md).
+
+## 4. Topic coverage
+
+- Registry: ${manifest.curriculum.topics} chuyên đề / ${manifest.curriculum.subtopics} dạng bài.
+- Có PDF và nội dung imported: ${manifest.topics.filter((topic) => topic.source && topic.stages.imported === "imported").length} chuyên đề.
+- Chưa có PDF mapping: ${manifest.topics.filter((topic) => !topic.source).length} chuyên đề.
+- Ma trận đầy đủ: [topic-coverage-report.md](./topic-coverage-report.md).
+
+## 5. Foundation example inventory
+
+- Đề nguồn: ${promptCount}; lời giải nguồn: ${answerCount}.
+- Có thể chuyển đổi text sau bộ lọc hình: ${textCandidates}.
+- Phụ thuộc đồ thị/hình/bảng: ${diagramDependent}; chưa publish vì asset chưa được gắn đúng vị trí.
+- Đang publish chọn mẫu có provenance: ${publishedFoundationExamples}; còn ${textCandidates - publishedFoundationExamples} candidate trong hàng đợi review, không tự động phát hành hàng loạt.
+
+## 6. Implementation Summary
+
+- Pipeline hiện kiểm kê PDF theo hash, text layer, heading, page count và mapping registry.
+- Manifest dùng lại được: [content-manifest.json](./content-manifest.json).
+- Knowledge/Example/Practice dùng cùng content registry; PDF viewer không được đưa trở lại.
+- Progress ID cũ được giữ nguyên; bài đọc mới không tự đánh dấu đã xem.
+- Batch này sửa trực tiếp \`scripts/import-foundation-documents.py\`, dữ liệu sinh \`assets/js/data/foundation-lessons.generated.js\`, source boundary \`knowledge-pdf-mappings.js\`, content registry, Markdown/KaTeX renderer và CSS dùng chung.
+- Kiến trúc hiện tại lưu bài đọc có cấu trúc trong JavaScript rồi render thành Markdown + LaTeX; không tạo file Markdown bài học rời chỉ để nhân đôi một nguồn dữ liệu đang hoạt động.
+- CD01 là chuyên đề được sửa nội dung trong Batch 1. CD02–CD14 và CD20–CD21 được audit/mapping lại trạng thái; không ghi đè nội dung đã có bằng extraction chưa duyệt.
+- Test mới khóa nguyên nhân CD01, inventory 39 chuyên đề, số lượng candidate nguồn, trạng thái review và khả năng parse toàn bộ công thức nhập khẩu.
+
+## 7. Validation status
+
+- Registry errors: ${validation.errors.length}.
+- Source warnings: ${validation.warnings.length}.
+- Checkpoint 2026-10-28: source check đạt trên 39 JavaScript / 5 HTML; unit và data test đạt 101/101.
+- KaTeX strict parsing đạt 547/547 formula slots; kiểm tra trình duyệt đạt 316 Knowledge routes và 378 Example routes, không có lỗi công thức trên desktop.
+- Playwright Learning Workspace đạt 10 representative routes trên 8 viewport, gồm đủ 1920×1080, 1366×768, 768×1024 và 390×844.
+- 10 biểu thức dài cần cuộn ở cấp phương trình trên mobile; không có page-level overflow hay công thức bị cắt. Đây là fallback responsive có chủ đích.
+- Project tĩnh không cấu hình build/typecheck riêng; source check và Node syntax check đều đạt. Test kỹ thuật không thay cho kiểm duyệt toán học.
+- Screenshot kiểm tra CD01: \`.audit/content-migration-cd01-1-1-1366x768.png\`, \`.audit/content-migration-cd01-1-1-390x844.png\` và hai ảnh page 2 tương ứng.
+- Regression \`npm.cmd run verify\` đạt toàn bộ: V15 Learning Workspace (7 viewport), V16/V16.1 onboarding và đăng ký, homepage scroll và polish pass (10 viewport); không có runtime error hoặc page-level horizontal overflow.
+
+## 8. Chưa hoàn thành
+
+- CD02–CD11 còn các khối Kiến thức cần nhớ cấp chuyên đề cần chuyển đổi có review như CD01.
+- ${textCandidates - publishedFoundationExamples} ví dụ text-complete chưa được review để publish; ${diagramDependent} ví dụ cần asset hình/đồ thị.
+- CD15–CD19 và CD22–CD39 chưa có PDF nguồn được mapping trong workspace.
+- 9 đáp số CD12–CD14 có xung đột nguồn đã biết vẫn giữ needs-review và không auto-grade.
+- Không có lỗi kỹ thuật nghiêm trọng còn mở tại checkpoint; các mục trên là thiếu nguồn hoặc thiếu bằng chứng kiểm duyệt, không được che bằng placeholder.
+
+## 9. Completion criteria
+
+Mỗi chuyên đề tiếp tục được theo dõi riêng qua bốn giai đoạn: **Converted → Imported → Validated → Published**. Không chuyên đề nào được báo Done chỉ vì extraction hoặc test kỹ thuật thành công.
+`;
+}
+
 function coverageReport(inventory, validation) {
   const summary = getAvailabilitySummary();
   const mappedCodes = Object.keys(knowledgePdfMappings);
   const v14VerifiedCodes = mappedCodes.filter(hasImmutableSourceApproval);
+  const foundationAudit = Object.values(foundationImportAudit);
+  const foundationPublishedExamples = foundationAudit.reduce((total, row) => total + row.workedExampleCount, 0);
+  const foundationTextCandidates = foundationAudit.reduce((total, row) => total + row.textCompleteCandidateCount, 0);
+  const foundationVisualExamples = foundationAudit.reduce((total, row) => total + row.diagramDependentCount, 0);
   const lines = [
     "# BienEdu content coverage",
     "",
@@ -711,7 +964,7 @@ function coverageReport(inventory, validation) {
     `- Curriculum: ${curriculumMeta.topicCount} topics / ${curriculumMeta.exerciseTypeCount} subtopics.`,
     `- Source PDFs discovered: ${inventory.documents.length}.`,
     `- Topic availability: ${summary.topics.available} available, ${summary.topics.partial} partial, ${summary.topics["coming-soon"]} coming soon, ${summary.topics["needs-review"]} needs review.`,
-    "- CD01-CD11: all 107 catalog Knowledge lessons are published from the two newly registered source PDFs. 95 text-complete worked examples are published; 12 diagram-dependent examples are intentionally withheld rather than shown without their figures.",
+    `- CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. ${foundationPublishedExamples}/${foundationTextCandidates} text-complete worked-example candidates are published as source-transcribed samples; ${foundationTextCandidates - foundationPublishedExamples} remain in review. ${foundationVisualExamples} examples depend on diagrams/graphs and are withheld until their assets are mapped.`,
     "- CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.",
     "- Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.",
     "- CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.",
@@ -772,6 +1025,7 @@ if (command === "scan") {
   const validation = validateRegistry(inventory);
   const sourceManifest = buildSourceManifest();
   const v14Traceability = buildV14Traceability();
+  const contentMigrationManifest = buildContentMigrationManifest(inventory, v14Traceability);
   const v15ExerciseCoverage = getExerciseCoverageRows();
   validation.errors.push(...validateSourceManifest(sourceManifest));
   validation.errors.push(...validateV14Traceability(v14Traceability));
@@ -801,12 +1055,18 @@ if (command === "scan") {
   writeFileSync(v15ExerciseCoverageMarkdownPath, v15ExerciseCoverageReport(v15ExerciseCoverage), "utf8");
   writeFileSync(coveragePath, coverageReport(inventory, validation), "utf8");
   writeFileSync(pdfMappingReviewPath, pdfMappingReviewReport(), "utf8");
+  mkdirSync(contentDocsDirectory, { recursive: true });
+  writeJson(contentManifestPath, contentMigrationManifest);
+  writeFileSync(pdfInventoryReportPath, pdfInventoryReport(contentMigrationManifest), "utf8");
+  writeFileSync(topicCoverageReportPath, topicCoverageMigrationReport(contentMigrationManifest), "utf8");
+  writeFileSync(migrationReportPath, contentMigrationReport(contentMigrationManifest, validation), "utf8");
   console.log(`Coverage report: ${relative(projectRoot, coveragePath)}`);
   console.log(`Source manifest: ${relative(projectRoot, sourceManifestPath)}`);
   console.log(`V14 traceability: ${relative(projectRoot, v14TraceabilityPath)}`);
   console.log(`V14 source-fidelity audit: ${relative(projectRoot, v14AuditPath)}`);
   console.log(`V15 exercise coverage: ${relative(projectRoot, v15ExerciseCoverageMarkdownPath)}`);
   console.log(`PDF mapping review: ${relative(projectRoot, pdfMappingReviewPath)}`);
+  console.log(`Content migration docs: ${relative(projectRoot, contentDocsDirectory)}`);
   for (const warning of validation.warnings) console.warn(`WARNING: ${warning}`);
   if (validation.errors.length) {
     for (const error of validation.errors) console.error(`ERROR: ${error}`);

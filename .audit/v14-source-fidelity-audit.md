@@ -1,11 +1,11 @@
 # BIENEDU V14 — Kiểm toán độ trung thành nguồn
 
-Generated: 2026-10-27T17:48:49.998Z
+Generated: 2026-10-27T18:20:16.824Z
 
 ## Kết luận kiểm toán
 
 - Đã kiểm kê 243 trang của 4 PDF nguồn bằng text/geometry extraction và kiểm tra hiển thị chọn mẫu.
-- Đã lập traceability cho 158 bài có nguồn, 828 block Knowledge và 222 biểu thức công thức đang render.
+- Đã lập traceability cho 158 bài có nguồn, 768 block Knowledge và 243 biểu thức công thức đang render.
 - Chỉ 3/158 bài hiện có immutable review record đủ reviewer, source hash, formula check và boundary check: 12.1, 20.1, 20.2.
 - 155 bài còn lại không được V14 tự động nâng thành verified: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4.10, 4.11, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11, 6.12, 6.13, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 11.1, 11.2, 11.3, 11.4, 11.5, 11.6, 11.7, 11.8, 11.9, 11.10, 11.11, 12.2, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8, 12.9, 13.1, 13.2, 13.3, 13.4, 13.5, 13.6, 13.7, 13.8, 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7, 14.8, 14.9, 20.3, 20.4, 20.5, 20.6, 20.7, 20.8, 20.9, 20.10, 20.11, 20.12, 20.13, 20.14, 20.15, 20.16, 20.17, 21.1, 21.2, 21.3, 21.4, 21.5, 21.6, 21.7, 21.8.
 - Vì còn hàng đợi review, báo cáo này không tuyên bố migration V14 đã hoàn tất toàn bộ.
@@ -32,7 +32,7 @@ Generated: 2026-10-27T17:48:49.998Z
 
 | Chủ đề | Bài có mapping | Verified V14 | Needs review | Biểu thức runtime |
 | --- | ---: | ---: | ---: | ---: |
-| CD01 | 10 | 0 | 10 | 2 |
+| CD01 | 10 | 0 | 10 | 23 |
 | CD02 | 9 | 0 | 9 | 0 |
 | CD03 | 10 | 0 | 10 | 4 |
 | CD04 | 11 | 0 | 11 | 0 |
@@ -51,7 +51,7 @@ Generated: 2026-10-27T17:48:49.998Z
 
 ## 4. Công thức đối chiếu
 
-- Inventory runtime: 222 biểu thức.
+- Inventory runtime: 243 biểu thức.
 - Có immutable source approval: 26 biểu thức thuộc 12.1, 20.1, 20.2.
 - 12.1 đã khôi phục bảng nguyên hàm, hàng $\int 1\,dx=x+C$, dạng $1/\cos^2x$, $1/\sin^2x$ và các điều kiện $n\ne-1$, $a>0$, $a\ne1$.
 - Các biểu thức thuộc bài chưa approved vẫn ở trạng thái needs-review dù KaTeX có thể parse thành công.

@@ -1,0 +1,1593 @@
+{
+  "schemaVersion": "bienedu.content-migration.v1",
+  "generatedAt": "2026-10-27T18:20:16.826Z",
+  "policy": {
+    "sourceOfTruth": "PDF source + immutable review evidence",
+    "studentFormat": "Markdown + LaTeX",
+    "pdfViewer": false,
+    "statuses": [
+      "converted",
+      "imported",
+      "validated",
+      "published"
+    ]
+  },
+  "curriculum": {
+    "topics": 39,
+    "subtopics": 347
+  },
+  "documents": [
+    {
+      "relativePath": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "fileName": "C12-CD13-CD14.pdf",
+      "pageCount": 49,
+      "size": 220310,
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "textLayer": "extractable",
+      "textCharacterCount": 82995,
+      "registeredDocumentId": "cd12-cd14-calculus",
+      "topics": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "sectionProfile": {
+        "knowledge": "Trang 3–48: Kiến thức trọng tâm và phương pháp giải theo CD12–CD14.",
+        "examples": "Trang 3–48: 52 ví dụ nguồn đã được lập block provenance.",
+        "practice": "260 bài tự luyện và 260 đáp số đã được kiểm kê; chỉ 10 bài 12.1 đang đủ điều kiện phát hành.",
+        "conversion": "Text PDF; Markdown/LaTeX có pipeline review bất biến. Trang 49 là bảng tổng hợp được loại trừ có lý do."
+      },
+      "conversionStatus": "registered"
+    },
+    {
+      "relativePath": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "fileName": "Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "pageCount": 98,
+      "size": 961062,
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "textLayer": "extractable",
+      "textCharacterCount": 225788,
+      "registeredDocumentId": "cd01-cd07-functions",
+      "topics": [
+        "CD01",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD05",
+        "CD06",
+        "CD07"
+      ],
+      "sectionProfile": {
+        "knowledge": "Trang 4–65: khối Kiến thức cần nhớ cấp chuyên đề và Cách làm theo từng dạng.",
+        "examples": "Trang 4–65: 710 đề Ví dụ; trang 66–98: 710 lời giải tương ứng.",
+        "practice": "Không có ngân hàng bài tập độc lập; các mục được ghi rõ là Ví dụ trong nguồn.",
+        "conversion": "Text PDF; PyMuPDF extraction khả dụng. Công thức xếp chồng và hình/đồ thị cần review thủ công."
+      },
+      "conversionStatus": "registered"
+    },
+    {
+      "relativePath": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "fileName": "Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "pageCount": 18,
+      "size": 2925340,
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "textLayer": "extractable",
+      "textCharacterCount": 29660,
+      "registeredDocumentId": "cd20-cd21-theory",
+      "topics": [
+        "CD20",
+        "CD21"
+      ],
+      "sectionProfile": {
+        "knowledge": "Trang 4–18: kiến thức CD20 và CD21.",
+        "examples": "Trang 4–18: ví dụ theo từng mục CD20–CD21.",
+        "practice": "PDF không chứa bài học CD22/CD23 dù tên file có nhắc đến; bài tập runtime CD20–CD21 là ngân hàng sinh đã kiểm chứng độc lập.",
+        "conversion": "Text PDF; Markdown/LaTeX và asset hình đã được mapping."
+      },
+      "conversionStatus": "registered"
+    },
+    {
+      "relativePath": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "fileName": "Mũ-Logarit CD08-CD11.pdf",
+      "pageCount": 78,
+      "size": 391957,
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "textLayer": "extractable",
+      "textCharacterCount": 107985,
+      "registeredDocumentId": "cd08-cd11-exponential-logarithm",
+      "topics": [
+        "CD08",
+        "CD09",
+        "CD10",
+        "CD11"
+      ],
+      "sectionProfile": {
+        "knowledge": "Trang 9–54: khối Kiến thức cần nhớ cấp chuyên đề và Cách làm theo từng dạng.",
+        "examples": "Trang 9–54: 360 đề Ví dụ; trang 60–78: 360 lời giải tương ứng.",
+        "practice": "Không có ngân hàng bài tập độc lập; các mục được ghi rõ là Ví dụ trong nguồn.",
+        "conversion": "Text PDF; PyMuPDF extraction khả dụng. Đồ thị và ký hiệu mũ/lôgarit cần review thủ công."
+      },
+      "conversionStatus": "registered"
+    }
+  ],
+  "foundationImportAudit": {
+    "cd01-cd07-functions": {
+      "fileName": "Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "lessonCount": 71,
+      "knowledgeCount": 71,
+      "workedExampleCount": 59,
+      "sourcePromptCount": 710,
+      "sourceAnswerCount": 710,
+      "textCompleteCandidateCount": 556,
+      "diagramDependentCount": 154,
+      "pendingReviewExampleCount": 497
+    },
+    "cd08-cd11-exponential-logarithm": {
+      "fileName": "Mũ-Logarit CD08-CD11.pdf",
+      "lessonCount": 36,
+      "knowledgeCount": 36,
+      "workedExampleCount": 36,
+      "sourcePromptCount": 360,
+      "sourceAnswerCount": 360,
+      "textCompleteCandidateCount": 344,
+      "diagramDependentCount": 16,
+      "pendingReviewExampleCount": 308
+    }
+  },
+  "topics": [
+    {
+      "topicId": "CD01",
+      "title": "Đạo hàm và ứng dụng cơ bản",
+      "declaredSubtopics": 10,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          4,
+          8
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 11,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 10,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 10,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 10,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD02",
+      "title": "Tính đơn điệu của hàm số",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          9,
+          19
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 9,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 6,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 9,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "partial"
+    },
+    {
+      "topicId": "CD03",
+      "title": "Cực trị hàm số",
+      "declaredSubtopics": 10,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          20,
+          31
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 10,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 8,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 10,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 10,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "partial"
+    },
+    {
+      "topicId": "CD04",
+      "title": "GTLN – GTNN và bài toán tối ưu",
+      "declaredSubtopics": 11,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          32,
+          40
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 11,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 9,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 11,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 11,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "partial"
+    },
+    {
+      "topicId": "CD05",
+      "title": "Tiệm cận",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          41,
+          48
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 9,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 7,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 9,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "partial"
+    },
+    {
+      "topicId": "CD06",
+      "title": "Đồ thị – bảng biến thiên – tương giao",
+      "declaredSubtopics": 13,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          49,
+          61
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 13,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 10,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 13,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 13,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "partial"
+    },
+    {
+      "topicId": "CD07",
+      "title": "Tiếp tuyến",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd01-cd07-functions",
+        "filePath": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "pages": [
+          62,
+          65
+        ],
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 9,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 9,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 9,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD08",
+      "title": "Lũy thừa – hàm số mũ – logarit",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          9,
+          17
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 9,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 9,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 9,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD09",
+      "title": "Phương trình mũ – logarit",
+      "declaredSubtopics": 8,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          23,
+          30
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 8,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 8,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 8,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 8,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD10",
+      "title": "Bất phương trình mũ – logarit",
+      "declaredSubtopics": 8,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          34,
+          41
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 8,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 8,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 8,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 8,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD11",
+      "title": "Mô hình tăng trưởng – suy giảm",
+      "declaredSubtopics": 11,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          44,
+          54
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 11,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 11,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 11,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 11,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD12",
+      "title": "Nguyên hàm",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd12-cd14-calculus",
+        "filePath": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "pages": [
+          3,
+          18
+        ],
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 10,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 18,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 10,
+          "status": "published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "partially-validated",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 1,
+        "needsReviewSubtopics": 8,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD13",
+      "title": "Tích phân",
+      "declaredSubtopics": 8,
+      "source": {
+        "documentId": "cd12-cd14-calculus",
+        "filePath": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "pages": [
+          19,
+          33
+        ],
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 8,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 22,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 8,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 8,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD14",
+      "title": "Ứng dụng tích phân",
+      "declaredSubtopics": 9,
+      "source": {
+        "documentId": "cd12-cd14-calculus",
+        "filePath": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "pages": [
+          34,
+          49
+        ],
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 9,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 26,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 9,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 9,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD15",
+      "title": "Công thức lượng giác",
+      "declaredSubtopics": 8,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD16",
+      "title": "Phương trình lượng giác",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD17",
+      "title": "Dãy số",
+      "declaredSubtopics": 5,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD18",
+      "title": "Cấp số cộng",
+      "declaredSubtopics": 6,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD19",
+      "title": "Cấp số nhân",
+      "declaredSubtopics": 6,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD20",
+      "title": "Quy tắc đếm – tổ hợp nâng cao",
+      "declaredSubtopics": 17,
+      "source": {
+        "documentId": "cd20-cd21-theory",
+        "filePath": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "pages": [
+          4,
+          14
+        ],
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 17,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 20,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 51,
+          "status": "published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "partially-validated",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 17,
+        "verifiedSubtopics": 2,
+        "needsReviewSubtopics": 15,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "available",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD21",
+      "title": "Các quy tắc xác suất",
+      "declaredSubtopics": 8,
+      "source": {
+        "documentId": "cd20-cd21-theory",
+        "filePath": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "pages": [
+          15,
+          18
+        ],
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 8,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 8,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 24,
+          "status": "published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 8,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 8,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "available",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD22",
+      "title": "Xác suất có điều kiện",
+      "declaredSubtopics": 9,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD23",
+      "title": "Thống kê",
+      "declaredSubtopics": 12,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD24",
+      "title": "Quan hệ song song – vuông góc",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD25",
+      "title": "Góc trong không gian",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD26",
+      "title": "Khoảng cách",
+      "declaredSubtopics": 9,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD27",
+      "title": "Khối đa diện",
+      "declaredSubtopics": 8,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD28",
+      "title": "Vectơ trong không gian",
+      "declaredSubtopics": 8,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD29",
+      "title": "Tọa độ điểm trong Oxyz",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD30",
+      "title": "Mặt phẳng",
+      "declaredSubtopics": 8,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD31",
+      "title": "Đường thẳng trong Oxyz",
+      "declaredSubtopics": 9,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD32",
+      "title": "Mặt cầu Oxyz",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD33",
+      "title": "Oxyz thực tế",
+      "declaredSubtopics": 11,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD34",
+      "title": "Vectơ – tọa độ Oxy",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD35",
+      "title": "Đường thẳng – đường tròn Oxy",
+      "declaredSubtopics": 7,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD36",
+      "title": "Phương trình – hệ phương trình và mô hình đại số",
+      "declaredSubtopics": 9,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD37",
+      "title": "Bất phương trình hai ẩn – quy hoạch tuyến tính",
+      "declaredSubtopics": 10,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD38",
+      "title": "Hình khối tròn – vật thể thực tế",
+      "declaredSubtopics": 12,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    },
+    {
+      "topicId": "CD39",
+      "title": "Bài toán tổng hợp – mô hình hóa",
+      "declaredSubtopics": 10,
+      "source": null,
+      "sections": {
+        "knowledge": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "examples": {
+          "units": 0,
+          "status": "not-imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "not-converted",
+        "imported": "not-imported",
+        "validated": "not-applicable",
+        "published": "not-published"
+      },
+      "review": {
+        "mappedSubtopics": 0,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 0,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "coming-soon",
+      "sourceCoverage": "none"
+    }
+  ]
+}

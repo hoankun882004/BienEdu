@@ -308,12 +308,16 @@ function renderStructuredKnowledge(reading) {
 export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const record = slide.approvedMathContent ?? null;
   const reading = slide.reading ?? null;
+  const verification = reading?.reviewStatus === "verified" || record?.verification?.status === "verified"
+    ? "verified"
+    : "needs-review";
+  const verificationLabel = verification === "verified" ? "Đã kiểm duyệt" : "Chờ kiểm duyệt";
   const body = reading
     ? renderStructuredKnowledge(reading)
     : `<div class="math-markdown__body math-markdown__body--source">${renderMarkdownMath(approvedKnowledgeMarkdown(record))}</div>`;
   const layout = reading ? knowledgeLayout(reading) : "article";
-  return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="verified" aria-labelledby="lesson-content-title">
-    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p></header>
+  return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="${verification}" aria-labelledby="lesson-content-title">
+    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p><small>${verificationLabel}</small></header>
     <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">Kiến thức trọng tâm</h2><p>${escapeHtml(exercise.title)}</p></header>${body}</div>
   </article>`;
 }

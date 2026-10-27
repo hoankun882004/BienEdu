@@ -1,4 +1,5 @@
 import { curriculumMeta, curriculumTopics } from "./curriculum.js";
+import { approvedMathContent } from "./approved-math-content.js?v=13.1";
 import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./document-mappings.js?v=12.1";
 import { getExampleContent } from "./example-content.js?v=8.6";
@@ -14,6 +15,18 @@ export const CONTENT_STATUS = Object.freeze({
 
 const calculusTopics = new Set(["CD12", "CD13", "CD14"]);
 const PRACTICE_SEED = "PRACTICE_V15";
+
+function hasImmutableSourceApproval(code) {
+  const record = approvedMathContent[code];
+  return Boolean(
+    record?.verification?.status === "verified"
+    && record.verification.reviewer
+    && record.verification.reviewedAt
+    && record.verification.sourceHash === record.source?.sha256
+    && record.verification.formulasChecked === true
+    && record.verification.boundariesChecked === true
+  );
+}
 
 function sourceReference(document, pages = []) {
   if (!document) return null;
@@ -32,6 +45,9 @@ function createKnowledgeSection(code, document) {
     units: Object.freeze([])
   });
 
+  const verification = reading.reviewStatus === "verified" || hasImmutableSourceApproval(code)
+    ? "verified"
+    : "needs-review";
   const readingPages = reading.pages ?? [reading];
   const units = readingPages.map((page, index) => {
     return Object.freeze({
@@ -39,13 +55,13 @@ function createKnowledgeSection(code, document) {
       id: `${code}-knowledge-${index + 1}`,
       title: page?.title ?? reading?.title ?? null,
       source: sourceReference(document, page?.sourcePages ?? [document?.exercisePages?.[code]].filter(Boolean)),
-      verification: "verified"
+      verification
     });
   });
 
   return Object.freeze({
     status: CONTENT_STATUS.AVAILABLE,
-    verification: "verified",
+    verification,
     units: Object.freeze(units),
     count: units.length,
     origin: "verified-markdown"
@@ -64,11 +80,12 @@ function createExampleSection(code, topicId, document) {
     origin: example.origin ?? "verified-source",
     verification: example.verification ?? "verified"
   }));
+  const verification = units.every((unit) => unit.verification === "verified") ? "verified" : "needs-review";
   const sourceCoverage = "complete";
 
   return Object.freeze({
     status: CONTENT_STATUS.AVAILABLE,
-    verification: "verified",
+    verification,
     units: Object.freeze(units),
     count: units.length,
     origin: "verified-source",
@@ -143,8 +160,13 @@ function createSubtopicRecord(topic, exercise, document) {
   const status = deriveStatus(sections);
   const sourceCoverage = sections.knowledge.count > 0 && sections.examples.count > 0
     ? "complete"
-    : "none";
-  const verificationStatus = sections.practice.needsReviewCount > 0 ? "needs-review" : "verified";
+    : sections.knowledge.count > 0 || sections.examples.count > 0
+      ? "partial"
+      : "none";
+  const verificationStatus = Object.values(sections).some((section) => section.verification === "needs-review")
+    || sections.practice.needsReviewCount > 0
+    ? "needs-review"
+    : "verified";
 
   return Object.freeze({
     id: exercise.id,
@@ -170,8 +192,11 @@ function createTopicRecord(topic) {
       : statuses.every((item) => item === CONTENT_STATUS.COMING_SOON)
         ? CONTENT_STATUS.COMING_SOON
         : CONTENT_STATUS.PARTIAL;
-  const sourceCoverage = status === CONTENT_STATUS.AVAILABLE
-      ? "complete"
+  const coverageValues = Object.values(subtopics).map((item) => item.sourceCoverage);
+  const sourceCoverage = coverageValues.every((value) => value === "complete")
+    ? "complete"
+    : coverageValues.some((value) => value !== "none")
+      ? "partial"
       : "none";
   const verificationStatus = Object.values(subtopics).some((item) => item.verificationStatus === "needs-review")
     ? "needs-review"
