@@ -1,5 +1,5 @@
 import { calculusExampleContent } from "./calculus-lessons.js?v=14.0";
-import { foundationExampleContent } from "./foundation-lessons.generated.js?v=16.2";
+import { foundationExampleContent } from "./foundation-lessons.generated.js?v=17.0";
 
 // Worked examples transcribed and clarified from the verified CD20–CD21 source PDF.
 // Each example is a complete learning unit rather than a crop of the source page.

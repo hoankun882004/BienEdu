@@ -1,22 +1,22 @@
 # Topic coverage report
 
-Generated: 2026-10-27T18:20:16.826Z
+Generated: 2026-10-28T13:35:32.061Z
 
 `Imported` không đồng nghĩa `Validated`. Cột kiểm duyệt chỉ dùng trạng thái validated khi có bằng chứng review bất biến.
 
 | CD | PDF nguồn | Kiến thức | Ví dụ | Bài tập | Kiểm duyệt | Published |
 | --- | --- | ---: | ---: | ---: | --- | --- |
-| CD01 | cd01-cd07-functions | 11 | 10 | 0 | needs-review (0/10) | partially-published |
-| CD02 | cd01-cd07-functions | 9 | 6 | 0 | needs-review (0/9) | partially-published |
-| CD03 | cd01-cd07-functions | 10 | 8 | 0 | needs-review (0/10) | partially-published |
-| CD04 | cd01-cd07-functions | 11 | 9 | 0 | needs-review (0/11) | partially-published |
-| CD05 | cd01-cd07-functions | 9 | 7 | 0 | needs-review (0/9) | partially-published |
-| CD06 | cd01-cd07-functions | 13 | 10 | 0 | needs-review (0/13) | partially-published |
-| CD07 | cd01-cd07-functions | 9 | 9 | 0 | needs-review (0/9) | partially-published |
-| CD08 | cd08-cd11-exponential-logarithm | 9 | 9 | 0 | needs-review (0/9) | partially-published |
-| CD09 | cd08-cd11-exponential-logarithm | 8 | 8 | 0 | needs-review (0/8) | partially-published |
-| CD10 | cd08-cd11-exponential-logarithm | 8 | 8 | 0 | needs-review (0/8) | partially-published |
-| CD11 | cd08-cd11-exponential-logarithm | 11 | 11 | 0 | needs-review (0/11) | partially-published |
+| CD01 | cd01-cd07-functions | 11 | 100 | 0 | needs-review (0/10) | partially-published |
+| CD02 | cd01-cd07-functions | 9 | 90 | 0 | needs-review (0/9) | partially-published |
+| CD03 | cd01-cd07-functions | 10 | 100 | 0 | needs-review (0/10) | partially-published |
+| CD04 | cd01-cd07-functions | 11 | 110 | 0 | needs-review (0/11) | partially-published |
+| CD05 | cd01-cd07-functions | 9 | 90 | 0 | needs-review (0/9) | partially-published |
+| CD06 | cd01-cd07-functions | 13 | 130 | 0 | needs-review (0/13) | partially-published |
+| CD07 | cd01-cd07-functions | 9 | 90 | 0 | needs-review (0/9) | partially-published |
+| CD08 | cd08-cd11-exponential-logarithm | 14 | 140 | 0 | needs-review (0/14) | partially-published |
+| CD09 | cd08-cd11-exponential-logarithm | 11 | 110 | 0 | needs-review (0/11) | partially-published |
+| CD10 | cd08-cd11-exponential-logarithm | 10 | 100 | 0 | needs-review (0/10) | partially-published |
+| CD11 | cd08-cd11-exponential-logarithm | 15 | 150 | 0 | needs-review (0/15) | partially-published |
 | CD12 | cd12-cd14-calculus | 10 | 18 | 10 | partially-validated (1/9) | partially-published |
 | CD13 | cd12-cd14-calculus | 8 | 22 | 0 | needs-review (0/8) | partially-published |
 | CD14 | cd12-cd14-calculus | 9 | 26 | 0 | needs-review (0/9) | partially-published |

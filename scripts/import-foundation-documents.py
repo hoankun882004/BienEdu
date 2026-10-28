@@ -9,6 +9,7 @@ section. The generated module is checked in; the browser never opens the PDF.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import sys
@@ -20,6 +21,7 @@ import pymupdf
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "39 chuyên đề"
 OUTPUT = ROOT / "assets" / "js" / "data" / "foundation-lessons.generated.js"
+FIGURE_ROOT = ROOT / "assets" / "content" / "final-pdf"
 
 DOCUMENTS = (
     {
@@ -35,17 +37,16 @@ DOCUMENTS = (
         "name_token": "CD08-CD11",
         "solution_start": 60,
         "lesson_start": 9,
-        "lesson_end": 54,
+        "lesson_end": 58,
         "allowed_topics": set(range(8, 12)),
     },
 )
 
-# The Excel-backed catalog remains the authority. The second PDF contains 14
-# additional headings that are deliberately not emitted until that catalog is
-# revised by the content owner.
+# The finalized tutor PDFs are authoritative for CD01-CD11. Document B adds
+# fourteen real problem types that were absent from the original Excel catalog.
 CATALOG_CODES = {
     1: 10, 2: 9, 3: 10, 4: 11, 5: 9, 6: 13, 7: 9,
-    8: 9, 9: 8, 10: 8, 11: 11,
+    8: 14, 9: 11, 10: 10, 11: 15,
 }
 
 VISUAL_DEPENDENCIES = (
@@ -153,6 +154,30 @@ SUBSCRIPT_MAP = str.maketrans({
 })
 
 
+def normalize_nested_span_marker(value: str, marker: str, replacement: str) -> str:
+    """Resolve balanced PDF span markers left behind by nested parentheses."""
+    cursor = 0
+    while True:
+        start = value.find(marker, cursor)
+        if start < 0:
+            return value
+        depth = 0
+        end = None
+        for index in range(start + len(marker) - 1, len(value)):
+            if value[index] == "(":
+                depth += 1
+            elif value[index] == ")":
+                depth -= 1
+                if depth == 0:
+                    end = index
+                    break
+        if end is None:
+            return value
+        inner = value[start + len(marker):end]
+        value = value[:start] + replacement.format(inner=inner) + value[end + 1:]
+        cursor = start + 1
+
+
 def clean_text(value: str) -> str:
     value = value.replace("\u00ad", "").replace("\ufb00", "ff")
     value = re.sub(r"\s+", " ", value).strip()
@@ -176,7 +201,7 @@ def clean_text(value: str) -> str:
     # A few two-dimensional expressions are split into separate PDF spans.
     # These substitutions restore the exact expression visible in the source.
     value = value.replace("²ˣ⁺¹ ₓ₋₁", "(2x+1)/(x−1)")
-    value = value.replace("−ˣ⁻² ₂", "−(x−2)/2")
+    value = value.replace("−ˣ⁻² ₂", "−(x−2)/2").replace("⁻ˣ⁻² ₂", "−(x−2)/2")
     value = value.replace("8 √ ²", "8^(√2)").replace("4 √ ³", "4^(√3)")
     value = value.replace("2³ √ ²", "2^(3√2)").replace("2² √ ³", "2^(2√3)")
     value = value.replace("A = P(1 + r)N", r"\(A=P(1+r)^N\)")
@@ -184,6 +209,9 @@ def clean_text(value: str) -> str:
     value = value.replace("M(t) = M₀ 2⁻ᵗ⁄T", r"\(M(t)=M_0 2^{-t/T}\)")
     value = value.replace("C = y₁e⁻ᵏᵗ¹", r"\(C=y_1e^{-kt_1}\)")
     value = value.replace("sau đó Thử", "sau đó thử").replace("hai Dữ kiện", "hai dữ kiện")
+    value = normalize_nested_span_marker(value, "_(", "/({inner})")
+    value = re.sub(r"√\s+([⁰¹²³⁴⁵⁶⁷⁸⁹])", r"√\1", value)
+    value = value.replace("²ˣ⁺¹", "^(2x+1)").replace("−ˣ⁻²", "^(−x−2)")
     return re.sub(r"\s+", " ", value).strip()
 
 
@@ -248,7 +276,12 @@ def page_blocks(document: pymupdf.Document, start: int, end: int) -> list[dict]:
             ):
                 continue
             bbox = block.get("bbox", [0, 0, 0, 0])
-            output.append({"page": page_number, "y": bbox[1], "text": text})
+            output.append({
+                "page": page_number,
+                "x0": bbox[0], "y0": bbox[1], "x1": bbox[2], "y1": bbox[3],
+                "y": bbox[1],
+                "text": text,
+            })
     # Keep the PDF text-layer reading order. Sorting by y would place a
     # fraction's numerator before the sentence that introduces it.
     return output
@@ -289,10 +322,26 @@ def numbered_items(blocks: list[dict]) -> dict[int, dict]:
         text = block["text"]
         match = re.match(r"Ví dụ\s*(\d+)\.\s*(.*)", text)
         if match:
+            if current is not None and block["page"] == items[current]["page"]:
+                items[current]["y1"] = max(items[current]["y1"], block["y0"] - 4)
             current = int(match.group(1))
-            items[current] = {"page": block["page"], "parts": [match.group(2).strip()]}
+            items[current] = {
+                "page": block["page"],
+                "lastPage": block["page"],
+                "x0": block["x0"], "y0": block["y0"],
+                "x1": block["x1"], "y1": block["y1"],
+                "parts": [match.group(2).strip()],
+            }
         elif current is not None and not heading_code(text):
+            if text.startswith(("Chú ý.", "Lưu ý.", "Cách làm.")):
+                current = None
+                continue
             items[current]["parts"].append(text)
+            items[current]["lastPage"] = block["page"]
+            items[current]["x0"] = min(items[current]["x0"], block["x0"])
+            items[current]["x1"] = max(items[current]["x1"], block["x1"])
+            if block["page"] == items[current]["page"]:
+                items[current]["y1"] = max(items[current]["y1"], block["y1"])
     for item in items.values():
         item["text"] = clean_text(" ".join(item.pop("parts")))
     return items
@@ -325,6 +374,117 @@ def concise_title(prompt: str, number: int) -> str:
     if len(first) > 72:
         first = first[:69].rsplit(" ", 1)[0] + "…"
     return first or f"Ví dụ {number}"
+
+
+def source_region_asset(
+    document: pymupdf.Document,
+    document_id: str,
+    code: str,
+    number: int,
+    item: dict,
+) -> dict:
+    """Extract the exact source region for examples whose meaning depends on a figure."""
+    page = document[item["page"] - 1]
+    clip = pymupdf.Rect(
+        max(18, item["x0"] - 18),
+        max(18, item["y0"] - 10),
+        min(page.rect.width - 18, max(item["x1"] + 18, page.rect.width - 36)),
+        min(page.rect.height - 18, item["y1"] + 12),
+    )
+    output_dir = FIGURE_ROOT / document_id / code
+    output_dir.mkdir(parents=True, exist_ok=True)
+    file_name = f"example-{number}-figure-1.png"
+    output_path = output_dir / file_name
+    page.get_pixmap(matrix=pymupdf.Matrix(2.4, 2.4), clip=clip, alpha=False).save(output_path)
+    return {
+        "id": f"{code}-example-{number}-figure-1",
+        "src": "/" + output_path.relative_to(ROOT).as_posix(),
+        "alt": f"Hình gốc của Ví dụ {number}, dạng {code}",
+        "sourcePage": item["page"],
+        "sourceRegion": [round(value, 2) for value in (clip.x0, clip.y0, clip.x1, clip.y1)],
+        "reviewStatus": "source-extracted-needs-visual-review",
+    }
+
+
+def problem_type_title(section: list[dict], code: str) -> str:
+    heading = section[0]["text"]
+    title = re.sub(rf"^(?:Dạng\s+)?{re.escape(code)}\s*(?:[.–-])?\s*", "", heading).strip()
+    title = title.split("Cách làm.", 1)[0].strip()
+    return title or f"Dạng {code}"
+
+
+def extract_topic_knowledge(blocks: list[dict], topic: int, document_id: str) -> dict:
+    topic_pattern = re.compile(rf"^CD0?{topic}\s*[.–-]")
+    start = next((index for index, block in enumerate(blocks) if topic_pattern.match(block["text"])), None)
+    first_code = f"{topic}.1"
+    end = next((index for index, block in enumerate(blocks) if heading_code(block["text"]) == first_code), None)
+    if start is None or end is None or end <= start:
+        return {
+            "lead": "Nội dung kiến thức nguồn chưa thể tách chắc chắn.",
+            "formulae": [], "points": [], "layout": "article",
+            "sourcePages": [], "reviewStatus": "needs-review",
+        }
+    selected = blocks[start:end]
+    heading_text = selected[0]["text"]
+    topic_title = heading_text.split("Kiến thức cần nhớ", 1)[0]
+    topic_title = re.sub(rf"^CD0?{topic}\s*[.–-]\s*", "", topic_title).strip()
+    text = clean_text(" ".join(block["text"] for block in selected))
+    text = re.sub(rf"^CD0?{topic}\s*[.–-]\s*", "", text)
+    text = re.sub(r"^.*?Kiến thức cần nhớ\s*", "", text, count=1)
+    return {
+        "title": topic_title or f"Kiến thức CD{topic:02d}",
+        "lead": text,
+        "formulae": [],
+        "points": [],
+        "layout": "article",
+        "sourcePages": sorted({block["page"] for block in selected}),
+        "sourceDocumentId": document_id,
+        "topicId": f"CD{topic:02d}",
+        "contentType": "source-transcription",
+        "reviewStatus": "needs-review",
+        "contentVersion": "final-pdf-v2",
+    }
+
+
+SHARED_KNOWLEDGE_REFS = {
+    "CD08": ["shared-1", "shared-2", "shared-3", "shared-5", "shared-7"],
+    "CD09": ["shared-1", "shared-2", "shared-4"],
+    "CD10": ["shared-1", "shared-2", "shared-3", "shared-4", "shared-6"],
+    "CD11": ["shared-1", "shared-2", "shared-5", "shared-7"],
+}
+
+
+def extract_shared_knowledge(blocks: list[dict], document_id: str) -> dict[str, dict]:
+    titles = {
+        1: "Lũy thừa", 2: "Lôgarit", 3: "Hàm số mũ và lôgarit",
+        4: "Phương trình và bất phương trình", 5: "Căn bậc n, số e và điều kiện",
+        6: "Bảng giải nhanh bất phương trình", 7: "Đạo hàm và nguyên hàm mũ – lôgarit",
+    }
+    starts: list[tuple[int, int]] = []
+    for index, block in enumerate(blocks):
+        match = re.match(r"([1-7])\.\s+", block["text"])
+        if match and int(match.group(1)) not in {number for _, number in starts}:
+            starts.append((index, int(match.group(1))))
+    modules: dict[str, dict] = {}
+    for position, (start, number) in enumerate(starts):
+        end = starts[position + 1][0] if position + 1 < len(starts) else len(blocks)
+        selected = blocks[start:end]
+        text = clean_text(" ".join(block["text"] for block in selected))
+        text = re.sub(rf"^{number}\.\s*", "", text)
+        title = titles[number]
+        text = re.sub(rf"^{re.escape(title)}\s*", "", text, count=1)
+        modules[f"shared-{number}"] = {
+            "id": f"shared-{number}",
+            "title": title,
+            "lead": text,
+            "formulae": [], "points": [], "layout": "article",
+            "sourcePages": sorted({block["page"] for block in selected}),
+            "sourceDocumentId": document_id,
+            "contentType": "shared-source-transcription",
+            "reviewStatus": "needs-review",
+            "contentVersion": "final-pdf-v2",
+        }
+    return modules
 
 
 FOUNDATION_FORMULA_SPECS: dict[str, list[dict]] = {
@@ -429,6 +589,7 @@ def source_formulae(code: str, method_sentences: list[str]) -> list[dict]:
 def cd01_source_overview() -> dict:
     """Reviewed transcription of the CD01 “Kiến thức cần nhớ” block on page 4."""
     return {
+        "title": "Đạo hàm và ứng dụng cơ bản",
         "lead": (
             r"Đạo hàm tại \(x_0\) là "
             r"\(f'(x_0)=\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}\) khi giới hạn hữu hạn tồn tại. "
@@ -508,7 +669,13 @@ def cd01_source_overview() -> dict:
     }
 
 
-def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_id: str) -> tuple[dict, list[dict]]:
+def make_lesson(
+    code: str,
+    theory: list[dict],
+    solutions: list[dict],
+    document_id: str,
+    document: pymupdf.Document,
+) -> tuple[dict, list[dict]]:
     method, note = method_from(theory)
     source_page = theory[0]["page"]
     method_sentences = [part.strip() for part in re.split(r";|(?<=[.!?])\s+", method) if part.strip()]
@@ -558,20 +725,10 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
     prompts = numbered_items(theory)
     answers = numbered_items(solutions)
     examples: list[dict] = []
-    candidates = [
-        number for number, prompt in prompts.items()
-        if number in answers
-        and not any(token.replace(" ", "") in prompt["text"].lower().replace(" ", "") for token in VISUAL_DEPENDENCIES)
-    ]
-    # One complete worked example per form matches the established CD12-CD14
-    # lesson density and avoids publishing examples whose source diagram is not
-    # representable as native text.
-    if candidates:
-        number = candidates[0]
-        prompt = prompts[number]
-        answer = answers[number]
+    for number, prompt in sorted(prompts.items()):
+        answer = answers.get(number)
         prompt_text = prompt["text"]
-        answer_text = answer["text"]
+        answer_text = answer["text"] if answer else ""
         title = concise_title(prompt_text, number)
         if code == "8.4" and number == 1:
             # The radical is the exponent in the source, but the PDF text layer
@@ -583,22 +740,33 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
                 r"\((3\sqrt{2})^2=18>12=(2\sqrt{3})^2\), nên "
                 r"\(3\sqrt{2}>2\sqrt{3}\). Vì \(2>1\), suy ra \(A>B\)."
             )
+        visual = any(
+            token.replace(" ", "") in prompt_text.lower().replace(" ", "")
+            for token in VISUAL_DEPENDENCIES
+        )
+        asset_references = [source_region_asset(document, document_id, code, number, prompt)] if visual else []
         examples.append({
             "id": f"{code}-source-example-{number}",
             "title": title,
             "prompt": prompt_text,
-            "analysis": [method_sentences[0]],
+            "analysis": [],
             "steps": [{
                 "label": "Lời giải từ tài liệu",
                 "expression": answer_text,
-                "text": f"Chép từ lời giải Ví dụ {number}, trang {answer['page']} của PDF nguồn.",
-            }],
-            "answer": answer_text,
-            "takeaway": method_sentences[0],
-            "sourcePages": sorted({prompt["page"], answer["page"]}),
+                "text": f"Lời giải Ví dụ {number}, trang {answer['page']} của PDF nguồn.",
+            }] if answer else [],
+            "answer": answer_text or None,
+            "takeaway": None,
+            "sourcePages": sorted({prompt["page"], *([answer["page"]] if answer else [])}),
+            "statementSourcePage": prompt["page"],
+            "solutionSourcePage": answer["page"] if answer else None,
+            "originalExampleNumber": number,
+            "problemTypeId": code,
+            "assetReferences": asset_references,
+            "solutionStatus": "available" if answer else "unavailable",
             "sourceBlockId": f"{code}-worked-example-{number}",
-            "origin": "verified-source",
-            "verification": "source-transcribed",
+            "origin": "finalized-tutor-pdf",
+            "verification": "source-extracted-needs-review",
             "topicId": f"CD{code.split('.')[0].zfill(2)}",
             "lessonId": code,
             "sectionId": f"{code}-example-{number}",
@@ -606,7 +774,7 @@ def make_lesson(code: str, theory: list[dict], solutions: list[dict], document_i
             "sourcePdf": document_id,
             "conversionStatus": "imported",
             "reviewStatus": "needs-review",
-            "contentVersion": "foundation-import-v2",
+            "contentVersion": "final-pdf-v2",
         })
     return reading, examples
 
@@ -616,6 +784,9 @@ def main() -> None:
         sys.stdout.reconfigure(encoding="utf-8")
     knowledge: dict[str, dict] = {}
     examples: dict[str, list[dict]] = {}
+    topic_knowledge: dict[str, dict] = {}
+    shared_knowledge: dict[str, dict] = {}
+    problem_types: dict[str, list[dict]] = {}
     audit: dict[str, dict] = {}
 
     names = os.listdir(SOURCE_DIR)
@@ -624,7 +795,8 @@ def main() -> None:
         path = SOURCE_DIR / file_name
         document = pymupdf.open(path)
         allowed = expected_codes(spec["allowed_topics"])
-        theory = split_sections(page_blocks(document, spec["lesson_start"], spec["lesson_end"]), allowed)
+        lesson_blocks = page_blocks(document, spec["lesson_start"], spec["lesson_end"])
+        theory = split_sections(lesson_blocks, allowed)
         solutions = split_sections(page_blocks(document, spec["solution_start"], len(document)), allowed)
         missing_theory = sorted(allowed - theory.keys())
         missing_solutions = sorted(allowed - solutions.keys())
@@ -634,6 +806,18 @@ def main() -> None:
         source_answer_count = 0
         text_complete_candidate_count = 0
         diagram_dependent_count = 0
+        mapped_solution_count = 0
+        source_figure_count = 0
+        if spec["id"] == "cd01-cd07-functions":
+            for topic in sorted(spec["allowed_topics"]):
+                topic_id = f"CD{topic:02d}"
+                topic_knowledge[topic_id] = (
+                    {**cd01_source_overview(), "sourceDocumentId": spec["id"], "topicId": topic_id,
+                     "contentVersion": "final-pdf-v2", "reviewStatus": "needs-review"}
+                    if topic == 1 else extract_topic_knowledge(lesson_blocks, topic, spec["id"])
+                )
+        else:
+            shared_knowledge.update(extract_shared_knowledge(page_blocks(document, 5, 8), spec["id"]))
         for code in sorted(allowed, key=lambda item: tuple(map(int, item.split(".")))):
             source_prompts = numbered_items(theory[code])
             source_answers = numbered_items(solutions[code])
@@ -646,23 +830,45 @@ def main() -> None:
                 )
                 if visual:
                     diagram_dependent_count += 1
+                    source_figure_count += 1
                 elif number in source_answers:
                     text_complete_candidate_count += 1
-            reading, worked = make_lesson(code, theory[code], solutions[code], spec["id"])
+                if number in source_answers:
+                    mapped_solution_count += 1
+            reading, worked = make_lesson(code, theory[code], solutions[code], spec["id"], document)
             if not reading["lead"]:
                 raise RuntimeError(f"{file_name}: incomplete native lesson {code}")
             knowledge[code] = reading
             examples[code] = worked
+            topic_id = f"CD{int(code.split('.')[0]):02d}"
+            method, note = method_from(theory[code])
+            problem_types.setdefault(topic_id, []).append({
+                "id": code,
+                "code": code,
+                "title": problem_type_title(theory[code], code),
+                "order": int(code.split(".")[1]),
+                "methodology": method,
+                "note": note,
+                "sourcePages": sorted({block["page"] for block in theory[code]}),
+                "exampleCount": len(worked),
+                "solutionCount": sum(1 for item in worked if item["solutionStatus"] == "available"),
+                "figureCount": sum(len(item["assetReferences"]) for item in worked),
+                "reviewStatus": "needs-review",
+                "contentVersion": "final-pdf-v2",
+            })
         audit[spec["id"]] = {
             "fileName": file_name,
+            "sha256": hashlib.sha256(path.read_bytes()).hexdigest().upper(),
             "lessonCount": len(allowed),
             "knowledgeCount": sum(1 for code in allowed if code in knowledge),
             "workedExampleCount": sum(len(examples.get(code, [])) for code in allowed),
             "sourcePromptCount": source_prompt_count,
             "sourceAnswerCount": source_answer_count,
+            "mappedSolutionCount": mapped_solution_count,
+            "sourceFigureCount": source_figure_count,
             "textCompleteCandidateCount": text_complete_candidate_count,
             "diagramDependentCount": diagram_dependent_count,
-            "pendingReviewExampleCount": text_complete_candidate_count - sum(len(examples.get(code, [])) for code in allowed),
+            "pendingReviewExampleCount": sum(len(examples.get(code, [])) for code in allowed),
         }
 
     payload = (
@@ -670,9 +876,17 @@ def main() -> None:
         "// Do not hand-edit; rerun the importer after replacing a registered source document.\n"
         f"const knowledge = {json.dumps(knowledge, ensure_ascii=False, indent=2)};\n\n"
         f"const examples = {json.dumps(examples, ensure_ascii=False, indent=2)};\n\n"
+        f"const topicKnowledge = {json.dumps(topic_knowledge, ensure_ascii=False, indent=2)};\n\n"
+        f"const sharedKnowledge = {json.dumps(shared_knowledge, ensure_ascii=False, indent=2)};\n\n"
+        f"const topicKnowledgeReferences = {json.dumps(SHARED_KNOWLEDGE_REFS, ensure_ascii=False, indent=2)};\n\n"
+        f"const problemTypes = {json.dumps(problem_types, ensure_ascii=False, indent=2)};\n\n"
         f"export const foundationImportAudit = Object.freeze({json.dumps(audit, ensure_ascii=False, indent=2)});\n"
         "export const foundationKnowledgeContent = Object.freeze(knowledge);\n"
         "export const foundationExampleContent = Object.freeze(examples);\n"
+        "export const foundationTopicKnowledgeContent = Object.freeze(topicKnowledge);\n"
+        "export const foundationSharedKnowledgeModules = Object.freeze(sharedKnowledge);\n"
+        "export const foundationTopicKnowledgeReferences = Object.freeze(topicKnowledgeReferences);\n"
+        "export const foundationProblemTypes = Object.freeze(problemTypes);\n"
         "const foundationCodes = Object.keys(knowledge);\n"
         "export const foundationKnowledgeSections = Object.freeze(Object.fromEntries(foundationCodes.map((code, index) => {\n"
         "  const topicNumber = code.split('.')[0];\n"

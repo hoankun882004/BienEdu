@@ -8,6 +8,10 @@ export function getLearningStorageKey(gradeId = "12") {
 
 export const LEARNING_STORAGE_KEY = getLearningStorageKey("12");
 
+export function getTopicKnowledgeProgressKey(topicId) {
+  return `topic:${topicId}`;
+}
+
 function createLessonProgress() {
   return {
     viewedKnowledge: [],
@@ -107,6 +111,35 @@ export function preserveVerifiedPdfProgress(progress, migrations = []) {
   return changed ? next : progress;
 }
 
+export function preserveTopicKnowledgeProgress(progress, migrations = []) {
+  const next = normalize(progress);
+  let changed = false;
+
+  for (const migration of migrations) {
+    if (!migration.targetKey || !migration.targetIds?.length) continue;
+    const target = lesson(next, migration.targetKey);
+    const migratedIds = new Set(target.viewedKnowledge);
+
+    for (const [index, targetId] of migration.targetIds.entries()) {
+      const wasViewed = migration.legacyGroups?.some((group) => {
+        const legacyId = group.ids?.[index];
+        if (!legacyId) return false;
+        return lesson(next, group.code).viewedKnowledge.includes(legacyId);
+      });
+      if (wasViewed) migratedIds.add(targetId);
+    }
+
+    if (migratedIds.size === target.viewedKnowledge.length) continue;
+    next.lessons[migration.targetKey] = {
+      ...target,
+      viewedKnowledge: [...migratedIds]
+    };
+    changed = true;
+  }
+
+  return changed ? next : progress;
+}
+
 export function markExampleViewed(progress, code, slideId) {
   const next = normalize(progress);
   const current = lesson(next, code);
@@ -166,7 +199,7 @@ export function getLessonProgress(
   const answered = countValid(Object.keys(current.practiceAnswers), validUnitIds?.practice, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
   const completed = viewed + examplesViewed + answered;
-  const availableContentComplete = knowledgeCount > 0
+  const availableContentComplete = total > 0
     && viewed === knowledgeCount
     && examplesViewed === exampleCount
     && answered === practiceCount;

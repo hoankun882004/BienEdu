@@ -10,7 +10,7 @@ import {
   learningContentRegistry
 } from "./data/content-registry.js?v=15.0";
 import { getExampleContent } from "./data/example-content.js?v=8.6";
-import { getKnowledgeContent } from "./data/knowledge-content.js?v=14.0";
+import { getKnowledgeContent, getProblemTypesForTopic, getTopicKnowledgeContent } from "./data/knowledge-content.js?v=17.0";
 import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
 import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
 import { renderKnowledgeMarkdown, renderMathText } from "./components/markdown-math-renderer.js?v=15.0";
@@ -24,6 +24,8 @@ import {
   loadLearningProgress,
   markExampleViewed,
   markKnowledgeViewed,
+  getTopicKnowledgeProgressKey,
+  preserveTopicKnowledgeProgress,
   preserveVerifiedPdfProgress,
   recordPracticeAnswer,
   recordPracticeReview,
@@ -31,38 +33,39 @@ import {
   saveExamAnswer,
   saveLearningProgress,
   submitExam
-} from "./domain/learning-progress.js?v=15.0";
-import { createLessonSlides, createLessonState, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=8.6";
+} from "./domain/learning-progress.js?v=17.1";
+import { createLessonSlides, createLessonState, createTopicKnowledgeSlides, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=17.1";
 import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
 
 const PRACTICE_SEED = "PRACTICE_V15";
 const FINAL_EXAM_ID = "final";
-const LESSON_SECTION_IDS = new Set(["knowledge", "example", "practice"]);
+const LESSON_SECTION_IDS = new Set(["knowledge", "types", "example", "practice"]);
 const app = document.querySelector("[data-curriculum-app]");
 const currentGradeId = document.body.dataset.grade ?? null;
 const { groups: curriculumGroups, meta: curriculumMeta } = getCurriculumForGrade(currentGradeId);
 const filterState = { query: "", groupId: "all" };
 const availabilitySummary = getAvailabilitySummary();
 const knowledgeCounts = Object.fromEntries(
-  Object.values(learningContentRegistry.topics).flatMap((topic) =>
-    Object.values(topic.subtopics).map((subtopic) => {
+  Object.values(learningContentRegistry.topics).flatMap((topic) => {
+    const usesTopicKnowledge = Boolean(getTopicKnowledgeContent(topic.id));
+    return Object.values(topic.subtopics).map((subtopic) => {
       const approvedMath = getApprovedMathContent(subtopic.code);
       const structuredReading = getKnowledgeContent(subtopic.code);
       const structuredKnowledgeCount = structuredReading?.pages?.length ?? (structuredReading ? 1 : 0);
       return [subtopic.code, {
-      knowledge: structuredKnowledgeCount || (approvedMath?.verification?.status === "verified" ? 1 : (subtopic.sections.knowledge.count ?? 0)),
+      knowledge: usesTopicKnowledge ? 0 : (structuredKnowledgeCount || (approvedMath?.verification?.status === "verified" ? 1 : (subtopic.sections.knowledge.count ?? 0))),
       examples: subtopic.sections.examples.count ?? 0,
       practice: subtopic.sections.practice.count ?? 0,
       available: subtopic.status !== CONTENT_STATUS.COMING_SOON,
       materialStatus: subtopic.status,
       validUnitIds: {
-        knowledge: subtopic.sections.knowledge.units.map((unit) => unit.id),
+        knowledge: usesTopicKnowledge ? [] : subtopic.sections.knowledge.units.map((unit) => unit.id),
         examples: subtopic.sections.examples.units.map((unit) => unit.id),
         practice: subtopic.sections.practice.units.map((unit) => unit.id)
       }
     }];
-    })
-  )
+    });
+  })
 );
 const loadedProgressState = currentGradeId
   ? loadLearningProgress(globalThis.localStorage, currentGradeId)
@@ -76,7 +79,24 @@ const legacyPdfProgressMigrations = Object.values(learningContentRegistry.topics
       : [];
   })
 );
+const topicKnowledgeProgressMigrations = curriculumGroups.flatMap((group) => group.topics).flatMap((topic) => {
+  const reading = getTopicKnowledgeContent(topic.id);
+  if (!reading) return [];
+  const targetSlides = createTopicKnowledgeSlides({ topic, reading });
+  return [{
+    targetKey: getTopicKnowledgeProgressKey(topic.id),
+    targetIds: targetSlides.map((slide) => slide.id),
+    legacyGroups: topic.exerciseTypes.map((exercise) => {
+      const record = getSubtopicAvailability(exercise.code);
+      return {
+        code: exercise.code,
+        ids: targetSlides.map((_slide, index) => record?.sections.knowledge.units[index]?.id ?? `${exercise.code}-knowledge-${index + 1}`)
+      };
+    })
+  }];
+});
 let progressState = preserveVerifiedPdfProgress(loadedProgressState, legacyPdfProgressMigrations);
+progressState = preserveTopicKnowledgeProgress(progressState, topicKnowledgeProgressMigrations);
 if (currentGradeId && progressState !== loadedProgressState) {
   progressState = saveLearningProgress(progressState, globalThis.localStorage, currentGradeId);
 }
@@ -116,6 +136,7 @@ function readRoute(url = location.href) {
   return {
     topicId: parameters.get("topic")?.toUpperCase() || "",
     typeCode: parameters.get("type") || "",
+    explicitSection: parameters.has("section"),
     section: LESSON_SECTION_IDS.has(requestedSection) ? requestedSection : "knowledge",
     item: Math.max(1, Number(parameters.get("item")) || 1),
     exam: parameters.get("exam") || "",
@@ -184,6 +205,15 @@ function renderCatalog() {
 function renderTopicDetail(topic) {
   const source = getDocumentForTopic(topic.id);
   const availability = getTopicAvailability(topic.id);
+  const topicReading = getTopicKnowledgeContent(topic.id);
+  const topicKnowledgeSlides = createTopicKnowledgeSlides({ topic, reading: topicReading });
+  const topicKnowledgeKey = getTopicKnowledgeProgressKey(topic.id);
+  const topicKnowledgeProgress = topicKnowledgeSlides.length
+    ? getLessonProgress(progressState, topicKnowledgeKey, topicKnowledgeSlides.length, 0, 0, CONTENT_STATUS.AVAILABLE, {
+        knowledge: topicKnowledgeSlides.map((slide) => slide.id), examples: [], practice: []
+      })
+    : null;
+  const problemTypes = getProblemTypesForTopic(topic.id);
   const supported = availability?.status !== CONTENT_STATUS.COMING_SOON
     && Object.values(availability.subtopics).some((item) => item.sections.knowledge.count);
   const topicProgress = supported ? getTopicProgress(progressState, topic, knowledgeCounts) : null;
@@ -193,15 +223,19 @@ function renderTopicDetail(topic) {
     <header class="topic-detail__header"><span>${topic.id}</span><div><h1 id="topic-detail-title">${escapeHtml(topic.title)}</h1><p>${topic.exerciseTypes.length} dạng bài</p></div></header>
     ${topicProgress ? `<div class="topic-progress"><span>Đã hoàn thành</span><strong>${topicProgress.completedLessons}/${topicProgress.availableLessons} bài</strong></div>` : ""}
     ${source && !supported ? `<section class="topic-source-card" aria-labelledby="topic-source-title"><div><p>Nội dung đang được cập nhật</p><h2 id="topic-source-title">Bài học của ${topic.id} chưa sẵn sàng</h2><span>BienEdu chỉ xuất bản bài đọc đã được chuyển đổi và kiểm chứng.</span></div></section>` : ""}
-    <nav class="type-list" aria-label="Các dạng bài của ${escapeHtml(topic.title)}">
+    <nav class="type-list" aria-label="Kiến thức và các dạng bài của ${escapeHtml(topic.title)}">
+      ${topicKnowledgeSlides.length ? `<a href="${routeUrl({ topicId: topic.id, section: "knowledge", item: 1 })}" data-route class="type-list__knowledge ${topicKnowledgeProgress?.isComplete ? "is-complete" : ""}">
+        <span aria-hidden="true">▤</span><strong>Kiến thức cần nhớ</strong>
+        <small>${topicKnowledgeProgress?.isComplete ? "✓ Hoàn thành" : `${topicKnowledgeProgress?.viewed ?? 0}/${topicKnowledgeSlides.length} bài đọc`}</small><b aria-hidden="true">→</b>
+      </a>` : ""}
       ${topic.exerciseTypes.map((exercise) => {
         const content = getSubtopicAvailability(exercise.code);
         const counts = knowledgeCounts[exercise.code] ?? {};
-        const isAvailable = Boolean(getKnowledgeContent(exercise.code) && content?.sections.knowledge.count);
+        const hasProblemType = problemTypes.some((item) => item.code === exercise.code);
+        const isAvailable = Boolean((hasProblemType || getKnowledgeContent(exercise.code)) && content?.status !== CONTENT_STATUS.COMING_SOON);
         const lessonProgress = isAvailable ? getLessonProgress(progressState, exercise.code, counts.knowledge, counts.examples, counts.practice, content.status) : null;
-        const href = isAvailable
-          ? routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 })
-          : routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: 1 });
+        const firstSection = topicReading && hasProblemType ? "types" : "knowledge";
+        const href = routeUrl({ topicId: topic.id, typeCode: exercise.code, section: firstSection, item: 1 });
         const linkAttributes = "data-route";
         const stateLabel = lessonProgress
           ? (lessonProgress.isComplete ? "✓ Hoàn thành" : `${lessonProgress.completed}/${lessonProgress.total} nội dung`)
@@ -218,6 +252,53 @@ function renderTopicDetail(topic) {
     </section>` : ""}
   </section>`;
   initializeMotion();
+}
+
+function createTopicKnowledgeView(topic, item = 1) {
+  const reading = getTopicKnowledgeContent(topic.id);
+  const slides = createTopicKnowledgeSlides({ topic, reading });
+  if (!slides.length) return null;
+  const currentIndex = Math.min(Math.max(Number(item) - 1, 0), slides.length - 1);
+  return {
+    reading,
+    slides,
+    active: slides[currentIndex],
+    currentIndex,
+    position: { section: "knowledge", current: currentIndex + 1, total: slides.length }
+  };
+}
+
+function topicKnowledgeNavigationMarkup(topic, view) {
+  const { currentIndex, position } = view;
+  const previous = currentIndex > 0
+    ? `<a class="nav-button" href="${routeUrl({ topicId: topic.id, section: "knowledge", item: currentIndex })}" data-route aria-keyshortcuts="ArrowLeft">← Trước</a>`
+    : `<button type="button" disabled aria-keyshortcuts="ArrowLeft">← Trước</button>`;
+  const pagePicker = position.total > 1
+    ? `<nav class="lesson-page-picker" aria-label="Chọn trang kiến thức">${view.slides.map((_slide, index) => `<a href="${routeUrl({ topicId: topic.id, section: "knowledge", item: index + 1 })}" data-route aria-current="${position.current === index + 1 ? "page" : "false"}">${index + 1}</a>`).join("")}</nav>`
+    : "";
+  const next = currentIndex < view.slides.length - 1
+    ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, section: "knowledge", item: currentIndex + 2 })}" data-route aria-keyshortcuts="ArrowRight">Tiếp theo →</a>`
+    : `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route aria-keyshortcuts="ArrowRight">Về chuyên đề →</a>`;
+  return `${previous}<div class="lesson-navigation__position"><p><strong>${position.current} / ${position.total}</strong><span>Kiến thức cần nhớ</span></p>${pagePicker}</div>${next}`;
+}
+
+function renderTopicKnowledge(topic, route) {
+  const view = createTopicKnowledgeView(topic, route.item);
+  if (!view) {
+    renderTopicDetail(topic);
+    return;
+  }
+
+  const progressKey = getTopicKnowledgeProgressKey(topic.id);
+  persist(markKnowledgeViewed(progressState, progressKey, view.active.id));
+  const exercise = { code: topic.id, title: topic.title };
+  document.body.classList.add("learning-mode");
+  app.innerHTML = `<article class="learning-workspace topic-knowledge-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-section="knowledge" data-item="${view.position.current}">
+    <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Quay lại ${topic.id}">←</a><div><h1 id="lesson-title">Kiến thức cần nhớ</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div></header>
+    <div class="workspace-frame"><main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${renderKnowledgeMarkdown({ slide: view.active, position: view.position, exercise })}</main></div>
+    <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng kiến thức bằng nút hoặc phím mũi tên trái và phải">${topicKnowledgeNavigationMarkup(topic, view)}</footer>
+    <p class="sr-only" aria-live="polite" aria-atomic="true">Trang kiến thức ${view.position.current} trên ${view.position.total}.</p>
+  </article>`;
 }
 
 function renderUnavailable(topic, exercise) {
@@ -237,9 +318,15 @@ function renderUnavailable(topic, exercise) {
 
 function renderExampleReading(slide, position, exercise, topic) {
   const example = slide.workedExample;
+  const analysis = example.analysis ?? [];
+  const steps = example.steps ?? [];
+  const figures = example.assetReferences ?? [];
+  const sourcePages = example.sourcePages ?? [];
+  const figureMarkup = figures.length ? `<div class="example-reader__figures">${figures.map((figure) => `<figure><button type="button" data-figure-zoom="${escapeHtml(figure.src)}" data-figure-alt="${escapeHtml(figure.alt)}"><img src="${escapeHtml(figure.src)}" alt="${escapeHtml(figure.alt)}" loading="lazy" decoding="async"></button><figcaption>Nguồn · Trang ${figure.sourcePage} · Chờ đối chiếu trực quan</figcaption></figure>`).join("")}</div>` : "";
+  const solutionMarkup = steps.length ? `<details class="example-reader__solution"><summary>Xem lời giải từ tài liệu</summary><ol>${steps.map((step, index) => `<li><span>${index + 1}</span><div><p>${escapeHtml(step.label)}</p><strong>${renderMathText(step.expression, { display: true })}</strong><small>${renderMathText(step.text)}</small></div></li>`).join("")}</ol></details>` : `<aside class="example-reader__unavailable">PDF nguồn chưa có lời giải được ánh xạ chắc chắn cho ví dụ này.</aside>`;
   return `<article class="example-reader" aria-labelledby="lesson-content-title">
     <header class="example-reader__bar">
-      <p>Ví dụ ${position.current}/${position.total}</p>
+      <p>Ví dụ ${example.originalExampleNumber ?? position.current} · ${position.current}/${position.total}</p><small>Nguồn · Trang ${sourcePages.join(", ")}</small>
     </header>
     <div class="example-reader__content">
       <section class="example-card">
@@ -248,12 +335,23 @@ function renderExampleReading(slide, position, exercise, topic) {
         <h2 id="lesson-content-title">${escapeHtml(example.title)}</h2>
         </header>
         <section class="example-reader__question" aria-labelledby="problem-title"><h3 id="problem-title">Đề bài</h3><p>${renderMathText(example.prompt)}</p></section>
-        <section class="example-reader__analysis" aria-labelledby="analysis-title"><h3 id="analysis-title">Phương pháp</h3><ul>${example.analysis.map((item) => `<li>${renderMathText(item)}</li>`).join("")}</ul></section>
-        <section class="example-reader__solution" aria-labelledby="solution-title"><h3 id="solution-title">Lời giải</h3><ol>${example.steps.map((step, index) => `<li><span>${index + 1}</span><div><p>${escapeHtml(step.label)}</p><strong>${renderMathText(step.expression, { display: true })}</strong><small>${renderMathText(step.text)}</small></div></li>`).join("")}</ol></section>
-        <section class="example-reader__result" aria-label="Kết quả"><span>Kết quả</span><strong>${renderMathText(example.answer)}</strong></section>
-        <aside class="example-reader__takeaway" aria-label="Điểm cần nhớ"><b>Điểm cần nhớ</b><p>${renderMathText(example.takeaway)}</p></aside>
+        ${figureMarkup}
+        ${analysis.length ? `<section class="example-reader__analysis" aria-labelledby="analysis-title"><h3 id="analysis-title">Phương pháp</h3><ul>${analysis.map((item) => `<li>${renderMathText(item)}</li>`).join("")}</ul></section>` : ""}
+        ${solutionMarkup}
+        ${example.answer ? `<section class="example-reader__result" aria-label="Kết quả"><span>Kết quả từ tài liệu</span><strong>${renderMathText(example.answer)}</strong></section>` : ""}
+        ${example.takeaway ? `<aside class="example-reader__takeaway" aria-label="Điểm cần nhớ"><b>Điểm cần nhớ</b><p>${renderMathText(example.takeaway)}</p></aside>` : ""}
       </section>
     </div>
+    <dialog class="figure-zoom" data-figure-dialog><button type="button" data-figure-close aria-label="Đóng hình">×</button><img alt=""></dialog>
+  </article>`;
+}
+
+function renderProblemTypeDetail(slide, topic) {
+  const item = slide.problemType;
+  return `<article class="problem-type-reader" aria-labelledby="lesson-content-title">
+    <header><p class="lesson-kicker">${escapeHtml(topic.id)} · Dạng ${escapeHtml(item.code)}</p><h2 id="lesson-content-title">${escapeHtml(item.title)}</h2><p>${item.exampleCount} ví dụ · ${item.solutionCount} lời giải${item.figureCount ? ` · ${item.figureCount} hình nguồn` : ""}</p></header>
+    <section class="problem-type-reader__method" aria-labelledby="method-title"><h3 id="method-title">Cách làm</h3><p>${renderMathText(item.methodology)}</p></section>
+    ${item.note ? `<aside class="problem-type-reader__note" aria-labelledby="note-title"><h3 id="note-title">Lưu ý</h3><p>${renderMathText(item.note)}</p></aside>` : ""}
   </article>`;
 }
 
@@ -283,14 +381,20 @@ function createLessonView(topic, exercise, route) {
   const approvedMathContent = getApprovedMathContent(exercise.code);
   const contentRecord = getSubtopicAvailability(exercise.code);
   const reading = getKnowledgeContent(exercise.code);
+  const topicReading = getTopicKnowledgeContent(topic.id);
+  const problemTypes = getProblemTypesForTopic(topic.id);
   const examples = getExampleContent(exercise.code);
-  const knowledgeSlideCount = reading?.pages?.length
-    ?? (reading ? 1 : (approvedMathContent?.verification?.status === "verified" ? 1 : (contentRecord?.sections.knowledge.count ?? 0)));
-  const exampleSlideCount = contentRecord?.sections.examples.count ?? 0;
+  const usesTopicKnowledge = Boolean(topicReading && problemTypes.some((item) => item.code === exercise.code));
+  const effectiveReading = usesTopicKnowledge ? null : reading;
+  const knowledgeSlideCount = usesTopicKnowledge
+    ? 0
+    : (effectiveReading?.pages?.length
+      ?? (effectiveReading ? 1 : (approvedMathContent?.verification?.status === "verified" ? 1 : (contentRecord?.sections.knowledge.count ?? 0))));
+  const exampleSlideCount = examples?.length ?? contentRecord?.sections.examples.count ?? 0;
   const questions = contentRecord?.sections.practice.status === CONTENT_STATUS.AVAILABLE
     ? buildActivePracticeSet(exercise.code, PRACTICE_SEED)
     : [];
-  const slides = createLessonSlides({ topic, exercise, approvedMathContent, contentRecord, reading, examples, questions });
+  const slides = createLessonSlides({ topic, exercise, approvedMathContent, contentRecord, reading, problemTypes, examples, questions, includeKnowledge: !usesTopicKnowledge });
   if (route.section === "practice" && !questions.length) slides.push({ id: `${exercise.code}-practice-unavailable`, section: "practice", kind: "practice-unavailable", label: "Bài tập", title: exercise.title, topicId: topic.id, exerciseId: exercise.id });
   const state = createLessonState(slides, route.section, route.item);
   const active = slides[state.currentIndex];
@@ -306,8 +410,8 @@ function createLessonView(topic, exercise, route) {
     questions.length,
     contentRecord?.status ?? CONTENT_STATUS.COMING_SOON,
     {
-      knowledge: contentRecord?.sections.knowledge.units.map((unit) => unit.id) ?? [],
-      examples: contentRecord?.sections.examples.units.map((unit) => unit.id) ?? [],
+      knowledge: slides.filter((slide) => slide.section === "knowledge").map((slide) => slide.id),
+      examples: slides.filter((slide) => slide.section === "example").map((slide) => slide.id),
       practice: questions.map((question) => question.id)
     }
   );
@@ -326,6 +430,8 @@ function createLessonView(topic, exercise, route) {
     lessonProgress,
     counts: {
       knowledge: knowledgeSlideCount,
+      types: problemTypes.length ? 1 : 0,
+      problemTypeCount: problemTypes.length,
       example: exampleSlideCount,
       practice: questions.length
     },
@@ -342,18 +448,29 @@ function phaseButtonMarkup(view, section, label, completed, total) {
 
 function phaseNavigationMarkup(view) {
   const { counts, lessonProgress } = view;
-  return `${phaseButtonMarkup(view, "knowledge", "Kiến thức", lessonProgress.viewed, counts.knowledge)}
+  return `${counts.knowledge ? phaseButtonMarkup(view, "knowledge", "Kiến thức", lessonProgress.viewed, counts.knowledge) : ""}
+    ${counts.types ? `<button type="button" data-section="types" aria-current="${view.active.section === "types" ? "step" : "false"}"><span>Cách làm</span><small>Phương pháp</small></button>` : ""}
     ${phaseButtonMarkup(view, "example", "Ví dụ", lessonProgress.examplesViewed, counts.example)}
     ${phaseButtonMarkup(view, "practice", "Bài tập", lessonProgress.answered, counts.practice)}`;
 }
 
 function lessonSidebarMarkup(view) {
   const { active, counts, lessonProgress, topic } = view;
-  return `<p>Bài học</p><ol>
-    <li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${counts.knowledge && lessonProgress.viewed === counts.knowledge ? "is-completed" : ""}" ${counts.knowledge ? "" : "disabled"}><span>${counts.knowledge && lessonProgress.viewed === counts.knowledge ? "✓" : "1"}</span><b>Kiến thức<small>${counts.knowledge ? `${lessonProgress.viewed}/${counts.knowledge} bài đọc` : "Đang cập nhật"}</small></b></button></li>
-    <li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${counts.example && lessonProgress.examplesViewed === counts.example ? "is-completed" : ""}" ${counts.example ? "" : "disabled"}><span>${counts.example && lessonProgress.examplesViewed === counts.example ? "✓" : "2"}</span><b>Ví dụ<small>${counts.example ? `${lessonProgress.examplesViewed}/${counts.example} ví dụ` : "Đang cập nhật"}</small></b></button></li>
-    <li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${counts.practice && lessonProgress.answered === counts.practice ? "is-completed" : ""}" ${counts.practice ? "" : "disabled"}><span>${counts.practice && lessonProgress.answered === counts.practice ? "✓" : "3"}</span><b>Bài tập<small>${counts.practice ? `${lessonProgress.answered}/${counts.practice} câu đã làm` : "Đang cập nhật"}</small></b></button></li>
-  </ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>`;
+  let step = 0;
+  const items = [];
+  if (counts.knowledge) {
+    step += 1;
+    items.push(`<li><button type="button" data-section="knowledge" aria-current="${active.section === "knowledge" ? "step" : "false"}" class="${lessonProgress.viewed === counts.knowledge ? "is-completed" : ""}"><span>${lessonProgress.viewed === counts.knowledge ? "✓" : step}</span><b>Kiến thức<small>${lessonProgress.viewed}/${counts.knowledge} bài đọc</small></b></button></li>`);
+  }
+  if (counts.types) {
+    step += 1;
+    items.push(`<li><button type="button" data-section="types" aria-current="${active.section === "types" ? "step" : "false"}"><span>${step}</span><b>Cách làm<small>Phương pháp và lưu ý</small></b></button></li>`);
+  }
+  step += 1;
+  items.push(`<li><button type="button" data-section="example" aria-current="${active.section === "example" ? "step" : "false"}" class="${counts.example && lessonProgress.examplesViewed === counts.example ? "is-completed" : ""}" ${counts.example ? "" : "disabled"}><span>${counts.example && lessonProgress.examplesViewed === counts.example ? "✓" : step}</span><b>Ví dụ<small>${counts.example ? `${lessonProgress.examplesViewed}/${counts.example} ví dụ` : "Đang cập nhật"}</small></b></button></li>`);
+  step += 1;
+  items.push(`<li><button type="button" data-section="practice" aria-current="${active.section === "practice" ? "step" : "false"}" class="${counts.practice && lessonProgress.answered === counts.practice ? "is-completed" : ""}" ${counts.practice ? "" : "disabled"}><span>${counts.practice && lessonProgress.answered === counts.practice ? "✓" : step}</span><b>Bài tập<small>${counts.practice ? `${lessonProgress.answered}/${counts.practice} câu đã làm` : "Đang cập nhật"}</small></b></button></li>`);
+  return `<p>Bài học</p><ol>${items.join("")}</ol><a href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>`;
 }
 
 function lessonStageMarkup(view) {
@@ -361,6 +478,7 @@ function lessonStageMarkup(view) {
   if (active.kind === "practice") return renderPractice(active, answer, position);
   if (active.kind === "practice-unavailable") return `<section class="lesson-inline-empty"><h2>Nội dung bài tập đang được cập nhật.</h2><p>BienEdu chỉ phát hành câu hỏi có đúng dạng bài, đáp án đã kiểm chứng và lời giải đầy đủ.</p></section>`;
   if (active.kind === "knowledge-markdown") return renderKnowledgeMarkdown({ slide: active, position, exercise });
+  if (active.kind === "problem-types") return renderProblemTypeDetail(active, topic);
   if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise, topic);
   return `<section class="lesson-inline-empty"><h2>Nội dung đang được cập nhật</h2><p>Bài học này chưa có bản Markdown đã được kiểm chứng.</p></section>`;
 }
@@ -382,6 +500,8 @@ function lessonNavigationMarkup(view) {
   if (nextSlide) {
     const nextLabel = nextSlide.section === "example"
       ? "Xem ví dụ →"
+      : nextSlide.section === "types"
+        ? "Xem cách làm →"
       : nextSlide.section === "practice"
           ? (active.section === "practice" ? "Câu tiếp theo →" : "Làm bài tập →")
         : "Tiếp theo →";
@@ -500,6 +620,9 @@ function renderRoute({ scrollToTop = false, announce = false } = {}) {
   } else if (topic && exercise) {
     setGradeSwitchLocked(false);
     renderWorkspace(topic, exercise, route, { announce });
+  } else if (topic && route.explicitSection && route.section === "knowledge") {
+    setGradeSwitchLocked(false);
+    renderTopicKnowledge(topic, route);
   } else if (topic) {
     setGradeSwitchLocked(false);
     renderTopicDetail(topic);
@@ -621,17 +744,23 @@ function handleSelectionChange(event) {
 
 function createSlidesForRoute(route) {
   const contentRecord = getSubtopicAvailability(route.typeCode);
+  const topic = findTopic(curriculumGroups, route.topicId);
   const questions = contentRecord?.sections.practice.status === CONTENT_STATUS.AVAILABLE
     ? buildActivePracticeSet(route.typeCode, PRACTICE_SEED)
     : [];
+  const topicReading = getTopicKnowledgeContent(route.topicId);
+  const problemTypes = getProblemTypesForTopic(route.topicId);
+  const usesTopicKnowledge = Boolean(topicReading && problemTypes.some((item) => item.code === route.typeCode));
   const slides = createLessonSlides({
-    topic: findTopic(curriculumGroups, route.topicId),
+    topic,
     exercise: findExerciseType(curriculumGroups, route.topicId, route.typeCode),
     approvedMathContent: getApprovedMathContent(route.typeCode),
     contentRecord,
     reading: getKnowledgeContent(route.typeCode),
+    problemTypes,
     examples: getExampleContent(route.typeCode),
-    questions
+    questions,
+    includeKnowledge: !usesTopicKnowledge
   });
   if (route.section === "practice" && !questions.length) slides.push({ id: `${route.typeCode}-practice-unavailable`, section: "practice", kind: "practice-unavailable", label: "Bài tập", title: route.typeCode });
   return slides;
@@ -664,7 +793,16 @@ function getAdjacentLessonUrl(direction) {
       : null;
   }
 
-  if (!route.typeCode) return null;
+  if (!route.typeCode) {
+    if (!route.explicitSection || route.section !== "knowledge") return null;
+    const topic = findTopic(curriculumGroups, route.topicId);
+    const view = topic ? createTopicKnowledgeView(topic, route.item) : null;
+    if (!view) return null;
+    const targetItem = view.position.current + direction;
+    if (targetItem < 1) return null;
+    if (targetItem > view.position.total) return direction > 0 ? routeUrl({ topicId: route.topicId }) : null;
+    return routeUrl({ topicId: route.topicId, section: "knowledge", item: targetItem });
+  }
 
   const slides = createSlidesForRoute(route);
   const currentState = createLessonState(slides, route.section, route.item);
@@ -790,6 +928,24 @@ function handleAppClick(event) {
   const slideButton = event.target.closest("[data-slide-index]");
   if (slideButton) {
     handleSlideNavigation(slideButton);
+    return;
+  }
+
+  const figureButton = event.target.closest("[data-figure-zoom]");
+  if (figureButton) {
+    const dialog = figureButton.closest(".example-reader")?.querySelector("[data-figure-dialog]");
+    const image = dialog?.querySelector("img");
+    if (dialog && image) {
+      image.src = figureButton.dataset.figureZoom;
+      image.alt = figureButton.dataset.figureAlt ?? "Hình toán học từ tài liệu nguồn";
+      dialog.showModal();
+    }
+    return;
+  }
+
+  const figureClose = event.target.closest("[data-figure-close]");
+  if (figureClose) {
+    figureClose.closest("dialog")?.close();
     return;
   }
 

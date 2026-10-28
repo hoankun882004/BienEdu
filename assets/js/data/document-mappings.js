@@ -99,48 +99,52 @@ export const documentSources = Object.freeze([
     verification: {
       status: "verified",
       auditedAt: "2026-10-27",
-      note: "All 78 pages were inspected. This mapping publishes the 36 headings present in the curriculum catalog. Fourteen additional source headings outside the 347-type catalog remain excluded pending a catalog revision."
+      note: "All 78 pages were inspected. The finalized tutor PDF is authoritative and all 50 source problem types are registered."
     },
     topics: {
       CD08: {
         pageStart: 9,
-        pageEnd: 17,
+        pageEnd: 22,
         printedPageStart: 9,
-        printedPageEnd: 17,
+        printedPageEnd: 22,
         exercisePages: {
           "8.1": 9, "8.2": 10, "8.3": 11, "8.4": 12, "8.5": 13,
-          "8.6": 14, "8.7": 15, "8.8": 16, "8.9": 17
+          "8.6": 14, "8.7": 15, "8.8": 16, "8.9": 17, "8.10": 18,
+          "8.11": 19, "8.12": 20, "8.13": 21, "8.14": 22
         }
       },
       CD09: {
         pageStart: 23,
-        pageEnd: 30,
+        pageEnd: 33,
         printedPageStart: 23,
-        printedPageEnd: 30,
+        printedPageEnd: 33,
         exercisePages: {
           "9.1": 23, "9.2": 24, "9.3": 25, "9.4": 26,
-          "9.5": 27, "9.6": 28, "9.7": 29, "9.8": 30
+          "9.5": 27, "9.6": 28, "9.7": 29, "9.8": 30,
+          "9.9": 31, "9.10": 32, "9.11": 33
         }
       },
       CD10: {
         pageStart: 34,
-        pageEnd: 41,
+        pageEnd: 43,
         printedPageStart: 34,
-        printedPageEnd: 41,
+        printedPageEnd: 43,
         exercisePages: {
           "10.1": 34, "10.2": 35, "10.3": 36, "10.4": 37,
-          "10.5": 38, "10.6": 39, "10.7": 40, "10.8": 41
+          "10.5": 38, "10.6": 39, "10.7": 40, "10.8": 41,
+          "10.9": 42, "10.10": 43
         }
       },
       CD11: {
         pageStart: 44,
-        pageEnd: 54,
+        pageEnd: 58,
         printedPageStart: 44,
-        printedPageEnd: 54,
+        printedPageEnd: 58,
         exercisePages: {
           "11.1": 44, "11.2": 45, "11.3": 46, "11.4": 47, "11.5": 48,
           "11.6": 49, "11.7": 50, "11.8": 51, "11.9": 52, "11.10": 53,
-          "11.11": 54
+          "11.11": 54, "11.12": 55, "11.13": 56, "11.14": 57,
+          "11.15": 58
         }
       }
     }

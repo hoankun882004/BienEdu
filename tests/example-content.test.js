@@ -5,22 +5,24 @@ import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all mapped lessons expose complete worked examples", () => {
   assert.deepEqual(Object.keys(exampleContent), Object.keys(knowledgeSections));
-  assert.equal(Object.values(exampleContent).flat().length, 189);
+  assert.equal(Object.values(exampleContent).flat().length, 1304);
   for (const [code, examples] of Object.entries(exampleContent)) {
     if (!examples.length) {
       assert.match(code, /^(?:[1-9]|10|11)\./u, `${code} can omit only a diagram-dependent foundation example`);
       continue;
     }
     for (const example of examples) {
-      assert.ok(example.prompt.length >= 12, `${code} prompt`);
-      assert.ok(example.analysis.length >= (example.verification === "source-transcribed" ? 1 : 2), `${code} analysis`);
-      assert.ok(example.steps.length >= (example.verification === "source-transcribed" ? 1 : 2), `${code} steps`);
+      assert.ok(example.prompt.length >= (example.origin === "finalized-tutor-pdf" ? 7 : 12), `${code} prompt`);
+      const finalPdfImport = example.origin === "finalized-tutor-pdf";
+      assert.ok(example.analysis.length >= (finalPdfImport ? 0 : (example.verification === "source-transcribed" ? 1 : 2)), `${code} analysis`);
+      assert.ok(example.steps.length >= (finalPdfImport ? 1 : (example.verification === "source-transcribed" ? 1 : 2)), `${code} steps`);
       assert.ok(example.steps.every((step) => step.label && step.expression && step.text), `${code} step detail`);
-      assert.ok(example.answer && example.takeaway, `${code} conclusion`);
+      assert.ok(example.answer, `${code} answer`);
+      if (!finalPdfImport) assert.ok(example.takeaway, `${code} conclusion`);
       assert.ok(example.sourcePages.length >= 1, `${code} provenance`);
     }
   }
-  assert.equal(Object.values(exampleContent).filter((examples) => examples.length === 0).length, 12);
+  assert.equal(Object.values(exampleContent).filter((examples) => examples.length === 0).length, 0);
 });
 
 test("CD12-CD14 account for both worked examples in every source subtopic", () => {

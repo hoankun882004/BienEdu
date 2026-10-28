@@ -41,7 +41,7 @@ const criticalSourceCoverage = {
 
 test("all registered CD01-CD14 and CD20-CD21 lessons expose structured reading content", () => {
   assert.deepEqual(Object.keys(knowledgeContent), Object.keys(knowledgeSections));
-  assert.equal(Object.keys(knowledgeContent).length, 158);
+  assert.equal(Object.keys(knowledgeContent).length, 172);
   for (const [code, reading] of Object.entries(knowledgeContent)) {
     const foundationLesson = /^(?:[1-9]|10|11)\./u.test(code);
     assert.ok(reading.lead.length >= (foundationLesson ? 10 : 60), `${code} lead`);
@@ -65,9 +65,9 @@ test("reading content stays text-only and safe to render", () => {
 
 test("the two new PDFs publish every catalog lesson without inventing diagram-only examples", () => {
   const foundationCodes = Object.keys(knowledgeContent).filter((code) => /^(?:[1-9]|10|11)\./u.test(code));
-  assert.equal(foundationCodes.length, 107);
+  assert.equal(foundationCodes.length, 121);
   assert.equal(foundationCodes.filter((code) => knowledgeContent[code].sourceDocumentId === "cd01-cd07-functions").length, 71);
-  assert.equal(foundationCodes.filter((code) => knowledgeContent[code].sourceDocumentId === "cd08-cd11-exponential-logarithm").length, 36);
+  assert.equal(foundationCodes.filter((code) => knowledgeContent[code].sourceDocumentId === "cd08-cd11-exponential-logarithm").length, 50);
   assert.ok(foundationCodes.every((code) => knowledgeContent[code].sourcePages.length >= 1));
 });
 

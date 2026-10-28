@@ -13,6 +13,8 @@ import {
   loadLearningProgress,
   markExampleViewed,
   markKnowledgeViewed,
+  getTopicKnowledgeProgressKey,
+  preserveTopicKnowledgeProgress,
   preserveVerifiedPdfProgress,
   recordPracticeAnswer,
   recordPracticeReview,
@@ -116,6 +118,34 @@ test("native Markdown preserves completed legacy PDF progress without requiring 
   assert.deepEqual(migrated.lessons["20.2"].viewedKnowledge, ["20.2-knowledge-1", "20.2-knowledge-2"]);
   assert.deepEqual(migrated.lessons["20.2"].knowledgePdfProgress.viewedSegments, segments);
   assert.equal(migrated.lessons["20.2"].knowledgePdfProgress.completed, true);
+});
+
+test("topic Knowledge migration preserves partial legacy reading without duplicating type progress", () => {
+  let state = createLearningProgress();
+  state = markKnowledgeViewed(state, "1.1", "1.1-knowledge-1");
+  const targetKey = getTopicKnowledgeProgressKey("CD01");
+  const migrated = preserveTopicKnowledgeProgress(state, [{
+    targetKey,
+    targetIds: ["CD01-topic-knowledge-1", "CD01-topic-knowledge-2"],
+    legacyGroups: [
+      { code: "1.1", ids: ["1.1-knowledge-1", "1.1-knowledge-2"] },
+      { code: "1.2", ids: ["1.2-knowledge-1", "1.2-knowledge-2"] }
+    ]
+  }]);
+
+  assert.deepEqual(migrated.lessons[targetKey].viewedKnowledge, ["CD01-topic-knowledge-1"]);
+  assert.deepEqual(migrated.lessons["1.1"].viewedKnowledge, ["1.1-knowledge-1"]);
+});
+
+test("a problem-type lesson can complete without redundant general Knowledge", () => {
+  let state = createLearningProgress();
+  state = markExampleViewed(state, "1.1", "1.1-example-1");
+  state = recordPracticeAnswer(state, "1.1", "1.1-practice-1", 0, 0);
+  const lesson = getLessonProgress(state, "1.1", 0, 1, 1, "available", {
+    knowledge: [], examples: ["1.1-example-1"], practice: ["1.1-practice-1"]
+  });
+  assert.equal(lesson.total, 2);
+  assert.equal(lesson.isComplete, true);
 });
 
 test("final exams unlock only for topics whose every subtopic has ready content", () => {

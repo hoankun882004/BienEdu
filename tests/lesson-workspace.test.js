@@ -2,12 +2,12 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { curriculumGroups } from "../assets/js/data/curriculum.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
-import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
+import { getKnowledgeContent, getProblemTypesForTopic, getTopicKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { getKnowledgeSection } from "../assets/js/data/knowledge-slides.js";
 import { generatePracticeSet } from "../assets/js/domain/exercise-generators.js";
 import { buildActivePracticeSet } from "../assets/js/domain/practice-bank.js";
 import { findExerciseType, findTopic } from "../assets/js/domain/curriculum-filter.js";
-import { createLessonSlides, createLessonState, getKnowledgeSlideType, getNextSlide, getPreviousSlide, getSectionPosition, KNOWLEDGE_SLIDE_TYPES } from "../assets/js/domain/lesson-workspace.js";
+import { createLessonSlides, createLessonState, createTopicKnowledgeSlides, getKnowledgeSlideType, getNextSlide, getPreviousSlide, getSectionPosition, KNOWLEDGE_SLIDE_TYPES } from "../assets/js/domain/lesson-workspace.js";
 
 test("the generic Knowledge model exposes stable content-aware slide types", () => {
   assert.ok(KNOWLEDGE_SLIDE_TYPES.includes("concept"));
@@ -27,6 +27,28 @@ test("a lesson contains exactly knowledge, example and practice sections", () =>
   assert.equal(slides.length, 6);
   assert.deepEqual([...new Set(slides.map((slide) => slide.section))], ["knowledge", "example", "practice"]);
   assert.equal(slides.some((slide) => ["preview", "assessment"].includes(slide.kind)), false);
+});
+
+test("finalized CD01-CD11 use one topic Knowledge view and no repeated type Knowledge", () => {
+  const topic = findTopic(curriculumGroups, "CD08");
+  const exercise = findExerciseType(curriculumGroups, "CD08", "8.14");
+  const topicReading = getTopicKnowledgeContent("CD08");
+  const topicSlides = createTopicKnowledgeSlides({ topic, reading: topicReading });
+  const slides = createLessonSlides({
+    topic,
+    exercise,
+    reading: getKnowledgeContent("8.14"),
+    problemTypes: getProblemTypesForTopic("CD08"),
+    examples: getExampleContent("8.14"),
+    questions: [],
+    includeKnowledge: false
+  });
+  assert.equal(topicSlides.length, 5);
+  assert.ok(topicSlides.every((slide) => slide.id.startsWith("CD08-topic-knowledge-")));
+  assert.deepEqual([...new Set(slides.map((slide) => slide.section))], ["types", "example"]);
+  assert.equal(slides.filter((slide) => slide.section === "knowledge").length, 0);
+  assert.equal(slides.find((slide) => slide.section === "types").problemType.code, "8.14");
+  assert.equal(slides.filter((slide) => slide.section === "example").length, 10);
 });
 
 test("workspace navigation flows from knowledge to examples to practice", () => {

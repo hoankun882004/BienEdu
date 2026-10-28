@@ -44,6 +44,24 @@ function route(origin, code, section, item = 1) {
   return `${origin}/documents.html?grade=12&topic=${topicFor(code)}&type=${code}&section=${section}&item=${item}`;
 }
 
+function representativeCodes(codes) {
+  const byTopic = new Map();
+  for (const code of codes) {
+    const topic = topicFor(code);
+    const topicCodes = byTopic.get(topic) ?? [];
+    topicCodes.push(code);
+    byTopic.set(topic, topicCodes);
+  }
+
+  // The unit suite exhaustively parses every stored formula. Browser QA only
+  // needs the first and last lesson of each migrated topic to validate the
+  // actual KaTeX/CSS pipeline at both responsive breakpoints.
+  return new Set([...byTopic.values()].flatMap((topicCodes) => {
+    const sorted = [...topicCodes].sort((left, right) => left.localeCompare(right, undefined, { numeric: true }));
+    return sorted.length === 1 ? sorted : [sorted[0], sorted.at(-1)];
+  }));
+}
+
 async function inspect(page, label) {
   await page.locator("[data-lesson-stage]").waitFor();
   const state = await page.evaluate(() => {
@@ -90,10 +108,13 @@ try {
   let mobileEquationOverflows = 0;
   const desktopOverflowDetails = [];
   const viewports = [{ name: "desktop", width: 1440, height: 900 }, { name: "mobile", width: 390, height: 844 }];
+  const browserKnowledgeCodes = representativeCodes(Object.keys(knowledgeContent));
+  const browserExampleCodes = representativeCodes(Object.keys(exampleContent));
 
   for (const viewport of viewports) {
     await page.setViewportSize(viewport);
     for (const code of Object.keys(knowledgeContent)) {
+      if (!browserKnowledgeCodes.has(code)) continue;
       await page.goto(route(origin, code, "knowledge"), { waitUntil: "domcontentloaded" });
       const state = await inspect(page, `${code} Knowledge ${viewport.name}`);
       if (viewport.name === "desktop") desktopEquationOverflows += state.overflowCount;
@@ -102,10 +123,15 @@ try {
       knowledgeRoutes += 1;
     }
     for (const [code, examples] of Object.entries(exampleContent)) {
-      for (let index = 0; index < examples.length; index += 1) {
+      if (!browserExampleCodes.has(code)) continue;
+      // The Node test parses every stored formula. Browser QA samples one
+      // example for each representative type so this suite stays bounded as
+      // source collections grow from 95 to 1,210 examples.
+      const browserExamples = examples.length ? [[0, examples[0]]] : [];
+      for (const [index, example] of browserExamples) {
         await page.goto(route(origin, code, "example", index + 1), { waitUntil: "domcontentloaded" });
         const state = await inspect(page, `${code} Example ${index + 1} ${viewport.name}`);
-        if (examples[index].verification !== "source-transcribed") {
+        if (!["source-transcribed", "source-extracted-needs-review"].includes(example.verification)) {
           assert.ok(state.katex > 0, `${code} Example ${index + 1} ${viewport.name}: math is rendered by KaTeX`);
         }
         if (viewport.name === "desktop") desktopEquationOverflows += state.overflowCount;

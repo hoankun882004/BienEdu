@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 import { getKnowledgeSection, knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all registered source topics expose bounded knowledge sections", () => {
-  assert.equal(Object.keys(knowledgeSections).length, 158);
+  assert.equal(Object.keys(knowledgeSections).length, 172);
   assert.equal(getKnowledgeSection("1.1").sourceId, "cd01-cd07-functions");
   assert.equal(getKnowledgeSection("8.1").sourceId, "cd08-cd11-exponential-logarithm");
   assert.equal(getKnowledgeSection("12.1").sourceId, "cd12-cd14-calculus");

@@ -14,7 +14,7 @@ test("content registry covers every declared topic and subtopic without a second
   assert.equal(Object.keys(learningContentRegistry.topics).length, 39);
   assert.equal(
     Object.values(learningContentRegistry.topics).flatMap((topic) => Object.values(topic.subtopics)).length,
-    347
+    361
   );
   assert.deepEqual(Object.keys(learningContentRegistry.topics), curriculumTopics.map((topic) => topic.id));
   assert.deepEqual(
@@ -83,7 +83,7 @@ test("imported slides have stable unique IDs and verified source references", ()
           ids.push(unit.id);
           assert.ok(unit.source.documentId);
           assert.ok(unit.source.pages.length > 0);
-          assert.ok(["verified", "source-transcribed", "needs-review"].includes(unit.verification));
+          assert.ok(["verified", "source-transcribed", "source-extracted-needs-review", "needs-review"].includes(unit.verification));
         }
       }
     }

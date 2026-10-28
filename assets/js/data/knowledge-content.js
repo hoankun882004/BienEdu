@@ -1,5 +1,11 @@
 import { calculusKnowledgeContent } from "./calculus-lessons.js?v=14.0";
-import { foundationKnowledgeContent } from "./foundation-lessons.generated.js?v=16.2";
+import {
+  foundationKnowledgeContent,
+  foundationProblemTypes,
+  foundationSharedKnowledgeModules,
+  foundationTopicKnowledgeContent,
+  foundationTopicKnowledgeReferences
+} from "./foundation-lessons.generated.js?v=17.0";
 
 // Structured reading content transcribed from the verified CD20–CD21 source PDF.
 // Keep this module text-only so the lesson remains readable, searchable and accessible.
@@ -317,4 +323,22 @@ export const knowledgeContent = Object.freeze({
 
 export function getKnowledgeContent(sourceTopic) {
   return knowledgeContent[sourceTopic] ?? null;
+}
+
+export function getTopicKnowledgeContent(topicId) {
+  const direct = foundationTopicKnowledgeContent[topicId];
+  if (direct) return direct;
+  const references = foundationTopicKnowledgeReferences[topicId] ?? [];
+  if (!references.length) return null;
+  return {
+    topicId,
+    pages: references.map((moduleId) => foundationSharedKnowledgeModules[moduleId]).filter(Boolean),
+    sharedModuleIds: references,
+    contentVersion: "final-pdf-v2",
+    reviewStatus: "needs-review"
+  };
+}
+
+export function getProblemTypesForTopic(topicId) {
+  return foundationProblemTypes[topicId] ?? [];
 }

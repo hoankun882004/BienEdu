@@ -23,19 +23,41 @@ export function getKnowledgeSlideType(reading = {}) {
   return "concept";
 }
 
+export function createTopicKnowledgeSlides({ topic, reading }) {
+  if (!topic || !reading) return [];
+  const pages = reading.pages ?? [reading];
+  return pages.map((readingPage, index) => ({
+    id: `${topic.id}-topic-knowledge-${readingPage.id ?? index + 1}`,
+    sourcePages: readingPage.sourcePages ?? [],
+    reading: readingPage,
+    approvedMathContent: null,
+    slideType: getKnowledgeSlideType(readingPage),
+    section: "knowledge",
+    kind: "knowledge-markdown",
+    label: "Kiến thức cần nhớ",
+    index,
+    title: topic.title,
+    topicId: topic.id,
+    exerciseId: null
+  }));
+}
+
 export function createLessonSlides({
   topic,
   exercise,
   approvedMathContent = null,
   contentRecord = null,
   reading = null,
+  topicReading = null,
+  problemTypes = [],
   examples = null,
   questions = [],
-  sourceExercises = []
+  sourceExercises = [],
+  includeKnowledge = true
 }) {
   const hasApprovedKnowledge = approvedMathContent?.verification?.status === "verified"
     && approvedMathContent.blocks?.some((block) => block.section === "knowledge");
-  if (!reading && !hasApprovedKnowledge) {
+  if (includeKnowledge && !topicReading && !reading && !hasApprovedKnowledge) {
     return [{
       id: "unavailable",
       section: "knowledge",
@@ -45,8 +67,11 @@ export function createLessonSlides({
     }];
   }
 
-  const readingPages = reading?.pages ?? (reading ? [reading] : []);
-  const knowledgeSlides = reading
+  const effectiveReading = topicReading ?? reading;
+  const readingPages = effectiveReading?.pages ?? (effectiveReading ? [effectiveReading] : []);
+  const knowledgeSlides = !includeKnowledge
+    ? []
+    : effectiveReading
     ? readingPages.map((readingPage, index) => ({
         id: contentRecord?.sections.knowledge.units[index]?.id ?? `${exercise.code}-knowledge-${index + 1}`,
         sourcePages: readingPage.sourcePages ?? [],
@@ -59,6 +84,19 @@ export function createLessonSlides({
         sourcePages: approvedMathContent.source.pages,
         approvedMathContent
       }];
+  const activeProblemType = problemTypes.find((item) => item.code === exercise.code) ?? null;
+  const problemTypeSlides = activeProblemType ? [{
+    id: `${exercise.code}-method`,
+    section: "types",
+    kind: "problem-types",
+    label: "Cách làm",
+    index: 0,
+    title: topic.title,
+    topicId: topic.id,
+    exerciseId: exercise.id,
+    activeProblemTypeId: exercise.code,
+    problemType: activeProblemType
+  }] : [];
   const exampleSlides = examples
     ? examples.map((workedExample, index) => ({
         id: workedExample.id ?? contentRecord?.sections.examples.units[index]?.id ?? `${exercise.code}-example-${index + 1}`,
@@ -79,6 +117,7 @@ export function createLessonSlides({
       topicId: topic.id,
       exerciseId: exercise.id
     })),
+    ...problemTypeSlides,
     ...exampleSlides.map((slide, index) => ({
       ...slide,
       id: slide.id,

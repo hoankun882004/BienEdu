@@ -50,6 +50,9 @@ function topicFor(code) {
 }
 
 function lessonUrl(origin, code, section = "knowledge", item = 1) {
+  if (section === "knowledge" && /^(?:[1-9]|10|11)\./.test(code)) {
+    return `${origin}/documents.html?grade=12&topic=${topicFor(code)}&section=knowledge&item=${item}`;
+  }
   return `${origin}/documents.html?grade=12&topic=${topicFor(code)}&type=${code}&section=${section}&item=${item}`;
 }
 

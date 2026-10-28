@@ -1,6 +1,6 @@
 {
   "schemaVersion": "bienedu.source-fidelity.v14",
-  "generatedAt": "2026-10-27T18:20:16.824Z",
+  "generatedAt": "2026-10-28T13:35:32.060Z",
   "allowedStatuses": [
     "verified",
     "needs-review",
@@ -60,12 +60,12 @@
   ],
   "summary": {
     "sourcePagesInspected": 243,
-    "mappedSubtopics": 158,
+    "mappedSubtopics": 172,
     "verifiedSubtopics": 3,
-    "needsReviewSubtopics": 155,
+    "needsReviewSubtopics": 169,
     "runtimeFormulaExpressions": 243,
     "verifiedRuntimeFormulaExpressions": 26,
-    "traceabilityBlocks": 768
+    "traceabilityBlocks": 836
   },
   "subtopics": [
     {
@@ -5028,10 +5028,12 @@
       "subtopicId": "8.9",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
-        17
+        17,
+        18
       ],
       "sourceRegionIds": [
-        "8.9-pdf-1"
+        "8.9-pdf-1",
+        "8.9-pdf-2"
       ],
       "destinationKnowledgeSlides": [
         "8.9-knowledge-1"
@@ -5094,6 +5096,436 @@
           "destinationSlideId": "8.9-knowledge-1",
           "status": "needs-review",
           "id": "8.9-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD08",
+      "subtopicId": "8.10",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "sourceRegionIds": [
+        "8.10-pdf-1",
+        "8.10-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "8.10-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            18
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.10-knowledge-1",
+          "status": "needs-review",
+          "id": "8.10-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            18
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.10-knowledge-1",
+          "status": "needs-review",
+          "id": "8.10-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            18
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.10-knowledge-1",
+          "status": "needs-review",
+          "id": "8.10-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            18
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.10-knowledge-1",
+          "status": "needs-review",
+          "id": "8.10-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        }
+      ]
+    },
+    {
+      "topicId": "CD08",
+      "subtopicId": "8.11",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        19,
+        20
+      ],
+      "sourceRegionIds": [
+        "8.11-pdf-1",
+        "8.11-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "8.11-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            19
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.11-knowledge-1",
+          "status": "needs-review",
+          "id": "8.11-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            19
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.11-knowledge-1",
+          "status": "needs-review",
+          "id": "8.11-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            19
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.11-knowledge-1",
+          "status": "needs-review",
+          "id": "8.11-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            19
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.11-knowledge-1",
+          "status": "needs-review",
+          "id": "8.11-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD08",
+      "subtopicId": "8.12",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "sourceRegionIds": [
+        "8.12-pdf-1",
+        "8.12-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "8.12-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            20
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.12-knowledge-1",
+          "status": "needs-review",
+          "id": "8.12-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            20
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.12-knowledge-1",
+          "status": "needs-review",
+          "id": "8.12-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            20
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.12-knowledge-1",
+          "status": "needs-review",
+          "id": "8.12-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            20
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.12-knowledge-1",
+          "status": "needs-review",
+          "id": "8.12-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            20
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.12-knowledge-1",
+          "status": "needs-review",
+          "id": "8.12-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD08",
+      "subtopicId": "8.13",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "sourceRegionIds": [
+        "8.13-pdf-1",
+        "8.13-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "8.13-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            21
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.13-knowledge-1",
+          "status": "needs-review",
+          "id": "8.13-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            21
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.13-knowledge-1",
+          "status": "needs-review",
+          "id": "8.13-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            21
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.13-knowledge-1",
+          "status": "needs-review",
+          "id": "8.13-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            21
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.13-knowledge-1",
+          "status": "needs-review",
+          "id": "8.13-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            21
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.13-knowledge-1",
+          "status": "needs-review",
+          "id": "8.13-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD08",
+      "subtopicId": "8.14",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        22
+      ],
+      "sourceRegionIds": [
+        "8.14-pdf-1"
+      ],
+      "destinationKnowledgeSlides": [
+        "8.14-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            22
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.14-knowledge-1",
+          "status": "needs-review",
+          "id": "8.14-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            22
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.14-knowledge-1",
+          "status": "needs-review",
+          "id": "8.14-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            22
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.14-knowledge-1",
+          "status": "needs-review",
+          "id": "8.14-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            22
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.14-knowledge-1",
+          "status": "needs-review",
+          "id": "8.14-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            22
+          ],
+          "topicId": "CD08",
+          "subtopicId": "8.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "8.14-knowledge-1",
+          "status": "needs-review",
+          "id": "8.14-knowledge-1-note",
           "kind": "note-or-warning",
           "sourceHeading": "Lưu ý từ tài liệu"
         }
@@ -5734,10 +6166,12 @@
       "subtopicId": "9.8",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
-        30
+        30,
+        31
       ],
       "sourceRegionIds": [
-        "9.8-pdf-1"
+        "9.8-pdf-1",
+        "9.8-pdf-2"
       ],
       "destinationKnowledgeSlides": [
         "9.8-knowledge-1"
@@ -5828,6 +6262,252 @@
           "destinationSlideId": "9.8-knowledge-1",
           "status": "needs-review",
           "id": "9.8-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD09",
+      "subtopicId": "9.9",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        31,
+        32
+      ],
+      "sourceRegionIds": [
+        "9.9-pdf-1",
+        "9.9-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "9.9-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            31
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.9-knowledge-1",
+          "status": "needs-review",
+          "id": "9.9-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            31
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.9-knowledge-1",
+          "status": "needs-review",
+          "id": "9.9-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            31
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.9-knowledge-1",
+          "status": "needs-review",
+          "id": "9.9-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            31
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.9-knowledge-1",
+          "status": "needs-review",
+          "id": "9.9-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            31
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.9-knowledge-1",
+          "status": "needs-review",
+          "id": "9.9-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD09",
+      "subtopicId": "9.10",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        32,
+        33
+      ],
+      "sourceRegionIds": [
+        "9.10-pdf-1",
+        "9.10-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "9.10-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            32
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.10-knowledge-1",
+          "status": "needs-review",
+          "id": "9.10-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            32
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.10-knowledge-1",
+          "status": "needs-review",
+          "id": "9.10-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            32
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.10-knowledge-1",
+          "status": "needs-review",
+          "id": "9.10-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            32
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.10-knowledge-1",
+          "status": "needs-review",
+          "id": "9.10-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD09",
+      "subtopicId": "9.11",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        33
+      ],
+      "sourceRegionIds": [
+        "9.11-pdf-1"
+      ],
+      "destinationKnowledgeSlides": [
+        "9.11-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            33
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.11-knowledge-1",
+          "status": "needs-review",
+          "id": "9.11-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            33
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.11-knowledge-1",
+          "status": "needs-review",
+          "id": "9.11-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            33
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.11-knowledge-1",
+          "status": "needs-review",
+          "id": "9.11-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            33
+          ],
+          "topicId": "CD09",
+          "subtopicId": "9.11",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "9.11-knowledge-1",
+          "status": "needs-review",
+          "id": "9.11-knowledge-1-note",
           "kind": "note-or-warning",
           "sourceHeading": "Lưu ý từ tài liệu"
         }
@@ -6496,10 +7176,12 @@
       "subtopicId": "10.8",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
-        41
+        41,
+        42
       ],
       "sourceRegionIds": [
-        "10.8-pdf-1"
+        "10.8-pdf-1",
+        "10.8-pdf-2"
       ],
       "destinationKnowledgeSlides": [
         "10.8-knowledge-1"
@@ -6562,6 +7244,188 @@
           "destinationSlideId": "10.8-knowledge-1",
           "status": "needs-review",
           "id": "10.8-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD10",
+      "subtopicId": "10.9",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        42,
+        43
+      ],
+      "sourceRegionIds": [
+        "10.9-pdf-1",
+        "10.9-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "10.9-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            42
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.9-knowledge-1",
+          "status": "needs-review",
+          "id": "10.9-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            42
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.9-knowledge-1",
+          "status": "needs-review",
+          "id": "10.9-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            42
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.9-knowledge-1",
+          "status": "needs-review",
+          "id": "10.9-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            42
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.9-knowledge-1",
+          "status": "needs-review",
+          "id": "10.9-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            42
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.9",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.9-knowledge-1",
+          "status": "needs-review",
+          "id": "10.9-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD10",
+      "subtopicId": "10.10",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        43
+      ],
+      "sourceRegionIds": [
+        "10.10-pdf-1"
+      ],
+      "destinationKnowledgeSlides": [
+        "10.10-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            43
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.10-knowledge-1",
+          "status": "needs-review",
+          "id": "10.10-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            43
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.10-knowledge-1",
+          "status": "needs-review",
+          "id": "10.10-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            43
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.10-knowledge-1",
+          "status": "needs-review",
+          "id": "10.10-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            43
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.10-knowledge-1",
+          "status": "needs-review",
+          "id": "10.10-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            43
+          ],
+          "topicId": "CD10",
+          "subtopicId": "10.10",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "10.10-knowledge-1",
+          "status": "needs-review",
+          "id": "10.10-knowledge-1-note",
           "kind": "note-or-warning",
           "sourceHeading": "Lưu ý từ tài liệu"
         }
@@ -7744,10 +8608,12 @@
       "subtopicId": "11.11",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
-        54
+        54,
+        55
       ],
       "sourceRegionIds": [
-        "11.11-pdf-1"
+        "11.11-pdf-1",
+        "11.11-pdf-2"
       ],
       "destinationKnowledgeSlides": [
         "11.11-knowledge-1"
@@ -7824,6 +8690,400 @@
           "destinationSlideId": "11.11-knowledge-1",
           "status": "needs-review",
           "id": "11.11-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD11",
+      "subtopicId": "11.12",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        55,
+        56
+      ],
+      "sourceRegionIds": [
+        "11.12-pdf-1",
+        "11.12-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "11.12-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-method-04",
+          "kind": "method",
+          "sourceHeading": "Bước 04"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            55
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.12",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.12-knowledge-1",
+          "status": "needs-review",
+          "id": "11.12-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD11",
+      "subtopicId": "11.13",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        56,
+        57
+      ],
+      "sourceRegionIds": [
+        "11.13-pdf-1",
+        "11.13-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "11.13-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            56
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.13-knowledge-1",
+          "status": "needs-review",
+          "id": "11.13-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            56
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.13-knowledge-1",
+          "status": "needs-review",
+          "id": "11.13-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            56
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.13-knowledge-1",
+          "status": "needs-review",
+          "id": "11.13-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            56
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.13-knowledge-1",
+          "status": "needs-review",
+          "id": "11.13-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            56
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.13",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.13-knowledge-1",
+          "status": "needs-review",
+          "id": "11.13-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD11",
+      "subtopicId": "11.14",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        57,
+        58
+      ],
+      "sourceRegionIds": [
+        "11.14-pdf-1",
+        "11.14-pdf-2"
+      ],
+      "destinationKnowledgeSlides": [
+        "11.14-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-method-04",
+          "kind": "method",
+          "sourceHeading": "Bước 04"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            57
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.14",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.14-knowledge-1",
+          "status": "needs-review",
+          "id": "11.14-knowledge-1-note",
+          "kind": "note-or-warning",
+          "sourceHeading": "Lưu ý từ tài liệu"
+        }
+      ]
+    },
+    {
+      "topicId": "CD11",
+      "subtopicId": "11.15",
+      "sourceDocumentId": "cd08-cd11-exponential-logarithm",
+      "sourcePages": [
+        58
+      ],
+      "sourceRegionIds": [
+        "11.15-pdf-1"
+      ],
+      "destinationKnowledgeSlides": [
+        "11.15-knowledge-1"
+      ],
+      "runtimeFormulaExpressions": 0,
+      "approvedSourceBlocks": 0,
+      "verification": "needs-review",
+      "reviewEvidence": null,
+      "blocks": [
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            58
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.15",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.15-knowledge-1",
+          "status": "needs-review",
+          "id": "11.15-knowledge-1-lead",
+          "kind": "definition-or-explanation",
+          "sourceHeading": "Kiến thức trọng tâm"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            58
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.15",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.15-knowledge-1",
+          "status": "needs-review",
+          "id": "11.15-knowledge-1-method-01",
+          "kind": "method",
+          "sourceHeading": "Bước 01"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            58
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.15",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.15-knowledge-1",
+          "status": "needs-review",
+          "id": "11.15-knowledge-1-method-02",
+          "kind": "method",
+          "sourceHeading": "Bước 02"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            58
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.15",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.15-knowledge-1",
+          "status": "needs-review",
+          "id": "11.15-knowledge-1-method-03",
+          "kind": "method",
+          "sourceHeading": "Bước 03"
+        },
+        {
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sourcePages": [
+            58
+          ],
+          "topicId": "CD11",
+          "subtopicId": "11.15",
+          "destinationSection": "knowledge",
+          "destinationSlideId": "11.15-knowledge-1",
+          "status": "needs-review",
+          "id": "11.15-knowledge-1-note",
           "kind": "note-or-warning",
           "sourceHeading": "Lưu ý từ tài liệu"
         }

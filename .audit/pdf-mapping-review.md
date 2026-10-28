@@ -2,8 +2,8 @@
 
 Generated from the checked-in verified mapping. Coordinates use normalized top-left PDF page space.
 
-- Verified subtopics: 158.
-- Verified page regions: 301.
+- Verified subtopics: 172.
+- Verified page regions: 329.
 - Precision: exact heading-to-next-heading region boundaries.
 - CD14.9 ends on original page 48; page 49 is a document-wide formula summary and remains excluded.
 - The CD20–CD23-named source ends at CD21.8; no CD22/CD23 lesson mapping is claimed.
@@ -89,7 +89,12 @@ Generated from the checked-in verified mapping. Coordinates use normalized top-l
 | CD08 | 8.6 | cd08-cd11-exponential-logarithm | 14 | 15 | p14 [0.055, 0.066, 0.890, 0.899]<br>p15 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD08 | 8.7 | cd08-cd11-exponential-logarithm | 15 | 16 | p15 [0.055, 0.066, 0.890, 0.899]<br>p16 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD08 | 8.8 | cd08-cd11-exponential-logarithm | 16 | 17 | p16 [0.055, 0.066, 0.890, 0.899]<br>p17 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
-| CD08 | 8.9 | cd08-cd11-exponential-logarithm | 17 | 17 | p17 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
+| CD08 | 8.9 | cd08-cd11-exponential-logarithm | 17 | 18 | p17 [0.055, 0.066, 0.890, 0.899]<br>p18 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD08 | 8.10 | cd08-cd11-exponential-logarithm | 18 | 19 | p18 [0.055, 0.066, 0.890, 0.899]<br>p19 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD08 | 8.11 | cd08-cd11-exponential-logarithm | 19 | 20 | p19 [0.055, 0.066, 0.890, 0.899]<br>p20 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD08 | 8.12 | cd08-cd11-exponential-logarithm | 20 | 21 | p20 [0.055, 0.066, 0.890, 0.899]<br>p21 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD08 | 8.13 | cd08-cd11-exponential-logarithm | 21 | 22 | p21 [0.055, 0.066, 0.890, 0.899]<br>p22 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD08 | 8.14 | cd08-cd11-exponential-logarithm | 22 | 22 | p22 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
 | CD09 | 9.1 | cd08-cd11-exponential-logarithm | 23 | 24 | p23 [0.055, 0.112, 0.890, 0.853]<br>p24 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD09 | 9.2 | cd08-cd11-exponential-logarithm | 24 | 25 | p24 [0.055, 0.066, 0.890, 0.899]<br>p25 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD09 | 9.3 | cd08-cd11-exponential-logarithm | 25 | 26 | p25 [0.055, 0.066, 0.890, 0.899]<br>p26 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
@@ -97,7 +102,10 @@ Generated from the checked-in verified mapping. Coordinates use normalized top-l
 | CD09 | 9.5 | cd08-cd11-exponential-logarithm | 27 | 28 | p27 [0.055, 0.066, 0.890, 0.899]<br>p28 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD09 | 9.6 | cd08-cd11-exponential-logarithm | 28 | 29 | p28 [0.055, 0.066, 0.890, 0.899]<br>p29 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD09 | 9.7 | cd08-cd11-exponential-logarithm | 29 | 30 | p29 [0.055, 0.066, 0.890, 0.899]<br>p30 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
-| CD09 | 9.8 | cd08-cd11-exponential-logarithm | 30 | 30 | p30 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
+| CD09 | 9.8 | cd08-cd11-exponential-logarithm | 30 | 31 | p30 [0.055, 0.066, 0.890, 0.899]<br>p31 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD09 | 9.9 | cd08-cd11-exponential-logarithm | 31 | 32 | p31 [0.055, 0.066, 0.890, 0.899]<br>p32 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD09 | 9.10 | cd08-cd11-exponential-logarithm | 32 | 33 | p32 [0.055, 0.066, 0.890, 0.899]<br>p33 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD09 | 9.11 | cd08-cd11-exponential-logarithm | 33 | 33 | p33 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
 | CD10 | 10.1 | cd08-cd11-exponential-logarithm | 34 | 35 | p34 [0.055, 0.112, 0.890, 0.853]<br>p35 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD10 | 10.2 | cd08-cd11-exponential-logarithm | 35 | 36 | p35 [0.055, 0.066, 0.890, 0.899]<br>p36 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD10 | 10.3 | cd08-cd11-exponential-logarithm | 36 | 37 | p36 [0.055, 0.066, 0.890, 0.899]<br>p37 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
@@ -105,7 +113,9 @@ Generated from the checked-in verified mapping. Coordinates use normalized top-l
 | CD10 | 10.5 | cd08-cd11-exponential-logarithm | 38 | 39 | p38 [0.055, 0.066, 0.890, 0.899]<br>p39 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD10 | 10.6 | cd08-cd11-exponential-logarithm | 39 | 40 | p39 [0.055, 0.066, 0.890, 0.899]<br>p40 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD10 | 10.7 | cd08-cd11-exponential-logarithm | 40 | 41 | p40 [0.055, 0.066, 0.890, 0.899]<br>p41 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
-| CD10 | 10.8 | cd08-cd11-exponential-logarithm | 41 | 41 | p41 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
+| CD10 | 10.8 | cd08-cd11-exponential-logarithm | 41 | 42 | p41 [0.055, 0.066, 0.890, 0.899]<br>p42 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD10 | 10.9 | cd08-cd11-exponential-logarithm | 42 | 43 | p42 [0.055, 0.066, 0.890, 0.899]<br>p43 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD10 | 10.10 | cd08-cd11-exponential-logarithm | 43 | 43 | p43 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
 | CD11 | 11.1 | cd08-cd11-exponential-logarithm | 44 | 45 | p44 [0.055, 0.112, 0.890, 0.853]<br>p45 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD11 | 11.2 | cd08-cd11-exponential-logarithm | 45 | 46 | p45 [0.055, 0.066, 0.890, 0.899]<br>p46 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD11 | 11.3 | cd08-cd11-exponential-logarithm | 46 | 47 | p46 [0.055, 0.066, 0.890, 0.899]<br>p47 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
@@ -116,7 +126,11 @@ Generated from the checked-in verified mapping. Coordinates use normalized top-l
 | CD11 | 11.8 | cd08-cd11-exponential-logarithm | 51 | 52 | p51 [0.055, 0.065, 0.890, 0.900]<br>p52 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD11 | 11.9 | cd08-cd11-exponential-logarithm | 52 | 53 | p52 [0.055, 0.066, 0.890, 0.899]<br>p53 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
 | CD11 | 11.10 | cd08-cd11-exponential-logarithm | 53 | 54 | p53 [0.055, 0.066, 0.890, 0.899]<br>p54 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
-| CD11 | 11.11 | cd08-cd11-exponential-logarithm | 54 | 54 | p54 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
+| CD11 | 11.11 | cd08-cd11-exponential-logarithm | 54 | 55 | p54 [0.055, 0.066, 0.890, 0.899]<br>p55 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD11 | 11.12 | cd08-cd11-exponential-logarithm | 55 | 56 | p55 [0.055, 0.066, 0.890, 0.899]<br>p56 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD11 | 11.13 | cd08-cd11-exponential-logarithm | 56 | 57 | p56 [0.055, 0.066, 0.890, 0.899]<br>p57 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD11 | 11.14 | cd08-cd11-exponential-logarithm | 57 | 58 | p57 [0.055, 0.066, 0.890, 0.899]<br>p58 [0.055, 0.055, 0.890, 0.011] | verified exact-region |
+| CD11 | 11.15 | cd08-cd11-exponential-logarithm | 58 | 58 | p58 [0.055, 0.066, 0.890, 0.899] | verified exact-region |
 | CD12 | 12.1 | cd12-cd14-calculus | 3 | 5 | p3 [0.055, 0.113, 0.890, 0.852]<br>p4 [0.055, 0.055, 0.890, 0.910]<br>p5 [0.055, 0.055, 0.890, 0.253] | verified exact-region |
 | CD12 | 12.2 | cd12-cd14-calculus | 5 | 7 | p5 [0.055, 0.308, 0.890, 0.657]<br>p6 [0.055, 0.055, 0.890, 0.910]<br>p7 [0.055, 0.055, 0.890, 0.006] | verified exact-region |
 | CD12 | 12.3 | cd12-cd14-calculus | 7 | 8 | p7 [0.055, 0.061, 0.890, 0.904]<br>p8 [0.055, 0.055, 0.890, 0.663] | verified exact-region |

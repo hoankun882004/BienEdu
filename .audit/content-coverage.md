@@ -1,17 +1,17 @@
 # BienEdu content coverage
 
-Generated: 2026-10-27T18:20:16.888Z
+Generated: 2026-10-28T13:35:32.100Z
 
 ## Audit summary
 
-- Curriculum: 39 topics / 347 subtopics.
+- Curriculum: 39 topics / 361 subtopics.
 - Source PDFs discovered: 4.
 - Topic availability: 2 available, 14 partial, 23 coming soon, 0 needs review.
-- CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. 95/900 text-complete worked-example candidates are published as source-transcribed samples; 805 remain in review. 170 examples depend on diagrams/graphs and are withheld until their assets are mapped.
+- CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. 1210/1022 text-complete worked-example candidates are published as source-transcribed samples; -188 remain in review. 188 examples depend on diagrams/graphs and are withheld until their assets are mapped.
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
 - Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.
 - CD20-CD21: all headings, theory blocks and worked examples in the 18-page file are represented. The file contains no CD22/CD23 lesson pages despite its filename/cover wording.
-- V14 source-fidelity: 3/158 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 155 stay needs-review and are not silently promoted by coverage counts.
+- V14 source-fidelity: 3/172 mapped subtopics have immutable block-level source approval (12.1, 20.1, 20.2); the remaining 169 stay needs-review and are not silently promoted by coverage counts.
 
 ## Source documents
 
@@ -26,17 +26,17 @@ Generated: 2026-10-27T18:20:16.888Z
 
 | Topic | Subtopics | Available | Knowledge | Displayed examples | Source examples | Source practice | Answer keys | Auto-graded source | Needs review | Source coverage | Runtime |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| CD01 | 10 | 0 | 11 | 10 | 10 | 0 | 0 | 0 | 0 | complete | partial |
-| CD02 | 9 | 0 | 9 | 6 | 6 | 0 | 0 | 0 | 0 | partial | partial |
-| CD03 | 10 | 0 | 10 | 8 | 8 | 0 | 0 | 0 | 0 | partial | partial |
-| CD04 | 11 | 0 | 11 | 9 | 9 | 0 | 0 | 0 | 0 | partial | partial |
-| CD05 | 9 | 0 | 9 | 7 | 7 | 0 | 0 | 0 | 0 | partial | partial |
-| CD06 | 13 | 0 | 13 | 10 | 10 | 0 | 0 | 0 | 0 | partial | partial |
-| CD07 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | complete | partial |
-| CD08 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | complete | partial |
-| CD09 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | complete | partial |
-| CD10 | 8 | 0 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | complete | partial |
-| CD11 | 11 | 0 | 11 | 11 | 11 | 0 | 0 | 0 | 0 | complete | partial |
+| CD01 | 10 | 0 | 11 | 100 | 100 | 0 | 0 | 0 | 0 | complete | partial |
+| CD02 | 9 | 0 | 9 | 90 | 90 | 0 | 0 | 0 | 0 | complete | partial |
+| CD03 | 10 | 0 | 10 | 100 | 100 | 0 | 0 | 0 | 0 | complete | partial |
+| CD04 | 11 | 0 | 11 | 110 | 110 | 0 | 0 | 0 | 0 | complete | partial |
+| CD05 | 9 | 0 | 9 | 90 | 90 | 0 | 0 | 0 | 0 | complete | partial |
+| CD06 | 13 | 0 | 13 | 130 | 130 | 0 | 0 | 0 | 0 | complete | partial |
+| CD07 | 9 | 0 | 9 | 90 | 90 | 0 | 0 | 0 | 0 | complete | partial |
+| CD08 | 14 | 0 | 14 | 140 | 140 | 0 | 0 | 0 | 0 | complete | partial |
+| CD09 | 11 | 0 | 11 | 110 | 110 | 0 | 0 | 0 | 0 | complete | partial |
+| CD10 | 10 | 0 | 10 | 100 | 100 | 0 | 0 | 0 | 0 | complete | partial |
+| CD11 | 15 | 0 | 15 | 150 | 150 | 0 | 0 | 0 | 0 | complete | partial |
 | CD12 | 9 | 1 | 10 | 18 | 18 | 90 | 90 | 0 | 1 | complete | partial |
 | CD13 | 8 | 0 | 8 | 22 | 16 | 80 | 80 | 0 | 3 | complete | partial |
 | CD14 | 9 | 0 | 9 | 26 | 18 | 90 | 90 | 0 | 5 | complete | partial |

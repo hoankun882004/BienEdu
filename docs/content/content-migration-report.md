@@ -1,6 +1,6 @@
 # Content migration report
 
-Generated: 2026-10-27T18:20:16.826Z
+Generated: 2026-10-28T13:35:32.061Z
 
 ## 1. Root Cause Analysis — CD01
 
@@ -32,17 +32,17 @@ Generated: 2026-10-27T18:20:16.826Z
 
 ## 4. Topic coverage
 
-- Registry: 39 chuyên đề / 347 dạng bài.
+- Registry: 39 chuyên đề / 361 dạng bài.
 - Có PDF và nội dung imported: 16 chuyên đề.
 - Chưa có PDF mapping: 23 chuyên đề.
 - Ma trận đầy đủ: [topic-coverage-report.md](./topic-coverage-report.md).
 
 ## 5. Foundation example inventory
 
-- Đề nguồn: 1070; lời giải nguồn: 1070.
-- Có thể chuyển đổi text sau bộ lọc hình: 900.
-- Phụ thuộc đồ thị/hình/bảng: 170; chưa publish vì asset chưa được gắn đúng vị trí.
-- Đang publish chọn mẫu có provenance: 95; còn 805 candidate trong hàng đợi review, không tự động phát hành hàng loạt.
+- Đề nguồn: 1210; lời giải nguồn: 1210.
+- Có thể chuyển đổi text sau bộ lọc hình: 1022.
+- Phụ thuộc đồ thị/hình/bảng: 188; chưa publish vì asset chưa được gắn đúng vị trí.
+- Đang publish chọn mẫu có provenance: 1210; còn -188 candidate trong hàng đợi review, không tự động phát hành hàng loạt.
 
 ## 6. Implementation Summary
 
@@ -70,7 +70,7 @@ Generated: 2026-10-27T18:20:16.826Z
 ## 8. Chưa hoàn thành
 
 - CD02–CD11 còn các khối Kiến thức cần nhớ cấp chuyên đề cần chuyển đổi có review như CD01.
-- 805 ví dụ text-complete chưa được review để publish; 170 ví dụ cần asset hình/đồ thị.
+- -188 ví dụ text-complete chưa được review để publish; 188 ví dụ cần asset hình/đồ thị.
 - CD15–CD19 và CD22–CD39 chưa có PDF nguồn được mapping trong workspace.
 - 9 đáp số CD12–CD14 có xung đột nguồn đã biết vẫn giữ needs-review và không auto-grade.
 - Không có lỗi kỹ thuật nghiêm trọng còn mở tại checkpoint; các mục trên là thiếu nguồn hoặc thiếu bằng chứng kiểm duyệt, không được che bằng placeholder.

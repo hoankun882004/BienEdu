@@ -32,11 +32,12 @@ test("content migration audit publishes a reusable 39-topic manifest", () => {
 test("foundation audit distinguishes extracted candidates from reviewed publication", () => {
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
   const rows = Object.values(manifest.foundationImportAudit);
-  assert.equal(rows.reduce((total, row) => total + row.sourcePromptCount, 0), 1070);
-  assert.equal(rows.reduce((total, row) => total + row.sourceAnswerCount, 0), 1070);
-  assert.equal(rows.reduce((total, row) => total + row.textCompleteCandidateCount, 0), 900);
-  assert.equal(rows.reduce((total, row) => total + row.diagramDependentCount, 0), 170);
-  assert.equal(rows.reduce((total, row) => total + row.workedExampleCount, 0), 95);
+  assert.equal(rows.reduce((total, row) => total + row.sourcePromptCount, 0), 1210);
+  assert.equal(rows.reduce((total, row) => total + row.sourceAnswerCount, 0), 1210);
+  assert.equal(rows.reduce((total, row) => total + row.mappedSolutionCount, 0), 1210);
+  assert.equal(rows.reduce((total, row) => total + row.textCompleteCandidateCount, 0), 1022);
+  assert.equal(rows.reduce((total, row) => total + row.diagramDependentCount, 0), 188);
+  assert.equal(rows.reduce((total, row) => total + row.workedExampleCount, 0), 1210);
 });
 
 test("required content reports state the CD01 root cause and incomplete scope", () => {

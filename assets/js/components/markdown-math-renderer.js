@@ -6,7 +6,7 @@ const SUBSCRIPT_CHARACTERS = Object.freeze({
 });
 const SUPERSCRIPT_CHARACTERS = Object.freeze({
   "⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4", "⁵": "5", "⁶": "6", "⁷": "7", "⁸": "8", "⁹": "9",
-  "⁺": "+", "⁻": "-", "⁽": "(", "⁾": ")", "ᵃ": "a", "ᵇ": "b", "ᶜ": "c", "ᵈ": "d", "ᵉ": "e", "ᶠ": "f", "ᵍ": "g", "ⁱ": "i", "ʲ": "j", "ⁿ": "n", "ᵏ": "k", "ᵐ": "m", "ʳ": "r", "ᵗ": "t", "ᵘ": "u", "ᵛ": "v", "ʷ": "w", "ˣ": "x", "ʸ": "y", "ᶻ": "z"
+  "⁺": "+", "⁻": "-", "⁽": "(", "⁾": ")", "⁄": "/", "˒": ",", "ᵃ": "a", "ᵇ": "b", "ᶜ": "c", "ᵈ": "d", "ᵉ": "e", "ᶠ": "f", "ᵍ": "g", "ⁱ": "i", "ʲ": "j", "ⁿ": "n", "ᵏ": "k", "ᵐ": "m", "ʳ": "r", "ᵗ": "t", "ᵘ": "u", "ᵛ": "v", "ʷ": "w", "ˣ": "x", "ʸ": "y", "ᶻ": "z"
 });
 const SUBSCRIPT_PATTERN = new RegExp(`[${Object.keys(SUBSCRIPT_CHARACTERS).join("")}]+`, "g");
 const SUPERSCRIPT_PATTERN = new RegExp(`[${Object.keys(SUPERSCRIPT_CHARACTERS).join("")}]+`, "g");
@@ -44,16 +44,17 @@ function convertSimpleFractions(value) {
   // Source files use compact textbook notation (x²/2, n!/[k!(n-k)!]).
   // Convert only balanced, unambiguous factors; leave genuinely complex
   // quotients untouched rather than guessing their mathematical grouping.
-  const grouped = String.raw`(?:\([^()]+\)|\[[^\[\]]+\])`;
+  const grouped = String.raw`(?:\((?:[^()]|\([^()]*\))+\)|\[(?:[^\[\]]|\[[^\[\]]*\])+\])`;
   const symbol = String.raw`[A-Za-z0-9]+(?:(?:_\{[^{}]+\}|\^\{[^{}]+\}|[!']))*(?:\([^()]*\))?`;
-  const factor = `(?:${grouped}|${symbol})`;
+  const commandFactor = String.raw`\\(?:ln|log|sin|cos|tan|cot|sqrt)\s*(?:${grouped}|${symbol})`;
+  const factor = `(?:${commandFactor}|${grouped}|${symbol})`;
   const fraction = new RegExp(`(${factor})\\s*\\/\\s*(${factor})`, "g");
   let converted = value;
   for (let pass = 0; pass < 3; pass += 1) {
     const next = converted.replace(fraction, (match, numerator, denominator, offset, source) => {
       const prefix = source.slice(0, offset);
       if (numerator.startsWith("(") && /\\(?:arctan|arcsin|arccos|sin|cos|tan|cot|sec|csc|ln|log)\s*$/.test(prefix)) return match;
-      if (numerator.startsWith("(") && /[A-Za-z0-9'_^}]\s*$/.test(prefix)) return match;
+      if (numerator.startsWith("(") && /[A-Za-z0-9'_^}]$/.test(prefix)) return match;
       return `\\frac{${numerator}}{${denominator}}`;
     });
     if (next === converted) break;
@@ -92,6 +93,7 @@ export function mathTextToLatex(value) {
     .replaceAll("∞", command("infty"))
     .replaceAll("×", command("times"))
     .replaceAll("·", command("cdot"))
+    .replaceAll("◦", command("circ"))
     .replaceAll("⋯", command("cdots"))
     .replaceAll("…", command("ldots"))
     .replaceAll("♥", command("heartsuit"))
@@ -318,6 +320,6 @@ export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const layout = reading ? knowledgeLayout(reading) : "article";
   return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="${verification}" aria-labelledby="lesson-content-title">
     <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p><small>${verificationLabel}</small></header>
-    <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">Kiến thức trọng tâm</h2><p>${escapeHtml(exercise.title)}</p></header>${body}</div>
+    <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">${escapeHtml(reading?.title ?? "Kiến thức trọng tâm")}</h2><p>${escapeHtml(reading?.topicId ? "Kiến thức cần nhớ" : exercise.title)}</p></header>${body}</div>
   </article>`;
 }

@@ -204,7 +204,7 @@ function validateRegistry(inventory) {
   const warnings = [];
   const allSubtopics = Object.values(learningContentRegistry.topics).flatMap((topic) => Object.values(topic.subtopics));
   if (Object.keys(learningContentRegistry.topics).length !== curriculumMeta.topicCount) errors.push("Registry does not contain all 39 curriculum topics.");
-  if (allSubtopics.length !== curriculumMeta.exerciseTypeCount) errors.push("Registry does not contain all 347 curriculum subtopics.");
+  if (allSubtopics.length !== curriculumMeta.exerciseTypeCount) errors.push(`Registry does not contain all ${curriculumMeta.exerciseTypeCount} curriculum subtopics.`);
 
   const ids = [];
   for (const subtopic of allSubtopics) {

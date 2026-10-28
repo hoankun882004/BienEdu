@@ -3,7 +3,7 @@ export const curriculumMeta = Object.freeze({
   "worksheet": "Sheet1",
   "groupCount": 13,
   "topicCount": 39,
-  "exerciseTypeCount": 347,
+  "exerciseTypeCount": 361,
   "topicIdsComplete": true,
   "duplicateShortCodes": 0,
   "missingValues": 0,
@@ -573,6 +573,36 @@ export const curriculumGroups = [
             "code": "8.9",
             "title": "Bài toán nhận biết nhanh",
             "order": 9
+          },
+          {
+            "id": "CD08-10",
+            "code": "8.10",
+            "title": "Căn bậc n và điều kiện của lũy thừa",
+            "order": 10
+          },
+          {
+            "id": "CD08-11",
+            "code": "8.11",
+            "title": "Tính lôgarit theo dữ kiện cho trước",
+            "order": 11
+          },
+          {
+            "id": "CD08-12",
+            "code": "8.12",
+            "title": "Tích lôgarit và cơ số là lũy thừa",
+            "order": 12
+          },
+          {
+            "id": "CD08-13",
+            "code": "8.13",
+            "title": "Đọc cơ số và vị trí các đồ thị",
+            "order": 13
+          },
+          {
+            "id": "CD08-14",
+            "code": "8.14",
+            "title": "Sử dụng máy tính và làm tròn",
+            "order": 14
           }
         ]
       },
@@ -630,6 +660,24 @@ export const curriculumGroups = [
             "code": "9.8",
             "title": "Đếm số nghiệm",
             "order": 8
+          },
+          {
+            "id": "CD09-09",
+            "code": "9.9",
+            "title": "Phương trình lôgarit cơ bản và cùng cơ số",
+            "order": 9
+          },
+          {
+            "id": "CD09-10",
+            "code": "9.10",
+            "title": "Phương trình có cơ số chứa ẩn",
+            "order": 10
+          },
+          {
+            "id": "CD09-11",
+            "code": "9.11",
+            "title": "Phân biệt điều kiện có nghiệm và số nghiệm",
+            "order": 11
           }
         ]
       },
@@ -687,6 +735,18 @@ export const curriculumGroups = [
             "code": "10.8",
             "title": "Kết hợp đồ thị",
             "order": 8
+          },
+          {
+            "id": "CD10-09",
+            "code": "10.9",
+            "title": "Đếm nghiệm nguyên của bất phương trình",
+            "order": 9
+          },
+          {
+            "id": "CD10-10",
+            "code": "10.10",
+            "title": "Tham số và số nghiệm nguyên ở mức cơ bản",
+            "order": 10
           }
         ]
       },
@@ -762,6 +822,30 @@ export const curriculumGroups = [
             "code": "11.11",
             "title": "Xác định thời gian đạt ngưỡng",
             "order": 11
+          },
+          {
+            "id": "CD11-12",
+            "code": "11.12",
+            "title": "Độ pH, cường độ âm và áp suất",
+            "order": 12
+          },
+          {
+            "id": "CD11-13",
+            "code": "11.13",
+            "title": "Mô hình tốc độ tỷ lệ và hàm lôgarit",
+            "order": 13
+          },
+          {
+            "id": "CD11-14",
+            "code": "11.14",
+            "title": "Gửi thêm tiền và trả góp theo kỳ",
+            "order": 14
+          },
+          {
+            "id": "CD11-15",
+            "code": "11.15",
+            "title": "Suy giảm có mức nền và thay đổi theo giai đoạn",
+            "order": 15
           }
         ]
       }

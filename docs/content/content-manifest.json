@@ -1,6 +1,6 @@
 {
   "schemaVersion": "bienedu.content-migration.v1",
-  "generatedAt": "2026-10-27T18:20:16.826Z",
+  "generatedAt": "2026-10-28T13:35:32.061Z",
   "policy": {
     "sourceOfTruth": "PDF source + immutable review evidence",
     "studentFormat": "Markdown + LaTeX",
@@ -14,7 +14,7 @@
   },
   "curriculum": {
     "topics": 39,
-    "subtopics": 347
+    "subtopics": 361
   },
   "documents": [
     {
@@ -113,25 +113,31 @@
   "foundationImportAudit": {
     "cd01-cd07-functions": {
       "fileName": "Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "lessonCount": 71,
       "knowledgeCount": 71,
-      "workedExampleCount": 59,
+      "workedExampleCount": 710,
       "sourcePromptCount": 710,
       "sourceAnswerCount": 710,
+      "mappedSolutionCount": 710,
+      "sourceFigureCount": 154,
       "textCompleteCandidateCount": 556,
       "diagramDependentCount": 154,
-      "pendingReviewExampleCount": 497
+      "pendingReviewExampleCount": 710
     },
     "cd08-cd11-exponential-logarithm": {
       "fileName": "Mũ-Logarit CD08-CD11.pdf",
-      "lessonCount": 36,
-      "knowledgeCount": 36,
-      "workedExampleCount": 36,
-      "sourcePromptCount": 360,
-      "sourceAnswerCount": 360,
-      "textCompleteCandidateCount": 344,
-      "diagramDependentCount": 16,
-      "pendingReviewExampleCount": 308
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "lessonCount": 50,
+      "knowledgeCount": 50,
+      "workedExampleCount": 500,
+      "sourcePromptCount": 500,
+      "sourceAnswerCount": 500,
+      "mappedSolutionCount": 500,
+      "sourceFigureCount": 34,
+      "textCompleteCandidateCount": 466,
+      "diagramDependentCount": 34,
+      "pendingReviewExampleCount": 500
     }
   },
   "topics": [
@@ -154,7 +160,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 10,
+          "units": 100,
           "status": "imported"
         },
         "practice": {
@@ -196,7 +202,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 6,
+          "units": 90,
           "status": "imported"
         },
         "practice": {
@@ -217,7 +223,7 @@
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
-      "sourceCoverage": "partial"
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD03",
@@ -238,7 +244,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 8,
+          "units": 100,
           "status": "imported"
         },
         "practice": {
@@ -259,7 +265,7 @@
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
-      "sourceCoverage": "partial"
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD04",
@@ -280,7 +286,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 9,
+          "units": 110,
           "status": "imported"
         },
         "practice": {
@@ -301,7 +307,7 @@
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
-      "sourceCoverage": "partial"
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD05",
@@ -322,7 +328,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 7,
+          "units": 90,
           "status": "imported"
         },
         "practice": {
@@ -343,7 +349,7 @@
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
-      "sourceCoverage": "partial"
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD06",
@@ -364,7 +370,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 10,
+          "units": 130,
           "status": "imported"
         },
         "practice": {
@@ -385,7 +391,7 @@
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
-      "sourceCoverage": "partial"
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD07",
@@ -406,7 +412,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 9,
+          "units": 90,
           "status": "imported"
         },
         "practice": {
@@ -432,23 +438,23 @@
     {
       "topicId": "CD08",
       "title": "Lũy thừa – hàm số mũ – logarit",
-      "declaredSubtopics": 9,
+      "declaredSubtopics": 14,
       "source": {
         "documentId": "cd08-cd11-exponential-logarithm",
         "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
         "pages": [
           9,
-          17
+          22
         ],
         "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
       },
       "sections": {
         "knowledge": {
-          "units": 9,
+          "units": 14,
           "status": "imported"
         },
         "examples": {
-          "units": 9,
+          "units": 140,
           "status": "imported"
         },
         "practice": {
@@ -463,9 +469,9 @@
         "published": "partially-published"
       },
       "review": {
-        "mappedSubtopics": 9,
+        "mappedSubtopics": 14,
         "verifiedSubtopics": 0,
-        "needsReviewSubtopics": 9,
+        "needsReviewSubtopics": 14,
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
@@ -474,97 +480,13 @@
     {
       "topicId": "CD09",
       "title": "Phương trình mũ – logarit",
-      "declaredSubtopics": 8,
-      "source": {
-        "documentId": "cd08-cd11-exponential-logarithm",
-        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
-        "pages": [
-          23,
-          30
-        ],
-        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
-      },
-      "sections": {
-        "knowledge": {
-          "units": 8,
-          "status": "imported"
-        },
-        "examples": {
-          "units": 8,
-          "status": "imported"
-        },
-        "practice": {
-          "units": 0,
-          "status": "not-published"
-        }
-      },
-      "stages": {
-        "converted": "converted",
-        "imported": "imported",
-        "validated": "needs-review",
-        "published": "partially-published"
-      },
-      "review": {
-        "mappedSubtopics": 8,
-        "verifiedSubtopics": 0,
-        "needsReviewSubtopics": 8,
-        "runtimeVerification": "needs-review"
-      },
-      "runtimeStatus": "partial",
-      "sourceCoverage": "complete"
-    },
-    {
-      "topicId": "CD10",
-      "title": "Bất phương trình mũ – logarit",
-      "declaredSubtopics": 8,
-      "source": {
-        "documentId": "cd08-cd11-exponential-logarithm",
-        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
-        "pages": [
-          34,
-          41
-        ],
-        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
-      },
-      "sections": {
-        "knowledge": {
-          "units": 8,
-          "status": "imported"
-        },
-        "examples": {
-          "units": 8,
-          "status": "imported"
-        },
-        "practice": {
-          "units": 0,
-          "status": "not-published"
-        }
-      },
-      "stages": {
-        "converted": "converted",
-        "imported": "imported",
-        "validated": "needs-review",
-        "published": "partially-published"
-      },
-      "review": {
-        "mappedSubtopics": 8,
-        "verifiedSubtopics": 0,
-        "needsReviewSubtopics": 8,
-        "runtimeVerification": "needs-review"
-      },
-      "runtimeStatus": "partial",
-      "sourceCoverage": "complete"
-    },
-    {
-      "topicId": "CD11",
-      "title": "Mô hình tăng trưởng – suy giảm",
       "declaredSubtopics": 11,
       "source": {
         "documentId": "cd08-cd11-exponential-logarithm",
         "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
         "pages": [
-          44,
-          54
+          23,
+          33
         ],
         "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
       },
@@ -574,7 +496,7 @@
           "status": "imported"
         },
         "examples": {
-          "units": 11,
+          "units": 110,
           "status": "imported"
         },
         "practice": {
@@ -592,6 +514,90 @@
         "mappedSubtopics": 11,
         "verifiedSubtopics": 0,
         "needsReviewSubtopics": 11,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD10",
+      "title": "Bất phương trình mũ – logarit",
+      "declaredSubtopics": 10,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          34,
+          43
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 10,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 100,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 10,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 10,
+        "runtimeVerification": "needs-review"
+      },
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
+    },
+    {
+      "topicId": "CD11",
+      "title": "Mô hình tăng trưởng – suy giảm",
+      "declaredSubtopics": 15,
+      "source": {
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "filePath": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "pages": [
+          44,
+          58
+        ],
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      "sections": {
+        "knowledge": {
+          "units": 15,
+          "status": "imported"
+        },
+        "examples": {
+          "units": 150,
+          "status": "imported"
+        },
+        "practice": {
+          "units": 0,
+          "status": "not-published"
+        }
+      },
+      "stages": {
+        "converted": "converted",
+        "imported": "imported",
+        "validated": "needs-review",
+        "published": "partially-published"
+      },
+      "review": {
+        "mappedSubtopics": 15,
+        "verifiedSubtopics": 0,
+        "needsReviewSubtopics": 15,
         "runtimeVerification": "needs-review"
       },
       "runtimeStatus": "partial",
