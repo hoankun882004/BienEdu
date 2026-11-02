@@ -15,6 +15,7 @@ export function getTopicKnowledgeProgressKey(topicId) {
 function createLessonProgress() {
   return {
     viewedKnowledge: [],
+    openedExamples: [],
     viewedExamples: [],
     practiceAnswers: {},
     // Read-only legacy state retained so V12 learners can migrate without losing progress.
@@ -74,6 +75,9 @@ function lesson(progress, code) {
     ...createLessonProgress(),
     ...current,
     viewedKnowledge: [...(current.viewedKnowledge ?? [])],
+    // V4 separates opening an example from completing its worked solution.
+    // Existing viewedExamples are treated as already opened for a lossless migration.
+    openedExamples: [...(current.openedExamples ?? current.viewedExamples ?? [])],
     viewedExamples: [...(current.viewedExamples ?? [])],
     practiceAnswers: { ...(current.practiceAnswers ?? {}) },
     knowledgePdfProgress: {
@@ -150,6 +154,20 @@ export function markExampleViewed(progress, code, slideId) {
   return next;
 }
 
+export function markExampleOpened(progress, code, slideId) {
+  const next = normalize(progress);
+  const current = lesson(next, code);
+  next.lessons[code] = {
+    ...current,
+    openedExamples: [...new Set([...current.openedExamples, slideId])]
+  };
+  return next;
+}
+
+export function getOpenedExampleIds(progress, code) {
+  return lesson(normalize(progress), code).openedExamples;
+}
+
 export function recordPracticeAnswer(progress, code, questionId, selectedIndex, correctIndex) {
   const next = normalize(progress);
   const current = lesson(next, code);
@@ -195,6 +213,7 @@ export function getLessonProgress(
     return unique.filter((id) => valid.has(id)).length;
   };
   const viewed = countValid(current.viewedKnowledge, validUnitIds?.knowledge, knowledgeCount);
+  const examplesOpened = countValid(current.openedExamples, validUnitIds?.examples, exampleCount);
   const examplesViewed = countValid(current.viewedExamples, validUnitIds?.examples, exampleCount);
   const answered = countValid(Object.keys(current.practiceAnswers), validUnitIds?.practice, practiceCount);
   const total = knowledgeCount + exampleCount + practiceCount;
@@ -207,6 +226,7 @@ export function getLessonProgress(
 
   return {
     viewed,
+    examplesOpened,
     examplesViewed,
     answered,
     completed,

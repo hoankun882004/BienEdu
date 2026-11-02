@@ -9,8 +9,8 @@ import {
   getTopicAvailability,
   learningContentRegistry
 } from "./data/content-registry.js?v=15.0";
-import { getExampleContent } from "./data/example-content.js?v=8.6";
-import { getKnowledgeContent, getProblemTypesForTopic, getTopicKnowledgeContent } from "./data/knowledge-content.js?v=17.0";
+import { getExampleContent } from "./data/example-content.js?v=19.0";
+import { getKnowledgeContent, getProblemTypesForTopic, getTopicKnowledgeContent } from "./data/knowledge-content.js?v=19.0";
 import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
 import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
 import { renderKnowledgeMarkdown, renderMathText } from "./components/markdown-math-renderer.js?v=15.0";
@@ -19,9 +19,11 @@ import { buildActivePracticeSet } from "./domain/practice-bank.js?v=15.0";
 import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.6";
 import {
   createLearningProgress,
+  getOpenedExampleIds,
   getLessonProgress,
   getTopicProgress,
   loadLearningProgress,
+  markExampleOpened,
   markExampleViewed,
   markKnowledgeViewed,
   getTopicKnowledgeProgressKey,
@@ -33,7 +35,7 @@ import {
   saveExamAnswer,
   saveLearningProgress,
   submitExam
-} from "./domain/learning-progress.js?v=17.1";
+} from "./domain/learning-progress.js?v=19.0";
 import { createLessonSlides, createLessonState, createTopicKnowledgeSlides, getSectionPosition, selectLessonSlide } from "./domain/lesson-workspace.js?v=17.1";
 import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
 
@@ -103,9 +105,61 @@ if (currentGradeId && progressState !== loadedProgressState) {
 let confirmExamSubmit = false;
 let lessonTransitionLock = false;
 let lastRenderedRoute = null;
+const contextualPanelState = new Map();
+const HISTORY_MARKER = "bienedu-learning-v4";
+const historySessionId = history.state?.marker === HISTORY_MARKER && history.state?.sessionId
+  ? history.state.sessionId
+  : (globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`);
 
 function resetRouteScroll() {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  app?.querySelector("[data-lesson-content]")?.scrollTo({ top: 0, left: 0, behavior: "instant" });
+}
+
+function captureRouteViewState() {
+  return {
+    scrollY: Math.max(0, Math.round(window.scrollY)),
+    lessonScrollTop: Math.max(0, Math.round(app?.querySelector("[data-lesson-content]")?.scrollTop ?? 0))
+  };
+}
+
+function isCurrentHistorySession(state = history.state) {
+  return state?.marker === HISTORY_MARKER && state?.sessionId === historySessionId;
+}
+
+function createHistoryState(depth = 0, viewState = { scrollY: 0, lessonScrollTop: 0 }) {
+  return {
+    marker: HISTORY_MARKER,
+    sessionId: historySessionId,
+    depth: Math.max(0, Number(depth) || 0),
+    ...viewState
+  };
+}
+
+function ensureInitialHistoryState() {
+  if (isCurrentHistorySession()) return;
+  history.replaceState(createHistoryState(), "", location.href);
+}
+
+function saveCurrentHistoryEntry() {
+  const depth = isCurrentHistorySession() ? history.state.depth : 0;
+  history.replaceState(createHistoryState(depth, captureRouteViewState()), "", location.href);
+}
+
+function createNextHistoryState(replace = false) {
+  const currentDepth = isCurrentHistorySession() ? history.state.depth : 0;
+  return createHistoryState(replace ? currentDepth : currentDepth + 1);
+}
+
+function restoreRouteViewState(state) {
+  const viewState = isCurrentHistorySession(state) ? state : createHistoryState();
+  const apply = () => {
+    window.scrollTo({ top: viewState.scrollY ?? 0, left: 0, behavior: "instant" });
+    const lessonContent = app?.querySelector("[data-lesson-content]");
+    if (lessonContent) lessonContent.scrollTop = viewState.lessonScrollTop ?? 0;
+  };
+  apply();
+  requestAnimationFrame(() => requestAnimationFrame(apply));
 }
 
 function escapeHtml(value) {
@@ -294,7 +348,7 @@ function renderTopicKnowledge(topic, route) {
   const exercise = { code: topic.id, title: topic.title };
   document.body.classList.add("learning-mode");
   app.innerHTML = `<article class="learning-workspace topic-knowledge-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-section="knowledge" data-item="${view.position.current}">
-    <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Quay lại ${topic.id}">←</a><div><h1 id="lesson-title">Kiến thức cần nhớ</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div></header>
+    <header class="workspace-top"><div class="workspace-heading"><button type="button" data-history-back data-fallback="${escapeHtml(routeUrl({ topicId: topic.id }))}" aria-label="Quay lại trang trước; nếu không có lịch sử thì về ${topic.id}">←</button><div><h1 id="lesson-title">Kiến thức cần nhớ</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div></header>
     <div class="workspace-frame"><main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${renderKnowledgeMarkdown({ slide: view.active, position: view.position, exercise })}</main></div>
     <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng kiến thức bằng nút hoặc phím mũi tên trái và phải">${topicKnowledgeNavigationMarkup(topic, view)}</footer>
     <p class="sr-only" aria-live="polite" aria-atomic="true">Trang kiến thức ${view.position.current} trên ${view.position.total}.</p>
@@ -316,42 +370,96 @@ function renderUnavailable(topic, exercise) {
   initializeMotion();
 }
 
-function renderExampleReading(slide, position, exercise, topic) {
+function getContextualPanelState(code) {
+  return contextualPanelState.get(code) ?? { method: false, note: false };
+}
+
+function exampleIndexMarkup({ topic, exercise, examples, activeExampleId = "", openedExampleIds = [] }) {
+  if (!examples.length) return "";
+  const opened = new Set(openedExampleIds);
+  return `<nav class="example-index" aria-label="Danh sách ví dụ của dạng ${escapeHtml(exercise.code)}">
+    <header><h3>Ví dụ</h3><p><span>${opened.size}/${examples.length}</span> đã xem</p></header>
+    <ol>${examples.map((example, index) => {
+      const id = example.id ?? `${exercise.code}-example-${index + 1}`;
+      const isCurrent = id === activeExampleId;
+      const isViewed = opened.has(id);
+      return `<li><a class="${isCurrent ? "is-current" : isViewed ? "is-viewed" : ""}" href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "example", item: index + 1 })}" data-route ${isCurrent ? 'aria-current="page"' : ""} aria-label="Ví dụ ${example.originalExampleNumber ?? index + 1}${isCurrent ? ", đang xem" : isViewed ? ", đã xem" : ""}"><span>${example.originalExampleNumber ?? index + 1}</span>${isCurrent ? '<b aria-hidden="true">Đang xem</b>' : isViewed ? '<b aria-hidden="true">✓</b>' : ""}</a></li>`;
+    }).join("")}</ol>
+  </nav>`;
+}
+
+function contextualGuideMarkup(problemType) {
+  if (!problemType) return "";
+  const state = getContextualPanelState(problemType.code);
+  const verifiedNote = problemType.reviewStatus === "verified" && problemType.note;
+  return `<aside class="example-context" aria-label="Hỗ trợ học dạng ${escapeHtml(problemType.code)}">
+    <details data-context-panel="method" ${state.method ? "open" : ""}>
+      <summary><span>Cách làm</span><small>Phương pháp của dạng ${escapeHtml(problemType.code)}</small><b aria-hidden="true">＋</b></summary>
+      <div>${renderMathText(problemType.methodology)}</div>
+    </details>
+    ${verifiedNote ? `<details data-context-panel="note" ${state.note ? "open" : ""}>
+      <summary><span>Lưu ý</span><small>Đã đối chiếu nguồn</small><b aria-hidden="true">＋</b></summary>
+      <div>${renderMathText(problemType.note)}</div>
+    </details>` : ""}
+  </aside>`;
+}
+
+function renderExampleReading(slide, position, exercise, topic, context = {}) {
   const example = slide.workedExample;
   const analysis = example.analysis ?? [];
   const steps = example.steps ?? [];
   const figures = example.assetReferences ?? [];
-  const sourcePages = example.sourcePages ?? [];
+  const statementPage = example.statementSourcePage ?? example.sourcePages?.[0] ?? null;
+  const solutionPage = example.solutionSourcePage ?? example.sourcePages?.at(-1) ?? null;
+  const isSourceVerified = example.verification === "source-verified" || example.reviewStatus === "verified";
   const figureMarkup = figures.length ? `<div class="example-reader__figures">${figures.map((figure) => `<figure><button type="button" data-figure-zoom="${escapeHtml(figure.src)}" data-figure-alt="${escapeHtml(figure.alt)}"><img src="${escapeHtml(figure.src)}" alt="${escapeHtml(figure.alt)}" loading="lazy" decoding="async"></button><figcaption>Nguồn · Trang ${figure.sourcePage} · Chờ đối chiếu trực quan</figcaption></figure>`).join("")}</div>` : "";
-  const solutionMarkup = steps.length ? `<details class="example-reader__solution"><summary>Xem lời giải từ tài liệu</summary><ol>${steps.map((step, index) => `<li><span>${index + 1}</span><div><p>${escapeHtml(step.label)}</p><strong>${renderMathText(step.expression, { display: true })}</strong><small>${renderMathText(step.text)}</small></div></li>`).join("")}</ol></details>` : `<aside class="example-reader__unavailable">PDF nguồn chưa có lời giải được ánh xạ chắc chắn cho ví dụ này.</aside>`;
+  const distinctAnswer = example.answer && !steps.some((step) => String(step.expression).trim() === String(example.answer).trim());
+  const solutionAvailable = steps.length || example.answer;
+  const solutionMarkup = solutionAvailable ? `<details class="example-reader__solution">
+    <summary><span class="solution-toggle__show">Hiện lời giải</span><span class="solution-toggle__hide">Ẩn lời giải</span><span aria-hidden="true">＋</span></summary>
+    <div class="example-reader__solution-body">
+      <h3>Lời giải</h3>
+      ${!isSourceVerified ? `<p class="example-reader__review-status"><b>NEEDS_REVIEW</b> · Bản chuyển đổi đang được đối chiếu với tài liệu nguồn.</p>` : ""}
+      ${analysis.length ? `<section class="example-reader__analysis" aria-labelledby="analysis-title"><h4 id="analysis-title">Phân tích</h4><ul>${analysis.map((item) => `<li>${renderMathText(item)}</li>`).join("")}</ul></section>` : ""}
+      ${steps.length ? `<ol>${steps.map((step, index) => `<li><span>${index + 1}</span><div>${step.label ? `<p>${escapeHtml(step.label)}</p>` : ""}<strong>${renderMathText(step.expression, { display: true })}</strong>${step.text ? `<small>${renderMathText(step.text)}</small>` : ""}</div></li>`).join("")}</ol>` : ""}
+      ${distinctAnswer ? `<p class="example-reader__conclusion"><b>Kết luận</b><span>${renderMathText(example.answer)}</span></p>` : ""}
+      ${example.takeaway ? `<aside class="example-reader__takeaway" aria-label="Điểm cần nhớ"><b>Điểm cần nhớ</b><p>${renderMathText(example.takeaway)}</p></aside>` : ""}
+    </div>
+  </details>` : `<aside class="example-reader__unavailable">Tài liệu nguồn chưa có lời giải được ánh xạ chắc chắn cho ví dụ này.</aside>`;
+  const sourceParts = [
+    statementPage ? `Nguồn: Trang ${statementPage}` : "",
+    solutionPage ? `Lời giải: Trang ${solutionPage}` : ""
+  ].filter(Boolean);
   return `<article class="example-reader" aria-labelledby="lesson-content-title">
     <header class="example-reader__bar">
-      <p>Ví dụ ${example.originalExampleNumber ?? position.current} · ${position.current}/${position.total}</p><small>Nguồn · Trang ${sourcePages.join(", ")}</small>
+      <p>Ví dụ ${position.current}/${position.total}</p><small>Dạng ${escapeHtml(exercise.code)}</small>
     </header>
     <div class="example-reader__content">
+      ${contextualGuideMarkup(context.problemType)}
+      ${exampleIndexMarkup({ topic, exercise, examples: context.examples ?? [], activeExampleId: slide.id, openedExampleIds: context.openedExampleIds ?? [] })}
       <section class="example-card">
         <header class="example-reader__intro">
-        <p class="lesson-kicker">${escapeHtml(exercise.code)} · Ví dụ có lời giải</p>
-        <h2 id="lesson-content-title">${escapeHtml(example.title)}</h2>
+        <p class="lesson-kicker">Dạng ${escapeHtml(exercise.code)}</p>
+        <h2 id="lesson-content-title">Ví dụ ${example.originalExampleNumber ?? position.current}</h2>
         </header>
-        <section class="example-reader__question" aria-labelledby="problem-title"><h3 id="problem-title">Đề bài</h3><p>${renderMathText(example.prompt)}</p></section>
+        <section class="example-reader__question" aria-label="Đề bài"><p>${renderMathText(example.prompt)}</p></section>
         ${figureMarkup}
-        ${analysis.length ? `<section class="example-reader__analysis" aria-labelledby="analysis-title"><h3 id="analysis-title">Phương pháp</h3><ul>${analysis.map((item) => `<li>${renderMathText(item)}</li>`).join("")}</ul></section>` : ""}
         ${solutionMarkup}
-        ${example.answer ? `<section class="example-reader__result" aria-label="Kết quả"><span>Kết quả từ tài liệu</span><strong>${renderMathText(example.answer)}</strong></section>` : ""}
-        ${example.takeaway ? `<aside class="example-reader__takeaway" aria-label="Điểm cần nhớ"><b>Điểm cần nhớ</b><p>${renderMathText(example.takeaway)}</p></aside>` : ""}
+        ${sourceParts.length ? `<footer class="example-reader__source">${sourceParts.map((part) => `<span>${part}</span>`).join("<i aria-hidden=\"true\">·</i>")}<em>${isSourceVerified ? "Đã đối chiếu PDF" : "Đang đối chiếu nguồn"}</em></footer>` : ""}
       </section>
     </div>
     <dialog class="figure-zoom" data-figure-dialog><button type="button" data-figure-close aria-label="Đóng hình">×</button><img alt=""></dialog>
   </article>`;
 }
 
-function renderProblemTypeDetail(slide, topic) {
+function renderProblemTypeDetail(slide, topic, context = {}) {
   const item = slide.problemType;
+  const examples = getExampleContent(item.code) ?? [];
   return `<article class="problem-type-reader" aria-labelledby="lesson-content-title">
-    <header><p class="lesson-kicker">${escapeHtml(topic.id)} · Dạng ${escapeHtml(item.code)}</p><h2 id="lesson-content-title">${escapeHtml(item.title)}</h2><p>${item.exampleCount} ví dụ · ${item.solutionCount} lời giải${item.figureCount ? ` · ${item.figureCount} hình nguồn` : ""}</p></header>
+    <header><p class="lesson-kicker">${escapeHtml(topic.id)} · Dạng ${escapeHtml(item.code)}</p><h2 id="lesson-content-title">${escapeHtml(item.title)}</h2><p>${item.exampleCount} ví dụ${item.figureCount ? ` · ${item.figureCount} hình nguồn` : ""}</p></header>
     <section class="problem-type-reader__method" aria-labelledby="method-title"><h3 id="method-title">Cách làm</h3><p>${renderMathText(item.methodology)}</p></section>
     ${item.note ? `<aside class="problem-type-reader__note" aria-labelledby="note-title"><h3 id="note-title">Lưu ý</h3><p>${renderMathText(item.note)}</p></aside>` : ""}
+    ${exampleIndexMarkup({ topic, exercise: { code: item.code }, examples, openedExampleIds: context.openedExampleIds ?? [] })}
   </article>`;
 }
 
@@ -384,6 +492,7 @@ function createLessonView(topic, exercise, route) {
   const topicReading = getTopicKnowledgeContent(topic.id);
   const problemTypes = getProblemTypesForTopic(topic.id);
   const examples = getExampleContent(exercise.code);
+  const activeProblemType = problemTypes.find((item) => item.code === exercise.code) ?? null;
   const usesTopicKnowledge = Boolean(topicReading && problemTypes.some((item) => item.code === exercise.code));
   const effectiveReading = usesTopicKnowledge ? null : reading;
   const knowledgeSlideCount = usesTopicKnowledge
@@ -400,7 +509,7 @@ function createLessonView(topic, exercise, route) {
   const active = slides[state.currentIndex];
 
   if (active.kind === "knowledge" || active.kind === "knowledge-markdown") persist(markKnowledgeViewed(progressState, exercise.code, active.id));
-  if (active.kind === "example") persist(markExampleViewed(progressState, exercise.code, active.id));
+  if (active.kind === "example") persist(markExampleOpened(progressState, exercise.code, active.id));
 
   const lessonProgress = getLessonProgress(
     progressState,
@@ -436,7 +545,9 @@ function createLessonView(topic, exercise, route) {
       practice: questions.length
     },
     contentRecord,
-    approvedMathContent
+    approvedMathContent,
+    activeProblemType,
+    openedExampleIds: getOpenedExampleIds(progressState, exercise.code)
   };
 }
 
@@ -474,17 +585,21 @@ function lessonSidebarMarkup(view) {
 }
 
 function lessonStageMarkup(view) {
-  const { active, answer, position, topic, exercise } = view;
+  const { active, answer, position, topic, exercise, activeProblemType, openedExampleIds } = view;
   if (active.kind === "practice") return renderPractice(active, answer, position);
   if (active.kind === "practice-unavailable") return `<section class="lesson-inline-empty"><h2>Nội dung bài tập đang được cập nhật.</h2><p>BienEdu chỉ phát hành câu hỏi có đúng dạng bài, đáp án đã kiểm chứng và lời giải đầy đủ.</p></section>`;
   if (active.kind === "knowledge-markdown") return renderKnowledgeMarkdown({ slide: active, position, exercise });
-  if (active.kind === "problem-types") return renderProblemTypeDetail(active, topic);
-  if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise, topic);
+  if (active.kind === "problem-types") return renderProblemTypeDetail(active, topic, { openedExampleIds });
+  if (active.kind === "example" && active.workedExample) return renderExampleReading(active, position, exercise, topic, {
+    problemType: activeProblemType,
+    examples: getExampleContent(exercise.code) ?? [],
+    openedExampleIds
+  });
   return `<section class="lesson-inline-empty"><h2>Nội dung đang được cập nhật</h2><p>Bài học này chưa có bản Markdown đã được kiểm chứng.</p></section>`;
 }
 
 function lessonNavigationMarkup(view) {
-  const { active, position, state, topic, exercise, slides } = view;
+  const { active, position, state, topic, exercise, slides, counts } = view;
   const positionLabel = active.kind === "practice-unavailable"
     ? "Bài tập"
     : active.section === "practice"
@@ -494,12 +609,18 @@ function lessonNavigationMarkup(view) {
     ? `<nav class="lesson-page-picker" aria-label="Chọn slide kiến thức">${Array.from({ length: position.total }, (_item, index) => `<a href="${routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "knowledge", item: index + 1 })}" data-route aria-label="Slide ${index + 1}" aria-current="${position.current === index + 1 ? "page" : "false"}">${index + 1}</a>`).join("")}</nav>`
     : "";
   const positionControl = `<div class="lesson-navigation__position"><p><strong>${positionLabel}</strong><span>${active.label}</span></p>${pagePicker}</div>`;
+  const typeOverviewFallback = counts.types
+    ? routeUrl({ topicId: topic.id, typeCode: exercise.code, section: "types", item: 1 })
+    : routeUrl({ topicId: topic.id });
+  const backFallback = active.section === "types"
+    ? routeUrl({ topicId: topic.id })
+    : typeOverviewFallback;
 
   const nextSlide = slides[state.currentIndex + 1] ?? null;
   let nextControl = `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route aria-keyshortcuts="ArrowRight">Hoàn thành →</a>`;
   if (nextSlide) {
     const nextLabel = nextSlide.section === "example"
-      ? "Xem ví dụ →"
+      ? (active.section === "example" ? "Ví dụ tiếp theo →" : "Xem ví dụ →")
       : nextSlide.section === "types"
         ? "Xem cách làm →"
       : nextSlide.section === "practice"
@@ -508,7 +629,7 @@ function lessonNavigationMarkup(view) {
     nextControl = `<button class="nav-button nav-button--primary" type="button" data-slide-index="${state.currentIndex + 1}" aria-keyshortcuts="ArrowRight">${nextLabel}</button>`;
   }
 
-  return `<button type="button" data-slide-index="${state.currentIndex - 1}" aria-keyshortcuts="ArrowLeft" ${state.currentIndex === 0 ? "disabled" : ""}>← Trước</button>
+  return `<button type="button" class="nav-button--history-back" data-history-back data-fallback="${escapeHtml(backFallback)}" aria-label="Quay lại trạng thái học trước">← Trước</button>
     ${positionControl}${nextControl}`;
 }
 
@@ -541,7 +662,7 @@ function renderWorkspace(topic, exercise, route, options = {}) {
   if (updateLessonWorkspace(view, options)) return;
 
   app.innerHTML = `<article class="learning-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-type="${exercise.code}" data-section="${view.active.section}" data-item="${view.position.current}">
-    <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Quay lại ${topic.id}">←</a><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · Dạng ${escapeHtml(exercise.code)}</p></div></div></header>
+    <header class="workspace-top"><div class="workspace-heading workspace-heading--lesson"><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · Dạng ${escapeHtml(exercise.code)}</p></div></div></header>
     <nav class="workspace-phase-nav" data-phase-navigation aria-label="Các phần của bài học">${phaseNavigationMarkup(view)}</nav>
     <div class="workspace-frame"><nav class="lesson-sidebar" data-lesson-sidebar aria-label="Nội dung bài học">${lessonSidebarMarkup(view)}</nav>
       <main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${lessonStageMarkup(view)}</main>
@@ -669,7 +790,12 @@ function revealLessonStage(stage) {
   window.scrollTo({ top: targetTop, left: 0, behavior: "instant" });
 }
 
-async function transitionLessonRoute(href, { replace = false, updateHistory = true } = {}) {
+async function transitionLessonRoute(href, {
+  replace = false,
+  updateHistory = true,
+  historyState = null,
+  restoreState = null
+} = {}) {
   if (lessonTransitionLock) return;
   lessonTransitionLock = true;
 
@@ -682,13 +808,15 @@ async function transitionLessonRoute(href, { replace = false, updateHistory = tr
 
     await waitForTransition(110);
     if (updateHistory) {
-      if (replace) history.replaceState(null, "", href);
-      else history.pushState(null, "", href);
+      const nextState = historyState ?? createNextHistoryState(replace);
+      if (replace) history.replaceState(nextState, "", href);
+      else history.pushState(nextState, "", href);
     }
 
     renderRoute({ announce: true });
     const nextStage = app.querySelector("[data-lesson-stage]");
-    revealLessonStage(nextStage);
+    if (restoreState) restoreRouteViewState(restoreState);
+    else revealLessonStage(nextStage);
     nextStage?.classList.remove("is-leaving");
     nextStage?.classList.add("is-entering");
 
@@ -702,15 +830,29 @@ async function transitionLessonRoute(href, { replace = false, updateHistory = tr
 
 function navigate(href, { replace = false } = {}) {
   confirmExamSubmit = false;
+  const targetUrl = new URL(href, location.href);
+  if (targetUrl.href === location.href) return;
+  saveCurrentHistoryEntry();
+  const nextHistoryState = createNextHistoryState(replace);
   const currentRoute = lastRenderedRoute ?? readRoute();
   const nextRoute = readRoute(href);
   if (isSameLessonRoute(currentRoute, nextRoute)) {
-    transitionLessonRoute(href, { replace });
+    transitionLessonRoute(href, { replace, historyState: nextHistoryState });
     return;
   }
 
-  if (replace) history.replaceState(null, "", href); else history.pushState(null, "", href);
+  if (replace) history.replaceState(nextHistoryState, "", href);
+  else history.pushState(nextHistoryState, "", href);
   renderRoute({ scrollToTop: true });
+}
+
+function handleHistoryBack(button) {
+  saveCurrentHistoryEntry();
+  if (isCurrentHistorySession() && Number(history.state.depth) > 0) {
+    history.back();
+    return;
+  }
+  navigate(button.dataset.fallback || routeUrl(), { replace: true });
 }
 
 function handleSearchInput(event) {
@@ -895,7 +1037,13 @@ function handleExamAction(action) {
 
 function handleAppClick(event) {
   if (lessonTransitionLock) {
-    if (event.target.closest("[data-route], [data-section], [data-slide-index]")) event.preventDefault();
+    if (event.target.closest("[data-route], [data-section], [data-slide-index], [data-history-back]")) event.preventDefault();
+    return;
+  }
+
+  const historyBack = event.target.closest("[data-history-back]");
+  if (historyBack) {
+    handleHistoryBack(historyBack);
     return;
   }
 
@@ -970,26 +1118,72 @@ function handleAppClick(event) {
   if (action) handleExamAction(action);
 }
 
-function handleHistoryNavigation() {
+function handleDetailsToggle(event) {
+  const details = event.target;
+  if (!(details instanceof HTMLDetailsElement)) return;
+
+  if (details.matches("[data-context-panel]")) {
+    const route = readRoute();
+    if (!route.typeCode) return;
+    const current = getContextualPanelState(route.typeCode);
+    contextualPanelState.set(route.typeCode, {
+      ...current,
+      [details.dataset.contextPanel]: details.open
+    });
+    return;
+  }
+
+  if (!details.open || !details.matches(".example-reader__solution")) return;
+  const route = readRoute();
+  if (route.section !== "example" || !route.topicId || !route.typeCode) return;
+  const topic = findTopic(curriculumGroups, route.topicId);
+  const exercise = topic ? findExerciseType(curriculumGroups, topic.id, route.typeCode) : null;
+  if (!topic || !exercise) return;
+  const slides = createSlidesForRoute(route);
+  const state = createLessonState(slides, route.section, route.item);
+  const active = slides[state.currentIndex];
+  if (active?.kind !== "example") return;
+
+  persist(markExampleViewed(progressState, route.typeCode, active.id));
+  const workspace = details.closest(".learning-workspace");
+  if (workspace) updateLessonProgressChrome(workspace, createLessonView(topic, exercise, route));
+}
+
+let historySaveFrame = 0;
+function scheduleHistoryViewStateSave() {
+  if (historySaveFrame) return;
+  historySaveFrame = requestAnimationFrame(() => {
+    historySaveFrame = 0;
+    if (isCurrentHistorySession()) saveCurrentHistoryEntry();
+  });
+}
+
+function handleHistoryNavigation(event) {
   confirmExamSubmit = false;
   const nextRoute = readRoute();
   if (isSameLessonRoute(lastRenderedRoute, nextRoute)) {
-    transitionLessonRoute(location.href, { updateHistory: false });
+    transitionLessonRoute(location.href, { updateHistory: false, restoreState: event.state });
     return;
   }
-  renderRoute({ scrollToTop: true });
+  renderRoute();
+  restoreRouteViewState(event.state);
 }
 
 function initializeCurriculumApp() {
   if (!app) return;
   if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  ensureInitialHistoryState();
 
   app.addEventListener("input", handleSearchInput);
   app.addEventListener("change", handleSelectionChange);
   app.addEventListener("click", handleAppClick);
+  app.addEventListener("toggle", handleDetailsToggle, true);
+  app.addEventListener("scroll", scheduleHistoryViewStateSave, true);
+  addEventListener("scroll", scheduleHistoryViewStateSave, { passive: true });
   addEventListener("keydown", handleLessonKeyboardNavigation);
   addEventListener("popstate", handleHistoryNavigation);
   renderRoute({ scrollToTop: true });
+  saveCurrentHistoryEntry();
 }
 
 initializeCurriculumApp();

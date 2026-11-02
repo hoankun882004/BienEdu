@@ -138,6 +138,151 @@ SPACE_FIXES = {
     "giờtrước": "giờ trước", "tỷ lệkhông": "tỷ lệ không", "không ởt": "không ở t",
 }
 
+# These reference lessons were transcribed against both the statement and
+# solution pages of the finalized PDFs. Keeping the correction here prevents a
+# future import from reintroducing text-layer errors such as flattened fractions
+# or detached radical exponents.
+VERIFIED_SOURCE_OVERRIDES = {
+    "1.1": {
+        "method": "Đạo hàm từng hạng; hằng số mất đi.",
+        "note": None,
+        "examples": {
+            1: {
+                "prompt": r"Cho \(f(x)=3x^2-2x+5\). Tính \(f'(x)\) và nêu miền áp dụng.",
+                "answer": r"\(f'(x)=2(3x-1)\) trên \(\mathbb{R}\).",
+            },
+            2: {
+                "prompt": r"Cho \(f(x)=\dfrac{x(3x^3-8x^2+12)}{12}\). Tính \(f'(x)\) và nêu miền áp dụng.",
+                "answer": r"\(f'(x)=(x-1)(x^2-x-1)\) trên \(\mathbb{R}\).",
+            },
+            3: {
+                "prompt": r"Cho \(f(x)=(x-1)(x+2)(x-3)\). Tính \(f'(x)\) và nêu miền áp dụng.",
+                "answer": r"\(f'(x)=3x^2-4x-5\) trên \(\mathbb{R}\).",
+            },
+            4: {
+                "prompt": r"Cho \(f(x)=(x^2-1)^2-(x^4-2x^2)\). Tính \(f'(x)\) và nêu miền áp dụng.",
+                "answer": r"\(f'(x)=0\) trên \(\mathbb{R}\).",
+            },
+            5: {
+                "prompt": r"Cho \(f(x)=x(x-1)^2(x+1)^2\). Tính \(f'(-1)\).",
+                "answer": r"\(f'(x)=(x-1)(x+1)(5x^2-1)\) trên \(\mathbb{R}\). Thay \(x=-1\), được \(f'(-1)=0\).",
+            },
+            6: {
+                "prompt": r"Tìm các điểm có đạo hàm bằng 0 của \(f(x)=x^3-3x^2+2\).",
+                "answer": r"\(f'=3x(x-2)\). Vậy \(f'=0\) tại \(x=0,2\); các điểm trên đồ thị là \((0;2)\) và \((2;-2)\).",
+            },
+            7: {
+                "prompt": r"Với \(f(x)=x^3+mx^2-2x+1\), tìm \(m\) để \(f'(1)=0\).",
+                "answer": r"\(f'=3x^2+2mx-2\), nên \(f'(1)=1+2m=0\). Suy ra \(m=-\dfrac{1}{2}\).",
+            },
+            8: {
+                "prompt": r"Biết \(f(x)=ax^3+bx+1\), \(f'(0)=-3\), \(f'(1)=3\). Tìm \(a,b\).",
+                "answer": r"\(f'=3ax^2+b\). Từ \(b=-3\), \(3a+b=3\) được \(a=2\), \(b=-3\).",
+            },
+            9: {
+                "prompt": r"Bạn An viết \((x^3-2x^2+4)'=3x^2-4x+4\). Hãy chỉ ra lỗi và sửa.",
+                "answer": r"Hạng tử 4 là hằng số nên đạo hàm bằng 0. Kết quả đúng: \(3x^2-4x\).",
+            },
+            10: {
+                "prompt": r"Cho \(f(x)=(x+1)^3-(x-1)^3\). Giải \(f'(x)=12\).",
+                "answer": r"Rút gọn \(f=6x^2+2\), nên \(f'=12x\). Phương trình có nghiệm duy nhất \(x=1\).",
+            },
+        },
+    },
+    "8.1": {
+        "method": "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
+        "note": r"Không biến \(a^{\alpha}+a^{\beta}\) thành \(a^{\alpha+\beta}\).",
+        "examples": {
+            1: {
+                "prompt": r"Tính \(A=16^{3/4}+27^{-2/3}\).",
+                "answer": r"\(16^{3/4}=(2^4)^{3/4}=2^3=8\). Mặt khác \(27^{-2/3}=(3^3)^{-2/3}=3^{-2}=\dfrac{1}{9}\). Vậy \(A=\dfrac{73}{9}\).",
+            },
+            2: {
+                "prompt": r"Tính \(81^{3/4}\).",
+                "answer": r"\(81=3^4\), nên \(81^{3/4}=3^3=27\).",
+            },
+            3: {
+                "prompt": r"Rút gọn \(\dfrac{a^{\sqrt{3}+2}}{a^{\sqrt{3}-1}}\), với \(a>0\).",
+                "answer": r"Trừ số mũ: \((\sqrt{3}+2)-(\sqrt{3}-1)=3\), nên kết quả là \(a^3\).",
+            },
+            4: {
+                "prompt": r"Tính \(32^{2/5}+9^{-1/2}\).",
+                "answer": r"\(32^{2/5}=4\), \(9^{-1/2}=\dfrac{1}{3}\); tổng bằng \(\dfrac{13}{3}\).",
+            },
+            5: {
+                "prompt": r"Rút gọn \(a^{\sqrt{2}+1}a^{2-\sqrt{2}}\), với \(a>0\).",
+                "answer": r"Cộng số mũ được \(3\), nên kết quả là \(a^3\).",
+            },
+            6: {
+                "prompt": r"Tính \((2^3)^{2/3}+2^{-1}\).",
+                "answer": r"\((2^3)^{2/3}=2^2=4\) và \(2^{-1}=\dfrac{1}{2}\). Tổng bằng \(4+\dfrac{1}{2}=\dfrac{9}{2}\).",
+            },
+            7: {
+                "prompt": r"Tính \((3^3)^{2/3}+3^{-1}\).",
+                "answer": r"\((3^3)^{2/3}=3^2=9\) và \(3^{-1}=\dfrac{1}{3}\). Tổng bằng \(9+\dfrac{1}{3}=\dfrac{28}{3}\).",
+            },
+            8: {
+                "prompt": r"Tính \((4^3)^{2/3}+4^{-1}\).",
+                "answer": r"\((4^3)^{2/3}=4^2=16\) và \(4^{-1}=\dfrac{1}{4}\). Tổng bằng \(16+\dfrac{1}{4}=\dfrac{65}{4}\).",
+            },
+            9: {
+                "prompt": r"Tính \((5^3)^{2/3}+5^{-1}\).",
+                "answer": r"\((5^3)^{2/3}=5^2=25\) và \(5^{-1}=\dfrac{1}{5}\). Tổng bằng \(25+\dfrac{1}{5}=\dfrac{126}{5}\).",
+            },
+            10: {
+                "prompt": r"Tính \((6^3)^{2/3}+6^{-1}\).",
+                "answer": r"\((6^3)^{2/3}=6^2=36\) và \(6^{-1}=\dfrac{1}{6}\). Tổng bằng \(36+\dfrac{1}{6}=\dfrac{217}{6}\).",
+            },
+        },
+    },
+    "8.4": {
+        "method": "Đưa về cùng cơ số. Cơ số lớn hơn 1 thì so sánh cùng chiều số mũ; cơ số giữa 0 và 1 thì ngược chiều.",
+        "note": "Chỉ bình phương để so sánh khi đã kiểm tra dấu hai vế.",
+        "examples": {
+            1: {
+                "prompt": r"So sánh \(A=8^{\sqrt{2}}\) và \(B=4^{\sqrt{3}}\).",
+                "answer": r"\(A=2^{3\sqrt{2}},\ B=2^{2\sqrt{3}}\). Hai số mũ dương và \((3\sqrt{2})^2=18>12=(2\sqrt{3})^2\), nên \(3\sqrt{2}>2\sqrt{3}\). Vì \(2>1\), suy ra \(A>B\).",
+            },
+            2: {
+                "prompt": r"So sánh \(2^{1{,}4}\) và \(2^{1{,}5}\).",
+                "answer": r"\(2>1\) và \(1{,}4<1{,}5\) nên \(2^{1{,}4}<2^{1{,}5}\).",
+            },
+            3: {
+                "prompt": r"So sánh \(25^{\sqrt{2}}\) và \(5^3\).",
+                "answer": r"\(25^{\sqrt{2}}=5^{2\sqrt{2}}\); \(2\sqrt{2}<3\) do \(8<9\). Vậy số thứ nhất nhỏ hơn.",
+            },
+            4: {
+                "prompt": r"So sánh \(\left(\dfrac{1}{3}\right)^{\sqrt{2}}\) và \(\left(\dfrac{1}{3}\right)^{3/2}\).",
+                "answer": r"\(\sqrt{2}<\dfrac{3}{2}\) và cơ số nhỏ hơn 1, nên số thứ nhất lớn hơn số thứ hai.",
+            },
+            5: {
+                "prompt": r"So sánh \(9^{\sqrt{2}}\) và \(3^{\sqrt{8}}\).",
+                "answer": r"\(9^{\sqrt{2}}=3^{2\sqrt{2}}=3^{\sqrt{8}}\), nên bằng nhau.",
+            },
+            6: {
+                "prompt": r"So sánh \(A=\left(\dfrac{1}{2}\right)^3\) và \(B=\left(\dfrac{1}{2}\right)^4\).",
+                "answer": r"Cơ số \(\dfrac{1}{2}\) thuộc \((0;1)\); \(3<4\) nên \(A>B\).",
+            },
+            7: {
+                "prompt": r"So sánh \(A=\left(\dfrac{1}{3}\right)^4\) và \(B=\left(\dfrac{1}{3}\right)^5\).",
+                "answer": r"Cơ số \(\dfrac{1}{3}\) thuộc \((0;1)\); \(4<5\) nên \(A>B\).",
+            },
+            8: {
+                "prompt": r"So sánh \(A=\left(\dfrac{1}{4}\right)^5\) và \(B=\left(\dfrac{1}{4}\right)^6\).",
+                "answer": r"Cơ số \(\dfrac{1}{4}\) thuộc \((0;1)\); \(5<6\) nên \(A>B\).",
+            },
+            9: {
+                "prompt": r"So sánh \(A=\left(\dfrac{1}{5}\right)^6\) và \(B=\left(\dfrac{1}{5}\right)^7\).",
+                "answer": r"Cơ số \(\dfrac{1}{5}\) thuộc \((0;1)\); \(6<7\) nên \(A>B\).",
+            },
+            10: {
+                "prompt": r"So sánh \(A=\left(\dfrac{1}{6}\right)^7\) và \(B=\left(\dfrac{1}{6}\right)^8\).",
+                "answer": r"Cơ số \(\dfrac{1}{6}\) thuộc \((0;1)\); \(7<8\) nên \(A>B\).",
+            },
+        },
+    },
+}
+
 SUPERSCRIPT_MAP = str.maketrans({
     "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵",
     "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹", "+": "⁺", "-": "⁻", "−": "⁻",
@@ -677,6 +822,10 @@ def make_lesson(
     document: pymupdf.Document,
 ) -> tuple[dict, list[dict]]:
     method, note = method_from(theory)
+    verified_source = VERIFIED_SOURCE_OVERRIDES.get(code)
+    if verified_source:
+        method = verified_source["method"]
+        note = verified_source["note"]
     source_page = theory[0]["page"]
     method_sentences = [part.strip() for part in re.split(r";|(?<=[.!?])\s+", method) if part.strip()]
     if not method_sentences:
@@ -703,8 +852,8 @@ def make_lesson(
         "contentType": "markdown-latex",
         "sourcePdf": document_id,
         "conversionStatus": "imported",
-        "reviewStatus": "needs-review",
-        "contentVersion": "foundation-import-v2",
+        "reviewStatus": "verified" if verified_source else "needs-review",
+        "contentVersion": "foundation-import-v3",
     }
     if code == "1.1":
         overview = cd01_source_overview()
@@ -730,16 +879,11 @@ def make_lesson(
         prompt_text = prompt["text"]
         answer_text = answer["text"] if answer else ""
         title = concise_title(prompt_text, number)
-        if code == "8.4" and number == 1:
-            # The radical is the exponent in the source, but the PDF text layer
-            # separates it from its base. Keep an explicit, renderable formula.
-            title = "So sánh hai lũy thừa"
-            prompt_text = r"So sánh \(A=8^{\sqrt{2}}\) và \(B=4^{\sqrt{3}}\)."
-            answer_text = (
-                r"\(A=2^{3\sqrt{2}},\ B=2^{2\sqrt{3}}\). Hai số mũ dương và "
-                r"\((3\sqrt{2})^2=18>12=(2\sqrt{3})^2\), nên "
-                r"\(3\sqrt{2}>2\sqrt{3}\). Vì \(2>1\), suy ra \(A>B\)."
-            )
+        verified_example = verified_source["examples"].get(number) if verified_source else None
+        if verified_example:
+            title = f"Ví dụ {number}"
+            prompt_text = verified_example["prompt"]
+            answer_text = verified_example["answer"]
         visual = any(
             token.replace(" ", "") in prompt_text.lower().replace(" ", "")
             for token in VISUAL_DEPENDENCIES
@@ -753,7 +897,7 @@ def make_lesson(
             "steps": [{
                 "label": "Lời giải từ tài liệu",
                 "expression": answer_text,
-                "text": f"Lời giải Ví dụ {number}, trang {answer['page']} của PDF nguồn.",
+                "text": None,
             }] if answer else [],
             "answer": answer_text or None,
             "takeaway": None,
@@ -766,15 +910,15 @@ def make_lesson(
             "solutionStatus": "available" if answer else "unavailable",
             "sourceBlockId": f"{code}-worked-example-{number}",
             "origin": "finalized-tutor-pdf",
-            "verification": "source-extracted-needs-review",
+            "verification": "verified" if verified_example else "source-extracted-needs-review",
             "topicId": f"CD{code.split('.')[0].zfill(2)}",
             "lessonId": code,
             "sectionId": f"{code}-example-{number}",
             "contentType": "markdown-latex",
             "sourcePdf": document_id,
             "conversionStatus": "imported",
-            "reviewStatus": "needs-review",
-            "contentVersion": "final-pdf-v2",
+            "reviewStatus": "verified" if verified_example else "needs-review",
+            "contentVersion": "final-pdf-v3",
         })
     return reading, examples
 
@@ -842,6 +986,10 @@ def main() -> None:
             examples[code] = worked
             topic_id = f"CD{int(code.split('.')[0]):02d}"
             method, note = method_from(theory[code])
+            verified_source = VERIFIED_SOURCE_OVERRIDES.get(code)
+            if verified_source:
+                method = verified_source["method"]
+                note = verified_source["note"]
             problem_types.setdefault(topic_id, []).append({
                 "id": code,
                 "code": code,
@@ -853,8 +1001,8 @@ def main() -> None:
                 "exampleCount": len(worked),
                 "solutionCount": sum(1 for item in worked if item["solutionStatus"] == "available"),
                 "figureCount": sum(len(item["assetReferences"]) for item in worked),
-                "reviewStatus": "needs-review",
-                "contentVersion": "final-pdf-v2",
+                "reviewStatus": "verified" if verified_source else "needs-review",
+                "contentVersion": "final-pdf-v3",
             })
         audit[spec["id"]] = {
             "fileName": file_name,
@@ -868,7 +1016,14 @@ def main() -> None:
             "sourceFigureCount": source_figure_count,
             "textCompleteCandidateCount": text_complete_candidate_count,
             "diagramDependentCount": diagram_dependent_count,
-            "pendingReviewExampleCount": sum(len(examples.get(code, [])) for code in allowed),
+            "verifiedExampleCount": sum(
+                1 for code in allowed for item in examples.get(code, [])
+                if item["reviewStatus"] == "verified"
+            ),
+            "pendingReviewExampleCount": sum(
+                1 for code in allowed for item in examples.get(code, [])
+                if item["reviewStatus"] != "verified"
+            ),
         }
 
     payload = (

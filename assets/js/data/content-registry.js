@@ -2,8 +2,8 @@ import { curriculumMeta, curriculumTopics } from "./curriculum.js";
 import { approvedMathContent } from "./approved-math-content.js?v=13.1";
 import { getCalculusSourcePractice } from "./calculus-source-practice.js?v=11.2";
 import { getDocumentForTopic } from "./document-mappings.js?v=12.1";
-import { getExampleContent } from "./example-content.js?v=8.6";
-import { getKnowledgeContent } from "./knowledge-content.js?v=14.0";
+import { getExampleContent } from "./example-content.js?v=19.0";
+import { getKnowledgeContent } from "./knowledge-content.js?v=19.0";
 import { buildActivePracticeSet } from "../domain/practice-bank.js?v=15.0";
 
 export const CONTENT_STATUS = Object.freeze({

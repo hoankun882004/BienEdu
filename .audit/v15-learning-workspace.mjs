@@ -108,14 +108,14 @@ try {
     const example = await page.evaluate(() => {
       const card = document.querySelector(".example-card");
       const solution = card?.querySelector(".example-reader__solution");
-      const result = card?.querySelector(".example-reader__result");
       return {
         cards: document.querySelectorAll(".example-card").length,
         problem: Boolean(card?.querySelector(".example-reader__question")),
         method: Boolean(card?.querySelector(".example-reader__analysis")),
         solutionSteps: solution?.querySelectorAll("li").length ?? 0,
-        oneResult: card?.querySelectorAll(".example-reader__result").length ?? 0,
-        resultAfterSolution: Boolean(solution && result && (solution.compareDocumentPosition(result) & Node.DOCUMENT_POSITION_FOLLOWING)),
+        sourceFooters: card?.querySelectorAll(".example-reader__source").length ?? 0,
+        duplicateResults: card?.querySelectorAll(".example-reader__result").length ?? 0,
+        solutionCollapsed: solution ? !solution.open : false,
         cardOverflow: card ? card.scrollWidth > card.clientWidth + 1 : true
       };
     });
@@ -123,9 +123,12 @@ try {
     assert.equal(example.problem, true, `12.1 example ${label}: prominent problem statement`);
     assert.equal(example.method, true, `12.1 example ${label}: method remains present`);
     assert.ok(example.solutionSteps >= 2, `12.1 example ${label}: readable numbered solution`);
-    assert.equal(example.oneResult, 1, `12.1 example ${label}: a single final answer`);
-    assert.equal(example.resultAfterSolution, true, `12.1 example ${label}: answer follows the derivation`);
+    assert.equal(example.sourceFooters, 1, `12.1 example ${label}: source provenance appears once`);
+    assert.equal(example.duplicateResults, 0, `12.1 example ${label}: no duplicated answer card`);
+    assert.equal(example.solutionCollapsed, true, `12.1 example ${label}: solution starts collapsed`);
     assert.equal(example.cardOverflow, false, `12.1 example ${label}: card content fits`);
+    await page.locator(".example-reader__solution > summary").click();
+    assert.equal(await page.locator(".example-reader__solution-body").isVisible(), true, `12.1 example ${label}: solution opens on demand`);
     await page.screenshot({ path: `.audit/v15-example-12-1-${label}.png`, fullPage: viewport.width <= 768 });
     if (viewport.width <= 430) {
       await assertBottomClearance(page, ".example-card", `12.1 example ${label}`);

@@ -106,8 +106,8 @@ const knowledge = {
     "contentType": "markdown-latex",
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
-    "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2",
+    "reviewStatus": "verified",
+    "contentVersion": "foundation-import-v3",
     "pages": [
       {
         "title": "Đạo hàm và ứng dụng cơ bản",
@@ -248,7 +248,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.3": {
     "lead": "Tìm miền của căn; công thức đạo hàm căn dùng nơi biểu thức dưới căn dương.",
@@ -276,7 +276,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.4": {
     "lead": "Đổi sang radian; đạo hàm hàm ngoài rồi nhân đạo hàm hàm trong.",
@@ -304,7 +304,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.5": {
     "lead": "Phân biệt cơ số e và cơ số a; ghi miền của lôgarit.",
@@ -332,7 +332,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.6": {
     "lead": "Đặt u là biểu thức bên trong; tính f′(u) nhân u′.",
@@ -360,7 +360,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.7": {
     "lead": "Tích: (uv)′ = u′v + uv′. Thương: (u/v)′ = (u′v −uv′)/v², với v≠ 0.",
@@ -405,7 +405,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.8": {
     "lead": "Tính đạo hàm lần thứ nhất rồi lần thứ hai.",
@@ -429,7 +429,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.9": {
     "lead": "Tính s′ và s′′, thay thời điểm; tốc độ là trị tuyệt đối của vận tốc.",
@@ -457,7 +457,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "1.10": {
     "lead": "Viết đúng quy tắc trước khi thay số để không nhầm f với f′.",
@@ -481,7 +481,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.1": {
     "lead": "Tính đạo hàm và lập bảng dấu; kết luận trên từng khoảng xác định.",
@@ -509,7 +509,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.2": {
     "lead": "Nghiệm bội lẻ làm đổi dấu, bội chẵn không đổi dấu.",
@@ -533,7 +533,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.3": {
     "lead": "Đọc mũi tên tăng giảm; tách khoảng tại mọi mốc.",
@@ -561,7 +561,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.4": {
     "lead": "Đọc vị trí đồ thị đạo hàm so với trục Ox, không đọc độ dốc của nó.",
@@ -585,7 +585,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.5": {
     "lead": "Đi từ trái sang phải và quan sát tung độ tăng hay giảm.",
@@ -609,7 +609,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.6": {
     "lead": "Tách miền tại nghiệm mẫu, xét dấu đạo hàm trên từng khoảng.",
@@ -633,7 +633,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.7": {
     "lead": "Giải các mốc u(x) bằng nghiệm của f′, rồi xét cả u′.",
@@ -657,7 +657,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.8": {
     "lead": "Đưa về đạo hàm không âm hoặc không dương trên toàn R; kiểm tra trường hợp bằng 0.",
@@ -685,7 +685,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "2.9": {
     "lead": "Xét giá trị nhỏ nhất hoặc lớn nhất của đạo hàm trên khoảng; kiểm tra biên mở.",
@@ -713,7 +713,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.1": {
     "lead": "Xét dấu đạo hàm qua từng nghiệm và từng điểm đạo hàm không tồn tại.",
@@ -737,7 +737,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.2": {
     "lead": "Tìm hoành độ trước rồi thay vào f để có giá trị cực trị.",
@@ -761,7 +761,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.3": {
     "lead": "Chỉ đọc những mốc mũi tên đảo chiều.",
@@ -785,7 +785,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.4": {
     "lead": "Chỉ lấy giao điểm với Ox mà đồ thị đạo hàm đổi dấu.",
@@ -809,7 +809,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.5": {
     "lead": "Đọc đỉnh hoặc đáy cục bộ, phân biệt hoành độ và tung độ.",
@@ -833,7 +833,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.6": {
     "lead": "Đếm số mốc đổi dấu, không đếm mọi nghiệm f′=0.",
@@ -866,7 +866,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.7": {
     "lead": "Dùng đạo hàm hàm hợp và kiểm tra dấu tại từng mốc.",
@@ -890,7 +890,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.8": {
     "lead": "Tách miền f dương, f âm; kiểm tra thêm các nghiệm f=0.",
@@ -927,7 +927,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.9": {
     "lead": "Giữ nghiệm của f′(t)=0 với t>0; mỗi t tạo hai x, xét riêng x=0.",
@@ -972,7 +972,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "3.10": {
     "lead": "Viết điều kiện đạo hàm có số nghiệm đổi dấu theo yêu cầu.",
@@ -996,7 +996,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.1": {
     "lead": "Tìm các điểm tới hạn và hai đầu đoạn; so sánh tất cả giá trị.",
@@ -1024,7 +1024,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.2": {
     "lead": "Tính giới hạn ở biên và xem giá trị có được đạt hay không.",
@@ -1048,7 +1048,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.3": {
     "lead": "So sánh các độ cao được đạt; phân biệt đầu mút đóng và mở.",
@@ -1076,7 +1076,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.4": {
     "lead": "Quan sát cao nhất và thấp nhất trong đúng miền đang xét.",
@@ -1100,7 +1100,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.5": {
     "lead": "Chia trường hợp theo vị trí điểm tới hạn hoặc theo phép tịnh tiến.",
@@ -1124,7 +1124,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.6": {
     "lead": "Biểu diễn diện tích theo một biến trên miền hình học.",
@@ -1148,7 +1148,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.7": {
     "lead": "Viết kích thước, thể tích, miền dương rồi tối ưu.",
@@ -1172,7 +1172,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.8": {
     "lead": "Có thể tối ưu bình phương khoảng cách vì căn tăng trên miền không âm.",
@@ -1196,7 +1196,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.9": {
     "lead": "Tổng chi phí và doanh thu phải cùng đơn vị; lập lợi nhuận.",
@@ -1224,7 +1224,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.10": {
     "lead": "Tìm nghiệm tối ưu liên tục rồi thử các số nguyên kề và biên.",
@@ -1248,7 +1248,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "4.11": {
     "lead": "Lấy giao các điều kiện, tối ưu trên miền khả thi sau cùng.",
@@ -1272,7 +1272,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.1": {
     "lead": "Tìm điểm nghi ngờ từmiền xác định rồi tính giới hạn một phía.",
@@ -1296,7 +1296,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.2": {
     "lead": "Tính riêng giới hạn tại hai phía vô cực.",
@@ -1320,7 +1320,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.3": {
     "lead": "Chia đa thức hoặc dùng hai giới hạn để tìm hệ số a, b.",
@@ -1344,7 +1344,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.4": {
     "lead": "Giữ tập xác định; xét giới hạn tại nghiệm mẫu. So sánh bậc để tìm tiệm cận ngang, chia đa thức khi bậc tử hơn bậc mẫu một đơn vị để tìm tiệm cận xiên.",
@@ -1376,7 +1376,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.5": {
     "lead": "Đọc độ cao ở vô cực và các giới hạn vô cực tại mốc hữu hạn.",
@@ -1400,7 +1400,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.6": {
     "lead": "Phân biệt đường thẳng tiệm cận và vị trí điểm khuyết.",
@@ -1424,7 +1424,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.7": {
     "lead": "Liệt kê phương trình các đường phân biệt rồi đếm.",
@@ -1448,7 +1448,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.8": {
     "lead": "Tách trường hợp nhân tử tửvà mẫu triệt tiêu hoặc bậc giảm.",
@@ -1472,7 +1472,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "5.9": {
     "lead": "Giữ miền ban đầu; giới hạn hữu hạn là điểm khuyết, vô cực là TCĐ.",
@@ -1500,7 +1500,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.1": {
     "lead": "Đối chiếu loại hàm, chiều hai nhánh, cực trị, giao trục và tiệm cận.",
@@ -1524,7 +1524,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.2": {
     "lead": "Tính đạo hàm, giá trị tại mốc và giới hạn để ghép đúng bảng.",
@@ -1548,7 +1548,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.3": {
     "lead": "Dấu f′ quyết định chiều biến thiên; f′ đổi dấu quyết định cực trị.",
@@ -1576,7 +1576,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.4": {
     "lead": "Tìm điểm uốn, cực trị và giao trục trước khi vẽ.",
@@ -1600,7 +1600,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.5": {
     "lead": "Tìm tiệm cận, tâm đối xứng và chiều biến thiên từng nhánh.",
@@ -1624,7 +1624,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.6": {
     "lead": "Tịnh tiến đứng; hoành độ của mỗi điểm giữ nguyên.",
@@ -1652,7 +1652,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.7": {
     "lead": "Tịnh tiến ngang; chú ý x-a dịch sang phải a.",
@@ -1680,7 +1680,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.8": {
     "lead": "Đối xứng qua Ox đối với -f(x), qua Oy đối với f(-x).",
@@ -1704,7 +1704,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.9": {
     "lead": "Tách phần đồ thị theo dấu tung độ, không theo dấu hoành độ.",
@@ -1728,7 +1728,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.10": {
     "lead": "Chỉ sửdụng nửa đồ thịbên phải rồi đối xứng qua Oy.",
@@ -1752,7 +1752,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.11": {
     "lead": "Kẻ đường ngang và đếm giao điểm; tại cực trị có thể tiếp xúc.",
@@ -1780,7 +1780,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.12": {
     "lead": "Giải phương trình hoành độ và loại nghiệm vi phạm miền xác định.",
@@ -1804,7 +1804,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "6.13": {
     "lead": "Tìm các mức tham số tại đó số giao điểm thay đổi; xét riêng mức biên.",
@@ -1832,7 +1832,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.1": {
     "lead": "Tính f(x0), f′(x0) rồi thay vào phương trình tiếp tuyến.",
@@ -1866,7 +1866,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.2": {
     "lead": "Giải phương trình tung độ tiếp điểm; lập tiếp tuyến tại từng nghiệm.",
@@ -1894,7 +1894,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.3": {
     "lead": "Giải f′(x0)=k, giữ các tiếp điểm thuộc miền xác định.",
@@ -1927,7 +1927,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.4": {
     "lead": "Dùng hệ số góc đường thẳng đã cho; kiểm tra trùng đường nếu cần.",
@@ -1955,7 +1955,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.5": {
     "lead": "Hệ số góc tiếp tuyến bằng số đối của nghịch đảo hệ số góc đã cho.",
@@ -1979,7 +1979,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.6": {
     "lead": "Xác định rõ góc có hướng hay góc nhọn giữa hai đường.",
@@ -2003,7 +2003,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.7": {
     "lead": "Đặt hoành độ tiếp điểm t; thay tọa độđiểm đã cho vào tiếp tuyến.",
@@ -2031,7 +2031,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.8": {
     "lead": "Đếm các nghiệm tiếp điểm và loại các đường trùng nhau.",
@@ -2055,7 +2055,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "7.9": {
     "lead": "Đưa điều kiện tiếp tuyến về phương trình tham số rồi xét nghiệm hợp lệ.",
@@ -2079,7 +2079,7 @@ const knowledge = {
     "sourcePdf": "cd01-cd07-functions",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.1": {
     "lead": "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
@@ -2100,7 +2100,7 @@ const knowledge = {
     ],
     "note": {
       "label": "Lưu ý từ tài liệu",
-      "text": "Không biến aα + aβ thành aα⁺β.",
+      "text": "Không biến \\(a^{\\alpha}+a^{\\beta}\\) thành \\(a^{\\alpha+\\beta}\\).",
       "tone": "warning"
     },
     "layout": "principles-split",
@@ -2114,8 +2114,8 @@ const knowledge = {
     "contentType": "markdown-latex",
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
-    "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "reviewStatus": "verified",
+    "contentVersion": "foundation-import-v3"
   },
   "8.2": {
     "lead": "Kiểm tra cơ số và đối số; dùng định nghĩa hoặc công thức tích, thương, lũy thừa, đổi cơ số.",
@@ -2147,7 +2147,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.3": {
     "lead": "Với logₐ₍ₓ₎ u(x), lập hệ a(x) > 0, a(x)≠ 1, u(x) > 0. Có căn, mẫu số thì thêm điều kiện tương ứng.",
@@ -2189,7 +2189,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.4": {
     "lead": "Đưa về cùng cơ số. Cơ số lớn hơn 1 thì so sánh cùng chiều số mũ; cơ số giữa 0 và 1 thì ngược chiều.",
@@ -2224,8 +2224,8 @@ const knowledge = {
     "contentType": "markdown-latex",
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
-    "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "reviewStatus": "verified",
+    "contentVersion": "foundation-import-v3"
   },
   "8.5": {
     "lead": "Cùng cơ số thì dùng tính đơn điệu. Khác cơ số có thể đổi cơ số hoặc so sánh với 0, 1.",
@@ -2257,7 +2257,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.6": {
     "lead": "Nhận dạng y = aˣ; xét cơ số; lập các điểm (−1; 1/a), (0; 1), (1; a). Đồ thị luôn phía trên trục hoành.",
@@ -2306,7 +2306,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.7": {
     "lead": "Ghi x > 0; lấy các điểm (1; 0), (a; 1), (1/a; −1); xét chiều biến thiên theo cơ số.",
@@ -2355,7 +2355,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.8": {
     "lead": "Ghi điều kiện; dùng quy tắc tích, thương và lũy thừa; khi cần dùng đổi cơ số. Chỉ rút gọn trong tập xác định ban đầu.",
@@ -2395,7 +2395,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.9": {
     "lead": "Kiểm tra lần lượt: điều kiện, giá trị đặc biệt, dấu, chiều biến thiên. Một phản ví dụ đủ bác bỏ một mệnh đề sai.",
@@ -2427,7 +2427,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.10": {
     "lead": "Phân biệt căn chẵn và căn lẻ. Khi chuyển căn sang lũy thừa số mũ hữu tỉ theo SGK, cần cơ số dương; khi căn có biến, giữđúng điều kiện ban đầu.",
@@ -2459,7 +2459,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.11": {
     "lead": "Đổi về cùng cơ số rồi biểu diễn tử, mẫu bằng Dữ kiện đã biết. Dùng logₐb a = 1/(1 + logₐ b) khi cơ số và đối sốhợp lệ.",
@@ -2491,7 +2491,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.12": {
     "lead": "Đổi vềmột cơ số đểrút gọn. Với a, b, c > 0, a, b≠ 1, logₐ b logb c = logₐ c. Với α≠ 0, logₐα M = logₐ M/α.",
@@ -2527,7 +2527,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.13": {
     "lead": "Với đồ thịmũ, tại x = 1 tung độbằng cơ số. Với đồ thịlôgarit, tại y = 1 hoành độbằng cơ số. Cùng x > 1, trong nhóm cơ số lớn hơn 1, lôgarit có cơ số nhỏ hơn nằm cao hơn.",
@@ -2563,7 +2563,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "8.14": {
     "lead": "Nếu máy không có phím lôgarit cơ sốtùy ý, dùng logₐ M = ln M/ ln a. Nhập ngoặc toàn bộtử, mẫu và số mũ. Giữkết quảchưa làm tròn đến bước cuối.",
@@ -2599,7 +2599,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.1": {
     "lead": "Viết hai vế thành lũy thừa của một cơ số dương khác 1. Cho hai số mũ bằng nhau rồi giải.",
@@ -2631,7 +2631,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.2": {
     "lead": "Với tổng lôgarit, gộp thành một lôgarit sau khi đặt điều kiện. Với lũy thừa lệch số mũ, đặt nhân tử chung.",
@@ -2663,7 +2663,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.3": {
     "lead": "Gặp a²ˣ và aˣ thì đặt t = aˣ > 0. Gặp bình phương lôgarit thì đặt t = logₐ x, với điều kiện của x; giải theo t rồi quay về x.",
@@ -2716,7 +2716,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.4": {
     "lead": "Khi hai vế dương, lấy lôgarit cùng một cơ số thích hợp. Dùng ln(aᵘ) = u ln a.",
@@ -2757,7 +2757,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.5": {
     "lead": "Nếu là tích hoặc thương các lũy thừa cùng số mũ, gộp cơ số. Nếu là hai lũy thừa bằng nhau, lấy lôgarit. Tổng nhiều cơ số cần xem cấu trúc, không áp dụng máy móc.",
@@ -2793,7 +2793,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.6": {
     "lead": "Xét hiệu hai vế hoặc nhận ra một vế tăng, một vế giảm. Chứng minh có nhiều nhất một nghiệm, sau đó thử một nghiệm cụ thể.",
@@ -2825,7 +2825,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.7": {
     "lead": "Chuyển về điều kiện của vế phải hoặc đặt ẩn phụ. Phân biệt số nghiệm theo điều kiện t > 0, miền của x và số nghiệm của phương trình sau biến đổi.",
@@ -2866,7 +2866,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.8": {
     "lead": "Đếm nghiệm sau khi đặt ẩn phụ và kiểm tra điều kiện. Với t = aˣ, mỗi t > 0 cho đúng một x. Nếu số mũ là x², cần đếm lại số giá trị của x.",
@@ -2911,7 +2911,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.9": {
     "lead": "Với a > 0, a≠ 1: logₐ u = b tương đương u = aᵇ. Với hai lôgarit cùng cơ số, đặt u > 0, v > 0 rồi giải u = v. Kết luận sau khi thửđiều kiện.",
@@ -2947,7 +2947,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.10": {
     "lead": "Lập đủđiều kiện cơ số dương khác 1 và đối số dương. Sau đó dùng định nghĩa, hoặc đổi cơ số đểđưa vềẩn phụ.",
@@ -2979,7 +2979,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "9.11": {
     "lead": "Với ẩn phụt = aˣ, chỉđếm nghiệm dương của phương trình theo t. Nếu x bịgiới hạn, đổi cảmiền của x sang miền của t.",
@@ -3011,7 +3011,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.1": {
     "lead": "Đưa về cùng cơ số. Cơ số lớn hơn 1 giữ chiều; cơ số giữa 0 và 1 đổi chiều.",
@@ -3047,7 +3047,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.2": {
     "lead": "Đưa vềf(x) > f(x₀) hoặc f(x) ≤f(x₀); chứng minh f đơn điệu trên miền xét rồi suy ra điều kiện của x.",
@@ -3089,7 +3089,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.3": {
     "lead": "Đặt t = aˣ > 0 hoặc t = logₐ x. Giải bất phương trình theo t, giao điều kiện rồi chuyển lại về x.",
@@ -3131,7 +3131,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.4": {
     "lead": "Đặt điều kiện trước. Viết số ở vế phải thành lôgarit cùng cơ số hoặc dùng định nghĩa. So sánh và giao điều kiện.",
@@ -3167,7 +3167,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.5": {
     "lead": "Xét dấu vế phải trước. Nếu dương, viết thành lũy thừa cùng cơ số hoặc lấy lôgarit; nếu không dương, dùng aᵘ > 0.",
@@ -3212,7 +3212,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.6": {
     "lead": "Lập tập điều kiện riêng; giải bất phương trình đã biến đổi; giao hai tập. Kiểm tra điểm làm đối số bằng 0 hoặc mẫu số bằng 0.",
@@ -3252,7 +3252,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.7": {
     "lead": "Đọc đúng yêu cầu: có nghiệm, đúng với mọi x hay có nghiệm trên một đoạn. Dùng GTLN, GTNN hoặc cận của biểu thức trên miền xét.",
@@ -3284,7 +3284,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.8": {
     "lead": "Xác định giao điểm, chiều biến thiên và vùng đồ thị nằm trên/dưới đường ngang. Nếu hai đường cong phức tạp, cần lập luận bảo đảm không bỏ sót giao điểm.",
@@ -3316,7 +3316,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.9": {
     "lead": "Giải trên R trước, rồi đếm số nguyên thuộc tập nghiệm. Với L < x < U, số nguyên nhỏ nhất là ⌊L⌋+ 1, lớn nhất là ⌈U⌉−1. Với khoảng đóng dùng ⌈L⌉và ⌊U⌋.",
@@ -3352,7 +3352,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "10.10": {
     "lead": "Xét các giá trịaˣ tại những số nguyên liên tiếp. Dùng hai giá trịsát ngưỡng đểlập điều kiện cho tham số; chú ý dấu nghiêm ngặt.",
@@ -3388,7 +3388,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.1": {
     "lead": "Lãi mỗi kỳ chỉtính trên vốn gốc. Với P > 0, lãi suất r mỗi kỳ không đổi và n kỳ: A = P(1 + nr), tiền lãi I = Pnr. Công thức được suy ra từ tổng các khoản lãi bằng nhau.",
@@ -3434,7 +3434,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.2": {
     "lead": "Lãi được nhập gốc cuối mỗi kỳ. Công thức: \\(A=P(1+r)^N\\), trong đó r là lãi suất mỗi kỳ, N là số kỳ. Nếu lãi suất năm là r, chia m kỳ/năm: A = P(1 + r/m)ᵐᵗ; giả thiết mức lãi mỗi kỳ bằng r/m.",
@@ -3491,7 +3491,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.3": {
     "lead": "Đọc đúng mô hình đề cho. Tăng theo phần trăm sau mỗi năm: Pₙ = P₀(1+r)ⁿ. Mô hình liên tục: P(t) = P₀eʳᵗ. Hai cách hiểu về tốc độ không tự động giống nhau.",
@@ -3548,7 +3548,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.4": {
     "lead": "Nếu đề cho mô hình liên tục, dùng N(t) = N₀eᵏᵗ. Nếu mỗi khoảng T số lượng nhân q, dùng \\(N(t)=N_0q^{t/T}\\) trong mô hình được giả thiết; thời điểm quan sát rời rạc thì xét số kỳ nguyên.",
@@ -3601,7 +3601,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.5": {
     "lead": "Dùng mô hình đề cho M(t) = M₀e⁻ᵏᵗ, k > 0. Nếu chu kỳ bán rã là T > 0, suy ra \\(M(t)=M_0 2^{-t/T}\\) và k = ln 2/T.",
@@ -3651,7 +3651,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.6": {
     "lead": "Giảm r phần giá trị còn lại sau mỗi kỳ: Vₙ = V₀(1 −r)ⁿ, 0 < r < 1. Nếu đề nói giảm cùng một số tiền mỗi năm, đó là mô hình tuyến tính khác.",
@@ -3692,7 +3692,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.7": {
     "lead": "Tăng r nhân (1 + r); giảm r nhân (1 −r). Nhiều giai đoạn nhân các hệ số liên tiếp. Nếu cùng tỷ lệ qua n kỳ, dùng lũy thừa.",
@@ -3732,7 +3732,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.8": {
     "lead": "Trong mô hình lượng dương, C = y(0) > 0; k > 0 tăng, k < 0 giảm, k = 0 không đổi. Nếu có mức nền L, dạng y = L + Ceᵏᵗ có y(0) = L + C.",
@@ -3796,7 +3796,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.9": {
     "lead": "Giả thiết tốc độ biến thiên tỷ lệ với lượng hiện có: y′(t) = ky(t), k hằng số. Với điều kiện y(0) = y₀, nghiệm là y(t) = y₀eᵏᵗ. Đặt g(t) = ln y(t) thì g′(t) = k, nên g(t) = kt + ln y₀.",
@@ -3859,7 +3859,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.10": {
     "lead": "Với y(t) = Ceᵏᵗ > 0 và hai dữ kiện y(t₁) = y₁, y(t₂) = y₂, t₁≠ t₂, chia hai phương trình: k = ln(y₂/y₁)/(t₂ −t₁). Sau đó \\(C=y_1e^{-kt_1}\\).",
@@ -3909,7 +3909,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.11": {
     "lead": "Lập phương trình nếu hỏi đúng bằng; lập bất phương trình nếu hỏi ít nhất, vượt, không quá. Lấy lôgarit, xét dấu khi chia, rồi xử lý thời gian liên tục hoặc số kỳ nguyên.",
@@ -3945,7 +3945,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.12": {
     "lead": "Đọc công thức và đơn vịtrong đề. Với nồng độion H > 0, pH = −log H. Với I, I₀ > 0, mức âm L = 10 log(I/I₀). Mô hình áp suất ví dụ: ln(p/100) = −h/7, p tính bằng kPa, h bằng km.",
@@ -3985,7 +3985,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.13": {
     "lead": "Cho y(t) > 0, y′ = ky và đặt g(t) = ln y(t). Khi đó g′ = y′/y = k, nên g(t) = kt + C và y(t) = eᵏᵗ⁺C. Vì thếC = ln y(0), không phải y(0).",
@@ -4021,7 +4021,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.14": {
     "lead": "Giảsửlãi suất mỗi kỳr > 0 không đổi. Gửi thêm d cuối mỗi kỳ, ban đầu chưa có tiền: Aₙ = d[(1 + r)ⁿ −1]/r. Gửi đầu mỗi kỳthì nhân thêm 1 + r. Vay P, trảd cuối kỳ: Bₙ = P(1 + r)ⁿ −d[(1 + r)ⁿ −1]/r. Các công thức là tổng cấp sốnhân; phải đọc đúng thời điểm dòng tiền.",
@@ -4061,7 +4061,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   },
   "11.15": {
     "lead": "Với T(t) = L + Ce⁻ᵏᵗ, k > 0, mức nền là L, ban đầu T(0) = L + C. Khi tìm thời gian, tách T −L trước khi lấy lôgarit. Qua nhiều giai đoạn rời rạc, nhân các hệ sốđúng từng giai đoạn.",
@@ -4097,7 +4097,7 @@ const knowledge = {
     "sourcePdf": "cd08-cd11-exponential-logarithm",
     "conversionStatus": "imported",
     "reviewStatus": "needs-review",
-    "contentVersion": "foundation-import-v2"
+    "contentVersion": "foundation-import-v3"
   }
 };
 
@@ -4105,17 +4105,17 @@ const examples = {
   "1.1": [
     {
       "id": "1.1-source-example-1",
-      "title": "Cho f(x) = 3x² −2x + 5.",
-      "prompt": "Cho f(x) = 3x² −2x + 5. Tính f′(x) và nêu miền áp dụng.",
+      "title": "Ví dụ 1",
+      "prompt": "Cho \\(f(x)=3x^2-2x+5\\). Tính \\(f'(x)\\) và nêu miền áp dụng.",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = 2 (3x −1) trên R.",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "expression": "\\(f'(x)=2(3x-1)\\) trên \\(\\mathbb{R}\\).",
+          "text": null
         }
       ],
-      "answer": "f′(x) = 2 (3x −1) trên R.",
+      "answer": "\\(f'(x)=2(3x-1)\\) trên \\(\\mathbb{R}\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4129,29 +4129,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-1",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-1",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-2",
-      "title": "Cho f(x) = x(3x³−8x²+12) 12 .",
-      "prompt": "Cho f(x) = x(3x³−8x²+12) 12 . Tính f′(x) và nêu miền áp dụng.",
+      "title": "Ví dụ 2",
+      "prompt": "Cho \\(f(x)=\\dfrac{x(3x^3-8x^2+12)}{12}\\). Tính \\(f'(x)\\) và nêu miền áp dụng.",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = (x −1) ( x² −x −1 ) trên R.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "expression": "\\(f'(x)=(x-1)(x^2-x-1)\\) trên \\(\\mathbb{R}\\).",
+          "text": null
         }
       ],
-      "answer": "f′(x) = (x −1) ( x² −x −1 ) trên R.",
+      "answer": "\\(f'(x)=(x-1)(x^2-x-1)\\) trên \\(\\mathbb{R}\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4165,29 +4165,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-2",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-2",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-3",
-      "title": "Cho f(x) = (x −1)(x + 2)(x −3).",
-      "prompt": "Cho f(x) = (x −1)(x + 2)(x −3). Tính f′(x) và nêu miền áp dụng.",
+      "title": "Ví dụ 3",
+      "prompt": "Cho \\(f(x)=(x-1)(x+2)(x-3)\\). Tính \\(f'(x)\\) và nêu miền áp dụng.",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = 3x² −4x −5 trên R.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "expression": "\\(f'(x)=3x^2-4x-5\\) trên \\(\\mathbb{R}\\).",
+          "text": null
         }
       ],
-      "answer": "f′(x) = 3x² −4x −5 trên R.",
+      "answer": "\\(f'(x)=3x^2-4x-5\\) trên \\(\\mathbb{R}\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4201,29 +4201,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-3",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-3",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-4",
-      "title": "Cho f(x) = (x² −1)² −(x⁴ −2x²).",
-      "prompt": "Cho f(x) = (x² −1)² −(x⁴ −2x²). Tính f′(x) và nêu miền áp dụng.",
+      "title": "Ví dụ 4",
+      "prompt": "Cho \\(f(x)=(x^2-1)^2-(x^4-2x^2)\\). Tính \\(f'(x)\\) và nêu miền áp dụng.",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = 0 trên R.",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "expression": "\\(f'(x)=0\\) trên \\(\\mathbb{R}\\).",
+          "text": null
         }
       ],
-      "answer": "f′(x) = 0 trên R.",
+      "answer": "\\(f'(x)=0\\) trên \\(\\mathbb{R}\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4237,29 +4237,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-4",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-4",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-5",
-      "title": "Cho f(x) = x (x −1)² (x + 1)².",
-      "prompt": "Cho f(x) = x (x −1)² (x + 1)². Tính f′(−1).",
+      "title": "Ví dụ 5",
+      "prompt": "Cho \\(f(x)=x(x-1)^2(x+1)^2\\). Tính \\(f'(-1)\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = (x −1) (x + 1) ( 5x² −1 ) trên R. Thay x = −1, được f′(−1) = 0.",
-          "text": "Lời giải Ví dụ 5, trang 66 của PDF nguồn."
+          "expression": "\\(f'(x)=(x-1)(x+1)(5x^2-1)\\) trên \\(\\mathbb{R}\\). Thay \\(x=-1\\), được \\(f'(-1)=0\\).",
+          "text": null
         }
       ],
-      "answer": "f′(x) = (x −1) (x + 1) ( 5x² −1 ) trên R. Thay x = −1, được f′(−1) = 0.",
+      "answer": "\\(f'(x)=(x-1)(x+1)(5x^2-1)\\) trên \\(\\mathbb{R}\\). Thay \\(x=-1\\), được \\(f'(-1)=0\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4273,29 +4273,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-5",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-5",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-6",
-      "title": "Tìm các điểm có đạo hàm bằng 0 của f(x) = x³ −3x² + 2.",
-      "prompt": "Tìm các điểm có đạo hàm bằng 0 của f(x) = x³ −3x² + 2.",
+      "title": "Ví dụ 6",
+      "prompt": "Tìm các điểm có đạo hàm bằng 0 của \\(f(x)=x^3-3x^2+2\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′ = 3x(x −2). Vậy f′ = 0 tại x = 0, 2; các điểm trên đồ thịlà (0; 2) và (2; −2).",
-          "text": "Lời giải Ví dụ 6, trang 66 của PDF nguồn."
+          "expression": "\\(f'=3x(x-2)\\). Vậy \\(f'=0\\) tại \\(x=0,2\\); các điểm trên đồ thị là \\((0;2)\\) và \\((2;-2)\\).",
+          "text": null
         }
       ],
-      "answer": "f′ = 3x(x −2). Vậy f′ = 0 tại x = 0, 2; các điểm trên đồ thịlà (0; 2) và (2; −2).",
+      "answer": "\\(f'=3x(x-2)\\). Vậy \\(f'=0\\) tại \\(x=0,2\\); các điểm trên đồ thị là \\((0;2)\\) và \\((2;-2)\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4309,29 +4309,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-6",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-6",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-7",
-      "title": "Với f(x) = x³ + mx² −2x + 1, tìm m để f′(1) = 0.",
-      "prompt": "Với f(x) = x³ + mx² −2x + 1, tìm m để f′(1) = 0.",
+      "title": "Ví dụ 7",
+      "prompt": "Với \\(f(x)=x^3+mx^2-2x+1\\), tìm \\(m\\) để \\(f'(1)=0\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′ = 3x² + 2mx −2, nên f′(1) = 1 + 2m = 0. Suy ra m = −1/2.",
-          "text": "Lời giải Ví dụ 7, trang 66 của PDF nguồn."
+          "expression": "\\(f'=3x^2+2mx-2\\), nên \\(f'(1)=1+2m=0\\). Suy ra \\(m=-\\dfrac{1}{2}\\).",
+          "text": null
         }
       ],
-      "answer": "f′ = 3x² + 2mx −2, nên f′(1) = 1 + 2m = 0. Suy ra m = −1/2.",
+      "answer": "\\(f'=3x^2+2mx-2\\), nên \\(f'(1)=1+2m=0\\). Suy ra \\(m=-\\dfrac{1}{2}\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4345,29 +4345,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-7",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-7",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-8",
-      "title": "Biết f(x) = ax³ + bx + 1, f′(0) = −3, f′(1) = 3.",
-      "prompt": "Biết f(x) = ax³ + bx + 1, f′(0) = −3, f′(1) = 3. Tìm a, b.",
+      "title": "Ví dụ 8",
+      "prompt": "Biết \\(f(x)=ax^3+bx+1\\), \\(f'(0)=-3\\), \\(f'(1)=3\\). Tìm \\(a,b\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′ = 3ax² + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
-          "text": "Lời giải Ví dụ 8, trang 66 của PDF nguồn."
+          "expression": "\\(f'=3ax^2+b\\). Từ \\(b=-3\\), \\(3a+b=3\\) được \\(a=2\\), \\(b=-3\\).",
+          "text": null
         }
       ],
-      "answer": "f′ = 3ax² + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
+      "answer": "\\(f'=3ax^2+b\\). Từ \\(b=-3\\), \\(3a+b=3\\) được \\(a=2\\), \\(b=-3\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4381,29 +4381,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-8",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-8",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-9",
-      "title": "Bạn An viết (x³ −2x² + 4)′ = 3x² −4x + 4.",
-      "prompt": "Bạn An viết (x³ −2x² + 4)′ = 3x² −4x + 4. Hãy chỉ ra lỗi và sửa.",
+      "title": "Ví dụ 9",
+      "prompt": "Bạn An viết \\((x^3-2x^2+4)'=3x^2-4x+4\\). Hãy chỉ ra lỗi và sửa.",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Hạng tử4 là hằng sốnên đạo hàm bằng 0. Kết quảđúng: 3x² −4x.",
-          "text": "Lời giải Ví dụ 9, trang 66 của PDF nguồn."
+          "expression": "Hạng tử 4 là hằng số nên đạo hàm bằng 0. Kết quả đúng: \\(3x^2-4x\\).",
+          "text": null
         }
       ],
-      "answer": "Hạng tử4 là hằng sốnên đạo hàm bằng 0. Kết quảđúng: 3x² −4x.",
+      "answer": "Hạng tử 4 là hằng số nên đạo hàm bằng 0. Kết quả đúng: \\(3x^2-4x\\).",
       "takeaway": null,
       "sourcePages": [
         4,
@@ -4417,29 +4417,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-9",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-9",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.1-source-example-10",
-      "title": "Cho f(x) = (x + 1)³ −(x −1)³.",
-      "prompt": "Cho f(x) = (x + 1)³ −(x −1)³. Giải f′(x) = 12.",
+      "title": "Ví dụ 10",
+      "prompt": "Cho \\(f(x)=(x+1)^3-(x-1)^3\\). Giải \\(f'(x)=12\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Rút gọn f = 6x² + 2, nên f′ = 12x. Phương trình có nghiệm duy nhất x = 1.",
-          "text": "Lời giải Ví dụ 10, trang 66 của PDF nguồn."
+          "expression": "Rút gọn \\(f=6x^2+2\\), nên \\(f'=12x\\). Phương trình có nghiệm duy nhất \\(x=1\\).",
+          "text": null
         }
       ],
-      "answer": "Rút gọn f = 6x² + 2, nên f′ = 12x. Phương trình có nghiệm duy nhất x = 1.",
+      "answer": "Rút gọn \\(f=6x^2+2\\), nên \\(f'=12x\\). Phương trình có nghiệm duy nhất \\(x=1\\).",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -4453,15 +4453,15 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "1.1-worked-example-10",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD01",
       "lessonId": "1.1",
       "sectionId": "1.1-example-10",
       "contentType": "markdown-latex",
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.2": [
@@ -4474,7 +4474,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² trên x≠ 1.",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² trên x≠ 1.",
@@ -4499,7 +4499,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-2",
@@ -4510,7 +4510,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 2x /((x2+1)2) trên R.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 2x /((x2+1)2) trên R.",
@@ -4535,7 +4535,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-3",
@@ -4546,7 +4546,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ˣ²⁺²ˣ⁻¹ (x+1)² trên x≠ −1.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ˣ²⁺²ˣ⁻¹ (x+1)² trên x≠ −1.",
@@ -4571,7 +4571,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-4",
@@ -4582,7 +4582,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 trên x≠ 1.",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 trên x≠ 1.",
@@ -4607,7 +4607,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-5",
@@ -4618,7 +4618,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
-          "text": "Lời giải Ví dụ 5, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
@@ -4643,7 +4643,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-6",
@@ -4654,7 +4654,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {0}, f′ = 1 −4/x². Suy ra x = ±2.",
-          "text": "Lời giải Ví dụ 6, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {0}, f′ = 1 −4/x². Suy ra x = ±2.",
@@ -4679,7 +4679,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-7",
@@ -4690,7 +4690,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = (2m −1)/(x + 2)², nên (2m −1)/4 = 1. Vậy m = 5/2.",
-          "text": "Lời giải Ví dụ 7, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = (2m −1)/(x + 2)², nên (2m −1)/4 = 1. Vậy m = 5/2.",
@@ -4715,7 +4715,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-8",
@@ -4726,7 +4726,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không, vì hàm ban đầu không xác định tại 2. Dù rút gọn được f = x + 2 trên x≠ 2, không được tựthêm điểm 2.",
-          "text": "Lời giải Ví dụ 8, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không, vì hàm ban đầu không xác định tại 2. Dù rút gọn được f = x + 2 trên x≠ 2, không được tựthêm điểm 2.",
@@ -4751,7 +4751,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-9",
@@ -4762,7 +4762,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Công thức đúng là (u′v −uv′)/v². Vì thế f′ = ((x + 1) −x)/(x + 1)² = 1/(x + 1)², với x≠ −1.",
-          "text": "Lời giải Ví dụ 9, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Công thức đúng là (u′v −uv′)/v². Vì thế f′ = ((x + 1) −x)/(x + 1)² = 1/(x + 1)², với x≠ −1.",
@@ -4787,7 +4787,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2-source-example-10",
@@ -4798,7 +4798,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 2 /((x+1)3) trên x≠ −1.",
-          "text": "Lời giải Ví dụ 10, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 2 /((x+1)3) trên x≠ −1.",
@@ -4823,7 +4823,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.3": [
@@ -4836,7 +4836,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = [0; +∞); y′ = 1/(2√x) với x > 0. Tại 0 không có đạo hàm hữu hạn theo thương sai phân bên phải.",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = [0; +∞); y′ = 1/(2√x) với x > 0. Tại 0 không có đạo hàm hữu hạn theo thương sai phân bên phải.",
@@ -4861,7 +4861,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-2",
@@ -4872,7 +4872,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
@@ -4897,7 +4897,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-3",
@@ -4908,7 +4908,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
@@ -4933,7 +4933,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-4",
@@ -4944,7 +4944,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
@@ -4969,7 +4969,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-5",
@@ -4980,7 +4980,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
@@ -5005,7 +5005,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-6",
@@ -5016,7 +5016,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt u = x + √x. Khi x > 0, u′ = 1 + 1/(2√x) và u > 0. Do đó y′ = (2√x + 1)/(4√x √ x + √x).",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt u = x + √x. Khi x > 0, u′ = 1 + 1/(2√x) và u > 0. Do đó y′ = (2√x + 1)/(4√x √ x + √x).",
@@ -5041,7 +5041,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-7",
@@ -5052,7 +5052,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = [1; +∞). Với x > 1, y′ = √x −1+x/(2√x −1) = (3x−2)/(2√x −1). Tại 1, thương sai phân bên phải bằng (1 + h)/ √ h →+∞nên không có đạo hàm hữu hạn.",
-          "text": "Lời giải Ví dụ 7, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = [1; +∞). Với x > 1, y′ = √x −1+x/(2√x −1) = (3x−2)/(2√x −1). Tại 1, thương sai phân bên phải bằng (1 + h)/ √ h →+∞nên không có đạo hàm hữu hạn.",
@@ -5077,7 +5077,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-8",
@@ -5088,7 +5088,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y = |x −1|. Đạo hàm bằng −1 khi x < 1, bằng 1 khi x > 1. Hai đạo hàm một phía tại 1 khác nhau nên không có đạo hàm tại đó.",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y = |x −1|. Đạo hàm bằng −1 khi x < 1, bằng 1 khi x > 1. Hai đạo hàm một phía tại 1 khác nhau nên không có đạo hàm tại đó.",
@@ -5113,7 +5113,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-9",
@@ -5124,7 +5124,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Biểu thức dưới căn là (x −1)² + 1 > 0. y′ = (x −1)/ √ x² −2x + 2; nghiệm duy nhất x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Biểu thức dưới căn là (x −1)² + 1 > 0. y′ = (x −1)/ √ x² −2x + 2; nghiệm duy nhất x = 1.",
@@ -5149,7 +5149,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3-source-example-10",
@@ -5160,7 +5160,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m > 0, biểu thức dưới căn luôn dương nên hàm có đạo hàm trên R. Nếu m = 0, hàm bằng |x|, không có đạo hàm tại 0. Nếu m < 0, hàm không xác định trên toàn R. Vậy m > 0.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m > 0, biểu thức dưới căn luôn dương nên hàm có đạo hàm trên R. Nếu m = 0, hàm bằng |x|, không có đạo hàm tại 0. Nếu m < 0, hàm không xác định trên toàn R. Vậy m > 0.",
@@ -5185,7 +5185,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.4": [
@@ -5198,7 +5198,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −sin (x) + cos (x) trên R.",
-          "text": "Lời giải Ví dụ 1, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −sin (x) + cos (x) trên R.",
@@ -5223,7 +5223,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-2",
@@ -5234,7 +5234,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 sin ( 2x + π 6 ) trên R.",
-          "text": "Lời giải Ví dụ 2, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 sin ( 2x + π 6 ) trên R.",
@@ -5259,7 +5259,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-3",
@@ -5270,7 +5270,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2x sin ( x2) trên R.",
-          "text": "Lời giải Ví dụ 3, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2x sin ( x2) trên R.",
@@ -5295,7 +5295,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-4",
@@ -5306,7 +5306,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 cₒₛ₂ /((x)) trên cos x≠ 0. Thay x = π ₄ , được f′( π ₄ ) = 2.",
-          "text": "Lời giải Ví dụ 4, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 cₒₛ₂ /((x)) trên cos x≠ 0. Thay x = π ₄ , được f′( π ₄ ) = 2.",
@@ -5331,7 +5331,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-5",
@@ -5342,7 +5342,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 2 ₛᵢₙ₂ /((2x)) trên sin(2x)≠ 0.",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 2 ₛᵢₙ₂ /((2x)) trên sin(2x)≠ 0.",
@@ -5367,7 +5367,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-6",
@@ -5378,7 +5378,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = sin (2x) trên R.",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = sin (2x) trên R.",
@@ -5403,7 +5403,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-7",
@@ -5414,7 +5414,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = cos (2x) trên R. Thay x = π ₆ , được f′( π ₆ ) = ¹ ₂.",
-          "text": "Lời giải Ví dụ 7, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = cos (2x) trên R. Thay x = π ₆ , được f′( π ₆ ) = ¹ ₂.",
@@ -5439,7 +5439,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-8",
@@ -5450,7 +5450,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y′ = 2 cos x, nên trong khoảng đã cho Chỉ có x = π/2.",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y′ = 2 cos x, nên trong khoảng đã cho Chỉ có x = π/2.",
@@ -5475,7 +5475,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-9",
@@ -5486,7 +5486,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y′ = m cos(mx), nên y′(0) = m = 3.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y′ = m cos(mx), nên y′(0) = m = 3.",
@@ -5511,7 +5511,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4-source-example-10",
@@ -5522,7 +5522,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Thiếu đạo hàm hàm trong là 3. Kết quảđúng: −3 sin(3x + 1), với mọi x ∈R.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Thiếu đạo hàm hàm trong là 3. Kết quảđúng: −3 sin(3x + 1), với mọi x ∈R.",
@@ -5547,7 +5547,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.5": [
@@ -5560,7 +5560,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2ˣ ln (2) + eˣ trên R.",
-          "text": "Lời giải Ví dụ 1, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2ˣ ln (2) + eˣ trên R.",
@@ -5585,7 +5585,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-2",
@@ -5596,7 +5596,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
-          "text": "Lời giải Ví dụ 2, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
@@ -5621,7 +5621,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-3",
@@ -5632,7 +5632,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 /(xln(3)) trên x > 0. Thay x = 1, được f′(1) = 1 /(ln(3)).",
-          "text": "Lời giải Ví dụ 3, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 /(xln(3)) trên x > 0. Thay x = 1, được f′(1) = 1 /(ln(3)).",
@@ -5657,7 +5657,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-4",
@@ -5668,7 +5668,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2xe⁻ˣ² trên R.",
-          "text": "Lời giải Ví dụ 4, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2xe⁻ˣ² trên R.",
@@ -5693,7 +5693,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-5",
@@ -5704,7 +5704,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2x ₓ₂₊₁ trên R.",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2x ₓ₂₊₁ trên R.",
@@ -5729,7 +5729,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-6",
@@ -5740,7 +5740,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 ₓ₂₋₁ trên x < −1 hoặc x > 1.",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 ₓ₂₋₁ trên x < −1 hoặc x > 1.",
@@ -5765,7 +5765,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-7",
@@ -5776,7 +5776,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {2}. Trên cảhai khoảng xác định, y′ = 1/(x −2).",
-          "text": "Lời giải Ví dụ 7, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {2}. Trên cảhai khoảng xác định, y′ = 1/(x −2).",
@@ -5801,7 +5801,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-8",
@@ -5812,7 +5812,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y′(0) = a⁰ ln a = ln a. Do đó a = e².",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y′(0) = a⁰ ln a = ln a. Do đó a = e².",
@@ -5837,7 +5837,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-9",
@@ -5848,7 +5848,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞), y′ = 1 −1/x. Nghiệm x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞), y′ = 1 −1/x. Nghiệm x = 1.",
@@ -5873,7 +5873,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5-source-example-10",
@@ -5884,7 +5884,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đã bỏhệ sốln 2. Đúng là 1/(x ln 2) với x > 0.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đã bỏhệ sốln 2. Đúng là 1/(x ln 2) với x > 0.",
@@ -5909,7 +5909,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.6": [
@@ -5922,7 +5922,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 10 (2x −1)⁴ trên R.",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 10 (2x −1)⁴ trên R.",
@@ -5947,7 +5947,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-2",
@@ -5958,7 +5958,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3 (2x + 1) ( x² + x + 1 )² trên R.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3 (2x + 1) ( x² + x + 1 )² trên R.",
@@ -5983,7 +5983,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-3",
@@ -5994,7 +5994,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = eˣ cos (eˣ) trên R.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = eˣ cos (eˣ) trên R.",
@@ -6019,7 +6019,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-4",
@@ -6030,7 +6030,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = e^(sin(x)) cos (x) trên R.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = e^(sin(x)) cos (x) trên R.",
@@ -6055,7 +6055,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-5",
@@ -6066,7 +6066,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = eˣ ₑₓ₊₁ trên R.",
-          "text": "Lời giải Ví dụ 5, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = eˣ ₑₓ₊₁ trên R.",
@@ -6091,7 +6091,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-6",
@@ -6102,7 +6102,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 4x /((x2+1)3) trên R. Thay x = 1, được f′(1) = −¹ ₂.",
-          "text": "Lời giải Ví dụ 6, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 4x /((x2+1)3) trên R. Thay x = 1, được f′(1) = −¹ ₂.",
@@ -6127,7 +6127,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-7",
@@ -6138,7 +6138,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2xf′(x² + 2), nên g′(1) = 2f′(3) = 4.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 2xf′(x² + 2), nên g′(1) = 2f′(3) = 4.",
@@ -6163,7 +6163,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-8",
@@ -6174,7 +6174,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "h′ = −sin x f′(cos x). Tại 0, hệ sốsin 0 = 0, nên h′(0) = 0.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "h′ = −sin x f′(cos x). Tại 0, hệ sốsin 0 = 0, nên h′(0) = 0.",
@@ -6199,7 +6199,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-9",
@@ -6210,7 +6210,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y′ = 4m(mx + 1)³. Vì y′(0) = 4m, suy ra m = −2.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y′ = 4m(mx + 1)³. Vì y′(0) = 4m, suy ra m = −2.",
@@ -6235,7 +6235,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6-source-example-10",
@@ -6246,7 +6246,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Thiếu đạo hàm 2x của biểu thức trong lôgarit. Đúng: 2x/(1 + x²) trên R.",
-          "text": "Lời giải Ví dụ 10, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Thiếu đạo hàm 2x của biểu thức trong lôgarit. Đúng: 2x/(1 + x²) trên R.",
@@ -6271,7 +6271,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.7": [
@@ -6284,7 +6284,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x cos (x) + sin (x) trên R.",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x cos (x) + sin (x) trên R.",
@@ -6309,7 +6309,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-2",
@@ -6320,7 +6320,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x + 1)² eˣ trên R.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x + 1)² eˣ trên R.",
@@ -6345,7 +6345,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-3",
@@ -6356,7 +6356,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ^(1−ln(x)) x² trên x > 0.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ^(1−ln(x)) x² trên x > 0.",
@@ -6381,7 +6381,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-4",
@@ -6392,7 +6392,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 /(cos(x)+1) trên cos x≠ −1.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 /(cos(x)+1) trên cos x≠ −1.",
@@ -6417,7 +6417,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-5",
@@ -6428,7 +6428,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ^((x−1)2ex) /((x2+1)2) trên R. Thay x = 0, được f′(0) = 1.",
-          "text": "Lời giải Ví dụ 5, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ^((x−1)2ex) /((x2+1)2) trên R. Thay x = 0, được f′(0) = 1.",
@@ -6453,7 +6453,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-6",
@@ -6464,7 +6464,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x (2 ln (x) + 1) trên x > 0.",
-          "text": "Lời giải Ví dụ 6, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x (2 ln (x) + 1) trên x > 0.",
@@ -6489,7 +6489,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-7",
@@ -6500,7 +6500,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x /((x2+1)2) trên R.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 4x /((x2+1)2) trên R.",
@@ -6525,7 +6525,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-8",
@@ -6536,7 +6536,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(fg)′(0) = f′(0)g(0) + f(0)g′(0) = −3 + 8 = 5.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(fg)′(0) = f′(0)g(0) + f(0)g′(0) = −3 + 8 = 5.",
@@ -6561,7 +6561,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-9",
@@ -6572,7 +6572,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. Vì g(1) = 0, thương f/g không xác định tại 1. Không được thay sốvào công thức đạo hàm thương.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. Vì g(1) = 0, thương f/g không xác định tại 1. Không được thay sốvào công thức đạo hàm thương.",
@@ -6597,7 +6597,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7-source-example-10",
@@ -6608,7 +6608,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = xeˣ, bằng 0 chỉtại x = 0. Khi đó f(0) = −1, điểm cần tìm là (0; −1).",
-          "text": "Lời giải Ví dụ 10, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = xeˣ, bằng 0 chỉtại x = 0. Khi đó f(0) = −1, điểm cần tìm là (0; −1).",
@@ -6633,7 +6633,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.8": [
@@ -6646,7 +6646,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x (x −1) (x + 1). f′′(x) = 4 ( 3x² −1 ) trên R.",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 4x (x −1) (x + 1). f′′(x) = 4 ( 3x² −1 ) trên R.",
@@ -6671,7 +6671,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-2",
@@ -6682,7 +6682,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2e²ˣ. f′′(x) = 4e²ˣ trên R.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2e²ˣ. f′′(x) = 4e²ˣ trên R.",
@@ -6707,7 +6707,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-3",
@@ -6718,7 +6718,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −3 sin (3x). f′′(x) = −9 cos (3x) trên R.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −3 sin (3x). f′′(x) = −9 cos (3x) trên R.",
@@ -6743,7 +6743,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-4",
@@ -6754,7 +6754,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ¹ ₓ. f′′(x) = −¹ ₓ₂ trên x > 0.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ¹ ₓ. f′′(x) = −¹ ₓ₂ trên x > 0.",
@@ -6779,7 +6779,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-5",
@@ -6790,7 +6790,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −¹ ₓ₂ . f′′(x) = 2 ₓ₃ trên x≠ 0.",
-          "text": "Lời giải Ví dụ 5, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −¹ ₓ₂ . f′′(x) = 2 ₓ₃ trên x≠ 0.",
@@ -6815,7 +6815,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-6",
@@ -6826,7 +6826,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x + 1) eˣ. f′′(x) = (x + 2) eˣ trên R. Thay x = 0, được f′′(0) = 2.",
-          "text": "Lời giải Ví dụ 6, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x + 1) eˣ. f′′(x) = (x + 2) eˣ trên R. Thay x = 0, được f′′(0) = 2.",
@@ -6851,7 +6851,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-7",
@@ -6862,7 +6862,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x √ ₓ₂₊₁. f′′(x) = 1 (x²+1) 3 ₂ trên R.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x √ ₓ₂₊₁. f′′(x) = 1 (x²+1) 3 ₂ trên R.",
@@ -6887,7 +6887,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-8",
@@ -6898,7 +6898,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3x² + 2mx −1, f′′ = 6x + 2m. Điều kiện 6 + 2m = 0 cho m = −3.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3x² + 2mx −1, f′′ = 6x + 2m. Điều kiện 6 + 2m = 0 cho m = −3.",
@@ -6923,7 +6923,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-9",
@@ -6934,7 +6934,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. f′ = 4x³ đổi âm sang dương qua 0, nên 0 là điểm cực tiểu. Tiêu chuẩn đạo hàm cấp hai không kết luận được khi f′′ = 0.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. f′ = 4x³ đổi âm sang dương qua 0, nên 0 là điểm cực tiểu. Tiêu chuẩn đạo hàm cấp hai không kết luận được khi f′′ = 0.",
@@ -6959,7 +6959,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8-source-example-10",
@@ -6970,7 +6970,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = b = 2; y′ = a cos x −b sin x cho a = −1. Vì y′′ = −a sin x −b cos x = −y, đẳng thức đúng trên R.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = b = 2; y′ = a cos x −b sin x cho a = −1. Vì y′′ = −a sin x −b cos x = −y, đẳng thức đúng trên R.",
@@ -6995,7 +6995,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.9": [
@@ -7008,7 +7008,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = s′ = 2t + 2; v(2) = 6 m/s.",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = s′ = 2t + 2; v(2) = 6 m/s.",
@@ -7033,7 +7033,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-2",
@@ -7044,7 +7044,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 3(t −1)(t −3) = 0 tại t = 1, 3 s. Cảhai đều thuộc khoảng thời gian yêu cầu.",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 3(t −1)(t −3) = 0 tại t = 1, 3 s. Cảhai đều thuộc khoảng thời gian yêu cầu.",
@@ -7069,7 +7069,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-3",
@@ -7080,7 +7080,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 3t² −6t, nên v(1) = −3 m/s. Tốc độ|v(1)| = 3 m/s.",
-          "text": "Lời giải Ví dụ 3, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 3t² −6t, nên v(1) = −3 m/s. Tốc độ|v(1)| = 3 m/s.",
@@ -7105,7 +7105,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-4",
@@ -7116,7 +7116,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 6t² −2t, a = 12t −2. Vậy a(2) = 22 m/s².",
-          "text": "Lời giải Ví dụ 4, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 6t² −2t, a = 12t −2. Vậy a(2) = 22 m/s².",
@@ -7141,7 +7141,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-5",
@@ -7152,7 +7152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 6 −2t > 0 khi t < 3. Trong miền thời gian đã cho: 0 ≤t < 3 s.",
-          "text": "Lời giải Ví dụ 5, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 6 −2t > 0 khi t < 3. Trong miền thời gian đã cho: 0 ≤t < 3 s.",
@@ -7177,7 +7177,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-6",
@@ -7188,7 +7188,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 3(t −2)² −2, nên vận tốc nhỏ nhất là −2 m/s tại t = 2 s. Đây không phải tốc độnhỏ nhất.",
-          "text": "Lời giải Ví dụ 6, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 3(t −2)² −2, nên vận tốc nhỏ nhất là −2 m/s tại t = 2 s. Đây không phải tốc độnhỏ nhất.",
@@ -7213,7 +7213,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-7",
@@ -7224,7 +7224,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 3(t² −1) bằng 0 tại t = 1. Vì tốc độ không âm, giá trị nhỏ nhất bằng 0 m/s tại đó.",
-          "text": "Lời giải Ví dụ 7, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 3(t² −1) bằng 0 tại t = 1. Vì tốc độ không âm, giá trị nhỏ nhất bằng 0 m/s tại đó.",
@@ -7249,7 +7249,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-8",
@@ -7260,7 +7260,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 2 cos t, a = −2 sin t. Tại π/2: v = 0 cm/s, a = −2 cm/s².",
-          "text": "Lời giải Ví dụ 8, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 2 cos t, a = −2 sin t. Tại π/2: v = 0 cm/s, a = −2 cm/s².",
@@ -7285,7 +7285,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-9",
@@ -7296,7 +7296,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "v = 3t² + 2bt + c, a = 6t + 2b. Suy ra c = 2, b = −2.",
-          "text": "Lời giải Ví dụ 9, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "v = 3t² + 2bt + c, a = 6t + 2b. Suy ra c = 2, b = −2.",
@@ -7321,7 +7321,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9-source-example-10",
@@ -7332,7 +7332,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vận tốc trung bình (9 −1)/(3 −1) = 4 m/s. Vận tốc tức thời s′(1) = 2 m/s. Hai đại lượng dùng hai cách tính khác nhau.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vận tốc trung bình (9 −1)/(3 −1) = 4 m/s. Vận tốc tức thời s′(1) = 2 m/s. Hai đại lượng dùng hai cách tính khác nhau.",
@@ -7357,7 +7357,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "1.10": [
@@ -7370,7 +7370,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(2f −g)′(2) = 2f′(2) −g′(2) = 7.",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(2f −g)′(2) = 2f′(2) −g′(2) = 7.",
@@ -7395,7 +7395,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-2",
@@ -7406,7 +7406,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(fg)′(0) = 3(−1) + 2 · 4 = 5.",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(fg)′(0) = 3(−1) + 2 · 4 = 5.",
@@ -7431,7 +7431,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-3",
@@ -7442,7 +7442,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(f/g)′(1) = (2 · 2 −3(−1))/2² = 7/4.",
-          "text": "Lời giải Ví dụ 3, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(f/g)′(1) = (2 · 2 −3(−1))/2² = 7/4.",
@@ -7467,7 +7467,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-4",
@@ -7478,7 +7478,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "[f²]′ = 2ff′, nên giá trịbằng 2(−2)5 = −20.",
-          "text": "Lời giải Ví dụ 4, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "[f²]′ = 2ff′, nên giá trịbằng 2(−2)5 = −20.",
@@ -7503,7 +7503,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-5",
@@ -7514,7 +7514,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(0)≠ 0, nên (1/f)′(0) = −f′(0)/f(0)² = 1/8.",
-          "text": "Lời giải Ví dụ 5, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(0)≠ 0, nên (1/f)′(0) = −f′(0)/f(0)² = 1/8.",
@@ -7539,7 +7539,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-6",
@@ -7550,7 +7550,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(f ◦g)′(1) = f′(g(1))g′(1) = 4(−2) = −8.",
-          "text": "Lời giải Ví dụ 6, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(f ◦g)′(1) = f′(g(1))g′(1) = 4(−2) = −8.",
@@ -7575,7 +7575,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-7",
@@ -7586,7 +7586,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "h′(0) = 2f′(1) = −6.",
-          "text": "Lời giải Ví dụ 7, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "h′(0) = 2f′(1) = −6.",
@@ -7611,7 +7611,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-8",
@@ -7622,7 +7622,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Do f(2) > 0, h′(2) = f′(2)/(2 √ f(2)) = 1.",
-          "text": "Lời giải Ví dụ 8, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Do f(2) > 0, h′(2) = f′(2)/(2 √ f(2)) = 1.",
@@ -7647,7 +7647,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-9",
@@ -7658,7 +7658,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "h′ = eᵍ(f′ + fg′). Thay số: h′(0) = 1(2 + 1 · 3) = 5.",
-          "text": "Lời giải Ví dụ 9, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "h′ = eᵍ(f′ + fg′). Thay số: h′(0) = 1(2 + 1 · 3) = 5.",
@@ -7683,7 +7683,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10-source-example-10",
@@ -7694,7 +7694,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chưa đủ. Công thức cần f(1) và g(1): (fg)′(1) = 2g(1) + 3f(1). Không được nhân hai đạo hàm đểthay thế.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chưa đủ. Công thức cần f(1) và g(1): (fg)′(1) = 2g(1) + 3f(1). Không được nhân hai đạo hàm đểthay thế.",
@@ -7733,7 +7733,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.1": [
@@ -7746,7 +7746,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
@@ -7771,7 +7771,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-2",
@@ -7782,7 +7782,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
@@ -7807,7 +7807,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-3",
@@ -7818,7 +7818,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
-          "text": "Lời giải Ví dụ 3, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
@@ -7843,7 +7843,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-4",
@@ -7854,7 +7854,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 4, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -7879,7 +7879,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-5",
@@ -7890,7 +7890,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
@@ -7915,7 +7915,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-6",
@@ -7926,7 +7926,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
@@ -7951,7 +7951,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-7",
@@ -7962,7 +7962,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
@@ -7987,7 +7987,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-8",
@@ -7998,7 +7998,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 −¹ ₓ₂ . Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 −¹ ₓ₂ . Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
@@ -8023,7 +8023,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-9",
@@ -8034,7 +8034,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -8059,7 +8059,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.1-source-example-10",
@@ -8070,7 +8070,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −3x² −1. Đồng biến: không có; nghịch biến: (−∞; ∞).",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −3x² −1. Đồng biến: không có; nghịch biến: (−∞; ∞).",
@@ -8095,7 +8095,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.2": [
@@ -8108,7 +8108,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1. Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -8133,7 +8133,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-2",
@@ -8144,7 +8144,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2. Đồng biến: không có; nghịch biến: (−∞; ∞).",
-          "text": "Lời giải Ví dụ 2, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2. Đồng biến: không có; nghịch biến: (−∞; ∞).",
@@ -8169,7 +8169,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-3",
@@ -8180,7 +8180,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x. Đồng biến: (0; ∞); nghịch biến: (−∞; 0).",
-          "text": "Lời giải Ví dụ 3, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x. Đồng biến: (0; ∞); nghịch biến: (−∞; 0).",
@@ -8205,7 +8205,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-4",
@@ -8216,7 +8216,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −x. Đồng biến: (−∞; 0); nghịch biến: (0; ∞).",
-          "text": "Lời giải Ví dụ 4, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −x. Đồng biến: (−∞; 0); nghịch biến: (0; ∞).",
@@ -8241,7 +8241,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-5",
@@ -8252,7 +8252,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −1)². Đồng biến: (−∞; ∞); nghịch biến: không có. Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −1)². Đồng biến: (−∞; ∞); nghịch biến: không có. Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
@@ -8277,7 +8277,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-6",
@@ -8288,7 +8288,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −(x + 1)². Đồng biến: không có; nghịch biến: (−∞; ∞). Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −(x + 1)². Đồng biến: không có; nghịch biến: (−∞; ∞). Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
@@ -8313,7 +8313,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-7",
@@ -8324,7 +8324,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −2) (x + 1). Đồng biến: (−∞; −1), (2; ∞); nghịch biến: (−1; 2).",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −2) (x + 1). Đồng biến: (−∞; −1), (2; ∞); nghịch biến: (−1; 2).",
@@ -8349,7 +8349,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-8",
@@ -8360,7 +8360,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −(x −1) (x + 2). Đồng biến: (−2; 1); nghịch biến: (−∞; −2), (1; ∞).",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −(x −1) (x + 2). Đồng biến: (−2; 1); nghịch biến: (−∞; −2), (1; ∞).",
@@ -8385,7 +8385,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-9",
@@ -8396,7 +8396,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x (x −2) (x + 2). Đồng biến: (−2; 0), (2; ∞); nghịch biến: (−∞; −2), (0; 2).",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x (x −2) (x + 2). Đồng biến: (−2; 0), (2; ∞); nghịch biến: (−∞; −2), (0; 2).",
@@ -8421,7 +8421,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2-source-example-10",
@@ -8432,7 +8432,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −1) (x + 2)². Đồng biến: (1; ∞); nghịch biến: (−∞; 1). Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −1) (x + 2)². Đồng biến: (1; ∞); nghịch biến: (−∞; 1). Nghiệm bội chẵn không chia nhỏkhoảng đơn điệu.",
@@ -8457,7 +8457,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.3": [
@@ -8470,7 +8470,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
@@ -8509,7 +8509,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-2",
@@ -8520,7 +8520,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
-          "text": "Lời giải Ví dụ 2, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
@@ -8559,7 +8559,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-3",
@@ -8570,7 +8570,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
-          "text": "Lời giải Ví dụ 3, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
@@ -8609,7 +8609,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-4",
@@ -8620,7 +8620,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 4, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -8659,7 +8659,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-5",
@@ -8670,7 +8670,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
@@ -8709,7 +8709,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-6",
@@ -8720,7 +8720,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
@@ -8759,7 +8759,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-7",
@@ -8770,7 +8770,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
@@ -8809,7 +8809,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-8",
@@ -8820,7 +8820,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
@@ -8859,7 +8859,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-9",
@@ -8870,7 +8870,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -8909,7 +8909,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3-source-example-10",
@@ -8920,7 +8920,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; ∞).",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; ∞).",
@@ -8959,7 +8959,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.4": [
@@ -8972,7 +8972,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có. Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có. Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9011,7 +9011,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-2",
@@ -9022,7 +9022,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9061,7 +9061,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-3",
@@ -9072,7 +9072,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (0; ∞); nghịch biến: (−∞; 0). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (0; ∞); nghịch biến: (−∞; 0). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9111,7 +9111,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-4",
@@ -9122,7 +9122,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; 0); nghịch biến: (0; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 4, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; 0); nghịch biến: (0; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9161,7 +9161,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-5",
@@ -9172,7 +9172,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có. Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 5, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có. Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9211,7 +9211,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-6",
@@ -9222,7 +9222,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 6, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9261,7 +9261,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-7",
@@ -9272,7 +9272,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (2; ∞); nghịch biến: (−1; 2). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 7, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (2; ∞); nghịch biến: (−1; 2). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9311,7 +9311,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-8",
@@ -9322,7 +9322,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−2; 1); nghịch biến: (−∞; −2), (1; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 8, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−2; 1); nghịch biến: (−∞; −2), (1; ∞). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9361,7 +9361,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-9",
@@ -9372,7 +9372,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−2; 0), (2; ∞); nghịch biến: (−∞; −2), (0; 2). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 9, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−2; 0), (2; ∞); nghịch biến: (−∞; −2), (0; 2). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9411,7 +9411,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4-source-example-10",
@@ -9422,7 +9422,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
-          "text": "Lời giải Ví dụ 10, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1). Xét dấu tung độ của đồ thịf′, không xét chiều đi lên hay đi xuống của đường cong này.",
@@ -9461,7 +9461,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.5": [
@@ -9474,7 +9474,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
-          "text": "Lời giải Ví dụ 1, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (1; ∞); nghịch biến: (−∞; 1).",
@@ -9513,7 +9513,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-2",
@@ -9524,7 +9524,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; 1); nghịch biến: (1; ∞).",
@@ -9563,7 +9563,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-3",
@@ -9574,7 +9574,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).",
@@ -9613,7 +9613,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-4",
@@ -9624,7 +9624,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 4, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -9663,7 +9663,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-5",
@@ -9674,7 +9674,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
-          "text": "Lời giải Ví dụ 5, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).",
@@ -9713,7 +9713,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-6",
@@ -9724,7 +9724,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
-          "text": "Lời giải Ví dụ 6, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞).",
@@ -9763,7 +9763,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-7",
@@ -9774,7 +9774,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
-          "text": "Lời giải Ví dụ 7, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).",
@@ -9813,7 +9813,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-8",
@@ -9824,7 +9824,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
-          "text": "Lời giải Ví dụ 8, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1).",
@@ -9863,7 +9863,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-9",
@@ -9874,7 +9874,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
-          "text": "Lời giải Ví dụ 9, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: (−∞; ∞); nghịch biến: không có.",
@@ -9913,7 +9913,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5-source-example-10",
@@ -9924,7 +9924,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồng biến: không có; nghịch biến: (−∞; ∞).",
-          "text": "Lời giải Ví dụ 10, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồng biến: không có; nghịch biến: (−∞; ∞).",
@@ -9963,7 +9963,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.6": [
@@ -9976,7 +9976,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 1, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
@@ -10001,7 +10001,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-2",
@@ -10012,7 +10012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3/(x+1)² . Đồng biến: (−∞; −1), (−1; ∞); nghịch biến: không có. Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3/(x+1)² . Đồng biến: (−∞; −1), (−1; ∞); nghịch biến: không có. Không ghép các khoảng qua điểm không xác định.",
@@ -10037,7 +10037,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-3",
@@ -10048,7 +10048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 0. Đồng biến: không có; nghịch biến: không có. Hàm hằng trên mỗi khoảng xác định; không gọi là đồng biến hay nghịch biến nghiêm ngặt.",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 0. Đồng biến: không có; nghịch biến: không có. Hàm hằng trên mỗi khoảng xác định; không gọi là đồng biến hay nghịch biến nghiêm ngặt.",
@@ -10073,7 +10073,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-4",
@@ -10084,7 +10084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . Đồng biến: (−∞; 1 − √ 2), (1 + √ 2; ∞); nghịch biến: (1 − √ 2; 1), (1; 1 + √ 2). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 4, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . Đồng biến: (−∞; 1 − √ 2), (1 + √ 2; ∞); nghịch biến: (1 − √ 2; 1), (1; 1 + √ 2). Không ghép các khoảng qua điểm không xác định.",
@@ -10109,7 +10109,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-5",
@@ -10120,7 +10120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −^((x−1)(x+1)) /((x2+1)2) . Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞).",
-          "text": "Lời giải Ví dụ 5, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −^((x−1)(x+1)) /((x2+1)2) . Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞).",
@@ -10145,7 +10145,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-6",
@@ -10156,7 +10156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 2x /((x−1)2(x+1)2) . Đồng biến: (−∞; −1), (−1; 0); nghịch biến: (0; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 6, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 2x /((x−1)2(x+1)2) . Đồng biến: (−∞; −1), (−1; 0); nghịch biến: (0; 1), (1; ∞). Không ghép các khoảng qua điểm không xác định.",
@@ -10181,7 +10181,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-7",
@@ -10192,7 +10192,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2x /((x2+1)2) . Đồng biến: (0; ∞); nghịch biến: (−∞; 0).",
-          "text": "Lời giải Ví dụ 7, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2x /((x2+1)2) . Đồng biến: (0; ∞); nghịch biến: (−∞; 0).",
@@ -10217,7 +10217,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-8",
@@ -10228,7 +10228,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đồng biến: (−∞; 1), (1; ∞); nghịch biến: không có. Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 8, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1. Đồng biến: (−∞; 1), (1; ∞); nghịch biến: không có. Không ghép các khoảng qua điểm không xác định.",
@@ -10253,7 +10253,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-9",
@@ -10264,7 +10264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 − 4 ₓ₂ . Đồng biến: (−∞; −2), (2; ∞); nghịch biến: (−2; 0), (0; 2). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 9, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 − 4 ₓ₂ . Đồng biến: (−∞; −2), (2; ∞); nghịch biến: (−2; 0), (0; 2). Không ghép các khoảng qua điểm không xác định.",
@@ -10289,7 +10289,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6-source-example-10",
@@ -10300,7 +10300,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ^(x(x+2)) /((x+1)2) . Đồng biến: (−∞; −2), (0; ∞); nghịch biến: (−2; −1), (−1; 0). Không ghép các khoảng qua điểm không xác định.",
-          "text": "Lời giải Ví dụ 10, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ^(x(x+2)) /((x+1)2) . Đồng biến: (−∞; −2), (0; ∞); nghịch biến: (−2; −1), (−1; 0). Không ghép các khoảng qua điểm không xác định.",
@@ -10325,7 +10325,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.7": [
@@ -10338,7 +10338,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2f′(2x −1) > 0, nên g đồng biến trên R.",
-          "text": "Lời giải Ví dụ 1, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2f′(2x −1) > 0, nên g đồng biến trên R.",
@@ -10363,7 +10363,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-2",
@@ -10374,7 +10374,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = −f′(3 −x) < 0, nên g nghịch biến trên R.",
-          "text": "Lời giải Ví dụ 2, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = −f′(3 −x) < 0, nên g nghịch biến trên R.",
@@ -10399,7 +10399,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-3",
@@ -10410,7 +10410,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x³: âm khi x < 0, dương khi x > 0. g giảm trên (−∞; 0), tăng trên (0; +∞).",
-          "text": "Lời giải Ví dụ 3, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x³: âm khi x < 0, dương khi x > 0. g giảm trên (−∞; 0), tăng trên (0; +∞).",
@@ -10435,7 +10435,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-4",
@@ -10446,7 +10446,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x³, nên giảm trên (−∞; 0) và tăng trên (0; +∞). Nghiệm x = 0 của hai nhân tửphải gộp bội.",
-          "text": "Lời giải Ví dụ 4, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x³, nên giảm trên (−∞; 0) và tăng trên (0; +∞). Nghiệm x = 0 của hai nhân tửphải gộp bội.",
@@ -10471,7 +10471,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-5",
@@ -10482,7 +10482,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x(x² −1), dấu −, +, −, + qua −1, 0, 1. Tăng trên (−1; 0), (1; +∞); giảm trên (−∞; −1), (0; 1).",
-          "text": "Lời giải Ví dụ 5, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x(x² −1), dấu −, +, −, + qua −1, 0, 1. Tăng trên (−1; 0), (1; +∞); giảm trên (−∞; −1), (0; 1).",
@@ -10507,7 +10507,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-6",
@@ -10518,7 +10518,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = eˣ(eˣ + 1) > 0, nên đồng biến trên R. Không có nghiệm eˣ = −1.",
-          "text": "Lời giải Ví dụ 6, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = eˣ(eˣ + 1) > 0, nên đồng biến trên R. Không có nghiệm eˣ = −1.",
@@ -10543,7 +10543,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-7",
@@ -10554,7 +10554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞), g′ = (ln x)/x. Giảm trên (0; 1), tăng trên (1; +∞).",
-          "text": "Lời giải Ví dụ 7, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞), g′ = (ln x)/x. Giảm trên (0; 1), tăng trên (1; +∞).",
@@ -10579,7 +10579,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-8",
@@ -10590,7 +10590,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = −f′(1/x)/x² < 0 khi x≠ 0. Giảm trên từng khoảng (−∞; 0), (0; +∞).",
-          "text": "Lời giải Ví dụ 8, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = −f′(1/x)/x² < 0 khi x≠ 0. Giảm trên từng khoảng (−∞; 0), (0; +∞).",
@@ -10615,7 +10615,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-9",
@@ -10626,7 +10626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2(4x² −1). Tăng trên (−∞; −1/2), (1/2; +∞); giảm trên (−1/2; 1/2).",
-          "text": "Lời giải Ví dụ 9, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2(4x² −1). Tăng trên (−∞; −1/2), (1/2; +∞); giảm trên (−1/2; 1/2).",
@@ -10651,7 +10651,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7-source-example-10",
@@ -10662,7 +10662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = (sin x −1) cos x. Nhân tửthứ nhất âm trừtại π/2. Giảm trên (0; π/2), tăng trên (π/2; π).",
-          "text": "Lời giải Ví dụ 10, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = (sin x −1) cos x. Nhân tửthứ nhất âm trừtại π/2. Giảm trên (0; π/2), tăng trên (π/2; π).",
@@ -10687,7 +10687,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.8": [
@@ -10700,7 +10700,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3x² + m ≥0 với mọi x khi và chỉkhi m ≥0. Khi m = 0, hàm vẫn đồng biến.",
-          "text": "Lời giải Ví dụ 1, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3x² + m ≥0 với mọi x khi và chỉkhi m ≥0. Khi m = 0, hàm vẫn đồng biến.",
@@ -10725,7 +10725,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-2",
@@ -10736,7 +10736,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = −3x² + m ≤0 trên R khi và chỉkhi m ≤0.",
-          "text": "Lời giải Ví dụ 2, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = −3x² + m ≤0 trên R khi và chỉkhi m ≤0.",
@@ -10761,7 +10761,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-3",
@@ -10772,7 +10772,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3[(x −m)² + 1 −m²]. Điều kiện 1 −m² ≥0 cho −1 ≤m ≤1.",
-          "text": "Lời giải Ví dụ 3, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3[(x −m)² + 1 −m²]. Điều kiện 1 −m² ≥0 cho −1 ≤m ≤1.",
@@ -10797,7 +10797,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-4",
@@ -10808,7 +10808,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(m −1)x² + 3. Cần và đủm ≥1. Trường hợp m = 1 cho hàm bậc nhất 3x, vẫn nhận.",
-          "text": "Lời giải Ví dụ 4, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(m −1)x² + 3. Cần và đủm ≥1. Trường hợp m = 1 cho hàm bậc nhất 3x, vẫn nhận.",
@@ -10833,7 +10833,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-5",
@@ -10844,7 +10844,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = m. Điều kiện m > 0; m = 0 cho hàm hằng nên bị loại.",
-          "text": "Lời giải Ví dụ 5, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = m. Điều kiện m > 0; m = 0 cho hàm hằng nên bị loại.",
@@ -10869,7 +10869,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-6",
@@ -10880,7 +10880,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m≠ 0, 2mx + 1 đổi dấu trên R. Chỉm = 0 cho f′ = 1 > 0.",
-          "text": "Lời giải Ví dụ 6, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m≠ 0, 2mx + 1 đổi dấu trên R. Chỉm = 0 cho f′ = 1 > 0.",
@@ -10905,7 +10905,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-7",
@@ -10916,7 +10916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′/3 = (x + m)² + m + 2 −m². Cần m² −m −2 ≤0, nên −1 ≤m ≤2.",
-          "text": "Lời giải Ví dụ 7, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′/3 = (x + m)² + m + 2 −m². Cần m² −m −2 ≤0, nên −1 ≤m ≤2.",
@@ -10941,7 +10941,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-8",
@@ -10952,7 +10952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 + meˣ. Nếu m ≥0 thì dương. Nếu m < 0, đạo hàm âm với x đủlớn. Vậy m ≥0.",
-          "text": "Lời giải Ví dụ 8, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 + meˣ. Nếu m ≥0 thì dương. Nếu m < 0, đạo hàm âm với x đủlớn. Vậy m ≥0.",
@@ -10977,7 +10977,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-9",
@@ -10988,7 +10988,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 + m cos x. Giá trị nhỏ nhất là 1 −|m|. Điều kiện |m| ≤1; ở biên các điểm đạo hàm bằng 0 là cô lập nên vẫn nhận.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 + m cos x. Giá trị nhỏ nhất là 1 −|m|. Điều kiện |m| ≤1; ở biên các điểm đạo hàm bằng 0 là cô lập nên vẫn nhận.",
@@ -11013,7 +11013,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8-source-example-10",
@@ -11024,7 +11024,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = (m −1)(3x² −1). Nếu m≠ 1, đạo hàm đổi dấu; nếu m = 1, hàm hằng. Không có m thỏa mãn.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = (m −1)(3x² −1). Nếu m≠ 1, đạo hàm đổi dấu; nếu m = 1, hàm hằng. Không có m thỏa mãn.",
@@ -11049,7 +11049,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "2.9": [
@@ -11062,7 +11062,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(x² −m). Với x > 1, điều kiện tương đương m ≤1, kểcảbiên.",
-          "text": "Lời giải Ví dụ 1, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(x² −m). Với x > 1, điều kiện tương đương m ≤1, kểcảbiên.",
@@ -11087,7 +11087,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-2",
@@ -11098,7 +11098,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x² ≤m với mọi x ∈(0; 2), tương đương m ≥4.",
-          "text": "Lời giải Ví dụ 2, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x² ≤m với mọi x ∈(0; 2), tương đương m ≥4.",
@@ -11123,7 +11123,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-3",
@@ -11134,7 +11134,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2(x −m) > 0 trên khoảng khi m ≤2. Nếu m > 2, đạo hàm âm ngay bên phải 2.",
-          "text": "Lời giải Ví dụ 3, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2(x −m) > 0 trên khoảng khi m ≤2. Nếu m > 2, đạo hàm âm ngay bên phải 2.",
@@ -11159,7 +11159,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-4",
@@ -11170,7 +11170,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2(x −m). Điều kiện m ≥−1.",
-          "text": "Lời giải Ví dụ 4, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2(x −m). Điều kiện m ≥−1.",
@@ -11195,7 +11195,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-5",
@@ -11206,7 +11206,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = (x + m)/x. Cần và đủm ≥0; nếu m < 0, đạo hàm âm khi 0 < x < −m.",
-          "text": "Lời giải Ví dụ 5, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = (x + m)/x. Cần và đủm ≥0; nếu m < 0, đạo hàm âm khi 0 < x < −m.",
@@ -11231,7 +11231,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-6",
@@ -11242,7 +11242,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −m/x². Cần và đủm ≤1. Không phải yêu cầu m ≤0 như trên toàn (0; +∞).",
-          "text": "Lời giải Ví dụ 6, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −m/x². Cần và đủm ≤1. Không phải yêu cầu m ≤0 như trên toàn (0; +∞).",
@@ -11267,7 +11267,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-7",
@@ -11278,7 +11278,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = (2m −1)/(x + 2)² < 0. Vậy m < 1/2; tại m = 1/2 hàm hằng nên loại.",
-          "text": "Lời giải Ví dụ 7, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = (2m −1)/(x + 2)² < 0. Vậy m < 1/2; tại m = 1/2 hàm hằng nên loại.",
@@ -11303,7 +11303,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-8",
@@ -11314,7 +11314,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3x(x −2m); x > 0 nên cần 2m ≤1. Vậy m ≤1/2.",
-          "text": "Lời giải Ví dụ 8, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3x(x −2m); x > 0 nên cần 2m ≤1. Vậy m ≤1/2.",
@@ -11339,7 +11339,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-9",
@@ -11350,7 +11350,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(m −x²). Cần và đủm ≥1; tại m = 1 đạo hàm vẫn dương trong khoảng mở.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(m −x²). Cần và đủm ≥1; tại m = 1 đạo hàm vẫn dương trong khoảng mở.",
@@ -11375,7 +11375,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9-source-example-10",
@@ -11386,7 +11386,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đạo hàm âm ởnơi xác định, nhưng hàm phải xác định trên toàn khoảng. Do đó m /∈(0; 2), tức m ≤0 hoặc m ≥2.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đạo hàm âm ởnơi xác định, nhưng hàm phải xác định trên toàn khoảng. Do đó m /∈(0; 2), tức m ≤0 hoặc m ≥2.",
@@ -11425,7 +11425,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.1": [
@@ -11438,7 +11438,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −1). cực tiểu tại x = 1.",
-          "text": "Lời giải Ví dụ 1, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 (x −1). cực tiểu tại x = 1.",
@@ -11463,7 +11463,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-2",
@@ -11474,7 +11474,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2 (x −1). cực đại tại x = 1.",
-          "text": "Lời giải Ví dụ 2, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2 (x −1). cực đại tại x = 1.",
@@ -11499,7 +11499,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-3",
@@ -11510,7 +11510,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 1.",
-          "text": "Lời giải Ví dụ 3, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 1.",
@@ -11535,7 +11535,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-4",
@@ -11546,7 +11546,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -11571,7 +11571,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-5",
@@ -11582,7 +11582,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1; cực đại tại x = 0; cực tiểu tại x = 1.",
-          "text": "Lời giải Ví dụ 5, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1; cực đại tại x = 0; cực tiểu tại x = 1.",
@@ -11607,7 +11607,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-6",
@@ -11618,7 +11618,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 0; cực đại tại x = 1.",
-          "text": "Lời giải Ví dụ 6, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 0; cực đại tại x = 1.",
@@ -11643,7 +11643,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-7",
@@ -11654,7 +11654,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −¹ ₓ₂ . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −¹ ₓ₂ . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -11679,7 +11679,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-8",
@@ -11690,7 +11690,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 −¹ ₓ₂ . cực đại tại x = −1; cực tiểu tại x = 1. Các điểm bị loại khỏi miền không phải điểm cực trị.",
-          "text": "Lời giải Ví dụ 8, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 −¹ ₓ₂ . cực đại tại x = −1; cực tiểu tại x = 1. Các điểm bị loại khỏi miền không phải điểm cực trị.",
@@ -11715,7 +11715,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-9",
@@ -11726,7 +11726,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -11751,7 +11751,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.1-source-example-10",
@@ -11762,7 +11762,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −3x² −1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −3x² −1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -11787,7 +11787,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.2": [
@@ -11800,7 +11800,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2 (x −2). cực tiểu tại x = 2, giá trị−3.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2 (x −2). cực tiểu tại x = 2, giá trị−3.",
@@ -11825,7 +11825,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-2",
@@ -11836,7 +11836,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −2 (x −2). cực đại tại x = 2, giá trị4.",
-          "text": "Lời giải Ví dụ 2, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −2 (x −2). cực đại tại x = 2, giá trị4.",
@@ -11861,7 +11861,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-3",
@@ -11872,7 +11872,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị4; cực tiểu tại x = 1, giá trị0.",
-          "text": "Lời giải Ví dụ 3, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị4; cực tiểu tại x = 1, giá trị0.",
@@ -11897,7 +11897,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-4",
@@ -11908,7 +11908,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −3 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−3; cực đại tại x = 1, giá trị1.",
-          "text": "Lời giải Ví dụ 4, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −3 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−3; cực đại tại x = 1, giá trị1.",
@@ -11933,7 +11933,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-5",
@@ -11944,7 +11944,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 4x (x −2) (x + 2). cực tiểu tại x = −2, giá trị−16; cực đại tại x = 0, giá trị 0; cực tiểu tại x = 2, giá trị−16.",
-          "text": "Lời giải Ví dụ 5, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 4x (x −2) (x + 2). cực tiểu tại x = −2, giá trị−16; cực đại tại x = 0, giá trị 0; cực tiểu tại x = 2, giá trị−16.",
@@ -11969,7 +11969,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-6",
@@ -11980,7 +11980,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị4; cực tiểu tại x = 0, giá trị3; cực đại tại x = 1, giá trị4.",
-          "text": "Lời giải Ví dụ 6, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị4; cực tiểu tại x = 0, giá trị3; cực đại tại x = 1, giá trị4.",
@@ -12005,7 +12005,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-7",
@@ -12016,7 +12016,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1 −⁴ ₓ₂ . cực đại tại x = −2, giá trị−4; cực tiểu tại x = 2, giá trị4. Các điểm bị loại khỏi miền không phải điểm cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1 −⁴ ₓ₂ . cực đại tại x = −2, giá trị−4; cực tiểu tại x = 2, giá trị4. Các điểm bị loại khỏi miền không phải điểm cực trị.",
@@ -12041,7 +12041,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-8",
@@ -12052,7 +12052,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . cực đại tại x = 1 − √ 2, giá trị2 −2 √ 2; cực tiểu tại x = 1 + √ 2, giá trị2 + 2 √ 2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
-          "text": "Lời giải Ví dụ 8, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . cực đại tại x = 1 − √ 2, giá trị2 −2 √ 2; cực tiểu tại x = 1 + √ 2, giá trị2 + 2 √ 2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
@@ -12077,7 +12077,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-9",
@@ -12088,7 +12088,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ¹⁻ˣ ₓ . cực đại tại x = 1, giá trị−1.",
-          "text": "Lời giải Ví dụ 9, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ¹⁻ˣ ₓ . cực đại tại x = 1, giá trị−1.",
@@ -12113,7 +12113,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2-source-example-10",
@@ -12124,7 +12124,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3 ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 10, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3 ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -12149,7 +12149,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.3": [
@@ -12162,7 +12162,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
@@ -12187,7 +12187,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-2",
@@ -12198,7 +12198,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = 1, giá trị3.",
-          "text": "Lời giải Ví dụ 2, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = 1, giá trị3.",
@@ -12223,7 +12223,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-3",
@@ -12234,7 +12234,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị −2.",
-          "text": "Lời giải Ví dụ 3, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị −2.",
@@ -12259,7 +12259,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-4",
@@ -12270,7 +12270,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -12295,7 +12295,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-5",
@@ -12306,7 +12306,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị 1; cực tiểu tại x = 1, giá trị0.",
-          "text": "Lời giải Ví dụ 5, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị 1; cực tiểu tại x = 1, giá trị0.",
@@ -12331,7 +12331,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-6",
@@ -12342,7 +12342,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị 1; cực đại tại x = 1, giá trị2.",
-          "text": "Lời giải Ví dụ 6, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị 1; cực đại tại x = 1, giá trị2.",
@@ -12367,7 +12367,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-7",
@@ -12378,7 +12378,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -12403,7 +12403,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-8",
@@ -12414,7 +12414,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
-          "text": "Lời giải Ví dụ 8, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
@@ -12439,7 +12439,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-9",
@@ -12450,7 +12450,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -12475,7 +12475,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3-source-example-10",
@@ -12486,7 +12486,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 10, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -12511,7 +12511,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.4": [
@@ -12524,7 +12524,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12563,7 +12563,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-2",
@@ -12574,7 +12574,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 2, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12613,7 +12613,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-3",
@@ -12624,7 +12624,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = 0. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 3, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 0. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12663,7 +12663,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-4",
@@ -12674,7 +12674,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = 0. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = 0. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12713,7 +12713,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-5",
@@ -12724,7 +12724,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 5, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12763,7 +12763,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-6",
@@ -12774,7 +12774,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 6, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12813,7 +12813,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-7",
@@ -12824,7 +12824,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1; cực tiểu tại x = 2. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1; cực tiểu tại x = 2. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12863,7 +12863,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-8",
@@ -12874,7 +12874,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = −2; cực đại tại x = 1. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 8, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = −2; cực đại tại x = 1. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12913,7 +12913,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-9",
@@ -12924,7 +12924,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = −2; cực đại tại x = 0; cực tiểu tại x = 2. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = −2; cực đại tại x = 0; cực tiểu tại x = 2. Chỉbiết f′ thì chưa biết hằng sốcộng của f, nên chưa xác định được giá trị cực trị.",
@@ -12963,7 +12963,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4-source-example-10",
@@ -12974,7 +12974,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
-          "text": "Lời giải Ví dụ 10, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1. Chỉbiết f′ thì chưa biết hằng số cộng của f, nên chưa xác định được giá trị cực trị.",
@@ -13013,7 +13013,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.5": [
@@ -13026,7 +13026,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
-          "text": "Lời giải Ví dụ 1, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = 1, giá trị−1.",
@@ -13065,7 +13065,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-2",
@@ -13076,7 +13076,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = 1, giá trị3.",
-          "text": "Lời giải Ví dụ 2, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = 1, giá trị3.",
@@ -13115,7 +13115,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-3",
@@ -13126,7 +13126,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị −2.",
-          "text": "Lời giải Ví dụ 3, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị −2.",
@@ -13165,7 +13165,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-4",
@@ -13176,7 +13176,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -13215,7 +13215,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-5",
@@ -13226,7 +13226,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị 1; cực tiểu tại x = 1, giá trị0.",
-          "text": "Lời giải Ví dụ 5, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị 1; cực tiểu tại x = 1, giá trị0.",
@@ -13265,7 +13265,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-6",
@@ -13276,7 +13276,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị 1; cực đại tại x = 1, giá trị2.",
-          "text": "Lời giải Ví dụ 6, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị 1; cực đại tại x = 1, giá trị2.",
@@ -13315,7 +13315,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-7",
@@ -13326,7 +13326,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -13365,7 +13365,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-8",
@@ -13376,7 +13376,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
-          "text": "Lời giải Ví dụ 8, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị.",
@@ -13415,7 +13415,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-9",
@@ -13426,7 +13426,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -13465,7 +13465,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5-source-example-10",
@@ -13476,7 +13476,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 10, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đọc chiều tăng giảm của f: Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -13515,7 +13515,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.6": [
@@ -13528,7 +13528,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
@@ -13553,7 +13553,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-2",
@@ -13564,7 +13564,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
@@ -13589,7 +13589,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-3",
@@ -13600,7 +13600,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
-          "text": "Lời giải Ví dụ 3, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
@@ -13625,7 +13625,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-4",
@@ -13636,7 +13636,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −1)³. cực tiểu tại x = 1. Số điểm cực trị: 1.",
-          "text": "Lời giải Ví dụ 4, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −1)³. cực tiểu tại x = 1. Số điểm cực trị: 1.",
@@ -13661,7 +13661,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-5",
@@ -13672,7 +13672,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 1. Số điểm cực trị: 2.",
-          "text": "Lời giải Ví dụ 5, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −1) (x + 1). cực đại tại x = −1; cực tiểu tại x = 1. Số điểm cực trị: 2.",
@@ -13697,7 +13697,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-6",
@@ -13708,7 +13708,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −1)³ (x + 2)². cực tiểu tại x = 1. Số điểm cực trị: 1.",
-          "text": "Lời giải Ví dụ 6, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −1)³ (x + 2)². cực tiểu tại x = 1. Số điểm cực trị: 1.",
@@ -13733,7 +13733,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-7",
@@ -13744,7 +13744,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x (x −1) (x + 1). cực tiểu tại x = −1; cực đại tại x = 0; cực tiểu tại x = 1. Số điểm cực trị: 3.",
-          "text": "Lời giải Ví dụ 7, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x (x −1) (x + 1). cực tiểu tại x = −1; cực đại tại x = 0; cực tiểu tại x = 1. Số điểm cực trị: 3.",
@@ -13769,7 +13769,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-8",
@@ -13780,7 +13780,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = x (x −1)² (x + 1)². cực tiểu tại x = 0. Số điểm cực trị: 1.",
-          "text": "Lời giải Ví dụ 8, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = x (x −1)² (x + 1)². cực tiểu tại x = 0. Số điểm cực trị: 1.",
@@ -13805,7 +13805,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-9",
@@ -13816,7 +13816,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = (x −2)² ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
-          "text": "Lời giải Ví dụ 9, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = (x −2)² ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Số điểm cực trị: 0.",
@@ -13841,7 +13841,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6-source-example-10",
@@ -13852,7 +13852,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −(x −3) (x −1)² (x + 2). cực tiểu tại x = −2; cực đại tại x = 3. Số điểm cực trị: 2.",
-          "text": "Lời giải Ví dụ 10, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −(x −3) (x −1)² (x + 2). cực tiểu tại x = −2; cực đại tại x = 3. Số điểm cực trị: 2.",
@@ -13877,7 +13877,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.7": [
@@ -13890,7 +13890,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 4x. Có cực tiểu tại 0, không có cực đại.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 4x. Có cực tiểu tại 0, không có cực đại.",
@@ -13915,7 +13915,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-2",
@@ -13926,7 +13926,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = x, nên có cực tiểu tại 0. Hai dấu âm từhàm trong và f′ phải được nhân đủ.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = x, nên có cực tiểu tại 0. Hai dấu âm từhàm trong và f′ phải được nhân đủ.",
@@ -13951,7 +13951,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-3",
@@ -13962,7 +13962,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x(x² −1). Cực tiểu tại x = ±1; cực đại tại 0.",
-          "text": "Lời giải Ví dụ 3, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x(x² −1). Cực tiểu tại x = ±1; cực đại tại 0.",
@@ -13987,7 +13987,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-4",
@@ -13998,7 +13998,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x(x² + 1), chỉđổi âm sang dương tại 0. Có một cực tiểu tại 0.",
-          "text": "Lời giải Ví dụ 4, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x(x² + 1), chỉđổi âm sang dương tại 0. Có một cực tiểu tại 0.",
@@ -14023,7 +14023,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-5",
@@ -14034,7 +14034,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2x(x² −1)². Tại ±1 không đổi dấu; tại 0 đổi âm sang dương. Chỉmột cực tiểu tại 0.",
-          "text": "Lời giải Ví dụ 5, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2x(x² −1)². Tại ±1 không đổi dấu; tại 0 đổi âm sang dương. Chỉmột cực tiểu tại 0.",
@@ -14059,7 +14059,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-6",
@@ -14070,7 +14070,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = eˣ(eˣ −1). Có cực tiểu tại 0; giá trị cực tiểu là f(1).",
-          "text": "Lời giải Ví dụ 6, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = eˣ(eˣ −1). Có cực tiểu tại 0; giá trị cực tiểu là f(1).",
@@ -14095,7 +14095,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-7",
@@ -14106,7 +14106,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞); g′ = (ln x)/x đổi âm sang dương qua 1. Cực tiểu tại 1, giá trịf(0).",
-          "text": "Lời giải Ví dụ 7, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞); g′ = (ln x)/x đổi âm sang dương qua 1. Cực tiểu tại 1, giá trịf(0).",
@@ -14131,7 +14131,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-8",
@@ -14142,7 +14142,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = x(x + 2): cực đại tại −2, cực tiểu tại 0. Giá trị tương ứng f(−1), f(1).",
-          "text": "Lời giải Ví dụ 8, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = x(x + 2): cực đại tại −2, cực tiểu tại 0. Giá trị tương ứng f(−1), f(1).",
@@ -14167,7 +14167,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-9",
@@ -14178,7 +14178,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = 2(x −1)f′(x² −2x), đổi âm sang dương tại 1. Cực tiểu tại 1, giá trịf(−1).",
-          "text": "Lời giải Ví dụ 9, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = 2(x −1)f′(x² −2x), đổi âm sang dương tại 1. Cực tiểu tại 1, giá trịf(−1).",
@@ -14203,7 +14203,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7-source-example-10",
@@ -14214,7 +14214,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = sin x cos x. Trong khoảng, sin x > 0; dấu đổi dương sang âm qua π/2. Có cực đại tại π/2, giá trịf(1).",
-          "text": "Lời giải Ví dụ 10, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = sin x cos x. Trong khoảng, sin x > 0; dấu đổi dương sang âm qua π/2. Có cực đại tại π/2, giá trịf(1).",
@@ -14239,7 +14239,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.8": [
@@ -14252,7 +14252,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm giảm trên (−∞; 0) và tăng trên (0; +∞). Có cực tiểu tại 0, giá trị0; đạo hàm không tồn tại tại đó.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm giảm trên (−∞; 0) và tăng trên (0; +∞). Có cực tiểu tại 0, giá trị0; đạo hàm không tồn tại tại đó.",
@@ -14277,7 +14277,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-2",
@@ -14288,7 +14288,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai cực tiểu tại x = ±1, giá trị0. Trên (−1; 1) hàm bằng 1 −x², nên cực đại tại 0, giá trị1.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai cực tiểu tại x = ±1, giá trị0. Trên (−1; 1) hàm bằng 1 −x², nên cực đại tại 0, giá trị1.",
@@ -14313,7 +14313,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-3",
@@ -14324,7 +14324,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Biểu thức trong dấu trị tuyệt đối luôn dương. Hàm bằng x² + 1, Chỉ có cực tiểu tại 0, giá trị1.",
-          "text": "Lời giải Ví dụ 3, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Biểu thức trong dấu trị tuyệt đối luôn dương. Hàm bằng x² + 1, Chỉ có cực tiểu tại 0, giá trị1.",
@@ -14349,7 +14349,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-4",
@@ -14360,7 +14360,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "|x³| = |x|³, giảm bên trái 0 và tăng bên phải 0. Chỉ có cực tiểu tại 0, giá trị0; hàm này vẫn có đạo hàm tại 0.",
-          "text": "Lời giải Ví dụ 4, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "|x³| = |x|³, giảm bên trái 0 và tăng bên phải 0. Chỉ có cực tiểu tại 0, giá trị0; hàm này vẫn có đạo hàm tại 0.",
@@ -14385,7 +14385,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-5",
@@ -14396,7 +14396,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các nghiệm − √ 3, 0, √ 3 tạo ba cực tiểu giá trị0. Tại x = ±1 có cực đại giá trị2. Tổng 5 điểm cực trị.",
-          "text": "Lời giải Ví dụ 5, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các nghiệm − √ 3, 0, √ 3 tạo ba cực tiểu giá trị0. Tại x = ±1 có cực đại giá trị2. Tổng 5 điểm cực trị.",
@@ -14421,7 +14421,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-6",
@@ -14432,7 +14432,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Viết |(x −1)² −1|. Hai cực tiểu tại 0 và 2, giá trị0; cực đại tại 1, giá trị1.",
-          "text": "Lời giải Ví dụ 6, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Viết |(x −1)² −1|. Hai cực tiểu tại 0 và 2, giá trị0; cực đại tại 1, giá trị1.",
@@ -14457,7 +14457,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-7",
@@ -14468,7 +14468,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm bằng x². Chỉ có cực tiểu tại 0, giá trị0. Không có điểm gãy vì x² không đổi dấu.",
-          "text": "Lời giải Ví dụ 7, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm bằng x². Chỉ có cực tiểu tại 0, giá trị0. Không có điểm gãy vì x² không đổi dấu.",
@@ -14493,7 +14493,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-8",
@@ -14504,7 +14504,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Bằng −1/x trên x < 0, tăng; bằng 1/x trên x > 0, giảm. Không có cực trị; 0 không thuộc miền.",
-          "text": "Lời giải Ví dụ 8, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Bằng −1/x trên x < 0, tăng; bằng 1/x trên x > 0, giảm. Không có cực trị; 0 không thuộc miền.",
@@ -14529,7 +14529,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-9",
@@ -14540,7 +14540,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞). Với x < 1, hàm bằng −ln x giảm; với x > 1, hàm bằng ln x tăng. Cực tiểu tại 1, giá trị0.",
-          "text": "Lời giải Ví dụ 9, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞). Với x < 1, hàm bằng −ln x giảm; với x > 1, hàm bằng ln x tăng. Cực tiểu tại 1, giá trị0.",
@@ -14565,7 +14565,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8-source-example-10",
@@ -14576,7 +14576,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi m > 0, hai nghiệm ±√m là cực tiểu và 0 là cực đại. Khi m ≤0, hàm bằng x² −m, Chỉ có một cực tiểu. Vậy m > 0.",
-          "text": "Lời giải Ví dụ 10, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khi m > 0, hai nghiệm ±√m là cực tiểu và 0 là cực đại. Khi m ≤0, hàm bằng x² −m, Chỉ có một cực tiểu. Vậy m > 0.",
@@ -14601,7 +14601,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.9": [
@@ -14614,7 +14614,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2x. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 1, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 2x. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14639,7 +14639,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-2",
@@ -14650,7 +14650,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 4x³. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 2, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 4x³. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14675,7 +14675,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-3",
@@ -14686,7 +14686,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = −2x. cực đại tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 3, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = −2x. cực đại tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14711,7 +14711,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-4",
@@ -14722,7 +14722,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 4, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14747,7 +14747,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-5",
@@ -14758,7 +14758,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 4x ( x² + 1 ) . cực tiểu tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 5, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 4x ( x² + 1 ) . cực tiểu tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14783,7 +14783,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-6",
@@ -14794,7 +14794,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 6x (x −1) (x + 1) ( x² + 1 ) . cực tiểu tại x = −1, giá trị−2; cực đại tại x = 0, giá trị0; cực tiểu tại x = 1, giá trị−2. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 6, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 6x (x −1) (x + 1) ( x² + 1 ) . cực tiểu tại x = −1, giá trị−2; cực đại tại x = 0, giá trị0; cực tiểu tại x = 1, giá trị−2. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14819,7 +14819,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-7",
@@ -14830,7 +14830,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2xeˣ². cực tiểu tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 7, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 2xeˣ². cực tiểu tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14855,7 +14855,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-8",
@@ -14866,7 +14866,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2x ₓ₂₊₁. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 8, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 2x ₓ₂₊₁. cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14891,7 +14891,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-9",
@@ -14902,7 +14902,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = − 2x /((x2+1)2) . cực đại tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 9, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = − 2x /((x2+1)2) . cực đại tại x = 0, giá trị1. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14927,7 +14927,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9-source-example-10",
@@ -14938,7 +14938,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′(x) = 2x /((x2+1)2) . cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
-          "text": "Lời giải Ví dụ 10, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′(x) = 2x /((x2+1)2) . cực tiểu tại x = 0, giá trị0. Chỉgiữ các nghiệm hàm trong x² = t ≥0.",
@@ -14963,7 +14963,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "3.10": [
@@ -14976,7 +14976,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(x² −m). Có hai nghiệm đơn khi và chỉkhi m > 0.",
-          "text": "Lời giải Ví dụ 1, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(x² −m). Có hai nghiệm đơn khi và chỉkhi m > 0.",
@@ -15001,7 +15001,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-2",
@@ -15012,7 +15012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với m ≤0, f′ ≥0 và không đổi dấu. Vậy m ≤0, gồm cảm = 0.",
-          "text": "Lời giải Ví dụ 2, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với m ≤0, f′ ≥0 và không đổi dấu. Vậy m ≤0, gồm cảm = 0.",
@@ -15037,7 +15037,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-3",
@@ -15048,7 +15048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 4x(x² −m). Ba nghiệm đơn khi m > 0, nên điều kiện m > 0.",
-          "text": "Lời giải Ví dụ 3, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 4x(x² −m). Ba nghiệm đơn khi m > 0, nên điều kiện m > 0.",
@@ -15073,7 +15073,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-4",
@@ -15084,7 +15084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m ≤0, nhân tửx² −m ≥0, dấu f′ chỉđổi tại 0. Vậy m ≤0.",
-          "text": "Lời giải Ví dụ 4, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m ≤0, nhân tửx² −m ≥0, dấu f′ chỉđổi tại 0. Vậy m ≤0.",
@@ -15109,7 +15109,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-5",
@@ -15120,7 +15120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′/3 = x² −2mx + 1. Có hai nghiệm phân biệt khi m² −1 > 0, tức m < −1 hoặc m > 1.",
-          "text": "Lời giải Ví dụ 5, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′/3 = x² −2mx + 1. Có hai nghiệm phân biệt khi m² −1 > 0, tức m < −1 hoặc m > 1.",
@@ -15145,7 +15145,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-6",
@@ -15156,7 +15156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(m −1)x² + 3. Có hai nghiệm đơn khi m < 1. Tại m = 1 hàm bậc nhất, không có cực trị.",
-          "text": "Lời giải Ví dụ 6, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(m −1)x² + 3. Có hai nghiệm đơn khi m < 1. Tại m = 1 hàm bậc nhất, không có cực trị.",
@@ -15181,7 +15181,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-7",
@@ -15192,7 +15192,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −m/x². Hai nghiệm ±√m tồn tại và đổi dấu khi m > 0. Với m ≤0 không có cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −m/x². Hai nghiệm ±√m tồn tại và đổi dấu khi m > 0. Với m ≤0 không có cực trị.",
@@ -15217,7 +15217,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-8",
@@ -15228,7 +15228,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(2) = 12 −3m = 0 cho m = 4. Khi đó f′′(2) = 12 > 0, nên điều kiện đủđược kiểm tra.",
-          "text": "Lời giải Ví dụ 8, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(2) = 12 −3m = 0 cho m = 4. Khi đó f′′(2) = 12 > 0, nên điều kiện đủđược kiểm tra.",
@@ -15253,7 +15253,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-9",
@@ -15264,7 +15264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f = x²(x² + m). Nếu m < 0, gần 0 nhưng khác 0 thì f < 0 = f(0) nên cực đại. Nếu m ≥0, 0 là cực tiểu. Vậy m < 0.",
-          "text": "Lời giải Ví dụ 9, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f = x²(x² + m). Nếu m < 0, gần 0 nhưng khác 0 thì f < 0 = f(0) nên cực đại. Nếu m ≥0, 0 là cực tiểu. Vậy m < 0.",
@@ -15289,7 +15289,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10-source-example-10",
@@ -15300,7 +15300,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần m > 0 và √m < 2. Suy ra 0 < m < 4. Không nhận m = 4 vì hai cực trịở biên ngoài khoảng mở.",
-          "text": "Lời giải Ví dụ 10, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần m > 0 và √m < 2. Suy ra 0 < m < 4. Không nhận m = 4 vì hai cực trịở biên ngoài khoảng mở.",
@@ -15325,7 +15325,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.1": [
@@ -15338,7 +15338,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
-          "text": "Lời giải Ví dụ 1, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
@@ -15363,7 +15363,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-2",
@@ -15374,7 +15374,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = −2 (x −1). Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
-          "text": "Lời giải Ví dụ 2, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = −2 (x −1). Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
@@ -15399,7 +15399,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-3",
@@ -15410,7 +15410,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3 (x −1) (x + 1). Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
-          "text": "Lời giải Ví dụ 3, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3 (x −1) (x + 1). Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
@@ -15435,7 +15435,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-4",
@@ -15446,7 +15446,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 4x (x −1) (x + 1). Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
-          "text": "Lời giải Ví dụ 4, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 4x (x −1) (x + 1). Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
@@ -15471,7 +15471,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-5",
@@ -15482,7 +15482,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = − 1/(x+1)² . Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 5, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = − 1/(x+1)² . Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
@@ -15507,7 +15507,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-6",
@@ -15518,7 +15518,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −¹ ₓ₂ . Xét f( 1 ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
-          "text": "Lời giải Ví dụ 6, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −¹ ₓ₂ . Xét f( 1 ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
@@ -15543,7 +15543,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-7",
@@ -15554,7 +15554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = − x √ ₄₋ₓ₂ . Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
-          "text": "Lời giải Ví dụ 7, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = − x √ ₄₋ₓ₂ . Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
@@ -15579,7 +15579,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-8",
@@ -15590,7 +15590,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = eˣ −2. Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
-          "text": "Lời giải Ví dụ 8, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = eˣ −2. Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
@@ -15615,7 +15615,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-9",
@@ -15626,7 +15626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = ¹⁻ˣ ₓ . Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = ¹⁻ˣ ₓ . Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
@@ -15651,7 +15651,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.1-source-example-10",
@@ -15662,7 +15662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2(x²−1) ₓ₄₊₂ₓ₂₊₁. Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 10, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2(x²−1) ₓ₄₊₂ₓ₂₊₁. Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
@@ -15687,7 +15687,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.2": [
@@ -15700,7 +15700,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0 < f(x) < 1. Hai cận 0 và 1 đều không đạt, nên không có GTLN và GTNN.",
-          "text": "Lời giải Ví dụ 1, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "0 < f(x) < 1. Hai cận 0 và 1 đều không đạt, nên không có GTLN và GTNN.",
@@ -15725,7 +15725,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-2",
@@ -15736,7 +15736,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTNN 0 tại 0. Không có GTLN vì x² < 4 và tiến tới 4 khi x →2⁻.",
-          "text": "Lời giải Ví dụ 2, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTNN 0 tại 0. Không có GTLN vì x² < 4 và tiến tới 4 khi x →2⁻.",
@@ -15761,7 +15761,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-3",
@@ -15772,7 +15772,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm dương, tiến tới 0 ở+∞nhưng không đạt; không bịchặn trên khi x →0⁺. Không có cảhai giá trị.",
-          "text": "Lời giải Ví dụ 3, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm dương, tiến tới 0 ở+∞nhưng không đạt; không bịchặn trên khi x →0⁺. Không có cảhai giá trị.",
@@ -15797,7 +15797,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-4",
@@ -15808,7 +15808,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −1/x² đổi âm sang dương tại 1. GTNN 2 tại 1; không có GTLN.",
-          "text": "Lời giải Ví dụ 4, trang 78 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −1/x² đổi âm sang dương tại 1. GTNN 2 tại 1; không có GTLN.",
@@ -15833,7 +15833,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-5",
@@ -15844,7 +15844,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = e⁻ˣ(1 −x). GTLN 1/e tại 1. Hàm dương và tiến tới 0 ởhai biên, nhưng không đạt 0, nên không có GTNN.",
-          "text": "Lời giải Ví dụ 5, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = e⁻ˣ(1 −x). GTLN 1/e tại 1. Hàm dương và tiến tới 0 ởhai biên, nhưng không đạt 0, nên không có GTNN.",
@@ -15869,7 +15869,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-6",
@@ -15880,7 +15880,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTLN 0 tại 0; không có GTNN vì hàm tiến tới −∞khi |x| →∞.",
-          "text": "Lời giải Ví dụ 6, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTLN 0 tại 0; không có GTNN vì hàm tiến tới −∞khi |x| →∞.",
@@ -15905,7 +15905,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-7",
@@ -15916,7 +15916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = (1 −x)/x, nên GTLN −1 tại 1. Giới hạn ởhai biên đều −∞, không có GTNN.",
-          "text": "Lời giải Ví dụ 7, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = (1 −x)/x, nên GTLN −1 tại 1. Giới hạn ởhai biên đều −∞, không có GTNN.",
@@ -15941,7 +15941,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-8",
@@ -15952,7 +15952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTLN 1 tại 0. Vì 0 < f ≤1 và f →0 ở vô cực nên không có GTNN.",
-          "text": "Lời giải Ví dụ 8, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTLN 1 tại 0. Vì 0 < f ≤1 và f →0 ở vô cực nên không có GTNN.",
@@ -15977,7 +15977,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-9",
@@ -15988,7 +15988,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTLN 1 tại π/2. Hàm dương nhưng tiến tới 0 ởhai biên, nên không có GTNN.",
-          "text": "Lời giải Ví dụ 9, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTLN 1 tại π/2. Hàm dương nhưng tiến tới 0 ởhai biên, nên không có GTNN.",
@@ -16013,7 +16013,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2-source-example-10",
@@ -16024,7 +16024,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm tăng trên miền, GTLN 4 tại 3. Cận dưới 0 chỉứng với x = 1 bị loại, nên không có GTNN.",
-          "text": "Lời giải Ví dụ 10, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm tăng trên miền, GTLN 4 tại 3. Cận dưới 0 chỉứng với x = 1 bị loại, nên không có GTNN.",
@@ -16049,7 +16049,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.3": [
@@ -16062,7 +16062,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
-          "text": "Lời giải Ví dụ 1, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
@@ -16101,7 +16101,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-2",
@@ -16112,7 +16112,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
-          "text": "Lời giải Ví dụ 2, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
@@ -16151,7 +16151,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-3",
@@ -16162,7 +16162,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
-          "text": "Lời giải Ví dụ 3, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
@@ -16201,7 +16201,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-4",
@@ -16212,7 +16212,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
-          "text": "Lời giải Ví dụ 4, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
@@ -16251,7 +16251,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-5",
@@ -16262,7 +16262,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 5, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
@@ -16301,7 +16301,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-6",
@@ -16312,7 +16312,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f( ¹ ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
-          "text": "Lời giải Ví dụ 6, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f( ¹ ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
@@ -16351,7 +16351,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-7",
@@ -16362,7 +16362,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
-          "text": "Lời giải Ví dụ 7, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
@@ -16401,7 +16401,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-8",
@@ -16412,7 +16412,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
-          "text": "Lời giải Ví dụ 8, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
@@ -16451,7 +16451,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-9",
@@ -16462,7 +16462,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
@@ -16501,7 +16501,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3-source-example-10",
@@ -16512,7 +16512,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 10, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
@@ -16551,7 +16551,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.4": [
@@ -16564,7 +16564,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
-          "text": "Lời giải Ví dụ 1, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2 (x −1). Xét f(0) = 0, f(1) = −1, f(3) = 3. GTNN −1 tại x = 1; GTLN 3 tại x = 3.",
@@ -16603,7 +16603,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-2",
@@ -16614,7 +16614,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = −2 (x −1). Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
-          "text": "Lời giải Ví dụ 2, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = −2 (x −1). Xét f(0) = 0, f(1) = 1, f(3) = −3. GTNN −3 tại x = 3; GTLN 1 tại x = 1.",
@@ -16653,7 +16653,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-3",
@@ -16664,7 +16664,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3 (x −1) (x + 1). Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
-          "text": "Lời giải Ví dụ 3, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3 (x −1) (x + 1). Xét f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2. GTNN −2 tại x = −2, 1; GTLN 2 tại x = −1, 2.",
@@ -16703,7 +16703,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-4",
@@ -16714,7 +16714,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 4x (x −1) (x + 1). Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
-          "text": "Lời giải Ví dụ 4, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 4x (x −1) (x + 1). Xét f(−2) = 8, f(−1) = −1, f(0) = 0, f(1) = −1. GTNN −1 tại x = −1, 1; GTLN 8 tại x = −2.",
@@ -16753,7 +16753,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-5",
@@ -16764,7 +16764,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = − 1/(x+1)² . Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 5, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = − 1/(x+1)² . Xét f(0) = 1, f(3) = ¹ ₄. GTNN ¹ ₄ tại x = 3; GTLN 1 tại x = 0.",
@@ -16803,7 +16803,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-6",
@@ -16814,7 +16814,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −¹ ₓ₂ . Xét f( 1 ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
-          "text": "Lời giải Ví dụ 6, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −¹ ₓ₂ . Xét f( 1 ₂) = ⁵ ₂, f(1) = 2, f(3) = ¹⁰ ₃ . GTNN 2 tại x = 1; GTLN ¹⁰ ₃ tại x = 3.",
@@ -16853,7 +16853,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-7",
@@ -16864,7 +16864,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = − x √ ₄₋ₓ₂ . Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
-          "text": "Lời giải Ví dụ 7, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = − x √ ₄₋ₓ₂ . Xét f(−2) = 0, f(0) = 2, f(2) = 0. GTNN 0 tại x = −2, 2; GTLN 2 tại x = 0.",
@@ -16903,7 +16903,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-8",
@@ -16914,7 +16914,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = eˣ −2. Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
-          "text": "Lời giải Ví dụ 8, trang 79 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = eˣ −2. Xét f(0) = 1, f(ln (2)) = 2 −2 ln (2), f(2) = −4 + e². GTNN 2 −2 ln (2) tại x = ln (2); GTLN −4 + e² tại x = 2.",
@@ -16953,7 +16953,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-9",
@@ -16964,7 +16964,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = ¹⁻ˣ ₓ . Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = ¹⁻ˣ ₓ . Xét f(1) = −1, f(3) = −3 + ln (3). GTNN −3 + ln (3) tại x = 3; GTLN −1 tại x = 1.",
@@ -17003,7 +17003,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4-source-example-10",
@@ -17014,7 +17014,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 2(x²−1) ₓ₄₊₂ₓ₂₊₁. Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
-          "text": "Lời giải Ví dụ 10, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 2(x²−1) ₓ₄₊₂ₓ₂₊₁. Xét f(0) = 1, f(1) = 0, f(3) = ² ₅. GTNN 0 tại x = 1; GTLN 1 tại x = 0.",
@@ -17053,7 +17053,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.5": [
@@ -17066,7 +17066,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTNN là m tại 0, nên m = 3.",
-          "text": "Lời giải Ví dụ 1, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTNN là m tại 0, nên m = 3.",
@@ -17091,7 +17091,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-2",
@@ -17102,7 +17102,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh x = 1 nằm trong đoạn, GTLN m + 1 = 5. Vậy m = 4.",
-          "text": "Lời giải Ví dụ 2, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đỉnh x = 1 nằm trong đoạn, GTLN m + 1 = 5. Vậy m = 4.",
@@ -17127,7 +17127,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-3",
@@ -17138,7 +17138,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m < 0: m² tại 0. Nếu 0 ≤m ≤2: 0 tại m. Nếu m > 2: (m −2)² tại 2.",
-          "text": "Lời giải Ví dụ 3, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m < 0: m² tại 0. Nếu 0 ≤m ≤2: 0 tại m. Nếu m > 2: (m −2)² tại 2.",
@@ -17163,7 +17163,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-4",
@@ -17174,7 +17174,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m ≥0: GTLN 2m. Nếu m < 0: GTLN −m. Với m = 0, mọi điểm đều đạt.",
-          "text": "Lời giải Ví dụ 4, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m ≥0: GTLN 2m. Nếu m < 0: GTLN −m. Với m = 0, mọi điểm đều đạt.",
@@ -17199,7 +17199,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-5",
@@ -17210,7 +17210,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTLN bằng max(|m|, |2 −m|). Điều kiện hai giá trịkhông quá 3 và có một bằng 3 cho m = −1 hoặc m = 3.",
-          "text": "Lời giải Ví dụ 5, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTLN bằng max(|m|, |2 −m|). Điều kiện hai giá trịkhông quá 3 và có một bằng 3 cho m = −1 hoặc m = 3.",
@@ -17235,7 +17235,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-6",
@@ -17246,7 +17246,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1 −m/x². Nếu m ≤1, hàm tăng trên đoạn nên nhận. Nếu m > 1, đạo hàm âm ngay bên phải 1, nên 1 không là điểm đạt GTNN. Vậy m ≤1.",
-          "text": "Lời giải Ví dụ 6, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1 −m/x². Nếu m ≤1, hàm tăng trên đoạn nên nhận. Nếu m > 1, đạo hàm âm ngay bên phải 1, nên 1 không là điểm đạt GTNN. Vậy m ≤1.",
@@ -17271,7 +17271,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-7",
@@ -17282,7 +17282,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m ≤0, GTNN 0. Nếu 0 < m < 3, GTNN −m², cho m = 2. Nếu m ≥3, GTNN 9 −6m ≤−9, không bằng −4. Vậy m = 2.",
-          "text": "Lời giải Ví dụ 7, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m ≤0, GTNN 0. Nếu 0 < m < 3, GTNN −m², cho m = 2. Nếu m ≥3, GTNN 9 −6m ≤−9, không bằng −4. Vậy m = 2.",
@@ -17307,7 +17307,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-8",
@@ -17318,7 +17318,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "M = m + 4, n = m. Suy ra 2m + 4 = 10, nên m = 3.",
-          "text": "Lời giải Ví dụ 8, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "M = m + 4, n = m. Suy ra 2m + 4 = 10, nên m = 3.",
@@ -17343,7 +17343,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-9",
@@ -17354,7 +17354,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không có m. Nếu hai giá trịbằng nhau thì hàm phải hằng trên đoạn, nhưng f′ = 2(x −m) không thểbằng 0 tại mọi x ∈(0; 1).",
-          "text": "Lời giải Ví dụ 9, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không có m. Nếu hai giá trịbằng nhau thì hàm phải hằng trên đoạn, nhưng f′ = 2(x −m) không thểbằng 0 tại mọi x ∈(0; 1).",
@@ -17379,7 +17379,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5-source-example-10",
@@ -17390,7 +17390,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai giá trị là M = m + 2, n = m −2. Điều kiện m + 2 = 2(m −2) cho m = 6.",
-          "text": "Lời giải Ví dụ 10, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai giá trị là M = m + 2, n = m −2. Điều kiện m + 2 = 2(m −2) cho m = 6.",
@@ -17415,7 +17415,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.6": [
@@ -17428,7 +17428,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai cạnh x, 20 −x, 0 < x < 20. S = x(20 −x) = 100 −(x −10)². Lớn nhất 100 m², hai cạnh đều 10 m.",
-          "text": "Lời giải Ví dụ 1, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai cạnh x, 20 −x, 0 < x < 20. S = x(20 −x) = 100 −(x −10)². Lớn nhất 100 m², hai cạnh đều 10 m.",
@@ -17453,7 +17453,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-2",
@@ -17464,7 +17464,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai cạnh vuông góc tường dài x, cạnh kia 60 −2x. S = x(60 −2x), 0 < x < 30, đạt lớn nhất 450 m² tại x = 15, cạnh dọc tường 30 m.",
-          "text": "Lời giải Ví dụ 2, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai cạnh vuông góc tường dài x, cạnh kia 60 −2x. S = x(60 −2x), 0 < x < 30, đạt lớn nhất 450 m² tại x = 15, cạnh dọc tường 30 m.",
@@ -17489,7 +17489,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-3",
@@ -17500,7 +17500,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với hai cạnh a, b > 0, a² +b² = 100. S = ab ≤(a² +b²)/2 = 50 cm², đạt khi a = b = 5 √ 2 cm.",
-          "text": "Lời giải Ví dụ 3, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với hai cạnh a, b > 0, a² +b² = 100. S = ab ≤(a² +b²)/2 = 50 cm², đạt khi a = b = 5 √ 2 cm.",
@@ -17525,7 +17525,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-4",
@@ -17536,7 +17536,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nửa chiều rộng x ∈(0; 2), chiều cao √ 4 −x². S = 2x √ 4 −x²; S² = 16x² −4x⁴ lớn nhất tại x = √ 2. Diện tích lớn nhất 4.",
-          "text": "Lời giải Ví dụ 4, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nửa chiều rộng x ∈(0; 2), chiều cao √ 4 −x². S = 2x √ 4 −x²; S² = 16x² −4x⁴ lớn nhất tại x = √ 2. Diện tích lớn nhất 4.",
@@ -17561,7 +17561,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-5",
@@ -17572,7 +17572,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "S = x(12 −x)/2, 0 < x < 12. Đỉnh tại x = 6, Sₘₐₓ = 18 cm²; hai cạnh bằng 6 cm.",
-          "text": "Lời giải Ví dụ 5, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "S = x(12 −x)/2, 0 < x < 12. Đỉnh tại x = 6, Sₘₐₓ = 18 cm²; hai cạnh bằng 6 cm.",
@@ -17597,7 +17597,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-6",
@@ -17608,7 +17608,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ∈(0; 2) là nửa chiều rộng, S = 2x(4 −x²). S′ = 8 −6x² = 0 tại x = 2/ √ 3. Sₘₐₓ = 32 √ 3/9.",
-          "text": "Lời giải Ví dụ 6, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ∈(0; 2) là nửa chiều rộng, S = 2x(4 −x²). S′ = 8 −6x² = 0 tại x = 2/ √ 3. Sₘₐₓ = 32 √ 3/9.",
@@ -17633,7 +17633,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-7",
@@ -17644,7 +17644,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Gọi x là tổng chiều ngang, y là chiều dọc. Có 2x + 3y = 80, S = xy = y(80 −3y)/2. Tối ưu y = 40/3, x = 20; Sₘₐₓ = 800/3 m².",
-          "text": "Lời giải Ví dụ 7, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Gọi x là tổng chiều ngang, y là chiều dọc. Có 2x + 3y = 80, S = xy = y(80 −3y)/2. Tối ưu y = 40/3, x = 20; Sₘₐₓ = 800/3 m².",
@@ -17669,7 +17669,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-8",
@@ -17680,7 +17680,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai cạnh x, 48/x, x > 0. P = 2x + 96/x, P ′ = 2 −96/x². Nhỏ nhất tại x = 4 √ 3; biển vuông, Pₘᵢₙ = 16 √ 3 dm.",
-          "text": "Lời giải Ví dụ 8, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai cạnh x, 48/x, x > 0. P = 2x + 96/x, P ′ = 2 −96/x². Nhỏ nhất tại x = 4 √ 3; biển vuông, Pₘᵢₙ = 16 √ 3 dm.",
@@ -17705,7 +17705,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-9",
@@ -17716,7 +17716,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cạnh ngang x ∈(2; 25), cạnh dọc 100/x. Phần in S = (x −2)(100/x −4) = 108 −4x − 200/x. S′ = 0 cho x = 5 √ 2; cạnh dọc 10 √ 2. S′′ = −400/x³ < 0 nên là cực đại toàn miền.",
-          "text": "Lời giải Ví dụ 9, trang 80 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cạnh ngang x ∈(2; 25), cạnh dọc 100/x. Phần in S = (x −2)(100/x −4) = 108 −4x − 200/x. S′ = 0 cho x = 5 √ 2; cạnh dọc 10 √ 2. S′′ = −400/x³ < 0 nên là cực đại toàn miền.",
@@ -17741,7 +17741,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6-source-example-10",
@@ -17752,7 +17752,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt chiều dài x ∈[12; 20), cạnh kia 20 −x. S′ = 20 −2x < 0 trên miền. Lớn nhất tại x = 12, cạnh kia 8 m, diện tích 96 m².",
-          "text": "Lời giải Ví dụ 10, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt chiều dài x ∈[12; 20), cạnh kia 20 −x. S′ = 20 −2x < 0 trên miền. Lớn nhất tại x = 12, cạnh kia 8 m, diện tích 96 m².",
@@ -17777,7 +17777,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.7": [
@@ -17790,7 +17790,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = x(12 −2x)², 0 < x < 6. V ′ = (12 −2x)(12 −6x), đổi dương sang âm tại x = 2. Vₘₐₓ = 128 cm³.",
-          "text": "Lời giải Ví dụ 1, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = x(12 −2x)², 0 < x < 6. V ′ = (12 −2x)(12 −6x), đổi dương sang âm tại x = 2. Vₘₐₓ = 128 cm³.",
@@ -17815,7 +17815,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-2",
@@ -17826,7 +17826,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = x(16 −2x)(10 −2x), 0 < x < 5. V ′ = 12x² −104x + 160 = 4(3x −20)(x −2). Chỉ x = 2 thuộc miền; Vₘₐₓ = 144 cm³.",
-          "text": "Lời giải Ví dụ 2, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = x(16 −2x)(10 −2x), 0 < x < 5. V ′ = 12x² −104x + 160 = 4(3x −20)(x −2). Chỉ x = 2 thuộc miền; Vₘₐₓ = 144 cm³.",
@@ -17851,7 +17851,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-3",
@@ -17862,7 +17862,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cạnh đáy x, cao h, x² + 4xh = 12. V = (12x −x³)/4, 0 < x < √ 12. Tối ưu x = 2, h = 1, thể tích 4 dm³.",
-          "text": "Lời giải Ví dụ 3, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cạnh đáy x, cao h, x² + 4xh = 12. V = (12x −x³)/4, 0 < x < √ 12. Tối ưu x = 2, h = 1, thể tích 4 dm³.",
@@ -17887,7 +17887,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-4",
@@ -17898,7 +17898,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2x² + 4xh = 24, V = 6x −x³/2. V ′ = 6 −3x²/2 = 0 cho x = 2, h = 2. Thể tích lớn nhất 8 dm³.",
-          "text": "Lời giải Ví dụ 4, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2x² + 4xh = 24, V = 6x −x³/2. V ′ = 6 −3x²/2 = 0 cho x = 2, h = 2. Thể tích lớn nhất 8 dm³.",
@@ -17923,7 +17923,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-5",
@@ -17934,7 +17934,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2πr² +2πrh = 24π, nên h = 12/r −r. V = π(12r −r³), 0 < r < √ 12. Tối ưu r = 2, h = 4, V = 16π cm³.",
-          "text": "Lời giải Ví dụ 5, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2πr² +2πrh = 24π, nên h = 12/r −r. V = π(12r −r³), 0 < r < √ 12. Tối ưu r = 2, h = 4, V = 16π cm³.",
@@ -17959,7 +17959,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-6",
@@ -17970,7 +17970,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 9πh tăng theo h > 0. Chọn h = 8, Vₘₐₓ = 72π cm³; không cần tìm điểm dừng.",
-          "text": "Lời giải Ví dụ 6, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 9πh tăng theo h > 0. Chọn h = 8, Vₘₐₓ = 72π cm³; không cần tìm điểm dừng.",
@@ -17995,7 +17995,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-7",
@@ -18006,7 +18006,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "h = √ 36 −r², 0 < r < 6. Tối ưu V ² ∝r⁴(36 −r²). Đạo hàm cho r² = 24, nên r = 2 √ 6, h = 2 √ 3; Vₘₐₓ = 16π √ 3 cm³.",
-          "text": "Lời giải Ví dụ 7, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "h = √ 36 −r², 0 < r < 6. Tối ưu V ² ∝r⁴(36 −r²). Đạo hàm cho r² = 24, nên r = 2 √ 6, h = 2 √ 3; Vₘₐₓ = 16π √ 3 cm³.",
@@ -18031,7 +18031,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-8",
@@ -18042,7 +18042,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "r² = 9 −h²/4, 0 < h < 6. V = π(9h −h³/4), V ′ = π(9 −3h²/4). Tối ưu h = 2 √ 3, r = √ 6, V = 12π √ 3.",
-          "text": "Lời giải Ví dụ 8, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "r² = 9 −h²/4, 0 < h < 6. V = π(9h −h³/4), V ′ = π(9 −3h²/4). Tối ưu h = 2 √ 3, r = √ 6, V = 12π √ 3.",
@@ -18067,7 +18067,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-9",
@@ -18078,7 +18078,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "abc ≤((a + b + c)/3)³ = 64, dấu bằng khi a = b = c = 4. Thể tích lớn nhất 64 cm³.",
-          "text": "Lời giải Ví dụ 9, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "abc ≤((a + b + c)/3)³ = 64, dấu bằng khi a = b = c = 4. Thể tích lớn nhất 64 cm³.",
@@ -18103,7 +18103,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7-source-example-10",
@@ -18114,7 +18114,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "h = (12 −x²)/(4x) ≥2 cho 0 < x ≤2 √ 7 −4 < 2. Hàm V = (12x −x³)/4 tăng trên miền này, nên chọn h = 2, x = 2 √ 7 −4. Vₘₐₓ = 2(2 √ 7 −4)² dm³.",
-          "text": "Lời giải Ví dụ 10, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "h = (12 −x²)/(4x) ≥2 cho 0 < x ≤2 √ 7 −4 < 2. Hàm V = (12x −x³)/4 tăng trên miền này, nên chọn h = 2, x = 2 √ 7 −4. Vₘₐₓ = 2(2 √ 7 −4)² dm³.",
@@ -18139,7 +18139,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.8": [
@@ -18152,7 +18152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với M(x; 0), AM² = (x −2)² + 9. Nhỏ nhất tại M(2; 0), khoảng cách 3.",
-          "text": "Lời giải Ví dụ 1, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với M(x; 0), AM² = (x −2)² + 9. Nhỏ nhất tại M(2; 0), khoảng cách 3.",
@@ -18177,7 +18177,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-2",
@@ -18188,7 +18188,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "M(x; x), AM² = (x −4)² + x² = 2(x −2)² + 8. Chọn M(2; 2), khoảng cách 2 √ 2.",
-          "text": "Lời giải Ví dụ 2, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "M(x; x), AM² = (x −4)² + x² = 2(x −2)² + 8. Chọn M(2; 2), khoảng cách 2 √ 2.",
@@ -18213,7 +18213,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-3",
@@ -18224,7 +18224,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "OM ² = x² +(2x+1)² = 5x² +4x+1, nhỏ nhất tại x = −2/5. Điểm (−2/5; 1/5), khoảng cách √ 5/5.",
-          "text": "Lời giải Ví dụ 3, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "OM ² = x² +(2x+1)² = 5x² +4x+1, nhỏ nhất tại x = −2/5. Điểm (−2/5; 1/5), khoảng cách √ 5/5.",
@@ -18249,7 +18249,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-4",
@@ -18260,7 +18260,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "AM² = x² + (x² −1)² = x⁴ −x² + 1. Đạo hàm 2x(2x² −1). Hai điểm gần nhất có x = ±1/ √ 2, y = 1/2; khoảng cách √ 3/2.",
-          "text": "Lời giải Ví dụ 4, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "AM² = x² + (x² −1)² = x⁴ −x² + 1. Đạo hàm 2x(2x² −1). Hai điểm gần nhất có x = ±1/ √ 2, y = 1/2; khoảng cách √ 3/2.",
@@ -18285,7 +18285,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-5",
@@ -18296,7 +18296,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "AM² = (x −4)² + 9 giảm trên [0; 2]. Chọn đầu mút M(2; 0), khoảng cách √ 13.",
-          "text": "Lời giải Ví dụ 5, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "AM² = (x −4)² + 9 giảm trên [0; 2]. Chọn đầu mút M(2; 0), khoảng cách √ 13.",
@@ -18321,7 +18321,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-6",
@@ -18332,7 +18332,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "AB² = t² + (6 −t)² = 2(t −3)² + 18. Gần nhất tại t = 3, khoảng cách 3 √ 2 đơn vị.",
-          "text": "Lời giải Ví dụ 6, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "AB² = t² + (6 −t)² = 2(t −3)² + 18. Gần nhất tại t = 3, khoảng cách 3 √ 2 đơn vị.",
@@ -18357,7 +18357,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-7",
@@ -18368,7 +18368,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đối xứng B qua Ox thành B′(6; −2). MA + MB = MA + MB′ ≥AB′ = 2 √ 13. Dấu bằng khi M = AB′ ∩Ox = (3; 0).",
-          "text": "Lời giải Ví dụ 7, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đối xứng B qua Ox thành B′(6; −2). MA + MB = MA + MB′ ≥AB′ = 2 √ 13. Dấu bằng khi M = AB′ ∩Ox = (3; 0).",
@@ -18393,7 +18393,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-8",
@@ -18404,7 +18404,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "MA ≥OA −OM = 3. Dấu bằng khi M(2; 0) nằm trên tia OA. Khoảng cách nhỏ nhất 3.",
-          "text": "Lời giải Ví dụ 8, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "MA ≥OA −OM = 3. Dấu bằng khi M(2; 0) nằm trên tia OA. Khoảng cách nhỏ nhất 3.",
@@ -18429,7 +18429,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-9",
@@ -18440,7 +18440,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoảng cách bằng x² + 1 ≥1. Chọn M(0; 0), khoảng cách nhỏ nhất 1.",
-          "text": "Lời giải Ví dụ 9, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoảng cách bằng x² + 1 ≥1. Chọn M(0; 0), khoảng cách nhỏ nhất 1.",
@@ -18465,7 +18465,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8-source-example-10",
@@ -18476,7 +18476,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt M(x; 0), tổng bằng x² + 1 + 2[(x −3)² + 4] = 3(x −2)² + 15. Chọn M(2; 0), giá trị nhỏ nhất 15.",
-          "text": "Lời giải Ví dụ 10, trang 81 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt M(x; 0), tổng bằng x² + 1 + 2[(x −3)² + 4] = 3(x −2)² + 15. Chọn M(2; 0), giá trị nhỏ nhất 15.",
@@ -18501,7 +18501,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.9": [
@@ -18514,7 +18514,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = −x² + 20x −16 = 84 −(x −10)². Lãi lớn nhất 84 triệu đồng tại x = 10.",
-          "text": "Lời giải Ví dụ 1, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = −x² + 20x −16 = 84 −(x −10)². Lãi lớn nhất 84 triệu đồng tại x = 10.",
@@ -18539,7 +18539,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-2",
@@ -18550,7 +18550,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "R = xp(x) = 100x −2x², đạt đỉnh tại x = 25. Doanh thu lớn nhất 1250 đơn vịtiền.",
-          "text": "Lời giải Ví dụ 2, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "R = xp(x) = 100x −2x², đạt đỉnh tại x = 25. Doanh thu lớn nhất 1250 đơn vịtiền.",
@@ -18575,7 +18575,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-3",
@@ -18586,7 +18586,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "G = C/x = x + 100/x, G′ = 1 −100/x². Nhỏ nhất tại x = 10, bằng 20 đơn vịtiền/sản phẩm.",
-          "text": "Lời giải Ví dụ 3, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "G = C/x = x + 100/x, G′ = 1 −100/x². Nhỏ nhất tại x = 10, bằng 20 đơn vịtiền/sản phẩm.",
@@ -18611,7 +18611,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-4",
@@ -18622,7 +18622,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tổng chi phí xG = 100 + 10x + x². P = 20x −x² −100 = −(x −10)² ≤0. Lãi lớn nhất 0 tại x = 10.",
-          "text": "Lời giải Ví dụ 4, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tổng chi phí xG = 100 + 10x + x². P = 20x −x² −100 = −(x −10)² ≤0. Lãi lớn nhất 0 tại x = 10.",
@@ -18647,7 +18647,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-5",
@@ -18658,7 +18658,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giảm u ∈[0; 50] nghìn: R = (50 −u)(100 + 4u) = 5000 + 100u −4u². Đỉnh u = 12,5, giá 37,5 nghìn, bán 150 vé.",
-          "text": "Lời giải Ví dụ 5, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giảm u ∈[0; 50] nghìn: R = (50 −u)(100 + 4u) = 5000 + 100u −4u². Đỉnh u = 12,5, giá 37,5 nghìn, bán 150 vé.",
@@ -18683,7 +18683,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-6",
@@ -18694,7 +18694,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P ′ = 12 −2x > 0 trên [0; 4]. Đỉnh tựdo 6 ngoài miền, nên chọn x = 4, lãi 12 triệu đồng.",
-          "text": "Lời giải Ví dụ 6, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P ′ = 12 −2x > 0 trên [0; 4]. Đỉnh tựdo 6 ngoài miền, nên chọn x = 4, lãi 12 triệu đồng.",
@@ -18719,7 +18719,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-7",
@@ -18730,7 +18730,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = −(x −2)(x −8) > 0 khi 2 < x < 8. Các lượng nguyên là 3, 4, 5, 6, 7.",
-          "text": "Lời giải Ví dụ 7, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = −(x −2)(x −8) > 0 khi 2 < x < 8. Các lượng nguyên là 3, 4, 5, 6, 7.",
@@ -18755,7 +18755,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-8",
@@ -18766,7 +18766,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = −0,01x³ + 12x −100, P ′ = 12 −0,03x², đổi dương sang âm tại 20. Lãi lớn nhất P(20) = 60 đơn vịtiền.",
-          "text": "Lời giải Ví dụ 8, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = −0,01x³ + 12x −100, P ′ = 12 −0,03x², đổi dương sang âm tại 20. Lãi lớn nhất P(20) = 60 đơn vịtiền.",
@@ -18791,7 +18791,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-9",
@@ -18802,7 +18802,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tổng chi phí xG(x) = 30000 + 200x. Lợi nhuận P = −0,01x² + 100x −30000 (nghìn đồng). Điều kiện P > 100000 tương đương x² −10000x + 13000000 < 0, tức 5000 −2000 √ 3 < x < 5000 + 2000 √ 3. Kết hợp x ≤4500, cận dưới xấp xỉ1535,8984. Số nguyên nhỏ nhất là 1536. Kiểm tra: P(1535) = 99937,75, P(1536) = 100007,04 nghìn đồng.",
-          "text": "Lời giải Ví dụ 9, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tổng chi phí xG(x) = 30000 + 200x. Lợi nhuận P = −0,01x² + 100x −30000 (nghìn đồng). Điều kiện P > 100000 tương đương x² −10000x + 13000000 < 0, tức 5000 −2000 √ 3 < x < 5000 + 2000 √ 3. Kết hợp x ≤4500, cận dưới xấp xỉ1535,8984. Số nguyên nhỏ nhất là 1536. Kiểm tra: P(1535) = 99937,75, P(1536) = 100007,04 nghìn đồng.",
@@ -18827,7 +18827,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9-source-example-10",
@@ -18838,7 +18838,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = R −C = −0,001x³ + 30x −10, P ′ = 30 −0,003x². Trên [1; 200], đạo hàm đổi từ dương sang âm tại x = 100. Các giá trịP(1) = 19,999, P(100) = 1990, P(200) = −2010. Lợi nhuận lớn nhất là 1990 triệu đồng, đạt khi chếbiến 100 tấn. Không dùng doanh thu làm hàm mục tiêu thay cho lợi nhuận.",
-          "text": "Lời giải Ví dụ 10, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = R −C = −0,001x³ + 30x −10, P ′ = 30 −0,003x². Trên [1; 200], đạo hàm đổi từ dương sang âm tại x = 100. Các giá trịP(1) = 19,999, P(100) = 1990, P(200) = −2010. Lợi nhuận lớn nhất là 1990 triệu đồng, đạt khi chếbiến 100 tấn. Không dùng doanh thu làm hàm mục tiêu thay cho lợi nhuận.",
@@ -18863,7 +18863,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.10": [
@@ -18876,7 +18876,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh liên tục 4,4. Thửn = 4, 5: P(4) = 19,84, P(5) = 19,64. Chọn 4.",
-          "text": "Lời giải Ví dụ 1, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đỉnh liên tục 4,4. Thửn = 4, 5: P(4) = 19,84, P(5) = 19,64. Chọn 4.",
@@ -18901,7 +18901,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-2",
@@ -18912,7 +18912,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai số nguyên gần đỉnh nhất là 3,4; cùng cho 9,75. Có hai phương án tối ưu.",
-          "text": "Lời giải Ví dụ 2, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai số nguyên gần đỉnh nhất là 3,4; cùng cho 9,75. Có hai phương án tối ưu.",
@@ -18937,7 +18937,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-3",
@@ -18948,7 +18948,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P ′ = 16 −2n > 0 trên đoạn liên tục [1; 5]. Chọn biên n = 5, giá trị55; không làm tròn đỉnh 8 ngoài miền.",
-          "text": "Lời giải Ví dụ 3, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P ′ = 16 −2n > 0 trên đoạn liên tục [1; 5]. Chọn biên n = 5, giá trị55; không làm tròn đỉnh 8 ngoài miền.",
@@ -18973,7 +18973,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-4",
@@ -18984,7 +18984,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nghiệm liên tục √ 20 ≈4,472. Thử4,5 đều cho 9, còn các số khác cho lớn hơn. Hai phương án n = 4, 5.",
-          "text": "Lời giải Ví dụ 4, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nghiệm liên tục √ 20 ≈4,472. Thử4,5 đều cho 9, còn các số khác cho lớn hơn. Hai phương án n = 4, 5.",
@@ -19009,7 +19009,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-5",
@@ -19020,7 +19020,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "n ≥121/45 ≈2,689, n nguyên. Cần 3 xe; đây là làm tròn lên theo điều kiện sức chứa.",
-          "text": "Lời giải Ví dụ 5, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "n ≥121/45 ≈2,689, n nguyên. Cần 3 xe; đây là làm tròn lên theo điều kiện sức chứa.",
@@ -19045,7 +19045,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-6",
@@ -19056,7 +19056,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tính tại các phương án: 24,39,36,24. Chọn n = 5, lãi 39. Không được chọn 6 vì không khả thi.",
-          "text": "Lời giải Ví dụ 6, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tính tại các phương án: 24,39,36,24. Chọn n = 5, lãi 39. Không được chọn 6 vì không khả thi.",
@@ -19081,7 +19081,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-7",
@@ -19092,7 +19092,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh 3,5; C(3) = C(4) = 8. Hai giá trịnguyên tối ưu là 3,4.",
-          "text": "Lời giải Ví dụ 7, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đỉnh 3,5; C(3) = C(4) = 8. Hai giá trịnguyên tối ưu là 3,4.",
@@ -19117,7 +19117,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-8",
@@ -19128,7 +19128,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "−(n −8)(n −12) > 0 cho 8 < n < 12. Các nghiệm nguyên 9, 10, 11; không nhận 8,12 vì bất đẳng thức nghiêm.",
-          "text": "Lời giải Ví dụ 8, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "−(n −8)(n −12) > 0 cho 8 < n < 12. Các nghiệm nguyên 9, 10, 11; không nhận 8,12 vì bất đẳng thức nghiêm.",
@@ -19153,7 +19153,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-9",
@@ -19164,7 +19164,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = x(14 −2x)², x ∈{1, . . . , 6}. Đỉnh liên tục 7/3. ThửV (2) = 200, V (3) = 192. Chọn x = 2 cm.",
-          "text": "Lời giải Ví dụ 9, trang 82 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = x(14 −2x)², x ∈{1, . . . , 6}. Đỉnh liên tục 7/3. ThửV (2) = 200, V (3) = 192. Chọn x = 2 cm.",
@@ -19189,7 +19189,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10-source-example-10",
@@ -19200,7 +19200,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "R = p(200 −3p) có đỉnh p = 100/3 ≈33,33. Hai giá khả thi kềlà 30,35: doanh thu 3300 và 3325 nghìn đồng. Chọn 35 nghìn đồng.",
-          "text": "Lời giải Ví dụ 10, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "R = p(200 −3p) có đỉnh p = 100/3 ≈33,33. Hai giá khả thi kềlà 30,35: doanh thu 3300 và 3325 nghìn đồng. Chọn 35 nghìn đồng.",
@@ -19225,7 +19225,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "4.11": [
@@ -19238,7 +19238,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt x ∈[3; 17], S = x(20 −x). Đỉnh 10 thuộc miền; chọn hình vuông cạnh 10, diện tích 100 m².",
-          "text": "Lời giải Ví dụ 1, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt x ∈[3; 17], S = x(20 −x). Đỉnh 10 thuộc miền; chọn hình vuông cạnh 10, diện tích 100 m².",
@@ -19263,7 +19263,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-2",
@@ -19274,7 +19274,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "S = x(20 −x) giảm trên [12; 15]. Chọn hai cạnh 12 m và 8 m, diện tích 96 m².",
-          "text": "Lời giải Ví dụ 2, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "S = x(20 −x) giảm trên [12; 15]. Chọn hai cạnh 12 m và 8 m, diện tích 96 m².",
@@ -19299,7 +19299,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-3",
@@ -19310,7 +19310,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P ′ = 20 −2x < 0 trên miền. Chọn x = 12, P = 56 đơn vịtiền.",
-          "text": "Lời giải Ví dụ 3, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P ′ = 20 −2x < 0 trên miền. Chọn x = 12, P = 56 đơn vịtiền.",
@@ -19335,7 +19335,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-4",
@@ -19346,7 +19346,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cạnh vuông góc x, cạnh dọc 60 −2x ≤20, nên 20 ≤x < 30. S = x(60 −2x) giảm trên miền; chọn x = 20, cạnh dọc 20, diện tích 400 m².",
-          "text": "Lời giải Ví dụ 4, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cạnh vuông góc x, cạnh dọc 60 −2x ≤20, nên 20 ≤x < 30. S = x(60 −2x) giảm trên miền; chọn x = 20, cạnh dọc 20, diện tích 400 m².",
@@ -19371,7 +19371,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-5",
@@ -19382,7 +19382,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = 2(x + 36/x), x ≥8. Vì P ′ > 0 trên miền, chọn x = 8, cạnh kia 9/2; chu vi 25 m.",
-          "text": "Lời giải Ví dụ 5, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = 2(x + 36/x), x ≥8. Vì P ′ > 0 trên miền, chọn x = 8, cạnh kia 9/2; chu vi 25 m.",
@@ -19407,7 +19407,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-6",
@@ -19418,7 +19418,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = x(12 −2x)² giảm trên [3; 4]. Chọn x = 3, thể tích 108 cm³.",
-          "text": "Lời giải Ví dụ 6, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = x(12 −2x)² giảm trên [3; 4]. Chọn x = 3, thể tích 108 cm³.",
@@ -19443,7 +19443,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-7",
@@ -19454,7 +19454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh liên tục 7,5 ởngoài miền; P giảm khi n ≥9. Chọn n = 9, lợi nhuận 34.",
-          "text": "Lời giải Ví dụ 7, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đỉnh liên tục 7,5 ởngoài miền; P giảm khi n ≥9. Chọn n = 9, lợi nhuận 34.",
@@ -19479,7 +19479,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-8",
@@ -19490,7 +19490,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện cho x ∈[3; 4]. AM² = (x −2)² + 4 tăng trên miền; chọn M(3; 0), khoảng cách √ 5.",
-          "text": "Lời giải Ví dụ 8, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện cho x ∈[3; 4]. AM² = (x −2)² + 4 tăng trên miền; chọn M(3; 0), khoảng cách √ 5.",
@@ -19515,7 +19515,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-9",
@@ -19526,7 +19526,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện q ≤60 cho p ≥40. Trên [40; 50], R = p(100 −p) tăng đến 50. Chọn p = 50, lượng 50, doanh thu 2500 đơn vịtiền.",
-          "text": "Lời giải Ví dụ 9, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện q ≤60 cho p ≥40. Trên [40; 50], R = p(100 −p) tăng đến 50. Chọn p = 50, lượng 50, doanh thu 2500 đơn vịtiền.",
@@ -19551,7 +19551,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11-source-example-10",
@@ -19562,7 +19562,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Gọi chiều rộng nguyên b ≥1, dài 15 −b ≥2b nên b ≤5. S = b(15 −b) tăng trên [1; 5], chọn b = 5, dài 10; diện tích 50 m².",
-          "text": "Lời giải Ví dụ 10, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Gọi chiều rộng nguyên b ≥1, dài 15 −b ≥2b nên b ≤5. S = b(15 −b) tăng trên [1; 5], chọn b = 5, dài 10; diện tích 50 m².",
@@ -19601,7 +19601,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.1": [
@@ -19614,7 +19614,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giới hạn khi x →2⁻bằng −∞, khi x →2⁺ bằng +∞. TCĐ x = 2.",
-          "text": "Lời giải Ví dụ 1, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giới hạn khi x →2⁻bằng −∞, khi x →2⁺ bằng +∞. TCĐ x = 2.",
@@ -19639,7 +19639,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-2",
@@ -19650,7 +19650,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai nghiệm mẫu ±2 đều làm giới hạn vô cực ít nhất một phía, tửkhông triệt tiêu. Hai TCĐ x = −2, x = 2.",
-          "text": "Lời giải Ví dụ 2, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai nghiệm mẫu ±2 đều làm giới hạn vô cực ít nhất một phía, tửkhông triệt tiêu. Hai TCĐ x = −2, x = 2.",
@@ -19675,7 +19675,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-3",
@@ -19686,7 +19686,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞), limₓ→₀+ ln x = −∞. Có TCĐ x = 0 dù chỉxét được một phía.",
-          "text": "Lời giải Ví dụ 3, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞), limₓ→₀+ ln x = −∞. Có TCĐ x = 0 dù chỉxét được một phía.",
@@ -19711,7 +19711,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-4",
@@ -19722,7 +19722,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (1; +∞); khi x →1⁺, hàm tiến tới +∞. TCĐ x = 1.",
-          "text": "Lời giải Ví dụ 4, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (1; +∞); khi x →1⁺, hàm tiến tới +∞. TCĐ x = 1.",
@@ -19747,7 +19747,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-5",
@@ -19758,7 +19758,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm liên tục với x ≥−1, giới hạn tại biên −1 bằng 0 hữu hạn. Không có TCĐ.",
-          "text": "Lời giải Ví dụ 5, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm liên tục với x ≥−1, giới hạn tại biên −1 bằng 0 hữu hạn. Không có TCĐ.",
@@ -19783,7 +19783,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-6",
@@ -19794,7 +19794,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trên x≠ 1, hàm bằng x + 1; giới hạn tại 1 bằng 2 hữu hạn. Không có TCĐ, chỉ có điểm khuyết.",
-          "text": "Lời giải Ví dụ 6, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trên x≠ 1, hàm bằng x + 1; giới hạn tại 1 bằng 2 hữu hạn. Không có TCĐ, chỉ có điểm khuyết.",
@@ -19819,7 +19819,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-7",
@@ -19830,7 +19830,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {−1; 1}, rút gọn 1/(x + 1). Tại 1 giới hạn 1/2 hữu hạn; tại −1 vô cực. Chỉ có TCĐ x = −1.",
-          "text": "Lời giải Ví dụ 7, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {−1; 1}, rút gọn 1/(x + 1). Tại 1 giới hạn 1/2 hữu hạn; tại −1 vô cực. Chỉ có TCĐ x = −1.",
@@ -19855,7 +19855,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-8",
@@ -19866,7 +19866,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (−∞; −1) ∪(1; +∞). Khi tiến tới −1 từ trái hoặc 1 từphải, hàm tiến tới −∞. Hai TCĐ x = ±1.",
-          "text": "Lời giải Ví dụ 8, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (−∞; −1) ∪(1; +∞). Khi tiến tới −1 từ trái hoặc 1 từphải, hàm tiến tới −∞. Hai TCĐ x = ±1.",
@@ -19891,7 +19891,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-9",
@@ -19902,7 +19902,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có. Giới hạn khi x →0⁺ là +∞, khi x →0⁻là −∞. Giá trịriêng f(0) không làm thay đổi giới hạn.",
-          "text": "Lời giải Ví dụ 9, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có. Giới hạn khi x →0⁺ là +∞, khi x →0⁻là −∞. Giá trịriêng f(0) không làm thay đổi giới hạn.",
@@ -19941,7 +19941,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.1-source-example-10",
@@ -19952,7 +19952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {2}; rút gọn (x + 2)/(x −2). Mẫu còn nhân tửx −2, tửtại 2 bằng 4. Vẫn có TCĐ x = 2.",
-          "text": "Lời giải Ví dụ 10, trang 83 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {2}; rút gọn (x + 2)/(x −2). Mẫu còn nhân tửx −2, tửtại 2 bằng 4. Vẫn có TCĐ x = 2.",
@@ -19977,7 +19977,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.2": [
@@ -19990,7 +19990,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai giới hạn ở vô cực bằng tỉ số hệ số đầu 2/1 = 2. Chỉ có TCN y = 2.",
-          "text": "Lời giải Ví dụ 1, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai giới hạn ở vô cực bằng tỉ số hệ số đầu 2/1 = 2. Chỉ có TCN y = 2.",
@@ -20015,7 +20015,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-2",
@@ -20026,7 +20026,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Bậc tửnhỏhơn bậc mẫu nên giới hạn ởcảhai phía vô cực bằng 0. TCN y = 0.",
-          "text": "Lời giải Ví dụ 2, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Bậc tửnhỏhơn bậc mẫu nên giới hạn ởcảhai phía vô cực bằng 0. TCN y = 0.",
@@ -20051,7 +20051,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-3",
@@ -20062,7 +20062,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm bằng x + 1 + 2/(x −1), nên giới hạn ởhai phía vô cực không hữu hạn. Không có TCN.",
-          "text": "Lời giải Ví dụ 3, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm bằng x + 1 + 2/(x −1), nên giới hạn ởhai phía vô cực không hữu hạn. Không có TCN.",
@@ -20087,7 +20087,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-4",
@@ -20098,7 +20098,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi x →+∞, giới hạn 0; khi x →−∞, giới hạn +∞. TCN y = 0 ởphía +∞.",
-          "text": "Lời giải Ví dụ 4, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khi x →+∞, giới hạn 0; khi x →−∞, giới hạn +∞. TCN y = 0 ởphía +∞.",
@@ -20123,7 +20123,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-5",
@@ -20134,7 +20134,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại +∞: giới hạn 1. Tại −∞: giới hạn 0. Hai TCN y = 1 và y = 0.",
-          "text": "Lời giải Ví dụ 5, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại +∞: giới hạn 1. Tại −∞: giới hạn 0. Hai TCN y = 1 và y = 0.",
@@ -20159,7 +20159,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-6",
@@ -20170,7 +20170,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng √ x² = |x|. Giới hạn tại +∞là 1, tại −∞là −1. Hai TCN y = ±1.",
-          "text": "Lời giải Ví dụ 6, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng √ x² = |x|. Giới hạn tại +∞là 1, tại −∞là −1. Hai TCN y = ±1.",
@@ -20195,7 +20195,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-7",
@@ -20206,7 +20206,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại +∞, nhân liên hợp được 1/( √ x² + 1 + x) →0. Tại −∞, hàm tiến tới +∞. TCN y = 0 ởphía dương.",
-          "text": "Lời giải Ví dụ 7, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại +∞, nhân liên hợp được 1/( √ x² + 1 + x) →0. Tại −∞, hàm tiến tới +∞. TCN y = 0 ởphía dương.",
@@ -20231,7 +20231,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-8",
@@ -20242,7 +20242,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "ln x/x →0 khi x →+∞. Có thểđặt x = eᵗ đểđược t/eᵗ →0. TCN y = 0.",
-          "text": "Lời giải Ví dụ 8, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "ln x/x →0 khi x →+∞. Có thểđặt x = eᵗ đểđược t/eᵗ →0. TCN y = 0.",
@@ -20267,7 +20267,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-9",
@@ -20278,7 +20278,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCN y = 0. Tại x = 0, f(0) = 0, nên đồ thịcắt chính TCN tại gốc O. Điều này không trái định nghĩa.",
-          "text": "Lời giải Ví dụ 9, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCN y = 0. Tại x = 0, f(0) = 0, nên đồ thịcắt chính TCN tại gốc O. Điều này không trái định nghĩa.",
@@ -20317,7 +20317,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2-source-example-10",
@@ -20328,7 +20328,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chỉmột đường y = 2. Đếm đường thẳng phân biệt, không đếm sốphía lấy giới hạn.",
-          "text": "Lời giải Ví dụ 10, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chỉmột đường y = 2. Đếm đường thẳng phân biệt, không đếm sốphía lấy giới hạn.",
@@ -20353,7 +20353,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.3": [
@@ -20366,7 +20366,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f −(x + 2) = 1/x →0 ởcảhai phía vô cực. TCX y = x + 2.",
-          "text": "Lời giải Ví dụ 1, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f −(x + 2) = 1/x →0 ởcảhai phía vô cực. TCX y = x + 2.",
@@ -20391,7 +20391,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-2",
@@ -20402,7 +20402,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chia đa thức: f = x + 1 + 2/(x −1). TCX y = x + 1.",
-          "text": "Lời giải Ví dụ 2, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chia đa thức: f = x + 1 + 2/(x −1). TCX y = x + 1.",
@@ -20427,7 +20427,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-3",
@@ -20438,7 +20438,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f = 2x −5 + 9/(x + 1). Phần dư tiến tới 0, nên TCX y = 2x −5.",
-          "text": "Lời giải Ví dụ 3, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f = 2x −5 + 9/(x + 1). Phần dư tiến tới 0, nên TCX y = 2x −5.",
@@ -20463,7 +20463,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-4",
@@ -20474,7 +20474,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f = x + (1 −x)/(x² + 1). TCX y = x.",
-          "text": "Lời giải Ví dụ 4, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f = x + (1 −x)/(x² + 1). TCX y = x.",
@@ -20499,7 +20499,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-5",
@@ -20510,7 +20510,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại +∞, f −x = 1/( √ x² + 1 + x) →0, nên y = x. Tại −∞, f + x →0, nên y = −x.",
-          "text": "Lời giải Ví dụ 5, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại +∞, f −x = 1/( √ x² + 1 + x) →0, nên y = x. Tại −∞, f + x →0, nên y = −x.",
@@ -20535,7 +20535,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-6",
@@ -20546,7 +20546,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Viết căn √ (x + 1)² + 1. TCX tại +∞là y = x + 1, tại −∞là y = −x −1.",
-          "text": "Lời giải Ví dụ 6, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Viết căn √ (x + 1)² + 1. TCX tại +∞là y = x + 1, tại −∞là y = −x −1.",
@@ -20571,7 +20571,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-7",
@@ -20582,7 +20582,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chia được f = x² + x + 1 + 2/(x −1). Phần đa thức bậc hai không phải đường thẳng; f/x không có giới hạn hữu hạn. Không có TCX.",
-          "text": "Lời giải Ví dụ 7, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chia được f = x² + x + 1 + 2/(x −1). Phần đa thức bậc hai không phải đường thẳng; f/x không có giới hạn hữu hạn. Không có TCX.",
@@ -20607,7 +20607,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-8",
@@ -20618,7 +20618,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f →3 ở vô cực, Chỉ có TCN y = 3. Không gọi đường ngang là TCX vì hệ số góc phải khác 0.",
-          "text": "Lời giải Ví dụ 8, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f →3 ở vô cực, Chỉ có TCN y = 3. Không gọi đường ngang là TCX vì hệ số góc phải khác 0.",
@@ -20643,7 +20643,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-9",
@@ -20654,7 +20654,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại +∞, f −x = e⁻ˣ →0, nên TCX y = x. Tại −∞, f/x không có giới hạn hữu hạn, không có TCX ởphía đó.",
-          "text": "Lời giải Ví dụ 9, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại +∞, f −x = e⁻ˣ →0, nên TCX y = x. Tại −∞, f/x không có giới hạn hữu hạn, không có TCX ởphía đó.",
@@ -20679,7 +20679,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3-source-example-10",
@@ -20690,7 +20690,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCX y = x vì phần dư tiến tới 0. Phương trình x/(x² + 1) = 0 cho x = 0, nên đồ thịcắt TCX tại O.",
-          "text": "Lời giải Ví dụ 10, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCX y = x vì phần dư tiến tới 0. Phương trình x/(x² + 1) = 0 cho x = 0, nên đồ thịcắt TCX tại O.",
@@ -20729,7 +20729,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.4": [
@@ -20742,7 +20742,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {1}. Tửtại 1 bằng 3 khác 0, mẫu có nghiệm đơn, nên TCĐ x = 1. Tửvà mẫu cùng bậc, TCN y = 2. Không có TCX.",
-          "text": "Lời giải Ví dụ 1, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {1}. Tửtại 1 bằng 3 khác 0, mẫu có nghiệm đơn, nên TCĐ x = 1. Tửvà mẫu cùng bậc, TCN y = 2. Không có TCX.",
@@ -20767,7 +20767,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-2",
@@ -20778,7 +20778,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {−2}. Tửtại −2 bằng −8≠ 0, nên TCĐ x = −2. Giới hạn ởhai phía vô cực bằng 3, nên TCN y = 3.",
-          "text": "Lời giải Ví dụ 2, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {−2}. Tửtại −2 bằng −8≠ 0, nên TCĐ x = −2. Giới hạn ởhai phía vô cực bằng 3, nên TCN y = 3.",
@@ -20803,7 +20803,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-3",
@@ -20814,7 +20814,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² + 1 > 0 với mọi x, hàm liên tục trên R nên không có TCĐ. Bậc tửnhỏhơn bậc mẫu cho TCN y = 0.",
-          "text": "Lời giải Ví dụ 3, trang 84 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² + 1 > 0 với mọi x, hàm liên tục trên R nên không có TCĐ. Bậc tửnhỏhơn bậc mẫu cho TCN y = 0.",
@@ -20839,7 +20839,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-4",
@@ -20850,7 +20850,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R\\{−2; 2}. Tửtại cảhai nghiệm mẫu đều bằng 9, nên có hai TCĐ x = −2, x = 2. Tỉ số hệ sốcao nhất bằng 2, TCN y = 2.",
-          "text": "Lời giải Ví dụ 4, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R\\{−2; 2}. Tửtại cảhai nghiệm mẫu đều bằng 9, nên có hai TCĐ x = −2, x = 2. Tỉ số hệ sốcao nhất bằng 2, TCN y = 2.",
@@ -20875,7 +20875,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-5",
@@ -20886,7 +20886,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {1}. Chia đa thức: f = x + 1 + 2/(x −1). Có TCĐ x = 1 vì tửtại đó bằng 2; TCX y = x + 1 vì phần dư tiến về0 ở vô cực.",
-          "text": "Lời giải Ví dụ 5, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {1}. Chia đa thức: f = x + 1 + 2/(x −1). Có TCĐ x = 1 vì tửtại đó bằng 2; TCX y = x + 1 vì phần dư tiến về0 ở vô cực.",
@@ -20911,7 +20911,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-6",
@@ -20922,7 +20922,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {−1}. f = x −4 + 8/(x + 1). Tại −1 giới hạn vô cực, TCĐ x = −1; ở vô cực phần dư tiến về0, TCX y = x −4.",
-          "text": "Lời giải Ví dụ 6, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {−1}. f = x −4 + 8/(x + 1). Tại −1 giới hạn vô cực, TCĐ x = −1; ở vô cực phần dư tiến về0, TCX y = x −4.",
@@ -20947,7 +20947,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-7",
@@ -20958,7 +20958,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Mẫu x² + 1 luôn dương nên không có TCĐ. f = 1 + 3/(x² + 1), do đó TCN y = 1.",
-          "text": "Lời giải Ví dụ 7, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Mẫu x² + 1 luôn dương nên không có TCĐ. f = 1 + 3/(x² + 1), do đó TCN y = 1.",
@@ -20983,7 +20983,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-8",
@@ -20994,7 +20994,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R \\ {−1; 1}. Tửtại hai nghiệm mẫu lần lượt bằng 1 và 5, nên có TCĐ x = −1, x = 1. Bậc tửnhỏhơn bậc mẫu nên TCN y = 0.",
-          "text": "Lời giải Ví dụ 8, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R \\ {−1; 1}. Tửtại hai nghiệm mẫu lần lượt bằng 1 và 5, nên có TCĐ x = −1, x = 1. Bậc tửnhỏhơn bậc mẫu nên TCN y = 0.",
@@ -21019,7 +21019,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-9",
@@ -21030,7 +21030,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R\\{−1/2}. f = x/2+3/4+5/[4(2x+1)]. Tửtại −1/2 bằng 5/4≠ 0, TCĐ x = −1/2; TCX y = x/2 + 3/4.",
-          "text": "Lời giải Ví dụ 9, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R\\{−1/2}. f = x/2+3/4+5/[4(2x+1)]. Tửtại −1/2 bằng 5/4≠ 0, TCĐ x = −1/2; TCX y = x/2 + 3/4.",
@@ -21055,7 +21055,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4-source-example-10",
@@ -21066,7 +21066,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x²+1 > 0 trên R nên không có TCĐ. Chia đa thức: f = x+1/(x²+1). Vì f(x)−x →0 khi x →±∞, TCX y = x; không có TCN.",
-          "text": "Lời giải Ví dụ 10, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x²+1 > 0 trên R nên không có TCĐ. Chia đa thức: f = x+1/(x²+1). Vì f(x)−x →0 khi x →±∞, TCX y = x; không có TCN.",
@@ -21091,7 +21091,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.5": [
@@ -21104,7 +21104,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1, TCN y = 0.",
-          "text": "Lời giải Ví dụ 1, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1, TCN y = 0.",
@@ -21143,7 +21143,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-2",
@@ -21154,7 +21154,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = −1, TCN y = 2.",
-          "text": "Lời giải Ví dụ 2, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = −1, TCN y = 2.",
@@ -21193,7 +21193,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-3",
@@ -21204,7 +21204,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCĐ x = ±1, TCN y = 0.",
-          "text": "Lời giải Ví dụ 3, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCĐ x = ±1, TCN y = 0.",
@@ -21243,7 +21243,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-4",
@@ -21254,7 +21254,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 0, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
-          "text": "Lời giải Ví dụ 4, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 0, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
@@ -21293,7 +21293,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-5",
@@ -21304,7 +21304,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
-          "text": "Lời giải Ví dụ 5, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
@@ -21343,7 +21343,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-6",
@@ -21354,7 +21354,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không có TCĐ và TCN. Bảng chỉcho hai giới hạn +∞ở vô cực, chưa đủxác định có TCX hay không hoặc phương trình TCX.",
-          "text": "Lời giải Ví dụ 6, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không có TCĐ và TCN. Bảng chỉcho hai giới hạn +∞ở vô cực, chưa đủxác định có TCX hay không hoặc phương trình TCX.",
@@ -21393,7 +21393,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-7",
@@ -21404,7 +21404,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCN y = ±1, không có TCĐ.",
-          "text": "Lời giải Ví dụ 7, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCN y = ±1, không có TCĐ.",
@@ -21443,7 +21443,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-8",
@@ -21454,7 +21454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCN y = 0, y = 1; không có TCĐ.",
-          "text": "Lời giải Ví dụ 8, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCN y = 0, y = 1; không có TCĐ.",
@@ -21493,7 +21493,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-9",
@@ -21504,7 +21504,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCN y = 0 ởphía dương; không có TCĐ. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
-          "text": "Lời giải Ví dụ 9, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCN y = 0 ởphía dương; không có TCĐ. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
@@ -21543,7 +21543,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5-source-example-10",
@@ -21554,7 +21554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 0, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
-          "text": "Lời giải Ví dụ 10, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 0, không có TCN. Dữ kiện bảng chưa đủkết luận vềTCX ởphía có giới hạn vô cực.",
@@ -21593,7 +21593,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.6": [
@@ -21606,7 +21606,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1; TCN y = 0.",
-          "text": "Lời giải Ví dụ 1, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1; TCN y = 0.",
@@ -21645,7 +21645,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-2",
@@ -21656,7 +21656,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = −1; TCN y = 2.",
-          "text": "Lời giải Ví dụ 2, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = −1; TCN y = 2.",
@@ -21695,7 +21695,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-3",
@@ -21706,7 +21706,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCĐ x = ±1; TCN y = 0.",
-          "text": "Lời giải Ví dụ 3, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCĐ x = ±1; TCN y = 0.",
@@ -21745,7 +21745,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-4",
@@ -21756,7 +21756,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 0; TCX y = x.",
-          "text": "Lời giải Ví dụ 4, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 0; TCX y = x.",
@@ -21795,7 +21795,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-5",
@@ -21806,7 +21806,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1; TCX y = x + 1.",
-          "text": "Lời giải Ví dụ 5, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1; TCX y = x + 1.",
@@ -21845,7 +21845,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-6",
@@ -21856,7 +21856,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không có TCĐ, TCN; hai TCX y = x, y = −x.",
-          "text": "Lời giải Ví dụ 6, trang 85 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không có TCĐ, TCN; hai TCX y = x, y = −x.",
@@ -21895,7 +21895,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-7",
@@ -21906,7 +21906,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCN y = 1, y = −1; không có TCĐ.",
-          "text": "Lời giải Ví dụ 7, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCN y = 1, y = −1; không có TCĐ.",
@@ -21945,7 +21945,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-8",
@@ -21956,7 +21956,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCN y = 0, y = 1; không có TCĐ.",
-          "text": "Lời giải Ví dụ 8, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCN y = 0, y = 1; không có TCĐ.",
@@ -21995,7 +21995,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-9",
@@ -22006,7 +22006,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCN y = 0 ởphía dương; không có TCĐ.",
-          "text": "Lời giải Ví dụ 9, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCN y = 0 ởphía dương; không có TCĐ.",
@@ -22045,7 +22045,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6-source-example-10",
@@ -22056,7 +22056,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 0; không có TCN hoặc TCX.",
-          "text": "Lời giải Ví dụ 10, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 0; không có TCN hoặc TCX.",
@@ -22095,7 +22095,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.7": [
@@ -22108,7 +22108,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không có TCĐ do liên tục trên R; không có TCN hay TCX do tăng trưởng bậc hai. Có 0 đường.",
-          "text": "Lời giải Ví dụ 1, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không có TCĐ do liên tục trên R; không có TCN hay TCX do tăng trưởng bậc hai. Có 0 đường.",
@@ -22133,7 +22133,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-2",
@@ -22144,7 +22144,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chỉ có TCN y = 0, không có nghiệm mẫu thực. Có 1 đường.",
-          "text": "Lời giải Ví dụ 2, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chỉ có TCN y = 0, không có nghiệm mẫu thực. Có 1 đường.",
@@ -22169,7 +22169,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-3",
@@ -22180,7 +22180,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1, TCN y = 2. Có 2 đường.",
-          "text": "Lời giải Ví dụ 3, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1, TCN y = 2. Có 2 đường.",
@@ -22205,7 +22205,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-4",
@@ -22216,7 +22216,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = ±1, TCN y = 0. Có 3 đường.",
-          "text": "Lời giải Ví dụ 4, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = ±1, TCN y = 0. Có 3 đường.",
@@ -22241,7 +22241,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-5",
@@ -22252,7 +22252,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 0, hai TCN y = 1 và y = −1. Có 3 đường.",
-          "text": "Lời giải Ví dụ 5, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 0, hai TCN y = 1 và y = −1. Có 3 đường.",
@@ -22277,7 +22277,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-6",
@@ -22288,7 +22288,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai TCX y = x, y = −x. Không có TCĐ hay TCN. Có 2 đường.",
-          "text": "Lời giải Ví dụ 6, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai TCX y = x, y = −x. Không có TCĐ hay TCN. Có 2 đường.",
@@ -22313,7 +22313,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-7",
@@ -22324,7 +22324,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm bằng x+1 với x≠ 1. Theo định nghĩa giới hạn f −(x+1) →0, đường y = x+1 là TCX; điểm khuyết 1 không tạo TCĐ. Có 1 đường.",
-          "text": "Lời giải Ví dụ 7, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm bằng x+1 với x≠ 1. Theo định nghĩa giới hạn f −(x+1) →0, đường y = x+1 là TCX; điểm khuyết 1 không tạo TCĐ. Có 1 đường.",
@@ -22349,7 +22349,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-8",
@@ -22360,7 +22360,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "ChỉTCĐ x = 0. Ở+∞, f →+∞và f/x →0, nên không có TCN hoặc TCX. Có 1 đường.",
-          "text": "Lời giải Ví dụ 8, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "ChỉTCĐ x = 0. Ở+∞, f →+∞và f/x →0, nên không có TCN hoặc TCX. Có 1 đường.",
@@ -22385,7 +22385,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-9",
@@ -22396,7 +22396,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại ±1, tửkhác 0 nên có hai TCĐ. Ở+∞, giới hạn 1; ở−∞, giới hạn −1. Có 4 đường: x = ±1, y = ±1.",
-          "text": "Lời giải Ví dụ 9, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại ±1, tửkhác 0 nên có hai TCĐ. Ở+∞, giới hạn 1; ở−∞, giới hạn −1. Có 4 đường: x = ±1, y = ±1.",
@@ -22421,7 +22421,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7-source-example-10",
@@ -22432,7 +22432,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1 và TCX y = x + 1. Không có TCN. Có 2 đường, không cộng thêm đường ngang khi đã có TCX ởcùng phía.",
-          "text": "Lời giải Ví dụ 10, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1 và TCX y = x + 1. Không có TCN. Có 2 đường, không cộng thêm đường ngang khi đã có TCX ởcùng phía.",
@@ -22457,7 +22457,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.8": [
@@ -22470,7 +22470,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tửphải triệt tiêu tại 2: 2 + m = 0, nên m = −2. Khi đó hàm bằng 1 trên x≠ 2.",
-          "text": "Lời giải Ví dụ 1, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tửphải triệt tiêu tại 2: 2 + m = 0, nên m = −2. Khi đó hàm bằng 1 trên x≠ 2.",
@@ -22495,7 +22495,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-2",
@@ -22506,7 +22506,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giới hạn ở vô cực bằng m, kểcảm = 0. Vậy m = 3.",
-          "text": "Lời giải Ví dụ 2, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giới hạn ở vô cực bằng m, kểcảm = 0. Vậy m = 3.",
@@ -22531,7 +22531,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-3",
@@ -22542,7 +22542,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tửtại 1 bằng 1 −m. TCĐ tồn tại khi m≠ 1; tại m = 1 Chỉ có điểm khuyết.",
-          "text": "Lời giải Ví dụ 3, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tửtại 1 bằng 1 −m. TCĐ tồn tại khi m≠ 1; tại m = 1 Chỉ có điểm khuyết.",
@@ -22567,7 +22567,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-4",
@@ -22578,7 +22578,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chia được f = x + m + 1 + (m + 2)/(x −1). Cần m + 1 = 3, nên m = 2.",
-          "text": "Lời giải Ví dụ 4, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chia được f = x + m + 1 + (m + 2)/(x −1). Cần m + 1 = 3, nên m = 2.",
@@ -22603,7 +22603,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-5",
@@ -22614,7 +22614,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m≠ −1, có TCĐ x = 1, TCN y = m. Nếu m = −1, hàm bằng −1 trên miền cũ và Chỉ có TCN. Vậy m≠ −1.",
-          "text": "Lời giải Ví dụ 5, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m≠ −1, có TCĐ x = 1, TCN y = m. Nếu m = −1, hàm bằng −1 trên miền cũ và Chỉ có TCN. Vậy m≠ −1.",
@@ -22639,7 +22639,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-6",
@@ -22650,7 +22650,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tửtriệt tiêu tại đúng một trong ±1 khi m = 1 hoặc m = −1. Mỗi trường hợp khử một nhân tử, còn một TCĐ.",
-          "text": "Lời giải Ví dụ 6, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tửtriệt tiêu tại đúng một trong ±1 khi m = 1 hoặc m = −1. Mỗi trường hợp khử một nhân tử, còn một TCĐ.",
@@ -22675,7 +22675,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-7",
@@ -22686,7 +22686,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m > 0 mẫu không bằng 0. Nếu m = 0 có TCĐ 0; nếu m < 0 có hai TCĐ. Vậy m > 0.",
-          "text": "Lời giải Ví dụ 7, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m > 0 mẫu không bằng 0. Nếu m = 0 có TCĐ 0; nếu m < 0 có hai TCĐ. Vậy m > 0.",
@@ -22711,7 +22711,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-8",
@@ -22722,7 +22722,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giới hạn ở vô cực bằng m, nên m = 0. Khi đó tửgiảm bậc nhưng giới hạn vẫn đúng.",
-          "text": "Lời giải Ví dụ 8, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giới hạn ở vô cực bằng m, nên m = 0. Khi đó tửgiảm bậc nhưng giới hạn vẫn đúng.",
@@ -22747,7 +22747,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-9",
@@ -22758,7 +22758,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 2m+1 = 0, tức m = −1/2. Tửtại 2 bằng 3 khác 0 nên thực sựcó TCĐ. Trường hợp m = 0 không có nghiệm mẫu.",
-          "text": "Lời giải Ví dụ 9, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 2m+1 = 0, tức m = −1/2. Tửtại 2 bằng 3 khác 0 nên thực sựcó TCĐ. Trường hợp m = 0 không có nghiệm mẫu.",
@@ -22783,7 +22783,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8-source-example-10",
@@ -22794,7 +22794,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chia: f = x + 2 −m + (4 −2m)/(x −2). Cần 2 −m = −1, nên m = 3; phần dư khi đó khác 0.",
-          "text": "Lời giải Ví dụ 10, trang 86 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chia: f = x + 2 −m + (4 −2m)/(x −2). Cần 2 −m = −1, nên m = 3; phần dư khi đó khác 0.",
@@ -22819,7 +22819,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "5.9": [
@@ -22832,7 +22832,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 1. Rút gọn x + 1, giới hạn tại 1 bằng 2; điểm khuyết (1; 2), không có TCĐ.",
-          "text": "Lời giải Ví dụ 1, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại 1. Rút gọn x + 1, giới hạn tại 1 bằng 2; điểm khuyết (1; 2), không có TCĐ.",
@@ -22857,7 +22857,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-2",
@@ -22868,7 +22868,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại ±1. Rút gọn 1/(x + 1). Khuyết tại (1; 1/2); TCĐ x = −1.",
-          "text": "Lời giải Ví dụ 2, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại ±1. Rút gọn 1/(x + 1). Khuyết tại (1; 1/2); TCĐ x = −1.",
@@ -22893,7 +22893,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-3",
@@ -22904,7 +22904,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 1. Hàm bằng x −1 trên miền cũ; khuyết tại (1; 0), không có TCĐ.",
-          "text": "Lời giải Ví dụ 3, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại 1. Hàm bằng x −1 trên miền cũ; khuyết tại (1; 0), không có TCĐ.",
@@ -22929,7 +22929,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-4",
@@ -22940,7 +22940,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 1. Rút gọn 1/(x −1) nên giới hạn vô cực, có TCĐ x = 1 dù tửcũng bằng 0 tại đó.",
-          "text": "Lời giải Ví dụ 4, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại 1. Rút gọn 1/(x −1) nên giới hạn vô cực, có TCĐ x = 1 dù tửcũng bằng 0 tại đó.",
@@ -22965,7 +22965,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-5",
@@ -22976,7 +22976,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Mẫu (x −2)(x + 1), tử(x −2)(x + 2). Khuyết tại (2; 4/3); TCĐ x = −1.",
-          "text": "Lời giải Ví dụ 5, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Mẫu (x −2)(x + 1), tử(x −2)(x + 2). Khuyết tại (2; 4/3); TCĐ x = −1.",
@@ -23001,7 +23001,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-6",
@@ -23012,7 +23012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại ±1. Hàm rút gọn x² −1; hai điểm khuyết (−1; 0), (1; 0); không có TCĐ.",
-          "text": "Lời giải Ví dụ 6, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại ±1. Hàm rút gọn x² −1; hai điểm khuyết (−1; 0), (1; 0); không có TCĐ.",
@@ -23037,7 +23037,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-7",
@@ -23048,7 +23048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 0,2. Rút gọn x/(x −2). Khuyết tại (0; 0); TCĐ x = 2.",
-          "text": "Lời giải Ví dụ 7, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại 0,2. Rút gọn x/(x −2). Khuyết tại (0; 0); TCĐ x = 2.",
@@ -23073,7 +23073,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-8",
@@ -23084,7 +23084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Miền loại 1. Rút gọn (x + 1)/(x −1). Tại 1 vẫn còn mẫu bằng 0, nên TCĐ x = 1, không phải điểm khuyết.",
-          "text": "Lời giải Ví dụ 8, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Miền loại 1. Rút gọn (x + 1)/(x −1). Tại 1 vẫn còn mẫu bằng 0, nên TCĐ x = 1, không phải điểm khuyết.",
@@ -23109,7 +23109,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-9",
@@ -23120,7 +23120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = [0; +∞) \\ {1}. Nhân liên hợp được 1/(√x + 1), giới hạn tại 1 bằng 1/2. Khuyết tại (1; 1/2).",
-          "text": "Lời giải Ví dụ 9, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = [0; +∞) \\ {1}. Nhân liên hợp được 1/(√x + 1), giới hạn tại 1 bằng 1/2. Khuyết tại (1; 1/2).",
@@ -23145,7 +23145,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9-source-example-10",
@@ -23156,7 +23156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi m = 1, hàm bằng 1 trên x≠ 1, khuyết tại (1; 1). Với m≠ 1, tửtại 1 khác 0, nên có TCĐ x = 1.",
-          "text": "Lời giải Ví dụ 10, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khi m = 1, hàm bằng 1 trên x≠ 1, khuyết tại (1; 1). Với m≠ 1, tửtại 1 khác 0, nên có TCĐ x = 1.",
@@ -23195,7 +23195,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.1": [
@@ -23208,7 +23208,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
-          "text": "Lời giải Ví dụ 1, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
@@ -23247,7 +23247,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-2",
@@ -23258,7 +23258,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
-          "text": "Lời giải Ví dụ 2, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
@@ -23297,7 +23297,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-3",
@@ -23308,7 +23308,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
-          "text": "Lời giải Ví dụ 3, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
@@ -23347,7 +23347,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-4",
@@ -23358,7 +23358,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
-          "text": "Lời giải Ví dụ 4, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
@@ -23397,7 +23397,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-5",
@@ -23408,7 +23408,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
-          "text": "Lời giải Ví dụ 5, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
@@ -23447,7 +23447,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-6",
@@ -23458,7 +23458,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
-          "text": "Lời giải Ví dụ 6, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
@@ -23497,7 +23497,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-7",
@@ -23508,7 +23508,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn A(x) = ¹ ₓ. f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞). f′(x) = −¹ ₓ₂ . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = 2; B(1/2) = −2; C(1/2) = 3.",
-          "text": "Lời giải Ví dụ 7, trang 87 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn A(x) = ¹ ₓ. f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞). f′(x) = −¹ ₓ₂ . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = 2; B(1/2) = −2; C(1/2) = 3.",
@@ -23547,7 +23547,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-8",
@@ -23558,7 +23558,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn C(x) = x+ ¹ ₓ. f′(x) = 1−¹ ₓ₂ . Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1). f′(x) = 1 −¹ ₓ₂ . cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁵ ₂; B(1/2) = ⁷ ₂; C(1/2) = ⁵ ₂.",
-          "text": "Lời giải Ví dụ 8, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn C(x) = x+ ¹ ₓ. f′(x) = 1−¹ ₓ₂ . Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 0), (0; 1). f′(x) = 1 −¹ ₓ₂ . cực đại tại x = −1, giá trị−2; cực tiểu tại x = 1, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁵ ₂; B(1/2) = ⁷ ₂; C(1/2) = ⁵ ₂.",
@@ -23597,7 +23597,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-9",
@@ -23608,7 +23608,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn B(x) = eˣ. f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = 1 + e 1 ² ; B(1/2) = e 1 ² ; C(1/2) = −e 1 2 .",
-          "text": "Lời giải Ví dụ 9, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn B(x) = eˣ. f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = 1 + e 1 ² ; B(1/2) = e 1 ² ; C(1/2) = −e 1 2 .",
@@ -23647,7 +23647,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.1-source-example-10",
@@ -23658,7 +23658,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn A(x) = −x ( x² + 1 ) . f′(x) = −3x² −1. Đồng biến: không có; nghịch biến: (−∞; ∞). f′(x) = −3x² −1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁵ ₈; B(1/2) = ⁵ ₈; C(1/2) = ³ ₈.",
-          "text": "Lời giải Ví dụ 10, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn A(x) = −x ( x² + 1 ) . f′(x) = −3x² −1. Đồng biến: không có; nghịch biến: (−∞; ∞). f′(x) = −3x² −1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁵ ₈; B(1/2) = ⁵ ₈; C(1/2) = ³ ₈.",
@@ -23697,7 +23697,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.2": [
@@ -23710,7 +23710,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng. f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1.",
-          "text": "Lời giải Ví dụ 1, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng. f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1).f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1.",
@@ -23749,7 +23749,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-2",
@@ -23760,7 +23760,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Bảng thuộc hàm f(x) = −x² + 2x + 2, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
-          "text": "Lời giải Ví dụ 2, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Bảng thuộc hàm f(x) = −x² + 2x + 2, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
@@ -23799,7 +23799,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-3",
@@ -23810,7 +23810,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2.",
-          "text": "Lời giải Ví dụ 3, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1).f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2.",
@@ -23849,7 +23849,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-4",
@@ -23860,7 +23860,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Bảng thuộc hàm f(x) = x³, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
-          "text": "Lời giải Ví dụ 4, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Bảng thuộc hàm f(x) = x³, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
@@ -23899,7 +23899,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-5",
@@ -23910,7 +23910,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng. f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0.",
-          "text": "Lời giải Ví dụ 5, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng. f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1).f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0.",
@@ -23949,7 +23949,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-6",
@@ -23960,7 +23960,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Bảng thuộc hàm f(x) = −x⁴ + 2x² + 1, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
-          "text": "Lời giải Ví dụ 6, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Bảng thuộc hàm f(x) = −x⁴ + 2x² + 1, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
@@ -23999,7 +23999,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-7",
@@ -24010,7 +24010,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng. f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).f′(x) = −¹ ₓ2 . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 7, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng. f′(x) = −¹ ₓ₂ . Đồng biến: không có; nghịch biến: (−∞; 0), (0; ∞).f′(x) = −¹ ₓ2 . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -24049,7 +24049,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-8",
@@ -24060,7 +24060,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Bảng thuộc hàm f(x) = x + ¹ ₓ, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
-          "text": "Lời giải Ví dụ 8, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Bảng thuộc hàm f(x) = x + ¹ ₓ, còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
@@ -24099,7 +24099,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-9",
@@ -24110,7 +24110,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng. f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có.f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng. f′(x) = eˣ. Đồng biến: (−∞; ∞); nghịch biến: không có.f′(x) = eˣ. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị.",
@@ -24149,7 +24149,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2-source-example-10",
@@ -24160,7 +24160,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Bảng thuộc hàm f(x) = −x ( x² + 1 ) , còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
-          "text": "Lời giải Ví dụ 10, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Bảng thuộc hàm f(x) = −x ( x² + 1 ) , còn F ′ = −f′. Các chiều biến thiên của F đều ngược với bảng; những cực đại và cực tiểu cũng đổi loại.",
@@ -24199,7 +24199,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.3": [
@@ -24212,7 +24212,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ > 0 trên (−1; 1), nên f(−1) < f(1).",
-          "text": "Lời giải Ví dụ 1, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ > 0 trên (−1; 1), nên f(−1) < f(1).",
@@ -24251,7 +24251,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-2",
@@ -24262,7 +24262,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. Tung độf′ vẫn dương trên khoảng, nên f đồng biến. Độ dốc của đồ thị f′ không quyết định dấu f′.",
-          "text": "Lời giải Ví dụ 2, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. Tung độf′ vẫn dương trên khoảng, nên f đồng biến. Độ dốc của đồ thị f′ không quyết định dấu f′.",
@@ -24301,7 +24301,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-3",
@@ -24312,7 +24312,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 0 chỉtại 0. Dấu đổi âm sang dương, nên f có cực tiểu tại 0 và tiếp tuyến nằm ngang ởđó.",
-          "text": "Lời giải Ví dụ 3, trang 88 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 0 chỉtại 0. Dấu đổi âm sang dương, nên f có cực tiểu tại 0 và tiếp tuyến nằm ngang ởđó.",
@@ -24351,7 +24351,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-4",
@@ -24362,7 +24362,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ đổi dương sang âm qua 0, nên 0 là điểm cực đại.",
-          "text": "Lời giải Ví dụ 4, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ đổi dương sang âm qua 0, nên 0 là điểm cực đại.",
@@ -24401,7 +24401,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-5",
@@ -24412,7 +24412,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. f′ ≥0 và không đổi dấu qua 1. f vẫn đồng biến; tại 1 Chỉ có tiếp tuyến nằm ngang.",
-          "text": "Lời giải Ví dụ 5, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. f′ ≥0 và không đổi dấu qua 1. f vẫn đồng biến; tại 1 Chỉ có tiếp tuyến nằm ngang.",
@@ -24451,7 +24451,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-6",
@@ -24462,7 +24462,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ ≤0, chỉbằng 0 tại −1. Hàm giảm, nên f(−2) > f(−1) > f(0).",
-          "text": "Lời giải Ví dụ 6, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ ≤0, chỉbằng 0 tại −1. Hàm giảm, nên f(−2) > f(−1) > f(0).",
@@ -24501,7 +24501,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-7",
@@ -24512,7 +24512,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai điểm thuộc khoảng (−1; 2) nơi f′ < 0. Do đó f(0) > f(1).",
-          "text": "Lời giải Ví dụ 7, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai điểm thuộc khoảng (−1; 2) nơi f′ < 0. Do đó f(0) > f(1).",
@@ -24551,7 +24551,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-8",
@@ -24562,7 +24562,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dấu −, +, −qua −2, 1. Cực tiểu tại −2, cực đại tại 1.",
-          "text": "Lời giải Ví dụ 8, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dấu −, +, −qua −2, 1. Cực tiểu tại −2, cực đại tại 1.",
@@ -24601,7 +24601,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-9",
@@ -24612,7 +24612,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nghiệm f′ = 0 là −2, 0, 2 và đều đổi dấu. Có 3 điểm tiếp tuyến nằm ngang và 3 điểm cực trị.",
-          "text": "Lời giải Ví dụ 9, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nghiệm f′ = 0 là −2, 0, 2 và đều đổi dấu. Có 3 điểm tiếp tuyến nằm ngang và 3 điểm cực trị.",
@@ -24651,7 +24651,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3-source-example-10",
@@ -24662,7 +24662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không xác định được f(0) vì có thểcộng hằng sốvào f. Đạo hàm không đổi dấu tại −2, đổi âm sang dương tại 1; Chỉ có cực tiểu tại 1.",
-          "text": "Lời giải Ví dụ 10, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không xác định được f(0) vì có thểcộng hằng sốvào f. Đạo hàm không đổi dấu tại −2, đổi âm sang dương tại 1; Chỉ có cực tiểu tại 1.",
@@ -24701,7 +24701,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.4": [
@@ -24714,7 +24714,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 1, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24739,7 +24739,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-2",
@@ -24750,7 +24750,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = −3 (x −1) (x + 1). Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −3 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−1; cực đại tại x = 1, giá trị3. f′′ = −6x, nên tâm đối xứng I(0; 1). Giới hạn ở−∞, +∞lần lượt là ∞, −∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 2, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = −3 (x −1) (x + 1). Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −3 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−1; cực đại tại x = 1, giá trị3. f′′ = −6x, nên tâm đối xứng I(0; 1). Giới hạn ở−∞, +∞lần lượt là ∞, −∞; không có tiệm cận.",
@@ -24775,7 +24775,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-3",
@@ -24786,7 +24786,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3 ( x² + 1 ) . Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3 ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 3, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3 ( x² + 1 ) . Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3 ( x² + 1 ) . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24811,7 +24811,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-4",
@@ -24822,7 +24822,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 4, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24847,7 +24847,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-5",
@@ -24858,7 +24858,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3 (x −1)². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3 (x −1)². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6 (x −1), nên tâm đối xứng I(1; 2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 5, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3 (x −1)². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3 (x −1)². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. f′′ = 6 (x −1), nên tâm đối xứng I(1; 2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24883,7 +24883,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-6",
@@ -24894,7 +24894,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3x (x −2). Đồng biến: (−∞; 0), (2; ∞); nghịch biến: (0; 2). f′(x) = 3x (x −2). cực đại tại x = 0, giá trị0; cực tiểu tại x = 2, giá trị−4. f′′ = 6 (x −1), nên tâm đối xứng I(1; −2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 6, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3x (x −2). Đồng biến: (−∞; 0), (2; ∞); nghịch biến: (0; 2). f′(x) = 3x (x −2). cực đại tại x = 0, giá trị0; cực tiểu tại x = 2, giá trị−4. f′′ = 6 (x −1), nên tâm đối xứng I(1; −2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24919,7 +24919,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-7",
@@ -24930,7 +24930,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 3 (x −3) (x −1). Đồng biến: (−∞; 1), (3; ∞); nghịch biến: (1; 3). f′(x) = 3 (x −3) (x −1). cực đại tại x = 1, giá trị4; cực tiểu tại x = 3, giá trị0. f′′ = 6 (x −2), nên tâm đối xứng I(2; 2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 7, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 3 (x −3) (x −1). Đồng biến: (−∞; 1), (3; ∞); nghịch biến: (1; 3). f′(x) = 3 (x −3) (x −1). cực đại tại x = 1, giá trị4; cực tiểu tại x = 3, giá trị0. f′′ = 6 (x −2), nên tâm đối xứng I(2; 2). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -24955,7 +24955,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-8",
@@ -24966,7 +24966,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = −6 (x −1) (x + 1). Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −6 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−4; cực đại tại x = 1, giá trị4. f′′ = −12x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là ∞, −∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 8, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = −6 (x −1) (x + 1). Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −6 (x −1) (x + 1). cực tiểu tại x = −1, giá trị−4; cực đại tại x = 1, giá trị4. f′′ = −12x, nên tâm đối xứng I(0; 0). Giới hạn ở−∞, +∞lần lượt là ∞, −∞; không có tiệm cận.",
@@ -24991,7 +24991,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-9",
@@ -25002,7 +25002,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = 6x (x + 1). Đồng biến: (−∞; −1), (0; ∞); nghịch biến: (−1; 0). f′(x) = 6x (x + 1). cực đại tại x = −1, giá trị1; cực tiểu tại x = 0, giá trị0. f′′ = 6 (2x + 1), nên tâm đối xứng I(−¹ ₂; ¹ ₂). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 9, trang 89 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = 6x (x + 1). Đồng biến: (−∞; −1), (0; ∞); nghịch biến: (−1; 0). f′(x) = 6x (x + 1). cực đại tại x = −1, giá trị1; cực tiểu tại x = 0, giá trị0. f′′ = 6 (2x + 1), nên tâm đối xứng I(−¹ ₂; ¹ ₂). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -25027,7 +25027,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4-source-example-10",
@@ -25038,7 +25038,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R. f′(x) = (x −3) (x + 1). Đồng biến: (−∞; −1), (3; ∞); nghịch biến: (−1; 3). f′(x) = (x −3) (x + 1). cực đại tại x = −1, giá trị⁸ ₃; cực tiểu tại x = 3, giá trị−8. f′′ = 2 (x −1), nên tâm đối xứng I(1; −⁸ ₃). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
-          "text": "Lời giải Ví dụ 10, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R. f′(x) = (x −3) (x + 1). Đồng biến: (−∞; −1), (3; ∞); nghịch biến: (−1; 3). f′(x) = (x −3) (x + 1). cực đại tại x = −1, giá trị⁸ ₃; cực tiểu tại x = 3, giá trị−8. f′′ = 2 (x −1), nên tâm đối xứng I(1; −⁸ ₃). Giới hạn ở−∞, +∞lần lượt là −∞, ∞; không có tiệm cận.",
@@ -25063,7 +25063,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.5": [
@@ -25076,7 +25076,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). f′(x) = − 3/(x−1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = 1; TCN y = 2.",
-          "text": "Lời giải Ví dụ 1, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 3/(x−1)² . Đồng biến: không có; nghịch biến: (−∞; 1), (1; ∞). f′(x) = − 3/(x−1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = 1; TCN y = 2.",
@@ -25101,7 +25101,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-2",
@@ -25112,7 +25112,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 3/(x+1)² . Đồng biến: (−∞; −1), (−1; ∞); nghịch biến: không có. f′(x) = 3/(x+1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = −1; TCN y = 1.",
-          "text": "Lời giải Ví dụ 2, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 3/(x+1)² . Đồng biến: (−∞; −1), (−1; ∞); nghịch biến: không có. f′(x) = 3/(x+1)² . Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. TCĐ x = −1; TCN y = 1.",
@@ -25137,7 +25137,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-3",
@@ -25148,7 +25148,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 0. Đồng biến: không có; nghịch biến: không có. f′(x) = 0. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. không có TCĐ; TCN y = ¹ ₂; điểm khuyết (−1; ¹ ₂).",
-          "text": "Lời giải Ví dụ 3, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 0. Đồng biến: không có; nghịch biến: không có. f′(x) = 0. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. không có TCĐ; TCN y = ¹ ₂; điểm khuyết (−1; ¹ ₂).",
@@ -25173,7 +25173,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-4",
@@ -25184,7 +25184,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . Đồng biến: (−∞; 1 − √ 2), (1 + √ 2; ∞); nghịch biến: (1 − √ 2; 1), (1; 1 + √ 2). f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . cực đại tại x = 1 − √ 2, giá trị2 −2 √ 2; cực tiểu tại x = 1 + √ 2, giá trị2 + 2 √ 2. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = 1; TCX y = x + 1.",
-          "text": "Lời giải Ví dụ 4, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . Đồng biến: (−∞; 1 − √ 2), (1 + √ 2; ∞); nghịch biến: (1 − √ 2; 1), (1; 1 + √ 2). f′(x) = ˣ²⁻²ˣ⁻¹ /((x−1)2) . cực đại tại x = 1 − √ 2, giá trị2 −2 √ 2; cực tiểu tại x = 1 + √ 2, giá trị2 + 2 √ 2. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = 1; TCX y = x + 1.",
@@ -25209,7 +25209,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-5",
@@ -25220,7 +25220,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = −^((x−1)(x+1)) /((x2+1)2) . Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −^((x−1)(x+1)) /((x2+1)2) . cực tiểu tại x = −1, giá trị−¹ ₂; cực đại tại x = 1, giá trị¹ ₂. không có TCĐ; TCN y = 0.",
-          "text": "Lời giải Ví dụ 5, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = −^((x−1)(x+1)) /((x2+1)2) . Đồng biến: (−1; 1); nghịch biến: (−∞; −1), (1; ∞). f′(x) = −^((x−1)(x+1)) /((x2+1)2) . cực tiểu tại x = −1, giá trị−¹ ₂; cực đại tại x = 1, giá trị¹ ₂. không có TCĐ; TCN y = 0.",
@@ -25245,7 +25245,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-6",
@@ -25256,7 +25256,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = − 2x /((x−1)2(x+1)2) . Đồng biến: (−∞; −1), (−1; 0); nghịch biến: (0; 1), (1; ∞). f′(x) = − 2x /((x−1)2(x+1)2) . cực đại tại x = 0, giá trị−1. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = −1, x = 1; TCN y = 0.",
-          "text": "Lời giải Ví dụ 6, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = − 2x /((x−1)2(x+1)2) . Đồng biến: (−∞; −1), (−1; 0); nghịch biến: (0; 1), (1; ∞). f′(x) = − 2x /((x−1)2(x+1)2) . cực đại tại x = 0, giá trị−1. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = −1, x = 1; TCN y = 0.",
@@ -25281,7 +25281,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-7",
@@ -25292,7 +25292,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 2x /((x2+1)2) . Đồng biến: (0; ∞); nghịch biến: (−∞; 0). f′(x) = 2x /((x2+1)2) . cực tiểu tại x = 0, giá trị0. không có TCĐ; TCN y = 1.",
-          "text": "Lời giải Ví dụ 7, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 2x /((x2+1)2) . Đồng biến: (0; ∞); nghịch biến: (−∞; 0). f′(x) = 2x /((x2+1)2) . cực tiểu tại x = 0, giá trị0. không có TCĐ; TCN y = 1.",
@@ -25317,7 +25317,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-8",
@@ -25328,7 +25328,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1. Đồng biến: (−∞; 1), (1; ∞); nghịch biến: không có. f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. không có TCĐ; TCX y = x + 1; điểm khuyết (1; 2).",
-          "text": "Lời giải Ví dụ 8, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1. Đồng biến: (−∞; 1), (1; ∞); nghịch biến: không có. f′(x) = 1. Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. không có TCĐ; TCX y = x + 1; điểm khuyết (1; 2).",
@@ -25353,7 +25353,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-9",
@@ -25364,7 +25364,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = 1−⁴ ₓ₂ . Đồng biến: (−∞; −2), (2; ∞); nghịch biến: (−2; 0), (0; 2). f′(x) = 1−⁴ ₓ2 . cực đại tại x = −2, giá trị−4; cực tiểu tại x = 2, giá trị4. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = 0; TCX y = x.",
-          "text": "Lời giải Ví dụ 9, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = 1−⁴ ₓ₂ . Đồng biến: (−∞; −2), (2; ∞); nghịch biến: (−2; 0), (0; 2). f′(x) = 1−⁴ ₓ2 . cực đại tại x = −2, giá trị−4; cực tiểu tại x = 2, giá trị4. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = 0; TCX y = x.",
@@ -25389,7 +25389,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5-source-example-10",
@@ -25400,7 +25400,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(x) = ^(x(x+2)) /((x+1)2) . Đồng biến: (−∞; −2), (0; ∞); nghịch biến: (−2; −1), (−1; 0). f′(x) = x(x+2) /((x+1)2) . cực đại tại x = −2, giá trị−2; cực tiểu tại x = 0, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = −1; TCX y = x + 1.",
-          "text": "Lời giải Ví dụ 10, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(x) = ^(x(x+2)) /((x+1)2) . Đồng biến: (−∞; −2), (0; ∞); nghịch biến: (−2; −1), (−1; 0). f′(x) = x(x+2) /((x+1)2) . cực đại tại x = −2, giá trị−2; cực tiểu tại x = 0, giá trị2. Các điểm bị loại khỏi miền không phải điểm cực trị. TCĐ x = −1; TCX y = x + 1.",
@@ -25425,7 +25425,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.6": [
@@ -25438,7 +25438,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giữhoành độ và cộng 3 vào tung độ: (1; 1).",
-          "text": "Lời giải Ví dụ 1, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giữhoành độ và cộng 3 vào tung độ: (1; 1).",
@@ -25477,7 +25477,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-2",
@@ -25488,7 +25488,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tịnh tiến xuống 4 đơn vị, không đổi loại cực trị. Điểm mới (2; 1).",
-          "text": "Lời giải Ví dụ 2, trang 90 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tịnh tiến xuống 4 đơn vị, không đổi loại cực trị. Điểm mới (2; 1).",
@@ -25527,7 +25527,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-3",
@@ -25538,7 +25538,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cộng 2 vào mọi giá trị, được [1; 5].",
-          "text": "Lời giải Ví dụ 3, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cộng 2 vào mọi giá trị, được [1; 5].",
@@ -25563,7 +25563,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-4",
@@ -25574,7 +25574,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCN y = 3; TCĐ vẫn x = 1 vì tịnh tiến đứng không đổi hoành độ.",
-          "text": "Lời giải Ví dụ 4, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCN y = 3; TCĐ vẫn x = 1 vì tịnh tiến đứng không đổi hoành độ.",
@@ -25613,7 +25613,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-5",
@@ -25624,7 +25624,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g(0) = 3 + a = 0, nên a = −3.",
-          "text": "Lời giải Ví dụ 5, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g(0) = 3 + a = 0, nên a = −3.",
@@ -25663,7 +25663,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-6",
@@ -25674,7 +25674,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vẫn nghịch biến vì g′ = f′. Tịnh tiến đứng không đổi chiều biến thiên.",
-          "text": "Lời giải Ví dụ 6, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vẫn nghịch biến vì g′ = f′. Tịnh tiến đứng không đổi chiều biến thiên.",
@@ -25699,7 +25699,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-7",
@@ -25710,7 +25710,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đỉnh cũ (0; −1), nên tịnh tiến lên 1; hàm mới x².",
-          "text": "Lời giải Ví dụ 7, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đỉnh cũ (0; −1), nên tịnh tiến lên 1; hàm mới x².",
@@ -25735,7 +25735,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-8",
@@ -25746,7 +25746,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g = 0 ⇐⇒f = 2. Có đúng ba giao điểm.",
-          "text": "Lời giải Ví dụ 8, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g = 0 ⇐⇒f = 2. Có đúng ba giao điểm.",
@@ -25785,7 +25785,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-9",
@@ -25796,7 +25796,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g −(2x −4) = f −(2x −1) →0. TCX mới y = 2x −4.",
-          "text": "Lời giải Ví dụ 9, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g −(2x −4) = f −(2x −1) →0. TCX mới y = 2x −4.",
@@ -25835,7 +25835,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6-source-example-10",
@@ -25846,7 +25846,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "4 + a = 2(−3 + a), nên a = 10. Miền lấy GTLN, GTNN không đổi vì chỉtịnh tiến đứng.",
-          "text": "Lời giải Ví dụ 10, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "4 + a = 2(−3 + a), nên a = 10. Miền lấy GTLN, GTNN không đổi vì chỉtịnh tiến đứng.",
@@ -25871,7 +25871,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.7": [
@@ -25884,7 +25884,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tịnh tiến phải 1 đơn vị: (3; 3).",
-          "text": "Lời giải Ví dụ 1, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tịnh tiến phải 1 đơn vị: (3; 3).",
@@ -25923,7 +25923,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-2",
@@ -25934,7 +25934,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tịnh tiến trái 2 đơn vị: (−3; 4).",
-          "text": "Lời giải Ví dụ 2, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tịnh tiến trái 2 đơn vị: (−3; 4).",
@@ -25973,7 +25973,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-3",
@@ -25984,7 +25984,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 0 < x −2 < 3, nên Dg = (2; 5).",
-          "text": "Lời giải Ví dụ 3, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 0 < x −2 < 3, nên Dg = (2; 5).",
@@ -26009,7 +26009,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-4",
@@ -26020,7 +26020,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tịnh tiến trái 3: điểm mới (−2; −2), vẫn là cực tiểu.",
-          "text": "Lời giải Ví dụ 4, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tịnh tiến trái 3: điểm mới (−2; −2), vẫn là cực tiểu.",
@@ -26045,7 +26045,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-5",
@@ -26056,7 +26056,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ chuyển thành x = 6, TCN giữy = 1.",
-          "text": "Lời giải Ví dụ 5, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ chuyển thành x = 6, TCN giữy = 1.",
@@ -26095,7 +26095,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-6",
@@ -26106,7 +26106,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải x + 1 = −1 hoặc 2, được x = −2, 1.",
-          "text": "Lời giải Ví dụ 6, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải x + 1 = −1 hoặc 2, được x = −2, 1.",
@@ -26131,7 +26131,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-7",
@@ -26142,7 +26142,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi 1 < x −2 < 3, tức x ∈(3; 5). Tịnh tiến phải 2.",
-          "text": "Lời giải Ví dụ 7, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khi 1 < x −2 < 3, tức x ∈(3; 5). Tịnh tiến phải 2.",
@@ -26167,7 +26167,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-8",
@@ -26178,7 +26178,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới g(x) = f(x + 3) −2 = (x + 3)² −2, đỉnh (−3; −2).",
-          "text": "Lời giải Ví dụ 8, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm mới g(x) = f(x + 3) −2 = (x + 3)² −2, đỉnh (−3; −2).",
@@ -26203,7 +26203,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-9",
@@ -26214,7 +26214,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Thay biến cũ u = x −3, tiệm cận mới y = 2(x −3) + 1 = 2x −5.",
-          "text": "Lời giải Ví dụ 9, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Thay biến cũ u = x −3, tiệm cận mới y = 2(x −3) + 1 = 2x −5.",
@@ -26253,7 +26253,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7-source-example-10",
@@ -26264,7 +26264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hoành độmới bằng 2 + a. Giải 2 + a = −1, được a = −3, tức g(x) = f(x + 3).",
-          "text": "Lời giải Ví dụ 10, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hoành độmới bằng 2 + a. Giải 2 + a = −1, được a = −3, tức g(x) = f(x + 3).",
@@ -26289,7 +26289,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.8": [
@@ -26302,7 +26302,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đối xứng qua Ox: (2; 3).",
-          "text": "Lời giải Ví dụ 1, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đối xứng qua Ox: (2; 3).",
@@ -26341,7 +26341,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-2",
@@ -26352,7 +26352,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đối xứng qua Oy: (−2; −3).",
-          "text": "Lời giải Ví dụ 2, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đối xứng qua Oy: (−2; −3).",
@@ -26391,7 +26391,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-3",
@@ -26402,7 +26402,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cực tiểu tại (1; −4) vì đổi dấu tung độđảo loại cực trị.",
-          "text": "Lời giải Ví dụ 3, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cực tiểu tại (1; −4) vì đổi dấu tung độđảo loại cực trị.",
@@ -26427,7 +26427,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-4",
@@ -26438,7 +26438,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cực đại tại (−1; 4). Đối xứng qua Oy không đổi loại cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cực đại tại (−1; 4). Đối xứng qua Oy không đổi loại cực trị.",
@@ -26463,7 +26463,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-5",
@@ -26474,7 +26474,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = −f′, nên g nghịch biến trên (1; 3).",
-          "text": "Lời giải Ví dụ 5, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = −f′, nên g nghịch biến trên (1; 3).",
@@ -26499,7 +26499,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-6",
@@ -26510,7 +26510,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoảng mới (−3; −1); g′ = −f′(−x) < 0, nên nghịch biến trên khoảng này.",
-          "text": "Lời giải Ví dụ 6, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoảng mới (−3; −1); g′ = −f′(−x) < 0, nên nghịch biến trên khoảng này.",
@@ -26535,7 +26535,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-7",
@@ -26546,7 +26546,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 0 < −x ≤2, tương đương −2 ≤x < 0. Miền mới [−2; 0).",
-          "text": "Lời giải Ví dụ 7, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 0 < −x ≤2, tương đương −2 ≤x < 0. Miền mới [−2; 0).",
@@ -26571,7 +26571,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-8",
@@ -26582,7 +26582,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = 1, TCX y = −2x −3.",
-          "text": "Lời giải Ví dụ 8, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = 1, TCX y = −2x −3.",
@@ -26621,7 +26621,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-9",
@@ -26632,7 +26632,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "TCĐ x = −1, TCX y = −2x + 3.",
-          "text": "Lời giải Ví dụ 9, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "TCĐ x = −1, TCX y = −2x + 3.",
@@ -26671,7 +26671,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8-source-example-10",
@@ -26682,7 +26682,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(−x) = −f(x) với mọi x. Hai đồ thịtrùng nhau, dù hai phép đối xứng được mô tảkhác nhau.",
-          "text": "Lời giải Ví dụ 10, trang 91 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(−x) = −f(x) với mọi x. Hai đồ thịtrùng nhau, dù hai phép đối xứng được mô tảkhác nhau.",
@@ -26721,7 +26721,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.9": [
@@ -26734,7 +26734,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giữphần y = x −1 khi x ≥1; phản xạphần còn lại qua Ox, được y = 1 −x khi x < 1.",
-          "text": "Lời giải Ví dụ 1, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giữphần y = x −1 khi x ≥1; phản xạphần còn lại qua Ox, được y = 1 −x khi x < 1.",
@@ -26773,7 +26773,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-2",
@@ -26784,7 +26784,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "|x² −4| = 0 ⇐⇒x = ±2. Hai giao điểm (−2; 0), (2; 0).",
-          "text": "Lời giải Ví dụ 2, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "|x² −4| = 0 ⇐⇒x = ±2. Hai giao điểm (−2; 0), (2; 0).",
@@ -26823,7 +26823,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-3",
@@ -26834,7 +26834,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. Vì x² + 1 > 0 trên R, đồ thịđược giữ nguyên hoàn toàn.",
-          "text": "Lời giải Ví dụ 3, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. Vì x² + 1 > 0 trên R, đồ thịđược giữ nguyên hoàn toàn.",
@@ -26873,7 +26873,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-4",
@@ -26884,7 +26884,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khi x ≤0 hoặc x ≥2, y = x² −2x. Khi 0 < x < 2, y = 2x −x².",
-          "text": "Lời giải Ví dụ 4, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khi x ≤0 hoặc x ≥2, y = x² −2x. Khi 0 < x < 2, y = 2x −x².",
@@ -26909,7 +26909,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-5",
@@ -26920,7 +26920,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm không âm, đạt 0 tại ±1 và nhận mọi giá trị dương khi |x| tăng. Tập giá trị [0; +∞).",
-          "text": "Lời giải Ví dụ 5, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm không âm, đạt 0 tại ±1 và nhận mọi giá trị dương khi |x| tăng. Tập giá trị [0; +∞).",
@@ -26945,7 +26945,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-6",
@@ -26956,7 +26956,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai khảnăng x² −1 = 1 hoặc x² −1 = −1. Nghiệm − √ 2, 0, √ 2: 3 nghiệm phân biệt.",
-          "text": "Lời giải Ví dụ 6, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai khảnăng x² −1 = 1 hoặc x² −1 = −1. Nghiệm − √ 2, 0, √ 2: 3 nghiệm phân biệt.",
@@ -26981,7 +26981,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-7",
@@ -26992,7 +26992,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai phương trình x³ −3x = 1 và x³ −3x = −1 đều có 3 nghiệm vì ±1 nằm giữa hai giá trị cực trị−2, 2. Hai tập nghiệm rời nhau, tổng 6.",
-          "text": "Lời giải Ví dụ 7, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai phương trình x³ −3x = 1 và x³ −3x = −1 đều có 3 nghiệm vì ±1 nằm giữa hai giá trị cực trị−2, 2. Hai tập nghiệm rời nhau, tổng 6.",
@@ -27017,7 +27017,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-8",
@@ -27028,7 +27028,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x > 0, giữ1/x; với x < 0, đổi thành −1/x. Cảhai nhánh nằm trên Ox. TCĐ x = 0, TCN y = 0.",
-          "text": "Lời giải Ví dụ 8, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x > 0, giữ1/x; với x < 0, đổi thành −1/x. Cảhai nhánh nằm trên Ox. TCĐ x = 0, TCN y = 0.",
@@ -27067,7 +27067,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-9",
@@ -27078,7 +27078,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = (0; +∞). Tại 1, đạo hàm trái −1, phải 1 nên không có đạo hàm. Ởcác điểm khác, hàm có đạo hàm.",
-          "text": "Lời giải Ví dụ 9, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = (0; +∞). Tại 1, đạo hàm trái −1, phải 1 nên không có đạo hàm. Ởcác điểm khác, hàm có đạo hàm.",
@@ -27103,7 +27103,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9-source-example-10",
@@ -27114,7 +27114,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Gần 1, |f| = −f. Cực đại giá trị−2 đổi thành cực tiểu giá trị2. Cực trị của |f| không chỉxuất hiện ởnghiệm f = 0.",
-          "text": "Lời giải Ví dụ 10, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Gần 1, |f| = −f. Cực đại giá trị−2 đổi thành cực tiểu giá trị2. Cực trị của |f| không chỉxuất hiện ởnghiệm f = 0.",
@@ -27139,7 +27139,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.10": [
@@ -27152,7 +27152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới |x| + 1, bằng x + 1 với x ≥0, bằng 1 −x với x < 0.",
-          "text": "Lời giải Ví dụ 1, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm mới |x| + 1, bằng x + 1 với x ≥0, bằng 1 −x với x < 0.",
@@ -27177,7 +27177,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-2",
@@ -27188,7 +27188,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giữnửa phải của parabol rồi đối xứng qua Oy. Hàm mới (|x|−1)², nghiệm x = ±1.",
-          "text": "Lời giải Ví dụ 2, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giữnửa phải của parabol rồi đối xứng qua Oy. Hàm mới (|x|−1)², nghiệm x = ±1.",
@@ -27213,7 +27213,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-3",
@@ -27224,7 +27224,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không, vì |x|² = x². Hàm gốc là hàm chẵn.",
-          "text": "Lời giải Ví dụ 3, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không, vì |x|² = x². Hàm gốc là hàm chẵn.",
@@ -27263,7 +27263,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-4",
@@ -27274,7 +27274,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới |x|³ là hàm chẵn; không phải x³ trên nửa trục âm.",
-          "text": "Lời giải Ví dụ 4, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm mới |x|³ là hàm chẵn; không phải x³ trên nửa trục âm.",
@@ -27299,7 +27299,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-5",
@@ -27310,7 +27310,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới ln |x|, D = R \\ {0}. TCĐ x = 0; không có TCN, TCX.",
-          "text": "Lời giải Ví dụ 5, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm mới ln |x|, D = R \\ {0}. TCĐ x = 0; không có TCN, TCX.",
@@ -27335,7 +27335,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-6",
@@ -27346,7 +27346,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần |x| ≥1. Miền (−∞; −1] ∪[1; +∞); không được dùng miền x ≥1 của hàm gốc.",
-          "text": "Lời giải Ví dụ 6, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần |x| ≥1. Miền (−∞; −1] ∪[1; +∞); không được dùng miền x ≥1 của hàm gốc.",
@@ -27371,7 +27371,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-7",
@@ -27382,7 +27382,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm mới 1/(|x| −2), miền loại ±2. Hai TCĐ x = ±2, TCN y = 0.",
-          "text": "Lời giải Ví dụ 7, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm mới 1/(|x| −2), miền loại ±2. Hai TCĐ x = ±2, TCN y = 0.",
@@ -27407,7 +27407,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-8",
@@ -27418,7 +27418,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chỉđầu vào không âm được dùng. |x| = 2 cho hai nghiệm ±2; mọi nghiệm âm của f không đóng góp.",
-          "text": "Lời giải Ví dụ 8, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chỉđầu vào không âm được dùng. |x| = 2 cho hai nghiệm ±2; mọi nghiệm âm của f không đóng góp.",
@@ -27443,7 +27443,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-9",
@@ -27454,7 +27454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cực tiểu tại x = ±1, giá trị0; cực đại tại 0, giá trị1. Điểm 0 là mốc cần kiểm tra riêng do |x|.",
-          "text": "Lời giải Ví dụ 9, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cực tiểu tại x = ±1, giá trị0; cực đại tại 0, giá trị1. Điểm 0 là mốc cần kiểm tra riêng do |x|.",
@@ -27479,7 +27479,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10-source-example-10",
@@ -27490,7 +27490,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x > 0, g = f(x) tăng. Với x < 0, g = f(−x) giảm. Do đó có cực tiểu tại 0, giá trịf(0).",
-          "text": "Lời giải Ví dụ 10, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x > 0, g = f(x) tăng. Với x < 0, g = f(−x) giảm. Do đó có cực tiểu tại 0, giá trịf(0).",
@@ -27515,7 +27515,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.11": [
@@ -27528,7 +27528,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đường ngang y = 4 cắt parabol ởx = ±2. Có 2 nghiệm.",
-          "text": "Lời giải Ví dụ 1, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đường ngang y = 4 cắt parabol ởx = ±2. Có 2 nghiệm.",
@@ -27553,7 +27553,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-2",
@@ -27564,7 +27564,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái không dương, vế phải dương. Không có nghiệm.",
-          "text": "Lời giải Ví dụ 2, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái không dương, vế phải dương. Không có nghiệm.",
@@ -27589,7 +27589,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-3",
@@ -27600,7 +27600,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x³ −3x −2 = (x −2)(x + 1)². Có 2 nghiệm −1, 2; nghiệm kép chỉđếm một lần.",
-          "text": "Lời giải Ví dụ 3, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x³ −3x −2 = (x −2)(x + 1)². Có 2 nghiệm −1, 2; nghiệm kép chỉđếm một lần.",
@@ -27625,7 +27625,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-4",
@@ -27636,7 +27636,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x(x² −3) = 0, có 3 nghiệm 0, ± √ 3.",
-          "text": "Lời giải Ví dụ 4, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x(x² −3) = 0, có 3 nghiệm 0, ± √ 3.",
@@ -27661,7 +27661,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-5",
@@ -27672,7 +27672,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(x² −1)² = 0, có 2 nghiệm phân biệt ±1.",
-          "text": "Lời giải Ví dụ 5, trang 92 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(x² −1)² = 0, có 2 nghiệm phân biệt ±1.",
@@ -27697,7 +27697,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-6",
@@ -27708,7 +27708,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x²(x² −2) = 0, có 3 nghiệm phân biệt 0, ± √ 2.",
-          "text": "Lời giải Ví dụ 6, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x²(x² −2) = 0, có 3 nghiệm phân biệt 0, ± √ 2.",
@@ -27733,7 +27733,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-7",
@@ -27744,7 +27744,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² = 3 hoặc x² = −1. Chỉ có hai nghiệm thực ± √ 3.",
-          "text": "Lời giải Ví dụ 7, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² = 3 hoặc x² = −1. Chỉ có hai nghiệm thực ± √ 3.",
@@ -27769,7 +27769,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-8",
@@ -27780,7 +27780,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nhân x hợp lệcho (x −1)² = 0. Chỉmột nghiệm x = 1.",
-          "text": "Lời giải Ví dụ 8, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nhân x hợp lệcho (x −1)² = 0. Chỉmột nghiệm x = 1.",
@@ -27805,7 +27805,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-9",
@@ -27816,7 +27816,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm tăng đến 1 rồi giảm, có GTLN −1 duy nhất tại 1. Có một nghiệm x = 1.",
-          "text": "Lời giải Ví dụ 9, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm tăng đến 1 rồi giảm, có GTLN −1 duy nhất tại 1. Có một nghiệm x = 1.",
@@ -27841,7 +27841,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11-source-example-10",
@@ -27852,7 +27852,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x≠ 1. Rút gọn x + 1 = 2 chỉcho x = 1 bị loại. Không có nghiệm; phải giữđiểm khuyết khi đếm giao.",
-          "text": "Lời giải Ví dụ 10, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x≠ 1. Rút gọn x + 1 = 2 chỉcho x = 1 bị loại. Không có nghiệm; phải giữđiểm khuyết khi đếm giao.",
@@ -27877,7 +27877,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.12": [
@@ -27890,7 +27890,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x(x −2) = 0. Các giao điểm (0; 0), (2; 4).",
-          "text": "Lời giải Ví dụ 1, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x(x −2) = 0. Các giao điểm (0; 0), (2; 4).",
@@ -27915,7 +27915,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-2",
@@ -27926,7 +27926,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(x −1)² = 0. Một giao điểm (1; 1); hai đồ thịtiếp xúc tại đó.",
-          "text": "Lời giải Ví dụ 2, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(x −1)² = 0. Một giao điểm (1; 1); hai đồ thịtiếp xúc tại đó.",
@@ -27951,7 +27951,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-3",
@@ -27962,7 +27962,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² = −1 vô nghiệm thực, nên không giao nhau.",
-          "text": "Lời giải Ví dụ 3, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² = −1 vô nghiệm thực, nên không giao nhau.",
@@ -27987,7 +27987,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-4",
@@ -27998,7 +27998,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x(x −1)(x + 1) = 0. Ba điểm (−1; −1), (0; 0), (1; 1).",
-          "text": "Lời giải Ví dụ 4, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x(x −1)(x + 1) = 0. Ba điểm (−1; −1), (0; 0), (1; 1).",
@@ -28023,7 +28023,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-5",
@@ -28034,7 +28034,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x≠ 0, x² = 1. Hai điểm (1; 1), (−1; −1).",
-          "text": "Lời giải Ví dụ 5, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x≠ 0, x² = 1. Hai điểm (1; 1), (−1; −1).",
@@ -28059,7 +28059,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-6",
@@ -28070,7 +28070,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x ≥2. Bình phương: x² −5x+4 = 0 cho 1 hoặc 4; chỉ4 thỏa. Giao điểm (4; 2).",
-          "text": "Lời giải Ví dụ 6, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x ≥2. Bình phương: x² −5x+4 = 0 cho 1 hoặc 4; chỉ4 thỏa. Giao điểm (4; 2).",
@@ -28095,7 +28095,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-7",
@@ -28106,7 +28106,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0, ln x = 0 ⇐⇒x = 1. Giao điểm (1; 0).",
-          "text": "Lời giải Ví dụ 7, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0, ln x = 0 ⇐⇒x = 1. Giao điểm (1; 0).",
@@ -28131,7 +28131,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-8",
@@ -28142,7 +28142,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu x ≥0 thì x = x + 1 vô nghiệm. Nếu x < 0, −x = x + 1 cho x = −1/2, y = 1/2. Chỉmột giao điểm.",
-          "text": "Lời giải Ví dụ 8, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu x ≥0 thì x = x + 1 vô nghiệm. Nếu x < 0, −x = x + 1 cho x = −1/2, y = 1/2. Chỉmột giao điểm.",
@@ -28167,7 +28167,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-9",
@@ -28178,7 +28178,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(x −1)² = m + 1. Có 0,1,2 giao điểm tương ứng m < −1, m = −1, m > −1.",
-          "text": "Lời giải Ví dụ 9, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(x −1)² = m + 1. Có 0,1,2 giao điểm tương ứng m < −1, m = −1, m > −1.",
@@ -28203,7 +28203,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12-source-example-10",
@@ -28214,7 +28214,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x≠ 0, phương trình x² + mx −1 = 0 có ∆= m² + 4 > 0, tích nghiệm −1 nên không nghiệm nào bằng 0. Có hai giao điểm với mọi m ∈R.",
-          "text": "Lời giải Ví dụ 10, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x≠ 0, phương trình x² + mx −1 = 0 có ∆= m² + 4 > 0, tích nghiệm −1 nên không nghiệm nào bằng 0. Có hai giao điểm với mọi m ∈R.",
@@ -28239,7 +28239,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "6.13": [
@@ -28252,7 +28252,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "m < 0: 0; m = 0: 1; m > 0: 2 nghiệm.",
-          "text": "Lời giải Ví dụ 1, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "m < 0: 0; m = 0: 1; m > 0: 2 nghiệm.",
@@ -28277,7 +28277,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-2",
@@ -28288,7 +28288,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì eˣ tăng và nhận tập giá trị(0; +∞): 0 nghiệm nếu m ≤0, 1 nghiệm nếu m > 0.",
-          "text": "Lời giải Ví dụ 2, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì eˣ tăng và nhận tập giá trị(0; +∞): 0 nghiệm nếu m ≤0, 1 nghiệm nếu m > 0.",
@@ -28313,7 +28313,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-3",
@@ -28324,7 +28324,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cực đại 2, cực tiểu −2. Có 3 nghiệm nếu −2 < m < 2; 2 nếu m = ±2; 1 nếu |m| > 2.",
-          "text": "Lời giải Ví dụ 3, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cực đại 2, cực tiểu −2. Có 3 nghiệm nếu −2 < m < 2; 2 nếu m = ±2; 1 nếu |m| > 2.",
@@ -28349,7 +28349,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-4",
@@ -28360,7 +28360,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = x² ≥0, (t −1)² = m + 1. m < −1: 0; m = −1: 2; −1 < m < 0: 4; m = 0: 3; m > 0: 2 nghiệm.",
-          "text": "Lời giải Ví dụ 4, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = x² ≥0, (t −1)² = m + 1. m < −1: 0; m = −1: 2; −1 < m < 0: 4; m = 0: 3; m > 0: 2 nghiệm.",
@@ -28385,7 +28385,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-5",
@@ -28396,7 +28396,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "m < 0: 0; m = 0: 2; 0 < m < 1: 4; m = 1: 3; m > 1: 2 nghiệm. Tại m = 0 hai nhánh phương trình trùng nhau nên không cộng đôi.",
-          "text": "Lời giải Ví dụ 5, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "m < 0: 0; m = 0: 2; 0 < m < 1: 4; m = 1: 3; m > 1: 2 nghiệm. Tại m = 0 hai nhánh phương trình trùng nhau nên không cộng đôi.",
@@ -28421,7 +28421,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-6",
@@ -28432,7 +28432,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm giảm rồi tăng, GTNN 2 tại 1 và tiến tới +∞ởhai biên. m < 2: 0; m = 2: 1; m > 2: 2 nghiệm.",
-          "text": "Lời giải Ví dụ 6, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm giảm rồi tăng, GTNN 2 tại 1 và tiến tới +∞ởhai biên. m < 2: 0; m = 2: 1; m > 2: 2 nghiệm.",
@@ -28457,7 +28457,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-7",
@@ -28468,7 +28468,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "GTLN −1 tại 1, giới hạn ởhai biên −∞. m > −1: 0; m = −1: 1; m < −1: 2 nghiệm.",
-          "text": "Lời giải Ví dụ 7, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "GTLN −1 tại 1, giới hạn ởhai biên −∞. m > −1: 0; m = −1: 1; m < −1: 2 nghiệm.",
@@ -28493,7 +28493,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-8",
@@ -28504,7 +28504,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trên miền x≠ 1, hàm bằng x + 1, nên nghiệm dựkiến x = m −1. Nếu m = 2 nghiệm bị loại, có 0; nếu m≠ 2 có 1 nghiệm.",
-          "text": "Lời giải Ví dụ 8, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trên miền x≠ 1, hàm bằng x + 1, nên nghiệm dựkiến x = m −1. Nếu m = 2 nghiệm bị loại, có 0; nếu m≠ 2 có 1 nghiệm.",
@@ -28529,7 +28529,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-9",
@@ -28540,7 +28540,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Nếu m < 0: 0. Nếu m = 0: 2. Nếu 0 < m < 1: 4. Nếu m = 1: 3. Nếu m > 1: 2. Dùng |x| = 1 ± √m và chỉgiữvế phải không âm.",
-          "text": "Lời giải Ví dụ 9, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Nếu m < 0: 0. Nếu m = 0: 2. Nếu 0 < m < 1: 4. Nếu m = 1: 3. Nếu m > 1: 2. Dùng |x| = 1 ± √m và chỉgiữvế phải không âm.",
@@ -28565,7 +28565,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13-source-example-10",
@@ -28576,7 +28576,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần ∆= 4(m² −1) > 0, tổng 2m > 0, tích 1 > 0. Kết hợp được m > 1. Không chỉ dùng điều kiện biệt thức.",
-          "text": "Lời giải Ví dụ 10, trang 93 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần ∆= 4(m² −1) > 0, tổng 2m > 0, tích 1 > 0. Kết hợp được m > 1. Không chỉ dùng điều kiện biệt thức.",
@@ -28601,7 +28601,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.1": [
@@ -28614,7 +28614,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 1: f(x₀) = −1, f′(x₀) = 0, tiếp tuyến y = −1.",
-          "text": "Lời giải Ví dụ 1, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 1: f(x₀) = −1, f′(x₀) = 0, tiếp tuyến y = −1.",
@@ -28639,7 +28639,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-2",
@@ -28650,7 +28650,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 0: f(x₀) = 0, f′(x₀) = −3, tiếp tuyến y = −3x.",
-          "text": "Lời giải Ví dụ 2, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 0: f(x₀) = 0, f′(x₀) = −3, tiếp tuyến y = −3x.",
@@ -28675,7 +28675,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-3",
@@ -28686,7 +28686,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
-          "text": "Lời giải Ví dụ 3, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
@@ -28711,7 +28711,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-4",
@@ -28722,7 +28722,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 0: f(x₀) = −1, f′(x₀) = −3, tiếp tuyến y = −3x −1.",
-          "text": "Lời giải Ví dụ 4, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 0: f(x₀) = −1, f′(x₀) = −3, tiếp tuyến y = −3x −1.",
@@ -28747,7 +28747,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-5",
@@ -28758,7 +28758,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
-          "text": "Lời giải Ví dụ 5, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
@@ -28783,7 +28783,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-6",
@@ -28794,7 +28794,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
-          "text": "Lời giải Ví dụ 6, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
@@ -28819,7 +28819,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-7",
@@ -28830,7 +28830,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 1: f(x₀) = 0, f′(x₀) = 1, tiếp tuyến y = x −1.",
-          "text": "Lời giải Ví dụ 7, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 1: f(x₀) = 0, f′(x₀) = 1, tiếp tuyến y = x −1.",
@@ -28855,7 +28855,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-8",
@@ -28866,7 +28866,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = π ₆ : f(x₀) = ¹ ₂, f′(x₀) = √ 3 ₂ , tiếp tuyến y = ⁶ √ 3x− √ 3π+6 12 .",
-          "text": "Lời giải Ví dụ 8, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = π ₆ : f(x₀) = ¹ ₂, f′(x₀) = √ 3 ₂ , tiếp tuyến y = ⁶ √ 3x− √ 3π+6 12 .",
@@ -28891,7 +28891,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-9",
@@ -28902,7 +28902,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x₀ = 1: f(x₀) = e, f′(x₀) = 2e, tiếp tuyến y = e (2x −1).",
-          "text": "Lời giải Ví dụ 9, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x₀ = 1: f(x₀) = e, f′(x₀) = 2e, tiếp tuyến y = e (2x −1).",
@@ -28927,7 +28927,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.1-source-example-10",
@@ -28938,7 +28938,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không. Đạo hàm trái bằng −1, đạo hàm phải bằng 1, nên f′(0) không tồn tại. Không được tựđặt hệ số góc bằng 0.",
-          "text": "Lời giải Ví dụ 10, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không. Đạo hàm trái bằng −1, đạo hàm phải bằng 1, nên f′(0) không tồn tại. Không được tựđặt hệ số góc bằng 0.",
@@ -28963,7 +28963,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.2": [
@@ -28976,7 +28976,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 4. x₀ = −2: f(x₀) = 4, f′(x₀) = −4, tiếp tuyến y = −4 (x + 1); x₀ = 2: f(x₀) = 4, f′(x₀) = 4, tiếp tuyến y = 4 (x −1).",
-          "text": "Lời giải Ví dụ 1, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 4. x₀ = −2: f(x₀) = 4, f′(x₀) = −4, tiếp tuyến y = −4 (x + 1); x₀ = 2: f(x₀) = 4, f′(x₀) = 4, tiếp tuyến y = 4 (x −1).",
@@ -29001,7 +29001,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-2",
@@ -29012,7 +29012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = −2, tiếp tuyến y = −2x; x₀ = 2: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x −2).",
-          "text": "Lời giải Ví dụ 2, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = −2, tiếp tuyến y = −2x; x₀ = 2: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x −2).",
@@ -29037,7 +29037,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-3",
@@ -29048,7 +29048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x + 1); x₀ = 0: f(x₀) = 0, f′(x₀) = −1, tiếp tuyến y = −x; x₀ = 1: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x −1).",
-          "text": "Lời giải Ví dụ 3, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x + 1); x₀ = 0: f(x₀) = 0, f′(x₀) = −1, tiếp tuyến y = −x; x₀ = 1: f(x₀) = 0, f′(x₀) = 2, tiếp tuyến y = 2 (x −1).",
@@ -29073,7 +29073,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-4",
@@ -29084,7 +29084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 2. x₀ = ¹ ₂: f(x₀) = 2, f′(x₀) = −4, tiếp tuyến y = −4 (x −1).",
-          "text": "Lời giải Ví dụ 4, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 2. x₀ = ¹ ₂: f(x₀) = 2, f′(x₀) = −4, tiếp tuyến y = −4 (x −1).",
@@ -29109,7 +29109,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-5",
@@ -29120,7 +29120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 1: không có nghiệm trong miền nên không có tiếp tuyến thỏa yêu cầu.",
-          "text": "Lời giải Ví dụ 5, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 1: không có nghiệm trong miền nên không có tiếp tuyến thỏa yêu cầu.",
@@ -29145,7 +29145,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-6",
@@ -29156,7 +29156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 2. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
-          "text": "Lời giải Ví dụ 6, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 2. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
@@ -29181,7 +29181,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-7",
@@ -29192,7 +29192,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
-          "text": "Lời giải Ví dụ 7, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
@@ -29217,7 +29217,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-8",
@@ -29228,7 +29228,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 0. x₀ = 1: f(x₀) = 0, f′(x₀) = 1, tiếp tuyến y = x −1.",
-          "text": "Lời giải Ví dụ 8, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 0. x₀ = 1: f(x₀) = 0, f′(x₀) = 1, tiếp tuyến y = x −1.",
@@ -29253,7 +29253,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-9",
@@ -29264,7 +29264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
-          "text": "Lời giải Ví dụ 9, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
@@ -29289,7 +29289,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2-source-example-10",
@@ -29300,7 +29300,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các hoành độ0, π, 2π, hệ số góc 1, −1, 1. Ba đường y = x, y = −x + π, y = x −2π.",
-          "text": "Lời giải Ví dụ 10, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các hoành độ0, π, 2π, hệ số góc 1, −1, 1. Ba đường y = x, y = −x + π, y = x −2π.",
@@ -29325,7 +29325,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.3": [
@@ -29338,7 +29338,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Lời giải Ví dụ 1, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -29363,7 +29363,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-2",
@@ -29374,7 +29374,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x + 2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2.",
-          "text": "Lời giải Ví dụ 2, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x + 2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2.",
@@ -29399,7 +29399,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-3",
@@ -29410,7 +29410,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2.",
-          "text": "Lời giải Ví dụ 3, trang 94 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2.",
@@ -29435,7 +29435,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-4",
@@ -29446,7 +29446,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
-          "text": "Lời giải Ví dụ 4, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
@@ -29471,7 +29471,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-5",
@@ -29482,7 +29482,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
-          "text": "Lời giải Ví dụ 5, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
@@ -29507,7 +29507,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-6",
@@ -29518,7 +29518,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
-          "text": "Lời giải Ví dụ 6, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
@@ -29543,7 +29543,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-7",
@@ -29554,7 +29554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2).",
-          "text": "Lời giải Ví dụ 7, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2).",
@@ -29579,7 +29579,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-8",
@@ -29590,7 +29590,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
-          "text": "Lời giải Ví dụ 8, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
@@ -29615,7 +29615,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-9",
@@ -29626,7 +29626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = −2. x₀ = −1: f(x₀) = 2, f′(x₀) = −2, tiếp tuyến y = −2x.",
-          "text": "Lời giải Ví dụ 9, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = −2. x₀ = −1: f(x₀) = 2, f′(x₀) = −2, tiếp tuyến y = −2x.",
@@ -29651,7 +29651,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3-source-example-10",
@@ -29662,7 +29662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. Không có tiếp tuyến thỏa yêu cầu.",
-          "text": "Lời giải Ví dụ 10, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. Không có tiếp tuyến thỏa yêu cầu.",
@@ -29687,7 +29687,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.4": [
@@ -29700,7 +29700,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 1, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29725,7 +29725,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-2",
@@ -29736,7 +29736,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x + 2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 2, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x + 2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29761,7 +29761,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-3",
@@ -29772,7 +29772,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 3, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29797,7 +29797,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-4",
@@ -29808,7 +29808,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 4, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29833,7 +29833,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-5",
@@ -29844,7 +29844,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ . Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 5, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ . Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29869,7 +29869,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-6",
@@ -29880,7 +29880,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 6, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29905,7 +29905,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-7",
@@ -29916,7 +29916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2). Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 7, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2). Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29941,7 +29941,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-8",
@@ -29952,7 +29952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
-          "text": "Lời giải Ví dụ 8, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường. Các đường tìm được có hệ số tựdo khác 7 nên phân biệt với d.",
@@ -29977,7 +29977,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-9",
@@ -29988,7 +29988,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 2x₀ = 2, nên x₀ = 1. Tiếp tuyến duy nhất ứng viên là y = 2x −1, trùng d, nên không có tiếp tuyến song song và phân biệt thỏa đề.",
-          "text": "Lời giải Ví dụ 9, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 2x₀ = 2, nên x₀ = 1. Tiếp tuyến duy nhất ứng viên là y = 2x −1, trùng d, nên không có tiếp tuyến song song và phân biệt thỏa đề.",
@@ -30013,7 +30013,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4-source-example-10",
@@ -30024,7 +30024,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giải f′(x₀) = 0. Không có tiếp tuyến thỏa yêu cầu.",
-          "text": "Lời giải Ví dụ 10, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giải f′(x₀) = 0. Không có tiếp tuyến thỏa yêu cầu.",
@@ -30049,7 +30049,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.5": [
@@ -30062,7 +30062,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Lời giải Ví dụ 1, trang 95 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 2. x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -30087,7 +30087,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-2",
@@ -30098,7 +30098,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x+2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2.",
-          "text": "Lời giải Ví dụ 2, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 3. x₀ = −1: f(x₀) = −1, f′(x₀) = 3, tiếp tuyến y = 3x+2; x₀ = 1: f(x₀) = 1, f′(x₀) = 3, tiếp tuyến y = 3x −2.",
@@ -30123,7 +30123,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-3",
@@ -30134,7 +30134,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2.",
-          "text": "Lời giải Ví dụ 3, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 0. x₀ = −1: f(x₀) = 2, f′(x₀) = 0, tiếp tuyến y = 2; x₀ = 1: f(x₀) = −2, f′(x₀) = 0, tiếp tuyến y = −2.",
@@ -30159,7 +30159,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-4",
@@ -30170,7 +30170,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
-          "text": "Lời giải Ví dụ 4, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là −1. x₀ = −1: f(x₀) = −1, f′(x₀) = −1, tiếp tuyến y = −x −2; x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
@@ -30195,7 +30195,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-5",
@@ -30206,7 +30206,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
-          "text": "Lời giải Ví dụ 5, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là ¹ ₄. x₀ = 4: f(x₀) = 2, f′(x₀) = ¹ ₄, tiếp tuyến y = ˣ⁺⁴ ₄ .",
@@ -30231,7 +30231,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-6",
@@ -30242,7 +30242,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
-          "text": "Lời giải Ví dụ 6, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 1. x₀ = 0: f(x₀) = 1, f′(x₀) = 1, tiếp tuyến y = x + 1.",
@@ -30267,7 +30267,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-7",
@@ -30278,7 +30278,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2).",
-          "text": "Lời giải Ví dụ 7, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 2. x₀ = ¹ ₂: f(x₀) = −ln (2), f′(x₀) = 2, tiếp tuyến y = 2x −1 −ln (2).",
@@ -30303,7 +30303,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-8",
@@ -30314,7 +30314,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc tiếp tuyến phải là 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
-          "text": "Lời giải Ví dụ 8, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc tiếp tuyến phải là 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 0: f(x₀) = 1, f′(x₀) = 0, tiếp tuyến y = 1; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
@@ -30339,7 +30339,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-9",
@@ -30350,7 +30350,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến cần là đường thẳng đứng. Mọi tiếp tuyến của parabol x² có hệ số góc hữu hạn 2x₀, nên không có.",
-          "text": "Lời giải Ví dụ 9, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến cần là đường thẳng đứng. Mọi tiếp tuyến của parabol x² có hệ số góc hữu hạn 2x₀, nên không có.",
@@ -30375,7 +30375,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5-source-example-10",
@@ -30386,7 +30386,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 1/x₀ = −1/2, cho x₀ = −2 ngoài miền x > 0. Không có tiếp tuyến thỏa mãn.",
-          "text": "Lời giải Ví dụ 10, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 1/x₀ = −1/2, cho x₀ = −2 ngoài miền x > 0. Không có tiếp tuyến thỏa mãn.",
@@ -30411,7 +30411,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.6": [
@@ -30424,7 +30424,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = tan 45◦= 1, 2x₀ = 1 cho x₀ = 1/2. Tiếp tuyến y = x −1/4.",
-          "text": "Lời giải Ví dụ 1, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "k = tan 45◦= 1, 2x₀ = 1 cho x₀ = 1/2. Tiếp tuyến y = x −1/4.",
@@ -30449,7 +30449,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-2",
@@ -30460,7 +30460,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có k = ±1, x₀ = ±1/2. Hai tiếp tuyến y = x −1/4, y = −x −1/4.",
-          "text": "Lời giải Ví dụ 2, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có k = ±1, x₀ = ±1/2. Hai tiếp tuyến y = x −1/4, y = −x −1/4.",
@@ -30485,7 +30485,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-3",
@@ -30496,7 +30496,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3x² ₀ = 1, x₀ = ±1/ √ 3. Công thức y = 3x² ₀x −2x³ ₀ cho y = x ± 2 √ 3/9.",
-          "text": "Lời giải Ví dụ 3, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3x² ₀ = 1, x₀ = ±1/ √ 3. Công thức y = 3x² ₀x −2x³ ₀ cho y = x ± 2 √ 3/9.",
@@ -30521,7 +30521,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-4",
@@ -30532,7 +30532,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = −1/x² < 0, nên chỉnhận k = −1. x₀ = ±1; hai tiếp tuyến y = −x+2, y = −x−2.",
-          "text": "Lời giải Ví dụ 4, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = −1/x² < 0, nên chỉnhận k = −1. x₀ = ±1; hai tiếp tuyến y = −x+2, y = −x−2.",
@@ -30557,7 +30557,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-5",
@@ -30568,7 +30568,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì f′ = eˣ > 0, chỉk = 1. x₀ = 0, tiếp tuyến y = x + 1.",
-          "text": "Lời giải Ví dụ 5, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì f′ = eˣ > 0, chỉk = 1. x₀ = 0, tiếp tuyến y = x + 1.",
@@ -30593,7 +30593,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-6",
@@ -30604,7 +30604,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần k = −1, nhưng f′ = 1/x > 0 trên miền. Không có tiếp tuyến thỏa mãn.",
-          "text": "Lời giải Ví dụ 6, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần k = −1, nhưng f′ = 1/x > 0 trên miền. Không có tiếp tuyến thỏa mãn.",
@@ -30629,7 +30629,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-7",
@@ -30640,7 +30640,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 1/(2√x) > 0, chỉnhận k = 1. x₀ = 1/4, y₀ = 1/2. Tiếp tuyến y = x + 1/4.",
-          "text": "Lời giải Ví dụ 7, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 1/(2√x) > 0, chỉnhận k = 1. x₀ = 1/4, y₀ = 1/2. Tiếp tuyến y = x + 1/4.",
@@ -30665,7 +30665,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-8",
@@ -30676,7 +30676,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = ± √ 3, −2x₀ = k, x₀ = ∓ √ 3/2. Tiếp tuyến y = ± √ 3x + 3/4.",
-          "text": "Lời giải Ví dụ 8, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "k = ± √ 3, −2x₀ = k, x₀ = ∓ √ 3/2. Tiếp tuyến y = ± √ 3x + 3/4.",
@@ -30701,7 +30701,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-9",
@@ -30712,7 +30712,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3x² ₀ −3 = −1 cho x₀ = ± √ 6/3. Từy = (3x² ₀ −3)x −2x³ ₀ được y = −x ± 4 √ 6/9.",
-          "text": "Lời giải Ví dụ 9, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3x² ₀ −3 = −1 cho x₀ = ± √ 6/3. Từy = (3x² ₀ −3)x −2x³ ₀ được y = −x ± 4 √ 6/9.",
@@ -30737,7 +30737,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6-source-example-10",
@@ -30748,7 +30748,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Góc nhọn giữa hai đường không cho chiều nghiêng, nên |k| = tan 30◦= √ 3/3, tức k = ± √ 3/3. Chỉkhi đề cho góc có hướng 30◦mới lấy duy nhất dấu dương.",
-          "text": "Lời giải Ví dụ 10, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Góc nhọn giữa hai đường không cho chiều nghiêng, nên |k| = tan 30◦= √ 3/3, tức k = ± √ 3/3. Chỉkhi đề cho góc có hướng 30◦mới lấy duy nhất dấu dương.",
@@ -30773,7 +30773,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.7": [
@@ -30786,7 +30786,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = −1, tức 1−t² = 0. x₀ = −1: f(x₀) = 1, f′(x₀) = −2, tiếp tuyến y = −2x −1; x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
-          "text": "Lời giải Ví dụ 1, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = −1, tức 1−t² = 0. x₀ = −1: f(x₀) = 1, f′(x₀) = −2, tiếp tuyến y = −2x −1; x₀ = 1: f(x₀) = 1, f′(x₀) = 2, tiếp tuyến y = 2x −1.",
@@ -30811,7 +30811,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-2",
@@ -30822,7 +30822,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −t² = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0.",
-          "text": "Lời giải Ví dụ 2, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −t² = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0.",
@@ -30847,7 +30847,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-3",
@@ -30858,7 +30858,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 1, tức −t² −1 = 0. Phương trình không có nghiệm hợp lệ, nên không có tiếp tuyến thỏa mãn.",
-          "text": "Lời giải Ví dụ 3, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 1, tức −t² −1 = 0. Phương trình không có nghiệm hợp lệ, nên không có tiếp tuyến thỏa mãn.",
@@ -30883,7 +30883,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-4",
@@ -30894,7 +30894,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −2t³ = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0.",
-          "text": "Lời giải Ví dụ 4, trang 96 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −2t³ = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0.",
@@ -30919,7 +30919,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-5",
@@ -30930,7 +30930,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức t² (3 −2t) = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = ³ ₂: f(x₀) = −²⁷ ₈ , f′(x₀) = −⁹ ₄, tiếp tuyến y = −⁹ˣ ₄ .",
-          "text": "Lời giải Ví dụ 5, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức t² (3 −2t) = 0. x₀ = 0: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = ³ ₂: f(x₀) = −²⁷ ₈ , f′(x₀) = −⁹ ₄, tiếp tuyến y = −⁹ˣ ₄ .",
@@ -30955,7 +30955,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-6",
@@ -30966,7 +30966,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 2, tức −2 + ² ₜ = 0. x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
-          "text": "Lời giải Ví dụ 6, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 2, tức −2 + ² ₜ = 0. x₀ = 1: f(x₀) = 1, f′(x₀) = −1, tiếp tuyến y = 2 −x.",
@@ -30991,7 +30991,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-7",
@@ -31002,7 +31002,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = 0, tức (1 −t) eᵗ = 0. x₀ = 1: f(x₀) = e, f′(x₀) = e, tiếp tuyến y = ex.",
-          "text": "Lời giải Ví dụ 7, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = 0, tức (1 −t) eᵗ = 0. x₀ = 1: f(x₀) = e, f′(x₀) = e, tiếp tuyến y = ex.",
@@ -31027,7 +31027,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-8",
@@ -31038,7 +31038,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = 0, tức ln (t)−1 = 0. x₀ = e: f(x₀) = 1, f′(x₀) = e⁻¹, tiếp tuyến y = ˣ ₑ.",
-          "text": "Lời giải Ví dụ 8, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0−t)+f(t) = 0, tức ln (t)−1 = 0. x₀ = e: f(x₀) = 1, f′(x₀) = e⁻¹, tiếp tuyến y = ˣ ₑ.",
@@ -31063,7 +31063,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-9",
@@ -31074,7 +31074,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −3t⁴ + 2t² + 1 = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
-          "text": "Lời giải Ví dụ 9, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến tại t đi qua A khi f′(t)(0 −t) + f(t) = 0, tức −3t⁴ + 2t² + 1 = 0. x₀ = −1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0; x₀ = 1: f(x₀) = 0, f′(x₀) = 0, tiếp tuyến y = 0. Các tiếp điểm khác nhau nhưng các phương trình trùng nhau chỉtính một đường.",
@@ -31099,7 +31099,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7-source-example-10",
@@ -31110,7 +31110,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Không, vì A không nằm trên parabol. Điều kiện qua A cho −t² = −1, tức t = ±1; tiếp điểm (1; 1), (−1; 1), hai tiếp tuyến y = 2x −1, y = −2x −1.",
-          "text": "Lời giải Ví dụ 10, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Không, vì A không nằm trên parabol. Điều kiện qua A cho −t² = −1, tức t = ±1; tiếp điểm (1; 1), (−1; 1), hai tiếp tuyến y = 2x −1, y = −2x −1.",
@@ -31135,7 +31135,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.8": [
@@ -31148,7 +31148,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện −t² = −2 có hai nghiệm ± √ 2, cho hai đường khác nhau. Có 2 tiếp tuyến.",
-          "text": "Lời giải Ví dụ 1, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện −t² = −2 có hai nghiệm ± √ 2, cho hai đường khác nhau. Có 2 tiếp tuyến.",
@@ -31173,7 +31173,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-2",
@@ -31184,7 +31184,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "−t² = 0 chỉcho t = 0. Có 1 tiếp tuyến y = 0.",
-          "text": "Lời giải Ví dụ 2, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "−t² = 0 chỉcho t = 0. Có 1 tiếp tuyến y = 0.",
@@ -31209,7 +31209,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-3",
@@ -31220,7 +31220,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "−t² = 2 vô nghiệm. Có 0 tiếp tuyến.",
-          "text": "Lời giải Ví dụ 3, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "−t² = 2 vô nghiệm. Có 0 tiếp tuyến.",
@@ -31245,7 +31245,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-4",
@@ -31256,7 +31256,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3t² = 0 chỉcho 0. Có một đường y = 0, dù O không là điểm cực trị.",
-          "text": "Lời giải Ví dụ 4, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3t² = 0 chỉcho 0. Có một đường y = 0, dù O không là điểm cực trị.",
@@ -31295,7 +31295,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-5",
@@ -31306,7 +31306,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3(t² −1) = 0 cho t = ±1. Các đường y = 2, y = −2 khác nhau, nên có 2.",
-          "text": "Lời giải Ví dụ 5, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3(t² −1) = 0 cho t = ±1. Các đường y = 2, y = −2 khác nhau, nên có 2.",
@@ -31345,7 +31345,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-6",
@@ -31356,7 +31356,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 4x(x² −1) = 0 tại −1, 0, 1: 3 tiếp điểm. Hai điểm ±1 cùng cho đường y = 0, điểm 0 cho y = 1. Chỉ có 2 đường phân biệt.",
-          "text": "Lời giải Ví dụ 6, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 4x(x² −1) = 0 tại −1, 0, 1: 3 tiếp điểm. Hai điểm ±1 cùng cho đường y = 0, điểm 0 cho y = 1. Chỉ có 2 đường phân biệt.",
@@ -31395,7 +31395,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-7",
@@ -31406,7 +31406,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = −1/x² < 0 trên miền. Không có tiếp tuyến hệ số góc dương.",
-          "text": "Lời giải Ví dụ 7, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = −1/x² < 0 trên miền. Không có tiếp tuyến hệ số góc dương.",
@@ -31445,7 +31445,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-8",
@@ -31456,7 +31456,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eᵗ = 2 có nghiệm duy nhất t = ln 2. Có 1 đường y = 2x + 2 −2 ln 2.",
-          "text": "Lời giải Ví dụ 8, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eᵗ = 2 có nghiệm duy nhất t = ln 2. Có 1 đường y = 2x + 2 −2 ln 2.",
@@ -31495,7 +31495,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-9",
@@ -31506,7 +31506,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện f(t) −tf′(t) = 1 + 2t² −3t⁴ = 0 cho t = ±1; nghiệm t² = −1/3 bị loại. Cả hai tiếp điểm đều cho y = 0, nên chỉ1 đường.",
-          "text": "Lời giải Ví dụ 9, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện f(t) −tf′(t) = 1 + 2t² −3t⁴ = 0 cho t = ±1; nghiệm t² = −1/3 bị loại. Cả hai tiếp điểm đều cho y = 0, nên chỉ1 đường.",
@@ -31531,7 +31531,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8-source-example-10",
@@ -31542,7 +31542,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(t) −tf′(t) = t²(3 −2t) = 0, được t = 0, 3/2. Hai đường y = 0, y = −9x/4 khác nhau. Có 2 tiếp tuyến.",
-          "text": "Lời giải Ví dụ 10, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(t) −tf′(t) = t²(3 −2t) = 0, được t = 0, 3/2. Hai đường y = 0, y = −9x/4 khác nhau. Có 2 tiếp tuyến.",
@@ -31581,7 +31581,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "7.9": [
@@ -31594,7 +31594,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tiếp tuyến y = 2x + m −1. Qua O cho m = 1.",
-          "text": "Lời giải Ví dụ 1, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tiếp tuyến y = 2x + m −1. Qua O cho m = 1.",
@@ -31619,7 +31619,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-2",
@@ -31630,7 +31630,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ số góc 3 + m = 5, nên m = 2. Tiếp tuyến khi đó y = 5x −2, phân biệt với đường đã cho.",
-          "text": "Lời giải Ví dụ 2, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ số góc 3 + m = 5, nên m = 2. Tiếp tuyến khi đó y = 5x −2, phân biệt với đường đã cho.",
@@ -31655,7 +31655,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-3",
@@ -31666,7 +31666,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(2) = 4 + m = 0, nên m = −4. Tiếp tuyến y = −3.",
-          "text": "Lời giải Ví dụ 3, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(2) = 4 + m = 0, nên m = −4. Tiếp tuyến y = −3.",
@@ -31691,7 +31691,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-4",
@@ -31702,7 +31702,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′(0) = m −1 = −1/2, suy ra m = 1/2. Tiếp tuyến y = −x/2 + 1.",
-          "text": "Lời giải Ví dụ 4, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′(0) = m −1 = −1/2, suy ra m = 1/2. Tiếp tuyến y = −x/2 + 1.",
@@ -31727,7 +31727,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-5",
@@ -31738,7 +31738,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giao điểm thỏa x² −2x + m −3 = 0. Tiếp xúc khi biệt thức bằng 0: m = 4; tiếp điểm (1; 5).",
-          "text": "Lời giải Ví dụ 5, trang 97 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giao điểm thỏa x² −2x + m −3 = 0. Tiếp xúc khi biệt thức bằng 0: m = 4; tiếp điểm (1; 5).",
@@ -31763,7 +31763,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-6",
@@ -31774,7 +31774,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f′ = 3(x² −m). Cần m > 0 để có hai hoành độ±√m, hai tung độ∓2m√m khác nhau. Vậy m > 0.",
-          "text": "Lời giải Ví dụ 6, trang 98 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f′ = 3(x² −m). Cần m > 0 để có hai hoành độ±√m, hai tung độ∓2m√m khác nhau. Vậy m > 0.",
@@ -31799,7 +31799,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-7",
@@ -31810,7 +31810,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(1) = m, f′(1) = 1+m, tiếp tuyến y = (1+m)x−1. Không giá trịm nào làm đường này đi qua O.",
-          "text": "Lời giải Ví dụ 7, trang 98 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(1) = m, f′(1) = 1+m, tiếp tuyến y = (1+m)x−1. Không giá trịm nào làm đường này đi qua O.",
@@ -31835,7 +31835,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-8",
@@ -31846,7 +31846,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại 0, hệ số góc luôn 1 và tung độ1 + m. Cần 1 + m = 2, nên m = 1.",
-          "text": "Lời giải Ví dụ 8, trang 98 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại 0, hệ số góc luôn 1 và tung độ1 + m. Cần 1 + m = 2, nên m = 1.",
@@ -31871,7 +31871,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-9",
@@ -31882,7 +31882,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần f′(1) = 3 + a = 2, nên a = −1; đồng thời f(1) = 3, nên 1 + a + b = 3, cho b = 3.",
-          "text": "Lời giải Ví dụ 9, trang 98 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần f′(1) = 3 + a = 2, nên a = −1; đồng thời f(1) = 3, nên 1 + a + b = 3, cho b = 3.",
@@ -31921,7 +31921,7 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9-source-example-10",
@@ -31932,7 +31932,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện m = 2t −t² = 1 −(t −1)². Có đúng một nghiệm t khi m = 1. Khi m < 1 có hai tiếp tuyến, khi m > 1 không có.",
-          "text": "Lời giải Ví dụ 10, trang 98 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện m = 2t −t² = 1 −(t −1)². Có đúng một nghiệm t khi m = 1. Khi m < 1 có hai tiếp tuyến, khi m > 1 không có.",
@@ -31957,23 +31957,23 @@ const examples = {
       "sourcePdf": "cd01-cd07-functions",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.1": [
     {
       "id": "8.1-source-example-1",
-      "title": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
-      "prompt": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
+      "title": "Ví dụ 1",
+      "prompt": "Tính \\(A=16^{3/4}+27^{-2/3}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "16³⁄⁴ = (2⁴)³⁄⁴ = 2³ = 8. Mặt khác 27⁻²⁄³ = (3³)⁻²⁄³ = 3⁻² = 1/9. Vậy A = 73/9.",
-          "text": "Lời giải Ví dụ 1, trang 60 của PDF nguồn."
+          "expression": "\\(16^{3/4}=(2^4)^{3/4}=2^3=8\\). Mặt khác \\(27^{-2/3}=(3^3)^{-2/3}=3^{-2}=\\dfrac{1}{9}\\). Vậy \\(A=\\dfrac{73}{9}\\).",
+          "text": null
         }
       ],
-      "answer": "16³⁄⁴ = (2⁴)³⁄⁴ = 2³ = 8. Mặt khác 27⁻²⁄³ = (3³)⁻²⁄³ = 3⁻² = 1/9. Vậy A = 73/9.",
+      "answer": "\\(16^{3/4}=(2^4)^{3/4}=2^3=8\\). Mặt khác \\(27^{-2/3}=(3^3)^{-2/3}=3^{-2}=\\dfrac{1}{9}\\). Vậy \\(A=\\dfrac{73}{9}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -31987,29 +31987,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-1",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-1",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-2",
-      "title": "Tính 81³⁄⁴.",
-      "prompt": "Tính 81³⁄⁴.",
+      "title": "Ví dụ 2",
+      "prompt": "Tính \\(81^{3/4}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "81 = 3⁴, nên 81³⁄⁴ = 3³ = 27.",
-          "text": "Lời giải Ví dụ 2, trang 60 của PDF nguồn."
+          "expression": "\\(81=3^4\\), nên \\(81^{3/4}=3^3=27\\).",
+          "text": null
         }
       ],
-      "answer": "81 = 3⁴, nên 81³⁄⁴ = 3³ = 27.",
+      "answer": "\\(81=3^4\\), nên \\(81^{3/4}=3^3=27\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32023,29 +32023,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-2",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-2",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-3",
-      "title": "Rút gọn ᵃ √ 3+2 a √ ₃₋₁ , a > 0.",
-      "prompt": "Rút gọn ᵃ √ 3+2 a √ ₃₋₁ , a > 0.",
+      "title": "Ví dụ 3",
+      "prompt": "Rút gọn \\(\\dfrac{a^{\\sqrt{3}+2}}{a^{\\sqrt{3}-1}}\\), với \\(a>0\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Trừsố mũ: ( √ 3 + 2) −( √ 3 −1) = 3, nên kết quảa³.",
-          "text": "Lời giải Ví dụ 3, trang 60 của PDF nguồn."
+          "expression": "Trừ số mũ: \\((\\sqrt{3}+2)-(\\sqrt{3}-1)=3\\), nên kết quả là \\(a^3\\).",
+          "text": null
         }
       ],
-      "answer": "Trừsố mũ: ( √ 3 + 2) −( √ 3 −1) = 3, nên kết quảa³.",
+      "answer": "Trừ số mũ: \\((\\sqrt{3}+2)-(\\sqrt{3}-1)=3\\), nên kết quả là \\(a^3\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32059,29 +32059,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-3",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-3",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-4",
-      "title": "Tính 32²⁄⁵ + 9⁻¹⁄².",
-      "prompt": "Tính 32²⁄⁵ + 9⁻¹⁄².",
+      "title": "Ví dụ 4",
+      "prompt": "Tính \\(32^{2/5}+9^{-1/2}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "32²⁄⁵ = 4, 9⁻¹⁄² = 1/3; tổng bằng 13/3.",
-          "text": "Lời giải Ví dụ 4, trang 60 của PDF nguồn."
+          "expression": "\\(32^{2/5}=4\\), \\(9^{-1/2}=\\dfrac{1}{3}\\); tổng bằng \\(\\dfrac{13}{3}\\).",
+          "text": null
         }
       ],
-      "answer": "32²⁄⁵ = 4, 9⁻¹⁄² = 1/3; tổng bằng 13/3.",
+      "answer": "\\(32^{2/5}=4\\), \\(9^{-1/2}=\\dfrac{1}{3}\\); tổng bằng \\(\\dfrac{13}{3}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32095,29 +32095,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-4",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-4",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-5",
-      "title": "Rút gọn a √²⁺¹a²⁻ √², a > 0.",
-      "prompt": "Rút gọn a √²⁺¹a²⁻ √², a > 0.",
+      "title": "Ví dụ 5",
+      "prompt": "Rút gọn \\(a^{\\sqrt{2}+1}a^{2-\\sqrt{2}}\\), với \\(a>0\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cộng số mũ được 3, nên kết quảlà a³.",
-          "text": "Lời giải Ví dụ 5, trang 60 của PDF nguồn."
+          "expression": "Cộng số mũ được \\(3\\), nên kết quả là \\(a^3\\).",
+          "text": null
         }
       ],
-      "answer": "Cộng số mũ được 3, nên kết quảlà a³.",
+      "answer": "Cộng số mũ được \\(3\\), nên kết quả là \\(a^3\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32131,29 +32131,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-5",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-5",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-6",
-      "title": "Tính (2³)²⁄³ + 2⁻¹.",
-      "prompt": "Tính (2³)²⁄³ + 2⁻¹.",
+      "title": "Ví dụ 6",
+      "prompt": "Tính \\((2^3)^{2/3}+2^{-1}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "(2³)²⁄³ = 2² = 4 và 2⁻¹ = 1/2. Tổng bằng 4 + ¹ ₂ = ⁹ ₂.",
-          "text": "Lời giải Ví dụ 6, trang 60 của PDF nguồn."
+          "expression": "\\((2^3)^{2/3}=2^2=4\\) và \\(2^{-1}=\\dfrac{1}{2}\\). Tổng bằng \\(4+\\dfrac{1}{2}=\\dfrac{9}{2}\\).",
+          "text": null
         }
       ],
-      "answer": "(2³)²⁄³ = 2² = 4 và 2⁻¹ = 1/2. Tổng bằng 4 + ¹ ₂ = ⁹ ₂.",
+      "answer": "\\((2^3)^{2/3}=2^2=4\\) và \\(2^{-1}=\\dfrac{1}{2}\\). Tổng bằng \\(4+\\dfrac{1}{2}=\\dfrac{9}{2}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32167,29 +32167,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-6",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-6",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-7",
-      "title": "Tính (3³)²⁄³ + 3⁻¹.",
-      "prompt": "Tính (3³)²⁄³ + 3⁻¹.",
+      "title": "Ví dụ 7",
+      "prompt": "Tính \\((3^3)^{2/3}+3^{-1}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "(3³)²⁄³ = 3² = 9 và 3⁻¹ = 1/3. Tổng bằng 9 + ¹ ₃ = ²⁸ ₃ .",
-          "text": "Lời giải Ví dụ 7, trang 60 của PDF nguồn."
+          "expression": "\\((3^3)^{2/3}=3^2=9\\) và \\(3^{-1}=\\dfrac{1}{3}\\). Tổng bằng \\(9+\\dfrac{1}{3}=\\dfrac{28}{3}\\).",
+          "text": null
         }
       ],
-      "answer": "(3³)²⁄³ = 3² = 9 và 3⁻¹ = 1/3. Tổng bằng 9 + ¹ ₃ = ²⁸ ₃ .",
+      "answer": "\\((3^3)^{2/3}=3^2=9\\) và \\(3^{-1}=\\dfrac{1}{3}\\). Tổng bằng \\(9+\\dfrac{1}{3}=\\dfrac{28}{3}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32203,29 +32203,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-7",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-7",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-8",
-      "title": "Tính (4³)²⁄³ + 4⁻¹.",
-      "prompt": "Tính (4³)²⁄³ + 4⁻¹.",
+      "title": "Ví dụ 8",
+      "prompt": "Tính \\((4^3)^{2/3}+4^{-1}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "(4³)²⁄³ = 4² = 16 và 4⁻¹ = 1/4. Tổng bằng 16 + ¹ ₄ = ⁶⁵ ₄ .",
-          "text": "Lời giải Ví dụ 8, trang 60 của PDF nguồn."
+          "expression": "\\((4^3)^{2/3}=4^2=16\\) và \\(4^{-1}=\\dfrac{1}{4}\\). Tổng bằng \\(16+\\dfrac{1}{4}=\\dfrac{65}{4}\\).",
+          "text": null
         }
       ],
-      "answer": "(4³)²⁄³ = 4² = 16 và 4⁻¹ = 1/4. Tổng bằng 16 + ¹ ₄ = ⁶⁵ ₄ .",
+      "answer": "\\((4^3)^{2/3}=4^2=16\\) và \\(4^{-1}=\\dfrac{1}{4}\\). Tổng bằng \\(16+\\dfrac{1}{4}=\\dfrac{65}{4}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32239,29 +32239,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-8",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-8",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-9",
-      "title": "Tính (5³)²⁄³ + 5⁻¹.",
-      "prompt": "Tính (5³)²⁄³ + 5⁻¹.",
+      "title": "Ví dụ 9",
+      "prompt": "Tính \\((5^3)^{2/3}+5^{-1}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "(5³)²⁄³ = 5² = 25 và 5⁻¹ = 1/5. Tổng bằng 25 + ¹ ₅ = ¹²⁶ ₅ .",
-          "text": "Lời giải Ví dụ 9, trang 60 của PDF nguồn."
+          "expression": "\\((5^3)^{2/3}=5^2=25\\) và \\(5^{-1}=\\dfrac{1}{5}\\). Tổng bằng \\(25+\\dfrac{1}{5}=\\dfrac{126}{5}\\).",
+          "text": null
         }
       ],
-      "answer": "(5³)²⁄³ = 5² = 25 và 5⁻¹ = 1/5. Tổng bằng 25 + ¹ ₅ = ¹²⁶ ₅ .",
+      "answer": "\\((5^3)^{2/3}=5^2=25\\) và \\(5^{-1}=\\dfrac{1}{5}\\). Tổng bằng \\(25+\\dfrac{1}{5}=\\dfrac{126}{5}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32275,29 +32275,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-9",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-9",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.1-source-example-10",
-      "title": "Tính (6³)²⁄³ + 6⁻¹.",
-      "prompt": "Tính (6³)²⁄³ + 6⁻¹.",
+      "title": "Ví dụ 10",
+      "prompt": "Tính \\((6^3)^{2/3}+6^{-1}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "(6³)²⁄³ = 6² = 36 và 6⁻¹ = 1/6. Tổng bằng 36 + ¹ ₆ = ²¹⁷ ₆ .",
-          "text": "Lời giải Ví dụ 10, trang 60 của PDF nguồn."
+          "expression": "\\((6^3)^{2/3}=6^2=36\\) và \\(6^{-1}=\\dfrac{1}{6}\\). Tổng bằng \\(36+\\dfrac{1}{6}=\\dfrac{217}{6}\\).",
+          "text": null
         }
       ],
-      "answer": "(6³)²⁄³ = 6² = 36 và 6⁻¹ = 1/6. Tổng bằng 36 + ¹ ₆ = ²¹⁷ ₆ .",
+      "answer": "\\((6^3)^{2/3}=6^2=36\\) và \\(6^{-1}=\\dfrac{1}{6}\\). Tổng bằng \\(36+\\dfrac{1}{6}=\\dfrac{217}{6}\\).",
       "takeaway": null,
       "sourcePages": [
         9,
@@ -32311,15 +32311,15 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.1-worked-example-10",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.1",
       "sectionId": "8.1-example-10",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.2": [
@@ -32332,7 +32332,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₂ 12 −log₂ 3 = log₂ 4 = 2. Đổi cơ số: log₄ 8 = log₂ 8/ log₂ 4 = 3/2. Vậy A = 7/2.",
-          "text": "Lời giải Ví dụ 1, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₂ 12 −log₂ 3 = log₂ 4 = 2. Đổi cơ số: log₄ 8 = log₂ 8/ log₂ 4 = 3/2. Vậy A = 7/2.",
@@ -32357,7 +32357,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-2",
@@ -32368,7 +32368,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "125 = 5³, nên log₅ 125 = 3.",
-          "text": "Lời giải Ví dụ 2, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "125 = 5³, nên log₅ 125 = 3.",
@@ -32393,7 +32393,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-3",
@@ -32404,7 +32404,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "ln(e²) = 2 và log 10⁻² = −2; tổng bằng 0.",
-          "text": "Lời giải Ví dụ 3, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "ln(e²) = 2 và log 10⁻² = −2; tổng bằng 0.",
@@ -32429,7 +32429,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-4",
@@ -32440,7 +32440,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "4 + (−2) = 2.",
-          "text": "Lời giải Ví dụ 4, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "4 + (−2) = 2.",
@@ -32465,7 +32465,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-5",
@@ -32476,7 +32476,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi vềcơ số2: tích bằng log₂ 8 = 3.",
-          "text": "Lời giải Ví dụ 5, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi vềcơ số2: tích bằng log₂ 8 = 3.",
@@ -32501,7 +32501,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-6",
@@ -32512,7 +32512,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "8 = 2³ nên hiệu bằng 3 −1 = 2.",
-          "text": "Lời giải Ví dụ 6, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "8 = 2³ nên hiệu bằng 3 −1 = 2.",
@@ -32537,7 +32537,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-7",
@@ -32548,7 +32548,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "27 = 3³ nên hiệu bằng 3 −1 = 2.",
-          "text": "Lời giải Ví dụ 7, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "27 = 3³ nên hiệu bằng 3 −1 = 2.",
@@ -32573,7 +32573,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-8",
@@ -32584,7 +32584,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "64 = 4³ nên hiệu bằng 3 −1 = 2.",
-          "text": "Lời giải Ví dụ 8, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "64 = 4³ nên hiệu bằng 3 −1 = 2.",
@@ -32609,7 +32609,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-9",
@@ -32620,7 +32620,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "125 = 5³ nên hiệu bằng 3 −1 = 2.",
-          "text": "Lời giải Ví dụ 9, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "125 = 5³ nên hiệu bằng 3 −1 = 2.",
@@ -32645,7 +32645,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2-source-example-10",
@@ -32656,7 +32656,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "216 = 6³ nên hiệu bằng 3 −1 = 2.",
-          "text": "Lời giải Ví dụ 10, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "216 = 6³ nên hiệu bằng 3 −1 = 2.",
@@ -32681,7 +32681,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.3": [
@@ -32694,7 +32694,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện: x−1 > 0, x−1≠ 1, 5−x > 0. Suy ra 1 < x < 5, x≠ 2. Vậy D = (1; 2)∪(2; 5).",
-          "text": "Lời giải Ví dụ 1, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện: x−1 > 0, x−1≠ 1, 5−x > 0. Suy ra 1 < x < 5, x≠ 2. Vậy D = (1; 2)∪(2; 5).",
@@ -32719,7 +32719,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-2",
@@ -32730,7 +32730,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3 −x > 0 ⇒x < 3. Vậy D = (−∞; 3).",
-          "text": "Lời giải Ví dụ 2, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3 −x > 0 ⇒x < 3. Vậy D = (−∞; 3).",
@@ -32755,7 +32755,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-3",
@@ -32766,7 +32766,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2x > 0, 2x≠ 1, x + 1 > 0. Giao được x > 0, x≠ 1/2.",
-          "text": "Lời giải Ví dụ 3, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2x > 0, 2x≠ 1, x + 1 > 0. Giao được x > 0, x≠ 1/2.",
@@ -32791,7 +32791,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-4",
@@ -32802,7 +32802,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² −4 > 0 ⇔x < −2 hoặc x > 2.",
-          "text": "Lời giải Ví dụ 4, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² −4 > 0 ⇔x < −2 hoặc x > 2.",
@@ -32827,7 +32827,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-5",
@@ -32838,7 +32838,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 1 và log₂(x −1)≠ 0 ⇔x≠ 2. Tập xác định (1; 2) ∪(2; +∞).",
-          "text": "Lời giải Ví dụ 5, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 1 và log₂(x −1)≠ 0 ⇔x≠ 2. Tập xác định (1; 2) ∪(2; +∞).",
@@ -32863,7 +32863,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-6",
@@ -32874,7 +32874,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 2 −x > 0 và x + 1 > 0, tức −1 < x < 2. Vậy D = (−1; 2).",
-          "text": "Lời giải Ví dụ 6, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 2 −x > 0 và x + 1 > 0, tức −1 < x < 2. Vậy D = (−1; 2).",
@@ -32899,7 +32899,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-7",
@@ -32910,7 +32910,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 3 −x > 0 và x + 1 > 0, tức −1 < x < 3. Vậy D = (−1; 3).",
-          "text": "Lời giải Ví dụ 7, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 3 −x > 0 và x + 1 > 0, tức −1 < x < 3. Vậy D = (−1; 3).",
@@ -32935,7 +32935,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-8",
@@ -32946,7 +32946,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 4 −x > 0 và x + 1 > 0, tức −1 < x < 4. Vậy D = (−1; 4).",
-          "text": "Lời giải Ví dụ 8, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 4 −x > 0 và x + 1 > 0, tức −1 < x < 4. Vậy D = (−1; 4).",
@@ -32971,7 +32971,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-9",
@@ -32982,7 +32982,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 5 −x > 0 và x + 1 > 0, tức −1 < x < 5. Vậy D = (−1; 5).",
-          "text": "Lời giải Ví dụ 9, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 5 −x > 0 và x + 1 > 0, tức −1 < x < 5. Vậy D = (−1; 5).",
@@ -33007,7 +33007,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3-source-example-10",
@@ -33018,7 +33018,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần 6 −x > 0 và x + 1 > 0, tức −1 < x < 6. Vậy D = (−1; 6).",
-          "text": "Lời giải Ví dụ 10, trang 60 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần 6 −x > 0 và x + 1 > 0, tức −1 < x < 6. Vậy D = (−1; 6).",
@@ -33043,20 +33043,20 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.4": [
     {
       "id": "8.4-source-example-1",
-      "title": "So sánh hai lũy thừa",
+      "title": "Ví dụ 1",
       "prompt": "So sánh \\(A=8^{\\sqrt{2}}\\) và \\(B=4^{\\sqrt{3}}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
           "expression": "\\(A=2^{3\\sqrt{2}},\\ B=2^{2\\sqrt{3}}\\). Hai số mũ dương và \\((3\\sqrt{2})^2=18>12=(2\\sqrt{3})^2\\), nên \\(3\\sqrt{2}>2\\sqrt{3}\\). Vì \\(2>1\\), suy ra \\(A>B\\).",
-          "text": "Lời giải Ví dụ 1, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "\\(A=2^{3\\sqrt{2}},\\ B=2^{2\\sqrt{3}}\\). Hai số mũ dương và \\((3\\sqrt{2})^2=18>12=(2\\sqrt{3})^2\\), nên \\(3\\sqrt{2}>2\\sqrt{3}\\). Vì \\(2>1\\), suy ra \\(A>B\\).",
@@ -33073,29 +33073,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-1",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-1",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-2",
-      "title": "So sánh 2¹˒⁴ và 2¹˒⁵.",
-      "prompt": "So sánh 2¹˒⁴ và 2¹˒⁵.",
+      "title": "Ví dụ 2",
+      "prompt": "So sánh \\(2^{1{,}4}\\) và \\(2^{1{,}5}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "2 > 1 và 1,4 < 1,5 nên 2¹˒⁴ < 2¹˒⁵.",
-          "text": "Lời giải Ví dụ 2, trang 61 của PDF nguồn."
+          "expression": "\\(2>1\\) và \\(1{,}4<1{,}5\\) nên \\(2^{1{,}4}<2^{1{,}5}\\).",
+          "text": null
         }
       ],
-      "answer": "2 > 1 và 1,4 < 1,5 nên 2¹˒⁴ < 2¹˒⁵.",
+      "answer": "\\(2>1\\) và \\(1{,}4<1{,}5\\) nên \\(2^{1{,}4}<2^{1{,}5}\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33109,29 +33109,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-2",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-2",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-3",
-      "title": "So sánh 25 √² và 5³.",
-      "prompt": "So sánh 25 √² và 5³.",
+      "title": "Ví dụ 3",
+      "prompt": "So sánh \\(25^{\\sqrt{2}}\\) và \\(5^3\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "25 √² = 5² √²; 2 √ 2 < 3 do 8 < 9. Vậy sốthứ nhất nhỏhơn.",
-          "text": "Lời giải Ví dụ 3, trang 61 của PDF nguồn."
+          "expression": "\\(25^{\\sqrt{2}}=5^{2\\sqrt{2}}\\); \\(2\\sqrt{2}<3\\) do \\(8<9\\). Vậy số thứ nhất nhỏ hơn.",
+          "text": null
         }
       ],
-      "answer": "25 √² = 5² √²; 2 √ 2 < 3 do 8 < 9. Vậy sốthứ nhất nhỏhơn.",
+      "answer": "\\(25^{\\sqrt{2}}=5^{2\\sqrt{2}}\\); \\(2\\sqrt{2}<3\\) do \\(8<9\\). Vậy số thứ nhất nhỏ hơn.",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33145,29 +33145,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-3",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-3",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-4",
-      "title": "So sánh (1/3) √² và (1/3)³⁄².",
-      "prompt": "So sánh (1/3) √² và (1/3)³⁄².",
+      "title": "Ví dụ 4",
+      "prompt": "So sánh \\(\\left(\\dfrac{1}{3}\\right)^{\\sqrt{2}}\\) và \\(\\left(\\dfrac{1}{3}\\right)^{3/2}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "√ 2 < 3/2 và cơ số nhỏhơn 1, nên sốthứ nhất lớn hơn sốthứ hai.",
-          "text": "Lời giải Ví dụ 4, trang 61 của PDF nguồn."
+          "expression": "\\(\\sqrt{2}<\\dfrac{3}{2}\\) và cơ số nhỏ hơn 1, nên số thứ nhất lớn hơn số thứ hai.",
+          "text": null
         }
       ],
-      "answer": "√ 2 < 3/2 và cơ số nhỏhơn 1, nên sốthứ nhất lớn hơn sốthứ hai.",
+      "answer": "\\(\\sqrt{2}<\\dfrac{3}{2}\\) và cơ số nhỏ hơn 1, nên số thứ nhất lớn hơn số thứ hai.",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33181,29 +33181,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-4",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-4",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-5",
-      "title": "So sánh 9 √² và 3 √⁸.",
-      "prompt": "So sánh 9 √² và 3 √⁸.",
+      "title": "Ví dụ 5",
+      "prompt": "So sánh \\(9^{\\sqrt{2}}\\) và \\(3^{\\sqrt{8}}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "9 √² = 3² √² = 3 √⁸, nên bằng nhau.",
-          "text": "Lời giải Ví dụ 5, trang 61 của PDF nguồn."
+          "expression": "\\(9^{\\sqrt{2}}=3^{2\\sqrt{2}}=3^{\\sqrt{8}}\\), nên bằng nhau.",
+          "text": null
         }
       ],
-      "answer": "9 √² = 3² √² = 3 √⁸, nên bằng nhau.",
+      "answer": "\\(9^{\\sqrt{2}}=3^{2\\sqrt{2}}=3^{\\sqrt{8}}\\), nên bằng nhau.",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33217,29 +33217,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-5",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-5",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-6",
-      "title": "So sánh A = (1/2)³ và B = (1/2)⁴.",
-      "prompt": "So sánh A = (1/2)³ và B = (1/2)⁴.",
+      "title": "Ví dụ 6",
+      "prompt": "So sánh \\(A=\\left(\\dfrac{1}{2}\\right)^3\\) và \\(B=\\left(\\dfrac{1}{2}\\right)^4\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cơ số1/2 thuộc (0; 1); 3 < 4 nên A > B.",
-          "text": "Lời giải Ví dụ 6, trang 61 của PDF nguồn."
+          "expression": "Cơ số \\(\\dfrac{1}{2}\\) thuộc \\((0;1)\\); \\(3<4\\) nên \\(A>B\\).",
+          "text": null
         }
       ],
-      "answer": "Cơ số1/2 thuộc (0; 1); 3 < 4 nên A > B.",
+      "answer": "Cơ số \\(\\dfrac{1}{2}\\) thuộc \\((0;1)\\); \\(3<4\\) nên \\(A>B\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33253,29 +33253,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-6",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-6",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-7",
-      "title": "So sánh A = (1/3)⁴ và B = (1/3)⁵.",
-      "prompt": "So sánh A = (1/3)⁴ và B = (1/3)⁵.",
+      "title": "Ví dụ 7",
+      "prompt": "So sánh \\(A=\\left(\\dfrac{1}{3}\\right)^4\\) và \\(B=\\left(\\dfrac{1}{3}\\right)^5\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cơ số1/3 thuộc (0; 1); 4 < 5 nên A > B.",
-          "text": "Lời giải Ví dụ 7, trang 61 của PDF nguồn."
+          "expression": "Cơ số \\(\\dfrac{1}{3}\\) thuộc \\((0;1)\\); \\(4<5\\) nên \\(A>B\\).",
+          "text": null
         }
       ],
-      "answer": "Cơ số1/3 thuộc (0; 1); 4 < 5 nên A > B.",
+      "answer": "Cơ số \\(\\dfrac{1}{3}\\) thuộc \\((0;1)\\); \\(4<5\\) nên \\(A>B\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33289,29 +33289,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-7",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-7",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-8",
-      "title": "So sánh A = (1/4)⁵ và B = (1/4)⁶.",
-      "prompt": "So sánh A = (1/4)⁵ và B = (1/4)⁶.",
+      "title": "Ví dụ 8",
+      "prompt": "So sánh \\(A=\\left(\\dfrac{1}{4}\\right)^5\\) và \\(B=\\left(\\dfrac{1}{4}\\right)^6\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cơ số1/4 thuộc (0; 1); 5 < 6 nên A > B.",
-          "text": "Lời giải Ví dụ 8, trang 61 của PDF nguồn."
+          "expression": "Cơ số \\(\\dfrac{1}{4}\\) thuộc \\((0;1)\\); \\(5<6\\) nên \\(A>B\\).",
+          "text": null
         }
       ],
-      "answer": "Cơ số1/4 thuộc (0; 1); 5 < 6 nên A > B.",
+      "answer": "Cơ số \\(\\dfrac{1}{4}\\) thuộc \\((0;1)\\); \\(5<6\\) nên \\(A>B\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33325,29 +33325,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-8",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-8",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-9",
-      "title": "So sánh A = (1/5)⁶ và B = (1/5)⁷.",
-      "prompt": "So sánh A = (1/5)⁶ và B = (1/5)⁷.",
+      "title": "Ví dụ 9",
+      "prompt": "So sánh \\(A=\\left(\\dfrac{1}{5}\\right)^6\\) và \\(B=\\left(\\dfrac{1}{5}\\right)^7\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cơ số1/5 thuộc (0; 1); 6 < 7 nên A > B.",
-          "text": "Lời giải Ví dụ 9, trang 61 của PDF nguồn."
+          "expression": "Cơ số \\(\\dfrac{1}{5}\\) thuộc \\((0;1)\\); \\(6<7\\) nên \\(A>B\\).",
+          "text": null
         }
       ],
-      "answer": "Cơ số1/5 thuộc (0; 1); 6 < 7 nên A > B.",
+      "answer": "Cơ số \\(\\dfrac{1}{5}\\) thuộc \\((0;1)\\); \\(6<7\\) nên \\(A>B\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33361,29 +33361,29 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-9",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-9",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4-source-example-10",
-      "title": "So sánh A = (1/6)⁷ và B = (1/6)⁸.",
-      "prompt": "So sánh A = (1/6)⁷ và B = (1/6)⁸.",
+      "title": "Ví dụ 10",
+      "prompt": "So sánh \\(A=\\left(\\dfrac{1}{6}\\right)^7\\) và \\(B=\\left(\\dfrac{1}{6}\\right)^8\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Cơ số1/6 thuộc (0; 1); 7 < 8 nên A > B.",
-          "text": "Lời giải Ví dụ 10, trang 61 của PDF nguồn."
+          "expression": "Cơ số \\(\\dfrac{1}{6}\\) thuộc \\((0;1)\\); \\(7<8\\) nên \\(A>B\\).",
+          "text": null
         }
       ],
-      "answer": "Cơ số1/6 thuộc (0; 1); 7 < 8 nên A > B.",
+      "answer": "Cơ số \\(\\dfrac{1}{6}\\) thuộc \\((0;1)\\); \\(7<8\\) nên \\(A>B\\).",
       "takeaway": null,
       "sourcePages": [
         12,
@@ -33397,15 +33397,15 @@ const examples = {
       "solutionStatus": "available",
       "sourceBlockId": "8.4-worked-example-10",
       "origin": "finalized-tutor-pdf",
-      "verification": "source-extracted-needs-review",
+      "verification": "verified",
       "topicId": "CD08",
       "lessonId": "8.4",
       "sectionId": "8.4-example-10",
       "contentType": "markdown-latex",
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.5": [
@@ -33418,7 +33418,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 0 < 1/2 < 1, hàm lôgarit nghịch biến. Do 3 < 5, suy ra log₁/₂ 3 > log₁/₂ 5.",
-          "text": "Lời giải Ví dụ 1, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 0 < 1/2 < 1, hàm lôgarit nghịch biến. Do 3 < 5, suy ra log₁/₂ 3 > log₁/₂ 5.",
@@ -33443,7 +33443,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-2",
@@ -33454,7 +33454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số3 > 1, 2 < 5 nên log₃ 2 < log₃ 5.",
-          "text": "Lời giải Ví dụ 2, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số3 > 1, 2 < 5 nên log₃ 2 < log₃ 5.",
@@ -33479,7 +33479,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-3",
@@ -33490,7 +33490,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₄ 5 = ¹ ₂ log₂ 5. Vì log₂ 5 > 0, suy ra log₂ 5 > log₄ 5.",
-          "text": "Lời giải Ví dụ 3, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₄ 5 = ¹ ₂ log₂ 5. Vì log₂ 5 > 0, suy ra log₂ 5 > log₄ 5.",
@@ -33515,7 +33515,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-4",
@@ -33526,7 +33526,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số2 > 1, nên log₂ 7 < log₂ 8 = 3.",
-          "text": "Lời giải Ví dụ 4, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số2 > 1, nên log₂ 7 < log₂ 8 = 3.",
@@ -33551,7 +33551,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-5",
@@ -33562,7 +33562,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sốthứ nhất âm; 0 < log₃ 2 < 1; log₂ 3 > 1. Thứtựđúng như đềđã liệt kê.",
-          "text": "Lời giải Ví dụ 5, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sốthứ nhất âm; 0 < log₃ 2 < 1; log₂ 3 > 1. Thứtựđúng như đềđã liệt kê.",
@@ -33587,7 +33587,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-6",
@@ -33598,7 +33598,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 3 < 4 = 2² và 2 > 1, nên log₂(3) < 2.",
-          "text": "Lời giải Ví dụ 6, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 3 < 4 = 2² và 2 > 1, nên log₂(3) < 2.",
@@ -33623,7 +33623,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-7",
@@ -33634,7 +33634,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 8 < 9 = 3² và 3 > 1, nên log₃(8) < 2.",
-          "text": "Lời giải Ví dụ 7, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 8 < 9 = 3² và 3 > 1, nên log₃(8) < 2.",
@@ -33659,7 +33659,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-8",
@@ -33670,7 +33670,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 15 < 16 = 4² và 4 > 1, nên log₄(15) < 2.",
-          "text": "Lời giải Ví dụ 8, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 15 < 16 = 4² và 4 > 1, nên log₄(15) < 2.",
@@ -33695,7 +33695,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-9",
@@ -33706,7 +33706,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 24 < 25 = 5² và 5 > 1, nên log₅(24) < 2.",
-          "text": "Lời giải Ví dụ 9, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 24 < 25 = 5² và 5 > 1, nên log₅(24) < 2.",
@@ -33731,7 +33731,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5-source-example-10",
@@ -33742,7 +33742,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 35 < 36 = 6² và 6 > 1, nên log₆(35) < 2.",
-          "text": "Lời giải Ví dụ 10, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 35 < 36 = 6² và 6 > 1, nên log₆(35) < 2.",
@@ -33767,7 +33767,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.6": [
@@ -33780,7 +33780,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 9 và a > 0 nên a = 3. Hàm y = 3ˣ đồng biến trên R, đi qua (0; 1), có tập giá trị(0; +∞).",
-          "text": "Lời giải Ví dụ 1, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 9 và a > 0 nên a = 3. Hàm y = 3ˣ đồng biến trên R, đi qua (0; 1), có tập giá trị(0; +∞).",
@@ -33819,7 +33819,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-2",
@@ -33830,7 +33830,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "D = R, tập giá trị(0; +∞). Đồ thịqua (0; 1) và (1; 5).",
-          "text": "Lời giải Ví dụ 2, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "D = R, tập giá trị(0; +∞). Đồ thịqua (0; 1) và (1; 5).",
@@ -33855,7 +33855,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-3",
@@ -33866,7 +33866,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a³ = 8 nên a = 2, thỏa a > 0, a≠ 1.",
-          "text": "Lời giải Ví dụ 3, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a³ = 8 nên a = 2, thỏa a > 0, a≠ 1.",
@@ -33905,7 +33905,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-4",
@@ -33916,7 +33916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các điểm (−1; 3), (0; 1), (1; 1/3). Hàm nghịch biến trên R.",
-          "text": "Lời giải Ví dụ 4, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các điểm (−1; 3), (0; 1), (1; 1/3). Hàm nghịch biến trên R.",
@@ -33941,7 +33941,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-5",
@@ -33952,7 +33952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a⁻¹ = 4 ⇒a = 1/4; hàm nghịch biến.",
-          "text": "Lời giải Ví dụ 5, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a⁻¹ = 4 ⇒a = 1/4; hàm nghịch biến.",
@@ -33991,7 +33991,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-6",
@@ -34002,7 +34002,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 4, a > 0 nên a = 2. Vì a > 1, hàm đồng biến trên R.",
-          "text": "Lời giải Ví dụ 6, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 4, a > 0 nên a = 2. Vì a > 1, hàm đồng biến trên R.",
@@ -34041,7 +34041,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-7",
@@ -34052,7 +34052,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 9, a > 0 nên a = 3. Vì a > 1, hàm đồng biến trên R.",
-          "text": "Lời giải Ví dụ 7, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 9, a > 0 nên a = 3. Vì a > 1, hàm đồng biến trên R.",
@@ -34091,7 +34091,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-8",
@@ -34102,7 +34102,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 16, a > 0 nên a = 4. Vì a > 1, hàm đồng biến trên R.",
-          "text": "Lời giải Ví dụ 8, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 16, a > 0 nên a = 4. Vì a > 1, hàm đồng biến trên R.",
@@ -34141,7 +34141,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-9",
@@ -34152,7 +34152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 25, a > 0 nên a = 5. Vì a > 1, hàm đồng biến trên R.",
-          "text": "Lời giải Ví dụ 9, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 25, a > 0 nên a = 5. Vì a > 1, hàm đồng biến trên R.",
@@ -34191,7 +34191,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6-source-example-10",
@@ -34202,7 +34202,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 36, a > 0 nên a = 6. Vì a > 1, hàm đồng biến trên R.",
-          "text": "Lời giải Ví dụ 10, trang 61 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 36, a > 0 nên a = 6. Vì a > 1, hàm đồng biến trên R.",
@@ -34241,7 +34241,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.7": [
@@ -34254,7 +34254,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "logₐ 4 = 2 ⇔a² = 4. Vì a > 0, a≠ 1, suy ra a = 2. Hàm đồng biến trên (0; +∞).",
-          "text": "Lời giải Ví dụ 1, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "logₐ 4 = 2 ⇔a² = 4. Vì a > 0, a≠ 1, suy ra a = 2. Hàm đồng biến trên (0; +∞).",
@@ -34293,7 +34293,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-2",
@@ -34304,7 +34304,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "logₐ 9 = 1 ⇔a = 9. Hàm đồng biến.",
-          "text": "Lời giải Ví dụ 2, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "logₐ 9 = 1 ⇔a = 9. Hàm đồng biến.",
@@ -34343,7 +34343,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-3",
@@ -34354,7 +34354,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Chọn x = 1/3, 1, 3 thì y = −1, 0, 1. Nối theo đường cong tăng trên x > 0; không vẽ phần bên trái trục tung.",
-          "text": "Lời giải Ví dụ 3, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Chọn x = 1/3, 1, 3 thì y = −1, 0, 1. Nối theo đường cong tăng trên x > 0; không vẽ phần bên trái trục tung.",
@@ -34379,7 +34379,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-4",
@@ -34390,7 +34390,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(1; 0), (1/3; 1), (3; −1). Hàm nghịch biến trên (0; +∞).",
-          "text": "Lời giải Ví dụ 4, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(1; 0), (1/3; 1), (3; −1). Hàm nghịch biến trên (0; +∞).",
@@ -34415,7 +34415,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-5",
@@ -34426,7 +34426,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a⁻³ = 8 ⇒a = 1/2.",
-          "text": "Lời giải Ví dụ 5, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a⁻³ = 8 ⇒a = 1/2.",
@@ -34465,7 +34465,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-6",
@@ -34476,7 +34476,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 4, a > 0 nên a = 2. Tập xác định (0; +∞); hàm đồng biến.",
-          "text": "Lời giải Ví dụ 6, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 4, a > 0 nên a = 2. Tập xác định (0; +∞); hàm đồng biến.",
@@ -34515,7 +34515,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-7",
@@ -34526,7 +34526,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 9, a > 0 nên a = 3. Tập xác định (0; +∞); hàm đồng biến.",
-          "text": "Lời giải Ví dụ 7, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 9, a > 0 nên a = 3. Tập xác định (0; +∞); hàm đồng biến.",
@@ -34565,7 +34565,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-8",
@@ -34576,7 +34576,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 16, a > 0 nên a = 4. Tập xác định (0; +∞); hàm đồng biến.",
-          "text": "Lời giải Ví dụ 8, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 16, a > 0 nên a = 4. Tập xác định (0; +∞); hàm đồng biến.",
@@ -34615,7 +34615,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-9",
@@ -34626,7 +34626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 25, a > 0 nên a = 5. Tập xác định (0; +∞); hàm đồng biến.",
-          "text": "Lời giải Ví dụ 9, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 25, a > 0 nên a = 5. Tập xác định (0; +∞); hàm đồng biến.",
@@ -34665,7 +34665,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7-source-example-10",
@@ -34676,7 +34676,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a² = 36, a > 0 nên a = 6. Tập xác định (0; +∞); hàm đồng biến.",
-          "text": "Lời giải Ví dụ 10, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a² = 36, a > 0 nên a = 6. Tập xác định (0; +∞); hàm đồng biến.",
@@ -34715,7 +34715,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.8": [
@@ -34728,7 +34728,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì x > 1, các đối số đều dương. A = log₂[(x² −1)/(x −1)] = log₂(x + 1). Điều kiện vẫn là x > 1.",
-          "text": "Lời giải Ví dụ 1, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì x > 1, các đối số đều dương. A = log₂[(x² −1)/(x −1)] = log₂(x + 1). Điều kiện vẫn là x > 1.",
@@ -34753,7 +34753,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-2",
@@ -34764,7 +34764,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₃(9x/x) = log₃ 9 = 2.",
-          "text": "Lời giải Ví dụ 2, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₃(9x/x) = log₃ 9 = 2.",
@@ -34789,7 +34789,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-3",
@@ -34800,7 +34800,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² = |x|², |x| > 0, nên log₂(x²) = 2 log₂ |x|. Không viết 2 log₂ x vì x < 0.",
-          "text": "Lời giải Ví dụ 3, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² = |x|², |x| > 0, nên log₂(x²) = 2 log₂ |x|. Không viết 2 log₂ x vì x < 0.",
@@ -34825,7 +34825,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-4",
@@ -34836,7 +34836,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3 + 2 logₐ b.",
-          "text": "Lời giải Ví dụ 4, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3 + 2 logₐ b.",
@@ -34861,7 +34861,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-5",
@@ -34872,7 +34872,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "5 −3 = 2.",
-          "text": "Lời giải Ví dụ 5, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "5 −3 = 2.",
@@ -34897,7 +34897,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-6",
@@ -34908,7 +34908,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các đối số dương. Gộp thành log₂(2²) = 2.",
-          "text": "Lời giải Ví dụ 6, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các đối số dương. Gộp thành log₂(2²) = 2.",
@@ -34933,7 +34933,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-7",
@@ -34944,7 +34944,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các đối số dương. Gộp thành log₂(2³) = 3.",
-          "text": "Lời giải Ví dụ 7, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các đối số dương. Gộp thành log₂(2³) = 3.",
@@ -34969,7 +34969,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-8",
@@ -34980,7 +34980,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các đối số dương. Gộp thành log₂(2⁴) = 4.",
-          "text": "Lời giải Ví dụ 8, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các đối số dương. Gộp thành log₂(2⁴) = 4.",
@@ -35005,7 +35005,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-9",
@@ -35016,7 +35016,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các đối số dương. Gộp thành log₂(2⁵) = 5.",
-          "text": "Lời giải Ví dụ 9, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các đối số dương. Gộp thành log₂(2⁵) = 5.",
@@ -35041,7 +35041,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8-source-example-10",
@@ -35052,7 +35052,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Các đối số dương. Gộp thành log₂(2⁶) = 6.",
-          "text": "Lời giải Ví dụ 10, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Các đối số dương. Gộp thành log₂(2⁶) = 6.",
@@ -35077,7 +35077,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.9": [
@@ -35090,7 +35090,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy x = 1: vếtrái bằng log₂ 2 = 1, vế phải bằng 0 + 0 = 0. Vậy mệnh đề sai. Công thức tổng lôgarit chỉứng với tích các đối số.",
-          "text": "Lời giải Ví dụ 1, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy x = 1: vếtrái bằng log₂ 2 = 1, vế phải bằng 0 + 0 = 0. Vậy mệnh đề sai. Công thức tổng lôgarit chỉứng với tích các đối số.",
@@ -35115,7 +35115,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-2",
@@ -35126,7 +35126,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Công thức áp dụng với u > 0, v > 0. Chỉ có uv > 0 chưa đủđểhai lôgarit ởvế phải có nghĩa.",
-          "text": "Lời giải Ví dụ 2, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Công thức áp dụng với u > 0, v > 0. Chỉ có uv > 0 chưa đủđểhai lôgarit ởvế phải có nghĩa.",
@@ -35151,7 +35151,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-3",
@@ -35162,7 +35162,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Với mọi x ∈R, 2ˣ > 0 nên phương trình vô nghiệm.",
-          "text": "Lời giải Ví dụ 3, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Với mọi x ∈R, 2ˣ > 0 nên phương trình vô nghiệm.",
@@ -35187,7 +35187,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-4",
@@ -35198,7 +35198,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đúng, theo công thức cơ bản; đối số7 dương.",
-          "text": "Lời giải Ví dụ 4, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đúng, theo công thức cơ bản; đối số7 dương.",
@@ -35223,7 +35223,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-5",
@@ -35234,7 +35234,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Vì 3 > 1 và hàm nghịch biến nên log₁/₂ 3 < log₁/₂ 1 = 0.",
-          "text": "Lời giải Ví dụ 5, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Vì 3 > 1 và hàm nghịch biến nên log₁/₂ 3 < log₁/₂ 1 = 0.",
@@ -35259,7 +35259,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-6",
@@ -35270,7 +35270,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Công thức đúng là log₂(2x) = 1 + log₂ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 2.",
-          "text": "Lời giải Ví dụ 6, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Công thức đúng là log₂(2x) = 1 + log₂ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 2.",
@@ -35295,7 +35295,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-7",
@@ -35306,7 +35306,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Công thức đúng là log₃(3x) = 1 + log₃ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 3.",
-          "text": "Lời giải Ví dụ 7, trang 62 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Công thức đúng là log₃(3x) = 1 + log₃ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 3.",
@@ -35331,7 +35331,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-8",
@@ -35342,7 +35342,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Công thức đúng là log₄(4x) = 1 + log₄ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 4.",
-          "text": "Lời giải Ví dụ 8, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Công thức đúng là log₄(4x) = 1 + log₄ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 4.",
@@ -35367,7 +35367,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-9",
@@ -35378,7 +35378,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Công thức đúng là log₅(5x) = 1 + log₅ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 5.",
-          "text": "Lời giải Ví dụ 9, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Công thức đúng là log₅(5x) = 1 + log₅ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 5.",
@@ -35403,7 +35403,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9-source-example-10",
@@ -35414,7 +35414,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Sai. Công thức đúng là log₆(6x) = 1 + log₆ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 6.",
-          "text": "Lời giải Ví dụ 10, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Sai. Công thức đúng là log₆(6x) = 1 + log₆ x. Chẳng hạn x = 1 cho vếtrái 1, vế phải 6.",
@@ -35439,7 +35439,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.10": [
@@ -35452,7 +35452,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −2)² = |x −2|. Phương trình thành |x −2| = 3, nên x = 5 hoặc x = −1.",
-          "text": "Lời giải Ví dụ 1, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −2)² = |x −2|. Phương trình thành |x −2| = 3, nên x = 5 hoặc x = −1.",
@@ -35477,7 +35477,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-2",
@@ -35488,7 +35488,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "₄√ 81 = 3 là căn không âm; ³√−8 = −2.",
-          "text": "Lời giải Ví dụ 2, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "₄√ 81 = 3 là căn không âm; ³√−8 = −2.",
@@ -35513,7 +35513,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-3",
@@ -35524,7 +35524,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x + 1)² = |x + 1|. Do x + 1 < 0, kết quảlà −x −1.",
-          "text": "Lời giải Ví dụ 3, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x + 1)² = |x + 1|. Do x + 1 < 0, kết quảlà −x −1.",
@@ -35549,7 +35549,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-4",
@@ -35560,7 +35560,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lần lượt là −5 và 5.",
-          "text": "Lời giải Ví dụ 4, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lần lượt là −5 và 5.",
@@ -35585,7 +35585,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-5",
@@ -35596,7 +35596,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Số mũ nguyên âm yêu cầu x −3≠ 0, nên D = R \\ {3}.",
-          "text": "Lời giải Ví dụ 5, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Số mũ nguyên âm yêu cầu x −3≠ 0, nên D = R \\ {3}.",
@@ -35621,7 +35621,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-6",
@@ -35632,7 +35632,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −2)² = |x −2|. Vì x −2 < 0, kết quả2 −x.",
-          "text": "Lời giải Ví dụ 6, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −2)² = |x −2|. Vì x −2 < 0, kết quả2 −x.",
@@ -35657,7 +35657,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-7",
@@ -35668,7 +35668,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −3)² = |x −3|. Vì x −3 < 0, kết quả3 −x.",
-          "text": "Lời giải Ví dụ 7, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −3)² = |x −3|. Vì x −3 < 0, kết quả3 −x.",
@@ -35693,7 +35693,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-8",
@@ -35704,7 +35704,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −4)² = |x −4|. Vì x −4 < 0, kết quả4 −x.",
-          "text": "Lời giải Ví dụ 8, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −4)² = |x −4|. Vì x −4 < 0, kết quả4 −x.",
@@ -35729,7 +35729,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-9",
@@ -35740,7 +35740,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −5)² = |x −5|. Vì x −5 < 0, kết quả5 −x.",
-          "text": "Lời giải Ví dụ 9, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −5)² = |x −5|. Vì x −5 < 0, kết quả5 −x.",
@@ -35765,7 +35765,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10-source-example-10",
@@ -35776,7 +35776,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "√ (x −6)² = |x −6|. Vì x −6 < 0, kết quả6 −x.",
-          "text": "Lời giải Ví dụ 10, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "√ (x −6)² = |x −6|. Vì x −6 < 0, kết quả6 −x.",
@@ -35801,7 +35801,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.11": [
@@ -35814,7 +35814,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2: log₆ 12 = log₂ 12/ log₂ 6 = (2 + a)/(1 + a).",
-          "text": "Lời giải Ví dụ 1, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2: log₆ 12 = log₂ 12/ log₂ 6 = (2 + a)/(1 + a).",
@@ -35839,7 +35839,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-2",
@@ -35850,7 +35850,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi vềcơ số2: log₈ 9 = (2 log₂ 3)/3 = 2a/3.",
-          "text": "Lời giải Ví dụ 2, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi vềcơ số2: log₈ 9 = (2 log₂ 3)/3 = 2a/3.",
@@ -35875,7 +35875,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-3",
@@ -35886,7 +35886,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "75 = 3 · 5², 15 = 3 · 5. Đổi cơ số3 cho (1 + 2a)/(1 + a).",
-          "text": "Lời giải Ví dụ 3, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "75 = 3 · 5², 15 = 3 · 5. Đổi cơ số3 cho (1 + 2a)/(1 + a).",
@@ -35911,7 +35911,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-4",
@@ -35922,7 +35922,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₁₀ 20 = (2 + a)/(1 + a).",
-          "text": "Lời giải Ví dụ 4, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₁₀ 20 = (2 + a)/(1 + a).",
@@ -35947,7 +35947,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-5",
@@ -35958,7 +35958,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₁₅ 12 = (2 + a)/(a + b).",
-          "text": "Lời giải Ví dụ 5, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₁₅ 12 = (2 + a)/(a + b).",
@@ -35983,7 +35983,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-6",
@@ -35994,7 +35994,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2. Tử sốbằng 3 + 2a, mẫu số bằng 2 + a. Kết quả(3 + 2a)/(2 + a).",
-          "text": "Lời giải Ví dụ 6, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2. Tử sốbằng 3 + 2a, mẫu số bằng 2 + a. Kết quả(3 + 2a)/(2 + a).",
@@ -36019,7 +36019,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-7",
@@ -36030,7 +36030,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2. Tử sốbằng 4 + 2a, mẫu số bằng 3 + a. Kết quả(4 + 2a)/(3 + a).",
-          "text": "Lời giải Ví dụ 7, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2. Tử sốbằng 4 + 2a, mẫu số bằng 3 + a. Kết quả(4 + 2a)/(3 + a).",
@@ -36055,7 +36055,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-8",
@@ -36066,7 +36066,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2. Tử sốbằng 5 + 2a, mẫu số bằng 4 + a. Kết quả(5 + 2a)/(4 + a).",
-          "text": "Lời giải Ví dụ 8, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2. Tử sốbằng 5 + 2a, mẫu số bằng 4 + a. Kết quả(5 + 2a)/(4 + a).",
@@ -36091,7 +36091,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-9",
@@ -36102,7 +36102,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2. Tử sốbằng 6 + 2a, mẫu số bằng 5 + a. Kết quả(6 + 2a)/(5 + a).",
-          "text": "Lời giải Ví dụ 9, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2. Tử sốbằng 6 + 2a, mẫu số bằng 5 + a. Kết quả(6 + 2a)/(5 + a).",
@@ -36127,7 +36127,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11-source-example-10",
@@ -36138,7 +36138,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi cơ số2. Tử sốbằng 7 + 2a, mẫu số bằng 6 + a. Kết quả(7 + 2a)/(6 + a).",
-          "text": "Lời giải Ví dụ 10, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi cơ số2. Tử sốbằng 7 + 2a, mẫu số bằng 6 + a. Kết quả(7 + 2a)/(6 + a).",
@@ -36163,7 +36163,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.12": [
@@ -36176,7 +36176,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi vềcơ số2, các thừa sốtrung gian triệt tiêu. Tích bằng log₂ 16 = 4.",
-          "text": "Lời giải Ví dụ 1, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi vềcơ số2, các thừa sốtrung gian triệt tiêu. Tích bằng log₂ 16 = 4.",
@@ -36201,7 +36201,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-2",
@@ -36212,7 +36212,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tích bằng log₂ 4 = 2 theo công thức đổi cơ số.",
-          "text": "Lời giải Ví dụ 2, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tích bằng log₂ 4 = 2 theo công thức đổi cơ số.",
@@ -36237,7 +36237,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-3",
@@ -36248,7 +36248,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đổi vềcơ số3: log₉ 27 = 3/2.",
-          "text": "Lời giải Ví dụ 3, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đổi vềcơ số3: log₉ 27 = 3/2.",
@@ -36273,7 +36273,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-4",
@@ -36284,7 +36284,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₄ 9 = log₂ 3, nên tích bằng 1.",
-          "text": "Lời giải Ví dụ 4, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₄ 9 = log₂ 3, nên tích bằng 1.",
@@ -36309,7 +36309,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-5",
@@ -36320,7 +36320,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "logₐ2(b³) = ³ ₂ logₐ b.",
-          "text": "Lời giải Ví dụ 5, trang 63 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "logₐ2(b³) = ³ ₂ logₐ b.",
@@ -36345,7 +36345,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-6",
@@ -36356,7 +36356,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng công thức đổi cơ số, tích bằng log₂(2²) = 2.",
-          "text": "Lời giải Ví dụ 6, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng công thức đổi cơ số, tích bằng log₂(2²) = 2.",
@@ -36381,7 +36381,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-7",
@@ -36392,7 +36392,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng công thức đổi cơ số, tích bằng log₂(2³) = 3.",
-          "text": "Lời giải Ví dụ 7, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng công thức đổi cơ số, tích bằng log₂(2³) = 3.",
@@ -36417,7 +36417,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-8",
@@ -36428,7 +36428,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng công thức đổi cơ số, tích bằng log₂(2⁴) = 4.",
-          "text": "Lời giải Ví dụ 8, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng công thức đổi cơ số, tích bằng log₂(2⁴) = 4.",
@@ -36453,7 +36453,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-9",
@@ -36464,7 +36464,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng công thức đổi cơ số, tích bằng log₂(2⁵) = 5.",
-          "text": "Lời giải Ví dụ 9, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng công thức đổi cơ số, tích bằng log₂(2⁵) = 5.",
@@ -36489,7 +36489,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12-source-example-10",
@@ -36500,7 +36500,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng công thức đổi cơ số, tích bằng log₂(2⁶) = 6.",
-          "text": "Lời giải Ví dụ 10, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng công thức đổi cơ số, tích bằng log₂(2⁶) = 6.",
@@ -36525,7 +36525,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.13": [
@@ -36538,7 +36538,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "logₐ 2 > logb 2 ⇔ln 2/ ln a > ln 2/ ln b. Vì ln a, ln b > 0, suy ra ln a < ln b, nên 1 < a < b. Kết hợp được 0 < c < 1 < a < b.",
-          "text": "Lời giải Ví dụ 1, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "logₐ 2 > logb 2 ⇔ln 2/ ln a > ln 2/ ln b. Vì ln a, ln b > 0, suy ra ln a < ln b, nên 1 < a < b. Kết hợp được 0 < c < 1 < a < b.",
@@ -36577,7 +36577,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-2",
@@ -36588,7 +36588,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0 < a < b nên a² < b². Tại x = 2, đồ thịy = bˣ nằm trên y = aˣ.",
-          "text": "Lời giải Ví dụ 2, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "0 < a < b nên a² < b². Tại x = 2, đồ thịy = bˣ nằm trên y = aˣ.",
@@ -36613,7 +36613,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-3",
@@ -36624,7 +36624,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điểm có tung độ1 cho a = 1/4; cơ sốnày thuộc (0; 1) nên đúng tính chất giảm.",
-          "text": "Lời giải Ví dụ 3, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điểm có tung độ1 cho a = 1/4; cơ sốnày thuộc (0; 1) nên đúng tính chất giảm.",
@@ -36663,7 +36663,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-4",
@@ -36674,7 +36674,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "a = 0,4; hàm nghịch biến trên R.",
-          "text": "Lời giải Ví dụ 4, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "a = 0,4; hàm nghịch biến trên R.",
@@ -36713,7 +36713,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-5",
@@ -36724,7 +36724,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì tửln(1/2) < 0, suy ra logₐ(1/2) < logb(1/2).",
-          "text": "Lời giải Ví dụ 5, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì tửln(1/2) < 0, suy ra logₐ(1/2) < logb(1/2).",
@@ -36749,7 +36749,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-6",
@@ -36760,7 +36760,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại x = 1, tung độlần lượt 2 và 3, nên đồ thịcơ số3 cao hơn. Tại x = −1, 1/2 > 1/3, nên thứtựđảo lại.",
-          "text": "Lời giải Ví dụ 6, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại x = 1, tung độlần lượt 2 và 3, nên đồ thịcơ số3 cao hơn. Tại x = −1, 1/2 > 1/3, nên thứtựđảo lại.",
@@ -36799,7 +36799,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-7",
@@ -36810,7 +36810,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại x = 1, tung độlần lượt 3 và 4, nên đồ thịcơ số4 cao hơn. Tại x = −1, 1/3 > 1/4, nên thứtựđảo lại.",
-          "text": "Lời giải Ví dụ 7, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại x = 1, tung độlần lượt 3 và 4, nên đồ thịcơ số4 cao hơn. Tại x = −1, 1/3 > 1/4, nên thứtựđảo lại.",
@@ -36849,7 +36849,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-8",
@@ -36860,7 +36860,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại x = 1, tung độlần lượt 4 và 5, nên đồ thịcơ số5 cao hơn. Tại x = −1, 1/4 > 1/5, nên thứtựđảo lại.",
-          "text": "Lời giải Ví dụ 8, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại x = 1, tung độlần lượt 4 và 5, nên đồ thịcơ số5 cao hơn. Tại x = −1, 1/4 > 1/5, nên thứtựđảo lại.",
@@ -36899,7 +36899,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-9",
@@ -36910,7 +36910,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại x = 1, tung độlần lượt 5 và 6, nên đồ thịcơ số6 cao hơn. Tại x = −1, 1/5 > 1/6, nên thứtựđảo lại.",
-          "text": "Lời giải Ví dụ 9, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại x = 1, tung độlần lượt 5 và 6, nên đồ thịcơ số6 cao hơn. Tại x = −1, 1/5 > 1/6, nên thứtựđảo lại.",
@@ -36949,7 +36949,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13-source-example-10",
@@ -36960,7 +36960,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tại x = 1, tung độlần lượt 6 và 7, nên đồ thịcơ số7 cao hơn. Tại x = −1, 1/6 > 1/7, nên thứtựđảo lại.",
-          "text": "Lời giải Ví dụ 10, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tại x = 1, tung độlần lượt 6 và 7, nên đồ thịcơ số7 cao hơn. Tại x = −1, 1/6 > 1/7, nên thứtựđảo lại.",
@@ -36999,7 +36999,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "8.14": [
@@ -37012,7 +37012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Máy cho t ≈6,958515633. Bất phương trình cho n ≥t, nên số kỳ nhỏ nhất là 7; không làm tròn t trước khi xử lý điều kiện nguyên.",
-          "text": "Lời giải Ví dụ 1, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Máy cho t ≈6,958515633. Bất phương trình cho n ≥t, nên số kỳ nhỏ nhất là 7; không làm tròn t trước khi xử lý điều kiện nguyên.",
@@ -37037,7 +37037,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-2",
@@ -37048,7 +37048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dùng ln 12/ ln 5 ≈1,543959, làm tròn được 1,54.",
-          "text": "Lời giải Ví dụ 2, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dùng ln 12/ ln 5 ≈1,543959, làm tròn được 1,54.",
@@ -37073,7 +37073,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-3",
@@ -37084,7 +37084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "n > ln 2/ ln 1,1 ≈7,2725. Số nguyên nhỏ nhất là 8; 1,1⁷ < 2 < 1,1⁸.",
-          "text": "Lời giải Ví dụ 3, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "n > ln 2/ ln 1,1 ≈7,2725. Số nguyên nhỏ nhất là 8; 1,1⁷ < 2 < 1,1⁸.",
@@ -37109,7 +37109,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-4",
@@ -37120,7 +37120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "ln 20/ ln 7 ≈1,540.",
-          "text": "Lời giải Ví dụ 4, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "ln 20/ ln 7 ≈1,540.",
@@ -37145,7 +37145,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-5",
@@ -37156,7 +37156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁻¹˒² ≈0,301.",
-          "text": "Lời giải Ví dụ 5, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁻¹˒² ≈0,301.",
@@ -37181,7 +37181,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-6",
@@ -37192,7 +37192,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₂ 3 = ln 3/ ln 2 ≈1,585.",
-          "text": "Lời giải Ví dụ 6, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₂ 3 = ln 3/ ln 2 ≈1,585.",
@@ -37217,7 +37217,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-7",
@@ -37228,7 +37228,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₃ 4 = ln 4/ ln(3) ≈1,262.",
-          "text": "Lời giải Ví dụ 7, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₃ 4 = ln 4/ ln(3) ≈1,262.",
@@ -37253,7 +37253,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-8",
@@ -37264,7 +37264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₄ 5 = ln 5/ ln 4 ≈1,161.",
-          "text": "Lời giải Ví dụ 8, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₄ 5 = ln 5/ ln 4 ≈1,161.",
@@ -37289,7 +37289,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-9",
@@ -37300,7 +37300,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₅ 6 = ln 6/ ln 5 ≈1,113.",
-          "text": "Lời giải Ví dụ 9, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₅ 6 = ln 6/ ln 5 ≈1,113.",
@@ -37325,7 +37325,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14-source-example-10",
@@ -37336,7 +37336,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "log₆ 7 = ln 7/ ln 6 ≈1,086.",
-          "text": "Lời giải Ví dụ 10, trang 64 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "log₆ 7 = ln 7/ ln 6 ≈1,086.",
@@ -37361,7 +37361,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.1": [
@@ -37374,7 +37374,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2²ˣ⁻² = 2⁶⁻³ˣ ⇔2x −2 = 6 −3x ⇔x = 8/5. Không có điều kiện loại nghiệm; vậy S = {8/5}.",
-          "text": "Lời giải Ví dụ 1, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2²ˣ⁻² = 2⁶⁻³ˣ ⇔2x −2 = 6 −3x ⇔x = 8/5. Không có điều kiện loại nghiệm; vậy S = {8/5}.",
@@ -37399,7 +37399,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-2",
@@ -37410,7 +37410,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "81 = 3⁴, nên 2x + 1 = 4 ⇒x = 3/2.",
-          "text": "Lời giải Ví dụ 2, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "81 = 3⁴, nên 2x + 1 = 4 ⇒x = 3/2.",
@@ -37435,7 +37435,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-3",
@@ -37446,7 +37446,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2⁴ˣ = 2³ ⇒4x = 3 ⇒x = 3/4.",
-          "text": "Lời giải Ví dụ 3, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2⁴ˣ = 2³ ⇒4x = 3 ⇒x = 3/4.",
@@ -37471,7 +37471,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-4",
@@ -37482,7 +37482,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2x + 2 = 3x −3 ⇒x = 5.",
-          "text": "Lời giải Ví dụ 4, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2x + 2 = 3x −3 ⇒x = 5.",
@@ -37507,7 +37507,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-5",
@@ -37518,7 +37518,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2¹⁻²ˣ = 2³ ⇒x = −1.",
-          "text": "Lời giải Ví dụ 5, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2¹⁻²ˣ = 2³ ⇒x = −1.",
@@ -37543,7 +37543,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-6",
@@ -37554,7 +37554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số2 > 0, 2≠ 1, suy ra 2x −1 = 3, nên x = 2.",
-          "text": "Lời giải Ví dụ 6, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số2 > 0, 2≠ 1, suy ra 2x −1 = 3, nên x = 2.",
@@ -37579,7 +37579,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-7",
@@ -37590,7 +37590,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số2 > 0, 2≠ 1, suy ra 3x −1 = 4, nên x = ⁵ ₃.",
-          "text": "Lời giải Ví dụ 7, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số2 > 0, 2≠ 1, suy ra 3x −1 = 4, nên x = ⁵ ₃.",
@@ -37615,7 +37615,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-8",
@@ -37626,7 +37626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số2 > 0, 2≠ 1, suy ra 4x −1 = 5, nên x = ³ ₂.",
-          "text": "Lời giải Ví dụ 8, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số2 > 0, 2≠ 1, suy ra 4x −1 = 5, nên x = ³ ₂.",
@@ -37651,7 +37651,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-9",
@@ -37662,7 +37662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số2 > 0, 2≠ 1, suy ra 5x −1 = 6, nên x = ⁷ ₅.",
-          "text": "Lời giải Ví dụ 9, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số2 > 0, 2≠ 1, suy ra 5x −1 = 6, nên x = ⁷ ₅.",
@@ -37687,7 +37687,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.1-source-example-10",
@@ -37698,7 +37698,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cùng cơ số2 > 0, 2≠ 1, suy ra 6x −1 = 7, nên x = ⁴ ₃.",
-          "text": "Lời giải Ví dụ 10, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cùng cơ số2 > 0, 2≠ 1, suy ra 6x −1 = 7, nên x = ⁴ ₃.",
@@ -37723,7 +37723,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.2": [
@@ -37736,7 +37736,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1. Gộp: log₂(x² −1) = 3 ⇔x² −1 = 8 ⇔x = ±3. Chỉx = 3 thỏa mãn. Vậy S = {3}.",
-          "text": "Lời giải Ví dụ 1, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 1. Gộp: log₂(x² −1) = 3 ⇔x² −1 = 8 ⇔x = ±3. Chỉx = 3 thỏa mãn. Vậy S = {3}.",
@@ -37761,7 +37761,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-2",
@@ -37772,7 +37772,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ(4 −1) = 24 ⇒2ˣ = 8 ⇒x = 3.",
-          "text": "Lời giải Ví dụ 2, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ(4 −1) = 24 ⇒2ˣ = 8 ⇒x = 3.",
@@ -37797,7 +37797,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-3",
@@ -37808,7 +37808,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 2. log₃[x/(x −2)] = 1 ⇒x = 3(x −2) ⇒x = 3, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 3, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 2. log₃[x/(x −2)] = 1 ⇒x = 3(x −2) ⇒x = 3, thỏa điều kiện.",
@@ -37833,7 +37833,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-4",
@@ -37844,7 +37844,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "4 · 3ˣ = 108 ⇒3ˣ = 27 ⇒x = 3.",
-          "text": "Lời giải Ví dụ 4, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "4 · 3ˣ = 108 ⇒3ˣ = 27 ⇒x = 3.",
@@ -37869,7 +37869,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-5",
@@ -37880,7 +37880,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 2; x(x −2) = 3 ⇒x = 3 hoặc −1; nhận x = 3.",
-          "text": "Lời giải Ví dụ 5, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 2; x(x −2) = 3 ⇒x = 3 hoặc −1; nhận x = 3.",
@@ -37905,7 +37905,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-6",
@@ -37916,7 +37916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng (4 + 1)2ˣ. Chia hai vếcho 5 > 0 được 2ˣ = 8 = 2³, nên x = 3.",
-          "text": "Lời giải Ví dụ 6, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng (4 + 1)2ˣ. Chia hai vếcho 5 > 0 được 2ˣ = 8 = 2³, nên x = 3.",
@@ -37941,7 +37941,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-7",
@@ -37952,7 +37952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng (8 + 1)2ˣ. Chia hai vếcho 9 > 0 được 2ˣ = 16 = 2⁴, nên x = 4.",
-          "text": "Lời giải Ví dụ 7, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng (8 + 1)2ˣ. Chia hai vếcho 9 > 0 được 2ˣ = 16 = 2⁴, nên x = 4.",
@@ -37977,7 +37977,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-8",
@@ -37988,7 +37988,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng (16 + 1)2ˣ. Chia hai vếcho 17 > 0 được 2ˣ = 32 = 2⁵, nên x = 5.",
-          "text": "Lời giải Ví dụ 8, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng (16 + 1)2ˣ. Chia hai vếcho 17 > 0 được 2ˣ = 32 = 2⁵, nên x = 5.",
@@ -38013,7 +38013,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-9",
@@ -38024,7 +38024,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng (32 + 1)2ˣ. Chia hai vếcho 33 > 0 được 2ˣ = 64 = 2⁶, nên x = 6.",
-          "text": "Lời giải Ví dụ 9, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng (32 + 1)2ˣ. Chia hai vếcho 33 > 0 được 2ˣ = 64 = 2⁶, nên x = 6.",
@@ -38049,7 +38049,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2-source-example-10",
@@ -38060,7 +38060,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng (64 + 1)2ˣ. Chia hai vếcho 65 > 0 được 2ˣ = 128 = 2⁷, nên x = 7.",
-          "text": "Lời giải Ví dụ 10, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng (64 + 1)2ˣ. Chia hai vếcho 65 > 0 được 2ˣ = 128 = 2⁷, nên x = 7.",
@@ -38085,7 +38085,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.3": [
@@ -38098,7 +38098,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0, ta có t² −5t + 4 = 0 ⇔t = 1 hoặc 4. Suy ra 2ˣ = 1 hoặc 2ˣ = 4, nên x = 0 hoặc 2.",
-          "text": "Lời giải Ví dụ 1, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0, ta có t² −5t + 4 = 0 ⇔t = 1 hoặc 4. Suy ra 2ˣ = 1 hoặc 2ˣ = 4, nên x = 0 hoặc 2.",
@@ -38123,7 +38123,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-2",
@@ -38134,7 +38134,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −4)(t + 1) = 0. Nhận t = 4, loại t = −1, suy ra x = 2.",
-          "text": "Lời giải Ví dụ 2, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −4)(t + 1) = 0. Nhận t = 4, loại t = −1, suy ra x = 2.",
@@ -38159,7 +38159,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-3",
@@ -38170,7 +38170,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0; đặt t = ln x, có t = 2 hoặc t = −2. Vậy x = e² hoặc e⁻².",
-          "text": "Lời giải Ví dụ 3, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0; đặt t = ln x, có t = 2 hoặc t = −2. Vậy x = e² hoặc e⁻².",
@@ -38195,7 +38195,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-4",
@@ -38206,7 +38206,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "t = 3ˣ > 0; (t −1)(t −9) = 0. Suy ra x = 0 hoặc 2.",
-          "text": "Lời giải Ví dụ 4, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "t = 3ˣ > 0; (t −1)(t −9) = 0. Suy ra x = 0 hoặc 2.",
@@ -38231,7 +38231,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-5",
@@ -38242,7 +38242,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0; đặt t = log₂ x, được t = 1, 2. Vậy x = 2, 4.",
-          "text": "Lời giải Ví dụ 5, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0; đặt t = log₂ x, được t = 1, 2. Vậy x = 2, 4.",
@@ -38267,7 +38267,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-6",
@@ -38278,7 +38278,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −4) = 0 cho t = 1 hoặc 4, nên x = 0 hoặc 2.",
-          "text": "Lời giải Ví dụ 6, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −4) = 0 cho t = 1 hoặc 4, nên x = 0 hoặc 2.",
@@ -38303,7 +38303,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-7",
@@ -38314,7 +38314,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −8) = 0 cho t = 1 hoặc 8, nên x = 0 hoặc 3.",
-          "text": "Lời giải Ví dụ 7, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −8) = 0 cho t = 1 hoặc 8, nên x = 0 hoặc 3.",
@@ -38339,7 +38339,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-8",
@@ -38350,7 +38350,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −16) = 0 cho t = 1 hoặc 16, nên x = 0 hoặc 4.",
-          "text": "Lời giải Ví dụ 8, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −16) = 0 cho t = 1 hoặc 16, nên x = 0 hoặc 4.",
@@ -38375,7 +38375,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-9",
@@ -38386,7 +38386,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −32) = 0 cho t = 1 hoặc 32, nên x = 0 hoặc 5.",
-          "text": "Lời giải Ví dụ 9, trang 65 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −32) = 0 cho t = 1 hoặc 32, nên x = 0 hoặc 5.",
@@ -38411,7 +38411,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3-source-example-10",
@@ -38422,7 +38422,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −64) = 0 cho t = 1 hoặc 64, nên x = 0 hoặc 6.",
-          "text": "Lời giải Ví dụ 10, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −64) = 0 cho t = 1 hoặc 64, nên x = 0 hoặc 6.",
@@ -38447,7 +38447,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.4": [
@@ -38460,7 +38460,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: (2x −1) ln 5 = ln 7. Vì ln 5≠ 0, được x = ¹ ₂(1 + ln 7/ ln 5).",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: (2x −1) ln 5 = ln 7. Vì ln 5≠ 0, được x = ¹ ₂(1 + ln 7/ ln 5).",
@@ -38485,7 +38485,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-2",
@@ -38496,7 +38496,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hai vế dương. Lấy ln: x ln 7 = ln 10, nên x = ln 10/ ln 7.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hai vế dương. Lấy ln: x ln 7 = ln 10, nên x = ln 10/ ln 7.",
@@ -38521,7 +38521,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-3",
@@ -38532,7 +38532,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3x −2 = ln 5 ⇒x = (2 + ln 5)/3.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3x −2 = ln 5 ⇒x = (2 + ln 5)/3.",
@@ -38557,7 +38557,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-4",
@@ -38568,7 +38568,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e²ˣ = 10/3 ⇒x = ¹ ₂ ln(10/3).",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e²ˣ = 10/3 ⇒x = ¹ ₂ ln(10/3).",
@@ -38593,7 +38593,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-5",
@@ -38604,7 +38604,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x −2 = log 6 ⇒x = 2 + log 6.",
-          "text": "Lời giải Ví dụ 5, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x −2 = log 6 ⇒x = 2 + log 6.",
@@ -38629,7 +38629,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-6",
@@ -38640,7 +38640,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: 2x + 1 = ln 4. Vậy x = [ln 4 −1]/2.",
-          "text": "Lời giải Ví dụ 6, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: 2x + 1 = ln 4. Vậy x = [ln 4 −1]/2.",
@@ -38665,7 +38665,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-7",
@@ -38676,7 +38676,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: 3x + 1 = ln 5. Vậy x = [ln 5 −1]/3.",
-          "text": "Lời giải Ví dụ 7, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: 3x + 1 = ln 5. Vậy x = [ln 5 −1]/3.",
@@ -38701,7 +38701,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-8",
@@ -38712,7 +38712,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: 4x + 1 = ln 6. Vậy x = [ln 6 −1]/4.",
-          "text": "Lời giải Ví dụ 8, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: 4x + 1 = ln 6. Vậy x = [ln 6 −1]/4.",
@@ -38737,7 +38737,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-9",
@@ -38748,7 +38748,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: 5x + 1 = ln 7. Vậy x = [ln 7 −1]/5.",
-          "text": "Lời giải Ví dụ 9, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: 5x + 1 = ln 7. Vậy x = [ln 7 −1]/5.",
@@ -38773,7 +38773,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4-source-example-10",
@@ -38784,7 +38784,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: 6x + 1 = ln 8. Vậy x = [ln 8 −1]/6.",
-          "text": "Lời giải Ví dụ 10, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: 6x + 1 = ln 8. Vậy x = [ln 8 −1]/6.",
@@ -38809,7 +38809,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.5": [
@@ -38822,7 +38822,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ3ˣ⁻¹ = 6ˣ/3. Vì vậy 6ˣ = 36 = 6², suy ra x = 2.",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ3ˣ⁻¹ = 6ˣ/3. Vì vậy 6ˣ = 36 = 6², suy ra x = 2.",
@@ -38847,7 +38847,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-2",
@@ -38858,7 +38858,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x ln 2 = 2x ln 3 ⇒x ln(2/9) = 0. Hệ số khác 0, nên x = 0.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x ln 2 = 2x ln 3 ⇒x ln(2/9) = 0. Hệ số khác 0, nên x = 0.",
@@ -38883,7 +38883,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-3",
@@ -38894,7 +38894,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái bằng 5 · 10ˣ. Suy ra 10ˣ = 100, nên x = 2.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái bằng 5 · 10ˣ. Suy ra 10ˣ = 100, nên x = 2.",
@@ -38919,7 +38919,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-4",
@@ -38930,7 +38930,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x ln 5 = (x + 1) ln 3 ⇒x = ln 3/ ln(5/3).",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x ln 5 = (x + 1) ln 3 ⇒x = ln 3/ ln(5/3).",
@@ -38955,7 +38955,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-5",
@@ -38966,7 +38966,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "(4/3)ˣ = 2 ⇒x = ln 2/ ln(4/3).",
-          "text": "Lời giải Ví dụ 5, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "(4/3)ˣ = 2 ⇒x = ln 2/ ln(4/3).",
@@ -38991,7 +38991,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-6",
@@ -39002,7 +39002,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái 5²10ˣ. Chia 5² > 0, được 10ˣ = 10³, suy ra x = 3.",
-          "text": "Lời giải Ví dụ 6, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái 5²10ˣ. Chia 5² > 0, được 10ˣ = 10³, suy ra x = 3.",
@@ -39027,7 +39027,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-7",
@@ -39038,7 +39038,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái 5³10ˣ. Chia 5³ > 0, được 10ˣ = 10⁴, suy ra x = 4.",
-          "text": "Lời giải Ví dụ 7, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái 5³10ˣ. Chia 5³ > 0, được 10ˣ = 10⁴, suy ra x = 4.",
@@ -39063,7 +39063,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-8",
@@ -39074,7 +39074,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái 5⁴10ˣ. Chia 5⁴ > 0, được 10ˣ = 10⁵, suy ra x = 5.",
-          "text": "Lời giải Ví dụ 8, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái 5⁴10ˣ. Chia 5⁴ > 0, được 10ˣ = 10⁵, suy ra x = 5.",
@@ -39099,7 +39099,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-9",
@@ -39110,7 +39110,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái 5⁵10ˣ. Chia 5⁵ > 0, được 10ˣ = 10⁶, suy ra x = 6.",
-          "text": "Lời giải Ví dụ 9, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái 5⁵10ˣ. Chia 5⁵ > 0, được 10ˣ = 10⁶, suy ra x = 6.",
@@ -39135,7 +39135,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5-source-example-10",
@@ -39146,7 +39146,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái 5⁶10ˣ. Chia 5⁶ > 0, được 10ˣ = 10⁷, suy ra x = 7.",
-          "text": "Lời giải Ví dụ 10, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái 5⁶10ˣ. Chia 5⁶ > 0, được 10ˣ = 10⁷, suy ra x = 7.",
@@ -39171,7 +39171,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.6": [
@@ -39184,7 +39184,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 2ˣ + x đồng biến trên R vì là tổng hai hàm đồng biến. Do f(1) = 3, phương trình có nghiệm duy nhất x = 1.",
-          "text": "Lời giải Ví dụ 1, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 2ˣ + x đồng biến trên R vì là tổng hai hàm đồng biến. Do f(1) = 3, phương trình có nghiệm duy nhất x = 1.",
@@ -39209,7 +39209,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-2",
@@ -39220,7 +39220,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 5ˣ + x đồng biến trên R. Do f(1) = 6, nghiệm duy nhất x = 1.",
-          "text": "Lời giải Ví dụ 2, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 5ˣ + x đồng biến trên R. Do f(1) = 6, nghiệm duy nhất x = 1.",
@@ -39245,7 +39245,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-3",
@@ -39256,7 +39256,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 0. Tổng hai hàm đồng biến nên đồng biến. Tại x = 2, vếtrái bằng 3; nghiệm duy nhất là 2.",
-          "text": "Lời giải Ví dụ 3, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 0. Tổng hai hàm đồng biến nên đồng biến. Tại x = 2, vếtrái bằng 3; nghiệm duy nhất là 2.",
@@ -39281,7 +39281,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-4",
@@ -39292,7 +39292,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Tổng đồng biến trên R; x = 1 thỏa mãn, nên là nghiệm duy nhất.",
-          "text": "Lời giải Ví dụ 4, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Tổng đồng biến trên R; x = 1 thỏa mãn, nên là nghiệm duy nhất.",
@@ -39317,7 +39317,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-5",
@@ -39328,7 +39328,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 0. Tổng đồng biến; x = 1 thỏa mãn, nên nghiệm duy nhất là 1.",
-          "text": "Lời giải Ví dụ 5, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 0. Tổng đồng biến; x = 1 thỏa mãn, nên nghiệm duy nhất là 1.",
@@ -39353,7 +39353,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-6",
@@ -39364,7 +39364,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(2) = 6. Vì thếnghiệm duy nhất là x = 2.",
-          "text": "Lời giải Ví dụ 6, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(2) = 6. Vì thếnghiệm duy nhất là x = 2.",
@@ -39389,7 +39389,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-7",
@@ -39400,7 +39400,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(3) = 11. Vì thếnghiệm duy nhất là x = 3.",
-          "text": "Lời giải Ví dụ 7, trang 66 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(3) = 11. Vì thếnghiệm duy nhất là x = 3.",
@@ -39425,7 +39425,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-8",
@@ -39436,7 +39436,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(4) = 20. Vì thếnghiệm duy nhất là x = 4.",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(4) = 20. Vì thếnghiệm duy nhất là x = 4.",
@@ -39461,7 +39461,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-9",
@@ -39472,7 +39472,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(5) = 37. Vì thếnghiệm duy nhất là x = 5.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(5) = 37. Vì thếnghiệm duy nhất là x = 5.",
@@ -39497,7 +39497,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6-source-example-10",
@@ -39508,7 +39508,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(6) = 70. Vì thếnghiệm duy nhất là x = 6.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(6) = 70. Vì thếnghiệm duy nhất là x = 6.",
@@ -39533,7 +39533,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.7": [
@@ -39546,7 +39546,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 2ˣ > 0 và nhận mọi giá trị dương, phương trình có nghiệm khi và chỉkhi m −1 > 0, tức m > 1. Khi đó nghiệm duy nhất x = log₂(m −1).",
-          "text": "Lời giải Ví dụ 1, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 2ˣ > 0 và nhận mọi giá trị dương, phương trình có nghiệm khi và chỉkhi m −1 > 0, tức m > 1. Khi đó nghiệm duy nhất x = log₂(m −1).",
@@ -39571,7 +39571,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-2",
@@ -39582,7 +39582,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần và đủm² −1 > 0, suy ra m < −1 hoặc m > 1.",
-          "text": "Lời giải Ví dụ 2, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần và đủm² −1 > 0, suy ra m < −1 hoặc m > 1.",
@@ -39607,7 +39607,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-3",
@@ -39618,7 +39618,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x = eᵐ. Điều kiện eᵐ ≥1 tương đương m ≥0.",
-          "text": "Lời giải Ví dụ 3, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x = eᵐ. Điều kiện eᵐ ≥1 tương đương m ≥0.",
@@ -39643,7 +39643,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-4",
@@ -39654,7 +39654,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "m + 2 > 0 ⇒m > −2.",
-          "text": "Lời giải Ví dụ 4, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "m + 2 > 0 ⇒m > −2.",
@@ -39679,7 +39679,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-5",
@@ -39690,7 +39690,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x = 1 + 2ᵐ; x > 3 ⇔2ᵐ > 2 ⇔m > 1.",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x = 1 + 2ᵐ; x > 3 ⇔2ᵐ > 2 ⇔m > 1.",
@@ -39715,7 +39715,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-6",
@@ -39726,7 +39726,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −2 > 0, tức m > 2.",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −2 > 0, tức m > 2.",
@@ -39751,7 +39751,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-7",
@@ -39762,7 +39762,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −3 > 0, tức m > 3.",
-          "text": "Lời giải Ví dụ 7, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −3 > 0, tức m > 3.",
@@ -39787,7 +39787,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-8",
@@ -39798,7 +39798,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −4 > 0, tức m > 4.",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −4 > 0, tức m > 4.",
@@ -39823,7 +39823,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-9",
@@ -39834,7 +39834,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −5 > 0, tức m > 5.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −5 > 0, tức m > 5.",
@@ -39859,7 +39859,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7-source-example-10",
@@ -39870,7 +39870,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −6 > 0, tức m > 6.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vếtrái nhận mọi giá trị dương, nên cần và đủm −6 > 0, tức m > 6.",
@@ -39895,7 +39895,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.8": [
@@ -39908,7 +39908,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −4) = 0 cho t = 1, 4, tương ứng x = 0, 2. Có 2 nghiệm.",
-          "text": "Lời giải Ví dụ 1, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −4) = 0 cho t = 1, 4, tương ứng x = 0, 2. Có 2 nghiệm.",
@@ -39933,7 +39933,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-2",
@@ -39944,7 +39944,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² = 0 ⇒x = 0. Có đúng một nghiệm.",
-          "text": "Lời giải Ví dụ 2, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² = 0 ⇒x = 0. Có đúng một nghiệm.",
@@ -39969,7 +39969,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-3",
@@ -39980,7 +39980,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x≠ 0. x² = 1 cho x = 1, −1; có hai nghiệm.",
-          "text": "Lời giải Ví dụ 3, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x≠ 0. x² = 1 cho x = 1, −1; có hai nghiệm.",
@@ -40005,7 +40005,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-4",
@@ -40016,7 +40016,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "t = 3ˣ > 0 cho t = 1, 3, tương ứng x = 0, 1: có 2 nghiệm.",
-          "text": "Lời giải Ví dụ 4, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "t = 3ˣ > 0 cho t = 1, 3, tương ứng x = 0, 1: có 2 nghiệm.",
@@ -40041,7 +40041,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-5",
@@ -40052,7 +40052,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² = 2 cho x = ± √ 2: có 2 nghiệm.",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² = 2 cho x = ± √ 2: có 2 nghiệm.",
@@ -40077,7 +40077,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-6",
@@ -40088,7 +40088,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Phương trình tương đương x² = 2 > 0, nên có hai nghiệm x = ± √ 2.",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Phương trình tương đương x² = 2 > 0, nên có hai nghiệm x = ± √ 2.",
@@ -40113,7 +40113,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-7",
@@ -40124,7 +40124,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Phương trình tương đương x² = 3 > 0, nên có hai nghiệm x = ± √ 3.",
-          "text": "Lời giải Ví dụ 7, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Phương trình tương đương x² = 3 > 0, nên có hai nghiệm x = ± √ 3.",
@@ -40149,7 +40149,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-8",
@@ -40160,7 +40160,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Phương trình tương đương x² = 4 > 0, nên có hai nghiệm x = ±2.",
-          "text": "Lời giải Ví dụ 8, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Phương trình tương đương x² = 4 > 0, nên có hai nghiệm x = ±2.",
@@ -40185,7 +40185,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-9",
@@ -40196,7 +40196,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Phương trình tương đương x² = 5 > 0, nên có hai nghiệm x = ± √ 5.",
-          "text": "Lời giải Ví dụ 9, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Phương trình tương đương x² = 5 > 0, nên có hai nghiệm x = ± √ 5.",
@@ -40221,7 +40221,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8-source-example-10",
@@ -40232,7 +40232,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Phương trình tương đương x² = 6 > 0, nên có hai nghiệm x = ± √ 6.",
-          "text": "Lời giải Ví dụ 10, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Phương trình tương đương x² = 6 > 0, nên có hai nghiệm x = ± √ 6.",
@@ -40257,7 +40257,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.9": [
@@ -40270,7 +40270,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1/2. Định nghĩa lôgarit cho 2x −1 = 3² = 9, suy ra x = 5, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 1, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 1/2. Định nghĩa lôgarit cho 2x −1 = 3² = 9, suy ra x = 5, thỏa điều kiện.",
@@ -40295,7 +40295,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-2",
@@ -40306,7 +40306,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > −3; x + 3 = 4¹⁄² = 2 ⇒x = −1, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 2, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > −3; x + 3 = 4¹⁄² = 2 ⇒x = −1, thỏa điều kiện.",
@@ -40331,7 +40331,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-3",
@@ -40342,7 +40342,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 0. 2x = x + 3 ⇒x = 3, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 3, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 0. 2x = x + 3 ⇒x = 3, thỏa điều kiện.",
@@ -40367,7 +40367,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-4",
@@ -40378,7 +40378,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > −2/3; 3x + 2 = 25 nên x = 23/3.",
-          "text": "Lời giải Ví dụ 4, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > −2/3; 3x + 2 = 25 nên x = 23/3.",
@@ -40403,7 +40403,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-5",
@@ -40414,7 +40414,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1. x + 1 = x² −1 ⇒x = 2, −1. Chỉnhận x = 2.",
-          "text": "Lời giải Ví dụ 5, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 1. x + 1 = x² −1 ⇒x = 2, −1. Chỉnhận x = 2.",
@@ -40439,7 +40439,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-6",
@@ -40450,7 +40450,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1/2. 2x + 1 = 4, nên x = ³ ₂, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 6, trang 67 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1/2. 2x + 1 = 4, nên x = ³ ₂, thỏa điều kiện.",
@@ -40475,7 +40475,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-7",
@@ -40486,7 +40486,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1/2. 2x + 1 = 9, nên x = 4, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1/2. 2x + 1 = 9, nên x = 4, thỏa điều kiện.",
@@ -40511,7 +40511,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-8",
@@ -40522,7 +40522,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1/2. 2x + 1 = 16, nên x = ¹⁵ ₂ , thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1/2. 2x + 1 = 16, nên x = ¹⁵ ₂ , thỏa điều kiện.",
@@ -40547,7 +40547,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-9",
@@ -40558,7 +40558,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1/2. 2x + 1 = 25, nên x = 12, thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1/2. 2x + 1 = 25, nên x = 12, thỏa điều kiện.",
@@ -40583,7 +40583,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9-source-example-10",
@@ -40594,7 +40594,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1/2. 2x + 1 = 36, nên x = ³⁵ ₂ , thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 10, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1/2. 2x + 1 = 36, nên x = ³⁵ ₂ , thỏa điều kiện.",
@@ -40619,7 +40619,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.10": [
@@ -40632,7 +40632,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 0, x≠ 1. Phương trình tương đương x² = 16, cho x = ±4. Chỉx = 4 thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 0, x≠ 1. Phương trình tương đương x² = 16, cho x = ±4. Chỉx = 4 thỏa điều kiện.",
@@ -40657,7 +40657,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-2",
@@ -40668,7 +40668,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0, x≠ 1; định nghĩa cho x = 9, hợp lệ.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0, x≠ 1; định nghĩa cho x = 9, hợp lệ.",
@@ -40693,7 +40693,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-3",
@@ -40704,7 +40704,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > −1, x≠ 0; (x + 1)⁻¹ = 4 ⇒x + 1 = 1/4 ⇒x = −3/4, hợp lệ.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > −1, x≠ 0; (x + 1)⁻¹ = 4 ⇒x + 1 = 1/4 ⇒x = −3/4, hợp lệ.",
@@ -40729,7 +40729,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-4",
@@ -40740,7 +40740,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 1, x≠ 2; (x −1)² = 9. Nhận x = 4, loại −2.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 1, x≠ 2; (x −1)² = 9. Nhận x = 4, loại −2.",
@@ -40765,7 +40765,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-5",
@@ -40776,7 +40776,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0, x≠ 1. Đặt t = log₂ x≠ 0, được 2/t = t, nên t = ± √ 2. Vậy x = 2 √² hoặc 2⁻ √².",
-          "text": "Lời giải Ví dụ 5, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0, x≠ 1. Đặt t = log₂ x≠ 0, được 2/t = t, nên t = ± √ 2. Vậy x = 2 √² hoặc 2⁻ √².",
@@ -40801,7 +40801,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-6",
@@ -40812,7 +40812,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1, x≠ 0. (x + 1)² = 4. Vì x + 1 > 0, nhận x = 1, loại x = −3.",
-          "text": "Lời giải Ví dụ 6, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1, x≠ 0. (x + 1)² = 4. Vì x + 1 > 0, nhận x = 1, loại x = −3.",
@@ -40837,7 +40837,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-7",
@@ -40848,7 +40848,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1, x≠ 0. (x + 1)² = 9. Vì x + 1 > 0, nhận x = 2, loại x = −4.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1, x≠ 0. (x + 1)² = 9. Vì x + 1 > 0, nhận x = 2, loại x = −4.",
@@ -40873,7 +40873,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-8",
@@ -40884,7 +40884,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1, x≠ 0. (x + 1)² = 16. Vì x + 1 > 0, nhận x = 3, loại x = −5.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1, x≠ 0. (x + 1)² = 16. Vì x + 1 > 0, nhận x = 3, loại x = −5.",
@@ -40909,7 +40909,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-9",
@@ -40920,7 +40920,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1, x≠ 0. (x + 1)² = 25. Vì x + 1 > 0, nhận x = 4, loại x = −6.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1, x≠ 0. (x + 1)² = 25. Vì x + 1 > 0, nhận x = 4, loại x = −6.",
@@ -40945,7 +40945,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10-source-example-10",
@@ -40956,7 +40956,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1, x≠ 0. (x + 1)² = 36. Vì x + 1 > 0, nhận x = 5, loại x = −7.",
-          "text": "Lời giải Ví dụ 10, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1, x≠ 0. (x + 1)² = 36. Vì x + 1 > 0, nhận x = 5, loại x = −7.",
@@ -40981,7 +40981,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "9.11": [
@@ -40994,7 +40994,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −m) = 0. Luôn có t = 1. Có hai nghiệm dương phân biệt khi m > 0, m≠ 1. Khi m = 1 chỉmột nghiệm; khi m ≤0 chỉnhận t = 1.",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. Phương trình (t −1)(t −m) = 0. Luôn có t = 1. Có hai nghiệm dương phân biệt khi m > 0, m≠ 1. Khi m = 1 chỉmột nghiệm; khi m ≤0 chỉnhận t = 1.",
@@ -41019,7 +41019,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-2",
@@ -41030,7 +41030,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ > 1 khi x > 0, nhận mọi giá trịtrong (1; +∞). Vậy m > 1.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ > 1 khi x > 0, nhận mọi giá trịtrong (1; +∞). Vậy m > 1.",
@@ -41055,7 +41055,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-3",
@@ -41066,7 +41066,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0, có (t −1)(t −m) = 0. Chỉmột nghiệm dương phân biệt khi m ≤0 hoặc m = 1.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0, có (t −1)(t −m) = 0. Chỉmột nghiệm dương phân biệt khi m ≤0 hoặc m = 1.",
@@ -41091,7 +41091,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-4",
@@ -41102,7 +41102,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ nhận giá trịtrong [1; 4], nên 1 ≤m ≤4.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ nhận giá trịtrong [1; 4], nên 1 ≤m ≤4.",
@@ -41127,7 +41127,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-5",
@@ -41138,7 +41138,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² −1 = 2, nên x = ± √ 3; cảhai thỏa điều kiện. Có 2 nghiệm.",
-          "text": "Lời giải Ví dụ 5, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² −1 = 2, nên x = ± √ 3; cảhai thỏa điều kiện. Có 2 nghiệm.",
@@ -41163,7 +41163,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-6",
@@ -41174,7 +41174,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 4] trên đoạn. Vì vậy 1 ≤m ≤4.",
-          "text": "Lời giải Ví dụ 6, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 4] trên đoạn. Vì vậy 1 ≤m ≤4.",
@@ -41199,7 +41199,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-7",
@@ -41210,7 +41210,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 8] trên đoạn. Vì vậy 1 ≤m ≤8.",
-          "text": "Lời giải Ví dụ 7, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 8] trên đoạn. Vì vậy 1 ≤m ≤8.",
@@ -41235,7 +41235,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-8",
@@ -41246,7 +41246,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 16] trên đoạn. Vì vậy 1 ≤m ≤16.",
-          "text": "Lời giải Ví dụ 8, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 16] trên đoạn. Vì vậy 1 ≤m ≤16.",
@@ -41271,7 +41271,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-9",
@@ -41282,7 +41282,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 32] trên đoạn. Vì vậy 1 ≤m ≤32.",
-          "text": "Lời giải Ví dụ 9, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 32] trên đoạn. Vì vậy 1 ≤m ≤32.",
@@ -41307,7 +41307,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11-source-example-10",
@@ -41318,7 +41318,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 64] trên đoạn. Vì vậy 1 ≤m ≤64.",
-          "text": "Lời giải Ví dụ 10, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm 2ˣ đồng biến nên nhận đúng tập giá trị[1; 64] trên đoạn. Vì vậy 1 ≤m ≤64.",
@@ -41343,7 +41343,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.1": [
@@ -41356,7 +41356,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 0 < 1/3 < 1, được 2x −1 ≤x + 2 ⇔x ≤3. Vậy S = (−∞; 3].",
-          "text": "Lời giải Ví dụ 1, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 0 < 1/3 < 1, được 2x −1 ≤x + 2 ⇔x ≤3. Vậy S = (−∞; 3].",
@@ -41381,7 +41381,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-2",
@@ -41392,7 +41392,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3ˣ⁻² ≥3³ ⇒x −2 ≥3 ⇒x ≥5.",
-          "text": "Lời giải Ví dụ 2, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3ˣ⁻² ≥3³ ⇒x −2 ≥3 ⇒x ≥5.",
@@ -41417,7 +41417,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-3",
@@ -41428,7 +41428,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "4 = (1/2)⁻²; cơ số nhỏhơn 1 nên x + 1 > −2 ⇒x > −3.",
-          "text": "Lời giải Ví dụ 3, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "4 = (1/2)⁻²; cơ số nhỏhơn 1 nên x + 1 > −2 ⇒x > −3.",
@@ -41453,7 +41453,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-4",
@@ -41464,7 +41464,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3x −1 < x + 5 ⇒x < 3.",
-          "text": "Lời giải Ví dụ 4, trang 68 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3x −1 < x + 5 ⇒x < 3.",
@@ -41489,7 +41489,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-5",
@@ -41500,7 +41500,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x + 1 ≥2x −3 ⇒x ≤4.",
-          "text": "Lời giải Ví dụ 5, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x + 1 ≥2x −3 ⇒x ≤4.",
@@ -41525,7 +41525,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-6",
@@ -41536,7 +41536,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số nhỏhơn 1 nên 2x −1 ≥3. Vậy x ≥2.",
-          "text": "Lời giải Ví dụ 6, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số nhỏhơn 1 nên 2x −1 ≥3. Vậy x ≥2.",
@@ -41561,7 +41561,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-7",
@@ -41572,7 +41572,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số nhỏhơn 1 nên 3x −1 ≥4. Vậy x ≥⁵ ₃.",
-          "text": "Lời giải Ví dụ 7, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số nhỏhơn 1 nên 3x −1 ≥4. Vậy x ≥⁵ ₃.",
@@ -41597,7 +41597,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-8",
@@ -41608,7 +41608,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số nhỏhơn 1 nên 4x −1 ≥5. Vậy x ≥³ ₂.",
-          "text": "Lời giải Ví dụ 8, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số nhỏhơn 1 nên 4x −1 ≥5. Vậy x ≥³ ₂.",
@@ -41633,7 +41633,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-9",
@@ -41644,7 +41644,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số nhỏhơn 1 nên 5x −1 ≥6. Vậy x ≥⁷ ₅.",
-          "text": "Lời giải Ví dụ 9, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số nhỏhơn 1 nên 5x −1 ≥6. Vậy x ≥⁷ ₅.",
@@ -41669,7 +41669,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.1-source-example-10",
@@ -41680,7 +41680,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ số nhỏhơn 1 nên 6x −1 ≥7. Vậy x ≥⁴ ₃.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ số nhỏhơn 1 nên 6x −1 ≥7. Vậy x ≥⁴ ₃.",
@@ -41705,7 +41705,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.2": [
@@ -41718,7 +41718,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 2ˣ + x đồng biến trên R và f(1) = 3. Vì vậy f(x) > f(1) ⇔x > 1.",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 2ˣ + x đồng biến trên R và f(1) = 3. Vì vậy f(x) > f(1) ⇔x > 1.",
@@ -41743,7 +41743,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-2",
@@ -41754,7 +41754,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 2ˣ + x đồng biến trên R. Vì f(2) = 6, bất phương trình tương đương x ≥2.",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 2ˣ + x đồng biến trên R. Vì f(2) = 6, bất phương trình tương đương x ≥2.",
@@ -41779,7 +41779,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-3",
@@ -41790,7 +41790,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trên x > 0, hàm f(x) = ln x + x đồng biến. Vế phải bằng f(2), nên nghiệm 0 < x ≤2.",
-          "text": "Lời giải Ví dụ 3, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trên x > 0, hàm f(x) = ln x + x đồng biến. Vế phải bằng f(2), nên nghiệm 0 < x ≤2.",
@@ -41815,7 +41815,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-4",
@@ -41826,7 +41826,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "f(x) = 3ˣ + x đồng biến và f(1) = 4; vậy x ≤1.",
-          "text": "Lời giải Ví dụ 4, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "f(x) = 3ˣ + x đồng biến và f(1) = 4; vậy x ≤1.",
@@ -41851,7 +41851,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-5",
@@ -41862,7 +41862,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trên x > 0, tổng đồng biến, tại x = 1 bằng 1. Vậy x > 1.",
-          "text": "Lời giải Ví dụ 5, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trên x > 0, tổng đồng biến, tại x = 1 bằng 1. Vậy x > 1.",
@@ -41887,7 +41887,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-6",
@@ -41898,7 +41898,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 3ˣ + x đồng biến, với f(2) = 11. Suy ra x > 2.",
-          "text": "Lời giải Ví dụ 6, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 3ˣ + x đồng biến, với f(2) = 11. Suy ra x > 2.",
@@ -41923,7 +41923,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-7",
@@ -41934,7 +41934,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 3ˣ + x đồng biến, với f(3) = 30. Suy ra x > 3.",
-          "text": "Lời giải Ví dụ 7, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 3ˣ + x đồng biến, với f(3) = 30. Suy ra x > 3.",
@@ -41959,7 +41959,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-8",
@@ -41970,7 +41970,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 3ˣ + x đồng biến, với f(4) = 85. Suy ra x > 4.",
-          "text": "Lời giải Ví dụ 8, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 3ˣ + x đồng biến, với f(4) = 85. Suy ra x > 4.",
@@ -41995,7 +41995,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-9",
@@ -42006,7 +42006,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 3ˣ + x đồng biến, với f(5) = 248. Suy ra x > 5.",
-          "text": "Lời giải Ví dụ 9, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 3ˣ + x đồng biến, với f(5) = 248. Suy ra x > 5.",
@@ -42031,7 +42031,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2-source-example-10",
@@ -42042,7 +42042,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hàm f(x) = 3ˣ + x đồng biến, với f(6) = 735. Suy ra x > 6.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hàm f(x) = 3ˣ + x đồng biến, với f(6) = 735. Suy ra x > 6.",
@@ -42067,7 +42067,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.3": [
@@ -42080,7 +42080,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 ⇔1 ≤t ≤4. Vì 2 > 1, 1 ≤2ˣ ≤4 ⇔0 ≤x ≤2.",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 ⇔1 ≤t ≤4. Vì 2 > 1, 1 ≤2ˣ ≤4 ⇔0 ≤x ≤2.",
@@ -42105,7 +42105,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-2",
@@ -42116,7 +42116,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "t = 2ˣ > 0; (t −1)(t −2) < 0 ⇒1 < t < 2. Suy ra 0 < x < 1.",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "t = 2ˣ > 0; (t −1)(t −2) < 0 ⇒1 < t < 2. Suy ra 0 < x < 1.",
@@ -42141,7 +42141,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-3",
@@ -42152,7 +42152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0; ln x ≤−1 hoặc ln x ≥1. Vậy 0 < x ≤e⁻¹ hoặc x ≥e.",
-          "text": "Lời giải Ví dụ 3, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0; ln x ≤−1 hoặc ln x ≥1. Vậy 0 < x ≤e⁻¹ hoặc x ≥e.",
@@ -42177,7 +42177,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-4",
@@ -42188,7 +42188,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "t = 3ˣ > 0; (t −1)(t −3) > 0 cho 0 < t < 1 hoặc t > 3. Vậy x < 0 hoặc x > 1.",
-          "text": "Lời giải Ví dụ 4, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "t = 3ˣ > 0; (t −1)(t −3) > 0 cho 0 < t < 1 hoặc t > 3. Vậy x < 0 hoặc x > 1.",
@@ -42213,7 +42213,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-5",
@@ -42224,7 +42224,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0; −1 ≤log₂ x ≤2. Vậy 1/2 ≤x ≤4.",
-          "text": "Lời giải Ví dụ 5, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0; −1 ≤log₂ x ≤2. Vậy 1/2 ≤x ≤4.",
@@ -42249,7 +42249,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-6",
@@ -42260,7 +42260,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 cho 1 ≤t ≤4. Suy ra 0 ≤x ≤2.",
-          "text": "Lời giải Ví dụ 6, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −4) ≤0 cho 1 ≤t ≤4. Suy ra 0 ≤x ≤2.",
@@ -42285,7 +42285,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-7",
@@ -42296,7 +42296,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −8) ≤0 cho 1 ≤t ≤8. Suy ra 0 ≤x ≤3.",
-          "text": "Lời giải Ví dụ 7, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −8) ≤0 cho 1 ≤t ≤8. Suy ra 0 ≤x ≤3.",
@@ -42321,7 +42321,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-8",
@@ -42332,7 +42332,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −16) ≤0 cho 1 ≤t ≤16. Suy ra 0 ≤x ≤4.",
-          "text": "Lời giải Ví dụ 8, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −16) ≤0 cho 1 ≤t ≤16. Suy ra 0 ≤x ≤4.",
@@ -42357,7 +42357,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-9",
@@ -42368,7 +42368,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −32) ≤0 cho 1 ≤t ≤32. Suy ra 0 ≤x ≤5.",
-          "text": "Lời giải Ví dụ 9, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −32) ≤0 cho 1 ≤t ≤32. Suy ra 0 ≤x ≤5.",
@@ -42393,7 +42393,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3-source-example-10",
@@ -42404,7 +42404,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đặt t = 2ˣ > 0. (t −1)(t −64) ≤0 cho 1 ≤t ≤64. Suy ra 0 ≤x ≤6.",
-          "text": "Lời giải Ví dụ 10, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đặt t = 2ˣ > 0. (t −1)(t −64) ≤0 cho 1 ≤t ≤64. Suy ra 0 ≤x ≤6.",
@@ -42429,7 +42429,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.4": [
@@ -42442,7 +42442,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > 1. Vì −2 = log₁/₂ 4 và cơ số nhỏhơn 1, suy ra x −1 ≤4. Giao điều kiện được 1 < x ≤5.",
-          "text": "Lời giải Ví dụ 1, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > 1. Vì −2 = log₁/₂ 4 và cơ số nhỏhơn 1, suy ra x −1 ≤4. Giao điều kiện được 1 < x ≤5.",
@@ -42467,7 +42467,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-2",
@@ -42478,7 +42478,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > −1 và x + 1 ≤8, nên −1 < x ≤7.",
-          "text": "Lời giải Ví dụ 2, trang 69 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > −1 và x + 1 ≤8, nên −1 < x ≤7.",
@@ -42503,7 +42503,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-3",
@@ -42514,7 +42514,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x > 0; cơ số nhỏhơn 1 nên x > (1/4)⁻¹ = 4. Vậy x > 4.",
-          "text": "Lời giải Ví dụ 3, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x > 0; cơ số nhỏhơn 1 nên x > (1/4)⁻¹ = 4. Vậy x > 4.",
@@ -42539,7 +42539,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-4",
@@ -42550,7 +42550,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2x −1 > 0 và 2x −1 < 9, nên 1/2 < x < 5.",
-          "text": "Lời giải Ví dụ 4, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2x −1 > 0 và 2x −1 < 9, nên 1/2 < x < 5.",
@@ -42575,7 +42575,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-5",
@@ -42586,7 +42586,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0 < x + 2 < 3 ⇒−2 < x < 1.",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "0 < x + 2 < 3 ⇒−2 < x < 1.",
@@ -42611,7 +42611,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-6",
@@ -42622,7 +42622,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x + 2 > 0. Cơ sốgiảm nên x + 2 ≤4. Vậy −2 < x ≤2.",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x + 2 > 0. Cơ sốgiảm nên x + 2 ≤4. Vậy −2 < x ≤2.",
@@ -42647,7 +42647,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-7",
@@ -42658,7 +42658,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x + 3 > 0. Cơ sốgiảm nên x + 3 ≤4. Vậy −3 < x ≤1.",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x + 3 > 0. Cơ sốgiảm nên x + 3 ≤4. Vậy −3 < x ≤1.",
@@ -42683,7 +42683,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-8",
@@ -42694,7 +42694,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x + 4 > 0. Cơ sốgiảm nên x + 4 ≤4. Vậy −4 < x ≤0.",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x + 4 > 0. Cơ sốgiảm nên x + 4 ≤4. Vậy −4 < x ≤0.",
@@ -42719,7 +42719,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-9",
@@ -42730,7 +42730,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x + 5 > 0. Cơ sốgiảm nên x + 5 ≤4. Vậy −5 < x ≤−1.",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x + 5 > 0. Cơ sốgiảm nên x + 5 ≤4. Vậy −5 < x ≤−1.",
@@ -42755,7 +42755,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4-source-example-10",
@@ -42766,7 +42766,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cần x + 6 > 0. Cơ sốgiảm nên x + 6 ≤4. Vậy −6 < x ≤−2.",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cần x + 6 > 0. Cơ sốgiảm nên x + 6 ≤4. Vậy −6 < x ≤−2.",
@@ -42791,7 +42791,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.5": [
@@ -42804,7 +42804,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ⁻¹ ≤5/3. Vì 2 > 1, x −1 ≤log₂(5/3). Vậy x ≤1 + log₂(5/3).",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ⁻¹ ≤5/3. Vì 2 > 1, x −1 ≤log₂(5/3). Vậy x ≤1 + log₂(5/3).",
@@ -42829,7 +42829,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-2",
@@ -42840,7 +42840,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3ˣ > 0 với mọi x, nên bất phương trình vô nghiệm.",
-          "text": "Lời giải Ví dụ 2, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3ˣ > 0 với mọi x, nên bất phương trình vô nghiệm.",
@@ -42865,7 +42865,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-3",
@@ -42876,7 +42876,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lấy ln hai vế: −x > ln 2 ⇒x < −ln 2.",
-          "text": "Lời giải Ví dụ 3, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lấy ln hai vế: −x > ln 2 ⇒x < −ln 2.",
@@ -42901,7 +42901,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-4",
@@ -42912,7 +42912,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 5ˣ > 0 > −2 với mọi x, tập nghiệm là R.",
-          "text": "Lời giải Ví dụ 4, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 5ˣ > 0 > −2 với mọi x, tập nghiệm là R.",
@@ -42937,7 +42937,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-5",
@@ -42948,7 +42948,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2x + 1 ≤ln 7 ⇒x ≤(ln 7 −1)/2.",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2x + 1 ≤ln 7 ⇒x ≤(ln 7 −1)/2.",
@@ -42973,7 +42973,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-6",
@@ -42984,7 +42984,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eˣ ≤³ ₂, nên x ≤ln ³ ₂.",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eˣ ≤³ ₂, nên x ≤ln ³ ₂.",
@@ -43009,7 +43009,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-7",
@@ -43020,7 +43020,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eˣ ≤⁴ ₃, nên x ≤ln ⁴ ₃.",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eˣ ≤⁴ ₃, nên x ≤ln ⁴ ₃.",
@@ -43045,7 +43045,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-8",
@@ -43056,7 +43056,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eˣ ≤⁵ ₄, nên x ≤ln ⁵ ₄.",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eˣ ≤⁵ ₄, nên x ≤ln ⁵ ₄.",
@@ -43081,7 +43081,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-9",
@@ -43092,7 +43092,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eˣ ≤⁶ ₅, nên x ≤ln ⁶ ₅.",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eˣ ≤⁶ ₅, nên x ≤ln ⁶ ₅.",
@@ -43117,7 +43117,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5-source-example-10",
@@ -43128,7 +43128,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "eˣ ≤⁷ ₆, nên x ≤ln ⁷ ₆.",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "eˣ ≤⁷ ₆, nên x ≤ln ⁷ ₆.",
@@ -43153,7 +43153,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.6": [
@@ -43166,7 +43166,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 1 < x < 5. Cơ số lớn hơn 1 nên x−1 ≤5−x ⇔x ≤3. Giao được S = (1; 3].",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 1 < x < 5. Cơ số lớn hơn 1 nên x−1 ≤5−x ⇔x ≤3. Giao được S = (1; 3].",
@@ -43191,7 +43191,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-2",
@@ -43202,7 +43202,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện −1/2 < x < 5. So sánh đối số: 2x + 1 > 5 −x ⇒x > 4/3. Giao được 4/3 < x < 5.",
-          "text": "Lời giải Ví dụ 2, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện −1/2 < x < 5. So sánh đối số: 2x + 1 > 5 −x ⇒x > 4/3. Giao được 4/3 < x < 5.",
@@ -43227,7 +43227,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-3",
@@ -43238,7 +43238,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 1 < x < 3. Cơ sốgiảm nên x −1 ≥3 −x ⇒x ≥2. Vậy 2 ≤x < 3.",
-          "text": "Lời giải Ví dụ 3, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 1 < x < 3. Cơ sốgiảm nên x −1 ≥3 −x ⇒x ≥2. Vậy 2 ≤x < 3.",
@@ -43263,7 +43263,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-4",
@@ -43274,7 +43274,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² −1 > 0; bất phương trình tương đương x² −1 ≥1. Suy ra x ≤− √ 2 hoặc x ≥ √ 2, đều thỏa điều kiện.",
-          "text": "Lời giải Ví dụ 4, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² −1 > 0; bất phương trình tương đương x² −1 ≥1. Suy ra x ≤− √ 2 hoặc x ≥ √ 2, đều thỏa điều kiện.",
@@ -43299,7 +43299,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-5",
@@ -43310,7 +43310,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2 < x < 4 và x −2 < 4 −x ⇒x < 3. Vậy 2 < x < 3.",
-          "text": "Lời giải Ví dụ 5, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2 < x < 4 và x −2 < 4 −x ⇒x < 3. Vậy 2 < x < 3.",
@@ -43335,7 +43335,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-6",
@@ -43346,7 +43346,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 2 < x < 6. So sánh đối số: x −2 ≤6 −x ⇒x ≤4. Giao được 2 < x ≤4.",
-          "text": "Lời giải Ví dụ 6, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 2 < x < 6. So sánh đối số: x −2 ≤6 −x ⇒x ≤4. Giao được 2 < x ≤4.",
@@ -43371,7 +43371,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-7",
@@ -43382,7 +43382,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 3 < x < 7. So sánh đối số: x −3 ≤7 −x ⇒x ≤5. Giao được 3 < x ≤5.",
-          "text": "Lời giải Ví dụ 7, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 3 < x < 7. So sánh đối số: x −3 ≤7 −x ⇒x ≤5. Giao được 3 < x ≤5.",
@@ -43407,7 +43407,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-8",
@@ -43418,7 +43418,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 4 < x < 8. So sánh đối số: x −4 ≤8 −x ⇒x ≤6. Giao được 4 < x ≤6.",
-          "text": "Lời giải Ví dụ 8, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 4 < x < 8. So sánh đối số: x −4 ≤8 −x ⇒x ≤6. Giao được 4 < x ≤6.",
@@ -43443,7 +43443,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-9",
@@ -43454,7 +43454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 5 < x < 9. So sánh đối số: x −5 ≤9 −x ⇒x ≤7. Giao được 5 < x ≤7.",
-          "text": "Lời giải Ví dụ 9, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 5 < x < 9. So sánh đối số: x −5 ≤9 −x ⇒x ≤7. Giao được 5 < x ≤7.",
@@ -43479,7 +43479,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6-source-example-10",
@@ -43490,7 +43490,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện 6 < x < 10. So sánh đối số: x −6 ≤10 −x ⇒x ≤8. Giao được 6 < x ≤8.",
-          "text": "Lời giải Ví dụ 10, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện 6 < x < 10. So sánh đối số: x −6 ≤10 −x ⇒x ≤8. Giao được 6 < x ≤8.",
@@ -43515,7 +43515,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.7": [
@@ -43528,7 +43528,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ˣ đồng biến nên giá trị lớn nhất trên [0; 2] là 2² = 4. Vì vậy điều kiện cần và đủ là m ≥4.",
-          "text": "Lời giải Ví dụ 1, trang 70 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ˣ đồng biến nên giá trị lớn nhất trên [0; 2] là 2² = 4. Vì vậy điều kiện cần và đủ là m ≥4.",
@@ -43553,7 +43553,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-2",
@@ -43564,7 +43564,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị nhỏ nhất của 2ˣ trên đoạn là 2. Vậy m ≤2.",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị nhỏ nhất của 2ˣ trên đoạn là 2. Vậy m ≤2.",
@@ -43589,7 +43589,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-3",
@@ -43600,7 +43600,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Vì 2ˣ nhận mọi giá trị dương, bất phương trình có nghiệm khi và chỉkhi m > 0.",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Vì 2ˣ nhận mọi giá trị dương, bất phương trình có nghiệm khi và chỉkhi m > 0.",
@@ -43625,7 +43625,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-4",
@@ -43636,7 +43636,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "3ˣ > 0 và tiến sát 0 khi x rất âm, không đạt 0. Vì thếm ≤0.",
-          "text": "Lời giải Ví dụ 4, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "3ˣ > 0 và tiến sát 0 khi x rất âm, không đạt 0. Vì thếm ≤0.",
@@ -43661,7 +43661,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-5",
@@ -43672,7 +43672,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của log₂ x là 2. Có nghiệm khi và chỉkhi m ≤2.",
-          "text": "Lời giải Ví dụ 5, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của log₂ x là 2. Có nghiệm khi và chỉkhi m ≤2.",
@@ -43697,7 +43697,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-6",
@@ -43708,7 +43708,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của 2ˣ là 2² = 4, nên cần và đủm ≥4.",
-          "text": "Lời giải Ví dụ 6, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của 2ˣ là 2² = 4, nên cần và đủm ≥4.",
@@ -43733,7 +43733,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-7",
@@ -43744,7 +43744,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của 2ˣ là 2³ = 8, nên cần và đủm ≥8.",
-          "text": "Lời giải Ví dụ 7, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của 2ˣ là 2³ = 8, nên cần và đủm ≥8.",
@@ -43769,7 +43769,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-8",
@@ -43780,7 +43780,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của 2ˣ là 2⁴ = 16, nên cần và đủm ≥16.",
-          "text": "Lời giải Ví dụ 8, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của 2ˣ là 2⁴ = 16, nên cần và đủm ≥16.",
@@ -43805,7 +43805,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-9",
@@ -43816,7 +43816,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của 2ˣ là 2⁵ = 32, nên cần và đủm ≥32.",
-          "text": "Lời giải Ví dụ 9, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của 2ˣ là 2⁵ = 32, nên cần và đủm ≥32.",
@@ -43841,7 +43841,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7-source-example-10",
@@ -43852,7 +43852,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giá trị lớn nhất của 2ˣ là 2⁶ = 64, nên cần và đủm ≥64.",
-          "text": "Lời giải Ví dụ 10, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giá trị lớn nhất của 2ˣ là 2⁶ = 64, nên cần và đủm ≥64.",
@@ -43877,7 +43877,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.8": [
@@ -43890,7 +43890,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đường thẳng y = 4 cắt đồ thịtại (2; 4). Vì đồ thịy = 2ˣ tăng, phần nằm phía trên hoặc thuộc đường ngang y = 4 ứng với x ≥2.",
-          "text": "Lời giải Ví dụ 1, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đường thẳng y = 4 cắt đồ thịtại (2; 4). Vì đồ thịy = 2ˣ tăng, phần nằm phía trên hoặc thuộc đường ngang y = 4 ứng với x ≥2.",
@@ -43929,7 +43929,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-2",
@@ -43940,7 +43940,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y = 3ˣ tăng, cắt y = 1 tại x = 0. Phần nằm dưới ứng với x < 0.",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y = 3ˣ tăng, cắt y = 1 tại x = 0. Phần nằm dưới ứng với x < 0.",
@@ -43979,7 +43979,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-3",
@@ -43990,7 +43990,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịgiảm, cắt trục hoành tại x = 1. Trong miền x > 0, phần phía trên hoặc thuộc trục hoành ứng với 0 < x ≤1.",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịgiảm, cắt trục hoành tại x = 1. Trong miền x > 0, phần phía trên hoặc thuộc trục hoành ứng với 0 < x ≤1.",
@@ -44029,7 +44029,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-4",
@@ -44040,7 +44040,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giao với y = 1 tại x = 2; trong miền x > 0, phần dưới tương ứng 0 < x < 2.",
-          "text": "Lời giải Ví dụ 4, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giao với y = 1 tại x = 2; trong miền x > 0, phần dưới tương ứng 0 < x < 2.",
@@ -44079,7 +44079,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-5",
@@ -44090,7 +44090,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Giao với y = 2 tại x = −1; đồ thịgiảm nên nghiệm x < −1.",
-          "text": "Lời giải Ví dụ 5, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Giao với y = 2 tại x = −1; đồ thịgiảm nên nghiệm x < −1.",
@@ -44129,7 +44129,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-6",
@@ -44140,7 +44140,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịcắt đường ngang tại x = 2 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥2.",
-          "text": "Lời giải Ví dụ 6, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịcắt đường ngang tại x = 2 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥2.",
@@ -44179,7 +44179,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-7",
@@ -44190,7 +44190,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịcắt đường ngang tại x = 3 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥3.",
-          "text": "Lời giải Ví dụ 7, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịcắt đường ngang tại x = 3 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥3.",
@@ -44229,7 +44229,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-8",
@@ -44240,7 +44240,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịcắt đường ngang tại x = 4 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥4.",
-          "text": "Lời giải Ví dụ 8, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịcắt đường ngang tại x = 4 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥4.",
@@ -44279,7 +44279,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-9",
@@ -44290,7 +44290,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịcắt đường ngang tại x = 5 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥5.",
-          "text": "Lời giải Ví dụ 9, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịcắt đường ngang tại x = 5 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥5.",
@@ -44329,7 +44329,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8-source-example-10",
@@ -44340,7 +44340,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Đồ thịcắt đường ngang tại x = 6 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥6.",
-          "text": "Lời giải Ví dụ 10, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Đồ thịcắt đường ngang tại x = 6 và tăng. Phần nằm phía trên hoặc thuộc đường ngang cho x ≥6.",
@@ -44379,7 +44379,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.9": [
@@ -44392,7 +44392,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện x > −1. Cơ số nhỏhơn 1 nên x + 1 < 8, tức x < 7. Các số nguyên là 0, 1, 2, 3, 4, 5, 6: có 7 số.",
-          "text": "Lời giải Ví dụ 1, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện x > −1. Cơ số nhỏhơn 1 nên x + 1 < 8, tức x < 7. Các số nguyên là 0, 1, 2, 3, 4, 5, 6: có 7 số.",
@@ -44417,7 +44417,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-2",
@@ -44428,7 +44428,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "−1 < x < 3, các số nguyên là 0, 1, 2; có 3 số.",
-          "text": "Lời giải Ví dụ 2, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "−1 < x < 3, các số nguyên là 0, 1, 2; có 3 số.",
@@ -44453,7 +44453,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-3",
@@ -44464,7 +44464,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Cơ sốtăng nên 0 ≤x ≤4. Có 5 số nguyên 0, 1, 2, 3, 4.",
-          "text": "Lời giải Ví dụ 3, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Cơ sốtăng nên 0 ≤x ≤4. Có 5 số nguyên 0, 1, 2, 3, 4.",
@@ -44489,7 +44489,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-4",
@@ -44500,7 +44500,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "x² −3x < 4 ⇔−1 < x < 4. Có các số0, 1, 2, 3, tổng 4 số.",
-          "text": "Lời giải Ví dụ 4, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "x² −3x < 4 ⇔−1 < x < 4. Có các số0, 1, 2, 3, tổng 4 số.",
@@ -44525,7 +44525,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-5",
@@ -44536,7 +44536,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "1 < x ≤5, có 2, 3, 4, 5: 4 số.",
-          "text": "Lời giải Ví dụ 5, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "1 < x ≤5, có 2, 3, 4, 5: 4 số.",
@@ -44561,7 +44561,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-6",
@@ -44572,7 +44572,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện và bất phương trình cho −1 < x ≤3. Các số0, 1, . . . , 3 cho tổng 4 nghiệm.",
-          "text": "Lời giải Ví dụ 6, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện và bất phương trình cho −1 < x ≤3. Các số0, 1, . . . , 3 cho tổng 4 nghiệm.",
@@ -44597,7 +44597,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-7",
@@ -44608,7 +44608,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện và bất phương trình cho −1 < x ≤7. Các số0, 1, . . . , 7 cho tổng 8 nghiệm.",
-          "text": "Lời giải Ví dụ 7, trang 71 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện và bất phương trình cho −1 < x ≤7. Các số0, 1, . . . , 7 cho tổng 8 nghiệm.",
@@ -44633,7 +44633,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-8",
@@ -44644,7 +44644,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện và bất phương trình cho −1 < x ≤15. Các số0, 1, . . . , 15 cho tổng 16 nghiệm.",
-          "text": "Lời giải Ví dụ 8, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện và bất phương trình cho −1 < x ≤15. Các số0, 1, . . . , 15 cho tổng 16 nghiệm.",
@@ -44669,7 +44669,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-9",
@@ -44680,7 +44680,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện và bất phương trình cho −1 < x ≤31. Các số0, 1, . . . , 31 cho tổng 32 nghiệm.",
-          "text": "Lời giải Ví dụ 9, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện và bất phương trình cho −1 < x ≤31. Các số0, 1, . . . , 31 cho tổng 32 nghiệm.",
@@ -44705,7 +44705,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9-source-example-10",
@@ -44716,7 +44716,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Điều kiện và bất phương trình cho −1 < x ≤63. Các số0, 1, . . . , 63 cho tổng 64 nghiệm.",
-          "text": "Lời giải Ví dụ 10, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Điều kiện và bất phương trình cho −1 < x ≤63. Các số0, 1, . . . , 63 cho tổng 64 nghiệm.",
@@ -44741,7 +44741,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "10.10": [
@@ -44754,7 +44754,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 1 nghiệm x = 0, cần 1 ≤m < 2.",
-          "text": "Lời giải Ví dụ 1, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 1 nghiệm x = 0, cần 1 ≤m < 2.",
@@ -44779,7 +44779,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-2",
@@ -44790,7 +44790,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 2 nghiệm x = 0, 1, cần 2 ≤m < 4.",
-          "text": "Lời giải Ví dụ 2, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 2 nghiệm x = 0, 1, cần 2 ≤m < 4.",
@@ -44815,7 +44815,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-3",
@@ -44826,7 +44826,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 3 nghiệm x = 0, . . . , 2, cần 4 ≤m < 8.",
-          "text": "Lời giải Ví dụ 3, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 3 nghiệm x = 0, . . . , 2, cần 4 ≤m < 8.",
@@ -44851,7 +44851,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-4",
@@ -44862,7 +44862,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 4 nghiệm x = 0, . . . , 3, cần 8 ≤m < 16.",
-          "text": "Lời giải Ví dụ 4, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 4 nghiệm x = 0, . . . , 3, cần 8 ≤m < 16.",
@@ -44887,7 +44887,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-5",
@@ -44898,7 +44898,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 5 nghiệm x = 0, . . . , 4, cần 16 ≤m < 32.",
-          "text": "Lời giải Ví dụ 5, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 5 nghiệm x = 0, . . . , 4, cần 16 ≤m < 32.",
@@ -44923,7 +44923,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-6",
@@ -44934,7 +44934,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 6 nghiệm x = 0, . . . , 5, cần 32 ≤m < 64.",
-          "text": "Lời giải Ví dụ 6, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 6 nghiệm x = 0, . . . , 5, cần 32 ≤m < 64.",
@@ -44959,7 +44959,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-7",
@@ -44970,7 +44970,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 7 nghiệm x = 0, . . . , 6, cần 64 ≤m < 128.",
-          "text": "Lời giải Ví dụ 7, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 7 nghiệm x = 0, . . . , 6, cần 64 ≤m < 128.",
@@ -44995,7 +44995,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-8",
@@ -45006,7 +45006,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 8 nghiệm x = 0, . . . , 7, cần 128 ≤m < 256.",
-          "text": "Lời giải Ví dụ 8, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 8 nghiệm x = 0, . . . , 7, cần 128 ≤m < 256.",
@@ -45031,7 +45031,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-9",
@@ -45042,7 +45042,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 9 nghiệm x = 0, . . . , 8, cần 256 ≤m < 512.",
-          "text": "Lời giải Ví dụ 9, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 9 nghiệm x = 0, . . . , 8, cần 256 ≤m < 512.",
@@ -45067,7 +45067,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10-source-example-10",
@@ -45078,7 +45078,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 10 nghiệm x = 0, . . . , 9, cần 512 ≤m < 1024.",
-          "text": "Lời giải Ví dụ 10, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Với x ≥0 nguyên, các giá trị là 1, 2, 4, . . .. Muốn đúng 10 nghiệm x = 0, . . . , 9, cần 512 ≤m < 1024.",
@@ -45103,7 +45103,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.1": [
@@ -45116,7 +45116,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = 50, r = 0,06, n = 3. Tiền lãi I = 50 · 0,06 · 3 = 9 triệu. Tổng A = 50 + 9 = 59 triệu đồng.",
-          "text": "Lời giải Ví dụ 1, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = 50, r = 0,06, n = 3. Tiền lãi I = 50 · 0,06 · 3 = 9 triệu. Tổng A = 50 + 9 = 59 triệu đồng.",
@@ -45141,7 +45141,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-2",
@@ -45152,7 +45152,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "I = 20 · 0,01 · 6 = 1,2 triệu; tổng cảvốn là 21,2 triệu.",
-          "text": "Lời giải Ví dụ 2, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "I = 20 · 0,01 · 6 = 1,2 triệu; tổng cảvốn là 21,2 triệu.",
@@ -45177,7 +45177,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-3",
@@ -45188,7 +45188,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "40(1 + 2r) = 46,4 ⇒2r = 0,16 ⇒r = 0,08 = 8%/năm.",
-          "text": "Lời giải Ví dụ 3, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "40(1 + 2r) = 46,4 ⇒2r = 0,16 ⇒r = 0,08 = 8%/năm.",
@@ -45213,7 +45213,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-4",
@@ -45224,7 +45224,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 80(1 + 2 · 0,05) = 88 triệu đồng.",
-          "text": "Lời giải Ví dụ 4, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 80(1 + 2 · 0,05) = 88 triệu đồng.",
@@ -45249,7 +45249,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-5",
@@ -45260,7 +45260,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "100(1 + 0,08t) = 124 ⇒t = 3 năm.",
-          "text": "Lời giải Ví dụ 5, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "100(1 + 0,08t) = 124 ⇒t = 3 năm.",
@@ -45285,7 +45285,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-6",
@@ -45296,7 +45296,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 20(1 + 2 · 0,05) = 22 triệu đồng.",
-          "text": "Lời giải Ví dụ 6, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 20(1 + 2 · 0,05) = 22 triệu đồng.",
@@ -45321,7 +45321,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-7",
@@ -45332,7 +45332,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 30(1 + 3 · 0,05) = 34,5 triệu đồng.",
-          "text": "Lời giải Ví dụ 7, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 30(1 + 3 · 0,05) = 34,5 triệu đồng.",
@@ -45357,7 +45357,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-8",
@@ -45368,7 +45368,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 40(1 + 4 · 0,05) = 48 triệu đồng.",
-          "text": "Lời giải Ví dụ 8, trang 72 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 40(1 + 4 · 0,05) = 48 triệu đồng.",
@@ -45393,7 +45393,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-9",
@@ -45404,7 +45404,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 50(1 + 5 · 0,05) = 62,5 triệu đồng.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 50(1 + 5 · 0,05) = 62,5 triệu đồng.",
@@ -45429,7 +45429,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.1-source-example-10",
@@ -45440,7 +45440,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 60(1 + 6 · 0,05) = 78 triệu đồng.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 60(1 + 6 · 0,05) = 78 triệu đồng.",
@@ -45465,7 +45465,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.2": [
@@ -45478,7 +45478,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Mỗi năm có 4 kỳ, mỗi kỳ0,06/4 = 0,015, tổng 8 kỳ. A = 100(1,015)⁸ ≈112,65 triệu đồng.",
-          "text": "Lời giải Ví dụ 1, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Mỗi năm có 4 kỳ, mỗi kỳ0,06/4 = 0,015, tổng 8 kỳ. A = 100(1,015)⁸ ≈112,65 triệu đồng.",
@@ -45503,7 +45503,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-2",
@@ -45514,7 +45514,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 20(1,1)³ = 26,62 triệu đồng.",
-          "text": "Lời giải Ví dụ 2, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 20(1,1)³ = 26,62 triệu đồng.",
@@ -45539,7 +45539,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-3",
@@ -45550,7 +45550,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 100e⁰˒⁰⁵·² = 100e⁰˒¹ ≈110,52 triệu đồng.",
-          "text": "Lời giải Ví dụ 3, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 100e⁰˒⁰⁵·² = 100e⁰˒¹ ≈110,52 triệu đồng.",
@@ -45575,7 +45575,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-4",
@@ -45586,7 +45586,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 50(1,08)² = 58,32 triệu đồng.",
-          "text": "Lời giải Ví dụ 4, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 50(1,08)² = 58,32 triệu đồng.",
@@ -45611,7 +45611,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-5",
@@ -45622,7 +45622,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 120(1 + 0,05/2)⁴ ≈132,46 triệu đồng.",
-          "text": "Lời giải Ví dụ 5, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 120(1 + 0,05/2)⁴ ≈132,46 triệu đồng.",
@@ -45647,7 +45647,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-6",
@@ -45658,7 +45658,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 20(1,1)² = 24,2 triệu đồng.",
-          "text": "Lời giải Ví dụ 6, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 20(1,1)² = 24,2 triệu đồng.",
@@ -45683,7 +45683,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-7",
@@ -45694,7 +45694,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 30(1,1)² = 36,3 triệu đồng.",
-          "text": "Lời giải Ví dụ 7, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 30(1,1)² = 36,3 triệu đồng.",
@@ -45719,7 +45719,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-8",
@@ -45730,7 +45730,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 40(1,1)² = 48,4 triệu đồng.",
-          "text": "Lời giải Ví dụ 8, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 40(1,1)² = 48,4 triệu đồng.",
@@ -45755,7 +45755,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-9",
@@ -45766,7 +45766,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 50(1,1)² = 60,5 triệu đồng.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 50(1,1)² = 60,5 triệu đồng.",
@@ -45791,7 +45791,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2-source-example-10",
@@ -45802,7 +45802,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 60(1,1)² = 72,6 triệu đồng.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 60(1,1)² = 72,6 triệu đồng.",
@@ -45827,7 +45827,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.3": [
@@ -45840,7 +45840,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Dữ kiện là tăng rời rạc từng năm: P₅ = 200(1,01)⁵ ≈210,20 nghìn người. Nếu yêu cầu số người, kết quảxấp xỉ210 202 người.",
-          "text": "Lời giải Ví dụ 1, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Dữ kiện là tăng rời rạc từng năm: P₅ = 200(1,01)⁵ ≈210,20 nghìn người. Nếu yêu cầu số người, kết quảxấp xỉ210 202 người.",
@@ -45865,7 +45865,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-2",
@@ -45876,7 +45876,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 500(1,02)² = 520,2 nghìn người.",
-          "text": "Lời giải Ví dụ 2, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 500(1,02)² = 520,2 nghìn người.",
@@ -45901,7 +45901,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-3",
@@ -45912,7 +45912,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2e⁰˒⁰²ᵗ = 4 ⇒e⁰˒⁰²ᵗ = 2 ⇒t = 50 ln 2 ≈34,66 năm nếu t theo năm.",
-          "text": "Lời giải Ví dụ 3, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2e⁰˒⁰²ᵗ = 4 ⇒e⁰˒⁰²ᵗ = 2 ⇒t = 50 ln 2 ≈34,66 năm nếu t theo năm.",
@@ -45937,7 +45937,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-4",
@@ -45948,7 +45948,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P = 1 · 1,02³ = 1,061208 triệu người.",
-          "text": "Lời giải Ví dụ 4, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P = 1 · 1,02³ = 1,061208 triệu người.",
@@ -45973,7 +45973,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-5",
@@ -45984,7 +45984,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P(10) = 3e⁰˒¹ ≈3,3155 triệu người.",
-          "text": "Lời giải Ví dụ 5, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P(10) = 3e⁰˒¹ ≈3,3155 triệu người.",
@@ -46009,7 +46009,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-6",
@@ -46020,7 +46020,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 2(1,01)² = 2,0402 triệu người.",
-          "text": "Lời giải Ví dụ 6, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 2(1,01)² = 2,0402 triệu người.",
@@ -46045,7 +46045,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-7",
@@ -46056,7 +46056,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 3(1,01)² = 3,0603 triệu người.",
-          "text": "Lời giải Ví dụ 7, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 3(1,01)² = 3,0603 triệu người.",
@@ -46081,7 +46081,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-8",
@@ -46092,7 +46092,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 4(1,01)² = 4,0804 triệu người.",
-          "text": "Lời giải Ví dụ 8, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 4(1,01)² = 4,0804 triệu người.",
@@ -46117,7 +46117,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-9",
@@ -46128,7 +46128,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 5(1,01)² = 5,1005 triệu người.",
-          "text": "Lời giải Ví dụ 9, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 5(1,01)² = 5,1005 triệu người.",
@@ -46153,7 +46153,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3-source-example-10",
@@ -46164,7 +46164,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "P₂ = 6(1,01)² = 6,1206 triệu người.",
-          "text": "Lời giải Ví dụ 10, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "P₂ = 6(1,01)² = 6,1206 triệu người.",
@@ -46189,7 +46189,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.4": [
@@ -46202,7 +46202,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trong 6 giờcó 6/2 = 3 chu kỳ. N(6) = 500 · 2³ = 4000 con.",
-          "text": "Lời giải Ví dụ 1, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trong 6 giờcó 6/2 = 3 chu kỳ. N(6) = 500 · 2³ = 4000 con.",
@@ -46227,7 +46227,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-2",
@@ -46238,7 +46238,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2 giờbằng 120 phút, có 4 chu kỳ. N = 100 · 2⁴ = 1600 con.",
-          "text": "Lời giải Ví dụ 2, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2 giờbằng 120 phút, có 4 chu kỳ. N = 100 · 2⁴ = 1600 con.",
@@ -46263,7 +46263,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-3",
@@ -46274,7 +46274,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁰˒⁵ᵗ = 3 ⇒t = 2 ln 3 ≈2,20 đơn vị thời gian.",
-          "text": "Lời giải Ví dụ 3, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁰˒⁵ᵗ = 3 ⇒t = 2 ln 3 ≈2,20 đơn vị thời gian.",
@@ -46299,7 +46299,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-4",
@@ -46310,7 +46310,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 800 · 3³ = 21600 con.",
-          "text": "Lời giải Ví dụ 4, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 800 · 3³ = 21600 con.",
@@ -46335,7 +46335,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-5",
@@ -46346,7 +46346,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁰˒⁴ᵗ > 160 ⇒t > ln 160/0,4 ≈12,688 giờ. Nếu chỉkiểm tra vào các giờnguyên thì sớm nhất là giờ13.",
-          "text": "Lời giải Ví dụ 5, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁰˒⁴ᵗ > 160 ⇒t > ln 160/0,4 ≈12,688 giờ. Nếu chỉkiểm tra vào các giờnguyên thì sớm nhất là giờ13.",
@@ -46371,7 +46371,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-6",
@@ -46382,7 +46382,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 200 · 2³ = 1600 con.",
-          "text": "Lời giải Ví dụ 6, trang 73 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 200 · 2³ = 1600 con.",
@@ -46407,7 +46407,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-7",
@@ -46418,7 +46418,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 300 · 2³ = 2400 con.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 300 · 2³ = 2400 con.",
@@ -46443,7 +46443,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-8",
@@ -46454,7 +46454,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 400 · 2³ = 3200 con.",
-          "text": "Lời giải Ví dụ 8, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 400 · 2³ = 3200 con.",
@@ -46479,7 +46479,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-9",
@@ -46490,7 +46490,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 500 · 2³ = 4000 con.",
-          "text": "Lời giải Ví dụ 9, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 500 · 2³ = 4000 con.",
@@ -46515,7 +46515,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4-source-example-10",
@@ -46526,7 +46526,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N = 600 · 2³ = 4800 con.",
-          "text": "Lời giải Ví dụ 10, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N = 600 · 2³ = 4800 con.",
@@ -46551,7 +46551,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.5": [
@@ -46564,7 +46564,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "M(15) = 80 · 2⁻¹⁵⁄⁵ = 80/8 = 10 g. Sốchu kỳ bán rã là 3.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "M(15) = 80 · 2⁻¹⁵⁄⁵ = 80/8 = 10 g. Sốchu kỳ bán rã là 3.",
@@ -46589,7 +46589,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-2",
@@ -46600,7 +46600,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "9 ngày là 3 chu kỳ. M = 64(1/2)³ = 8 g.",
-          "text": "Lời giải Ví dụ 2, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "9 ngày là 3 chu kỳ. M = 64(1/2)³ = 8 g.",
@@ -46625,7 +46625,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-3",
@@ -46636,7 +46636,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁻⁰˒¹ᵗ = 1/3 ⇒t = 10 ln 3 ≈10,99 đơn vị thời gian.",
-          "text": "Lời giải Ví dụ 3, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁻⁰˒¹ᵗ = 1/3 ⇒t = 10 ln 3 ≈10,99 đơn vị thời gian.",
@@ -46661,7 +46661,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-4",
@@ -46672,7 +46672,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "M = 160 · 2⁻³ = 20 g.",
-          "text": "Lời giải Ví dụ 4, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "M = 160 · 2⁻³ = 20 g.",
@@ -46697,7 +46697,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-5",
@@ -46708,7 +46708,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁻⁰˒⁰²T = 1/2 ⇒T = ln 2/0,02 ≈34,66 ngày.",
-          "text": "Lời giải Ví dụ 5, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁻⁰˒⁰²T = 1/2 ⇒T = ln 2/0,02 ≈34,66 ngày.",
@@ -46733,7 +46733,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-6",
@@ -46744,7 +46744,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có 6/2 = 3 chu kỳ; M = 160 · 2⁻³ = 20 g.",
-          "text": "Lời giải Ví dụ 6, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có 6/2 = 3 chu kỳ; M = 160 · 2⁻³ = 20 g.",
@@ -46769,7 +46769,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-7",
@@ -46780,7 +46780,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có 9/3 = 3 chu kỳ; M = 240 · 2⁻³ = 30 g.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có 9/3 = 3 chu kỳ; M = 240 · 2⁻³ = 30 g.",
@@ -46805,7 +46805,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-8",
@@ -46816,7 +46816,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có 12/4 = 3 chu kỳ; M = 320 · 2⁻³ = 40 g.",
-          "text": "Lời giải Ví dụ 8, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có 12/4 = 3 chu kỳ; M = 320 · 2⁻³ = 40 g.",
@@ -46841,7 +46841,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-9",
@@ -46852,7 +46852,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có 15/5 = 3 chu kỳ; M = 400 · 2⁻³ = 50 g.",
-          "text": "Lời giải Ví dụ 9, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có 15/5 = 3 chu kỳ; M = 400 · 2⁻³ = 50 g.",
@@ -46877,7 +46877,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5-source-example-10",
@@ -46888,7 +46888,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Có 18/6 = 3 chu kỳ; M = 480 · 2⁻³ = 60 g.",
-          "text": "Lời giải Ví dụ 10, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Có 18/6 = 3 chu kỳ; M = 480 · 2⁻³ = 60 g.",
@@ -46913,7 +46913,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.6": [
@@ -46926,7 +46926,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V₃ = 200(1 −0,1)³ = 200 · 0,9³ = 145,8 triệu đồng.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V₃ = 200(1 −0,1)³ = 200 · 0,9³ = 145,8 triệu đồng.",
@@ -46951,7 +46951,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-2",
@@ -46962,7 +46962,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 80(0,75)² = 45 triệu đồng.",
-          "text": "Lời giải Ví dụ 2, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 80(0,75)² = 45 triệu đồng.",
@@ -46987,7 +46987,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-3",
@@ -46998,7 +46998,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "200(1 −r)² = 162 ⇒(1 −r)² = 0,81. Vì 0 < 1 −r < 1, được 1 −r = 0,9, nên r = 10%.",
-          "text": "Lời giải Ví dụ 3, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "200(1 −r)² = 162 ⇒(1 −r)² = 0,81. Vì 0 < 1 −r < 1, được 1 −r = 0,9, nên r = 10%.",
@@ -47023,7 +47023,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-4",
@@ -47034,7 +47034,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V₂ = 500 · 0,8² = 320 triệu đồng.",
-          "text": "Lời giải Ví dụ 4, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V₂ = 500 · 0,8² = 320 triệu đồng.",
@@ -47059,7 +47059,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-5",
@@ -47070,7 +47070,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0,9ⁿ ≤0,6 ⇒n ≥ln 0,6/ ln 0,9 ≈4,848. Thửn = 4, 5; chọn 5 năm.",
-          "text": "Lời giải Ví dụ 5, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "0,9ⁿ ≤0,6 ⇒n ≥ln 0,6/ ln 0,9 ≈4,848. Thửn = 4, 5; chọn 5 năm.",
@@ -47095,7 +47095,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-6",
@@ -47106,7 +47106,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 200(0,9)² = 162 triệu đồng.",
-          "text": "Lời giải Ví dụ 6, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 200(0,9)² = 162 triệu đồng.",
@@ -47131,7 +47131,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-7",
@@ -47142,7 +47142,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 300(0,9)² = 243 triệu đồng.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 300(0,9)² = 243 triệu đồng.",
@@ -47167,7 +47167,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-8",
@@ -47178,7 +47178,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 400(0,9)² = 324 triệu đồng.",
-          "text": "Lời giải Ví dụ 8, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 400(0,9)² = 324 triệu đồng.",
@@ -47203,7 +47203,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-9",
@@ -47214,7 +47214,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 500(0,9)² = 405 triệu đồng.",
-          "text": "Lời giải Ví dụ 9, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 500(0,9)² = 405 triệu đồng.",
@@ -47239,7 +47239,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6-source-example-10",
@@ -47250,7 +47250,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "V = 600(0,9)² = 486 triệu đồng.",
-          "text": "Lời giải Ví dụ 10, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "V = 600(0,9)² = 486 triệu đồng.",
@@ -47275,7 +47275,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.7": [
@@ -47288,7 +47288,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 100(1 + 0,2)(1 −0,2) = 96 nghìn đồng. So với ban đầu giảm 4%.",
-          "text": "Lời giải Ví dụ 1, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 100(1 + 0,2)(1 −0,2) = 96 nghìn đồng. So với ban đầu giảm 4%.",
@@ -47313,7 +47313,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-2",
@@ -47324,7 +47324,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 300 · 0,9 · 1,1 = 297 nghìn đồng.",
-          "text": "Lời giải Ví dụ 2, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 300 · 0,9 · 1,1 = 297 nghìn đồng.",
@@ -47349,7 +47349,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-3",
@@ -47360,7 +47360,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Hệ sốcuối là 1,25 · 0,8 = 1. Lượng cuối bằng lượng ban đầu.",
-          "text": "Lời giải Ví dụ 3, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Hệ sốcuối là 1,25 · 0,8 = 1. Lượng cuối bằng lượng ban đầu.",
@@ -47385,7 +47385,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-4",
@@ -47396,7 +47396,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 200 · 1,1 · 1,05 = 231 nghìn đồng.",
-          "text": "Lời giải Ví dụ 4, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 200 · 1,1 · 1,05 = 231 nghìn đồng.",
@@ -47421,7 +47421,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-5",
@@ -47432,7 +47432,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 1000 · 0,9³ = 729 đơn vị.",
-          "text": "Lời giải Ví dụ 5, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 1000 · 0,9³ = 729 đơn vị.",
@@ -47457,7 +47457,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-6",
@@ -47468,7 +47468,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 200 · 1,2 · 0,9 = 216 nghìn đồng.",
-          "text": "Lời giải Ví dụ 6, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 200 · 1,2 · 0,9 = 216 nghìn đồng.",
@@ -47493,7 +47493,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-7",
@@ -47504,7 +47504,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 300 · 1,2 · 0,9 = 324 nghìn đồng.",
-          "text": "Lời giải Ví dụ 7, trang 74 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 300 · 1,2 · 0,9 = 324 nghìn đồng.",
@@ -47529,7 +47529,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-8",
@@ -47540,7 +47540,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 400 · 1,2 · 0,9 = 432 nghìn đồng.",
-          "text": "Lời giải Ví dụ 8, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 400 · 1,2 · 0,9 = 432 nghìn đồng.",
@@ -47565,7 +47565,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-9",
@@ -47576,7 +47576,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 500 · 1,2 · 0,9 = 540 nghìn đồng.",
-          "text": "Lời giải Ví dụ 9, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 500 · 1,2 · 0,9 = 540 nghìn đồng.",
@@ -47601,7 +47601,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7-source-example-10",
@@ -47612,7 +47612,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A = 600 · 1,2 · 0,9 = 648 nghìn đồng.",
-          "text": "Lời giải Ví dụ 10, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A = 600 · 1,2 · 0,9 = 648 nghìn đồng.",
@@ -47637,7 +47637,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.8": [
@@ -47650,7 +47650,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 40. Giải 40e⁻⁰˒²ᵗ = 10: −0,2t = ln(1/4) = −ln 4. Vậy t = 5 ln 4 ≈6,93 đơn vị thời gian.",
-          "text": "Lời giải Ví dụ 1, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 40. Giải 40e⁻⁰˒²ᵗ = 10: −0,2t = ln(1/4) = −ln 4. Vậy t = 5 ln 4 ≈6,93 đơn vị thời gian.",
@@ -47675,7 +47675,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-2",
@@ -47686,7 +47686,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 15; y(5) = 15e ≈40,77.",
-          "text": "Lời giải Ví dụ 2, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 15; y(5) = 15e ≈40,77.",
@@ -47711,7 +47711,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-3",
@@ -47722,7 +47722,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "7e⁻ᵏᵗ = 7/2 ⇒−kt = −ln 2 ⇒t = ln 2/k.",
-          "text": "Lời giải Ví dụ 3, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "7e⁻ᵏᵗ = 7/2 ⇒−kt = −ln 2 ⇒t = ln 2/k.",
@@ -47747,7 +47747,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-4",
@@ -47758,7 +47758,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 20; e⁰˒³ᵗ = 2 ⇒t = ln 2/0,3 ≈2,31.",
-          "text": "Lời giải Ví dụ 4, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 20; e⁰˒³ᵗ = 2 ⇒t = ln 2/0,3 ≈2,31.",
@@ -47783,7 +47783,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-5",
@@ -47794,7 +47794,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "T(0) = 95; 70e⁻⁰˒⁵ᵗ = 5 ⇒t = 2 ln 14 ≈5,28 phút nếu t tính theo phút.",
-          "text": "Lời giải Ví dụ 5, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "T(0) = 95; 70e⁻⁰˒⁵ᵗ = 5 ⇒t = 2 ln 14 ≈5,28 phút nếu t tính theo phút.",
@@ -47819,7 +47819,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-6",
@@ -47830,7 +47830,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 2. eᵗ⁄² = 2 ⇒t = 2 ln 2.",
-          "text": "Lời giải Ví dụ 6, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 2. eᵗ⁄² = 2 ⇒t = 2 ln 2.",
@@ -47855,7 +47855,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-7",
@@ -47866,7 +47866,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 3. eᵗ⁄³ = 2 ⇒t = 3 ln 2.",
-          "text": "Lời giải Ví dụ 7, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 3. eᵗ⁄³ = 2 ⇒t = 3 ln 2.",
@@ -47891,7 +47891,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-8",
@@ -47902,7 +47902,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 4. eᵗ⁄⁴ = 2 ⇒t = 4 ln 2.",
-          "text": "Lời giải Ví dụ 8, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 4. eᵗ⁄⁴ = 2 ⇒t = 4 ln 2.",
@@ -47927,7 +47927,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-9",
@@ -47938,7 +47938,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 5. eᵗ⁄⁵ = 2 ⇒t = 5 ln 2.",
-          "text": "Lời giải Ví dụ 9, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 5. eᵗ⁄⁵ = 2 ⇒t = 5 ln 2.",
@@ -47963,7 +47963,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8-source-example-10",
@@ -47974,7 +47974,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(0) = 6. eᵗ⁄⁶ = 2 ⇒t = 6 ln 2.",
-          "text": "Lời giải Ví dụ 10, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(0) = 6. eᵗ⁄⁶ = 2 ⇒t = 6 ln 2.",
@@ -47999,7 +47999,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.9": [
@@ -48012,7 +48012,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Theo mô hình, y(t) = 100e⁰˒²ᵗ. Vì thế y(5) = 100e ≈271,83. Kiểm tra: đạo hàm của 100e⁰˒²ᵗ là 20e⁰˒²ᵗ = 0,2y(t).",
-          "text": "Lời giải Ví dụ 1, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Theo mô hình, y(t) = 100e⁰˒²ᵗ. Vì thế y(5) = 100e ≈271,83. Kiểm tra: đạo hàm của 100e⁰˒²ᵗ là 20e⁰˒²ᵗ = 0,2y(t).",
@@ -48037,7 +48037,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-2",
@@ -48048,7 +48048,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 2e⁰˒⁵ᵗ, suy ra y(2) = 2e ≈5,44.",
-          "text": "Lời giải Ví dụ 2, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 2e⁰˒⁵ᵗ, suy ra y(2) = 2e ≈5,44.",
@@ -48073,7 +48073,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-3",
@@ -48084,7 +48084,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "g′ = y′/y = −2; g(0) = ln 10. Vậy g(t) = −2t + ln 10 và y(t) = 10e⁻²ᵗ.",
-          "text": "Lời giải Ví dụ 3, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "g′ = y′/y = −2; g(0) = ln 10. Vậy g(t) = −2t + ln 10 và y(t) = 10e⁻²ᵗ.",
@@ -48109,7 +48109,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-4",
@@ -48120,7 +48120,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 60e⁻⁰˒¹ᵗ, nên y(10) = 60/e ≈22,07.",
-          "text": "Lời giải Ví dụ 4, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 60e⁻⁰˒¹ᵗ, nên y(10) = 60/e ≈22,07.",
@@ -48145,7 +48145,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-5",
@@ -48156,7 +48156,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "20 = 5e²ᵏ ⇒k = ln 4/2 = ln 2. Vậy y(t) = 5eᵗlⁿ² = 5 · 2ᵗ.",
-          "text": "Lời giải Ví dụ 5, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "20 = 5e²ᵏ ⇒k = ln 4/2 = ln 2. Vậy y(t) = 5eᵗlⁿ² = 5 · 2ᵗ.",
@@ -48181,7 +48181,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-6",
@@ -48192,7 +48192,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 3eᵗ⁄², nên y(2) = 3e.",
-          "text": "Lời giải Ví dụ 6, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 3eᵗ⁄², nên y(2) = 3e.",
@@ -48217,7 +48217,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-7",
@@ -48228,7 +48228,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 4eᵗ⁄³, nên y(3) = 4e.",
-          "text": "Lời giải Ví dụ 7, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 4eᵗ⁄³, nên y(3) = 4e.",
@@ -48253,7 +48253,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-8",
@@ -48264,7 +48264,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 5eᵗ⁄⁴, nên y(4) = 5e.",
-          "text": "Lời giải Ví dụ 8, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 5eᵗ⁄⁴, nên y(4) = 5e.",
@@ -48289,7 +48289,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-9",
@@ -48300,7 +48300,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 6eᵗ⁄⁵, nên y(5) = 6e.",
-          "text": "Lời giải Ví dụ 9, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 6eᵗ⁄⁵, nên y(5) = 6e.",
@@ -48325,7 +48325,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9-source-example-10",
@@ -48336,7 +48336,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 7eᵗ⁄⁶, nên y(6) = 7e.",
-          "text": "Lời giải Ví dụ 10, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 7eᵗ⁄⁶, nên y(6) = 7e.",
@@ -48361,7 +48361,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.10": [
@@ -48374,7 +48374,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "N₀ = 200. 400 = 200e³ᵏ ⇒k = ln 2/3. Sau 6 đơn vị thời gian, N(6) = 200e²lⁿ² = 800.",
-          "text": "Lời giải Ví dụ 1, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "N₀ = 200. 400 = 200e³ᵏ ⇒k = ln 2/3. Sau 6 đơn vị thời gian, N(6) = 200e²lⁿ² = 800.",
@@ -48399,7 +48399,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-2",
@@ -48410,7 +48410,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 3; e²ᵏ = 4 ⇒k = ln 2.",
-          "text": "Lời giải Ví dụ 2, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 3; e²ᵏ = 4 ⇒k = ln 2.",
@@ -48435,7 +48435,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-3",
@@ -48446,7 +48446,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e²ᵏ = 4 ⇒k = ln 2. Vì Ceᵏ = 10, được C = 5, nên y(0) = 5.",
-          "text": "Lời giải Ví dụ 3, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e²ᵏ = 4 ⇒k = ln 2. Vì Ceᵏ = 10, được C = 5, nên y(0) = 5.",
@@ -48471,7 +48471,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-4",
@@ -48482,7 +48482,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 100; k = ln(1/2)/5 = −ln 2/5.",
-          "text": "Lời giải Ví dụ 4, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 100; k = ln(1/2)/5 = −ln 2/5.",
@@ -48507,7 +48507,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-5",
@@ -48518,7 +48518,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = ln 2/3; C = 30e⁻²lⁿ²⁄³ = 30 · 2⁻²⁄³.",
-          "text": "Lời giải Ví dụ 5, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "k = ln 2/3; C = 30e⁻²lⁿ²⁄³ = 30 · 2⁻²⁄³.",
@@ -48543,7 +48543,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-6",
@@ -48554,7 +48554,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 2 và e²ᵏ = 2. Vậy k = ln 2/2.",
-          "text": "Lời giải Ví dụ 6, trang 75 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 2 và e²ᵏ = 2. Vậy k = ln 2/2.",
@@ -48579,7 +48579,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-7",
@@ -48590,7 +48590,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 3 và e²ᵏ = 2. Vậy k = ln 2/2.",
-          "text": "Lời giải Ví dụ 7, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 3 và e²ᵏ = 2. Vậy k = ln 2/2.",
@@ -48615,7 +48615,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-8",
@@ -48626,7 +48626,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 4 và e²ᵏ = 2. Vậy k = ln 2/2.",
-          "text": "Lời giải Ví dụ 8, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 4 và e²ᵏ = 2. Vậy k = ln 2/2.",
@@ -48651,7 +48651,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-9",
@@ -48662,7 +48662,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 5 và e²ᵏ = 2. Vậy k = ln 2/2.",
-          "text": "Lời giải Ví dụ 9, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 5 và e²ᵏ = 2. Vậy k = ln 2/2.",
@@ -48687,7 +48687,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10-source-example-10",
@@ -48698,7 +48698,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "C = 6 và e²ᵏ = 2. Vậy k = ln 2/2.",
-          "text": "Lời giải Ví dụ 10, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "C = 6 và e²ᵏ = 2. Vậy k = ln 2/2.",
@@ -48723,7 +48723,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.11": [
@@ -48736,7 +48736,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "100(1,06)ⁿ ≥150 ⇔n ≥ln 1,5/ ln 1,06 ≈6,959. Vì n nguyên, chọn n = 7. Kiểm tra: sau 6 năm khoảng 141,85 triệu, sau 7 năm khoảng 150,36 triệu.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "100(1,06)ⁿ ≥150 ⇔n ≥ln 1,5/ ln 1,06 ≈6,959. Vì n nguyên, chọn n = 7. Kiểm tra: sau 6 năm khoảng 141,85 triệu, sau 7 năm khoảng 150,36 triệu.",
@@ -48761,7 +48761,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-2",
@@ -48772,7 +48772,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥8 = 2³ ⇒t ≥3.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥8 = 2³ ⇒t ≥3.",
@@ -48797,7 +48797,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-3",
@@ -48808,7 +48808,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "0,5ⁿ < 0,25 = 0,5² ⇒n > 2. Số kỳít nhất là 3, không phải 2.",
-          "text": "Lời giải Ví dụ 3, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "0,5ⁿ < 0,25 = 0,5² ⇒n > 2. Số kỳít nhất là 3, không phải 2.",
@@ -48833,7 +48833,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-4",
@@ -48844,7 +48844,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁰˒¹ᵗ = 5 ⇒t = 10 ln 5 ≈16,09 đơn vị thời gian.",
-          "text": "Lời giải Ví dụ 4, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁰˒¹ᵗ = 5 ⇒t = 10 ln 5 ≈16,09 đơn vị thời gian.",
@@ -48869,7 +48869,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-5",
@@ -48880,7 +48880,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "n > ln(1/3)/ ln 0,8 ≈4,923. Thửn = 4, 5; chọn n = 5.",
-          "text": "Lời giải Ví dụ 5, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "n > ln(1/3)/ ln 0,8 ≈4,923. Thửn = 4, 5; chọn n = 5.",
@@ -48905,7 +48905,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-6",
@@ -48916,7 +48916,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥2², nên t ≥2.",
-          "text": "Lời giải Ví dụ 6, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥2², nên t ≥2.",
@@ -48941,7 +48941,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-7",
@@ -48952,7 +48952,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥2³, nên t ≥3.",
-          "text": "Lời giải Ví dụ 7, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥2³, nên t ≥3.",
@@ -48977,7 +48977,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-8",
@@ -48988,7 +48988,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥2⁴, nên t ≥4.",
-          "text": "Lời giải Ví dụ 8, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥2⁴, nên t ≥4.",
@@ -49013,7 +49013,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-9",
@@ -49024,7 +49024,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥2⁵, nên t ≥5.",
-          "text": "Lời giải Ví dụ 9, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥2⁵, nên t ≥5.",
@@ -49049,7 +49049,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11-source-example-10",
@@ -49060,7 +49060,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2ᵗ ≥2⁶, nên t ≥6.",
-          "text": "Lời giải Ví dụ 10, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2ᵗ ≥2⁶, nên t ≥6.",
@@ -49085,7 +49085,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.12": [
@@ -49098,7 +49098,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "I/I₀ = 10⁶, nên L = 10 log 10⁶ = 60 dB. Đây là phép tính trên mô hình đã cho.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "I/I₀ = 10⁶, nên L = 10 log 10⁶ = 60 dB. Đây là phép tính trên mô hình đã cho.",
@@ -49123,7 +49123,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-2",
@@ -49134,7 +49134,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log 10⁻⁵ = 5.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log 10⁻⁵ = 5.",
@@ -49159,7 +49159,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-3",
@@ -49170,7 +49170,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "60 −40 = 10 log(I₂/I₁) ⇒log(I₂/I₁) = 2. Tỷsốbằng 10² = 100.",
-          "text": "Lời giải Ví dụ 3, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "60 −40 = 10 log(I₂/I₁) ⇒log(I₂/I₁) = 2. Tỷsốbằng 10² = 100.",
@@ -49195,7 +49195,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-4",
@@ -49206,7 +49206,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "−log H = 8 ⇒H = 10⁻⁸ mol/lít.",
-          "text": "Lời giải Ví dụ 4, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "−log H = 8 ⇒H = 10⁻⁸ mol/lít.",
@@ -49231,7 +49231,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-5",
@@ -49242,7 +49242,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "p/100 = e⁻¹, nên p = 100/e ≈36,79 kPa.",
-          "text": "Lời giải Ví dụ 5, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "p/100 = e⁻¹, nên p = 100/e ≈36,79 kPa.",
@@ -49267,7 +49267,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-6",
@@ -49278,7 +49278,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log H = −log 10⁻² = 2.",
-          "text": "Lời giải Ví dụ 6, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log H = −log 10⁻² = 2.",
@@ -49303,7 +49303,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-7",
@@ -49314,7 +49314,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log H = −log 10⁻³ = 3.",
-          "text": "Lời giải Ví dụ 7, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log H = −log 10⁻³ = 3.",
@@ -49339,7 +49339,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-8",
@@ -49350,7 +49350,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log H = −log 10⁻⁴ = 4.",
-          "text": "Lời giải Ví dụ 8, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log H = −log 10⁻⁴ = 4.",
@@ -49375,7 +49375,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-9",
@@ -49386,7 +49386,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log H = −log 10⁻⁵ = 5.",
-          "text": "Lời giải Ví dụ 9, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log H = −log 10⁻⁵ = 5.",
@@ -49411,7 +49411,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12-source-example-10",
@@ -49422,7 +49422,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "pH = −log H = −log 10⁻⁶ = 6.",
-          "text": "Lời giải Ví dụ 10, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "pH = −log H = −log 10⁻⁶ = 6.",
@@ -49447,7 +49447,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.13": [
@@ -49460,7 +49460,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "4k + C = ln 3, 8k + C = ln 1,5. Trừhai phương trình: 4k = ln(1/2) = −ln 2, nên k = −ln 2/4. Sau đó C = ln 3 + ln 2 = ln 6. Vậy y(t) = 6 · 2⁻ᵗ⁄⁴.",
-          "text": "Lời giải Ví dụ 1, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "4k + C = ln 3, 8k + C = ln 1,5. Trừhai phương trình: 4k = ln(1/2) = −ln 2, nên k = −ln 2/4. Sau đó C = ln 3 + ln 2 = ln 6. Vậy y(t) = 6 · 2⁻ᵗ⁄⁴.",
@@ -49485,7 +49485,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-2",
@@ -49496,7 +49496,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = ln(1/3)/2 = −ln 3/2. Vậy g(t) = −(ln 3/2)t + ln 9.",
-          "text": "Lời giải Ví dụ 2, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "k = ln(1/3)/2 = −ln 3/2. Vậy g(t) = −(ln 3/2)t + ln 9.",
@@ -49521,7 +49521,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-3",
@@ -49532,7 +49532,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "y(t) = 5e⁻⁰˒²ᵗ > 0; y(0) = 5 và y′ = −0,2y < 0, nên nồng độgiảm.",
-          "text": "Lời giải Ví dụ 3, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "y(t) = 5e⁻⁰˒²ᵗ > 0; y(0) = 5 và y′ = −0,2y < 0, nên nồng độgiảm.",
@@ -49557,7 +49557,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-4",
@@ -49568,7 +49568,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "k = −ln 2/3, g(t) = −(ln 2/3)t + ln 8.",
-          "text": "Lời giải Ví dụ 4, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "k = −ln 2/3, g(t) = −(ln 2/3)t + ln 8.",
@@ -49593,7 +49593,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-5",
@@ -49604,7 +49604,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "2⁻ᵗ⁄⁴ < 1/8 = 2⁻³ nên t > 12.",
-          "text": "Lời giải Ví dụ 5, trang 76 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "2⁻ᵗ⁄⁴ < 1/8 = 2⁻³ nên t > 12.",
@@ -49629,7 +49629,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-6",
@@ -49640,7 +49640,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e²ᵏ = 2, nên k = ln 2/2. Do đó g(t) = (ln 2/2)t + ln 2.",
-          "text": "Lời giải Ví dụ 6, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e²ᵏ = 2, nên k = ln 2/2. Do đó g(t) = (ln 2/2)t + ln 2.",
@@ -49665,7 +49665,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-7",
@@ -49676,7 +49676,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e³ᵏ = 2, nên k = ln 2/3. Do đó g(t) = (ln 2/3)t + ln 3.",
-          "text": "Lời giải Ví dụ 7, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e³ᵏ = 2, nên k = ln 2/3. Do đó g(t) = (ln 2/3)t + ln 3.",
@@ -49701,7 +49701,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-8",
@@ -49712,7 +49712,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁴ᵏ = 2, nên k = ln 2/4. Do đó g(t) = (ln 2/4)t + ln 4.",
-          "text": "Lời giải Ví dụ 8, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁴ᵏ = 2, nên k = ln 2/4. Do đó g(t) = (ln 2/4)t + ln 4.",
@@ -49737,7 +49737,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-9",
@@ -49748,7 +49748,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁵ᵏ = 2, nên k = ln 2/5. Do đó g(t) = (ln 2/5)t + ln 5.",
-          "text": "Lời giải Ví dụ 9, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁵ᵏ = 2, nên k = ln 2/5. Do đó g(t) = (ln 2/5)t + ln 5.",
@@ -49773,7 +49773,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13-source-example-10",
@@ -49784,7 +49784,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "e⁶ᵏ = 2, nên k = ln 2/6. Do đó g(t) = (ln 2/6)t + ln 6.",
-          "text": "Lời giải Ví dụ 10, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "e⁶ᵏ = 2, nên k = ln 2/6. Do đó g(t) = (ln 2/6)t + ln 6.",
@@ -49809,7 +49809,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.14": [
@@ -49822,7 +49822,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Lần gửi thứ nhất sinh lãi 2 tháng, lần thứ hai 1 tháng, lần thứba chưa sinh lãi. A₃ = 2(1,01)² + 2(1,01) + 2 = 6,0602 triệu đồng.",
-          "text": "Lời giải Ví dụ 1, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Lần gửi thứ nhất sinh lãi 2 tháng, lần thứ hai 1 tháng, lần thứba chưa sinh lãi. A₃ = 2(1,01)² + 2(1,01) + 2 = 6,0602 triệu đồng.",
@@ -49847,7 +49847,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-2",
@@ -49858,7 +49858,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A₃ = 3(1,1² + 1,1 + 1) = 3 · 3,31 = 9,93 triệu đồng.",
-          "text": "Lời giải Ví dụ 2, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A₃ = 3(1,1² + 1,1 + 1) = 3 · 3,31 = 9,93 triệu đồng.",
@@ -49883,7 +49883,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-3",
@@ -49894,7 +49894,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản đầu sinh lãi 2 kỳ, khoản thứ hai 1 kỳ. A = 1,1² + 1,1 = 2,31 triệu đồng.",
-          "text": "Lời giải Ví dụ 3, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản đầu sinh lãi 2 kỳ, khoản thứ hai 1 kỳ. A = 1,1² + 1,1 = 2,31 triệu đồng.",
@@ -49919,7 +49919,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-4",
@@ -49930,7 +49930,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "A₂ = 1,1 + 1 = 2,1 triệu đồng.",
-          "text": "Lời giải Ví dụ 4, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "A₂ = 1,1 + 1 = 2,1 triệu đồng.",
@@ -49955,7 +49955,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-5",
@@ -49966,7 +49966,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "B₁ = 10 · 1,01 −3 = 7,1; B₂ = 7,1 · 1,01 −3 = 4,171 triệu đồng.",
-          "text": "Lời giải Ví dụ 5, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "B₁ = 10 · 1,01 −3 = 7,1; B₂ = 7,1 · 1,01 −3 = 4,171 triệu đồng.",
@@ -49991,7 +49991,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-6",
@@ -50002,7 +50002,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 2 · 1,1 + 2 = 4,2 triệu đồng.",
-          "text": "Lời giải Ví dụ 6, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 2 · 1,1 + 2 = 4,2 triệu đồng.",
@@ -50027,7 +50027,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-7",
@@ -50038,7 +50038,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 3 · 1,1 + 3 = 6,3 triệu đồng.",
-          "text": "Lời giải Ví dụ 7, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 3 · 1,1 + 3 = 6,3 triệu đồng.",
@@ -50063,7 +50063,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-8",
@@ -50074,7 +50074,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 4 · 1,1 + 4 = 8,4 triệu đồng.",
-          "text": "Lời giải Ví dụ 8, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 4 · 1,1 + 4 = 8,4 triệu đồng.",
@@ -50099,7 +50099,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-9",
@@ -50110,7 +50110,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 5·1,1+5 = 10,5 triệu đồng.",
-          "text": "Lời giải Ví dụ 9, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 5·1,1+5 = 10,5 triệu đồng.",
@@ -50135,7 +50135,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14-source-example-10",
@@ -50146,7 +50146,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 6·1,1+6 = 12,6 triệu đồng.",
-          "text": "Lời giải Ví dụ 10, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Khoản thứ nhất sinh lãi một kỳ, khoản thứ hai chưa sinh lãi. Tổng 6·1,1+6 = 12,6 triệu đồng.",
@@ -50171,7 +50171,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "11.15": [
@@ -50184,7 +50184,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "20 + 80e⁻⁰˒¹ᵗ ≤40 ⇔e⁻⁰˒¹ᵗ ≤1/4. Lấy ln: −0,1t ≤−ln 4, nên t ≥10 ln 4 ≈13,86.",
-          "text": "Lời giải Ví dụ 1, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "20 + 80e⁻⁰˒¹ᵗ ≤40 ⇔e⁻⁰˒¹ᵗ ≤1/4. Lấy ln: −0,1t ≤−ln 4, nên t ≥10 ln 4 ≈13,86.",
@@ -50209,7 +50209,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-2",
@@ -50220,7 +50220,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "T(0) = 30 + 60 = 90. Khi t tăng không hạn, số mũ âm làm phần 60e⁻⁰˒³ᵗ tiến tới 0, nên mức nền là 30.",
-          "text": "Lời giải Ví dụ 2, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "T(0) = 30 + 60 = 90. Khi t tăng không hạn, số mũ âm làm phần 60e⁻⁰˒³ᵗ tiến tới 0, nên mức nền là 30.",
@@ -50245,7 +50245,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-3",
@@ -50256,7 +50256,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "T = 20 ⇒40e⁻⁰˒²ᵗ = 0, vô nghiệm vì hàm mũ luôn dương. Nhiệt độchỉtiến gần 20 trong mô hình.",
-          "text": "Lời giải Ví dụ 3, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "T = 20 ⇒40e⁻⁰˒²ᵗ = 0, vô nghiệm vì hàm mũ luôn dương. Nhiệt độchỉtiến gần 20 trong mô hình.",
@@ -50281,7 +50281,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-4",
@@ -50292,7 +50292,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "T(0) = 75; e⁻⁰˒²ᵗ = 1/5 nên t = 5 ln 5.",
-          "text": "Lời giải Ví dụ 4, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "T(0) = 75; e⁻⁰˒²ᵗ = 1/5 nên t = 5 ln 5.",
@@ -50317,7 +50317,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-5",
@@ -50328,7 +50328,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "1000 · 1,1² · 0,8 = 968 đơn vị.",
-          "text": "Lời giải Ví dụ 5, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "1000 · 1,1² · 0,8 = 968 đơn vị.",
@@ -50353,7 +50353,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-6",
@@ -50364,7 +50364,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trừmức nền: 20e⁻ᵗ⁄² = 10, nên e⁻ᵗ⁄² = 1/2, suy ra t = 2 ln 2.",
-          "text": "Lời giải Ví dụ 6, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trừmức nền: 20e⁻ᵗ⁄² = 10, nên e⁻ᵗ⁄² = 1/2, suy ra t = 2 ln 2.",
@@ -50389,7 +50389,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-7",
@@ -50400,7 +50400,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trừmức nền: 30e⁻ᵗ⁄³ = 15, nên e⁻ᵗ⁄³ = 1/2, suy ra t = 3 ln 2.",
-          "text": "Lời giải Ví dụ 7, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trừmức nền: 30e⁻ᵗ⁄³ = 15, nên e⁻ᵗ⁄³ = 1/2, suy ra t = 3 ln 2.",
@@ -50425,7 +50425,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-8",
@@ -50436,7 +50436,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trừmức nền: 40e⁻ᵗ⁄⁴ = 20, nên e⁻ᵗ⁄⁴ = 1/2, suy ra t = 4 ln 2.",
-          "text": "Lời giải Ví dụ 8, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trừmức nền: 40e⁻ᵗ⁄⁴ = 20, nên e⁻ᵗ⁄⁴ = 1/2, suy ra t = 4 ln 2.",
@@ -50461,7 +50461,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-9",
@@ -50472,7 +50472,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trừmức nền: 50e⁻ᵗ⁄⁵ = 25, nên e⁻ᵗ⁄⁵ = 1/2, suy ra t = 5 ln 2.",
-          "text": "Lời giải Ví dụ 9, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trừmức nền: 50e⁻ᵗ⁄⁵ = 25, nên e⁻ᵗ⁄⁵ = 1/2, suy ra t = 5 ln 2.",
@@ -50497,7 +50497,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15-source-example-10",
@@ -50508,7 +50508,7 @@ const examples = {
         {
           "label": "Lời giải từ tài liệu",
           "expression": "Trừmức nền: 60e⁻ᵗ⁄⁶ = 30, nên e⁻ᵗ⁄⁶ = 1/2, suy ra t = 6 ln 2. Bài tập tổng hợp Đúng – sai, câu 1: Đ, Đ, S, Đ. Do x > 1, được A = log₂(x+1). Tại x = 3, A = 2. Phương trình A = 1 cho x = 1, nhưng vi phạm x > 1 nên vô nghiệm. Cuối cùng A > 2 ⇔x + 1 > 4 ⇔x > 3. Câu 2: S, Đ, Đ, S. Df = R, Dg = (0; +∞). Hai hàm đều nghịch biến; các điểm đã cho đúng. Vì cơ số nhỏhơn 1, g(x) < 0 ⇔x > 1. Câu 3: Đ, Đ, Đ, S. g′ = y′/y = k. Từy(6)/y(2) = 1/4 = e⁴ᵏ, được k = −ln 2/2. Vì thế y(t) = 16 · 2⁻ᵗ⁄², nên y(10) = 16/32 = 0,5 < 1. Câu 4: Đ, S, Đ, Đ. Đặt t = 2ˣ > 0. Với m = −2, phương trình t² + 4t + 1 = 0 có hai nghiệm âm, không cho nghiệm x. Với m = 1, (t −1)² = 0 nên x = 0. Với m > 1, có hai nghiệm dương t₁, t₂ và t₁t₂ = 1, nên x₁ + x₂ = log₂(t₁t₂) = 0. Trảlời ngắn 1. 0 < x + 2 ≤8 ⇔−2 < x ≤6. Có 8 số nguyên: −1, 0, 1, 2, 3, 4, 5, 6. 2. log₁₂ 18 = log₂(2 · 3²)/ log₂(4 · 3) = (1 + 2a)/(2 + a). 3. Sau mỗi 4 đơn vị thời gian nồng độgiảm một nửa. Từ12 xuống 1,5 là giảm 8 lần, cần 3 chu kỳ: t = 12. Cũng có thểgiải 12 · 2⁻ᵗ⁄⁴ = 1,5. 4. 1,08ⁿ > 1,5 ⇒n > ln 1,5/ ln 1,08 ≈5,268. Chọn 6 năm. Sau 5 năm khoảng 146,93 triệu; sau 6 năm khoảng 158,69 triệu. 5. 2⁻ᵗ⁄⁶ = 0,1 ⇒t = 6 log₂ 10 ≈19,9 giờ. 6. m ∈[2; 8]. Các số nguyên là 2, 3, 4, 5, 6, 7, 8: có 7 số.",
-          "text": "Lời giải Ví dụ 10, trang 77 của PDF nguồn."
+          "text": null
         }
       ],
       "answer": "Trừmức nền: 60e⁻ᵗ⁄⁶ = 30, nên e⁻ᵗ⁄⁶ = 1/2, suy ra t = 6 ln 2. Bài tập tổng hợp Đúng – sai, câu 1: Đ, Đ, S, Đ. Do x > 1, được A = log₂(x+1). Tại x = 3, A = 2. Phương trình A = 1 cho x = 1, nhưng vi phạm x > 1 nên vô nghiệm. Cuối cùng A > 2 ⇔x + 1 > 4 ⇔x > 3. Câu 2: S, Đ, Đ, S. Df = R, Dg = (0; +∞). Hai hàm đều nghịch biến; các điểm đã cho đúng. Vì cơ số nhỏhơn 1, g(x) < 0 ⇔x > 1. Câu 3: Đ, Đ, Đ, S. g′ = y′/y = k. Từy(6)/y(2) = 1/4 = e⁴ᵏ, được k = −ln 2/2. Vì thế y(t) = 16 · 2⁻ᵗ⁄², nên y(10) = 16/32 = 0,5 < 1. Câu 4: Đ, S, Đ, Đ. Đặt t = 2ˣ > 0. Với m = −2, phương trình t² + 4t + 1 = 0 có hai nghiệm âm, không cho nghiệm x. Với m = 1, (t −1)² = 0 nên x = 0. Với m > 1, có hai nghiệm dương t₁, t₂ và t₁t₂ = 1, nên x₁ + x₂ = log₂(t₁t₂) = 0. Trảlời ngắn 1. 0 < x + 2 ≤8 ⇔−2 < x ≤6. Có 8 số nguyên: −1, 0, 1, 2, 3, 4, 5, 6. 2. log₁₂ 18 = log₂(2 · 3²)/ log₂(4 · 3) = (1 + 2a)/(2 + a). 3. Sau mỗi 4 đơn vị thời gian nồng độgiảm một nửa. Từ12 xuống 1,5 là giảm 8 lần, cần 3 chu kỳ: t = 12. Cũng có thểgiải 12 · 2⁻ᵗ⁄⁴ = 1,5. 4. 1,08ⁿ > 1,5 ⇒n > ln 1,5/ ln 1,08 ≈5,268. Chọn 6 năm. Sau 5 năm khoảng 146,93 triệu; sau 6 năm khoảng 158,69 triệu. 5. 2⁻ᵗ⁄⁶ = 0,1 ⇒t = 6 log₂ 10 ≈19,9 giờ. 6. m ∈[2; 8]. Các số nguyên là 2, 3, 4, 5, 6, 7, 8: có 7 số.",
@@ -50533,7 +50533,7 @@ const examples = {
       "sourcePdf": "cd08-cd11-exponential-logarithm",
       "conversionStatus": "imported",
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ]
 };
@@ -50879,8 +50879,8 @@ const problemTypes = {
       "exampleCount": 10,
       "solutionCount": 10,
       "figureCount": 0,
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.2",
@@ -50896,7 +50896,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.3",
@@ -50912,7 +50912,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.4",
@@ -50929,7 +50929,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.5",
@@ -50945,7 +50945,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.6",
@@ -50961,7 +50961,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.7",
@@ -50978,7 +50978,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.8",
@@ -50994,7 +50994,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.9",
@@ -51011,7 +51011,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "1.10",
@@ -51028,7 +51028,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD02": [
@@ -51046,7 +51046,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.2",
@@ -51063,7 +51063,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.3",
@@ -51080,7 +51080,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.4",
@@ -51099,7 +51099,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.5",
@@ -51119,7 +51119,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.6",
@@ -51135,7 +51135,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.7",
@@ -51151,7 +51151,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.8",
@@ -51167,7 +51167,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "2.9",
@@ -51184,7 +51184,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD03": [
@@ -51202,7 +51202,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.2",
@@ -51219,7 +51219,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.3",
@@ -51236,7 +51236,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.4",
@@ -51256,7 +51256,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.5",
@@ -51275,7 +51275,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.6",
@@ -51291,7 +51291,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.7",
@@ -51307,7 +51307,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.8",
@@ -51323,7 +51323,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.9",
@@ -51340,7 +51340,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "3.10",
@@ -51357,7 +51357,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD04": [
@@ -51375,7 +51375,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.2",
@@ -51392,7 +51392,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.3",
@@ -51409,7 +51409,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.4",
@@ -51428,7 +51428,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.5",
@@ -51445,7 +51445,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.6",
@@ -51461,7 +51461,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.7",
@@ -51478,7 +51478,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.8",
@@ -51494,7 +51494,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.9",
@@ -51510,7 +51510,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.10",
@@ -51526,7 +51526,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "4.11",
@@ -51543,7 +51543,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD05": [
@@ -51561,7 +51561,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.2",
@@ -51578,7 +51578,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.3",
@@ -51594,7 +51594,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.4",
@@ -51610,7 +51610,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.5",
@@ -51627,7 +51627,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.6",
@@ -51646,7 +51646,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.7",
@@ -51663,7 +51663,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.8",
@@ -51679,7 +51679,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "5.9",
@@ -51696,7 +51696,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD06": [
@@ -51717,7 +51717,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.2",
@@ -51735,7 +51735,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.3",
@@ -51754,7 +51754,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.4",
@@ -51771,7 +51771,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.5",
@@ -51787,7 +51787,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.6",
@@ -51804,7 +51804,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 6,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.7",
@@ -51820,7 +51820,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 4,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.8",
@@ -51836,7 +51836,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 5,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.9",
@@ -51853,7 +51853,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 4,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.10",
@@ -51869,7 +51869,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.11",
@@ -51886,7 +51886,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.12",
@@ -51902,7 +51902,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "6.13",
@@ -51919,7 +51919,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD07": [
@@ -51937,7 +51937,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.2",
@@ -51954,7 +51954,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.3",
@@ -51970,7 +51970,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.4",
@@ -51986,7 +51986,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.5",
@@ -52002,7 +52002,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.6",
@@ -52018,7 +52018,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.7",
@@ -52035,7 +52035,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.8",
@@ -52051,7 +52051,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 6,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "7.9",
@@ -52067,7 +52067,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 1,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD08": [
@@ -52077,15 +52077,15 @@ const problemTypes = {
       "title": "Lũy thừa với số mũ thực",
       "order": 1,
       "methodology": "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.",
-      "note": "Không biến aα + aβ thành aα⁺β.",
+      "note": "Không biến \\(a^{\\alpha}+a^{\\beta}\\) thành \\(a^{\\alpha+\\beta}\\).",
       "sourcePages": [
         9
       ],
       "exampleCount": 10,
       "solutionCount": 10,
       "figureCount": 0,
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.2",
@@ -52101,7 +52101,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.3",
@@ -52117,7 +52117,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.4",
@@ -52132,8 +52132,8 @@ const problemTypes = {
       "exampleCount": 10,
       "solutionCount": 10,
       "figureCount": 0,
-      "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "reviewStatus": "verified",
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.5",
@@ -52149,7 +52149,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.6",
@@ -52165,7 +52165,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 8,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.7",
@@ -52181,7 +52181,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 8,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.8",
@@ -52197,7 +52197,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.9",
@@ -52213,7 +52213,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.10",
@@ -52229,7 +52229,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.11",
@@ -52245,7 +52245,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.12",
@@ -52261,7 +52261,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.13",
@@ -52277,7 +52277,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 8,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "8.14",
@@ -52294,7 +52294,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD09": [
@@ -52312,7 +52312,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.2",
@@ -52328,7 +52328,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.3",
@@ -52344,7 +52344,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.4",
@@ -52360,7 +52360,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.5",
@@ -52376,7 +52376,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.6",
@@ -52392,7 +52392,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.7",
@@ -52408,7 +52408,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.8",
@@ -52424,7 +52424,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.9",
@@ -52440,7 +52440,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.10",
@@ -52456,7 +52456,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "9.11",
@@ -52473,7 +52473,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD10": [
@@ -52491,7 +52491,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.2",
@@ -52507,7 +52507,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.3",
@@ -52523,7 +52523,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.4",
@@ -52539,7 +52539,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.5",
@@ -52555,7 +52555,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.6",
@@ -52571,7 +52571,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.7",
@@ -52587,7 +52587,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.8",
@@ -52603,7 +52603,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 10,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.9",
@@ -52619,7 +52619,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "10.10",
@@ -52636,7 +52636,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ],
   "CD11": [
@@ -52654,7 +52654,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.2",
@@ -52670,7 +52670,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.3",
@@ -52686,7 +52686,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.4",
@@ -52702,7 +52702,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.5",
@@ -52718,7 +52718,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.6",
@@ -52734,7 +52734,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.7",
@@ -52750,7 +52750,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.8",
@@ -52766,7 +52766,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.9",
@@ -52782,7 +52782,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.10",
@@ -52798,7 +52798,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.11",
@@ -52814,7 +52814,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.12",
@@ -52830,7 +52830,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.13",
@@ -52846,7 +52846,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.14",
@@ -52862,7 +52862,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     },
     {
       "id": "11.15",
@@ -52878,7 +52878,7 @@ const problemTypes = {
       "solutionCount": 10,
       "figureCount": 0,
       "reviewStatus": "needs-review",
-      "contentVersion": "final-pdf-v2"
+      "contentVersion": "final-pdf-v3"
     }
   ]
 };
@@ -52896,7 +52896,8 @@ export const foundationImportAudit = Object.freeze({
     "sourceFigureCount": 154,
     "textCompleteCandidateCount": 556,
     "diagramDependentCount": 154,
-    "pendingReviewExampleCount": 710
+    "verifiedExampleCount": 10,
+    "pendingReviewExampleCount": 700
   },
   "cd08-cd11-exponential-logarithm": {
     "fileName": "Mũ-Logarit CD08-CD11.pdf",
@@ -52910,7 +52911,8 @@ export const foundationImportAudit = Object.freeze({
     "sourceFigureCount": 34,
     "textCompleteCandidateCount": 466,
     "diagramDependentCount": 34,
-    "pendingReviewExampleCount": 500
+    "verifiedExampleCount": 20,
+    "pendingReviewExampleCount": 480
   }
 });
 export const foundationKnowledgeContent = Object.freeze(knowledge);

@@ -115,4 +115,8 @@ test("source-verified boundary conditions and indices remain explicit", () => {
     knowledgeContent["14.9"].formulae[1].value,
     String.raw`\Delta F=\sum_{k=1}^{n}\int_{t_{k-1}}^{t_k}r_k(t)\,dt`
   );
+  const exponentNote = knowledgeContent["8.1"].note.text;
+  const noteHtml = renderMathText(exponentNote);
+  assert.match(exponentNote, /a\^\{\\alpha\}.*a\^\{\\beta\}.*a\^\{\\alpha\+\\beta\}/u);
+  assert.doesNotMatch(noteHtml, /katex-error|math-render-error|aα|aβ/u);
 });

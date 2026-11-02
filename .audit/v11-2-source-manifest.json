@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T13:35:32.055Z",
+  "generatedAt": "2026-11-02T04:30:02.379Z",
   "documents": [
     {
       "id": "cd01-cd07-functions",
@@ -4929,7 +4929,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": "Đạo hàm và ứng dụng cơ bản"
@@ -4943,7 +4943,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-01",
       "kind": "formula-or-property",
       "heading": "Quy tắc đại số"
@@ -4957,7 +4957,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-02",
       "kind": "formula-or-property",
       "heading": "Hàm hợp và căn thức"
@@ -4971,7 +4971,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-03",
       "kind": "formula-or-property",
       "heading": "Lượng giác"
@@ -4985,7 +4985,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-04",
       "kind": "formula-or-property",
       "heading": "Mũ và lôgarit"
@@ -4999,7 +4999,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-05",
       "kind": "formula-or-property",
       "heading": "Đạo hàm cấp hai và chuyển động"
@@ -5013,7 +5013,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-formula-06",
       "kind": "formula-or-property",
       "heading": "Công thức mở rộng"
@@ -5027,7 +5027,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Miền áp dụng"
@@ -5041,7 +5041,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-method-02",
       "kind": "method-or-recognition-tip",
       "heading": "Biên và giá trị tuyệt đối"
@@ -5055,7 +5055,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-method-03",
       "kind": "method-or-recognition-tip",
       "heading": "Đạo hàm cấp hai"
@@ -5069,7 +5069,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-1-note",
       "kind": "warning",
       "heading": "Lưu ý từ tài liệu"
@@ -5083,7 +5083,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-2-lead",
       "kind": "knowledge-introduction",
       "heading": null
@@ -5097,7 +5097,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-2-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -5111,7 +5111,7 @@
       "sourcePages": [
         4
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "1.1-knowledge-2-method-02",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 02"
@@ -7575,7 +7575,7 @@
       "sourcePages": [
         9
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.1-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
@@ -7589,7 +7589,7 @@
       "sourcePages": [
         9
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.1-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -7603,7 +7603,7 @@
       "sourcePages": [
         9
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.1-knowledge-1-method-02",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 02"
@@ -7617,7 +7617,7 @@
       "sourcePages": [
         9
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.1-knowledge-1-method-03",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 03"
@@ -7631,7 +7631,7 @@
       "sourcePages": [
         9
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.1-knowledge-1-note",
       "kind": "warning",
       "heading": "Lưu ý từ tài liệu"
@@ -7771,7 +7771,7 @@
       "sourcePages": [
         12
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.4-knowledge-1-lead",
       "kind": "knowledge-introduction",
       "heading": null
@@ -7785,7 +7785,7 @@
       "sourcePages": [
         12
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.4-knowledge-1-method-01",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 01"
@@ -7799,7 +7799,7 @@
       "sourcePages": [
         12
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.4-knowledge-1-method-02",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 02"
@@ -7813,7 +7813,7 @@
       "sourcePages": [
         12
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.4-knowledge-1-method-03",
       "kind": "method-or-recognition-tip",
       "heading": "Bước 03"
@@ -7827,7 +7827,7 @@
       "sourcePages": [
         12
       ],
-      "status": "imported-needs-review",
+      "status": "imported-and-verified",
       "id": "8.4-knowledge-1-note",
       "kind": "warning",
       "heading": "Lưu ý từ tài liệu"
@@ -16638,7 +16638,7 @@
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = 3x² −2x + 5.",
+      "title": "Ví dụ 1",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16646,14 +16646,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-1",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-2",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = x(3x³−8x²+12) 12 .",
+      "title": "Ví dụ 2",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16661,14 +16661,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-2",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-3",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = (x −1)(x + 2)(x −3).",
+      "title": "Ví dụ 3",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16676,14 +16676,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-3",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-4",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = (x² −1)² −(x⁴ −2x²).",
+      "title": "Ví dụ 4",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16691,14 +16691,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-4",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-5",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = x (x −1)² (x + 1)².",
+      "title": "Ví dụ 5",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16706,14 +16706,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-5",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-6",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Tìm các điểm có đạo hàm bằng 0 của f(x) = x³ −3x² + 2.",
+      "title": "Ví dụ 6",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16721,14 +16721,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-6",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-7",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Với f(x) = x³ + mx² −2x + 1, tìm m để f′(1) = 0.",
+      "title": "Ví dụ 7",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16736,14 +16736,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-7",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-8",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Biết f(x) = ax³ + bx + 1, f′(0) = −3, f′(1) = 3.",
+      "title": "Ví dụ 8",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16751,14 +16751,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-8",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-9",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Bạn An viết (x³ −2x² + 4)′ = 3x² −4x + 4.",
+      "title": "Ví dụ 9",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         4,
@@ -16766,14 +16766,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-9",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.1-worked-example-10",
       "kind": "worked-example",
       "topicId": "CD01",
       "code": "1.1",
-      "title": "Cho f(x) = (x + 1)³ −(x −1)³.",
+      "title": "Ví dụ 10",
       "sourceDocumentId": "cd01-cd07-functions",
       "sourcePages": [
         5,
@@ -16781,7 +16781,7 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "1.1-source-example-10",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "1.2-worked-example-1",
@@ -27288,7 +27288,7 @@
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính A = 16³⁄⁴ + 27⁻²⁄³.",
+      "title": "Ví dụ 1",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27296,14 +27296,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-1",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-2",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính 81³⁄⁴.",
+      "title": "Ví dụ 2",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27311,14 +27311,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-2",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-3",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Rút gọn ᵃ √ 3+2 a √ ₃₋₁ , a > 0.",
+      "title": "Ví dụ 3",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27326,14 +27326,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-3",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-4",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính 32²⁄⁵ + 9⁻¹⁄².",
+      "title": "Ví dụ 4",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27341,14 +27341,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-4",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-5",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Rút gọn a √²⁺¹a²⁻ √², a > 0.",
+      "title": "Ví dụ 5",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27356,14 +27356,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-5",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-6",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính (2³)²⁄³ + 2⁻¹.",
+      "title": "Ví dụ 6",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27371,14 +27371,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-6",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-7",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính (3³)²⁄³ + 3⁻¹.",
+      "title": "Ví dụ 7",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27386,14 +27386,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-7",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-8",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính (4³)²⁄³ + 4⁻¹.",
+      "title": "Ví dụ 8",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27401,14 +27401,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-8",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-9",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính (5³)²⁄³ + 5⁻¹.",
+      "title": "Ví dụ 9",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27416,14 +27416,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-9",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.1-worked-example-10",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.1",
-      "title": "Tính (6³)²⁄³ + 6⁻¹.",
+      "title": "Ví dụ 10",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         9,
@@ -27431,7 +27431,7 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.1-source-example-10",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.2-worked-example-1",
@@ -27738,7 +27738,7 @@
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh hai lũy thừa",
+      "title": "Ví dụ 1",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27746,14 +27746,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-1",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-2",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh 2¹˒⁴ và 2¹˒⁵.",
+      "title": "Ví dụ 2",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27761,14 +27761,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-2",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-3",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh 25 √² và 5³.",
+      "title": "Ví dụ 3",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27776,14 +27776,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-3",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-4",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh (1/3) √² và (1/3)³⁄².",
+      "title": "Ví dụ 4",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27791,14 +27791,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-4",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-5",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh 9 √² và 3 √⁸.",
+      "title": "Ví dụ 5",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27806,14 +27806,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-5",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-6",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh A = (1/2)³ và B = (1/2)⁴.",
+      "title": "Ví dụ 6",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27821,14 +27821,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-6",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-7",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh A = (1/3)⁴ và B = (1/3)⁵.",
+      "title": "Ví dụ 7",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27836,14 +27836,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-7",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-8",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh A = (1/4)⁵ và B = (1/4)⁶.",
+      "title": "Ví dụ 8",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27851,14 +27851,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-8",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-9",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh A = (1/5)⁶ và B = (1/5)⁷.",
+      "title": "Ví dụ 9",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27866,14 +27866,14 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-9",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.4-worked-example-10",
       "kind": "worked-example",
       "topicId": "CD08",
       "code": "8.4",
-      "title": "So sánh A = (1/6)⁷ và B = (1/6)⁸.",
+      "title": "Ví dụ 10",
       "sourceDocumentId": "cd08-cd11-exponential-logarithm",
       "sourcePages": [
         12,
@@ -27881,7 +27881,7 @@
       ],
       "destinationSection": "examples",
       "destinationSlideId": "8.4-source-example-10",
-      "status": "imported-needs-review"
+      "status": "imported-and-verified"
     },
     {
       "id": "8.5-worked-example-1",

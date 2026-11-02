@@ -55,8 +55,8 @@ test("section availability and source coverage remain independent", () => {
   assert.equal(foundation.sections.knowledge.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(foundation.sections.examples.status, CONTENT_STATUS.AVAILABLE);
   assert.equal(foundation.sections.practice.status, CONTENT_STATUS.COMING_SOON);
-  assert.equal(foundation.sections.knowledge.verification, "needs-review");
-  assert.equal(foundation.sections.examples.verification, "needs-review");
+  assert.equal(foundation.sections.knowledge.verification, "verified");
+  assert.equal(foundation.sections.examples.verification, "verified");
   assert.equal(foundation.verificationStatus, "needs-review");
   assert.equal(unavailable.sections.knowledge.status, CONTENT_STATUS.COMING_SOON);
 });

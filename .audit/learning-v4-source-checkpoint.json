@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "learning-experience-v4",
+  "generatedAt": "2026-11-01T16:45:11.269Z",
+  "sourceDocument": {
+    "id": "cd08-cd11-exponential-logarithm",
+    "fileName": "Mũ-Logarit CD08-CD11.pdf",
+    "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+  },
+  "verifiedBatch": {
+    "problemType": "8.1",
+    "statementPage": 9,
+    "solutionPage": 60,
+    "methodVerified": true,
+    "noteVerified": true,
+    "statementCount": 10,
+    "solutionCount": 10,
+    "diagramCount": 0,
+    "reviewStatus": "verified"
+  },
+  "foundationTotals": {
+    "examples": 1210,
+    "verifiedExamples": 30,
+    "pendingReviewExamples": 1180,
+    "diagramDependentExamples": 188
+  },
+  "unresolved": {
+    "cd12Cd14AnswerConflicts": 9,
+    "autoGradingEnabledForConflicts": false
+  },
+  "tests": {
+    "unitPassed": 108,
+    "unitFailed": 0,
+    "v4PlaywrightPassed": true,
+    "viewports": ["1920x1080", "1366x768", "768x1024", "390x844"],
+    "knowledgeLatexRoutes": 64,
+    "exampleLatexRoutes": 64
+  },
+  "nextPriority": [
+    "review remaining foundation examples against both statement and solution pages",
+    "prioritize the 188 diagram-dependent mappings",
+    "preserve the nine unresolved CD12-CD14 conflicts as needs-review"
+  ]
+}

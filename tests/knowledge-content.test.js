@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { knowledgeContent, getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
+import { knowledgeContent, getKnowledgeContent, getProblemTypesForTopic } from "../assets/js/data/knowledge-content.js";
 import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 
@@ -93,8 +93,25 @@ test("CD01 exposes the source topic overview instead of reducing Knowledge to on
   assert.deepEqual(reading.pages.map((page) => page.sourcePages), [[4], [4]]);
   assert.match(reading.lead, /f'\(x_0\).*lim_/u);
   assert.ok(reading.formulae.length >= 6);
-  assert.equal(reading.reviewStatus, "needs-review");
+  assert.equal(reading.reviewStatus, "verified");
   assert.equal(reading.conversionStatus, "imported");
+});
+
+test("CD08 8.4 keeps its source note attached only to the verified problem type", () => {
+  const type = getProblemTypesForTopic("CD08").find((item) => item.code === "8.4");
+  assert.equal(type.methodology, "Đưa về cùng cơ số. Cơ số lớn hơn 1 thì so sánh cùng chiều số mũ; cơ số giữa 0 và 1 thì ngược chiều.");
+  assert.equal(type.note, "Chỉ bình phương để so sánh khi đã kiểm tra dấu hai vế.");
+  assert.equal(type.reviewStatus, "verified");
+  assert.equal(getProblemTypesForTopic("CD08").filter((item) => item.note === type.note).length, 1);
+});
+
+test("CD08 8.1 preserves the verified exponent warning as renderable LaTeX", () => {
+  const type = getProblemTypesForTopic("CD08").find((item) => item.code === "8.1");
+  assert.equal(type.reviewStatus, "verified");
+  assert.equal(type.methodology, "Đưa căn về số mũ hữu tỉ; đưa về cùng cơ số; cộng, trừ hoặc nhân số mũ theo đúng phép toán.");
+  assert.equal(type.note, String.raw`Không biến \(a^{\alpha}+a^{\beta}\) thành \(a^{\alpha+\beta}\).`);
+  assert.doesNotMatch(type.note, /aα|aβ|aα⁺β/u);
+  assert.equal(getKnowledgeContent("8.1").reviewStatus, "verified");
 });
 
 test("all 26 calculus readings cover the source theory and three-step method", () => {

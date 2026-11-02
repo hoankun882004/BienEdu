@@ -7,10 +7,12 @@ import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 import { findTopic } from "../assets/js/domain/curriculum-filter.js";
 import {
   createLearningProgress,
+  getOpenedExampleIds,
   getLessonProgress,
   getLearningStorageKey,
   getTopicProgress,
   loadLearningProgress,
+  markExampleOpened,
   markExampleViewed,
   markKnowledgeViewed,
   getTopicKnowledgeProgressKey,
@@ -18,6 +20,7 @@ import {
   preserveVerifiedPdfProgress,
   recordPracticeAnswer,
   recordPracticeReview,
+  saveLearningProgress,
   LEGACY_LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_KEY,
   LEARNING_STORAGE_VERSION
@@ -53,6 +56,40 @@ test("knowledge and practice cannot complete a lesson while examples are incompl
   assert.equal(getLessonProgress(state, "20.1", 1, 2).isComplete, true);
   const locked = recordPracticeAnswer(state, "20.1", "q1", 1, 1);
   assert.equal(locked.lessons["20.1"].practiceAnswers.q1.selectedIndex, 0);
+});
+
+test("opening examples persists stable viewed-state IDs without completing their solutions", () => {
+  const values = new Map();
+  const storage = {
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => values.set(key, value)
+  };
+  let state = createLearningProgress();
+  for (const number of [1, 2, 5]) {
+    state = markExampleOpened(state, "8.1", `8.1-source-example-${number}`);
+  }
+  saveLearningProgress(state, storage, "12");
+  state = loadLearningProgress(storage, "12");
+
+  assert.deepEqual(getOpenedExampleIds(state, "8.1"), [
+    "8.1-source-example-1",
+    "8.1-source-example-2",
+    "8.1-source-example-5"
+  ]);
+  let lesson = getLessonProgress(state, "8.1", 0, 10, 0, "available", {
+    knowledge: [],
+    examples: Array.from({ length: 10 }, (_item, index) => `8.1-source-example-${index + 1}`),
+    practice: []
+  });
+  assert.equal(lesson.examplesOpened, 3);
+  assert.equal(lesson.examplesViewed, 0);
+  assert.equal(lesson.completed, 0);
+
+  state = markExampleViewed(state, "8.1", "8.1-source-example-2");
+  lesson = getLessonProgress(state, "8.1", 0, 10, 0);
+  assert.equal(lesson.examplesOpened, 3);
+  assert.equal(lesson.examplesViewed, 1);
+  assert.equal(lesson.completed, 1);
 });
 
 test("finishing available units is distinct from completing partially imported material", () => {

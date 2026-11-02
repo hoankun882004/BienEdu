@@ -1,6 +1,6 @@
 {
   "schemaVersion": "bienedu.content-migration.v1",
-  "generatedAt": "2026-10-28T13:35:32.061Z",
+  "generatedAt": "2026-11-02T04:30:02.386Z",
   "policy": {
     "sourceOfTruth": "PDF source + immutable review evidence",
     "studentFormat": "Markdown + LaTeX",
@@ -123,7 +123,8 @@
       "sourceFigureCount": 154,
       "textCompleteCandidateCount": 556,
       "diagramDependentCount": 154,
-      "pendingReviewExampleCount": 710
+      "verifiedExampleCount": 10,
+      "pendingReviewExampleCount": 700
     },
     "cd08-cd11-exponential-logarithm": {
       "fileName": "Mũ-Logarit CD08-CD11.pdf",
@@ -137,7 +138,8 @@
       "sourceFigureCount": 34,
       "textCompleteCandidateCount": 466,
       "diagramDependentCount": 34,
-      "pendingReviewExampleCount": 500
+      "verifiedExampleCount": 20,
+      "pendingReviewExampleCount": 480
     }
   },
   "topics": [

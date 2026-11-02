@@ -5,7 +5,7 @@ import {
   foundationSharedKnowledgeModules,
   foundationTopicKnowledgeContent,
   foundationTopicKnowledgeReferences
-} from "./foundation-lessons.generated.js?v=17.0";
+} from "./foundation-lessons.generated.js?v=19.0";
 
 // Structured reading content transcribed from the verified CD20–CD21 source PDF.
 // Keep this module text-only so the lesson remains readable, searchable and accessible.
