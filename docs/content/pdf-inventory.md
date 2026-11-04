@@ -1,6 +1,6 @@
 # PDF inventory
 
-Generated: 2026-11-02T04:30:02.386Z
+Generated: 2026-11-04T04:20:25.369Z
 
 Inventory chỉ quét thư mục tài liệu của dự án; các bản sao trong `assets/documents` được kiểm tra bằng hash nhưng không tính là tài liệu nguồn mới.
 

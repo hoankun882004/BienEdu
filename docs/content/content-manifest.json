@@ -1,6 +1,6 @@
 {
   "schemaVersion": "bienedu.content-migration.v1",
-  "generatedAt": "2026-11-02T04:30:02.386Z",
+  "generatedAt": "2026-11-04T04:20:25.369Z",
   "policy": {
     "sourceOfTruth": "PDF source + immutable review evidence",
     "studentFormat": "Markdown + LaTeX",
@@ -992,12 +992,12 @@
       "source": null,
       "sections": {
         "knowledge": {
-          "units": 0,
-          "status": "not-imported"
+          "units": 9,
+          "status": "imported"
         },
         "examples": {
-          "units": 0,
-          "status": "not-imported"
+          "units": 9,
+          "status": "imported"
         },
         "practice": {
           "units": 0,
@@ -1005,10 +1005,10 @@
         }
       },
       "stages": {
-        "converted": "not-converted",
-        "imported": "not-imported",
+        "converted": "converted",
+        "imported": "imported",
         "validated": "not-applicable",
-        "published": "not-published"
+        "published": "partially-published"
       },
       "review": {
         "mappedSubtopics": 0,
@@ -1016,8 +1016,8 @@
         "needsReviewSubtopics": 0,
         "runtimeVerification": "needs-review"
       },
-      "runtimeStatus": "coming-soon",
-      "sourceCoverage": "none"
+      "runtimeStatus": "partial",
+      "sourceCoverage": "complete"
     },
     {
       "topicId": "CD23",

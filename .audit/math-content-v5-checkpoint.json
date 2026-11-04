@@ -1,0 +1,1851 @@
+{
+  "schemaVersion": "bienedu.math-content-audit.v5",
+  "generatedAt": "2026-11-04",
+  "scope": {
+    "curriculumTopics": 39,
+    "importedTopicIds": [
+      "CD01",
+      "CD02",
+      "CD03",
+      "CD04",
+      "CD05",
+      "CD06",
+      "CD07",
+      "CD08",
+      "CD09",
+      "CD10",
+      "CD11",
+      "CD12",
+      "CD13",
+      "CD14",
+      "CD20",
+      "CD21",
+      "CD22"
+    ],
+    "protectedTopicIds": [
+      "CD20",
+      "CD21"
+    ],
+    "pilotCorrections": [
+      "22.5-inline-indices",
+      "22.7-formula"
+    ]
+  },
+  "counts": {
+    "sourceDocuments": 5,
+    "sourceDocumentsChecksumMatched": 5,
+    "knowledgeRecords": 181,
+    "exampleRecords": 1313,
+    "practiceUnits": 85,
+    "formulasScanned": 1668,
+    "formulasRenderedAsMath": 459,
+    "formulasValid": 459,
+    "formulaTextSlots": 1209,
+    "renderingChecks": 4710,
+    "renderingFailures": 0,
+    "figuresReferenced": 188,
+    "figuresMissing": 0,
+    "sourceVerifiedExamples": 39,
+    "immutableApprovedRecords": 3,
+    "remainingSuspiciousTextItems": 180,
+    "mathematicalReviewQueue": 18,
+    "missingSourceTopics": 22
+  },
+  "sourceInventory": [
+    {
+      "id": "cd01-cd07-functions",
+      "format": "pdf",
+      "path": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "expectedSha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "actualSha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "checksumMatches": true,
+      "topicIds": [
+        "CD01",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD05",
+        "CD06",
+        "CD07"
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "cd08-cd11-exponential-logarithm",
+      "format": "pdf",
+      "path": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "expectedSha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "actualSha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "checksumMatches": true,
+      "topicIds": [
+        "CD08",
+        "CD09",
+        "CD10",
+        "CD11"
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "cd20-cd21-theory",
+      "format": "pdf",
+      "path": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "expectedSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "actualSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "checksumMatches": true,
+      "topicIds": [
+        "CD20",
+        "CD21"
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "cd12-cd14-calculus",
+      "format": "pdf",
+      "path": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "expectedSha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "actualSha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "checksumMatches": true,
+      "topicIds": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "cd20-cd23-native-latex",
+      "format": "native-latex",
+      "path": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+      "expectedSha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "actualSha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "checksumMatches": true,
+      "topicIds": [
+        "CD22"
+      ],
+      "verification": "verified"
+    }
+  ],
+  "formulaFailures": [],
+  "renderingFailures": [],
+  "textIssues": [
+    {
+      "id": "11.5-knowledge-note",
+      "field": "note.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.4-knowledge-note",
+      "field": "note.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.2-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.3-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.3-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.3-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.5-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.10-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "1.10-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "2.7-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "2.9-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "2.9-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.6-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.6-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.8-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.8-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.10-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.10-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.10-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "4.11-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.1-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.2-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.4-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.8-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.9-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.9-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "5.9-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.1-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "6.12-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.5-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-10",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.6-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.8-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.8-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "7.9-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.2-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.2-source-example-4",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.3-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.5-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.5-source-example-5",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.6-source-example-4",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.6-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.6-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.7-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.7-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.7-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.12-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-3",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-5",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "8.13-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.1-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.1-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.1-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.1-source-example-5",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.4-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.5-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.5-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.5-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-2",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.9-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "9.10-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-3",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-5",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-6",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-7",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-8",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-9",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.1-source-example-10",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.3-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.4-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.4-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.5-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.6-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "10.8-source-example-5",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.2-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.2-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.4-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.4-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.5-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.8-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.8-source-example-3",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.8-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.9-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.10-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.11-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-5",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.13-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-4",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-6",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-7",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-8",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-9",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "11.15-source-example-10",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.1-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.1-source-example-2-step-1",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.1-source-example-2-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.4-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.4-source-example-1-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.6-source-example-2-step-1",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "12.9-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.3-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.3-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.3-source-example-2-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.5-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.5-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.5-source-example-1-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.6-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.6-source-example-2-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.8-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.8-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "13.8-source-example-1-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.1-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.2-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.2-source-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.2-source-example-1-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.2-source-example-2",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "14.2-source-example-2-step-2",
+      "field": "steps.text",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "21.1-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "21.2-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "21.3-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "21.4-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "21.8-example-1",
+      "field": "answer",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "22.1-native-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "22.5-native-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "22.6-native-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "22.8-native-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    },
+    {
+      "id": "22.9-native-example-1",
+      "field": "prompt",
+      "category": "NEEDS_MATH_REVIEW",
+      "rule": "plain-fraction-candidate"
+    }
+  ],
+  "figureIssues": [],
+  "correctionLog": [
+    {
+      "id": "22.7-knowledge-1",
+      "source": {
+        "documentId": "cd20-cd23-native-latex",
+        "lines": [
+          739,
+          755
+        ]
+      },
+      "before": {
+        "category": "RENDERING_ONLY_DEFECT",
+        "formula": "P(bệnh|+) = P(bệnh)P(+|bệnh) / P(+)",
+        "renderMode": "plain-text",
+        "badge": "Đã kiểm duyệt"
+      },
+      "after": {
+        "category": "NEEDS_MATH_REVIEW",
+        "formula": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+        "renderMode": "katex-display",
+        "badge": "Đã đối chiếu nguồn"
+      },
+      "sourceFidelity": "verified",
+      "mathematicalReview": "needs-review"
+    },
+    {
+      "id": "22.5-knowledge-inline-probability",
+      "source": {
+        "documentId": "cd20-cd23-native-latex",
+        "lines": [
+          711,
+          715
+        ]
+      },
+      "before": {
+        "category": "CONVERSION_DEFECT",
+        "formula": "\\mathrm{P}(\\text{B_{j}}\\mid A)",
+        "renderMode": "math-render-error",
+        "cause": "symbolic Unicode subscript was misclassified as prose"
+      },
+      "after": {
+        "category": "NEEDS_MATH_REVIEW",
+        "formula": "\\mathrm{P}(B_{j}\\mid A)",
+        "renderMode": "katex-inline"
+      },
+      "sourceFidelity": "verified",
+      "mathematicalReview": "needs-review"
+    }
+  ],
+  "reviewQueue": {
+    "mathematical": [
+      "22.1-knowledge",
+      "22.1-native-example-1",
+      "22.2-knowledge",
+      "22.2-native-example-1",
+      "22.3-knowledge",
+      "22.3-native-example-1",
+      "22.4-knowledge",
+      "22.4-native-example-1",
+      "22.5-knowledge",
+      "22.5-native-example-1",
+      "22.6-knowledge",
+      "22.6-native-example-1",
+      "22.7-knowledge",
+      "22.7-native-example-1",
+      "22.8-knowledge",
+      "22.8-native-example-1",
+      "22.9-knowledge",
+      "22.9-native-example-1"
+    ],
+    "visual": [
+      "1.10-source-example-10-figure-1",
+      "2.3-source-example-1-figure-1",
+      "2.3-source-example-2-figure-1",
+      "2.3-source-example-3-figure-1",
+      "2.3-source-example-4-figure-1",
+      "2.3-source-example-5-figure-1",
+      "2.3-source-example-6-figure-1",
+      "2.3-source-example-7-figure-1",
+      "2.3-source-example-8-figure-1",
+      "2.3-source-example-9-figure-1",
+      "2.3-source-example-10-figure-1",
+      "2.4-source-example-1-figure-1",
+      "2.4-source-example-2-figure-1",
+      "2.4-source-example-3-figure-1",
+      "2.4-source-example-4-figure-1",
+      "2.4-source-example-5-figure-1",
+      "2.4-source-example-6-figure-1",
+      "2.4-source-example-7-figure-1",
+      "2.4-source-example-8-figure-1",
+      "2.4-source-example-9-figure-1",
+      "2.4-source-example-10-figure-1",
+      "2.5-source-example-1-figure-1",
+      "2.5-source-example-2-figure-1",
+      "2.5-source-example-3-figure-1",
+      "2.5-source-example-4-figure-1",
+      "2.5-source-example-5-figure-1",
+      "2.5-source-example-6-figure-1",
+      "2.5-source-example-7-figure-1",
+      "2.5-source-example-8-figure-1",
+      "2.5-source-example-9-figure-1",
+      "2.5-source-example-10-figure-1",
+      "2.9-source-example-10-figure-1",
+      "3.4-source-example-1-figure-1",
+      "3.4-source-example-2-figure-1",
+      "3.4-source-example-3-figure-1",
+      "3.4-source-example-4-figure-1",
+      "3.4-source-example-5-figure-1",
+      "3.4-source-example-6-figure-1",
+      "3.4-source-example-7-figure-1",
+      "3.4-source-example-8-figure-1",
+      "3.4-source-example-9-figure-1",
+      "3.4-source-example-10-figure-1",
+      "3.5-source-example-1-figure-1",
+      "3.5-source-example-2-figure-1",
+      "3.5-source-example-3-figure-1",
+      "3.5-source-example-4-figure-1",
+      "3.5-source-example-5-figure-1",
+      "3.5-source-example-6-figure-1",
+      "3.5-source-example-7-figure-1",
+      "3.5-source-example-8-figure-1",
+      "3.5-source-example-9-figure-1",
+      "3.5-source-example-10-figure-1",
+      "4.3-source-example-1-figure-1",
+      "4.3-source-example-2-figure-1",
+      "4.3-source-example-3-figure-1",
+      "4.3-source-example-4-figure-1",
+      "4.3-source-example-5-figure-1",
+      "4.3-source-example-6-figure-1",
+      "4.3-source-example-7-figure-1",
+      "4.3-source-example-8-figure-1",
+      "4.3-source-example-9-figure-1",
+      "4.3-source-example-10-figure-1",
+      "4.4-source-example-1-figure-1",
+      "4.4-source-example-2-figure-1",
+      "4.4-source-example-3-figure-1",
+      "4.4-source-example-4-figure-1",
+      "4.4-source-example-5-figure-1",
+      "4.4-source-example-6-figure-1",
+      "4.4-source-example-7-figure-1",
+      "4.4-source-example-8-figure-1",
+      "4.4-source-example-9-figure-1",
+      "4.4-source-example-10-figure-1",
+      "4.11-source-example-10-figure-1",
+      "5.1-source-example-9-figure-1",
+      "5.2-source-example-9-figure-1",
+      "5.3-source-example-10-figure-1",
+      "5.5-source-example-1-figure-1",
+      "5.5-source-example-2-figure-1",
+      "5.5-source-example-3-figure-1",
+      "5.5-source-example-4-figure-1",
+      "5.5-source-example-5-figure-1",
+      "5.5-source-example-6-figure-1",
+      "5.5-source-example-7-figure-1",
+      "5.5-source-example-8-figure-1",
+      "5.5-source-example-9-figure-1",
+      "5.5-source-example-10-figure-1",
+      "5.6-source-example-1-figure-1",
+      "5.6-source-example-2-figure-1",
+      "5.6-source-example-3-figure-1",
+      "5.6-source-example-4-figure-1",
+      "5.6-source-example-5-figure-1",
+      "5.6-source-example-6-figure-1",
+      "5.6-source-example-7-figure-1",
+      "5.6-source-example-8-figure-1",
+      "5.6-source-example-9-figure-1",
+      "5.6-source-example-10-figure-1",
+      "5.9-source-example-10-figure-1",
+      "6.1-source-example-1-figure-1",
+      "6.1-source-example-2-figure-1",
+      "6.1-source-example-3-figure-1",
+      "6.1-source-example-4-figure-1",
+      "6.1-source-example-5-figure-1",
+      "6.1-source-example-6-figure-1",
+      "6.1-source-example-7-figure-1",
+      "6.1-source-example-8-figure-1",
+      "6.1-source-example-9-figure-1",
+      "6.1-source-example-10-figure-1",
+      "6.2-source-example-1-figure-1",
+      "6.2-source-example-2-figure-1",
+      "6.2-source-example-3-figure-1",
+      "6.2-source-example-4-figure-1",
+      "6.2-source-example-5-figure-1",
+      "6.2-source-example-6-figure-1",
+      "6.2-source-example-7-figure-1",
+      "6.2-source-example-8-figure-1",
+      "6.2-source-example-9-figure-1",
+      "6.2-source-example-10-figure-1",
+      "6.3-source-example-1-figure-1",
+      "6.3-source-example-2-figure-1",
+      "6.3-source-example-3-figure-1",
+      "6.3-source-example-4-figure-1",
+      "6.3-source-example-5-figure-1",
+      "6.3-source-example-6-figure-1",
+      "6.3-source-example-7-figure-1",
+      "6.3-source-example-8-figure-1",
+      "6.3-source-example-9-figure-1",
+      "6.3-source-example-10-figure-1",
+      "6.6-source-example-1-figure-1",
+      "6.6-source-example-2-figure-1",
+      "6.6-source-example-4-figure-1",
+      "6.6-source-example-5-figure-1",
+      "6.6-source-example-8-figure-1",
+      "6.6-source-example-9-figure-1",
+      "6.7-source-example-1-figure-1",
+      "6.7-source-example-2-figure-1",
+      "6.7-source-example-5-figure-1",
+      "6.7-source-example-9-figure-1",
+      "6.8-source-example-1-figure-1",
+      "6.8-source-example-2-figure-1",
+      "6.8-source-example-8-figure-1",
+      "6.8-source-example-9-figure-1",
+      "6.8-source-example-10-figure-1",
+      "6.9-source-example-1-figure-1",
+      "6.9-source-example-2-figure-1",
+      "6.9-source-example-3-figure-1",
+      "6.9-source-example-8-figure-1",
+      "6.10-source-example-3-figure-1",
+      "7.8-source-example-4-figure-1",
+      "7.8-source-example-5-figure-1",
+      "7.8-source-example-6-figure-1",
+      "7.8-source-example-7-figure-1",
+      "7.8-source-example-8-figure-1",
+      "7.8-source-example-10-figure-1",
+      "7.9-source-example-9-figure-1",
+      "8.6-source-example-1-figure-1",
+      "8.6-source-example-3-figure-1",
+      "8.6-source-example-5-figure-1",
+      "8.6-source-example-6-figure-1",
+      "8.6-source-example-7-figure-1",
+      "8.6-source-example-8-figure-1",
+      "8.6-source-example-9-figure-1",
+      "8.6-source-example-10-figure-1",
+      "8.7-source-example-1-figure-1",
+      "8.7-source-example-2-figure-1",
+      "8.7-source-example-5-figure-1",
+      "8.7-source-example-6-figure-1",
+      "8.7-source-example-7-figure-1",
+      "8.7-source-example-8-figure-1",
+      "8.7-source-example-9-figure-1",
+      "8.7-source-example-10-figure-1",
+      "8.13-source-example-1-figure-1",
+      "8.13-source-example-3-figure-1",
+      "8.13-source-example-4-figure-1",
+      "8.13-source-example-6-figure-1",
+      "8.13-source-example-7-figure-1",
+      "8.13-source-example-8-figure-1",
+      "8.13-source-example-9-figure-1",
+      "8.13-source-example-10-figure-1",
+      "10.8-source-example-1-figure-1",
+      "10.8-source-example-2-figure-1",
+      "10.8-source-example-3-figure-1",
+      "10.8-source-example-4-figure-1",
+      "10.8-source-example-5-figure-1",
+      "10.8-source-example-6-figure-1",
+      "10.8-source-example-7-figure-1",
+      "10.8-source-example-8-figure-1",
+      "10.8-source-example-9-figure-1",
+      "10.8-source-example-10-figure-1"
+    ],
+    "missingSource": [
+      "CD15",
+      "CD16",
+      "CD17",
+      "CD18",
+      "CD19",
+      "CD23",
+      "CD24",
+      "CD25",
+      "CD26",
+      "CD27",
+      "CD28",
+      "CD29",
+      "CD30",
+      "CD31",
+      "CD32",
+      "CD33",
+      "CD34",
+      "CD35",
+      "CD36",
+      "CD37",
+      "CD38",
+      "CD39"
+    ]
+  },
+  "topicCoverage": [
+    {
+      "topicId": "CD01",
+      "status": "partial",
+      "subtopicCount": 10,
+      "knowledge": 10,
+      "examples": 10,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD02",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD03",
+      "status": "partial",
+      "subtopicCount": 10,
+      "knowledge": 10,
+      "examples": 10,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD04",
+      "status": "partial",
+      "subtopicCount": 11,
+      "knowledge": 11,
+      "examples": 11,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD05",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD06",
+      "status": "partial",
+      "subtopicCount": 13,
+      "knowledge": 13,
+      "examples": 13,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD07",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 0,
+      "documentId": "cd01-cd07-functions"
+    },
+    {
+      "topicId": "CD08",
+      "status": "partial",
+      "subtopicCount": 14,
+      "knowledge": 14,
+      "examples": 14,
+      "practice": 0,
+      "documentId": "cd08-cd11-exponential-logarithm"
+    },
+    {
+      "topicId": "CD09",
+      "status": "partial",
+      "subtopicCount": 11,
+      "knowledge": 11,
+      "examples": 11,
+      "practice": 0,
+      "documentId": "cd08-cd11-exponential-logarithm"
+    },
+    {
+      "topicId": "CD10",
+      "status": "partial",
+      "subtopicCount": 10,
+      "knowledge": 10,
+      "examples": 10,
+      "practice": 0,
+      "documentId": "cd08-cd11-exponential-logarithm"
+    },
+    {
+      "topicId": "CD11",
+      "status": "partial",
+      "subtopicCount": 15,
+      "knowledge": 15,
+      "examples": 15,
+      "practice": 0,
+      "documentId": "cd08-cd11-exponential-logarithm"
+    },
+    {
+      "topicId": "CD12",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 1,
+      "documentId": "cd12-cd14-calculus"
+    },
+    {
+      "topicId": "CD13",
+      "status": "partial",
+      "subtopicCount": 8,
+      "knowledge": 8,
+      "examples": 8,
+      "practice": 0,
+      "documentId": "cd12-cd14-calculus"
+    },
+    {
+      "topicId": "CD14",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 0,
+      "documentId": "cd12-cd14-calculus"
+    },
+    {
+      "topicId": "CD15",
+      "status": "coming-soon",
+      "subtopicCount": 8,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD16",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD17",
+      "status": "coming-soon",
+      "subtopicCount": 5,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD18",
+      "status": "coming-soon",
+      "subtopicCount": 6,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD19",
+      "status": "coming-soon",
+      "subtopicCount": 6,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD20",
+      "status": "available",
+      "subtopicCount": 17,
+      "knowledge": 17,
+      "examples": 17,
+      "practice": 17,
+      "documentId": "cd20-cd21-theory"
+    },
+    {
+      "topicId": "CD21",
+      "status": "available",
+      "subtopicCount": 8,
+      "knowledge": 8,
+      "examples": 8,
+      "practice": 8,
+      "documentId": "cd20-cd21-theory"
+    },
+    {
+      "topicId": "CD22",
+      "status": "partial",
+      "subtopicCount": 9,
+      "knowledge": 9,
+      "examples": 9,
+      "practice": 0,
+      "documentId": "cd20-cd23-native-latex"
+    },
+    {
+      "topicId": "CD23",
+      "status": "coming-soon",
+      "subtopicCount": 12,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD24",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD25",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD26",
+      "status": "coming-soon",
+      "subtopicCount": 9,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD27",
+      "status": "coming-soon",
+      "subtopicCount": 8,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD28",
+      "status": "coming-soon",
+      "subtopicCount": 8,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD29",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD30",
+      "status": "coming-soon",
+      "subtopicCount": 8,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD31",
+      "status": "coming-soon",
+      "subtopicCount": 9,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD32",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD33",
+      "status": "coming-soon",
+      "subtopicCount": 11,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD34",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD35",
+      "status": "coming-soon",
+      "subtopicCount": 7,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD36",
+      "status": "coming-soon",
+      "subtopicCount": 9,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD37",
+      "status": "coming-soon",
+      "subtopicCount": 10,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD38",
+      "status": "coming-soon",
+      "subtopicCount": 12,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    },
+    {
+      "topicId": "CD39",
+      "status": "coming-soon",
+      "subtopicCount": 10,
+      "knowledge": 0,
+      "examples": 0,
+      "practice": 0,
+      "documentId": null
+    }
+  ]
+}

@@ -274,6 +274,45 @@ export const documentSources = Object.freeze([
   }
 ]);
 
+// Native LaTeX sources are tracked separately from PDFs because their stable
+// provenance is a source-line range, not a rendered page number. CD20/CD21 are
+// intentionally absent from this write mapping and remain bound to their
+// existing verified PDF records.
+export const nativeDocumentSources = Object.freeze([
+  {
+    id: "cd20-cd23-native-latex",
+    filePath: "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+    fileName: "Lý thuyết Tổ hợp – Xác suất – Thống kê CD20–CD23 (LaTeX nguồn)",
+    mimeType: "text/x-tex",
+    sourceKind: "native-latex",
+    lineCount: 1068,
+    sourceSha256: "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+    availabilityStatus: "available",
+    verification: {
+      status: "verified",
+      auditedAt: "2026-11-03",
+      note: "V4.2 pilot maps only CD22 from native LaTeX. CD20/CD21 are protected exclusions and CD23 remains staging-only."
+    },
+    topics: {
+      CD22: {
+        sourceLineStart: 631,
+        sourceLineEnd: 789,
+        exerciseLines: {
+          "22.1": [635, 652],
+          "22.2": [653, 668],
+          "22.3": [669, 687],
+          "22.4": [688, 704],
+          "22.5": [705, 722],
+          "22.6": [723, 738],
+          "22.7": [739, 755],
+          "22.8": [756, 771],
+          "22.9": [772, 789]
+        }
+      }
+    }
+  }
+]);
+
 export const documentMappings = Object.freeze(documentSources.flatMap((source) =>
   Object.entries(source.topics).map(([topicId, metadata]) => ({
     topicId,
@@ -287,13 +326,32 @@ export const documentMappings = Object.freeze(documentSources.flatMap((source) =
     verification: { ...source.verification },
     ...metadata
   }))
-));
+).concat(nativeDocumentSources.flatMap((source) =>
+  Object.entries(source.topics).map(([topicId, metadata]) => ({
+    topicId,
+    documentId: source.id,
+    filePath: source.filePath,
+    fileName: source.fileName,
+    mimeType: source.mimeType,
+    sourceKind: source.sourceKind,
+    lineCount: source.lineCount,
+    sourceSha256: source.sourceSha256,
+    availabilityStatus: source.availabilityStatus,
+    verification: { ...source.verification },
+    ...metadata
+  }))
+)));
 
 export function getDocumentForTopic(topicId) {
   const mapping = documentMappings.find((item) => item.topicId === topicId);
-  return mapping ? { ...mapping, exercisePages: { ...mapping.exercisePages } } : null;
+  if (!mapping) return null;
+  return {
+    ...mapping,
+    ...(mapping.exercisePages ? { exercisePages: { ...mapping.exercisePages } } : {}),
+    ...(mapping.exerciseLines ? { exerciseLines: Object.fromEntries(Object.entries(mapping.exerciseLines).map(([code, lines]) => [code, [...lines]])) } : {})
+  };
 }
 
 export function getDocumentSource(documentId) {
-  return documentSources.find((item) => item.id === documentId) ?? null;
+  return [...documentSources, ...nativeDocumentSources].find((item) => item.id === documentId) ?? null;
 }

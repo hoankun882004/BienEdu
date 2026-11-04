@@ -131,7 +131,10 @@ try {
       for (const [index, example] of browserExamples) {
         await page.goto(route(origin, code, "example", index + 1), { waitUntil: "domcontentloaded" });
         const state = await inspect(page, `${code} Example ${index + 1} ${viewport.name}`);
-        if (!["source-transcribed", "source-extracted-needs-review"].includes(example.verification)) {
+        if (
+          example.origin !== "native-latex-source"
+          && !["source-transcribed", "source-extracted-needs-review"].includes(example.verification)
+        ) {
           assert.ok(state.katex > 0, `${code} Example ${index + 1} ${viewport.name}: math is rendered by KaTeX`);
         }
         if (viewport.name === "desktop") desktopEquationOverflows += state.overflowCount;

@@ -1,4 +1,5 @@
 import { calculusKnowledgeContent } from "./calculus-lessons.js?v=14.0";
+import { latexPilotKnowledgeContent } from "./latex-pilot.generated.js?v=4.2";
 import {
   foundationKnowledgeContent,
   foundationProblemTypes,
@@ -318,7 +319,8 @@ const probabilityKnowledgeReadings = Object.fromEntries(
 export const knowledgeContent = Object.freeze({
   ...foundationKnowledgeContent,
   ...calculusKnowledgeContent,
-  ...probabilityKnowledgeReadings
+  ...probabilityKnowledgeReadings,
+  ...latexPilotKnowledgeContent
 });
 
 export function getKnowledgeContent(sourceTopic) {

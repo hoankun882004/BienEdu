@@ -1,6 +1,6 @@
 # BienEdu V15 — Exercise coverage
 
-Generated: 2026-11-02T04:30:02.432Z
+Generated: 2026-11-04T04:20:25.452Z
 
 Active-bank policy: source first, exact subtopic only, independently verified answer, complete solution, maximum 10 questions per subtopic.
 

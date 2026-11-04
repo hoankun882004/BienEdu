@@ -1,12 +1,12 @@
 # BienEdu content coverage
 
-Generated: 2026-11-02T04:30:02.433Z
+Generated: 2026-11-04T04:20:25.454Z
 
 ## Audit summary
 
 - Curriculum: 39 topics / 361 subtopics.
 - Source PDFs discovered: 4.
-- Topic availability: 2 available, 14 partial, 23 coming soon, 0 needs review.
+- Topic availability: 2 available, 15 partial, 22 coming soon, 0 needs review.
 - CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. 1210/1022 text-complete worked-example candidates are published as source-transcribed samples; -188 remain in review. 188 examples depend on diagrams/graphs and are withheld until their assets are mapped.
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
 - Source completeness and mathematical verification are independent: pending exercises are retained for review but never graded or displayed as ready practice.
@@ -47,7 +47,7 @@ Generated: 2026-11-02T04:30:02.433Z
 | CD19 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD20 | 17 | 17 | 17 | 20 | 20 | 0 | 0 | 0 | 0 | complete | available |
 | CD21 | 8 | 8 | 8 | 8 | 8 | 0 | 0 | 0 | 0 | complete | available |
-| CD22 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
+| CD22 | 9 | 0 | 9 | 9 | 9 | 0 | 0 | 0 | 0 | complete | partial |
 | CD23 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD24 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |
 | CD25 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | none | coming-soon |

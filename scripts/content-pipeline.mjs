@@ -8,7 +8,7 @@ import { curriculumMeta, curriculumTopics } from "../assets/js/data/curriculum.j
 import { calculusSourceExamples } from "../assets/js/data/calculus-source-examples.js";
 import { calculusSourcePractice } from "../assets/js/data/calculus-source-practice.js";
 import { approvedMathContent } from "../assets/js/data/approved-math-content.js";
-import { documentSources } from "../assets/js/data/document-mappings.js";
+import { documentSources, nativeDocumentSources } from "../assets/js/data/document-mappings.js";
 import { getExampleContent } from "../assets/js/data/example-content.js";
 import { getKnowledgeContent } from "../assets/js/data/knowledge-content.js";
 import { foundationImportAudit } from "../assets/js/data/foundation-lessons.generated.js";
@@ -212,7 +212,22 @@ function validateRegistry(inventory) {
       const section = subtopic.sections[sectionName];
       for (const unit of section.units) {
         ids.push(unit.id);
-        if (!unit.source?.documentId || !unit.source.pages.length) errors.push(`${unit.id} is missing a verified PDF source reference.`);
+        const source = unit.source;
+        if (source?.sourceKind === "native-latex") {
+          const document = nativeDocumentSources.find((item) => item.id === source.documentId);
+          const sourcePath = document ? join(projectRoot, document.filePath) : null;
+          const hasLineRange = source.lines?.length === 2
+            && source.lines.every((line) => Number.isInteger(line) && line > 0)
+            && source.lines[0] <= source.lines[1]
+            && source.lines[1] <= document?.lineCount;
+          const hasVerifiedDocument = document?.verification?.status === "verified"
+            && sourcePath
+            && existsSync(sourcePath)
+            && sha256(sourcePath) === document.sourceSha256;
+          if (!hasLineRange || !hasVerifiedDocument) errors.push(`${unit.id} is missing a verified native LaTeX source reference.`);
+        } else if (!source?.documentId || !source.pages?.length) {
+          errors.push(`${unit.id} is missing a verified PDF source reference.`);
+        }
       }
     }
     if (subtopic.status === CONTENT_STATUS.AVAILABLE) {

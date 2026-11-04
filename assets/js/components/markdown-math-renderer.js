@@ -117,7 +117,7 @@ export function validateLatexExpression(formula) {
     katex.renderToString(source, {
       displayMode: false,
       throwOnError: true,
-      strict: "error",
+      strict: katexStrictPolicy(source),
       trust: false,
       output: "htmlAndMathml"
     });
@@ -136,10 +136,22 @@ function renderFormula(formula, displayMode) {
   return katex.renderToString(source, {
     displayMode,
     throwOnError: true,
-    strict: "error",
+    strict: katexStrictPolicy(source),
     trust: false,
     output: "htmlAndMathml"
   });
+}
+
+function katexStrictPolicy(source) {
+  const textCommands = [...String(source).matchAll(/\\text\{([^{}]*)\}/gu)];
+  const hasUnicodeText = textCommands.some((match) => /[^\x00-\x7F]/u.test(match[1]));
+  const sourceWithoutText = textCommands.reduce((value, match) => value.replace(match[0], ""), String(source));
+  const unicodeIsConfinedToText = hasUnicodeText && !/[^\x00-\x7F]/u.test(sourceWithoutText);
+  return (errorCode) => (
+    unicodeIsConfinedToText && ["unknownSymbol", "symbolNotInFont"].includes(errorCode)
+      ? "ignore"
+      : "error"
+  );
 }
 
 function looksLikeStandaloneMath(value) {
@@ -261,8 +273,9 @@ function approvedKnowledgeMarkdown(record) {
     .join("\n\n");
 }
 
-function formulaExpressionMarkup(value) {
-  return looksLikeStandaloneMath(value)
+function formulaExpressionMarkup(value, { renderAsMath } = {}) {
+  const shouldRenderAsMath = renderAsMath === true || (renderAsMath !== false && looksLikeStandaloneMath(value));
+  return shouldRenderAsMath
     ? `<div class="math-markdown__display math-markdown__display--compact" tabindex="0">${renderFormula(mathTextToLatex(value), true)}</div>`
     : `<strong>${renderMarkdownInline(value)}</strong>`;
 }
@@ -282,7 +295,7 @@ function renderFormulaItem(item) {
   const cardClass = item.cardLayout === "wide" ? " math-lesson__formula-card--wide" : "";
   return `<div class="math-lesson__formula-card${cardClass}" data-expression-count="${expressions.length}">
     <dt>${renderMarkdownInline(item.label)}</dt>
-    <dd><div class="math-lesson__expressions${expressionClass}">${expressions.map((value) => `<div class="math-lesson__equation">${formulaExpressionMarkup(value)}</div>`).join("")}</div><p>${renderMarkdownInline(item.detail)}</p></dd>
+    <dd><div class="math-lesson__expressions${expressionClass}">${expressions.map((value) => `<div class="math-lesson__equation">${formulaExpressionMarkup(value, { renderAsMath: item.renderAsMath })}</div>`).join("")}</div><p>${renderMarkdownInline(item.detail)}</p></dd>
   </div>`;
 }
 
@@ -302,7 +315,7 @@ function renderStructuredKnowledge(reading) {
     <h3 id="formula-title">Công thức &amp; nguyên tắc</h3>
     <dl>${formulae.map(renderFormulaItem).join("")}</dl>
   </section>` : "";
-  const quickMarkup = points.length ? `<aside class="math-lesson__quick" aria-labelledby="quick-title"><h3 id="quick-title">Cách hiểu nhanh</h3><ol>${points.map((item) => `<li><span>${renderMarkdownInline(item.label)}</span><p>${renderMarkdownInline(item.text)}</p></li>`).join("")}</ol></aside>` : "";
+  const quickMarkup = points.length ? `<aside class="math-lesson__quick" aria-labelledby="quick-title"><h3 id="quick-title">Cách hiểu nhanh</h3><ol>${points.map((item) => `<li>${item.label ? `<span>${renderMarkdownInline(item.label)}</span>` : ""}<p>${renderMarkdownInline(item.text)}</p></li>`).join("")}</ol></aside>` : "";
   const noteMarkup = reading.note ? `<aside class="math-lesson__callout math-lesson__callout--${reading.note.tone === "warning" ? "warning" : "tip"}"><span aria-hidden="true">${reading.note.tone === "warning" ? "!" : "✓"}</span><div><h3>${renderMarkdownInline(reading.note.label)}</h3><p>${renderMarkdownInline(reading.note.text)}</p></div></aside>` : "";
   return `<div class="math-lesson__intro">${renderMarkdownMath(reading.lead)}</div><div class="math-lesson__study-grid"><div class="math-lesson__primary">${formulaMarkup}${noteMarkup}</div>${quickMarkup}</div>`;
 }
@@ -310,10 +323,20 @@ function renderStructuredKnowledge(reading) {
 export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const record = slide.approvedMathContent ?? null;
   const reading = slide.reading ?? null;
+  const verificationGates = reading?.verificationGates;
   const verification = reading?.reviewStatus === "verified" || record?.verification?.status === "verified"
     ? "verified"
-    : "needs-review";
-  const verificationLabel = verification === "verified" ? "Đã kiểm duyệt" : "Chờ kiểm duyệt";
+    : verificationGates?.sourceFidelity === "verified"
+      ? "source-verified"
+      : verificationGates?.rendering === "validated"
+        ? "render-validated"
+        : "needs-review";
+  const verificationLabel = {
+    verified: "Đã kiểm duyệt",
+    "source-verified": "Đã đối chiếu nguồn",
+    "render-validated": "Đã kiểm tra hiển thị",
+    "needs-review": "Chờ kiểm duyệt toán học"
+  }[verification];
   const body = reading
     ? renderStructuredKnowledge(reading)
     : `<div class="math-markdown__body math-markdown__body--source">${renderMarkdownMath(approvedKnowledgeMarkdown(record))}</div>`;

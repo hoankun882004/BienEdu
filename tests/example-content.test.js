@@ -5,13 +5,21 @@ import { knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all mapped lessons expose complete worked examples", () => {
   assert.deepEqual(Object.keys(exampleContent), Object.keys(knowledgeSections));
-  assert.equal(Object.values(exampleContent).flat().length, 1304);
+  assert.equal(Object.values(exampleContent).flat().length, 1313);
   for (const [code, examples] of Object.entries(exampleContent)) {
     if (!examples.length) {
       assert.match(code, /^(?:[1-9]|10|11)\./u, `${code} can omit only a diagram-dependent foundation example`);
       continue;
     }
     for (const example of examples) {
+      if (example.origin === "native-latex-source") {
+        assert.ok(example.prompt.length >= 12, `${code} native prompt`);
+        assert.equal(example.steps.length, 0, `${code} must not invent source-absent solutions`);
+        assert.equal(example.answer, null, `${code} source answer`);
+        assert.equal(example.sourcePages.length, 0, `${code} native source has no PDF pages`);
+        assert.equal(example.sourceLines.length, 2, `${code} native line provenance`);
+        continue;
+      }
       assert.ok(example.prompt.length >= (example.origin === "finalized-tutor-pdf" ? 7 : 12), `${code} prompt`);
       const finalPdfImport = example.origin === "finalized-tutor-pdf";
       assert.ok(example.analysis.length >= (finalPdfImport ? 0 : (example.verification === "source-transcribed" ? 1 : 2)), `${code} analysis`);

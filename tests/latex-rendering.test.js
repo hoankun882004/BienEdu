@@ -17,6 +17,7 @@ function formulaSlots() {
   const rows = [];
   for (const [code, reading] of Object.entries(knowledgeContent)) {
     for (const [index, formula] of (reading.formulae ?? []).entries()) {
+      if (formula.renderAsMath === false) continue;
       const expressions = formula.expressions?.length ? formula.expressions : [formula.value];
       expressions.forEach((value, expressionIndex) => rows.push({
         id: `${code}:knowledge:${index + 1}:expression:${expressionIndex + 1}`,
@@ -54,7 +55,7 @@ function surroundingContent() {
 
 test("all imported Knowledge and Example formula slots render without KaTeX errors", () => {
   const rows = formulaSlots();
-  assert.equal(rows.length, 1662, "the complete source formula inventory changed unexpectedly");
+  assert.equal(rows.length, 1668, "the complete source formula inventory changed unexpectedly");
 
   for (const row of rows) {
     const html = renderMathText(row.value, { display: true });

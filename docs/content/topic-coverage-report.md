@@ -1,6 +1,6 @@
 # Topic coverage report
 
-Generated: 2026-11-02T04:30:02.386Z
+Generated: 2026-11-04T04:20:25.369Z
 
 `Imported` không đồng nghĩa `Validated`. Cột kiểm duyệt chỉ dùng trạng thái validated khi có bằng chứng review bất biến.
 
@@ -27,7 +27,7 @@ Generated: 2026-11-02T04:30:02.386Z
 | CD19 | Thiếu PDF | 0 | 0 | 0 | not-applicable (0/0) | not-published |
 | CD20 | cd20-cd21-theory | 17 | 20 | 51 | partially-validated (2/17) | partially-published |
 | CD21 | cd20-cd21-theory | 8 | 8 | 24 | needs-review (0/8) | partially-published |
-| CD22 | Thiếu PDF | 0 | 0 | 0 | not-applicable (0/0) | not-published |
+| CD22 | Thiếu PDF | 9 | 9 | 0 | not-applicable (0/0) | partially-published |
 | CD23 | Thiếu PDF | 0 | 0 | 0 | not-applicable (0/0) | not-published |
 | CD24 | Thiếu PDF | 0 | 0 | 0 | not-applicable (0/0) | not-published |
 | CD25 | Thiếu PDF | 0 | 0 | 0 | not-applicable (0/0) | not-published |

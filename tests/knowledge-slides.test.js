@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 import { getKnowledgeSection, knowledgeSections } from "../assets/js/data/knowledge-slides.js";
 
 test("all registered source topics expose bounded knowledge sections", () => {
-  assert.equal(Object.keys(knowledgeSections).length, 172);
+  assert.equal(Object.keys(knowledgeSections).length, 181);
   assert.equal(getKnowledgeSection("1.1").sourceId, "cd01-cd07-functions");
   assert.equal(getKnowledgeSection("8.1").sourceId, "cd08-cd11-exponential-logarithm");
   assert.equal(getKnowledgeSection("12.1").sourceId, "cd12-cd14-calculus");
@@ -27,7 +27,7 @@ test("theory and source examples are separate for every mapped subtopic", () => 
     if (!/^(?:[1-9]|10|11)\./u.test(code)) assert.ok(section.exampleSlides.length >= 1, `${code} source example`);
     assert.ok(section.knowledgeSlides.every((slide) => slide.src === null || slide.src.includes("-k")));
     assert.ok(section.exampleSlides.every((slide) => slide.src === null || slide.src.includes("-e")));
-    assert.ok([...section.knowledgeSlides, ...section.exampleSlides].every((slide) => slide.sourcePages.length >= 1));
+    assert.ok([...section.knowledgeSlides, ...section.exampleSlides].every((slide) => slide.sourcePages.length >= 1 || slide.sourceLines?.length === 2));
   }
 });
 

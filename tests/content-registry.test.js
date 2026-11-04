@@ -26,11 +26,11 @@ test("content registry covers every declared topic and subtopic without a second
 test("availability is derived from verified content instead of topic number", () => {
   const summary = getAvailabilitySummary();
   assert.equal(summary.topics.available, 2);
-  assert.equal(summary.topics.partial, 14);
-  assert.equal(summary.topics["coming-soon"], 23);
+  assert.equal(summary.topics.partial, 15);
+  assert.equal(summary.topics["coming-soon"], 22);
   assert.equal(getTopicAvailability("CD12").status, CONTENT_STATUS.PARTIAL);
   assert.equal(getTopicAvailability("CD20").status, CONTENT_STATUS.AVAILABLE);
-  assert.equal(getTopicAvailability("CD22").status, CONTENT_STATUS.COMING_SOON);
+  assert.equal(getTopicAvailability("CD22").status, CONTENT_STATUS.PARTIAL);
   assert.equal(getTopicAvailability("CD01").status, CONTENT_STATUS.PARTIAL);
 });
 
@@ -82,8 +82,8 @@ test("imported slides have stable unique IDs and verified source references", ()
         for (const unit of subtopic.sections[sectionName].units) {
           ids.push(unit.id);
           assert.ok(unit.source.documentId);
-          assert.ok(unit.source.pages.length > 0);
-          assert.ok(["verified", "source-transcribed", "source-extracted-needs-review", "needs-review"].includes(unit.verification));
+          assert.ok(unit.source.pages.length > 0 || unit.source.lines.length === 2);
+          assert.ok(["verified", "source-verified", "source-transcribed", "source-extracted-needs-review", "needs-review"].includes(unit.verification));
         }
       }
     }

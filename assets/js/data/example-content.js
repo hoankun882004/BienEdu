@@ -1,5 +1,6 @@
 import { calculusExampleContent } from "./calculus-lessons.js?v=14.0";
 import { foundationExampleContent } from "./foundation-lessons.generated.js?v=19.0";
+import { latexPilotExampleContent } from "./latex-pilot.generated.js?v=4.2";
 
 // Worked examples transcribed and clarified from the verified CD20–CD21 source PDF.
 // Each example is a complete learning unit rather than a crop of the source page.
@@ -370,7 +371,8 @@ const probabilityExampleContent = Object.freeze({
 export const exampleContent = Object.freeze({
   ...foundationExampleContent,
   ...calculusExampleContent,
-  ...probabilityExampleContent
+  ...probabilityExampleContent,
+  ...latexPilotExampleContent
 });
 
 export function getExampleContent(sourceTopic) {

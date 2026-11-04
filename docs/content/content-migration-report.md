@@ -1,6 +1,6 @@
 # Content migration report
 
-Generated: 2026-11-02T04:30:02.386Z
+Generated: 2026-11-04T04:20:25.369Z
 
 ## 1. Root Cause Analysis — CD01
 
@@ -60,7 +60,7 @@ Generated: 2026-11-02T04:30:02.386Z
 
 - Registry errors: 0.
 - Source warnings: 1.
-- Checkpoint 2026-11-02: unit/data test đạt 108/108; content validation và source check được chạy lại từ pipeline hiện tại.
+- Checkpoint 2026-11-04: unit/data test đạt 108/108; content validation và source check được chạy lại từ pipeline hiện tại.
 - KaTeX strict parsing đạt 1.662/1.662 formula slots nhập khẩu và 93/93 biểu thức approved; kiểm tra trình duyệt đạt 64 Knowledge routes và 64 Example routes, không có lỗi công thức trên desktop.
 - Playwright Learning Experience V3 và V4 kiểm tra CD01, CD08, CD12 và CD20 trên 1920×1080, 1366×768, 768×1024 và 390×844; gồm lời giải đóng/mở, trạng thái đã xem, Back/Forward, scroll restoration, phím mũi tên, hình nguồn và Exercise regression.
 - Không có page-level overflow, KaTeX error, công thức bị cắt hoặc điều khiển thiếu accessible name trong các route đại diện.

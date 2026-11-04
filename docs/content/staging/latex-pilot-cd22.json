@@ -1,0 +1,750 @@
+{
+  "schemaVersion": "bienedu.native-latex-pilot.v1",
+  "source": {
+    "path": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+    "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+    "lineCount": 1068,
+    "documentClass": "article",
+    "title": "Lý thuyết Tổ hợp - Xác suất - Thống kê CD20-CD23",
+    "packages": [
+      "geometry",
+      "fontspec",
+      "amsmath",
+      "amssymb",
+      "array",
+      "booktabs",
+      "tabularx",
+      "longtable",
+      "enumitem",
+      "tcolorbox",
+      "xcolor",
+      "titlesec",
+      "fancyhdr",
+      "hyperref",
+      "microtype"
+    ],
+    "customCommands": [
+      "\\topic",
+      "\\chaptertitle",
+      "\\arraystretch",
+      "\\contentsname",
+      "\\headrulewidth"
+    ]
+  },
+  "topicId": "CD22",
+  "knowledge": {
+    "22.1": {
+      "title": "Xác suất có điều kiện P(A|B)",
+      "lead": "\\(\\mathrm{P}(A\\mid B)\\) là xác suất A xảy ra **khi đã biết B xảy ra**. Trong không gian mới B, phần thuận lợi cho A chính là A ∩ B.",
+      "formulae": [
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+          "detail": "với \\(\\mathrm{P}(B)\\) > 0",
+          "renderAsMath": true
+        }
+      ],
+      "points": [
+        {
+          "label": "",
+          "text": "Dấu “|” đọc là “với điều kiện”. Thứ tự A|B rất quan trọng."
+        },
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(A\\mid B)\\) và \\(\\mathrm{P}(B\\mid A)\\) thường khác nhau vì mẫu số khác nhau."
+        },
+        {
+          "label": "",
+          "text": "Nếu dùng số lượng trong mô hình đồng khả năng: \\(\\mathrm{P}(A\\mid B)\\) = |A ∩ B|/|B|."
+        }
+      ],
+      "note": {
+        "label": "Sai lầm hay gặp",
+        "tone": "warning",
+        "text": "Sau dấu “|” là điều đã biết và quyết định mẫu số. Đây là lỗi đảo điều kiện phổ biến nhất."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        635,
+        652
+      ],
+      "sourceSection": "\\topic{22.1}{Xác suất có điều kiện P(A|B)}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.2": {
+      "title": "Công thức nhân",
+      "lead": "Biến đổi định nghĩa xác suất có điều kiện cho ta công thức nhân. Công thức mô tả một đường đi: xảy ra B trước, sau đó A xảy ra trong điều kiện B.",
+      "formulae": [
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+          "detail": "",
+          "renderAsMath": true
+        },
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(A)\\mathrm{P}(B\\mid A)",
+          "detail": "",
+          "renderAsMath": true
+        }
+      ],
+      "points": [],
+      "note": {
+        "label": "Mẹo nhận dạng",
+        "tone": "tip",
+        "text": "Chọn thứ tự điều kiện sao cho các xác suất thành phần dễ biết nhất. Hai cách viết là tương đương."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        653,
+        668
+      ],
+      "sourceSection": "\\topic{22.2}{Công thức nhân}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.3": {
+      "title": "Sơ đồ cây",
+      "lead": "Sơ đồ cây biểu diễn phép thử nhiều giai đoạn. Mỗi cạnh ghi xác suất có điều kiện của nhánh đó. Các nhánh từ cùng một nút phải có tổng bằng 1.",
+      "formulae": [
+        {
+          "label": "Nguyên tắc 1",
+          "value": "Xác suất một đường đi = tích các xác suất trên đường. Xác suất một biến cố = tổng xác suất các đường rời nhau dẫn tới biến cố.",
+          "detail": "",
+          "renderAsMath": false
+        }
+      ],
+      "points": [
+        {
+          "label": "",
+          "text": "Tầng đầu: các nguồn hoặc trạng thái ban đầu."
+        },
+        {
+          "label": "",
+          "text": "Tầng sau: kết quả có điều kiện theo nhánh trước."
+        },
+        {
+          "label": "",
+          "text": "Nếu rút không hoàn lại, cập nhật cả tử và mẫu ở mỗi nhánh."
+        },
+        {
+          "label": "",
+          "text": "Đánh dấu rõ nhánh nào tạo biến cố cần tìm trước khi cộng."
+        }
+      ],
+      "note": {
+        "label": "Sai lầm hay gặp",
+        "tone": "warning",
+        "text": "Không cộng xác suất các cạnh liên tiếp trên cùng một đường; phải nhân. Chỉ cộng các đường rời nhau cùng dẫn tới biến cố."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        669,
+        687
+      ],
+      "sourceSection": "\\topic{22.3}{Sơ đồ cây}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.4": {
+      "title": "Công thức xác suất toàn phần",
+      "lead": "Giả sử B₁, ..., Bₙ tạo thành một phân hoạch của Ω: đôi một xung khắc, hợp bằng Ω và đều có xác suất dương. Khi đó A được chia thành các phần A ∩ Bᵢ.",
+      "formulae": [
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+          "detail": "",
+          "renderAsMath": true
+        }
+      ],
+      "points": [
+        {
+          "label": "",
+          "text": "Bᵢ thường là nguồn gốc: dây chuyền sản xuất, nhóm dân số, hộp được chọn, trạng thái thời tiết."
+        },
+        {
+          "label": "",
+          "text": "Kiểm tra Σ\\(\\mathrm{P}(B_{i})\\) = 1 trước khi tính."
+        }
+      ],
+      "note": {
+        "label": "Mẹo nhận dạng",
+        "tone": "tip",
+        "text": "Công thức toàn phần đi theo chiều “biết nguồn -> tính kết quả”. Bayes đi ngược lại “biết kết quả -> suy ra nguồn”."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        688,
+        704
+      ],
+      "sourceSection": "\\topic{22.4}{Công thức xác suất toàn phần}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.5": {
+      "title": "Công thức Bayes",
+      "lead": "Bayes cập nhật xác suất của nguyên nhân Bⱼ sau khi đã quan sát kết quả A.",
+      "formulae": [
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+          "detail": "",
+          "renderAsMath": true
+        }
+      ],
+      "points": [
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(B_{j})\\) là xác suất tiên nghiệm."
+        },
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(A\\mid B_{j})\\) là khả năng quan sát A nếu nguyên nhân Bⱼ đúng."
+        },
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(B_{j}\\mid A)\\) là xác suất hậu nghiệm sau khi có thông tin A."
+        }
+      ],
+      "note": {
+        "label": "Sai lầm hay gặp",
+        "tone": "warning",
+        "text": "Không bỏ mẫu số xác suất toàn phần. Tử số chỉ là xác suất giao “nguyên nhân và kết quả”, chưa phải xác suất có điều kiện cần tìm."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        705,
+        722
+      ],
+      "sourceSection": "\\topic{22.5}{Công thức Bayes}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.6": {
+      "title": "Bảng hai chiều",
+      "lead": "Bảng hai chiều ghi tần số hoặc xác suất theo hai tiêu chí. Tổng hàng, tổng cột giúp nhìn rõ mẫu số của xác suất có điều kiện.",
+      "formulae": [],
+      "points": [
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(A)\\) dùng tổng của hàng/cột tương ứng chia tổng toàn bảng."
+        },
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(A \\cap B)\\) dùng đúng ô giao của A và B chia tổng toàn bảng."
+        },
+        {
+          "label": "",
+          "text": "\\(\\mathrm{P}(A\\mid B)\\) dùng ô giao chia tổng của cột/hàng B, không chia tổng toàn bảng."
+        },
+        {
+          "label": "",
+          "text": "Kiểm tra độc lập bằng cách so \\(\\mathrm{P}(A\\mid B)\\) với \\(\\mathrm{P}(A)\\), hoặc so tích chéo trong bảng 2×2."
+        }
+      ],
+      "note": {
+        "label": "Mẹo nhận dạng",
+        "tone": "tip",
+        "text": "Khoanh hàng hoặc cột biểu diễn điều kiện sau dấu “|”; đó chính là không gian mẫu mới."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        723,
+        738
+      ],
+      "sourceSection": "\\topic{22.6}{Bảng hai chiều}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.7": {
+      "title": "Bài toán y tế - xét nghiệm",
+      "lead": "Các đại lượng chuẩn: độ nhạy = \\(\\mathrm{P}(+\\mid \\text{bệnh})\\), độ đặc hiệu = \\(\\mathrm{P}(-\\mid \\text{không bệnh})\\), tỉ lệ dương tính giả = 1 - độ đặc hiệu và tỉ lệ hiện mắc = \\(\\mathrm{P}(\\text{bệnh})\\).",
+      "formulae": [
+        {
+          "label": "Công thức",
+          "value": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+          "detail": "trong đó \\(\\mathrm{P}(+)\\) tính bằng xác suất toàn phần",
+          "renderAsMath": true
+        }
+      ],
+      "points": [
+        {
+          "label": "",
+          "text": "Giá trị dự báo dương \\(\\mathrm{P}(\\text{bệnh}\\mid +)\\) phụ thuộc mạnh vào tỉ lệ hiện mắc, không chỉ vào độ chính xác của xét nghiệm."
+        },
+        {
+          "label": "",
+          "text": "Có thể đổi mọi xác suất thành số người trên 10 000 để trực quan và tránh nhầm điều kiện."
+        }
+      ],
+      "note": {
+        "label": "Sai lầm hay gặp",
+        "tone": "warning",
+        "text": "\\(\\mathrm{P}(+\\mid \\text{bệnh})\\) không phải \\(\\mathrm{P}(\\text{bệnh}\\mid +)\\). Độ nhạy cao không đồng nghĩa mọi người dương tính đều mắc bệnh, nhất là bệnh hiếm."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        739,
+        755
+      ],
+      "sourceSection": "\\topic{22.7}{Bài toán y tế - xét nghiệm}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.8": {
+      "title": "Bài toán sản xuất - kiểm định",
+      "lead": "Mô hình thường có nhiều máy hoặc dây chuyền với tỉ trọng sản lượng khác nhau và tỉ lệ lỗi riêng. Xác suất toàn phần cho tỉ lệ lỗi chung; Bayes truy nguồn sản phẩm lỗi.",
+      "formulae": [],
+      "points": [
+        {
+          "label": "",
+          "text": "Bước 1: đặt Bᵢ = sản phẩm đến từ nguồn i; ghi \\(\\mathrm{P}(B_{i})\\)."
+        },
+        {
+          "label": "",
+          "text": "Bước 2: đặt D = sản phẩm lỗi; ghi \\(\\mathrm{P}(D\\mid B_{i})\\)."
+        },
+        {
+          "label": "",
+          "text": "Bước 3: tính \\(\\mathrm{P}(D)\\) = Σ\\(\\mathrm{P}(B_{i})\\)\\(\\mathrm{P}(D\\mid B_{i})\\)."
+        },
+        {
+          "label": "",
+          "text": "Bước 4: nếu truy nguồn, dùng \\(\\mathrm{P}(B_{j}\\mid D)\\) = \\(\\mathrm{P}(B_{j})\\)\\(\\mathrm{P}(D\\mid B_{j})\\)/\\(\\mathrm{P}(D)\\)."
+        }
+      ],
+      "note": {
+        "label": "Lưu ý",
+        "tone": "tip",
+        "text": "Nếu kiểm định lấy mẫu không hoàn lại từ một lô nhỏ, các lần kiểm tra phụ thuộc; cần cập nhật số sản phẩm còn lại."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        756,
+        771
+      ],
+      "sourceSection": "\\topic{22.8}{Bài toán sản xuất - kiểm định}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    },
+    "22.9": {
+      "title": "Bài toán nhiều bước",
+      "lead": "Bài nhiều bước kết hợp quy tắc nhân có điều kiện, cộng các đường đi và đôi khi Bayes. Sơ đồ cây hoặc bảng trạng thái giúp kiểm soát thông tin sau mỗi bước.",
+      "formulae": [],
+      "points": [
+        {
+          "label": "Có hoàn lại:",
+          "text": "thành phần và xác suất ở lần sau giữ nguyên; các lần thường độc lập nếu cách chọn giống nhau."
+        },
+        {
+          "label": "Không hoàn lại:",
+          "text": "thành phần thay đổi; xác suất lần sau phụ thuộc các kết quả trước."
+        },
+        {
+          "label": "Dừng sớm:",
+          "text": "mỗi đường có thể có độ dài khác nhau; chỉ cộng các đường kết thúc đúng điều kiện."
+        },
+        {
+          "label": "Quan sát một kết quả cuối:",
+          "text": "nếu hỏi nguyên nhân hoặc nhánh trước đó, dùng Bayes."
+        }
+      ],
+      "note": {
+        "label": "Mẹo nhận dạng",
+        "tone": "tip",
+        "text": "Viết rõ xác suất trên từng cạnh theo trạng thái hiện tại. Sau đó: nhân dọc một đường, cộng ngang các đường phù hợp."
+      },
+      "layout": "principles-split",
+      "sourceDocumentId": "cd20-cd23-native-latex",
+      "sourcePages": [],
+      "sourceLines": [
+        772,
+        789
+      ],
+      "sourceSection": "\\topic{22.9}{Bài toán nhiều bước}",
+      "reviewStatus": "source-verified",
+      "verificationGates": {
+        "import": "completed",
+        "rendering": "validated",
+        "sourceFidelity": "verified",
+        "mathematicalReview": "needs-review",
+        "publication": "published"
+      },
+      "conversionStatus": "native-latex-pilot",
+      "contentVersion": "latex-pilot-v5"
+    }
+  },
+  "examples": {
+    "22.1": [
+      {
+        "id": "22.1-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Trong lớp có 20 nữ, 12 nữ học giỏi; tổng cộng 40 học sinh, 18 học giỏi. Chọn ngẫu nhiên một học sinh. \\(\\mathrm{P}(\\text{giỏi}\\mid \\text{nữ})\\) = 12/20 = **0,6**, còn \\(\\mathrm{P}(\\text{nữ}\\mid \\text{giỏi})\\) = 12/18 = 2/3.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          646,
+          648
+        ],
+        "sourceBlockId": "22.1-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.2": [
+      {
+        "id": "22.2-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Một máy hoạt động trong ngày với xác suất 0,98. Khi hoạt động, xác suất tạo sản phẩm đạt chuẩn là 0,97. Xác suất “máy hoạt động và sản phẩm đạt” là 0,98·0,97 = **0,9506**.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          665,
+          667
+        ],
+        "sourceBlockId": "22.2-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.3": [
+      {
+        "id": "22.3-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Chọn hộp I với xác suất 0,4, hộp II với xác suất 0,6. Xác suất lấy bi đỏ lần lượt là 0,7 và 0,2. Xác suất lấy bi đỏ là 0,4·0,7 + 0,6·0,2 = **0,40**.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          681,
+          683
+        ],
+        "sourceBlockId": "22.3-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.4": [
+      {
+        "id": "22.4-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "60% sản phẩm từ dây chuyền A có tỉ lệ lỗi 2%; 40% từ B có tỉ lệ lỗi 5%. Xác suất một sản phẩm lỗi là 0,6·0,02 + 0,4·0,05 = **0,032**.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          701,
+          703
+        ],
+        "sourceBlockId": "22.4-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.5": [
+      {
+        "id": "22.5-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Trong ví dụ hai dây chuyền, \\(\\mathrm{P}(B\\mid \\text{lỗi})\\) = 0,4·0,05/0,032 = **0,625**. Dù B chỉ sản xuất 40%, nó tạo 62,5% số sản phẩm lỗi.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          716,
+          718
+        ],
+        "sourceBlockId": "22.5-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.6": [
+      {
+        "id": "22.6-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Nếu trong 200 người có 80 nữ, trong đó 28 người thích môn X, thì \\(\\mathrm{P}(\\text{thích X}\\mid \\text{nữ})\\) = 28/80 = **0,35**. Mẫu số 80 vì đã biết người được chọn là nữ.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          735,
+          737
+        ],
+        "sourceBlockId": "22.6-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.7": [
+      {
+        "id": "22.7-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Bệnh có ở 1% dân số; độ nhạy 95%; độ đặc hiệu 90%. \\(\\mathrm{P}(+)\\) = 0,01·0,95 + 0,99·0,10 = 0,1085. Do đó \\(\\mathrm{P}(\\text{bệnh}\\mid +)\\) ≈ **8,76%**.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          749,
+          751
+        ],
+        "sourceBlockId": "22.7-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.8": [
+      {
+        "id": "22.8-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Dây chuyền A làm 70% sản lượng, lỗi 1%; B làm 30%, lỗi 4%. Tỉ lệ lỗi chung là 0,7·0,01 + 0,3·0,04 = **1,9%**. Trong số hàng lỗi, tỉ lệ từ B là 0,012/0,019 ≈ **63,16%**.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          765,
+          767
+        ],
+        "sourceBlockId": "22.8-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ],
+    "22.9": [
+      {
+        "id": "22.9-native-example-1",
+        "originalExampleNumber": 1,
+        "prompt": "Hộp có 4 đỏ, 3 xanh. Rút 2 bi không hoàn lại. Xác suất đúng một bi đỏ là (4/7)(3/6) + (3/7)(4/6) = **4/7**. Hai đường “đỏ-xanh” và “xanh-đỏ” rời nhau nên được cộng.",
+        "analysis": [],
+        "steps": [],
+        "answer": null,
+        "takeaway": null,
+        "sourcePages": [],
+        "sourceLines": [
+          784,
+          786
+        ],
+        "sourceBlockId": "22.9-tex-example-1",
+        "origin": "native-latex-source",
+        "verification": "source-verified",
+        "reviewStatus": "needs-math-review",
+        "verificationGates": {
+          "import": "completed",
+          "rendering": "validated",
+          "sourceFidelity": "verified",
+          "mathematicalReview": "needs-review",
+          "publication": "published"
+        }
+      }
+    ]
+  },
+  "validations": {
+    "22.1": {
+      "expressionCount": 1,
+      "validExpressionCount": 1,
+      "issues": []
+    },
+    "22.2": {
+      "expressionCount": 2,
+      "validExpressionCount": 2,
+      "issues": []
+    },
+    "22.3": {
+      "expressionCount": 0,
+      "validExpressionCount": 0,
+      "issues": []
+    },
+    "22.4": {
+      "expressionCount": 1,
+      "validExpressionCount": 1,
+      "issues": []
+    },
+    "22.5": {
+      "expressionCount": 1,
+      "validExpressionCount": 1,
+      "issues": []
+    },
+    "22.6": {
+      "expressionCount": 0,
+      "validExpressionCount": 0,
+      "issues": []
+    },
+    "22.7": {
+      "expressionCount": 1,
+      "validExpressionCount": 1,
+      "issues": []
+    },
+    "22.8": {
+      "expressionCount": 0,
+      "validExpressionCount": 0,
+      "issues": []
+    },
+    "22.9": {
+      "expressionCount": 0,
+      "validExpressionCount": 0,
+      "issues": []
+    }
+  }
+}

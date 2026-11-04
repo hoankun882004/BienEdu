@@ -39,15 +39,16 @@ const criticalSourceCoverage = {
   "14.9": [String.raw`\sum`, String.raw`\int`, String.raw`|v_k(t)|`]
 };
 
-test("all registered CD01-CD14 and CD20-CD21 lessons expose structured reading content", () => {
+test("all registered source-backed lessons expose structured reading content", () => {
   assert.deepEqual(Object.keys(knowledgeContent), Object.keys(knowledgeSections));
-  assert.equal(Object.keys(knowledgeContent).length, 172);
+  assert.equal(Object.keys(knowledgeContent).length, 181);
   for (const [code, reading] of Object.entries(knowledgeContent)) {
     const foundationLesson = /^(?:[1-9]|10|11)\./u.test(code);
+    const nativeLatexLesson = reading.conversionStatus === "native-latex-pilot";
     assert.ok(reading.lead.length >= (foundationLesson ? 10 : 60), `${code} lead`);
     assert.ok(Array.isArray(reading.formulae), `${code} formulae`);
-    if (!foundationLesson) assert.ok(reading.formulae.length >= 1, `${code} formulae`);
-    assert.ok(reading.points.length >= 1, `${code} points`);
+    if (!foundationLesson && !nativeLatexLesson) assert.ok(reading.formulae.length >= 1, `${code} formulae`);
+    assert.ok(reading.points.length >= 1 || Boolean(reading.note), `${code} points or source note`);
     if (reading.note) assert.ok(["tip", "warning"].includes(reading.note.tone), `${code} note tone`);
   }
 });

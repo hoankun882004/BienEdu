@@ -28,12 +28,15 @@ function hasImmutableSourceApproval(code) {
   );
 }
 
-function sourceReference(document, pages = []) {
+function sourceReference(document, pages = [], lines = [], section = null) {
   if (!document) return null;
   return Object.freeze({
     documentId: document.documentId,
     filePath: document.filePath,
     pages: Object.freeze([...new Set(pages)].sort((left, right) => left - right)),
+    lines: Object.freeze([...new Set(lines)].sort((left, right) => left - right)),
+    section,
+    sourceKind: document.sourceKind ?? "pdf",
     verification: document.verification?.status ?? "verified"
   });
 }
@@ -54,7 +57,12 @@ function createKnowledgeSection(code, document) {
       // These legacy IDs are intentionally retained so existing localStorage progress is not reset.
       id: `${code}-knowledge-${index + 1}`,
       title: page?.title ?? reading?.title ?? null,
-      source: sourceReference(document, page?.sourcePages ?? [document?.exercisePages?.[code]].filter(Boolean)),
+      source: sourceReference(
+        document,
+        page?.sourcePages ?? [document?.exercisePages?.[code]].filter(Boolean),
+        page?.sourceLines ?? document?.exerciseLines?.[code] ?? [],
+        page?.sourceSection ?? null
+      ),
       verification
     });
   });
@@ -75,7 +83,7 @@ function createExampleSection(code, topicId, document) {
   const units = examples.map((example, index) => Object.freeze({
     id: example.id ?? `${code}-example-${index + 1}`,
     title: example.title,
-    source: sourceReference(document, example.sourcePages ?? []),
+    source: sourceReference(document, example.sourcePages ?? [], example.sourceLines ?? [], example.sourceSection ?? null),
     sourceBlockId: example.sourceBlockId ?? null,
     origin: example.origin ?? "verified-source",
     verification: example.verification ?? "verified"

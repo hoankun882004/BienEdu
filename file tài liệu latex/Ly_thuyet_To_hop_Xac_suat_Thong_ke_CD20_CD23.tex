@@ -1,0 +1,1068 @@
+\documentclass[12pt,a4paper]{article}
+
+% Biên dịch bằng XeLaTeX. Chạy 2 lần để cập nhật mục lục.
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=1.8cm,right=1.8cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}[
+  BoldFont={DejaVu Serif Bold},
+  ItalicFont={DejaVu Serif},ItalicFeatures={FakeSlant=0.20},
+  BoldItalicFont={DejaVu Serif Bold},BoldItalicFeatures={FakeSlant=0.20}
+]
+\setsansfont{DejaVu Sans}
+\usepackage{amsmath,amssymb}
+\usepackage{array,booktabs,tabularx,longtable}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\XeTeXlinebreaklocale "vi"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.25}
+\renewcommand{\contentsname}{MỤC LỤC}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{blue}{HTML}{2366A8}
+\definecolor{teal}{HTML}{167C80}
+\definecolor{orange}{HTML}{E58B2A}
+\definecolor{red}{HTML}{B5413E}
+\definecolor{paleblue}{HTML}{F2F8FC}
+\definecolor{paleteal}{HTML}{EAF7F6}
+\definecolor{paleorange}{HTML}{FFF5E8}
+\definecolor{palered}{HTML}{FFF0EF}
+\definecolor{ink}{HTML}{222A33}
+\definecolor{muted}{HTML}{637181}
+
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=teal,
+  pdftitle={Lý thuyết Tổ hợp - Xác suất - Thống kê CD20-CD23},
+  pdfauthor={Tài liệu giảng dạy}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize\color{muted}LÝ THUYẾT TỔ HỢP - XÁC SUẤT - THỐNG KÊ | CD20-CD23}
+\fancyfoot[R]{\sffamily\footnotesize\color{muted}Trang \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{15pt}
+
+\titleformat{\subsection}
+  {\sffamily\bfseries\Large\color{blue}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{5pt}
+
+\newcommand{\topic}[2]{%
+  \phantomsection%
+  \subsection*{#1\ #2}%
+  \addcontentsline{toc}{subsection}{#1 #2}%
+}
+
+\newcommand{\chaptertitle}[2]{%
+  \phantomsection%
+  \begin{tcolorbox}[colback=navy,colframe=navy,boxrule=0pt,arc=0pt,
+    left=4mm,right=4mm,top=3mm,bottom=3mm]
+    {\sffamily\bfseries\LARGE\color{white}#1\ #2}
+  \end{tcolorbox}
+  \addcontentsline{toc}{section}{#1 #2}
+}
+
+\newtcolorbox{leadbox}{
+  breakable,colback=white,colframe=navy,boxrule=0pt,borderline west={2pt}{0pt}{navy},
+  left=3mm,right=2mm,top=1.5mm,bottom=1.5mm
+}
+\newtcolorbox{formulabox}{
+  breakable,colback=paleblue,colframe=blue,boxrule=0.7pt,arc=0pt,
+  left=3mm,right=3mm,top=2mm,bottom=2mm,
+  fontupper=\sffamily\bfseries\centering\color{navy}
+}
+\newtcolorbox{examplebox}{
+  enhanced,breakable,colback=paleteal,colframe=teal,boxrule=0pt,
+  borderline west={2.5pt}{0pt}{teal},title=VÍ DỤ NHANH,
+  fonttitle=\sffamily\bfseries,coltitle=ink,left=3mm,right=2mm
+}
+\newtcolorbox{tipbox}{
+  enhanced,breakable,colback=paleblue,colframe=blue,boxrule=0pt,
+  borderline west={2.5pt}{0pt}{blue},title=MẸO NHẬN DẠNG,
+  fonttitle=\sffamily\bfseries,coltitle=ink,left=3mm,right=2mm
+}
+\newtcolorbox{warningbox}{
+  enhanced,breakable,colback=palered,colframe=red,boxrule=0pt,
+  borderline west={2.5pt}{0pt}{red},title=SAI LẦM HAY GẶP,
+  fonttitle=\sffamily\bfseries,coltitle=ink,left=3mm,right=2mm
+}
+\newtcolorbox{notebox}{
+  enhanced,breakable,colback=paleorange,colframe=orange,boxrule=0pt,
+  borderline west={2.5pt}{0pt}{orange},title=LƯU Ý,
+  fonttitle=\sffamily\bfseries,coltitle=ink,left=3mm,right=2mm
+}
+
+\newenvironment{keypoints}{%
+  \begin{itemize}[leftmargin=6mm,itemsep=2pt,topsep=3pt]
+}{\end{itemize}}
+
+\begin{document}
+\color{ink}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{2.2cm}
+  {\sffamily\bfseries\large\color{blue}CHUYÊN ĐỀ TOÁN\par}
+  \vspace{0.6cm}
+  {\sffamily\bfseries\fontsize{25}{31}\selectfont\color{navy}
+    LÝ THUYẾT\\[2mm]TỔ HỢP - XÁC SUẤT - THỐNG KÊ\par}
+  \vspace{0.7cm}
+  {\color{blue}\rule{0.72\textwidth}{1.3pt}\par}
+  \vspace{0.8cm}
+  {\large Hệ thống đầy đủ CD20 - CD23 theo danh mục chuyên đề\par}
+  \vspace{1cm}
+  \begin{tcolorbox}[width=0.88\textwidth,colback=paleblue,colframe=navy,
+    borderline west={2pt}{0pt}{navy},arc=0pt]
+    \centering
+    \textbf{46 mục trọng tâm} \quad | \quad
+    \textbf{Công thức và nhận dạng} \quad | \quad
+    \textbf{Ví dụ và lỗi thường gặp}
+  \end{tcolorbox}
+  \vfill
+  {\large Dùng cho giảng dạy, ôn tập và hệ thống kiến thức\par}
+\end{titlepage}
+
+\section*{CÁCH DÙNG TÀI LIỆU}
+\addcontentsline{toc}{section}{Cách dùng tài liệu}
+Mỗi mục được trình bày theo bốn tầng: \textbf{bản chất}, \textbf{công thức},
+\textbf{dấu hiệu nhận dạng} và \textbf{ví dụ ngắn}. Khi làm bài, học sinh nên
+nói thành lời mình đang đếm hoặc đang lấy xác suất của đối tượng nào trước khi thay số.
+
+\textbf{Bốn câu hỏi cần tự hỏi trước khi giải:}
+\begin{keypoints}
+  \item \textbf{Đối tượng có phân biệt không?} Năm học sinh là phân biệt; năm viên bi giống nhau là không phân biệt.
+  \item \textbf{Thứ tự có làm kết quả thay đổi không?} Nếu đổi vị trí mà kết quả được xem là khác, thứ tự quan trọng.
+  \item \textbf{Các trường hợp có giao nhau không?} Nếu có thể bị đếm hai lần thì phải trừ phần giao hoặc chia lại trường hợp.
+  \item \textbf{Mẫu số xác suất là toàn bộ không gian mẫu hay một điều kiện đã biết?} Đây là mấu chốt của xác suất có điều kiện.
+\end{keypoints}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3cm}X}
+\toprule
+Ký hiệu & Ý nghĩa \\
+\midrule
+$n!$ & Giai thừa: $n!=1\cdot2\cdots n$, quy ước $0!=1$. \\
+$P(n)$ & Số hoán vị của $n$ phần tử phân biệt. \\
+$A(n,k)$ & Chọn và sắp thứ tự $k$ phần tử từ $n$ phần tử. \\
+$C(n,k)$ & Chọn $k$ phần tử từ $n$ phần tử, không xét thứ tự. \\
+$\Omega,A,B$ & Không gian mẫu và các biến cố. \\
+$A^c$ & Biến cố đối của $A$. \\
+$A\cup B, A\cap B$ & Biến cố hợp và biến cố giao. \\
+$\bar{x},Me,Mo$ & Số trung bình, trung vị và mốt. \\
+$Q_1,Q_2,Q_3$ & Ba tứ phân vị; $Q_2$ là trung vị. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\clearpage
+\chaptertitle{CD20}{QUY TẮC ĐẾM - TỔ HỢP NÂNG CAO}
+\begin{leadbox}
+Cốt lõi của chương là mô tả chính xác một kết quả và xác định: chia trường hợp hay thực hiện nhiều bước; có xét thứ tự hay không; có lặp hay không; có điều kiện ràng buộc hay không.
+\end{leadbox}
+\topic{20.1}{Quy tắc cộng}
+Nếu một công việc có thể hoàn thành theo một trong các phương án \textbf{không đồng thời}, số cách của công việc bằng tổng số cách của từng phương án.
+
+\begin{formulabox}
+Nếu phương án 1 có m cách, phương án 2 có n cách và hai phương án rời nhau thì: \textbf{N = m + n}.
+\end{formulabox}
+\begin{keypoints}
+  \item Mở rộng: nếu có r phương án đôi một rời nhau với n\textsubscript{1}, n\textsubscript{2}, ..., n\textsubscript{r} cách thì tổng là n\textsubscript{1} + n\textsubscript{2} + ... + n\textsubscript{r}.
+  \item Nếu các phương án có giao nhau, cộng trực tiếp sẽ đếm lặp. Khi đó phải tách lại thành các trường hợp rời nhau hoặc dùng nguyên lý bù trừ.
+\end{keypoints}
+\begin{examplebox}
+Một học sinh chọn đúng một cuốn trong 7 sách Toán hoặc 5 sách Vật lí. Hai loại sách tách biệt nên có 7 + 5 = \textbf{12 cách}.
+\end{examplebox}
+\begin{warningbox}
+Thấy từ “hoặc” chưa đủ để cộng. Phải kiểm tra một kết quả có thể thuộc đồng thời hai trường hợp hay không.
+\end{warningbox}
+
+\topic{20.2}{Quy tắc nhân}
+Nếu để hoàn thành công việc phải thực hiện liên tiếp nhiều bước, số cách bằng tích số lựa chọn ở các bước. Số lựa chọn ở bước sau có thể phụ thuộc vào kết quả bước trước.
+
+\begin{formulabox}
+Nếu bước i có n\textsubscript{i} lựa chọn ứng với mỗi cách đã chọn ở trước thì: \textbf{N = n\textsubscript{1}·n\textsubscript{2}·...·n\textsubscript{r}}.
+\end{formulabox}
+\begin{tipbox}
+“Hoàn thành bằng phương án này \emph{hoặc} phương án kia” thường là cộng; “hoàn thành bước 1 \emph{và} bước 2” thường là nhân.
+\end{tipbox}
+\begin{examplebox}
+Có 3 áo, 4 quần và 2 đôi giày. Một bộ gồm 1 áo, 1 quần, 1 đôi giày nên có 3·4·2 = \textbf{24 bộ}.
+\end{examplebox}
+
+\topic{20.3}{Hoán vị}
+Hoán vị là cách sắp xếp \textbf{toàn bộ} n phần tử phân biệt vào n vị trí. Hai cách khác nhau nếu có ít nhất một vị trí chứa phần tử khác.
+
+\begin{formulabox}
+\textbf{P(n) = n!}
+\end{formulabox}
+\begin{formulabox}
+Có các phần tử lặp với số lần n\textsubscript{1}, ..., n\textsubscript{r}: \textbf{N = n!/(n\textsubscript{1}!·...·n\textsubscript{r}!)}.
+\end{formulabox}
+\begin{formulabox}
+Xếp vòng tròn n người, chỉ coi phép quay là như nhau: \textbf{(n - 1)!}.
+\end{formulabox}
+\begin{keypoints}
+  \item Xếp hàng: cố định vị trí đầu tiên rồi lần lượt chọn n, n - 1, ..., 1 cách.
+  \item Xếp vòng tròn: thường cố định một người làm mốc rồi xếp n - 1 người còn lại.
+  \item Nếu cả phép quay và phép đối xứng gương đều được xem là giống nhau, cần xét thêm việc chia 2; không tự động áp dụng nếu đề không nói.
+\end{keypoints}
+\begin{examplebox}
+Sắp xếp các chữ A, A, B, C thành một dãy: 4!/2! = \textbf{12 dãy}.
+\end{examplebox}
+\begin{warningbox}
+Công thức n! chỉ dùng khi các phần tử phân biệt. Nếu có phần tử giống nhau, phải chia cho số hoán vị nội bộ của các phần tử giống nhau.
+\end{warningbox}
+
+\topic{20.4}{Chỉnh hợp}
+Chỉnh hợp chập k của n phần tử là cách \textbf{chọn k phần tử rồi sắp chúng vào k vị trí phân biệt}. Vì vị trí khác nhau nên thứ tự quan trọng.
+
+\begin{formulabox}
+\textbf{A(n,k) = n!/(n - k)! = n(n - 1)...(n - k + 1)}, với 0 ≤ k ≤ n.
+\end{formulabox}
+\begin{formulabox}
+Nếu được phép lặp ở mỗi vị trí và mỗi vị trí có n lựa chọn: \textbf{n\textsuperscript{k}}.
+\end{formulabox}
+\begin{tipbox}
+Nếu đề có các “ghế”, “vị trí”, “chức vụ”, “hạng nhất - nhì - ba”, thứ tự thường quan trọng và nên nghĩ tới chỉnh hợp.
+\end{tipbox}
+\begin{examplebox}
+Chọn lớp trưởng, lớp phó và bí thư từ 10 học sinh: ba chức vụ khác nhau nên có A(10,3) = 10·9·8 = \textbf{720 cách}.
+\end{examplebox}
+
+\topic{20.5}{Tổ hợp}
+Tổ hợp chập k của n phần tử là cách chọn một tập gồm k phần tử từ n phần tử, \textbf{không xét thứ tự}.
+
+\begin{formulabox}
+\textbf{C(n,k) = n!/[k!(n - k)!]}, với 0 ≤ k ≤ n.
+\end{formulabox}
+\begin{formulabox}
+\textbf{C(n,k) = C(n,n - k)};  \textbf{C(n,k) = C(n - 1,k) + C(n - 1,k - 1)}.
+\end{formulabox}
+\begin{keypoints}
+  \item Quan hệ với chỉnh hợp: A(n,k) = C(n,k)·k!.
+  \item Ý nghĩa Pascal: khi chọn k phần tử từ n phần tử, xét một phần tử đặc biệt: hoặc không chọn nó, hoặc có chọn nó.
+\end{keypoints}
+\begin{examplebox}
+Chọn 4 học sinh từ 12 học sinh vào một đội, không phân chức vụ: C(12,4) = \textbf{495 cách}.
+\end{examplebox}
+\begin{warningbox}
+Nếu sau khi chọn còn gán chức vụ hoặc xếp vị trí thì chưa thể dừng ở C(n,k); cần nhân thêm số cách sắp xếp.
+\end{warningbox}
+
+\topic{20.6}{Sắp xếp có điều kiện}
+Ba kỹ thuật chủ đạo là \textbf{ghép khối}, \textbf{xếp chỗ trống} và \textbf{đếm phần bù}. Hãy chọn kỹ thuật làm điều kiện trở nên đơn giản nhất.
+
+\begin{keypoints}
+  \item \textbf{Đứng cạnh nhau:} ghép các phần tử liên quan thành một khối; nhớ nhân số cách đổi chỗ bên trong khối.
+  \item \textbf{Không đứng cạnh nhau:} xếp nhóm không bị hạn chế trước, tạo các khe rồi đặt nhóm còn lại vào khe.
+  \item \textbf{Không cùng nhau:} thường lấy tổng số cách trừ số cách đứng/cùng nhau.
+  \item \textbf{Vị trí cố định hoặc cấm:} điền các vị trí bị hạn chế trước, sau đó xử lí phần còn lại.
+\end{keypoints}
+\begin{examplebox}
+Xếp 5 người A, B, C, D, E thành hàng sao cho A và B cạnh nhau. Xem AB là một khối: có 4! cách xếp khối với C, D, E và 2 cách đổi AB, nên có \textbf{2·4! = 48 cách}.
+\end{examplebox}
+\begin{warningbox}
+Khi ghép khối, đừng quên hoán vị bên trong khối. Khi dùng chỗ trống, phải đếm đúng số khe, gồm cả hai khe ở hai đầu.
+\end{warningbox}
+
+\topic{20.7}{Chọn người - chọn vật có điều kiện}
+Với điều kiện về loại, giới tính, nhóm hoặc số lượng tối thiểu/tối đa, cách an toàn là đặt một biến cho số phần tử thuộc từng loại rồi chia thành các trường hợp rời nhau.
+
+\begin{formulabox}
+Chọn k phần tử, trong đó đúng i phần tử từ nhóm A và k - i từ nhóm B: \textbf{C(a,i)·C(b,k - i)}.
+\end{formulabox}
+\begin{keypoints}
+  \item “Ít nhất r” nghĩa là r, r + 1, ..., đến giá trị lớn nhất có thể; có thể cộng các trường hợp hoặc lấy phần bù.
+  \item “Nhiều nhất r” nghĩa là 0, 1, ..., r.
+  \item “Có cả hai loại” thường thuận lợi khi lấy tổng trừ trường hợp chỉ có một loại.
+\end{keypoints}
+\begin{tipbox}
+Lập một dòng điều kiện cho biến i trước khi tính: 0 ≤ i ≤ a và 0 ≤ k - i ≤ b. Nhờ đó không bỏ sót hoặc cộng trường hợp vô nghĩa.
+\end{tipbox}
+\begin{examplebox}
+Từ 6 nam và 5 nữ chọn 4 người có ít nhất 2 nữ: C(5,2)C(6,2) + C(5,3)C(6,1) + C(5,4)C(6,0) = 150 + 60 + 5 = \textbf{215 cách}.
+\end{examplebox}
+
+\topic{20.8}{Phân phối vật vào hộp - ngăn}
+Trước tiên phải xác định hai câu hỏi: \textbf{vật có phân biệt không} và \textbf{hộp có phân biệt không}. Các công thức cơ bản dưới đây giả sử các hộp có nhãn, tức là phân biệt.
+
+\begin{formulabox}
+n vật phân biệt vào m hộp phân biệt, không hạn chế: \textbf{m\textsuperscript{n}}.
+\end{formulabox}
+\begin{formulabox}
+n vật giống nhau vào m hộp phân biệt, mỗi hộp có thể rỗng: \textbf{C(n + m - 1,m - 1)}.
+\end{formulabox}
+\begin{formulabox}
+n vật giống nhau vào m hộp phân biệt, mỗi hộp ít nhất 1 vật: \textbf{C(n - 1,m - 1)}, cần n ≥ m.
+\end{formulabox}
+\begin{formulabox}
+n vật phân biệt vào m hộp, hộp nào cũng có vật: \textbf{Σ(-1)\textsuperscript{i}C(m,i)(m - i)\textsuperscript{n}}, i từ 0 đến m.
+\end{formulabox}
+\begin{keypoints}
+  \item Ràng buộc x\textsubscript{i} ≥ a\textsubscript{i}: đặt y\textsubscript{i} = x\textsubscript{i} - a\textsubscript{i} rồi đưa về nghiệm nguyên không âm.
+  \item Có cận trên x\textsubscript{i} ≤ b\textsubscript{i}: thường dùng đếm phần bù hoặc nguyên lý bù trừ.
+  \item Nếu hộp không phân biệt thì các công thức trên không còn áp dụng trực tiếp; cần xét phân hoạch số hoặc chia đối xứng rất cẩn thận.
+\end{keypoints}
+\begin{examplebox}
+Chia 10 viên kẹo giống nhau cho 4 em, mỗi em ít nhất 1 viên. Đặt x\textsubscript{1} + ... + x\textsubscript{4} = 10, x\textsubscript{i} ≥ 1. Số cách là C(9,3) = \textbf{84}.
+\end{examplebox}
+\begin{warningbox}
+Không dùng m\textsuperscript{n} cho các vật giống nhau; công thức đó coi mỗi vật có m lựa chọn độc lập nên yêu cầu vật phân biệt.
+\end{warningbox}
+
+\topic{20.9}{Chia nhóm}
+Điểm quyết định là các nhóm \textbf{có tên} hay \textbf{không có tên}. Nhóm 1, nhóm 2 là phân biệt; “chia thành hai nhóm như nhau” thường là không phân biệt.
+
+\begin{formulabox}
+Chia n phần tử phân biệt vào r nhóm có nhãn, kích thước n\textsubscript{1}, ..., n\textsubscript{r}: \textbf{n!/(n\textsubscript{1}!·...·n\textsubscript{r}!)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu r nhóm không nhãn và có cùng kích thước, chia thêm cho \textbf{r!}.
+\end{formulabox}
+\begin{formulabox}
+Ghép 2m người thành m cặp không phân biệt: \textbf{(2m)!/(2\textsuperscript{m}m!)}.
+\end{formulabox}
+\begin{examplebox}
+Chia 8 người thành hai nhóm 4 người không đặt tên: C(8,4)/2! = \textbf{35 cách}. Nếu gọi là nhóm A và B thì có C(8,4) = 70 cách.
+\end{examplebox}
+\begin{warningbox}
+Chỉ chia cho r! khi việc hoán đổi tên của các nhóm thật sự không tạo kết quả mới. Nếu nhóm có nhiệm vụ khác nhau thì không được chia.
+\end{warningbox}
+
+\topic{20.10}{Đếm gián tiếp}
+Đếm gián tiếp biến yêu cầu khó thành một tập lớn dễ đếm rồi loại bỏ phần không thỏa mãn. Kỹ thuật thường gặp nhất là đếm qua biến cố đối.
+
+\begin{formulabox}
+\textbf{Số cách thỏa mãn = Tổng số cách - Số cách không thỏa mãn.}
+\end{formulabox}
+\begin{keypoints}
+  \item Rất hiệu quả với các cụm “ít nhất một”, “có xuất hiện”, “không phải tất cả”, “không đồng thời vắng mặt”.
+  \item Ngoài phần bù, có thể dựng một song ánh: ghép mỗi cấu hình cần đếm với đúng một cấu hình của bài toán quen thuộc.
+\end{keypoints}
+\begin{examplebox}
+Dãy 6 chữ số, mỗi vị trí chọn từ 0 đến 9, có ít nhất một chữ số 0: tổng 10\textsuperscript{6}, không có 0 là 9\textsuperscript{6}. Kết quả \textbf{10\textsuperscript{6} - 9\textsuperscript{6}}.
+\end{examplebox}
+\begin{warningbox}
+Phần bù phải nằm trong đúng cùng không gian tổng. Nếu ban đầu là “số có 6 chữ số” thì chữ số đầu không được là 0 ở cả tổng lẫn phần bù.
+\end{warningbox}
+
+\topic{20.11}{Nguyên lý bù trừ}
+Khi các tập trường hợp chồng lấn, cộng số phần tử từng tập sẽ đếm lặp phần giao. Nguyên lý bù trừ sửa chính xác số lần đếm đó.
+
+\begin{formulabox}
+\textbf{|A ∪ B| = |A| + |B| - |A ∩ B|}.
+\end{formulabox}
+\begin{formulabox}
+\textbf{|A ∪ B ∪ C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C|}.
+\end{formulabox}
+\begin{keypoints}
+  \item Với nhiều tập: cộng giao của 1 tập, trừ giao của 2 tập, cộng giao của 3 tập, ... luân phiên dấu.
+  \item Dùng cho: chia hết bởi nhiều số, ít nhất một hộp rỗng, ánh xạ phủ, xếp không ai về đúng vị trí.
+\end{keypoints}
+\begin{examplebox}
+Từ 1 đến 100, số chia hết cho 2 hoặc 3 là ⌊100/2⌋ + ⌊100/3⌋ - ⌊100/6⌋ = 50 + 33 - 16 = \textbf{67}.
+\end{examplebox}
+\begin{warningbox}
+Phải dùng bội chung nhỏ nhất khi đếm phần giao của các điều kiện chia hết.
+\end{warningbox}
+
+\topic{20.12}{Bài toán hàng - cột}
+Mô hình hàng - cột thường quy về chọn hàng, chọn cột rồi ghép chúng. Cần phân biệt “ô của bảng” với “điểm lưới”.
+
+\begin{formulabox}
+Chọn k ô trong bảng m hàng, n cột sao cho không có hai ô cùng hàng hoặc cùng cột: \textbf{C(m,k)·C(n,k)·k!}.
+\end{formulabox}
+\begin{formulabox}
+Số hình chữ nhật có cạnh theo lưới tạo bởi m đường ngang và n đường dọc: \textbf{C(m,2)·C(n,2)}.
+\end{formulabox}
+\begin{keypoints}
+  \item Công thức thứ nhất: chọn k hàng, chọn k cột, sau đó ghép mỗi hàng với một cột theo k! song ánh.
+  \item Nếu bảng có m hàng ô và n cột ô thì số đường lưới là m + 1 và n + 1; đọc kỹ đối tượng đề cho.
+\end{keypoints}
+\begin{examplebox}
+Trong bảng 4×5 ô, chọn 3 ô không chung hàng, không chung cột: C(4,3)C(5,3)3! = 4·10·6 = \textbf{240 cách}.
+\end{examplebox}
+\begin{warningbox}
+Sau khi chọn hàng và cột, vẫn phải nhân k! để xác định cách ghép hàng với cột; nếu bỏ k! mới chỉ chọn được một bảng con k×k.
+\end{warningbox}
+
+\topic{20.13}{Bố trí trên đa giác}
+Các đối tượng hình học thường được đếm bằng cách chọn tập đỉnh quyết định duy nhất đối tượng đó. Điều kiện lồi giúp tránh các trường hợp suy biến.
+
+\begin{formulabox}
+Đa giác lồi n đỉnh: số đường chéo \textbf{C(n,2) - n = n(n - 3)/2}.
+\end{formulabox}
+\begin{formulabox}
+Số tam giác có đỉnh là đỉnh đa giác: \textbf{C(n,3)}. Số tứ giác: \textbf{C(n,4)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu không có ba đường chéo đồng quy trong miền trong, số giao điểm trong của các đường chéo: \textbf{C(n,4)}.
+\end{formulabox}
+\begin{keypoints}
+  \item Mỗi giao điểm trong tổng quát được xác định bởi bốn đỉnh: hai đường chéo nối hai cặp đỉnh đối diện của một tứ giác.
+  \item Chọn k đỉnh không kề nhau trên vòng tròn: thường dùng xếp khe hoặc công thức n/(n - k)·C(n - k,k), với n ≥ 2k.
+\end{keypoints}
+\begin{examplebox}
+Một thập giác lồi có 10·7/2 = \textbf{35 đường chéo} và C(10,3) = \textbf{120 tam giác} từ các đỉnh.
+\end{examplebox}
+\begin{notebox}
+Công thức C(n,4) cho giao điểm chỉ đúng khi không có ba đường chéo đồng quy tại cùng một điểm bên trong.
+\end{notebox}
+
+\topic{20.14}{Phân lớp theo phần dư}
+Với một số nguyên m ≥ 2, mọi số nguyên thuộc đúng một trong m lớp dư 0, 1, ..., m - 1 theo modulo m. Phân lớp theo phần dư giúp biến điều kiện chia hết thành bài toán chọn lớp.
+
+\begin{formulabox}
+a ≡ r (mod m) nghĩa là m chia hết a - r. Nếu a ≡ r và b ≡ s thì a + b ≡ r + s; ab ≡ rs (mod m).
+\end{formulabox}
+\begin{keypoints}
+  \item Để tổng chia hết cho m, ghép các lớp dư có tổng đồng dư 0.
+  \item Để tích chia hết cho m, phân tích các thừa số nguyên tố của m rồi xét số mũ cần có.
+  \item Nguyên lý Dirichlet: phân n + 1 số nguyên vào n lớp dư modulo n thì tồn tại hai số cùng lớp dư.
+\end{keypoints}
+\begin{tipbox}
+Viết một bảng các lớp dư và số lượng phần tử trong từng lớp trước; sau đó mới chọn cặp, bộ ba hoặc chuỗi lớp phù hợp.
+\end{tipbox}
+\begin{examplebox}
+Theo modulo 5, hai số có cùng phần dư thì hiệu của chúng chia hết cho 5. Vì chỉ có 5 lớp dư, trong 6 số nguyên bất kỳ luôn có hai số có hiệu chia hết cho 5.
+\end{examplebox}
+
+\topic{20.15}{Bài toán modulo}
+Modulo tập trung vào phần dư thay vì giá trị đầy đủ. Công cụ này thường dùng để xét chữ số tận cùng, tính chia hết, đếm các tổng hoặc tích thỏa điều kiện đồng dư.
+
+\begin{keypoints}
+  \item Rút gọn từng số theo modulo m trước khi cộng hoặc nhân.
+  \item Lũy thừa thường có chu kì phần dư; tìm chu kì rồi xét số mũ theo phần dư của độ dài chu kì.
+  \item Trong bài đếm, mô tả mỗi phần tử bằng lớp dư và dùng quy tắc cộng, nhân hoặc tổ hợp trên số lượng phần tử của từng lớp.
+  \item Nếu m là hợp số, đôi khi tách điều kiện theo các môđun nguyên tố cùng nhau rồi ghép lại.
+\end{keypoints}
+\begin{examplebox}
+Chữ số tận cùng của 7\textsuperscript{2026}: các tận cùng 7, 9, 3, 1 lặp chu kì 4. Vì 2026 ≡ 2 (mod 4), chữ số tận cùng là \textbf{9}.
+\end{examplebox}
+\begin{warningbox}
+Không được tùy tiện “chia hai vế” trong đồng dư. Chỉ khử một thừa số khi kiểm soát ước chung của thừa số đó với môđun.
+\end{warningbox}
+
+\topic{20.16}{Bài toán nhiều giai đoạn}
+Bài toán nhiều giai đoạn có trạng thái thay đổi sau mỗi bước. Nên vẽ sơ đồ hoặc lập bảng trạng thái để số lựa chọn ở bước sau được tính đúng theo lựa chọn trước.
+
+\begin{keypoints}
+  \item Xác định thứ tự tự nhiên của các quyết định; xử lí điều kiện mạnh nhất trước nếu giúp giảm nhánh.
+  \item Ở mỗi nhánh, dùng quy tắc nhân; giữa các nhánh rời nhau, dùng quy tắc cộng.
+  \item Nếu nhiều con đường dẫn đến cùng một kết quả cuối và đề chỉ đếm kết quả, phải kiểm tra trùng lặp.
+  \item Có thể dùng truy hồi hoặc quy hoạch động khi số trạng thái ít nhưng số bước lớn.
+\end{keypoints}
+\begin{tipbox}
+Giải một bài theo hai thứ tự khác nhau là cách tốt để kiểm tra kết quả; hai biểu thức đếm cùng một tập phải bằng nhau.
+\end{tipbox}
+\begin{examplebox}
+Lập đội gồm 1 đội trưởng và 3 thành viên từ 8 người: chọn đội trưởng 8 cách, rồi chọn 3 người từ 7 người còn lại: 8·C(7,3) = \textbf{280 cách}. Cũng bằng C(8,4)·4.
+\end{examplebox}
+
+\topic{20.17}{Tổ hợp kết hợp hình học}
+Trong hình học tổ hợp, một đối tượng thường được xác định bởi một tập điểm hoặc một tập đường. Đếm tất cả rồi loại các cấu hình suy biến như thẳng hàng, song song hoặc đồng quy.
+
+\begin{formulabox}
+n điểm, không có ba điểm thẳng hàng: số đường thẳng \textbf{C(n,2)}, số tam giác \textbf{C(n,3)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu có đúng m điểm cùng nằm trên một đường và không có thẳng hàng đặc biệt khác: tam giác là \textbf{C(n,3) - C(m,3)}.
+\end{formulabox}
+\begin{formulabox}
+n đường thẳng, không đôi nào song song và không ba đường đồng quy: số giao điểm \textbf{C(n,2)}.
+\end{formulabox}
+\begin{examplebox}
+Có 10 điểm, trong đó đúng 4 điểm thẳng hàng và ngoài ra không có ba điểm nào thẳng hàng. Số tam giác là C(10,3) - C(4,3) = 120 - 4 = \textbf{116}.
+\end{examplebox}
+\begin{warningbox}
+Không phải mỗi cách chọn điểm đều tạo đối tượng hợp lệ. Phải loại bộ ba thẳng hàng khi đếm tam giác và kiểm tra một đối tượng có bị nhiều tập điểm cùng xác định hay không.
+\end{warningbox}
+
+
+\clearpage
+\chaptertitle{CD21}{CÁC QUY TẮC XÁC SUẤT}
+\begin{leadbox}
+Xác suất được xây trên ngôn ngữ tập hợp. Vì vậy phải dịch đúng các từ “không”, “hoặc”, “và”, “xung khắc”, “độc lập” sang phép toán biến cố trước khi dùng công thức.
+\end{leadbox}
+\topic{21.1}{Biến cố}
+Phép thử ngẫu nhiên là thí nghiệm có tập kết quả có thể biết trước nhưng chưa biết kết quả cụ thể. Tập tất cả kết quả gọi là \textbf{không gian mẫu Ω}. Biến cố A là một tập con của Ω.
+
+\begin{formulabox}
+Trong mô hình hữu hạn đồng khả năng: \textbf{P(A) = |A|/|Ω|}. Luôn có 0 ≤ P(A) ≤ 1 và P(Ω) = 1.
+\end{formulabox}
+\begin{keypoints}
+  \item Biến cố chắc chắn là Ω; biến cố không thể là \ensuremath{\varnothing}.
+  \item Một kết quả sơ cấp ω thuộc A nghĩa là khi ω xuất hiện thì A xảy ra.
+  \item Muốn dùng công thức cổ điển |A|/|Ω|, các kết quả sơ cấp phải đồng khả năng.
+\end{keypoints}
+\begin{examplebox}
+Gieo một xúc xắc cân đối: Ω = \{1,2,3,4,5,6\}. A = “ra số chẵn” = \{2,4,6\}, nên P(A) = 3/6 = \textbf{1/2}.
+\end{examplebox}
+\begin{warningbox}
+Không phải mọi không gian mẫu được liệt kê đều có các kết quả đồng khả năng. Chẳng hạn tổng của hai xúc xắc từ 2 đến 12 không đồng khả năng.
+\end{warningbox}
+
+\topic{21.2}{Biến cố đối}
+Biến cố đối A\textsuperscript{c} gồm mọi kết quả thuộc Ω nhưng không thuộc A. Hai biến cố A và A\textsuperscript{c} xung khắc và hợp của chúng là Ω.
+
+\begin{formulabox}
+\textbf{P(A\textsuperscript{c}) = 1 - P(A)}.
+\end{formulabox}
+\begin{keypoints}
+  \item “Ít nhất một” thường lấy 1 trừ xác suất “không có lần nào”.
+  \item “Không phải tất cả đều...” là biến cố đối của “tất cả đều...”.
+\end{keypoints}
+\begin{examplebox}
+Gieo một đồng xu cân đối 5 lần. Xác suất có ít nhất một lần ngửa là 1 - P(không có lần ngửa) = 1 - (1/2)\textsuperscript{5} = \textbf{31/32}.
+\end{examplebox}
+\begin{warningbox}
+Viết đúng biến cố đối bằng lời. Đối của “có ít nhất 2” là “có nhiều nhất 1”, không phải “không có”.
+\end{warningbox}
+
+\topic{21.3}{Biến cố hợp}
+A ∪ B xảy ra khi \textbf{ít nhất một} trong hai biến cố A, B xảy ra. Từ “hoặc” trong xác suất thông thường là hoặc bao hàm, nghĩa là cho phép cả hai cùng xảy ra.
+
+\begin{keypoints}
+  \item Nếu A, B có thể cùng xảy ra, phần giao A ∩ B nằm trong hợp nhưng chỉ được tính một lần.
+  \item Đối của hợp: (A ∪ B)\textsuperscript{c} = A\textsuperscript{c} ∩ B\textsuperscript{c}.
+\end{keypoints}
+\begin{examplebox}
+Chọn một số từ 1 đến 20. A: số chẵn; B: số chia hết cho 3. A ∪ B là các số chia hết cho 2 hoặc 3, kể cả số chia hết cho 6.
+\end{examplebox}
+
+\topic{21.4}{Biến cố giao}
+A ∩ B xảy ra khi \textbf{cả A và B cùng xảy ra}. Trong quy trình nhiều bước, phép giao thường mô tả một đường đi cụ thể qua các bước.
+
+\begin{keypoints}
+  \item Đối của giao: (A ∩ B)\textsuperscript{c} = A\textsuperscript{c} ∪ B\textsuperscript{c}.
+  \item Từ “đồng thời”, “vừa... vừa...”, “A và B” thường chỉ phép giao.
+\end{keypoints}
+\begin{examplebox}
+Rút một lá từ bộ 52 lá. A: lá cơ; B: lá hình người J, Q, K. A ∩ B gồm J cơ, Q cơ, K cơ nên P(A ∩ B) = \textbf{3/52}.
+\end{examplebox}
+
+\topic{21.5}{Biến cố xung khắc}
+Hai biến cố xung khắc nếu chúng không thể cùng xảy ra trong một phép thử.
+
+\begin{formulabox}
+\textbf{A ∩ B = \ensuremath{\varnothing}} và do đó \textbf{P(A ∩ B) = 0}.
+\end{formulabox}
+\begin{examplebox}
+Gieo một xúc xắc một lần: A = “ra số chẵn”, B = “ra số lẻ” là xung khắc.
+\end{examplebox}
+\begin{warningbox}
+Xung khắc không có nghĩa là độc lập. Nếu P(A), P(B) đều dương và A, B xung khắc thì P(A ∩ B) = 0 khác P(A)P(B), nên chúng phụ thuộc.
+\end{warningbox}
+
+\topic{21.6}{Biến cố độc lập}
+A và B độc lập khi việc biết B xảy ra không làm thay đổi xác suất của A và ngược lại.
+
+\begin{formulabox}
+\textbf{P(A ∩ B) = P(A)P(B)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu P(B) > 0, độc lập tương đương với \textbf{P(A|B) = P(A)}.
+\end{formulabox}
+\begin{keypoints}
+  \item A độc lập với B thì A cũng độc lập với B\textsuperscript{c}, A\textsuperscript{c} với B và A\textsuperscript{c} với B\textsuperscript{c}.
+  \item Với nhiều biến cố, độc lập từng đôi chưa chắc kéo theo độc lập đồng thời; cần kiểm tra các giao nhiều biến cố nếu đề yêu cầu.
+\end{keypoints}
+\begin{examplebox}
+Gieo hai đồng xu cân đối. A: đồng thứ nhất ngửa; B: đồng thứ hai ngửa. P(A ∩ B) = 1/4 = (1/2)(1/2), nên A và B độc lập.
+\end{examplebox}
+\begin{warningbox}
+Không kết luận độc lập chỉ vì hai biến cố “trông không liên quan”. Phải dựa vào mô hình hoặc kiểm tra công thức.
+\end{warningbox}
+
+\topic{21.7}{Công thức cộng xác suất}
+Công thức cộng tính xác suất của biến cố “A hoặc B”. Phần giao phải trừ một lần vì đã bị cộng hai lần.
+
+\begin{formulabox}
+\textbf{P(A ∪ B) = P(A) + P(B) - P(A ∩ B)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu A, B xung khắc: \textbf{P(A ∪ B) = P(A) + P(B)}.
+\end{formulabox}
+\begin{tipbox}
+Muốn tính “đúng một trong hai”, dùng P(A) + P(B) - 2P(A ∩ B).
+\end{tipbox}
+\begin{examplebox}
+P(A) = 0,6; P(B) = 0,5; P(A ∩ B) = 0,3. Khi đó P(A ∪ B) = 0,6 + 0,5 - 0,3 = \textbf{0,8}.
+\end{examplebox}
+
+\topic{21.8}{Công thức nhân xác suất}
+Công thức nhân tính xác suất của một giao. Trong trường hợp tổng quát phải dùng xác suất có điều kiện; chỉ khi độc lập mới nhân trực tiếp các xác suất ban đầu.
+
+\begin{formulabox}
+\textbf{P(A ∩ B) = P(A)P(B|A) = P(B)P(A|B)}.
+\end{formulabox}
+\begin{formulabox}
+Nếu A, B độc lập: \textbf{P(A ∩ B) = P(A)P(B)}.
+\end{formulabox}
+\begin{formulabox}
+Chuỗi n bước: \textbf{P(A\textsubscript{1}∩...∩A\textsubscript{n}) = P(A\textsubscript{1})P(A\textsubscript{2}|A\textsubscript{1})...P(A\textsubscript{n}|A\textsubscript{1}∩...∩A\textsubscript{n-1})}.
+\end{formulabox}
+\begin{examplebox}
+Hộp có 3 bi đỏ, 2 bi xanh. Rút liên tiếp 2 bi không hoàn lại. Xác suất cả hai đỏ là (3/5)(2/4) = \textbf{3/10}.
+\end{examplebox}
+\begin{warningbox}
+Không hoàn lại làm xác suất bước sau thay đổi. Vì vậy không được dùng (3/5)\textsuperscript{2} trong ví dụ trên.
+\end{warningbox}
+
+
+\clearpage
+\chaptertitle{CD22}{XÁC SUẤT CÓ ĐIỀU KIỆN}
+\begin{leadbox}
+Khi đã biết một thông tin B, không gian xét không còn là Ω mà thu hẹp thành B. Mọi tử số và mẫu số phải được hiểu trong không gian mới này.
+\end{leadbox}
+\topic{22.1}{Xác suất có điều kiện P(A|B)}
+P(A|B) là xác suất A xảy ra \textbf{khi đã biết B xảy ra}. Trong không gian mới B, phần thuận lợi cho A chính là A ∩ B.
+
+\begin{formulabox}
+\textbf{P(A|B) = P(A ∩ B)/P(B)}, với P(B) > 0.
+\end{formulabox}
+\begin{keypoints}
+  \item Dấu “|” đọc là “với điều kiện”. Thứ tự A|B rất quan trọng.
+  \item P(A|B) và P(B|A) thường khác nhau vì mẫu số khác nhau.
+  \item Nếu dùng số lượng trong mô hình đồng khả năng: P(A|B) = |A ∩ B|/|B|.
+\end{keypoints}
+\begin{examplebox}
+Trong lớp có 20 nữ, 12 nữ học giỏi; tổng cộng 40 học sinh, 18 học giỏi. Chọn ngẫu nhiên một học sinh. P(giỏi | nữ) = 12/20 = \textbf{0,6}, còn P(nữ | giỏi) = 12/18 = 2/3.
+\end{examplebox}
+\begin{warningbox}
+Sau dấu “|” là điều đã biết và quyết định mẫu số. Đây là lỗi đảo điều kiện phổ biến nhất.
+\end{warningbox}
+
+\topic{22.2}{Công thức nhân}
+Biến đổi định nghĩa xác suất có điều kiện cho ta công thức nhân. Công thức mô tả một đường đi: xảy ra B trước, sau đó A xảy ra trong điều kiện B.
+
+\begin{formulabox}
+\textbf{P(A ∩ B) = P(B)P(A|B)}.
+\end{formulabox}
+\begin{formulabox}
+\textbf{P(A ∩ B) = P(A)P(B|A)}.
+\end{formulabox}
+\begin{tipbox}
+Chọn thứ tự điều kiện sao cho các xác suất thành phần dễ biết nhất. Hai cách viết là tương đương.
+\end{tipbox}
+\begin{examplebox}
+Một máy hoạt động trong ngày với xác suất 0,98. Khi hoạt động, xác suất tạo sản phẩm đạt chuẩn là 0,97. Xác suất “máy hoạt động và sản phẩm đạt” là 0,98·0,97 = \textbf{0,9506}.
+\end{examplebox}
+
+\topic{22.3}{Sơ đồ cây}
+Sơ đồ cây biểu diễn phép thử nhiều giai đoạn. Mỗi cạnh ghi xác suất có điều kiện của nhánh đó. Các nhánh từ cùng một nút phải có tổng bằng 1.
+
+\begin{formulabox}
+\textbf{Xác suất một đường đi = tích các xác suất trên đường.}  \textbf{Xác suất một biến cố = tổng xác suất các đường rời nhau dẫn tới biến cố.}
+\end{formulabox}
+\begin{keypoints}
+  \item Tầng đầu: các nguồn hoặc trạng thái ban đầu.
+  \item Tầng sau: kết quả có điều kiện theo nhánh trước.
+  \item Nếu rút không hoàn lại, cập nhật cả tử và mẫu ở mỗi nhánh.
+  \item Đánh dấu rõ nhánh nào tạo biến cố cần tìm trước khi cộng.
+\end{keypoints}
+\begin{examplebox}
+Chọn hộp I với xác suất 0,4, hộp II với xác suất 0,6. Xác suất lấy bi đỏ lần lượt là 0,7 và 0,2. Xác suất lấy bi đỏ là 0,4·0,7 + 0,6·0,2 = \textbf{0,40}.
+\end{examplebox}
+\begin{warningbox}
+Không cộng xác suất các cạnh liên tiếp trên cùng một đường; phải nhân. Chỉ cộng các đường rời nhau cùng dẫn tới biến cố.
+\end{warningbox}
+
+\topic{22.4}{Công thức xác suất toàn phần}
+Giả sử B\textsubscript{1}, ..., B\textsubscript{n} tạo thành một phân hoạch của Ω: đôi một xung khắc, hợp bằng Ω và đều có xác suất dương. Khi đó A được chia thành các phần A ∩ B\textsubscript{i}.
+
+\begin{formulabox}
+\textbf{P(A) = Σ P(B\textsubscript{i})P(A|B\textsubscript{i})}.
+\end{formulabox}
+\begin{keypoints}
+  \item B\textsubscript{i} thường là nguồn gốc: dây chuyền sản xuất, nhóm dân số, hộp được chọn, trạng thái thời tiết.
+  \item Kiểm tra ΣP(B\textsubscript{i}) = 1 trước khi tính.
+\end{keypoints}
+\begin{tipbox}
+Công thức toàn phần đi theo chiều “biết nguồn -> tính kết quả”. Bayes đi ngược lại “biết kết quả -> suy ra nguồn”.
+\end{tipbox}
+\begin{examplebox}
+60\% sản phẩm từ dây chuyền A có tỉ lệ lỗi 2\%; 40\% từ B có tỉ lệ lỗi 5\%. Xác suất một sản phẩm lỗi là 0,6·0,02 + 0,4·0,05 = \textbf{0,032}.
+\end{examplebox}
+
+\topic{22.5}{Công thức Bayes}
+Bayes cập nhật xác suất của nguyên nhân B\textsubscript{j} sau khi đã quan sát kết quả A.
+
+\begin{formulabox}
+\textbf{P(B\textsubscript{j}|A) = P(B\textsubscript{j})P(A|B\textsubscript{j}) / [Σ P(B\textsubscript{i})P(A|B\textsubscript{i})]}.
+\end{formulabox}
+\begin{keypoints}
+  \item P(B\textsubscript{j}) là xác suất tiên nghiệm.
+  \item P(A|B\textsubscript{j}) là khả năng quan sát A nếu nguyên nhân B\textsubscript{j} đúng.
+  \item P(B\textsubscript{j}|A) là xác suất hậu nghiệm sau khi có thông tin A.
+\end{keypoints}
+\begin{examplebox}
+Trong ví dụ hai dây chuyền, P(B|lỗi) = 0,4·0,05/0,032 = \textbf{0,625}. Dù B chỉ sản xuất 40\%, nó tạo 62,5\% số sản phẩm lỗi.
+\end{examplebox}
+\begin{warningbox}
+Không bỏ mẫu số xác suất toàn phần. Tử số chỉ là xác suất giao “nguyên nhân và kết quả”, chưa phải xác suất có điều kiện cần tìm.
+\end{warningbox}
+
+\topic{22.6}{Bảng hai chiều}
+Bảng hai chiều ghi tần số hoặc xác suất theo hai tiêu chí. Tổng hàng, tổng cột giúp nhìn rõ mẫu số của xác suất có điều kiện.
+
+\begin{keypoints}
+  \item P(A) dùng tổng của hàng/cột tương ứng chia tổng toàn bảng.
+  \item P(A ∩ B) dùng đúng ô giao của A và B chia tổng toàn bảng.
+  \item P(A|B) dùng ô giao chia tổng của cột/hàng B, không chia tổng toàn bảng.
+  \item Kiểm tra độc lập bằng cách so P(A|B) với P(A), hoặc so tích chéo trong bảng 2×2.
+\end{keypoints}
+\begin{tipbox}
+Khoanh hàng hoặc cột biểu diễn điều kiện sau dấu “|”; đó chính là không gian mẫu mới.
+\end{tipbox}
+\begin{examplebox}
+Nếu trong 200 người có 80 nữ, trong đó 28 người thích môn X, thì P(thích X | nữ) = 28/80 = \textbf{0,35}. Mẫu số 80 vì đã biết người được chọn là nữ.
+\end{examplebox}
+
+\topic{22.7}{Bài toán y tế - xét nghiệm}
+Các đại lượng chuẩn: độ nhạy = P(+|bệnh), độ đặc hiệu = P(-|không bệnh), tỉ lệ dương tính giả = 1 - độ đặc hiệu và tỉ lệ hiện mắc = P(bệnh).
+
+\begin{formulabox}
+\textbf{P(bệnh|+) = P(bệnh)P(+|bệnh) / P(+)}, trong đó P(+) tính bằng xác suất toàn phần.
+\end{formulabox}
+\begin{keypoints}
+  \item Giá trị dự báo dương P(bệnh|+) phụ thuộc mạnh vào tỉ lệ hiện mắc, không chỉ vào độ chính xác của xét nghiệm.
+  \item Có thể đổi mọi xác suất thành số người trên 10 000 để trực quan và tránh nhầm điều kiện.
+\end{keypoints}
+\begin{examplebox}
+Bệnh có ở 1\% dân số; độ nhạy 95\%; độ đặc hiệu 90\%. P(+) = 0,01·0,95 + 0,99·0,10 = 0,1085. Do đó P(bệnh|+) ≈ \textbf{8,76\%}.
+\end{examplebox}
+\begin{warningbox}
+P(+|bệnh) không phải P(bệnh|+). Độ nhạy cao không đồng nghĩa mọi người dương tính đều mắc bệnh, nhất là bệnh hiếm.
+\end{warningbox}
+
+\topic{22.8}{Bài toán sản xuất - kiểm định}
+Mô hình thường có nhiều máy hoặc dây chuyền với tỉ trọng sản lượng khác nhau và tỉ lệ lỗi riêng. Xác suất toàn phần cho tỉ lệ lỗi chung; Bayes truy nguồn sản phẩm lỗi.
+
+\begin{keypoints}
+  \item Bước 1: đặt B\textsubscript{i} = sản phẩm đến từ nguồn i; ghi P(B\textsubscript{i}).
+  \item Bước 2: đặt D = sản phẩm lỗi; ghi P(D|B\textsubscript{i}).
+  \item Bước 3: tính P(D) = ΣP(B\textsubscript{i})P(D|B\textsubscript{i}).
+  \item Bước 4: nếu truy nguồn, dùng P(B\textsubscript{j}|D) = P(B\textsubscript{j})P(D|B\textsubscript{j})/P(D).
+\end{keypoints}
+\begin{examplebox}
+Dây chuyền A làm 70\% sản lượng, lỗi 1\%; B làm 30\%, lỗi 4\%. Tỉ lệ lỗi chung là 0,7·0,01 + 0,3·0,04 = \textbf{1,9\%}. Trong số hàng lỗi, tỉ lệ từ B là 0,012/0,019 ≈ \textbf{63,16\%}.
+\end{examplebox}
+\begin{notebox}
+Nếu kiểm định lấy mẫu không hoàn lại từ một lô nhỏ, các lần kiểm tra phụ thuộc; cần cập nhật số sản phẩm còn lại.
+\end{notebox}
+
+\topic{22.9}{Bài toán nhiều bước}
+Bài nhiều bước kết hợp quy tắc nhân có điều kiện, cộng các đường đi và đôi khi Bayes. Sơ đồ cây hoặc bảng trạng thái giúp kiểm soát thông tin sau mỗi bước.
+
+\begin{keypoints}
+  \item \textbf{Có hoàn lại:} thành phần và xác suất ở lần sau giữ nguyên; các lần thường độc lập nếu cách chọn giống nhau.
+  \item \textbf{Không hoàn lại:} thành phần thay đổi; xác suất lần sau phụ thuộc các kết quả trước.
+  \item \textbf{Dừng sớm:} mỗi đường có thể có độ dài khác nhau; chỉ cộng các đường kết thúc đúng điều kiện.
+  \item \textbf{Quan sát một kết quả cuối:} nếu hỏi nguyên nhân hoặc nhánh trước đó, dùng Bayes.
+\end{keypoints}
+\begin{tipbox}
+Viết rõ xác suất trên từng cạnh theo trạng thái hiện tại. Sau đó: nhân dọc một đường, cộng ngang các đường phù hợp.
+\end{tipbox}
+\begin{examplebox}
+Hộp có 4 đỏ, 3 xanh. Rút 2 bi không hoàn lại. Xác suất đúng một bi đỏ là (4/7)(3/6) + (3/7)(4/6) = \textbf{4/7}. Hai đường “đỏ-xanh” và “xanh-đỏ” rời nhau nên được cộng.
+\end{examplebox}
+
+
+\clearpage
+\chaptertitle{CD23}{THỐNG KÊ}
+\begin{leadbox}
+Thống kê mô tả trả lời hai câu hỏi: dữ liệu tập trung ở đâu và phân tán đến mức nào. Không nên kết luận chỉ từ một chỉ số; cần phối hợp trung tâm, độ phân tán và giá trị ngoại lệ.
+\end{leadbox}
+\topic{23.1}{Số trung bình}
+Số trung bình cộng là tổng các giá trị chia cho số quan sát. Nó dùng toàn bộ dữ liệu nên giàu thông tin nhưng nhạy với giá trị ngoại lệ.
+
+\begin{formulabox}
+Dữ liệu x\textsubscript{1}, ..., x\textsubscript{n}: \textbf{x̄ = (x\textsubscript{1} + ... + x\textsubscript{n})/n}.
+\end{formulabox}
+\begin{formulabox}
+Giá trị x\textsubscript{i} có tần số f\textsubscript{i}: \textbf{x̄ = Σf\textsubscript{i}x\textsubscript{i} / Σf\textsubscript{i}}.
+\end{formulabox}
+\begin{keypoints}
+  \item Nếu mọi giá trị tăng thêm a thì trung bình tăng a.
+  \item Nếu mọi giá trị nhân b thì trung bình nhân b.
+  \item Tổng độ lệch quanh trung bình bằng 0: Σ(x\textsubscript{i} - x̄) = 0.
+\end{keypoints}
+\begin{examplebox}
+Dữ liệu 5, 6, 6, 8, 10 có x̄ = 35/5 = \textbf{7}. Nếu thay 10 bằng 30, trung bình tăng mạnh, cho thấy độ nhạy với ngoại lệ.
+\end{examplebox}
+\begin{notebox}
+Không lấy trung bình của các trung bình nếu các nhóm có quy mô khác nhau; phải dùng trung bình có trọng số theo số phần tử từng nhóm.
+\end{notebox}
+
+\topic{23.2}{Trung vị}
+Trung vị Me là giá trị chia dãy dữ liệu đã sắp thứ tự thành hai nửa: ít nhất 50\% quan sát không vượt quá Me và ít nhất 50\% không nhỏ hơn Me.
+
+\begin{formulabox}
+n lẻ: \textbf{Me = x\textsubscript{((n+1)/2)}} trong dãy đã sắp.
+\end{formulabox}
+\begin{formulabox}
+n chẵn: \textbf{Me = [x\textsubscript{(n/2)} + x\textsubscript{(n/2+1)}]/2}.
+\end{formulabox}
+\begin{tipbox}
+Trung vị phù hợp hơn trung bình khi dữ liệu lệch mạnh, có ngoại lệ, hoặc biểu diễn thu nhập/giá nhà.
+\end{tipbox}
+\begin{examplebox}
+Dữ liệu đã sắp 2, 4, 7, 9, 20, 30 có Me = (7 + 9)/2 = \textbf{8}.
+\end{examplebox}
+
+\topic{23.3}{Mốt}
+Mốt Mo là giá trị có tần số lớn nhất. Một mẫu có thể không có mốt, có một mốt hoặc nhiều mốt.
+
+\begin{keypoints}
+  \item Mốt dùng được cả với dữ liệu định tính, ví dụ màu được chọn nhiều nhất.
+  \item Mốt không nhất thiết gần trung bình hoặc trung vị.
+  \item Với dữ liệu ghép nhóm, thường chỉ xác định được \textbf{lớp mốt}, tức lớp có tần số lớn nhất.
+\end{keypoints}
+\begin{examplebox}
+Dữ liệu 1, 2, 2, 3, 3, 5 có hai mốt là \textbf{2 và 3}.
+\end{examplebox}
+\begin{warningbox}
+Mốt là giá trị có tần số cao nhất, không phải chính tần số cao nhất.
+\end{warningbox}
+
+\topic{23.4}{Tứ phân vị}
+Ba tứ phân vị Q\textsubscript{1}, Q\textsubscript{2}, Q\textsubscript{3} chia dữ liệu đã sắp thành bốn phần. Q\textsubscript{2} là trung vị; Q\textsubscript{1} là trung vị nửa dưới; Q\textsubscript{3} là trung vị nửa trên.
+
+\begin{keypoints}
+  \item Bước 1: sắp dữ liệu tăng dần.
+  \item Bước 2: tìm Q\textsubscript{2}.
+  \item Bước 3: chia nửa dưới và nửa trên theo quy ước đang dùng, rồi lấy trung vị mỗi nửa.
+  \item Bộ năm số gồm min, Q\textsubscript{1}, Me, Q\textsubscript{3}, max là nền tảng của biểu đồ hộp.
+\end{keypoints}
+\begin{examplebox}
+Dữ liệu 1, 2, 3, 4, 5, 6, 7, 8: Q\textsubscript{2} = 4,5; Q\textsubscript{1} = (2+3)/2 = 2,5; Q\textsubscript{3} = (6+7)/2 = 6,5.
+\end{examplebox}
+\begin{notebox}
+Có nhiều quy ước nội suy tứ phân vị trong phần mềm. Khi làm bài học đường, dùng đúng quy ước của đề hoặc sách; ghi rõ cách chia hai nửa nếu cần.
+\end{notebox}
+
+\topic{23.5}{Khoảng biến thiên}
+Khoảng biến thiên đo độ rộng từ giá trị nhỏ nhất đến lớn nhất.
+
+\begin{formulabox}
+\textbf{R = x\textsubscript{max} - x\textsubscript{min}}.
+\end{formulabox}
+\begin{examplebox}
+Dữ liệu 4, 6, 6, 8, 15 có R = 15 - 4 = \textbf{11}.
+\end{examplebox}
+\begin{warningbox}
+R chỉ dùng hai giá trị biên nên rất nhạy với ngoại lệ và bỏ qua toàn bộ cấu trúc bên trong dữ liệu.
+\end{warningbox}
+
+\topic{23.6}{Khoảng tứ phân vị}
+Khoảng tứ phân vị IQR đo độ rộng của 50\% dữ liệu ở giữa, nên bền vững hơn khoảng biến thiên trước ngoại lệ.
+
+\begin{formulabox}
+\textbf{IQR = Q\textsubscript{3} - Q\textsubscript{1}}.
+\end{formulabox}
+\begin{formulabox}
+Quy tắc ngoại lệ thường dùng: x < Q\textsubscript{1} - 1,5IQR hoặc x > Q\textsubscript{3} + 1,5IQR.
+\end{formulabox}
+\begin{examplebox}
+Nếu Q\textsubscript{1} = 10, Q\textsubscript{3} = 18 thì IQR = 8. Hai hàng rào là -2 và 30; giá trị lớn hơn 30 hoặc nhỏ hơn -2 được gắn cờ ngoại lệ.
+\end{examplebox}
+\begin{notebox}
+Quy tắc 1,5IQR là quy tắc phát hiện, không khẳng định chắc chắn dữ liệu sai. Cần xem bối cảnh trước khi loại quan sát.
+\end{notebox}
+
+\topic{23.7}{Phương sai}
+Phương sai là trung bình bình phương độ lệch so với trung bình. Bình phương giúp các độ lệch âm và dương không triệt tiêu nhau.
+
+\begin{formulabox}
+Theo quy ước thống kê mô tả phổ thông: \textbf{s\textsuperscript{2} = (1/n)Σ(x\textsubscript{i} - x̄)\textsuperscript{2}}.
+\end{formulabox}
+\begin{formulabox}
+Công thức tính nhanh: \textbf{s\textsuperscript{2} = (1/n)Σx\textsubscript{i}\textsuperscript{2} - x̄\textsuperscript{2}}.
+\end{formulabox}
+\begin{formulabox}
+Có tần số: \textbf{s\textsuperscript{2} = [Σf\textsubscript{i}(x\textsubscript{i} - x̄)\textsuperscript{2}]/Σf\textsubscript{i}}.
+\end{formulabox}
+\begin{keypoints}
+  \item s\textsuperscript{2} ≥ 0; bằng 0 khi và chỉ khi mọi giá trị bằng nhau.
+  \item Cộng cùng một hằng số vào dữ liệu không đổi phương sai.
+  \item Nhân dữ liệu với b làm phương sai nhân b\textsuperscript{2}.
+\end{keypoints}
+\begin{examplebox}
+Dữ liệu 1, 2, 3 có x̄ = 2; s\textsuperscript{2} = [(1-2)\textsuperscript{2} + 0 + (3-2)\textsuperscript{2}]/3 = \textbf{2/3}.
+\end{examplebox}
+\begin{notebox}
+Trong suy luận thống kê, phương sai mẫu hiệu chỉnh thường chia cho n - 1. Tài liệu này dùng quy ước mô tả phổ thông chia cho n, trừ khi đề nói khác.
+\end{notebox}
+
+\topic{23.8}{Độ lệch chuẩn}
+Độ lệch chuẩn là căn bậc hai của phương sai, đo khoảng cách điển hình của dữ liệu tới trung bình và có cùng đơn vị với dữ liệu.
+
+\begin{formulabox}
+\textbf{s = √s\textsuperscript{2}}.
+\end{formulabox}
+\begin{keypoints}
+  \item s nhỏ: dữ liệu tập trung quanh trung bình; s lớn: dữ liệu phân tán hơn.
+  \item Nếu y = a + bx thì độ lệch chuẩn mới là |b|s.
+  \item Khi so hai mẫu có cùng đơn vị và mức trung bình tương đương, mẫu có s nhỏ hơn thường ổn định hơn.
+\end{keypoints}
+\begin{examplebox}
+Nếu phương sai nhiệt độ là 4 °C\textsuperscript{2}, độ lệch chuẩn là \textbf{2 °C}.
+\end{examplebox}
+\begin{warningbox}
+Không so trực tiếp độ lệch chuẩn của hai đại lượng khác đơn vị; khi mức trung bình rất khác nhau có thể cân nhắc hệ số biến thiên.
+\end{warningbox}
+
+\topic{23.9}{Mẫu số liệu ghép nhóm}
+Dữ liệu ghép nhóm được cho theo các khoảng [a\textsubscript{i}; b\textsubscript{i}) và tần số f\textsubscript{i}. Vì không biết từng giá trị gốc, ta dùng trung điểm lớp m\textsubscript{i} = (a\textsubscript{i} + b\textsubscript{i})/2 để xấp xỉ.
+
+\begin{formulabox}
+\textbf{x̄ ≈ Σf\textsubscript{i}m\textsubscript{i}/n}.
+\end{formulabox}
+\begin{formulabox}
+\textbf{s\textsuperscript{2} ≈ Σf\textsubscript{i}(m\textsubscript{i} - x̄)\textsuperscript{2}/n}.
+\end{formulabox}
+\begin{keypoints}
+  \item Tổng tần số n = Σf\textsubscript{i}. Tần suất là f\textsubscript{i}/n.
+  \item Độ rộng lớp h = b\textsubscript{i} - a\textsubscript{i}; nhiều công thức nội suy giả sử các lớp liên tiếp và cùng độ rộng.
+  \item Kết quả trung bình và phương sai chỉ là xấp xỉ vì mọi quan sát trong lớp được đại diện bằng trung điểm.
+\end{keypoints}
+\begin{examplebox}
+Lớp [10;20) có tần số 6 được đại diện bởi trung điểm 15 và đóng góp 6·15 = 90 vào tổng Σf\textsubscript{i}m\textsubscript{i}.
+\end{examplebox}
+\begin{warningbox}
+Không dùng cận trái hoặc cận phải làm đại diện nếu đề không yêu cầu; đại diện chuẩn là trung điểm lớp.
+\end{warningbox}
+
+\topic{23.10}{Tần số tích lũy}
+Tần số tích lũy đến một lớp là tổng tần số từ lớp đầu đến lớp đó. Nó cho biết có bao nhiêu quan sát không vượt quá cận trên của lớp theo cách ghép nhóm.
+
+\begin{formulabox}
+\textbf{F\textsubscript{i} = f\textsubscript{1} + f\textsubscript{2} + ... + f\textsubscript{i}}.
+\end{formulabox}
+\begin{keypoints}
+  \item Dãy F\textsubscript{i} không giảm và F của lớp cuối bằng n.
+  \item Tần suất tích lũy là F\textsubscript{i}/n.
+  \item Muốn tìm lớp chứa phân vị p, tìm lớp đầu tiên có F\textsubscript{i} ≥ pn.
+\end{keypoints}
+\begin{tipbox}
+Lập thêm một cột tần số tích lũy ngay cạnh bảng gốc; đây là bước chuẩn bị cho trung vị và tứ phân vị ghép nhóm.
+\end{tipbox}
+\begin{examplebox}
+Các tần số là 3, 7, 5, 2 thì tần số tích lũy là \textbf{3, 10, 15, 17}. Vị trí thứ 12 nằm trong lớp thứ ba.
+\end{examplebox}
+
+\topic{23.11}{Trung vị của mẫu ghép nhóm}
+Trước hết xác định lớp trung vị: lớp đầu tiên có tần số tích lũy đạt hoặc vượt n/2. Sau đó nội suy tuyến tính trong lớp.
+
+\begin{formulabox}
+\textbf{Me ≈ L + [(n/2 - F)/f]h}.
+\end{formulabox}
+\begin{keypoints}
+  \item \textbf{L:} cận dưới của lớp trung vị.
+  \item \textbf{F:} tần số tích lũy trước lớp trung vị.
+  \item \textbf{f:} tần số của lớp trung vị.
+  \item \textbf{h:} độ rộng lớp.
+\end{keypoints}
+\begin{examplebox}
+n = 40, lớp trung vị [20;25), F trước lớp là 14, f = 12, h = 5. Me ≈ 20 + [(20 - 14)/12]·5 = \textbf{22,5}.
+\end{examplebox}
+\begin{warningbox}
+F là tần số tích lũy \emph{trước} lớp trung vị, không phải tần số tích lũy của chính lớp đó.
+\end{warningbox}
+
+\topic{23.12}{So sánh hai mẫu số liệu}
+So sánh có chất lượng phải xét ít nhất ba mặt: \textbf{vị trí trung tâm}, \textbf{độ phân tán} và \textbf{hình dạng/ngoại lệ}. Không kết luận chỉ từ trung bình.
+
+\begin{keypoints}
+  \item \textbf{Trung tâm:} so x̄ nếu dữ liệu khá đối xứng và ít ngoại lệ; so Me nếu dữ liệu lệch hoặc có ngoại lệ.
+  \item \textbf{Phân tán:} so s, IQR hoặc R. IQR bền vững hơn trước ngoại lệ; s dùng toàn bộ dữ liệu.
+  \item \textbf{Ổn định:} với cùng đại lượng và mức trung bình gần nhau, s nhỏ hơn nghĩa là ổn định hơn.
+  \item \textbf{Mức tương đối:} khi trung bình dương và chênh lệch lớn, có thể dùng hệ số biến thiên CV = s/x̄·100\%.
+  \item \textbf{Hình dạng:} xem độ lệch, cụm, khoảng trống và ngoại lệ qua bảng, biểu đồ chấm hoặc biểu đồ hộp.
+\end{keypoints}
+\begin{examplebox}
+Mẫu A có x̄ = 7,5 và s = 0,8; mẫu B có x̄ = 7,8 và s = 1,7. B có trung bình cao hơn nhẹ nhưng A ổn định hơn rõ rệt. Kết luận lựa chọn còn phụ thuộc mục tiêu ưu tiên mức cao hay độ ổn định.
+\end{examplebox}
+\begin{warningbox}
+Hai mẫu có cùng trung bình vẫn có thể rất khác về độ phân tán và hình dạng. Luôn nêu bằng chứng bằng ít nhất một chỉ số trung tâm và một chỉ số phân tán.
+\end{warningbox}
+
+
+\clearpage
+\section*{BẢNG CHỐT KIẾN THỨC}
+\addcontentsline{toc}{section}{Bảng chốt kiến thức}
+
+\textbf{1. Chọn công cụ đếm trong 20 giây}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.38\textwidth}p{0.34\textwidth}X}
+\toprule
+\textbf{Câu hỏi} & \textbf{Nếu có} & \textbf{Công cụ} \\
+\midrule
+Có nhiều trường hợp rời nhau? & Chọn đúng một trường hợp & Cộng \\
+Có nhiều bước liên tiếp? & Hoàn thành mọi bước & Nhân \\
+Có dùng toàn bộ phần tử? & Có và thứ tự quan trọng & Hoán vị \\
+Chọn $k$ phần tử, thứ tự quan trọng? & Có vị trí hoặc chức vụ & Chỉnh hợp \\
+Chọn $k$ phần tử, không xét thứ tự? & Chỉ quan tâm tập chọn & Tổ hợp \\
+Có “ít nhất một”? & Phần bù đơn giản & Tổng trừ không có \\
+Các điều kiện giao nhau? & Có nguy cơ đếm lặp & Bù trừ \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{2. Phân biệt bốn khái niệm dễ nhầm}
+\begin{center}
+\begin{tabularx}{\textwidth}{p{3cm}p{6cm}X}
+\toprule
+\textbf{Khái niệm} & \textbf{Điều kiện} & \textbf{Hệ quả} \\
+\midrule
+Xung khắc & $A\cap B=\varnothing$ & $P(A\cup B)=P(A)+P(B)$ \\
+Độc lập & $P(A\cap B)=P(A)P(B)$ & Biết $B$ không đổi xác suất $A$ \\
+Biến cố đối & $A\cup A^c=\Omega$ & $P(A^c)=1-P(A)$ \\
+Có điều kiện & Thu hẹp không gian về $B$ & $P(A\mid B)=P(A\cap B)/P(B)$ \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{3. Quy trình giải xác suất nhiều bước}
+\begin{keypoints}
+  \item Đặt tên biến cố và xác định thông tin đã biết.
+  \item Vẽ cây hoặc lập bảng, ghi xác suất có điều kiện ở từng nhánh.
+  \item Nhân dọc mỗi đường để có xác suất giao.
+  \item Cộng các đường rời nhau dẫn tới biến cố cần tìm.
+  \item Nếu hỏi nguyên nhân khi đã biết kết quả, dùng Bayes.
+\end{keypoints}
+
+\textbf{4. Quy trình mô tả một mẫu số liệu}
+\begin{keypoints}
+  \item Sắp xếp hoặc lập bảng tần số; kiểm tra tổng tần số.
+  \item Tính trung tâm: $\bar{x}$, $Me$, $Mo$.
+  \item Tính độ phân tán: $R$, $IQR$, $s^2$, $s$.
+  \item Xem ngoại lệ, độ lệch và các cụm dữ liệu.
+  \item Khi so sánh hai mẫu, nêu cả trung tâm và độ ổn định.
+\end{keypoints}
+
+\begin{leadbox}
+\textbf{Nguyên tắc chung:} công thức chỉ đúng khi mô hình đúng. Hãy mô tả một
+kết quả, kiểm tra thứ tự - lặp - điều kiện, rồi mới tính. Với xác suất, luôn xác
+định đúng không gian mẫu; với thống kê, luôn đọc kết quả trong bối cảnh dữ liệu.
+\end{leadbox}
+
+\end{document}

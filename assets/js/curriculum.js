@@ -428,7 +428,8 @@ function renderExampleReading(slide, position, exercise, topic, context = {}) {
   </details>` : `<aside class="example-reader__unavailable">Tài liệu nguồn chưa có lời giải được ánh xạ chắc chắn cho ví dụ này.</aside>`;
   const sourceParts = [
     statementPage ? `Nguồn: Trang ${statementPage}` : "",
-    solutionPage ? `Lời giải: Trang ${solutionPage}` : ""
+    solutionPage ? `Lời giải: Trang ${solutionPage}` : "",
+    !statementPage && example.sourceLines?.length ? `Nguồn LaTeX: dòng ${example.sourceLines[0]}–${example.sourceLines.at(-1)}` : ""
   ].filter(Boolean);
   return `<article class="example-reader" aria-labelledby="lesson-content-title">
     <header class="example-reader__bar">
@@ -445,7 +446,7 @@ function renderExampleReading(slide, position, exercise, topic, context = {}) {
         <section class="example-reader__question" aria-label="Đề bài"><p>${renderMathText(example.prompt)}</p></section>
         ${figureMarkup}
         ${solutionMarkup}
-        ${sourceParts.length ? `<footer class="example-reader__source">${sourceParts.map((part) => `<span>${part}</span>`).join("<i aria-hidden=\"true\">·</i>")}<em>${isSourceVerified ? "Đã đối chiếu PDF" : "Đang đối chiếu nguồn"}</em></footer>` : ""}
+        ${sourceParts.length ? `<footer class="example-reader__source">${sourceParts.map((part) => `<span>${part}</span>`).join("<i aria-hidden=\"true\">·</i>")}<em>${isSourceVerified ? (example.origin === "native-latex-source" ? "Đã đối chiếu LaTeX nguồn" : "Đã đối chiếu PDF") : "Đang đối chiếu nguồn"}</em></footer>` : ""}
       </section>
     </div>
     <dialog class="figure-zoom" data-figure-dialog><button type="button" data-figure-close aria-label="Đóng hình">×</button><img alt=""></dialog>
