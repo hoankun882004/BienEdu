@@ -182,6 +182,7 @@ function protectVietnameseProbabilityLabels(value) {
       .map((part) => {
         const trimmed = part.trim();
         const symbolicRemainder = trimmed
+          .replace(/[_^]\{[A-Za-z0-9 +\-]+\}/gu, "")
           .replace(/\\(?:cap|cup|mid)\s*/gu, "")
           .replace(/[A-Zijkn0-9+_\-[\]{}\s∩∪ΩΣ₀-₉ᵢⱼₖₙₓ⁰-⁹ⁿˣ]/gu, "");
         if (!symbolicRemainder) return trimmed;
@@ -210,17 +211,28 @@ function fractionOnEquationRight(value) {
     else if (character === "}") curly -= 1;
     else if (character === "/" && round === 0 && square === 0 && curly === 0) {
       const numerator = right.slice(0, index).trim();
-      const denominator = right.slice(index + 1).trim().replace(/^\[|\]$/gu, "");
-      return `${left} \\frac{${numerator}}{${denominator}}`;
+      // A following equality belongs to the derivation, not the denominator.
+      // Keep postfix factorials inside the denominator's balanced factor.
+      let denominatorEnd = right.length;
+      let denominatorDepth = 0;
+      for (let cursor = index + 1; cursor < right.length; cursor += 1) {
+        if ('([{'.includes(right[cursor])) denominatorDepth += 1;
+        else if (")]}".includes(right[cursor])) denominatorDepth -= 1;
+        else if (right[cursor] === "=" && denominatorDepth === 0) { denominatorEnd = cursor; break; }
+      }
+      const denominator = right.slice(index + 1, denominatorEnd).trim().replace(/^\[|\]$/gu, "");
+      const continuation = right.slice(denominatorEnd);
+      return `${left} \\frac{${numerator}}{${denominator}}${continuation ? ` ${continuation}` : ""}`;
     }
   }
   return value;
 }
 
 export function sourceFormulaToLatex(value) {
-  const source = protectVietnameseProbabilityLabels(mathMacroText(value))
-    .replace(/\|/gu, String.raw`\mid `);
-  const converted = fractionOnEquationRight(mathTextToLatex(source))
+  // Only conditional-probability bars inside P(...) become \mid. Bars outside
+  // the probability call may denote cardinality or absolute value.
+  const source = protectVietnameseProbabilityLabels(mathMacroText(value));
+  const converted = mathTextToLatex(fractionOnEquationRight(source))
     .replace(/_([A-Za-z0-9])/gu, "_{$1}")
     .replace(/\s+/gu, " ")
     .trim();

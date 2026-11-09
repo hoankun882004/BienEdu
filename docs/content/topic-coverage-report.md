@@ -1,6 +1,6 @@
 # Topic coverage report
 
-Generated: 2026-11-04T04:20:25.369Z
+Generated: 2026-11-08T15:54:48.514Z
 
 `Imported` không đồng nghĩa `Validated`. Cột kiểm duyệt chỉ dùng trạng thái validated khi có bằng chứng review bất biến.
 

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "bienedu.source-bound-corrections.v5.3",
+  "publication": "staged-only",
+  "humanApprovals": 0,
+  "corrections": [
+    {
+      "id": "fraction-grouping-1.2-example-5",
+      "benchmarkItemId": "pdf-rational-domain",
+      "recordId": "1.2-source-example-5",
+      "sourceBlockId": "1.2-worked-example-5",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "sourcePages": [
+        5,
+        66
+      ],
+      "originalExampleNumber": 5,
+      "cause": "PDF text-layer flattening detached the statement denominator, denominator squares and the solution fraction.",
+      "fields": [
+        {
+          "field": "title",
+          "before": "Cho f(x) = x ₓ₂₋₁.",
+          "after": "Ví dụ 5",
+          "mathematical": false
+        },
+        {
+          "field": "prompt",
+          "before": "Cho f(x) = x ₓ₂₋₁. Tính f′(2).",
+          "after": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\).",
+          "mathematical": true
+        },
+        {
+          "field": "answer",
+          "before": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+          "after": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+          "mathematical": true
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+          "after": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+          "mathematical": true
+        }
+      ]
+    },
+    {
+      "id": "radical-scope-1.3-example-4",
+      "benchmarkItemId": "pdf-root-domain",
+      "recordId": "1.3-source-example-4",
+      "sourceBlockId": "1.3-worked-example-4",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "sourcePages": [
+        5,
+        66
+      ],
+      "originalExampleNumber": 4,
+      "cause": "PDF extraction flattened the radical vinculum and denominator grouping.",
+      "fields": [
+        {
+          "field": "title",
+          "before": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
+          "after": "Ví dụ 4",
+          "mathematical": false
+        },
+        {
+          "field": "prompt",
+          "before": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
+          "after": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\).",
+          "mathematical": true
+        },
+        {
+          "field": "answer",
+          "before": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+          "after": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+          "mathematical": true
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+          "after": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+          "mathematical": true
+        }
+      ]
+    },
+    {
+      "id": "area-bound-order-14.1",
+      "benchmarkItemId": "pdf-area-absolute",
+      "recordId": "knowledge:14.1",
+      "sourceBlockId": "14.1-knowledge",
+      "sourceDocumentId": "cd12-cd14-calculus",
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "sourcePages": [
+        34
+      ],
+      "cause": "The curated theory detail omitted the source's explicitly printed bound-order condition a<b.",
+      "fields": [
+        {
+          "field": "formula:area-with-Ox.detail",
+          "before": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b.",
+          "after": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\).",
+          "mathematical": true
+        }
+      ]
+    }
+  ]
+}

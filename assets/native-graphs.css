@@ -1,0 +1,19 @@
+.native-graph{min-width:0;max-width:100%;margin:1rem 0;padding:1rem;border:1px solid #d7e1ef;border-radius:12px;background:#fff;color:#14233c}
+.native-graph__caption{font-size:.9rem;line-height:1.6;margin:0 0 .6rem}
+.native-graph__board{position:relative;width:100%!important;height:clamp(280px,35vw,390px)!important;overflow:hidden;border:1px solid #dbe3ef;border-radius:6px;touch-action:none}
+.native-graph__board:focus-visible{outline:3px solid #6c91ed;outline-offset:3px}
+.native-graph__controls{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;justify-content:flex-end}
+.native-graph__controls button{min-width:44px;min-height:44px;padding:8px 14px;border:1px solid #cedbef;border-radius:8px;background:#f4f7ff;color:#214ba9;font:inherit;font-size:.875rem;cursor:pointer}
+.example-reader__figures .native-graph__controls button{display:inline-block;width:auto;flex:0 0 auto;padding:8px 14px;border:1px solid #cedbef;background:#f4f7ff;cursor:pointer}
+.example-reader__figures figure[data-graph-replacement]{margin:0;border:0;overflow:visible}
+.native-graph__axes{display:block;margin-top:8px;color:#53657d}
+.native-graph__legend{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:.85rem;margin-top:8px}
+.native-variation{max-width:100%;overflow-x:auto;padding-bottom:8px}
+.native-variation table{border-collapse:collapse;width:100%;min-width:280px;text-align:center}
+.native-variation caption{text-align:left;padding:0 0 12px;font-size:.875rem}
+.native-variation th,.native-variation td{padding:14px 8px;border-bottom:1px solid #d7e1ef}
+.native-variation th{background:#f4f7ff}.native-variation__excluded{border-left:3px double #53657d;border-right:3px double #53657d}
+.native-graph-preview{max-width:1050px;margin:24px auto;padding:0 16px;font-family:'Be Vietnam Pro',system-ui,sans-serif;color:#14233c}
+.native-graph-preview article{padding:20px 0;border-bottom:1px solid #ccd8eb}.native-graph-preview pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem}
+.native-graph-preview a{color:#214ba9}.native-graph-preview summary{cursor:pointer;padding:12px 0;font-weight:600}
+@media(max-width:600px){.native-graph{padding:10px}.native-graph__board{height:300px!important}.native-graph-preview h1{font-size:1.7rem}}

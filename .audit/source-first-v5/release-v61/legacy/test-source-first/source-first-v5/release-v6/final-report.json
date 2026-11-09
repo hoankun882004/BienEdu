@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "bienedu.final.v6",
+  "generatedAt": "2026-11-08T16:15:18.725Z",
+  "status": "PARTIAL",
+  "scope": "Local batch and mobile improvements implemented and tested; not complete conversion/publication of all source material",
+  "verification": {
+    "sequential": true,
+    "results": [
+      {
+        "command": "npm.cmd run verify",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T15:54:41.367Z",
+        "finishedAt": "2026-11-08T16:02:53.796Z",
+        "log": "verify-final.log"
+      },
+      {
+        "command": "npm.cmd run test:source-first",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T16:02:53.797Z",
+        "finishedAt": "2026-11-08T16:07:46.545Z",
+        "log": "test-source-first-final.log"
+      },
+      {
+        "command": "npm.cmd run test:canonical",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T16:07:46.546Z",
+        "finishedAt": "2026-11-08T16:09:18.120Z",
+        "log": "test-canonical-final.log"
+      },
+      {
+        "command": "npm.cmd run test:graphs",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T16:09:18.121Z",
+        "finishedAt": "2026-11-08T16:10:16.444Z",
+        "log": "test-graphs-final.log"
+      },
+      {
+        "command": "npm.cmd run test:release",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T16:10:16.444Z",
+        "finishedAt": "2026-11-08T16:11:16.547Z",
+        "log": "test-release-final.log"
+      },
+      {
+        "command": "npm.cmd run test:mobile",
+        "exitCode": 0,
+        "startedAt": "2026-11-08T16:11:16.547Z",
+        "finishedAt": "2026-11-08T16:12:26.063Z",
+        "log": "test-mobile-final.log"
+      }
+    ]
+  },
+  "totals": {
+    "verify": {
+      "passed": [
+        238,
+        6
+      ],
+      "failed": [
+        0,
+        0
+      ],
+      "exitCode": 0
+    },
+    "test:source-first": {
+      "passed": [
+        63
+      ],
+      "failed": [
+        0
+      ],
+      "exitCode": 0
+    },
+    "test:canonical": {
+      "passed": [
+        24
+      ],
+      "failed": [
+        0
+      ],
+      "exitCode": 0
+    },
+    "test:graphs": {
+      "passed": [
+        17
+      ],
+      "failed": [
+        0
+      ],
+      "exitCode": 0
+    },
+    "test:release": {
+      "passed": [
+        9
+      ],
+      "failed": [
+        0
+      ],
+      "exitCode": 0
+    },
+    "test:mobile": {
+      "passed": [],
+      "failed": [],
+      "exitCode": 0
+    }
+  },
+  "browser": {
+    "mobileStates": 96,
+    "viewports": [
+      "320x568",
+      "360x800",
+      "390x844",
+      "430x932",
+      "768x1024",
+      "1024x768",
+      "1366x768",
+      "844x390"
+    ],
+    "releaseStates": 39,
+    "graphStates": 33,
+    "canonicalStates": 58,
+    "canonicalDOMViewports": 2,
+    "errors": [],
+    "fixtureApplyRollback": true,
+    "realRuntimeWrites": 0
+  },
+  "sources": {
+    "independent": 9,
+    "topics": 39,
+    "missingTopics": [
+      "CD24",
+      "CD25",
+      "CD26",
+      "CD27",
+      "CD34",
+      "CD35",
+      "CD36",
+      "CD37",
+      "CD38",
+      "CD39"
+    ],
+    "newPDFSemanticPairs": 1080,
+    "newExamplesPrepared": 10,
+    "remainingNewPairsNotConverted": 1070,
+    "sourceMatrix": ".audit/source-first-v5/release-v6/inventory.json"
+  },
+  "mathematics": {
+    "canonicalContentNodes": 68,
+    "formulaOccurrences": 222,
+    "uniqueLatexExpressions": 117,
+    "newSequenceSymbolicChecks": 10,
+    "pendingCorrectionFields": 35,
+    "v56PhysicalFields": 26,
+    "additionalOverlayFields": 9,
+    "sourceAmbiguitiesRetained": 88,
+    "mappingAmbiguitiesRetained": 5,
+    "calculusConflictsRetained": 9,
+    "unsupportedNativeCasesRetained": 4
+  },
+  "graphInventory": {
+    "total": 188,
+    "functionGraphs": 80,
+    "variationTables": 40,
+    "textAssets": 68,
+    "functionsReconstructed": 5,
+    "tablesReconstructed": 1,
+    "uncertifiedGraphs": 75,
+    "uncertifiedTables": 39,
+    "newPDFCropAssets": 0
+  },
+  "safety": {
+    "v55Fields": 9,
+    "v56PreparedFields": 26,
+    "stale": false,
+    "sourceFilesUnchanged": 9,
+    "rollbackIntact": true,
+    "actualActivation": "null",
+    "actualRuntime": "V5.5 applied; V5.6 prepared; V6 unapplied",
+    "progressKeysChanged": false,
+    "scoringChanged": false,
+    "originalSourcesModified": false,
+    "productionPublication": false,
+    "commitsPushesDeployments": 0,
+    "gitDiffCheckExit": 0
+  },
+  "performance": {
+    "assets": [
+      {
+        "file": "assets/vendor/jsxgraph/jsxgraphcore.mjs",
+        "bytes": 1027186,
+        "gzipBytes": 260471
+      },
+      {
+        "file": "assets/content/local-learning/9D8648F68B99A343A95E0B471C4A270C58DEB7C5D3562E37DF1F7AA753D0BA84.json",
+        "bytes": 301115,
+        "gzipBytes": 25677
+      },
+      {
+        "file": "assets/learning-v6.css",
+        "bytes": 3333,
+        "gzipBytes": 1238
+      },
+      {
+        "file": "assets/js/learning-v6.js",
+        "bytes": 3414,
+        "gzipBytes": 1479
+      }
+    ],
+    "jsxgraphOnOrdinaryLessons": 0,
+    "pdfLoadsDuringLearnerRendering": 0,
+    "sympyShipped": false,
+    "observedCLS": {
+      "min": 0,
+      "max": 0.28555425008138025
+    },
+    "observedDOMContentLoadedMs": {
+      "min": 23,
+      "max": 288.10000002384186
+    },
+    "note": "Local browser observations, not production CWV or a measured before/after speedup. CLS includes legacy page behavior."
+  },
+  "release": {
+    "planHash": "0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44",
+    "manifest": ".content-work/release-v6/0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44/manifest.json",
+    "applyCommand": "node scripts/source-first/release-v6.mjs apply --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+    "rollbackCommand": "node scripts/source-first/release-v6.mjs rollback --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+    "backups": ".content-work/release-v6/0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44/",
+    "preview": "http://127.0.0.1:8000/.audit/source-first-v5/release-v6/preview.html",
+    "serveCommand": "python -m http.server 8000 --bind 127.0.0.1",
+    "atomicity": "Atomic per file only. Apply content first, activation last; rollback in reverse order."
+  },
+  "architecture": {
+    "reactMigration": false,
+    "newDependencies": [],
+    "decision": "Keep ES Modules; migration does not solve source fidelity or authorization."
+  },
+  "limitations": [
+    "Most source material still requires canonical conversion and mathematical verification.",
+    "Ten topics have no authoritative source; CD23 remains unpublished.",
+    "No real release without fresh explicit authorization.",
+    "No exhaustive WCAG certification or production CWV claim.",
+    "Existing ambiguities, conflicts and unsupported figures are retained."
+  ],
+  "documentation": "docs/content/learning-v6-handoff.md"
+}

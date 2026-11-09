@@ -1,0 +1,7 @@
+{
+  "planHash": "407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A",
+  "manifest": ".content-work/graphs-v5.8/407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A/manifest.json",
+  "applyCommand": "node scripts/source-first/graph-experiment.mjs apply --authorize 407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A --development --execute",
+  "rollbackCommand": "node scripts/source-first/graph-experiment.mjs rollback --authorize 407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A --development --execute",
+  "realRuntimeWrites": 0
+}

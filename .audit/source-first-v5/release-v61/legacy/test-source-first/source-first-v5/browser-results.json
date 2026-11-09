@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "snapshotSha256": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "evidenceKey": "479B79E3D71468A12BF0F3999A58AC921684FF384D81BF499088CB1AA789CDA1",
+  "benchmarkEvidenceReused": false,
+  "v52FigureCacheKey": "C16B8B8BEF3BAC6188333A035ED8A3063E592F99626E89AE59365549F9C95EC7",
+  "viewports": [
+    1366,
+    390
+  ],
+  "sourceItems": 40,
+  "benchmarkSheets": 10,
+  "figureSheets": 4,
+  "zoomAndContext": true,
+  "keyboardNavigation": true,
+  "errorFilters": true,
+  "beforeAfterDiff": true,
+  "v3VersionBoundExport": true,
+  "distinctUnresolvedDecisions": true,
+  "reviewRefresh": true,
+  "confirmationInvalidatedOnEdit": true,
+  "completedGateDisplayTestedInIsolatedFixture": true,
+  "humanApprovalNotInferredFromExport": true,
+  "errorCount": 0,
+  "mathFallbackErrors": 0,
+  "patchExportValidated": true,
+  "httpWrites": "rejected"
+}

@@ -1,0 +1,26 @@
+{
+  "sequential": true,
+  "results": [
+    {
+      "command": "npm.cmd run content:graphs:preview",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T12:30:12.935Z",
+      "finishedAt": "2026-11-06T12:30:23.887Z",
+      "log": "content-graphs-preview-final.log"
+    },
+    {
+      "command": "npm.cmd run test:graphs",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T12:30:23.888Z",
+      "finishedAt": "2026-11-06T12:30:59.044Z",
+      "log": "test-graphs-final.log"
+    },
+    {
+      "command": "npm.cmd run verify",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T12:30:59.045Z",
+      "finishedAt": "2026-11-06T12:38:38.268Z",
+      "log": "verify-final.log"
+    }
+  ]
+}

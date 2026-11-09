@@ -1,0 +1,30 @@
+
+> test:graphs
+> node --test tests/graph-engine-v58.test.js && node .audit/graph-v58-browser.mjs
+
+✔ graph domain/branches: reciprocal (5.7441ms)
+✔ graph domain/branches: shifted-pole (0.7289ms)
+✔ graph domain/branches: radical (0.4912ms)
+✔ graph domain/branches: logarithm (0.3568ms)
+✔ graph domain/branches: polynomial (0.333ms)
+✔ graph domain/branches: piecewise (1.0647ms)
+✔ graph domain/branches: removable-hole (0.5282ms)
+✔ graph domain/branches: trigonometric (0.2288ms)
+✔ expression grammar: precedence, parameters, exact groupings (0.2224ms)
+✔ expression grammar rejects arbitrary code, unknown syntax and excessive work (0.5762ms)
+✔ schema rejects malformed source, unsafe labels, unverified graphs and intervals (1.2363ms)
+✔ piecewise open/closed endpoints and removable holes are explicit (0.144ms)
+✔ all existing figure IDs preserved; no second queue; verified source pilot only (12.0641ms)
+✔ variation table preserves source signs, extrema and infinity without guessed function (1.6246ms)
+✔ V5.5/V5.6 source/runtime/backups and authorization remain intact (6064.2045ms)
+✔ vendored JSXGraph bytes match existing exact install (1.3318ms)
+✔ isolated explicit apply, interrupted recovery, idempotency, CAS and rollback (417.7725ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6685.3421
+{"passed":true,"states":30,"errors":[]}

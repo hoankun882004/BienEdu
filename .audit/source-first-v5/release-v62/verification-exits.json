@@ -1,0 +1,17 @@
+{
+  "planHash": "C314A1221CE70F2A41859E5CEBE216DF4030F6B0FB406EEB0B668A69E2D9E6E3",
+  "sequential": true,
+  "actualRuntimeWrites": 0,
+  "historicalBenchmarkIsolated": true,
+  "results": [
+    {
+      "command": "npm.cmd run verify",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs verify",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:04:32.526Z",
+      "finishedAt": "2026-11-09T11:22:14.810Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/01-verify.log"
+    }
+  ]
+}

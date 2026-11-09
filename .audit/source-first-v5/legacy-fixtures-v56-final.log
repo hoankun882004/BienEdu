@@ -1,0 +1,36 @@
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (1450.0143ms)
+✔ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (12454.2818ms)
+✔ development execution is blocked in production/CI and requires explicit batch authorization (4987.4149ms)
+✔ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (12800.5365ms)
+✔ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (13850.6098ms)
+✔ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (8030.1177ms)
+✔ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (4998.9758ms)
+✔ source/crop hash and runtime dependency changes invalidate prepared batches (4850.1262ms)
+✔ actual project retains its authorized V5.5 state and the existing fraction queue is never overwritten (4.2008ms)
+✔ V5.3 classifies every source item and records every legitimate usage without inventing targets (6.4206ms)
+✔ protected cross-edition expressions and the positional legacy example fail closed (266.0141ms)
+✔ semantic formula identity survives reordering and rejects ambiguous or changed structures (30.3132ms)
+✔ source-hash and stable Example identity mismatch cannot become an approved mapping (57.1616ms)
+✔ exact source normalization is idempotent, guarded and produces reversible field-only previews (9.7366ms)
+✔ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (5776.7106ms)
+✔ CD22.7 retains native Bayes notation; no invented conditions or numerical correction (0.3565ms)
+✔ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (3362.9472ms)
+✔ V5.4 comparison separates supported native matches, guarded defects and unproven PDF transcriptions (356.9094ms)
+✔ structural evidence distinguishes fractions, radical scope, exponents and printed conditions (2.6586ms)
+✔ field decisions are immutable, separately attested, idempotent and reject stale source/version/conditions/parents (89.7574ms)
+✔ dry-run requires all nine real field approvals, rejects missing approval and blocks multi-file transactions (445.1072ms)
+✔ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (3020.4731ms)
+✔ curated Knowledge detail adapter changes only its approved string and retains all other source bytes (329.6983ms)
+✔ stale runtime, source mismatch and superseded human decisions block publication (1026.4214ms)
+✔ failure before the atomic rename leaves runtime intact; retry recovers the durable intent (869.1743ms)
+✔ an edit during the transaction is not overwritten; corrupted backups prevent rollback (1060.9445ms)
+✔ a post-replacement interrupted state is reconciled from the immutable intent and backup (964.4663ms)
+✔ protected topics, unsupported fields and forged after values cannot be released (615.9686ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 63896.916

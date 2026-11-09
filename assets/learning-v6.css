@@ -1,0 +1,51 @@
+/* Mobile reading polish. Existing BienEdu palette, fonts and routes retained. */
+:root{--control-min:2.75rem;--focus-ring:#1d4ed8}
+.menu-toggle,.grade-switcher{min-height:var(--control-min)}
+.learning-workspace :is(button,summary,a):focus-visible,.site-header :is(button,a):focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+.lesson-navigation{font-variant-numeric:tabular-nums}
+.lesson-navigation :is(button,.nav-button){min-height:var(--control-min)}
+.practice-feedback[role=status]{scroll-margin-block:1rem 5rem}
+.native-variation{overscroll-behavior-inline:contain}
+.example-reader__content,.example-reader__content>*,.example-index,.example-index ol,.example-card,.example-reader__figures{min-width:0;max-width:100%}
+@media(max-width:900px){
+  .learning-workspace .lesson-navigation{grid-template-columns:minmax(0,1fr) 3.5rem minmax(0,1fr);gap:.5rem;padding-inline:.75rem}
+  .lesson-navigation :is(button,.nav-button){min-height:3rem;white-space:normal;font-size:.8125rem;line-height:1.3}
+  .lesson-navigation__position{min-width:0}
+  .workspace-heading>:is(a,button){width:2.75rem;height:2.75rem}
+  .workspace-heading h1{text-wrap:pretty;line-height:1.3}
+  .workspace-phase-nav button{min-height:2.9rem}
+  .workspace-phase-nav{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+  .workspace-phase-nav button small{color:#52637b}
+  .workspace-phase-nav button:disabled{color:#65748a}
+  .example-index ol{display:flex;flex-wrap:nowrap;gap:.375rem;overflow-x:auto;overscroll-behavior-inline:contain;scroll-padding-inline:.25rem;padding-bottom:.35rem;scrollbar-width:thin}
+  .example-index li{flex:0 0 auto}
+  .example-index a{min-width:2.75rem;min-height:2.75rem}
+  .example-reader__content{gap:.8rem}
+  .example-reader__solution>summary{min-height:3rem;align-items:center}
+  .example-reader__question>p{line-height:1.65}
+  .example-reader__solution li strong{max-width:100%;min-width:0}
+  .practice-stage{padding:1rem .875rem calc(5.5rem + env(safe-area-inset-bottom))}
+  .practice-options button{min-height:3.25rem;padding:.75rem;gap:.65rem}
+  .practice-feedback{font-size:.9375rem;line-height:1.65}
+  .knowledge-reader__points{align-self:start}
+  .lesson-page-picker a{min-width:2.75rem;min-height:2.75rem}
+}
+@media(max-width:47.5rem){
+  .site-header__inner{padding-block:.35rem}
+  .site-nav a{min-height:2.75rem;display:flex;align-items:center}
+  .site-nav.is-open{max-height:calc(100dvh - 4.5rem);overflow-y:auto;overscroll-behavior:contain}
+  .home-hero__copy{padding-block:1.75rem 1.25rem}
+  .home-hero__copy>p{font-size:1rem;line-height:1.65}
+  .home-hero .hero-actions{gap:.75rem}
+  .hero-actions :is(.button,.text-link){min-height:2.75rem;display:inline-flex;align-items:center}
+  .topic-source-card,.lesson-unavailable{min-width:0;overflow-wrap:anywhere}
+  .curriculum-toolbar input{font-size:1rem;min-height:2.75rem}
+  .example-reader__bar{display:none}
+  .lesson-kicker{font-size:.6875rem;letter-spacing:.035em}
+}
+@media(max-height:500px) and (orientation:landscape){
+  .workspace-top{padding-block:.45rem}.workspace-heading h1{font-size:1rem}
+  .workspace-phase-nav{position:static}.lesson-navigation{padding-block:.35rem}
+  .native-graph__board{height:280px!important}
+}
+@media(prefers-reduced-motion:reduce){.learning-workspace *{scroll-behavior:auto!important}}

@@ -13,7 +13,7 @@ import { getExampleContent } from "./data/example-content.js?v=19.0";
 import { getKnowledgeContent, getProblemTypesForTopic, getTopicKnowledgeContent } from "./data/knowledge-content.js?v=19.0";
 import { hasGradeContent } from "./data/grade-catalog.js?v=8.2";
 import { renderGradeEmptyState } from "./components/grade-empty-state.js?v=8.2";
-import { renderKnowledgeMarkdown, renderMathText } from "./components/markdown-math-renderer.js?v=15.0";
+import { renderKnowledgeMarkdown, renderMathText, humanVerificationStatus } from "./components/markdown-math-renderer.js?v=15.0";
 import { filterCurriculum, findExerciseType, findTopic } from "./domain/curriculum-filter.js?v=8.2";
 import { buildActivePracticeSet } from "./domain/practice-bank.js?v=15.0";
 import { createFinalExam, countAnswered, gradeFinalExam } from "./domain/exam-engine.js?v=8.6";
@@ -398,7 +398,7 @@ function contextualGuideMarkup(problemType) {
       <div>${renderMathText(problemType.methodology)}</div>
     </details>
     ${verifiedNote ? `<details data-context-panel="note" ${state.note ? "open" : ""}>
-      <summary><span>Lưu ý</span><small>Đã đối chiếu nguồn</small><b aria-hidden="true">＋</b></summary>
+      <summary><span>Lưu ý</span><small>Lưu ý từ tài liệu</small><b aria-hidden="true">＋</b></summary>
       <div>${renderMathText(problemType.note)}</div>
     </details>` : ""}
   </aside>`;
@@ -446,7 +446,7 @@ function renderExampleReading(slide, position, exercise, topic, context = {}) {
         <section class="example-reader__question" aria-label="Đề bài"><p>${renderMathText(example.prompt)}</p></section>
         ${figureMarkup}
         ${solutionMarkup}
-        ${sourceParts.length ? `<footer class="example-reader__source">${sourceParts.map((part) => `<span>${part}</span>`).join("<i aria-hidden=\"true\">·</i>")}<em>${isSourceVerified ? (example.origin === "native-latex-source" ? "Đã đối chiếu LaTeX nguồn" : "Đã đối chiếu PDF") : "Đang đối chiếu nguồn"}</em></footer>` : ""}
+        ${sourceParts.length ? `<footer class="example-reader__source">${sourceParts.map((part) => `<span>${part}</span>`).join("<i aria-hidden=\"true\">·</i>")}<em>${humanVerificationStatus(example).mathematical ? "Đã kiểm duyệt" : humanVerificationStatus(example).source ? "Đã đối chiếu nguồn" : example.origin === "native-latex-source" ? "Tài liệu LaTeX nguồn" : "Tài liệu PDF nguồn"}</em></footer>` : ""}
       </section>
     </div>
     <dialog class="figure-zoom" data-figure-dialog><button type="button" data-figure-close aria-label="Đóng hình">×</button><img alt=""></dialog>

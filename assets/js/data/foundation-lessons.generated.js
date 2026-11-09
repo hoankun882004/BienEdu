@@ -4611,17 +4611,17 @@ const examples = {
     },
     {
       "id": "1.2-source-example-5",
-      "title": "Cho f(x) = x ₓ₂₋₁.",
-      "prompt": "Cho f(x) = x ₓ₂₋₁. Tính f′(2).",
+      "title": "Ví dụ 5",
+      "prompt": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+          "expression": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
           "text": null
         }
       ],
-      "answer": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+      "answer": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -4865,17 +4865,17 @@ const examples = {
     },
     {
       "id": "1.3-source-example-2",
-      "title": "Tính đạo hàm của y = √3 −2x.",
-      "prompt": "Tính đạo hàm của y = √3 −2x.",
+      "title": "Ví dụ 2",
+      "prompt": "Tính đạo hàm của \\(y=\\sqrt{3-2x}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+          "expression": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
           "text": null
         }
       ],
-      "answer": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+      "answer": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -4901,17 +4901,17 @@ const examples = {
     },
     {
       "id": "1.3-source-example-3",
-      "title": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
-      "prompt": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+      "title": "Ví dụ 3",
+      "prompt": "Tính đạo hàm của \\(y=\\sqrt{x^2+1}\\) tại \\(x=1\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+          "expression": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
           "text": null
         }
       ],
-      "answer": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+      "answer": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -4937,17 +4937,17 @@ const examples = {
     },
     {
       "id": "1.3-source-example-4",
-      "title": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
-      "prompt": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
+      "title": "Ví dụ 4",
+      "prompt": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+          "expression": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
           "text": null
         }
       ],
-      "answer": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+      "answer": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -4973,17 +4973,17 @@ const examples = {
     },
     {
       "id": "1.3-source-example-5",
-      "title": "Tính đạo hàm của y = 1/√2x + 3.",
-      "prompt": "Tính đạo hàm của y = 1/√2x + 3.",
+      "title": "Ví dụ 5",
+      "prompt": "Tính đạo hàm của \\(y=\\frac{1}{\\sqrt{2x+3}}\\).",
       "analysis": [],
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+          "expression": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
           "text": null
         }
       ],
-      "answer": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+      "answer": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
       "takeaway": null,
       "sourcePages": [
         5,
@@ -5595,11 +5595,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+          "expression": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
           "text": null
         }
       ],
-      "answer": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+      "answer": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
       "takeaway": null,
       "sourcePages": [
         6,
@@ -23207,11 +23207,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+          "expression": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
           "text": null
         }
       ],
-      "answer": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+      "answer": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
       "takeaway": null,
       "sourcePages": [
         49,
@@ -23257,11 +23257,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+          "expression": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
           "text": null
         }
       ],
-      "answer": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+      "answer": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
       "takeaway": null,
       "sourcePages": [
         50,
@@ -23307,11 +23307,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+          "expression": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
           "text": null
         }
       ],
-      "answer": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+      "answer": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
       "takeaway": null,
       "sourcePages": [
         50,
@@ -23357,11 +23357,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+          "expression": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
           "text": null
         }
       ],
-      "answer": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+      "answer": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
       "takeaway": null,
       "sourcePages": [
         50,
@@ -23407,11 +23407,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+          "expression": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
           "text": null
         }
       ],
-      "answer": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+      "answer": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
       "takeaway": null,
       "sourcePages": [
         51,
@@ -23457,11 +23457,11 @@ const examples = {
       "steps": [
         {
           "label": "Lời giải từ tài liệu",
-          "expression": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+          "expression": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
           "text": null
         }
       ],
-      "answer": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+      "answer": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
       "takeaway": null,
       "sourcePages": [
         51,

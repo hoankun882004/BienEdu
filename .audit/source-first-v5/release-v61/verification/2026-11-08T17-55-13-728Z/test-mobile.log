@@ -1,0 +1,7 @@
+
+> test:mobile
+> node scripts/source-first/compat-suites-v61.mjs test:mobile
+
+[V6.1] test:mobile: unchanged historical assertions run in disposable V5.5 benchmark; active V6.0 is not rolled back.
+{"states":96,"errors":[],"overflow":[]}
+{"mode":"mobile","passed":true,"states":128,"errors":0,"realRuntimeWrites":0}

@@ -1,5 +1,7 @@
 # BienEdu V5 — Mathematical content rendering
 
+> V5.1 supersedes the historical badge policy below: import, source mapping, legacy agent reviews and rendering checks produce no visible verification badge. Only explicit human evidence bound to the exact content/version/source may show source verification or mathematical approval. See [the V5.1 report](../content/source-verification-v5.1.md).
+
 ## Shared rendering boundary
 
 All imported Knowledge formulas and inline mathematical fragments continue through `assets/js/components/markdown-math-renderer.js`. V5 does not add a second rendering component or a PDF fallback.

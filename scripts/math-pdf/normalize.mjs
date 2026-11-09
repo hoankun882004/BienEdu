@@ -1,6 +1,16 @@
 import { createHash } from "node:crypto";
 import katex from "katex";
 
+// Source-specific review patches; never infer grouping from ambiguous text.
+export function normalizeBoundSourceField({ recordId, sourceHash, field, value }, corrections) {
+  const correction = corrections.find((entry) => entry.recordId === recordId && entry.fields.some((patch) => patch.field === field));
+  if (!correction) return { value, changed: false, correctionId: null };
+  if (correction.sourceHash !== sourceHash) throw new Error("Source correction hash mismatch");
+  const patch = correction.fields.find((entry) => entry.field === field);
+  if (value !== patch.before && value !== patch.after) throw new Error("Source correction field/version mismatch");
+  return { value: patch.after, changed: value !== patch.after, correctionId: correction.id, humanApprovalRequired: true };
+}
+
 const SECTION_PATTERNS = [
   { section: "practice", pattern: /^(?:\d+[.)]\s*)?(?:bài tập tự luyện|bài tập luyện tập|luyện tập|thực hành)\b/i },
   { section: "worked_examples", pattern: /^(?:\d+[.)]\s*)?(?:ví dụ(?: nhanh)?|bài toán mẫu|ví dụ có lời giải)\b/i },

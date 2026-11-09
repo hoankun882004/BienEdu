@@ -119,7 +119,7 @@ try {
   });
   assert.ok(medical.annotations.includes(String.raw`\mathrm{P}(\text{bệnh}\mid +) = \frac{\mathrm{P}(\text{bệnh})\mathrm{P}(+\mid \text{bệnh})}{\mathrm{P}(+)}`));
   assert.equal(medical.hasFraction, true);
-  assert.equal(medical.verification, "source-verified");
+  assert.equal(medical.verification, "source-mapped");
   assert.equal(await page.locator(".math-render-error, .katex-error").count(), 0);
 
   await page.goto(`${origin}/documents.html?grade=12&topic=CD22&type=22.5&section=example&item=1`, { waitUntil: "domcontentloaded" });
@@ -127,7 +127,7 @@ try {
   const exampleText = await page.locator(".example-reader").innerText();
   assert.match(exampleText, /Tài liệu nguồn chưa có lời giải được ánh xạ chắc chắn/u);
   assert.match(exampleText, /Nguồn LaTeX: dòng 716–718/u);
-  assert.match(exampleText, /Đã đối chiếu LaTeX nguồn/u);
+  assert.match(exampleText, /Tài liệu LaTeX nguồn/u);
   assert.equal(await page.locator(".example-reader__solution").count(), 0);
 
   assert.deepEqual(errors, []);

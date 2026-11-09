@@ -1,0 +1,50 @@
+{
+  "planHash": "D80BF69A98028804C1D79C65D6580BB52F1E6832AFDBA2284A51514ABAF2C7C9",
+  "sequential": true,
+  "legacyBenchmarkIsolated": true,
+  "actualRuntimeWrites": 0,
+  "results": [
+    {
+      "command": "npm.cmd run verify",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T17:55:13.730Z",
+      "finishedAt": "2026-11-08T18:04:04.467Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/verify.log"
+    },
+    {
+      "command": "npm.cmd run test:source-first",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T18:04:04.468Z",
+      "finishedAt": "2026-11-08T18:09:10.953Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/test-source-first.log"
+    },
+    {
+      "command": "npm.cmd run test:canonical",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T18:09:10.954Z",
+      "finishedAt": "2026-11-08T18:10:46.620Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/test-canonical.log"
+    },
+    {
+      "command": "npm.cmd run test:graphs",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T18:10:46.620Z",
+      "finishedAt": "2026-11-08T18:11:49.897Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/test-graphs.log"
+    },
+    {
+      "command": "npm.cmd run test:release",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T18:11:49.897Z",
+      "finishedAt": "2026-11-08T18:16:04.966Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/test-release.log"
+    },
+    {
+      "command": "npm.cmd run test:mobile",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T18:16:04.967Z",
+      "finishedAt": "2026-11-08T18:18:36.243Z",
+      "log": ".audit/source-first-v5/release-v61/verification/2026-11-08T17-55-13-728Z/test-mobile.log"
+    }
+  ]
+}

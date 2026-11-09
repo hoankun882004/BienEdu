@@ -13,6 +13,7 @@ import hashlib
 import os
 import re
 import sys
+import importlib.util
 from pathlib import Path
 
 import pymupdf
@@ -820,6 +821,7 @@ def make_lesson(
     solutions: list[dict],
     document_id: str,
     document: pymupdf.Document,
+    *, review_candidates: bool = False, read_only: bool = False,
 ) -> tuple[dict, list[dict]]:
     method, note = method_from(theory)
     verified_source = VERIFIED_SOURCE_OVERRIDES.get(code)
@@ -888,7 +890,7 @@ def make_lesson(
             token.replace(" ", "") in prompt_text.lower().replace(" ", "")
             for token in VISUAL_DEPENDENCIES
         )
-        asset_references = [source_region_asset(document, document_id, code, number, prompt)] if visual else []
+        asset_references = [source_region_asset(document, document_id, code, number, prompt)] if visual and not read_only else []
         examples.append({
             "id": f"{code}-source-example-{number}",
             "title": title,
@@ -920,7 +922,72 @@ def make_lesson(
             "reviewStatus": "verified" if verified_example else "needs-review",
             "contentVersion": "final-pdf-v3",
         })
+    if review_candidates:
+        definitions = json.loads((ROOT / "scripts/source-first/corrections-v53.json").read_text(encoding="utf-8"))["corrections"]
+        source_hash = hashlib.sha256(Path(document.name).read_bytes()).hexdigest().upper()
+        for example in examples:
+            candidate = next((item for item in definitions if item["recordId"] == example["id"]), None)
+            if candidate is None:
+                continue
+            if candidate["sourceHash"] != source_hash or candidate["sourceBlockId"] != example["sourceBlockId"] or candidate["sourceDocumentId"] != document_id:
+                raise RuntimeError("Source correction identity/hash mismatch")
+            example["originalExtractedFields"] = {}
+            for patch in candidate["fields"]:
+                container, key = example, patch["field"]
+                if key == "source-solution.expression":
+                    steps = [step for step in example["steps"] if step["label"] == "Lời giải từ tài liệu"]
+                    if len(steps) != 1:
+                        raise RuntimeError("Ambiguous source solution field")
+                    container, key = steps[0], "expression"
+                before = container.get(key)
+                if before not in (patch["before"], patch["after"]):
+                    raise RuntimeError(f"Unexpected source extraction for {example['id']}:{patch['field']}")
+                example["originalExtractedFields"][patch["field"]] = before
+                container[key] = patch["after"]
+            example["reviewStatus"] = "needs-review"
+            example["verification"] = "source-corrected-needs-human-review"
+            example["sourceCorrectionId"] = candidate["id"]
+    correction_spec = importlib.util.spec_from_file_location("bound_batch", ROOT / "scripts/source-first/import-corrections.py")
+    correction_module = importlib.util.module_from_spec(correction_spec)
+    correction_spec.loader.exec_module(correction_module)
+    for example in examples:
+        # The legacy V5.3 read-only pilot intentionally loads only p.66 and
+        # returns examples 1.2/5 and 1.3/4. Do not pretend that its untargeted
+        # 1.3/5 has a source solution (the real solution starts on p.67).
+        if review_candidates and example["solutionSourcePage"] is None:
+            continue
+        correction_module.apply_corrections(example, document_id, document, ROOT)
     return reading, examples
+
+
+def stage_source_review_candidates() -> dict:
+    """Replay only affected examples; do not regenerate runtime or figure assets."""
+    document = pymupdf.open(ROOT / "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf")
+    allowed = expected_codes({1})
+    theory = split_sections(page_blocks(document, 5, 5), allowed)
+    solutions = split_sections(page_blocks(document, 66, 66), allowed)
+    result = []
+    for code, number in [("1.2", 5), ("1.3", 4)]:
+        _, examples = make_lesson(code, theory[code], solutions[code], "cd01-cd07-functions", document, review_candidates=True)
+        example = next(item for item in examples if item["originalExampleNumber"] == number)
+        prompt = numbered_items(theory[code])[number]
+        answer = numbered_items(solutions[code])[number]
+        result.append({"record": example, "sourceRegions": [{"page": entry["page"], "bbox": [entry["x0"], entry["y0"], entry["x1"], entry["y1"]]} for entry in [prompt, answer]]})
+    return {"publication": "staged-only", "runtimeWrites": 0, "candidates": result}
+
+
+def stage_fraction_candidates() -> dict:
+    """Exact affected fields replay through the real generator, no asset writes."""
+    registry = json.loads((ROOT / "scripts/source-first/corrections-v56.json").read_text(encoding="utf-8"))["corrections"]
+    document = pymupdf.open(ROOT / registry[0]["sourceFile"])
+    allowed = expected_codes({1,6})
+    theory = split_sections(page_blocks(document, 4,65),allowed)
+    solutions = split_sections(page_blocks(document,66,98),allowed)
+    result=[]
+    for code in dict.fromkeys(entry["code"] for entry in registry):
+        _, examples=make_lesson(code,theory[code],solutions[code],"cd01-cd07-functions",document,review_candidates=True,read_only=True)
+        result.extend(example for example in examples if any(entry["recordId"]==example["id"] for entry in registry))
+    return {"publication":"staged-only", "runtimeWrites":0, "candidates":result}
 
 
 def main() -> None:
@@ -1057,4 +1124,11 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    if "--review-fraction-candidates" in sys.argv:
+        sys.stdout.reconfigure(encoding="utf-8")
+        print(json.dumps(stage_fraction_candidates(), ensure_ascii=False, indent=2))
+    elif "--review-candidates" in sys.argv:
+        sys.stdout.reconfigure(encoding="utf-8")
+        print(json.dumps(stage_source_review_candidates(), ensure_ascii=False, indent=2))
+    else:
+        raise SystemExit("Direct runtime regeneration is blocked while V5.3 corrections await human approval. Use --review-candidates for targeted read-only replay.")

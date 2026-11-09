@@ -1,0 +1,1607 @@
+{
+  "plan": {
+    "schemaVersion": "bienedu.development-continuation.v5.6",
+    "mode": "local-development-experiment",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "parentFiles": [
+      {
+        "file": "assets/js/data/calculus-knowledge-details.js",
+        "afterHash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754"
+      },
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "afterHash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968"
+      }
+    ],
+    "files": [
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "beforeHash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968",
+        "afterHash": "5B7A039D213A289809C42B159C7EACC017F5890F638A72E19A22F499CFF6CE5E",
+        "changes": [
+          {
+            "recordId": "1.3-source-example-2",
+            "fieldId": "answer",
+            "sourceBlockId": "1.3-worked-example-2",
+            "correctionId": "fraction-v56-1.3-2",
+            "binding": {
+              "recordHash": "28344749DEDA64946D879AB66F67BE34981B32654B4B2B248188EED560A58E22"
+            },
+            "before": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+            "after": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    429.32568359375,
+                    560.280029296875,
+                    457.6280517578125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    669.876708984375,
+                    560.280029296875,
+                    694.9400634765625
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-2",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "1.3-worked-example-2",
+            "correctionId": "fraction-v56-1.3-2",
+            "binding": {
+              "recordHash": "28344749DEDA64946D879AB66F67BE34981B32654B4B2B248188EED560A58E22"
+            },
+            "before": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+            "after": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    429.32568359375,
+                    560.280029296875,
+                    457.6280517578125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    669.876708984375,
+                    560.280029296875,
+                    694.9400634765625
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-2",
+            "fieldId": "prompt",
+            "sourceBlockId": "1.3-worked-example-2",
+            "correctionId": "fraction-v56-1.3-2",
+            "binding": {
+              "recordHash": "28344749DEDA64946D879AB66F67BE34981B32654B4B2B248188EED560A58E22"
+            },
+            "before": "Tính đạo hàm của y = √3 −2x.",
+            "after": "Tính đạo hàm của \\(y=\\sqrt{3-2x}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    429.32568359375,
+                    560.280029296875,
+                    457.6280517578125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    669.876708984375,
+                    560.280029296875,
+                    694.9400634765625
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-2",
+            "fieldId": "title",
+            "sourceBlockId": "1.3-worked-example-2",
+            "correctionId": "fraction-v56-1.3-2",
+            "binding": {
+              "recordHash": "28344749DEDA64946D879AB66F67BE34981B32654B4B2B248188EED560A58E22"
+            },
+            "before": "Tính đạo hàm của y = √3 −2x.",
+            "after": "Ví dụ 2",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    429.32568359375,
+                    560.280029296875,
+                    457.6280517578125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    669.876708984375,
+                    560.280029296875,
+                    694.9400634765625
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-3",
+            "fieldId": "answer",
+            "sourceBlockId": "1.3-worked-example-3",
+            "correctionId": "fraction-v56-1.3-3",
+            "binding": {
+              "recordHash": "95BE71E6AA329CE22762DB17A56EA41EDDE7DCF828948EBC64B319973C9648DB"
+            },
+            "before": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+            "after": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    457.6280517578125,
+                    560.280029296875,
+                    476.924072265625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    694.9400634765625,
+                    560.280029296875,
+                    714.235107421875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-3",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "1.3-worked-example-3",
+            "correctionId": "fraction-v56-1.3-3",
+            "binding": {
+              "recordHash": "95BE71E6AA329CE22762DB17A56EA41EDDE7DCF828948EBC64B319973C9648DB"
+            },
+            "before": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+            "after": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    457.6280517578125,
+                    560.280029296875,
+                    476.924072265625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    694.9400634765625,
+                    560.280029296875,
+                    714.235107421875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-3",
+            "fieldId": "prompt",
+            "sourceBlockId": "1.3-worked-example-3",
+            "correctionId": "fraction-v56-1.3-3",
+            "binding": {
+              "recordHash": "95BE71E6AA329CE22762DB17A56EA41EDDE7DCF828948EBC64B319973C9648DB"
+            },
+            "before": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+            "after": "Tính đạo hàm của \\(y=\\sqrt{x^2+1}\\) tại \\(x=1\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    457.6280517578125,
+                    560.280029296875,
+                    476.924072265625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    694.9400634765625,
+                    560.280029296875,
+                    714.235107421875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-3",
+            "fieldId": "title",
+            "sourceBlockId": "1.3-worked-example-3",
+            "correctionId": "fraction-v56-1.3-3",
+            "binding": {
+              "recordHash": "95BE71E6AA329CE22762DB17A56EA41EDDE7DCF828948EBC64B319973C9648DB"
+            },
+            "before": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+            "after": "Ví dụ 3",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    457.6280517578125,
+                    560.280029296875,
+                    476.924072265625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 66,
+                  "bbox": [
+                    35,
+                    694.9400634765625,
+                    560.280029296875,
+                    714.235107421875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-5",
+            "fieldId": "answer",
+            "sourceBlockId": "1.3-worked-example-5",
+            "correctionId": "fraction-v56-1.3-5",
+            "binding": {
+              "recordHash": "3741E22F0B3486112D02BE5CF660860720DA8A91B73B8EE695739B905DA383FC"
+            },
+            "before": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+            "after": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    487.2137451171875,
+                    560.280029296875,
+                    515.51513671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    51.287086486816406,
+                    560.280029296875,
+                    69.43518829345703
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-5",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "1.3-worked-example-5",
+            "correctionId": "fraction-v56-1.3-5",
+            "binding": {
+              "recordHash": "3741E22F0B3486112D02BE5CF660860720DA8A91B73B8EE695739B905DA383FC"
+            },
+            "before": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+            "after": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    487.2137451171875,
+                    560.280029296875,
+                    515.51513671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    51.287086486816406,
+                    560.280029296875,
+                    69.43518829345703
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-5",
+            "fieldId": "prompt",
+            "sourceBlockId": "1.3-worked-example-5",
+            "correctionId": "fraction-v56-1.3-5",
+            "binding": {
+              "recordHash": "3741E22F0B3486112D02BE5CF660860720DA8A91B73B8EE695739B905DA383FC"
+            },
+            "before": "Tính đạo hàm của y = 1/√2x + 3.",
+            "after": "Tính đạo hàm của \\(y=\\frac{1}{\\sqrt{2x+3}}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    487.2137451171875,
+                    560.280029296875,
+                    515.51513671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    51.287086486816406,
+                    560.280029296875,
+                    69.43518829345703
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.3-source-example-5",
+            "fieldId": "title",
+            "sourceBlockId": "1.3-worked-example-5",
+            "correctionId": "fraction-v56-1.3-5",
+            "binding": {
+              "recordHash": "3741E22F0B3486112D02BE5CF660860720DA8A91B73B8EE695739B905DA383FC"
+            },
+            "before": "Tính đạo hàm của y = 1/√2x + 3.",
+            "after": "Ví dụ 5",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 5,
+                  "bbox": [
+                    35,
+                    487.2137451171875,
+                    560.280029296875,
+                    515.51513671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    51.287086486816406,
+                    560.280029296875,
+                    69.43518829345703
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.5-source-example-2",
+            "fieldId": "answer",
+            "sourceBlockId": "1.5-worked-example-2",
+            "correctionId": "fraction-v56-1.5-2",
+            "binding": {
+              "recordHash": "F697D075F316B41D49E3C57440310F9B1D56B07FD3F11B70458D71F5267146B6"
+            },
+            "before": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+            "after": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 6,
+                  "bbox": [
+                    35,
+                    253.4899444580078,
+                    560.280029296875,
+                    271.6887512207031
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    568.784912109375,
+                    560.280029296875,
+                    589.5001831054688
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "1.5-source-example-2",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "1.5-worked-example-2",
+            "correctionId": "fraction-v56-1.5-2",
+            "binding": {
+              "recordHash": "F697D075F316B41D49E3C57440310F9B1D56B07FD3F11B70458D71F5267146B6"
+            },
+            "before": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+            "after": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 6,
+                  "bbox": [
+                    35,
+                    253.4899444580078,
+                    560.280029296875,
+                    271.6887512207031
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 67,
+                  "bbox": [
+                    35,
+                    568.784912109375,
+                    560.280029296875,
+                    589.5001831054688
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-1",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-1",
+            "correctionId": "fraction-v56-6.1-1",
+            "binding": {
+              "recordHash": "2097B83E0D7BFF34B7CA4EA8CFA82142021509ADC06B5281F39377F9DE9642C8"
+            },
+            "before": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+            "after": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 49,
+                  "bbox": [
+                    35,
+                    439.20269775390625,
+                    560.280029296875,
+                    625.90869140625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    396.4969177246094,
+                    560.280029296875,
+                    446.76220703125
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-1",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-1",
+            "correctionId": "fraction-v56-6.1-1",
+            "binding": {
+              "recordHash": "2097B83E0D7BFF34B7CA4EA8CFA82142021509ADC06B5281F39377F9DE9642C8"
+            },
+            "before": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+            "after": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 49,
+                  "bbox": [
+                    35,
+                    439.20269775390625,
+                    560.280029296875,
+                    625.90869140625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    396.4969177246094,
+                    560.280029296875,
+                    446.76220703125
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-2",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-2",
+            "correctionId": "fraction-v56-6.1-2",
+            "binding": {
+              "recordHash": "00EFC073E0EC8A3C214D23BCD233838A7C23A956157B0F3695F3EFEC9FC81DCF"
+            },
+            "before": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+            "after": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    50.13072204589844,
+                    560.280029296875,
+                    254.6317138671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    445.2200927734375,
+                    560.280029296875,
+                    498.3750915527344
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-2",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-2",
+            "correctionId": "fraction-v56-6.1-2",
+            "binding": {
+              "recordHash": "00EFC073E0EC8A3C214D23BCD233838A7C23A956157B0F3695F3EFEC9FC81DCF"
+            },
+            "before": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+            "after": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    50.13072204589844,
+                    560.280029296875,
+                    254.6317138671875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    445.2200927734375,
+                    560.280029296875,
+                    498.3750915527344
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-3",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-3",
+            "correctionId": "fraction-v56-6.1-3",
+            "binding": {
+              "recordHash": "B4E0FF871708671E65F456F5222F545FF72106134BEA1B3BAAFE20953DF4FC91"
+            },
+            "before": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+            "after": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    254.6317138671875,
+                    560.280029296875,
+                    463.41973876953125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    498.3750915527344,
+                    560.280029296875,
+                    547.6681518554688
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-3",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-3",
+            "correctionId": "fraction-v56-6.1-3",
+            "binding": {
+              "recordHash": "B4E0FF871708671E65F456F5222F545FF72106134BEA1B3BAAFE20953DF4FC91"
+            },
+            "before": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+            "after": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    254.6317138671875,
+                    560.280029296875,
+                    463.41973876953125
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    498.3750915527344,
+                    560.280029296875,
+                    547.6681518554688
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-4",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-4",
+            "correctionId": "fraction-v56-6.1-4",
+            "binding": {
+              "recordHash": "E96EF09D151F5E4CFEE3F22404628D658E928BF7A9741400366D50CBF0BAC3C8"
+            },
+            "before": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+            "after": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    463.41973876953125,
+                    560.280029296875,
+                    651.9794921875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    546.2489013671875,
+                    560.280029296875,
+                    596.51318359375
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-4",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-4",
+            "correctionId": "fraction-v56-6.1-4",
+            "binding": {
+              "recordHash": "E96EF09D151F5E4CFEE3F22404628D658E928BF7A9741400366D50CBF0BAC3C8"
+            },
+            "before": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+            "after": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 50,
+                  "bbox": [
+                    35,
+                    463.41973876953125,
+                    560.280029296875,
+                    651.9794921875
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    546.2489013671875,
+                    560.280029296875,
+                    596.51318359375
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-5",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-5",
+            "correctionId": "fraction-v56-6.1-5",
+            "binding": {
+              "recordHash": "38BDB0ADEA3A813F2139702626052297F1A6F39B9D5D64C35BF122A109D608A6"
+            },
+            "before": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+            "after": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 51,
+                  "bbox": [
+                    35,
+                    50.13072204589844,
+                    560.280029296875,
+                    255.7880859375
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    593.9020385742188,
+                    560.280029296875,
+                    661.7401733398438
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-5",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-5",
+            "correctionId": "fraction-v56-6.1-5",
+            "binding": {
+              "recordHash": "38BDB0ADEA3A813F2139702626052297F1A6F39B9D5D64C35BF122A109D608A6"
+            },
+            "before": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+            "after": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 51,
+                  "bbox": [
+                    35,
+                    50.13072204589844,
+                    560.280029296875,
+                    255.7880859375
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    593.9020385742188,
+                    560.280029296875,
+                    661.7401733398438
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-6",
+            "fieldId": "answer",
+            "sourceBlockId": "6.1-worked-example-6",
+            "correctionId": "fraction-v56-6.1-6",
+            "binding": {
+              "recordHash": "83320BD3FCE7588D3DE86D97CA262248A08695EDC7B7CF27D9257097E488DED3"
+            },
+            "before": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+            "after": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 51,
+                  "bbox": [
+                    35,
+                    255.7880859375,
+                    560.280029296875,
+                    461.99273681640625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    660.1980590820312,
+                    560.280029296875,
+                    727.1297607421875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "recordId": "6.1-source-example-6",
+            "fieldId": "source-solution.expression",
+            "sourceBlockId": "6.1-worked-example-6",
+            "correctionId": "fraction-v56-6.1-6",
+            "binding": {
+              "recordHash": "83320BD3FCE7588D3DE86D97CA262248A08695EDC7B7CF27D9257097E488DED3"
+            },
+            "before": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+            "after": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
+            "source": {
+              "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+              "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+              "regions": [
+                {
+                  "role": "statement",
+                  "page": 51,
+                  "bbox": [
+                    35,
+                    255.7880859375,
+                    560.280029296875,
+                    461.99273681640625
+                  ]
+                },
+                {
+                  "role": "solution",
+                  "page": 87,
+                  "bbox": [
+                    35,
+                    660.1980590820312,
+                    560.280029296875,
+                    727.1297607421875
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "file": "assets/js/data/knowledge-content.js",
+        "hash": "F2D2A9DCC2165D49B73226F2684EF893C06052820757E2D8802A3B8C37343C76"
+      },
+      {
+        "file": "assets/js/data/example-content.js",
+        "hash": "6C5C4D98F41D1AC024CAAF6E0380E56EEE28EFA270A88952C804C94C887A1DF8"
+      },
+      {
+        "file": "assets/js/data/calculus-lessons.js",
+        "hash": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692"
+      },
+      {
+        "file": "assets/js/components/markdown-math-renderer.js",
+        "hash": "3EB5A142C34B9A4E4F1CB6BAFAAB8CCB4ECE5FBBD9DB75C0453B04534AEF3D61"
+      },
+      {
+        "file": "assets/js/curriculum.js",
+        "hash": "3717710B319ECDF79E677CD6D9E6569D176297D50ACA3C171EA22AC374FDB921"
+      },
+      {
+        "file": "assets/vendor/katex/katex.mjs",
+        "hash": "E5BC26598084AD869939ECAA262673814F26ED586312A409B5F8427C01E4F681"
+      },
+      {
+        "file": ".content-work/source-first-v5/snapshot.json",
+        "hash": "F25145E79B0B18E0669A62B260F1AB5088039D5D40DD548BAC67E6BBCAAB31E6"
+      },
+      {
+        "file": "scripts/source-first/corrections-v53.json",
+        "hash": "8F41B5DF4C390AEA87442347B0E072BD33931C500527BF4B7467BC9A4F35F22E"
+      },
+      {
+        "file": "scripts/source-first/symbolic-check.py",
+        "hash": "3C92DF93BB7F5AD0F708834FC934144E7C80E8C9F3FDEBB448A41B8EC807E1FE"
+      },
+      {
+        "file": "scripts/source-first/symbolic.mjs",
+        "hash": "746E481619290E23D68BD3F496098E6EAF80FC12DC76D262DD369EB86069898E"
+      },
+      {
+        "file": "scripts/source-first/development.mjs",
+        "hash": "C5A69C2069CA760A15E2FE8FE143ED19E377794481C6C62FB17A54DFD5CB8083"
+      },
+      {
+        "file": "scripts/source-first/validate-dev-runtime.mjs",
+        "hash": "9DE6E6E0B2EBC9ED6034A16ADA09C0DDB83AEB8B920B4A15D04E8B99FDC41438"
+      },
+      {
+        "file": "scripts/source-first/dev-browser-check.mjs",
+        "hash": "7C16B73AF6C93F148DFFB48886F26158C4070325DEDE9D631B6A3A708D2761B3"
+      },
+      {
+        "file": "scripts/source-first/local-release.mjs",
+        "hash": "DDC2A2F570389FE4D80EEFF15344DD4BDD419626D5C2648422696698AC92EDDB"
+      },
+      {
+        "file": "scripts/import-foundation-documents.py",
+        "hash": "FAA753605DEE08DCB12639ECD431D29DB1CDF3B9B6B4AC7733AFF403185D0E40"
+      },
+      {
+        "file": "scripts/source-first/import-corrections.py",
+        "hash": "A68BFF357AC47BE0DBC7402DF440403A0A7C5502E16E3C252B49A93D241C8A11"
+      },
+      {
+        "file": "scripts/source-first/corrections-v56.json",
+        "hash": "94F7B092F9B8D32D3C3EF76492188010B4DBF35BC780CDC4312E16AC15F716F1"
+      },
+      {
+        "file": "scripts/source-first/corrections-v56.mjs",
+        "hash": "9F91DB2C46E036E07CB637DD56EBCB30578B15DA9C5A849EC67D5FB384A51A2A"
+      },
+      {
+        "file": "scripts/source-first/fraction-batch.mjs",
+        "hash": "7B877C152B6D6EE24FBD4130E62569DBB75A26831D13BCB303D7E0CFD32923E4"
+      },
+      {
+        "file": "scripts/source-first/fraction-audit.mjs",
+        "hash": "92676EA8D86448970E24D247985E2276AF364F3501F79C3C51D25B1F7CE4C273"
+      },
+      {
+        "file": "scripts/source-first/fraction-evidence.py",
+        "hash": "87753683717F42EA8EF6B715342C285736AE7DE70CE55B87EE3CAF80373B201A"
+      },
+      {
+        "file": "scripts/source-first/symbolic-batch.py",
+        "hash": "5B4048EE75D18B288F9108C674B63C47CBD16B6D868E86DDA93CA5819BDCDA36"
+      },
+      {
+        "file": "scripts/source-first/development-continuation.mjs",
+        "hash": "DF118F415ED30BEFB97BEAA9A5324C11B928F7A4882DE64A3C0E92D6BF8CCF23"
+      },
+      {
+        "file": "scripts/source-first/batch-browser-check.mjs",
+        "hash": "95E57867DCD0E1DC4BC6DDF08A24FDFFCA02CD25ADEF9AC9CC847848BBA79E3E"
+      }
+    ],
+    "sources": [
+      {
+        "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+      }
+    ],
+    "symbolic": {
+      "jobs": [
+        {
+          "id": "fraction-v56-1.3-2",
+          "kind": "derivative",
+          "expression": "\\sqrt{3-2x}",
+          "expected": "-\\frac{1}{\\sqrt{3-2x}}",
+          "functionDomain": "x<=3/2",
+          "derivativeDomain": "x<3/2"
+        },
+        {
+          "id": "fraction-v56-1.3-3",
+          "kind": "derivative",
+          "expression": "\\sqrt{x^2+1}",
+          "expected": "\\frac{x}{\\sqrt{x^2+1}}",
+          "functionDomain": "real",
+          "derivativeDomain": "real",
+          "valueAt": 1,
+          "value": "\\frac{\\sqrt{2}}{2}"
+        },
+        {
+          "id": "fraction-v56-1.3-5",
+          "kind": "derivative",
+          "expression": "\\frac{1}{\\sqrt{2x+3}}",
+          "expected": "-(2x+3)^{-3/2}",
+          "functionDomain": "x>-3/2",
+          "derivativeDomain": "x>-3/2"
+        },
+        {
+          "id": "fraction-v56-1.5-2",
+          "kind": "derivative",
+          "expression": "\\ln(2x+1)",
+          "expected": "\\frac{2}{2x+1}",
+          "functionDomain": "x>-1/2",
+          "derivativeDomain": "x>-1/2"
+        },
+        {
+          "id": "fraction-v56-6.1-1-A",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})((\\frac{1}{2})-2)",
+          "expected": "-\\frac{3}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-1-B",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})((\\frac{1}{2})-2)",
+          "expected": "\\frac{3}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-1-C",
+          "kind": "equivalent",
+          "expression": "((\\frac{1}{2})-1)^2",
+          "expected": "\\frac{1}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-2-A",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})^2-2(\\frac{1}{2})-2",
+          "expected": "-\\frac{11}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-2-B",
+          "kind": "equivalent",
+          "expression": "-((\\frac{1}{2})-3)((\\frac{1}{2})+1)",
+          "expected": "\\frac{15}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-2-C",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})^2+2(\\frac{1}{2})+2",
+          "expected": "\\frac{11}{4}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-3-A",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})^3-3(\\frac{1}{2})+1",
+          "expected": "-\\frac{3}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-3-B",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})((\\frac{1}{2})^2-3)",
+          "expected": "-\\frac{11}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-3-C",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})((\\frac{1}{2})^2-3)",
+          "expected": "\\frac{11}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-4-A",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})^3",
+          "expected": "\\frac{1}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-4-B",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})^3",
+          "expected": "-\\frac{1}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-4-C",
+          "kind": "equivalent",
+          "expression": "((\\frac{1}{2})+1)((\\frac{1}{2})^2-(\\frac{1}{2})+1)",
+          "expected": "\\frac{9}{8}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-5-A",
+          "kind": "equivalent",
+          "expression": "-((\\frac{1}{2})-1)^2((\\frac{1}{2})+1)^2",
+          "expected": "-\\frac{9}{16}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-5-B",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})^4-2(\\frac{1}{2})^2+2",
+          "expected": "\\frac{25}{16}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-5-C",
+          "kind": "equivalent",
+          "expression": "((\\frac{1}{2})-1)^2((\\frac{1}{2})+1)^2",
+          "expected": "\\frac{9}{16}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-6-A",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})^4+2(\\frac{1}{2})^2+2",
+          "expected": "\\frac{39}{16}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-6-B",
+          "kind": "equivalent",
+          "expression": "-(\\frac{1}{2})^4+2(\\frac{1}{2})^2+1",
+          "expected": "\\frac{23}{16}",
+          "domain": "real"
+        },
+        {
+          "id": "fraction-v56-6.1-6-C",
+          "kind": "equivalent",
+          "expression": "(\\frac{1}{2})^4-2(\\frac{1}{2})^2-1",
+          "expected": "-\\frac{23}{16}",
+          "domain": "real"
+        }
+      ],
+      "engine": "sympy",
+      "version": "1.14.0",
+      "checks": [
+        {
+          "id": "fraction-v56-1.3-2",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Interval(-oo, 3/2)",
+          "derivativeDomain": "Interval.open(-oo, 3/2)",
+          "expectedDomain": "Interval.open(-oo, 3/2)",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-1.3-3",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-1.3-5",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Interval.open(-3/2, oo)",
+          "derivativeDomain": "Interval.open(-3/2, oo)",
+          "expectedDomain": "Interval.open(-3/2, oo)",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-1.5-2",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Interval.open(-1/2, oo)",
+          "derivativeDomain": "Interval.open(-1/2, oo)",
+          "expectedDomain": "Interval.open(-1/2, oo)",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-1-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-1-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-1-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-2-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-2-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-2-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-3-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-3-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-3-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-4-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-4-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-4-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-5-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-5-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-5-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-6-A",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-6-B",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        },
+        {
+          "id": "fraction-v56-6.1-6-C",
+          "status": "passed",
+          "humanApproval": false,
+          "difference": "0",
+          "functionDomain": "Reals",
+          "derivativeOrResultDomain": "Reals",
+          "expectedDomain": "Reals",
+          "domainsMatch": true,
+          "valueMatch": true,
+          "symbolicIdentity": true
+        }
+      ],
+      "humanApproval": false
+    },
+    "registryHash": "194929B8DF97B2C7B2968F105CD385DE22661DBF41CE9D088C41F35732C232A1",
+    "replayHash": "A4183324A46F36371B26BEFE7583B5CFC940E80F6351B896650B13D988FC3611",
+    "counts": {
+      "ALREADY_CORRECT": 73,
+      "CONFIRMED_CONVERSION_ERROR": 14,
+      "SOURCE_AMBIGUOUS": 88,
+      "RUNTIME_MAPPING_AMBIGUOUS": 5,
+      "SOURCE_CONFLICT": 0,
+      "UNSUPPORTED": 0
+    },
+    "rollbackPolicy": "Child rollback restores applied V5.5 bytes; rollback child before parent. File-level atomicity only; interrupted child can resume/rollback with same immutable manifest.",
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1"
+  },
+  "summary": {
+    "inspected": 180,
+    "classifications": {
+      "ALREADY_CORRECT": 73,
+      "CONFIRMED_CONVERSION_ERROR": 14,
+      "SOURCE_AMBIGUOUS": 88,
+      "RUNTIME_MAPPING_AMBIGUOUS": 5,
+      "SOURCE_CONFLICT": 0,
+      "UNSUPPORTED": 0
+    },
+    "eligibleCorrections": 10,
+    "eligibleFields": 26,
+    "files": 1,
+    "excludedCandidates": 170,
+    "confirmedButExcluded": 4
+  },
+  "status": {
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "files": [
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "state": "before"
+      }
+    ],
+    "status": "prepared-on-applied-v5.5"
+  },
+  "realRuntimeWrites": 0,
+  "formalHumanApproval": false,
+  "previewCommand": "npm.cmd run content:dev:batch -- preview",
+  "statusCommand": "npm.cmd run content:dev:batch -- status",
+  "applyCommand": "npm.cmd run content:dev:batch -- apply --development --execute --authorize E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+  "rollbackCommand": "npm.cmd run content:dev:batch -- rollback --development --execute --authorize E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+  "immutablePlan": ".content-work/source-first-v5/dev-plans/E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1/manifest.json"
+}

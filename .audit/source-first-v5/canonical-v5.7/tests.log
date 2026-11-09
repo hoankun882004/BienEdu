@@ -1,0 +1,40 @@
+
+> test:canonical
+> npm run content:canonical:preview && node --test tests/canonical-math-v57.test.js && node .audit/canonical-v57-browser.mjs
+
+
+> content:canonical:preview
+> node scripts/source-first/canonical-build.mjs
+
+{"sources":[{"id":"cd12-cd14-calculus","topics":["CD12","CD13","CD14"],"sections":26},{"id":"cd01-cd07-functions","topics":["CD01","CD02","CD03","CD04","CD05","CD06","CD07"],"sections":71},{"id":"cd20-cd21-theory","topics":["CD20","CD21"],"sections":25},{"id":"cd08-cd11-exponential-logarithm","topics":["CD08","CD09","CD10","CD11"],"sections":50},{"id":"cd20-cd23-native-latex","topics":["CD20","CD21","CD22","CD23"],"sections":46}],"records":7172,"pilotFields":35,"mathNodes":62,"unresolved":6941}
+✔ canonical math preserves \frac{x}{x^2-1} (10.9712ms)
+✔ canonical math preserves \frac{1}{\frac{2}{3}} (1.824ms)
+✔ canonical math preserves x^{-3/2} (1.2442ms)
+✔ canonical math preserves \sqrt{x^2+1} (3.5107ms)
+✔ canonical math preserves \sqrt[3]{x} (1.2323ms)
+✔ canonical math preserves \log_2 x (2.2653ms)
+✔ canonical math preserves f'(2)=-\frac{5}{9} (2.3278ms)
+✔ canonical math preserves \int_a^b f(x)\,dx (2.9317ms)
+✔ canonical math preserves \lim_{x\to0}\frac{\sin x}{x} (2.0891ms)
+✔ canonical math preserves x\ne\pm1 (2.413ms)
+✔ canonical math preserves D=(-\infty;\frac{3}{2}] (1.0718ms)
+✔ canonical math preserves \begin{cases}x&x>0\\-x&x\le0\end{cases} (3.5324ms)
+✔ canonical math preserves \begin{aligned}a&=b\\c&=d\end{aligned} (1.7182ms)
+✔ canonical math preserves \left|x\right| (0.9349ms)
+✔ canonical math preserves \binom{n}{k} (0.7312ms)
+✔ canonical math preserves P(A\mid B)=\frac{P(A\cap B)}{P(B)},\quad P(B)>0 (1.6684ms)
+✔ invalid expressions fail visibly without untrusted HTML injection (1.495ms)
+✔ mixed Vietnamese math boundaries, environments and malformed delimiters (2.2055ms)
+✔ bounded explicit native macros; unsupported document commands remain separate (1.912ms)
+✔ independent identities and deterministic serialization; no cross-source repair (0.701ms)
+✔ V5.5 nine applied fields and V5.6 26 prepared fields retain exact math and conditions (6251.8988ms)
+✔ inventory keeps five independent sources and 39 honest topic statuses (13.5532ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6506.3248
+{"passed":true,"states":58,"realRuntimeWrites":0}

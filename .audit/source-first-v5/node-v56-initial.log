@@ -1,0 +1,715 @@
+
+> test
+> node --test tests/*.test.js
+
+✔ content migration audit publishes a reusable 39-topic manifest (13.1101ms)
+✔ foundation audit distinguishes extracted candidates from reviewed publication (0.7925ms)
+✔ required content reports state the CD01 root cause and incomplete scope (8.7903ms)
+✔ content registry covers every declared topic and subtopic without a second curriculum model (3.3545ms)
+✔ availability is derived from verified content instead of topic number (0.8887ms)
+✔ section availability and source coverage remain independent (0.4976ms)
+✔ source completeness and mathematical verification are reported independently (0.3007ms)
+✔ imported slides have stable unique IDs and verified source references (3.4175ms)
+✔ curriculum preserves 13 groups, 39 topics and the finalized PDF overlay (1.7571ms)
+✔ topic and short-code identifiers are complete and unique (1.7802ms)
+✔ exercise identifiers remain strings instead of floating-point values (0.3211ms)
+✔ search is case-insensitive and accent-insensitive (6.7947ms)
+✔ group filtering keeps only topics in the selected group (0.5387ms)
+✔ topic exercise lookup accepts both source id and short code (0.5489ms)
+✔ the new CD12-CD14 PDF is available and matches its verified source (2.9607ms)
+✔ CD12, CD13 and CD14 map every catalog exercise to a valid PDF page (1.6529ms)
+✔ the two newest PDFs are hash-locked and map every CD01-CD11 catalog lesson (3.0936ms)
+✔ final exams contain 20 questions and cover every required subtopic (43.8997ms)
+✔ grading returns a deterministic score and per-question review (2.0368ms)
+✔ all mapped lessons expose complete worked examples (9.3652ms)
+✔ CD12-CD14 account for both worked examples in every source subtopic (1.2234ms)
+✔ worked examples preserve important multi-step source cases (0.3242ms)
+✔ CD01 1.1 and CD08 8.1/8.4 keep the PDF-verified statement and solution notation (0.5049ms)
+✔ all 51 mapped subtopics generate exactly three valid questions (38.4637ms)
+✔ generation is deterministic for a seed (2.2337ms)
+✔ Grades 9 to 12 have tailored course pages while only Grade 12 exposes curriculum data (3.5192ms)
+✔ grade selection persists and an explicit URL takes priority (0.9537ms)
+✔ a stored grade is reused on the root URL after first-visit onboarding (0.6378ms)
+✔ legacy Grade 12 learning links remain compatible (0.4256ms)
+✔ grade-aware links preserve Grade 12 routes and strip them for unavailable grades (0.7216ms)
+✔ all registered source-backed lessons expose structured reading content (4.1072ms)
+✔ reading content stays text-only and safe to render (10.4132ms)
+✔ the two new PDFs publish every catalog lesson without inventing diagram-only examples (0.9426ms)
+✔ foundation extraction restores stacked source formulas without leaking PDF span markers (14.9492ms)
+✔ CD01 exposes the source topic overview instead of reducing Knowledge to one method sentence (0.5927ms)
+✔ CD08 8.4 keeps its source note attached only to the verified problem type (0.3974ms)
+✔ CD08 8.1 preserves the verified exponent warning as renderable LaTeX (0.384ms)
+✔ all 26 calculus readings cover the source theory and three-step method (0.9543ms)
+✔ 12.1 splits its complete formula table into two readable pages (0.5204ms)
+✔ compound formula groups expose reviewed expression boundaries (9.4266ms)
+✔ CD12–CD14 runtime content preserves the source trigonometric notation (3.0798ms)
+✔ all registered source topics expose bounded knowledge sections (1.6422ms)
+✔ theory and source examples are separate for every mapped subtopic (1.9159ms)
+✔ 20.1 theory excludes example blocks and examples stop before 20.2 (0.441ms)
+✔ all 55 image-derived slides exist and retain crop provenance (4.8791ms)
+✔ all 26 calculus lessons retain text-first PDF provenance (0.9057ms)
+✔ edge-topic mapping boundaries remain isolated (0.3337ms)
+✔ native source inspection resolves the real CD20-CD23 document structure (3.2658ms)
+✔ source inspection reports no unresolved figure or include dependency (0.8661ms)
+✔ missing-topic detection stays bounded by both registry state and source chapters (0.5803ms)
+✔ the content-writing guard rejects both protected topics and existing content (1.1555ms)
+✔ CD22 pilot maps every registry section without inventing a worked solution (0.5759ms)
+✔ runtime publishes CD22 through the existing registry and preserves line provenance (1.2241ms)
+✔ native conditional-probability notation renders with KaTeX and source-aware review status (15.3195ms)
+✔ native probability labels preserve symbolic Unicode subscripts outside text mode (4.3192ms)
+✔ CD20 and CD21 retain their hash-locked runtime content and legacy IDs (2.4821ms)
+✔ the controlled pilot import is deterministic and idempotent (417.451ms)
+✔ all imported Knowledge and Example formula slots render without KaTeX errors (798.2214ms)
+✔ all approved raw LaTeX expressions pass strict KaTeX parsing (23.3124ms)
+✔ all generated and PDF-source practice fields are safe to render (103.5351ms)
+✔ Unicode conversion creates safe control-word boundaries and proper simple fractions (0.6059ms)
+✔ unsupported LaTeX is flagged and never becomes red KaTeX error text (1.6876ms)
+✔ source-verified boundary conditions and indices remain explicit (1.6951ms)
+✔ invalid or outdated saved data falls back to a clean progress state (3.1102ms)
+✔ opening a lesson cannot complete it (0.8604ms)
+✔ knowledge and practice cannot complete a lesson while examples are incomplete (0.594ms)
+✔ opening examples persists stable viewed-state IDs without completing their solutions (0.8287ms)
+✔ finishing available units is distinct from completing partially imported material (0.62ms)
+✔ progress counts only stable IDs that still exist in the current lesson (0.3423ms)
+✔ reviewing a verified self-check exercise counts once without inventing a grade (0.3252ms)
+✔ native Markdown preserves completed legacy PDF progress without requiring the old viewer (0.5012ms)
+✔ topic Knowledge migration preserves partial legacy reading without duplicating type progress (0.6075ms)
+✔ a problem-type lesson can complete without redundant general Knowledge (0.3728ms)
+✔ final exams unlock only for topics whose every subtopic has ready content (43.9966ms)
+✔ progress uses a separate namespace for every grade (0.2638ms)
+✔ legacy Grade 12 progress is migrated without leaking into other grades (0.5315ms)
+✔ the generic Knowledge model exposes stable content-aware slide types (7.2161ms)
+✔ a lesson contains exactly knowledge, example and practice sections (3.8371ms)
+✔ finalized CD01-CD11 use one topic Knowledge view and no repeated type Knowledge (1.0609ms)
+✔ workspace navigation flows from knowledge to examples to practice (1.6066ms)
+✔ a long text lesson keeps two numbered knowledge pages before its example (0.9616ms)
+✔ the active practice sequence is source-first and capped at ten (21.3467ms)
+✔ a topic without mapped content gets a truthful unavailable state (0.6605ms)
+✔ CD22.7 preserves the verified source formula as structured LaTeX (17.2071ms)
+✔ CD22.7 renders display and inline probability notation without red fallback (19.1417ms)
+✔ the centralized renderer preserves fractions, powers, indices, Greek symbols and conditions (14.1852ms)
+✔ CD22 source provenance and review gates remain truthful (0.7424ms)
+✔ CD22.7 navigation moves from Knowledge to its exact source Example (1.5496ms)
+✔ practice publication remains conservative and existing verified practice stays intact (3.2572ms)
+✔ the V5 checkpoint records zero parse failures and no missing referenced figure (2.5169ms)
+✔ normalizer keeps source geometry, pages and actual heading boundaries (17.0029ms)
+✔ normalizer flags malformed LaTeX without repairing or inventing it (3.8911ms)
+✔ verified records require complete source-review evidence (4.6925ms)
+✔ source-scoped notation policy catches unsupported sec and csc substitutions (3.9645ms)
+✔ Markdown renderer escapes HTML and renders KaTeX (13.0769ms)
+✔ student runtime has no PDF viewer, embed, canvas, or PDF.js dependency (29.2584ms)
+✔ all 172 registered source mappings publish native Markdown knowledge slides (7.2467ms)
+✔ the shared renderer converts Unicode math to KaTeX without exposing raw commands (19.6082ms)
+✔ symmetric integral bounds with a negative subscript render without a KaTeX error (4.4383ms)
+✔ approved 20.2 Knowledge excludes source examples and PDF controls (5.5766ms)
+✔ structured Knowledge uses content-aware layout and separate equation nodes (37.3925ms)
+✔ reviewed long derivations render as KaTeX aligned blocks (12.337ms)
+✔ all 51 generator-supported subtopics have explicit exact-type blueprints (2.1209ms)
+✔ the active bank is source-first, exact-subtopic and never exceeds ten (52.9363ms)
+✔ 12.1 uses exactly ten verified source exercises and does not generate extras (1.8322ms)
+✔ unverified calculus banks remain honestly unavailable (1.5353ms)
+✔ CD20-CD21 publish only independently verified generated questions (14.6359ms)
+✔ independent evaluators cover exact counting and probability arithmetic (0.4409ms)
+✔ generated candidates fail closed for wrong answers, invalid domains and out-of-scope skills (2.5236ms)
+✔ calculus source validation rejects a mathematically wrong antiderivative (0.6528ms)
+✔ source prompts remain the transcribed PDF wording (0.6758ms)
+✔ parameter validation rejects unsafe or impossible inputs (0.4821ms)
+✔ practice-paper collections are intentionally empty for Grades 9 to 12 (2.5313ms)
+✔ unknown grades fall back to the same immutable empty collection (0.3753ms)
+✔ Vietnamese phone numbers are normalized and validated (4.1639ms)
+✔ registration requires only name, Grade 10-12 and a valid phone (1.5803ms)
+✔ registration provider accepts only a configured HTTPS Formspree endpoint (0.7453ms)
+✔ learning contact and availability use one verified configuration source (0.366ms)
+✔ successful registration requires a confirmed provider response (0.9156ms)
+✔ registration never reports success without configuration or after provider failure (1.572ms)
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (1928.3686ms)
+✖ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (3710.9319ms)
+✖ development execution is blocked in production/CI and requires explicit batch authorization (3236.688ms)
+✖ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (2828.705ms)
+✖ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (2762.3529ms)
+✖ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (2765.8146ms)
+✖ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (2905.2934ms)
+✖ source/crop hash and runtime dependency changes invalidate prepared batches (2697.0608ms)
+✖ actual project remains unapplied and the existing fraction queue is only projected, never overwritten (4.7934ms)
+✔ native scanner preserves raw offsets, comments, command boundaries and nested scripts (2.9936ms)
+✔ 40 source fixtures preserve exact evidence, all document pages, crops and independent review gates (772.5153ms)
+✔ source-specific quotient normalization keeps denominator factorial and chained equality (3.8346ms)
+✔ math tables keep inline conditional bars inside one mathematical cell (2.6185ms)
+✔ review patches reject stale data, invalid math, missing comparison and unknown decisions (41.1855ms)
+✔ an editor decision updates only staging and keeps mathematical approval separate (113.4168ms)
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+✔ read-only local server enforces host, origin, session token and immutable HTTP actions (1913.2501ms)
+✔ rebuilding staging is deterministic and preserves approved runtime records (4605.0696ms)
+✖ V5.3 classifies every source item and records every legitimate usage without inventing targets (4.2658ms)
+✔ protected cross-edition expressions and the positional legacy example fail closed (397.0754ms)
+✔ semantic formula identity survives reordering and rejects ambiguous or changed structures (50.8253ms)
+✔ source-hash and stable Example identity mismatch cannot become an approved mapping (93.0153ms)
+✖ exact source normalization is idempotent, guarded and produces reversible field-only previews (18.2224ms)
+✖ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (2104.4967ms)
+✔ CD22.7 retains native Bayes notation; no invented conditions or numerical correction (0.5102ms)
+✖ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (1872.9197ms)
+✔ the CD12-CD14 source bank accounts for ten exercises per subtopic (4.164ms)
+✔ every source exercise keeps provenance and remains non-auto-graded (2.3262ms)
+✔ only the ten fully solved 12.1 source exercises are ready for students (0.6131ms)
+✔ source-answer conflicts remain visible and are never auto-graded (0.5088ms)
+✔ source practice is separate from deterministic generated practice (4.7255ms)
+✖ V5.4 comparison separates supported native matches, guarded defects and unproven PDF transcriptions (466.4418ms)
+✔ structural evidence distinguishes fractions, radical scope, exponents and printed conditions (3.4621ms)
+✖ field decisions are immutable, separately attested, idempotent and reject stale source/version/conditions/parents (19.707ms)
+✖ dry-run requires all nine real field approvals, rejects missing approval and blocks multi-file transactions (266.379ms)
+✖ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (228.4899ms)
+✖ curated Knowledge detail adapter changes only its approved string and retains all other source bytes (203.8959ms)
+✖ stale runtime, source mismatch and superseded human decisions block publication (238.4385ms)
+✖ failure before the atomic rename leaves runtime intact; retry recovers the durable intent (233.2984ms)
+✖ an edit during the transaction is not overwritten; corrupted backups prevent rollback (193.3933ms)
+✖ a post-replacement interrupted state is reconciled from the immutable intent and backup (194.5785ms)
+✖ protected topics, unsupported fields and forged after values cannot be released (11.7062ms)
+✔ V5.2 prepares existing entities and source evidence without creating approvals or a second queue (1584.8848ms)
+✔ V3 binds the review to version, source identity and untouched original expression (54.5898ms)
+✔ needs correction and unresolved ambiguity remain separate unapproved decisions (358.2571ms)
+✔ review events are complete atomic files, idempotent and ignore interrupted temporary files (186.0291ms)
+✔ legacy event history remains readable and requires an explicit version-bound follow-up for release (260.4088ms)
+✔ dry-run contains exact evidence and reversible integration preview without certifying the whole lesson (161.1218ms)
+✔ runtime previews reread disk and reject stale plans, dependencies and target versions (476.2391ms)
+✔ only canonical field targets are recognized; generated-data parsing does not execute code (336.6875ms)
+✔ read-only refresh observes a real saved fixture decision without creating real review events (3583.9545ms)
+{
+  "uniqueTrackedReviewRecords": 1512,
+  "benchmarkExpressions": 40,
+  "machineCheckedExpressions": 40,
+  "humanSourceVerified": 0,
+  "mathematicalEditorialApprovals": 0,
+  "pendingBenchmarkSourceReviews": 40,
+  "pendingFigures": 188,
+  "missingSourceTopics": [
+    "CD15",
+    "CD16",
+    "CD17",
+    "CD18",
+    "CD19",
+    "CD24",
+    "CD25",
+    "CD26",
+    "CD27",
+    "CD28",
+    "CD29",
+    "CD30",
+    "CD31",
+    "CD32",
+    "CD33",
+    "CD34",
+    "CD35",
+    "CD36",
+    "CD37",
+    "CD38",
+    "CD39"
+  ],
+  "approvedButUnpublished": 0,
+  "newlyPublished": 0,
+  "existingRuntimeKnowledgeRecords": 181,
+  "existingRuntimeExampleRecords": 1313,
+  "legacyImmutableApprovalRecords": 3,
+  "fractionCandidates": 180,
+  "calculusAnswerConflicts": 9,
+  "cd22UnitsCompared": 18,
+  "correctedConversionDefects": 1
+}
+✔ V5.1 compares every benchmark item and retains separate human and editorial queues (5846.7481ms)
+✔ explicit human source verification does not automatically grant mathematical approval (148ms)
+✔ V2 rejects absent attestation, wrong reviewer type, stale condition hashes and invalid editorial identities (96.8187ms)
+✔ immutable review events support later unchanged editorial approval and idempotent reapplication (350.9073ms)
+✔ release preview blocks actual pending content and produces an exact reversible change for approved fixtures only (523.5315ms)
+✔ protected CD20/CD21, unknown bindings and CD23 cannot become eligible release candidates (163.6438ms)
+✔ student verification badges require human records bound to the exact reviewed content (3.4801ms)
+✔ source warnings retain their wording rather than inventing a universal mathematical inequality (2.3246ms)
+ℹ tests 178
+ℹ suites 0
+ℹ pass 156
+ℹ fail 22
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24118.613
+
+✖ failing tests:
+
+test at tests\source-development-v55.test.js:28:1
+✖ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (3710.9319ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 3
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:30:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:38:1
+✖ development execution is blocked in production/CI and requires explicit batch authorization (3236.688ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'locally-applied-unreviewed'
+  - 'not-applied-or-rolled-back'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:43:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'locally-applied-unreviewed',
+    expected: 'not-applied-or-rolled-back',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:46:1
+✖ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (2828.705ms)
+  Error: Empty/duplicate development file batch
+      at validatePlan (file:///D:/BienEdu/scripts/source-first/development.mjs:86:110)
+      at applyDevelopmentPlan (file:///D:/BienEdu/scripts/source-first/development.mjs:180:3)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:48:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests\source-development-v55.test.js:64:1
+✖ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (2762.3529ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Recovery: resume/u. Input:
+  
+  'Error: Empty/duplicate development file batch'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:67:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Empty/duplicate development file batch
+        at validatePlan (file:///D:/BienEdu/scripts/source-first/development.mjs:86:110)
+        at applyDevelopmentPlan (file:///D:/BienEdu/scripts/source-first/development.mjs:180:3)
+        at file:///D:/BienEdu/tests/source-development-v55.test.js:67:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:67:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /Recovery: resume/u,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:76:1
+✖ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (2765.8146ms)
+  TypeError: Cannot read properties of undefined (reading 'file')
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:77:115)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests\source-development-v55.test.js:86:1
+✖ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (2905.2934ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 2
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:90:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:94:1
+✖ source/crop hash and runtime dependency changes invalidate prepared batches (2697.0608ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /dependency hash/u. Input:
+  
+  'Error: Empty/duplicate development file batch'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:97:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Empty/duplicate development file batch
+        at validatePlan (file:///D:/BienEdu/scripts/source-first/development.mjs:86:110)
+        at applyDevelopmentPlan (file:///D:/BienEdu/scripts/source-first/development.mjs:180:3)
+        at file:///D:/BienEdu/tests/source-development-v55.test.js:97:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:97:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /dependency hash/u,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:101:1
+✖ actual project remains unapplied and the existing fraction queue is only projected, never overwritten (4.7934ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968'
+  - 'D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:105:78)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968',
+    expected: 'D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-integration-v53.test.js:19:1
+✖ V5.3 classifies every source item and records every legitimate usage without inventing targets (4.2658ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 9
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:26:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 9,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-integration-v53.test.js:70:1
+✖ exact source normalization is idempotent, guarded and produces reversible field-only previews (18.2224ms)
+  TypeError: Cannot read properties of undefined (reading 'after')
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:86:59)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests\source-integration-v53.test.js:89:1
+✖ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (2104.4967ms)
+  AssertionError [ERR_ASSERTION]: Traceback (most recent call last):
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 1127, in <module>
+      print(json.dumps(stage_source_review_candidates(), ensure_ascii=False, indent=2))
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 966, in stage_source_review_candidates
+      _, examples = make_lesson(code, theory[code], solutions[code], "cd01-cd07-functions", document, review_candidates=True)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 954, in make_lesson
+      correction_module.apply_corrections(example, document_id, document, ROOT)
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\source-first\import-corrections.py", line 26, in apply_corrections
+      raise ValueError("Source/record/block/page-bound correction mismatch")
+  ValueError: Source/record/block/page-bound correction mismatch
+  
+  
+  1 !== 0
+  
+      at replay (file:///D:/BienEdu/tests/source-integration-v53.test.js:91:202)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:92:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-integration-v53.test.js:114:1
+✖ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (1872.9197ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 4
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:123:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:39:1
+✖ V5.4 comparison separates supported native matches, guarded defects and unproven PDF transcriptions (466.4418ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 3
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:43:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:59:1
+✖ field decisions are immutable, separately attested, idempotent and reject stale source/version/conditions/parents (19.707ms)
+  TypeError: Cannot read properties of undefined (reading 'item')
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:60:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at tests\source-release-v54.test.js:77:1
+✖ dry-run requires all nine real field approvals, rejects missing approval and blocks multi-file transactions (266.379ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 2
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:79:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:88:1
+✖ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (228.4899ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:89:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:117:1
+✖ curated Knowledge detail adapter changes only its approved string and retains all other source bytes (203.8959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:118:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:126:1
+✖ stale runtime, source mismatch and superseded human decisions block publication (238.4385ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:127:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:142:1
+✖ failure before the atomic rename leaves runtime intact; retry recovers the durable intent (233.2984ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:143:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:150:1
+✖ an edit during the transaction is not overwritten; corrupted backups prevent rollback (193.3933ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:151:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:162:1
+✖ a post-replacement interrupted state is reconciled from the immutable intent and backup (194.5785ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'no-changed-pilot-fields'
+  + ]
+  - []
+  
+      at approvedPlan (file:///D:/BienEdu/tests/source-release-v54.test.js:35:72)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:163:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'no-changed-pilot-fields' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:173:1
+✖ protected topics, unsupported fields and forged after values cannot be released (11.7062ms)
+  TypeError: Cannot read properties of undefined (reading 'item')
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:174:79)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)

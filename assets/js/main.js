@@ -8,6 +8,7 @@ import {
 } from "./domain/grade-context.js?v=8.2";
 import { initializeHomeScrollExperience } from "./home-motion.js?v=8.2";
 import { initializeMotion, prefersReducedMotion } from "./motion.js?v=8.2";
+import { initializeLearningAccessibility } from "./learning-v6.js";
 
 const isDuplicateHomeRoute = location.protocol !== "file:" && /\/index\.html$/i.test(location.pathname);
 
@@ -29,6 +30,7 @@ if (isDuplicateHomeRoute) {
 
   renderLayout(page, currentGradeId);
   bindNavigation();
+  initializeLearningAccessibility();
   if (currentGradeId) applyGradePage(page, currentGradeId);
 
   const gradeSelector = initializeGradeSelector({

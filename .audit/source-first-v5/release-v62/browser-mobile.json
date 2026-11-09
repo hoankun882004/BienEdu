@@ -1,0 +1,4238 @@
+{
+  "planHash": "ADA22D7CEAECC0F4C5288FF42D06EDF01A3AD2C30C50C44B1285F8C73FE046A1",
+  "mode": "mobile",
+  "passed": true,
+  "states": [
+    {
+      "name": "home",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 313.5,
+      "learnerReadyMs": 663.8999999761581,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 85.80000007152557,
+      "learnerReadyMs": 323.3000000715256,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 91.10000002384186,
+      "learnerReadyMs": 271.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 88.29999995231628,
+      "learnerReadyMs": 359.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 85.5,
+      "learnerReadyMs": 276.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 112.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 107,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 130.30000007152557,
+      "learnerReadyMs": 380.40000009536743,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 112.09999990463257,
+      "learnerReadyMs": 342.1999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "learnerReadyMs": 413.1999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 115.89999997615814,
+      "learnerReadyMs": 357.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 123.79999995231628,
+      "learnerReadyMs": 441.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 111.80000007152557,
+      "learnerReadyMs": 367.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 110.79999995231628,
+      "learnerReadyMs": 321.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 320,
+      "height": 568,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 112.89999997615814,
+      "learnerReadyMs": 383.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "home",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 253.60000002384186,
+      "learnerReadyMs": 599.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 104.90000009536743,
+      "learnerReadyMs": 385.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 111.5,
+      "learnerReadyMs": 357.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 114,
+      "learnerReadyMs": 407,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 85.79999995231628,
+      "learnerReadyMs": 260.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 102.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 102.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 102.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 82.40000009536743,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 112.29999995231628,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 173.60000002384186,
+      "learnerReadyMs": 467,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 123.29999995231628,
+      "learnerReadyMs": 318.2000000476837,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 109.80000007152557,
+      "learnerReadyMs": 379.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 109.89999997615814,
+      "learnerReadyMs": 332.3000000715256,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 108.69999992847443,
+      "learnerReadyMs": 334.6999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 96.60000002384186,
+      "learnerReadyMs": 330,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 97.10000002384186,
+      "learnerReadyMs": 382.3000000715256,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 360,
+      "height": 800,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 107.69999992847443,
+      "learnerReadyMs": 367.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 328.7999999523163,
+      "learnerReadyMs": 655.5,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 106.89999997615814,
+      "learnerReadyMs": 386,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 105.70000004768372,
+      "learnerReadyMs": 340,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 114.39999997615814,
+      "learnerReadyMs": 408.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 102.20000004768372,
+      "learnerReadyMs": 325.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 99.20000004768372,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 99,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 113.39999997615814,
+      "learnerReadyMs": 370.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 103.5,
+      "learnerReadyMs": 347.5,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 102.70000004768372,
+      "learnerReadyMs": 327,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 100.19999992847443,
+      "learnerReadyMs": 323.6999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 98.20000004768372,
+      "learnerReadyMs": 367.3000000715256,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 100.60000002384186,
+      "learnerReadyMs": 342,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 118.89999997615814,
+      "learnerReadyMs": 339,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "learnerReadyMs": 373.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "home",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 260.09999990463257,
+      "learnerReadyMs": 603.5999999046326,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 96.89999997615814,
+      "learnerReadyMs": 410.5,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 89.39999997615814,
+      "learnerReadyMs": 291.6999999284744,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 80.89999997615814,
+      "learnerReadyMs": 375,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 96.89999997615814,
+      "learnerReadyMs": 293.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 102.5,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 99.39999997615814,
+      "learnerReadyMs": 331.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 94.19999992847443,
+      "learnerReadyMs": 336.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 107.60000002384186,
+      "learnerReadyMs": 326.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 103.60000002384186,
+      "learnerReadyMs": 334.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 109.5,
+      "learnerReadyMs": 335,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 111.10000002384186,
+      "learnerReadyMs": 358.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 120.39999997615814,
+      "learnerReadyMs": 320,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 98.5,
+      "learnerReadyMs": 296,
+      "shifts": []
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.07901618889688204,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 250.79999995231628,
+      "learnerReadyMs": 612.7999999523163,
+      "shifts": [
+        {
+          "time": 450.59999990463257,
+          "value": 0.07181167602539062,
+          "sources": [
+            {
+              "tag": "MAIN",
+              "cls": "",
+              "previous": {
+                "x": 0,
+                "y": 0,
+                "width": 753,
+                "height": 1024,
+                "top": 0,
+                "right": 753,
+                "bottom": 1024,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 75,
+                "width": 753,
+                "height": 949,
+                "top": 75,
+                "right": 753,
+                "bottom": 1024,
+                "left": 0
+              }
+            },
+            {
+              "tag": "DIV",
+              "cls": "study-rhythm__stat is-visible",
+              "previous": {
+                "x": 396,
+                "y": 1005.75,
+                "width": 342.109375,
+                "height": 18.25,
+                "top": 1005.75,
+                "right": 738.109375,
+                "bottom": 1024,
+                "left": 396
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 500.6999999284744,
+          "value": 0.0023804210359230638,
+          "sources": [
+            {
+              "tag": "H1",
+              "cls": "hero-title lines",
+              "previous": {
+                "x": 28.8125,
+                "y": 150.625,
+                "width": 279.3125,
+                "height": 143.46875,
+                "top": 150.625,
+                "right": 308.125,
+                "bottom": 294.09375,
+                "left": 28.8125
+              },
+              "current": {
+                "x": 28.8125,
+                "y": 133.171875,
+                "width": 279.3125,
+                "height": 143.46875,
+                "top": 133.171875,
+                "right": 308.125,
+                "bottom": 276.640625,
+                "left": 28.8125
+              }
+            },
+            {
+              "tag": "P",
+              "cls": "",
+              "previous": {
+                "x": 30.71875,
+                "y": 322.265625,
+                "width": 277.40625,
+                "height": 104.765625,
+                "top": 322.265625,
+                "right": 308.125,
+                "bottom": 427.03125,
+                "left": 30.71875
+              },
+              "current": {
+                "x": 30.71875,
+                "y": 304.8125,
+                "width": 277.40625,
+                "height": 139.6875,
+                "top": 304.8125,
+                "right": 308.125,
+                "bottom": 444.5,
+                "left": 30.71875
+              }
+            },
+            {
+              "tag": "DIV",
+              "cls": "hero-actions",
+              "previous": {
+                "x": 30.71875,
+                "y": 451.03125,
+                "width": 277.40625,
+                "height": 76.34375,
+                "top": 451.03125,
+                "right": 308.125,
+                "bottom": 527.375,
+                "left": 30.71875
+              },
+              "current": {
+                "x": 30.71875,
+                "y": 468.5,
+                "width": 277.40625,
+                "height": 76.34375,
+                "top": 468.5,
+                "right": 308.125,
+                "bottom": 544.84375,
+                "left": 30.71875
+              }
+            }
+          ]
+        },
+        {
+          "time": 577.1999999284744,
+          "value": 0.0027514210281272726,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 348.21875,
+                "y": 13.609375,
+                "width": 282.6875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 630.90625,
+                "bottom": 58.375,
+                "left": 348.21875
+              },
+              "current": {
+                "x": 339.0625,
+                "y": 13.609375,
+                "width": 290.875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 339.0625
+              }
+            },
+            {
+              "tag": "H2",
+              "cls": "",
+              "previous": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "current": {
+                "x": 53.890625,
+                "y": 963.609375,
+                "width": 175.359375,
+                "height": 60.390625,
+                "top": 963.609375,
+                "right": 229.25,
+                "bottom": 1024,
+                "left": 53.890625
+              }
+            },
+            {
+              "tag": "P",
+              "cls": "section-eyebrow",
+              "previous": {
+                "x": 53.890625,
+                "y": 1009.953125,
+                "width": 298.609375,
+                "height": 14.046875,
+                "top": 1009.953125,
+                "right": 352.5,
+                "bottom": 1024,
+                "left": 53.890625
+              },
+              "current": {
+                "x": 53.890625,
+                "y": 938.625,
+                "width": 298.609375,
+                "height": 20.59375,
+                "top": 938.625,
+                "right": 352.5,
+                "bottom": 959.21875,
+                "left": 53.890625
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 554.078125,
+                "y": 13.609375,
+                "width": 77,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 631.078125,
+                "bottom": 58.375,
+                "left": 554.078125
+              },
+              "current": {
+                "x": 550.625,
+                "y": 13.609375,
+                "width": 79.3125,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 550.625
+              }
+            }
+          ]
+        },
+        {
+          "time": 580.5999999046326,
+          "value": 0.0018481786052385965,
+          "sources": [
+            {
+              "tag": "H2",
+              "cls": "",
+              "previous": {
+                "x": 53.890625,
+                "y": 963.609375,
+                "width": 175.359375,
+                "height": 60.390625,
+                "top": 963.609375,
+                "right": 229.25,
+                "bottom": 1024,
+                "left": 53.890625
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            },
+            {
+              "tag": "P",
+              "cls": "section-eyebrow",
+              "previous": {
+                "x": 53.890625,
+                "y": 938.625,
+                "width": 298.609375,
+                "height": 20.59375,
+                "top": 938.625,
+                "right": 352.5,
+                "bottom": 959.21875,
+                "left": 53.890625
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 610.6999999284744,
+          "value": 0.00022449220220247906,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 339.265625,
+                "y": 13.609375,
+                "width": 290.671875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 339.265625
+              },
+              "current": {
+                "x": 325.75,
+                "y": 13.609375,
+                "width": 304.1875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 325.75
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "roadmap",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 78.39999997615814,
+      "learnerReadyMs": 289.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 74.79999995231628,
+      "learnerReadyMs": 256.09999990463257,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 84.30000007152557,
+      "learnerReadyMs": 325.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 75.60000002384186,
+      "learnerReadyMs": 276.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 79.29999995231628,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 79.29999995231628,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 72.19999992847443,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 79,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.5,
+      "learnerReadyMs": 288.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 768,
+      "height": 1024,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 77.39999997615814,
+      "learnerReadyMs": 247.19999992847443,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.02028645326693853,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 83.60000002384186,
+      "learnerReadyMs": 280.7000000476837,
+      "shifts": [
+        {
+          "time": 359.3000000715256,
+          "value": 0.008109224339326223,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 94.3125,
+                "y": 755.546875,
+                "width": 564.375,
+                "height": 268.453125,
+                "top": 755.546875,
+                "right": 658.6875,
+                "bottom": 1024,
+                "left": 94.3125
+              },
+              "current": {
+                "x": 93.3125,
+                "y": 798.546875,
+                "width": 566.375,
+                "height": 225.453125,
+                "top": 798.546875,
+                "right": 659.6875,
+                "bottom": 1024,
+                "left": 93.3125
+              }
+            }
+          ]
+        },
+        {
+          "time": 377.60000002384186,
+          "value": 0.012177228927612305,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 680.90625,
+                "width": 600.375,
+                "height": 343.09375,
+                "top": 680.90625,
+                "right": 676.6875,
+                "bottom": 1024,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 664.015625,
+                "width": 680.375,
+                "height": 359.984375,
+                "top": 664.015625,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.02169667681058248,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 77.30000007152557,
+      "learnerReadyMs": 262.2000000476837,
+      "shifts": [
+        {
+          "time": 319.40000009536743,
+          "value": 0.008775283892949423,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 94.3125,
+                "y": 733.9375,
+                "width": 564.375,
+                "height": 280,
+                "top": 733.9375,
+                "right": 658.6875,
+                "bottom": 1013.9375,
+                "left": 94.3125
+              },
+              "current": {
+                "x": 93.3125,
+                "y": 776.9375,
+                "width": 566.375,
+                "height": 247.0625,
+                "top": 776.9375,
+                "right": 659.6875,
+                "bottom": 1024,
+                "left": 93.3125
+              }
+            }
+          ]
+        },
+        {
+          "time": 338.5,
+          "value": 0.012921392917633057,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 659.296875,
+                "width": 600.375,
+                "height": 364.703125,
+                "top": 659.296875,
+                "right": 676.6875,
+                "bottom": 1024,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 642.40625,
+                "width": 680.375,
+                "height": 381.59375,
+                "top": 642.40625,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.02137617145975431,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 81.60000002384186,
+      "learnerReadyMs": 337.89999997615814,
+      "shifts": [
+        {
+          "time": 413.3000000715256,
+          "value": 0.008623906721671423,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 94.3125,
+                "y": 738.71875,
+                "width": 564.375,
+                "height": 280,
+                "top": 738.71875,
+                "right": 658.6875,
+                "bottom": 1018.71875,
+                "left": 94.3125
+              },
+              "current": {
+                "x": 93.3125,
+                "y": 781.71875,
+                "width": 566.375,
+                "height": 242.28125,
+                "top": 781.71875,
+                "right": 659.6875,
+                "bottom": 1024,
+                "left": 93.3125
+              }
+            }
+          ]
+        },
+        {
+          "time": 440.7000000476837,
+          "value": 0.012752264738082886,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 664.078125,
+                "width": 600.375,
+                "height": 359.921875,
+                "top": 664.078125,
+                "right": 676.6875,
+                "bottom": 1024,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 647.1875,
+                "width": 680.375,
+                "height": 376.8125,
+                "top": 647.1875,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.02169667681058248,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 99,
+      "learnerReadyMs": 302.6999999284744,
+      "shifts": [
+        {
+          "time": 355.6999999284744,
+          "value": 0.008775283892949423,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 94.3125,
+                "y": 733.9375,
+                "width": 564.375,
+                "height": 280,
+                "top": 733.9375,
+                "right": 658.6875,
+                "bottom": 1013.9375,
+                "left": 94.3125
+              },
+              "current": {
+                "x": 93.3125,
+                "y": 776.9375,
+                "width": 566.375,
+                "height": 247.0625,
+                "top": 776.9375,
+                "right": 659.6875,
+                "bottom": 1024,
+                "left": 93.3125
+              }
+            }
+          ]
+        },
+        {
+          "time": 377.1999999284744,
+          "value": 0.012921392917633057,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 659.296875,
+                "width": 600.375,
+                "height": 364.703125,
+                "top": 659.296875,
+                "right": 676.6875,
+                "bottom": 1024,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 642.40625,
+                "width": 680.375,
+                "height": 381.59375,
+                "top": 642.40625,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.021983356525500618,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 75.89999997615814,
+      "learnerReadyMs": 264.2000000476837,
+      "shifts": [
+        {
+          "time": 337.89999997615814,
+          "value": 0.008926661064227423,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 94.3125,
+                "y": 729.15625,
+                "width": 564.375,
+                "height": 280,
+                "top": 729.15625,
+                "right": 658.6875,
+                "bottom": 1009.15625,
+                "left": 94.3125
+              },
+              "current": {
+                "x": 93.3125,
+                "y": 772.15625,
+                "width": 566.375,
+                "height": 251.84375,
+                "top": 772.15625,
+                "right": 659.6875,
+                "bottom": 1024,
+                "left": 93.3125
+              }
+            }
+          ]
+        },
+        {
+          "time": 351.39999997615814,
+          "value": 0.013056695461273193,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 654.515625,
+                "width": 600.375,
+                "height": 369.484375,
+                "top": 654.515625,
+                "right": 676.6875,
+                "bottom": 1024,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 637.625,
+                "width": 680.375,
+                "height": 386.375,
+                "top": 637.625,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 768,
+      "height": 1024,
+      "cls": 0.02737774432171136,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 93.20000004768372,
+      "learnerReadyMs": 289.2000000476837,
+      "shifts": [
+        {
+          "time": 276,
+          "value": 0.004067242029123008,
+          "sources": [
+            {
+              "tag": "DETAILS",
+              "cls": "example-reader__solution",
+              "previous": {
+                "x": 36.3125,
+                "y": 925.796875,
+                "width": 680.375,
+                "height": 50.40625,
+                "top": 925.796875,
+                "right": 716.6875,
+                "bottom": 976.203125,
+                "left": 36.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 974.875,
+                "width": 680.375,
+                "height": 49.125,
+                "top": 974.875,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            },
+            {
+              "tag": "FOOTER",
+              "cls": "example-reader__source",
+              "previous": {
+                "x": 36.3125,
+                "y": 990.59375,
+                "width": 680.375,
+                "height": 29.84375,
+                "top": 990.59375,
+                "right": 716.6875,
+                "bottom": 1020.4375,
+                "left": 36.3125
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 291.10000002384186,
+          "value": 0.023310502292588353,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 76.3125,
+                "y": 654.515625,
+                "width": 600.375,
+                "height": 289.078125,
+                "top": 654.515625,
+                "right": 676.6875,
+                "bottom": 943.59375,
+                "left": 76.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 637.625,
+                "width": 680.375,
+                "height": 289.078125,
+                "top": 637.625,
+                "right": 716.6875,
+                "bottom": 926.703125,
+                "left": 36.3125
+              }
+            },
+            {
+              "tag": "DETAILS",
+              "cls": "example-reader__solution",
+              "previous": {
+                "x": 36.3125,
+                "y": 974.875,
+                "width": 680.375,
+                "height": 49.125,
+                "top": 974.875,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 941.09375,
+                "width": 680.375,
+                "height": 50.40625,
+                "top": 941.09375,
+                "right": 716.6875,
+                "bottom": 991.5,
+                "left": 36.3125
+              }
+            },
+            {
+              "tag": "FOOTER",
+              "cls": "example-reader__source",
+              "previous": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "current": {
+                "x": 36.3125,
+                "y": 1005.890625,
+                "width": 680.375,
+                "height": 18.109375,
+                "top": 1005.890625,
+                "right": 716.6875,
+                "bottom": 1024,
+                "left": 36.3125
+              }
+            },
+            {
+              "previous": {
+                "x": 53.3125,
+                "y": 722.84375,
+                "width": 74.234375,
+                "height": 21,
+                "top": 722.84375,
+                "right": 127.546875,
+                "bottom": 743.84375,
+                "left": 53.3125
+              },
+              "current": {
+                "x": 53.3125,
+                "y": 722.84375,
+                "width": 84.734375,
+                "height": 21,
+                "top": 722.84375,
+                "right": 138.046875,
+                "bottom": 743.84375,
+                "left": 53.3125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.07257342152297497,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 318.8000000715256,
+      "learnerReadyMs": 642.8000000715256,
+      "shifts": [
+        {
+          "time": 478.89999997615814,
+          "value": 0.07216930389404297,
+          "sources": [
+            {
+              "tag": "MAIN",
+              "cls": "",
+              "previous": {
+                "x": 0,
+                "y": 0,
+                "width": 1009,
+                "height": 768,
+                "top": 0,
+                "right": 1009,
+                "bottom": 768,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 75,
+                "width": 1009,
+                "height": 693,
+                "top": 75,
+                "right": 1009,
+                "bottom": 768,
+                "left": 0
+              }
+            },
+            {
+              "tag": "FIGURE",
+              "cls": "study-rhythm__image drift is-visible",
+              "previous": {
+                "x": 524,
+                "y": 749.46875,
+                "width": 464.484375,
+                "height": 18.53125,
+                "top": 749.46875,
+                "right": 988.484375,
+                "bottom": 768,
+                "left": 524
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 599.1000000238419,
+          "value": 0.0001420816406607628,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 586.34375,
+                "y": 13.421875,
+                "width": 287.25,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 873.59375,
+                "bottom": 58.578125,
+                "left": 586.34375
+              },
+              "current": {
+                "x": 577.96875,
+                "y": 13.421875,
+                "width": 295.625,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 873.59375,
+                "bottom": 58.578125,
+                "left": 577.96875
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 795.296875,
+                "y": 13.421875,
+                "width": 79,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 874.296875,
+                "bottom": 58.578125,
+                "left": 795.296875
+              },
+              "current": {
+                "x": 792.734375,
+                "y": 13.421875,
+                "width": 82,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 874.734375,
+                "bottom": 58.578125,
+                "left": 792.734375
+              }
+            }
+          ]
+        },
+        {
+          "time": 621.2000000476837,
+          "value": 0.0002620359882712364,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 578.1875,
+                "y": 13.421875,
+                "width": 295.40625,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 873.59375,
+                "bottom": 58.578125,
+                "left": 578.1875
+              },
+              "current": {
+                "x": 563.484375,
+                "y": 13.421875,
+                "width": 309.140625,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 872.625,
+                "bottom": 58.578125,
+                "left": 563.484375
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 792.734375,
+                "y": 13.421875,
+                "width": 82,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 874.734375,
+                "bottom": 58.578125,
+                "left": 792.734375
+              },
+              "current": {
+                "x": 788.59375,
+                "y": 13.421875,
+                "width": 85,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 873.59375,
+                "bottom": 58.578125,
+                "left": 788.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "roadmap",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.10000002384186,
+      "learnerReadyMs": 303.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 70.69999992847443,
+      "learnerReadyMs": 243.79999995231628,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.00015873467782512307,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 70.60000002384186,
+      "learnerReadyMs": 310.2000000476837,
+      "shifts": [
+        {
+          "time": 268.7000000476837,
+          "value": 0.00015873467782512307,
+          "sources": [
+            {
+              "previous": {
+                "x": 24.5625,
+                "y": 489.46875,
+                "width": 678.375,
+                "height": 20,
+                "top": 489.46875,
+                "right": 702.9375,
+                "bottom": 509.46875,
+                "left": 24.5625
+              },
+              "current": {
+                "x": 24.5625,
+                "y": 489.46875,
+                "width": 678.375,
+                "height": 20,
+                "top": 489.46875,
+                "right": 702.9375,
+                "bottom": 509.46875,
+                "left": 24.5625
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 332.03125,
+                "y": 457.09375,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 457.09375,
+                "right": 356.984375,
+                "bottom": 514.0625,
+                "left": 332.03125
+              },
+              "current": {
+                "x": 338.546875,
+                "y": 457.09375,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 457.09375,
+                "right": 363.5,
+                "bottom": 514.0625,
+                "left": 338.546875
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 82.9375,
+                "y": 459.9375,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 459.9375,
+                "right": 107.15625,
+                "bottom": 516.90625,
+                "left": 82.9375
+              },
+              "current": {
+                "x": 89.453125,
+                "y": 459.9375,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 459.9375,
+                "right": 113.671875,
+                "bottom": 516.90625,
+                "left": 89.453125
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 83.9375,
+                "y": 444.703125,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 444.703125,
+                "right": 107.15625,
+                "bottom": 501.671875,
+                "left": 83.9375
+              },
+              "current": {
+                "x": 90.453125,
+                "y": 444.703125,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 444.703125,
+                "right": 113.671875,
+                "bottom": 501.671875,
+                "left": 90.453125
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "katex-base",
+              "previous": {
+                "x": 231.609375,
+                "y": 488.46875,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 488.46875,
+                "right": 276.671875,
+                "bottom": 512.21875,
+                "left": 231.609375
+              },
+              "current": {
+                "x": 238.125,
+                "y": 488.46875,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 488.46875,
+                "right": 283.1875,
+                "bottom": 512.21875,
+                "left": 238.125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 79.70000004768372,
+      "learnerReadyMs": 274.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 95,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 94,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 111.10000002384186,
+      "learnerReadyMs": 349.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 1024,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 88.89999997615814,
+      "learnerReadyMs": 301.2000000476837,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.008181927104791006,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 96.09999990463257,
+      "learnerReadyMs": 337.5,
+      "shifts": [
+        {
+          "time": 440.59999990463257,
+          "value": 0.002004799743493398,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 114.28125,
+                "y": 650.703125,
+                "width": 765.4375,
+                "height": 49.296875,
+                "top": 650.703125,
+                "right": 879.71875,
+                "bottom": 700,
+                "left": 114.28125
+              },
+              "current": {
+                "x": 113.28125,
+                "y": 693.703125,
+                "width": 767.4375,
+                "height": 6.296875,
+                "top": 693.703125,
+                "right": 880.71875,
+                "bottom": 700,
+                "left": 113.28125
+              }
+            }
+          ]
+        },
+        {
+          "time": 459.2999999523163,
+          "value": 0.006177127361297607,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 576.0625,
+                "width": 801.4375,
+                "height": 123.9375,
+                "top": 576.0625,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 558.65625,
+                "width": 881.4375,
+                "height": 141.34375,
+                "top": 558.65625,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.007757840057214102,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 93.89999997615814,
+      "learnerReadyMs": 413.6999999284744,
+      "shifts": [
+        {
+          "time": 418.1999999284744,
+          "value": 0.0017997597654660544,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 114.28125,
+                "y": 655.625,
+                "width": 765.4375,
+                "height": 44.375,
+                "top": 655.625,
+                "right": 879.71875,
+                "bottom": 700,
+                "left": 114.28125
+              },
+              "current": {
+                "x": 113.28125,
+                "y": 698.625,
+                "width": 767.4375,
+                "height": 1.375,
+                "top": 698.625,
+                "right": 880.71875,
+                "bottom": 700,
+                "left": 113.28125
+              }
+            }
+          ]
+        },
+        {
+          "time": 446.39999997615814,
+          "value": 0.005958080291748047,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 580.984375,
+                "width": 801.4375,
+                "height": 119.015625,
+                "top": 580.984375,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 563.578125,
+                "width": 881.4375,
+                "height": 136.421875,
+                "top": 563.578125,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.007757840057214102,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 110.29999995231628,
+      "learnerReadyMs": 371.6999999284744,
+      "shifts": [
+        {
+          "time": 466.89999997615814,
+          "value": 0.0017997597654660544,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 114.28125,
+                "y": 655.625,
+                "width": 765.4375,
+                "height": 44.375,
+                "top": 655.625,
+                "right": 879.71875,
+                "bottom": 700,
+                "left": 114.28125
+              },
+              "current": {
+                "x": 113.28125,
+                "y": 698.625,
+                "width": 767.4375,
+                "height": 1.375,
+                "top": 698.625,
+                "right": 880.71875,
+                "bottom": 700,
+                "left": 113.28125
+              }
+            }
+          ]
+        },
+        {
+          "time": 495.60000002384186,
+          "value": 0.005958080291748047,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 580.984375,
+                "width": 801.4375,
+                "height": 119.015625,
+                "top": 580.984375,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 563.578125,
+                "width": 881.4375,
+                "height": 136.421875,
+                "top": 563.578125,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.007757840057214102,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 114.20000004768372,
+      "learnerReadyMs": 355.7000000476837,
+      "shifts": [
+        {
+          "time": 434,
+          "value": 0.0017997597654660544,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 114.28125,
+                "y": 655.625,
+                "width": 765.4375,
+                "height": 44.375,
+                "top": 655.625,
+                "right": 879.71875,
+                "bottom": 700,
+                "left": 114.28125
+              },
+              "current": {
+                "x": 113.28125,
+                "y": 698.625,
+                "width": 767.4375,
+                "height": 1.375,
+                "top": 698.625,
+                "right": 880.71875,
+                "bottom": 700,
+                "left": 113.28125
+              }
+            }
+          ]
+        },
+        {
+          "time": 455.5,
+          "value": 0.005958080291748047,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 580.984375,
+                "width": 801.4375,
+                "height": 119.015625,
+                "top": 580.984375,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 563.578125,
+                "width": 881.4375,
+                "height": 136.421875,
+                "top": 563.578125,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.008181927104791006,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 125.60000002384186,
+      "learnerReadyMs": 344.7999999523163,
+      "shifts": [
+        {
+          "time": 407.39999997615814,
+          "value": 0.002004799743493398,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 114.28125,
+                "y": 650.703125,
+                "width": 765.4375,
+                "height": 49.296875,
+                "top": 650.703125,
+                "right": 879.71875,
+                "bottom": 700,
+                "left": 114.28125
+              },
+              "current": {
+                "x": 113.28125,
+                "y": 693.703125,
+                "width": 767.4375,
+                "height": 6.296875,
+                "top": 693.703125,
+                "right": 880.71875,
+                "bottom": 700,
+                "left": 113.28125
+              }
+            }
+          ]
+        },
+        {
+          "time": 422.60000002384186,
+          "value": 0.006177127361297607,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 576.0625,
+                "width": 801.4375,
+                "height": 123.9375,
+                "top": 576.0625,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 558.65625,
+                "width": 881.4375,
+                "height": 141.34375,
+                "top": 558.65625,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 1024,
+      "height": 768,
+      "cls": 0.011070570442825556,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 113,
+      "learnerReadyMs": 358.7000000476837,
+      "shifts": [
+        {
+          "time": 345,
+          "value": 0.011070570442825556,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 96.28125,
+                "y": 576.0625,
+                "width": 801.4375,
+                "height": 123.9375,
+                "top": 576.0625,
+                "right": 897.71875,
+                "bottom": 700,
+                "left": 96.28125
+              },
+              "current": {
+                "x": 56.28125,
+                "y": 558.65625,
+                "width": 881.4375,
+                "height": 141.34375,
+                "top": 558.65625,
+                "right": 937.71875,
+                "bottom": 700,
+                "left": 56.28125
+              }
+            },
+            {
+              "previous": {
+                "x": 73.28125,
+                "y": 643.953125,
+                "width": 100.375,
+                "height": 22,
+                "top": 643.953125,
+                "right": 173.65625,
+                "bottom": 665.953125,
+                "left": 73.28125
+              },
+              "current": {
+                "x": 73.28125,
+                "y": 643.953125,
+                "width": 110.84375,
+                "height": 22,
+                "top": 643.953125,
+                "right": 184.125,
+                "bottom": 665.953125,
+                "left": 73.28125
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.05459390931061695,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 243.79999995231628,
+      "learnerReadyMs": 609.2999999523163,
+      "shifts": [
+        {
+          "time": 508.2999999523163,
+          "value": 0.054301923518025076,
+          "sources": [
+            {
+              "tag": "MAIN",
+              "cls": "",
+              "previous": {
+                "x": 0,
+                "y": 0,
+                "width": 1351,
+                "height": 768,
+                "top": 0,
+                "right": 1351,
+                "bottom": 768,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 75,
+                "width": 1351,
+                "height": 693,
+                "top": 75,
+                "right": 1351,
+                "bottom": 768,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 575.2999999523163,
+          "value": 0.00003900990778152057,
+          "sources": [
+            {
+              "tag": "A",
+              "cls": "text-link",
+              "previous": {
+                "x": 308.765625,
+                "y": 451.640625,
+                "width": 170,
+                "height": 27.890625,
+                "top": 451.640625,
+                "right": 478.765625,
+                "bottom": 479.53125,
+                "left": 308.765625
+              },
+              "current": {
+                "x": 320.21875,
+                "y": 451.640625,
+                "width": 180,
+                "height": 27.890625,
+                "top": 451.640625,
+                "right": 500.21875,
+                "bottom": 479.53125,
+                "left": 320.21875
+              }
+            }
+          ]
+        },
+        {
+          "time": 584.0999999046326,
+          "value": 0.0002529758848103532,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 869.703125,
+                "y": 13.15625,
+                "width": 327.140625,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 869.703125
+              },
+              "current": {
+                "x": 847.25,
+                "y": 13.15625,
+                "width": 349.59375,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 847.25
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 1116.625,
+                "y": 13.15625,
+                "width": 81,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1197.625,
+                "bottom": 58.84375,
+                "left": 1116.625
+              },
+              "current": {
+                "x": 1110.71875,
+                "y": 13.15625,
+                "width": 87,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1197.71875,
+                "bottom": 58.84375,
+                "left": 1110.71875
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "roadmap",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 101.60000002384186,
+      "learnerReadyMs": 383.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 87.89999997615814,
+      "learnerReadyMs": 290.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.00008890559096700967,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 85.30000007152557,
+      "learnerReadyMs": 327.90000009536743,
+      "shifts": [
+        {
+          "time": 288.7000000476837,
+          "value": 0.00008890559096700967,
+          "sources": [
+            {
+              "previous": {
+                "x": 264,
+                "y": 492.171875,
+                "width": 678.375,
+                "height": 20,
+                "top": 492.171875,
+                "right": 942.375,
+                "bottom": 512.171875,
+                "left": 264
+              },
+              "current": {
+                "x": 264,
+                "y": 492.171875,
+                "width": 678.375,
+                "height": 20,
+                "top": 492.171875,
+                "right": 942.375,
+                "bottom": 512.171875,
+                "left": 264
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 571.46875,
+                "y": 459.796875,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 459.796875,
+                "right": 596.421875,
+                "bottom": 516.765625,
+                "left": 571.46875
+              },
+              "current": {
+                "x": 577.984375,
+                "y": 459.796875,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 459.796875,
+                "right": 602.9375,
+                "bottom": 516.765625,
+                "left": 577.984375
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 322.375,
+                "y": 462.640625,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 462.640625,
+                "right": 346.59375,
+                "bottom": 519.609375,
+                "left": 322.375
+              },
+              "current": {
+                "x": 328.890625,
+                "y": 462.640625,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 462.640625,
+                "right": 353.109375,
+                "bottom": 519.609375,
+                "left": 328.890625
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 323.375,
+                "y": 447.40625,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 447.40625,
+                "right": 346.59375,
+                "bottom": 504.375,
+                "left": 323.375
+              },
+              "current": {
+                "x": 329.890625,
+                "y": 447.40625,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 447.40625,
+                "right": 353.109375,
+                "bottom": 504.375,
+                "left": 329.890625
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "katex-base",
+              "previous": {
+                "x": 471.046875,
+                "y": 491.171875,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 491.171875,
+                "right": 516.109375,
+                "bottom": 514.921875,
+                "left": 471.046875
+              },
+              "current": {
+                "x": 477.5625,
+                "y": 491.171875,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 491.171875,
+                "right": 522.625,
+                "bottom": 514.921875,
+                "left": 477.5625
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 77.5,
+      "learnerReadyMs": 267.5,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 76,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 76,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 87.69999992847443,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 97.30000007152557,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 116.89999997615814,
+      "learnerReadyMs": 359.8000000715256,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 1366,
+      "height": 768,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 101.70000004768372,
+      "learnerReadyMs": 349.90000009536743,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.007153235336649596,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 101.70000004768372,
+      "learnerReadyMs": 284,
+      "shifts": [
+        {
+          "time": 360.39999997615814,
+          "value": 0.002298987701657131,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 613.78125,
+                "width": 814.8125,
+                "height": 94.21875,
+                "top": 613.78125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 656.78125,
+                "width": 816.8125,
+                "height": 51.21875,
+                "top": 656.78125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 380.39999997615814,
+          "value": 0.004854247634992466,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 82.10000002384186,
+      "learnerReadyMs": 311,
+      "shifts": [
+        {
+          "time": 397.39999997615814,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 427.10000002384186,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 101.5,
+      "learnerReadyMs": 350.7999999523163,
+      "shifts": [
+        {
+          "time": 435.89999997615814,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 468.60000002384186,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 115,
+      "learnerReadyMs": 367.5,
+      "shifts": [
+        {
+          "time": 453.5,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 472.89999997615814,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.007153235336649596,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 103.30000007152557,
+      "learnerReadyMs": 363.5,
+      "shifts": [
+        {
+          "time": 368,
+          "value": 0.002298987701657131,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 613.78125,
+                "width": 814.8125,
+                "height": 94.21875,
+                "top": 613.78125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 656.78125,
+                "width": 816.8125,
+                "height": 51.21875,
+                "top": 656.78125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 386.7000000476837,
+          "value": 0.004854247634992466,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.008697825742855641,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 110.20000004768372,
+      "learnerReadyMs": 376.10000002384186,
+      "shifts": [
+        {
+          "time": 350,
+          "value": 0.008697825742855641,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            },
+            {
+              "previous": {
+                "x": 335.59375,
+                "y": 606.515625,
+                "width": 106.4375,
+                "height": 23,
+                "top": 606.515625,
+                "right": 442.03125,
+                "bottom": 629.515625,
+                "left": 335.59375
+              },
+              "current": {
+                "x": 335.59375,
+                "y": 606.515625,
+                "width": 116.859375,
+                "height": 23,
+                "top": 606.515625,
+                "right": 452.453125,
+                "bottom": 629.515625,
+                "left": 335.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 344.89999997615814,
+      "learnerReadyMs": 651.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 89.70000004768372,
+      "learnerReadyMs": 359.5,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.70000004768372,
+      "learnerReadyMs": 242.70000004768372,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 73.19999992847443,
+      "learnerReadyMs": 279.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 80.89999997615814,
+      "learnerReadyMs": 270.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 91.80000007152557,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 91.80000007152557,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 95.80000007152557,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 105.29999995231628,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 131.70000004768372,
+      "learnerReadyMs": 440.90000009536743,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 109.39999997615814,
+      "learnerReadyMs": 309.6999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 102.79999995231628,
+      "learnerReadyMs": 357,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 101.69999992847443,
+      "learnerReadyMs": 339.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 101.20000004768372,
+      "learnerReadyMs": 338.5,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 95.69999992847443,
+      "learnerReadyMs": 336.2999999523163,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 109.69999992847443,
+      "learnerReadyMs": 342.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 844,
+      "height": 390,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 109,
+      "learnerReadyMs": 370.3000000715256,
+      "shifts": []
+    }
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "fixtureApplyRollback": true,
+  "realRuntimeWrites": 0
+}

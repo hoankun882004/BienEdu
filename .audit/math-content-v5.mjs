@@ -90,8 +90,8 @@ try {
     });
 
     assert.equal(result.title, "Bài toán y tế - xét nghiệm");
-    assert.equal(result.verification, "source-verified");
-    assert.equal(result.badge, "Đã đối chiếu nguồn");
+    assert.equal(result.verification, "source-mapped");
+    assert.equal(result.badge, undefined);
     assert.ok(result.katexCount >= 8, `${viewport.width}px renders all inline and display probability notation`);
     assert.equal(result.hasFraction, true, `${viewport.width}px preserves the Bayes fraction`);
     assert.equal(result.mathErrors, 0, `${viewport.width}px has no red math fallback`);
@@ -146,7 +146,7 @@ try {
   });
   assert.match(example.text, /Tài liệu nguồn chưa có lời giải được ánh xạ chắc chắn/u);
   assert.match(example.text, /Nguồn LaTeX: dòng 749–751/u);
-  assert.match(example.text, /Đã đối chiếu LaTeX nguồn/u);
+  assert.match(example.text, /Tài liệu LaTeX nguồn/u);
   assert.equal(example.solutionCount, 0, "no worked solution is invented for the source example");
   assert.equal(example.errors, 0);
   assert.ok(example.katexCount >= 2);

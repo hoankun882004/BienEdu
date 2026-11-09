@@ -42,7 +42,6 @@ const viewports = [
   { width: 1920, height: 1080 }
 ];
 const representatives = ["1.1", "12.1", "12.4", "13.1", "14.1", "20.1", "20.2", "20.17", "21.1", "21.8"];
-const immutableVerified = new Set(["12.1", "20.1", "20.2"]);
 const allCodes = Object.keys(knowledgeContent).filter((code) => /^(?:12|13|14|20|21)\./.test(code));
 
 function topicFor(code) {
@@ -115,8 +114,7 @@ try {
       const state = await inspectNativeLesson(page);
       const label = `${code} at ${viewport.width}x${viewport.height}`;
       assert.ok(state.reader && state.content && state.navigation, `${label} renders the complete native reader shell`);
-      const expectedVerification = immutableVerified.has(code) ? "verified" : "needs-review";
-      assert.equal(state.verified, expectedVerification, `${label} exposes an honest review state`);
+      assert.equal(state.verified, "needs-review", `${label} does not promote legacy agent review to human approval`);
       assert.ok(state.title, `${label} keeps a visible lesson title`);
       assert.equal(state.forbiddenNodes, 0, `${label} contains no PDF/canvas renderer`);
       assert.equal(state.forbiddenText, false, `${label} contains no PDF viewer controls`);

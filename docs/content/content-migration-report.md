@@ -1,6 +1,6 @@
 # Content migration report
 
-Generated: 2026-11-04T04:20:25.369Z
+Generated: 2026-11-08T15:54:48.514Z
 
 ## 1. Root Cause Analysis — CD01
 
@@ -27,7 +27,7 @@ Generated: 2026-11-04T04:20:25.369Z
 
 ## 3. PDF inventory
 
-- 4 PDF nguồn, 243 trang.
+- 8 PDF nguồn, 243 trang.
 - Chi tiết: [pdf-inventory.md](./pdf-inventory.md).
 
 ## 4. Topic coverage
@@ -60,7 +60,7 @@ Generated: 2026-11-04T04:20:25.369Z
 
 - Registry errors: 0.
 - Source warnings: 1.
-- Checkpoint 2026-11-04: unit/data test đạt 108/108; content validation và source check được chạy lại từ pipeline hiện tại.
+- Checkpoint 2026-11-08: unit/data test đạt 108/108; content validation và source check được chạy lại từ pipeline hiện tại.
 - KaTeX strict parsing đạt 1.662/1.662 formula slots nhập khẩu và 93/93 biểu thức approved; kiểm tra trình duyệt đạt 64 Knowledge routes và 64 Example routes, không có lỗi công thức trên desktop.
 - Playwright Learning Experience V3 và V4 kiểm tra CD01, CD08, CD12 và CD20 trên 1920×1080, 1366×768, 768×1024 và 390×844; gồm lời giải đóng/mở, trạng thái đã xem, Back/Forward, scroll restoration, phím mũi tên, hình nguồn và Exercise regression.
 - Không có page-level overflow, KaTeX error, công thức bị cắt hoặc điều khiển thiếu accessible name trong các route đại diện.
@@ -72,7 +72,7 @@ Generated: 2026-11-04T04:20:25.369Z
 
 - 1180 ví dụ foundation đã nhập nhưng chưa được con người đối chiếu từng dòng với PDF; không được tự nâng thành verified.
 - Ngoài 1.1, 8.1 và 8.4, các dạng CD01–CD11 vẫn cần source review đầy đủ dù renderer và KaTeX đã qua kiểm tra kỹ thuật.
-- CD15–CD19 và CD22–CD39 chưa có PDF nguồn được mapping trong workspace.
+- PDF mới CD15–CD19 và CD28–CD33 đã có trong workspace nhưng chưa được kích hoạt vào runtime mặc định. Bản PDF CD12–CD14 mới là nguồn độc lập, không thay thế bản cũ chỉ vì trùng phạm vi. Xem ma trận chuẩn bị V6 trong .audit/source-first-v5/release-v6/inventory.json; có nguồn không đồng nghĩa đã chuyển đổi và kiểm chứng đầy đủ.
 - 9 đáp số CD12–CD14 có xung đột nguồn đã biết vẫn giữ needs-review và không auto-grade.
 - Không có lỗi kỹ thuật nghiêm trọng còn mở tại checkpoint; các mục trên là thiếu nguồn hoặc thiếu bằng chứng kiểm duyệt, không được che bằng placeholder.
 

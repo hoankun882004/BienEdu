@@ -1,0 +1,28 @@
+
+> test:source-first
+> node --test --test-concurrency=1 tests/source-first.test.js tests/source-verification-v51.test.js tests/source-review-v52.test.js tests/source-integration-v53.test.js tests/source-release-v54.test.js tests/source-development-v55.test.js tests/source-fraction-v56.test.js && node .audit/source-first-v5-browser.mjs && node .audit/runtime-integration-v53.mjs && node .audit/source-first-v54-browser.mjs && node .audit/source-first-v55-browser.mjs && node .audit/source-first-v56-browser.mjs
+
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (1116.221ms)
+✔ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (9578.6551ms)
+✔ development execution is blocked in production/CI and requires explicit batch authorization (4459.7577ms)
+✔ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (12076.5901ms)
+✔ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (10832.4339ms)
+✔ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (6205.4978ms)
+✔ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (3975.0323ms)
+✔ source/crop hash and runtime dependency changes invalidate prepared batches (4071.017ms)
+✔ actual project retains its authorized V5.5 state and the existing fraction queue is never overwritten (3.7275ms)
+✔ native scanner preserves raw offsets, comments, command boundaries and nested scripts (1.822ms)
+✔ 40 source fixtures preserve exact evidence, all document pages, crops and independent review gates (238.5618ms)
+✔ source-specific quotient normalization keeps denominator factorial and chained equality (1.3039ms)
+✔ math tables keep inline conditional bars inside one mathematical cell (1.389ms)
+✔ review patches reject stale data, invalid math, missing comparison and unknown decisions (23.1856ms)
+✔ an editor decision updates only staging and keeps mathematical approval separate (63.3248ms)
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+✔ read-only local server enforces host, origin, session token and immutable HTTP actions (1282.472ms)
+✔ rebuilding staging is deterministic and preserves approved runtime records (2877.4515ms)

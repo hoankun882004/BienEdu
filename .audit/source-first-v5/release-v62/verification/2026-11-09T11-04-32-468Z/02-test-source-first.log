@@ -1,0 +1,29 @@
+[V6.2] test:source-first: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> test:source-first
+> node scripts/source-first/compat-suites-v61.mjs test:source-first
+
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (1200.976ms)
+✔ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (10372.8762ms)
+✔ development execution is blocked in production/CI and requires explicit batch authorization (4405.1615ms)
+✔ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (12931.4874ms)
+✔ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (12953.7626ms)
+✔ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (7141.368ms)
+✔ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (4745.6054ms)
+✔ source/crop hash and runtime dependency changes invalidate prepared batches (4632.0744ms)
+✔ actual project retains its authorized V5.5 state and the existing fraction queue is never overwritten (6.7052ms)
+✔ native scanner preserves raw offsets, comments, command boundaries and nested scripts (1.6553ms)
+✔ 40 source fixtures preserve exact evidence, all document pages, crops and independent review gates (465.765ms)
+✔ source-specific quotient normalization keeps denominator factorial and chained equality (1.4927ms)
+✔ math tables keep inline conditional bars inside one mathematical cell (1.5915ms)
+✔ review patches reject stale data, invalid math, missing comparison and unknown decisions (27.109ms)
+✔ an editor decision updates only staging and keeps mathematical approval separate (66.6699ms)
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+✔ read-only local server enforces host, origin, session token and immutable HTTP actions (1402.4594ms)
+✔ rebuilding staging is deterministic and preserves approved runtime records (3507.6339ms)

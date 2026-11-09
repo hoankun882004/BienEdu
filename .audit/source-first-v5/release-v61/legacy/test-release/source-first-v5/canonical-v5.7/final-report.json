@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "bienedu.canonical-final.v5.7",
+  "status": "COMPLETE",
+  "scope": "Incremental canonical architecture and verification; not full content migration or publication",
+  "generatedAt": "2026-11-06T07:34:45.238Z",
+  "verification": {
+    "sequential": true,
+    "results": [
+      {
+        "command": "npm.cmd run content:canonical:preview",
+        "exitCode": 0,
+        "startedAt": "2026-11-06T07:19:42.281Z",
+        "finishedAt": "2026-11-06T07:19:52.257Z",
+        "log": "content-canonical-preview-final.log"
+      },
+      {
+        "command": "npm.cmd run verify",
+        "exitCode": 0,
+        "startedAt": "2026-11-06T07:19:52.258Z",
+        "finishedAt": "2026-11-06T07:27:20.423Z",
+        "log": "verify-final.log"
+      },
+      {
+        "command": "npm.cmd run test:source-first",
+        "exitCode": 0,
+        "startedAt": "2026-11-06T07:27:20.423Z",
+        "finishedAt": "2026-11-06T07:32:13.876Z",
+        "log": "test-source-first-final.log"
+      },
+      {
+        "command": "npm.cmd run test:canonical",
+        "exitCode": 0,
+        "startedAt": "2026-11-06T07:32:13.877Z",
+        "finishedAt": "2026-11-06T07:33:45.660Z",
+        "log": "test-canonical-final.log"
+      }
+    ]
+  },
+  "tests": {
+    "node": {
+      "passed": 212,
+      "failed": 0
+    },
+    "dedicatedLatex": {
+      "passed": 6,
+      "failed": 0
+    },
+    "sourceFirst": {
+      "passed": 63,
+      "failed": 0
+    },
+    "canonical": {
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "browser": {
+    "learnerStates": 58,
+    "additionalDOMAndScoringViewports": 2,
+    "desktop": "1366x768",
+    "mobile": "390x844",
+    "errors": [],
+    "progressAndCorrectWrongScoringPreserved": true,
+    "duplicateMath": false,
+    "globalOverflow": false
+  },
+  "inventory": [
+    {
+      "sourceId": "cd12-cd14-calculus",
+      "sourceType": "pdf",
+      "topics": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "sectionCount": 26,
+      "pageCount": 49,
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+    },
+    {
+      "sourceId": "cd01-cd07-functions",
+      "sourceType": "pdf",
+      "topics": [
+        "CD01",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD05",
+        "CD06",
+        "CD07"
+      ],
+      "sectionCount": 71,
+      "pageCount": 98,
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+    },
+    {
+      "sourceId": "cd20-cd21-theory",
+      "sourceType": "pdf",
+      "topics": [
+        "CD20",
+        "CD21"
+      ],
+      "sectionCount": 25,
+      "pageCount": 18,
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+    },
+    {
+      "sourceId": "cd08-cd11-exponential-logarithm",
+      "sourceType": "pdf",
+      "topics": [
+        "CD08",
+        "CD09",
+        "CD10",
+        "CD11"
+      ],
+      "sectionCount": 50,
+      "pageCount": 78,
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+    },
+    {
+      "sourceId": "cd20-cd23-native-latex",
+      "sourceType": "tex",
+      "topics": [
+        "CD20",
+        "CD21",
+        "CD22",
+        "CD23"
+      ],
+      "sectionCount": 46,
+      "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+    }
+  ],
+  "integration": {
+    "sources": 5,
+    "plannedTopics": 39,
+    "sourceRecords": 7172,
+    "nativeMathNodes": 62,
+    "pilotFields": 35,
+    "unresolvedExtractionNodes": 6941,
+    "runtimeDataWrites": 0
+  },
+  "testMismatch": {
+    "observed": "39/40 machine-checked expressions in interrupted concurrent run",
+    "exactHistoricalItem": "not recorded; cannot retrospectively attribute",
+    "confirmedMechanism": {
+      "isolated": true,
+      "crop": "pdf-derivative-power",
+      "historicalFailedItem": "not recorded in original failure log",
+      "oldWriteWindowInvalidHash": true,
+      "actualPixmapSaveInvalidObservations": 34,
+      "actualReadFailuresByType": {
+        "partial-png-visible": 30,
+        "crop-read-sharing-violation": 2,
+        "crop-temporarily-missing": 2
+      },
+      "actualPixmapSaveWriterFailures": 94,
+      "atomicDestinationIntactUntilReplace": true,
+      "unchangedReplayDoesNotRewrite": true,
+      "realEvidenceWrites": 0
+    },
+    "fix": "Atomic generated crop writes, unchanged-byte skip, sequential test-file workers and sequential suites; original assertion retained with diagnostics"
+  },
+  "parent": {
+    "status": {
+      "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+      "mode": "local-development-experiment",
+      "formalHumanApproval": false,
+      "productionPublication": false,
+      "files": [
+        {
+          "file": "assets/js/data/calculus-knowledge-details.js",
+          "state": "after"
+        },
+        {
+          "file": "assets/js/data/foundation-lessons.generated.js",
+          "state": "after"
+        }
+      ],
+      "status": "locally-applied-unreviewed"
+    },
+    "correctedFields": 9,
+    "stale": false,
+    "journalEventsPreserved": 4
+  },
+  "child": {
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "files": [
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "state": "before"
+      }
+    ],
+    "status": "prepared-on-applied-v5.5",
+    "preparedFields": 26,
+    "rollbackEvidenceIntact": true,
+    "requiresNewPreview": false
+  },
+  "safety": {
+    "unchangedSourceFiles": 9,
+    "immutableDependenciesIntact": true,
+    "protectedCD20CD21": true,
+    "CD23Published": false,
+    "progressKeysChanged": false,
+    "scoringChanged": false,
+    "commitsPushesDeployments": 0
+  },
+  "limitations": [
+    "PDF text-layer blocks remain unresolved until source-backed structure is established.",
+    "Four native converter cases remain unsupported; no automatic repair or publication.",
+    "Legacy structured Knowledge/plain-math representations retain the existing shared rendering compatibility path.",
+    "21 planned topics lack authoritative sources; CD23 remains blocked.",
+    "Historical failed crop identity was not logged; shared-artifact race is confirmed independently, not inferred as an exact historical trace."
+  ],
+  "gitDiffCheck": {
+    "exitCode": 0
+  },
+  "documentation": "docs/content/canonical-math-v5.7.md",
+  "localCommand": "python -m http.server 8000 --bind 127.0.0.1"
+}

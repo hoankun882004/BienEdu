@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:55879/documents.html?grade=12&topic=CD15&type=15.1&section=example&item=1&releasePreview=off",
+  "errors": [],
+  "networkErrors": [],
+  "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    '\\\\alpha =3/5',\n    '0<\\\\alpha <\\\\pi /2',\n+   '\\\\alpha',\n+   '\\\\alpha'\n-   '\\\\alpha ',\n-   '\\\\alpha '\n  ]\n",
+  "text": "Bỏ qua điều hướng\nLớp 12\n⌄\nMenu\nGiá trị lượng giác\n\nCD15 · Dạng 15.1\n\nCách làm\nPhương pháp\nVí dụ\n0/5\nBài tập\nĐang cập nhật\nCách làm\nPhương pháp của dạng 15.1\n＋\nVí dụ\n\n1/5 đã xem\n\n1\nĐang xem\n2\n3\n5\n9\nTài liệu nguồn độc lập · Luong-giac-CD15-CD16.pdf\n\nVí dụ gốc 1 · Đề trang 2 · Lời giải trang 11. Nguồn này chưa khôi phục đầy đủ kiến thức/cách làm; các ví dụ được giữ riêng, không bổ sung lý thuyết suy đoán. Đã kiểm tra kỹ thuật; chưa có phê duyệt biên tập.\n\nDẠNG 15.1\n\nVí dụ 1\n\nBiết sin \n𝛼\n=\n3\n/\n5\nα=3/5, \n0\n<\n𝛼\n<\n𝜋\n/\n2\n0<α<π/2. Tính cos \n𝛼\nα, tan \n𝛼\nα.\n\nHiện lời giải\n＋\nNguồn: Trang 2\n·\nLời giải: Trang 11\nTài liệu PDF nguồn\n← Trước\n\n1 / 5\n\nVí dụ tiếp theo →"
+}

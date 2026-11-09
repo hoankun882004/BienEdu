@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "bienedu.validation.v5.6",
+  "clientDate": "2026-11-06",
+  "timezone": "Asia/Bangkok",
+  "generatedAt": "2026-11-06T05:32:20.947Z",
+  "inspected": 180,
+  "classifications": {
+    "ALREADY_CORRECT": 73,
+    "CONFIRMED_CONVERSION_ERROR": 14,
+    "SOURCE_AMBIGUOUS": 88,
+    "RUNTIME_MAPPING_AMBIGUOUS": 5,
+    "SOURCE_CONFLICT": 0,
+    "UNSUPPORTED": 0
+  },
+  "eligible": {
+    "groups": 10,
+    "fields": 26,
+    "files": 1
+  },
+  "confirmedButExcluded": 4,
+  "actualNewCorrectionsApplied": 0,
+  "parent": {
+    "status": {
+      "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+      "mode": "local-development-experiment",
+      "formalHumanApproval": false,
+      "productionPublication": false,
+      "files": [
+        {
+          "file": "assets/js/data/calculus-knowledge-details.js",
+          "state": "after"
+        },
+        {
+          "file": "assets/js/data/foundation-lessons.generated.js",
+          "state": "after"
+        }
+      ],
+      "status": "locally-applied-unreviewed"
+    },
+    "unchangedRuntime": [
+      {
+        "file": "assets/js/data/calculus-knowledge-details.js",
+        "hash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754",
+        "expectedAfterHash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754"
+      },
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "hash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968",
+        "expectedAfterHash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968"
+      }
+    ],
+    "unchangedJournalEvents": 4,
+    "rollbackDependenciesIntact": true
+  },
+  "child": {
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "files": [
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "state": "before"
+      }
+    ],
+    "status": "prepared-on-applied-v5.5"
+  },
+  "dryRun": {
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "files": [
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "state": "before"
+      }
+    ],
+    "status": "prepared-on-applied-v5.5",
+    "dryRun": true,
+    "runtimeWrites": 0
+  },
+  "tests": {
+    "verify": {
+      "exitCode": 0,
+      "log": ".audit/source-first-v5/verify-v56.log"
+    },
+    "node": {
+      "passed": 188,
+      "total": 188
+    },
+    "latex": {
+      "passed": 6,
+      "total": 6
+    },
+    "sourceFirst": {
+      "exitCode": 0,
+      "passed": 63,
+      "total": 63,
+      "log": ".audit/source-first-v5/source-tests-v56-final.log"
+    },
+    "symbolic": {
+      "engine": "sympy",
+      "version": "1.14.0",
+      "total": 22,
+      "passed": 22,
+      "scope": "4 derivatives/domains plus 18 exact polynomial point values; not proof of all 180 cases"
+    },
+    "importer": {
+      "groups": 10,
+      "fields": 26,
+      "deterministicReplay": true,
+      "wholeCurriculumRegenerationBlocked": true
+    },
+    "browser": {
+      "passed": true,
+      "report": ".audit/source-first-v5/browser-v5.6.json",
+      "beforeStates": 20,
+      "afterStates": 20,
+      "inheritedV55States": 6,
+      "actualFiles": true,
+      "noModuleResponseOverrides": true,
+      "screenshotsVisuallyInspected": [
+        "v56-1.3-source-example-2-after-390.png",
+        "v56-1.3-source-example-5-after-1366.png",
+        "v56-6.1-source-example-5-after-1366.png",
+        "v56-6.1-source-example-2-after-390.png"
+      ],
+      "progressPreserved": true,
+      "exercisesPreserved": true
+    }
+  },
+  "sources": {
+    "total": 9,
+    "unchanged": true,
+    "originalPDFPagesVisuallyInspected": [
+      5,
+      6,
+      49,
+      50,
+      51,
+      66,
+      67,
+      87,
+      88
+    ],
+    "humanReviewInferred": false
+  },
+  "tools": {
+    "additionalOCRInstalled": false,
+    "privateDocumentsUploaded": false,
+    "paidAPIsUsed": false,
+    "availableMemoryKiBObserved": 3002624,
+    "totalUsableMemoryKiB": 16153796,
+    "freeDiskBytesObserved": 78724808704,
+    "recognitionBacklog": "88 source-ambiguous references; no unmeasured OCR improvement claimed"
+  },
+  "remaining": {
+    "sourceAmbiguous": 88,
+    "runtimeMappingAmbiguous": 5,
+    "confirmedDeferred": 4,
+    "figureReviews": 188,
+    "answerConflictsOutsideThis180ReferenceAudit": 9,
+    "missingAuthoritativeSourceTopics": [
+      "CD15",
+      "CD16",
+      "CD17",
+      "CD18",
+      "CD19",
+      "CD24",
+      "CD25",
+      "CD26",
+      "CD27",
+      "CD28",
+      "CD29",
+      "CD30",
+      "CD31",
+      "CD32",
+      "CD33",
+      "CD34",
+      "CD35",
+      "CD36",
+      "CD37",
+      "CD38",
+      "CD39"
+    ],
+    "CD20CD21Protected": true,
+    "CD23NewPublication": false
+  },
+  "commands": {
+    "preview": "npm.cmd run content:dev:batch -- preview",
+    "status": "npm.cmd run content:dev:batch -- status",
+    "apply": "npm.cmd run content:dev:batch -- apply --development --execute --authorize E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "rollback": "npm.cmd run content:dev:batch -- rollback --development --execute --authorize E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "immutablePlan": ".content-work/source-first-v5/dev-plans/E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1/manifest.json"
+  },
+  "realRuntimeWrites": 0,
+  "humanApprovalsCreated": 0,
+  "commitsPushesDeployments": 0
+}

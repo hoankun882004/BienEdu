@@ -1,0 +1,1506 @@
+{
+  "schemaVersion": "bienedu.source-first.v1",
+  "fixtureCount": 40,
+  "items": [
+    {
+      "itemId": "tex-20.3",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            8057,
+            8066
+          ],
+          "lines": [
+            213,
+            213
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(n) = n!",
+      "referenceCandidate": "\\mathrm{P}(n)=n!",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(n) = n!",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(n) = n!",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-20.4",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9184,
+            9229
+          ],
+          "lines": [
+            237,
+            237
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "A(n,k) = n!/(n - k)! = n(n - 1)...(n - k + 1)",
+      "referenceCandidate": "\\mathrm{A}(n,k)=\\frac{n!}{(n-k)!}=n(n-1)\\cdots(n-k+1)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{A}(n,k) = \\frac{n!}{(n - k)!} = n(n - 1)...(n - k + 1)",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{A}(n,k) = \\frac{n!}{(n - k)!} = n(n - 1)...(n - k + 1)",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "differs-from-reference",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": {
+        "before": "\\mathrm{A}(n,k)=\\frac{n!}{(n-k)}!",
+        "after": "\\mathrm{A}(n,k)=\\frac{n!}{(n-k)!}",
+        "cause": "postfix factorial was emitted outside the denominator",
+        "sourceLine": 237
+      }
+    },
+    {
+      "itemId": "tex-20.5",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9844,
+            9868
+          ],
+          "lines": [
+            253,
+            253
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "C(n,k) = n!/[k!(n - k)!]",
+      "referenceCandidate": "\\mathrm{C}(n,k)=\\frac{n!}{k!(n-k)!}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{C}(n,k) = \\frac{n!}{k!(n - k)!}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{C}(n,k) = \\frac{n!}{k!(n - k)!}",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-21.1",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            23275,
+            23289
+          ],
+          "lines": [
+            508,
+            508
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(A) = |A|/|Ω|",
+      "referenceCandidate": "\\mathrm{P}(A)=\\frac{|A|}{|\\Omega|}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(A) = \\frac{|A|}{|\\Omega |}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(A) = \\frac{|A|}{|\\Omega |}",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-21.2",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            24141,
+            24175
+          ],
+          "lines": [
+            526,
+            526
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(A\\textsuperscript{c}) = 1 - P(A)",
+      "referenceCandidate": "\\mathrm{P}(A^{c})=1-\\mathrm{P}(A)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(A^{c}) = 1 - \\mathrm{P}(A)",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(A^{c}) = 1 - \\mathrm{P}(A)",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-22.1",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29015,
+            29037
+          ],
+          "lines": [
+            639,
+            639
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(A|B) = P(A ∩ B)/P(B)",
+      "referenceCandidate": "\\mathrm{P}(A\\mid B)=\\frac{\\mathrm{P}(A\\cap B)}{\\mathrm{P}(B)}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-22.2",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29849,
+            29870
+          ],
+          "lines": [
+            657,
+            657
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(A ∩ B) = P(B)P(A|B)",
+      "referenceCandidate": "\\mathrm{P}(A\\cap B)=\\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-22.4",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            31540,
+            31593
+          ],
+          "lines": [
+            692,
+            692
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(A) = Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})",
+      "referenceCandidate": "\\mathrm{P}(A)=\\sum \\mathrm{P}(B_i)\\mathrm{P}(A\\mid B_i)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-22.5",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            32297,
+            32418
+          ],
+          "lines": [
+            709,
+            709
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(B\\textsubscript{j}|A) = P(B\\textsubscript{j})P(A|B\\textsubscript{j}) / [Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})]",
+      "referenceCandidate": "\\mathrm{P}(B_j\\mid A)=\\frac{\\mathrm{P}(B_j)\\mathrm{P}(A\\mid B_j)}{\\sum \\mathrm{P}(B_i)\\mathrm{P}(A\\mid B_i)}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "tex-22.7",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            34035,
+            34070
+          ],
+          "lines": [
+            743,
+            743
+          ]
+        }
+      },
+      "categories": [
+        "native-formula"
+      ],
+      "originalExpression": "P(bệnh|+) = P(bệnh)P(+|bệnh) / P(+)",
+      "referenceCandidate": "\\mathrm{P}(\\text{bệnh}\\mid +)=\\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid\\text{bệnh})}{\\mathrm{P}(+)}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+      "legacySyntaxValid": true,
+      "legacyStructureComparison": "matches-reference-structure",
+      "sourceComparison": "exact-source-offset-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-derivative-power",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            151.02407836914062,
+            560.280029296875,
+            275.21636962890625
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "exponents"
+      ],
+      "originalExpression": "(c)′ = 0,\n(xn)′ = nxn−1,\n(u + v)′ = u′ + v′,",
+      "referenceCandidate": "(x^n)'=nx^{n-1}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "(x^n)'=nx^{n-1}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "(c)′ = 0, (xⁿ)′ = nxⁿ⁻¹, (u + v)′ = u′ + v′,",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-derivative-quotient",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            175.37008666992188,
+            560.280029296875,
+            299.5613708496094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "fractions"
+      ],
+      "originalExpression": "(uv)′ = u′v + uv′,",
+      "referenceCandidate": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "(uv)′ = u′v + uv′,",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-derivative-root",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            196.9649200439453,
+            560.280029296875,
+            326.7963562011719
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "radicals",
+        "inequalities"
+      ],
+      "originalExpression": "(√u)′ =\nu′",
+      "referenceCandidate": "(\\sqrt u)'=\\frac{u'}{2\\sqrt u},\\quad u>0",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "(\\sqrt u)'=\\frac{u'}{2\\sqrt u},\\quad u>0",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "(√u)′ = u′",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-derivative-log",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            256.3669128417969,
+            560.280029296875,
+            393.6813659667969
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "logarithms",
+        "fractions"
+      ],
+      "originalExpression": "u ,\n(loga u)′ =\nu′",
+      "referenceCandidate": "(\\log_a u)'=\\frac{u'}{u\\ln a},\\quad a>0,\\ a\\ne1,\\ u>0",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "(\\log_a u)'=\\frac{u'}{u\\ln a},\\quad a>0,\\ a\\ne1,\\ u>0",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "u , (logₐ u)′ = u′",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-geometric-point",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 64,
+          "bbox": [
+            35,
+            578.2581176757812,
+            560.280029296875,
+            703.1261596679688
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "geometric-notation"
+      ],
+      "originalExpression": "Ví dụ1. Viết các tiếp tuyến của y = x2 đi qua A(0; −1).",
+      "referenceCandidate": "y=x^2,\\quad A(0;-1)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "y=x^2,\\quad A(0;-1)",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 1. Viết các tiếp tuyến của y = x² đi qua A(0; −1).",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-simultaneous-constraints",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            199.48907470703125,
+            560.280029296875,
+            323.63720703125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "systems-of-equations"
+      ],
+      "originalExpression": "Ví dụ8. f′ = 3ax2 + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
+      "referenceCandidate": "b=-3,\\quad 3a+b=3",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "b=-3,\\quad 3a+b=3",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 8. f′ = 3ax² + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-rational-exponents",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            118.23406982421875,
+            560.280029296875,
+            242.38218688964844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "exponents"
+      ],
+      "originalExpression": "Ví dụ1. Tính A = 163/4 + 27−2/3.",
+      "referenceCandidate": "A=16^{3/4}+27^{-2/3}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "A=16^{3/4}+27^{-2/3}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 1. Tính A = 16³⁄⁴ + 27⁻²⁄³.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-nested-exponents",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            216.090087890625,
+            560.280029296875,
+            340.2381896972656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "nested-exponents"
+      ],
+      "originalExpression": "Ví dụ6. Tính (23)2/3 + 2−1.",
+      "referenceCandidate": "(2^3)^{2/3}+2^{-1}",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "(2^3)^{2/3}+2^{-1}",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 6. Tính (2³)²⁄³ + 2⁻¹.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-root-exponents",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            158.5287628173828,
+            560.280029296875,
+            280.9731903076172
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "radicals",
+        "exponents"
+      ],
+      "originalExpression": "Ví dụ3. Rút gọn a",
+      "referenceCandidate": "\\frac{a^{\\sqrt3+2}}{a^{\\sqrt3-1}},\\quad a>0",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\frac{a^{\\sqrt3+2}}{a^{\\sqrt3-1}},\\quad a>0",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 3. Rút gọn ᵃ",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-powers-condition",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            200.0341033935547,
+            560.280029296875,
+            320.9432067871094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "exponents",
+        "inequalities"
+      ],
+      "originalExpression": "Ví dụ5. Rút gọn a",
+      "referenceCandidate": "a^{\\sqrt2+1}a^{2-\\sqrt2},\\quad a>0",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "a^{\\sqrt2+1}a^{2-\\sqrt2},\\quad a>0",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 5. Rút gọn a",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-exponent-warning",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            311.84906005859375,
+            560.280029296875,
+            436.7171936035156
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "exponents",
+        "source-warning"
+      ],
+      "originalExpression": "Chú ý. Không biến aα + aβ thành aα+β.",
+      "referenceCandidate": "\\text{Không biến }a^\\alpha+a^\\beta\\text{ thành }a^{\\alpha+\\beta}.",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\text{Không biến }a^\\alpha+a^\\beta\\text{ thành }a^{\\alpha+\\beta}.",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Chú ý. Không biến aα + aβ thành aα⁺β.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": {
+        "before": "a^\\alpha+a^\\beta\\ne a^{\\alpha+\\beta}",
+        "cause": "The source warns against a general rewrite; a universal inequality is a stronger, unsupported assertion. Preserve the original warning as text plus math.",
+        "sourcePhrase": "Không biến",
+        "after": "\\text{Không biến }a^\\alpha+a^\\beta\\text{ thành }a^{\\alpha+\\beta}.",
+        "source": {
+          "kind": "pdf",
+          "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+          "documentId": "cd08-cd11-exponential-logarithm",
+          "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+          "location": {
+            "page": 9,
+            "bbox": [
+              35,
+              311.84906005859375,
+              560.280029296875,
+              436.7171936035156
+            ],
+            "pageSize": [
+              595.280029296875,
+              841.8900146484375
+            ]
+          }
+        },
+        "scope": "staging-only; human review still pending"
+      }
+    },
+    {
+      "itemId": "pdf-log-bases",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            83.34272766113281,
+            560.280029296875,
+            207.10836791992188
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "logarithms"
+      ],
+      "originalExpression": "Ví dụ1. Tính A = log2 12 −log2 3 + log4 8.",
+      "referenceCandidate": "A=\\log_2 12-\\log_2 3+\\log_4 8",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "A=\\log_2 12-\\log_2 3+\\log_4 8",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 1. Tính A = log₂ 12 −log₂ 3 + log₄ 8.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-log-nested",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            121.1717529296875,
+            560.280029296875,
+            243.28016662597656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "logarithms",
+        "exponents"
+      ],
+      "originalExpression": "Ví dụ3. Tính ln(e2) + log 0,01.",
+      "referenceCandidate": "\\ln(e^2)+\\log 0{,}01",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\ln(e^2)+\\log 0{,}01",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 3. Tính ln(e²) + log 0,01.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-log-product",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            160.52572631835938,
+            560.280029296875,
+            284.29136657714844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "logarithms"
+      ],
+      "originalExpression": "Ví dụ5. Tính log2 3 · log3 8.",
+      "referenceCandidate": "\\log_2 3\\cdot\\log_3 8",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\log_2 3\\cdot\\log_3 8",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 5. Tính log₂ 3 · log₃ 8.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-definition",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            139.6298370361328,
+            560.280029296875,
+            261.7763214111328
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals"
+      ],
+      "originalExpression": "f(x) dx = F(x) + C,\nC ∈R.",
+      "referenceCandidate": "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb R",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb R",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "f(x) dx = F(x) + C, C ∈R.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-power",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            261.4947509765625,
+            560.280029296875,
+            391.8430480957031
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "fractions",
+        "inequalities"
+      ],
+      "originalExpression": "k\nkx + C\nxn (n̸ = −1)\nxn+1",
+      "referenceCandidate": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "k kx + C xⁿ (n≠ −1) xⁿ⁺¹",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-log",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            290.6871032714844,
+            560.280029296875,
+            427.5923156738281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "logarithms"
+      ],
+      "originalExpression": "1\nx\nln |x| + C\nex\nex + C",
+      "referenceCandidate": "\\int\\frac1x\\,dx=\\ln|x|+C",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int\\frac1x\\,dx=\\ln|x|+C",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "1 x ln |x| + C eˣ eˣ + C",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-base",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            314.8077392578125,
+            560.280029296875,
+            445.15606689453125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "exponents",
+        "inequalities"
+      ],
+      "originalExpression": "ax (a > 0, a̸ = 1)\nax",
+      "referenceCandidate": "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C,\\quad a>0,\\ a\\ne1",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C,\\quad a>0,\\ a\\ne1",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "aˣ (a > 0, a≠ 1) aˣ",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-cos-reciprocal",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            342.007080078125,
+            560.280029296875,
+            479.1753234863281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "fractions"
+      ],
+      "originalExpression": "cos x\nsin x + C\n1\ncos2 x\ntan x + C",
+      "referenceCandidate": "\\int\\frac1{\\cos^2x}\\,dx=\\tan x+C",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int\\frac1{\\cos^2x}\\,dx=\\tan x+C",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "cos x sin x + C 1 cos² x tan x + C",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-sin-reciprocal",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            368.631103515625,
+            560.280029296875,
+            506.1803283691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "fractions"
+      ],
+      "originalExpression": "1\nsin2 x\n−cot x + C\ntan x\n−ln | cos x| + C",
+      "referenceCandidate": "\\int\\frac1{\\sin^2x}\\,dx=-\\cot x+C",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int\\frac1{\\sin^2x}\\,dx=-\\cot x+C",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "1 sin² x −cot x + C tan x −ln | cos x| + C",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-radical",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            421.8780822753906,
+            560.280029296875,
+            560.1290588378906
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "radicals"
+      ],
+      "originalExpression": "1 −x2\narcsin x + C\n1\na2 + x2",
+      "referenceCandidate": "\\int\\frac1{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int\\frac1{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "1 −x² arcsin x + C 1 a² + x²",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-integral-chain",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            488.11871337890625,
+            560.280029296875,
+            618.6583251953125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals",
+        "nested-exponents"
+      ],
+      "originalExpression": "f ′(x)[f(x)]n dx = [f(x)]n+1",
+      "referenceCandidate": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "f ′(x)[f(x)]ⁿ dx = [f(x)]ⁿ⁺¹",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-definite-integral",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            161.6788330078125,
+            560.280029296875,
+            283.8253173828125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals"
+      ],
+      "originalExpression": "f(x) dx = F(b) −F(a).",
+      "referenceCandidate": "\\int_a^b f(x)\\,dx=F(b)-F(a)",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "\\int_a^b f(x)\\,dx=F(b)-F(a)",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "f(x) dx = F(b) −F(a).",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-definite-example",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            511.7308349609375,
+            560.280029296875,
+            648.5701904296875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "integrals"
+      ],
+      "originalExpression": "0\n(3x2 −2x) dx.",
+      "referenceCandidate": "I=\\int_0^2(3x^2-2x)\\,dx",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "I=\\int_0^2(3x^2-2x)\\,dx",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "0 (3x² −2x) dx.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-graph-associated",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            684.81298828125,
+            560.280029296875,
+            810.018310546875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "graph-associated",
+        "integrals"
+      ],
+      "originalExpression": "Đồthịy = x3 có phần diện tích đại sốdương và âm triệt tiêu nhau.",
+      "referenceCandidate": "J=\\int_{-1}^{1}x^3\\,dx=0",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "J=\\int_{-1}^{1}x^3\\,dx=0",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Đồ thịy = x³ có phần diện tích đại số dương và âm triệt tiêu nhau.",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-area-absolute",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            147.0638427734375,
+            560.280029296875,
+            269.2103271484375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "geometric-notation",
+        "integrals"
+      ],
+      "originalExpression": "|f(x)| dx .",
+      "referenceCandidate": "S=\\int_a^b|f(x)|\\,dx",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "S=\\int_a^b|f(x)|\\,dx",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "|f(x)| dx .",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-area-piecewise",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            422.9488525390625,
+            560.280029296875,
+            554.8522033691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "geometric-notation",
+        "integrals"
+      ],
+      "originalExpression": "0\n(4 −2x) dx +",
+      "referenceCandidate": "S=\\int_0^2(4-2x)\\,dx+\\int_2^3(2x-4)\\,dx=5",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "S=\\int_0^2(4-2x)\\,dx+\\int_2^3(2x-4)\\,dx=5",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "0 (4 −2x) dx +",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-counting-source",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "documentId": "cd20-cd21-theory",
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            680.3370361328125,
+            560.280029296875,
+            802.292236328125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "counting"
+      ],
+      "originalExpression": "N = 3 + 4 + 1 = 8 cách .",
+      "referenceCandidate": "N=3+4+1=8",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "N=3+4+1=8",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "N = 3 + 4 + 1 = 8 cách .",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-root-domain",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            661.235107421875,
+            560.280029296875,
+            785.3831787109375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "radicals",
+        "inequalities"
+      ],
+      "originalExpression": "Ví dụ4. D = [−2; 2]. Với −2 < x < 2, y′ = −x/",
+      "referenceCandidate": "y'=-\\frac{x}{\\sqrt{4-x^2}},\\quad -2<x<2",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "y'=-\\frac{x}{\\sqrt{4-x^2}},\\quad -2<x<2",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 4. D = [−2; 2]. Với −2 < x < 2, y′ = −x/",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    },
+    {
+      "itemId": "pdf-rational-domain",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            389.6515197753906,
+            560.280029296875,
+            517.7960205078125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "categories": [
+        "fractions",
+        "inequalities"
+      ],
+      "originalExpression": "Ví dụ5. f′(x) =\n−x2−1\n(x−1)2(x+1)2 trên x̸ = ±1. Thay x = 2, được f′(2) = −5",
+      "referenceCandidate": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2},\\quad x\\ne\\pm1",
+      "referenceStatus": "needs-human-review",
+      "nativeOrLayoutCandidate": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2},\\quad x\\ne\\pm1",
+      "syntaxValid": true,
+      "selectorValid": true,
+      "legacyCandidate": "Ví dụ 5. f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵",
+      "legacySyntaxValid": null,
+      "legacyStructureComparison": "requires-crop-review",
+      "sourceComparison": "original-crop-and-layout-retained",
+      "mathematicalCorrectness": "needs-human-review",
+      "confirmedRegression": null
+    }
+  ]
+}

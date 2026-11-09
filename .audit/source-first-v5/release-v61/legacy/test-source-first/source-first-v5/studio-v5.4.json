@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fieldPatchExportedOnly": false,
+      "alreadyAppliedFieldsNotReexported": true,
+      "confirmationsInvalidatedOnEdit": false,
+      "priorityCounts": {
+        "machineMatched": 5,
+        "defects": 0,
+        "ambiguous": 35
+      },
+      "pageOverflow": false
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fieldPatchExportedOnly": false,
+      "alreadyAppliedFieldsNotReexported": true,
+      "confirmationsInvalidatedOnEdit": false,
+      "priorityCounts": {
+        "machineMatched": 5,
+        "defects": 0,
+        "ambiguous": 35
+      },
+      "pageOverflow": false
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "fieldPatchExportedOnly": false,
+      "alreadyAppliedFieldsNotReexported": true,
+      "confirmationsInvalidatedOnEdit": false,
+      "priorityCounts": {
+        "machineMatched": 5,
+        "defects": 0,
+        "ambiguous": 35
+      },
+      "pageOverflow": false
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fieldPatchExportedOnly": false,
+      "alreadyAppliedFieldsNotReexported": true,
+      "confirmationsInvalidatedOnEdit": false,
+      "priorityCounts": {
+        "machineMatched": 5,
+        "defects": 0,
+        "ambiguous": 35
+      },
+      "pageOverflow": false
+    }
+  ],
+  "errors": [],
+  "realApprovalsCreated": 0,
+  "runtimeWrites": 0
+}

@@ -1,0 +1,515 @@
+{
+  "schemaVersion": "bienedu.source-corrections.v5.6",
+  "corrections": [
+    {
+      "id": "fraction-v56-1.3-2",
+      "recordId": "1.3-source-example-2",
+      "code": "1.3",
+      "number": 2,
+      "sourceBlockId": "1.3-worked-example-2",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "28344749DEDA64946D879AB66F67BE34981B32654B4B2B248188EED560A58E22",
+      "reason": "Lost radicand and denominator grouping",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 5,
+          "bbox": [
+            35,
+            429.32568359375,
+            560.280029296875,
+            457.6280517578125
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 66,
+          "bbox": [
+            35,
+            669.876708984375,
+            560.280029296875,
+            694.9400634765625
+          ]
+        }
+      ],
+      "evidenceHash": "CCA849D6FE1CB5C42649C2862E47935811C2BAB30D5ACD2AB37C44CB4D6E69A6",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+          "after": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+          "after": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\)."
+        },
+        {
+          "field": "prompt",
+          "before": "Tính đạo hàm của y = √3 −2x.",
+          "after": "Tính đạo hàm của \\(y=\\sqrt{3-2x}\\)."
+        },
+        {
+          "field": "title",
+          "before": "Tính đạo hàm của y = √3 −2x.",
+          "after": "Ví dụ 2"
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-1.3-3",
+      "recordId": "1.3-source-example-3",
+      "code": "1.3",
+      "number": 3,
+      "sourceBlockId": "1.3-worked-example-3",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "95BE71E6AA329CE22762DB17A56EA41EDDE7DCF828948EBC64B319973C9648DB",
+      "reason": "Lost radical boundary inside derivative denominator",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 5,
+          "bbox": [
+            35,
+            457.6280517578125,
+            560.280029296875,
+            476.924072265625
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 66,
+          "bbox": [
+            35,
+            694.9400634765625,
+            560.280029296875,
+            714.235107421875
+          ]
+        }
+      ],
+      "evidenceHash": "D20246C550A5BF0BB3F2AEEA67C898E993FF87360EDA0100859B0D91C31126A8",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+          "after": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+          "after": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\)."
+        },
+        {
+          "field": "prompt",
+          "before": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+          "after": "Tính đạo hàm của \\(y=\\sqrt{x^2+1}\\) tại \\(x=1\\)."
+        },
+        {
+          "field": "title",
+          "before": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+          "after": "Ví dụ 3"
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-1.3-5",
+      "recordId": "1.3-source-example-5",
+      "code": "1.3",
+      "number": 5,
+      "sourceBlockId": "1.3-worked-example-5",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "3741E22F0B3486112D02BE5CF660860720DA8A91B73B8EE695739B905DA383FC",
+      "reason": "Lost denominator radical boundary; preserve negative fractional exponents",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 5,
+          "bbox": [
+            35,
+            487.2137451171875,
+            560.280029296875,
+            515.51513671875
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 67,
+          "bbox": [
+            35,
+            51.287086486816406,
+            560.280029296875,
+            69.43518829345703
+          ]
+        }
+      ],
+      "evidenceHash": "79C999480AF74E3F6F5B859D1F84E2A874B715483EC8560C1DCFD981C21EB334",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+          "after": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+          "after": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\)."
+        },
+        {
+          "field": "prompt",
+          "before": "Tính đạo hàm của y = 1/√2x + 3.",
+          "after": "Tính đạo hàm của \\(y=\\frac{1}{\\sqrt{2x+3}}\\)."
+        },
+        {
+          "field": "title",
+          "before": "Tính đạo hàm của y = 1/√2x + 3.",
+          "after": "Ví dụ 5"
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-1.5-2",
+      "recordId": "1.5-source-example-2",
+      "code": "1.5",
+      "number": 2,
+      "sourceBlockId": "1.5-worked-example-2",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "F697D075F316B41D49E3C57440310F9B1D56B07FD3F11B70458D71F5267146B6",
+      "reason": "Fraction denominator became a detached subscript",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 6,
+          "bbox": [
+            35,
+            253.4899444580078,
+            560.280029296875,
+            271.6887512207031
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 67,
+          "bbox": [
+            35,
+            568.784912109375,
+            560.280029296875,
+            589.5001831054688
+          ]
+        }
+      ],
+      "evidenceHash": "7D7A5F67A800701AE0EE2ECF3D1B049654E783782E069B40C3E2A1DC267DDE52",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+          "after": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+          "after": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\)."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-1",
+      "recordId": "6.1-source-example-1",
+      "code": "6.1",
+      "number": 1,
+      "sourceBlockId": "6.1-worked-example-1",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "2097B83E0D7BFF34B7CA4EA8CFA82142021509ADC06B5281F39377F9DE9642C8",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 49,
+          "bbox": [
+            35,
+            439.20269775390625,
+            560.280029296875,
+            625.90869140625
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            396.4969177246094,
+            560.280029296875,
+            446.76220703125
+          ]
+        }
+      ],
+      "evidenceHash": "5436B854AB832751F8636BE6FA193A20DED9585728E6725FFFF6F2F65C92CBDB",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+          "after": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+          "after": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\)."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-2",
+      "recordId": "6.1-source-example-2",
+      "code": "6.1",
+      "number": 2,
+      "sourceBlockId": "6.1-worked-example-2",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "00EFC073E0EC8A3C214D23BCD233838A7C23A956157B0F3695F3EFEC9FC81DCF",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 50,
+          "bbox": [
+            35,
+            50.13072204589844,
+            560.280029296875,
+            254.6317138671875
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            445.2200927734375,
+            560.280029296875,
+            498.3750915527344
+          ]
+        }
+      ],
+      "evidenceHash": "A2B78311D07307C14E57955B51C225547A7C46F62782AE1C4030703B26438F07",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+          "after": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) ."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+          "after": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) ."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-3",
+      "recordId": "6.1-source-example-3",
+      "code": "6.1",
+      "number": 3,
+      "sourceBlockId": "6.1-worked-example-3",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "B4E0FF871708671E65F456F5222F545FF72106134BEA1B3BAAFE20953DF4FC91",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 50,
+          "bbox": [
+            35,
+            254.6317138671875,
+            560.280029296875,
+            463.41973876953125
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            498.3750915527344,
+            560.280029296875,
+            547.6681518554688
+          ]
+        }
+      ],
+      "evidenceHash": "0C84CB43BCADD0B4B12037A29AD9DDDAB8593F72C7FF9430B1173856003D768B",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+          "after": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) ."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+          "after": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) ."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-4",
+      "recordId": "6.1-source-example-4",
+      "code": "6.1",
+      "number": 4,
+      "sourceBlockId": "6.1-worked-example-4",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "E96EF09D151F5E4CFEE3F22404628D658E928BF7A9741400366D50CBF0BAC3C8",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 50,
+          "bbox": [
+            35,
+            463.41973876953125,
+            560.280029296875,
+            651.9794921875
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            546.2489013671875,
+            560.280029296875,
+            596.51318359375
+          ]
+        }
+      ],
+      "evidenceHash": "DFA9C0BF78AB16C64392D441903388109D764E3EEB347FE66076005777BFA4BA",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+          "after": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+          "after": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\)."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-5",
+      "recordId": "6.1-source-example-5",
+      "code": "6.1",
+      "number": 5,
+      "sourceBlockId": "6.1-worked-example-5",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "38BDB0ADEA3A813F2139702626052297F1A6F39B9D5D64C35BF122A109D608A6",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 51,
+          "bbox": [
+            35,
+            50.13072204589844,
+            560.280029296875,
+            255.7880859375
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            593.9020385742188,
+            560.280029296875,
+            661.7401733398438
+          ]
+        }
+      ],
+      "evidenceHash": "EE8830BDF4803DD7A6588C53916FDB55A908BD9AA69EED1073438786D2AF7890",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+          "after": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+          "after": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\)."
+        }
+      ],
+      "formalHumanApproval": false
+    },
+    {
+      "id": "fraction-v56-6.1-6",
+      "recordId": "6.1-source-example-6",
+      "code": "6.1",
+      "number": 6,
+      "sourceBlockId": "6.1-worked-example-6",
+      "sourceDocumentId": "cd01-cd07-functions",
+      "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "recordHash": "83320BD3FCE7588D3DE86D97CA262248A08695EDC7B7CF27D9257097E488DED3",
+      "reason": "Stacked source fractions flattened into disconnected superscripts/subscripts",
+      "regions": [
+        {
+          "role": "statement",
+          "page": 51,
+          "bbox": [
+            35,
+            255.7880859375,
+            560.280029296875,
+            461.99273681640625
+          ]
+        },
+        {
+          "role": "solution",
+          "page": 87,
+          "bbox": [
+            35,
+            660.1980590820312,
+            560.280029296875,
+            727.1297607421875
+          ]
+        }
+      ],
+      "evidenceHash": "51243A42D1661B52B49122EC1EDC622B1151EFEDC126518635F6D86FDC34DBB5",
+      "fields": [
+        {
+          "field": "answer",
+          "before": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+          "after": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\)."
+        },
+        {
+          "field": "source-solution.expression",
+          "before": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+          "after": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\)."
+        }
+      ],
+      "formalHumanApproval": false
+    }
+  ]
+}

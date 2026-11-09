@@ -1,0 +1,7 @@
+{
+  "suite": "test:canonical",
+  "exitCode": 0,
+  "baseline": "V5.5 applied; V5.6/V6.0 prepared",
+  "scope": "Disposable historical benchmark; actual V6.1 integration is tested separately",
+  "realRuntimeWrites": 0
+}

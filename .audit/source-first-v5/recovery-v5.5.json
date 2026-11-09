@@ -1,0 +1,51 @@
+{
+  "recoveredAt": "2026-11-05T18:22:45.288Z",
+  "snapshotHash": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "runtimeHashes": {
+    "assets/js/data/latex-pilot.generated.js": "02F982C1F5420A3C5A6BB3983F07E7CFC4FBA9F283B50B841B3419EA4BC957A5",
+    "assets/js/data/foundation-lessons.generated.js": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+    "assets/js/data/calculus-knowledge-details.js": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+    "assets/js/data/calculus-lessons.js": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692",
+    "assets/js/data/calculus-source-examples.js": "435CA4803BBDA78A6D4D573B8502D7ADF69A573BA9D2551BEA66313B58B8A2ED"
+  },
+  "sources": [
+    {
+      "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+    },
+    {
+      "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+    },
+    {
+      "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+    },
+    {
+      "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+    },
+    {
+      "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+    },
+    {
+      "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+    },
+    {
+      "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+    },
+    {
+      "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+    },
+    {
+      "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+      "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+    }
+  ],
+  "originalFormalFieldEventsPresent": false,
+  "runtimeWrites": 0
+}

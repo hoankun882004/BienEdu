@@ -1,0 +1,17 @@
+✔ V5.2 prepares existing entities and source evidence without creating approvals or a second queue (891.4781ms)
+✔ V3 binds the review to version, source identity and untouched original expression (34.8462ms)
+✔ needs correction and unresolved ambiguity remain separate unapproved decisions (223.902ms)
+✔ review events are complete atomic files, idempotent and ignore interrupted temporary files (146.8531ms)
+✔ legacy event history remains readable and requires an explicit version-bound follow-up for release (199.0461ms)
+✔ dry-run contains exact evidence and reversible integration preview without certifying the whole lesson (116.8574ms)
+✔ runtime previews reread disk and reject stale plans, dependencies and target versions (381.1955ms)
+✔ only canonical field targets are recognized; generated-data parsing does not execute code (155.3427ms)
+✔ read-only refresh observes a real saved fixture decision without creating real review events (2221.7028ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4585.9507

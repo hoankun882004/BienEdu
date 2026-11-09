@@ -1,0 +1,118 @@
+
+> test:source-first
+> node --test tests/source-first.test.js tests/source-verification-v51.test.js tests/source-review-v52.test.js tests/source-integration-v53.test.js tests/source-release-v54.test.js tests/source-development-v55.test.js && node .audit/source-first-v5-browser.mjs && node .audit/runtime-integration-v53.mjs && node .audit/source-first-v54-browser.mjs && node .audit/source-first-v55-browser.mjs
+
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (3078.4799ms)
+✔ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (21791.1141ms)
+✔ development execution is blocked in production/CI and requires explicit batch authorization (5839.1469ms)
+✔ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (18699.4906ms)
+✔ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (18653.8872ms)
+✔ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (9069.5269ms)
+✔ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (6528.4996ms)
+✔ source/crop hash and runtime dependency changes invalidate prepared batches (6389.3804ms)
+✔ actual project remains unapplied and the existing fraction queue is only projected, never overwritten (8.4896ms)
+✔ native scanner preserves raw offsets, comments, command boundaries and nested scripts (3.1603ms)
+✔ 40 source fixtures preserve exact evidence, all document pages, crops and independent review gates (643.4703ms)
+✔ source-specific quotient normalization keeps denominator factorial and chained equality (3.0783ms)
+✔ math tables keep inline conditional bars inside one mathematical cell (3.5735ms)
+✔ review patches reject stale data, invalid math, missing comparison and unknown decisions (53.4143ms)
+✔ an editor decision updates only staging and keeps mathematical approval separate (124.9504ms)
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+✔ read-only local server enforces host, origin, session token and immutable HTTP actions (3069.3095ms)
+✔ rebuilding staging is deterministic and preserves approved runtime records (6912.495ms)
+✔ V5.3 classifies every source item and records every legitimate usage without inventing targets (4.9227ms)
+✔ protected cross-edition expressions and the positional legacy example fail closed (458.4603ms)
+✔ semantic formula identity survives reordering and rejects ambiguous or changed structures (55.5312ms)
+✔ source-hash and stable Example identity mismatch cannot become an approved mapping (119.9817ms)
+✔ exact source normalization is idempotent, guarded and produces reversible field-only previews (20.2281ms)
+✔ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (9153.1157ms)
+✔ CD22.7 retains native Bayes notation; no invented conditions or numerical correction (0.5925ms)
+✔ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (6676.2125ms)
+✔ V5.4 comparison separates supported native matches, guarded defects and unproven PDF transcriptions (632.8155ms)
+✔ structural evidence distinguishes fractions, radical scope, exponents and printed conditions (6.7846ms)
+✔ field decisions are immutable, separately attested, idempotent and reject stale source/version/conditions/parents (131.6688ms)
+✔ dry-run requires all nine real field approvals, rejects missing approval and blocks multi-file transactions (687.0772ms)
+✔ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (4848.5538ms)
+✔ curated Knowledge detail adapter changes only its approved string and retains all other source bytes (510.1389ms)
+✔ stale runtime, source mismatch and superseded human decisions block publication (1201.7499ms)
+✔ failure before the atomic rename leaves runtime intact; retry recovers the durable intent (910.7893ms)
+✔ an edit during the transaction is not overwritten; corrupted backups prevent rollback (1656.9347ms)
+✔ a post-replacement interrupted state is reconciled from the immutable intent and backup (1940.6686ms)
+✔ protected topics, unsupported fields and forged after values cannot be released (825.8162ms)
+✔ V5.2 prepares existing entities and source evidence without creating approvals or a second queue (2317.1341ms)
+✔ V3 binds the review to version, source identity and untouched original expression (77.8127ms)
+✔ needs correction and unresolved ambiguity remain separate unapproved decisions (448.0056ms)
+✔ review events are complete atomic files, idempotent and ignore interrupted temporary files (266.1374ms)
+✔ legacy event history remains readable and requires an explicit version-bound follow-up for release (430.9754ms)
+✔ dry-run contains exact evidence and reversible integration preview without certifying the whole lesson (205.7378ms)
+✔ runtime previews reread disk and reject stale plans, dependencies and target versions (570.3427ms)
+✔ only canonical field targets are recognized; generated-data parsing does not execute code (207.695ms)
+✔ read-only refresh observes a real saved fixture decision without creating real review events (4879.4294ms)
+{
+  "uniqueTrackedReviewRecords": 1512,
+  "benchmarkExpressions": 40,
+  "machineCheckedExpressions": 40,
+  "humanSourceVerified": 0,
+  "mathematicalEditorialApprovals": 0,
+  "pendingBenchmarkSourceReviews": 40,
+  "pendingFigures": 188,
+  "missingSourceTopics": [
+    "CD15",
+    "CD16",
+    "CD17",
+    "CD18",
+    "CD19",
+    "CD24",
+    "CD25",
+    "CD26",
+    "CD27",
+    "CD28",
+    "CD29",
+    "CD30",
+    "CD31",
+    "CD32",
+    "CD33",
+    "CD34",
+    "CD35",
+    "CD36",
+    "CD37",
+    "CD38",
+    "CD39"
+  ],
+  "approvedButUnpublished": 0,
+  "newlyPublished": 0,
+  "existingRuntimeKnowledgeRecords": 181,
+  "existingRuntimeExampleRecords": 1313,
+  "legacyImmutableApprovalRecords": 3,
+  "fractionCandidates": 180,
+  "calculusAnswerConflicts": 9,
+  "cd22UnitsCompared": 18,
+  "correctedConversionDefects": 1
+}
+✔ V5.1 compares every benchmark item and retains separate human and editorial queues (6136.046ms)
+✔ explicit human source verification does not automatically grant mathematical approval (165.4412ms)
+✔ V2 rejects absent attestation, wrong reviewer type, stale condition hashes and invalid editorial identities (186.9587ms)
+✔ immutable review events support later unchanged editorial approval and idempotent reapplication (557.5966ms)
+✔ release preview blocks actual pending content and produces an exact reversible change for approved fixtures only (674.0116ms)
+✔ protected CD20/CD21, unknown bindings and CD23 cannot become eligible release candidates (225.0733ms)
+✔ student verification badges require human records bound to the exact reviewed content (5.1289ms)
+✔ source warnings retain their wording rather than inventing a universal mathematical inequality (2.7201ms)
+ℹ tests 53
+ℹ suites 0
+ℹ pass 53
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 90766.7789
+Source-first studio passed: desktop/mobile, V3 decisions, refresh and read-only HTTP; 40 comparison candidates reused from unchanged evidence in 10 sheets.
+{"passed":true,"learnerStates":20,"runtimeWrites":0}
+{"passed":true,"learnerStates":40,"runtimeWrites":0}
+V5.4 Studio and learner audit passed: four viewports; field export only; no real approvals or publication.
+V5.5 browser passed: 12 before/actual fixture-after states, same-plan application/rollback, retained progress, practice controls, and checkbox-free development overview.

@@ -1,0 +1,2211 @@
+[
+  {
+    "recordId": "knowledge:14.1",
+    "fieldId": "formula:area-with-Ox.detail",
+    "original": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\).",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd12-cd14-calculus:knowledge:14.1:formula:area-with-Ox.detail",
+    "legacyId": "knowledge:14.1:formula:area-with-Ox.detail",
+    "sourceId": "cd12-cd14-calculus",
+    "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+    "location": {
+      "page": 34,
+      "bbox": [
+        35,
+        147.0638427734375,
+        560.280029296875,
+        269.2103271484375
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với "
+        },
+        {
+          "type": "math",
+          "latex": "a<b",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.2-source-example-5",
+    "fieldId": "answer",
+    "original": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.2-source-example-5:answer",
+    "legacyId": "1.2-source-example-5:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        389.6515197753906,
+        560.280029296875,
+        517.7960205078125
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "x\\ne\\pm1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Thay "
+        },
+        {
+          "type": "math",
+          "latex": "x=2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", được "
+        },
+        {
+          "type": "math",
+          "latex": "f'(2)=-\\frac{5}{9}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.2-source-example-5",
+    "fieldId": "prompt",
+    "original": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\).",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.2-source-example-5:prompt",
+    "legacyId": "1.2-source-example-5:prompt",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        389.6515197753906,
+        560.280029296875,
+        517.7960205078125
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Cho "
+        },
+        {
+          "type": "math",
+          "latex": "f(x)=\\frac{x}{x^2-1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Tính "
+        },
+        {
+          "type": "math",
+          "latex": "f'(2)",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.2-source-example-5",
+    "fieldId": "source-solution.expression",
+    "original": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.2-source-example-5:source-solution.expression",
+    "legacyId": "1.2-source-example-5:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        389.6515197753906,
+        560.280029296875,
+        517.7960205078125
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "x\\ne\\pm1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Thay "
+        },
+        {
+          "type": "math",
+          "latex": "x=2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", được "
+        },
+        {
+          "type": "math",
+          "latex": "f'(2)=-\\frac{5}{9}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.2-source-example-5",
+    "fieldId": "title",
+    "original": "Ví dụ 5",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.2-source-example-5:title",
+    "legacyId": "1.2-source-example-5:title",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        389.6515197753906,
+        560.280029296875,
+        517.7960205078125
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Ví dụ 5"
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-4",
+    "fieldId": "answer",
+    "original": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-4:answer",
+    "legacyId": "1.3-source-example-4:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        661.235107421875,
+        560.280029296875,
+        785.3831787109375
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=[-2;2]",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Với "
+        },
+        {
+          "type": "math",
+          "latex": "-2<x<2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-\\frac{x}{\\sqrt{4-x^2}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Không áp dụng công thức tại hai đầu mút."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-4",
+    "fieldId": "prompt",
+    "original": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\).",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-4:prompt",
+    "legacyId": "1.3-source-example-4:prompt",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        661.235107421875,
+        560.280029296875,
+        785.3831787109375
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Tìm tập xác định và đạo hàm của "
+        },
+        {
+          "type": "math",
+          "latex": "y=\\sqrt{4-x^2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-4",
+    "fieldId": "source-solution.expression",
+    "original": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-4:source-solution.expression",
+    "legacyId": "1.3-source-example-4:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        661.235107421875,
+        560.280029296875,
+        785.3831787109375
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=[-2;2]",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Với "
+        },
+        {
+          "type": "math",
+          "latex": "-2<x<2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-\\frac{x}{\\sqrt{4-x^2}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Không áp dụng công thức tại hai đầu mút."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-4",
+    "fieldId": "title",
+    "original": "Ví dụ 4",
+    "conversionOrigin": "legacy-explicit-delimiters",
+    "integrationStatus": "LEGACY_SUPPORTED",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-4:title",
+    "legacyId": "1.3-source-example-4:title",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": {
+      "page": 66,
+      "bbox": [
+        35,
+        661.235107421875,
+        560.280029296875,
+        785.3831787109375
+      ],
+      "pageSize": [
+        595.280029296875,
+        841.8900146484375
+      ]
+    },
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Ví dụ 4"
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-2",
+    "fieldId": "answer",
+    "original": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+    "proposedText": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-2",
+    "evidenceHash": "CCA849D6FE1CB5C42649C2862E47935811C2BAB30D5ACD2AB37C44CB4D6E69A6",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-2:answer",
+    "legacyId": "1.3-source-example-2:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          429.32568359375,
+          560.280029296875,
+          457.6280517578125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          669.876708984375,
+          560.280029296875,
+          694.9400634765625
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=(-\\infty;\\frac{3}{2}]",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-\\frac{1}{\\sqrt{3-2x}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " với "
+        },
+        {
+          "type": "math",
+          "latex": "x<\\frac{3}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-2",
+    "fieldId": "source-solution.expression",
+    "original": "D = (−∞; 3/2]; y′ = −1/√3 −2x với x < 3/2.",
+    "proposedText": "\\(D=(-\\infty;\\frac{3}{2}]\\); \\(y'=-\\frac{1}{\\sqrt{3-2x}}\\) với \\(x<\\frac{3}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-2",
+    "evidenceHash": "CCA849D6FE1CB5C42649C2862E47935811C2BAB30D5ACD2AB37C44CB4D6E69A6",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-2:source-solution.expression",
+    "legacyId": "1.3-source-example-2:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          429.32568359375,
+          560.280029296875,
+          457.6280517578125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          669.876708984375,
+          560.280029296875,
+          694.9400634765625
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=(-\\infty;\\frac{3}{2}]",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-\\frac{1}{\\sqrt{3-2x}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " với "
+        },
+        {
+          "type": "math",
+          "latex": "x<\\frac{3}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-2",
+    "fieldId": "prompt",
+    "original": "Tính đạo hàm của y = √3 −2x.",
+    "proposedText": "Tính đạo hàm của \\(y=\\sqrt{3-2x}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-2",
+    "evidenceHash": "CCA849D6FE1CB5C42649C2862E47935811C2BAB30D5ACD2AB37C44CB4D6E69A6",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-2:prompt",
+    "legacyId": "1.3-source-example-2:prompt",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          429.32568359375,
+          560.280029296875,
+          457.6280517578125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          669.876708984375,
+          560.280029296875,
+          694.9400634765625
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Tính đạo hàm của "
+        },
+        {
+          "type": "math",
+          "latex": "y=\\sqrt{3-2x}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-2",
+    "fieldId": "title",
+    "original": "Tính đạo hàm của y = √3 −2x.",
+    "proposedText": "Ví dụ 2",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-2",
+    "evidenceHash": "CCA849D6FE1CB5C42649C2862E47935811C2BAB30D5ACD2AB37C44CB4D6E69A6",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-2:title",
+    "legacyId": "1.3-source-example-2:title",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          429.32568359375,
+          560.280029296875,
+          457.6280517578125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          669.876708984375,
+          560.280029296875,
+          694.9400634765625
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Ví dụ 2"
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-3",
+    "fieldId": "answer",
+    "original": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+    "proposedText": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-3",
+    "evidenceHash": "D20246C550A5BF0BB3F2AEEA67C898E993FF87360EDA0100859B0D91C31126A8",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-3:answer",
+    "legacyId": "1.3-source-example-3:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          457.6280517578125,
+          560.280029296875,
+          476.924072265625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          694.9400634765625,
+          560.280029296875,
+          714.235107421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "y'=\\frac{x}{\\sqrt{x^2+1}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "\\mathbb{R}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; "
+        },
+        {
+          "type": "math",
+          "latex": "y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-3",
+    "fieldId": "source-solution.expression",
+    "original": "y′ = x/ √ x² + 1 trên R; y′(1) = 1/ √ 2 = √ 2/2.",
+    "proposedText": "\\(y'=\\frac{x}{\\sqrt{x^2+1}}\\) trên \\(\\mathbb{R}\\); \\(y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-3",
+    "evidenceHash": "D20246C550A5BF0BB3F2AEEA67C898E993FF87360EDA0100859B0D91C31126A8",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-3:source-solution.expression",
+    "legacyId": "1.3-source-example-3:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          457.6280517578125,
+          560.280029296875,
+          476.924072265625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          694.9400634765625,
+          560.280029296875,
+          714.235107421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "y'=\\frac{x}{\\sqrt{x^2+1}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "\\mathbb{R}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; "
+        },
+        {
+          "type": "math",
+          "latex": "y'(1)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-3",
+    "fieldId": "prompt",
+    "original": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+    "proposedText": "Tính đạo hàm của \\(y=\\sqrt{x^2+1}\\) tại \\(x=1\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-3",
+    "evidenceHash": "D20246C550A5BF0BB3F2AEEA67C898E993FF87360EDA0100859B0D91C31126A8",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-3:prompt",
+    "legacyId": "1.3-source-example-3:prompt",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          457.6280517578125,
+          560.280029296875,
+          476.924072265625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          694.9400634765625,
+          560.280029296875,
+          714.235107421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Tính đạo hàm của "
+        },
+        {
+          "type": "math",
+          "latex": "y=\\sqrt{x^2+1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " tại "
+        },
+        {
+          "type": "math",
+          "latex": "x=1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-3",
+    "fieldId": "title",
+    "original": "Tính đạo hàm của y = √ x² + 1 tại x = 1.",
+    "proposedText": "Ví dụ 3",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-3",
+    "evidenceHash": "D20246C550A5BF0BB3F2AEEA67C898E993FF87360EDA0100859B0D91C31126A8",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-3:title",
+    "legacyId": "1.3-source-example-3:title",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          457.6280517578125,
+          560.280029296875,
+          476.924072265625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 66,
+        "bbox": [
+          35,
+          694.9400634765625,
+          560.280029296875,
+          714.235107421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Ví dụ 3"
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-5",
+    "fieldId": "answer",
+    "original": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+    "proposedText": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-5",
+    "evidenceHash": "79C999480AF74E3F6F5B859D1F84E2A874B715483EC8560C1DCFD981C21EB334",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-5:answer",
+    "legacyId": "1.3-source-example-5:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          487.2137451171875,
+          560.280029296875,
+          515.51513671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          51.287086486816406,
+          560.280029296875,
+          69.43518829345703
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=(-\\frac{3}{2};+\\infty)",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Viết "
+        },
+        {
+          "type": "math",
+          "latex": "y=(2x+3)^{-1/2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", được "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-(2x+3)^{-3/2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-5",
+    "fieldId": "source-solution.expression",
+    "original": "D = (−3/2; +∞). Viết y = (2x + 3)⁻¹⁄², được y′ = −(2x + 3)⁻³⁄².",
+    "proposedText": "\\(D=(-\\frac{3}{2};+\\infty)\\). Viết \\(y=(2x+3)^{-1/2}\\), được \\(y'=-(2x+3)^{-3/2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-5",
+    "evidenceHash": "79C999480AF74E3F6F5B859D1F84E2A874B715483EC8560C1DCFD981C21EB334",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-5:source-solution.expression",
+    "legacyId": "1.3-source-example-5:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          487.2137451171875,
+          560.280029296875,
+          515.51513671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          51.287086486816406,
+          560.280029296875,
+          69.43518829345703
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "D=(-\\frac{3}{2};+\\infty)",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Viết "
+        },
+        {
+          "type": "math",
+          "latex": "y=(2x+3)^{-1/2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", được "
+        },
+        {
+          "type": "math",
+          "latex": "y'=-(2x+3)^{-3/2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-5",
+    "fieldId": "prompt",
+    "original": "Tính đạo hàm của y = 1/√2x + 3.",
+    "proposedText": "Tính đạo hàm của \\(y=\\frac{1}{\\sqrt{2x+3}}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-5",
+    "evidenceHash": "79C999480AF74E3F6F5B859D1F84E2A874B715483EC8560C1DCFD981C21EB334",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-5:prompt",
+    "legacyId": "1.3-source-example-5:prompt",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          487.2137451171875,
+          560.280029296875,
+          515.51513671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          51.287086486816406,
+          560.280029296875,
+          69.43518829345703
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Tính đạo hàm của "
+        },
+        {
+          "type": "math",
+          "latex": "y=\\frac{1}{\\sqrt{2x+3}}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.3-source-example-5",
+    "fieldId": "title",
+    "original": "Tính đạo hàm của y = 1/√2x + 3.",
+    "proposedText": "Ví dụ 5",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.3-5",
+    "evidenceHash": "79C999480AF74E3F6F5B859D1F84E2A874B715483EC8560C1DCFD981C21EB334",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.3-source-example-5:title",
+    "legacyId": "1.3-source-example-5:title",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 5,
+        "bbox": [
+          35,
+          487.2137451171875,
+          560.280029296875,
+          515.51513671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          51.287086486816406,
+          560.280029296875,
+          69.43518829345703
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Ví dụ 5"
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.5-source-example-2",
+    "fieldId": "answer",
+    "original": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+    "proposedText": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.5-2",
+    "evidenceHash": "7D7A5F67A800701AE0EE2ECF3D1B049654E783782E069B40C3E2A1DC267DDE52",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.5-source-example-2:answer",
+    "legacyId": "1.5-source-example-2:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 6,
+        "bbox": [
+          35,
+          253.4899444580078,
+          560.280029296875,
+          271.6887512207031
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          568.784912109375,
+          560.280029296875,
+          589.5001831054688
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "f'(x)=\\frac{2}{2x+1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "x>-\\frac{1}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "1.5-source-example-2",
+    "fieldId": "source-solution.expression",
+    "original": "f′(x) = 2 ₂ₓ₊₁ trên x > −1/2.",
+    "proposedText": "\\(f'(x)=\\frac{2}{2x+1}\\) trên \\(x>-\\frac{1}{2}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-1.5-2",
+    "evidenceHash": "7D7A5F67A800701AE0EE2ECF3D1B049654E783782E069B40C3E2A1DC267DDE52",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:1.5-source-example-2:source-solution.expression",
+    "legacyId": "1.5-source-example-2:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 6,
+        "bbox": [
+          35,
+          253.4899444580078,
+          560.280029296875,
+          271.6887512207031
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 67,
+        "bbox": [
+          35,
+          568.784912109375,
+          560.280029296875,
+          589.5001831054688
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "math",
+          "latex": "f'(x)=\\frac{2}{2x+1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " trên "
+        },
+        {
+          "type": "math",
+          "latex": "x>-\\frac{1}{2}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-1",
+    "fieldId": "answer",
+    "original": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+    "proposedText": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-1",
+    "evidenceHash": "5436B854AB832751F8636BE6FA193A20DED9585728E6725FFFF6F2F65C92CBDB",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-1:answer",
+    "legacyId": "6.1-source-example-1:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 49,
+        "bbox": [
+          35,
+          439.20269775390625,
+          560.280029296875,
+          625.90869140625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          396.4969177246094,
+          560.280029296875,
+          446.76220703125
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{3}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{3}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{1}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-1",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₄; B(1/2) = ³ ₄; C(1/2) = ¹ ₄.",
+    "proposedText": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{4}\\); B(1/2) = \\(\\frac{3}{4}\\); C(1/2) = \\(\\frac{1}{4}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-1",
+    "evidenceHash": "5436B854AB832751F8636BE6FA193A20DED9585728E6725FFFF6F2F65C92CBDB",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-1:source-solution.expression",
+    "legacyId": "6.1-source-example-1:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 49,
+        "bbox": [
+          35,
+          439.20269775390625,
+          560.280029296875,
+          625.90869140625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          396.4969177246094,
+          560.280029296875,
+          446.76220703125
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn A(x) = x (x −2). f′(x) = 2 (x −1). Đồng biến: (1; ∞); nghịch biến: (−∞; 1). f′(x) = 2 (x −1). cực tiểu tại x = 1, giá trị−1. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{3}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{3}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{1}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-2",
+    "fieldId": "answer",
+    "original": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+    "proposedText": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-2",
+    "evidenceHash": "A2B78311D07307C14E57955B51C225547A7C46F62782AE1C4030703B26438F07",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-2:answer",
+    "legacyId": "6.1-source-example-2:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          50.13072204589844,
+          560.280029296875,
+          254.6317138671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          445.2200927734375,
+          560.280029296875,
+          498.3750915527344
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{11}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{15}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{11}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-2",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −¹¹ ₄ ; B(1/2) = ¹⁵ ₄ ; C(1/2) = ¹¹ ₄ .",
+    "proposedText": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{11}{4}\\) ; B(1/2) = \\(\\frac{15}{4}\\) ; C(1/2) = \\(\\frac{11}{4}\\) .",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-2",
+    "evidenceHash": "A2B78311D07307C14E57955B51C225547A7C46F62782AE1C4030703B26438F07",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-2:source-solution.expression",
+    "legacyId": "6.1-source-example-2:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          50.13072204589844,
+          560.280029296875,
+          254.6317138671875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          445.2200927734375,
+          560.280029296875,
+          498.3750915527344
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn C(x) = −x² + 2x + 2. f′(x) = −2 (x −1). Đồng biến: (−∞; 1); nghịch biến: (1; ∞). f′(x) = −2 (x −1). cực đại tại x = 1, giá trị3. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{11}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{15}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{11}{4}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-3",
+    "fieldId": "answer",
+    "original": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+    "proposedText": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-3",
+    "evidenceHash": "0C84CB43BCADD0B4B12037A29AD9DDDAB8593F72C7FF9430B1173856003D768B",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-3:answer",
+    "legacyId": "6.1-source-example-3:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          254.6317138671875,
+          560.280029296875,
+          463.41973876953125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          498.3750915527344,
+          560.280029296875,
+          547.6681518554688
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{3}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{11}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{11}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-3",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −³ ₈; B(1/2) = −¹¹ ₈ ; C(1/2) = ¹¹ ₈ .",
+    "proposedText": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{3}{8}\\); B(1/2) = \\(-\\frac{11}{8}\\) ; C(1/2) = \\(\\frac{11}{8}\\) .",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-3",
+    "evidenceHash": "0C84CB43BCADD0B4B12037A29AD9DDDAB8593F72C7FF9430B1173856003D768B",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-3:source-solution.expression",
+    "legacyId": "6.1-source-example-3:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          254.6317138671875,
+          560.280029296875,
+          463.41973876953125
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          498.3750915527344,
+          560.280029296875,
+          547.6681518554688
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn B(x) = x ( x² −3 ) . f′(x) = 3 (x −1) (x + 1). Đồng biến: (−∞; −1), (1; ∞); nghịch biến: (−1; 1). f′(x) = 3 (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 1, giá trị−2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{3}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{11}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{11}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " ."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-4",
+    "fieldId": "answer",
+    "original": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+    "proposedText": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-4",
+    "evidenceHash": "DFA9C0BF78AB16C64392D441903388109D764E3EEB347FE66076005777BFA4BA",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-4:answer",
+    "legacyId": "6.1-source-example-4:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          463.41973876953125,
+          560.280029296875,
+          651.9794921875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          546.2489013671875,
+          560.280029296875,
+          596.51318359375
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{1}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{1}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{9}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-4",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ¹ ₈; B(1/2) = −¹ ₈; C(1/2) = ⁹ ₈.",
+    "proposedText": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{1}{8}\\); B(1/2) = \\(-\\frac{1}{8}\\); C(1/2) = \\(\\frac{9}{8}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-4",
+    "evidenceHash": "DFA9C0BF78AB16C64392D441903388109D764E3EEB347FE66076005777BFA4BA",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-4:source-solution.expression",
+    "legacyId": "6.1-source-example-4:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 50,
+        "bbox": [
+          35,
+          463.41973876953125,
+          560.280029296875,
+          651.9794921875
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          546.2489013671875,
+          560.280029296875,
+          596.51318359375
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn A(x) = x³. f′(x) = 3x². Đồng biến: (−∞; ∞); nghịch biến: không có. f′(x) = 3x². Đạo hàm không đổi dấu tại các điểm dừng trong miền; hàm không có cực trị. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{1}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{1}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{9}{8}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-5",
+    "fieldId": "answer",
+    "original": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+    "proposedText": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-5",
+    "evidenceHash": "EE8830BDF4803DD7A6588C53916FDB55A908BD9AA69EED1073438786D2AF7890",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-5:answer",
+    "legacyId": "6.1-source-example-5:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 51,
+        "bbox": [
+          35,
+          50.13072204589844,
+          560.280029296875,
+          255.7880859375
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          593.9020385742188,
+          560.280029296875,
+          661.7401733398438
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{9}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{25}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{9}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-5",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = −⁹ ₁₆; B(1/2) = ²⁵ ₁₆; C(1/2) = 9 ₁₆.",
+    "proposedText": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(-\\frac{9}{16}\\); B(1/2) = \\(\\frac{25}{16}\\); C(1/2) = \\(\\frac{9}{16}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-5",
+    "evidenceHash": "EE8830BDF4803DD7A6588C53916FDB55A908BD9AA69EED1073438786D2AF7890",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-5:source-solution.expression",
+    "legacyId": "6.1-source-example-5:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 51,
+        "bbox": [
+          35,
+          50.13072204589844,
+          560.280029296875,
+          255.7880859375
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          593.9020385742188,
+          560.280029296875,
+          661.7401733398438
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn C(x) = (x −1)² (x + 1)². f′(x) = 4x (x −1) (x + 1). Đồng biến: (−1; 0), (1; ∞); nghịch biến: (−∞; −1), (0; 1). f′(x) = 4x (x −1) (x + 1). cực tiểu tại x = −1, giá trị0; cực đại tại x = 0, giá trị1; cực tiểu tại x = 1, giá trị0. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{9}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{25}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{9}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-6",
+    "fieldId": "answer",
+    "original": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+    "proposedText": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-6",
+    "evidenceHash": "51243A42D1661B52B49122EC1EDC622B1151EFEDC126518635F6D86FDC34DBB5",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-6:answer",
+    "legacyId": "6.1-source-example-6:answer",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 51,
+        "bbox": [
+          35,
+          255.7880859375,
+          560.280029296875,
+          461.99273681640625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          660.1980590820312,
+          560.280029296875,
+          727.1297607421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{39}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{23}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{23}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "6.1-source-example-6",
+    "fieldId": "source-solution.expression",
+    "original": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = ³⁹ ₁₆; B(1/2) = ²³ ₁₆; C(1/2) = −²³ ₁₆.",
+    "proposedText": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = \\(\\frac{39}{16}\\); B(1/2) = \\(\\frac{23}{16}\\); C(1/2) = \\(-\\frac{23}{16}\\).",
+    "evidenceReference": "scripts/source-first/corrections-v56.json#fraction-v56-6.1-6",
+    "evidenceHash": "51243A42D1661B52B49122EC1EDC622B1151EFEDC126518635F6D86FDC34DBB5",
+    "conversionOrigin": "source-backed-pdf-correction-registry",
+    "integrationStatus": "prepared-not-applied",
+    "sourceVerified": false,
+    "schemaVersion": "bienedu.canonical-math.v1",
+    "id": "cd01-cd07-functions:6.1-source-example-6:source-solution.expression",
+    "legacyId": "6.1-source-example-6:source-solution.expression",
+    "sourceId": "cd01-cd07-functions",
+    "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+    "location": [
+      {
+        "role": "statement",
+        "page": 51,
+        "bbox": [
+          35,
+          255.7880859375,
+          560.280029296875,
+          461.99273681640625
+        ]
+      },
+      {
+        "role": "solution",
+        "page": 87,
+        "bbox": [
+          35,
+          660.1980590820312,
+          560.280029296875,
+          727.1297607421875
+        ]
+      }
+    ],
+    "content": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Chọn B(x) = −x⁴ + 2x² + 1. f′(x) = −4x (x −1) (x + 1). Đồng biến: (−∞; −1), (0; 1); nghịch biến: (−1; 0), (1; ∞). f′(x) = −4x (x −1) (x + 1). cực đại tại x = −1, giá trị2; cực tiểu tại x = 0, giá trị1; cực đại tại x = 1, giá trị2. Kiểm tra thêm tung độtại x = 1/2: A(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{39}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; B(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "\\frac{23}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "; C(1/2) = "
+        },
+        {
+          "type": "math",
+          "latex": "-\\frac{23}{16}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  }
+]

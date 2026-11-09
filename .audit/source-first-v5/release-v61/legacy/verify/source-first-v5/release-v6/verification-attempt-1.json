@@ -1,0 +1,12 @@
+{
+  "sequential": true,
+  "results": [
+    {
+      "command": "npm.cmd run verify",
+      "exitCode": 1,
+      "startedAt": "2026-11-08T15:49:48.918Z",
+      "finishedAt": "2026-11-08T15:53:38.511Z",
+      "log": "verify-final.log"
+    }
+  ]
+}

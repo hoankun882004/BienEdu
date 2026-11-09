@@ -954,7 +954,7 @@ Generated: ${manifest.generatedAt}
 
 - ${pendingFoundationExamples} ví dụ foundation đã nhập nhưng chưa được con người đối chiếu từng dòng với PDF; không được tự nâng thành verified.
 - Ngoài 1.1, 8.1 và 8.4, các dạng CD01–CD11 vẫn cần source review đầy đủ dù renderer và KaTeX đã qua kiểm tra kỹ thuật.
-- CD15–CD19 và CD22–CD39 chưa có PDF nguồn được mapping trong workspace.
+- PDF mới CD15–CD19 và CD28–CD33 đã có trong workspace nhưng chưa được kích hoạt vào runtime mặc định. Bản PDF CD12–CD14 mới là nguồn độc lập, không thay thế bản cũ chỉ vì trùng phạm vi. Xem ma trận chuẩn bị V6 trong .audit/source-first-v5/release-v6/inventory.json; có nguồn không đồng nghĩa đã chuyển đổi và kiểm chứng đầy đủ.
 - 9 đáp số CD12–CD14 có xung đột nguồn đã biết vẫn giữ needs-review và không auto-grade.
 - Không có lỗi kỹ thuật nghiêm trọng còn mở tại checkpoint; các mục trên là thiếu nguồn hoặc thiếu bằng chứng kiểm duyệt, không được che bằng placeholder.
 

@@ -1,0 +1,11 @@
+
+> verify
+> node scripts/source-first/compat-suites-v61.mjs verify
+
+[V6.1] verify: unchanged historical assertions run in disposable V5.5 benchmark; active V6.0 is not rolled back.
+
+> check
+> node scripts/check-source.mjs
+
+Source check failed:
+- assets/js/release-preview-v61.js: unreachable from active HTML entries

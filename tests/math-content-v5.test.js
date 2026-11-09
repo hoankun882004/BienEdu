@@ -49,8 +49,8 @@ test("CD22.7 renders display and inline probability notation without red fallbac
 
   assert.match(html, /class="katex-display"/u);
   assert.match(html, /mfrac/u);
-  assert.match(html, /data-verification="source-verified"/u);
-  assert.match(html, /Đã đối chiếu nguồn/u);
+  assert.match(html, /data-verification="source-mapped"/u);
+  assert.doesNotMatch(html, /Đã đối chiếu nguồn|Đã kiểm duyệt/u);
   assert.doesNotMatch(html, /Điểm [12]|math-render-error|katex-error/u);
 
   const inline = renderMarkdownInline(reading.lead);

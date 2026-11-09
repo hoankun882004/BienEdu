@@ -1,0 +1,82 @@
+✔ V5.6 classifies all 180 canonical references with explicit source/runtime evidence, without a second queue (95.9582ms)
+✔ inline fidelity never discards fraction bars, radical boundaries, exponents or probability bars (2.7165ms)
+✔ all ten complete source-bound correction groups survive actual importer replay twice (10272.9239ms)
+✔ supported SymPy checks cover actual proposed fractions, radicals, powers and original real domains (2244.0264ms)
+✔ consolidated manifest uses applied V5.5 before bytes, complete groups and dry-run defaults (13560.9966ms)
+✔ continuation requires fresh exact authorization and refuses production, forged plans or missing fields (431.2164ms)
+✔ actual isolated learner files apply idempotently and rollback restores applied parent exactly (26264.9272ms)
+✖ interruption after replacement retains recoverable child bytes and same-plan resume/rollback (268.4146ms)
+✖ unknown runtime edits, changed sources and corrupted backups fail closed without overwrites (342.6005ms)
+✔ all original sources, real V5.5 runtime, journal and rollback dependencies remain intact (15.1836ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 8
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53721.81
+
+✖ failing tests:
+
+test at tests\source-fraction-v56.test.js:83:1
+✖ interruption after replacement retains recoverable child bytes and same-plan resume/rollback (268.4146ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /SAME child manifest/u. Input:
+  
+  'Error: Stale source/dependency; no writes'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-fraction-v56.test.js:85:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Stale source/dependency; no writes
+        at validateContinuation (file:///D:/BienEdu/scripts/source-first/development-continuation.mjs:89:132)
+        at applyContinuation (file:///D:/BienEdu/scripts/source-first/development-continuation.mjs:120:3)
+        at file:///D:/BienEdu/tests/source-fraction-v56.test.js:85:21
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-fraction-v56.test.js:85:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /SAME child manifest/u,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\source-fraction-v56.test.js:91:1
+✖ unknown runtime edits, changed sources and corrupted backups fail closed without overwrites (342.6005ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Unknown runtime/u. Input:
+  
+  'Error: Stale source/dependency; no writes'
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-fraction-v56.test.js:93:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Stale source/dependency; no writes
+        at validateContinuation (file:///D:/BienEdu/scripts/source-first/development-continuation.mjs:89:132)
+        at applyContinuation (file:///D:/BienEdu/scripts/source-first/development-continuation.mjs:120:3)
+        at file:///D:/BienEdu/tests/source-fraction-v56.test.js:93:21
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-fraction-v56.test.js:93:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /Unknown runtime/u,
+    operator: 'throws',
+    diff: 'simple'
+  }

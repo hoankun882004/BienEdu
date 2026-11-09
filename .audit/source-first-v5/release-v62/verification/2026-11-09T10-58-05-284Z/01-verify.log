@@ -1,0 +1,50 @@
+[V6.2] verify: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> verify
+> node scripts/source-first/compat-suites-v61.mjs verify
+
+
+> check
+> node scripts/check-source.mjs
+
+Source check passed: 58 JavaScript files, 6 HTML entries.
+
+> content:scan
+> node scripts/content-pipeline.mjs scan
+
+Scanned 8 PDF(s). Inventory: .audit\content-inventory.json
+
+> content:validate
+> node scripts/content-pipeline.mjs validate
+
+Coverage report: .audit\content-coverage.md
+Source manifest: .audit\v11-2-source-manifest.json
+V14 traceability: .audit\v14-source-traceability.json
+V14 source-fidelity audit: .audit\v14-source-fidelity-audit.md
+V15 exercise coverage: .audit\v15-exercise-coverage.md
+PDF mapping review: .audit\pdf-mapping-review.md
+Content migration docs: docs\content
+WARNING: 9 source answer keys are preserved but marked needs-review; none are auto-graded.
+Content registry validation passed.
+
+> content:math:audit
+> node scripts/math-content-audit-v5.mjs
+
+Math V5 audit: 1668 formula slots and 4710 rendered fields; 0 rendering failure(s).
+180 suspicious text item(s); 18 native-source review item(s).
+Checkpoint: C:\Users\ASUS\AppData\Local\Temp\bienedu-v62-legacy-Z3NTsH\.audit\math-content-v5-checkpoint.json
+
+> content:source:build
+> node scripts/source-first/build.mjs
+
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+
+> content:graphs:preview
+> node scripts/source-first/graph-experiment.mjs prepare
+

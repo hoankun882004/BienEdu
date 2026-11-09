@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-05",
+  "snapshotSha256": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "fullVerify": {
+    "command": "npm.cmd run verify",
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/verify-v51-final.log",
+    "windowsLogCapture": "cmd.exe handles stream redirection; expected retained-conflict warning is not a PowerShell error"
+  },
+  "nodeTests": { "passed": 141, "failed": 0, "sourceFirstTestsIncluded": 16 },
+  "dedicatedLatexTests": { "passed": 6, "failed": 0 },
+  "browserRegressions": ["native-latex-v4.2", "math-content-v5", "source-review-v5.1", "native-learning-v13", "workspace-v15", "navigation-v4.1", "onboarding-registration-v16", "registration-v16.1", "homepage-scroll", "polish"],
+  "studioViewports": [{ "width": 1366, "height": 900 }, { "width": 390, "height": 844 }],
+  "studioErrors": 0,
+  "visualEvidence": { "benchmarkExpressions": 40, "benchmarkSheets": 10, "figureAssetsInspected": 8, "figureSheets": 2, "humanApprovalInferred": false },
+  "sourcePreservation": { "originalPhysicalFilesCompared": 9, "hashesUnchanged": 9 },
+  "runtimeMathematicalDataDiff": "none",
+  "diffCheck": "passed",
+  "runtimePublicationWrites": 0,
+  "humanSourceApprovals": 0,
+  "mathematicalEditorialApprovals": 0,
+  "commitsPushesDeployments": 0
+}

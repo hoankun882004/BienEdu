@@ -1,0 +1,2334 @@
+{
+  "schemaVersion": "bienedu.source-first.v1",
+  "date": "2026-11-05",
+  "snapshotSha256": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "physicalSources": [
+    {
+      "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "bytes": 220310,
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "bytes": 961062,
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD01",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD05",
+        "CD06",
+        "CD07"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "bytes": 2925340,
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD20",
+        "CD21"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "bytes": 391957,
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD08",
+        "CD09",
+        "CD10",
+        "CD11"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "bytes": 961062,
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD01",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD05",
+        "CD06",
+        "CD07"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "bytes": 391957,
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD08",
+        "CD09",
+        "CD10",
+        "CD11"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "bytes": 220310,
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD12",
+        "CD13",
+        "CD14"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "bytes": 2925340,
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "kind": "pdf",
+      "mappedTopicIds": [
+        "CD20",
+        "CD21"
+      ],
+      "sourceTopicIds": null
+    },
+    {
+      "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+      "bytes": 59239,
+      "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "kind": "tex",
+      "mappedTopicIds": [
+        "CD22"
+      ],
+      "sourceTopicIds": [
+        "CD20",
+        "CD21",
+        "CD22",
+        "CD23"
+      ]
+    }
+  ],
+  "uniqueSourceCount": 5,
+  "cohortPolicy": "Frozen 40-case benchmark; full live directory inventory is release-v6/inventory.json",
+  "discoveredOutsideCohort": [
+    {
+      "file": "39 chuyên đề/Day-so-Cap-so-CD17-CD19.pdf",
+      "bytes": 214738,
+      "sha256": "46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E",
+      "kind": "pdf"
+    },
+    {
+      "file": "39 chuyên đề/Luong-giac-CD15-CD16.pdf",
+      "bytes": 200675,
+      "sha256": "AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154",
+      "kind": "pdf"
+    },
+    {
+      "file": "39 chuyên đề/Nguyen-ham-Tich-phan-CD12-CD14.pdf",
+      "bytes": 315896,
+      "sha256": "AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22",
+      "kind": "pdf"
+    },
+    {
+      "file": "39 chuyên đề/Vecto-Oxyz-CD28-CD33 (1).pdf",
+      "bytes": 389988,
+      "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+      "kind": "pdf"
+    }
+  ],
+  "pdfCoverage": [
+    {
+      "documentId": "cd01-cd07-functions",
+      "pageCount": 98,
+      "pages": [
+        {
+          "page": 1,
+          "textCharacters": 2559,
+          "spanCount": 1887,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 2,
+          "textCharacters": 3190,
+          "spanCount": 2360,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 3,
+          "textCharacters": 1149,
+          "spanCount": 766,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 4,
+          "textCharacters": 1870,
+          "spanCount": 962,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 5,
+          "textCharacters": 1763,
+          "spanCount": 857,
+          "imageCount": 0,
+          "drawingCount": 20
+        },
+        {
+          "page": 6,
+          "textCharacters": 1793,
+          "spanCount": 945,
+          "imageCount": 0,
+          "drawingCount": 6
+        },
+        {
+          "page": 7,
+          "textCharacters": 2141,
+          "spanCount": 1117,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 8,
+          "textCharacters": 914,
+          "spanCount": 436,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 9,
+          "textCharacters": 2031,
+          "spanCount": 897,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 10,
+          "textCharacters": 1492,
+          "spanCount": 672,
+          "imageCount": 0,
+          "drawingCount": 26
+        },
+        {
+          "page": 11,
+          "textCharacters": 896,
+          "spanCount": 357,
+          "imageCount": 0,
+          "drawingCount": 55
+        },
+        {
+          "page": 12,
+          "textCharacters": 311,
+          "spanCount": 132,
+          "imageCount": 0,
+          "drawingCount": 97
+        },
+        {
+          "page": 13,
+          "textCharacters": 301,
+          "spanCount": 132,
+          "imageCount": 0,
+          "drawingCount": 95
+        },
+        {
+          "page": 14,
+          "textCharacters": 407,
+          "spanCount": 173,
+          "imageCount": 0,
+          "drawingCount": 102
+        },
+        {
+          "page": 15,
+          "textCharacters": 443,
+          "spanCount": 93,
+          "imageCount": 0,
+          "drawingCount": 130
+        },
+        {
+          "page": 16,
+          "textCharacters": 443,
+          "spanCount": 93,
+          "imageCount": 0,
+          "drawingCount": 130
+        },
+        {
+          "page": 17,
+          "textCharacters": 443,
+          "spanCount": 93,
+          "imageCount": 0,
+          "drawingCount": 132
+        },
+        {
+          "page": 18,
+          "textCharacters": 1554,
+          "spanCount": 798,
+          "imageCount": 0,
+          "drawingCount": 53
+        },
+        {
+          "page": 19,
+          "textCharacters": 1349,
+          "spanCount": 656,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 20,
+          "textCharacters": 2084,
+          "spanCount": 864,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 21,
+          "textCharacters": 1316,
+          "spanCount": 491,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 22,
+          "textCharacters": 956,
+          "spanCount": 266,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 23,
+          "textCharacters": 432,
+          "spanCount": 169,
+          "imageCount": 0,
+          "drawingCount": 97
+        },
+        {
+          "page": 24,
+          "textCharacters": 406,
+          "spanCount": 165,
+          "imageCount": 0,
+          "drawingCount": 88
+        },
+        {
+          "page": 25,
+          "textCharacters": 416,
+          "spanCount": 171,
+          "imageCount": 0,
+          "drawingCount": 107
+        },
+        {
+          "page": 26,
+          "textCharacters": 546,
+          "spanCount": 187,
+          "imageCount": 0,
+          "drawingCount": 123
+        },
+        {
+          "page": 27,
+          "textCharacters": 477,
+          "spanCount": 179,
+          "imageCount": 0,
+          "drawingCount": 143
+        },
+        {
+          "page": 28,
+          "textCharacters": 477,
+          "spanCount": 179,
+          "imageCount": 0,
+          "drawingCount": 145
+        },
+        {
+          "page": 29,
+          "textCharacters": 1261,
+          "spanCount": 522,
+          "imageCount": 0,
+          "drawingCount": 87
+        },
+        {
+          "page": 30,
+          "textCharacters": 1708,
+          "spanCount": 896,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 31,
+          "textCharacters": 805,
+          "spanCount": 419,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 32,
+          "textCharacters": 1930,
+          "spanCount": 855,
+          "imageCount": 0,
+          "drawingCount": 8
+        },
+        {
+          "page": 33,
+          "textCharacters": 953,
+          "spanCount": 420,
+          "imageCount": 0,
+          "drawingCount": 36
+        },
+        {
+          "page": 34,
+          "textCharacters": 725,
+          "spanCount": 282,
+          "imageCount": 0,
+          "drawingCount": 44
+        },
+        {
+          "page": 35,
+          "textCharacters": 523,
+          "spanCount": 216,
+          "imageCount": 0,
+          "drawingCount": 81
+        },
+        {
+          "page": 36,
+          "textCharacters": 528,
+          "spanCount": 210,
+          "imageCount": 0,
+          "drawingCount": 73
+        },
+        {
+          "page": 37,
+          "textCharacters": 760,
+          "spanCount": 296,
+          "imageCount": 0,
+          "drawingCount": 71
+        },
+        {
+          "page": 38,
+          "textCharacters": 2124,
+          "spanCount": 821,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 39,
+          "textCharacters": 2413,
+          "spanCount": 1000,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 40,
+          "textCharacters": 1996,
+          "spanCount": 848,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 41,
+          "textCharacters": 1811,
+          "spanCount": 808,
+          "imageCount": 0,
+          "drawingCount": 8
+        },
+        {
+          "page": 42,
+          "textCharacters": 1901,
+          "spanCount": 925,
+          "imageCount": 0,
+          "drawingCount": 15
+        },
+        {
+          "page": 43,
+          "textCharacters": 1309,
+          "spanCount": 614,
+          "imageCount": 0,
+          "drawingCount": 35
+        },
+        {
+          "page": 44,
+          "textCharacters": 809,
+          "spanCount": 326,
+          "imageCount": 0,
+          "drawingCount": 65
+        },
+        {
+          "page": 45,
+          "textCharacters": 502,
+          "spanCount": 202,
+          "imageCount": 0,
+          "drawingCount": 144
+        },
+        {
+          "page": 46,
+          "textCharacters": 502,
+          "spanCount": 195,
+          "imageCount": 0,
+          "drawingCount": 120
+        },
+        {
+          "page": 47,
+          "textCharacters": 683,
+          "spanCount": 274,
+          "imageCount": 0,
+          "drawingCount": 114
+        },
+        {
+          "page": 48,
+          "textCharacters": 1811,
+          "spanCount": 882,
+          "imageCount": 0,
+          "drawingCount": 5
+        },
+        {
+          "page": 49,
+          "textCharacters": 1182,
+          "spanCount": 511,
+          "imageCount": 0,
+          "drawingCount": 52
+        },
+        {
+          "page": 50,
+          "textCharacters": 616,
+          "spanCount": 303,
+          "imageCount": 0,
+          "drawingCount": 130
+        },
+        {
+          "page": 51,
+          "textCharacters": 611,
+          "spanCount": 306,
+          "imageCount": 0,
+          "drawingCount": 134
+        },
+        {
+          "page": 52,
+          "textCharacters": 698,
+          "spanCount": 317,
+          "imageCount": 0,
+          "drawingCount": 134
+        },
+        {
+          "page": 53,
+          "textCharacters": 981,
+          "spanCount": 432,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 54,
+          "textCharacters": 814,
+          "spanCount": 314,
+          "imageCount": 0,
+          "drawingCount": 52
+        },
+        {
+          "page": 55,
+          "textCharacters": 328,
+          "spanCount": 133,
+          "imageCount": 0,
+          "drawingCount": 87
+        },
+        {
+          "page": 56,
+          "textCharacters": 311,
+          "spanCount": 140,
+          "imageCount": 0,
+          "drawingCount": 95
+        },
+        {
+          "page": 57,
+          "textCharacters": 719,
+          "spanCount": 286,
+          "imageCount": 0,
+          "drawingCount": 102
+        },
+        {
+          "page": 58,
+          "textCharacters": 2153,
+          "spanCount": 864,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 59,
+          "textCharacters": 2173,
+          "spanCount": 1026,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 60,
+          "textCharacters": 1692,
+          "spanCount": 844,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 61,
+          "textCharacters": 1304,
+          "spanCount": 624,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 62,
+          "textCharacters": 2129,
+          "spanCount": 1021,
+          "imageCount": 0,
+          "drawingCount": 10
+        },
+        {
+          "page": 63,
+          "textCharacters": 2151,
+          "spanCount": 900,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 64,
+          "textCharacters": 2215,
+          "spanCount": 1060,
+          "imageCount": 0,
+          "drawingCount": 9
+        },
+        {
+          "page": 65,
+          "textCharacters": 1776,
+          "spanCount": 832,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 66,
+          "textCharacters": 1636,
+          "spanCount": 816,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 67,
+          "textCharacters": 1875,
+          "spanCount": 980,
+          "imageCount": 0,
+          "drawingCount": 25
+        },
+        {
+          "page": 68,
+          "textCharacters": 1796,
+          "spanCount": 931,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 69,
+          "textCharacters": 1847,
+          "spanCount": 860,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 70,
+          "textCharacters": 2210,
+          "spanCount": 1001,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 71,
+          "textCharacters": 2329,
+          "spanCount": 1008,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 72,
+          "textCharacters": 2271,
+          "spanCount": 1140,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 73,
+          "textCharacters": 2081,
+          "spanCount": 997,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 74,
+          "textCharacters": 2384,
+          "spanCount": 1098,
+          "imageCount": 0,
+          "drawingCount": 8
+        },
+        {
+          "page": 75,
+          "textCharacters": 2616,
+          "spanCount": 1080,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 76,
+          "textCharacters": 2136,
+          "spanCount": 1010,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 77,
+          "textCharacters": 2298,
+          "spanCount": 1106,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 78,
+          "textCharacters": 2103,
+          "spanCount": 1124,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 79,
+          "textCharacters": 2380,
+          "spanCount": 1266,
+          "imageCount": 0,
+          "drawingCount": 18
+        },
+        {
+          "page": 80,
+          "textCharacters": 2284,
+          "spanCount": 1176,
+          "imageCount": 0,
+          "drawingCount": 14
+        },
+        {
+          "page": 81,
+          "textCharacters": 2256,
+          "spanCount": 1177,
+          "imageCount": 0,
+          "drawingCount": 20
+        },
+        {
+          "page": 82,
+          "textCharacters": 2373,
+          "spanCount": 1065,
+          "imageCount": 0,
+          "drawingCount": 4
+        },
+        {
+          "page": 83,
+          "textCharacters": 2160,
+          "spanCount": 1060,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 84,
+          "textCharacters": 2116,
+          "spanCount": 1050,
+          "imageCount": 0,
+          "drawingCount": 5
+        },
+        {
+          "page": 85,
+          "textCharacters": 1823,
+          "spanCount": 794,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 86,
+          "textCharacters": 1994,
+          "spanCount": 945,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 87,
+          "textCharacters": 2878,
+          "spanCount": 1374,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 88,
+          "textCharacters": 2784,
+          "spanCount": 1324,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 89,
+          "textCharacters": 3049,
+          "spanCount": 1589,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 90,
+          "textCharacters": 2674,
+          "spanCount": 1211,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 91,
+          "textCharacters": 1734,
+          "spanCount": 825,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 92,
+          "textCharacters": 2127,
+          "spanCount": 997,
+          "imageCount": 0,
+          "drawingCount": 4
+        },
+        {
+          "page": 93,
+          "textCharacters": 2237,
+          "spanCount": 1063,
+          "imageCount": 0,
+          "drawingCount": 4
+        },
+        {
+          "page": 94,
+          "textCharacters": 2359,
+          "spanCount": 1411,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 95,
+          "textCharacters": 2652,
+          "spanCount": 1633,
+          "imageCount": 0,
+          "drawingCount": 9
+        },
+        {
+          "page": 96,
+          "textCharacters": 2746,
+          "spanCount": 1536,
+          "imageCount": 0,
+          "drawingCount": 15
+        },
+        {
+          "page": 97,
+          "textCharacters": 2338,
+          "spanCount": 1172,
+          "imageCount": 0,
+          "drawingCount": 8
+        },
+        {
+          "page": 98,
+          "textCharacters": 519,
+          "spanCount": 237,
+          "imageCount": 0,
+          "drawingCount": 3
+        }
+      ]
+    },
+    {
+      "documentId": "cd08-cd11-exponential-logarithm",
+      "pageCount": 78,
+      "pages": [
+        {
+          "page": 1,
+          "textCharacters": 2601,
+          "spanCount": 1922,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 2,
+          "textCharacters": 3214,
+          "spanCount": 2423,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 3,
+          "textCharacters": 3523,
+          "spanCount": 2607,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 4,
+          "textCharacters": 478,
+          "spanCount": 319,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 5,
+          "textCharacters": 1054,
+          "spanCount": 531,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 6,
+          "textCharacters": 1050,
+          "spanCount": 451,
+          "imageCount": 0,
+          "drawingCount": 94
+        },
+        {
+          "page": 7,
+          "textCharacters": 1522,
+          "spanCount": 676,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 8,
+          "textCharacters": 606,
+          "spanCount": 314,
+          "imageCount": 0,
+          "drawingCount": 9
+        },
+        {
+          "page": 9,
+          "textCharacters": 531,
+          "spanCount": 245,
+          "imageCount": 0,
+          "drawingCount": 8
+        },
+        {
+          "page": 10,
+          "textCharacters": 527,
+          "spanCount": 222,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 11,
+          "textCharacters": 701,
+          "spanCount": 342,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 12,
+          "textCharacters": 603,
+          "spanCount": 277,
+          "imageCount": 0,
+          "drawingCount": 9
+        },
+        {
+          "page": 13,
+          "textCharacters": 566,
+          "spanCount": 261,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 14,
+          "textCharacters": 761,
+          "spanCount": 349,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 15,
+          "textCharacters": 825,
+          "spanCount": 365,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 16,
+          "textCharacters": 698,
+          "spanCount": 318,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 17,
+          "textCharacters": 821,
+          "spanCount": 312,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 18,
+          "textCharacters": 641,
+          "spanCount": 276,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 19,
+          "textCharacters": 753,
+          "spanCount": 343,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 20,
+          "textCharacters": 605,
+          "spanCount": 280,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 21,
+          "textCharacters": 1110,
+          "spanCount": 511,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 22,
+          "textCharacters": 772,
+          "spanCount": 312,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 23,
+          "textCharacters": 502,
+          "spanCount": 236,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 24,
+          "textCharacters": 592,
+          "spanCount": 253,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 25,
+          "textCharacters": 600,
+          "spanCount": 260,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 26,
+          "textCharacters": 461,
+          "spanCount": 188,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 27,
+          "textCharacters": 539,
+          "spanCount": 260,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 28,
+          "textCharacters": 525,
+          "spanCount": 222,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 29,
+          "textCharacters": 698,
+          "spanCount": 320,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 30,
+          "textCharacters": 618,
+          "spanCount": 276,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 31,
+          "textCharacters": 637,
+          "spanCount": 255,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 32,
+          "textCharacters": 531,
+          "spanCount": 206,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 33,
+          "textCharacters": 756,
+          "spanCount": 327,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 34,
+          "textCharacters": 546,
+          "spanCount": 225,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 35,
+          "textCharacters": 495,
+          "spanCount": 238,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 36,
+          "textCharacters": 594,
+          "spanCount": 262,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 37,
+          "textCharacters": 568,
+          "spanCount": 214,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 38,
+          "textCharacters": 451,
+          "spanCount": 215,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 39,
+          "textCharacters": 640,
+          "spanCount": 295,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 40,
+          "textCharacters": 727,
+          "spanCount": 319,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 41,
+          "textCharacters": 658,
+          "spanCount": 230,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 42,
+          "textCharacters": 745,
+          "spanCount": 326,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 43,
+          "textCharacters": 803,
+          "spanCount": 391,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 44,
+          "textCharacters": 1002,
+          "spanCount": 413,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 45,
+          "textCharacters": 1096,
+          "spanCount": 429,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 46,
+          "textCharacters": 968,
+          "spanCount": 404,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 47,
+          "textCharacters": 1035,
+          "spanCount": 433,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 48,
+          "textCharacters": 931,
+          "spanCount": 419,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 49,
+          "textCharacters": 1049,
+          "spanCount": 369,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 50,
+          "textCharacters": 899,
+          "spanCount": 336,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 51,
+          "textCharacters": 897,
+          "spanCount": 431,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 52,
+          "textCharacters": 838,
+          "spanCount": 446,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 53,
+          "textCharacters": 816,
+          "spanCount": 402,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 54,
+          "textCharacters": 966,
+          "spanCount": 422,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 55,
+          "textCharacters": 997,
+          "spanCount": 427,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 56,
+          "textCharacters": 911,
+          "spanCount": 500,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 57,
+          "textCharacters": 1252,
+          "spanCount": 487,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 58,
+          "textCharacters": 924,
+          "spanCount": 416,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 59,
+          "textCharacters": 1304,
+          "spanCount": 572,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 60,
+          "textCharacters": 1847,
+          "spanCount": 884,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 61,
+          "textCharacters": 1942,
+          "spanCount": 948,
+          "imageCount": 0,
+          "drawingCount": 15
+        },
+        {
+          "page": 62,
+          "textCharacters": 1942,
+          "spanCount": 851,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 63,
+          "textCharacters": 1907,
+          "spanCount": 891,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 64,
+          "textCharacters": 1831,
+          "spanCount": 754,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 65,
+          "textCharacters": 2132,
+          "spanCount": 1090,
+          "imageCount": 0,
+          "drawingCount": 5
+        },
+        {
+          "page": 66,
+          "textCharacters": 2023,
+          "spanCount": 960,
+          "imageCount": 0,
+          "drawingCount": 3
+        },
+        {
+          "page": 67,
+          "textCharacters": 2139,
+          "spanCount": 999,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 68,
+          "textCharacters": 2337,
+          "spanCount": 1132,
+          "imageCount": 0,
+          "drawingCount": 7
+        },
+        {
+          "page": 69,
+          "textCharacters": 1967,
+          "spanCount": 1050,
+          "imageCount": 0,
+          "drawingCount": 5
+        },
+        {
+          "page": 70,
+          "textCharacters": 1971,
+          "spanCount": 971,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 71,
+          "textCharacters": 2177,
+          "spanCount": 946,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 72,
+          "textCharacters": 1920,
+          "spanCount": 831,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 73,
+          "textCharacters": 1603,
+          "spanCount": 687,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 74,
+          "textCharacters": 1607,
+          "spanCount": 709,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 75,
+          "textCharacters": 1659,
+          "spanCount": 843,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 76,
+          "textCharacters": 1647,
+          "spanCount": 851,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 77,
+          "textCharacters": 2089,
+          "spanCount": 858,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 78,
+          "textCharacters": 1207,
+          "spanCount": 568,
+          "imageCount": 0,
+          "drawingCount": 1
+        }
+      ]
+    },
+    {
+      "documentId": "cd20-cd21-theory",
+      "pageCount": 18,
+      "pages": [
+        {
+          "page": 1,
+          "textCharacters": 170,
+          "spanCount": 66,
+          "imageCount": 1,
+          "drawingCount": 3
+        },
+        {
+          "page": 2,
+          "textCharacters": 1152,
+          "spanCount": 395,
+          "imageCount": 0,
+          "drawingCount": 4
+        },
+        {
+          "page": 3,
+          "textCharacters": 2370,
+          "spanCount": 1869,
+          "imageCount": 0,
+          "drawingCount": 1
+        },
+        {
+          "page": 4,
+          "textCharacters": 1634,
+          "spanCount": 575,
+          "imageCount": 0,
+          "drawingCount": 14
+        },
+        {
+          "page": 5,
+          "textCharacters": 1534,
+          "spanCount": 590,
+          "imageCount": 0,
+          "drawingCount": 19
+        },
+        {
+          "page": 6,
+          "textCharacters": 1030,
+          "spanCount": 366,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 7,
+          "textCharacters": 1399,
+          "spanCount": 586,
+          "imageCount": 0,
+          "drawingCount": 27
+        },
+        {
+          "page": 8,
+          "textCharacters": 1411,
+          "spanCount": 497,
+          "imageCount": 0,
+          "drawingCount": 17
+        },
+        {
+          "page": 9,
+          "textCharacters": 1482,
+          "spanCount": 559,
+          "imageCount": 0,
+          "drawingCount": 20
+        },
+        {
+          "page": 10,
+          "textCharacters": 1553,
+          "spanCount": 584,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 11,
+          "textCharacters": 1394,
+          "spanCount": 521,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 12,
+          "textCharacters": 1537,
+          "spanCount": 483,
+          "imageCount": 0,
+          "drawingCount": 19
+        },
+        {
+          "page": 13,
+          "textCharacters": 1665,
+          "spanCount": 568,
+          "imageCount": 0,
+          "drawingCount": 15
+        },
+        {
+          "page": 14,
+          "textCharacters": 1532,
+          "spanCount": 513,
+          "imageCount": 0,
+          "drawingCount": 19
+        },
+        {
+          "page": 15,
+          "textCharacters": 1369,
+          "spanCount": 446,
+          "imageCount": 0,
+          "drawingCount": 18
+        },
+        {
+          "page": 16,
+          "textCharacters": 1302,
+          "spanCount": 536,
+          "imageCount": 0,
+          "drawingCount": 18
+        },
+        {
+          "page": 17,
+          "textCharacters": 1296,
+          "spanCount": 525,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 18,
+          "textCharacters": 399,
+          "spanCount": 163,
+          "imageCount": 0,
+          "drawingCount": 11
+        }
+      ]
+    },
+    {
+      "documentId": "cd12-cd14-calculus",
+      "pageCount": 49,
+      "pages": [
+        {
+          "page": 1,
+          "textCharacters": 194,
+          "spanCount": 7,
+          "imageCount": 0,
+          "drawingCount": 2
+        },
+        {
+          "page": 2,
+          "textCharacters": 2607,
+          "spanCount": 1563,
+          "imageCount": 0,
+          "drawingCount": 0
+        },
+        {
+          "page": 3,
+          "textCharacters": 1142,
+          "spanCount": 402,
+          "imageCount": 0,
+          "drawingCount": 41
+        },
+        {
+          "page": 4,
+          "textCharacters": 757,
+          "spanCount": 330,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 5,
+          "textCharacters": 977,
+          "spanCount": 326,
+          "imageCount": 0,
+          "drawingCount": 26
+        },
+        {
+          "page": 6,
+          "textCharacters": 550,
+          "spanCount": 278,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 7,
+          "textCharacters": 1046,
+          "spanCount": 297,
+          "imageCount": 0,
+          "drawingCount": 37
+        },
+        {
+          "page": 8,
+          "textCharacters": 690,
+          "spanCount": 298,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 9,
+          "textCharacters": 701,
+          "spanCount": 245,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 10,
+          "textCharacters": 820,
+          "spanCount": 308,
+          "imageCount": 0,
+          "drawingCount": 27
+        },
+        {
+          "page": 11,
+          "textCharacters": 638,
+          "spanCount": 270,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 12,
+          "textCharacters": 870,
+          "spanCount": 316,
+          "imageCount": 0,
+          "drawingCount": 28
+        },
+        {
+          "page": 13,
+          "textCharacters": 500,
+          "spanCount": 242,
+          "imageCount": 0,
+          "drawingCount": 18
+        },
+        {
+          "page": 14,
+          "textCharacters": 823,
+          "spanCount": 256,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 15,
+          "textCharacters": 939,
+          "spanCount": 320,
+          "imageCount": 0,
+          "drawingCount": 18
+        },
+        {
+          "page": 16,
+          "textCharacters": 1130,
+          "spanCount": 387,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 17,
+          "textCharacters": 958,
+          "spanCount": 308,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 18,
+          "textCharacters": 595,
+          "spanCount": 289,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 19,
+          "textCharacters": 1030,
+          "spanCount": 295,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 20,
+          "textCharacters": 463,
+          "spanCount": 224,
+          "imageCount": 0,
+          "drawingCount": 10
+        },
+        {
+          "page": 21,
+          "textCharacters": 1137,
+          "spanCount": 488,
+          "imageCount": 0,
+          "drawingCount": 14
+        },
+        {
+          "page": 22,
+          "textCharacters": 865,
+          "spanCount": 266,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 23,
+          "textCharacters": 547,
+          "spanCount": 271,
+          "imageCount": 0,
+          "drawingCount": 19
+        },
+        {
+          "page": 24,
+          "textCharacters": 742,
+          "spanCount": 274,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 25,
+          "textCharacters": 512,
+          "spanCount": 237,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 26,
+          "textCharacters": 906,
+          "spanCount": 349,
+          "imageCount": 0,
+          "drawingCount": 15
+        },
+        {
+          "page": 27,
+          "textCharacters": 777,
+          "spanCount": 248,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 28,
+          "textCharacters": 1163,
+          "spanCount": 287,
+          "imageCount": 0,
+          "drawingCount": 27
+        },
+        {
+          "page": 29,
+          "textCharacters": 970,
+          "spanCount": 297,
+          "imageCount": 0,
+          "drawingCount": 13
+        },
+        {
+          "page": 30,
+          "textCharacters": 806,
+          "spanCount": 324,
+          "imageCount": 0,
+          "drawingCount": 20
+        },
+        {
+          "page": 31,
+          "textCharacters": 853,
+          "spanCount": 307,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 32,
+          "textCharacters": 609,
+          "spanCount": 279,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 33,
+          "textCharacters": 57,
+          "spanCount": 11,
+          "imageCount": 0,
+          "drawingCount": 0
+        },
+        {
+          "page": 34,
+          "textCharacters": 1120,
+          "spanCount": 323,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 35,
+          "textCharacters": 992,
+          "spanCount": 292,
+          "imageCount": 0,
+          "drawingCount": 23
+        },
+        {
+          "page": 36,
+          "textCharacters": 1190,
+          "spanCount": 408,
+          "imageCount": 0,
+          "drawingCount": 21
+        },
+        {
+          "page": 37,
+          "textCharacters": 1090,
+          "spanCount": 354,
+          "imageCount": 0,
+          "drawingCount": 34
+        },
+        {
+          "page": 38,
+          "textCharacters": 1057,
+          "spanCount": 330,
+          "imageCount": 0,
+          "drawingCount": 24
+        },
+        {
+          "page": 39,
+          "textCharacters": 1290,
+          "spanCount": 297,
+          "imageCount": 0,
+          "drawingCount": 31
+        },
+        {
+          "page": 40,
+          "textCharacters": 836,
+          "spanCount": 231,
+          "imageCount": 0,
+          "drawingCount": 25
+        },
+        {
+          "page": 41,
+          "textCharacters": 1110,
+          "spanCount": 402,
+          "imageCount": 0,
+          "drawingCount": 14
+        },
+        {
+          "page": 42,
+          "textCharacters": 1335,
+          "spanCount": 360,
+          "imageCount": 0,
+          "drawingCount": 25
+        },
+        {
+          "page": 43,
+          "textCharacters": 1082,
+          "spanCount": 230,
+          "imageCount": 0,
+          "drawingCount": 19
+        },
+        {
+          "page": 44,
+          "textCharacters": 1174,
+          "spanCount": 284,
+          "imageCount": 0,
+          "drawingCount": 11
+        },
+        {
+          "page": 45,
+          "textCharacters": 1430,
+          "spanCount": 298,
+          "imageCount": 0,
+          "drawingCount": 22
+        },
+        {
+          "page": 46,
+          "textCharacters": 1080,
+          "spanCount": 272,
+          "imageCount": 0,
+          "drawingCount": 17
+        },
+        {
+          "page": 47,
+          "textCharacters": 1674,
+          "spanCount": 400,
+          "imageCount": 0,
+          "drawingCount": 16
+        },
+        {
+          "page": 48,
+          "textCharacters": 430,
+          "spanCount": 130,
+          "imageCount": 0,
+          "drawingCount": 4
+        },
+        {
+          "page": 49,
+          "textCharacters": 518,
+          "spanCount": 280,
+          "imageCount": 0,
+          "drawingCount": 5
+        }
+      ]
+    }
+  ],
+  "nativeElementCount": 235,
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "structuralFailures": [],
+  "unresolvedAnchors": [],
+  "humanReviewQueue": [
+    "tex-20.3",
+    "tex-20.4",
+    "tex-20.5",
+    "tex-21.1",
+    "tex-21.2",
+    "tex-22.1",
+    "tex-22.2",
+    "tex-22.4",
+    "tex-22.5",
+    "tex-22.7",
+    "pdf-derivative-power",
+    "pdf-derivative-quotient",
+    "pdf-derivative-root",
+    "pdf-derivative-log",
+    "pdf-geometric-point",
+    "pdf-simultaneous-constraints",
+    "pdf-rational-exponents",
+    "pdf-nested-exponents",
+    "pdf-root-exponents",
+    "pdf-powers-condition",
+    "pdf-exponent-warning",
+    "pdf-log-bases",
+    "pdf-log-nested",
+    "pdf-log-product",
+    "pdf-integral-definition",
+    "pdf-integral-power",
+    "pdf-integral-log",
+    "pdf-integral-base",
+    "pdf-integral-cos-reciprocal",
+    "pdf-integral-sin-reciprocal",
+    "pdf-integral-radical",
+    "pdf-integral-chain",
+    "pdf-definite-integral",
+    "pdf-definite-example",
+    "pdf-graph-associated",
+    "pdf-area-absolute",
+    "pdf-area-piecewise",
+    "pdf-counting-source",
+    "pdf-root-domain",
+    "pdf-rational-domain"
+  ],
+  "nativeBlocksAwaitingReview": [
+    "tex-20.1-1",
+    "tex-20.1-2",
+    "tex-20.1-3",
+    "tex-20.1-4",
+    "tex-20.1-5",
+    "tex-20.2-6",
+    "tex-20.2-7",
+    "tex-20.2-8",
+    "tex-20.2-9",
+    "tex-20.3-10",
+    "tex-20.3-11",
+    "tex-20.3-12",
+    "tex-20.3-13",
+    "tex-20.3-14",
+    "tex-20.3-15",
+    "tex-20.3-16",
+    "tex-20.4-17",
+    "tex-20.4-18",
+    "tex-20.4-19",
+    "tex-20.4-20",
+    "tex-20.4-21",
+    "tex-20.5-22",
+    "tex-20.5-23",
+    "tex-20.5-24",
+    "tex-20.5-25",
+    "tex-20.5-26",
+    "tex-20.5-27",
+    "tex-20.6-28",
+    "tex-20.6-29",
+    "tex-20.6-30",
+    "tex-20.6-31",
+    "tex-20.7-32",
+    "tex-20.7-33",
+    "tex-20.7-34",
+    "tex-20.7-35",
+    "tex-20.7-36",
+    "tex-20.8-37",
+    "tex-20.8-38",
+    "tex-20.8-39",
+    "tex-20.8-40",
+    "tex-20.8-41",
+    "tex-20.8-42",
+    "tex-20.8-43",
+    "tex-20.8-44",
+    "tex-20.9-45",
+    "tex-20.9-46",
+    "tex-20.9-47",
+    "tex-20.9-48",
+    "tex-20.9-49",
+    "tex-20.9-50",
+    "tex-20.10-51",
+    "tex-20.10-52",
+    "tex-20.10-53",
+    "tex-20.10-54",
+    "tex-20.10-55",
+    "tex-20.11-56",
+    "tex-20.11-57",
+    "tex-20.11-58",
+    "tex-20.11-59",
+    "tex-20.11-60",
+    "tex-20.11-61",
+    "tex-20.12-62",
+    "tex-20.12-63",
+    "tex-20.12-64",
+    "tex-20.12-65",
+    "tex-20.12-66",
+    "tex-20.12-67",
+    "tex-20.13-68",
+    "tex-20.13-69",
+    "tex-20.13-70",
+    "tex-20.13-71",
+    "tex-20.13-72",
+    "tex-20.13-73",
+    "tex-20.13-74",
+    "tex-20.14-75",
+    "tex-20.14-76",
+    "tex-20.14-77",
+    "tex-20.14-78",
+    "tex-20.14-79",
+    "tex-20.15-80",
+    "tex-20.15-81",
+    "tex-20.15-82",
+    "tex-20.15-83",
+    "tex-20.16-84",
+    "tex-20.16-85",
+    "tex-20.16-86",
+    "tex-20.16-87",
+    "tex-20.17-88",
+    "tex-20.17-89",
+    "tex-20.17-90",
+    "tex-20.17-91",
+    "tex-20.17-92",
+    "tex-20.17-93",
+    "tex-21.1-94",
+    "tex-21.1-95",
+    "tex-21.1-96",
+    "tex-21.1-97",
+    "tex-21.1-98",
+    "tex-21.2-99",
+    "tex-21.2-100",
+    "tex-21.2-101",
+    "tex-21.2-102",
+    "tex-21.2-103",
+    "tex-21.3-104",
+    "tex-21.3-105",
+    "tex-21.3-106",
+    "tex-21.4-107",
+    "tex-21.4-108",
+    "tex-21.4-109",
+    "tex-21.5-110",
+    "tex-21.5-111",
+    "tex-21.5-112",
+    "tex-21.5-113",
+    "tex-21.6-114",
+    "tex-21.6-115",
+    "tex-21.6-116",
+    "tex-21.6-117",
+    "tex-21.6-118",
+    "tex-21.6-119",
+    "tex-21.7-120",
+    "tex-21.7-121",
+    "tex-21.7-122",
+    "tex-21.7-123",
+    "tex-21.7-124",
+    "tex-21.8-125",
+    "tex-21.8-126",
+    "tex-21.8-127",
+    "tex-21.8-128",
+    "tex-21.8-129",
+    "tex-21.8-130",
+    "tex-22.1-131",
+    "tex-22.1-132",
+    "tex-22.1-133",
+    "tex-22.1-134",
+    "tex-22.1-135",
+    "tex-22.2-136",
+    "tex-22.2-137",
+    "tex-22.2-138",
+    "tex-22.2-139",
+    "tex-22.2-140",
+    "tex-22.3-141",
+    "tex-22.3-142",
+    "tex-22.3-143",
+    "tex-22.3-144",
+    "tex-22.3-145",
+    "tex-22.4-146",
+    "tex-22.4-147",
+    "tex-22.4-148",
+    "tex-22.4-149",
+    "tex-22.4-150",
+    "tex-22.5-151",
+    "tex-22.5-152",
+    "tex-22.5-153",
+    "tex-22.5-154",
+    "tex-22.5-155",
+    "tex-22.6-156",
+    "tex-22.6-157",
+    "tex-22.6-158",
+    "tex-22.6-159",
+    "tex-22.7-160",
+    "tex-22.7-161",
+    "tex-22.7-162",
+    "tex-22.7-163",
+    "tex-22.7-164",
+    "tex-22.8-165",
+    "tex-22.8-166",
+    "tex-22.8-167",
+    "tex-22.8-168",
+    "tex-22.9-169",
+    "tex-22.9-170",
+    "tex-22.9-171",
+    "tex-22.9-172",
+    "tex-23.1-173",
+    "tex-23.1-174",
+    "tex-23.1-175",
+    "tex-23.1-176",
+    "tex-23.1-177",
+    "tex-23.1-178",
+    "tex-23.2-179",
+    "tex-23.2-180",
+    "tex-23.2-181",
+    "tex-23.2-182",
+    "tex-23.2-183",
+    "tex-23.3-184",
+    "tex-23.3-185",
+    "tex-23.3-186",
+    "tex-23.3-187",
+    "tex-23.4-188",
+    "tex-23.4-189",
+    "tex-23.4-190",
+    "tex-23.4-191",
+    "tex-23.5-192",
+    "tex-23.5-193",
+    "tex-23.5-194",
+    "tex-23.5-195",
+    "tex-23.6-196",
+    "tex-23.6-197",
+    "tex-23.6-198",
+    "tex-23.6-199",
+    "tex-23.6-200",
+    "tex-23.7-201",
+    "tex-23.7-202",
+    "tex-23.7-203",
+    "tex-23.7-204",
+    "tex-23.7-205",
+    "tex-23.7-206",
+    "tex-23.7-207",
+    "tex-23.8-208",
+    "tex-23.8-209",
+    "tex-23.8-210",
+    "tex-23.8-211",
+    "tex-23.8-212",
+    "tex-23.9-213",
+    "tex-23.9-214",
+    "tex-23.9-215",
+    "tex-23.9-216",
+    "tex-23.9-217",
+    "tex-23.9-218",
+    "tex-23.10-219",
+    "tex-23.10-220",
+    "tex-23.10-221",
+    "tex-23.10-222",
+    "tex-23.10-223",
+    "tex-23.11-224",
+    "tex-23.11-225",
+    "tex-23.11-226",
+    "tex-23.11-227",
+    "tex-23.11-228",
+    "tex-23.12-229",
+    "tex-23.12-230",
+    "tex-23.12-231",
+    "tex-23.12-232",
+    "tex-23.12-233",
+    "tex-23.12-234",
+    "tex-23.12-235"
+  ],
+  "protectedTopics": [
+    "CD20",
+    "CD21"
+  ],
+  "runtimeWrites": 0,
+  "externalTools": {
+    "mineru": "not-installed; not-benchmarked",
+    "docling": "not-installed; formula enrichment needs model; not-benchmarked",
+    "mathpix": "not-authorized; not-run",
+    "marker": "historical-local-runs-only"
+  },
+  "verificationV51": {
+    "counts": {
+      "uniqueTrackedReviewRecords": 1512,
+      "benchmarkExpressions": 40,
+      "machineCheckedExpressions": 40,
+      "humanSourceVerified": 0,
+      "mathematicalEditorialApprovals": 0,
+      "pendingBenchmarkSourceReviews": 40,
+      "pendingFigures": 188,
+      "missingSourceTopics": [
+        "CD15",
+        "CD16",
+        "CD17",
+        "CD18",
+        "CD19",
+        "CD24",
+        "CD25",
+        "CD26",
+        "CD27",
+        "CD28",
+        "CD29",
+        "CD30",
+        "CD31",
+        "CD32",
+        "CD33",
+        "CD34",
+        "CD35",
+        "CD36",
+        "CD37",
+        "CD38",
+        "CD39"
+      ],
+      "approvedButUnpublished": 0,
+      "newlyPublished": 0,
+      "existingRuntimeKnowledgeRecords": 181,
+      "existingRuntimeExampleRecords": 1313,
+      "legacyImmutableApprovalRecords": 3,
+      "fractionCandidates": 180,
+      "calculusAnswerConflicts": 9,
+      "cd22UnitsCompared": 18,
+      "correctedConversionDefects": 1
+    },
+    "report": ".audit/source-first-v5/verification-v5.1.json",
+    "humanApprovalsInferred": false
+  },
+  "verificationV52": {
+    "counts": {
+      "uniqueTrackedReviewRecords": 1512,
+      "benchmarkExpressions": 40,
+      "machineCheckedExpressions": 40,
+      "humanSourceVerified": 0,
+      "mathematicalEditorialApprovals": 0,
+      "pendingBenchmarkSourceReviews": 40,
+      "pendingFigures": 188,
+      "missingSourceTopics": [
+        "CD15",
+        "CD16",
+        "CD17",
+        "CD18",
+        "CD19",
+        "CD24",
+        "CD25",
+        "CD26",
+        "CD27",
+        "CD28",
+        "CD29",
+        "CD30",
+        "CD31",
+        "CD32",
+        "CD33",
+        "CD34",
+        "CD35",
+        "CD36",
+        "CD37",
+        "CD38",
+        "CD39"
+      ],
+      "approvedButUnpublished": 0,
+      "newlyPublished": 0,
+      "existingRuntimeKnowledgeRecords": 181,
+      "existingRuntimeExampleRecords": 1313,
+      "legacyImmutableApprovalRecords": 3,
+      "fractionCandidates": 180,
+      "calculusAnswerConflicts": 9,
+      "cd22UnitsCompared": 18,
+      "correctedConversionDefects": 1,
+      "benchmarkPrepared": 40,
+      "needsCorrectionDecisions": 0,
+      "unresolvedAmbiguityDecisions": 0,
+      "recognizedRuntimeTargets": 34,
+      "unmappedRuntimeTargets": 6,
+      "newlyCorrectedImporterDefects": 0,
+      "newAgentFigureInspections": 8,
+      "totalDistinctAgentFigureInspections": 16
+    },
+    "report": ".audit/source-first-v5/review-preparation-v5.2.json",
+    "humanApprovalsInferred": false
+  },
+  "integrationV53": {
+    "report": ".audit/source-first-v5/runtime-mappings-v5.3.json",
+    "counts": {
+      "EXACT_RUNTIME_MAPPING": 15,
+      "MULTIPLE_VALID_TARGETS": 19,
+      "SOURCE_ONLY": 0,
+      "AMBIGUOUS_MAPPING": 6,
+      "MISSING_RUNTIME_CONTENT": 0,
+      "benchmarkItems": 40,
+      "mappedSourceItems": 34,
+      "legitimateRuntimeUsages": 64,
+      "confirmedVisibleDefects": 3,
+      "stagedFieldChanges": 0,
+      "stagedMathematicalFieldChanges": 0,
+      "humanSourceApprovals": 0,
+      "humanMathematicalApprovals": 0,
+      "approvedChanges": 0,
+      "publishedCorrections": 0,
+      "blockedSourceItems": 40
+    },
+    "runtimeWrites": 0
+  },
+  "verificationV54": {
+    "comparisons": {
+      "MACHINE_MATCHED": 5,
+      "CONFIRMED_CONVERSION_DEFECT": 0,
+      "AMBIGUOUS": 35
+    },
+    "pilotFieldChanges": 0,
+    "humanFieldApprovals": 0,
+    "publishedCorrections": 0,
+    "localPlanHash": "2BB99575A0B300336F7AFD19A331F8B85B3D1BA26F78AF06E45F7ED5731B21F4",
+    "releaseState": {
+      "transactions": [],
+      "activeCorrectionIds": [],
+      "realHumanApprovalsInferred": false
+    }
+  },
+  "developmentV55": {
+    "report": ".audit/source-first-v5/validation-v5.5.json",
+    "preview": ".audit/source-first-v5/development-preview-v5.5.json",
+    "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "eligibleCorrections": 3,
+    "fields": 9,
+    "actualRuntimeWritesDuringImplementation": 0,
+    "formalHumanApprovalsCreated": 0,
+    "productionPublications": 0
+  },
+  "developmentV56": {
+    "report": ".audit/source-first-v5/validation-v5.6.json",
+    "preview": ".audit/source-first-v5/development-preview-v5.6.html",
+    "audit": ".audit/source-first-v5/fraction-audit-v5.6.json",
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "inspected": 180,
+    "eligibleGroups": 10,
+    "eligibleFields": 26,
+    "parentStatus": "locally-applied-unreviewed",
+    "actualNewRuntimeWrites": 0,
+    "humanApprovalsCreated": 0
+  }
+}

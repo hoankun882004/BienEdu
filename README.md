@@ -57,6 +57,28 @@ Hiện CD12–CD14 và CD20–CD21 có 51 bài học native, 52 trang đọc, 14
 
 Nội dung chưa được kiểm chứng dùng empty state “Nội dung đang được cập nhật”, không mở PDF và không tạo bài giả. `←`/`→` chuyển tuần tự giữa Kiến thức, Ví dụ và Bài tập khi focus không nằm trong điều khiển nhập liệu. Chạy ma trận native bằng `npm.cmd run test:v13`; bài test dùng Playwright thật trên 7 viewport, 8 route đại diện và quét toàn bộ 51 bài ở mobile/desktop.
 
+## Source-first Math Engine và Review Studio V5
+
+V5.2 tiếp tục cùng Studio và hàng đợi: bản vá V3 gắn với phiên bản, hash nguồn và biểu thức gốc; hỗ trợ riêng **Cần sửa** / **Chưa rõ**, đọc lại quyết định đã lưu bằng CLI, và chuyển mục chưa xử lý bằng `Alt+N`. Chạy `npm.cmd run content:source:prepare` để cập nhật hồ sơ 40 mục và dry-run. Xem [quy trình V5.2](docs/content/source-review-v5.2.md). Hiện không có phê duyệt con người hay quyền xuất bản; bản sửa vẫn nằm trong staging.
+
+V5.1 bổ sung đối chiếu nguồn và phê duyệt toán học riêng biệt, phóng to crop/xem nguyên trang, xem ngữ cảnh TeX đầy đủ, diff trước/sau và phím `Alt+←` / `Alt+→`. Xuất patch chưa phải áp dụng quyết định. HTTP tiếp tục chỉ đọc; mọi bản vá mới phải có xác nhận người trực tiếp rà soát. Nhãn dành cho học viên không coi import/KaTeX/đối chiếu tự động là phê duyệt con người.
+
+```powershell
+npm.cmd run content:source:verify
+npm.cmd run content:source:release-dry-run
+```
+
+Lệnh dry-run chỉ ghi báo cáo trong `.audit/source-first-v5/`, gồm thay đổi chính xác, điều kiện chặn và bản đảo ngược; không ghi học liệu runtime. Xem [báo cáo V5.1](docs/content/source-verification-v5.1.md) để biết số liệu không trùng lặp, giới hạn và quy trình duyệt.
+
+Quy trình mới ưu tiên TeX gốc, tiếp đến PDF có metadata bố cục và đối chiếu từng vùng công thức. Bản gốc, tọa độ, LaTeX, điều kiện và quyết định của người duyệt được lưu riêng. Cú pháp KaTeX hợp lệ chỉ tạo trạng thái `render-valid`; dữ liệu mới vẫn chờ đối chiếu nguồn và kiểm duyệt toán học.
+
+```powershell
+npm.cmd run content:source:build
+npm.cmd run content:review
+```
+
+Mở `http://127.0.0.1:8765` để xem 40 mẫu có TeX/crop nguồn, sửa biểu thức và xuất patch. Studio chỉ chạy local, HTTP chỉ đọc; patch được áp vào staging bằng `content:source:apply`, không tự xuất bản cho học viên. Xem [hướng dẫn và báo cáo benchmark](docs/content/source-first-v5-engine.md) để biết lệnh áp patch, phạm vi công cụ đã chạy và hàng chờ còn lại. Kiểm thử riêng bằng `npm.cmd run test:source-first`.
+
 ## Pipeline PDF toán V13
 
 Marker là provider cục bộ mặc định để chuyển PDF thành block có tọa độ, Markdown, LaTeX, bảng và ảnh. Bản trích xuất luôn đi qua `content/review` với trạng thái `needs-source-review`; frontend chỉ nhận dữ liệu đã được đối chiếu và xác minh. PDF gốc chỉ phục vụ pipeline/reviewer ngoại tuyến, không được publish thành viewer hay fallback cho học viên. Pipeline không chạy OCR trong trình duyệt; Mathpix chỉ là provider tooling tùy chọn dùng biến môi trường.

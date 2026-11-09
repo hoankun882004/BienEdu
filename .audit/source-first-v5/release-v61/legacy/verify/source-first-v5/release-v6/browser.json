@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "states": [
+    {
+      "kind": "integrated-sequence",
+      "item": 1,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 2,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 3,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 4,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 5,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 6,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 7,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 8,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 9,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 10,
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-v56-correction",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-graph-history",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "practice-keyboard-persistence",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 1,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 2,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 3,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 4,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 5,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 6,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 7,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 8,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 9,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 10,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-v56-correction",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-graph-history",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "practice-keyboard-persistence",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 1,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 2,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 3,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 4,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 5,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 6,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 7,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 8,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 9,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-sequence",
+      "item": 10,
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-v56-correction",
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "integrated-graph-history",
+      "width": 1366,
+      "passed": true
+    },
+    {
+      "kind": "practice-keyboard-persistence",
+      "width": 1366,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "fixtureApplyRollback": true,
+  "realRuntimeWrites": 0
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "bienedu.v5.4.recovery",
+  "snapshotHash": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "v53Counts": {
+    "EXACT_RUNTIME_MAPPING": 15,
+    "MULTIPLE_VALID_TARGETS": 19,
+    "SOURCE_ONLY": 0,
+    "AMBIGUOUS_MAPPING": 6,
+    "MISSING_RUNTIME_CONTENT": 0,
+    "benchmarkItems": 40,
+    "mappedSourceItems": 34,
+    "legitimateRuntimeUsages": 64,
+    "confirmedVisibleDefects": 3,
+    "stagedFieldChanges": 9,
+    "stagedMathematicalFieldChanges": 7,
+    "humanSourceApprovals": 0,
+    "humanMathematicalApprovals": 0,
+    "approvedChanges": 0,
+    "publishedCorrections": 0,
+    "blockedSourceItems": 40
+  },
+  "sources": [
+    {
+      "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "matchesRecoveredHash": true
+    },
+    {
+      "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+      "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "matchesRecoveredHash": true
+    }
+  ],
+  "runtimeFileHashes": {
+    "assets/js/data/latex-pilot.generated.js": "02F982C1F5420A3C5A6BB3983F07E7CFC4FBA9F283B50B841B3419EA4BC957A5",
+    "assets/js/data/foundation-lessons.generated.js": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+    "assets/js/data/calculus-knowledge-details.js": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+    "assets/js/data/calculus-lessons.js": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692",
+    "assets/js/data/calculus-source-examples.js": "435CA4803BBDA78A6D4D573B8502D7ADF69A573BA9D2551BEA66313B58B8A2ED"
+  },
+  "gitWorkingTree": " M .audit/content-coverage.md\n M .audit/content-inventory.json\n M .audit/content-migration-cd01-1-1-1366x768.png\n M .audit/content-migration-cd01-1-1-390x844.png\n M .audit/content-migration-cd01-1-1-page-2-1366x768.png\n M .audit/content-migration-cd01-1-1-page-2-390x844.png\n M .audit/home-scroll-1440.jpg\n M .audit/home-scroll-390.jpg\n M .audit/home-scroll-768.jpg\n M .audit/latex-v4-2-cd22-1366x768.png\n M .audit/latex-v4-2-cd22-1920x1080.png\n M .audit/latex-v4-2-cd22-390x844-bottom.png\n M .audit/latex-v4-2-cd22-390x844.png\n M .audit/latex-v4-2-cd22-768x1024-bottom.png\n M .audit/latex-v4-2-cd22-768x1024.png\n M .audit/latex-v4-2-pilot.mjs\n M .audit/learning-v4-1-example-1366x768.png\n M .audit/learning-v4-1-mobile-390x844.png\n M .audit/learning-v4-1-tablet-768x1024.png\n M .audit/math-content-v5-cd22-7-1366x768.png\n M .audit/math-content-v5-cd22-7-1920x1080.png\n M .audit/math-content-v5-cd22-7-390x844-bottom.png\n M .audit/math-content-v5-cd22-7-390x844.png\n M .audit/math-content-v5-cd22-7-768x1024-bottom.png\n M .audit/math-content-v5-cd22-7-768x1024.png\n M .audit/math-content-v5.mjs\n M .audit/polish-after-contact-1440.jpg\n M .audit/polish-after-contact-390.jpg\n M .audit/polish-after-course-1440.jpg\n M .audit/polish-after-course-390.jpg\n M .audit/polish-after-home-1440.jpg\n M .audit/polish-after-home-390.jpg\n M .audit/polish-after-practice-papers-1440.jpg\n M .audit/polish-after-practice-papers-390.jpg\n M .audit/polish-after-quiz-1440.jpg\n M .audit/polish-after-registration-1440.jpg\n M .audit/v11-2-source-manifest.json\n M .audit/v13-1-latex-12-1-desktop.png\n M .audit/v13-1-latex-12-1-mobile.png\n M .audit/v13-1-latex-13-3-desktop.png\n M .audit/v13-1-latex-14-9-mobile.png\n M .audit/v13-2-after-12-1-1024x768.png\n M .audit/v13-2-after-12-1-1280x720.png\n M .audit/v13-2-after-12-1-1366x768.png\n M .audit/v13-2-after-12-1-1440x900.png\n M .audit/v13-2-after-12-1-1920x1080.png\n M .audit/v13-2-after-12-1-390x844-bottom.png\n M .audit/v13-2-after-12-1-390x844.png\n M .audit/v13-2-after-12-1-430x932-bottom.png\n M .audit/v13-2-after-12-1-430x932.png\n M .audit/v13-2-after-12-1-768x1024.png\n M .audit/v13-4-knowledge-12-4-1440x900.png\n M .audit/v13-4-knowledge-12-4-390x844.png\n M .audit/v13-native-20-2-1024x768.png\n M .audit/v13-native-20-2-1280x720.png\n M .audit/v13-native-20-2-1366x768.png\n M .audit/v13-native-20-2-1440x900.png\n M .audit/v13-native-20-2-1920x1080.png\n M .audit/v13-native-20-2-390x844-bottom.png\n M .audit/v13-native-20-2-390x844.png\n M .audit/v13-native-20-2-430x932.png\n M .audit/v13-native-20-2-768x1024.png\n M .audit/v13-native-learning.mjs\n M .audit/v14-source-faithful-12-1-1440x900.png\n M .audit/v14-source-faithful-12-1-390x844.png\n M .audit/v14-source-fidelity-audit.md\n M .audit/v14-source-traceability.json\n M .audit/v15-example-12-1-1024x768.png\n M .audit/v15-example-12-1-1280x720.png\n M .audit/v15-example-12-1-1440x900.png\n M .audit/v15-example-12-1-1920x1080.png\n M .audit/v15-example-12-1-390x844-bottom.png\n M .audit/v15-example-12-1-390x844.png\n M .audit/v15-example-12-1-430x932-bottom.png\n M .audit/v15-example-12-1-430x932.png\n M .audit/v15-example-12-1-768x1024.png\n M .audit/v15-exercise-coverage.json\n M .audit/v15-exercise-coverage.md\n M .audit/v16-onboarding-desktop.jpg\n M .audit/v16-onboarding-mobile.jpg\n M README.md\n M assets/js/components/markdown-math-renderer.js\n M assets/js/curriculum.js\n M docs/content/content-manifest.json\n M docs/content/content-migration-report.md\n M docs/content/pdf-inventory.md\n M docs/content/topic-coverage-report.md\n M docs/ux/math-content-rendering-v5.md\n M package.json\n M scripts/import-foundation-documents.py\n M scripts/latex-pilot/parser.mjs\n M scripts/math-pdf/normalize.mjs\n M tests/latex-import-pilot.test.js\n M tests/math-content-v5.test.js\n?? .audit/runtime-integration-v53.mjs\n?? .audit/source-first-v5-browser.mjs\n?? .audit/source-first-v5/\n?? .vercelignore\n?? docs/content/runtime-integration-v5.3.md\n?? docs/content/source-first-v5-audit.md\n?? docs/content/source-first-v5-engine.md\n?? docs/content/source-review-v5.2.md\n?? docs/content/source-verification-v5.1.md\n?? scripts/source-first/\n?? tests/source-first.test.js\n?? tests/source-integration-v53.test.js\n?? tests/source-review-v52.test.js\n?? tests/source-verification-v51.test.js\n",
+  "actualRuntimeWrites": 0
+}

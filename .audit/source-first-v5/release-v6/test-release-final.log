@@ -1,0 +1,47 @@
+
+> test:release
+> npm run content:release:preview && node --test tests/release-v6.test.js && node .audit/v6-release-browser.mjs
+
+
+> content:release:preview
+> node scripts/source-first/release-v6.mjs preview
+
+{
+  "planHash": "0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44",
+  "summary": {
+    "correctionGroups": 13,
+    "correctionFields": 35,
+    "v56PhysicalFields": 26,
+    "additionalCanonicalOverlayFields": 9,
+    "newKnowledge": 1,
+    "newExamples": 10,
+    "newSolutions": 10,
+    "newPractice": 0,
+    "nativeGraphs": 5,
+    "variationTables": 1
+  },
+  "sourceFiles": 9,
+  "canonicalNodes": 68,
+  "applyCommand": "node scripts/source-first/release-v6.mjs apply --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+  "rollbackCommand": "node scripts/source-first/release-v6.mjs rollback --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+  "realRuntimeWrites": 0
+}
+
+✔ nine independent educational sources retain exact current hashes and coverage (6.9663ms)
+✔ new PDF headings pair full stable IDs, not repeated statement/solution counts (0.2102ms)
+✔ one complete new semantic group: knowledge/method/10 examples/10 solutions; no invented practice (9.2665ms)
+✔ canonical math remains the single conversion contract for prepared content and corrections (30.9521ms)
+✔ protected CD20/CD21 and unpublished CD23 are not supplemented or corrected (2.3188ms)
+✔ local release dry-run makes no writes; exact manifest authorization is mandatory (1153.4718ms)
+✔ interrupted multi-file release resumes idempotently and rolls back in reverse safely (1331.2206ms)
+✔ stale source, changed dependencies and concurrent runtime edits are rejected (904.2094ms)
+✔ real V5.5 content stays applied and V5.6 content stays prepared, never applied by tests (6.2806ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3715.2448
+{"passed":true,"states":39,"realRuntimeWrites":0}

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "states": [
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stableDom": true,
+      "duplicate": false,
+      "escaped": true,
+      "fallback": true,
+      "ordinaryMath": true,
+      "localEquationScroll": true,
+      "firstTermReachable": true,
+      "globalOverflow": false,
+      "scoringAndReloadPreserved": true,
+      "wrongAnswerScoringPreserved": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stableDom": true,
+      "duplicate": false,
+      "escaped": true,
+      "fallback": true,
+      "ordinaryMath": true,
+      "localEquationScroll": true,
+      "firstTermReachable": true,
+      "globalOverflow": false,
+      "scoringAndReloadPreserved": true,
+      "wrongAnswerScoringPreserved": true
+    }
+  ],
+  "errors": []
+}

@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 
 const root = resolve(".");
@@ -17,7 +18,10 @@ test("content migration audit publishes a reusable 39-topic manifest", () => {
   assert.equal(manifest.schemaVersion, "bienedu.content-migration.v1");
   assert.equal(manifest.policy.studentFormat, "Markdown + LaTeX");
   assert.equal(manifest.policy.pdfViewer, false);
-  assert.equal(manifest.documents.length, 4);
+  const sourceFiles=readdirSync(resolve(root,"39 chuyên đề")).filter((name)=>name.endsWith(".pdf")).map((name)=>`39 chuyên đề/${name}`).sort();
+  assert.deepEqual(manifest.documents.map((doc)=>doc.relativePath).sort(),sourceFiles);
+  assert.equal(manifest.documents.filter((doc)=>doc.registeredDocumentId!==null).length,4,'The four legacy source mappings must remain intact');
+  for(const doc of manifest.documents)assert.equal(doc.sha256,createHash('sha256').update(readFileSync(resolve(root,doc.relativePath))).digest('hex').toUpperCase());
   assert.equal(manifest.topics.length, 39);
 
   const cd01 = manifest.topics.find((topic) => topic.topicId === "CD01");
@@ -45,6 +49,7 @@ test("required content reports state the CD01 root cause and incomplete scope", 
   const migration = readFileSync(reportPaths[2], "utf8");
   assert.match(migration, /Root Cause Analysis/u);
   assert.match(migration, /Kiến thức cần nhớ/u);
-  assert.match(migration, /CD15–CD19 và CD22–CD39 chưa có PDF nguồn/u);
+  assert.match(migration, /PDF mới CD15–CD19 và CD28–CD33/u);
+  assert.match(migration, /chưa được kích hoạt vào runtime mặc định/u);
   assert.doesNotMatch(migration, /hoàn thành toàn bộ 39/u);
 });

@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-05",
+  "snapshotSha256": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "fullVerify": {
+    "command": "npm.cmd run verify",
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/verify-v53.log"
+  },
+  "nodeTests": {
+    "passed": 158,
+    "failed": 0
+  },
+  "dedicatedLatexTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "dedicatedSourceFirst": {
+    "command": "npm.cmd run test:source-first",
+    "passed": 33,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/source-tests-v53.log",
+    "browserPassed": true
+  },
+  "runtimeMappings": {
+    "EXACT_RUNTIME_MAPPING": 15,
+    "MULTIPLE_VALID_TARGETS": 19,
+    "SOURCE_ONLY": 0,
+    "AMBIGUOUS_MAPPING": 6,
+    "MISSING_RUNTIME_CONTENT": 0,
+    "benchmarkItems": 40,
+    "mappedSourceItems": 34,
+    "legitimateRuntimeUsages": 64,
+    "confirmedVisibleDefects": 3,
+    "stagedFieldChanges": 9,
+    "stagedMathematicalFieldChanges": 7,
+    "humanSourceApprovals": 0,
+    "humanMathematicalApprovals": 0,
+    "approvedChanges": 0,
+    "publishedCorrections": 0,
+    "blockedSourceItems": 40
+  },
+  "importerReplay": {
+    "deterministic": true,
+    "originalPages": [
+      5,
+      66
+    ],
+    "stagedExamples": 2,
+    "runtimeContentChanges": 0
+  },
+  "browser": {
+    "report": ".audit/source-first-v5/browser-v5.3.json",
+    "learnerStates": 20,
+    "viewports": [
+      {
+        "width": 1366,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "stagedPreviewsOnly": true,
+    "errors": 0,
+    "visualInspection": "Actual current and staged learner screenshots and Studio diffs inspected; staged views remain unpublished."
+  },
+  "originalPhysicalSourceHashes": {
+    "compared": 9,
+    "unchanged": 9,
+    "sources": [
+      {
+        "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+        "unchanged": true,
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+        "unchanged": true,
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+        "unchanged": true,
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+        "unchanged": true,
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "unchanged": true,
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "unchanged": true,
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "unchanged": true,
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "unchanged": true,
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "unchanged": true,
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+      }
+    ]
+  },
+  "runtimeMathematicalData": {
+    "unchangedModules": [
+      "assets/js/data/latex-pilot.generated.js",
+      "assets/js/data/foundation-lessons.generated.js",
+      "assets/js/data/calculus-knowledge-details.js",
+      "assets/js/data/calculus-lessons.js",
+      "assets/js/data/calculus-source-examples.js"
+    ],
+    "contentChanges": 0
+  },
+  "releaseDryRun": {
+    "eligible": 0,
+    "blocked": 40,
+    "planHash": "2DD2802A0ABF4D02B03B15182F16912CC4B24EAD22C476315FB5BAC3F91DDFE6",
+    "runtimeWrites": 0
+  },
+  "reviewScope": "Benchmark expression approvals do not authorize whole prompts, solutions or companion conditions. Exact-target review remains required.",
+  "humanSourceApprovals": 0,
+  "humanMathematicalApprovals": 0,
+  "publishedCorrections": 0,
+  "remainingVisibleDefects": 3,
+  "preservedBacklog": {
+    "fractionCandidates": 180,
+    "figuresPending": 188,
+    "calculusAnswerConflicts": 9,
+    "missingSourceTopics": 21
+  },
+  "commitsPushesDeployments": 0,
+  "diffCheck": "passed",
+  "postVerifyFocusedChecks": "8/8 V5.3 tests rerun after final assertion cleanup; 20-state desktop/mobile browser audit rerun after screenshot-only helper refinement; base-plan CLI dry-run passed"
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "bienedu.validation.v5.4",
+  "executedAt": "2026-11-05T17:11:40.168Z",
+  "localDate": "2026-11-06",
+  "snapshotHash": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "baseline": {
+    "command": "npm.cmd run verify",
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/baseline-v54.log"
+  },
+  "fullVerify": {
+    "command": "npm.cmd run verify",
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/verify-v54.log"
+  },
+  "nodeTests": {
+    "tests": 169,
+    "passed": 169,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/node-v54-final.log"
+  },
+  "dedicatedLatexTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "sourceFirstTests": {
+    "tests": 44,
+    "passed": 44,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/source-tests-v54-final.log"
+  },
+  "postVerify": "Final Node and source-first suites rerun after dependency guards and publication-state evidence checks",
+  "comparison": {
+    "analyzed": 40,
+    "MACHINE_MATCHED": 5,
+    "CONFIRMED_CONVERSION_DEFECT": 3,
+    "AMBIGUOUS": 32,
+    "humanApprovalInferred": false
+  },
+  "pilot": {
+    "defectGroups": 3,
+    "fields": 9,
+    "mathematicalFields": 7,
+    "importerReplayStable": true
+  },
+  "fieldReview": {
+    "actualHumanSourceApprovals": 0,
+    "actualHumanMathematicalApprovals": 0,
+    "realEventsCreated": 0
+  },
+  "release": {
+    "status": {
+      "transactions": [],
+      "activeCorrectionIds": [],
+      "realHumanApprovalsInferred": false
+    },
+    "actualPublishedCorrections": 0,
+    "realRuntimeWrites": 0,
+    "isolatedSyntheticPublicationTestsPassed": true,
+    "atomicScope": "one runtime file per transaction; multi-file plan blocked",
+    "plans": [
+      {
+        "file": "local-release-v5.4.json",
+        "planHash": "55A457B1C3B9C77CE59AA14DDF37DD29D12AC9DBF8F505BE543BF3562BD599DC",
+        "fileCount": 2,
+        "blockers": [
+          "multi-file-atomicity-unavailable; select one --file per transaction",
+          "human-field-approvals-required:pdf-area-absolute:bound-order-condition",
+          "human-field-approvals-required:pdf-rational-domain:answer",
+          "human-field-approvals-required:pdf-rational-domain:prompt",
+          "human-field-approvals-required:pdf-rational-domain:source-solution.expression",
+          "human-field-approvals-required:pdf-rational-domain:title",
+          "human-field-approvals-required:pdf-root-domain:answer",
+          "human-field-approvals-required:pdf-root-domain:prompt",
+          "human-field-approvals-required:pdf-root-domain:source-solution.expression",
+          "human-field-approvals-required:pdf-root-domain:title"
+        ]
+      },
+      {
+        "file": "local-foundation-v5.4.json",
+        "planHash": "1C472AF9AACC4E05DEBFC986DF43B716CE822E30BB98C2653CB07E06BEC1831F",
+        "fileCount": 1,
+        "blockers": [
+          "human-field-approvals-required:pdf-rational-domain:answer",
+          "human-field-approvals-required:pdf-rational-domain:prompt",
+          "human-field-approvals-required:pdf-rational-domain:source-solution.expression",
+          "human-field-approvals-required:pdf-rational-domain:title",
+          "human-field-approvals-required:pdf-root-domain:answer",
+          "human-field-approvals-required:pdf-root-domain:prompt",
+          "human-field-approvals-required:pdf-root-domain:source-solution.expression",
+          "human-field-approvals-required:pdf-root-domain:title"
+        ]
+      },
+      {
+        "file": "local-calculus-v5.4.json",
+        "planHash": "17C44FCB0D57376B633235CE1D9868AF6A4DC04BD8AD3A2CFF79431B589F3817",
+        "fileCount": 1,
+        "blockers": [
+          "human-field-approvals-required:pdf-area-absolute:bound-order-condition"
+        ]
+      }
+    ]
+  },
+  "browser": {
+    "passed": true,
+    "learnerStates": 40,
+    "studioViewports": [
+      {
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "width": 1366,
+        "height": 768
+      },
+      {
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "runtimeErrors": 0,
+    "studentPdfViewerAdded": false,
+    "stagedPreviewsLabelled": true,
+    "evidence": [
+      ".audit/source-first-v5/browser-v5.4.json",
+      ".audit/source-first-v5/studio-v5.4.json"
+    ],
+    "actualScreenshotsInspected": true
+  },
+  "preserved": {
+    "originalSources": [
+      {
+        "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "matchesRecoveredHash": true,
+        "currentHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "matchesRecoveredHash": true,
+        "currentHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "matchesRecoveredHash": true,
+        "currentHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "matchesRecoveredHash": true,
+        "currentHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "matchesRecoveredHash": true,
+        "currentHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+      },
+      {
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "matchesRecoveredHash": true,
+        "currentHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+      },
+      {
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "matchesRecoveredHash": true,
+        "currentHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+      },
+      {
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "matchesRecoveredHash": true,
+        "currentHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+      },
+      {
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "matchesRecoveredHash": true,
+        "currentHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+      }
+    ],
+    "unchangedRuntimeModules": [
+      "assets/js/data/latex-pilot.generated.js",
+      "assets/js/data/foundation-lessons.generated.js",
+      "assets/js/data/calculus-knowledge-details.js",
+      "assets/js/data/calculus-lessons.js",
+      "assets/js/data/calculus-source-examples.js"
+    ],
+    "progressChanged": false,
+    "exerciseChanges": 0,
+    "protectedTopics": [
+      "CD20",
+      "CD21"
+    ],
+    "CD23Published": false
+  },
+  "remaining": {
+    "ambiguousMappings": 6,
+    "ambiguousOperationalComparisons": 32,
+    "fractionCandidates": 180,
+    "figures": 188,
+    "answerConflicts": 9,
+    "missingSourceTopics": 21,
+    "requiredHumanFieldDecisions": 9
+  },
+  "diffCheck": "passed",
+  "commitsPushesDeployments": 0
+}

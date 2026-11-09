@@ -13,7 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css?v=0.19.0">
   <link rel="stylesheet" href="assets/styles.css?v=19.0">
+  <link rel="stylesheet" href="assets/canonical-math.css?v=5.7">
+  <script type="importmap">
+    {"imports":{"./assets/js/components/markdown-math-renderer.js?v=15.0":"./assets/js/components/canonical-math-renderer.js?v=5.7","./assets/js/data/example-content.js?v=19.0":"./assets/js/data/examples-v6.js","./assets/js/data/knowledge-content.js?v=19.0":"./assets/js/data/knowledge-v6.js","./assets/js/data/document-mappings.js?v=12.1":"./assets/js/data/documents-v6.js"}}
+  </script>
   <script type="module" src="assets/js/main.js?v=16.0"></script>
+  <script type="module" src="assets/js/graph-loader.js?v=5.8"></script>
   <script type="module">
     import("./assets/js/curriculum.js?v=19.0").catch((error) => {
       document.documentElement.classList.add("curriculum-load-error");

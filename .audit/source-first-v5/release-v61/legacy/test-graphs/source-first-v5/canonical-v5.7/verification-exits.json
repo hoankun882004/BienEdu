@@ -1,0 +1,33 @@
+{
+  "sequential": true,
+  "results": [
+    {
+      "command": "npm.cmd run content:canonical:preview",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T07:19:42.281Z",
+      "finishedAt": "2026-11-06T07:19:52.257Z",
+      "log": "content-canonical-preview-final.log"
+    },
+    {
+      "command": "npm.cmd run verify",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T07:19:52.258Z",
+      "finishedAt": "2026-11-06T07:27:20.423Z",
+      "log": "verify-final.log"
+    },
+    {
+      "command": "npm.cmd run test:source-first",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T07:27:20.423Z",
+      "finishedAt": "2026-11-06T07:32:13.876Z",
+      "log": "test-source-first-final.log"
+    },
+    {
+      "command": "npm.cmd run test:canonical",
+      "exitCode": 0,
+      "startedAt": "2026-11-06T07:32:13.877Z",
+      "finishedAt": "2026-11-06T07:33:45.660Z",
+      "log": "test-canonical-final.log"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "bienedu.local-release.v5.4",
+  "mode": "dry-run",
+  "files": [],
+  "dependencies": [
+    {
+      "file": "assets/js/data/knowledge-content.js",
+      "hash": "F2D2A9DCC2165D49B73226F2684EF893C06052820757E2D8802A3B8C37343C76"
+    },
+    {
+      "file": "assets/js/data/example-content.js",
+      "hash": "6C5C4D98F41D1AC024CAAF6E0380E56EEE28EFA270A88952C804C94C887A1DF8"
+    },
+    {
+      "file": "assets/js/data/calculus-lessons.js",
+      "hash": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692"
+    },
+    {
+      "file": "assets/js/components/markdown-math-renderer.js",
+      "hash": "3EB5A142C34B9A4E4F1CB6BAFAAB8CCB4ECE5FBBD9DB75C0453B04534AEF3D61"
+    },
+    {
+      "file": "assets/js/curriculum.js",
+      "hash": "3717710B319ECDF79E677CD6D9E6569D176297D50ACA3C171EA22AC374FDB921"
+    },
+    {
+      "file": "assets/vendor/katex/katex.mjs",
+      "hash": "E5BC26598084AD869939ECAA262673814F26ED586312A409B5F8427C01E4F681"
+    }
+  ],
+  "blockers": [
+    "no-changed-pilot-fields"
+  ],
+  "authorization": "not-granted",
+  "runtimeWrites": 0,
+  "planHash": "2BB99575A0B300336F7AFD19A331F8B85B3D1BA26F78AF06E45F7ED5731B21F4"
+}

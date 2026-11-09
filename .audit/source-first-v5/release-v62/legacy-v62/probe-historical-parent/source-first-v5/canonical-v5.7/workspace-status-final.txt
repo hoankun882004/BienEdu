@@ -1,0 +1,131 @@
+ M .audit/content-coverage.md
+ M .audit/content-inventory.json
+ M .audit/content-migration-cd01-1-1-1366x768.png
+ M .audit/content-migration-cd01-1-1-390x844.png
+ M .audit/content-migration-cd01-1-1-page-2-1366x768.png
+ M .audit/content-migration-cd01-1-1-page-2-390x844.png
+ M .audit/home-scroll-1440.jpg
+ M .audit/home-scroll-390.jpg
+ M .audit/home-scroll-768.jpg
+ M .audit/latex-v4-2-cd22-1366x768.png
+ M .audit/latex-v4-2-cd22-1920x1080.png
+ M .audit/latex-v4-2-cd22-390x844-bottom.png
+ M .audit/latex-v4-2-cd22-390x844.png
+ M .audit/latex-v4-2-cd22-768x1024-bottom.png
+ M .audit/latex-v4-2-cd22-768x1024.png
+ M .audit/latex-v4-2-pilot.mjs
+ M .audit/learning-v4-1-example-1366x768.png
+ M .audit/learning-v4-1-mobile-390x844.png
+ M .audit/learning-v4-1-tablet-768x1024.png
+ M .audit/learning-v4-1-type-1366x768.png
+ M .audit/math-content-v5-cd22-7-1366x768.png
+ M .audit/math-content-v5-cd22-7-1920x1080.png
+ M .audit/math-content-v5-cd22-7-390x844-bottom.png
+ M .audit/math-content-v5-cd22-7-390x844.png
+ M .audit/math-content-v5-cd22-7-768x1024-bottom.png
+ M .audit/math-content-v5-cd22-7-768x1024.png
+ M .audit/math-content-v5.mjs
+ M .audit/polish-after-contact-1440.jpg
+ M .audit/polish-after-contact-390.jpg
+ M .audit/polish-after-course-1440.jpg
+ M .audit/polish-after-course-390.jpg
+ M .audit/polish-after-home-1440.jpg
+ M .audit/polish-after-home-390.jpg
+ M .audit/polish-after-practice-papers-1440.jpg
+ M .audit/polish-after-practice-papers-390.jpg
+ M .audit/polish-after-quiz-1440.jpg
+ M .audit/polish-after-registration-1440.jpg
+ M .audit/v11-2-source-manifest.json
+ M .audit/v13-1-latex-12-1-desktop.png
+ M .audit/v13-1-latex-12-1-mobile.png
+ M .audit/v13-1-latex-13-3-desktop.png
+ M .audit/v13-1-latex-14-9-mobile.png
+ M .audit/v13-2-after-12-1-1024x768.png
+ M .audit/v13-2-after-12-1-1280x720.png
+ M .audit/v13-2-after-12-1-1366x768.png
+ M .audit/v13-2-after-12-1-1440x900.png
+ M .audit/v13-2-after-12-1-1920x1080.png
+ M .audit/v13-2-after-12-1-390x844-bottom.png
+ M .audit/v13-2-after-12-1-390x844.png
+ M .audit/v13-2-after-12-1-430x932-bottom.png
+ M .audit/v13-2-after-12-1-430x932.png
+ M .audit/v13-2-after-12-1-768x1024.png
+ M .audit/v13-4-knowledge-12-4-1440x900.png
+ M .audit/v13-4-knowledge-12-4-390x844.png
+ M .audit/v13-native-20-2-1024x768.png
+ M .audit/v13-native-20-2-1280x720.png
+ M .audit/v13-native-20-2-1366x768.png
+ M .audit/v13-native-20-2-1440x900.png
+ M .audit/v13-native-20-2-1920x1080.png
+ M .audit/v13-native-20-2-390x844-bottom.png
+ M .audit/v13-native-20-2-390x844.png
+ M .audit/v13-native-20-2-430x932.png
+ M .audit/v13-native-20-2-768x1024.png
+ M .audit/v13-native-learning.mjs
+ M .audit/v14-source-faithful-12-1-1440x900.png
+ M .audit/v14-source-faithful-12-1-390x844.png
+ M .audit/v14-source-fidelity-audit.md
+ M .audit/v14-source-traceability.json
+ M .audit/v15-example-12-1-1024x768.png
+ M .audit/v15-example-12-1-1280x720.png
+ M .audit/v15-example-12-1-1440x900.png
+ M .audit/v15-example-12-1-1920x1080.png
+ M .audit/v15-example-12-1-390x844-bottom.png
+ M .audit/v15-example-12-1-390x844.png
+ M .audit/v15-example-12-1-430x932-bottom.png
+ M .audit/v15-example-12-1-430x932.png
+ M .audit/v15-example-12-1-768x1024.png
+ M .audit/v15-exercise-coverage.json
+ M .audit/v15-exercise-coverage.md
+ M .audit/v16-contact-mobile.jpg
+ M .audit/v16-onboarding-desktop.jpg
+ M .audit/v16-onboarding-mobile.jpg
+ M README.md
+ M assets/js/components/markdown-math-renderer.js
+ M assets/js/curriculum.js
+ M assets/js/data/calculus-knowledge-details.js
+ M assets/js/data/foundation-lessons.generated.js
+ M docs/content/content-manifest.json
+ M docs/content/content-migration-report.md
+ M docs/content/pdf-inventory.md
+ M docs/content/topic-coverage-report.md
+ M docs/ux/math-content-rendering-v5.md
+ M documents.html
+ M package.json
+ M scripts/check-source.mjs
+ M scripts/import-foundation-documents.py
+ M scripts/latex-pilot/parser.mjs
+ M scripts/math-pdf/normalize.mjs
+ M tests/latex-import-pilot.test.js
+ M tests/math-content-v5.test.js
+?? .audit/canonical-v57-browser.mjs
+?? .audit/canonical-v57-dom.mjs
+?? .audit/runtime-integration-v53.mjs
+?? .audit/source-first-v5-browser.mjs
+?? .audit/source-first-v5/
+?? .audit/source-first-v54-browser.mjs
+?? .audit/source-first-v55-browser.mjs
+?? .audit/source-first-v56-browser.mjs
+?? .vercelignore
+?? assets/canonical-math.css
+?? assets/js/components/canonical-math-renderer.js
+?? assets/js/components/canonical-math.js
+?? docs/content/canonical-math-v5.7.md
+?? docs/content/development-corrections-v5.5.md
+?? docs/content/fraction-corrections-v5.6.md
+?? docs/content/runtime-integration-v5.3.md
+?? docs/content/source-first-v5-audit.md
+?? docs/content/source-first-v5-engine.md
+?? docs/content/source-review-v5.2.md
+?? docs/content/source-verification-v5.1.md
+?? docs/content/source-verification-v5.4.md
+?? scripts/source-first/
+?? tests/canonical-math-v57.test.js
+?? tests/helpers/
+?? tests/source-development-v55.test.js
+?? tests/source-first.test.js
+?? tests/source-fraction-v56.test.js
+?? tests/source-integration-v53.test.js
+?? tests/source-release-v54.test.js
+?? tests/source-review-v52.test.js
+?? tests/source-verification-v51.test.js

@@ -1,11 +1,11 @@
 # BienEdu content coverage
 
-Generated: 2026-11-04T04:20:25.454Z
+Generated: 2026-11-08T15:54:48.562Z
 
 ## Audit summary
 
 - Curriculum: 39 topics / 361 subtopics.
-- Source PDFs discovered: 4.
+- Source PDFs discovered: 8.
 - Topic availability: 2 available, 15 partial, 22 coming soon, 0 needs review.
 - CD01-CD11: 107 catalog Knowledge records are imported from two registered PDFs. 1210/1022 text-complete worked-example candidates are published as source-transcribed samples; -188 remain in review. 188 examples depend on diagrams/graphs and are withheld until their assets are mapped.
 - CD12-CD14: all 26 Knowledge lessons, 52 source worked examples, 260 source self-practice items and 260 answer keys are accounted for. V15 publishes only the 10 fully solved and independently verified 12.1 source exercises; the other 250 remain outside the active bank.
@@ -18,9 +18,13 @@ Generated: 2026-11-04T04:20:25.454Z
 | File | Pages | SHA-256 | Change | Registered coverage |
 | --- | ---: | --- | --- | --- |
 | C12-CD13-CD14.pdf | 49 | `4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59` | unchanged | CD12, CD13, CD14 |
+| Day-so-Cap-so-CD17-CD19.pdf | ? | `46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E` | unchanged | manual review |
 | Hàm số-Đạo Hàm-CD01-CD07.pdf | 98 | `2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0` | unchanged | CD01, CD02, CD03, CD04, CD05, CD06, CD07 |
+| Luong-giac-CD15-CD16.pdf | ? | `AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154` | unchanged | manual review |
 | Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf | 18 | `66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293` | unchanged | CD20, CD21 |
 | Mũ-Logarit CD08-CD11.pdf | 78 | `27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7` | unchanged | CD08, CD09, CD10, CD11 |
+| Nguyen-ham-Tich-phan-CD12-CD14.pdf | ? | `AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22` | unchanged | manual review |
+| Vecto-Oxyz-CD28-CD33 (1).pdf | ? | `98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114` | unchanged | manual review |
 
 ## Topic coverage
 

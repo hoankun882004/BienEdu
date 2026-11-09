@@ -1,0 +1,37 @@
+
+> test:graphs
+> node scripts/source-first/compat-suites-v61.mjs test:graphs
+
+[V6.1] test:graphs: unchanged historical assertions run in disposable V5.5 benchmark; active V6.0 is not rolled back.
+
+> content:graphs:preview
+> node scripts/source-first/graph-experiment.mjs prepare
+
+{"planHash":"407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A","recordIds":["6.1-source-example-1","6.1-source-example-7","6.1-source-example-8","6.1-source-example-9","4.4-source-example-7","2.3-source-example-1"],"realRuntimeWrites":0}
+✔ graph domain/branches: reciprocal (5.4775ms)
+✔ graph domain/branches: shifted-pole (0.6587ms)
+✔ graph domain/branches: radical (0.481ms)
+✔ graph domain/branches: logarithm (0.3398ms)
+✔ graph domain/branches: polynomial (0.3331ms)
+✔ graph domain/branches: piecewise (1.071ms)
+✔ graph domain/branches: removable-hole (0.5074ms)
+✔ graph domain/branches: trigonometric (0.2256ms)
+✔ expression grammar: precedence, parameters, exact groupings (0.235ms)
+✔ expression grammar rejects arbitrary code, unknown syntax and excessive work (0.5622ms)
+✔ schema rejects malformed source, unsafe labels, unverified graphs and intervals (1.2796ms)
+✔ piecewise open/closed endpoints and removable holes are explicit (0.1498ms)
+✔ all existing figure IDs preserved; no second queue; verified source pilot only (12.9115ms)
+✔ variation table preserves source signs, extrema and infinity without guessed function (1.4663ms)
+✔ V5.5/V5.6 source/runtime/backups and authorization remain intact (6376.8806ms)
+✔ vendored JSXGraph bytes match existing exact install (1.4073ms)
+✔ isolated explicit apply, interrupted recovery, idempotency, CAS and rollback (343.0075ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6930.9045
+{"passed":true,"states":33,"errors":[]}
+{"mode":"graphs","passed":true,"states":12,"errors":0,"realRuntimeWrites":0}

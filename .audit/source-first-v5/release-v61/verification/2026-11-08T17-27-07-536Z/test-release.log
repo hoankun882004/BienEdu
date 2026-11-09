@@ -1,0 +1,72 @@
+
+> test:release
+> node scripts/source-first/compat-suites-v61.mjs test:release
+
+[V6.1] test:release: unchanged historical assertions run in disposable V5.5 benchmark; active V6.0 is not rolled back.
+
+> content:release:preview
+> node scripts/source-first/compat-suites-v61.mjs content:release:preview
+
+{
+  "planHash": "0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44",
+  "summary": {
+    "correctionGroups": 13,
+    "correctionFields": 35,
+    "v56PhysicalFields": 26,
+    "additionalCanonicalOverlayFields": 9,
+    "newKnowledge": 1,
+    "newExamples": 10,
+    "newSolutions": 10,
+    "newPractice": 0,
+    "nativeGraphs": 5,
+    "variationTables": 1
+  },
+  "sourceFiles": 9,
+  "canonicalNodes": 68,
+  "applyCommand": "node scripts/source-first/release-v6.mjs apply --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+  "rollbackCommand": "node scripts/source-first/release-v6.mjs rollback --authorize 0E16FE41B291BDB0D6BDA1B3DC93A6A1351F5441FDE245588A0F5FC258656E44 --development --execute",
+  "realRuntimeWrites": 0
+}
+
+✔ nine independent educational sources retain exact current hashes and coverage (6.7834ms)
+✔ new PDF headings pair full stable IDs, not repeated statement/solution counts (0.2326ms)
+✔ one complete new semantic group: knowledge/method/10 examples/10 solutions; no invented practice (10.8933ms)
+✔ canonical math remains the single conversion contract for prepared content and corrections (25.8276ms)
+✔ protected CD20/CD21 and unpublished CD23 are not supplemented or corrected (1.9407ms)
+✔ local release dry-run makes no writes; exact manifest authorization is mandatory (954.6121ms)
+✔ interrupted multi-file release resumes idempotently and rolls back in reverse safely (1354.9524ms)
+✔ stale source, changed dependencies and concurrent runtime edits are rejected (910.8075ms)
+✔ real V5.5 content stays applied and V5.6 content stays prepared, never applied by tests (9.8425ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3541.5883
+{"passed":true,"states":39,"realRuntimeWrites":0}
+✔ V6.1 accounts for every one of 1080 source-specific pairs, no success-count inflation (1.4332ms)
+✔ source hashes, pages, and statement/solution glyph evidence remain independently bound (2.1436ms)
+✔ all prepared canonical fields parse without unresolved nodes, missing math, or unsafe HTML (138.69ms)
+✔ positioned-glyph adapter rejects ambiguous scopes and preserves control-word boundaries (1291.4841ms)
+✔ source-backed vector dot and cross products retain different mathematical operators (22.8428ms)
+✔ systematic re-import is deterministic, does not overwrite prior examples or invent practice (5209.89ms)
+✔ partial parent groups count only actually available examples and prepare missing records, not duplicate whole lessons (5004.896ms)
+✔ V6.0 corrections, source solutions, five graphs, table and protected content are retained byte-for-byte in bundle (8.4909ms)
+✔ exact verified active V6.0 is used as parent; dry-run and unauthorized action never write (1337.43ms)
+✔ interruption at every file boundary resumes, reports partial state, and rolls back child before parent (8168.4396ms)
+✔ rollback interruptions resume idempotently in reverse order without destroying the active parent (1805.2691ms)
+✔ changed source, unknown target edits and active release lock are rejected (1017.469ms)
+✔ a verified child can become the baseline of a future versioned continuation without changing old hashes (1821.6418ms)
+✔ stale same-plan process recovery is allowed; corrupted manifest and temporary bytes are never overwritten (1432.7739ms)
+✔ real workspace is unchanged by continuation tests and prior V6.0 immutable plan is untouched (45.5978ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 27602.3147
+{"mode":"content","passed":true,"states":476,"errors":0,"realRuntimeWrites":0}

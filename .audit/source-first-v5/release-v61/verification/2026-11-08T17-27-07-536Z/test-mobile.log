@@ -1,0 +1,23 @@
+
+> test:mobile
+> node scripts/source-first/compat-suites-v61.mjs test:mobile
+
+[V6.1] test:mobile: unchanged historical assertions run in disposable V5.5 benchmark; active V6.0 is not rolled back.
+{"states":96,"errors":[],"overflow":[]}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.lesson-navigation [data-slide-index]').first()[22m
+
+    at validateContinuationSite (D:\BienEdu\.audit\v61-browser.mjs:68:124)
+    at async file:///D:/BienEdu/.audit/v61-browser.mjs:97:79 {
+  log: [
+    "  - waiting for locator('.lesson-navigation [data-slide-index]').first()"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.20.0

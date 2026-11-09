@@ -1,0 +1,531 @@
+
+> content:dev:status
+> node scripts/source-first/cli.mjs dev-status
+
+{
+  "prepared": true,
+  "stale": false,
+  "summary": {
+    "eligibleCorrections": 3,
+    "eligibleFields": 9,
+    "files": 2,
+    "excludedCorrections": 0,
+    "classifications": {
+      "SOURCE_EXACT": 5,
+      "VERIFIED_BY_SUPPORTED_CHECKS": 0,
+      "CONFIRMED_CONVERSION_DEFECT": 3,
+      "AMBIGUOUS": 32,
+      "CONFLICT": 0
+    }
+  },
+  "status": {
+    "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "mode": "local-development-experiment",
+    "formalHumanApproval": false,
+    "productionPublication": false,
+    "files": [
+      {
+        "file": "assets/js/data/calculus-knowledge-details.js",
+        "state": "after"
+      },
+      {
+        "file": "assets/js/data/foundation-lessons.generated.js",
+        "state": "after"
+      }
+    ],
+    "status": "locally-applied-unreviewed"
+  },
+  "symbolic": {
+    "engine": "sympy",
+    "version": "1.14.0",
+    "checks": [
+      {
+        "id": "fraction-grouping-1.2-example-5",
+        "status": "passed",
+        "humanApproval": false,
+        "difference": "0",
+        "functionDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "derivativeOrResultDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "expectedDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "domainsMatch": true,
+        "valueMatch": true,
+        "symbolicIdentity": true
+      },
+      {
+        "id": "radical-scope-1.3-example-4",
+        "status": "passed",
+        "humanApproval": false,
+        "difference": "0",
+        "functionDomain": "Interval(-2, 2)",
+        "derivativeOrResultDomain": "Interval.open(-2, 2)",
+        "expectedDomain": "Interval.open(-2, 2)",
+        "domainsMatch": true,
+        "valueMatch": true,
+        "symbolicIdentity": true
+      }
+    ],
+    "limitation": "Supported symbolic identities/domains only; no OCR or human source/editorial approval."
+  },
+  "files": [
+    {
+      "file": "assets/js/data/calculus-knowledge-details.js",
+      "beforeHash": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+      "afterHash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754",
+      "changes": [
+        {
+          "binding": {
+            "itemId": "pdf-area-absolute",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "E7B2C46E72E31D1F2A7AAFA7117B25BB6FF9E2553A63EA080B755BF2DD9AD0BD",
+            "topicId": "CD14",
+            "recordId": "knowledge:14.1",
+            "targetId": "pdf-area-absolute:bound-order-condition",
+            "fieldId": "formula:area-with-Ox.detail",
+            "sourceIdentityHash": "67F85B9C5E6DC4E8F56DA930CF6A20CF27F672A485DCFE3531E33832087B5A18",
+            "sourceFile": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+            "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+            "sourceBlockId": null,
+            "recordHash": "52C80AD38474823679295701CAD448850BE6FE1BB3441B9C33D08876B1D46290",
+            "contentVersion": "module-sha256:E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+            "origin": "assets/js/data/calculus-knowledge-details.js",
+            "originHash": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+            "beforeHash": "1ACE017CFE252010B782B21CB70992F9E92DFF4D93C748B5482ED03076749154",
+            "afterHash": "C028FB3EB28BC912F7061F202845C507AD79DAD612C546B4C9AC80394E8F188F",
+            "conditionsHash": "FD73EE3CF11B6373B74EF41713366FDCC9719F63B0F998561D393144E8213D3D"
+          },
+          "recordId": "knowledge:14.1",
+          "fieldId": "formula:area-with-Ox.detail",
+          "sourceBlockId": null,
+          "formulaLabel": "Diện tích với Ox",
+          "before": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b.",
+          "after": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+            "documentId": "cd12-cd14-calculus",
+            "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+            "location": {
+              "page": 34,
+              "bbox": [
+                35,
+                147.0638427734375,
+                560.280029296875,
+                269.2103271484375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "area-bound-order-14.1",
+          "current": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\)."
+        }
+      ]
+    },
+    {
+      "file": "assets/js/data/foundation-lessons.generated.js",
+      "beforeHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+      "afterHash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968",
+      "changes": [
+        {
+          "binding": {
+            "itemId": "pdf-rational-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "252A88CA532E9504B32312C4A18E62F4E3F73064DA20432303EEEDC4F8BC215F",
+            "topicId": "CD01",
+            "recordId": "1.2-source-example-5",
+            "targetId": "pdf-rational-domain:answer",
+            "fieldId": "answer",
+            "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.2-worked-example-5",
+            "recordHash": "77F3221707D16D1835391FA1631B6923B8F7EF331A05D173F5568B274552AC43",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "F15B82E2DB68C4A65B38D344BA32C0A502E6BD9BAB895FD72F89C0F53C5F8B16",
+            "afterHash": "9362258A87E90B32B2220A0B5CE47C31577A787FBE8DB457D17719236881D8F9",
+            "conditionsHash": "2EACC9ABE8CD19316F1E4DF65839C655D9101F1EC24101D07D31768B7DBD7AD1"
+          },
+          "recordId": "1.2-source-example-5",
+          "fieldId": "answer",
+          "sourceBlockId": "1.2-worked-example-5",
+          "formulaLabel": null,
+          "before": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+          "after": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                389.6515197753906,
+                560.280029296875,
+                517.7960205078125
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "fraction-grouping-1.2-example-5",
+          "current": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\)."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-rational-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "252A88CA532E9504B32312C4A18E62F4E3F73064DA20432303EEEDC4F8BC215F",
+            "topicId": "CD01",
+            "recordId": "1.2-source-example-5",
+            "targetId": "pdf-rational-domain:prompt",
+            "fieldId": "prompt",
+            "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.2-worked-example-5",
+            "recordHash": "77F3221707D16D1835391FA1631B6923B8F7EF331A05D173F5568B274552AC43",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "781451E8D482B8A28BCFD9CF923F472371CAFCF9F214273AB28FBC32995B6052",
+            "afterHash": "10B4D021560224A706AC7B17AC4C0240A6B1D44372293DA85F3A7AB60A7DB63F",
+            "conditionsHash": "5C99EE68692DE68DE4E80D82118980CA88BC0F0BD192D0B29399A1168A5F674D"
+          },
+          "recordId": "1.2-source-example-5",
+          "fieldId": "prompt",
+          "sourceBlockId": "1.2-worked-example-5",
+          "formulaLabel": null,
+          "before": "Cho f(x) = x ₓ₂₋₁. Tính f′(2).",
+          "after": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                389.6515197753906,
+                560.280029296875,
+                517.7960205078125
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "fraction-grouping-1.2-example-5",
+          "current": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\)."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-rational-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "252A88CA532E9504B32312C4A18E62F4E3F73064DA20432303EEEDC4F8BC215F",
+            "topicId": "CD01",
+            "recordId": "1.2-source-example-5",
+            "targetId": "pdf-rational-domain:source-solution.expression",
+            "fieldId": "source-solution.expression",
+            "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.2-worked-example-5",
+            "recordHash": "77F3221707D16D1835391FA1631B6923B8F7EF331A05D173F5568B274552AC43",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "F15B82E2DB68C4A65B38D344BA32C0A502E6BD9BAB895FD72F89C0F53C5F8B16",
+            "afterHash": "9362258A87E90B32B2220A0B5CE47C31577A787FBE8DB457D17719236881D8F9",
+            "conditionsHash": "2EACC9ABE8CD19316F1E4DF65839C655D9101F1EC24101D07D31768B7DBD7AD1"
+          },
+          "recordId": "1.2-source-example-5",
+          "fieldId": "source-solution.expression",
+          "sourceBlockId": "1.2-worked-example-5",
+          "formulaLabel": null,
+          "before": "f′(x) = −x²−1 /((x−1)2(x+1)2) trên x≠ ±1. Thay x = 2, được f′(2) = −⁵ ₉.",
+          "after": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                389.6515197753906,
+                560.280029296875,
+                517.7960205078125
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "fraction-grouping-1.2-example-5",
+          "current": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\)."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-rational-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "252A88CA532E9504B32312C4A18E62F4E3F73064DA20432303EEEDC4F8BC215F",
+            "topicId": "CD01",
+            "recordId": "1.2-source-example-5",
+            "targetId": "pdf-rational-domain:title",
+            "fieldId": "title",
+            "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.2-worked-example-5",
+            "recordHash": "77F3221707D16D1835391FA1631B6923B8F7EF331A05D173F5568B274552AC43",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "5603BC08D5D6F9020E0B8BBC6BE6F07DFE7973DBF7321E1F8F1B44962E5BC3A4",
+            "afterHash": "0E123FF717DB4E000C2B4ABCE3F5F74ACD12A52495DD8D79E071A932CE965D99",
+            "conditionsHash": "95CF6EE21452677769762877AFC90173DB340672CD25057751858BFC46840560"
+          },
+          "recordId": "1.2-source-example-5",
+          "fieldId": "title",
+          "sourceBlockId": "1.2-worked-example-5",
+          "formulaLabel": null,
+          "before": "Cho f(x) = x ₓ₂₋₁.",
+          "after": "Ví dụ 5",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                389.6515197753906,
+                560.280029296875,
+                517.7960205078125
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "fraction-grouping-1.2-example-5",
+          "current": "Ví dụ 5"
+        },
+        {
+          "binding": {
+            "itemId": "pdf-root-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "6C0DEC0E024FDD310C9A713FD345651A193579F801DEC6342177F54FD04C0BA3",
+            "topicId": "CD01",
+            "recordId": "1.3-source-example-4",
+            "targetId": "pdf-root-domain:answer",
+            "fieldId": "answer",
+            "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.3-worked-example-4",
+            "recordHash": "063429764A9E2E893C250C1446140C1DE2EEE1247F8F021FC5494A9B9AF3E9AD",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "21BEF3D78540A7CB2D50CE588939FB9D6D2BB29B8D55744BAF9A994A237758E3",
+            "afterHash": "B856CCC47E2E5E55A957BA9D841912BAFD5A03EDA041B59878395F27D8C7F017",
+            "conditionsHash": "E3D458CEB30219550CE130006FA93CD86DA1E8BDDFF2B0E16112C220951EBE8A"
+          },
+          "recordId": "1.3-source-example-4",
+          "fieldId": "answer",
+          "sourceBlockId": "1.3-worked-example-4",
+          "formulaLabel": null,
+          "before": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+          "after": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                661.235107421875,
+                560.280029296875,
+                785.3831787109375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "radical-scope-1.3-example-4",
+          "current": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-root-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "6C0DEC0E024FDD310C9A713FD345651A193579F801DEC6342177F54FD04C0BA3",
+            "topicId": "CD01",
+            "recordId": "1.3-source-example-4",
+            "targetId": "pdf-root-domain:prompt",
+            "fieldId": "prompt",
+            "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.3-worked-example-4",
+            "recordHash": "063429764A9E2E893C250C1446140C1DE2EEE1247F8F021FC5494A9B9AF3E9AD",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "40C2C4F6264BD002DCC4C86003995C812A0A67154AC2A5C981659E4562A09858",
+            "afterHash": "53E251A9B22F6B5493378D9331AB9A29D073A33236D214CA524DA8A4232DC919",
+            "conditionsHash": "58951A024D92DA374DFAFA342A9563EDBA35A9DAD0D97877EEE415FC544087CF"
+          },
+          "recordId": "1.3-source-example-4",
+          "fieldId": "prompt",
+          "sourceBlockId": "1.3-worked-example-4",
+          "formulaLabel": null,
+          "before": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
+          "after": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                661.235107421875,
+                560.280029296875,
+                785.3831787109375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "radical-scope-1.3-example-4",
+          "current": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\)."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-root-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "6C0DEC0E024FDD310C9A713FD345651A193579F801DEC6342177F54FD04C0BA3",
+            "topicId": "CD01",
+            "recordId": "1.3-source-example-4",
+            "targetId": "pdf-root-domain:source-solution.expression",
+            "fieldId": "source-solution.expression",
+            "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.3-worked-example-4",
+            "recordHash": "063429764A9E2E893C250C1446140C1DE2EEE1247F8F021FC5494A9B9AF3E9AD",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "21BEF3D78540A7CB2D50CE588939FB9D6D2BB29B8D55744BAF9A994A237758E3",
+            "afterHash": "B856CCC47E2E5E55A957BA9D841912BAFD5A03EDA041B59878395F27D8C7F017",
+            "conditionsHash": "E3D458CEB30219550CE130006FA93CD86DA1E8BDDFF2B0E16112C220951EBE8A"
+          },
+          "recordId": "1.3-source-example-4",
+          "fieldId": "source-solution.expression",
+          "sourceBlockId": "1.3-worked-example-4",
+          "formulaLabel": null,
+          "before": "D = [−2; 2]. Với −2 < x < 2, y′ = −x/ √ 4 −x². Không áp dụng công thức tại hai đầu mút.",
+          "after": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút.",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                661.235107421875,
+                560.280029296875,
+                785.3831787109375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "radical-scope-1.3-example-4",
+          "current": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút."
+        },
+        {
+          "binding": {
+            "itemId": "pdf-root-domain",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "6C0DEC0E024FDD310C9A713FD345651A193579F801DEC6342177F54FD04C0BA3",
+            "topicId": "CD01",
+            "recordId": "1.3-source-example-4",
+            "targetId": "pdf-root-domain:title",
+            "fieldId": "title",
+            "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+            "sourceFile": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "sourceBlockId": "1.3-worked-example-4",
+            "recordHash": "063429764A9E2E893C250C1446140C1DE2EEE1247F8F021FC5494A9B9AF3E9AD",
+            "contentVersion": "final-pdf-v3",
+            "origin": "assets/js/data/foundation-lessons.generated.js",
+            "originHash": "D7EAD5973AD8E32A202C8BA01CA8DDF3195CDDDD91DEFEE611D4B21AA057AE3A",
+            "beforeHash": "40C2C4F6264BD002DCC4C86003995C812A0A67154AC2A5C981659E4562A09858",
+            "afterHash": "F8A85B9ECBE9983FEDC04D3E782E6A9FC22B27217567C0694EECAB06ADC7BB7B",
+            "conditionsHash": "7B497545F6C403A609DBA6C8D69C46CCBB94B2383E6416F99523FD8CBCBF7E31"
+          },
+          "recordId": "1.3-source-example-4",
+          "fieldId": "title",
+          "sourceBlockId": "1.3-worked-example-4",
+          "formulaLabel": null,
+          "before": "Tìm tập xác định và đạo hàm của y = √ 4 −x².",
+          "after": "Ví dụ 4",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+            "documentId": "cd01-cd07-functions",
+            "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+            "location": {
+              "page": 66,
+              "bbox": [
+                35,
+                661.235107421875,
+                560.280029296875,
+                785.3831787109375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "radical-scope-1.3-example-4",
+          "current": "Ví dụ 4"
+        }
+      ]
+    }
+  ],
+  "excluded": [],
+  "applyCommand": "npm.cmd run content:dev:apply -- --development --execute --authorize F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "rollbackCommand": "npm.cmd run content:dev:rollback -- --development --execute --authorize F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "formalHumanApproval": false,
+  "productionPublication": false
+}

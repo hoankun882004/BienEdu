@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "phase": "after",
+  "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+  "actualLocalFiles": true,
+  "humanEditorialApproval": false,
+  "states": [
+    {
+      "recordId": "1.3-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-2-after-1366.png"
+    },
+    {
+      "recordId": "1.3-source-example-3",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-3-after-1366.png"
+    },
+    {
+      "recordId": "1.3-source-example-5",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-5-after-1366.png"
+    },
+    {
+      "recordId": "1.5-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.5-source-example-2-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-1",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-1-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-2-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-3",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-3-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-4",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-4-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-5",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-5-after-1366.png"
+    },
+    {
+      "recordId": "6.1-source-example-6",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+      "phase": "after",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-6-after-1366.png"
+    },
+    {
+      "recordId": "1.3-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-2-after-390.png"
+    },
+    {
+      "recordId": "1.3-source-example-3",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-3-after-390.png"
+    },
+    {
+      "recordId": "1.3-source-example-5",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.3-source-example-5-after-390.png"
+    },
+    {
+      "recordId": "1.5-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 0,
+      "screenshot": "v56-1.5-source-example-2-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-1",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-1-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-2",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-2-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-3",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-3-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-4",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-4-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-5",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-5-after-390.png"
+    },
+    {
+      "recordId": "6.1-source-example-6",
+      "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+      "phase": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "mathErrors": 0,
+      "humanBadge": false,
+      "figures": 1,
+      "screenshot": "v56-6.1-source-example-6-after-390.png"
+    }
+  ],
+  "errors": [],
+  "progressPreserved": true,
+  "exercisesPreserved": true
+}

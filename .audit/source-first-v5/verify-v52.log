@@ -1,0 +1,430 @@
+
+> verify
+> npm run check && npm run content:scan && npm run content:validate && npm run content:math:audit && npm run content:source:build && npm test && npm run content:source:verify && npm run content:source:prepare && npm run test:latex && npm run test:latex-pilot && npm run test:v5 && npm run test:source-review && npm run test:v13 && npm run test:v15 && npm run test:v4 && npm run test:v16 && npm run test:v16-1 && npm run test:home-scroll && npm run test:polish
+
+
+> check
+> node scripts/check-source.mjs
+
+Source check passed: 40 JavaScript files, 5 HTML entries.
+
+> content:scan
+> node scripts/content-pipeline.mjs scan
+
+Scanned 4 PDF(s). Inventory: .audit\content-inventory.json
+
+> content:validate
+> node scripts/content-pipeline.mjs validate
+
+Coverage report: .audit\content-coverage.md
+Source manifest: .audit\v11-2-source-manifest.json
+V14 traceability: .audit\v14-source-traceability.json
+V14 source-fidelity audit: .audit\v14-source-fidelity-audit.md
+V15 exercise coverage: .audit\v15-exercise-coverage.md
+PDF mapping review: .audit\pdf-mapping-review.md
+Content migration docs: docs\content
+WARNING: 9 source answer keys are preserved but marked needs-review; none are auto-graded.
+Content registry validation passed.
+
+> content:math:audit
+> node scripts/math-content-audit-v5.mjs
+
+Math V5 audit: 1668 formula slots and 4710 rendered fields; 0 rendering failure(s).
+180 suspicious text item(s); 18 native-source review item(s).
+Checkpoint: D:\BienEdu\.audit\math-content-v5-checkpoint.json
+
+> content:source:build
+> node scripts/source-first/build.mjs
+
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+
+> test
+> node --test tests/*.test.js
+
+✔ content migration audit publishes a reusable 39-topic manifest (3.8433ms)
+✔ foundation audit distinguishes extracted candidates from reviewed publication (1.3604ms)
+✔ required content reports state the CD01 root cause and incomplete scope (0.8316ms)
+✔ content registry covers every declared topic and subtopic without a second curriculum model (3.0792ms)
+✔ availability is derived from verified content instead of topic number (0.9873ms)
+✔ section availability and source coverage remain independent (0.5042ms)
+✔ source completeness and mathematical verification are reported independently (0.285ms)
+✔ imported slides have stable unique IDs and verified source references (3.7858ms)
+✔ curriculum preserves 13 groups, 39 topics and the finalized PDF overlay (1.8398ms)
+✔ topic and short-code identifiers are complete and unique (1.8989ms)
+✔ exercise identifiers remain strings instead of floating-point values (0.2815ms)
+✔ search is case-insensitive and accent-insensitive (9.5959ms)
+✔ group filtering keeps only topics in the selected group (0.4167ms)
+✔ topic exercise lookup accepts both source id and short code (0.366ms)
+✔ the new CD12-CD14 PDF is available and matches its verified source (2.7817ms)
+✔ CD12, CD13 and CD14 map every catalog exercise to a valid PDF page (2.2ms)
+✔ the two newest PDFs are hash-locked and map every CD01-CD11 catalog lesson (4.1542ms)
+✔ final exams contain 20 questions and cover every required subtopic (25.0358ms)
+✔ grading returns a deterministic score and per-question review (2.2735ms)
+✔ all mapped lessons expose complete worked examples (10.678ms)
+✔ CD12-CD14 account for both worked examples in every source subtopic (0.933ms)
+✔ worked examples preserve important multi-step source cases (1.3243ms)
+✔ CD01 1.1 and CD08 8.1/8.4 keep the PDF-verified statement and solution notation (0.7157ms)
+✔ all 51 mapped subtopics generate exactly three valid questions (22.2737ms)
+✔ generation is deterministic for a seed (2.4427ms)
+✔ Grades 9 to 12 have tailored course pages while only Grade 12 exposes curriculum data (10.0595ms)
+✔ grade selection persists and an explicit URL takes priority (1.0416ms)
+✔ a stored grade is reused on the root URL after first-visit onboarding (0.5808ms)
+✔ legacy Grade 12 learning links remain compatible (0.8621ms)
+✔ grade-aware links preserve Grade 12 routes and strip them for unavailable grades (0.8434ms)
+✔ all registered source-backed lessons expose structured reading content (7.9537ms)
+✔ reading content stays text-only and safe to render (6.306ms)
+✔ the two new PDFs publish every catalog lesson without inventing diagram-only examples (0.9418ms)
+✔ foundation extraction restores stacked source formulas without leaking PDF span markers (25.0388ms)
+✔ CD01 exposes the source topic overview instead of reducing Knowledge to one method sentence (3.0731ms)
+✔ CD08 8.4 keeps its source note attached only to the verified problem type (0.7025ms)
+✔ CD08 8.1 preserves the verified exponent warning as renderable LaTeX (0.5654ms)
+✔ all 26 calculus readings cover the source theory and three-step method (0.9085ms)
+✔ 12.1 splits its complete formula table into two readable pages (3.0198ms)
+✔ compound formula groups expose reviewed expression boundaries (1.7069ms)
+✔ CD12–CD14 runtime content preserves the source trigonometric notation (4.7147ms)
+✔ all registered source topics expose bounded knowledge sections (1.9436ms)
+✔ theory and source examples are separate for every mapped subtopic (2.9264ms)
+✔ 20.1 theory excludes example blocks and examples stop before 20.2 (0.7386ms)
+✔ all 55 image-derived slides exist and retain crop provenance (6.1722ms)
+✔ all 26 calculus lessons retain text-first PDF provenance (1.4101ms)
+✔ edge-topic mapping boundaries remain isolated (0.5064ms)
+✔ native source inspection resolves the real CD20-CD23 document structure (3.5342ms)
+✔ source inspection reports no unresolved figure or include dependency (1.1388ms)
+✔ missing-topic detection stays bounded by both registry state and source chapters (0.53ms)
+✔ the content-writing guard rejects both protected topics and existing content (1.0668ms)
+✔ CD22 pilot maps every registry section without inventing a worked solution (0.5186ms)
+✔ runtime publishes CD22 through the existing registry and preserves line provenance (0.8137ms)
+✔ native conditional-probability notation renders with KaTeX and source-aware review status (14.331ms)
+✔ native probability labels preserve symbolic Unicode subscripts outside text mode (4.6364ms)
+✔ CD20 and CD21 retain their hash-locked runtime content and legacy IDs (1.456ms)
+✔ the controlled pilot import is deterministic and idempotent (330.4335ms)
+✔ all imported Knowledge and Example formula slots render without KaTeX errors (657.474ms)
+✔ all approved raw LaTeX expressions pass strict KaTeX parsing (27.9738ms)
+✔ all generated and PDF-source practice fields are safe to render (87.0851ms)
+✔ Unicode conversion creates safe control-word boundaries and proper simple fractions (0.4178ms)
+✔ unsupported LaTeX is flagged and never becomes red KaTeX error text (1.0955ms)
+✔ source-verified boundary conditions and indices remain explicit (0.8007ms)
+✔ invalid or outdated saved data falls back to a clean progress state (6.0045ms)
+✔ opening a lesson cannot complete it (0.9708ms)
+✔ knowledge and practice cannot complete a lesson while examples are incomplete (0.5925ms)
+✔ opening examples persists stable viewed-state IDs without completing their solutions (1.276ms)
+✔ finishing available units is distinct from completing partially imported material (0.6229ms)
+✔ progress counts only stable IDs that still exist in the current lesson (0.3896ms)
+✔ reviewing a verified self-check exercise counts once without inventing a grade (0.5202ms)
+✔ native Markdown preserves completed legacy PDF progress without requiring the old viewer (0.8896ms)
+✔ topic Knowledge migration preserves partial legacy reading without duplicating type progress (0.8431ms)
+✔ a problem-type lesson can complete without redundant general Knowledge (0.4836ms)
+✔ final exams unlock only for topics whose every subtopic has ready content (60.74ms)
+✔ progress uses a separate namespace for every grade (0.3ms)
+✔ legacy Grade 12 progress is migrated without leaking into other grades (0.5923ms)
+✔ the generic Knowledge model exposes stable content-aware slide types (2.2564ms)
+✔ a lesson contains exactly knowledge, example and practice sections (4.2506ms)
+✔ finalized CD01-CD11 use one topic Knowledge view and no repeated type Knowledge (0.8858ms)
+✔ workspace navigation flows from knowledge to examples to practice (1.6823ms)
+✔ a long text lesson keeps two numbered knowledge pages before its example (5.8219ms)
+✔ the active practice sequence is source-first and capped at ten (42.9071ms)
+✔ a topic without mapped content gets a truthful unavailable state (0.407ms)
+✔ CD22.7 preserves the verified source formula as structured LaTeX (26.8611ms)
+✔ CD22.7 renders display and inline probability notation without red fallback (23.7692ms)
+✔ the centralized renderer preserves fractions, powers, indices, Greek symbols and conditions (18.3975ms)
+✔ CD22 source provenance and review gates remain truthful (0.6239ms)
+✔ CD22.7 navigation moves from Knowledge to its exact source Example (1.9629ms)
+✔ practice publication remains conservative and existing verified practice stays intact (3.8355ms)
+✔ the V5 checkpoint records zero parse failures and no missing referenced figure (4.9817ms)
+✔ normalizer keeps source geometry, pages and actual heading boundaries (21.9819ms)
+✔ normalizer flags malformed LaTeX without repairing or inventing it (4.782ms)
+✔ verified records require complete source-review evidence (3.6049ms)
+✔ source-scoped notation policy catches unsupported sec and csc substitutions (2.0901ms)
+✔ Markdown renderer escapes HTML and renders KaTeX (8.9479ms)
+✔ student runtime has no PDF viewer, embed, canvas, or PDF.js dependency (8.9859ms)
+✔ all 172 registered source mappings publish native Markdown knowledge slides (7.6042ms)
+✔ the shared renderer converts Unicode math to KaTeX without exposing raw commands (20.9909ms)
+✔ symmetric integral bounds with a negative subscript render without a KaTeX error (7.4174ms)
+✔ approved 20.2 Knowledge excludes source examples and PDF controls (9.5837ms)
+✔ structured Knowledge uses content-aware layout and separate equation nodes (49.7281ms)
+✔ reviewed long derivations render as KaTeX aligned blocks (16.2652ms)
+✔ all 51 generator-supported subtopics have explicit exact-type blueprints (2.7298ms)
+✔ the active bank is source-first, exact-subtopic and never exceeds ten (60.2323ms)
+✔ 12.1 uses exactly ten verified source exercises and does not generate extras (1.3349ms)
+✔ unverified calculus banks remain honestly unavailable (1.4706ms)
+✔ CD20-CD21 publish only independently verified generated questions (28.2803ms)
+✔ independent evaluators cover exact counting and probability arithmetic (0.5036ms)
+✔ generated candidates fail closed for wrong answers, invalid domains and out-of-scope skills (2.3995ms)
+✔ calculus source validation rejects a mathematically wrong antiderivative (0.5045ms)
+✔ source prompts remain the transcribed PDF wording (0.7579ms)
+✔ parameter validation rejects unsafe or impossible inputs (0.5175ms)
+✔ practice-paper collections are intentionally empty for Grades 9 to 12 (3.6915ms)
+✔ unknown grades fall back to the same immutable empty collection (0.422ms)
+✔ Vietnamese phone numbers are normalized and validated (5.0053ms)
+✔ registration requires only name, Grade 10-12 and a valid phone (2.0394ms)
+✔ registration provider accepts only a configured HTTPS Formspree endpoint (0.827ms)
+✔ learning contact and availability use one verified configuration source (0.783ms)
+✔ successful registration requires a confirmed provider response (1.0274ms)
+✔ registration never reports success without configuration or after provider failure (2.0908ms)
+✔ native scanner preserves raw offsets, comments, command boundaries and nested scripts (5.1286ms)
+✔ 40 source fixtures preserve exact evidence, all document pages, crops and independent review gates (484.7641ms)
+✔ source-specific quotient normalization keeps denominator factorial and chained equality (4.2546ms)
+✔ math tables keep inline conditional bars inside one mathematical cell (3.3151ms)
+✔ review patches reject stale data, invalid math, missing comparison and unknown decisions (39.8352ms)
+✔ an editor decision updates only staging and keeps mathematical approval separate (84.9276ms)
+{
+  "benchmarkItems": 40,
+  "syntaxValid": 40,
+  "nativeElements": 235,
+  "anchorFailures": [],
+  "structureFailures": []
+}
+✔ read-only local server enforces host, origin, session token and immutable HTTP actions (1109.3154ms)
+✔ rebuilding staging is deterministic and preserves approved runtime records (4130.7425ms)
+✔ the CD12-CD14 source bank accounts for ten exercises per subtopic (6.0592ms)
+✔ every source exercise keeps provenance and remains non-auto-graded (2.344ms)
+✔ only the ten fully solved 12.1 source exercises are ready for students (0.4072ms)
+✔ source-answer conflicts remain visible and are never auto-graded (0.303ms)
+✔ source practice is separate from deterministic generated practice (5.3023ms)
+✔ V5.2 prepares existing entities and source evidence without creating approvals or a second queue (751.7093ms)
+✔ V3 binds the review to version, source identity and untouched original expression (47.4013ms)
+✔ needs correction and unresolved ambiguity remain separate unapproved decisions (122.0517ms)
+✔ review events are complete atomic files, idempotent and ignore interrupted temporary files (209.5177ms)
+✔ legacy event history remains readable and requires an explicit version-bound follow-up for release (259.5333ms)
+✔ dry-run contains exact evidence and reversible integration preview without certifying the whole lesson (172.2003ms)
+✔ runtime previews reread disk and reject stale plans, dependencies and target versions (451.901ms)
+✔ only canonical field targets are recognized; generated-data parsing does not execute code (222.0685ms)
+✔ read-only refresh observes a real saved fixture decision without creating real review events (2004.0531ms)
+{
+  "uniqueTrackedReviewRecords": 1512,
+  "benchmarkExpressions": 40,
+  "machineCheckedExpressions": 40,
+  "humanSourceVerified": 0,
+  "mathematicalEditorialApprovals": 0,
+  "pendingBenchmarkSourceReviews": 40,
+  "pendingFigures": 188,
+  "missingSourceTopics": [
+    "CD15",
+    "CD16",
+    "CD17",
+    "CD18",
+    "CD19",
+    "CD24",
+    "CD25",
+    "CD26",
+    "CD27",
+    "CD28",
+    "CD29",
+    "CD30",
+    "CD31",
+    "CD32",
+    "CD33",
+    "CD34",
+    "CD35",
+    "CD36",
+    "CD37",
+    "CD38",
+    "CD39"
+  ],
+  "approvedButUnpublished": 0,
+  "newlyPublished": 0,
+  "existingRuntimeKnowledgeRecords": 181,
+  "existingRuntimeExampleRecords": 1313,
+  "legacyImmutableApprovalRecords": 3,
+  "fractionCandidates": 180,
+  "calculusAnswerConflicts": 9,
+  "cd22UnitsCompared": 18,
+  "correctedConversionDefects": 1
+}
+✔ V5.1 compares every benchmark item and retains separate human and editorial queues (3839.4876ms)
+✔ explicit human source verification does not automatically grant mathematical approval (125.6381ms)
+✔ V2 rejects absent attestation, wrong reviewer type, stale condition hashes and invalid editorial identities (110.0863ms)
+✔ immutable review events support later unchanged editorial approval and idempotent reapplication (331.8788ms)
+✔ release preview blocks actual pending content and produces an exact reversible change for approved fixtures only (398.7155ms)
+✔ protected CD20/CD21, unknown bindings and CD23 cannot become eligible release candidates (141.0336ms)
+✔ student verification badges require human records bound to the exact reviewed content (2.7489ms)
+✔ source warnings retain their wording rather than inventing a universal mathematical inequality (2.1768ms)
+ℹ tests 150
+ℹ suites 0
+ℹ pass 150
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6583.4082
+
+> content:source:verify
+> node scripts/source-first/verify.mjs
+
+{
+  "uniqueTrackedReviewRecords": 1512,
+  "benchmarkExpressions": 40,
+  "machineCheckedExpressions": 40,
+  "humanSourceVerified": 0,
+  "mathematicalEditorialApprovals": 0,
+  "pendingBenchmarkSourceReviews": 40,
+  "pendingFigures": 188,
+  "missingSourceTopics": [
+    "CD15",
+    "CD16",
+    "CD17",
+    "CD18",
+    "CD19",
+    "CD24",
+    "CD25",
+    "CD26",
+    "CD27",
+    "CD28",
+    "CD29",
+    "CD30",
+    "CD31",
+    "CD32",
+    "CD33",
+    "CD34",
+    "CD35",
+    "CD36",
+    "CD37",
+    "CD38",
+    "CD39"
+  ],
+  "approvedButUnpublished": 0,
+  "newlyPublished": 0,
+  "existingRuntimeKnowledgeRecords": 181,
+  "existingRuntimeExampleRecords": 1313,
+  "legacyImmutableApprovalRecords": 3,
+  "fractionCandidates": 180,
+  "calculusAnswerConflicts": 9,
+  "cd22UnitsCompared": 18,
+  "correctedConversionDefects": 1
+}
+
+> content:source:prepare
+> node scripts/source-first/cli.mjs prepare
+
+{
+  "uniqueTrackedReviewRecords": 1512,
+  "benchmarkExpressions": 40,
+  "machineCheckedExpressions": 40,
+  "humanSourceVerified": 0,
+  "mathematicalEditorialApprovals": 0,
+  "pendingBenchmarkSourceReviews": 40,
+  "pendingFigures": 188,
+  "missingSourceTopics": [
+    "CD15",
+    "CD16",
+    "CD17",
+    "CD18",
+    "CD19",
+    "CD24",
+    "CD25",
+    "CD26",
+    "CD27",
+    "CD28",
+    "CD29",
+    "CD30",
+    "CD31",
+    "CD32",
+    "CD33",
+    "CD34",
+    "CD35",
+    "CD36",
+    "CD37",
+    "CD38",
+    "CD39"
+  ],
+  "approvedButUnpublished": 0,
+  "newlyPublished": 0,
+  "existingRuntimeKnowledgeRecords": 181,
+  "existingRuntimeExampleRecords": 1313,
+  "legacyImmutableApprovalRecords": 3,
+  "fractionCandidates": 180,
+  "calculusAnswerConflicts": 9,
+  "cd22UnitsCompared": 18,
+  "correctedConversionDefects": 1,
+  "benchmarkPrepared": 40,
+  "needsCorrectionDecisions": 0,
+  "unresolvedAmbiguityDecisions": 0,
+  "recognizedRuntimeTargets": 5,
+  "unmappedRuntimeTargets": 35,
+  "newlyCorrectedImporterDefects": 0,
+  "newAgentFigureInspections": 8,
+  "totalDistinctAgentFigureInspections": 16
+}
+
+> test:latex
+> node --test tests/latex-rendering.test.js && node .audit/v13-1-latex.mjs
+
+✔ all imported Knowledge and Example formula slots render without KaTeX errors (291.9297ms)
+✔ all approved raw LaTeX expressions pass strict KaTeX parsing (11.7917ms)
+✔ all generated and PDF-source practice fields are safe to render (50.1227ms)
+✔ Unicode conversion creates safe control-word boundaries and proper simple fractions (0.3808ms)
+✔ unsupported LaTeX is flagged and never becomes red KaTeX error text (0.9824ms)
+✔ source-verified boundary conditions and indices remain explicit (0.97ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 503.8908
+{
+  "passed": true,
+  "knowledgeRoutes": 68,
+  "exampleRoutes": 68,
+  "desktopEquationOverflows": 0,
+  "mobileEquationOverflows": 2,
+  "desktopOverflowDetails": [],
+  "screenshots": 4
+}
+
+> test:latex-pilot
+> node .audit/latex-v4-2-pilot.mjs
+
+Native LaTeX V4.2 Playwright QA passed at 1920, 1366, 768 and 390 px.
+
+> test:v5
+> node .audit/math-content-v5.mjs
+
+Math content V5 Playwright QA passed at 1920, 1366, 768 and 390 px.
+
+> test:source-review
+> node .audit/source-first-v5-browser.mjs
+
+Source-first studio passed: desktop/mobile, V3 decisions, refresh and read-only HTTP; 40 comparison candidates reused from unchanged evidence in 10 sheets.
+
+> test:v13
+> node .audit/v13-native-learning.mjs
+
+V13 native learning QA passed: 51 lessons, 10 representative routes, 8 viewports.
+
+> test:v15
+> node .audit/v15-learning-workspace.mjs
+
+V15 learning workspace QA passed across 7 required viewports.
+
+> test:v4
+> node .audit/learning-experience-v4.mjs
+
+Learning Experience V4.1 navigation QA passed across 1920, 1366, 768 and 390 px viewports.
+
+> test:v16
+> node .audit/v16-onboarding-registration.mjs
+
+V16.1 passed: onboarding, two learning formats, CTA preselection, one honest registration form, verified Zalo, legacy links and 7 responsive viewports.
+
+> test:v16-1
+> node .audit/v16-1-registration.mjs
+
+V16.1 Playwright QA passed: 7 viewports, learning-format preselection, verified Zalo, local links, responsive layout and zero runtime errors.
+
+> test:home-scroll
+> node .audit/home-scroll-experience.mjs
+
+Homepage scroll experience passed: 3 soft desktop snap points, 6 grouped one-time reveals, natural mobile/internal scrolling, sticky-header anchors, wheel input, reduced motion, no-JS fallback, and 7 responsive viewports.
+
+> test:polish
+> node .audit/polish-pass.mjs
+
+Polish pass checks passed: concise pages, two learning formats, one registration destination, verified Zalo contact, honest practice-paper shell and no horizontal overflow across 10 viewports.

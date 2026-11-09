@@ -1,0 +1,29 @@
+{
+  "suite": "verify",
+  "exitCode": 0,
+  "scope": "Unchanged historical V5.5 baseline in a disposable copy",
+  "actualRelease": {
+    "status": "ACTIVE",
+    "planHash": "D80BF69A98028804C1D79C65D6580BB52F1E6832AFDBA2284A51514ABAF2C7C9",
+    "family": "release-v61",
+    "states": [
+      {
+        "file": "assets/js/data/documents-v6.js",
+        "state": "after"
+      },
+      {
+        "file": "assets/js/data/knowledge-v6.js",
+        "state": "after"
+      },
+      {
+        "file": "assets/js/learning-v6.js",
+        "state": "after"
+      },
+      {
+        "file": "assets/js/data/local-release.js",
+        "state": "after"
+      }
+    ]
+  },
+  "realRuntimeWrites": 0
+}

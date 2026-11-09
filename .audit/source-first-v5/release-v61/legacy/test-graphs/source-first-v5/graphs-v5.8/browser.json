@@ -1,0 +1,585 @@
+{
+  "passed": true,
+  "states": [
+    {
+      "kind": "learner",
+      "id": "6.1-example-1-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 895,
+      "plotHeight": 388
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-7-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 2,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 895,
+      "plotHeight": 388
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-8-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 2,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 895,
+      "plotHeight": 388
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-9-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 895,
+      "plotHeight": 388
+    },
+    {
+      "kind": "learner",
+      "id": "4.4-example-7-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 895,
+      "plotHeight": 388
+    },
+    {
+      "kind": "learner",
+      "id": "2.3-example-1-figure-1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "count": 1,
+      "svg": 0,
+      "table": 1,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 0,
+      "plotHeight": 0
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "reciprocal",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "shifted-pole",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "radical",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "logarithm",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "polynomial",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "piecewise",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "removable-hole",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "trigonometric",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "practice-persistence",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "passed": true
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-1-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 300,
+      "plotHeight": 298
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-7-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 2,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 300,
+      "plotHeight": 298
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-8-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 2,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 300,
+      "plotHeight": 298
+    },
+    {
+      "kind": "learner",
+      "id": "6.1-example-9-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 300,
+      "plotHeight": 298
+    },
+    {
+      "kind": "learner",
+      "id": "4.4-example-7-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 1,
+      "table": 0,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 1,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 300,
+      "plotHeight": 298
+    },
+    {
+      "kind": "learner",
+      "id": "2.3-example-1-figure-1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "count": 1,
+      "svg": 0,
+      "table": 1,
+      "visibleImages": 0,
+      "valuesMatch": true,
+      "labelsWithinBoard": true,
+      "curves": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "hasFormulaLeak": false,
+      "plotWidth": 0,
+      "plotHeight": 0
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "reciprocal",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "shifted-pole",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "radical",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "logarithm",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "polynomial",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "piecewise",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "removable-hole",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 2,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "technical-fixture",
+      "id": "trigonometric",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stable": true,
+      "count": 1,
+      "curveCount": 1,
+      "valueChecks": true,
+      "invalid": true,
+      "mathErrors": 0,
+      "overflow": false
+    },
+    {
+      "kind": "practice-persistence",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true
+    },
+    {
+      "kind": "authorized-fixture-activation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "passed": true
+    },
+    {
+      "kind": "authorized-fixture-activation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true
+    },
+    {
+      "kind": "authorized-fixture-rollback",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "performance": [
+    {
+      "id": "6.1-example-1-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 853
+    },
+    {
+      "id": "6.1-example-7-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 800
+    },
+    {
+      "id": "6.1-example-8-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 795
+    },
+    {
+      "id": "6.1-example-9-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 775
+    },
+    {
+      "id": "4.4-example-7-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 777
+    },
+    {
+      "id": "2.3-example-1-figure-1",
+      "width": 1366,
+      "navigationAndMountMs": 731
+    },
+    {
+      "id": "6.1-example-1-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 815
+    },
+    {
+      "id": "6.1-example-7-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 778
+    },
+    {
+      "id": "6.1-example-8-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 764
+    },
+    {
+      "id": "6.1-example-9-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 767
+    },
+    {
+      "id": "4.4-example-7-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 758
+    },
+    {
+      "id": "2.3-example-1-figure-1",
+      "width": 390,
+      "navigationAndMountMs": 720
+    }
+  ],
+  "realRuntimeWrites": 0
+}

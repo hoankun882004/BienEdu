@@ -118,7 +118,7 @@ test("native conditional-probability notation renders with KaTeX and source-awar
   assert.match(bayes, /\\frac/u);
   assert.match(medical, /class="katex-display"/u);
   assert.match(medical, /mfrac/u);
-  assert.match(medical, /Đã đối chiếu nguồn/u);
+  assert.doesNotMatch(medical, /Đã đối chiếu nguồn|Đã kiểm duyệt/u);
   assert.doesNotMatch(medical, /Điểm [12]/u);
   assert.doesNotMatch(`${bayes}${medical}`, /math-render-error|katex-error/u);
 });

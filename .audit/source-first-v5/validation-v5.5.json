@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "bienedu.validation.v5.5",
+  "executedAt": "2026-11-05T18:38:04.388Z",
+  "localDate": "2026-11-06",
+  "fullVerify": {
+    "command": "npm.cmd run verify",
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/verify-v55.log"
+  },
+  "nodeTests": {
+    "tests": 178,
+    "passed": 178,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/node-v55-final.log"
+  },
+  "sourceFirstTests": {
+    "tests": 53,
+    "passed": 53,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/source-tests-v55.log"
+  },
+  "dedicatedLatexTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "finalFocusedChecks": {
+    "tests": 9,
+    "passed": 9,
+    "failed": 0,
+    "exitCode": 0,
+    "log": ".audit/source-first-v5/tests-v55-final.log"
+  },
+  "postVerifyChecks": "Final 9 development tests, source check and real CLI dry-run passed; automatic CLI browser helper exercised on isolated actual files by the final source-first browser suite",
+  "classification": {
+    "SOURCE_EXACT": 5,
+    "VERIFIED_BY_SUPPORTED_CHECKS": 0,
+    "CONFIRMED_CONVERSION_DEFECT": 3,
+    "AMBIGUOUS": 32,
+    "CONFLICT": 0
+  },
+  "eligible": {
+    "groups": 3,
+    "fields": 9,
+    "files": 2
+  },
+  "symbolic": {
+    "engine": "sympy",
+    "version": "1.14.0",
+    "checks": [
+      {
+        "id": "fraction-grouping-1.2-example-5",
+        "status": "passed",
+        "humanApproval": false,
+        "difference": "0",
+        "functionDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "derivativeOrResultDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "expectedDomain": "Union(Interval.open(-oo, -1), Interval.open(-1, 1), Interval.open(1, oo))",
+        "domainsMatch": true,
+        "valueMatch": true,
+        "symbolicIdentity": true
+      },
+      {
+        "id": "radical-scope-1.3-example-4",
+        "status": "passed",
+        "humanApproval": false,
+        "difference": "0",
+        "functionDomain": "Interval(-2, 2)",
+        "derivativeOrResultDomain": "Interval.open(-2, 2)",
+        "expectedDomain": "Interval.open(-2, 2)",
+        "domainsMatch": true,
+        "valueMatch": true,
+        "symbolicIdentity": true
+      }
+    ],
+    "limitation": "Supported symbolic identities/domains only; no OCR or human source/editorial approval."
+  },
+  "browser": {
+    "passed": true,
+    "observations": [
+      {
+        "code": "1.2",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "14.1",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.2",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "14.1",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.2",
+        "phase": "development-after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "phase": "development-after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "14.1",
+        "phase": "development-after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.2",
+        "phase": "development-after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "phase": "development-after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "14.1",
+        "phase": "development-after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      }
+    ],
+    "learnerStates": 12,
+    "errors": [],
+    "progressPreserved": true,
+    "exercisesPreserved": true,
+    "samePlanUsedForPreviewAndFixtureApply": true,
+    "isolatedRuntimeWrites": 4,
+    "realRuntimeWrites": 0,
+    "realHumanApprovals": 0,
+    "productionPublications": 0,
+    "automaticCliPostApplyHelperTested": true,
+    "automaticPostApplyStates": 6,
+    "actualScreenshotsInspected": true
+  },
+  "actualLocalApplication": {
+    "state": {
+      "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+      "mode": "local-development-experiment",
+      "formalHumanApproval": false,
+      "productionPublication": false,
+      "files": [
+        {
+          "file": "assets/js/data/calculus-knowledge-details.js",
+          "state": "before"
+        },
+        {
+          "file": "assets/js/data/foundation-lessons.generated.js",
+          "state": "before"
+        }
+      ],
+      "status": "not-applied-or-rolled-back"
+    },
+    "realRuntimeWrites": 0,
+    "formalHumanApprovalsCreated": 0,
+    "productionPublications": 0
+  },
+  "immutableManifest": ".content-work/source-first-v5/dev-plans/F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521/manifest.json",
+  "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "applyCommand": "npm.cmd run content:dev:apply -- --development --execute --authorize F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "rollbackCommand": "npm.cmd run content:dev:rollback -- --development --execute --authorize F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "preservation": {
+    "sources": [
+      {
+        "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "unchanged": true
+      },
+      {
+        "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "unchanged": true
+      },
+      {
+        "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "unchanged": true
+      },
+      {
+        "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "unchanged": true
+      },
+      {
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "unchanged": true
+      },
+      {
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "unchanged": true
+      },
+      {
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "unchanged": true
+      },
+      {
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "unchanged": true
+      },
+      {
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "unchanged": true
+      }
+    ],
+    "unchangedRuntimeModules": [
+      "assets/js/data/latex-pilot.generated.js",
+      "assets/js/data/foundation-lessons.generated.js",
+      "assets/js/data/calculus-knowledge-details.js",
+      "assets/js/data/calculus-lessons.js",
+      "assets/js/data/calculus-source-examples.js"
+    ],
+    "formalReviewEventsUnchanged": true,
+    "progressPreserved": true,
+    "exercisesPreserved": true,
+    "protectedTopics": [
+      "CD20",
+      "CD21"
+    ],
+    "CD23Published": false
+  },
+  "remaining": {
+    "operationalAmbiguities": 32,
+    "ambiguousRuntimeMappings": 6,
+    "bulkFractions": 180,
+    "additionalBulkCorrectionsEligible": 0,
+    "pendingFigures": 188,
+    "answerConflicts": 9,
+    "missingSourceTopics": 21
+  },
+  "diffCheck": "passed",
+  "commitsPushesDeployments": 0
+}

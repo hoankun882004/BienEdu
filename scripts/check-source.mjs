@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const sourceRoot = resolve(projectRoot, "assets/js");
-const htmlEntries = ["index.html", "course.html", "documents.html", "quiz.html", "contact.html"];
+const htmlEntries = ["index.html", "course.html", "documents.html", "quiz.html", "contact.html", ".audit/source-first-v5/release-v61/preview.html"];
 const errors = [];
 
 function walk(directory, extension) {
@@ -66,8 +66,20 @@ for (const htmlEntry of htmlEntries) {
   const file = resolve(projectRoot, htmlEntry);
   const source = readFileSync(file, "utf8");
 
+  // Versioned compatibility facades may be reached through a native import map.
+  for (const match of source.matchAll(/<script\s+type="importmap">([\s\S]*?)<\/script>/g)) {
+    try {
+      const map = JSON.parse(match[1]);
+      for (const specifier of Object.values(map.imports ?? {})) {
+        const module = localPath(specifier, file);
+        if (module && existsSync(module)) entryModules.add(module);
+        else errors.push(`${htmlEntry}: invalid import-map target ${specifier}`);
+      }
+    } catch (error) { errors.push(`${htmlEntry}: invalid import map: ${error.message}`); }
+  }
+
   for (const match of source.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css)(?:\?[^"']*)?)["']/g)) {
-    const asset = resolve(projectRoot, match[1].split(/[?#]/, 1)[0]);
+    const asset = resolve(dirname(file), match[1].split(/[?#]/, 1)[0]);
     if (!existsSync(asset)) errors.push(`${htmlEntry}: missing asset ${match[1]}`);
     if (extname(asset) === ".js") entryModules.add(asset);
   }

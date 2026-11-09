@@ -1,0 +1,35 @@
+
+> test:graphs
+> npm run content:graphs:preview && node --test tests/graph-engine-v58.test.js && node .audit/graph-v58-browser.mjs
+
+
+> content:graphs:preview
+> node scripts/source-first/graph-experiment.mjs prepare
+
+{"planHash":"407F73270B23A462D89598F0985169C978E5165790E4A07759AD310E85D30C4A","recordIds":["6.1-source-example-1","6.1-source-example-7","6.1-source-example-8","6.1-source-example-9","4.4-source-example-7","2.3-source-example-1"],"realRuntimeWrites":0}
+✔ graph domain/branches: reciprocal (6.5216ms)
+✔ graph domain/branches: shifted-pole (0.872ms)
+✔ graph domain/branches: radical (0.5776ms)
+✔ graph domain/branches: logarithm (0.3676ms)
+✔ graph domain/branches: polynomial (0.353ms)
+✔ graph domain/branches: piecewise (1.2486ms)
+✔ graph domain/branches: removable-hole (0.5923ms)
+✔ graph domain/branches: trigonometric (0.2897ms)
+✔ expression grammar: precedence, parameters, exact groupings (0.2774ms)
+✔ expression grammar rejects arbitrary code, unknown syntax and excessive work (0.6624ms)
+✔ schema rejects malformed source, unsafe labels, unverified graphs and intervals (1.9088ms)
+✔ piecewise open/closed endpoints and removable holes are explicit (0.3709ms)
+✔ all existing figure IDs preserved; no second queue; verified source pilot only (13.7307ms)
+✔ variation table preserves source signs, extrema and infinity without guessed function (1.9447ms)
+✔ V5.5/V5.6 source/runtime/backups and authorization remain intact (7143.573ms)
+✔ vendored JSXGraph bytes match existing exact install (2.8795ms)
+✔ isolated explicit apply, interrupted recovery, idempotency, CAS and rollback (481.9704ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7877.2529
+{"passed":true,"states":33,"errors":[]}

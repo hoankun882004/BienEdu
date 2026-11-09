@@ -1,0 +1,660 @@
+{
+  "passed": true,
+  "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+  "before": {
+    "passed": true,
+    "phase": "before",
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "actualLocalFiles": true,
+    "humanEditorialApproval": false,
+    "states": [
+      {
+        "recordId": "1.3-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-2-before-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-3-before-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-5-before-1366.png"
+      },
+      {
+        "recordId": "1.5-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.5-source-example-2-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-1",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-1-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-2-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-3-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-4",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-4-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-5-before-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-6",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+        "phase": "before",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-6-before-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-2-before-390.png"
+      },
+      {
+        "recordId": "1.3-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-3-before-390.png"
+      },
+      {
+        "recordId": "1.3-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-5-before-390.png"
+      },
+      {
+        "recordId": "1.5-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.5-source-example-2-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-1",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-1-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-2-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-3-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-4",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-4-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-5-before-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-6",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+        "phase": "before",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-6-before-390.png"
+      }
+    ],
+    "errors": [],
+    "progressPreserved": true,
+    "exercisesPreserved": true
+  },
+  "after": {
+    "passed": true,
+    "phase": "after",
+    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
+    "actualLocalFiles": true,
+    "humanEditorialApproval": false,
+    "states": [
+      {
+        "recordId": "1.3-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-2-after-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-3-after-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-5-after-1366.png"
+      },
+      {
+        "recordId": "1.5-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.5-source-example-2-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-1",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-1-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-2-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-3-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-4",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-4-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-5-after-1366.png"
+      },
+      {
+        "recordId": "6.1-source-example-6",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+        "phase": "after",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-6-after-1366.png"
+      },
+      {
+        "recordId": "1.3-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-2-after-390.png"
+      },
+      {
+        "recordId": "1.3-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=3",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-3-after-390.png"
+      },
+      {
+        "recordId": "1.3-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.3&section=example&item=5",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.3-source-example-5-after-390.png"
+      },
+      {
+        "recordId": "1.5-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD01&type=1.5&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 0,
+        "screenshot": "v56-1.5-source-example-2-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-1",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=1",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-1-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-2",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=2",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-2-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-3",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=3",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-3-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-4",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=4",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-4-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-5",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=5",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-5-after-390.png"
+      },
+      {
+        "recordId": "6.1-source-example-6",
+        "route": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=6",
+        "phase": "after",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false,
+        "figures": 1,
+        "screenshot": "v56-6.1-source-example-6-after-390.png"
+      }
+    ],
+    "errors": [],
+    "progressPreserved": true,
+    "exercisesPreserved": true
+  },
+  "parentPreserved": {
+    "passed": true,
+    "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+    "actualLocalFiles": true,
+    "humanEditorialApproval": false,
+    "states": [
+      {
+        "code": "14.1",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.2",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "14.1",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.2",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      },
+      {
+        "code": "1.3",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "overflow": false,
+        "mathErrors": 0,
+        "humanBadge": false
+      }
+    ],
+    "errors": []
+  },
+  "isolatedRuntimeWrites": 2,
+  "realRuntimeWrites": 0,
+  "formalHumanApprovalsCreated": 0
+}

@@ -1,0 +1,115 @@
+{
+  "engine": "sympy",
+  "version": "1.14.0",
+  "checks": [
+    {
+      "id": "6.1-example-1-figure-1",
+      "passed": true,
+      "checks": {
+        "derivative": true,
+        "domain": true,
+        "roots": true,
+        "stationary": true,
+        "samples": true
+      },
+      "properties": {
+        "function": "x*(x - 2)",
+        "domain": "Reals",
+        "derivative": "2*x - 2",
+        "roots": "{0, 2}"
+      }
+    },
+    {
+      "id": "6.1-example-7-figure-1",
+      "passed": true,
+      "checks": {
+        "derivative": true,
+        "domain": true,
+        "roots": true,
+        "stationary": true,
+        "samples": true,
+        "asymptote-0": true,
+        "asymptote-1": true
+      },
+      "properties": {
+        "function": "1/x",
+        "domain": "Union(Interval.open(-oo, 0), Interval.open(0, oo))",
+        "derivative": "-1/x**2",
+        "roots": "EmptySet",
+        "limit-0": [
+          "-oo",
+          "oo"
+        ],
+        "limit-1": [
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "6.1-example-8-figure-1",
+      "passed": true,
+      "checks": {
+        "derivative": true,
+        "domain": true,
+        "roots": true,
+        "stationary": true,
+        "samples": true,
+        "asymptote-0": true,
+        "asymptote-1": true
+      },
+      "properties": {
+        "function": "x + 1/x",
+        "domain": "Union(Interval.open(-oo, 0), Interval.open(0, oo))",
+        "derivative": "1 - 1/x**2",
+        "roots": "EmptySet",
+        "limit-0": [
+          "-oo",
+          "oo"
+        ],
+        "limit-1": [
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "6.1-example-9-figure-1",
+      "passed": true,
+      "checks": {
+        "derivative": true,
+        "domain": true,
+        "roots": true,
+        "stationary": true,
+        "samples": true,
+        "asymptote-0": true
+      },
+      "properties": {
+        "function": "exp(x)",
+        "domain": "Reals",
+        "derivative": "exp(x)",
+        "roots": "EmptySet",
+        "limit-0": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "4.4-example-7-figure-1",
+      "passed": true,
+      "checks": {
+        "derivative": true,
+        "domain": true,
+        "roots": true,
+        "stationary": true,
+        "samples": true
+      },
+      "properties": {
+        "function": "sqrt(4 - x**2)",
+        "domain": "Interval(-2, 2)",
+        "derivative": "-x/sqrt(4 - x**2)",
+        "roots": "{-2, 2}"
+      }
+    }
+  ]
+}

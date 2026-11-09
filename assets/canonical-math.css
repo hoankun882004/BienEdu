@@ -1,0 +1,11 @@
+/* Shared canonical math only; keep BienEdu typography and existing layouts. */
+.canonical-math { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; padding-block: .15em; }
+.canonical-math--display { display: block; min-width: 0; overflow-x: auto; padding-block: .25em; }
+.canonical-math--display > .math-markdown__display {
+  display: block; width: 100%; max-width: 100%; margin: .25em 0;
+  padding: .35em; text-align: left;
+}
+.canonical-math--display .katex-display > .katex { text-align: left; }
+.canonical-math .katex { color: inherit; }
+.canonical-math .katex-display { margin-block: .4em; }
+.math-render-error code { overflow-wrap: anywhere; white-space: pre-wrap; }

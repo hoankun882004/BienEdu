@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "bienedu.figure-agent-observations.v5.2",
+  "inspectionType": "agent-assisted visual comparison",
+  "humanApproval": false,
+  "originalAssetsModified": false,
+  "evidenceSheets": [
+    ".audit/source-first-v5/figure-comparison-v52-1.png",
+    ".audit/source-first-v5/figure-comparison-v52-2.png"
+  ],
+  "observations": [
+    {
+      "figureId": "2.3-example-8-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "D4EC777C4175A215723F097C124FA3027E9592EE6F638785A69C8B44009F0626",
+      "sourcePage": 11,
+      "observation": "Critical points -1 and 1, excluded point 0 (double separator), visible derivative signs +, -, -, + and function values -2 and 2 match the original page. Crop includes the next Example heading. No missing limit value is inferred.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.3-example-9-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "994EBE4E70B98BD8693BC48356577098162C9EC91D5AF80C04BADE1D85CFA336",
+      "sourcePage": 11,
+      "observation": "Derivative row is positive over the displayed real line; function row increases from 0 to infinity. The original table is visible; crop includes the next Example heading.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.3-example-10-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "E51385C13ED6DDB393D6DE886CD751125CE6AB943F4CB4B3012E673D2B4A3A3C",
+      "sourcePage": 11,
+      "observation": "Derivative row is negative over the displayed real line and function row decreases. Table and Example number match the original page; no generated function is substituted.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.4-example-1-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "DEE22780831AC7B10D30938B0F2DD9402E2EB70AEE6C0535453692A4E8780E77",
+      "sourcePage": 11,
+      "observation": "Graph axes are x and f'(x); the source derivative is the horizontal line at 1. Axes and curve are visible; crop includes preceding method text.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.4-example-2-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "5C2874BE4ACFD28CAA5B6DB3E465AA36C19D56898EBAE11E0E63DA0F4E8BC505",
+      "sourcePage": 12,
+      "observation": "Source derivative graph is the horizontal line at -2. Both axis labels and tick marks are visible. Crop contains the next Example heading.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.4-example-3-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "B96C8A29E428249EC13598EA60C9EB89CD0E003FBA6FA61B6DD254A5E4F47A7E",
+      "sourcePage": 12,
+      "observation": "Source derivative graph is an increasing straight line through the origin. The origin, axes and tick marks remain visible. Crop contains the next Example heading.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.4-example-4-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "637F6973AF5F1510CB894885182AE1F08D45BD05AC4DF56B1C22DDCC618EE3F1",
+      "sourcePage": 12,
+      "observation": "Source derivative graph is a decreasing straight line through the origin. Axes, sign change and marked origin remain visible and agree with the original page.",
+      "humanDecision": "pending"
+    },
+    {
+      "figureId": "2.4-example-5-figure-1",
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "assetHash": "D01F6875537B37260FAF3ACF3B9C11AF1FEB37B320898FE93F1A8CAD61352862",
+      "sourcePage": 13,
+      "observation": "Source derivative graph is an upward parabola touching the horizontal axis at x=1. Axis labels, tick marks and the marked point are retained. Crop contains part of the next Example heading.",
+      "humanDecision": "pending"
+    }
+  ]
+}

@@ -244,7 +244,7 @@ export const calculusKnowledgeDetails = Object.freeze({
   },
   "14.1": {
     formulae: [
-      { label: "Diện tích với Ox", value: "S=∫ₐᵇ|f(x)|dx", detail: "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b." },
+      { label: "Diện tích với Ox", value: "S=∫ₐᵇ|f(x)|dx", detail: "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\)." },
       { label: "Hàm không âm", value: "f(x)≥0 ⇒ S=∫ₐᵇf(x)dx", detail: "Đồ thị nằm phía trên hoặc trên trục Ox." },
       { label: "Hàm không dương", value: "f(x)≤0 ⇒ S=−∫ₐᵇf(x)dx", detail: "Đổi dấu để diện tích nhận giá trị không âm." }
     ],

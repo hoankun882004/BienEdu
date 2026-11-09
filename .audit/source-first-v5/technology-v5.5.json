@@ -1,0 +1,29 @@
+{
+  "python": "3.13.14",
+  "installed": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "scope": ".content-work/source-first-v5/sympy-env",
+    "pins": "scripts/source-first/requirements-symbolic.txt"
+  },
+  "resourcesAtInspection": {
+    "freeDiskBytes": 78942453760,
+    "totalRamKiB": 16153796,
+    "freeRamKiB": 4272344
+  },
+  "ocr": {
+    "existing": "PyMuPDF",
+    "mineruInstalled": false,
+    "doclingInstalled": false,
+    "reason": "Pilot supported by existing bounded source extraction/normalization; heavyweight OCR not needed with limited free RAM",
+    "newOcrBenchmarkRun": false,
+    "externalDocumentUploads": 0,
+    "paidApisUsed": 0
+  },
+  "references": [
+    "https://docs.sympy.org/latest/tutorials/intro-tutorial/calculus.html",
+    "https://docs.sympy.org/latest/modules/calculus/index.html",
+    "https://docling-project.github.io/docling/getting_started/installation/",
+    "https://github.com/opendatalab/MinerU/blob/master/docs/en/usage/tiers.md"
+  ]
+}

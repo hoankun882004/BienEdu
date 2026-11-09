@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "bienedu.local-release.v5.4",
+  "mode": "dry-run",
+  "files": [
+    {
+      "file": "assets/js/data/calculus-knowledge-details.js",
+      "beforeHash": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+      "afterHash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754",
+      "changes": [
+        {
+          "binding": {
+            "itemId": "pdf-area-absolute",
+            "itemVersion": "source-first-v5.1",
+            "candidateHash": "E7B2C46E72E31D1F2A7AAFA7117B25BB6FF9E2553A63EA080B755BF2DD9AD0BD",
+            "topicId": "CD14",
+            "recordId": "knowledge:14.1",
+            "targetId": "pdf-area-absolute:bound-order-condition",
+            "fieldId": "formula:area-with-Ox.detail",
+            "sourceIdentityHash": "67F85B9C5E6DC4E8F56DA930CF6A20CF27F672A485DCFE3531E33832087B5A18",
+            "sourceFile": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+            "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+            "sourceBlockId": null,
+            "recordHash": "52C80AD38474823679295701CAD448850BE6FE1BB3441B9C33D08876B1D46290",
+            "contentVersion": "module-sha256:E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+            "origin": "assets/js/data/calculus-knowledge-details.js",
+            "originHash": "E152F4BE4FF123ACBED8530633EB0FCC93EB0452A9B40A08024AC10E920AAAE1",
+            "beforeHash": "1ACE017CFE252010B782B21CB70992F9E92DFF4D93C748B5482ED03076749154",
+            "afterHash": "C028FB3EB28BC912F7061F202845C507AD79DAD612C546B4C9AC80394E8F188F",
+            "conditionsHash": "FD73EE3CF11B6373B74EF41713366FDCC9719F63B0F998561D393144E8213D3D"
+          },
+          "recordId": "knowledge:14.1",
+          "fieldId": "formula:area-with-Ox.detail",
+          "sourceBlockId": null,
+          "formulaLabel": "Diện tích với Ox",
+          "before": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b.",
+          "after": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\).",
+          "source": {
+            "kind": "pdf",
+            "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+            "documentId": "cd12-cd14-calculus",
+            "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+            "location": {
+              "page": 34,
+              "bbox": [
+                35,
+                147.0638427734375,
+                560.280029296875,
+                269.2103271484375
+              ],
+              "pageSize": [
+                595.280029296875,
+                841.8900146484375
+              ]
+            }
+          },
+          "correctionId": "area-bound-order-14.1",
+          "approvalEventHash": null
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "file": "assets/js/data/knowledge-content.js",
+      "hash": "F2D2A9DCC2165D49B73226F2684EF893C06052820757E2D8802A3B8C37343C76"
+    },
+    {
+      "file": "assets/js/data/example-content.js",
+      "hash": "6C5C4D98F41D1AC024CAAF6E0380E56EEE28EFA270A88952C804C94C887A1DF8"
+    },
+    {
+      "file": "assets/js/data/calculus-lessons.js",
+      "hash": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692"
+    },
+    {
+      "file": "assets/js/components/markdown-math-renderer.js",
+      "hash": "3EB5A142C34B9A4E4F1CB6BAFAAB8CCB4ECE5FBBD9DB75C0453B04534AEF3D61"
+    },
+    {
+      "file": "assets/js/curriculum.js",
+      "hash": "3717710B319ECDF79E677CD6D9E6569D176297D50ACA3C171EA22AC374FDB921"
+    },
+    {
+      "file": "assets/vendor/katex/katex.mjs",
+      "hash": "E5BC26598084AD869939ECAA262673814F26ED586312A409B5F8427C01E4F681"
+    }
+  ],
+  "blockers": [
+    "human-field-approvals-required:pdf-area-absolute:bound-order-condition"
+  ],
+  "authorization": "not-granted",
+  "runtimeWrites": 0,
+  "planHash": "17C44FCB0D57376B633235CE1D9868AF6A4DC04BD8AD3A2CFF79431B589F3817"
+}

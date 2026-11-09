@@ -1,0 +1,47 @@
+{
+  "sequential": true,
+  "results": [
+    {
+      "command": "npm.cmd run verify",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T15:54:41.367Z",
+      "finishedAt": "2026-11-08T16:02:53.796Z",
+      "log": "verify-final.log"
+    },
+    {
+      "command": "npm.cmd run test:source-first",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T16:02:53.797Z",
+      "finishedAt": "2026-11-08T16:07:46.545Z",
+      "log": "test-source-first-final.log"
+    },
+    {
+      "command": "npm.cmd run test:canonical",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T16:07:46.546Z",
+      "finishedAt": "2026-11-08T16:09:18.120Z",
+      "log": "test-canonical-final.log"
+    },
+    {
+      "command": "npm.cmd run test:graphs",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T16:09:18.121Z",
+      "finishedAt": "2026-11-08T16:10:16.444Z",
+      "log": "test-graphs-final.log"
+    },
+    {
+      "command": "npm.cmd run test:release",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T16:10:16.444Z",
+      "finishedAt": "2026-11-08T16:11:16.547Z",
+      "log": "test-release-final.log"
+    },
+    {
+      "command": "npm.cmd run test:mobile",
+      "exitCode": 0,
+      "startedAt": "2026-11-08T16:11:16.547Z",
+      "finishedAt": "2026-11-08T16:12:26.063Z",
+      "log": "test-mobile-final.log"
+    }
+  ]
+}

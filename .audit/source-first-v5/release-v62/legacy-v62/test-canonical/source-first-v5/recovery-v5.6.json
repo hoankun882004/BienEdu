@@ -1,0 +1,148 @@
+{
+  "version": "5.6",
+  "baseline": "locally-applied-unreviewed",
+  "runtime": [
+    {
+      "file": "assets/js/data/calculus-knowledge-details.js",
+      "hash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754",
+      "expectedAfterHash": "4310613BA5FF860B3D7448B023C5D79D943F55E5298527B2D7AB2136E3505754"
+    },
+    {
+      "file": "assets/js/data/foundation-lessons.generated.js",
+      "hash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968",
+      "expectedAfterHash": "7DC391F88931F50E94F5153EAF19DEC7702B88A4122691A0A6E0941741860968"
+    }
+  ],
+  "journal": [
+    {
+      "file": "1793904038866-0ca793d21741-intent.json",
+      "hash": "146483E4FB9FD077628D8BE862CCCB7F9274547D7730E20D845CE2D975534CDB"
+    },
+    {
+      "file": "1793904039318-4f5e83469ff0-validated.json",
+      "hash": "9F3B492DBB3F52BBDFBCEB2ACC4A7EA510AD39C7F8F4D5C9AF90DA03DE99A678"
+    },
+    {
+      "file": "1793940858080-94abe7d2fd29-intent.json",
+      "hash": "48CC91738A5831E105699AEA1DAC34D1C76B53E9588AA2FE3EAB930881389274"
+    },
+    {
+      "file": "1793940858271-7851b701f9ca-validated.json",
+      "hash": "A42B1E15805E356CAB497418B990DA8E99B010BF2AF62AF040753ED8AE076A8E"
+    }
+  ],
+  "parentPlanHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
+  "immutableParent": ".content-work/source-first-v5/dev-plans/F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521/manifest.json",
+  "sources": [
+    {
+      "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+    },
+    {
+      "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+    },
+    {
+      "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+    },
+    {
+      "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+    },
+    {
+      "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+      "hash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0"
+    },
+    {
+      "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+      "hash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7"
+    },
+    {
+      "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+      "hash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59"
+    },
+    {
+      "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+      "hash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293"
+    },
+    {
+      "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+      "hash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99"
+    }
+  ],
+  "protectedFiles": [
+    {
+      "file": "assets/js/data/latex-pilot.generated.js",
+      "hash": "02F982C1F5420A3C5A6BB3983F07E7CFC4FBA9F283B50B841B3419EA4BC957A5"
+    },
+    {
+      "file": "assets/js/data/calculus-lessons.js",
+      "hash": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692"
+    },
+    {
+      "file": "assets/js/data/calculus-source-examples.js",
+      "hash": "435CA4803BBDA78A6D4D573B8502D7ADF69A573BA9D2551BEA66313B58B8A2ED"
+    }
+  ],
+  "parentDependencies": [
+    {
+      "file": "assets/js/data/knowledge-content.js",
+      "hash": "F2D2A9DCC2165D49B73226F2684EF893C06052820757E2D8802A3B8C37343C76"
+    },
+    {
+      "file": "assets/js/data/example-content.js",
+      "hash": "6C5C4D98F41D1AC024CAAF6E0380E56EEE28EFA270A88952C804C94C887A1DF8"
+    },
+    {
+      "file": "assets/js/data/calculus-lessons.js",
+      "hash": "26080A1FA014426029D1400DBD39749B14678129EAF49F62DEEB98E165947692"
+    },
+    {
+      "file": "assets/js/components/markdown-math-renderer.js",
+      "hash": "3EB5A142C34B9A4E4F1CB6BAFAAB8CCB4ECE5FBBD9DB75C0453B04534AEF3D61"
+    },
+    {
+      "file": "assets/js/curriculum.js",
+      "hash": "3717710B319ECDF79E677CD6D9E6569D176297D50ACA3C171EA22AC374FDB921"
+    },
+    {
+      "file": "assets/vendor/katex/katex.mjs",
+      "hash": "E5BC26598084AD869939ECAA262673814F26ED586312A409B5F8427C01E4F681"
+    },
+    {
+      "file": ".content-work/source-first-v5/snapshot.json",
+      "hash": "F25145E79B0B18E0669A62B260F1AB5088039D5D40DD548BAC67E6BBCAAB31E6"
+    },
+    {
+      "file": "scripts/source-first/corrections-v53.json",
+      "hash": "8F41B5DF4C390AEA87442347B0E072BD33931C500527BF4B7467BC9A4F35F22E"
+    },
+    {
+      "file": "scripts/source-first/symbolic-check.py",
+      "hash": "3C92DF93BB7F5AD0F708834FC934144E7C80E8C9F3FDEBB448A41B8EC807E1FE"
+    },
+    {
+      "file": "scripts/source-first/symbolic.mjs",
+      "hash": "746E481619290E23D68BD3F496098E6EAF80FC12DC76D262DD369EB86069898E"
+    },
+    {
+      "file": "scripts/source-first/development.mjs",
+      "hash": "C5A69C2069CA760A15E2FE8FE143ED19E377794481C6C62FB17A54DFD5CB8083"
+    },
+    {
+      "file": "scripts/source-first/validate-dev-runtime.mjs",
+      "hash": "9DE6E6E0B2EBC9ED6034A16ADA09C0DDB83AEB8B920B4A15D04E8B99FDC41438"
+    },
+    {
+      "file": "scripts/source-first/dev-browser-check.mjs",
+      "hash": "7C16B73AF6C93F148DFFB48886F26158C4070325DEDE9D631B6A3A708D2761B3"
+    },
+    {
+      "file": "scripts/source-first/local-release.mjs",
+      "hash": "DDC2A2F570389FE4D80EEFF15344DD4BDD419626D5C2648422696698AC92EDDB"
+    }
+  ],
+  "realRuntimeWrites": 0,
+  "formalHumanApproval": false
+}

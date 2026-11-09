@@ -1,0 +1,3334 @@
+{
+  "schemaVersion": "bienedu.publication-dry-run.v5.2",
+  "mode": "dry-run-only",
+  "runtimeFile": "assets/js/data/latex-pilot.generated.js",
+  "runtimeHash": "02F982C1F5420A3C5A6BB3983F07E7CFC4FBA9F283B50B841B3419EA4BC957A5",
+  "dependencies": [
+    {
+      "file": "assets/js/data/knowledge-content.js",
+      "hash": "F2D2A9DCC2165D49B73226F2684EF893C06052820757E2D8802A3B8C37343C76"
+    },
+    {
+      "file": "assets/js/components/markdown-math-renderer.js",
+      "hash": "3EB5A142C34B9A4E4F1CB6BAFAAB8CCB4ECE5FBBD9DB75C0453B04534AEF3D61"
+    },
+    {
+      "file": "assets/js/curriculum.js",
+      "hash": "3717710B319ECDF79E677CD6D9E6569D176297D50ACA3C171EA22AC374FDB921"
+    },
+    {
+      "file": "assets/vendor/katex/katex.mjs",
+      "hash": "E5BC26598084AD869939ECAA262673814F26ED586312A409B5F8427C01E4F681"
+    }
+  ],
+  "publicationAuthority": "not-granted",
+  "runtimeWrites": 0,
+  "changes": [
+    {
+      "itemId": "tex-20.3",
+      "code": "20.3",
+      "target": null,
+      "before": null,
+      "after": "\\mathrm{P}(n) = n!",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "F794349A7E1C2E52DC85E4A49BAAB8A10969651F056DA8D25810F95A1DD86CA2",
+      "itemHash": "24EDE3D93875261E5F64B15D71D63BDB8D9EFB808FA2D2A7284BCE78DB9FFA5B",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "303118D6EA3DF2321EB11857E20D29337575FF818EC0321C1335451AFE59549B",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            8057,
+            8066
+          ],
+          "lines": [
+            213,
+            213
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "tex-20.4",
+      "code": "20.4",
+      "target": null,
+      "before": null,
+      "after": "\\mathrm{A}(n,k) = \\frac{n!}{(n - k)!} = n(n - 1)...(n - k + 1)",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "6FB66A2D001CD5C8B7089E76A6716BA24A61835BED59DCD2394E930F191036C1",
+      "itemHash": "E4351DA8C82C59547E8CC7E7021F50FBCC0B2280229FF6ED961FCE7486537675",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "A25F2119CF87C8B9FADA17704368F512AE2290D2D23A902014079C8A53DB4C4C",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9184,
+            9229
+          ],
+          "lines": [
+            237,
+            237
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "sample-checked",
+          "checks": [
+            {
+              "n": 0,
+              "k": 0,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "n": 3,
+              "k": 1,
+              "expected": 3,
+              "actual": 3
+            },
+            {
+              "n": 5,
+              "k": 2,
+              "expected": 20,
+              "actual": 20
+            },
+            {
+              "n": 6,
+              "k": 3,
+              "expected": 120,
+              "actual": 120
+            },
+            {
+              "n": 5,
+              "k": 5,
+              "expected": 120,
+              "actual": 120
+            }
+          ],
+          "issues": [
+            "Five integer substitutions are regression evidence, not a mathematical proof or source approval"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "tex-20.5",
+      "code": "20.5",
+      "target": null,
+      "before": null,
+      "after": "\\mathrm{C}(n,k) = \\frac{n!}{k!(n - k)!}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "D738FF5349242AE374E4812249D473FCF3B55370A65AA451808AE4603D0B25EB",
+      "itemHash": "90BA5ACF6F0C2FC984E63162A87FF778D6369526AD4CA90413C075EB141C91A4",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "A44E863D01CF6DE4B5E211CA56BC0DD9C70F1CB7F8B865115CA4A75D4147EC50",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9844,
+            9868
+          ],
+          "lines": [
+            253,
+            253
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "tex-21.1",
+      "code": "21.1",
+      "target": null,
+      "before": null,
+      "after": "\\mathrm{P}(A) = \\frac{|A|}{|\\Omega |}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "368B80958FB336D47E95EDB5E13C14624F7F96E18ACCA72C6D7314EC0FEBB900",
+      "itemHash": "560CB9EFBDB06BA84EA2A952DC4B23895D772189722D9BFF2DB4E8457F188009",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "7AF6395FB91380C498A8BEE39800C2C94F5E3F553899DFBFB67B40E619A4518C",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            23275,
+            23289
+          ],
+          "lines": [
+            508,
+            508
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "tex-21.2",
+      "code": "21.2",
+      "target": null,
+      "before": null,
+      "after": "\\mathrm{P}(A^{c}) = 1 - \\mathrm{P}(A)",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "93CB1A22DC23BB5D9536994F7FFC67C0CF4D31498F2C81B174DF4826BCB9FCC5",
+      "itemHash": "621CCC0D869380E7BF942C302B96133D0103F05CD8705DACC06D5039634F89C7",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "EA30203ADB1BD4F48557943CD076D1A945EA29D3FA0D1900A6BBE26D1D0A785D",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            24141,
+            24175
+          ],
+          "lines": [
+            526,
+            526
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "tex-22.1",
+      "code": "22.1",
+      "target": {
+        "code": "22.1",
+        "fieldId": "knowledge:22.1:native-formula",
+        "formulaLabel": "Công thức",
+        "expressionKey": "9A62B3A93B82306F7FA8495BCEBA188FAE2B19ACE3FBD59D930169E68C9A8B62",
+        "file": "assets/js/data/latex-pilot.generated.js",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ],
+        "pathPolicy": "resolved from semantic identity for this runtime version only"
+      },
+      "before": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+      "after": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "69D8EE21CF640C8F13F716AB70A58476B2643F68DB9EA9AEDCBE89DAD8AC92B5",
+      "itemHash": "5C77C48EFB21CF9C79AD569C1B5AA952E07350F05F0D84BBB530235694101D68",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "C377B9A90B30E8BFDE398116E5EEA9D01EA536C5AE89E4BADAE39E08CABC58E4",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29015,
+            29037
+          ],
+          "lines": [
+            639,
+            639
+          ]
+        }
+      },
+      "targetRecordHash": "1DBEFA11A94340709F553D90E20E035D65B073DCEE6E84697BF3D5AFE17A112E",
+      "targetVersion": "latex-pilot-v5",
+      "hasContentChange": false,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": {
+        "before": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+        "after": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ]
+      }
+    },
+    {
+      "itemId": "tex-22.2",
+      "code": "22.2",
+      "target": {
+        "code": "22.2",
+        "fieldId": "knowledge:22.2:native-formula",
+        "formulaLabel": "Công thức",
+        "expressionKey": "7CBB96B34DB8CC9CC39029F16F790B366122A24984F1A208C208B882501B12B1",
+        "file": "assets/js/data/latex-pilot.generated.js",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ],
+        "pathPolicy": "resolved from semantic identity for this runtime version only"
+      },
+      "before": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "after": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "1E712C15AB1B12B3EAD2431B520A64E85AF7ACB5D1CD600067254CA364577863",
+      "itemHash": "A037EBBBC4EC839A1644F16C8D887265697578D8117D491E9315CA781C9F603E",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "059CC3C3BAEF2FE88E14A0AA27EC49C2D732FCCC527C4286996764FD442B08EB",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29849,
+            29870
+          ],
+          "lines": [
+            657,
+            657
+          ]
+        }
+      },
+      "targetRecordHash": "1FC55CA28567347F54F317FFC818F4836889579CF8B84936811D32D14FFC7868",
+      "targetVersion": "latex-pilot-v5",
+      "hasContentChange": false,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": {
+        "before": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+        "after": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ]
+      }
+    },
+    {
+      "itemId": "tex-22.4",
+      "code": "22.4",
+      "target": {
+        "code": "22.4",
+        "fieldId": "knowledge:22.4:native-formula",
+        "formulaLabel": "Công thức",
+        "expressionKey": "BC2FC2336A3B238343B2FEA1ABF04D90A631FF06A213A2D61CFB92FD2D7D8B95",
+        "file": "assets/js/data/latex-pilot.generated.js",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ],
+        "pathPolicy": "resolved from semantic identity for this runtime version only"
+      },
+      "before": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+      "after": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "AE4330D1549B7D9321AE606FE4D40A5C48ABC70E3AB329B3E6D7AAE4D35FD429",
+      "itemHash": "80C5CDA9165804AACF51E9CF8C0A4953AF735B6300741FA392C72A02A6945573",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "A72A3F490FA453D47D6EA13DC20AD782A53B1598402D61EA35BB42A64083C4EF",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            31540,
+            31593
+          ],
+          "lines": [
+            692,
+            692
+          ]
+        }
+      },
+      "targetRecordHash": "C0BF4E1E5A9C215DC623F31D02CE15A04FABD31D9020CF627A808B222A811740",
+      "targetVersion": "latex-pilot-v5",
+      "hasContentChange": false,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": {
+        "before": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+        "after": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ]
+      }
+    },
+    {
+      "itemId": "tex-22.5",
+      "code": "22.5",
+      "target": {
+        "code": "22.5",
+        "fieldId": "knowledge:22.5:native-formula",
+        "formulaLabel": "Công thức",
+        "expressionKey": "170B2B2E908E39C79EE776973C72814F2DD1D89BC0C8A15E1CA438C3D803D89E",
+        "file": "assets/js/data/latex-pilot.generated.js",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ],
+        "pathPolicy": "resolved from semantic identity for this runtime version only"
+      },
+      "before": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+      "after": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "04930AE4CC68F786366C076D44B736235F0CE33CD7D2D4FEA03BAB930CD3FE70",
+      "itemHash": "1E98115FF3DB2A94AB2E3B4778979B80EF499143C9AFA06A74659F2498B0C367",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "8BC6E6C64153713895598DBE54E9438CEA24C42DE1CEB005E5DC8B37A726FCBB",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            32297,
+            32418
+          ],
+          "lines": [
+            709,
+            709
+          ]
+        }
+      },
+      "targetRecordHash": "196E6E76173E18C323E6EB17B3F472A7E44F9AB059DE82ACDD4E0F3A5DF7FFFB",
+      "targetVersion": "latex-pilot-v5",
+      "hasContentChange": false,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": {
+        "before": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+        "after": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ]
+      }
+    },
+    {
+      "itemId": "tex-22.7",
+      "code": "22.7",
+      "target": {
+        "code": "22.7",
+        "fieldId": "knowledge:22.7:native-formula",
+        "formulaLabel": "Công thức",
+        "expressionKey": "15B46BE012F87785559CB09151AEF2F4C5F7FCED78D336BF1EC68A54817DB637",
+        "file": "assets/js/data/latex-pilot.generated.js",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ],
+        "pathPolicy": "resolved from semantic identity for this runtime version only"
+      },
+      "before": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+      "after": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+      "reviewedContentHash": "012F0D358FF13B4CCEAFC0229FBC87434B2EB1D9B008FF7A9B4F57569E5A2BEF",
+      "itemHash": "D5B5B749E82923647BA5B156F8F102BEC8BCD6D536FFD376A5FCDE64F17E2DBC",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "F14907E92B9624FEA45E46C1A43413068E6D205E6110DFCE29DC8D92B668B97A",
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            34035,
+            34070
+          ],
+          "lines": [
+            743,
+            743
+          ]
+        }
+      },
+      "targetRecordHash": "48386008E41111D24E7B1F8C7B8A2CAFB5C9922946E99331B0AC117DEFA60ED4",
+      "targetVersion": "latex-pilot-v5",
+      "hasContentChange": false,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": {
+        "before": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+        "after": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+        "field": [
+          "formulae",
+          0,
+          "value"
+        ]
+      }
+    },
+    {
+      "itemId": "pdf-derivative-power",
+      "code": "1.1",
+      "target": null,
+      "before": null,
+      "after": "(x^n)'=nx^{n-1}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "795C21810AE865248AED9D13F38BF8579D88B028E488D361464713F16CA55EBF",
+      "itemHash": "20A444035CB31C4645F8E402A23F2FA6DF44DA1929C0DC227E901776FA98477A",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "38D188FD4EE63AB452535F3E579E9637D440692775B2401795788D1B322449E2",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            151.02407836914062,
+            560.280029296875,
+            275.21636962890625
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-derivative-quotient",
+      "code": "1.1",
+      "target": null,
+      "before": null,
+      "after": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "A0F227B220F66E377FCE97AB96E51CF1EBF1D0CFAB5F9351AB1117D201E0541D",
+      "itemHash": "F03A323F25D3CE46CA029917D69249DB7B5BB6C00ECD786076B986C9FFF0B4D8",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "BD80FAB471EF25E0E8CC79E6B2EDA065E7717C5D096CA555399C8404235CAEA2",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            175.37008666992188,
+            560.280029296875,
+            299.5613708496094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-derivative-root",
+      "code": "1.1",
+      "target": null,
+      "before": null,
+      "after": "(\\sqrt u)'=\\frac{u'}{2\\sqrt u},\\quad u>0",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "C6266B3DD5F0B29047F585E09EAEC70F4EB379D90F1F357A899CE2023BF5B646",
+      "itemHash": "513DD0BA146CE6B302B98D0F6D5501D0BBD2E7C5A76971F0B47538B1376CAD8F",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "398DD129F7BBAD9289CD49034DDFD93A29216F30E634FED07B8ED906BEED8900",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            196.9649200439453,
+            560.280029296875,
+            326.7963562011719
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-derivative-log",
+      "code": "1.1",
+      "target": null,
+      "before": null,
+      "after": "(\\log_a u)'=\\frac{u'}{u\\ln a},\\quad a>0,\\ a\\ne1,\\ u>0",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "2698D386D75909AA3248AAA0FFA30B7F8F5608A80CA00E21A7A8AAC5959296EC",
+      "itemHash": "0EAEE4CCD6518932855565D2FC5C7802DBC871ED0D128AAB63A498C0E152C643",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "7151D83A7F0F7BE07796327B544D0D85E4A88AEA53D348A21989443D3EBEF2F0",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            256.3669128417969,
+            560.280029296875,
+            393.6813659667969
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-geometric-point",
+      "code": "7.7",
+      "target": null,
+      "before": null,
+      "after": "y=x^2,\\quad A(0;-1)",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "4D76CCE429F26A6A54BA8C48A1B067E5E664145C54F894FF425C5B263C41B91F",
+      "itemHash": "9C13F73135BEF7BC89E6BD2B4E975C6C07C333C824CA6DB0B075D5C213B0704C",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "4319C8905603C9E6E8FAE22823632AFA00255BC76E161641A48D11DE0AC53A87",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 64,
+          "bbox": [
+            35,
+            578.2581176757812,
+            560.280029296875,
+            703.1261596679688
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-simultaneous-constraints",
+      "code": "1.1",
+      "target": null,
+      "before": null,
+      "after": "b=-3,\\quad 3a+b=3",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "CDC295B786894C82948DF08C291FC8CC3E886ECD8E451C711D5EEC75B4093C95",
+      "itemHash": "623AD5C9CC6A0A3E641789C26654180D2CC451D47050275461EE3C5002883F94",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "D8C6B35C9E4A9D4B581E90DF6506AE9726E646B5663A51FE2389D6022EBD286E",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            199.48907470703125,
+            560.280029296875,
+            323.63720703125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Source has simultaneous constraints without a system brace; no brace is inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-rational-exponents",
+      "code": "8.1",
+      "target": null,
+      "before": null,
+      "after": "A=16^{3/4}+27^{-2/3}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "DBDDC6D0C6AB892FE62A0A44BAE78D4C9F1112A1A0851D09BD33B11A0D8AB7D6",
+      "itemHash": "CE97010E54F0DD146D687D3071E5A267831C446EA6ABF845B827943E742AF0A9",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "6B24FBB4E3F95248641AF9A9A3DB62FBBE14375ECB96DCB50DAE1529C62F420C",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            118.23406982421875,
+            560.280029296875,
+            242.38218688964844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-nested-exponents",
+      "code": "8.1",
+      "target": null,
+      "before": null,
+      "after": "(2^3)^{2/3}+2^{-1}",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "48F095FEC0E5EAD0BBFE69C9814C576C0982C209B476A25B5C3A147F8A98538D",
+      "itemHash": "F82C1BAF28FB1A3CB6B471DE2DDFC389ACB0E5A9B79EFFC2EDFF6929B83650BE",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "83CD0172CEDE11C85C772B1F68A36956103567CCD7358E34D9ABD505BB94C39A",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            216.090087890625,
+            560.280029296875,
+            340.2381896972656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-root-exponents",
+      "code": "8.1",
+      "target": null,
+      "before": null,
+      "after": "\\frac{a^{\\sqrt3+2}}{a^{\\sqrt3-1}},\\quad a>0",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "D244EE354E30FDE799FD9DA53AE6B20E9A7571594059EA4817382560BB3DA0FE",
+      "itemHash": "A9BF6FDF53F4A7EC4E4BDBA578F7ADC09ACF4784F59DF7D661BB80BF9FCF88D6",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "DEC902213B01D6E937DF7A9B211705563EE76127D294DFE258290B3052A467ED",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            158.5287628173828,
+            560.280029296875,
+            280.9731903076172
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-powers-condition",
+      "code": "8.1",
+      "target": null,
+      "before": null,
+      "after": "a^{\\sqrt2+1}a^{2-\\sqrt2},\\quad a>0",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "0980A40167B1B7DC6AB78F0FB1C43DC777773A7645C5D67AEC109338B5D7C6F0",
+      "itemHash": "0FAE760C890F105891193F3AB2750B565F1FDDE4A76FEA57D6525D775ECB2CC7",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "E89895AE04565E88275D8EDD47A7679B6ABFD16579BAB56D876E0CBDB78E0EA9",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            200.0341033935547,
+            560.280029296875,
+            320.9432067871094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-exponent-warning",
+      "code": "8.1",
+      "target": null,
+      "before": null,
+      "after": "\\text{Không biến }a^\\alpha+a^\\beta\\text{ thành }a^{\\alpha+\\beta}.",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "AA9BDB11F81B39851264F6CBB9FCE0326B05710CA9DCCAB7BB25551C4D5A039B",
+      "itemHash": "77E9AB267DA136B7A207B687B42694656E1E7F9099BCBA368524EB3D0A99FC4F",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "4225C635B3F12BA838BC50488D15D8CA01AA878B95706FBF5ED79B2B19E051D7",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            311.84906005859375,
+            560.280029296875,
+            436.7171936035156
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-log-bases",
+      "code": "8.2",
+      "target": null,
+      "before": null,
+      "after": "A=\\log_2 12-\\log_2 3+\\log_4 8",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "EFA9AE5C4218B997B77987E01DD64113E609C74B38C1D3B241E2DA88EF72999A",
+      "itemHash": "A54E0AF27AD272BCE3DDBB0725094F6CBB4D15A12D1A0EFC6F8BCCAF0CB08F91",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "D7795EEC8760C3A7EAC1E3D8A4DE2B9B314E794002B2E2F54592DEB6911BB570",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            83.34272766113281,
+            560.280029296875,
+            207.10836791992188
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-log-nested",
+      "code": "8.2",
+      "target": null,
+      "before": null,
+      "after": "\\ln(e^2)+\\log 0{,}01",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "75BBF3E24AF86693F4D2B2DB5EEC2DD5C899C90F1FED5070128A1F3C6C505BAD",
+      "itemHash": "C51B8796164543129C97CA48E5690497707235A730CB3D0B313285FAB106395D",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "4D81686F568536C6E7814B43A911087C9CE701350B3BAA707771B1E2C1D49851",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            121.1717529296875,
+            560.280029296875,
+            243.28016662597656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-log-product",
+      "code": "8.2",
+      "target": null,
+      "before": null,
+      "after": "\\log_2 3\\cdot\\log_3 8",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "reviewedContentHash": "65A05148CD0DBF3D659876D2C93FC7678F41DFDB7F32C616578FF030A4FDDA0C",
+      "itemHash": "6D2C17478BB482D424FAD76661D0A6873029075EBA8969A6BBDD9CFD07D17FAB",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "B77024398B4901331A646CF5F385C57AA501A1E0A435EFA06DC26D9A42188ACF",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            160.52572631835938,
+            560.280029296875,
+            284.29136657714844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-definition",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb R",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "C9D3841C98704EB5CE6C0F9DA627666968D07A496E1133FDC6E0DA031C40335F",
+      "itemHash": "6BD8EDB4539D832F828C11FC8D6D2978B22E13BED618640AE88F662CA068311D",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "8F1C916115EEF5DDC62CCF01E6B99F588B7726A74C17179D526D1E938F723381",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            139.6298370361328,
+            560.280029296875,
+            261.7763214111328
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-power",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "44A7ABBE882E8A9EB0F6CE2241BDF8067CD4D1E642E7C64C838F1F5F6D03AA1E",
+      "itemHash": "53F5F36BCF24E14F5F47E11AC380DEEBF59D1B52B922C5284D4BD2CF0B714367",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "4F18F355798A69B822CD99C9A451A4D4347DBE582C72E1A381136BF959B3EC9B",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            261.4947509765625,
+            560.280029296875,
+            391.8430480957031
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-log",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int\\frac1x\\,dx=\\ln|x|+C",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "663B9B8F91B3D6159411B355E36DCE9AAED92518C2AD199F25A1996308F7A611",
+      "itemHash": "F1BEF4D1DF2C99EC2136010CDE6036F41AE161F6CF79E3008D77A01D6DECDF0E",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "3C617ABF91EDCF24C2A3636DA898613A43011FF80DE93C46C1AEA5287F34829D",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            290.6871032714844,
+            560.280029296875,
+            427.5923156738281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-base",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C,\\quad a>0,\\ a\\ne1",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "7EE7ADFF60E27E8EB5D9AC0820D86E641DBAB540E4D15EE7458B6233111E1684",
+      "itemHash": "2B9A17729D46F8B02A399F8CD94EB0FE835DBEE224FAF4954BE1429D06E4C323",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "E371537A89420D65BD70293BE301A0C687BFF672B54D8C04646EE467721A57C3",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            314.8077392578125,
+            560.280029296875,
+            445.15606689453125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-cos-reciprocal",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int\\frac1{\\cos^2x}\\,dx=\\tan x+C",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "19EE5E9847F58515752DAD8326C2C9C2628935011A9127BF71C62546219167CF",
+      "itemHash": "EDD7D2276863EDCAF645F5ACFFBB13120A44912C1E10439B103E23DEFFF1337F",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "EDC5D0F5278E01CE9E82E68D44A05864B8F5047FF1BC4A3B3291DD07B9F90E22",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            342.007080078125,
+            560.280029296875,
+            479.1753234863281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-sin-reciprocal",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int\\frac1{\\sin^2x}\\,dx=-\\cot x+C",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "31A0D448EE2291F8290269248287A00470FEA218484AEB470D81EB667652FC55",
+      "itemHash": "F191EAE63CD4535AB886118394FEF9E2976912902A0A3A07CF0973C6FF0C794C",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "9661294D93CD9D540A27DBA3B913D1A1708230D84D833539C68C24FAC13D963C",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            368.631103515625,
+            560.280029296875,
+            506.1803283691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-radical",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int\\frac1{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "F48AC238D00793EE73B1196BA381CAA90318B1D98E57E4B44E2A5C104E130718",
+      "itemHash": "F7E6B87AEBA5CD99A7B247076D52AC4E813BE6FEACC2E66D69175BA38987DC7C",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "2353B55BF1822D88C1F2ADB39EB9018B4C5B059A98785AE7B2E444EF3E0D2DA6",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            421.8780822753906,
+            560.280029296875,
+            560.1290588378906
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-integral-chain",
+      "code": "12.1",
+      "target": null,
+      "before": null,
+      "after": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "4FA14647DA8E4CC6765521AF096412C0AA26E3FFC1A91A5237F9D510F31AF1EF",
+      "itemHash": "C7A4690B932C21B917A314DF8BD2556DEF95ED363FEF66DE31CDC970EBC9D15D",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "9D8F1CFEE2C6C9DD2613F99C706CECFC0D600E9149FE06A1A07FD45BA4616B54",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            488.11871337890625,
+            560.280029296875,
+            618.6583251953125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-definite-integral",
+      "code": "13.1",
+      "target": null,
+      "before": null,
+      "after": "\\int_a^b f(x)\\,dx=F(b)-F(a)",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "5FFD0E86C71482378A8BADD165AABA51BD0BDDD66F1C2F7E64380908CB7C8CAB",
+      "itemHash": "674D6CD52E3DE34F9622A76993606467BA3341C534AF404369399CE7010DE62E",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "EDAEAA9FEDE158D65E206BCE4B75AE57A9013921C3135D1950F0385FFA31095A",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            161.6788330078125,
+            560.280029296875,
+            283.8253173828125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-definite-example",
+      "code": "13.1",
+      "target": null,
+      "before": null,
+      "after": "I=\\int_0^2(3x^2-2x)\\,dx",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "7FAD9E72895B7EF3DB5C580EB74502D527C3678B9AE424A89A59B92439F75A53",
+      "itemHash": "E9C38DF9763D109AE931486FBA202F9A184AD31EEE7DF1D25DE0F37E0919DB7E",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "CD9AB9E39B1F5DA43183BE0FD65E50842C0D98F75A654C8C6DE6D6CF436EDA2C",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            511.7308349609375,
+            560.280029296875,
+            648.5701904296875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-graph-associated",
+      "code": "13.1",
+      "target": null,
+      "before": null,
+      "after": "J=\\int_{-1}^{1}x^3\\,dx=0",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "1E65785E86818DD7076F0F3D069EFFF984A46A46339F9D49814F571F554AE964",
+      "itemHash": "D303B0D6CDB1741B79D1A4624FCC62C6D332A4A638A0B44F88BDE83882E75477",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "67392B79E01A248DC575653FA215787DE63D02DE55844E508C3776A5564354D8",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            684.81298828125,
+            560.280029296875,
+            810.018310546875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-area-absolute",
+      "code": "14.1",
+      "target": null,
+      "before": null,
+      "after": "S=\\int_a^b|f(x)|\\,dx",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "B6AC3F760DC2A9D4F68360304EDDB8147F0172352FE9194849168B9278CE2060",
+      "itemHash": "6A0D1DFD5F4985BB92D868BA47171F89E35D5B1B955EE7FB4C3154A8CA3DE684",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "67F85B9C5E6DC4E8F56DA930CF6A20CF27F672A485DCFE3531E33832087B5A18",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            147.0638427734375,
+            560.280029296875,
+            269.2103271484375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-area-piecewise",
+      "code": "14.1",
+      "target": null,
+      "before": null,
+      "after": "S=\\int_0^2(4-2x)\\,dx+\\int_2^3(2x-4)\\,dx=5",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "reviewedContentHash": "68C66285555E135A76FBAE176A3F9AD871E455D7615A1E4798E600C4464E991C",
+      "itemHash": "2C79C2DDFB198AC467134C75C0F92D79F3365FCE0FCF69859E508BAD8DCE3C62",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "36D7773AEDDF28D8BE97EDA9F57F549EE938633C7865984DB25E1B61131894D4",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            422.9488525390625,
+            560.280029296875,
+            554.8522033691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-counting-source",
+      "code": "20.1",
+      "target": null,
+      "before": null,
+      "after": "N=3+4+1=8",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "reviewedContentHash": "EC346E63D59FAF100B4123B3C40A0E312DED52BEF15579EA6016CB48F886F351",
+      "itemHash": "7E4BD2ADBF0BF1AAB1253130A2ED34FEF0D08B1ECBAD5B920A9EDC2717607285",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "855D30CEAEA4E6ABBF87DDE1ECE55C3D61CC9B8E8FFAE52AA5774768F6606BDF",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "documentId": "cd20-cd21-theory",
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            680.3370361328125,
+            560.280029296875,
+            802.292236328125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "protected-topic",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-root-domain",
+      "code": "1.3",
+      "target": null,
+      "before": null,
+      "after": "y'=-\\frac{x}{\\sqrt{4-x^2}},\\quad -2<x<2",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "206B51E674D34B612D511EE93B559FBD3B8636FC6B531852DE707E478C94FE24",
+      "itemHash": "0A5AE200C9D55A9BC65E328D02B7C0061B7B702CA17208124EFAD0E9C4A04044",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            661.235107421875,
+            560.280029296875,
+            785.3831787109375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    },
+    {
+      "itemId": "pdf-rational-domain",
+      "code": "1.2",
+      "target": null,
+      "before": null,
+      "after": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2},\\quad x\\ne\\pm1",
+      "mappingClassification": null,
+      "runtimeDiffs": [],
+      "runtimeProposalHash": null,
+      "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "reviewedContentHash": "91F571BFD3FDC3B3F4D30E939CBA5B2750B801D180D4F1B12EEF39BF09994C09",
+      "itemHash": "411F9B6E341C4F63C5F88B80793F2901569B970B9F00ACDA2649F4E85E478DFD",
+      "itemVersion": "source-first-v5.1",
+      "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            389.6515197753906,
+            560.280029296875,
+            517.7960205078125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "targetRecordHash": null,
+      "targetVersion": null,
+      "hasContentChange": true,
+      "approvalEvidence": {
+        "source": null,
+        "editorial": null,
+        "versionBound": false,
+        "patchHashes": []
+      },
+      "validation": {
+        "syntax": {
+          "status": "passed",
+          "issues": []
+        },
+        "structure": {
+          "status": "passed",
+          "issues": []
+        },
+        "fidelity": {
+          "status": "needs-review",
+          "reviewer": null
+        },
+        "consistency": {
+          "status": "needs-review",
+          "issues": [
+            "Reference transcription requires editor comparison with source; no mathematical approval inferred"
+          ]
+        }
+      },
+      "dependencyChecks": {
+        "passed": true
+      },
+      "conflictChecks": {
+        "unresolved": false,
+        "reviewStatus": "needs-review"
+      },
+      "recordPreview": null,
+      "eligibleForPreview": false,
+      "blockers": [
+        "no-approved-runtime-binding",
+        "human-source-verification-required",
+        "human-mathematical-approval-required",
+        "version-bound-human-review-required",
+        "approved-review-patch-required"
+      ],
+      "rollback": null
+    }
+  ],
+  "eligibleCount": 0,
+  "blockedCount": 40,
+  "planHash": "DF5F16DE8B2716ACEEA934D6098AC037FDB19CF216A64EB478CC3BBCE74CDDA6"
+}

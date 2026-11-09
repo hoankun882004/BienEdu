@@ -1,0 +1,5 @@
+
+> content:graphs:preview
+> node scripts/source-first/graph-experiment.mjs prepare
+
+{"planHash":"A023665D71C77DD8EAEBEBC8F49DCAE8D8ADA930A37523836F0BB5A0D9A8260C","recordIds":["6.1-source-example-1","6.1-source-example-7","6.1-source-example-8","6.1-source-example-9","4.4-source-example-7","2.3-source-example-1"],"realRuntimeWrites":0}

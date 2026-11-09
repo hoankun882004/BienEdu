@@ -1,0 +1,1953 @@
+{
+  "passed": true,
+  "states": [
+    {
+      "name": "home",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 285.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 55.200000047683716,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 24.796875
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 59.799999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 97.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.0017605633802816902,
+      "domContentLoadedMs": 81.20000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 52.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 54.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 48,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 68.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 48,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 64.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 56.5625,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 56.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 56.5625,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 73.30000007152557,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 56.5625,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 77.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 112
+        },
+        {
+          "height": 56.5625,
+          "width": 112
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 265.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 61.800000071525574,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 24.90625
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 57.700000047683716,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 56.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 59.700000047683716,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 70.19999992847443,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 67.70000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 48,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 64.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 48,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 51.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 56.5625,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 53.799999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 48,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 53.699999928474426,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 56.5625,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 68.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 132
+        },
+        {
+          "height": 56.5625,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 245.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 74.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 25.015625
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 105.29999995231628,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 48,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 67.20000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 45.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 79.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 71.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 58.699999928474426,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 64.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 90.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 66.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 147
+        },
+        {
+          "height": 48,
+          "width": 147
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 330.3000000715256,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 74.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 25.125
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 66.80000007152557,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 56.300000071525574,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 59.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 66.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 62.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 67.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 61.59999990463257,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 60.799999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 60.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 60.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 167
+        },
+        {
+          "height": 48,
+          "width": 167
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.005457857080424826,
+      "domContentLoadedMs": 254,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.0732421875,
+      "domContentLoadedMs": 69.80000007152557,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 26.171875
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.07066726684570312,
+      "domContentLoadedMs": 50.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 47,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.24932193756103516,
+      "domContentLoadedMs": 76.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.24932193756103516,
+      "domContentLoadedMs": 62.299999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.03755427140276879,
+      "domContentLoadedMs": 60.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.037407875061035156,
+      "domContentLoadedMs": 56.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.037564818863756955,
+      "domContentLoadedMs": 58.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.037407875061035156,
+      "domContentLoadedMs": 51.299999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0.16230625449679792,
+      "domContentLoadedMs": 57.299999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.08001784887164831,
+      "domContentLoadedMs": 63.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 336
+        },
+        {
+          "height": 48,
+          "width": 336
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.0004004065413028002,
+      "domContentLoadedMs": 278.6999999284744,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.0732421875,
+      "domContentLoadedMs": 71.29999995231628,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 26.96875
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.10443115234375,
+      "domContentLoadedMs": 67.30000007152557,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 57.699999928474426,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.28555425008138025,
+      "domContentLoadedMs": 60.40000009536743,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.28555425008138025,
+      "domContentLoadedMs": 77.70000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.05002467689337209,
+      "domContentLoadedMs": 54.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.049877166748046875,
+      "domContentLoadedMs": 45.299999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.04995766747742891,
+      "domContentLoadedMs": 67.70000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.049877166748046875,
+      "domContentLoadedMs": 52.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0.1196096382724742,
+      "domContentLoadedMs": 57,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.06853518728166819,
+      "domContentLoadedMs": 59.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Xem lộ trình Toán 12",
+          "height": 27.890625
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.05525524110616896,
+      "domContentLoadedMs": 330.2999999523163,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.05490483162518302,
+      "domContentLoadedMs": 71.19999992847443,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 27.890625
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.05490483162518302,
+      "domContentLoadedMs": 58.300000071525574,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 37.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.24962920174475356,
+      "domContentLoadedMs": 62.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.24962920174475356,
+      "domContentLoadedMs": 57.90000009536743,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD13",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.037501009642110485,
+      "domContentLoadedMs": 61.39999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD01",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.03738961841142021,
+      "domContentLoadedMs": 68.79999995231628,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD01",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.03743492372393913,
+      "domContentLoadedMs": 51.799999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD20",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.03738961841142021,
+      "domContentLoadedMs": 50,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD06",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0.07848063171888751,
+      "domContentLoadedMs": 64.70000004768372,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "← CD02",
+          "height": 31.34375
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0.05288370776908183,
+      "domContentLoadedMs": 60.200000047683716,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 44,
+          "width": 216
+        },
+        {
+          "height": 44,
+          "width": 216
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 421.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "course",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 63.60000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "papers",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [
+        {
+          "label": "Về trang chủ",
+          "height": 26.421875
+        }
+      ],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 52.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "registration",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 67.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "roadmap",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 65.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "topic",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 59.699999928474426,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": []
+    },
+    {
+      "name": "knowledge",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 56.09999990463257,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "name": "method",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 59.5,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "name": "example",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 55.799999952316284,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 41.59999990463257,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "name": "graph",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 1,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 54.10000002384186,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mathErrors": 0,
+      "tinyControls": [],
+      "engineLoads": 0,
+      "pdfLoads": 0,
+      "cls": 0,
+      "domContentLoadedMs": 55.89999997615814,
+      "plotWithinViewport": true,
+      "singleMain": true,
+      "navigationTargets": [
+        {
+          "height": 48,
+          "width": 374
+        },
+        {
+          "height": 48,
+          "width": 374
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

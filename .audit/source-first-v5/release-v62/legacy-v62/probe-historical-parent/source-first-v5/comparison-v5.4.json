@@ -1,0 +1,6230 @@
+{
+  "schemaVersion": "bienedu.comparison.v5.4",
+  "snapshotHash": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "counts": {
+    "MACHINE_MATCHED": 5,
+    "CONFIRMED_CONVERSION_DEFECT": 0,
+    "AMBIGUOUS": 35
+  },
+  "items": [
+    {
+      "itemId": "pdf-area-absolute",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            147.0638427734375,
+            560.280029296875,
+            269.2103271484375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "|f(x)| dx .",
+      "extractedExpression": "|f(x)| dx .",
+      "candidate": "S=\\int_a^b|f(x)|\\,dx",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-area-absolute:root:value",
+          "value": "S=∫ₐᵇ|f(x)|dx"
+        },
+        {
+          "targetId": "pdf-area-absolute:bound-order-condition",
+          "value": "Miền được giới hạn bởi y=f(x), Ox, x=a và x=b, với \\(a<b\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "E759153698B0E2A15C2EDA34196FE120DCFBBCA78F4729F058F8BC793E74BAE7",
+          "tokens": [
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "F9DCF17E91B3CCC7028B334A222F17AA9E1AECC89557C3AA8B8E1A7B98126477",
+          "tokens": [
+            [
+              "mi",
+              "S"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 1
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-area-absolute.png",
+          "sha256": "080937CFDE2878E72F60B78BA1FAD6CC535E15F453AEEE141B2F00DBD4AEED3D",
+          "kind": "source-crop",
+          "page": 34
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-area-piecewise",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 34,
+          "bbox": [
+            35,
+            422.9488525390625,
+            560.280029296875,
+            554.8522033691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "0\n(4 −2x) dx +",
+      "extractedExpression": "0\n(4 −2x) dx +",
+      "candidate": "S=\\int_0^2(4-2x)\\,dx+\\int_2^3(2x-4)\\,dx=5",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-area-piecewise:setup.expression",
+          "value": "S=∫₀²(4−2x)dx+∫₂³(2x−4)dx"
+        },
+        {
+          "targetId": "pdf-area-piecewise:answer",
+          "value": "S=5."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "E1787F171A438C19255609A376BC508635A6AF1673F5CF2DFC3638A9F1B68C12",
+          "tokens": [
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "CE20540EE84E09A7DE24722D6B839D8FF5BC560A0B84FC8019AB8A58026E889C",
+          "tokens": [
+            [
+              "mi",
+              "S"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "5"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 2
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-area-piecewise.png",
+          "sha256": "6B8CDA86F8867866E8A879656CB2681C1ECFB3C0151BC26B3F4C74B3CCAFF4B3",
+          "kind": "source-crop",
+          "page": 34
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-counting-source",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
+        "documentId": "cd20-cd21-theory",
+        "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            680.3370361328125,
+            560.280029296875,
+            802.292236328125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "N = 3 + 4 + 1 = 8 cách .",
+      "extractedExpression": "N = 3 + 4 + 1 = 8 cách .",
+      "candidate": "N=3+4+1=8",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "3A6725DB4D40158AFC89BF677CDE2BE3210ADAC738E7DE11CD81011FB7F9E3F1",
+          "tokens": [
+            [
+              "mi",
+              "N"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "8"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "The corresponding legacy Example has no stable ID/sourceBlockId; its fallback ID depends on array order. Do not bind or overwrite it by position.",
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-counting-source.png",
+          "sha256": "A996A118084801C97669D26F722B7BF20A068BABC9BAA5D476411C4595BAF441",
+          "kind": "source-crop",
+          "page": 4
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-definite-example",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            511.7308349609375,
+            560.280029296875,
+            648.5701904296875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "0\n(3x2 −2x) dx.",
+      "extractedExpression": "0\n(3x2 −2x) dx.",
+      "candidate": "I=\\int_0^2(3x^2-2x)\\,dx",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-definite-example:prompt",
+          "value": "Áp dụng công thức Newton–Leibniz để tính I=∫₀²(3x²−2x)dx."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "E37D99B39F880F6ED6E43EF8D13AD2FB1DFFE6E93CF79D0A4172A627150C977C",
+          "tokens": [
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "9CA4296FD90882E5EA3A735BEB4B1DD5B9C836E959CFE6D279D4899D23EA27CF",
+          "tokens": [
+            [
+              "mi",
+              "I"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 1
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-definite-example.png",
+          "sha256": "EFC5140098A511A5AB25090125E3B9EF4E292E63FC36F381465A7CE558C16451",
+          "kind": "source-crop",
+          "page": 19
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-definite-integral",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            161.6788330078125,
+            560.280029296875,
+            283.8253173828125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "f(x) dx = F(b) −F(a).",
+      "extractedExpression": "f(x) dx = F(b) −F(a).",
+      "candidate": "\\int_a^b f(x)\\,dx=F(b)-F(a)",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-definite-integral:root:value",
+          "value": "∫ₐᵇf(x)dx=F(b)−F(a)"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "64C32DC8512FA72F9104B7E27DA10CD0E35E22C3FB4CB4BD8BF9C28749605277",
+          "tokens": [
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "a"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "88615BA5B65133203B63259DDC7729ADA0A9EC0B8CAFCE308613D42DEAC781B0",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "a"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 1
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-definite-integral.png",
+          "sha256": "827A1E0ECC039E936BC388151C64973209C1591F7504E74D6A607154990B6C3A",
+          "kind": "source-crop",
+          "page": 19
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-derivative-log",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            256.3669128417969,
+            560.280029296875,
+            393.6813659667969
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "u ,\n(loga u)′ =\nu′",
+      "extractedExpression": "u ,\n(loga u)′ =\nu′",
+      "candidate": "(\\log_a u)'=\\frac{u'}{u\\ln a},\\quad a>0,\\ a\\ne1,\\ u>0",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-derivative-log:root:expressions",
+          "value": [
+            "(e^u)'=u'e^u",
+            "(a^u)'=u'a^u\\ln a",
+            "(\\ln u)'=\\frac{u'}{u}",
+            "(\\log_a u)'=\\frac{u'}{u\\ln a}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-log:page:expressions",
+          "value": [
+            "(e^u)'=u'e^u",
+            "(a^u)'=u'a^u\\ln a",
+            "(\\ln u)'=\\frac{u'}{u}",
+            "(\\log_a u)'=\\frac{u'}{u\\ln a}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-log:topic:expressions",
+          "value": [
+            "(e^u)'=u'e^u",
+            "(a^u)'=u'a^u\\ln a",
+            "(\\ln u)'=\\frac{u'}{u}",
+            "(\\log_a u)'=\\frac{u'}{u\\ln a}"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "ACF9F38F7DF5A925D757E472D629D50D436A8EED29AC499A47584A91A4927364",
+          "tokens": [
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "D9E038DEE9FB98E7670B0DBE240B161D8B815A65AB01E0BFCF08020F06DAC15D",
+          "tokens": [
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 1,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-derivative-log.png",
+          "sha256": "01F0C39B2865C64354BA4A96E3D5E9D16B5541A0D8DD3F93586523CCAEBE8198",
+          "kind": "source-crop",
+          "page": 4
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-derivative-power",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            151.02407836914062,
+            560.280029296875,
+            275.21636962890625
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "(c)′ = 0,\n(xn)′ = nxn−1,\n(u + v)′ = u′ + v′,",
+      "extractedExpression": "(c)′ = 0,\n(xn)′ = nxn−1,\n(u + v)′ = u′ + v′,",
+      "candidate": "(x^n)'=nx^{n-1}",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-derivative-power:root:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-power:page:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-power:topic:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "7BFEA05E5B0DD17F6BB2DD6AB1340D7E8AF69A3582C36FDE51DEA8329FDFF8B3",
+          "tokens": [
+            [
+              "mi",
+              "c"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "v"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 5,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "CA3B38E24A474A4ACE6D8B7781A89856860BAB23B0975E56B95E5F645709E7F7",
+          "tokens": [
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 3,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-derivative-power.png",
+          "sha256": "C847E99353FC22AAACFBB66C683EDD6016A7E5BD366D0CF6AF597A76AAE87BE2",
+          "kind": "source-crop",
+          "page": 4
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-derivative-quotient",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            175.37008666992188,
+            560.280029296875,
+            299.5613708496094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "(uv)′ = u′v + uv′,",
+      "extractedExpression": "(uv)′ = u′v + uv′,",
+      "candidate": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-derivative-quotient:root:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-quotient:page:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-quotient:topic:expressions",
+          "value": [
+            "(c)'=0",
+            "(x^n)'=nx^{n-1}",
+            "(u+v)'=u'+v'",
+            "(uv)'=u'v+uv'",
+            "\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "99D6A8592B20B8049C466B701CD50FDD00B6F1ECFE42A2B9BA2138D1AA9C6317",
+          "tokens": [
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 3,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "42DA340415B38660F46BD9E830AA9B4BEFB3E7FE31ED5354DA0007FC3CD53B64",
+          "tokens": [
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mi",
+              "v"
+            ],
+            [
+              "mn",
+              "2"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 2,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 4,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-derivative-quotient.png",
+          "sha256": "9328740AB73003CB9B215D0C26B9E6ED4E510E20EE5EA35C4316CF99DEF78F00",
+          "kind": "source-crop",
+          "page": 4
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-derivative-root",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 4,
+          "bbox": [
+            35,
+            196.9649200439453,
+            560.280029296875,
+            326.7963562011719
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "(√u)′ =\nu′",
+      "extractedExpression": "(√u)′ =\nu′",
+      "candidate": "(\\sqrt u)'=\\frac{u'}{2\\sqrt u},\\quad u>0",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-derivative-root:root:expressions",
+          "value": [
+            "[f(u)]'=f'(u)u'",
+            "(\\sqrt{u})'=\\frac{u'}{2\\sqrt{u}},\\quad u>0"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-root:page:expressions",
+          "value": [
+            "[f(u)]'=f'(u)u'",
+            "(\\sqrt{u})'=\\frac{u'}{2\\sqrt{u}},\\quad u>0"
+          ]
+        },
+        {
+          "targetId": "pdf-derivative-root:topic:expressions",
+          "value": [
+            "[f(u)]'=f'(u)u'",
+            "(\\sqrt{u})'=\\frac{u'}{2\\sqrt{u}},\\quad u>0"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "53841767CD1348D87CAE8524D2CB57DE5D35C17EE5F94D1A4C8E31C4E1AA7921",
+          "tokens": [
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 1,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "5D2D5AC7879A5B23EF84ABA4733AC26393B793722246C0DBE81686F02EA4984E",
+          "tokens": [
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mi",
+              "u"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 2,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-derivative-root.png",
+          "sha256": "D1BB605A4302014487AC370D943DB63F2F976C4270709521D25CB8C3461903B6",
+          "kind": "source-crop",
+          "page": 4
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-exponent-warning",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            311.84906005859375,
+            560.280029296875,
+            436.7171936035156
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Chú ý. Không biến aα + aβ thành aα+β.",
+      "extractedExpression": "Chú ý. Không biến aα + aβ thành aα+β.",
+      "candidate": "\\text{Không biến }a^\\alpha+a^\\beta\\text{ thành }a^{\\alpha+\\beta}.",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-exponent-warning:knowledge-note",
+          "value": "Không biến \\(a^{\\alpha}+a^{\\beta}\\) thành \\(a^{\\alpha+\\beta}\\)."
+        },
+        {
+          "targetId": "pdf-exponent-warning:method-note",
+          "value": "Không biến \\(a^{\\alpha}+a^{\\beta}\\) thành \\(a^{\\alpha+\\beta}\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "BB1ADC555A021E256151CF89D4BF5C4E3B771D8F8A82676F2F19684B848F4438",
+          "tokens": [
+            [
+              "mo",
+              "ˆ"
+            ],
+            [
+              "mo",
+              "ˆ"
+            ],
+            [
+              "mo",
+              "ˊ"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "α"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "β"
+            ],
+            [
+              "mo",
+              "ˋ"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "α"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "β"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 3,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-exponent-warning.png",
+          "sha256": "E6D7941B4CD35BC485DA7B1BD1C2E81F49E54F2F92CB8813F73121ADCDBBF134",
+          "kind": "source-crop",
+          "page": 9
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-geometric-point",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 64,
+          "bbox": [
+            35,
+            578.2581176757812,
+            560.280029296875,
+            703.1261596679688
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ1. Viết các tiếp tuyến của y = x2 đi qua A(0; −1).",
+      "extractedExpression": "Ví dụ1. Viết các tiếp tuyến của y = x2 đi qua A(0; −1).",
+      "candidate": "y=x^2,\\quad A(0;-1)",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-geometric-point:prompt",
+          "value": "Viết các tiếp tuyến của y = x² đi qua A(0; −1)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "21BC544F5FA87189447540ED17C8F25F951B4C49AF5E76C9881372D9676727DE",
+          "tokens": [
+            [
+              "mi",
+              "y"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-geometric-point.png",
+          "sha256": "AA39A042D49DD58564EFB5DFC25A718B0B4AF4619F0F4968B32F76079A860207",
+          "kind": "source-crop",
+          "page": 64
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-graph-associated",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 19,
+          "bbox": [
+            35,
+            684.81298828125,
+            560.280029296875,
+            810.018310546875
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Đồthịy = x3 có phần diện tích đại sốdương và âm triệt tiêu nhau.",
+      "extractedExpression": "Đồthịy = x3 có phần diện tích đại sốdương và âm triệt tiêu nhau.",
+      "candidate": "J=\\int_{-1}^{1}x^3\\,dx=0",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-graph-associated:prompt",
+          "value": "Tính J=∫₋₁¹x³dx."
+        },
+        {
+          "targetId": "pdf-graph-associated:answer",
+          "value": "J=0."
+        },
+        {
+          "targetId": "pdf-graph-associated:setup.expression",
+          "value": "J=[x⁴/4]₋₁¹"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "2177D6EA26CE5F6AAD86CA2CA08FA5129EE0FF91F0D4A36F7588623EF1403FF7",
+          "tokens": [
+            [
+              "mi",
+              "J"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "0"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 1
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-graph-associated.png",
+          "sha256": "ED167CB19183309A34CA92DB8474091AFB035D4D40D3F64823C6F5373146612C",
+          "kind": "source-crop",
+          "page": 19
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-base",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            314.8077392578125,
+            560.280029296875,
+            445.15606689453125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "ax (a > 0, a̸ = 1)\nax",
+      "extractedExpression": "ax (a > 0, a̸ = 1)\nax",
+      "candidate": "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C,\\quad a>0,\\ a\\ne1",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-base:root:expressions",
+          "value": [
+            "\\int e^x\\,dx=e^x+C",
+            "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-base:page:expressions",
+          "value": [
+            "\\int e^x\\,dx=e^x+C",
+            "\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "2B8FC9DC9B8497BC720383C7F832111723C89D1C291A4A900965C2824539420A",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-base.png",
+          "sha256": "0BA7FF293C50C6DFABA46110AAE10CFCA38B5537DCE76F903BCBD2702B73BE07",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-chain",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            488.11871337890625,
+            560.280029296875,
+            618.6583251953125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "f ′(x)[f(x)]n dx = [f(x)]n+1",
+      "extractedExpression": "f ′(x)[f(x)]n dx = [f(x)]n+1",
+      "candidate": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-chain:root:value",
+          "value": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C"
+        },
+        {
+          "targetId": "pdf-integral-chain:page:value",
+          "value": "\\int f'(x)[f(x)]^n\\,dx=\\frac{[f(x)]^{n+1}}{n+1}+C"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "24B988FED344CF1D8E6A85E2E7D7AB361420B781876206C163FDED1FA99F6A15",
+          "tokens": [
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "9435AD79604F825FEED7D84E9CC6B47EDBC029891BF6B73801FAC0DD5EA3DD71",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 3,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-chain.png",
+          "sha256": "0F2D1B1B464D3B00DEDB91D3578FCA77DFDDDB48E611528AC8B33E83C0BFCB80",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-cos-reciprocal",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            342.007080078125,
+            560.280029296875,
+            479.1753234863281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "cos x\nsin x + C\n1\ncos2 x\ntan x + C",
+      "extractedExpression": "cos x\nsin x + C\n1\ncos2 x\ntan x + C",
+      "candidate": "\\int\\frac1{\\cos^2x}\\,dx=\\tan x+C",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-cos-reciprocal:root:expressions",
+          "value": [
+            "\\int\\frac{1}{\\cos^2 x}\\,dx=\\tan x+C",
+            "\\int\\frac{1}{\\sin^2 x}\\,dx=-\\cot x+C",
+            "\\int\\tan x\\,dx=-\\ln|\\cos x|+C",
+            "\\int\\cot x\\,dx=\\ln|\\sin x|+C"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-cos-reciprocal:page:expressions",
+          "value": [
+            "\\int\\frac{1}{\\cos^2 x}\\,dx=\\tan x+C",
+            "\\int\\frac{1}{\\sin^2 x}\\,dx=-\\cot x+C",
+            "\\int\\tan x\\,dx=-\\ln|\\cos x|+C",
+            "\\int\\cot x\\,dx=\\ln|\\sin x|+C"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "D8A6ADC1A962CE34787A6405CD090822AACA6B124888F968F02B465FD00D1B7A",
+          "tokens": [
+            [
+              "mi",
+              "cos"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "sin"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "cos"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "tan"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "255ECE911B2512189A615F20492CBDCD85258CDE7716C5D54BACF5D4A9EBB6A4",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "cos"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "tan"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-cos-reciprocal.png",
+          "sha256": "AE4C728BD7DDC39BF11268AA5F5FC6C9440E1B75BFF87C3387F7F926F1BDFF1D",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-definition",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            139.6298370361328,
+            560.280029296875,
+            261.7763214111328
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "f(x) dx = F(x) + C,\nC ∈R.",
+      "extractedExpression": "f(x) dx = F(x) + C,\nC ∈R.",
+      "candidate": "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb R",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-definition:root:expressions",
+          "value": [
+            "F'(x)=f(x),\\quad x\\in I",
+            "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb{R}"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-definition:page:expressions",
+          "value": [
+            "F'(x)=f(x),\\quad x\\in I",
+            "\\int f(x)\\,dx=F(x)+C,\\quad C\\in\\mathbb{R}"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "EF5BCF6ADBFA7FFEF34FFECFB1C2AFDF1AFD17316F9926FDB2CB7FA80C11BD54",
+          "tokens": [
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mo",
+              "∈"
+            ],
+            [
+              "mi",
+              "R"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "0DAA3F5E0D332B29CD790777EB2E3F5F260987E6D18EDD04AB99EB0EEB7640D4",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "F"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mo",
+              "∈"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-definition.png",
+          "sha256": "8C2163F2E0CB8C7C372DEBAE20D978454352924EC18F5C1AAAB7B4A3013E2B60",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-log",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            290.6871032714844,
+            560.280029296875,
+            427.5923156738281
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "1\nx\nln |x| + C\nex\nex + C",
+      "extractedExpression": "1\nx\nln |x| + C\nex\nex + C",
+      "candidate": "\\int\\frac1x\\,dx=\\ln|x|+C",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-log:root:value",
+          "value": "\\int\\frac{1}{x}\\,dx=\\ln|x|+C"
+        },
+        {
+          "targetId": "pdf-integral-log:page:value",
+          "value": "\\int\\frac{1}{x}\\,dx=\\ln|x|+C"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "CB1864E379802278A0BF16728F1E5FB6867D6CCCD30A2F41B32C66D9E37223C0",
+          "tokens": [
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "e"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "e"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "6E3D94BF3F6375C09F83C5891195B81D67E17C8EE559592F064C7AEB3C6A31CB",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-log.png",
+          "sha256": "1E2416E98776C418319BEACDF1187D9E421AEB6AE3442D4F556FBE2F83630711",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-power",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            261.4947509765625,
+            560.280029296875,
+            391.8430480957031
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "k\nkx + C\nxn (n̸ = −1)\nxn+1",
+      "extractedExpression": "k\nkx + C\nxn (n̸ = −1)\nxn+1",
+      "candidate": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\quad n\\ne-1",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-power:root:value",
+          "value": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C"
+        },
+        {
+          "targetId": "pdf-integral-power:page:value",
+          "value": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "E3A35A23DA1455D7FAFCA032F1E1FC72BB6346BB355FF3C4E097E2D534381D59",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-power.png",
+          "sha256": "3524F791F9757FF1A97419D65F27A1EBE08CA93456ED856DDD6AE25CAF400C5A",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-radical",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            421.8780822753906,
+            560.280029296875,
+            560.1290588378906
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "1 −x2\narcsin x + C\n1\na2 + x2",
+      "extractedExpression": "1 −x2\narcsin x + C\n1\na2 + x2",
+      "candidate": "\\int\\frac1{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-radical:root:expressions",
+          "value": [
+            "\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+            "\\int\\frac{1}{1+x^2}\\,dx=\\arctan x+C",
+            "\\int\\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\frac{x}{a}+C"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-radical:root:value",
+          "value": "\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C"
+        },
+        {
+          "targetId": "pdf-integral-radical:page:expressions",
+          "value": [
+            "\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C",
+            "\\int\\frac{1}{1+x^2}\\,dx=\\arctan x+C",
+            "\\int\\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\frac{x}{a}+C"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-radical:page:value",
+          "value": "\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin x+C"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "17F6595324929984EC9B2A28CCBE057B9A8908444DFCC88DEE1AF2B5A5DF85D3",
+          "tokens": [
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "arcsin"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "45DB0CAF66FF096160AD2F516AA91A5266F93BA9E0291EC1EEB2DB317E4149E9",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "arcsin"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 1,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-radical.png",
+          "sha256": "A9D1A829ED45F055BB275AC3CB4053DBA951CF7BC86C5A4EABCCBA2ED81EFAFD",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-integral-sin-reciprocal",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
+        "documentId": "cd12-cd14-calculus",
+        "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+        "location": {
+          "page": 3,
+          "bbox": [
+            35,
+            368.631103515625,
+            560.280029296875,
+            506.1803283691406
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "1\nsin2 x\n−cot x + C\ntan x\n−ln | cos x| + C",
+      "extractedExpression": "1\nsin2 x\n−cot x + C\ntan x\n−ln | cos x| + C",
+      "candidate": "\\int\\frac1{\\sin^2x}\\,dx=-\\cot x+C",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-integral-sin-reciprocal:root:expressions",
+          "value": [
+            "\\int\\frac{1}{\\cos^2 x}\\,dx=\\tan x+C",
+            "\\int\\frac{1}{\\sin^2 x}\\,dx=-\\cot x+C",
+            "\\int\\tan x\\,dx=-\\ln|\\cos x|+C",
+            "\\int\\cot x\\,dx=\\ln|\\sin x|+C"
+          ]
+        },
+        {
+          "targetId": "pdf-integral-sin-reciprocal:page:expressions",
+          "value": [
+            "\\int\\frac{1}{\\cos^2 x}\\,dx=\\tan x+C",
+            "\\int\\frac{1}{\\sin^2 x}\\,dx=-\\cot x+C",
+            "\\int\\tan x\\,dx=-\\ln|\\cos x|+C",
+            "\\int\\cot x\\,dx=\\ln|\\sin x|+C"
+          ]
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "C51C4DB9EE97D47569B31697095E10049DD676CC80EF727DF0E08EBD4CA32FFB",
+          "tokens": [
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "sin"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "cot"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ],
+            [
+              "mi",
+              "tan"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "cos"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "D3E07C1096CF608240EC1A3F60787BE88D6E25DCA6C6038E0ED4E67CF963F930",
+          "tokens": [
+            [
+              "mo",
+              "∫"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "sin"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mi",
+              "d"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "cot"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "C"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-integral-sin-reciprocal.png",
+          "sha256": "A564A5CC45FF73C2D23B8771485C8717ACB5C1A4542B3426EDA8DA828D280B91",
+          "kind": "source-crop",
+          "page": 3
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-log-bases",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            83.34272766113281,
+            560.280029296875,
+            207.10836791992188
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ1. Tính A = log2 12 −log2 3 + log4 8.",
+      "extractedExpression": "Ví dụ1. Tính A = log2 12 −log2 3 + log4 8.",
+      "candidate": "A=\\log_2 12-\\log_2 3+\\log_4 8",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-log-bases:prompt",
+          "value": "Tính A = log₂ 12 −log₂ 3 + log₄ 8."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "8CD60FE370A87D53FE35665D4EF732C1F8866A9DE4AFE36C45A24BE53C984A9B",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "12"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mn",
+              "8"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 3,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-log-bases.png",
+          "sha256": "EB18D6BD8FA257AE98D70CA3EC6A066A5A32C9D2C1A5154C3789ADBEFAA75AAE",
+          "kind": "source-crop",
+          "page": 10
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-log-nested",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            121.1717529296875,
+            560.280029296875,
+            243.28016662597656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ3. Tính ln(e2) + log 0,01.",
+      "extractedExpression": "Ví dụ3. Tính ln(e2) + log 0,01.",
+      "candidate": "\\ln(e^2)+\\log 0{,}01",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-log-nested:prompt",
+          "value": "Tính ln(e²) + log 0,01."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "DFDC061395B742266E3F06A0AAC1E6FF60FD076A0E392FFAE73B07F5A8161D9A",
+          "tokens": [
+            [
+              "mi",
+              "ln"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mi",
+              "e"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "0,01"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-log-nested.png",
+          "sha256": "794DF9A0ACC092F0FE4FE2112C859275FBDA4EBFB0B1014E83AC98D639ADF89A",
+          "kind": "source-crop",
+          "page": 10
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-log-product",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 10,
+          "bbox": [
+            35,
+            160.52572631835938,
+            560.280029296875,
+            284.29136657714844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ5. Tính log2 3 · log3 8.",
+      "extractedExpression": "Ví dụ5. Tính log2 3 · log3 8.",
+      "candidate": "\\log_2 3\\cdot\\log_3 8",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-log-product:prompt",
+          "value": "Tính log₂ 3 · log₃ 8."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "8EEEB75011970A9C9EE10D223FA0FDF9C90A38DBBCFA65E516B050F678CB6AD0",
+          "tokens": [
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "⋅"
+            ],
+            [
+              "mi",
+              "log"
+            ],
+            [
+              "mo",
+              "⁡"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mn",
+              "8"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 2,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-log-product.png",
+          "sha256": "8AE607689D1B6813CC22B7EE28ECB491310362C3C6ABCD9C142A004630F4572A",
+          "kind": "source-crop",
+          "page": 10
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-nested-exponents",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            216.090087890625,
+            560.280029296875,
+            340.2381896972656
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ6. Tính (23)2/3 + 2−1.",
+      "extractedExpression": "Ví dụ6. Tính (23)2/3 + 2−1.",
+      "candidate": "(2^3)^{2/3}+2^{-1}",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-nested-exponents:prompt",
+          "value": "Tính \\((2^3)^{2/3}+2^{-1}\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "925508255933B2CA2785A6CE28A246D7FBF06DE428FA6343FB6CD632EF3C65CE",
+          "tokens": [
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 3,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-nested-exponents.png",
+          "sha256": "FDD908BEC816E2C32BE216CDC374C5AF7166E20C7279A6C29A4B12B04AB39B06",
+          "kind": "source-crop",
+          "page": 9
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-powers-condition",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            200.0341033935547,
+            560.280029296875,
+            320.9432067871094
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ5. Rút gọn a",
+      "extractedExpression": "Ví dụ5. Rút gọn a",
+      "candidate": "a^{\\sqrt2+1}a^{2-\\sqrt2},\\quad a>0",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-powers-condition:prompt",
+          "value": "Rút gọn \\(a^{\\sqrt{2}+1}a^{2-\\sqrt{2}}\\), với \\(a>0\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "A898CC2BDCBC2FFDB2A041FFBEABCC699E2BE3DBD908E08BE7D1C23FD258D006",
+          "tokens": [
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 2,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-powers-condition.png",
+          "sha256": "1D76C0539DA93D447BB7F0E717B889DE484FC2B3D6DD32DD9F75EAD420CF355B",
+          "kind": "source-crop",
+          "page": 9
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-rational-domain",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            389.6515197753906,
+            560.280029296875,
+            517.7960205078125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ5. f′(x) =\n−x2−1\n(x−1)2(x+1)2 trên x̸ = ±1. Thay x = 2, được f′(2) = −5",
+      "extractedExpression": "Ví dụ5. f′(x) =\n−x2−1\n(x−1)2(x+1)2 trên x̸ = ±1. Thay x = 2, được f′(2) = −5",
+      "candidate": "f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2},\\quad x\\ne\\pm1",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-rational-domain:prompt",
+          "value": "Cho \\(f(x)=\\frac{x}{x^2-1}\\). Tính \\(f'(2)\\)."
+        },
+        {
+          "targetId": "pdf-rational-domain:answer",
+          "value": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\)."
+        },
+        {
+          "targetId": "pdf-rational-domain:source-solution.expression",
+          "value": "\\(f'(x)=\\frac{-x^2-1}{(x-1)^2(x+1)^2}\\) trên \\(x\\ne\\pm1\\). Thay \\(x=2\\), được \\(f'(2)=-\\frac{5}{9}\\)."
+        },
+        {
+          "targetId": "pdf-rational-domain:title",
+          "value": "Ví dụ 5"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "BA072D61FA3D716B7D3E08480E8AACDEA233EFBC47E8E820FC63E9A831CCF0E0",
+          "tokens": [
+            [
+              "mi",
+              "f"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "±"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 4,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-rational-domain.png",
+          "sha256": "7F4009B239BCF24B7759BDC7C35D171E6C8C31BFFFB1D95009FF04BB49C2F5FD",
+          "kind": "source-crop",
+          "page": 66
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-rational-exponents",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            118.23406982421875,
+            560.280029296875,
+            242.38218688964844
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ1. Tính A = 163/4 + 27−2/3.",
+      "extractedExpression": "Ví dụ1. Tính A = 163/4 + 27−2/3.",
+      "candidate": "A=16^{3/4}+27^{-2/3}",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-rational-exponents:prompt",
+          "value": "Tính \\(A=16^{3/4}+27^{-2/3}\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "083E4993220B71C62A771B5712B8D0C3F9401654371A509B1DEDD8CE9A4B9750",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "16"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "27"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mn",
+              "3"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 2,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-rational-exponents.png",
+          "sha256": "36CB43E6D4A358ADDAECE3C0C8C01E788970AEE03960F8C5EE9923759C00ACDC",
+          "kind": "source-crop",
+          "page": 9
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-root-domain",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            661.235107421875,
+            560.280029296875,
+            785.3831787109375
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ4. D = [−2; 2]. Với −2 < x < 2, y′ = −x/",
+      "extractedExpression": "Ví dụ4. D = [−2; 2]. Với −2 < x < 2, y′ = −x/",
+      "candidate": "y'=-\\frac{x}{\\sqrt{4-x^2}},\\quad -2<x<2",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-root-domain:prompt",
+          "value": "Tìm tập xác định và đạo hàm của \\(y=\\sqrt{4-x^2}\\)."
+        },
+        {
+          "targetId": "pdf-root-domain:answer",
+          "value": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút."
+        },
+        {
+          "targetId": "pdf-root-domain:source-solution.expression",
+          "value": "\\(D=[-2;2]\\). Với \\(-2<x<2\\), \\(y'=-\\frac{x}{\\sqrt{4-x^2}}\\). Không áp dụng công thức tại hai đầu mút."
+        },
+        {
+          "targetId": "pdf-root-domain:title",
+          "value": "Ví dụ 4"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "618B5AC3BAE976CCC85BE09B27CC0F80EC7124E6A17D1909CB6C80EA84B84BA3",
+          "tokens": [
+            [
+              "mi",
+              "y"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "4"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mo",
+              "&lt;"
+            ],
+            [
+              "mi",
+              "x"
+            ],
+            [
+              "mo",
+              "&lt;"
+            ],
+            [
+              "mn",
+              "2"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 1,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-root-domain.png",
+          "sha256": "87ECA9BC7ECDD3175D60FB8EDEB4680BAC91DFB5F2B3776F9A5C559C9CF57CCE",
+          "kind": "source-crop",
+          "page": 66
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-root-exponents",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
+        "documentId": "cd08-cd11-exponential-logarithm",
+        "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+        "location": {
+          "page": 9,
+          "bbox": [
+            35,
+            158.5287628173828,
+            560.280029296875,
+            280.9731903076172
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ3. Rút gọn a",
+      "extractedExpression": "Ví dụ3. Rút gọn a",
+      "candidate": "\\frac{a^{\\sqrt3+2}}{a^{\\sqrt3-1}},\\quad a>0",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-root-exponents:prompt",
+          "value": "Rút gọn \\(\\dfrac{a^{\\sqrt{3}+2}}{a^{\\sqrt{3}-1}}\\), với \\(a>0\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "6D134A4BE2DCE5A7102B3BE3A303E2CED34FDC84C28C30F98E251B1061E6842A",
+          "tokens": [
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "2"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "&gt;"
+            ],
+            [
+              "mn",
+              "0"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 2,
+            "mroot": 0,
+            "msup": 2,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-root-exponents.png",
+          "sha256": "C103B109F55C93763DE9FD7DE71B59A17758CC45ECB2F015B8740C5CD6275CB7",
+          "kind": "source-crop",
+          "page": 9
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "pdf-simultaneous-constraints",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "pdf",
+        "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
+        "documentId": "cd01-cd07-functions",
+        "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+        "location": {
+          "page": 66,
+          "bbox": [
+            35,
+            199.48907470703125,
+            560.280029296875,
+            323.63720703125
+          ],
+          "pageSize": [
+            595.280029296875,
+            841.8900146484375
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "Ví dụ8. f′ = 3ax2 + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
+      "extractedExpression": "Ví dụ8. f′ = 3ax2 + b. Từb = −3, 3a + b = 3 được a = 2, b = −3.",
+      "candidate": "b=-3,\\quad 3a+b=3",
+      "currentRuntime": [
+        {
+          "targetId": "pdf-simultaneous-constraints:answer",
+          "value": "\\(f'=3ax^2+b\\). Từ \\(b=-3\\), \\(3a+b=3\\) được \\(a=2\\), \\(b=-3\\)."
+        },
+        {
+          "targetId": "pdf-simultaneous-constraints:source-solution.expression",
+          "value": "\\(f'=3ax^2+b\\). Từ \\(b=-3\\), \\(3a+b=3\\) được \\(a=2\\), \\(b=-3\\)."
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": null,
+        "candidate": {
+          "hash": "B9138001A6ED164E7DC7ADE5AD2D63CEA3BA1FB3F256C2F71ED13401EAAF434E",
+          "tokens": [
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mn",
+              "3"
+            ],
+            [
+              "mi",
+              "a"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mi",
+              "b"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "3"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": false,
+        "tokensPreserved": false,
+        "shapesPreserved": false
+      },
+      "sourceNormalization": null,
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "PDF benchmark transcription is not independent machine ground truth; original layout/grouping still requires review."
+      ],
+      "sourceEvidence": [
+        {
+          "path": ".content-work/source-first-v5/crops/pdf-simultaneous-constraints.png",
+          "sha256": "E4D69F32C0D0C8A0A8742E7238FDA28E123246B47A9F812D480A8F70B8564125",
+          "kind": "source-crop",
+          "page": 66
+        }
+      ],
+      "evidenceMethod": "Source/crop hashes and parsing; no independent PDF formula recognizer available",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-20.3",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            8057,
+            8066
+          ],
+          "lines": [
+            213,
+            213
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(n) = n!",
+      "extractedExpression": "P(n) = n!",
+      "candidate": "\\mathrm{P}(n) = n!",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "AB8F63A642D13DFF806B3D02E15AB6DB39271C9B3D8B662A393B7C7F1ABDC9DC",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "AB8F63A642D13DFF806B3D02E15AB6DB39271C9B3D8B662A393B7C7F1ABDC9DC",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(n) = n!",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "The native TeX edition is excluded from the current CD20/CD21 import. Existing PDF-backed counterparts are not an approved cross-edition target."
+      ],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-20.4",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9184,
+            9229
+          ],
+          "lines": [
+            237,
+            237
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "A(n,k) = n!/(n - k)! = n(n - 1)...(n - k + 1)",
+      "extractedExpression": "A(n,k) = n!/(n - k)! = n(n - 1)...(n - k + 1)",
+      "candidate": "\\mathrm{A}(n,k) = \\frac{n!}{(n - k)!} = n(n - 1)...(n - k + 1)",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "3D81D401A293503D2FAA83CE857572F66E6C64546F0EBD7F1D9D02DDEC3D038F",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "3D81D401A293503D2FAA83CE857572F66E6C64546F0EBD7F1D9D02DDEC3D038F",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mn",
+              "1"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{A}(n,k) = \\frac{n!}{(n - k)!} = n(n - 1)...(n - k + 1)",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [
+        {
+          "normalizedLatex": "0\\le k\\le n",
+          "originalContext": "\n\\textbf{A(n,k) = n!/(n - k)! = n(n - 1)...(n - k + 1)}, với 0 ≤ k ≤ n.\n",
+          "sourceStructure": "39EEC46B520102262CA968718E24616F4813D5C8A09946BA0C50F7D8C2B290FF",
+          "nativeSourceContextPresent": true,
+          "preserved": false
+        }
+      ],
+      "renderValid": true,
+      "uncertainties": [
+        "The native TeX edition is excluded from the current CD20/CD21 import. Existing PDF-backed counterparts are not an approved cross-edition target.",
+        "Printed condition has no independently matching source/runtime condition context."
+      ],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-20.5",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            9844,
+            9868
+          ],
+          "lines": [
+            253,
+            253
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "C(n,k) = n!/[k!(n - k)!]",
+      "extractedExpression": "C(n,k) = n!/[k!(n - k)!]",
+      "candidate": "\\mathrm{C}(n,k) = \\frac{n!}{k!(n - k)!}",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "6C7DF0D8F0C23CCA7446F5AB363C2CEA822E5CAE019A0AE22A7B67F027EC11CF",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "6C7DF0D8F0C23CCA7446F5AB363C2CEA822E5CAE019A0AE22A7B67F027EC11CF",
+          "tokens": [
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mi",
+              "k"
+            ],
+            [
+              "mi",
+              "n"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "k"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{C}(n,k) = \\frac{n!}{k!(n - k)!}",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [
+        {
+          "normalizedLatex": "0\\le k\\le n",
+          "originalContext": "\n\\textbf{C(n,k) = n!/[k!(n - k)!]}, với 0 ≤ k ≤ n.\n",
+          "sourceStructure": "39EEC46B520102262CA968718E24616F4813D5C8A09946BA0C50F7D8C2B290FF",
+          "nativeSourceContextPresent": true,
+          "preserved": false
+        }
+      ],
+      "renderValid": true,
+      "uncertainties": [
+        "The native TeX edition is excluded from the current CD20/CD21 import. Existing PDF-backed counterparts are not an approved cross-edition target.",
+        "Printed condition has no independently matching source/runtime condition context."
+      ],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-21.1",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            23275,
+            23289
+          ],
+          "lines": [
+            508,
+            508
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(A) = |A|/|Ω|",
+      "extractedExpression": "P(A) = |A|/|Ω|",
+      "candidate": "\\mathrm{P}(A) = \\frac{|A|}{|\\Omega |}",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "551A520CD2041F3B37987C7CB78CB11761C8ED575FD875CE8814C053093B88B0",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "A"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "551A520CD2041F3B37987C7CB78CB11761C8ED575FD875CE8814C053093B88B0",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "A"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(A) = \\frac{|A|}{|\\Omega |}",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "The native TeX edition is excluded from the current CD20/CD21 import. Existing PDF-backed counterparts are not an approved cross-edition target."
+      ],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-21.2",
+      "classification": "AMBIGUOUS",
+      "priority": 1,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            24141,
+            24175
+          ],
+          "lines": [
+            526,
+            526
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(A\\textsuperscript{c}) = 1 - P(A)",
+      "extractedExpression": "P(A\\textsuperscript{c}) = 1 - P(A)",
+      "candidate": "\\mathrm{P}(A^{c}) = 1 - \\mathrm{P}(A)",
+      "currentRuntime": [],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "8A8A4B8118DDD96E34439C045C69947173EFA72CF1B97EA9E43A834B94C94208",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mi",
+              "c"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "A"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "8A8A4B8118DDD96E34439C045C69947173EFA72CF1B97EA9E43A834B94C94208",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mi",
+              "c"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mn",
+              "1"
+            ],
+            [
+              "mo",
+              "−"
+            ],
+            [
+              "mi",
+              "A"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 1,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(A^{c}) = 1 - \\mathrm{P}(A)",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [
+        "The native TeX edition is excluded from the current CD20/CD21 import. Existing PDF-backed counterparts are not an approved cross-edition target."
+      ],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Explicit source and mathematical review required"
+    },
+    {
+      "itemId": "tex-22.1",
+      "classification": "MACHINE_MATCHED",
+      "priority": 3,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29015,
+            29037
+          ],
+          "lines": [
+            639,
+            639
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(A|B) = P(A ∩ B)/P(B)",
+      "extractedExpression": "P(A|B) = P(A ∩ B)/P(B)",
+      "candidate": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+      "currentRuntime": [
+        {
+          "targetId": "tex-22.1:native-formula",
+          "value": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "9A62B3A93B82306F7FA8495BCEBA188FAE2B19ACE3FBD59D930169E68C9A8B62",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∩"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "B"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "9A62B3A93B82306F7FA8495BCEBA188FAE2B19ACE3FBD59D930169E68C9A8B62",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∩"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "B"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(A\\mid B) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(B)}",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [
+        {
+          "normalizedLatex": "\\mathrm{P}(B)>0",
+          "originalContext": "\n\\textbf{P(A|B) = P(A ∩ B)/P(B)}, với P(B) > 0.\n",
+          "sourceStructure": "5AC01F777104799725B65D375DE0B3F42E8C9DE2039DEC4A07A45355D74E1F73",
+          "nativeSourceContextPresent": true,
+          "preserved": true
+        }
+      ],
+      "renderValid": true,
+      "uncertainties": [],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Sampling permitted; no source/math approval granted"
+    },
+    {
+      "itemId": "tex-22.2",
+      "classification": "MACHINE_MATCHED",
+      "priority": 3,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            29849,
+            29870
+          ],
+          "lines": [
+            657,
+            657
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(A ∩ B) = P(B)P(A|B)",
+      "extractedExpression": "P(A ∩ B) = P(B)P(A|B)",
+      "candidate": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+      "currentRuntime": [
+        {
+          "targetId": "tex-22.2:native-formula",
+          "value": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "7CBB96B34DB8CC9CC39029F16F790B366122A24984F1A208C208B882501B12B1",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∩"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "7CBB96B34DB8CC9CC39029F16F790B366122A24984F1A208C208B882501B12B1",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∩"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(A \\cap B) = \\mathrm{P}(B)\\mathrm{P}(A\\mid B)",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Sampling permitted; no source/math approval granted"
+    },
+    {
+      "itemId": "tex-22.4",
+      "classification": "MACHINE_MATCHED",
+      "priority": 3,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            31540,
+            31593
+          ],
+          "lines": [
+            692,
+            692
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(A) = Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})",
+      "extractedExpression": "P(A) = Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})",
+      "candidate": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+      "currentRuntime": [
+        {
+          "targetId": "tex-22.4:native-formula",
+          "value": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "BC2FC2336A3B238343B2FEA1ABF04D90A631FF06A213A2D61CFB92FD2D7D8B95",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∑"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 2,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "BC2FC2336A3B238343B2FEA1ABF04D90A631FF06A213A2D61CFB92FD2D7D8B95",
+          "tokens": [
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "∑"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 0,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 2,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(A) = \\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Sampling permitted; no source/math approval granted"
+    },
+    {
+      "itemId": "tex-22.5",
+      "classification": "MACHINE_MATCHED",
+      "priority": 3,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            32297,
+            32418
+          ],
+          "lines": [
+            709,
+            709
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(B\\textsubscript{j}|A) = P(B\\textsubscript{j})P(A|B\\textsubscript{j}) / [Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})]",
+      "extractedExpression": "P(B\\textsubscript{j}|A) = P(B\\textsubscript{j})P(A|B\\textsubscript{j}) / [Σ P(B\\textsubscript{i})P(A|B\\textsubscript{i})]",
+      "candidate": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+      "currentRuntime": [
+        {
+          "targetId": "tex-22.5:native-formula",
+          "value": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "170B2B2E908E39C79EE776973C72814F2DD1D89BC0C8A15E1CA438C3D803D89E",
+          "tokens": [
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mo",
+              "∑"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 5,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "170B2B2E908E39C79EE776973C72814F2DD1D89BC0C8A15E1CA438C3D803D89E",
+          "tokens": [
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "j"
+            ],
+            [
+              "mo",
+              "∑"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ],
+            [
+              "mi",
+              "A"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mi",
+              "B"
+            ],
+            [
+              "mi",
+              "i"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 5,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(B_{j}\\mid A) = \\frac{\\mathrm{P}(B_{j})\\mathrm{P}(A\\mid B_{j})}{\\sum \\mathrm{P}(B_{i})\\mathrm{P}(A\\mid B_{i})}",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Sampling permitted; no source/math approval granted"
+    },
+    {
+      "itemId": "tex-22.7",
+      "classification": "MACHINE_MATCHED",
+      "priority": 3,
+      "source": {
+        "kind": "tex",
+        "file": "file tài liệu latex/Ly_thuyet_To_hop_Xac_suat_Thong_ke_CD20_CD23.tex",
+        "documentId": "cd20-cd23-native-latex",
+        "sha256": "BD4F99C88A8852A8AB2FD0AF9F07C63491039F1AED0DC0FA1E04F98D0BA5FF99",
+        "location": {
+          "offsets": [
+            34035,
+            34070
+          ],
+          "lines": [
+            743,
+            743
+          ]
+        }
+      },
+      "sourceValid": true,
+      "originalExpression": "P(bệnh|+) = P(bệnh)P(+|bệnh) / P(+)",
+      "extractedExpression": "P(bệnh|+) = P(bệnh)P(+|bệnh) / P(+)",
+      "candidate": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+      "currentRuntime": [
+        {
+          "targetId": "tex-22.7:native-formula",
+          "value": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}"
+        }
+      ],
+      "proposedRuntime": [],
+      "structure": {
+        "source": {
+          "hash": "15B46BE012F87785559CB09151AEF2F4C5F7FCED78D336BF1EC68A54817DB637",
+          "tokens": [
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mo",
+              "+"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "candidate": {
+          "hash": "15B46BE012F87785559CB09151AEF2F4C5F7FCED78D336BF1EC68A54817DB637",
+          "tokens": [
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mo",
+              "="
+            ],
+            [
+              "mo",
+              "+"
+            ],
+            [
+              "mo",
+              "∣"
+            ],
+            [
+              "mo",
+              "+"
+            ]
+          ],
+          "shapes": {
+            "mfrac": 1,
+            "msqrt": 0,
+            "mroot": 0,
+            "msup": 0,
+            "msub": 0,
+            "msubsup": 0
+          }
+        },
+        "nativeSourceMatches": true,
+        "tokensPreserved": true,
+        "shapesPreserved": true
+      },
+      "sourceNormalization": {
+        "expression": "\\mathrm{P}(\\text{bệnh}\\mid +) = \\frac{\\mathrm{P}(\\text{bệnh})\\mathrm{P}(+\\mid \\text{bệnh})}{\\mathrm{P}(+)}",
+        "adapter": "existing sourceFormulaToLatex: balanced RHS fraction, text scripts, probability labels/operators; no algebraic rewrites",
+        "independentMathematicalProof": false
+      },
+      "conditions": [],
+      "renderValid": true,
+      "uncertainties": [],
+      "sourceEvidence": [],
+      "evidenceMethod": "Untouched source slice + full MathML/token comparison + runtime/source binding",
+      "humanApproval": "not-inferred",
+      "humanRequirement": "Sampling permitted; no source/math approval granted"
+    }
+  ],
+  "pilotConsistency": {
+    "rational": [
+      {
+        "x": -2,
+        "numeric": -0.5555555555591951,
+        "candidate": -0.5555555555555556,
+        "matches": true
+      },
+      {
+        "x": -0.5,
+        "numeric": -2.2222222221812693,
+        "candidate": -2.2222222222222223,
+        "matches": true
+      },
+      {
+        "x": 0,
+        "numeric": -1.0000000000009999,
+        "candidate": -1,
+        "matches": true
+      },
+      {
+        "x": 0.5,
+        "numeric": -2.2222222221812693,
+        "candidate": -2.2222222222222223,
+        "matches": true
+      },
+      {
+        "x": 2,
+        "numeric": -0.5555555555591951,
+        "candidate": -0.5555555555555556,
+        "matches": true
+      },
+      {
+        "x": 3,
+        "numeric": -0.1562500000218403,
+        "candidate": -0.15625,
+        "matches": true
+      }
+    ],
+    "rationalResult": {
+      "numerator": -5,
+      "denominator": 9
+    },
+    "radical": [
+      {
+        "x": -1.5,
+        "numeric": 1.133893418936438,
+        "candidate": 1.1338934190276817,
+        "matches": true
+      },
+      {
+        "x": -0.5,
+        "numeric": 0.2581988898242571,
+        "candidate": 0.2581988897471611,
+        "matches": true
+      },
+      {
+        "x": 0,
+        "numeric": 0,
+        "candidate": 0,
+        "matches": true
+      },
+      {
+        "x": 0.5,
+        "numeric": -0.2581988898242571,
+        "candidate": -0.2581988897471611,
+        "matches": true
+      },
+      {
+        "x": 1.5,
+        "numeric": -1.133893418936438,
+        "candidate": -1.1338934190276817,
+        "matches": true
+      }
+    ],
+    "domain": {
+      "function": "[-2;2]",
+      "derivative": "(-2;2)",
+      "endpointDerivativeClaimed": false
+    },
+    "limitation": "Numerical regression evidence only; source fidelity and mathematical proof are separate.",
+    "localModel": "No supported local model CLI/configuration detected; no model or external document service invoked."
+  },
+  "humanApprovalsInferred": false
+}

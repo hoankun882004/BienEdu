@@ -1,0 +1,206 @@
+✔ V5.5 symbolic checks prove supported identities on declared domains and retain unsupported/conflicting results (1330.1125ms)
+✖ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (4813.3409ms)
+✔ development execution is blocked in production/CI and requires explicit batch authorization (4228.2574ms)
+✖ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (6020.0907ms)
+✖ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (5722.417ms)
+✔ unknown runtime edits, forged manifests and damaged backups fail without overwriting unrelated content (6841.3144ms)
+✖ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (4404.859ms)
+✔ source/crop hash and runtime dependency changes invalidate prepared batches (4516.1929ms)
+✔ actual project retains its authorized V5.5 state and the existing fraction queue is never overwritten (4.1556ms)
+✔ V5.3 classifies every source item and records every legitimate usage without inventing targets (6.7645ms)
+✔ protected cross-edition expressions and the positional legacy example fail closed (244.8861ms)
+✔ semantic formula identity survives reordering and rejects ambiguous or changed structures (28.202ms)
+✔ source-hash and stable Example identity mismatch cannot become an approved mapping (48.4105ms)
+✔ exact source normalization is idempotent, guarded and produces reversible field-only previews (8.7992ms)
+✖ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (1779.2614ms)
+✔ CD22.7 retains native Bayes notation; no invented conditions or numerical correction (0.2408ms)
+✖ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (1294.4096ms)
+✔ V5.4 comparison separates supported native matches, guarded defects and unproven PDF transcriptions (327.2653ms)
+✔ structural evidence distinguishes fractions, radical scope, exponents and printed conditions (2.1765ms)
+✔ field decisions are immutable, separately attested, idempotent and reject stale source/version/conditions/parents (112.4271ms)
+✔ dry-run requires all nine real field approvals, rejects missing approval and blocks multi-file transactions (435.4432ms)
+✖ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (2562.6616ms)
+✔ curated Knowledge detail adapter changes only its approved string and retains all other source bytes (273.1989ms)
+✔ stale runtime, source mismatch and superseded human decisions block publication (895.726ms)
+✔ failure before the atomic rename leaves runtime intact; retry recovers the durable intent (658.4238ms)
+✔ an edit during the transaction is not overwritten; corrupted backups prevent rollback (850.5371ms)
+✔ a post-replacement interrupted state is reconciled from the immutable intent and backup (734.1244ms)
+✔ protected topics, unsupported fields and forged after values cannot be released (420.7067ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 21
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38318.6836
+
+✖ failing tests:
+
+test at tests\source-development-v55.test.js:28:1
+✖ development plan consolidates three source-bound groups/nine fields with immutable matching preview backups (4813.3409ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 3
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:30:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:46:1
+✖ one development action applies both files, validates real learner loaders, remains idempotent and rolls back exactly (6020.0907ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:49:70)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:64:1
+✖ later-file failure leaves explicit partial state that can resume or roll back with the same backup plan (5722.417ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:67:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Recovery: resume/u,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\source-development-v55.test.js:86:1
+✖ unsupported source bindings are excluded rather than given fake approvals or guessed replacements (4404.859ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-development-v55.test.js:90:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-integration-v53.test.js:91:1
+✖ targeted original-PDF replay preserves corrected grouping, source regions and stable IDs deterministically (1779.2614ms)
+  AssertionError [ERR_ASSERTION]: Traceback (most recent call last):
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 1127, in <module>
+      print(json.dumps(stage_source_review_candidates(), ensure_ascii=False, indent=2))
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 966, in stage_source_review_candidates
+      _, examples = make_lesson(code, theory[code], solutions[code], "cd01-cd07-functions", document, review_candidates=True)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 954, in make_lesson
+      correction_module.apply_corrections(example, document_id, document, ROOT)
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\source-first\import-corrections.py", line 26, in apply_corrections
+      raise ValueError("Source/record/block/page-bound correction mismatch")
+  ValueError: Source/record/block/page-bound correction mismatch
+  
+  
+  1 !== 0
+  
+      at replay (file:///D:/BienEdu/tests/source-integration-v53.test.js:93:202)
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:94:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-integration-v53.test.js:116:1
+✖ existing Studio exposes source statement and solution pages and rejects arbitrary page requests (1294.4096ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 4
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-integration-v53.test.js:125:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source-release-v54.test.js:91:1
+✖ approved single-file publication is atomic, preserves unrelated bytes/content/progress and rolls back exactly (2562.6616ms)
+  AssertionError [ERR_ASSERTION]: Traceback (most recent call last):
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 1127, in <module>
+      print(json.dumps(stage_source_review_candidates(), ensure_ascii=False, indent=2))
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 966, in stage_source_review_candidates
+      _, examples = make_lesson(code, theory[code], solutions[code], "cd01-cd07-functions", document, review_candidates=True)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\import-foundation-documents.py", line 954, in make_lesson
+      correction_module.apply_corrections(example, document_id, document, ROOT)
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\BienEdu\scripts\source-first\import-corrections.py", line 26, in apply_corrections
+      raise ValueError("Source/record/block/page-bound correction mismatch")
+  ValueError: Source/record/block/page-bound correction mismatch
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///D:/BienEdu/tests/source-release-v54.test.js:104:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

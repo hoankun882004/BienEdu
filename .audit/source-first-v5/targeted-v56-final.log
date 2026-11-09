@@ -1,0 +1,18 @@
+✔ V5.6 classifies all 180 canonical references with explicit source/runtime evidence, without a second queue (92.9092ms)
+✔ inline fidelity never discards fraction bars, radical boundaries, exponents or probability bars (2.4928ms)
+✔ all ten complete source-bound correction groups survive actual importer replay twice (9756.7241ms)
+✔ supported SymPy checks cover actual proposed fractions, radicals, powers and original real domains (2081.8706ms)
+✔ consolidated manifest uses applied V5.5 before bytes, complete groups and dry-run defaults (12359.4318ms)
+✔ continuation requires fresh exact authorization and refuses production, forged plans or missing fields (385.9388ms)
+✔ actual isolated learner files apply idempotently and rollback restores applied parent exactly (26558.5174ms)
+✔ interruption after replacement retains recoverable child bytes and same-plan resume/rollback (19128.6344ms)
+✔ unknown runtime edits, changed sources and corrupted backups fail closed without overwrites (6897.8525ms)
+✔ all original sources, real V5.5 runtime, journal and rollback dependencies remain intact (16.1421ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77464.3781

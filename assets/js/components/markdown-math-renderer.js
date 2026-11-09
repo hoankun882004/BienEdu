@@ -182,8 +182,25 @@ export function renderMathText(value, { display = false } = {}) {
   return `<span class="math-expression${display ? " math-expression--display" : ""}">${renderFormula(mathTextToLatex(text), display)}</span>`;
 }
 
+function tableCells(line) {
+  const cells = [];
+  let cell = "", math = null;
+  const text = line.trim().replace(/^\||\|$/g, "");
+  for (let index = 0; index < text.length; index += 1) {
+    const pair = text.slice(index, index + 2);
+    if (!math && pair === "\\(") { math = "paren"; cell += pair; index += 1; continue; }
+    if (math === "paren" && pair === "\\)") { math = null; cell += pair; index += 1; continue; }
+    if (pair === "\\|") { cell += math ? pair : "|"; index += 1; continue; }
+    if (text[index] === "$" && text[index - 1] !== "\\") math = math === "dollar" ? null : math ?? "dollar";
+    if (text[index] === "|" && !math) { cells.push(cell.trim()); cell = ""; }
+    else cell += text[index];
+  }
+  cells.push(cell.trim());
+  return cells;
+}
+
 function tableMarkup(lines) {
-  const rows = lines.map((line) => line.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
+  const rows = lines.map(tableCells);
   const hasSeparator = rows[1]?.every((cell) => /^:?-{3,}:?$/.test(cell));
   const body = hasSeparator ? rows.slice(2) : rows.slice(1);
   return `<div class="math-markdown__table-wrap" tabindex="0"><table><thead><tr>${rows[0].map((cell) => `<th>${renderMarkdownInline(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${renderMarkdownInline(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
@@ -320,29 +337,45 @@ function renderStructuredKnowledge(reading) {
   return `<div class="math-lesson__intro">${renderMarkdownMath(reading.lead)}</div><div class="math-lesson__study-grid"><div class="math-lesson__primary">${formulaMarkup}${noteMarkup}</div>${quickMarkup}</div>`;
 }
 
+export function reviewContentSnapshot(value) {
+  return JSON.stringify(value?.blocks ? { blocks: value.blocks } : value?.prompt ? { prompt: value.prompt, steps: value.steps, answer: value.answer, analysis: value.analysis, takeaway: value.takeaway } : { lead: value?.lead, formulae: value?.formulae, points: value?.points, note: value?.note });
+}
+
+export function humanVerificationStatus(value) {
+  const evidence = value?.humanVerification;
+  const sourceHash = value?.sourceSha256 ?? value?.source?.sha256 ?? value?.verification?.sourceHash;
+  const matches = (approval) => approval?.status === "completed" && approval.reviewerType === "human"
+    && typeof approval.reviewer === "string" && Boolean(approval.reviewer.trim()) && Number.isFinite(Date.parse(approval.reviewedAt))
+    && Boolean(sourceHash) && approval.sourceHash === sourceHash && Boolean(value?.contentVersion) && evidence.contentVersion === value.contentVersion
+    && evidence.reviewedContent === reviewContentSnapshot(value);
+  const source = matches(evidence?.source);
+  return { source, mathematical: source && matches(evidence?.editorial) };
+}
+
 export function renderKnowledgeMarkdown({ slide, position, exercise }) {
   const record = slide.approvedMathContent ?? null;
   const reading = slide.reading ?? null;
   const verificationGates = reading?.verificationGates;
-  const verification = reading?.reviewStatus === "verified" || record?.verification?.status === "verified"
-    ? "verified"
+  const human = humanVerificationStatus(reading ?? record);
+  const verification = human.mathematical ? "verified" : human.source ? "source-verified"
     : verificationGates?.sourceFidelity === "verified"
-      ? "source-verified"
+      ? "source-mapped"
       : verificationGates?.rendering === "validated"
         ? "render-validated"
         : "needs-review";
   const verificationLabel = {
     verified: "Đã kiểm duyệt",
     "source-verified": "Đã đối chiếu nguồn",
-    "render-validated": "Đã kiểm tra hiển thị",
-    "needs-review": "Chờ kiểm duyệt toán học"
+    "source-mapped": "",
+    "render-validated": "",
+    "needs-review": ""
   }[verification];
   const body = reading
     ? renderStructuredKnowledge(reading)
     : `<div class="math-markdown__body math-markdown__body--source">${renderMarkdownMath(approvedKnowledgeMarkdown(record))}</div>`;
   const layout = reading ? knowledgeLayout(reading) : "article";
   return `<article class="math-lesson math-lesson--${layout}" data-markdown-lesson data-knowledge-layout="${layout}" data-verification="${verification}" aria-labelledby="lesson-content-title">
-    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p><small>${verificationLabel}</small></header>
+    <header class="math-lesson__bar"><p><span aria-hidden="true">${String(position.current).padStart(2, "0")}</span><span>${escapeHtml(exercise.code)} · Kiến thức ${position.current}/${position.total}</span></p>${verificationLabel ? `<small>${verificationLabel}</small>` : ""}</header>
     <div class="math-lesson__content"><header class="math-lesson__heading"><h2 id="lesson-content-title">${escapeHtml(reading?.title ?? "Kiến thức trọng tâm")}</h2><p>${escapeHtml(reading?.topicId ? "Kiến thức cần nhớ" : exercise.title)}</p></header>${body}</div>
   </article>`;
 }

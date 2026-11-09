@@ -1,6 +1,6 @@
 # BIENEDU V14 — Kiểm toán độ trung thành nguồn
 
-Generated: 2026-11-04T04:20:25.368Z
+Generated: 2026-11-08T15:54:48.513Z
 
 ## Kết luận kiểm toán
 

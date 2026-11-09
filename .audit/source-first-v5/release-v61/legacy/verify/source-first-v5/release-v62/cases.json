@@ -1,0 +1,635 @@
+[
+  {
+    "kind": "Fraction",
+    "id": "cd17-cd19-sequences-2026:17.3:example:9",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      3
+    ],
+    "original": "Cho u1 = 1, un+1 =\nun\n2un+1. Tìm un.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Cho"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{1}=1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ","
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n+1}=\\frac{u_{n}}{2u_{n}+1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": ". Tìm"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Radical",
+    "id": "cd17-cd19-sequences-2026:17.3:example:7",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      14
+    ],
+    "original": "Đặt vn = u2\nn: vn = 4 + 3(n − 1) = 3n + 1. Do điều kiện dương, un = √3n + 1;\nkhông lấy cả dấu âm.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Đặt"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "v_{n}=u^{2}_{n}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": ":"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "v_{n}=4+3(n-1)=3n+1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Do điều kiện dương,"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}=\\sqrt{3n+1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ";"
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "không lấy cả dấu âm."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Superscript",
+    "id": "cd17-cd19-sequences-2026:17.2:example:3",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      14
+    ],
+    "original": "Có n − 1 lần nhân 3, nên un = 2 · 3n−1. Kiểm tra n = 1 cho đúng u1 = 2.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Có"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n-1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "lần nhân"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "3",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", nên"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}=2\\cdot 3^{n-1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": ". Kiểm tra"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n=1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "cho đúng"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{1}=2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Subscript",
+    "id": "cd17-cd19-sequences-2026:17.2:example:1",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      2
+    ],
+    "original": "Dãy bắt đầu 3, 7, 11, 15, . . . và mỗi số hạng sau hơn số trước 4. Tìm un.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Dãy bắt đầu"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "3,7,11,15,...",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "và mỗi số hạng sau hơn số trước"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "4",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Tìm"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Dot product",
+    "id": "cd17-cd19-sequences-2026:17.2:example:3",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      14
+    ],
+    "original": "Có n − 1 lần nhân 3, nên un = 2 · 3n−1. Kiểm tra n = 1 cho đúng u1 = 2.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Có"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n-1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "lần nhân"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "3",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ", nên"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}=2\\cdot 3^{n-1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": ". Kiểm tra"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n=1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "cho đúng"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{1}=2",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Cross product",
+    "id": "cd28-cd33-vector-2026:28.3:example:9",
+    "sourceId": "cd28-cd33-vector-2026",
+    "pages": [
+      3
+    ],
+    "original": "Tìm a, b để (a; 2; 0) × (1; b; 0) = 0.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Tìm"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "a,b",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "để"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "(a;2;0)\\times (1;b;0)=0",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Vector accent",
+    "id": "cd28-cd33-vector-2026:28.1:example:6",
+    "sourceId": "cd28-cd33-vector-2026",
+    "pages": [
+      2
+    ],
+    "original": "Với tứ diện ABCD, rút gọn −−→\nAB + −−→\nBC + −−→\nCD.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Với tứ diện"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "ABCD",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": ", rút gọn"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "Multiple-line solution",
+    "id": "cd17-cd19-sequences-2026:17.2:example:1",
+    "sourceId": "cd17-cd19-sequences-2026",
+    "pages": [
+      13
+    ],
+    "original": "Đi từ u1 đến un có n −1 lần cộng 4. un = 3 + 4(n −1) = 4n −1. Giả thiết tăng\nđều bảo đảm quy luật áp dụng cho mọi n.",
+    "canonical": {
+      "type": "rich-text",
+      "segments": [
+        {
+          "type": "text",
+          "value": "Đi từ"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{1}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "đến"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "có"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n-1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "lần cộng"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "4",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "u_{n}=3+4(n-1)=4n-1",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": ". Giả thiết tăng"
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "đều bảo đảm quy luật áp dụng cho mọi"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "math",
+          "latex": "n",
+          "display": false
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        }
+      ]
+    }
+  }
+]
