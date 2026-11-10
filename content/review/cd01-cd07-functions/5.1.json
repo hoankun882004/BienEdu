@@ -1,0 +1,652 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "5.1",
+    "id": "CD05-01",
+    "title": "Tiệm cận",
+    "topicId": "CD05",
+    "topicTitle": "Tiệm cận"
+  },
+  "source": {
+    "documentId": "cd01-cd07-functions",
+    "fileName": "Ham-so-Dao-ham-Bai-kho-2023-2026 (1).pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "188BDC51C63B9063196B77FD0FB38989E004D1B9DB54D7995F1AE30B5D51C712",
+    "pageCount": 21,
+    "pages": [
+      1
+    ],
+    "regions": [
+      {
+        "id": "5.1-pdf-1",
+        "x": 0.055,
+        "y": 0.11,
+        "width": 0.89,
+        "height": 0.6,
+        "page": 1,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf",
+    "startedAt": "2026-11-10T03:55:22.340735Z",
+    "finishedAt": "2026-11-10T03:55:22.340743Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=1-1"
+  },
+  "blocks": [
+    {
+      "id": "5.1-b-p1-i001-86b701",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.0726,
+        "width": 0.5045,
+        "height": 0.0294
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "HÀM SỐVÀ ĐẠO HÀM",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i002-69e63c",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.1221,
+        "width": 0.4803,
+        "height": 0.017
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "80 bài nâng cao | Nguồn đề2023–2026",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i003-4eb551",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.1583,
+        "width": 0.819,
+        "height": 0.0493
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "16 câu tuyển chọn từđềthi (diễn đạt lại khi cần) và 64 bài phát triển. Các bài phát triển được biên soạn từý tưởng câu gốc, không phải nguyên văn đềtỉnh. Toàn bộlời giải ởcuối tài liệu.",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i004-3f892f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2439,
+        "width": 0.1035,
+        "height": 0.017
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mục lục",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i005-e7de44",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2998,
+        "width": 0.819,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Đềbài 3",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i006-4eca6d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.3227,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 1 – CD01, CD07 – Khôi phục hàm dương và tiếp tuyến . . . . . . . . . . . . . 3",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i007-bad8a2",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.3457,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 2 – CD02 – Điều kiện đơn điệu và điều kiện nằm dưới đường thẳng . . . . . 3",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i008-ccd40b",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.3686,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 3 – CD02 – Hàm lẻtrên miền rời nhau . . . . . . . . . . . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i009-5242a5",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.3915,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 4 – CD03 – Một cực trị, hai cực trịvà đường nối cực trị . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i010-1204b7",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4144,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 5 – CD03, CD07 – Hai cực trịcó một hoành độcốđịnh . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i011-ea3577",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4373,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 6 – CD03 – Hàm hợp bậc bốn, nghiệm trùng và trịtuyệt đối . . . . . . . . . . 5",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i012-66ba5d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4603,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 7 – CD03 – Đếm cực trịtrong nửa khoảng dương . . . . . . . . . . . . . . . . 5",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i013-c0dbca",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4832,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 8 – CD04, CD06 – Từba cực trịđến mức đường ngang . . . . . . . . . . . . . 5",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i014-9246f1",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5061,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 9 – CD04 – GTNN tại đầu mút không đồng nghĩa với đơn điệu . . . . . . . . 6",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i015-1b622d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.529,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 10 – CD01, CD04 – Mô hình khối lượng, tốc độtăng và ràng buộc tuổi . . . 6",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i016-d97993",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5519,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 11 – CD04 – Tối ưu chi phí và bài toán ngược theo ngân sách . . . . . . . . . 6",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i017-ef266e",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5749,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 12 – CD04 – Mô hình đường đi ngắn nhất và điều kiện biên . . . . . . . . . . 7",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i018-12b432",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5978,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 13 – CD04 – Lợi nhuận nguyên, thuếvà lợi nhuận bình quân . . . . . . . . . 8",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i019-4b21dd",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6207,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 14 – CD05, CD07 – Tiếp tuyến và hình học hai tiệm cận . . . . . . . . . . . . 8",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i020-fddb04",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6436,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 15 – CD06 – Đổi biến, sốnghiệm và tổng nghiệm . . . . . . . . . . . . . . . . 9",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i021-cf3e42",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6665,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 16 – CD02, CD06 – Phương trình lôgarit và hai nhánh không đối xứng . . . 9",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i022-228a33",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.7024,
+        "width": 0.819,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Lời giải 10",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i023-0b6f5d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7253,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 1 – CD01, CD07 – Khôi phục hàm dương và tiếp tuyến . . . . . . . . . . . . . 10",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i024-c97f4e",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7483,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 2 – CD02 – Điều kiện đơn điệu và điều kiện nằm dưới đường thẳng . . . . . 10",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i025-86a9bc",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7712,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 3 – CD02 – Hàm lẻtrên miền rời nhau . . . . . . . . . . . . . . . . . . . . . . . 11",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i026-e1a6b0",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7941,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 4 – CD03 – Một cực trị, hai cực trịvà đường nối cực trị . . . . . . . . . . . . . 12",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i027-55bdbb",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.817,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 5 – CD03, CD07 – Hai cực trịcó một hoành độcốđịnh . . . . . . . . . . . . . 13",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i028-9d03ff",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8399,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 6 – CD03 – Hàm hợp bậc bốn, nghiệm trùng và trịtuyệt đối . . . . . . . . . . 13",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i029-23359f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8629,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 7 – CD03 – Đếm cực trịtrong nửa khoảng dương . . . . . . . . . . . . . . . . 14",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i030-59ccb3",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8858,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 8 – CD04, CD06 – Từba cực trịđến mức đường ngang . . . . . . . . . . . . . 15",
+      "latex": []
+    },
+    {
+      "id": "5.1-b-p1-i031-c74aa5",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.9087,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "5.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cụm 9 – CD04 – GTNN tại đầu mút không đồng nghĩa với đơn điệu . . . . . . . . 15",
+      "latex": []
+    }
+  ],
+  "headings": [],
+  "sections": {
+    "knowledge": [
+      "5.1-b-p1-i001-86b701",
+      "5.1-b-p1-i002-69e63c",
+      "5.1-b-p1-i003-4eb551",
+      "5.1-b-p1-i004-3f892f",
+      "5.1-b-p1-i005-e7de44",
+      "5.1-b-p1-i006-4eca6d",
+      "5.1-b-p1-i007-bad8a2",
+      "5.1-b-p1-i008-ccd40b",
+      "5.1-b-p1-i009-5242a5",
+      "5.1-b-p1-i010-1204b7",
+      "5.1-b-p1-i011-ea3577",
+      "5.1-b-p1-i012-66ba5d",
+      "5.1-b-p1-i013-c0dbca",
+      "5.1-b-p1-i014-9246f1",
+      "5.1-b-p1-i015-1b622d",
+      "5.1-b-p1-i016-d97993",
+      "5.1-b-p1-i017-ef266e",
+      "5.1-b-p1-i018-12b432",
+      "5.1-b-p1-i019-4b21dd",
+      "5.1-b-p1-i020-fddb04",
+      "5.1-b-p1-i021-cf3e42",
+      "5.1-b-p1-i022-228a33",
+      "5.1-b-p1-i023-0b6f5d",
+      "5.1-b-p1-i024-c97f4e",
+      "5.1-b-p1-i025-86a9bc",
+      "5.1-b-p1-i026-e1a6b0",
+      "5.1-b-p1-i027-55bdbb",
+      "5.1-b-p1-i028-9d03ff",
+      "5.1-b-p1-i029-23359f",
+      "5.1-b-p1-i030-59ccb3",
+      "5.1-b-p1-i031-c74aa5"
+    ],
+    "workedExamples": [],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "needs-source-review",
+    "reviewer": null,
+    "reviewedAt": null,
+    "sourceHash": "188BDC51C63B9063196B77FD0FB38989E004D1B9DB54D7995F1AE30B5D51C712",
+    "formulasChecked": false,
+    "boundariesChecked": false,
+    "notes": [
+      "Auto-imported từ TaiLieu bằng pymupdf importer — cần đối chiếu PDF trước khi publish."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 5.1\ntitle: Tiệm cận\nsourceSha256: 188BDC51C63B9063196B77FD0FB38989E004D1B9DB54D7995F1AE30B5D51C712\nprovider: pymupdf\nverification: needs-source-review\n---\n\n# 5.1 Tiệm cận\n\n> Nguồn: Ham-so-Dao-ham-Bai-kho-2023-2026 (1).pdf, trang PDF 1. Nội dung auto-import bằng PyMuPDF; phải đối chiếu PDF gốc trước khi publish.\n\n## Kiến thức\n\n<!-- source-block:5.1-b-p1-i001-86b701 page:1 region:5.1-pdf-1 -->\nHÀM SỐVÀ ĐẠO HÀM\n\n<!-- source-block:5.1-b-p1-i002-69e63c page:1 region:5.1-pdf-1 -->\n80 bài nâng cao | Nguồn đề2023–2026\n\n<!-- source-block:5.1-b-p1-i003-4eb551 page:1 region:5.1-pdf-1 -->\n16 câu tuyển chọn từđềthi (diễn đạt lại khi cần) và 64 bài phát triển. Các bài phát triển được biên soạn từý tưởng câu gốc, không phải nguyên văn đềtỉnh. Toàn bộlời giải ởcuối tài liệu.\n\n<!-- source-block:5.1-b-p1-i004-3f892f page:1 region:5.1-pdf-1 -->\nMục lục\n\n<!-- source-block:5.1-b-p1-i005-e7de44 page:1 region:5.1-pdf-1 -->\nĐềbài 3\n\n<!-- source-block:5.1-b-p1-i006-4eca6d page:1 region:5.1-pdf-1 -->\nCụm 1 – CD01, CD07 – Khôi phục hàm dương và tiếp tuyến . . . . . . . . . . . . . 3\n\n<!-- source-block:5.1-b-p1-i007-bad8a2 page:1 region:5.1-pdf-1 -->\nCụm 2 – CD02 – Điều kiện đơn điệu và điều kiện nằm dưới đường thẳng . . . . . 3\n\n<!-- source-block:5.1-b-p1-i008-ccd40b page:1 region:5.1-pdf-1 -->\nCụm 3 – CD02 – Hàm lẻtrên miền rời nhau . . . . . . . . . . . . . . . . . . . . . . . 4\n\n<!-- source-block:5.1-b-p1-i009-5242a5 page:1 region:5.1-pdf-1 -->\nCụm 4 – CD03 – Một cực trị, hai cực trịvà đường nối cực trị . . . . . . . . . . . . . 4\n\n<!-- source-block:5.1-b-p1-i010-1204b7 page:1 region:5.1-pdf-1 -->\nCụm 5 – CD03, CD07 – Hai cực trịcó một hoành độcốđịnh . . . . . . . . . . . . . 4\n\n<!-- source-block:5.1-b-p1-i011-ea3577 page:1 region:5.1-pdf-1 -->\nCụm 6 – CD03 – Hàm hợp bậc bốn, nghiệm trùng và trịtuyệt đối . . . . . . . . . . 5\n\n<!-- source-block:5.1-b-p1-i012-66ba5d page:1 region:5.1-pdf-1 -->\nCụm 7 – CD03 – Đếm cực trịtrong nửa khoảng dương . . . . . . . . . . . . . . . . 5\n\n<!-- source-block:5.1-b-p1-i013-c0dbca page:1 region:5.1-pdf-1 -->\nCụm 8 – CD04, CD06 – Từba cực trịđến mức đường ngang . . . . . . . . . . . . . 5\n\n<!-- source-block:5.1-b-p1-i014-9246f1 page:1 region:5.1-pdf-1 -->\nCụm 9 – CD04 – GTNN tại đầu mút không đồng nghĩa với đơn điệu . . . . . . . . 6\n\n<!-- source-block:5.1-b-p1-i015-1b622d page:1 region:5.1-pdf-1 -->\nCụm 10 – CD01, CD04 – Mô hình khối lượng, tốc độtăng và ràng buộc tuổi . . . 6\n\n<!-- source-block:5.1-b-p1-i016-d97993 page:1 region:5.1-pdf-1 -->\nCụm 11 – CD04 – Tối ưu chi phí và bài toán ngược theo ngân sách . . . . . . . . . 6\n\n<!-- source-block:5.1-b-p1-i017-ef266e page:1 region:5.1-pdf-1 -->\nCụm 12 – CD04 – Mô hình đường đi ngắn nhất và điều kiện biên . . . . . . . . . . 7\n\n<!-- source-block:5.1-b-p1-i018-12b432 page:1 region:5.1-pdf-1 -->\nCụm 13 – CD04 – Lợi nhuận nguyên, thuếvà lợi nhuận bình quân . . . . . . . . . 8\n\n<!-- source-block:5.1-b-p1-i019-4b21dd page:1 region:5.1-pdf-1 -->\nCụm 14 – CD05, CD07 – Tiếp tuyến và hình học hai tiệm cận . . . . . . . . . . . . 8\n\n<!-- source-block:5.1-b-p1-i020-fddb04 page:1 region:5.1-pdf-1 -->\nCụm 15 – CD06 – Đổi biến, sốnghiệm và tổng nghiệm . . . . . . . . . . . . . . . . 9\n\n<!-- source-block:5.1-b-p1-i021-cf3e42 page:1 region:5.1-pdf-1 -->\nCụm 16 – CD02, CD06 – Phương trình lôgarit và hai nhánh không đối xứng . . . 9\n\n<!-- source-block:5.1-b-p1-i022-228a33 page:1 region:5.1-pdf-1 -->\nLời giải 10\n\n<!-- source-block:5.1-b-p1-i023-0b6f5d page:1 region:5.1-pdf-1 -->\nCụm 1 – CD01, CD07 – Khôi phục hàm dương và tiếp tuyến . . . . . . . . . . . . . 10\n\n<!-- source-block:5.1-b-p1-i024-c97f4e page:1 region:5.1-pdf-1 -->\nCụm 2 – CD02 – Điều kiện đơn điệu và điều kiện nằm dưới đường thẳng . . . . . 10\n\n<!-- source-block:5.1-b-p1-i025-86a9bc page:1 region:5.1-pdf-1 -->\nCụm 3 – CD02 – Hàm lẻtrên miền rời nhau . . . . . . . . . . . . . . . . . . . . . . . 11\n\n<!-- source-block:5.1-b-p1-i026-e1a6b0 page:1 region:5.1-pdf-1 -->\nCụm 4 – CD03 – Một cực trị, hai cực trịvà đường nối cực trị . . . . . . . . . . . . . 12\n\n<!-- source-block:5.1-b-p1-i027-55bdbb page:1 region:5.1-pdf-1 -->\nCụm 5 – CD03, CD07 – Hai cực trịcó một hoành độcốđịnh . . . . . . . . . . . . . 13\n\n<!-- source-block:5.1-b-p1-i028-9d03ff page:1 region:5.1-pdf-1 -->\nCụm 6 – CD03 – Hàm hợp bậc bốn, nghiệm trùng và trịtuyệt đối . . . . . . . . . . 13\n\n<!-- source-block:5.1-b-p1-i029-23359f page:1 region:5.1-pdf-1 -->\nCụm 7 – CD03 – Đếm cực trịtrong nửa khoảng dương . . . . . . . . . . . . . . . . 14\n\n<!-- source-block:5.1-b-p1-i030-59ccb3 page:1 region:5.1-pdf-1 -->\nCụm 8 – CD04, CD06 – Từba cực trịđến mức đường ngang . . . . . . . . . . . . . 15\n\n<!-- source-block:5.1-b-p1-i031-c74aa5 page:1 region:5.1-pdf-1 -->\nCụm 9 – CD04 – GTNN tại đầu mút không đồng nghĩa với đơn điệu . . . . . . . . 15\n"
+}

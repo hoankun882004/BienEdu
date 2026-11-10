@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "15.1",
+    "id": "CD15-01",
+    "title": "Công thức lượng giác",
+    "topicId": "CD15",
+    "topicTitle": "Công thức lượng giác"
+  },
+  "source": {
+    "documentId": "cd15-cd16-trigonometry",
+    "fileName": "Luong-giac-CD15-CD16.pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154",
+    "pageCount": 22,
+    "pages": [
+      1
+    ],
+    "regions": [
+      {
+        "id": "15.1-pdf-1",
+        "x": 0.055,
+        "y": 0.11,
+        "width": 0.89,
+        "height": 0.6,
+        "page": 1,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf",
+    "startedAt": "2026-11-10T03:55:22.577738Z",
+    "finishedAt": "2026-11-10T03:55:22.577750Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=1-1"
+  },
+  "blocks": [
+    {
+      "id": "15.1-b-p1-i001-9c4d95",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.0689,
+        "width": 0.5862,
+        "height": 0.1139
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CÔNG THỨC LƯỢNG GIÁC PHƯƠNG TRÌNH LƯỢNG GIÁC",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i002-23caeb",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2065,
+        "width": 0.3349,
+        "height": 0.0142
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD15–CD16 · 15 dạng · 150 ví dụ",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i003-32a02a",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1093,
+        "y": 0.2598,
+        "width": 0.7814,
+        "height": 0.0612
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mỗi dạng có kiến thức, cách làm và 10 ví dụ. Ví dụphát triển qua nhiều cấu trúc, từ cơ bản đến phối hợp biến đổi, phát hiện sai lầm và tìm tham số. Toàn bộlời giải đặt cuối tài liệu. Trừkhi ghi đơn vịđộ, các góc đều tính bằng radian; k ∈ Z trong mọi họ nghiệm.",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i004-3f892f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.3542,
+        "width": 0.1035,
+        "height": 0.017
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mục lục",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i005-78ed20",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.4004,
+        "width": 0.819,
+        "height": 0.1254
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1 CD15 · CÔNG THỨC LƯỢNG GIÁC 2 1.1 Dạng 15.1 · Giá trịlượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.2 Dạng 15.2 · Cung và góc lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.3 Dạng 15.3 · Công thức cộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.4 Dạng 15.4 · Công thức nhân đôi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.5 Dạng 15.5 · Công thức hạbậc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.6 Dạng 15.6 · Biến tổng thành tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 1.7 Dạng 15.7 · Biến tích thành tổng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 1.8 Dạng 15.8 · Rút gọn biểu thức lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 6",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i006-e3b00d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.54,
+        "width": 0.819,
+        "height": 0.1112
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2 CD16 · PHƯƠNG TRÌNH LƯỢNG GIÁC 7 2.1 Dạng 16.1 · Phương trình lượng giác cơ bản . . . . . . . . . . . . . . . . . . . . . . . . 7 2.2 Dạng 16.2 · Phương trình đưa vềtích . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.3 Dạng 16.3 · Phương trình bậc hai theo hàm lượng giác . . . . . . . . . . . . . . . . . 8 2.4 Dạng 16.4 · Phương trình dùng công thức biến đổi . . . . . . . . . . . . . . . . . . . . 8 2.5 Dạng 16.5 · Đặt ẩn phụ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.6 Dạng 16.6 · Đếm nghiệm trên khoảng hoặc đoạn . . . . . . . . . . . . . . . . . . . . . 9 2.7 Dạng 16.7 · Phương trình có tham sốcơ bản . . . . . . . . . . . . . . . . . . . . . . . 10",
+      "latex": []
+    },
+    {
+      "id": "15.1-b-p1-i007-1fc595",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.6675,
+        "width": 0.819,
+        "height": 0.2248
+      },
+      "regionId": "15.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3 LỜI GIẢI · 150 VÍ DỤ 11 3.1 Dạng 15.1 · Giá trịlượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.2 Dạng 15.2 · Cung và góc lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.3 Dạng 15.3 · Công thức cộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.4 Dạng 15.4 · Công thức nhân đôi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.5 Dạng 15.5 · Công thức hạbậc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.6 Dạng 15.6 · Biến tổng thành tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 3.7 Dạng 15.7 · Biến tích thành tổng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.8 Dạng 15.8 · Rút gọn biểu thức lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.9 Dạng 16.1 · Phương trình lượng giác cơ bản . . . . . . . . . . . . . . . . . . . . . . . . 15 3.10 Dạng 16.2 · Phương trình đưa vềtích . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 3.11 Dạng 16.3 · Phương trình bậc hai theo hàm lượng giác . . . . . . . . . . . . . . . . . 17 3.12 Dạng 16.4 · Phương trình dùng công thức biến đổi . . . . . . . . . . . . . . . . . . . . 18 3.13 Dạng 16.5 · Đặt ẩn phụ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 3.14 Dạng 16.6 · Đếm nghiệm trên khoảng hoặc đoạn . . . . . . . . . . . . . . . . . . . . . 20 3.15 Dạng 16.7 · Phương trình có tham sốcơ bản . . . . . . . . . . . . . . . . . . . . . . . 21",
+      "latex": []
+    }
+  ],
+  "headings": [],
+  "sections": {
+    "knowledge": [
+      "15.1-b-p1-i001-9c4d95",
+      "15.1-b-p1-i002-23caeb",
+      "15.1-b-p1-i003-32a02a",
+      "15.1-b-p1-i004-3f892f",
+      "15.1-b-p1-i005-78ed20",
+      "15.1-b-p1-i006-e3b00d",
+      "15.1-b-p1-i007-1fc595"
+    ],
+    "workedExamples": [],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "needs-source-review",
+    "reviewer": null,
+    "reviewedAt": null,
+    "sourceHash": "AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154",
+    "formulasChecked": false,
+    "boundariesChecked": false,
+    "notes": [
+      "Auto-imported từ TaiLieu bằng pymupdf importer — cần đối chiếu PDF trước khi publish."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 15.1\ntitle: Công thức lượng giác\nsourceSha256: AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154\nprovider: pymupdf\nverification: needs-source-review\n---\n\n# 15.1 Công thức lượng giác\n\n> Nguồn: Luong-giac-CD15-CD16.pdf, trang PDF 1. Nội dung auto-import bằng PyMuPDF; phải đối chiếu PDF gốc trước khi publish.\n\n## Kiến thức\n\n<!-- source-block:15.1-b-p1-i001-9c4d95 page:1 region:15.1-pdf-1 -->\nCÔNG THỨC LƯỢNG GIÁC PHƯƠNG TRÌNH LƯỢNG GIÁC\n\n<!-- source-block:15.1-b-p1-i002-23caeb page:1 region:15.1-pdf-1 -->\nCD15–CD16 · 15 dạng · 150 ví dụ\n\n<!-- source-block:15.1-b-p1-i003-32a02a page:1 region:15.1-pdf-1 -->\nMỗi dạng có kiến thức, cách làm và 10 ví dụ. Ví dụphát triển qua nhiều cấu trúc, từ cơ bản đến phối hợp biến đổi, phát hiện sai lầm và tìm tham số. Toàn bộlời giải đặt cuối tài liệu. Trừkhi ghi đơn vịđộ, các góc đều tính bằng radian; k ∈ Z trong mọi họ nghiệm.\n\n<!-- source-block:15.1-b-p1-i004-3f892f page:1 region:15.1-pdf-1 -->\nMục lục\n\n<!-- source-block:15.1-b-p1-i005-78ed20 page:1 region:15.1-pdf-1 -->\n1 CD15 · CÔNG THỨC LƯỢNG GIÁC 2 1.1 Dạng 15.1 · Giá trịlượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.2 Dạng 15.2 · Cung và góc lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.3 Dạng 15.3 · Công thức cộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.4 Dạng 15.4 · Công thức nhân đôi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.5 Dạng 15.5 · Công thức hạbậc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 1.6 Dạng 15.6 · Biến tổng thành tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 1.7 Dạng 15.7 · Biến tích thành tổng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 1.8 Dạng 15.8 · Rút gọn biểu thức lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 6\n\n<!-- source-block:15.1-b-p1-i006-e3b00d page:1 region:15.1-pdf-1 -->\n2 CD16 · PHƯƠNG TRÌNH LƯỢNG GIÁC 7 2.1 Dạng 16.1 · Phương trình lượng giác cơ bản . . . . . . . . . . . . . . . . . . . . . . . . 7 2.2 Dạng 16.2 · Phương trình đưa vềtích . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.3 Dạng 16.3 · Phương trình bậc hai theo hàm lượng giác . . . . . . . . . . . . . . . . . 8 2.4 Dạng 16.4 · Phương trình dùng công thức biến đổi . . . . . . . . . . . . . . . . . . . . 8 2.5 Dạng 16.5 · Đặt ẩn phụ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.6 Dạng 16.6 · Đếm nghiệm trên khoảng hoặc đoạn . . . . . . . . . . . . . . . . . . . . . 9 2.7 Dạng 16.7 · Phương trình có tham sốcơ bản . . . . . . . . . . . . . . . . . . . . . . . 10\n\n<!-- source-block:15.1-b-p1-i007-1fc595 page:1 region:15.1-pdf-1 -->\n3 LỜI GIẢI · 150 VÍ DỤ 11 3.1 Dạng 15.1 · Giá trịlượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.2 Dạng 15.2 · Cung và góc lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.3 Dạng 15.3 · Công thức cộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.4 Dạng 15.4 · Công thức nhân đôi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.5 Dạng 15.5 · Công thức hạbậc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3.6 Dạng 15.6 · Biến tổng thành tích . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 3.7 Dạng 15.7 · Biến tích thành tổng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.8 Dạng 15.8 · Rút gọn biểu thức lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.9 Dạng 16.1 · Phương trình lượng giác cơ bản . . . . . . . . . . . . . . . . . . . . . . . . 15 3.10 Dạng 16.2 · Phương trình đưa vềtích . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 3.11 Dạng 16.3 · Phương trình bậc hai theo hàm lượng giác . . . . . . . . . . . . . . . . . 17 3.12 Dạng 16.4 · Phương trình dùng công thức biến đổi . . . . . . . . . . . . . . . . . . . . 18 3.13 Dạng 16.5 · Đặt ẩn phụ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 3.14 Dạng 16.6 · Đếm nghiệm trên khoảng hoặc đoạn . . . . . . . . . . . . . . . . . . . . . 20 3.15 Dạng 16.7 · Phương trình có tham sốcơ bản . . . . . . . . . . . . . . . . . . . . . . . 21\n"
+}

@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "28.1",
+    "id": "CD28-01",
+    "title": "Vectơ trong không gian",
+    "topicId": "CD28",
+    "topicTitle": "Vectơ trong không gian"
+  },
+  "source": {
+    "documentId": "cd28-cd33-oxyz",
+    "fileName": "Vecto-Oxyz-CD28-CD33 (1).pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "pageCount": 59,
+    "pages": [
+      1
+    ],
+    "regions": [
+      {
+        "id": "28.1-pdf-1",
+        "x": 0.055,
+        "y": 0.11,
+        "width": 0.89,
+        "height": 0.6,
+        "page": 1,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf",
+    "startedAt": "2026-11-10T03:55:23.419768Z",
+    "finishedAt": "2026-11-10T03:55:23.419778Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=1-1"
+  },
+  "blocks": [
+    {
+      "id": "28.1-b-p1-i001-99fd72",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.0689,
+        "width": 0.373,
+        "height": 0.0294
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "VECTƠ VÀ OXYZ",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i002-ed4d0a",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.1164,
+        "width": 0.5267,
+        "height": 0.0142
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD28–CD33 · 50 dạng · 500 ví dụ· Bản biên soạn lại",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i003-32a02a",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1076,
+        "y": 0.1614,
+        "width": 0.7847,
+        "height": 0.0773
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mỗi dạng có kiến thức, cách làm và 10 bài với yêu cầu khác nhau: tính trực tiếp, tìm ngược dữkiện, tham số, chứng minh, mô hình thực tếhoặc nhận diện lỗi. Bộbài không được tạo bằng cách thay sốcủa một mẫu. Lời giải tập trung cuối file. Hệtrục luôn trực chuẩn; miền thời gian, đơn vịvà điều kiện không suy biến được giữtrong từng bài.",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i004-3f892f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2596,
+        "width": 0.1035,
+        "height": 0.017
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mục lục",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i005-6d1128",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.3021,
+        "width": 0.4012,
+        "height": 0.1148
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD28 · VECTƠ TRONG KHÔNG GIAN 2 Dạng 28.1 · Các phép toán vectơ . . . . . . . . 2 Dạng 28.2 · Hai vectơ bằng nhau . . . . . . . . 2 Dạng 28.3 · Hai vectơ cùng phương . . . . . . 3 Dạng 28.4 · Tọa độvectơ . . . . . . . . . . . . 3 Dạng 28.5 · Độdài vectơ . . . . . . . . . . . . . 4 Dạng 28.6 · Tích vô hướng . . . . . . . . . . . . 4 Dạng 28.7 · Góc giữa hai vectơ . . . . . . . . . 5 Dạng 28.8 · Song song, vuông góc bằng vectơ 6",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i006-8ab7b4",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.4323,
+        "width": 0.4012,
+        "height": 0.1018
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD29 · TỌA ĐỘĐIỂM 7 Dạng 29.1 · Tọa độđiểm . . . . . . . . . . . . . 7 Dạng 29.2 · Khoảng cách hai điểm . . . . . . . 8 Dạng 29.3 · Trung điểm . . . . . . . . . . . . . 8 Dạng 29.4 · Trọng tâm . . . . . . . . . . . . . . 9 Dạng 29.5 · Điểm đối xứng . . . . . . . . . . . 10 Dạng 29.6 · Điểm chia đoạn . . . . . . . . . . . 10 Dạng 29.7 · Tìm điểm thỏa mãn điều kiện . . 11",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i007-a7661d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.5498,
+        "width": 0.4012,
+        "height": 0.1148
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD30 · MẶT PHẲNG 12 Dạng 30.1 · Vectơ pháp tuyến . . . . . . . . . . 12 Dạng 30.2 · Lập phương trình mặt phẳng . . . 12 Dạng 30.3 · Mặt phẳng qua ba điểm . . . . . . 13 Dạng 30.4 · Vịtrí hai mặt phẳng . . . . . . . . 14 Dạng 30.5 · Góc giữa hai mặt phẳng . . . . . . 15 Dạng 30.6 · Khoảng cách điểm - mặt phẳng . 16 Dạng 30.7 · Mặt phẳng song song, vuông góc 16 Dạng 30.8 · Tham sốvềmặt phẳng . . . . . . 17",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i008-e62173",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.6803,
+        "width": 0.4012,
+        "height": 0.0107
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD31 · ĐƯỜNG THẲNG 18",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i009-8ac464",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.531,
+        "y": 0.2626,
+        "width": 0.3786,
+        "height": 0.1154
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Dạng 31.1 · Vectơ chỉphương . . . . . . . . . . 18 Dạng 31.2 · Phương trình tham số . . . . . . . 18 Dạng 31.3 · Phương trình chính tắc . . . . . . 19 Dạng 31.4 · Vịtrí hai đường thẳng . . . . . . . 20 Dạng 31.5 · Đường thẳng - mặt phẳng . . . . . 20 Dạng 31.6 · Góc trong Oxyz . . . . . . . . . . . 21 Dạng 31.7 · Giao điểm . . . . . . . . . . . . . . 22 Dạng 31.8 · Hình chiếu . . . . . . . . . . . . . . 22 Dạng 31.9 · Khoảng cách trong Oxyz . . . . . 23",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i010-4d53ee",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.5084,
+        "y": 0.3931,
+        "width": 0.4012,
+        "height": 0.1023
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD32 · MẶT CẦU 24 Dạng 32.1 · Tâm - bán kính . . . . . . . . . . . 24 Dạng 32.2 · Lập phương trình mặt cầu . . . . 25 Dạng 32.3 · Mặt cầu qua điểm . . . . . . . . . 25 Dạng 32.4 · Mặt cầu - mặt phẳng . . . . . . . . 26 Dạng 32.5 · Mặt cầu - đường thẳng . . . . . . 27 Dạng 32.6 · Tiếp diện . . . . . . . . . . . . . . . 28 Dạng 32.7 · Tham sốvềmặt cầu . . . . . . . . 29",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i011-b2a309",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.5084,
+        "y": 0.5106,
+        "width": 0.4012,
+        "height": 0.1547
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD33 · OXYZ THỰC TẾ 30 Dạng 33.1 · Chọn hệtrục tọa độ . . . . . . . . 30 Dạng 33.2 · Chuyển dữkiện sang tọa độ . . . 31 Dạng 33.3 · Bài toán máy bay . . . . . . . . . . 32 Dạng 33.4 · Bài toán UAV . . . . . . . . . . . . 33 Dạng 33.5 · Bài toán radar . . . . . . . . . . . 34 Dạng 33.6 · Chuyển động thẳng . . . . . . . . 35 Dạng 33.7 · Khoảng cách thực tế . . . . . . . . 36 Dạng 33.8 · Vịtrí tối ưu . . . . . . . . . . . . . 37 Dạng 33.9 · Tối ưu khoảng cách theo thời gian 38 Dạng 33.10 · Oxyz kết hợp hàm sốmột biến . 38 Dạng 33.11 · Đúng - sai nhiều ý . . . . . . . . 39",
+      "latex": []
+    },
+    {
+      "id": "28.1-b-p1-i012-857ddf",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.5084,
+        "y": 0.6803,
+        "width": 0.4012,
+        "height": 0.0107
+      },
+      "regionId": "28.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "LỜI GIẢI · 500 VÍ DỤ 40",
+      "latex": []
+    }
+  ],
+  "headings": [],
+  "sections": {
+    "knowledge": [
+      "28.1-b-p1-i001-99fd72",
+      "28.1-b-p1-i002-ed4d0a",
+      "28.1-b-p1-i003-32a02a",
+      "28.1-b-p1-i004-3f892f",
+      "28.1-b-p1-i005-6d1128",
+      "28.1-b-p1-i006-8ab7b4",
+      "28.1-b-p1-i007-a7661d",
+      "28.1-b-p1-i008-e62173",
+      "28.1-b-p1-i009-8ac464",
+      "28.1-b-p1-i010-4d53ee",
+      "28.1-b-p1-i011-b2a309",
+      "28.1-b-p1-i012-857ddf"
+    ],
+    "workedExamples": [],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "needs-source-review",
+    "reviewer": null,
+    "reviewedAt": null,
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "formulasChecked": false,
+    "boundariesChecked": false,
+    "notes": [
+      "Auto-imported từ TaiLieu bằng pymupdf importer — cần đối chiếu PDF trước khi publish."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 28.1\ntitle: Vectơ trong không gian\nsourceSha256: 98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114\nprovider: pymupdf\nverification: needs-source-review\n---\n\n# 28.1 Vectơ trong không gian\n\n> Nguồn: Vecto-Oxyz-CD28-CD33 (1).pdf, trang PDF 1. Nội dung auto-import bằng PyMuPDF; phải đối chiếu PDF gốc trước khi publish.\n\n## Kiến thức\n\n<!-- source-block:28.1-b-p1-i001-99fd72 page:1 region:28.1-pdf-1 -->\nVECTƠ VÀ OXYZ\n\n<!-- source-block:28.1-b-p1-i002-ed4d0a page:1 region:28.1-pdf-1 -->\nCD28–CD33 · 50 dạng · 500 ví dụ· Bản biên soạn lại\n\n<!-- source-block:28.1-b-p1-i003-32a02a page:1 region:28.1-pdf-1 -->\nMỗi dạng có kiến thức, cách làm và 10 bài với yêu cầu khác nhau: tính trực tiếp, tìm ngược dữkiện, tham số, chứng minh, mô hình thực tếhoặc nhận diện lỗi. Bộbài không được tạo bằng cách thay sốcủa một mẫu. Lời giải tập trung cuối file. Hệtrục luôn trực chuẩn; miền thời gian, đơn vịvà điều kiện không suy biến được giữtrong từng bài.\n\n<!-- source-block:28.1-b-p1-i004-3f892f page:1 region:28.1-pdf-1 -->\nMục lục\n\n<!-- source-block:28.1-b-p1-i005-6d1128 page:1 region:28.1-pdf-1 -->\nCD28 · VECTƠ TRONG KHÔNG GIAN 2 Dạng 28.1 · Các phép toán vectơ . . . . . . . . 2 Dạng 28.2 · Hai vectơ bằng nhau . . . . . . . . 2 Dạng 28.3 · Hai vectơ cùng phương . . . . . . 3 Dạng 28.4 · Tọa độvectơ . . . . . . . . . . . . 3 Dạng 28.5 · Độdài vectơ . . . . . . . . . . . . . 4 Dạng 28.6 · Tích vô hướng . . . . . . . . . . . . 4 Dạng 28.7 · Góc giữa hai vectơ . . . . . . . . . 5 Dạng 28.8 · Song song, vuông góc bằng vectơ 6\n\n<!-- source-block:28.1-b-p1-i006-8ab7b4 page:1 region:28.1-pdf-1 -->\nCD29 · TỌA ĐỘĐIỂM 7 Dạng 29.1 · Tọa độđiểm . . . . . . . . . . . . . 7 Dạng 29.2 · Khoảng cách hai điểm . . . . . . . 8 Dạng 29.3 · Trung điểm . . . . . . . . . . . . . 8 Dạng 29.4 · Trọng tâm . . . . . . . . . . . . . . 9 Dạng 29.5 · Điểm đối xứng . . . . . . . . . . . 10 Dạng 29.6 · Điểm chia đoạn . . . . . . . . . . . 10 Dạng 29.7 · Tìm điểm thỏa mãn điều kiện . . 11\n\n<!-- source-block:28.1-b-p1-i007-a7661d page:1 region:28.1-pdf-1 -->\nCD30 · MẶT PHẲNG 12 Dạng 30.1 · Vectơ pháp tuyến . . . . . . . . . . 12 Dạng 30.2 · Lập phương trình mặt phẳng . . . 12 Dạng 30.3 · Mặt phẳng qua ba điểm . . . . . . 13 Dạng 30.4 · Vịtrí hai mặt phẳng . . . . . . . . 14 Dạng 30.5 · Góc giữa hai mặt phẳng . . . . . . 15 Dạng 30.6 · Khoảng cách điểm - mặt phẳng . 16 Dạng 30.7 · Mặt phẳng song song, vuông góc 16 Dạng 30.8 · Tham sốvềmặt phẳng . . . . . . 17\n\n<!-- source-block:28.1-b-p1-i008-e62173 page:1 region:28.1-pdf-1 -->\nCD31 · ĐƯỜNG THẲNG 18\n\n<!-- source-block:28.1-b-p1-i009-8ac464 page:1 region:28.1-pdf-1 -->\nDạng 31.1 · Vectơ chỉphương . . . . . . . . . . 18 Dạng 31.2 · Phương trình tham số . . . . . . . 18 Dạng 31.3 · Phương trình chính tắc . . . . . . 19 Dạng 31.4 · Vịtrí hai đường thẳng . . . . . . . 20 Dạng 31.5 · Đường thẳng - mặt phẳng . . . . . 20 Dạng 31.6 · Góc trong Oxyz . . . . . . . . . . . 21 Dạng 31.7 · Giao điểm . . . . . . . . . . . . . . 22 Dạng 31.8 · Hình chiếu . . . . . . . . . . . . . . 22 Dạng 31.9 · Khoảng cách trong Oxyz . . . . . 23\n\n<!-- source-block:28.1-b-p1-i010-4d53ee page:1 region:28.1-pdf-1 -->\nCD32 · MẶT CẦU 24 Dạng 32.1 · Tâm - bán kính . . . . . . . . . . . 24 Dạng 32.2 · Lập phương trình mặt cầu . . . . 25 Dạng 32.3 · Mặt cầu qua điểm . . . . . . . . . 25 Dạng 32.4 · Mặt cầu - mặt phẳng . . . . . . . . 26 Dạng 32.5 · Mặt cầu - đường thẳng . . . . . . 27 Dạng 32.6 · Tiếp diện . . . . . . . . . . . . . . . 28 Dạng 32.7 · Tham sốvềmặt cầu . . . . . . . . 29\n\n<!-- source-block:28.1-b-p1-i011-b2a309 page:1 region:28.1-pdf-1 -->\nCD33 · OXYZ THỰC TẾ 30 Dạng 33.1 · Chọn hệtrục tọa độ . . . . . . . . 30 Dạng 33.2 · Chuyển dữkiện sang tọa độ . . . 31 Dạng 33.3 · Bài toán máy bay . . . . . . . . . . 32 Dạng 33.4 · Bài toán UAV . . . . . . . . . . . . 33 Dạng 33.5 · Bài toán radar . . . . . . . . . . . 34 Dạng 33.6 · Chuyển động thẳng . . . . . . . . 35 Dạng 33.7 · Khoảng cách thực tế . . . . . . . . 36 Dạng 33.8 · Vịtrí tối ưu . . . . . . . . . . . . . 37 Dạng 33.9 · Tối ưu khoảng cách theo thời gian 38 Dạng 33.10 · Oxyz kết hợp hàm sốmột biến . 38 Dạng 33.11 · Đúng - sai nhiều ý . . . . . . . . 39\n\n<!-- source-block:28.1-b-p1-i012-857ddf page:1 region:28.1-pdf-1 -->\nLỜI GIẢI · 500 VÍ DỤ 40\n"
+}

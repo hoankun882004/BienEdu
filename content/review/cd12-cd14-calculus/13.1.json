@@ -1,0 +1,576 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "13.1",
+    "id": "CD13-01",
+    "title": "Tích phân",
+    "topicId": "CD13",
+    "topicTitle": "Tích phân"
+  },
+  "source": {
+    "documentId": "cd12-cd14-calculus",
+    "fileName": "Nguyen-ham-Tich-phan-CD12-CD14.pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22",
+    "pageCount": 49,
+    "pages": [
+      1
+    ],
+    "regions": [
+      {
+        "id": "13.1-pdf-1",
+        "x": 0.055,
+        "y": 0.11,
+        "width": 0.89,
+        "height": 0.6,
+        "page": 1,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf",
+    "startedAt": "2026-11-10T03:55:22.928391Z",
+    "finishedAt": "2026-11-10T03:55:22.928402Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=1-1"
+  },
+  "blocks": [
+    {
+      "id": "13.1-b-p1-i001-2520bf",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.0689,
+        "width": 0.3193,
+        "height": 0.1139
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "NGUYÊN HÀM TÍCH PHÂN ỨNG DỤNG",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i002-6194f7",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2065,
+        "width": 0.3349,
+        "height": 0.0142
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD12–CD14 · 26 dạng · 260 ví dụ",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i003-ef74bf",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1093,
+        "y": 0.2595,
+        "width": 0.7814,
+        "height": 0.0612
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Cấu trúc tài liệu. Mỗi dạng có kiến thức, cách làm và 10 ví dụ. Các ví dụđược sắp từthao tác nền tảng đến bài phối hợp hoặc phát hiện sai lầm; toàn bộlời giải đặt ởphần cuối. Đổi biến và từng phần được trình bày như phương pháp mởrộng theo danh mục chuyên đề.",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i004-3f892f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.3598,
+        "width": 0.1035,
+        "height": 0.017
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mục lục",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i005-b9ee03",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.4132,
+        "width": 0.819,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1 CD12 · NGUYÊN HÀM 3",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i006-bc5e1e",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4352,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.1 Dạng 12.1 · Nguyên hàm cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . 3",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i007-0e232d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4572,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.2 Dạng 12.2 · Nguyên hàm đa thức . . . . . . . . . . . . . . . . . . . . . . . . . . 3",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i008-556520",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.4792,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.3 Dạng 12.3 · Nguyên hàm phân thức . . . . . . . . . . . . . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i009-2561d6",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5012,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.4 Dạng 12.4 · Nguyên hàm lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i010-d976f8",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5232,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.5 Dạng 12.5 · Nguyên hàm mũ – logarit . . . . . . . . . . . . . . . . . . . . . . . . 5",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i011-8544fc",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5452,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.6 Dạng 12.6 · Đổi biến số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i012-ee8086",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5673,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.7 Dạng 12.7 · Từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i013-eb0c8f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.5893,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.8 Dạng 12.8 · Tìm hàm sốkhi biết đạo hàm . . . . . . . . . . . . . . . . . . . . . 6",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i014-68090f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6113,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1.9 Dạng 12.9 · Nguyên hàm thỏa điều kiện ban đầu . . . . . . . . . . . . . . . . . 7",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i015-cff642",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.6462,
+        "width": 0.819,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2 CD13 · TÍCH PHÂN 8",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i016-cc0594",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6683,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.1 Dạng 13.1 · Tính tích phân cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . 8",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i017-c53a53",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.6903,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.2 Dạng 13.2 · Tính chất của tích phân . . . . . . . . . . . . . . . . . . . . . . . . . 9",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i018-ac9e86",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7123,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.3 Dạng 13.3 · Đổi biến trong tích phân . . . . . . . . . . . . . . . . . . . . . . . . 9",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i019-1968f6",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7343,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.4 Dạng 13.4 · Tích phân từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . 10",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i020-a46fb1",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7563,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.5 Dạng 13.5 · Tích phân hàm chứa trịtuyệt đối . . . . . . . . . . . . . . . . . . . 11",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i021-a6f99a",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.7783,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.6 Dạng 13.6 · Tích phân dựa vào đồthị . . . . . . . . . . . . . . . . . . . . . . . . 12",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i022-ebef31",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8003,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.7 Dạng 13.7 · Tích phân có tham số . . . . . . . . . . . . . . . . . . . . . . . . . . 14",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i023-5be3a5",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8223,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2.8 Dạng 13.8 · Tích phân kết hợp tính đối xứng . . . . . . . . . . . . . . . . . . . 15",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i024-0f8a09",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.8573,
+        "width": 0.819,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3 CD14 · ỨNG DỤNG TÍCH PHÂN 17",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i025-6f766e",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.8793,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3.1 Dạng 14.1 · Diện tích hình phẳng với trục Ox . . . . . . . . . . . . . . . . . . . 17",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i026-9748de",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.9013,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3.2 Dạng 14.2 · Diện tích giữa hai đồthị . . . . . . . . . . . . . . . . . . . . . . . . 18",
+      "latex": []
+    },
+    {
+      "id": "13.1-b-p1-i027-6a1a75",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.118,
+        "y": 0.9233,
+        "width": 0.7915,
+        "height": 0.013
+      },
+      "regionId": "13.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3.3 Dạng 14.3 · Thểtích khối tròn xoay . . . . . . . . . . . . . . . . . . . . . . . . . 19",
+      "latex": []
+    }
+  ],
+  "headings": [],
+  "sections": {
+    "knowledge": [
+      "13.1-b-p1-i001-2520bf",
+      "13.1-b-p1-i002-6194f7",
+      "13.1-b-p1-i003-ef74bf",
+      "13.1-b-p1-i004-3f892f",
+      "13.1-b-p1-i005-b9ee03",
+      "13.1-b-p1-i006-bc5e1e",
+      "13.1-b-p1-i007-0e232d",
+      "13.1-b-p1-i008-556520",
+      "13.1-b-p1-i009-2561d6",
+      "13.1-b-p1-i010-d976f8",
+      "13.1-b-p1-i011-8544fc",
+      "13.1-b-p1-i012-ee8086",
+      "13.1-b-p1-i013-eb0c8f",
+      "13.1-b-p1-i014-68090f",
+      "13.1-b-p1-i015-cff642",
+      "13.1-b-p1-i016-cc0594",
+      "13.1-b-p1-i017-c53a53",
+      "13.1-b-p1-i018-ac9e86",
+      "13.1-b-p1-i019-1968f6",
+      "13.1-b-p1-i020-a46fb1",
+      "13.1-b-p1-i021-a6f99a",
+      "13.1-b-p1-i022-ebef31",
+      "13.1-b-p1-i023-5be3a5",
+      "13.1-b-p1-i024-0f8a09",
+      "13.1-b-p1-i025-6f766e",
+      "13.1-b-p1-i026-9748de",
+      "13.1-b-p1-i027-6a1a75"
+    ],
+    "workedExamples": [],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "needs-source-review",
+    "reviewer": null,
+    "reviewedAt": null,
+    "sourceHash": "AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22",
+    "formulasChecked": false,
+    "boundariesChecked": false,
+    "notes": [
+      "Auto-imported từ TaiLieu bằng pymupdf importer — cần đối chiếu PDF trước khi publish."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 13.1\ntitle: Tích phân\nsourceSha256: AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22\nprovider: pymupdf\nverification: needs-source-review\n---\n\n# 13.1 Tích phân\n\n> Nguồn: Nguyen-ham-Tich-phan-CD12-CD14.pdf, trang PDF 1. Nội dung auto-import bằng PyMuPDF; phải đối chiếu PDF gốc trước khi publish.\n\n## Kiến thức\n\n<!-- source-block:13.1-b-p1-i001-2520bf page:1 region:13.1-pdf-1 -->\nNGUYÊN HÀM TÍCH PHÂN ỨNG DỤNG\n\n<!-- source-block:13.1-b-p1-i002-6194f7 page:1 region:13.1-pdf-1 -->\nCD12–CD14 · 26 dạng · 260 ví dụ\n\n<!-- source-block:13.1-b-p1-i003-ef74bf page:1 region:13.1-pdf-1 -->\nCấu trúc tài liệu. Mỗi dạng có kiến thức, cách làm và 10 ví dụ. Các ví dụđược sắp từthao tác nền tảng đến bài phối hợp hoặc phát hiện sai lầm; toàn bộlời giải đặt ởphần cuối. Đổi biến và từng phần được trình bày như phương pháp mởrộng theo danh mục chuyên đề.\n\n<!-- source-block:13.1-b-p1-i004-3f892f page:1 region:13.1-pdf-1 -->\nMục lục\n\n<!-- source-block:13.1-b-p1-i005-b9ee03 page:1 region:13.1-pdf-1 -->\n1 CD12 · NGUYÊN HÀM 3\n\n<!-- source-block:13.1-b-p1-i006-bc5e1e page:1 region:13.1-pdf-1 -->\n1.1 Dạng 12.1 · Nguyên hàm cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n\n<!-- source-block:13.1-b-p1-i007-0e232d page:1 region:13.1-pdf-1 -->\n1.2 Dạng 12.2 · Nguyên hàm đa thức . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n\n<!-- source-block:13.1-b-p1-i008-556520 page:1 region:13.1-pdf-1 -->\n1.3 Dạng 12.3 · Nguyên hàm phân thức . . . . . . . . . . . . . . . . . . . . . . . . . 4\n\n<!-- source-block:13.1-b-p1-i009-2561d6 page:1 region:13.1-pdf-1 -->\n1.4 Dạng 12.4 · Nguyên hàm lượng giác . . . . . . . . . . . . . . . . . . . . . . . . . 4\n\n<!-- source-block:13.1-b-p1-i010-d976f8 page:1 region:13.1-pdf-1 -->\n1.5 Dạng 12.5 · Nguyên hàm mũ – logarit . . . . . . . . . . . . . . . . . . . . . . . . 5\n\n<!-- source-block:13.1-b-p1-i011-8544fc page:1 region:13.1-pdf-1 -->\n1.6 Dạng 12.6 · Đổi biến số . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n\n<!-- source-block:13.1-b-p1-i012-ee8086 page:1 region:13.1-pdf-1 -->\n1.7 Dạng 12.7 · Từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n\n<!-- source-block:13.1-b-p1-i013-eb0c8f page:1 region:13.1-pdf-1 -->\n1.8 Dạng 12.8 · Tìm hàm sốkhi biết đạo hàm . . . . . . . . . . . . . . . . . . . . . 6\n\n<!-- source-block:13.1-b-p1-i014-68090f page:1 region:13.1-pdf-1 -->\n1.9 Dạng 12.9 · Nguyên hàm thỏa điều kiện ban đầu . . . . . . . . . . . . . . . . . 7\n\n<!-- source-block:13.1-b-p1-i015-cff642 page:1 region:13.1-pdf-1 -->\n2 CD13 · TÍCH PHÂN 8\n\n<!-- source-block:13.1-b-p1-i016-cc0594 page:1 region:13.1-pdf-1 -->\n2.1 Dạng 13.1 · Tính tích phân cơ bản . . . . . . . . . . . . . . . . . . . . . . . . . . 8\n\n<!-- source-block:13.1-b-p1-i017-c53a53 page:1 region:13.1-pdf-1 -->\n2.2 Dạng 13.2 · Tính chất của tích phân . . . . . . . . . . . . . . . . . . . . . . . . . 9\n\n<!-- source-block:13.1-b-p1-i018-ac9e86 page:1 region:13.1-pdf-1 -->\n2.3 Dạng 13.3 · Đổi biến trong tích phân . . . . . . . . . . . . . . . . . . . . . . . . 9\n\n<!-- source-block:13.1-b-p1-i019-1968f6 page:1 region:13.1-pdf-1 -->\n2.4 Dạng 13.4 · Tích phân từng phần . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n\n<!-- source-block:13.1-b-p1-i020-a46fb1 page:1 region:13.1-pdf-1 -->\n2.5 Dạng 13.5 · Tích phân hàm chứa trịtuyệt đối . . . . . . . . . . . . . . . . . . . 11\n\n<!-- source-block:13.1-b-p1-i021-a6f99a page:1 region:13.1-pdf-1 -->\n2.6 Dạng 13.6 · Tích phân dựa vào đồthị . . . . . . . . . . . . . . . . . . . . . . . . 12\n\n<!-- source-block:13.1-b-p1-i022-ebef31 page:1 region:13.1-pdf-1 -->\n2.7 Dạng 13.7 · Tích phân có tham số . . . . . . . . . . . . . . . . . . . . . . . . . . 14\n\n<!-- source-block:13.1-b-p1-i023-5be3a5 page:1 region:13.1-pdf-1 -->\n2.8 Dạng 13.8 · Tích phân kết hợp tính đối xứng . . . . . . . . . . . . . . . . . . . 15\n\n<!-- source-block:13.1-b-p1-i024-0f8a09 page:1 region:13.1-pdf-1 -->\n3 CD14 · ỨNG DỤNG TÍCH PHÂN 17\n\n<!-- source-block:13.1-b-p1-i025-6f766e page:1 region:13.1-pdf-1 -->\n3.1 Dạng 14.1 · Diện tích hình phẳng với trục Ox . . . . . . . . . . . . . . . . . . . 17\n\n<!-- source-block:13.1-b-p1-i026-9748de page:1 region:13.1-pdf-1 -->\n3.2 Dạng 14.2 · Diện tích giữa hai đồthị . . . . . . . . . . . . . . . . . . . . . . . . 18\n\n<!-- source-block:13.1-b-p1-i027-6a1a75 page:1 region:13.1-pdf-1 -->\n3.3 Dạng 14.3 · Thểtích khối tròn xoay . . . . . . . . . . . . . . . . . . . . . . . . . 19\n"
+}

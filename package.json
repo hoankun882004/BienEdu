@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
     "check": "node scripts/check-source.mjs",
     "content:scan": "node scripts/content-pipeline.mjs scan",
     "content:import": "node scripts/content-pipeline.mjs import",

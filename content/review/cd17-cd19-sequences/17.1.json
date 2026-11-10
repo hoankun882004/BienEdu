@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "17.1",
+    "id": "CD17-01",
+    "title": "Dãy số",
+    "topicId": "CD17",
+    "topicTitle": "Dãy số"
+  },
+  "source": {
+    "documentId": "cd17-cd19-sequences",
+    "fileName": "Day-so-Cap-so-CD17-CD19.pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E",
+    "pageCount": 21,
+    "pages": [
+      1
+    ],
+    "regions": [
+      {
+        "id": "17.1-pdf-1",
+        "x": 0.055,
+        "y": 0.11,
+        "width": 0.89,
+        "height": 0.6,
+        "page": 1,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf",
+    "startedAt": "2026-11-10T03:55:22.202983Z",
+    "finishedAt": "2026-11-10T03:55:22.202992Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=1-1"
+  },
+  "blocks": [
+    {
+      "id": "17.1-b-p1-i001-1e997f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.0726,
+        "width": 0.4366,
+        "height": 0.0294
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "DÃY SỐVÀ CẤP SỐ",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i002-fab13d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.1235,
+        "width": 0.3349,
+        "height": 0.0142
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "CD17–CD19 · 17 dạng · 170 ví dụ",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i003-32a02a",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1093,
+        "y": 0.1765,
+        "width": 0.7814,
+        "height": 0.0612
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mỗi dạng có kiến thức, cách làm và 10 ví dụ, đi từthao tác nền tảng đến phối hợp dữkiện, tìm tham sốvà bài toán thực tế. Toàn bộlời giải đặt cuối file. Trừkhi đềghi khác, chỉsốcủa dãy bắt đầu từ n = 1 ; trong mô hình có giá trịban đầu tại thời điểm 0 , mốc này được ghi riêng.",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i004-3f892f",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.2709,
+        "width": 0.1035,
+        "height": 0.017
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Mục lục",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i005-716706",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.3185,
+        "width": 0.819,
+        "height": 0.0828
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "1 CD17 · DÃY SỐ 2 1.1 Dạng 17.1 · Xác định sốhạng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.2 Dạng 17.2 · Công thức sốhạng tổng quát . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.3 Dạng 17.3 · Dãy truy hồi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.4 Dạng 17.4 · Tính đơn điệu của dãy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.5 Dạng 17.5 · Bài toán thực tếvềdãy số . . . . . . . . . . . . . . . . . . . . . . . . . . . 4",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i006-329106",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.4177,
+        "width": 0.819,
+        "height": 0.097
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "2 CD18 · CẤP SỐCỘNG 5 2.1 Dạng 18.1 · Tìm công sai . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.2 Dạng 18.2 · Sốhạng tổng quát của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . 5 2.3 Dạng 18.3 · Tổng n sốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 6 2.4 Dạng 18.4 · Tìm sốsốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 6 2.5 Dạng 18.5 · Ba sốlập cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.6 Dạng 18.6 · Bài toán thực tếvềcấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . 7",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i007-07769d",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.531,
+        "width": 0.819,
+        "height": 0.097
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "3 CD19 · CẤP SỐNHÂN 9 3.1 Dạng 19.1 · Tìm công bội . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3.2 Dạng 19.2 · Sốhạng tổng quát của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . 9 3.3 Dạng 19.3 · Tổng n sốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 10 3.4 Dạng 19.4 · Tìm sốsốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 10 3.5 Dạng 19.5 · Ba sốlập cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.6 Dạng 19.6 · Bài toán thực tếvềcấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . 11",
+      "latex": []
+    },
+    {
+      "id": "17.1-b-p1-i008-896cef",
+      "providerBlockId": null,
+      "page": 1,
+      "type": "Text",
+      "polygon": {
+        "x": 0.0905,
+        "y": 0.6442,
+        "width": 0.819,
+        "height": 0.2532
+      },
+      "regionId": "17.1-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "4 LỜI GIẢI · 170 VÍ DỤ 13 4.1 Dạng 17.1 · Xác định sốhạng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 4.2 Dạng 17.2 · Công thức sốhạng tổng quát . . . . . . . . . . . . . . . . . . . . . . . . . 13 4.3 Dạng 17.3 · Dãy truy hồi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 4.4 Dạng 17.4 · Tính đơn điệu của dãy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 4.5 Dạng 17.5 · Bài toán thực tếvềdãy số . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 4.6 Dạng 18.1 · Tìm công sai . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 4.7 Dạng 18.2 · Sốhạng tổng quát của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . 16 4.8 Dạng 18.3 · Tổng n sốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 16 4.9 Dạng 18.4 · Tìm sốsốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 17 4.10 Dạng 18.5 · Ba sốlập cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 4.11 Dạng 18.6 · Bài toán thực tếvềcấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . 18 4.12 Dạng 19.1 · Tìm công bội . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 4.13 Dạng 19.2 · Sốhạng tổng quát của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . 18 4.14 Dạng 19.3 · Tổng n sốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 19 4.15 Dạng 19.4 · Tìm sốsốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 19 4.16 Dạng 19.5 · Ba sốlập cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 4.17 Dạng 19.6 · Bài toán thực tếvềcấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . 20",
+      "latex": []
+    }
+  ],
+  "headings": [],
+  "sections": {
+    "knowledge": [
+      "17.1-b-p1-i001-1e997f",
+      "17.1-b-p1-i002-fab13d",
+      "17.1-b-p1-i003-32a02a",
+      "17.1-b-p1-i004-3f892f",
+      "17.1-b-p1-i005-716706",
+      "17.1-b-p1-i006-329106",
+      "17.1-b-p1-i007-07769d",
+      "17.1-b-p1-i008-896cef"
+    ],
+    "workedExamples": [],
+    "practice": []
+  },
+  "assets": [],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "needs-source-review",
+    "reviewer": null,
+    "reviewedAt": null,
+    "sourceHash": "46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E",
+    "formulasChecked": false,
+    "boundariesChecked": false,
+    "notes": [
+      "Auto-imported từ TaiLieu bằng pymupdf importer — cần đối chiếu PDF trước khi publish."
+    ]
+  },
+  "markdown": "---\nschemaVersion: bienedu.math-pdf.v1\nsubtopic: 17.1\ntitle: Dãy số\nsourceSha256: 46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E\nprovider: pymupdf\nverification: needs-source-review\n---\n\n# 17.1 Dãy số\n\n> Nguồn: Day-so-Cap-so-CD17-CD19.pdf, trang PDF 1. Nội dung auto-import bằng PyMuPDF; phải đối chiếu PDF gốc trước khi publish.\n\n## Kiến thức\n\n<!-- source-block:17.1-b-p1-i001-1e997f page:1 region:17.1-pdf-1 -->\nDÃY SỐVÀ CẤP SỐ\n\n<!-- source-block:17.1-b-p1-i002-fab13d page:1 region:17.1-pdf-1 -->\nCD17–CD19 · 17 dạng · 170 ví dụ\n\n<!-- source-block:17.1-b-p1-i003-32a02a page:1 region:17.1-pdf-1 -->\nMỗi dạng có kiến thức, cách làm và 10 ví dụ, đi từthao tác nền tảng đến phối hợp dữkiện, tìm tham sốvà bài toán thực tế. Toàn bộlời giải đặt cuối file. Trừkhi đềghi khác, chỉsốcủa dãy bắt đầu từ n = 1 ; trong mô hình có giá trịban đầu tại thời điểm 0 , mốc này được ghi riêng.\n\n<!-- source-block:17.1-b-p1-i004-3f892f page:1 region:17.1-pdf-1 -->\nMục lục\n\n<!-- source-block:17.1-b-p1-i005-716706 page:1 region:17.1-pdf-1 -->\n1 CD17 · DÃY SỐ 2 1.1 Dạng 17.1 · Xác định sốhạng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.2 Dạng 17.2 · Công thức sốhạng tổng quát . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.3 Dạng 17.3 · Dãy truy hồi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.4 Dạng 17.4 · Tính đơn điệu của dãy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.5 Dạng 17.5 · Bài toán thực tếvềdãy số . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n\n<!-- source-block:17.1-b-p1-i006-329106 page:1 region:17.1-pdf-1 -->\n2 CD18 · CẤP SỐCỘNG 5 2.1 Dạng 18.1 · Tìm công sai . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.2 Dạng 18.2 · Sốhạng tổng quát của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . 5 2.3 Dạng 18.3 · Tổng n sốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 6 2.4 Dạng 18.4 · Tìm sốsốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 6 2.5 Dạng 18.5 · Ba sốlập cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.6 Dạng 18.6 · Bài toán thực tếvềcấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . 7\n\n<!-- source-block:17.1-b-p1-i007-07769d page:1 region:17.1-pdf-1 -->\n3 CD19 · CẤP SỐNHÂN 9 3.1 Dạng 19.1 · Tìm công bội . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3.2 Dạng 19.2 · Sốhạng tổng quát của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . 9 3.3 Dạng 19.3 · Tổng n sốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 10 3.4 Dạng 19.4 · Tìm sốsốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 10 3.5 Dạng 19.5 · Ba sốlập cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.6 Dạng 19.6 · Bài toán thực tếvềcấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . 11\n\n<!-- source-block:17.1-b-p1-i008-896cef page:1 region:17.1-pdf-1 -->\n4 LỜI GIẢI · 170 VÍ DỤ 13 4.1 Dạng 17.1 · Xác định sốhạng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 4.2 Dạng 17.2 · Công thức sốhạng tổng quát . . . . . . . . . . . . . . . . . . . . . . . . . 13 4.3 Dạng 17.3 · Dãy truy hồi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 4.4 Dạng 17.4 · Tính đơn điệu của dãy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 4.5 Dạng 17.5 · Bài toán thực tếvềdãy số . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 4.6 Dạng 18.1 · Tìm công sai . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 4.7 Dạng 18.2 · Sốhạng tổng quát của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . 16 4.8 Dạng 18.3 · Tổng n sốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 16 4.9 Dạng 18.4 · Tìm sốsốhạng của cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . 17 4.10 Dạng 18.5 · Ba sốlập cấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 4.11 Dạng 18.6 · Bài toán thực tếvềcấp sốcộng . . . . . . . . . . . . . . . . . . . . . . . . 18 4.12 Dạng 19.1 · Tìm công bội . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 4.13 Dạng 19.2 · Sốhạng tổng quát của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . 18 4.14 Dạng 19.3 · Tổng n sốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 19 4.15 Dạng 19.4 · Tìm sốsốhạng của cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . 19 4.16 Dạng 19.5 · Ba sốlập cấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 4.17 Dạng 19.6 · Bài toán thực tếvềcấp sốnhân . . . . . . . . . . . . . . . . . . . . . . . . 20\n"
+}

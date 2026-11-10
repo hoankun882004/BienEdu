@@ -1,0 +1,391 @@
+% CD08 - Lua thua, ham so mu va logarit.
+% Ban LaTeX dung lai tu CD08 trong Mu-Logarit-10-vi-du.pdf (ban da ra soat).
+% Bien dich bang XeLaTeX tren Overleaf; file nay doc lap, khong can anh ngoai.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\usepackage[margin=20mm,headheight=16pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,xcolor,tcolorbox,fancyhdr,titlesec,needspace,hyperref,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{teal}{HTML}{176A73}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={CD08 - Luy thua, ham so mu va logarit},pdfauthor={Biennobiengioi}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily CD08 · MŨ VÀ LÔGARIT}
+\fancyhead[R]{\small\sffamily\bfseries\color{teal}Biennobiengioi}
+\fancyfoot[C]{\thepage}
+\titleformat{\section}{\Large\sffamily\bfseries\color{teal}}{}{0pt}{}
+\titleformat{\subsection}{\large\sffamily\bfseries\color{teal}}{}{0pt}{}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\tcbset{colback=teal!5,colframe=teal,boxrule=.4pt,arc=1mm}
+\newcommand{\vd}[1]{\par\Needspace{3\baselineskip}\textbf{\color{teal}Ví dụ #1.}\ }
+\renewcommand{\contentsname}{Mục lục}
+\raggedbottom
+\begin{document}
+{\Huge\sffamily\bfseries\color{teal} CD08\par}
+{\LARGE\sffamily Lũy thừa, hàm số mũ và lôgarit\par}
+\bigskip 14 dạng · 140 ví dụ · Lời giải cuối tài liệu
+{\small\tableofcontents}
+\clearpage
+\section{Công thức cần nhớ}
+Với $a,b>0$ và $\alpha,\beta\in\mathbb R$:
+\[
+a^\alpha a^\beta=a^{\alpha+\beta},\qquad
+\frac{a^\alpha}{a^\beta}=a^{\alpha-\beta},\qquad
+(a^\alpha)^\beta=a^{\alpha\beta},\qquad
+(ab)^\alpha=a^\alpha b^\alpha.
+\]
+Với $a>0,a\ne1,M,N>0$:
+\[
+\log_aM=t\iff a^t=M,\quad \log_a1=0,\quad\log_aa=1,
+\quad a^{\log_aM}=M.
+\]
+\[
+\log_a(MN)=\log_aM+\log_aN,\quad
+\log_a(M/N)=\log_aM-\log_aN,\quad
+\log_a(M^\alpha)=\alpha\log_aM.
+\]
+Nếu thêm $b>0,b\ne1$, $\log_aM=\dfrac{\log_bM}{\log_ba}$.
+Quy ước $\log x=\log_{10}x$; $\ln x=\log_ex$.
+
+\begin{center}\begin{tabular}{lll}\toprule
+Tính chất & $y=a^x$ & $y=\log_ax$\\\midrule
+Tập xác định & $\mathbb R$ & $(0;+\infty)$\\
+Tập giá trị & $(0;+\infty)$ & $\mathbb R$\\
+$a>1$ & Đồng biến & Đồng biến\\
+$0<a<1$ & Nghịch biến & Nghịch biến\\
+Điểm đi qua & $(0;1),(1;a)$ & $(1;0),(a;1)$\\\bottomrule
+\end{tabular}\end{center}
+\begin{tcolorbox}
+$\sqrt{u^2}=|u|$. Với $n$ lẻ, $\sqrt[n]{u^n}=u$; với $n$ chẵn, $\sqrt[n]{u^n}=|u|$.
+Lũy thừa số mũ nguyên âm cần cơ số khác 0. Lũy thừa số mũ thực tổng quát dùng cơ số dương.
+$0^0$ và lũy thừa âm của 0 không xác định.
+\end{tcolorbox}
+\clearpage
+\section{Kiến thức, cách làm và ví dụ}
+
+\clearpage\subsection{8.1. Lũy thừa với số mũ thực}
+\begin{tcolorbox}\textbf{Cách làm.} Với cơ số dương, đưa căn về số mũ hữu tỉ; nhân cùng cơ số thì cộng số mũ, chia thì trừ, lũy thừa của lũy thừa thì nhân.\end{tcolorbox}
+\vd{8.1.1}Tính $A=16^{3/4}+27^{-2/3}$.
+\vd{8.1.2}Tính $81^{3/4}$.
+\vd{8.1.3}Rút gọn $a^{\sqrt3+2}/a^{\sqrt3-1}$, $a>0$.
+\vd{8.1.4}Tính $32^{2/5}+9^{-1/2}$.
+\vd{8.1.5}Rút gọn $a^{\sqrt2+1}a^{2-\sqrt2}$, $a>0$.
+\vd{8.1.6}Tính $(2^3)^{2/3}+2^{-1}$.
+\vd{8.1.7}Tính $(3^3)^{2/3}+3^{-1}$.
+\vd{8.1.8}Tính $(4^3)^{2/3}+4^{-1}$.
+\vd{8.1.9}Tính $(5^3)^{2/3}+5^{-1}$.
+\vd{8.1.10}Tính $(6^3)^{2/3}+6^{-1}$.
+\clearpage\subsection{8.2. Công thức lôgarit}
+\begin{tcolorbox}\textbf{Cách làm.} Kiểm tra cơ số $a>0,a\ne1$ và đối số dương. Dùng định nghĩa, công thức tích, thương, lũy thừa, đổi cơ số.\end{tcolorbox}
+\vd{8.2.1}Tính $A=\log_2 12-\log_2 3+\log_4 8$.
+\vd{8.2.2}Tính $\log_5 125$.
+\vd{8.2.3}Tính $\ln(e^2)+\log 0{,}01$.
+\vd{8.2.4}Tính $\log_3 81+\log_3(1/9)$.
+\vd{8.2.5}Tính $\log_2 3\cdot\log_3 8$.
+\vd{8.2.6}Tính $\log_{2}(8)-\log_{2}(2)$.
+\vd{8.2.7}Tính $\log_{3}(27)-\log_{3}(3)$.
+\vd{8.2.8}Tính $\log_{4}(64)-\log_{4}(4)$.
+\vd{8.2.9}Tính $\log_{5}(125)-\log_{5}(5)$.
+\vd{8.2.10}Tính $\log_{6}(216)-\log_{6}(6)$.
+\clearpage\subsection{8.3. Điều kiện xác định}
+\begin{tcolorbox}\textbf{Cách làm.} Với $\log_{a(x)}u(x)$, đồng thời cần $a(x)>0$, $a(x)\ne1$, $u(x)>0$. Có căn hoặc mẫu số thì thêm điều kiện tương ứng.\end{tcolorbox}
+\vd{8.3.1}Tìm tập xác định $y=\log_{x-1}(5-x)$.
+\vd{8.3.2}Tìm tập xác định $y=\log_2(3-x)$.
+\vd{8.3.3}Tìm tập xác định $y=\log_{2x}(x+1)$.
+\vd{8.3.4}Tìm tập xác định $y=\ln(x^2-4)$.
+\vd{8.3.5}Tìm tập xác định $y=1/\log_2(x-1)$.
+\vd{8.3.6}Tìm tập xác định $y=\log_2(2-x)+\ln(x+1)$.
+\vd{8.3.7}Tìm tập xác định $y=\log_2(3-x)+\ln(x+1)$.
+\vd{8.3.8}Tìm tập xác định $y=\log_2(4-x)+\ln(x+1)$.
+\vd{8.3.9}Tìm tập xác định $y=\log_2(5-x)+\ln(x+1)$.
+\vd{8.3.10}Tìm tập xác định $y=\log_2(6-x)+\ln(x+1)$.
+\clearpage\subsection{8.4. So sánh các số mũ}
+\begin{tcolorbox}\textbf{Cách làm.} Đưa về cùng cơ số. Cơ số lớn hơn 1: cùng chiều số mũ; cơ số trong $(0;1)$: ngược chiều. Chỉ bình phương so sánh sau khi kiểm tra dấu.\end{tcolorbox}
+\vd{8.4.1}So sánh $A=8^{\sqrt2}$ và $B=4^{\sqrt3}$.
+\vd{8.4.2}So sánh $2^{1{,}4}$ và $2^{1{,}5}$.
+\vd{8.4.3}So sánh $25^{\sqrt2}$ và $5^3$.
+\vd{8.4.4}So sánh $(1/3)^{\sqrt2}$ và $(1/3)^{3/2}$.
+\vd{8.4.5}So sánh $9^{\sqrt2}$ và $3^{\sqrt8}$.
+\vd{8.4.6}So sánh $A=(1/2)^{3}$ và $B=(1/2)^{4}$.
+\vd{8.4.7}So sánh $A=(1/3)^{4}$ và $B=(1/3)^{5}$.
+\vd{8.4.8}So sánh $A=(1/4)^{5}$ và $B=(1/4)^{6}$.
+\vd{8.4.9}So sánh $A=(1/5)^{6}$ và $B=(1/5)^{7}$.
+\vd{8.4.10}So sánh $A=(1/6)^{7}$ và $B=(1/6)^{8}$.
+\clearpage\subsection{8.5. So sánh các lôgarit}
+\begin{tcolorbox}\textbf{Cách làm.} Cùng cơ số thì dùng tính đơn điệu. Khác cơ số có thể đổi cơ số hoặc so sánh với 0 và 1; không chỉ so sánh hai cơ số rồi kết luận.\end{tcolorbox}
+\vd{8.5.1}So sánh $\log_{1/2}3$ và $\log_{1/2}5$.
+\vd{8.5.2}So sánh $\log_3 2$ và $\log_3 5$.
+\vd{8.5.3}So sánh $\log_2 5$ và $\log_4 5$.
+\vd{8.5.4}So sánh $\log_2 7$ và $\log_2 8$.
+\vd{8.5.5}Sắp tăng dần $\log_2(1/3),\log_3 2,\log_2 3$.
+\vd{8.5.6}So sánh $\log_{2}(3)$ và $2$.
+\vd{8.5.7}So sánh $\log_{3}(8)$ và $2$.
+\vd{8.5.8}So sánh $\log_{4}(15)$ và $2$.
+\vd{8.5.9}So sánh $\log_{5}(24)$ và $2$.
+\vd{8.5.10}So sánh $\log_{6}(35)$ và $2$.
+\clearpage\subsection{8.6. Đồ thị hàm số mũ}
+\begin{tcolorbox}\textbf{Cách làm.} Với $y=a^x$, $a>0,a\ne1$: tập xác định $\mathbb R$, tập giá trị $(0;+\infty)$; qua $(-1;1/a),(0;1),(1;a)$.\end{tcolorbox}
+\vd{8.6.1}Đồ thị $y=a^x$ đi qua $(2;9)$. Tìm $a$ và nêu tính biến thiên.
+\vd{8.6.2}Nêu tập xác định và tập giá trị $y=5^x$.
+\vd{8.6.3}Đồ thị $y=a^x$ qua $(3;8)$. Tìm $a$.
+\vd{8.6.4}Lập ba điểm để vẽ $y=(1/3)^x$.
+\vd{8.6.5}Đồ thị $y=a^x$ qua $(-1;4)$. Tìm $a$.
+\vd{8.6.6}Đồ thị $y=a^x$ qua $(2;4)$. Tìm cơ số và tính đơn điệu.
+\vd{8.6.7}Đồ thị $y=a^x$ qua $(2;9)$. Tìm cơ số và tính đơn điệu.
+\vd{8.6.8}Đồ thị $y=a^x$ qua $(2;16)$. Tìm cơ số và tính đơn điệu.
+\vd{8.6.9}Đồ thị $y=a^x$ qua $(2;25)$. Tìm cơ số và tính đơn điệu.
+\vd{8.6.10}Đồ thị $y=a^x$ qua $(2;36)$. Tìm cơ số và tính đơn điệu.
+\clearpage\subsection{8.7. Đồ thị hàm số lôgarit}
+\begin{tcolorbox}\textbf{Cách làm.} Với $y=\log_a x$, ghi $x>0$; lấy $(1;0),(a;1),(1/a;-1)$; xét chiều biến thiên theo cơ số.\end{tcolorbox}
+\vd{8.7.1}Đồ thị $y=\log_a x$ qua $(4;2)$. Tìm $a$.
+\vd{8.7.2}Đồ thị $y=\log_a x$ qua $(9;1)$. Tìm $a$.
+\vd{8.7.3}Vẽ $y=\log_3x$ bằng ba điểm.
+\vd{8.7.4}Lập ba điểm của $y=\log_{1/3}x$.
+\vd{8.7.5}Đồ thị $y=\log_ax$ qua $(8;-3)$. Tìm $a$.
+\vd{8.7.6}Đồ thị $y=\log_ax$ qua $(4;2)$. Tìm cơ số, tập xác định và chiều biến thiên.
+\vd{8.7.7}Đồ thị $y=\log_ax$ qua $(9;2)$. Tìm cơ số, tập xác định và chiều biến thiên.
+\vd{8.7.8}Đồ thị $y=\log_ax$ qua $(16;2)$. Tìm cơ số, tập xác định và chiều biến thiên.
+\vd{8.7.9}Đồ thị $y=\log_ax$ qua $(25;2)$. Tìm cơ số, tập xác định và chiều biến thiên.
+\vd{8.7.10}Đồ thị $y=\log_ax$ qua $(36;2)$. Tìm cơ số, tập xác định và chiều biến thiên.
+\clearpage\subsection{8.8. Biến đổi biểu thức mũ - lôgarit}
+\begin{tcolorbox}\textbf{Cách làm.} Ghi điều kiện; dùng công thức tích, thương, lũy thừa và đổi cơ số. Chỉ rút gọn trong tập xác định ban đầu.\end{tcolorbox}
+\vd{8.8.1}Rút gọn $A=\log_2(x^2-1)-\log_2(x-1)$ với $x>1$.
+\vd{8.8.2}Rút gọn $\log_3(9x)-\log_3x$, $x>0$.
+\vd{8.8.3}Rút gọn $\log_2(x^2)$ với $x<0$.
+\vd{8.8.4}Rút gọn $\log_a(a^3b^2)$, $a,b>0,a\ne1$.
+\vd{8.8.5}Rút gọn $2^{\log_25}+\ln(e^{-3})$.
+\vd{8.8.6}Rút gọn $\log_2(2^{2}x)-\log_2x$, $x>0$.
+\vd{8.8.7}Rút gọn $\log_2(2^{3}x)-\log_2x$, $x>0$.
+\vd{8.8.8}Rút gọn $\log_2(2^{4}x)-\log_2x$, $x>0$.
+\vd{8.8.9}Rút gọn $\log_2(2^{5}x)-\log_2x$, $x>0$.
+\vd{8.8.10}Rút gọn $\log_2(2^{6}x)-\log_2x$, $x>0$.
+\clearpage\subsection{8.9. Bài toán nhận biết nhanh}
+\begin{tcolorbox}\textbf{Cách làm.} Kiểm tra điều kiện, giá trị đặc biệt, dấu, chiều biến thiên. Một phản ví dụ đủ bác bỏ mệnh đề; thử một giá trị không chứng minh được đẳng thức luôn đúng.\end{tcolorbox}
+\vd{8.9.1}Kiểm tra $\log_2(x+1)=\log_2x+\log_21$ với mọi $x>0$.
+\vd{8.9.2}$\log_2(uv)=\log_2u+\log_2v$ đúng khi nào?
+\vd{8.9.3}Đúng hay sai: $2^x=0$ có nghiệm thực?
+\vd{8.9.4}Đúng hay sai: $a^{\log_a7}=7$ với $a>0,a\ne1$?
+\vd{8.9.5}Đúng hay sai: $\log_{1/2}3>0$?
+\vd{8.9.6}Đúng hay sai: $\log_{2}(2x)=2+\log_{2}x$ với mọi $x>0$?
+\vd{8.9.7}Đúng hay sai: $\log_{3}(3x)=3+\log_{3}x$ với mọi $x>0$?
+\vd{8.9.8}Đúng hay sai: $\log_{4}(4x)=4+\log_{4}x$ với mọi $x>0$?
+\vd{8.9.9}Đúng hay sai: $\log_{5}(5x)=5+\log_{5}x$ với mọi $x>0$?
+\vd{8.9.10}Đúng hay sai: $\log_{6}(6x)=6+\log_{6}x$ với mọi $x>0$?
+\clearpage\subsection{8.10. Căn bậc n và điều kiện của lũy thừa}
+\begin{tcolorbox}\textbf{Cách làm.} Phân biệt căn chẵn và căn lẻ; $\sqrt{u^2}=|u|$. Chuyển căn sang lũy thừa số mũ hữu tỉ theo quy ước SGK với cơ số dương; giữ điều kiện biểu thức ban đầu.\end{tcolorbox}
+\vd{8.10.1}Rút gọn $\sqrt{(x-2)^2}$ và giải $\sqrt{(x-2)^2}=3$.
+\vd{8.10.2}Tính $\sqrt[4]{81}$ và $\sqrt[3]{-8}$.
+\vd{8.10.3}Rút gọn $\sqrt{(x+1)^2}$ khi $x<-1$.
+\vd{8.10.4}Tính $\sqrt[3]{-125}$ và $\sqrt{(-5)^2}$.
+\vd{8.10.5}Tìm tập xác định $y=(x-3)^{-2}$.
+\vd{8.10.6}Rút gọn $\sqrt{(x-2)^2}$ với $x<2$.
+\vd{8.10.7}Rút gọn $\sqrt{(x-3)^2}$ với $x<3$.
+\vd{8.10.8}Rút gọn $\sqrt{(x-4)^2}$ với $x<4$.
+\vd{8.10.9}Rút gọn $\sqrt{(x-5)^2}$ với $x<5$.
+\vd{8.10.10}Rút gọn $\sqrt{(x-6)^2}$ với $x<6$.
+\clearpage\subsection{8.11. Tính lôgarit theo dữ kiện cho trước}
+\begin{tcolorbox}\textbf{Cách làm.} Đổi về cùng cơ số rồi biểu diễn tử và mẫu bằng dữ kiện đã biết. Không tách cơ số là tích thành tổng các lôgarit.\end{tcolorbox}
+\vd{8.11.1}Cho $a=\log_23$. Tính $\log_612$ theo $a$.
+\vd{8.11.2}Cho $a=\log_23$. Tính $\log_89$.
+\vd{8.11.3}Cho $a=\log_35$. Tính $\log_{15}75$.
+\vd{8.11.4}Cho $a=\log_25$. Tính $\log_{10}20$.
+\vd{8.11.5}Cho $a=\log_23,b=\log_25$. Tính $\log_{15}12$.
+\vd{8.11.6}Cho $a=\log_23$. Tính $\log_{4\cdot3}(8\cdot9)$ theo $a$.
+\vd{8.11.7}Cho $a=\log_23$. Tính $\log_{8\cdot3}(16\cdot9)$ theo $a$.
+\vd{8.11.8}Cho $a=\log_23$. Tính $\log_{16\cdot3}(32\cdot9)$ theo $a$.
+\vd{8.11.9}Cho $a=\log_23$. Tính $\log_{32\cdot3}(64\cdot9)$ theo $a$.
+\vd{8.11.10}Cho $a=\log_23$. Tính $\log_{64\cdot3}(128\cdot9)$ theo $a$.
+\clearpage\subsection{8.12. Tích lôgarit và cơ số là lũy thừa}
+\begin{tcolorbox}\textbf{Cách làm.} Đổi về một cơ số để rút gọn. Với các lôgarit hợp lệ, $\log_ab\log_bc=\log_ac$. Nếu $\alpha\ne0$, $\log_{a^\alpha}M=(\log_aM)/\alpha$.\end{tcolorbox}
+\vd{8.12.1}Tính $\log_23\cdot\log_35\cdot\log_516$.
+\vd{8.12.2}Tính $\log_27\cdot\log_74$.
+\vd{8.12.3}Tính $\log_927$.
+\vd{8.12.4}Tính $\log_49\cdot\log_32$.
+\vd{8.12.5}Rút gọn $\log_{a^2}(b^3)$ với $a,b>0,a\ne1$.
+\vd{8.12.6}Tính $\log_24\cdot\log_{4}(2^{2})$.
+\vd{8.12.7}Tính $\log_25\cdot\log_{5}(2^{3})$.
+\vd{8.12.8}Tính $\log_26\cdot\log_{6}(2^{4})$.
+\vd{8.12.9}Tính $\log_27\cdot\log_{7}(2^{5})$.
+\vd{8.12.10}Tính $\log_28\cdot\log_{8}(2^{6})$.
+\clearpage\subsection{8.13. Đọc cơ số và vị trí các đồ thị}
+\begin{tcolorbox}\textbf{Cách làm.} Đồ thị mũ: tại $x=1$, tung độ bằng cơ số. Đồ thị lôgarit: tại $y=1$, hoành độ bằng cơ số. Với $x>1$ và cơ số lớn hơn 1, cơ số lôgarit nhỏ hơn cho đồ thị cao hơn.\end{tcolorbox}
+\vd{8.13.1}Ba đồ thị $y=\log_ax,y=\log_bx,y=\log_cx$ có $a,b>1,0<c<1$. Tại $x=2$, đồ thị cơ số $a$ trên cơ số $b$. Sắp xếp các cơ số.
+\vd{8.13.2}Với $1<a<b$, so sánh $a^2,b^2$.
+\vd{8.13.3}Đồ thị $y=\log_ax$ giảm, qua $(1/4;1)$. Tìm $a$.
+\vd{8.13.4}Đồ thị $y=a^x$ tại $x=1$ có tung độ $0{,}4$. Nêu cơ số và chiều biến thiên.
+\vd{8.13.5}Với $1<a<b$, so sánh $\log_a(1/2)$ và $\log_b(1/2)$.
+\vd{8.13.6}Hai đồ thị $y=2^x$ và $y=3^x$. Tại $x=1$, đồ thị nào cao hơn? Tại $x=-1$ thì sao?
+\vd{8.13.7}Hai đồ thị $y=3^x$ và $y=4^x$. Tại $x=1$, đồ thị nào cao hơn? Tại $x=-1$ thì sao?
+\vd{8.13.8}Hai đồ thị $y=4^x$ và $y=5^x$. Tại $x=1$, đồ thị nào cao hơn? Tại $x=-1$ thì sao?
+\vd{8.13.9}Hai đồ thị $y=5^x$ và $y=6^x$. Tại $x=1$, đồ thị nào cao hơn? Tại $x=-1$ thì sao?
+\vd{8.13.10}Hai đồ thị $y=6^x$ và $y=7^x$. Tại $x=1$, đồ thị nào cao hơn? Tại $x=-1$ thì sao?
+\clearpage\subsection{8.14. Sử dụng máy tính và làm tròn}
+\begin{tcolorbox}\textbf{Cách làm.} Dùng $\log_aM=\ln M/\ln a$. Nhập đầy đủ ngoặc tử, mẫu và số mũ. Giữ kết quả chưa làm tròn đến cuối; với số kỳ nguyên cần xử lý đúng bất đẳng thức.\end{tcolorbox}
+\vd{8.14.1}Tính $t=\ln(1{,}5)/\ln(1{,}06)$ và chọn số kỳ nguyên nhỏ nhất để $1{,}06^n\ge1{,}5$.
+\vd{8.14.2}Tính $\log_512$ đến hai chữ số thập phân.
+\vd{8.14.3}Tìm số nguyên nhỏ nhất $n$ thỏa $1{,}1^n>2$.
+\vd{8.14.4}Tính $\log_720$ đến ba chữ số thập phân.
+\vd{8.14.5}Tính $e^{-0{,}3\cdot4}$ đến ba chữ số thập phân.
+\vd{8.14.6}Tính $\log_{2}3$ đến ba chữ số thập phân.
+\vd{8.14.7}Tính $\log_{3}4$ đến ba chữ số thập phân.
+\vd{8.14.8}Tính $\log_{4}5$ đến ba chữ số thập phân.
+\vd{8.14.9}Tính $\log_{5}6$ đến ba chữ số thập phân.
+\vd{8.14.10}Tính $\log_{6}7$ đến ba chữ số thập phân.
+\clearpage\section{Lời giải}
+\Needspace{7\baselineskip}\subsection{Dạng 8.1 - Lũy thừa với số mũ thực}
+\vd{8.1.1}$16^{3/4}=8$, $27^{-2/3}=1/9$, nên $A=73/9$.
+\vd{8.1.2}$81^{3/4}=(3^4)^{3/4}=3^3=27$.
+\vd{8.1.3}Trừ số mũ được $(\sqrt3+2)-(\sqrt3-1)=3$, nên kết quả $a^3$.
+\vd{8.1.4}$32^{2/5}=4$, $9^{-1/2}=1/3$; tổng $13/3$.
+\vd{8.1.5}Cộng số mũ: $(\sqrt2+1)+(2-\sqrt2)=3$, kết quả $a^3$.
+\vd{8.1.6}$(2^3)^{2/3}=4$; $2^{-1}=1/2$. Tổng $\dfrac{9}{2}$.
+\vd{8.1.7}$(3^3)^{2/3}=9$; $3^{-1}=1/3$. Tổng $\dfrac{28}{3}$.
+\vd{8.1.8}$(4^3)^{2/3}=16$; $4^{-1}=1/4$. Tổng $\dfrac{65}{4}$.
+\vd{8.1.9}$(5^3)^{2/3}=25$; $5^{-1}=1/5$. Tổng $\dfrac{126}{5}$.
+\vd{8.1.10}$(6^3)^{2/3}=36$; $6^{-1}=1/6$. Tổng $\dfrac{217}{6}$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.2 - Công thức lôgarit}
+\vd{8.2.1}$A=\log_2 4+\frac{\log_2 8}{\log_2 4}=2+3/2=7/2$.
+\vd{8.2.2}$125=5^3$ nên $\log_5 125=3$.
+\vd{8.2.3}$\ln(e^2)=2$, $\log 10^{-2}=-2$, nên tổng bằng 0.
+\vd{8.2.4}$4+(-2)=2$.
+\vd{8.2.5}Theo đổi cơ số, tích bằng $\log_2 8=3$.
+\vd{8.2.6}$8=2^3$ nên hiệu bằng $3-1=2$.
+\vd{8.2.7}$27=3^3$ nên hiệu bằng $3-1=2$.
+\vd{8.2.8}$64=4^3$ nên hiệu bằng $3-1=2$.
+\vd{8.2.9}$125=5^3$ nên hiệu bằng $3-1=2$.
+\vd{8.2.10}$216=6^3$ nên hiệu bằng $3-1=2$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.3 - Điều kiện xác định}
+\vd{8.3.1}$x-1>0$, $x-1\ne1$, $5-x>0$. Suy ra $D=(1;2)\cup(2;5)$.
+\vd{8.3.2}$3-x>0\Leftrightarrow x<3$. Vậy $D=(-\infty;3)$.
+\vd{8.3.3}$2x>0$, $2x\ne1$, $x+1>0$. Giao được $D=(0;1/2)\cup(1/2;+\infty)$.
+\vd{8.3.4}$x^2-4>0\Leftrightarrow x<-2$ hoặc $x>2$. $D=(-\infty;-2)\cup(2;+\infty)$.
+\vd{8.3.5}$x-1>0$ và $\log_2(x-1)\ne0$. Suy ra $x>1,x\ne2$; $D=(1;2)\cup(2;+\infty)$.
+\vd{8.3.6}Cần $2-x>0$ và $x+1>0$, nên $D=(-1;2)$.
+\vd{8.3.7}Cần $3-x>0$ và $x+1>0$, nên $D=(-1;3)$.
+\vd{8.3.8}Cần $4-x>0$ và $x+1>0$, nên $D=(-1;4)$.
+\vd{8.3.9}Cần $5-x>0$ và $x+1>0$, nên $D=(-1;5)$.
+\vd{8.3.10}Cần $6-x>0$ và $x+1>0$, nên $D=(-1;6)$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.4 - So sánh các số mũ}
+\vd{8.4.1}$A=2^{3\sqrt2},B=2^{2\sqrt3}$. Hai số mũ dương, $(3\sqrt2)^2=18>12=(2\sqrt3)^2$. Do đó $A>B$.
+\vd{8.4.2}Cơ số $2>1$, $1{,}4<1{,}5$, nên $2^{1{,}4}<2^{1{,}5}$.
+\vd{8.4.3}$25^{\sqrt2}=5^{2\sqrt2}$; $2\sqrt2<3$ vì $8<9$. Vậy số thứ nhất nhỏ hơn.
+\vd{8.4.4}$\sqrt2<3/2$, cơ số nhỏ hơn 1, nên số thứ nhất lớn hơn.
+\vd{8.4.5}$9^{\sqrt2}=3^{2\sqrt2}=3^{\sqrt8}$, nên bằng nhau.
+\vd{8.4.6}$0<1/2<1$ và $3<4$, nên $A>B$.
+\vd{8.4.7}$0<1/3<1$ và $4<5$, nên $A>B$.
+\vd{8.4.8}$0<1/4<1$ và $5<6$, nên $A>B$.
+\vd{8.4.9}$0<1/5<1$ và $6<7$, nên $A>B$.
+\vd{8.4.10}$0<1/6<1$ và $7<8$, nên $A>B$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.5 - So sánh các lôgarit}
+\vd{8.5.1}Hàm lôgarit cơ số $1/2$ nghịch biến, $3<5$, nên $\log_{1/2}3>\log_{1/2}5$.
+\vd{8.5.2}Cơ số $3>1$, $2<5$, nên $\log_3 2<\log_3 5$.
+\vd{8.5.3}$\log_4 5=\frac12\log_2 5$ và $\log_2 5>0$. Do đó $\log_2 5>\log_4 5$.
+\vd{8.5.4}$7<8$, cơ số 2 lớn hơn 1 nên $\log_2 7<\log_2 8=3$.
+\vd{8.5.5}$\log_2(1/3)<0<\log_3 2<1<\log_2 3$. Thứ tự như đề liệt kê.
+\vd{8.5.6}$3<4=2^2$ và $2>1$, nên $\log_{2}(3)<2$.
+\vd{8.5.7}$8<9=3^2$ và $3>1$, nên $\log_{3}(8)<2$.
+\vd{8.5.8}$15<16=4^2$ và $4>1$, nên $\log_{4}(15)<2$.
+\vd{8.5.9}$24<25=5^2$ và $5>1$, nên $\log_{5}(24)<2$.
+\vd{8.5.10}$35<36=6^2$ và $6>1$, nên $\log_{6}(35)<2$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.6 - Đồ thị hàm số mũ}
+\vd{8.6.1}$a^2=9$, $a>0$ nên $a=3$. Hàm đồng biến trên $\mathbb R$, tập giá trị $(0;+\infty)$.
+\vd{8.6.2}$D=\mathbb R$, tập giá trị $(0;+\infty)$. Đồ thị qua $(0;1),(1;5)$.
+\vd{8.6.3}$a^3=8$ cho $a=2$, thỏa $a>0,a\ne1$.
+\vd{8.6.4}Các điểm $(-1;3),(0;1),(1;1/3)$. Hàm nghịch biến, đồ thị nằm trên trục hoành.
+\vd{8.6.5}$a^{-1}=4\Rightarrow a=1/4$, hàm nghịch biến.
+\vd{8.6.6}$a^2=4$ và $a>0$ nên $a=2$. Hàm đồng biến trên $\mathbb R$.
+\vd{8.6.7}$a^2=9$ và $a>0$ nên $a=3$. Hàm đồng biến trên $\mathbb R$.
+\vd{8.6.8}$a^2=16$ và $a>0$ nên $a=4$. Hàm đồng biến trên $\mathbb R$.
+\vd{8.6.9}$a^2=25$ và $a>0$ nên $a=5$. Hàm đồng biến trên $\mathbb R$.
+\vd{8.6.10}$a^2=36$ và $a>0$ nên $a=6$. Hàm đồng biến trên $\mathbb R$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.7 - Đồ thị hàm số lôgarit}
+\vd{8.7.1}$\log_a4=2\Leftrightarrow a^2=4$. Vì $a>0,a\ne1$, suy ra $a=2$.
+\vd{8.7.2}$\log_a9=1\Leftrightarrow a=9$. Hàm đồng biến.
+\vd{8.7.3}Chọn $(1/3;-1),(1;0),(3;1)$; đồ thị là đường cong tăng trên $x>0$, tiệm cận đứng $x=0$.
+\vd{8.7.4}Các điểm $(1;0),(1/3;1),(3;-1)$. Hàm nghịch biến trên $(0;+\infty)$.
+\vd{8.7.5}$a^{-3}=8$ nên $a=1/2$, thỏa điều kiện cơ số.
+\vd{8.7.6}$a^2=4$, $a>0$ nên $a=2$. Tập xác định $(0;+\infty)$; hàm đồng biến.
+\vd{8.7.7}$a^2=9$, $a>0$ nên $a=3$. Tập xác định $(0;+\infty)$; hàm đồng biến.
+\vd{8.7.8}$a^2=16$, $a>0$ nên $a=4$. Tập xác định $(0;+\infty)$; hàm đồng biến.
+\vd{8.7.9}$a^2=25$, $a>0$ nên $a=5$. Tập xác định $(0;+\infty)$; hàm đồng biến.
+\vd{8.7.10}$a^2=36$, $a>0$ nên $a=6$. Tập xác định $(0;+\infty)$; hàm đồng biến.
+\Needspace{7\baselineskip}\subsection{Dạng 8.8 - Biến đổi biểu thức mũ - lôgarit}
+\vd{8.8.1}Các đối số dương. $A=\log_2\frac{x^2-1}{x-1}=\log_2(x+1)$; vẫn giữ $x>1$.
+\vd{8.8.2}Gộp thành $\log_3(9x/x)=\log_39=2$.
+\vd{8.8.3}$\log_2(x^2)=2\log_2|x|=2\log_2(-x)$. Không viết $2\log_2x$ vì $x<0$.
+\vd{8.8.4}$\log_a(a^3b^2)=3+2\log_ab$.
+\vd{8.8.5}$2^{\log_25}=5$, $\ln(e^{-3})=-3$; kết quả 2.
+\vd{8.8.6}Gộp thành $\log_2(2^{2})=2$; điều kiện $x>0$.
+\vd{8.8.7}Gộp thành $\log_2(2^{3})=3$; điều kiện $x>0$.
+\vd{8.8.8}Gộp thành $\log_2(2^{4})=4$; điều kiện $x>0$.
+\vd{8.8.9}Gộp thành $\log_2(2^{5})=5$; điều kiện $x>0$.
+\vd{8.8.10}Gộp thành $\log_2(2^{6})=6$; điều kiện $x>0$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.9 - Bài toán nhận biết nhanh}
+\vd{8.9.1}Sai. Với $x=1$, vế trái 1, vế phải 0. Lôgarit của tổng không tách thành tổng lôgarit.
+\vd{8.9.2}Khi $u>0,v>0$. Chỉ có $uv>0$ chưa đủ để từng lôgarit bên phải có nghĩa.
+\vd{8.9.3}Sai. Với mọi $x\in\mathbb R$, $2^x>0$, nên phương trình vô nghiệm.
+\vd{8.9.4}Đúng theo công thức cơ bản, vì đối số $7>0$.
+\vd{8.9.5}Sai. Vì hàm nghịch biến và $3>1$, $\log_{1/2}3<\log_{1/2}1=0$.
+\vd{8.9.6}Sai. Công thức đúng là $\log_{2}(2x)=1+\log_{2}x$. Với $x=1$, hai vế đề cho lần lượt 1 và 2.
+\vd{8.9.7}Sai. Công thức đúng là $\log_{3}(3x)=1+\log_{3}x$. Với $x=1$, hai vế đề cho lần lượt 1 và 3.
+\vd{8.9.8}Sai. Công thức đúng là $\log_{4}(4x)=1+\log_{4}x$. Với $x=1$, hai vế đề cho lần lượt 1 và 4.
+\vd{8.9.9}Sai. Công thức đúng là $\log_{5}(5x)=1+\log_{5}x$. Với $x=1$, hai vế đề cho lần lượt 1 và 5.
+\vd{8.9.10}Sai. Công thức đúng là $\log_{6}(6x)=1+\log_{6}x$. Với $x=1$, hai vế đề cho lần lượt 1 và 6.
+\Needspace{7\baselineskip}\subsection{Dạng 8.10 - Căn bậc n và điều kiện của lũy thừa}
+\vd{8.10.1}$\sqrt{(x-2)^2}=|x-2|$. Giải $|x-2|=3$ được $x=5$ hoặc $x=-1$.
+\vd{8.10.2}$\sqrt[4]{81}=3$ là căn không âm; $\sqrt[3]{-8}=-2$.
+\vd{8.10.3}$\sqrt{(x+1)^2}=|x+1|=-x-1$ vì $x+1<0$.
+\vd{8.10.4}Lần lượt $-5$ và $5$.
+\vd{8.10.5}$y=1/(x-3)^2$ nên $x\ne3$. $D=\mathbb R\setminus\{3\}$.
+\vd{8.10.6}$\sqrt{(x-2)^2}=|x-2|=2-x$, vì $x-2<0$.
+\vd{8.10.7}$\sqrt{(x-3)^2}=|x-3|=3-x$, vì $x-3<0$.
+\vd{8.10.8}$\sqrt{(x-4)^2}=|x-4|=4-x$, vì $x-4<0$.
+\vd{8.10.9}$\sqrt{(x-5)^2}=|x-5|=5-x$, vì $x-5<0$.
+\vd{8.10.10}$\sqrt{(x-6)^2}=|x-6|=6-x$, vì $x-6<0$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.11 - Tính lôgarit theo dữ kiện cho trước}
+\vd{8.11.1}$\log_612=\dfrac{\log_212}{\log_26}=\dfrac{2+a}{1+a}$.
+\vd{8.11.2}$\log_89=\dfrac{\log_29}{\log_28}=\dfrac{2a}{3}$.
+\vd{8.11.3}$75=3\cdot5^2$, $15=3\cdot5$, nên đổi về cơ số 3 được $\dfrac{1+2a}{1+a}$.
+\vd{8.11.4}$\log_{10}20=\dfrac{\log_220}{\log_210}=\dfrac{2+a}{1+a}$.
+\vd{8.11.5}Đổi về cơ số 2: $\log_{15}12=\dfrac{2+a}{a+b}$.
+\vd{8.11.6}Đổi cơ số 2, tử bằng $3+2a$, mẫu bằng $2+a$. Kết quả $\dfrac{3+2a}{2+a}$.
+\vd{8.11.7}Đổi cơ số 2, tử bằng $4+2a$, mẫu bằng $3+a$. Kết quả $\dfrac{4+2a}{3+a}$.
+\vd{8.11.8}Đổi cơ số 2, tử bằng $5+2a$, mẫu bằng $4+a$. Kết quả $\dfrac{5+2a}{4+a}$.
+\vd{8.11.9}Đổi cơ số 2, tử bằng $6+2a$, mẫu bằng $5+a$. Kết quả $\dfrac{6+2a}{5+a}$.
+\vd{8.11.10}Đổi cơ số 2, tử bằng $7+2a$, mẫu bằng $6+a$. Kết quả $\dfrac{7+2a}{6+a}$.
+\Needspace{7\baselineskip}\subsection{Dạng 8.12 - Tích lôgarit và cơ số là lũy thừa}
+\vd{8.12.1}Đổi cơ số theo chuỗi, tích bằng $\log_216=4$.
+\vd{8.12.2}Tích bằng $\log_24=2$.
+\vd{8.12.3}Đổi về cơ số 3: $\log_927=3/2$.
+\vd{8.12.4}$\log_49=\log_23$, nên tích bằng $\log_23\log_32=1$.
+\vd{8.12.5}Đổi cơ số: $\log_{a^2}(b^3)=\dfrac{3\ln b}{2\ln a}=\dfrac32\log_ab$.
+\vd{8.12.6}Tích bằng $\log_2(2^{2})=2$ theo đổi cơ số.
+\vd{8.12.7}Tích bằng $\log_2(2^{3})=3$ theo đổi cơ số.
+\vd{8.12.8}Tích bằng $\log_2(2^{4})=4$ theo đổi cơ số.
+\vd{8.12.9}Tích bằng $\log_2(2^{5})=5$ theo đổi cơ số.
+\vd{8.12.10}Tích bằng $\log_2(2^{6})=6$ theo đổi cơ số.
+\Needspace{7\baselineskip}\subsection{Dạng 8.13 - Đọc cơ số và vị trí các đồ thị}
+\vd{8.13.1}$\ln2/\ln a>\ln2/\ln b$, với hai mẫu dương, nên $a<b$. Kết hợp: $0<c<1<a<b$.
+\vd{8.13.2}$a^2<b^2$. Tại $x=2$, đồ thị $y=b^x$ nằm trên $y=a^x$.
+\vd{8.13.3}Tung độ 1 cho hoành độ bằng cơ số, nên $a=1/4$, phù hợp $0<a<1$.
+\vd{8.13.4}$a=0{,}4\in(0;1)$, hàm nghịch biến trên $\mathbb R$.
+\vd{8.13.5}$\ln(1/2)<0$, $0<\ln a<\ln b$, nên $\log_a(1/2)<\log_b(1/2)$.
+\vd{8.13.6}Tại $x=1$, $2<3$ nên cơ số 3 cao hơn. Tại $x=-1$, $1/2>1/3$ nên thứ tự đảo lại.
+\vd{8.13.7}Tại $x=1$, $3<4$ nên cơ số 4 cao hơn. Tại $x=-1$, $1/3>1/4$ nên thứ tự đảo lại.
+\vd{8.13.8}Tại $x=1$, $4<5$ nên cơ số 5 cao hơn. Tại $x=-1$, $1/4>1/5$ nên thứ tự đảo lại.
+\vd{8.13.9}Tại $x=1$, $5<6$ nên cơ số 6 cao hơn. Tại $x=-1$, $1/5>1/6$ nên thứ tự đảo lại.
+\vd{8.13.10}Tại $x=1$, $6<7$ nên cơ số 7 cao hơn. Tại $x=-1$, $1/6>1/7$ nên thứ tự đảo lại.
+\Needspace{7\baselineskip}\subsection{Dạng 8.14 - Sử dụng máy tính và làm tròn}
+\vd{8.14.1}$t\approx6{,}958515633$. Điều kiện $n\ge t$ nên số kỳ nhỏ nhất $n=7$. Không làm tròn $t$ trước khi xét điều kiện nguyên.
+\vd{8.14.2}$\log_512=\ln12/\ln5\approx1{,}543959$, làm tròn $1{,}54$.
+\vd{8.14.3}$n>\ln2/\ln1{,}1\approx7{,}2725$, nên $n_{\min}=8$. Kiểm tra $1{,}1^7<2<1{,}1^8$.
+\vd{8.14.4}$\log_720=\ln20/\ln7\approx1{,}540$.
+\vd{8.14.5}$e^{-1{,}2}\approx0{,}301$.
+\vd{8.14.6}$\log_{2}3=\dfrac{\ln(3)}{\ln(2)}\approx1{,}585$.
+\vd{8.14.7}$\log_{3}4=\dfrac{\ln(4)}{\ln(3)}\approx1{,}262$.
+\vd{8.14.8}$\log_{4}5=\dfrac{\ln(5)}{\ln(4)}\approx1{,}161$.
+\vd{8.14.9}$\log_{5}6=\dfrac{\ln(6)}{\ln(5)}\approx1{,}113$.
+\vd{8.14.10}$\log_{6}7=\dfrac{\ln(7)}{\ln(6)}\approx1{,}086$.
+\end{document}

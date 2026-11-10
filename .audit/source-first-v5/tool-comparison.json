@@ -8,57 +8,13 @@
   "pdfLayout": {
     "executed": true,
     "method": "PyMuPDF + existing block_text replay",
-    "version": "2.0",
+    "version": "2.1",
     "benchmarkItems": 30,
     "recognition": "not-inferred; reference transcriptions remain candidates"
   },
   "marker": {
     "executedFresh": false,
-    "historicalReplay": [
-      {
-        "run": ".content-work/runs/2026-10-23T03-43-19-687Z-marker-20-2/run.json",
-        "provider": "marker",
-        "subtopic": "20.2",
-        "sourceSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
-        "pages": [
-          5,
-          6,
-          7
-        ],
-        "flags": []
-      },
-      {
-        "run": ".content-work/runs/2026-10-23T03-59-53-811Z-marker-12-1/run.json",
-        "provider": "marker",
-        "subtopic": "12.1",
-        "sourceSha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
-        "pages": [
-          3,
-          4,
-          5
-        ],
-        "flags": [
-          {
-            "severity": "error",
-            "code": "uncertain-formula",
-            "blockId": "12.1-b-d6aca710ce02",
-            "page": 3,
-            "message": "Công thức cần đối chiếu nguồn: \\begin{array}{c|ccccccccccccccccccccccccccccccccccc"
-          }
-        ]
-      },
-      {
-        "run": ".content-work/runs/2026-10-24T04-28-17-085Z-marker-20-1/run.json",
-        "provider": "marker",
-        "subtopic": "20.1",
-        "sourceSha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
-        "pages": [
-          4,
-          5
-        ],
-        "flags": []
-      }
-    ],
+    "historicalReplay": [],
     "limitation": "Existing local evidence only; no 40-item model accuracy score"
   },
   "mineru": {

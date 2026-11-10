@@ -1,7 +1,7 @@
 {
   "schemaVersion": "bienedu.source-first.v1",
   "date": "2026-11-05",
-  "snapshotSha256": "A85EEEC7635DED245F75BEB8A07FA2E0780F9E2B07803C5D331607033341C41D",
+  "snapshotSha256": "034538A7C58093F10E83B10ADEE4947D771322D78A809793DC12A145DC61023D",
   "physicalSources": [
     {
       "file": "39 chuyên đề/C12-CD13-CD14.pdf",
@@ -149,6 +149,12 @@
       "bytes": 389988,
       "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
       "kind": "pdf"
+    },
+    {
+      "file": "file tài liệu latex/CD08-Mu-Logarit.tex",
+      "bytes": 26654,
+      "sha256": "79A034952544BB2A790652FB5208A265688F002D869D036A2314CEC3B8A786C7",
+      "kind": "tex"
     }
   ],
   "pdfCoverage": [
@@ -2217,118 +2223,5 @@
     },
     "report": ".audit/source-first-v5/verification-v5.1.json",
     "humanApprovalsInferred": false
-  },
-  "verificationV52": {
-    "counts": {
-      "uniqueTrackedReviewRecords": 1512,
-      "benchmarkExpressions": 40,
-      "machineCheckedExpressions": 40,
-      "humanSourceVerified": 0,
-      "mathematicalEditorialApprovals": 0,
-      "pendingBenchmarkSourceReviews": 40,
-      "pendingFigures": 188,
-      "missingSourceTopics": [
-        "CD15",
-        "CD16",
-        "CD17",
-        "CD18",
-        "CD19",
-        "CD24",
-        "CD25",
-        "CD26",
-        "CD27",
-        "CD28",
-        "CD29",
-        "CD30",
-        "CD31",
-        "CD32",
-        "CD33",
-        "CD34",
-        "CD35",
-        "CD36",
-        "CD37",
-        "CD38",
-        "CD39"
-      ],
-      "approvedButUnpublished": 0,
-      "newlyPublished": 0,
-      "existingRuntimeKnowledgeRecords": 181,
-      "existingRuntimeExampleRecords": 1313,
-      "legacyImmutableApprovalRecords": 3,
-      "fractionCandidates": 180,
-      "calculusAnswerConflicts": 9,
-      "cd22UnitsCompared": 18,
-      "correctedConversionDefects": 1,
-      "benchmarkPrepared": 40,
-      "needsCorrectionDecisions": 0,
-      "unresolvedAmbiguityDecisions": 0,
-      "recognizedRuntimeTargets": 34,
-      "unmappedRuntimeTargets": 6,
-      "newlyCorrectedImporterDefects": 0,
-      "newAgentFigureInspections": 8,
-      "totalDistinctAgentFigureInspections": 16
-    },
-    "report": ".audit/source-first-v5/review-preparation-v5.2.json",
-    "humanApprovalsInferred": false
-  },
-  "integrationV53": {
-    "report": ".audit/source-first-v5/runtime-mappings-v5.3.json",
-    "counts": {
-      "EXACT_RUNTIME_MAPPING": 15,
-      "MULTIPLE_VALID_TARGETS": 19,
-      "SOURCE_ONLY": 0,
-      "AMBIGUOUS_MAPPING": 6,
-      "MISSING_RUNTIME_CONTENT": 0,
-      "benchmarkItems": 40,
-      "mappedSourceItems": 34,
-      "legitimateRuntimeUsages": 64,
-      "confirmedVisibleDefects": 3,
-      "stagedFieldChanges": 0,
-      "stagedMathematicalFieldChanges": 0,
-      "humanSourceApprovals": 0,
-      "humanMathematicalApprovals": 0,
-      "approvedChanges": 0,
-      "publishedCorrections": 0,
-      "blockedSourceItems": 40
-    },
-    "runtimeWrites": 0
-  },
-  "verificationV54": {
-    "comparisons": {
-      "MACHINE_MATCHED": 5,
-      "CONFIRMED_CONVERSION_DEFECT": 0,
-      "AMBIGUOUS": 35
-    },
-    "pilotFieldChanges": 0,
-    "humanFieldApprovals": 0,
-    "publishedCorrections": 0,
-    "localPlanHash": "2BB99575A0B300336F7AFD19A331F8B85B3D1BA26F78AF06E45F7ED5731B21F4",
-    "releaseState": {
-      "transactions": [],
-      "activeCorrectionIds": [],
-      "realHumanApprovalsInferred": false
-    }
-  },
-  "developmentV55": {
-    "report": ".audit/source-first-v5/validation-v5.5.json",
-    "preview": ".audit/source-first-v5/development-preview-v5.5.json",
-    "planHash": "F776A46CC59A931D42203604263C3666CAF72FB7E5A5BC5A4DD53689A19E4521",
-    "eligibleCorrections": 3,
-    "fields": 9,
-    "actualRuntimeWritesDuringImplementation": 0,
-    "formalHumanApprovalsCreated": 0,
-    "productionPublications": 0
-  },
-  "developmentV56": {
-    "report": ".audit/source-first-v5/validation-v5.6.json",
-    "preview": ".audit/source-first-v5/development-preview-v5.6.html",
-    "audit": ".audit/source-first-v5/fraction-audit-v5.6.json",
-    "planHash": "E21227B1EEB2771BB4796EAF13A379907F87E079CA26EB04483BBE2BB1E811C1",
-    "inspected": 180,
-    "eligibleGroups": 10,
-    "eligibleFields": 26,
-    "parentStatus": "locally-applied-unreviewed",
-    "actualNewRuntimeWrites": 0,
-    "humanApprovalsCreated": 0
   }
 }

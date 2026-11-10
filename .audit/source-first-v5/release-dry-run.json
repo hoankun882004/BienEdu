@@ -937,9 +937,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "795C21810AE865248AED9D13F38BF8579D88B028E488D361464713F16CA55EBF",
-      "itemHash": "20A444035CB31C4645F8E402A23F2FA6DF44DA1929C0DC227E901776FA98477A",
+      "itemHash": "794714D7AF023AC9DD8A22811484D2577667BDE0D40C071BF3DD61883D5D4EF2",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "38D188FD4EE63AB452535F3E579E9637D440692775B2401795788D1B322449E2",
+      "sourceIdentityHash": "AFB21045A7C0C8865B028DDB664C7247447A09DCBC65EE6099B830EBD8047A0D",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -949,9 +949,9 @@
           "page": 4,
           "bbox": [
             35,
-            151.02407836914062,
+            150.06919860839844,
             560.280029296875,
-            275.21636962890625
+            275.4833068847656
           ],
           "pageSize": [
             595.280029296875,
@@ -1017,9 +1017,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "A0F227B220F66E377FCE97AB96E51CF1EBF1D0CFAB5F9351AB1117D201E0541D",
-      "itemHash": "F03A323F25D3CE46CA029917D69249DB7B5BB6C00ECD786076B986C9FFF0B4D8",
+      "itemHash": "C703ECAC8452F4156A87FB2854DCB584E86D60FD20D5AD1B167530E2ED9D7F28",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "BD80FAB471EF25E0E8CC79E6B2EDA065E7717C5D096CA555399C8404235CAEA2",
+      "sourceIdentityHash": "7AA9D72939AF179AA147D789D25D132784C495BF9786812E759988D7B1A7FA89",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -1029,9 +1029,9 @@
           "page": 4,
           "bbox": [
             35,
-            175.37008666992188,
+            174.4152069091797,
             560.280029296875,
-            299.5613708496094
+            299.82830810546875
           ],
           "pageSize": [
             595.280029296875,
@@ -1097,9 +1097,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "C6266B3DD5F0B29047F585E09EAEC70F4EB379D90F1F357A899CE2023BF5B646",
-      "itemHash": "513DD0BA146CE6B302B98D0F6D5501D0BBD2E7C5A76971F0B47538B1376CAD8F",
+      "itemHash": "83094EFAD18C882383AD0A18D4D84129E5F1C4CF13040E68F9C70B4F55D832D2",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "398DD129F7BBAD9289CD49034DDFD93A29216F30E634FED07B8ED906BEED8900",
+      "sourceIdentityHash": "D2912D7279B5C9C73F491B9D65D99FF27506E9867F9D676164B59B66B463135B",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -1111,7 +1111,7 @@
             35,
             196.9649200439453,
             560.280029296875,
-            326.7963562011719
+            327.06329345703125
           ],
           "pageSize": [
             595.280029296875,
@@ -1177,9 +1177,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "2698D386D75909AA3248AAA0FFA30B7F8F5608A80CA00E21A7A8AAC5959296EC",
-      "itemHash": "0EAEE4CCD6518932855565D2FC5C7802DBC871ED0D128AAB63A498C0E152C643",
+      "itemHash": "11B2A199C2344AAC913CAC24BCF145DCB015681EE280DC4A435F564C09B2953B",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "7151D83A7F0F7BE07796327B544D0D85E4A88AEA53D348A21989443D3EBEF2F0",
+      "sourceIdentityHash": "4A7BAC6203DCE63D094C929FB3A809B71B479822DCD8C9DB4778695BD486F7BF",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -1191,7 +1191,7 @@
             35,
             256.3669128417969,
             560.280029296875,
-            393.6813659667969
+            393.94830322265625
           ],
           "pageSize": [
             595.280029296875,
@@ -1337,9 +1337,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "CDC295B786894C82948DF08C291FC8CC3E886ECD8E451C711D5EEC75B4093C95",
-      "itemHash": "623AD5C9CC6A0A3E641789C26654180D2CC451D47050275461EE3C5002883F94",
+      "itemHash": "E4915AB33B7585651EDBFECA054F2097D3E325EE0564B88B7C2986ACC5738D1B",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "D8C6B35C9E4A9D4B581E90DF6506AE9726E646B5663A51FE2389D6022EBD286E",
+      "sourceIdentityHash": "71CCDC13986C83C5D012AB7B374C16BAF238CE18D7B4D81C261573A3E4E7C8D6",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -1349,7 +1349,7 @@
           "page": 66,
           "bbox": [
             35,
-            199.48907470703125,
+            198.53419494628906,
             560.280029296875,
             323.63720703125
           ],
@@ -1417,9 +1417,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "DBDDC6D0C6AB892FE62A0A44BAE78D4C9F1112A1A0851D09BD33B11A0D8AB7D6",
-      "itemHash": "CE97010E54F0DD146D687D3071E5A267831C446EA6ABF845B827943E742AF0A9",
+      "itemHash": "40C7899DCD3ED3531E8C98F397EE752020AC84105501878F68BCF987BA4DDA4E",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "6B24FBB4E3F95248641AF9A9A3DB62FBBE14375ECB96DCB50DAE1529C62F420C",
+      "sourceIdentityHash": "148F09504EBFD4249079C11BE5E042AF02ED04BF12473F2559FB66F95428C65F",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1429,7 +1429,7 @@
           "page": 9,
           "bbox": [
             35,
-            118.23406982421875,
+            117.27919006347656,
             560.280029296875,
             242.38218688964844
           ],
@@ -1497,9 +1497,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "48F095FEC0E5EAD0BBFE69C9814C576C0982C209B476A25B5C3A147F8A98538D",
-      "itemHash": "F82C1BAF28FB1A3CB6B471DE2DDFC389ACB0E5A9B79EFFC2EDFF6929B83650BE",
+      "itemHash": "F5B5D9690A303AAB76274B8F9F865371A3F1871C527985AFFB90EAF9163F23D4",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "83CD0172CEDE11C85C772B1F68A36956103567CCD7358E34D9ABD505BB94C39A",
+      "sourceIdentityHash": "EB559D36BD8A20237139BB82FB887BAF50B2C62330DBC8D5ABA2029977A4C1F0",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1509,7 +1509,7 @@
           "page": 9,
           "bbox": [
             35,
-            216.090087890625,
+            215.13519287109375,
             560.280029296875,
             340.2381896972656
           ],
@@ -1577,9 +1577,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "D244EE354E30FDE799FD9DA53AE6B20E9A7571594059EA4817382560BB3DA0FE",
-      "itemHash": "A9BF6FDF53F4A7EC4E4BDBA578F7ADC09ACF4784F59DF7D661BB80BF9FCF88D6",
+      "itemHash": "E20E75FF89677351E089D4D218769EBB2AC15CDE62BA239DAE4D45DCFAAB45AA",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "DEC902213B01D6E937DF7A9B211705563EE76127D294DFE258290B3052A467ED",
+      "sourceIdentityHash": "C05334B192BDEC737DFB338DB5D128BE2181249C26A48C9B44B243DB869A18E9",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1589,7 +1589,7 @@
           "page": 9,
           "bbox": [
             35,
-            158.5287628173828,
+            157.8311309814453,
             560.280029296875,
             280.9731903076172
           ],
@@ -1657,9 +1657,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "0980A40167B1B7DC6AB78F0FB1C43DC777773A7645C5D67AEC109338B5D7C6F0",
-      "itemHash": "0FAE760C890F105891193F3AB2750B565F1FDDE4A76FEA57D6525D775ECB2CC7",
+      "itemHash": "7F3BAA5F79F9EEBFCF075FB4D49B54D9E41ACC063CD7BADCED669EC63AF7E878",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "E89895AE04565E88275D8EDD47A7679B6ABFD16579BAB56D876E0CBDB78E0EA9",
+      "sourceIdentityHash": "2425AD2F4412DEE08BBE7F1CA2EF537D762FF209A58E5EFF3A13BEDA7215E17F",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1669,7 +1669,7 @@
           "page": 9,
           "bbox": [
             35,
-            200.0341033935547,
+            199.79920959472656,
             560.280029296875,
             320.9432067871094
           ],
@@ -1737,9 +1737,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "AA9BDB11F81B39851264F6CBB9FCE0326B05710CA9DCCAB7BB25551C4D5A039B",
-      "itemHash": "77E9AB267DA136B7A207B687B42694656E1E7F9099BCBA368524EB3D0A99FC4F",
+      "itemHash": "4EB40FF7D7DB6F5EEA7DF7A83E9831885AE8EF836EA2768CE4069BCC6878EB2D",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "4225C635B3F12BA838BC50488D15D8CA01AA878B95706FBF5ED79B2B19E051D7",
+      "sourceIdentityHash": "42FF89C1772CB432BDF4F9C246417B23D24F58EE1CFC0A85975C5C137DC575C3",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1749,7 +1749,7 @@
           "page": 9,
           "bbox": [
             35,
-            311.84906005859375,
+            311.6141662597656,
             560.280029296875,
             436.7171936035156
           ],
@@ -1817,9 +1817,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "EFA9AE5C4218B997B77987E01DD64113E609C74B38C1D3B241E2DA88EF72999A",
-      "itemHash": "A54E0AF27AD272BCE3DDBB0725094F6CBB4D15A12D1A0EFC6F8BCCAF0CB08F91",
+      "itemHash": "E421393F02536807ECC1C801118910B92A4DEB40583E949F3E78336449EF634E",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "D7795EEC8760C3A7EAC1E3D8A4DE2B9B314E794002B2E2F54592DEB6911BB570",
+      "sourceIdentityHash": "FE63F09B42D940AF827B802D9696D4258AB6C327208D9B9507579DA169D23E66",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1831,7 +1831,7 @@
             35,
             83.34272766113281,
             560.280029296875,
-            207.10836791992188
+            207.37530517578125
           ],
           "pageSize": [
             595.280029296875,
@@ -1897,9 +1897,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "75BBF3E24AF86693F4D2B2DB5EEC2DD5C899C90F1FED5070128A1F3C6C505BAD",
-      "itemHash": "C51B8796164543129C97CA48E5690497707235A730CB3D0B313285FAB106395D",
+      "itemHash": "78A53B480238B730C196F8DF3751D943E2CBD92E2AA76D9DACC94AED79E565AB",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "4D81686F568536C6E7814B43A911087C9CE701350B3BAA707771B1E2C1D49851",
+      "sourceIdentityHash": "B0010AD447F88129045BF64660F47F352C90106CE3CEF9E50E8215D876EBCCEF",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1909,7 +1909,7 @@
           "page": 10,
           "bbox": [
             35,
-            121.1717529296875,
+            120.47412109375,
             560.280029296875,
             243.28016662597656
           ],
@@ -1977,9 +1977,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
       "reviewedContentHash": "65A05148CD0DBF3D659876D2C93FC7678F41DFDB7F32C616578FF030A4FDDA0C",
-      "itemHash": "6D2C17478BB482D424FAD76661D0A6873029075EBA8969A6BBDD9CFD07D17FAB",
+      "itemHash": "D06E80B4D7E6BAA6DD63E7E001E67FAB899ACB49313939D18B9888FD886BE840",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "B77024398B4901331A646CF5F385C57AA501A1E0A435EFA06DC26D9A42188ACF",
+      "sourceIdentityHash": "B57CE695025A7AF15F16C1CE00E4F934039B09F77B3F4D50AF6439B9FC5024AA",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-mu-logarit-cd08-cd11.pdf",
@@ -1991,7 +1991,7 @@
             35,
             160.52572631835938,
             560.280029296875,
-            284.29136657714844
+            284.5583038330078
           ],
           "pageSize": [
             595.280029296875,
@@ -2057,9 +2057,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "C9D3841C98704EB5CE6C0F9DA627666968D07A496E1133FDC6E0DA031C40335F",
-      "itemHash": "6BD8EDB4539D832F828C11FC8D6D2978B22E13BED618640AE88F662CA068311D",
+      "itemHash": "3DFB77319C08AF4FECD5DAB74711FD6F8C429889C9789A490BBF67D399084780",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "8F1C916115EEF5DDC62CCF01E6B99F588B7726A74C17179D526D1E938F723381",
+      "sourceIdentityHash": "9373C6BA681B873C2FE3406D33D5AB23FE645BC393264191B29F5CC935424CAE",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2071,7 +2071,7 @@
             35,
             139.6298370361328,
             560.280029296875,
-            261.7763214111328
+            262.0348358154297
           ],
           "pageSize": [
             595.280029296875,
@@ -2137,9 +2137,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "44A7ABBE882E8A9EB0F6CE2241BDF8067CD4D1E642E7C64C838F1F5F6D03AA1E",
-      "itemHash": "53F5F36BCF24E14F5F47E11AC380DEEBF59D1B52B922C5284D4BD2CF0B714367",
+      "itemHash": "E8D2A5F68C3BCD24FE2819FC417FDADFDEF29A1B2470BD1796C9BD4252F9240A",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "4F18F355798A69B822CD99C9A451A4D4347DBE582C72E1A381136BF959B3EC9B",
+      "sourceIdentityHash": "DB2107B8C1384CDCE7E192E9CD33507DBB18FEAA4EADCC5BE8C887F7C51B734C",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2149,9 +2149,9 @@
           "page": 3,
           "bbox": [
             35,
-            261.4947509765625,
+            260.797119140625,
             560.280029296875,
-            391.8430480957031
+            392.0638427734375
           ],
           "pageSize": [
             595.280029296875,
@@ -2217,9 +2217,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "663B9B8F91B3D6159411B355E36DCE9AAED92518C2AD199F25A1996308F7A611",
-      "itemHash": "F1BEF4D1DF2C99EC2136010CDE6036F41AE161F6CF79E3008D77A01D6DECDF0E",
+      "itemHash": "1DDF9A5F58BC0F72E6734350C6022060E1F49E4671F1EDCF6F03E42BAF37802B",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "3C617ABF91EDCF24C2A3636DA898613A43011FF80DE93C46C1AEA5287F34829D",
+      "sourceIdentityHash": "711F6FF7537191E1191D557101AB6DBB34F46D79CA536C051601B2E8C69F5DE8",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2229,9 +2229,9 @@
           "page": 3,
           "bbox": [
             35,
-            290.6871032714844,
+            289.6406555175781,
             560.280029296875,
-            427.5923156738281
+            427.8848571777344
           ],
           "pageSize": [
             595.280029296875,
@@ -2297,9 +2297,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "7EE7ADFF60E27E8EB5D9AC0820D86E641DBAB540E4D15EE7458B6233111E1684",
-      "itemHash": "2B9A17729D46F8B02A399F8CD94EB0FE835DBEE224FAF4954BE1429D06E4C323",
+      "itemHash": "B640DCA0F94457DE2C3406E98C0EFDA733726EE9F93444B18A30CE67B6F416DF",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "E371537A89420D65BD70293BE301A0C687BFF672B54D8C04646EE467721A57C3",
+      "sourceIdentityHash": "0551A6EB9887918C24B12B1301D6DFAA2E98581002EF97B1CBD5EE197C60AAF4",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2309,9 +2309,9 @@
           "page": 3,
           "bbox": [
             35,
-            314.8077392578125,
+            314.110107421875,
             560.280029296875,
-            445.15606689453125
+            445.3768615722656
           ],
           "pageSize": [
             595.280029296875,
@@ -2377,9 +2377,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "19EE5E9847F58515752DAD8326C2C9C2628935011A9127BF71C62546219167CF",
-      "itemHash": "EDD7D2276863EDCAF645F5ACFFBB13120A44912C1E10439B103E23DEFFF1337F",
+      "itemHash": "2E03AA73D54E84BF652C4E1BDDA2BECB812C2F0880E9F85B4972289A3776E93A",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "EDC5D0F5278E01CE9E82E68D44A05864B8F5047FF1BC4A3B3291DD07B9F90E22",
+      "sourceIdentityHash": "F63AA18F18C87AC15DA330D4EB3540BDA08F57E3D5C12DE376585806349D7D9F",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2389,9 +2389,9 @@
           "page": 3,
           "bbox": [
             35,
-            342.007080078125,
+            340.96063232421875,
             560.280029296875,
-            479.1753234863281
+            479.433837890625
           ],
           "pageSize": [
             595.280029296875,
@@ -2457,9 +2457,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "31A0D448EE2291F8290269248287A00470FEA218484AEB470D81EB667652FC55",
-      "itemHash": "F191EAE63CD4535AB886118394FEF9E2976912902A0A3A07CF0973C6FF0C794C",
+      "itemHash": "CBB2ED5A97579338E8E069D3919ED5BF4937BE4AAC03D7BC58BF3359C0B5249E",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "9661294D93CD9D540A27DBA3B913D1A1708230D84D833539C68C24FAC13D963C",
+      "sourceIdentityHash": "F2FF5FE3310656F8FEE4EB7973EE3DB528827D8A6D6A3BEE7A0E0E448CFBC47C",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2469,9 +2469,9 @@
           "page": 3,
           "bbox": [
             35,
-            368.631103515625,
+            367.58465576171875,
             560.280029296875,
-            506.1803283691406
+            506.4388427734375
           ],
           "pageSize": [
             595.280029296875,
@@ -2537,9 +2537,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "F48AC238D00793EE73B1196BA381CAA90318B1D98E57E4B44E2A5C104E130718",
-      "itemHash": "F7E6B87AEBA5CD99A7B247076D52AC4E813BE6FEACC2E66D69175BA38987DC7C",
+      "itemHash": "871ABA8C1B6D3A34EAB55569D274434DD4E9B75CCF5C67DF9CD2E5642E9F87C8",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "2353B55BF1822D88C1F2ADB39EB9018B4C5B059A98785AE7B2E444EF3E0D2DA6",
+      "sourceIdentityHash": "D2BD591AE73DEF72D89751FBAB2158D3A15E11BCBE3AA04DFCE179DB4D07C410",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2549,9 +2549,9 @@
           "page": 3,
           "bbox": [
             35,
-            421.8780822753906,
+            420.8316345214844,
             560.280029296875,
-            560.1290588378906
+            560.349853515625
           ],
           "pageSize": [
             595.280029296875,
@@ -2617,9 +2617,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "4FA14647DA8E4CC6765521AF096412C0AA26E3FFC1A91A5237F9D510F31AF1EF",
-      "itemHash": "C7A4690B932C21B917A314DF8BD2556DEF95ED363FEF66DE31CDC970EBC9D15D",
+      "itemHash": "32F4A2BAD0707F7B4444BF6173F91D00E34945429FABF369D4609F2659442C90",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "9D8F1CFEE2C6C9DD2613F99C706CECFC0D600E9149FE06A1A07FD45BA4616B54",
+      "sourceIdentityHash": "4CD81D23BEA962126DA3F087E9BA416268C4D2D7ED8F82B31874B87810BFA70E",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2629,9 +2629,9 @@
           "page": 3,
           "bbox": [
             35,
-            488.11871337890625,
+            487.42108154296875,
             560.280029296875,
-            618.6583251953125
+            618.9168090820312
           ],
           "pageSize": [
             595.280029296875,
@@ -2697,9 +2697,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "5FFD0E86C71482378A8BADD165AABA51BD0BDDD66F1C2F7E64380908CB7C8CAB",
-      "itemHash": "674D6CD52E3DE34F9622A76993606467BA3341C534AF404369399CE7010DE62E",
+      "itemHash": "D341B0A1D591CAB1A7D725D2F30D05DA4C08DEB993F6DAE7999F43B7BCDD3836",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "EDAEAA9FEDE158D65E206BCE4B75AE57A9013921C3135D1950F0385FFA31095A",
+      "sourceIdentityHash": "ACEF731FB911AB0D2C50A1669AAFFF59F3A3A43700E291B7C5F1684AE17CC59F",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2711,7 +2711,7 @@
             35,
             161.6788330078125,
             560.280029296875,
-            283.8253173828125
+            284.0838317871094
           ],
           "pageSize": [
             595.280029296875,
@@ -2777,9 +2777,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "7FAD9E72895B7EF3DB5C580EB74502D527C3678B9AE424A89A59B92439F75A53",
-      "itemHash": "E9C38DF9763D109AE931486FBA202F9A184AD31EEE7DF1D25DE0F37E0919DB7E",
+      "itemHash": "00738879A49C6581E57B2D79AFF919901302F24B5EABA26354A3D1D1AFE53E4A",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "CD9AB9E39B1F5DA43183BE0FD65E50842C0D98F75A654C8C6DE6D6CF436EDA2C",
+      "sourceIdentityHash": "3E61F6E33540DF89A2121B8A9F7FC4A7BFE323EA763261CE79A76F7759177E05",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2791,7 +2791,7 @@
             35,
             511.7308349609375,
             560.280029296875,
-            648.5701904296875
+            648.7651977539062
           ],
           "pageSize": [
             595.280029296875,
@@ -2857,9 +2857,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "1E65785E86818DD7076F0F3D069EFFF984A46A46339F9D49814F571F554AE964",
-      "itemHash": "D303B0D6CDB1741B79D1A4624FCC62C6D332A4A638A0B44F88BDE83882E75477",
+      "itemHash": "2164286570FD1A565072E93593F7BFB55BDDCE882D9CA86D8A92D2B7D9532203",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "67392B79E01A248DC575653FA215787DE63D02DE55844E508C3776A5564354D8",
+      "sourceIdentityHash": "D6F5C81DA036EA95CAAE524A173E19CF5B0DAB83FAB82C4CD1610CE06B4DA1D4",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2869,9 +2869,9 @@
           "page": 19,
           "bbox": [
             35,
-            684.81298828125,
+            683.9835815429688,
             560.280029296875,
-            810.018310546875
+            810.2767944335938
           ],
           "pageSize": [
             595.280029296875,
@@ -2937,9 +2937,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "B6AC3F760DC2A9D4F68360304EDDB8147F0172352FE9194849168B9278CE2060",
-      "itemHash": "6A0D1DFD5F4985BB92D868BA47171F89E35D5B1B955EE7FB4C3154A8CA3DE684",
+      "itemHash": "2D19476D6BC1F89F4CBF8C48693225F87B22037FA17EFD9BE1EC8322991B639C",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "67F85B9C5E6DC4E8F56DA930CF6A20CF27F672A485DCFE3531E33832087B5A18",
+      "sourceIdentityHash": "1F6D06B89156AECB4038337CBDB2DCB8372C17659E24546AF90FAA8260F26554",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -2951,7 +2951,7 @@
             35,
             147.0638427734375,
             560.280029296875,
-            269.2103271484375
+            269.4688415527344
           ],
           "pageSize": [
             595.280029296875,
@@ -3017,9 +3017,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
       "reviewedContentHash": "68C66285555E135A76FBAE176A3F9AD871E455D7615A1E4798E600C4464E991C",
-      "itemHash": "2C79C2DDFB198AC467134C75C0F92D79F3365FCE0FCF69859E508BAD8DCE3C62",
+      "itemHash": "85131F5BEBD63EE84D6CFDD4D8919756C4AFAA86A368B9B855218B40670B3EE5",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "36D7773AEDDF28D8BE97EDA9F57F549EE938633C7865984DB25E1B61131894D4",
+      "sourceIdentityHash": "F4DE9444C1A2F02E23A3BFB73EE75E15F2B4183AB19A5A2D39E2A6685531F54A",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-nguyen-ham-tich-phan-cd12-cd14.pdf",
@@ -3031,7 +3031,7 @@
             35,
             422.9488525390625,
             560.280029296875,
-            554.8522033691406
+            555.0472106933594
           ],
           "pageSize": [
             595.280029296875,
@@ -3097,9 +3097,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
       "reviewedContentHash": "EC346E63D59FAF100B4123B3C40A0E312DED52BEF15579EA6016CB48F886F351",
-      "itemHash": "7E4BD2ADBF0BF1AAB1253130A2ED34FEF0D08B1ECBAD5B920A9EDC2717607285",
+      "itemHash": "A80CD8FA2B274260D19A3220B503B7DECFA47B3A6649F81DDE9CB48B5DFEF6BA",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "855D30CEAEA4E6ABBF87DDE1ECE55C3D61CC9B8E8FFAE52AA5774768F6606BDF",
+      "sourceIdentityHash": "176BFDBF534BDF875E43C4AFCFC3AF1AB62C39EDE57A2A58F13C43BA17788FE1",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/ly-thuyet-to-hop-xac-suat-thong-ke-cd20-cd23.pdf",
@@ -3109,7 +3109,7 @@
           "page": 4,
           "bbox": [
             35,
-            680.3370361328125,
+            680.07958984375,
             560.280029296875,
             802.292236328125
           ],
@@ -3178,9 +3178,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "206B51E674D34B612D511EE93B559FBD3B8636FC6B531852DE707E478C94FE24",
-      "itemHash": "0A5AE200C9D55A9BC65E328D02B7C0061B7B702CA17208124EFAD0E9C4A04044",
+      "itemHash": "0CC86EEE1564EA4501DA06E4CF4109FCF8601D7C93A8074D71FBBF9276EB4598",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "C5FAAB0F5849E2994DF6D76812840CD6263525B4F43FAA02BB5FD550A610B10C",
+      "sourceIdentityHash": "2F9810A784E10F91C10D62DB739EF78E649DC879939C926297A277DD5C091DE4",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -3190,7 +3190,7 @@
           "page": 66,
           "bbox": [
             35,
-            661.235107421875,
+            660.2802124023438,
             560.280029296875,
             785.3831787109375
           ],
@@ -3258,9 +3258,9 @@
       "runtimeProposalHash": null,
       "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
       "reviewedContentHash": "91F571BFD3FDC3B3F4D30E939CBA5B2750B801D180D4F1B12EEF39BF09994C09",
-      "itemHash": "411F9B6E341C4F63C5F88B80793F2901569B970B9F00ACDA2649F4E85E478DFD",
+      "itemHash": "6C5DB8F497B52E8074BDD2BCC09FE072DB0709BB112EF4B9B71C351CB515B1BE",
       "itemVersion": "source-first-v5.1",
-      "sourceIdentityHash": "BFD2322D4538F266A52C822EA37EA6EECD8939B138EC13C92DC782DDC19C7EB9",
+      "sourceIdentityHash": "3B0B836798C4469C19CC39FBF4C84E4657A112E881FD867F31E032AF29E9259E",
       "source": {
         "kind": "pdf",
         "file": "assets/documents/bienedu-ham-so-dao-ham-cd01-cd07.pdf",
@@ -3270,9 +3270,9 @@
           "page": 66,
           "bbox": [
             35,
-            389.6515197753906,
+            389.1282958984375,
             560.280029296875,
-            517.7960205078125
+            517.9432067871094
           ],
           "pageSize": [
             595.280029296875,
@@ -3330,5 +3330,5 @@
   ],
   "eligibleCount": 0,
   "blockedCount": 40,
-  "planHash": "DF5F16DE8B2716ACEEA934D6098AC037FDB19CF216A64EB478CC3BBCE74CDDA6"
+  "planHash": "C050D942F6C654E173E7E71193E0E68803ECD6D7190919635CD4A3D2BC695D36"
 }
