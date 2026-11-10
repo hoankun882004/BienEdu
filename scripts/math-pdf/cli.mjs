@@ -43,11 +43,38 @@ function reviewPaths(recordOrCode, documentId = null) {
   return { json: `${base}.json`, markdown: `${base}.md` };
 }
 
+function findReviewFile(code) {
+  if (!existsSync(reviewDirectory)) return null;
+  for (const docDir of readdirSync(reviewDirectory, { withFileTypes: true })) {
+    if (!docDir.isDirectory()) continue;
+    const jsonPath = join(reviewDirectory, docDir.name, `${code}.json`);
+    if (existsSync(jsonPath)) {
+      return { json: jsonPath, markdown: join(reviewDirectory, docDir.name, `${code}.md`) };
+    }
+  }
+  return null;
+}
+
 function readReview(code) {
-  const subtopic = getSubtopic(code);
-  const paths = reviewPaths(code, subtopic.document.documentId);
-  if (!existsSync(paths.json)) throw new Error(`Chưa có bản review cho ${code}: ${relative(projectRoot, paths.json)}`);
-  return { record: JSON.parse(readFileSync(paths.json, "utf8")), paths, subtopic };
+  let subtopic = null;
+  try {
+    subtopic = getSubtopic(code);
+  } catch {
+    // Cho phép đọc các subtopic mới import từ TaiLieu chưa nằm trong catalog cũ
+  }
+  let paths = subtopic ? reviewPaths(code, subtopic.document.documentId) : null;
+  if (!paths || !existsSync(paths.json)) {
+    paths = findReviewFile(code);
+  }
+  if (!paths || !existsSync(paths.json)) throw new Error(`Chưa có bản review cho ${code}: ${paths ? relative(projectRoot, paths.json) : code}`);
+  const record = JSON.parse(readFileSync(paths.json, "utf8"));
+  const fallbackSubtopic = {
+    document: {
+      sourceSha256: record.source?.sha256,
+      documentId: record.source?.documentId
+    }
+  };
+  return { record, paths, subtopic: subtopic ?? fallbackSubtopic };
 }
 
 function saveReview(record, { replaceReview = false } = {}) {
@@ -194,7 +221,8 @@ function approve(options) {
     boundariesChecked: true,
     notes: options.notes ? [String(options.notes)] : []
   };
-  record.markdown = record.markdown.replace(/verification: needs-source-review/, "verification: verified");
+  const mdContent = record.markdown ?? (existsSync(paths.markdown) ? readFileSync(paths.markdown, "utf8") : "");
+  record.markdown = mdContent.replace(/verification: needs-source-review/, "verification: verified");
   writeJson(paths.json, record);
   writeFileSync(paths.markdown, record.markdown, "utf8");
   console.log(JSON.stringify({ ok: true, subtopic: code, verification: record.verification }, null, 2));
@@ -218,6 +246,9 @@ function rebuildFrontendIndex() {
     for (const asset of record.assets ?? []) {
       const webPath = relative(projectRoot, join(dirname(path), asset.fileName)).replaceAll("\\", "/");
       record.markdown = record.markdown.replaceAll(`(${asset.fileName})`, `(${webPath})`);
+      for (const block of record.blocks ?? []) {
+        if (block.markdown) block.markdown = block.markdown.replaceAll(`(${asset.fileName})`, `(${webPath})`);
+      }
       asset.webPath = webPath;
     }
     const existing = records[record.subtopic.code];

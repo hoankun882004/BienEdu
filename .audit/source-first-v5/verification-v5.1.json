@@ -36,7 +36,7 @@
     "newlyPublished": 0,
     "existingRuntimeKnowledgeRecords": 181,
     "existingRuntimeExampleRecords": 1313,
-    "legacyImmutableApprovalRecords": 3,
+    "legacyImmutableApprovalRecords": 4,
     "fractionCandidates": 180,
     "calculusAnswerConflicts": 9,
     "cd22UnitsCompared": 18,
@@ -17611,6 +17611,12 @@
     {
       "id": "20.2",
       "reviewer": "Codex visual PDF review",
+      "countedAsHumanApproval": false,
+      "reason": "legacy agent review retained; no explicit human attestation"
+    },
+    {
+      "id": "33.5",
+      "reviewer": "Admin",
       "countedAsHumanApproval": false,
       "reason": "legacy agent review retained; no explicit human attestation"
     }

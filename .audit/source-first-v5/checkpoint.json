@@ -2215,7 +2215,7 @@
       "newlyPublished": 0,
       "existingRuntimeKnowledgeRecords": 181,
       "existingRuntimeExampleRecords": 1313,
-      "legacyImmutableApprovalRecords": 3,
+      "legacyImmutableApprovalRecords": 4,
       "fractionCandidates": 180,
       "calculusAnswerConflicts": 9,
       "cd22UnitsCompared": 18,

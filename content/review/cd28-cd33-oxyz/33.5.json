@@ -1,0 +1,322 @@
+{
+  "schemaVersion": "bienedu.math-pdf.v1",
+  "subtopic": {
+    "code": "33.5",
+    "id": "CD33-05",
+    "title": "Bài toán radar",
+    "topicId": "CD33",
+    "topicTitle": "Oxyz thực tế"
+  },
+  "source": {
+    "documentId": "cd28-cd33-oxyz",
+    "fileName": "Vecto-Oxyz-CD28-CD33 (1).pdf",
+    "relativeDirectory": "TaiLieu",
+    "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "pageCount": 59,
+    "pages": [
+      34,
+      56
+    ],
+    "regions": [
+      {
+        "id": "33.5-pdf-1",
+        "x": 0.055,
+        "y": 0.055,
+        "width": 0.89,
+        "height": 0.91,
+        "page": 34,
+        "isBoundaryPage": true
+      },
+      {
+        "id": "33.5-pdf-2",
+        "x": 0.055,
+        "y": 0.055,
+        "width": 0.89,
+        "height": 0.91,
+        "page": 56,
+        "isBoundaryPage": true
+      }
+    ]
+  },
+  "extraction": {
+    "provider": "pymupdf-vision",
+    "startedAt": "2026-11-10T04:45:00Z",
+    "finishedAt": "2026-11-10T04:45:05Z",
+    "providerJobId": null,
+    "command": "pymupdf page_range=34,56 with_vector_diagram_crop"
+  },
+  "blocks": [
+    {
+      "id": "33.5-b-heading",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "SectionHeader",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.068,
+        "width": 0.35,
+        "height": 0.02
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": "Dạng 33.5 · Bài toán radar",
+      "markdown": "Dạng 33.5 · Bài toán radar",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-theory",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.1,
+        "y": 0.11,
+        "width": 0.8,
+        "height": 0.3
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "knowledge",
+      "sourceHeading": null,
+      "markdown": "Kiến thức và cách làm. Vùng radar là khối cầu: giải bất phương trình khoảng cách không vượt bán kính, rồi giao với khoảng thời gian quan sát.\n\n![Sơ đồ minh họa phương pháp; không theo tỉ lệ.](assets/33.5-radar.png)\n\n|X(t) - I| \\le R",
+      "latex": [
+        "|X(t) - I| \\le R"
+      ]
+    },
+    {
+      "id": "33.5-b-ex-1",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.44,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.1\n\nRadar tâm O, bán kính 5 km. Xét mục tiêu A = (3; 4; 0) và B = (3; 4; 1).\n\n**Lời giải từ tài liệu:**\nOA = 5 nên A ởbiên được phát hiện nếu vùng đóng; OB = √ 26 > 5 nên B ngoài vùng.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-2",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.48,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.2\n\nMục tiêu M(t) = (t −6; 3; 0) km, t ≥0 phút. Tìm thời gian trong radar bán kính 5.\n\n**Lời giải từ tài liệu:**\n(t −6)2 + 9 ≤25 cho t ∈[2; 10], thời lượng 8 phút.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-3",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.52,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.3\n\nMục tiêu M(t) = (t; 5; 0) km. Radar bán kính 5 ghi nhận trong khoảng thời gian dài bao nhiêu?\n\n**Lời giải từ tài liệu:**\nChỉtại t = 0 vì t2 + 25 ≤25; thời lượng 0, dù có một thời điểm chạm biên.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-4",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.56,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.4\n\nRadar đặt tại I = (1; 2; 3) km, bán kính 4. Viết ranh giới và toàn vùng phát hiện.\n\n**Lời giải từ tài liệu:**\nRanh giới (x −1)2 + (y −2)2 + (z −3)2 = 16; toàn vùng thay = bằng ≤.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-5",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.6,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.5\n\nRadar ởđộcao 2 km, bán kính 5 km. Bán kính vùng trên mặt đất là bao nhiêu?\n\n**Lời giải từ tài liệu:**\n√25 −4 = √ 21 km nếu mặt đất phẳng z = 0.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-6",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.64,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.6\n\nMáy bay chuyển động trên đường cách tâm radar 3 km, tốc độ4 km/phút; bán kính radar 5 km. Thời gian đi qua toàn vùng?\n\n**Lời giải từ tài liệu:**\nDây dài 2√25 −9 = 8 km; thời gian 8/4 = 2 phút.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-7",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.68,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.7\n\nRadar có bán kính 5 km, mục tiêu M(t) = (6 + t; 0; 0), t ≥0. Có lúc nào được phát hiện không?\n\n**Lời giải từ tài liệu:**\nKhông: OM = 6 + t > 5 và tăng. Đường vô hạn cắt cầu nhưng tia chuyển động không cắt.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-8",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.72,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.8\n\nMột radar ghi tín hiệu đi-vềtrong 20 microgiây. Tính khoảng cách với c = 3 · 108 m/s.\n\n**Lời giải từ tài liệu:**\nr = ct/2 = 3000 m = 3 km.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-9",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.76,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.9\n\nHai radar cùng bán kính 5, tâm cách nhau 6 km. Bán kính đường tròn giao hai mặt biên là bao nhiêu?\n\n**Lời giải từ tài liệu:**\nMặt phẳng giao cách mỗi tâm 3 km, bán kính √25 −9 = 4 km.",
+      "latex": []
+    },
+    {
+      "id": "33.5-b-ex-10",
+      "providerBlockId": null,
+      "page": 34,
+      "type": "Text",
+      "polygon": {
+        "x": 0.09,
+        "y": 0.8,
+        "width": 0.82,
+        "height": 0.038
+      },
+      "regionId": "33.5-pdf-1",
+      "boundaryStatus": "inside",
+      "section": "worked_examples",
+      "sourceHeading": null,
+      "markdown": "### 33.5.10\n\nRadar muốn phủmọi điểm của đoạn từ(2; 0; 0) đến (4; 3; 0), tâm O. Bán kính nhỏnhất?\n\n**Lời giải từ tài liệu:**\nBình phương khoảng cách lồi trên đoạn nên max ởđầu mút. Hai độdài 2 và 5, cần bán kính 5.",
+      "latex": []
+    }
+  ],
+  "headings": [
+    {
+      "blockId": "33.5-b-heading",
+      "page": 34,
+      "section": "knowledge",
+      "text": "Dạng 33.5 · Bài toán radar"
+    }
+  ],
+  "sections": {
+    "knowledge": [
+      "33.5-b-heading",
+      "33.5-b-theory"
+    ],
+    "workedExamples": [
+      "33.5-b-ex-1",
+      "33.5-b-ex-2",
+      "33.5-b-ex-3",
+      "33.5-b-ex-4",
+      "33.5-b-ex-5",
+      "33.5-b-ex-6",
+      "33.5-b-ex-7",
+      "33.5-b-ex-8",
+      "33.5-b-ex-9",
+      "33.5-b-ex-10"
+    ],
+    "practice": []
+  },
+  "assets": [
+    {
+      "id": "asset-33.5-radar",
+      "fileName": "assets/33.5-radar.png",
+      "caption": "Sơ đồ minh họa phương pháp; không theo tỉ lệ.",
+      "page": 34,
+      "bbox": {
+        "x": 0.2352,
+        "y": 0.1485,
+        "width": 0.5376,
+        "height": 0.2613
+      }
+    }
+  ],
+  "flags": [],
+  "corrections": [],
+  "resolvedFlags": [],
+  "verification": {
+    "status": "verified",
+    "reviewer": "Admin",
+    "reviewedAt": "2026-11-10T04:51:08.229Z",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "formulasChecked": true,
+    "boundariesChecked": true,
+    "notes": []
+  },
+  "markdown": "---\r\nschemaVersion: bienedu.math-pdf.v1\r\nsubtopic: 33.5\r\ntitle: Bài toán radar\r\nsourceSha256: 98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114\r\nprovider: pymupdf-vision\r\nverification: verified\r\n---\r\n\r\n# 33.5 Bài toán radar\r\n\r\n> Nguồn: Vecto-Oxyz-CD28-CD33 (1).pdf, trang 34 & 56.\r\n\r\n## Kiến thức trọng tâm\r\n\r\nKiến thức và cách làm. Vùng radar là khối cầu: giải bất phương trình khoảng cách không vượt bán kính, rồi giao với khoảng thời gian quan sát.\r\n\r\n![Sơ đồ minh họa phương pháp; không theo tỉ lệ.](assets/33.5-radar.png)\r\n\r\n|X(t) - I| \\le R\r\n\r\n## Ví dụ có lời giải chi tiết\r\n\r\n### Ví dụ 33.5.1\r\nRadar tâm O, bán kính 5 km. Xét mục tiêu A = (3; 4; 0) và B = (3; 4; 1).\r\n\r\n**Lời giải từ tài liệu:**\r\nOA = 5 nên A ởbiên được phát hiện nếu vùng đóng; OB = √ 26 > 5 nên B ngoài vùng.\r\n\r\n### Ví dụ 33.5.2\r\nMục tiêu M(t) = (t −6; 3; 0) km, t ≥0 phút. Tìm thời gian trong radar bán kính 5.\r\n\r\n**Lời giải từ tài liệu:**\r\n(t −6)2 + 9 ≤25 cho t ∈[2; 10], thời lượng 8 phút.\r\n\r\n### Ví dụ 33.5.3\r\nMục tiêu M(t) = (t; 5; 0) km. Radar bán kính 5 ghi nhận trong khoảng thời gian dài bao nhiêu?\r\n\r\n**Lời giải từ tài liệu:**\r\nChỉtại t = 0 vì t2 + 25 ≤25; thời lượng 0, dù có một thời điểm chạm biên.\r\n\r\n### Ví dụ 33.5.4\r\nRadar đặt tại I = (1; 2; 3) km, bán kính 4. Viết ranh giới và toàn vùng phát hiện.\r\n\r\n**Lời giải từ tài liệu:**\r\nRanh giới (x −1)2 + (y −2)2 + (z −3)2 = 16; toàn vùng thay = bằng ≤.\r\n\r\n### Ví dụ 33.5.5\r\nRadar ởđộcao 2 km, bán kính 5 km. Bán kính vùng trên mặt đất là bao nhiêu?\r\n\r\n**Lời giải từ tài liệu:**\r\n√25 −4 = √ 21 km nếu mặt đất phẳng z = 0.\r\n\r\n### Ví dụ 33.5.6\r\nMáy bay chuyển động trên đường cách tâm radar 3 km, tốc độ4 km/phút; bán kính radar 5 km. Thời gian đi qua toàn vùng?\r\n\r\n**Lời giải từ tài liệu:**\r\nDây dài 2√25 −9 = 8 km; thời gian 8/4 = 2 phút.\r\n\r\n### Ví dụ 33.5.7\r\nRadar có bán kính 5 km, mục tiêu M(t) = (6 + t; 0; 0), t ≥0. Có lúc nào được phát hiện không?\r\n\r\n**Lời giải từ tài liệu:**\r\nKhông: OM = 6 + t > 5 và tăng. Đường vô hạn cắt cầu nhưng tia chuyển động không cắt.\r\n\r\n### Ví dụ 33.5.8\r\nMột radar ghi tín hiệu đi-vềtrong 20 microgiây. Tính khoảng cách với c = 3 · 108 m/s.\r\n\r\n**Lời giải từ tài liệu:**\r\nr = ct/2 = 3000 m = 3 km.\r\n\r\n### Ví dụ 33.5.9\r\nHai radar cùng bán kính 5, tâm cách nhau 6 km. Bán kính đường tròn giao hai mặt biên là bao nhiêu?\r\n\r\n**Lời giải từ tài liệu:**\r\nMặt phẳng giao cách mỗi tâm 3 km, bán kính √25 −9 = 4 km.\r\n\r\n### Ví dụ 33.5.10\r\nRadar muốn phủmọi điểm của đoạn từ(2; 0; 0) đến (4; 3; 0), tâm O. Bán kính nhỏnhất?\r\n\r\n**Lời giải từ tài liệu:**\r\nBình phương khoảng cách lồi trên đoạn nên max ởđầu mút. Hai độdài 2 và 5, cần bán kính 5.\r\n"
+}
