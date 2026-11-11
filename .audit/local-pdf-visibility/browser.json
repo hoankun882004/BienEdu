@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "receiptHash": "5A3C84A26FA6BCA7D1522832AA33730CE6A60BC9BAC1F65FF4B57B4306D44E06",
+  "actualLocalURL": "http://localhost:8000",
+  "states": [
+    {
+      "name": "trigonometry",
+      "mode": "ordinary",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "ordinary",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "ordinary",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "trigonometry",
+      "mode": "stale-session",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "stale-session",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "stale-session",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "trigonometry",
+      "mode": "old-bookmark",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "old-bookmark",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "old-bookmark",
+      "width": 390,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "trigonometry",
+      "mode": "ordinary",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "ordinary",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "ordinary",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "trigonometry",
+      "mode": "stale-session",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "stale-session",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "stale-session",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "trigonometry",
+      "mode": "old-bookmark",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "vectors",
+      "mode": "old-bookmark",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    },
+    {
+      "name": "calculus",
+      "mode": "old-bookmark",
+      "width": 1366,
+      "examples": 980,
+      "preview": false
+    }
+  ],
+  "unactivatedDevelopmentPreviewPreserved": true,
+  "studentProgressPreserved": true
+}

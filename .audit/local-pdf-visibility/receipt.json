@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "bienedu.local-pdf-visibility.v1",
+  "scope": "local-only; no commit/push/deploy",
+  "parentPublication": {
+    "planHash": "A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85",
+    "manifest": ".content-work/publish-v621/A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85/manifest.json",
+    "manifestHash": "B571474840A828CC1789CD6501A9363651216484C84163010AF65E03DF200266"
+  },
+  "file": "assets/js/data/learning-overlay.js",
+  "beforeHash": "8541C06F7FDF6E1CD7F1CECA8CC2A208C00EDEBB3F677DF5DF05BE061A59DD65",
+  "afterHash": "5F6DBB2FD5CD0946FFA599F336194C747DBBF478AFF6F7BD20E25769768A0992",
+  "contentHash": "976076AF726183443F57716EF2D92C50BC4C5AA006BAE2DF034DF494F894C55E",
+  "mathematicalPayloadChanged": false,
+  "progressKeysChanged": false,
+  "reason": "Activated content takes precedence over stale V6.0 preview sessions and bookmarks",
+  "planHash": "5A3C84A26FA6BCA7D1522832AA33730CE6A60BC9BAC1F65FF4B57B4306D44E06",
+  "status": "APPLIED_LOCAL_ONLY",
+  "backup": ".content-work/local-pdf-visibility/5A3C84A26FA6BCA7D1522832AA33730CE6A60BC9BAC1F65FF4B57B4306D44E06/learning-overlay.before.js",
+  "priorAuthorization": "Preserved, not reusable over this child fix; prepare a fresh release before a future publication"
+}

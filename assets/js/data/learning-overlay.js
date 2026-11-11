@@ -1,8 +1,10 @@
 import {localRelease} from './local-release.js';
 const local=typeof location!=='undefined'&&['127.0.0.1','localhost','[::1]'].includes(location.hostname);
 const query=local?new URL(location.href).searchParams:null;
-if(query?.has('releasePreview'))sessionStorage.setItem('bienedu:local-preview:v6',query.get('releasePreview')==='v6'?'on':'off');
-export const previewActive=local&&sessionStorage.getItem('bienedu:local-preview:v6')==='on';
+// Once content is activated, stale preview sessions/bookmarks must not hide it.
+if(local&&localRelease)sessionStorage.removeItem('bienedu:local-preview:v6');
+else if(query?.has('releasePreview'))sessionStorage.setItem('bienedu:local-preview:v6',query.get('releasePreview')==='v6'?'on':'off');
+export const previewActive=local&&!localRelease&&sessionStorage.getItem('bienedu:local-preview:v6')==='on';
 const preview=previewActive;
 export const releaseBundle=(typeof location!=='undefined'&&(preview||localRelease))?await fetch(preview?'.audit/source-first-v5/release-v6/bundle.json':localRelease.bundle).then(async(r)=>{
   if(!r.ok)throw new Error('Local learning bundle unavailable');const bytes=await r.text();
