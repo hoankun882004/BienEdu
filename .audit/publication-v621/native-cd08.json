@@ -1,0 +1,2249 @@
+{
+  "publicationHash": "A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85",
+  "sourceHash": "4351CD80576045AD8A9B13A718C5AD0AA1940000703985C4B9961A752077CA43",
+  "passed": true,
+  "states": [
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.1",
+      "sourceExampleNumber": "8.1.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.2",
+      "sourceExampleNumber": "8.1.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.3",
+      "sourceExampleNumber": "8.1.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.4",
+      "sourceExampleNumber": "8.1.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.5",
+      "sourceExampleNumber": "8.1.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.6",
+      "sourceExampleNumber": "8.1.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.7",
+      "sourceExampleNumber": "8.1.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.8",
+      "sourceExampleNumber": "8.1.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.9",
+      "sourceExampleNumber": "8.1.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.10",
+      "sourceExampleNumber": "8.1.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.1",
+      "sourceExampleNumber": "8.2.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.2",
+      "sourceExampleNumber": "8.2.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.3",
+      "sourceExampleNumber": "8.2.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.4",
+      "sourceExampleNumber": "8.2.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.5",
+      "sourceExampleNumber": "8.2.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.6",
+      "sourceExampleNumber": "8.2.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.7",
+      "sourceExampleNumber": "8.2.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.8",
+      "sourceExampleNumber": "8.2.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.9",
+      "sourceExampleNumber": "8.2.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.10",
+      "sourceExampleNumber": "8.2.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.1",
+      "sourceExampleNumber": "8.3.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.2",
+      "sourceExampleNumber": "8.3.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.3",
+      "sourceExampleNumber": "8.3.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.4",
+      "sourceExampleNumber": "8.3.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.5",
+      "sourceExampleNumber": "8.3.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.6",
+      "sourceExampleNumber": "8.3.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.7",
+      "sourceExampleNumber": "8.3.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.8",
+      "sourceExampleNumber": "8.3.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.9",
+      "sourceExampleNumber": "8.3.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.10",
+      "sourceExampleNumber": "8.3.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.1",
+      "sourceExampleNumber": "8.4.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.2",
+      "sourceExampleNumber": "8.4.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.3",
+      "sourceExampleNumber": "8.4.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.4",
+      "sourceExampleNumber": "8.4.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.5",
+      "sourceExampleNumber": "8.4.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.6",
+      "sourceExampleNumber": "8.4.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.7",
+      "sourceExampleNumber": "8.4.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.8",
+      "sourceExampleNumber": "8.4.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.9",
+      "sourceExampleNumber": "8.4.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.10",
+      "sourceExampleNumber": "8.4.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.1",
+      "sourceExampleNumber": "8.5.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.2",
+      "sourceExampleNumber": "8.5.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.3",
+      "sourceExampleNumber": "8.5.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.4",
+      "sourceExampleNumber": "8.5.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.5",
+      "sourceExampleNumber": "8.5.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.6",
+      "sourceExampleNumber": "8.5.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.7",
+      "sourceExampleNumber": "8.5.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.8",
+      "sourceExampleNumber": "8.5.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.9",
+      "sourceExampleNumber": "8.5.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.10",
+      "sourceExampleNumber": "8.5.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.1",
+      "sourceExampleNumber": "8.6.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.2",
+      "sourceExampleNumber": "8.6.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.3",
+      "sourceExampleNumber": "8.6.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.4",
+      "sourceExampleNumber": "8.6.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.5",
+      "sourceExampleNumber": "8.6.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.6",
+      "sourceExampleNumber": "8.6.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.7",
+      "sourceExampleNumber": "8.6.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.8",
+      "sourceExampleNumber": "8.6.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.9",
+      "sourceExampleNumber": "8.6.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.10",
+      "sourceExampleNumber": "8.6.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.1",
+      "sourceExampleNumber": "8.7.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.2",
+      "sourceExampleNumber": "8.7.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.3",
+      "sourceExampleNumber": "8.7.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.4",
+      "sourceExampleNumber": "8.7.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.5",
+      "sourceExampleNumber": "8.7.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.6",
+      "sourceExampleNumber": "8.7.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.7",
+      "sourceExampleNumber": "8.7.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.8",
+      "sourceExampleNumber": "8.7.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.9",
+      "sourceExampleNumber": "8.7.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.10",
+      "sourceExampleNumber": "8.7.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.1",
+      "sourceExampleNumber": "8.8.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.2",
+      "sourceExampleNumber": "8.8.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.3",
+      "sourceExampleNumber": "8.8.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.4",
+      "sourceExampleNumber": "8.8.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.5",
+      "sourceExampleNumber": "8.8.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.6",
+      "sourceExampleNumber": "8.8.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.7",
+      "sourceExampleNumber": "8.8.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.8",
+      "sourceExampleNumber": "8.8.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.9",
+      "sourceExampleNumber": "8.8.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.10",
+      "sourceExampleNumber": "8.8.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.1",
+      "sourceExampleNumber": "8.9.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.2",
+      "sourceExampleNumber": "8.9.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.3",
+      "sourceExampleNumber": "8.9.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.4",
+      "sourceExampleNumber": "8.9.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.5",
+      "sourceExampleNumber": "8.9.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.6",
+      "sourceExampleNumber": "8.9.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.7",
+      "sourceExampleNumber": "8.9.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.8",
+      "sourceExampleNumber": "8.9.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.9",
+      "sourceExampleNumber": "8.9.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.10",
+      "sourceExampleNumber": "8.9.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.1",
+      "sourceExampleNumber": "8.10.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.2",
+      "sourceExampleNumber": "8.10.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.3",
+      "sourceExampleNumber": "8.10.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.4",
+      "sourceExampleNumber": "8.10.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.5",
+      "sourceExampleNumber": "8.10.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.6",
+      "sourceExampleNumber": "8.10.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.7",
+      "sourceExampleNumber": "8.10.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.8",
+      "sourceExampleNumber": "8.10.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.9",
+      "sourceExampleNumber": "8.10.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.10",
+      "sourceExampleNumber": "8.10.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.1",
+      "sourceExampleNumber": "8.11.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.2",
+      "sourceExampleNumber": "8.11.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.3",
+      "sourceExampleNumber": "8.11.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.4",
+      "sourceExampleNumber": "8.11.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.5",
+      "sourceExampleNumber": "8.11.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.6",
+      "sourceExampleNumber": "8.11.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.7",
+      "sourceExampleNumber": "8.11.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.8",
+      "sourceExampleNumber": "8.11.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.9",
+      "sourceExampleNumber": "8.11.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.10",
+      "sourceExampleNumber": "8.11.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.1",
+      "sourceExampleNumber": "8.12.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.2",
+      "sourceExampleNumber": "8.12.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.3",
+      "sourceExampleNumber": "8.12.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.4",
+      "sourceExampleNumber": "8.12.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.5",
+      "sourceExampleNumber": "8.12.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.6",
+      "sourceExampleNumber": "8.12.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.7",
+      "sourceExampleNumber": "8.12.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.8",
+      "sourceExampleNumber": "8.12.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.9",
+      "sourceExampleNumber": "8.12.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.10",
+      "sourceExampleNumber": "8.12.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.1",
+      "sourceExampleNumber": "8.13.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.2",
+      "sourceExampleNumber": "8.13.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.3",
+      "sourceExampleNumber": "8.13.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.4",
+      "sourceExampleNumber": "8.13.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.5",
+      "sourceExampleNumber": "8.13.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.6",
+      "sourceExampleNumber": "8.13.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.7",
+      "sourceExampleNumber": "8.13.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.8",
+      "sourceExampleNumber": "8.13.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.9",
+      "sourceExampleNumber": "8.13.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.10",
+      "sourceExampleNumber": "8.13.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.1",
+      "sourceExampleNumber": "8.14.1",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.2",
+      "sourceExampleNumber": "8.14.2",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.3",
+      "sourceExampleNumber": "8.14.3",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.4",
+      "sourceExampleNumber": "8.14.4",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.5",
+      "sourceExampleNumber": "8.14.5",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.6",
+      "sourceExampleNumber": "8.14.6",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.7",
+      "sourceExampleNumber": "8.14.7",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.8",
+      "sourceExampleNumber": "8.14.8",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.9",
+      "sourceExampleNumber": "8.14.9",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.10",
+      "sourceExampleNumber": "8.14.10",
+      "width": 390,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.1",
+      "sourceExampleNumber": "8.1.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.2",
+      "sourceExampleNumber": "8.1.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.3",
+      "sourceExampleNumber": "8.1.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.4",
+      "sourceExampleNumber": "8.1.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.5",
+      "sourceExampleNumber": "8.1.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.6",
+      "sourceExampleNumber": "8.1.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.7",
+      "sourceExampleNumber": "8.1.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.8",
+      "sourceExampleNumber": "8.1.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.9",
+      "sourceExampleNumber": "8.1.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.1",
+      "id": "cd08-exponential-logarithm-native-2026:8.1.10",
+      "sourceExampleNumber": "8.1.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.1",
+      "sourceExampleNumber": "8.2.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.2",
+      "sourceExampleNumber": "8.2.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.3",
+      "sourceExampleNumber": "8.2.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.4",
+      "sourceExampleNumber": "8.2.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.5",
+      "sourceExampleNumber": "8.2.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.6",
+      "sourceExampleNumber": "8.2.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.7",
+      "sourceExampleNumber": "8.2.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.8",
+      "sourceExampleNumber": "8.2.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.9",
+      "sourceExampleNumber": "8.2.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.2",
+      "id": "cd08-exponential-logarithm-native-2026:8.2.10",
+      "sourceExampleNumber": "8.2.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.1",
+      "sourceExampleNumber": "8.3.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.2",
+      "sourceExampleNumber": "8.3.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.3",
+      "sourceExampleNumber": "8.3.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.4",
+      "sourceExampleNumber": "8.3.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.5",
+      "sourceExampleNumber": "8.3.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.6",
+      "sourceExampleNumber": "8.3.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.7",
+      "sourceExampleNumber": "8.3.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.8",
+      "sourceExampleNumber": "8.3.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.9",
+      "sourceExampleNumber": "8.3.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.3",
+      "id": "cd08-exponential-logarithm-native-2026:8.3.10",
+      "sourceExampleNumber": "8.3.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.1",
+      "sourceExampleNumber": "8.4.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.2",
+      "sourceExampleNumber": "8.4.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.3",
+      "sourceExampleNumber": "8.4.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.4",
+      "sourceExampleNumber": "8.4.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.5",
+      "sourceExampleNumber": "8.4.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.6",
+      "sourceExampleNumber": "8.4.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.7",
+      "sourceExampleNumber": "8.4.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.8",
+      "sourceExampleNumber": "8.4.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.9",
+      "sourceExampleNumber": "8.4.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.4",
+      "id": "cd08-exponential-logarithm-native-2026:8.4.10",
+      "sourceExampleNumber": "8.4.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.1",
+      "sourceExampleNumber": "8.5.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.2",
+      "sourceExampleNumber": "8.5.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.3",
+      "sourceExampleNumber": "8.5.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.4",
+      "sourceExampleNumber": "8.5.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.5",
+      "sourceExampleNumber": "8.5.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.6",
+      "sourceExampleNumber": "8.5.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.7",
+      "sourceExampleNumber": "8.5.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.8",
+      "sourceExampleNumber": "8.5.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.9",
+      "sourceExampleNumber": "8.5.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.5",
+      "id": "cd08-exponential-logarithm-native-2026:8.5.10",
+      "sourceExampleNumber": "8.5.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.1",
+      "sourceExampleNumber": "8.6.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.2",
+      "sourceExampleNumber": "8.6.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.3",
+      "sourceExampleNumber": "8.6.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.4",
+      "sourceExampleNumber": "8.6.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.5",
+      "sourceExampleNumber": "8.6.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.6",
+      "sourceExampleNumber": "8.6.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.7",
+      "sourceExampleNumber": "8.6.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.8",
+      "sourceExampleNumber": "8.6.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.9",
+      "sourceExampleNumber": "8.6.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.6",
+      "id": "cd08-exponential-logarithm-native-2026:8.6.10",
+      "sourceExampleNumber": "8.6.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.1",
+      "sourceExampleNumber": "8.7.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.2",
+      "sourceExampleNumber": "8.7.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.3",
+      "sourceExampleNumber": "8.7.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.4",
+      "sourceExampleNumber": "8.7.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.5",
+      "sourceExampleNumber": "8.7.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.6",
+      "sourceExampleNumber": "8.7.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.7",
+      "sourceExampleNumber": "8.7.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.8",
+      "sourceExampleNumber": "8.7.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.9",
+      "sourceExampleNumber": "8.7.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.7",
+      "id": "cd08-exponential-logarithm-native-2026:8.7.10",
+      "sourceExampleNumber": "8.7.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.1",
+      "sourceExampleNumber": "8.8.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.2",
+      "sourceExampleNumber": "8.8.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.3",
+      "sourceExampleNumber": "8.8.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.4",
+      "sourceExampleNumber": "8.8.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.5",
+      "sourceExampleNumber": "8.8.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.6",
+      "sourceExampleNumber": "8.8.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.7",
+      "sourceExampleNumber": "8.8.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.8",
+      "sourceExampleNumber": "8.8.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.9",
+      "sourceExampleNumber": "8.8.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.8",
+      "id": "cd08-exponential-logarithm-native-2026:8.8.10",
+      "sourceExampleNumber": "8.8.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.1",
+      "sourceExampleNumber": "8.9.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.2",
+      "sourceExampleNumber": "8.9.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.3",
+      "sourceExampleNumber": "8.9.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.4",
+      "sourceExampleNumber": "8.9.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.5",
+      "sourceExampleNumber": "8.9.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.6",
+      "sourceExampleNumber": "8.9.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.7",
+      "sourceExampleNumber": "8.9.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.8",
+      "sourceExampleNumber": "8.9.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.9",
+      "sourceExampleNumber": "8.9.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.9",
+      "id": "cd08-exponential-logarithm-native-2026:8.9.10",
+      "sourceExampleNumber": "8.9.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.1",
+      "sourceExampleNumber": "8.10.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.2",
+      "sourceExampleNumber": "8.10.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.3",
+      "sourceExampleNumber": "8.10.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.4",
+      "sourceExampleNumber": "8.10.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.5",
+      "sourceExampleNumber": "8.10.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.6",
+      "sourceExampleNumber": "8.10.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.7",
+      "sourceExampleNumber": "8.10.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.8",
+      "sourceExampleNumber": "8.10.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.9",
+      "sourceExampleNumber": "8.10.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.10",
+      "id": "cd08-exponential-logarithm-native-2026:8.10.10",
+      "sourceExampleNumber": "8.10.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.1",
+      "sourceExampleNumber": "8.11.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.2",
+      "sourceExampleNumber": "8.11.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.3",
+      "sourceExampleNumber": "8.11.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.4",
+      "sourceExampleNumber": "8.11.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.5",
+      "sourceExampleNumber": "8.11.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.6",
+      "sourceExampleNumber": "8.11.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.7",
+      "sourceExampleNumber": "8.11.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.8",
+      "sourceExampleNumber": "8.11.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.9",
+      "sourceExampleNumber": "8.11.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.11",
+      "id": "cd08-exponential-logarithm-native-2026:8.11.10",
+      "sourceExampleNumber": "8.11.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.1",
+      "sourceExampleNumber": "8.12.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.2",
+      "sourceExampleNumber": "8.12.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.3",
+      "sourceExampleNumber": "8.12.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.4",
+      "sourceExampleNumber": "8.12.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.5",
+      "sourceExampleNumber": "8.12.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.6",
+      "sourceExampleNumber": "8.12.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.7",
+      "sourceExampleNumber": "8.12.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.8",
+      "sourceExampleNumber": "8.12.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.9",
+      "sourceExampleNumber": "8.12.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.12",
+      "id": "cd08-exponential-logarithm-native-2026:8.12.10",
+      "sourceExampleNumber": "8.12.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.1",
+      "sourceExampleNumber": "8.13.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.2",
+      "sourceExampleNumber": "8.13.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.3",
+      "sourceExampleNumber": "8.13.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.4",
+      "sourceExampleNumber": "8.13.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.5",
+      "sourceExampleNumber": "8.13.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.6",
+      "sourceExampleNumber": "8.13.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.7",
+      "sourceExampleNumber": "8.13.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.8",
+      "sourceExampleNumber": "8.13.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.9",
+      "sourceExampleNumber": "8.13.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.13",
+      "id": "cd08-exponential-logarithm-native-2026:8.13.10",
+      "sourceExampleNumber": "8.13.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.1",
+      "sourceExampleNumber": "8.14.1",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.2",
+      "sourceExampleNumber": "8.14.2",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.3",
+      "sourceExampleNumber": "8.14.3",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.4",
+      "sourceExampleNumber": "8.14.4",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.5",
+      "sourceExampleNumber": "8.14.5",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.6",
+      "sourceExampleNumber": "8.14.6",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.7",
+      "sourceExampleNumber": "8.14.7",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.8",
+      "sourceExampleNumber": "8.14.8",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.9",
+      "sourceExampleNumber": "8.14.9",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    },
+    {
+      "code": "8.14",
+      "id": "cd08-exponential-logarithm-native-2026:8.14.10",
+      "sourceExampleNumber": "8.14.10",
+      "width": 1366,
+      "math": true,
+      "sourceKind": "tex"
+    }
+  ],
+  "errors": [],
+  "editorialApproval": false
+}

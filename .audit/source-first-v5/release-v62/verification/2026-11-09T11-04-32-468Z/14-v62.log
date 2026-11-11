@@ -1,0 +1,112 @@
+[
+  { name: 'roadmap', width: 390, cls: 0, causes: [] },
+  { name: 'graph', width: 390, cls: 0, causes: [] },
+  {
+    name: 'roadmap',
+    width: 768,
+    cls: 0.46046855062799474,
+    causes: [
+      'curriculum-app-shell',
+      '',
+      'roadmap-list',
+      'roadmap-toolbar',
+      'site-nav',
+      '',
+      undefined,
+      'site-nav',
+      'roadmap-topic__meta',
+      'roadmap-topic__meta',
+      'roadmap-topic__meta',
+      ''
+    ]
+  },
+  {
+    name: 'graph',
+    width: 768,
+    cls: 0.32360443879299133,
+    causes: [
+      'curriculum-app-shell',
+      'example-reader__figures',
+      'example-reader__solution',
+      undefined,
+      'example-reader__source',
+      undefined,
+      'example-reader__solution',
+      'example-reader__source',
+      '',
+      'site-nav',
+      '',
+      undefined
+    ]
+  },
+  {
+    name: 'roadmap',
+    width: 1024,
+    cls: 0.41822625837902316,
+    causes: [
+      'curriculum-app-shell',
+      '',
+      'site-nav',
+      '',
+      undefined,
+      'roadmap-list',
+      'roadmap-toolbar',
+      'site-nav',
+      '',
+      'roadmap-topic__meta',
+      'roadmap-topic__meta',
+      ''
+    ]
+  },
+  {
+    name: 'graph',
+    width: 1024,
+    cls: 0.3404662875696946,
+    causes: [
+      'example-reader__figures',
+      'example-reader__solution',
+      undefined,
+      'example-reader__source',
+      undefined,
+      'example-reader__solution',
+      '',
+      'example-reader__source',
+      'native-graph__board',
+      'site-nav',
+      '',
+      ''
+    ]
+  },
+  {
+    name: 'roadmap',
+    width: 1366,
+    cls: 0.2827459596689438,
+    causes: [
+      '',                'roadmap-list',
+      'roadmap-toolbar', 'site-nav',
+      '',                undefined,
+      undefined,         'site-nav',
+      undefined,         undefined,
+      'site-nav',        ''
+    ]
+  },
+  {
+    name: 'graph',
+    width: 1366,
+    cls: 0.2718413456710459,
+    causes: [
+      'curriculum-app-shell',
+      'site-nav',
+      '',
+      undefined,
+      'example-reader__figures',
+      'example-reader__solution',
+      'example-reader__source',
+      undefined,
+      undefined,
+      'example-reader__solution',
+      'example-reader__source',
+      ''
+    ]
+  }
+]

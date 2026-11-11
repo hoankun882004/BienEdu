@@ -1,0 +1,17 @@
+✔ only additive start/dev adoption and unchanged verified math payload are prepared (651.1898ms)
+✔ all 140 native CD08 pairs keep exact full IDs, source bytes, math and previous-source separation (942.0248ms)
+✔ hosting includes the exact three learner adapters but not the source-first tools (0.377ms)
+✔ published bundles load on real hostnames; local-only preview remains private (0.685ms)
+✔ dry run and wrong authorization do not write (7152.6761ms)
+✔ exact apply is idempotent and rollback preserves the user start/dev additions (13956.4981ms)
+✔ interrupted apply and interrupted rollback resume without losing backups (12825.4787ms)
+✔ unknown target edits, stale source and corrupt backups fail closed (6633.2212ms)
+✔ a live cross-version lock is not bypassed (6182.2634ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 48768.1512

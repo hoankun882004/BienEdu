@@ -1,0 +1,48 @@
+{
+  "publicationHash": "A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85",
+  "contentHash": "976076AF726183443F57716EF2D92C50BC4C5AA006BAE2DF034DF494F894C55E",
+  "sequential": true,
+  "publishedRuntimeUnchanged": true,
+  "results": [
+    {
+      "command": "npm.cmd run check",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/01.log"
+    },
+    {
+      "command": "node --test tests/publication-v621.test.mjs",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/02.log"
+    },
+    {
+      "command": "node .audit/publication-host-v621.mjs",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/03.log"
+    },
+    {
+      "command": "node .audit/native-cd08-browser.mjs",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/04.log"
+    },
+    {
+      "command": "python -X utf8 tests/source-layout-v62.py",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/05.log"
+    },
+    {
+      "command": ".content-work\\source-first-v5\\sympy-env\\Scripts\\python.exe -X utf8 tests/source-symbolic-v62.py",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/06.log"
+    },
+    {
+      "command": "npm.cmd run test:canonical",
+      "exitCode": 0,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/07.log"
+    },
+    {
+      "command": "node .audit/v62-browser.mjs --actual",
+      "exitCode": 1,
+      "log": ".audit/publication-v621/2026-11-11T13-16-59-745Z/08.log"
+    }
+  ]
+}

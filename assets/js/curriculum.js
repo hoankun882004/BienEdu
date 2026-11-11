@@ -286,9 +286,9 @@ function renderTopicDetail(topic) {
         const content = getSubtopicAvailability(exercise.code);
         const counts = knowledgeCounts[exercise.code] ?? {};
         const hasProblemType = problemTypes.some((item) => item.code === exercise.code);
-        const isAvailable = Boolean((hasProblemType || getKnowledgeContent(exercise.code)) && content?.status !== CONTENT_STATUS.COMING_SOON);
+        const isAvailable = Boolean((hasProblemType || getKnowledgeContent(exercise.code) || getExampleContent(exercise.code)?.length) && content?.status !== CONTENT_STATUS.COMING_SOON);
         const lessonProgress = isAvailable ? getLessonProgress(progressState, exercise.code, counts.knowledge, counts.examples, counts.practice, content.status) : null;
-        const firstSection = topicReading && hasProblemType ? "types" : "knowledge";
+        const firstSection = topicReading && hasProblemType ? "types" : getKnowledgeContent(exercise.code) ? "knowledge" : hasProblemType ? "types" : getExampleContent(exercise.code)?.length ? "example" : "knowledge";
         const href = routeUrl({ topicId: topic.id, typeCode: exercise.code, section: firstSection, item: 1 });
         const linkAttributes = "data-route";
         const stateLabel = lessonProgress
@@ -656,7 +656,7 @@ function updateLessonWorkspace(view, { announce = false } = {}) {
 }
 
 function renderWorkspace(topic, exercise, route, options = {}) {
-  if (!getKnowledgeContent(exercise.code) && !getApprovedMathContent(exercise.code)) return renderUnavailable(topic, exercise);
+  if (!getKnowledgeContent(exercise.code) && !getApprovedMathContent(exercise.code) && !getExampleContent(exercise.code)?.length) return renderUnavailable(topic, exercise);
   const view = createLessonView(topic, exercise, route);
   document.body.classList.add("learning-mode");
 

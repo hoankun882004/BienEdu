@@ -1,0 +1,14 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.example-card') to be visible[22m
+
+    at D:\BienEdu\.audit\publication-host-v621.mjs:27:110 {
+  log: [ "  - waiting for locator('.example-card') to be visible" ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.20.0

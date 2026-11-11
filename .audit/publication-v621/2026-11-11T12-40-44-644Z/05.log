@@ -1,0 +1,15 @@
+
+> test:canonical
+> node scripts/source-first/publish-v621.mjs test test:canonical
+
+Unchanged historical assertions run in a disposable authenticated pre-publication fixture; the published website is not rolled back.
+[V6.2] test:canonical: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> test:canonical
+> node scripts/source-first/compat-suites-v61.mjs test:canonical
+
+
+> content:canonical:preview
+> node scripts/source-first/canonical-build.mjs
+
+{"sources":[{"id":"cd12-cd14-calculus","topics":["CD12","CD13","CD14"],"sections":26},{"id":"cd01-cd07-functions","topics":["CD01","CD02","CD03","CD04","CD05","CD06","CD07"],"sections":71},{"id":"cd20-cd21-theory","topics":["CD20","CD21"],"sections":25},{"id":"cd08-cd11-exponential-logarithm","topics":["CD08","CD09","CD10","CD11"],"sections":50},{"id":"cd20-cd23-native-latex","topics":["CD20","CD21","CD22","CD23"],"sections":46}],"records":7172,"pilotFields":35,"mathNodes":62,"unresolved":6941}

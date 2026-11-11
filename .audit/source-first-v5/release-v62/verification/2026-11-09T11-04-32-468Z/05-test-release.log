@@ -1,0 +1,73 @@
+[V6.2] test:release: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> test:release
+> node scripts/source-first/compat-suites-v61.mjs test:release
+
+
+> content:release:preview
+> node scripts/source-first/compat-suites-v61.mjs content:release:preview
+
+{
+  "planHash": "22F8736BB1F31B82A9CA2300B22D8050036345C338AD49BECAC1F7A287CC9B1C",
+  "summary": {
+    "correctionGroups": 13,
+    "correctionFields": 35,
+    "v56PhysicalFields": 26,
+    "additionalCanonicalOverlayFields": 9,
+    "newKnowledge": 1,
+    "newExamples": 10,
+    "newSolutions": 10,
+    "newPractice": 0,
+    "nativeGraphs": 5,
+    "variationTables": 1
+  },
+  "sourceFiles": 9,
+  "canonicalNodes": 68,
+  "applyCommand": "node scripts/source-first/release-v6.mjs apply --authorize 22F8736BB1F31B82A9CA2300B22D8050036345C338AD49BECAC1F7A287CC9B1C --development --execute",
+  "rollbackCommand": "node scripts/source-first/release-v6.mjs rollback --authorize 22F8736BB1F31B82A9CA2300B22D8050036345C338AD49BECAC1F7A287CC9B1C --development --execute",
+  "realRuntimeWrites": 0
+}
+
+✔ nine independent educational sources retain exact current hashes and coverage (8.0818ms)
+✔ new PDF headings pair full stable IDs, not repeated statement/solution counts (0.2681ms)
+✔ one complete new semantic group: knowledge/method/10 examples/10 solutions; no invented practice (10.5595ms)
+✔ canonical math remains the single conversion contract for prepared content and corrections (36.3806ms)
+✔ protected CD20/CD21 and unpublished CD23 are not supplemented or corrected (2.7396ms)
+✔ local release dry-run makes no writes; exact manifest authorization is mandatory (1386.5859ms)
+✔ interrupted multi-file release resumes idempotently and rolls back in reverse safely (1712.1152ms)
+✔ stale source, changed dependencies and concurrent runtime edits are rejected (1267.9423ms)
+✔ real V5.5 content stays applied and V5.6 content stays prepared, never applied by tests (14.6072ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4835.123
+{"passed":true,"states":39,"realRuntimeWrites":0}
+✔ exact frozen 861-record cohort is exhausted without duplicate identities or successes (11.5993ms)
+✔ a regenerated historical preview index cannot misidentify a rolled-back explicit parent (1150.9714ms)
+✔ all recovered pairs have exact source glyph/layout ownership and stable explicit statement-solution pairing (663.376ms)
+✔ re-import is deterministic and a cumulative bundle never duplicates prepared or active examples (8047.5016ms)
+✔ every prepared math node parses safely through the existing canonical/common renderer (1414.6605ms)
+✔ advanced structural fixtures include nested fractions/roots, script nesting, operators and rejection cases (1314.7758ms)
+✔ source editions are append-only, explicitly mapped, with original numbering and independent identities (0.46ms)
+✔ all 209 V6.1 examples, ten V6.0 examples, 35 fields and six graph specs remain byte-equivalent (6.3067ms)
+✔ missing knowledge is explicit; no fake theory, practice, approvals or protected CD20/21/23 writes (0.4233ms)
+✔ source and syntax, limited symbolic checks and editorial review are separate states (0.6684ms)
+✔ dry-run never writes and fresh manifest authorization is mandatory (2955.013ms)
+✔ interrupted file-boundary apply resumes idempotently and child rollback precedes parent (51563.5565ms)
+✔ rollback interruption preserves recoverable before/after bytes and can resume in reverse (4111.2745ms)
+✔ unknown edits, source changes, corrupt backups/manifests and cross-version live locks fail closed (7009.5852ms)
+✔ dead same-plan owner recovery is explicit, and unknown temporary bytes are never overwritten (3647.0013ms)
+✔ real runtime matches its authenticated activation; immutable ancestor evidence and V6.1 staging remain unchanged (933.0532ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83222.398
+{"mode":"content","passed":true,"states":1318,"errors":0,"maxLocalCLS":0.0003450018436078588,"realRuntimeWrites":0}

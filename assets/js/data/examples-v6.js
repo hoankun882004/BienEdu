@@ -12,5 +12,6 @@ const corrected=Object.fromEntries(Object.entries(base.exampleContent).map(([cod
     target[key]=legacyText(change.after);
   }return copy;
 })]));
-export const exampleContent=Object.freeze({...corrected,...added});
+const combined=Object.fromEntries(Object.entries(added).map(([code,records])=>{const group=overlayGroups.find(g=>g.code===code);return [code,group.mergeMode==='append-independent-source'?[...(corrected[code]??[]),...records]:records];}));
+export const exampleContent=Object.freeze({...corrected,...combined});
 export const getExampleContent=(code)=>exampleContent[code]??null;

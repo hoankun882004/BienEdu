@@ -1,6 +1,7 @@
 import { mountGraph, disposeGraph, disposeDetachedGraphs } from './components/graph-renderer.js';
 let styles;
 function addStyles() {
+  if(document.querySelector('link[data-native-graph-style]')?.sheet)return Promise.resolve();
   return styles ??= new Promise((resolve, reject) => {
     const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = 'assets/native-graphs.css?v=5.8'; link.dataset.nativeGraphStyle = '';
     link.onload = resolve; link.onerror = () => reject(new Error('Graph stylesheet unavailable')); document.head.append(link);

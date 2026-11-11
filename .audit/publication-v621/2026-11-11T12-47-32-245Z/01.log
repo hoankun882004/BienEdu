@@ -1,0 +1,5 @@
+
+> check
+> node scripts/check-source.mjs
+
+Source check passed: 58 JavaScript files, 6 HTML entries.

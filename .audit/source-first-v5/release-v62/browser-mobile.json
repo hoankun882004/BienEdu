@@ -1,5 +1,5 @@
 {
-  "planHash": "ADA22D7CEAECC0F4C5288FF42D06EDF01A3AD2C30C50C44B1285F8C73FE046A1",
+  "planHash": "C314A1221CE70F2A41859E5CEBE216DF4030F6B0FB406EEB0B668A69E2D9E6E3",
   "mode": "mobile",
   "passed": true,
   "states": [
@@ -15,8 +15,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 313.5,
-      "learnerReadyMs": 663.8999999761581,
+      "dcl": 308.2999999523163,
+      "learnerReadyMs": 655.1999999284744,
       "shifts": []
     },
     {
@@ -31,8 +31,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 85.80000007152557,
-      "learnerReadyMs": 323.3000000715256,
+      "dcl": 90.60000002384186,
+      "learnerReadyMs": 337.40000009536743,
       "shifts": []
     },
     {
@@ -47,8 +47,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 91.10000002384186,
-      "learnerReadyMs": 271.7000000476837,
+      "dcl": 87.19999992847443,
+      "learnerReadyMs": 285,
       "shifts": []
     },
     {
@@ -63,8 +63,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 88.29999995231628,
-      "learnerReadyMs": 359.7999999523163,
+      "dcl": 96.39999997615814,
+      "learnerReadyMs": 385.5,
       "shifts": []
     },
     {
@@ -79,8 +79,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 85.5,
-      "learnerReadyMs": 276.60000002384186,
+      "dcl": 83.69999992847443,
+      "learnerReadyMs": 260.09999990463257,
       "shifts": []
     },
     {
@@ -95,7 +95,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 81.70000004768372,
+      "dcl": 90.59999990463257,
       "shifts": []
     },
     {
@@ -110,7 +110,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 81.70000004768372,
+      "dcl": 90.59999990463257,
       "shifts": []
     },
     {
@@ -125,7 +125,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 81.70000004768372,
+      "dcl": 90.59999990463257,
       "shifts": []
     },
     {
@@ -140,7 +140,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 112.60000002384186,
+      "dcl": 108.39999997615814,
       "shifts": []
     },
     {
@@ -155,7 +155,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 107,
+      "dcl": 94.89999997615814,
       "shifts": []
     },
     {
@@ -170,8 +170,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 130.30000007152557,
-      "learnerReadyMs": 380.40000009536743,
+      "dcl": 87.60000002384186,
+      "learnerReadyMs": 338.60000002384186,
       "shifts": []
     },
     {
@@ -186,8 +186,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 112.09999990463257,
-      "learnerReadyMs": 342.1999999284744,
+      "dcl": 93.70000004768372,
+      "learnerReadyMs": 265.3000000715256,
       "shifts": []
     },
     {
@@ -202,8 +202,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "learnerReadyMs": 413.1999999284744,
+      "dcl": 98.79999995231628,
+      "learnerReadyMs": 286.6999999284744,
       "shifts": []
     },
     {
@@ -218,8 +218,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 115.89999997615814,
-      "learnerReadyMs": 357.10000002384186,
+      "dcl": 104.10000002384186,
+      "learnerReadyMs": 321.8000000715256,
       "shifts": []
     },
     {
@@ -234,8 +234,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 123.79999995231628,
-      "learnerReadyMs": 441.7999999523163,
+      "dcl": 84.89999997615814,
+      "learnerReadyMs": 343.2999999523163,
       "shifts": []
     },
     {
@@ -250,8 +250,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 111.80000007152557,
-      "learnerReadyMs": 367.10000002384186,
+      "dcl": 96.09999990463257,
+      "learnerReadyMs": 336.6999999284744,
       "shifts": []
     },
     {
@@ -266,8 +266,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 110.79999995231628,
-      "learnerReadyMs": 321.7000000476837,
+      "dcl": 91.80000007152557,
+      "learnerReadyMs": 279.7000000476837,
       "shifts": []
     },
     {
@@ -282,8 +282,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 112.89999997615814,
-      "learnerReadyMs": 383.39999997615814,
+      "dcl": 110,
+      "learnerReadyMs": 325.7999999523163,
       "shifts": []
     },
     {
@@ -298,8 +298,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 253.60000002384186,
-      "learnerReadyMs": 599.7000000476837,
+      "dcl": 298.89999997615814,
+      "learnerReadyMs": 597.2000000476837,
       "shifts": []
     },
     {
@@ -314,8 +314,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 104.90000009536743,
-      "learnerReadyMs": 385.7000000476837,
+      "dcl": 77.89999997615814,
+      "learnerReadyMs": 305.09999990463257,
       "shifts": []
     },
     {
@@ -330,8 +330,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 111.5,
-      "learnerReadyMs": 357.7999999523163,
+      "dcl": 82.59999990463257,
+      "learnerReadyMs": 258.7999999523163,
       "shifts": []
     },
     {
@@ -346,8 +346,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 114,
-      "learnerReadyMs": 407,
+      "dcl": 81.39999997615814,
+      "learnerReadyMs": 319.7999999523163,
       "shifts": []
     },
     {
@@ -362,8 +362,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 85.79999995231628,
-      "learnerReadyMs": 260.10000002384186,
+      "dcl": 91.89999997615814,
+      "learnerReadyMs": 267.39999997615814,
       "shifts": []
     },
     {
@@ -378,7 +378,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 102.70000004768372,
+      "dcl": 85,
       "shifts": []
     },
     {
@@ -393,7 +393,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 102.70000004768372,
+      "dcl": 85,
       "shifts": []
     },
     {
@@ -408,7 +408,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 102.70000004768372,
+      "dcl": 85,
       "shifts": []
     },
     {
@@ -423,7 +423,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 82.40000009536743,
+      "dcl": 93.39999997615814,
       "shifts": []
     },
     {
@@ -438,7 +438,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 112.29999995231628,
+      "dcl": 89.30000007152557,
       "shifts": []
     },
     {
@@ -453,8 +453,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 173.60000002384186,
-      "learnerReadyMs": 467,
+      "dcl": 79.80000007152557,
+      "learnerReadyMs": 266.60000002384186,
       "shifts": []
     },
     {
@@ -469,8 +469,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 123.29999995231628,
-      "learnerReadyMs": 318.2000000476837,
+      "dcl": 97.5,
+      "learnerReadyMs": 259,
       "shifts": []
     },
     {
@@ -485,8 +485,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 109.80000007152557,
-      "learnerReadyMs": 379.60000002384186,
+      "dcl": 88.69999992847443,
+      "learnerReadyMs": 261.89999997615814,
       "shifts": []
     },
     {
@@ -501,8 +501,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 109.89999997615814,
-      "learnerReadyMs": 332.3000000715256,
+      "dcl": 101.79999995231628,
+      "learnerReadyMs": 314.09999990463257,
       "shifts": []
     },
     {
@@ -517,8 +517,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 108.69999992847443,
-      "learnerReadyMs": 334.6999999284744,
+      "dcl": 101.39999997615814,
+      "learnerReadyMs": 320.2000000476837,
       "shifts": []
     },
     {
@@ -533,8 +533,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 96.60000002384186,
-      "learnerReadyMs": 330,
+      "dcl": 125.70000004768372,
+      "learnerReadyMs": 320.40000009536743,
       "shifts": []
     },
     {
@@ -549,8 +549,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 97.10000002384186,
-      "learnerReadyMs": 382.3000000715256,
+      "dcl": 116.29999995231628,
+      "learnerReadyMs": 309.7999999523163,
       "shifts": []
     },
     {
@@ -565,8 +565,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 107.69999992847443,
-      "learnerReadyMs": 367.7999999523163,
+      "dcl": 105.59999990463257,
+      "learnerReadyMs": 320.5,
       "shifts": []
     },
     {
@@ -581,8 +581,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 328.7999999523163,
-      "learnerReadyMs": 655.5,
+      "dcl": 314.89999997615814,
+      "learnerReadyMs": 611.1999999284744,
       "shifts": []
     },
     {
@@ -597,8 +597,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 106.89999997615814,
-      "learnerReadyMs": 386,
+      "dcl": 102.89999997615814,
+      "learnerReadyMs": 342.7999999523163,
       "shifts": []
     },
     {
@@ -613,8 +613,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 105.70000004768372,
-      "learnerReadyMs": 340,
+      "dcl": 102,
+      "learnerReadyMs": 276.90000009536743,
       "shifts": []
     },
     {
@@ -629,358 +629,14 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 114.39999997615814,
-      "learnerReadyMs": 408.7999999523163,
+      "dcl": 82.80000007152557,
+      "learnerReadyMs": 343.8000000715256,
       "shifts": []
     },
     {
       "name": "method",
       "width": 390,
       "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 102.20000004768372,
-      "learnerReadyMs": 325.10000002384186,
-      "shifts": []
-    },
-    {
-      "name": "progress-reload",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "shifts": []
-    },
-    {
-      "name": "keyboard-navigation",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "shifts": []
-    },
-    {
-      "name": "menu-escape",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "shifts": []
-    },
-    {
-      "name": "practice-correct-persisted",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 99.20000004768372,
-      "shifts": []
-    },
-    {
-      "name": "practice-wrong-persisted",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 99,
-      "shifts": []
-    },
-    {
-      "name": "independent-edition-navigation",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 113.39999997615814,
-      "learnerReadyMs": 370.60000002384186,
-      "shifts": []
-    },
-    {
-      "name": "example-only-topic-entry",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 103.5,
-      "learnerReadyMs": 347.5,
-      "shifts": []
-    },
-    {
-      "name": "graph-6.1-source-example-1",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 1,
-      "readingCSSLoads": 1,
-      "dcl": 102.70000004768372,
-      "learnerReadyMs": 327,
-      "shifts": []
-    },
-    {
-      "name": "graph-6.1-source-example-7",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 1,
-      "readingCSSLoads": 1,
-      "dcl": 100.19999992847443,
-      "learnerReadyMs": 323.6999999284744,
-      "shifts": []
-    },
-    {
-      "name": "graph-6.1-source-example-8",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 1,
-      "readingCSSLoads": 1,
-      "dcl": 98.20000004768372,
-      "learnerReadyMs": 367.3000000715256,
-      "shifts": []
-    },
-    {
-      "name": "graph-6.1-source-example-9",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 1,
-      "readingCSSLoads": 1,
-      "dcl": 100.60000002384186,
-      "learnerReadyMs": 342,
-      "shifts": []
-    },
-    {
-      "name": "graph-4.4-source-example-7",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 1,
-      "readingCSSLoads": 1,
-      "dcl": 118.89999997615814,
-      "learnerReadyMs": 339,
-      "shifts": []
-    },
-    {
-      "name": "graph-2.3-source-example-1",
-      "width": 390,
-      "height": 844,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 1,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "learnerReadyMs": 373.10000002384186,
-      "shifts": []
-    },
-    {
-      "name": "home",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 260.09999990463257,
-      "learnerReadyMs": 603.5999999046326,
-      "shifts": []
-    },
-    {
-      "name": "roadmap",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 96.89999997615814,
-      "learnerReadyMs": 410.5,
-      "shifts": []
-    },
-    {
-      "name": "topic",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 89.39999997615814,
-      "learnerReadyMs": 291.6999999284744,
-      "shifts": []
-    },
-    {
-      "name": "knowledge",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 80.89999997615814,
-      "learnerReadyMs": 375,
-      "shifts": []
-    },
-    {
-      "name": "method",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 96.89999997615814,
-      "learnerReadyMs": 293.89999997615814,
-      "shifts": []
-    },
-    {
-      "name": "progress-reload",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 81,
-      "shifts": []
-    },
-    {
-      "name": "keyboard-navigation",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 81,
-      "shifts": []
-    },
-    {
-      "name": "menu-escape",
-      "width": 430,
-      "height": 932,
-      "cls": 0,
-      "overflow": false,
-      "mathErrors": 0,
-      "graphCount": 0,
-      "mainCount": 1,
-      "pdfLoads": 0,
-      "graphLoads": 0,
-      "readingCSSLoads": 1,
-      "dcl": 81,
-      "shifts": []
-    },
-    {
-      "name": "practice-correct-persisted",
-      "width": 430,
-      "height": 932,
       "cls": 0,
       "overflow": false,
       "mathErrors": 0,
@@ -990,6 +646,350 @@
       "graphLoads": 0,
       "readingCSSLoads": 1,
       "dcl": 81.89999997615814,
+      "learnerReadyMs": 261.2999999523163,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 76,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 76,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 76,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 89.59999990463257,
+      "shifts": []
+    },
+    {
+      "name": "practice-wrong-persisted",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 93.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "independent-edition-navigation",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 111.60000002384186,
+      "learnerReadyMs": 306.40000009536743,
+      "shifts": []
+    },
+    {
+      "name": "example-only-topic-entry",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 100.69999992847443,
+      "learnerReadyMs": 295.1999999284744,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 97.10000002384186,
+      "learnerReadyMs": 285.5,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 84.69999992847443,
+      "learnerReadyMs": 281,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 108.5,
+      "learnerReadyMs": 419.5,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 92.5,
+      "learnerReadyMs": 287.7999999523163,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 84.79999995231628,
+      "learnerReadyMs": 263.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 98.69999992847443,
+      "learnerReadyMs": 314.10000002384186,
+      "shifts": []
+    },
+    {
+      "name": "home",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 285,
+      "learnerReadyMs": 570.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "roadmap",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 86.60000002384186,
+      "learnerReadyMs": 300.60000002384186,
+      "shifts": []
+    },
+    {
+      "name": "topic",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 87.79999995231628,
+      "learnerReadyMs": 261.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "knowledge",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 79,
+      "learnerReadyMs": 318.39999997615814,
+      "shifts": []
+    },
+    {
+      "name": "method",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 81.70000004768372,
+      "learnerReadyMs": 268.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "progress-reload",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.19999992847443,
+      "shifts": []
+    },
+    {
+      "name": "keyboard-navigation",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.19999992847443,
+      "shifts": []
+    },
+    {
+      "name": "menu-escape",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 83.19999992847443,
+      "shifts": []
+    },
+    {
+      "name": "practice-correct-persisted",
+      "width": 430,
+      "height": 932,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 0,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 86.5,
       "shifts": []
     },
     {
@@ -1004,7 +1004,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 102.5,
+      "dcl": 84.10000002384186,
       "shifts": []
     },
     {
@@ -1019,8 +1019,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 99.39999997615814,
-      "learnerReadyMs": 331.7999999523163,
+      "dcl": 90.80000007152557,
+      "learnerReadyMs": 280.7000000476837,
       "shifts": []
     },
     {
@@ -1035,8 +1035,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 94.19999992847443,
-      "learnerReadyMs": 336.89999997615814,
+      "dcl": 80.5,
+      "learnerReadyMs": 257.89999997615814,
       "shifts": []
     },
     {
@@ -1051,8 +1051,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 107.60000002384186,
-      "learnerReadyMs": 326.7999999523163,
+      "dcl": 94.79999995231628,
+      "learnerReadyMs": 276.2999999523163,
       "shifts": []
     },
     {
@@ -1067,8 +1067,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 103.60000002384186,
-      "learnerReadyMs": 334.10000002384186,
+      "dcl": 96.69999992847443,
+      "learnerReadyMs": 295.10000002384186,
       "shifts": []
     },
     {
@@ -1083,8 +1083,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 109.5,
-      "learnerReadyMs": 335,
+      "dcl": 96.20000004768372,
+      "learnerReadyMs": 293.10000002384186,
       "shifts": []
     },
     {
@@ -1099,8 +1099,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 111.10000002384186,
-      "learnerReadyMs": 358.39999997615814,
+      "dcl": 96,
+      "learnerReadyMs": 291.8000000715256,
       "shifts": []
     },
     {
@@ -1115,8 +1115,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 120.39999997615814,
-      "learnerReadyMs": 320,
+      "dcl": 93.29999995231628,
+      "learnerReadyMs": 255.5,
       "shifts": []
     },
     {
@@ -1131,15 +1131,15 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 98.5,
-      "learnerReadyMs": 296,
+      "dcl": 110,
+      "learnerReadyMs": 339.10000002384186,
       "shifts": []
     },
     {
       "name": "home",
       "width": 768,
       "height": 1024,
-      "cls": 0.07901618889688204,
+      "cls": 0.08582633531962833,
       "overflow": false,
       "mathErrors": 0,
       "graphCount": 0,
@@ -1147,12 +1147,12 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 250.79999995231628,
-      "learnerReadyMs": 612.7999999523163,
+      "dcl": 237.10000002384186,
+      "learnerReadyMs": 576.7999999523163,
       "shifts": [
         {
-          "time": 450.59999990463257,
-          "value": 0.07181167602539062,
+          "time": 417.1999999284744,
+          "value": 0.0732421875,
           "sources": [
             {
               "tag": "MAIN",
@@ -1160,52 +1160,154 @@
               "previous": {
                 "x": 0,
                 "y": 0,
-                "width": 753,
+                "width": 768,
                 "height": 1024,
                 "top": 0,
-                "right": 753,
+                "right": 768,
                 "bottom": 1024,
                 "left": 0
               },
               "current": {
                 "x": 0,
                 "y": 75,
-                "width": 753,
+                "width": 768,
                 "height": 949,
                 "top": 75,
-                "right": 753,
+                "right": 768,
                 "bottom": 1024,
-                "left": 0
-              }
-            },
-            {
-              "tag": "DIV",
-              "cls": "study-rhythm__stat is-visible",
-              "previous": {
-                "x": 396,
-                "y": 1005.75,
-                "width": 342.109375,
-                "height": 18.25,
-                "top": 1005.75,
-                "right": 738.109375,
-                "bottom": 1024,
-                "left": 396
-              },
-              "current": {
-                "x": 0,
-                "y": 0,
-                "width": 0,
-                "height": 0,
-                "top": 0,
-                "right": 0,
-                "bottom": 0,
                 "left": 0
               }
             }
           ]
         },
         {
-          "time": 500.6999999284744,
+          "time": 423.7999999523163,
+          "value": 0.006624143570661545,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "specimen-mosaic",
+              "previous": {
+                "x": 345.59375,
+                "y": 75,
+                "width": 407.40625,
+                "height": 528,
+                "top": 75,
+                "right": 753,
+                "bottom": 603,
+                "left": 345.59375
+              },
+              "current": {
+                "x": 338.84375,
+                "y": 75,
+                "width": 414.15625,
+                "height": 528,
+                "top": 75,
+                "right": 753,
+                "bottom": 603,
+                "left": 338.84375
+              }
+            },
+            {
+              "tag": "FIGURE",
+              "cls": "study-rhythm__image drift is-visible",
+              "previous": {
+                "x": 396,
+                "y": 828.75,
+                "width": 342.109375,
+                "height": 195.25,
+                "top": 828.75,
+                "right": 738.109375,
+                "bottom": 1024,
+                "left": 396
+              },
+              "current": {
+                "x": 388.5,
+                "y": 828.75,
+                "width": 334.609375,
+                "height": 195.25,
+                "top": 828.75,
+                "right": 723.109375,
+                "bottom": 1024,
+                "left": 388.5
+              }
+            },
+            {
+              "tag": "P",
+              "cls": "statement is-visible",
+              "previous": {
+                "x": 326.8125,
+                "y": 646,
+                "width": 362.109375,
+                "height": 125.75,
+                "top": 646,
+                "right": 688.921875,
+                "bottom": 771.75,
+                "left": 326.8125
+              },
+              "current": {
+                "x": 320.5625,
+                "y": 646,
+                "width": 354.609375,
+                "height": 125.75,
+                "top": 646,
+                "right": 675.171875,
+                "bottom": 771.75,
+                "left": 320.5625
+              }
+            },
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 363.578125,
+                "y": 13.609375,
+                "width": 282.6875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 646.265625,
+                "bottom": 58.375,
+                "left": 363.578125
+              },
+              "current": {
+                "x": 348.578125,
+                "y": 13.609375,
+                "width": 282.6875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 631.265625,
+                "bottom": 58.375,
+                "left": 348.578125
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "text-link",
+              "previous": {
+                "x": 209.75,
+                "y": 463.03125,
+                "width": 105.125,
+                "height": 52.34375,
+                "top": 463.03125,
+                "right": 314.875,
+                "bottom": 515.375,
+                "left": 209.75
+              },
+              "current": {
+                "x": 206.109375,
+                "y": 463.03125,
+                "width": 102.015625,
+                "height": 52.34375,
+                "top": 463.03125,
+                "right": 308.125,
+                "bottom": 515.375,
+                "left": 206.109375
+              }
+            }
+          ]
+        },
+        {
+          "time": 466.60000002384186,
           "value": 0.0023804210359230638,
           "sources": [
             {
@@ -1283,31 +1385,31 @@
           ]
         },
         {
-          "time": 577.1999999284744,
-          "value": 0.0027514210281272726,
+          "time": 480.60000002384186,
+          "value": 0.0003177779338633021,
           "sources": [
             {
-              "tag": "NAV",
-              "cls": "site-nav",
+              "tag": "P",
+              "cls": "section-eyebrow",
               "previous": {
-                "x": 348.21875,
-                "y": 13.609375,
-                "width": 282.6875,
-                "height": 44.765625,
-                "top": 13.609375,
-                "right": 630.90625,
-                "bottom": 58.375,
-                "left": 348.21875
+                "x": 53.890625,
+                "y": 1011.953125,
+                "width": 298.609375,
+                "height": 12.046875,
+                "top": 1011.953125,
+                "right": 352.5,
+                "bottom": 1024,
+                "left": 53.890625
               },
               "current": {
-                "x": 339.0625,
-                "y": 13.609375,
-                "width": 290.875,
-                "height": 44.765625,
-                "top": 13.609375,
-                "right": 629.9375,
-                "bottom": 58.375,
-                "left": 339.0625
+                "x": 53.890625,
+                "y": 985.78125,
+                "width": 298.609375,
+                "height": 18.59375,
+                "top": 985.78125,
+                "right": 352.5,
+                "bottom": 1004.375,
+                "left": 53.890625
               }
             },
             {
@@ -1325,26 +1427,32 @@
               },
               "current": {
                 "x": 53.890625,
-                "y": 963.609375,
-                "width": 175.359375,
-                "height": 60.390625,
-                "top": 963.609375,
-                "right": 229.25,
+                "y": 1007.765625,
+                "width": 201.71875,
+                "height": 16.234375,
+                "top": 1007.765625,
+                "right": 255.609375,
                 "bottom": 1024,
                 "left": 53.890625
               }
-            },
+            }
+          ]
+        },
+        {
+          "time": 523.8999999761581,
+          "value": 0.0010631512850522995,
+          "sources": [
             {
               "tag": "P",
               "cls": "section-eyebrow",
               "previous": {
                 "x": 53.890625,
-                "y": 1009.953125,
+                "y": 983.78125,
                 "width": 298.609375,
-                "height": 14.046875,
-                "top": 1009.953125,
+                "height": 20.59375,
+                "top": 983.78125,
                 "right": 352.5,
-                "bottom": 1024,
+                "bottom": 1004.375,
                 "left": 53.890625
               },
               "current": {
@@ -1359,33 +1467,33 @@
               }
             },
             {
-              "tag": "A",
+              "tag": "H2",
               "cls": "",
               "previous": {
-                "x": 554.078125,
-                "y": 13.609375,
-                "width": 77,
-                "height": 44.765625,
-                "top": 13.609375,
-                "right": 631.078125,
-                "bottom": 58.375,
-                "left": 554.078125
+                "x": 53.890625,
+                "y": 1008.765625,
+                "width": 175.359375,
+                "height": 15.234375,
+                "top": 1008.765625,
+                "right": 229.25,
+                "bottom": 1024,
+                "left": 53.890625
               },
               "current": {
-                "x": 550.625,
-                "y": 13.609375,
-                "width": 79.3125,
-                "height": 44.765625,
-                "top": 13.609375,
-                "right": 629.9375,
-                "bottom": 58.375,
-                "left": 550.625
+                "x": 53.890625,
+                "y": 963.609375,
+                "width": 175.359375,
+                "height": 60.390625,
+                "top": 963.609375,
+                "right": 229.25,
+                "bottom": 1024,
+                "left": 53.890625
               }
             }
           ]
         },
         {
-          "time": 580.5999999046326,
+          "time": 524.8999999761581,
           "value": 0.0018481786052385965,
           "sources": [
             {
@@ -1439,7 +1547,67 @@
           ]
         },
         {
-          "time": 610.6999999284744,
+          "time": 534,
+          "value": 0.0000551805521051089,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 347.25,
+                "y": 13.609375,
+                "width": 282.6875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 347.25
+              },
+              "current": {
+                "x": 343.71875,
+                "y": 13.609375,
+                "width": 286.21875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 343.71875
+              }
+            }
+          ]
+        },
+        {
+          "time": 545.5,
+          "value": 0.00007080263458192348,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 343.71875,
+                "y": 13.609375,
+                "width": 286.21875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 343.71875
+              },
+              "current": {
+                "x": 339.265625,
+                "y": 13.609375,
+                "width": 290.671875,
+                "height": 44.765625,
+                "top": 13.609375,
+                "right": 629.9375,
+                "bottom": 58.375,
+                "left": 339.265625
+              }
+            }
+          ]
+        },
+        {
+          "time": 551.1000000238419,
           "value": 0.00022449220220247906,
           "sources": [
             {
@@ -1482,8 +1650,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 78.39999997615814,
-      "learnerReadyMs": 289.89999997615814,
+      "dcl": 110.59999990463257,
+      "learnerReadyMs": 339.7999999523163,
       "shifts": []
     },
     {
@@ -1498,15 +1666,15 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 74.79999995231628,
-      "learnerReadyMs": 256.09999990463257,
+      "dcl": 79.19999992847443,
+      "learnerReadyMs": 251.39999997615814,
       "shifts": []
     },
     {
       "name": "knowledge",
       "width": 768,
       "height": 1024,
-      "cls": 0,
+      "cls": 0.00015892076771706343,
       "overflow": false,
       "mathErrors": 0,
       "graphCount": 0,
@@ -1514,9 +1682,134 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 84.30000007152557,
-      "learnerReadyMs": 325.39999997615814,
-      "shifts": []
+      "dcl": 70.89999997615814,
+      "learnerReadyMs": 289.89999997615814,
+      "shifts": [
+        {
+          "time": 258.89999997615814,
+          "value": 0.00015892076771706343,
+          "sources": [
+            {
+              "previous": {
+                "x": 18.421875,
+                "y": 439.34375,
+                "width": 678.375,
+                "height": 20,
+                "top": 439.34375,
+                "right": 696.796875,
+                "bottom": 459.34375,
+                "left": 18.421875
+              },
+              "current": {
+                "x": 18.421875,
+                "y": 439.34375,
+                "width": 678.375,
+                "height": 20,
+                "top": 439.34375,
+                "right": 696.796875,
+                "bottom": 459.34375,
+                "left": 18.421875
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 325.890625,
+                "y": 406.96875,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 406.96875,
+                "right": 350.84375,
+                "bottom": 463.9375,
+                "left": 325.890625
+              },
+              "current": {
+                "x": 332.40625,
+                "y": 406.96875,
+                "width": 24.953125,
+                "height": 56.96875,
+                "top": 406.96875,
+                "right": 357.359375,
+                "bottom": 463.9375,
+                "left": 332.40625
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 76.796875,
+                "y": 409.8125,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 409.8125,
+                "right": 101.015625,
+                "bottom": 466.78125,
+                "left": 76.796875
+              },
+              "current": {
+                "x": 83.3125,
+                "y": 409.8125,
+                "width": 24.21875,
+                "height": 56.96875,
+                "top": 409.8125,
+                "right": 107.53125,
+                "bottom": 466.78125,
+                "left": 83.3125
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "",
+              "previous": {
+                "x": 77.796875,
+                "y": 394.578125,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 394.578125,
+                "right": 101.015625,
+                "bottom": 451.546875,
+                "left": 77.796875
+              },
+              "current": {
+                "x": 84.3125,
+                "y": 394.578125,
+                "width": 23.21875,
+                "height": 56.96875,
+                "top": 394.578125,
+                "right": 107.53125,
+                "bottom": 451.546875,
+                "left": 84.3125
+              }
+            },
+            {
+              "tag": "SPAN",
+              "cls": "katex-base",
+              "previous": {
+                "x": 225.46875,
+                "y": 438.34375,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 438.34375,
+                "right": 270.53125,
+                "bottom": 462.09375,
+                "left": 225.46875
+              },
+              "current": {
+                "x": 231.984375,
+                "y": 438.34375,
+                "width": 45.0625,
+                "height": 23.75,
+                "top": 438.34375,
+                "right": 277.046875,
+                "bottom": 462.09375,
+                "left": 231.984375
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "method",
@@ -1530,8 +1823,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 75.60000002384186,
-      "learnerReadyMs": 276.7000000476837,
+      "dcl": 77.5,
+      "learnerReadyMs": 248.20000004768372,
       "shifts": []
     },
     {
@@ -1546,7 +1839,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 79.29999995231628,
+      "dcl": 82.19999992847443,
       "shifts": []
     },
     {
@@ -1561,7 +1854,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 79.29999995231628,
+      "dcl": 82.19999992847443,
       "shifts": []
     },
     {
@@ -1576,7 +1869,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 72.19999992847443,
+      "dcl": 82.60000002384186,
       "shifts": []
     },
     {
@@ -1591,7 +1884,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 79,
+      "dcl": 90.29999995231628,
       "shifts": []
     },
     {
@@ -1606,8 +1899,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 83.5,
-      "learnerReadyMs": 288.60000002384186,
+      "dcl": 69.40000009536743,
+      "learnerReadyMs": 231.60000002384186,
       "shifts": []
     },
     {
@@ -1622,8 +1915,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 77.39999997615814,
-      "learnerReadyMs": 247.19999992847443,
+      "dcl": 98,
+      "learnerReadyMs": 296.89999997615814,
       "shifts": []
     },
     {
@@ -1638,11 +1931,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 83.60000002384186,
-      "learnerReadyMs": 280.7000000476837,
+      "dcl": 77.30000007152557,
+      "learnerReadyMs": 243.5,
       "shifts": [
         {
-          "time": 359.3000000715256,
+          "time": 328,
           "value": 0.008109224339326223,
           "sources": [
             {
@@ -1672,7 +1965,7 @@
           ]
         },
         {
-          "time": 377.60000002384186,
+          "time": 349.40000009536743,
           "value": 0.012177228927612305,
           "sources": [
             {
@@ -1715,11 +2008,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 77.30000007152557,
-      "learnerReadyMs": 262.2000000476837,
+      "dcl": 86.80000007152557,
+      "learnerReadyMs": 280.7000000476837,
       "shifts": [
         {
-          "time": 319.40000009536743,
+          "time": 379.10000002384186,
           "value": 0.008775283892949423,
           "sources": [
             {
@@ -1749,7 +2042,7 @@
           ]
         },
         {
-          "time": 338.5,
+          "time": 410.5,
           "value": 0.012921392917633057,
           "sources": [
             {
@@ -1792,11 +2085,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 81.60000002384186,
-      "learnerReadyMs": 337.89999997615814,
+      "dcl": 99.40000009536743,
+      "learnerReadyMs": 292.2000000476837,
       "shifts": [
         {
-          "time": 413.3000000715256,
+          "time": 366.7000000476837,
           "value": 0.008623906721671423,
           "sources": [
             {
@@ -1826,7 +2119,7 @@
           ]
         },
         {
-          "time": 440.7000000476837,
+          "time": 390.7000000476837,
           "value": 0.012752264738082886,
           "sources": [
             {
@@ -1869,11 +2162,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 99,
-      "learnerReadyMs": 302.6999999284744,
+      "dcl": 90,
+      "learnerReadyMs": 296,
       "shifts": [
         {
-          "time": 355.6999999284744,
+          "time": 360,
           "value": 0.008775283892949423,
           "sources": [
             {
@@ -1903,7 +2196,7 @@
           ]
         },
         {
-          "time": 377.1999999284744,
+          "time": 377.7000000476837,
           "value": 0.012921392917633057,
           "sources": [
             {
@@ -1946,11 +2239,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 75.89999997615814,
-      "learnerReadyMs": 264.2000000476837,
+      "dcl": 94.60000002384186,
+      "learnerReadyMs": 262,
       "shifts": [
         {
-          "time": 337.89999997615814,
+          "time": 321.39999997615814,
           "value": 0.008926661064227423,
           "sources": [
             {
@@ -1980,7 +2273,7 @@
           ]
         },
         {
-          "time": 351.39999997615814,
+          "time": 342,
           "value": 0.013056695461273193,
           "sources": [
             {
@@ -2023,11 +2316,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 93.20000004768372,
-      "learnerReadyMs": 289.2000000476837,
+      "dcl": 90.39999997615814,
+      "learnerReadyMs": 290.39999997615814,
       "shifts": [
         {
-          "time": 276,
+          "time": 278.59999990463257,
           "value": 0.004067242029123008,
           "sources": [
             {
@@ -2081,7 +2374,7 @@
           ]
         },
         {
-          "time": 291.10000002384186,
+          "time": 280.7999999523163,
           "value": 0.023310502292588353,
           "sources": [
             {
@@ -2186,7 +2479,7 @@
       "name": "home",
       "width": 1024,
       "height": 768,
-      "cls": 0.07257342152297497,
+      "cls": 0.07255016876539837,
       "overflow": false,
       "mathErrors": 0,
       "graphCount": 0,
@@ -2194,11 +2487,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 318.8000000715256,
-      "learnerReadyMs": 642.8000000715256,
+      "dcl": 285.8000000715256,
+      "learnerReadyMs": 591.8000000715256,
       "shifts": [
         {
-          "time": 478.89999997615814,
+          "time": 415.10000002384186,
           "value": 0.07216930389404297,
           "sources": [
             {
@@ -2252,8 +2545,8 @@
           ]
         },
         {
-          "time": 599.1000000238419,
-          "value": 0.0001420816406607628,
+          "time": 549.8000000715256,
+          "value": 0.00005973619408905506,
           "sources": [
             {
               "tag": "NAV",
@@ -2269,50 +2562,36 @@
                 "left": 586.34375
               },
               "current": {
-                "x": 577.96875,
+                "x": 582.75,
                 "y": 13.421875,
-                "width": 295.625,
+                "width": 290.84375,
                 "height": 45.15625,
                 "top": 13.421875,
                 "right": 873.59375,
                 "bottom": 58.578125,
-                "left": 577.96875
-              }
-            },
-            {
-              "tag": "A",
-              "cls": "",
-              "previous": {
-                "x": 795.296875,
-                "y": 13.421875,
-                "width": 79,
-                "height": 45.15625,
-                "top": 13.421875,
-                "right": 874.296875,
-                "bottom": 58.578125,
-                "left": 795.296875
-              },
-              "current": {
-                "x": 792.734375,
-                "y": 13.421875,
-                "width": 82,
-                "height": 45.15625,
-                "top": 13.421875,
-                "right": 874.734375,
-                "bottom": 58.578125,
-                "left": 792.734375
+                "left": 582.75
               }
             }
           ]
         },
         {
-          "time": 621.2000000476837,
-          "value": 0.0002620359882712364,
+          "time": 561,
+          "value": 0.0000771420697371165,
           "sources": [
             {
               "tag": "NAV",
               "cls": "site-nav",
               "previous": {
+                "x": 582.75,
+                "y": 13.421875,
+                "width": 290.84375,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 873.59375,
+                "bottom": 58.578125,
+                "left": 582.75
+              },
+              "current": {
                 "x": 578.1875,
                 "y": 13.421875,
                 "width": 295.40625,
@@ -2321,6 +2600,26 @@
                 "right": 873.59375,
                 "bottom": 58.578125,
                 "left": 578.1875
+              }
+            }
+          ]
+        },
+        {
+          "time": 577.6000000238419,
+          "value": 0.000243986607529223,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 577.21875,
+                "y": 13.421875,
+                "width": 295.40625,
+                "height": 45.15625,
+                "top": 13.421875,
+                "right": 872.625,
+                "bottom": 58.578125,
+                "left": 577.21875
               },
               "current": {
                 "x": 563.484375,
@@ -2337,14 +2636,14 @@
               "tag": "A",
               "cls": "",
               "previous": {
-                "x": 792.734375,
+                "x": 791.765625,
                 "y": 13.421875,
                 "width": 82,
                 "height": 45.15625,
                 "top": 13.421875,
-                "right": 874.734375,
+                "right": 873.765625,
                 "bottom": 58.578125,
-                "left": 792.734375
+                "left": 791.765625
               },
               "current": {
                 "x": 788.59375,
@@ -2373,8 +2672,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 81.10000002384186,
-      "learnerReadyMs": 303.7000000476837,
+      "dcl": 69.70000004768372,
+      "learnerReadyMs": 253.79999995231628,
       "shifts": []
     },
     {
@@ -2389,8 +2688,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 70.69999992847443,
-      "learnerReadyMs": 243.79999995231628,
+      "dcl": 66.09999990463257,
+      "learnerReadyMs": 209.59999990463257,
       "shifts": []
     },
     {
@@ -2405,11 +2704,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 70.60000002384186,
-      "learnerReadyMs": 310.2000000476837,
+      "dcl": 69.89999997615814,
+      "learnerReadyMs": 254.39999997615814,
       "shifts": [
         {
-          "time": 268.7000000476837,
+          "time": 237.10000002384186,
           "value": 0.00015873467782512307,
           "sources": [
             {
@@ -2546,8 +2845,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 79.70000004768372,
-      "learnerReadyMs": 274.7000000476837,
+      "dcl": 68.70000004768372,
+      "learnerReadyMs": 232.39999997615814,
       "shifts": []
     },
     {
@@ -2562,7 +2861,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 83.39999997615814,
+      "dcl": 68.5,
       "shifts": []
     },
     {
@@ -2577,7 +2876,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 83.39999997615814,
+      "dcl": 68.5,
       "shifts": []
     },
     {
@@ -2592,7 +2891,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 95,
+      "dcl": 76.60000002384186,
       "shifts": []
     },
     {
@@ -2607,7 +2906,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 94,
+      "dcl": 76.79999995231628,
       "shifts": []
     },
     {
@@ -2622,8 +2921,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 111.10000002384186,
-      "learnerReadyMs": 349.7999999523163,
+      "dcl": 75.29999995231628,
+      "learnerReadyMs": 256.5,
       "shifts": []
     },
     {
@@ -2638,8 +2937,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 88.89999997615814,
-      "learnerReadyMs": 301.2000000476837,
+      "dcl": 78.89999997615814,
+      "learnerReadyMs": 252.70000004768372,
       "shifts": []
     },
     {
@@ -2654,11 +2953,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 96.09999990463257,
-      "learnerReadyMs": 337.5,
+      "dcl": 75.80000007152557,
+      "learnerReadyMs": 235.40000009536743,
       "shifts": [
         {
-          "time": 440.59999990463257,
+          "time": 325.90000009536743,
           "value": 0.002004799743493398,
           "sources": [
             {
@@ -2688,7 +2987,7 @@
           ]
         },
         {
-          "time": 459.2999999523163,
+          "time": 358.10000002384186,
           "value": 0.006177127361297607,
           "sources": [
             {
@@ -2731,11 +3030,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 93.89999997615814,
-      "learnerReadyMs": 413.6999999284744,
+      "dcl": 80.29999995231628,
+      "learnerReadyMs": 273.39999997615814,
       "shifts": [
         {
-          "time": 418.1999999284744,
+          "time": 369.7999999523163,
           "value": 0.0017997597654660544,
           "sources": [
             {
@@ -2765,7 +3064,7 @@
           ]
         },
         {
-          "time": 446.39999997615814,
+          "time": 399.10000002384186,
           "value": 0.005958080291748047,
           "sources": [
             {
@@ -2808,11 +3107,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 110.29999995231628,
-      "learnerReadyMs": 371.6999999284744,
+      "dcl": 85.5,
+      "learnerReadyMs": 268.6999999284744,
       "shifts": [
         {
-          "time": 466.89999997615814,
+          "time": 344.10000002384186,
           "value": 0.0017997597654660544,
           "sources": [
             {
@@ -2842,7 +3141,7 @@
           ]
         },
         {
-          "time": 495.60000002384186,
+          "time": 369.10000002384186,
           "value": 0.005958080291748047,
           "sources": [
             {
@@ -2885,11 +3184,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 114.20000004768372,
-      "learnerReadyMs": 355.7000000476837,
+      "dcl": 74.79999995231628,
+      "learnerReadyMs": 251,
       "shifts": [
         {
-          "time": 434,
+          "time": 320.10000002384186,
           "value": 0.0017997597654660544,
           "sources": [
             {
@@ -2919,7 +3218,7 @@
           ]
         },
         {
-          "time": 455.5,
+          "time": 338.5,
           "value": 0.005958080291748047,
           "sources": [
             {
@@ -2962,11 +3261,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 125.60000002384186,
-      "learnerReadyMs": 344.7999999523163,
+      "dcl": 87.10000002384186,
+      "learnerReadyMs": 263.60000002384186,
       "shifts": [
         {
-          "time": 407.39999997615814,
+          "time": 309.60000002384186,
           "value": 0.002004799743493398,
           "sources": [
             {
@@ -2996,7 +3295,7 @@
           ]
         },
         {
-          "time": 422.60000002384186,
+          "time": 327.7000000476837,
           "value": 0.006177127361297607,
           "sources": [
             {
@@ -3039,11 +3338,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 113,
-      "learnerReadyMs": 358.7000000476837,
+      "dcl": 80.30000007152557,
+      "learnerReadyMs": 290.7000000476837,
       "shifts": [
         {
-          "time": 345,
+          "time": 276.89999997615814,
           "value": 0.011070570442825556,
           "sources": [
             {
@@ -3100,7 +3399,7 @@
       "name": "home",
       "width": 1366,
       "height": 768,
-      "cls": 0.05459390931061695,
+      "cls": 0.054622563320891486,
       "overflow": false,
       "mathErrors": 0,
       "graphCount": 0,
@@ -3108,11 +3407,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 243.79999995231628,
-      "learnerReadyMs": 609.2999999523163,
+      "dcl": 275.7000000476837,
+      "learnerReadyMs": 576.3000000715256,
       "shifts": [
         {
-          "time": 508.2999999523163,
+          "time": 394.40000009536743,
           "value": 0.054301923518025076,
           "sources": [
             {
@@ -3142,9 +3441,63 @@
           ]
         },
         {
-          "time": 575.2999999523163,
-          "value": 0.00003900990778152057,
+          "time": 535.9000000953674,
+          "value": 0.00003917917039464846,
           "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 869.703125,
+                "y": 13.15625,
+                "width": 327.140625,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 869.703125
+              },
+              "current": {
+                "x": 866.015625,
+                "y": 13.15625,
+                "width": 330.828125,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 866.015625
+              }
+            }
+          ]
+        },
+        {
+          "time": 556.5,
+          "value": 0.000281460632471762,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 866.015625,
+                "y": 13.15625,
+                "width": 330.828125,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 866.015625
+              },
+              "current": {
+                "x": 847.25,
+                "y": 13.15625,
+                "width": 349.59375,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 847.25
+              }
+            },
             {
               "tag": "A",
               "cls": "text-link",
@@ -3168,49 +3521,19 @@
                 "bottom": 479.53125,
                 "left": 320.21875
               }
-            }
-          ]
-        },
-        {
-          "time": 584.0999999046326,
-          "value": 0.0002529758848103532,
-          "sources": [
-            {
-              "tag": "NAV",
-              "cls": "site-nav",
-              "previous": {
-                "x": 869.703125,
-                "y": 13.15625,
-                "width": 327.140625,
-                "height": 45.6875,
-                "top": 13.15625,
-                "right": 1196.84375,
-                "bottom": 58.84375,
-                "left": 869.703125
-              },
-              "current": {
-                "x": 847.25,
-                "y": 13.15625,
-                "width": 349.59375,
-                "height": 45.6875,
-                "top": 13.15625,
-                "right": 1196.84375,
-                "bottom": 58.84375,
-                "left": 847.25
-              }
             },
             {
               "tag": "A",
               "cls": "",
               "previous": {
-                "x": 1116.625,
+                "x": 1114.78125,
                 "y": 13.15625,
-                "width": 81,
+                "width": 83,
                 "height": 45.6875,
                 "top": 13.15625,
-                "right": 1197.625,
+                "right": 1197.78125,
                 "bottom": 58.84375,
-                "left": 1116.625
+                "left": 1114.78125
               },
               "current": {
                 "x": 1110.71875,
@@ -3239,8 +3562,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 101.60000002384186,
-      "learnerReadyMs": 383.89999997615814,
+      "dcl": 72.89999997615814,
+      "learnerReadyMs": 277.2999999523163,
       "shifts": []
     },
     {
@@ -3255,8 +3578,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 87.89999997615814,
-      "learnerReadyMs": 290.60000002384186,
+      "dcl": 71.20000004768372,
+      "learnerReadyMs": 218.39999997615814,
       "shifts": []
     },
     {
@@ -3271,11 +3594,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 85.30000007152557,
-      "learnerReadyMs": 327.90000009536743,
+      "dcl": 74.90000009536743,
+      "learnerReadyMs": 296.3000000715256,
       "shifts": [
         {
-          "time": 288.7000000476837,
+          "time": 261.60000002384186,
           "value": 0.00008890559096700967,
           "sources": [
             {
@@ -3412,8 +3735,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 77.5,
-      "learnerReadyMs": 267.5,
+      "dcl": 71.10000002384186,
+      "learnerReadyMs": 231.5,
       "shifts": []
     },
     {
@@ -3428,7 +3751,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 76,
+      "dcl": 66.20000004768372,
       "shifts": []
     },
     {
@@ -3443,7 +3766,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 76,
+      "dcl": 66.20000004768372,
       "shifts": []
     },
     {
@@ -3458,7 +3781,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 87.69999992847443,
+      "dcl": 71.60000002384186,
       "shifts": []
     },
     {
@@ -3473,7 +3796,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 97.30000007152557,
+      "dcl": 73.10000002384186,
       "shifts": []
     },
     {
@@ -3488,8 +3811,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 116.89999997615814,
-      "learnerReadyMs": 359.8000000715256,
+      "dcl": 72.39999997615814,
+      "learnerReadyMs": 251.69999992847443,
       "shifts": []
     },
     {
@@ -3504,8 +3827,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 101.70000004768372,
-      "learnerReadyMs": 349.90000009536743,
+      "dcl": 73.39999997615814,
+      "learnerReadyMs": 240.89999997615814,
       "shifts": []
     },
     {
@@ -3520,11 +3843,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 101.70000004768372,
-      "learnerReadyMs": 284,
+      "dcl": 75.40000009536743,
+      "learnerReadyMs": 233.20000004768372,
       "shifts": [
         {
-          "time": 360.39999997615814,
+          "time": 345,
           "value": 0.002298987701657131,
           "sources": [
             {
@@ -3554,7 +3877,7 @@
           ]
         },
         {
-          "time": 380.39999997615814,
+          "time": 373.10000002384186,
           "value": 0.004854247634992466,
           "sources": [
             {
@@ -3597,11 +3920,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 82.10000002384186,
-      "learnerReadyMs": 311,
+      "dcl": 79.69999992847443,
+      "learnerReadyMs": 254,
       "shifts": [
         {
-          "time": 397.39999997615814,
+          "time": 338.60000002384186,
           "value": 0.002176563861009227,
           "sources": [
             {
@@ -3631,7 +3954,7 @@
           ]
         },
         {
-          "time": 427.10000002384186,
+          "time": 362,
           "value": 0.004724454917479297,
           "sources": [
             {
@@ -3674,11 +3997,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 101.5,
-      "learnerReadyMs": 350.7999999523163,
+      "dcl": 90.10000002384186,
+      "learnerReadyMs": 293.10000002384186,
       "shifts": [
         {
-          "time": 435.89999997615814,
+          "time": 368.5,
           "value": 0.002176563861009227,
           "sources": [
             {
@@ -3708,7 +4031,7 @@
           ]
         },
         {
-          "time": 468.60000002384186,
+          "time": 397.7000000476837,
           "value": 0.004724454917479297,
           "sources": [
             {
@@ -3751,11 +4074,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 115,
-      "learnerReadyMs": 367.5,
+      "dcl": 85.30000007152557,
+      "learnerReadyMs": 265.7000000476837,
       "shifts": [
         {
-          "time": 453.5,
+          "time": 343.7000000476837,
           "value": 0.002176563861009227,
           "sources": [
             {
@@ -3785,7 +4108,7 @@
           ]
         },
         {
-          "time": 472.89999997615814,
+          "time": 363,
           "value": 0.004724454917479297,
           "sources": [
             {
@@ -3828,11 +4151,11 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 103.30000007152557,
-      "learnerReadyMs": 363.5,
+      "dcl": 89,
+      "learnerReadyMs": 256.60000002384186,
       "shifts": [
         {
-          "time": 368,
+          "time": 309.8000000715256,
           "value": 0.002298987701657131,
           "sources": [
             {
@@ -3862,7 +4185,7 @@
           ]
         },
         {
-          "time": 386.7000000476837,
+          "time": 327.89999997615814,
           "value": 0.004854247634992466,
           "sources": [
             {
@@ -3905,11 +4228,11 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 110.20000004768372,
-      "learnerReadyMs": 376.10000002384186,
+      "dcl": 82.80000007152557,
+      "learnerReadyMs": 303.8000000715256,
       "shifts": [
         {
-          "time": 350,
+          "time": 284.7000000476837,
           "value": 0.008697825742855641,
           "sources": [
             {
@@ -3974,8 +4297,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 344.89999997615814,
-      "learnerReadyMs": 651.7000000476837,
+      "dcl": 290.2000000476837,
+      "learnerReadyMs": 602.6000000238419,
       "shifts": []
     },
     {
@@ -3990,8 +4313,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 89.70000004768372,
-      "learnerReadyMs": 359.5,
+      "dcl": 69.5,
+      "learnerReadyMs": 261.8000000715256,
       "shifts": []
     },
     {
@@ -4006,8 +4329,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 81.70000004768372,
-      "learnerReadyMs": 242.70000004768372,
+      "dcl": 75.60000002384186,
+      "learnerReadyMs": 226.70000004768372,
       "shifts": []
     },
     {
@@ -4022,8 +4345,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 73.19999992847443,
-      "learnerReadyMs": 279.60000002384186,
+      "dcl": 69.60000002384186,
+      "learnerReadyMs": 254.80000007152557,
       "shifts": []
     },
     {
@@ -4038,8 +4361,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 80.89999997615814,
-      "learnerReadyMs": 270.89999997615814,
+      "dcl": 70.60000002384186,
+      "learnerReadyMs": 224.60000002384186,
       "shifts": []
     },
     {
@@ -4054,7 +4377,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 91.80000007152557,
+      "dcl": 73.39999997615814,
       "shifts": []
     },
     {
@@ -4069,7 +4392,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 91.80000007152557,
+      "dcl": 73.39999997615814,
       "shifts": []
     },
     {
@@ -4084,7 +4407,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 95.80000007152557,
+      "dcl": 79.89999997615814,
       "shifts": []
     },
     {
@@ -4099,7 +4422,7 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 105.29999995231628,
+      "dcl": 83.89999997615814,
       "shifts": []
     },
     {
@@ -4114,8 +4437,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 131.70000004768372,
-      "learnerReadyMs": 440.90000009536743,
+      "dcl": 81.5,
+      "learnerReadyMs": 279.7999999523163,
       "shifts": []
     },
     {
@@ -4130,8 +4453,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 109.39999997615814,
-      "learnerReadyMs": 309.6999999284744,
+      "dcl": 83.90000009536743,
+      "learnerReadyMs": 274.60000002384186,
       "shifts": []
     },
     {
@@ -4146,8 +4469,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 102.79999995231628,
-      "learnerReadyMs": 357,
+      "dcl": 81.40000009536743,
+      "learnerReadyMs": 257.2000000476837,
       "shifts": []
     },
     {
@@ -4162,8 +4485,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 101.69999992847443,
-      "learnerReadyMs": 339.60000002384186,
+      "dcl": 75.60000002384186,
+      "learnerReadyMs": 247.20000004768372,
       "shifts": []
     },
     {
@@ -4178,8 +4501,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 101.20000004768372,
-      "learnerReadyMs": 338.5,
+      "dcl": 89.59999990463257,
+      "learnerReadyMs": 301.7999999523163,
       "shifts": []
     },
     {
@@ -4194,8 +4517,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 95.69999992847443,
-      "learnerReadyMs": 336.2999999523163,
+      "dcl": 91.20000004768372,
+      "learnerReadyMs": 273.60000002384186,
       "shifts": []
     },
     {
@@ -4210,8 +4533,8 @@
       "pdfLoads": 0,
       "graphLoads": 1,
       "readingCSSLoads": 1,
-      "dcl": 109.69999992847443,
-      "learnerReadyMs": 342.60000002384186,
+      "dcl": 78.79999995231628,
+      "learnerReadyMs": 264.6999999284744,
       "shifts": []
     },
     {
@@ -4226,8 +4549,8 @@
       "pdfLoads": 0,
       "graphLoads": 0,
       "readingCSSLoads": 1,
-      "dcl": 109,
-      "learnerReadyMs": 370.3000000715256,
+      "dcl": 78.39999997615814,
+      "learnerReadyMs": 282,
       "shifts": []
     }
   ],

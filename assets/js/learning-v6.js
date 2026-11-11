@@ -1,6 +1,7 @@
+import {refineSourceContext} from '../../scripts/source-first/runtime-v62/learner.mjs';
 // Small behavioral refinements around the existing renderer, not a new router.
 export function initializeLearningAccessibility(){
-  const style=document.createElement('link');style.rel='stylesheet';style.href='assets/learning-v6.css?v=6.0';document.head.append(style);
+  if(!document.querySelector('link[data-learning-v62-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='assets/learning-v6.css?v=6.0';document.head.append(style);}
   const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-nav'),small=matchMedia('(max-width:47.5rem)');
   if(toggle&&nav){
     const sync=()=>{nav.inert=small.matches&&toggle.getAttribute('aria-expanded')!=='true';};sync();small.addEventListener('change',sync);
@@ -20,11 +21,12 @@ export function initializeLearningAccessibility(){
   app.addEventListener('keydown',(event)=>{
     if(!['ArrowLeft','ArrowRight'].includes(event.key))return;
     const scroll=event.target.closest('.native-variation,.math-markdown__display,.canonical-math--display');
-    if(!scroll||scroll.scrollWidth<=scroll.clientWidth+1)return;
+    if(!scroll||(!scroll.matches('.native-variation')&&scroll.scrollWidth<=scroll.clientWidth+1))return;
     event.preventDefault();event.stopPropagation();scroll.scrollLeft+=event.key==='ArrowRight'?72:-72;
   },true);
   const positionedExamples=new WeakSet();
   function refine(){
+    refineSourceContext(app);
     // Keep the active example visible by scrolling only its horizontal strip.
     for(const current of app.querySelectorAll('.example-index a[aria-current="page"]')){
       if(positionedExamples.has(current))continue;positionedExamples.add(current);

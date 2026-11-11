@@ -1,0 +1,28 @@
+{
+  "planHash": "A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85",
+  "manifest": ".content-work/publish-v621/A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85/manifest.json",
+  "contentPlanHash": "C314A1221CE70F2A41859E5CEBE216DF4030F6B0FB406EEB0B668A69E2D9E6E3",
+  "counts": {
+    "examined": 1001,
+    "newExamples": 761,
+    "newSolutions": 761,
+    "alreadyAvailable": 0,
+    "excludedDuplicates": 0,
+    "newKnowledgeGroups": 16,
+    "newMethodGroups": 22,
+    "exampleOnlyGroups": 52,
+    "newPractice": 0,
+    "sourceStructureSupported": 769,
+    "canonicalValidated": 763,
+    "recordsWithSupportedMathChecks": 132,
+    "editorialApprovals": 0,
+    "recordsWithPassedMathChecks": 105,
+    "independentEditionKnowledgeContexts": 28,
+    "independentEditionMethodContexts": 32,
+    "stillBlocked": 240,
+    "remainingUnprocessed": 0,
+    "nativeExamples": 140,
+    "historicalV62Candidates": 861,
+    "registeredSources": 10
+  }
+}

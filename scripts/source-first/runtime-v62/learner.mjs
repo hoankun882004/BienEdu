@@ -25,9 +25,10 @@ export function refineSourceContext(app){
   const title=document.createElement('b');title.textContent='Nguồn: '+(labels[group.source.sourceId]??fileName);note.append(title);
   const detail=document.createElement('p');
   const state=group.pedagogicalState;
-  detail.textContent=(example?`Đề trang ${example.statementSourcePage} · Lời giải trang ${example.solutionSourcePage}. `:'')+
+  detail.textContent=(example?(group.source.sourceKind==='tex'?`Ví dụ nguồn ${example.sourceExampleNumber} · Đề dòng ${example.sourceLineRanges.statement.join('–')} · Giải dòng ${example.sourceLineRanges.solution.join('–')}. `:`Đề trang ${example.statementSourcePage} · Lời giải trang ${example.solutionSourcePage}. `):'')+
     (state?.exampleOnly&&group.mergeMode!=='append-independent-source'?`${state.knowledge==='source-unresolved'?'Kiến thức chưa khôi phục đủ. ':''}${state.method==='source-unresolved'?'Cách làm chưa khôi phục đủ. ':''}`:'')+
     'Chờ biên tập.';
+  if(group.source.sourceKind==='tex')note.dataset.nativeSource='tex';
   note.append(detail);target.prepend(note);
   for(const [key,label]of [['knowledge','Kiến thức của nguồn này'],['method','Cách làm của nguồn này']]){
     const content=group.sourceContext?.[key];if(!content)continue;

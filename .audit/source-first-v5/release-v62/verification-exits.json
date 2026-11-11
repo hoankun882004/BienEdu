@@ -12,6 +12,132 @@
       "startedAt": "2026-11-09T11:04:32.526Z",
       "finishedAt": "2026-11-09T11:22:14.810Z",
       "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/01-verify.log"
+    },
+    {
+      "command": "npm.cmd run test:source-first",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:source-first",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:22:14.812Z",
+      "finishedAt": "2026-11-09T11:27:41.582Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/02-test-source-first.log"
+    },
+    {
+      "command": "npm.cmd run test:canonical",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:canonical",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:27:41.583Z",
+      "finishedAt": "2026-11-09T11:29:21.968Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/03-test-canonical.log"
+    },
+    {
+      "command": "npm.cmd run test:graphs",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:graphs",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:29:21.968Z",
+      "finishedAt": "2026-11-09T11:30:37.528Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/04-test-graphs.log"
+    },
+    {
+      "command": "npm.cmd run test:release",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:release",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:30:37.529Z",
+      "finishedAt": "2026-11-09T11:41:38.757Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/05-test-release.log"
+    },
+    {
+      "command": "npm.cmd run test:mobile",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:mobile",
+      "scope": "Exact npm command in parent-bound disposable historical fixture, then dedicated child checks",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:41:38.759Z",
+      "finishedAt": "2026-11-09T11:44:12.340Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/06-test-mobile.log"
+    },
+    {
+      "command": "node --test --test-concurrency=1 tests/content-v62.test.mjs",
+      "invocation": "node --test --test-concurrency=1 tests/content-v62.test.mjs",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:44:12.342Z",
+      "finishedAt": "2026-11-09T11:45:30.344Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/07-v62.log"
+    },
+    {
+      "command": "python -X utf8 tests/source-layout-v62.py",
+      "invocation": "python -X utf8 tests/source-layout-v62.py",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:45:30.345Z",
+      "finishedAt": "2026-11-09T11:45:32.008Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/08-v62.log"
+    },
+    {
+      "command": ".content-work\\source-first-v5\\sympy-env\\Scripts\\python.exe -X utf8 tests/source-symbolic-v62.py",
+      "invocation": ".content-work\\source-first-v5\\sympy-env\\Scripts\\python.exe -X utf8 tests/source-symbolic-v62.py",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:45:32.009Z",
+      "finishedAt": "2026-11-09T11:45:33.126Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/09-v62.log"
+    },
+    {
+      "command": "node scripts/source-first/compat-suites-v62.mjs test:canonical",
+      "invocation": "node scripts/source-first/compat-suites-v62.mjs test:canonical",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:45:33.127Z",
+      "finishedAt": "2026-11-09T11:47:13.723Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/10-v62.log"
+    },
+    {
+      "command": "node .audit/v62-browser.mjs",
+      "invocation": "node .audit/v62-browser.mjs",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:47:13.723Z",
+      "finishedAt": "2026-11-09T11:55:45.254Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/11-v62.log"
+    },
+    {
+      "command": "node .audit/v62-browser.mjs --mobile",
+      "invocation": "node .audit/v62-browser.mjs --mobile",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:55:45.256Z",
+      "finishedAt": "2026-11-09T11:57:02.290Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/12-v62.log"
+    },
+    {
+      "command": "node .audit/v62-browser.mjs --graphs",
+      "invocation": "node .audit/v62-browser.mjs --graphs",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:57:02.292Z",
+      "finishedAt": "2026-11-09T11:57:13.752Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/13-v62.log"
+    },
+    {
+      "command": "node .audit/v62-layout-probe.mjs",
+      "invocation": "node .audit/v62-layout-probe.mjs",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:57:13.753Z",
+      "finishedAt": "2026-11-09T11:57:26.899Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/14-v62.log"
+    },
+    {
+      "command": "node .audit/v62-browser.mjs --cls",
+      "invocation": "node .audit/v62-browser.mjs --cls",
+      "scope": "Dedicated V6.2 check",
+      "exitCode": 0,
+      "startedAt": "2026-11-09T11:57:26.900Z",
+      "finishedAt": "2026-11-09T11:57:45.353Z",
+      "log": ".audit/source-first-v5/release-v62/verification/2026-11-09T11-04-32-468Z/15-v62.log"
     }
   ]
 }

@@ -5,7 +5,7 @@ if (document.querySelector('[data-graph-preview]')) {
   import('./graph-preview.js');
 } else if (document.querySelector('[data-release-preview]')) {
   import('./release-preview.js');
-} else if (local && releaseBundle) {
+} else if (releaseBundle) {
   import('./graph-learner.js').then(({ startGraphIntegration }) => startGraphIntegration({candidates:releaseBundle.graphs})).catch(() => {});
 } else if (local && (new URL(location.href).searchParams.get('graphPreview') === 'v58' || graphActivation)) {
   // Local experiment only; no graph library or candidate download on ordinary pages.

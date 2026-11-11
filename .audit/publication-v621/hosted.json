@@ -1,0 +1,58 @@
+{
+  "publicationHash": "A24977451828DE672551E5954574C91347928926A5AA48E54A61862E589FCE85",
+  "passed": true,
+  "simulatedHostedOrigin": "https://bienedu.example",
+  "externalDeploymentVerified": false,
+  "states": [
+    {
+      "name": "sequence",
+      "width": 390,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    },
+    {
+      "name": "calculus-edition",
+      "width": 390,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    },
+    {
+      "name": "native-graph",
+      "width": 390,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    },
+    {
+      "name": "sequence",
+      "width": 1366,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    },
+    {
+      "name": "calculus-edition",
+      "width": 1366,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    },
+    {
+      "name": "native-graph",
+      "width": 1366,
+      "hostname": "bienedu.example",
+      "preview": false,
+      "examples": 980,
+      "fresh": 761
+    }
+  ],
+  "corruptPayloadRejected": true,
+  "hostingExclusionsEnforced": true
+}

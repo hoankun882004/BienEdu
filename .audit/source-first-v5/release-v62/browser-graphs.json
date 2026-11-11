@@ -1,0 +1,796 @@
+{
+  "planHash": "C314A1221CE70F2A41859E5CEBE216DF4030F6B0FB406EEB0B668A69E2D9E6E3",
+  "mode": "graphs",
+  "passed": true,
+  "states": [
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0.00900352988131789,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 246.19999992847443,
+      "learnerReadyMs": 812.6999999284744,
+      "shifts": [
+        {
+          "time": 786.8999999761581,
+          "value": 0.00900352988131789,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 73,
+                "y": 666.703125,
+                "width": 244,
+                "height": 177.296875,
+                "top": 666.703125,
+                "right": 317,
+                "bottom": 844,
+                "left": 73
+              },
+              "current": {
+                "x": 33,
+                "y": 650.578125,
+                "width": 324,
+                "height": 193.421875,
+                "top": 650.578125,
+                "right": 357,
+                "bottom": 844,
+                "left": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 72.5,
+      "learnerReadyMs": 268,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 74.80000007152557,
+      "learnerReadyMs": 260.7000000476837,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 75,
+      "learnerReadyMs": 238.59999990463257,
+      "shifts": []
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 69.29999995231628,
+      "learnerReadyMs": 220.89999997615814,
+      "shifts": []
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 390,
+      "height": 844,
+      "cls": 0,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 70.79999995231628,
+      "learnerReadyMs": 245.09999990463257,
+      "shifts": []
+    },
+    {
+      "name": "graph-6.1-source-example-1",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.007399332174721894,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 246.70000004768372,
+      "learnerReadyMs": 805.5,
+      "shifts": [
+        {
+          "time": 530.6000000238419,
+          "value": 0.00008457329017870621,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 868.828125,
+                "y": 13.15625,
+                "width": 329.34375,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1198.171875,
+                "bottom": 58.84375,
+                "left": 868.828125
+              },
+              "current": {
+                "x": 861.0625,
+                "y": 13.15625,
+                "width": 337.109375,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1198.171875,
+                "bottom": 58.84375,
+                "left": 861.0625
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 1117.953125,
+                "y": 13.15625,
+                "width": 81,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1198.953125,
+                "bottom": 58.84375,
+                "left": 1117.953125
+              },
+              "current": {
+                "x": 1115.3125,
+                "y": 13.15625,
+                "width": 84,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1199.3125,
+                "bottom": 58.84375,
+                "left": 1115.3125
+              }
+            },
+            {
+              "previous": {
+                "x": 955.296875,
+                "y": 57.4375,
+                "width": 51.484375,
+                "height": 3,
+                "top": 57.4375,
+                "right": 1006.78125,
+                "bottom": 60.4375,
+                "left": 955.296875
+              },
+              "current": {
+                "x": 948.328125,
+                "y": 57.4375,
+                "width": 51.484375,
+                "height": 3,
+                "top": 57.4375,
+                "right": 999.8125,
+                "bottom": 60.4375,
+                "left": 948.328125
+              }
+            }
+          ]
+        },
+        {
+          "time": 564.2000000476837,
+          "value": 0.00004085020801948617,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 860.265625,
+                "y": 13.15625,
+                "width": 337.546875,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1197.8125,
+                "bottom": 58.84375,
+                "left": 860.265625
+              },
+              "current": {
+                "x": 856.546875,
+                "y": 13.15625,
+                "width": 340.296875,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 856.546875
+              }
+            },
+            {
+              "previous": {
+                "x": 947.53125,
+                "y": 57.4375,
+                "width": 52.140625,
+                "height": 3,
+                "top": 57.4375,
+                "right": 999.671875,
+                "bottom": 60.4375,
+                "left": 947.53125
+              },
+              "current": {
+                "x": 943.8125,
+                "y": 57.4375,
+                "width": 54.890625,
+                "height": 3,
+                "top": 57.4375,
+                "right": 998.703125,
+                "bottom": 60.4375,
+                "left": 943.8125
+              }
+            }
+          ]
+        },
+        {
+          "time": 572.3999999761581,
+          "value": 0.00012067333987410476,
+          "sources": [
+            {
+              "tag": "NAV",
+              "cls": "site-nav",
+              "previous": {
+                "x": 856.546875,
+                "y": 13.15625,
+                "width": 340.296875,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 856.546875
+              },
+              "current": {
+                "x": 845.90625,
+                "y": 13.15625,
+                "width": 350.9375,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1196.84375,
+                "bottom": 58.84375,
+                "left": 845.90625
+              }
+            },
+            {
+              "tag": "A",
+              "cls": "",
+              "previous": {
+                "x": 1113.984375,
+                "y": 13.15625,
+                "width": 84,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1197.984375,
+                "bottom": 58.84375,
+                "left": 1113.984375
+              },
+              "current": {
+                "x": 1110.71875,
+                "y": 13.15625,
+                "width": 87,
+                "height": 45.6875,
+                "top": 13.15625,
+                "right": 1197.71875,
+                "bottom": 58.84375,
+                "left": 1110.71875
+              }
+            },
+            {
+              "previous": {
+                "x": 943.8125,
+                "y": 57.4375,
+                "width": 54.890625,
+                "height": 3,
+                "top": 57.4375,
+                "right": 998.703125,
+                "bottom": 60.4375,
+                "left": 943.8125
+              },
+              "current": {
+                "x": 938.59375,
+                "y": 57.4375,
+                "width": 54.890625,
+                "height": 3,
+                "top": 57.4375,
+                "right": 993.484375,
+                "bottom": 60.4375,
+                "left": 938.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 774.3999999761581,
+          "value": 0.002298987701657131,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 613.78125,
+                "width": 814.8125,
+                "height": 94.21875,
+                "top": 613.78125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 656.78125,
+                "width": 816.8125,
+                "height": 51.21875,
+                "top": 656.78125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 790.1000000238419,
+          "value": 0.004854247634992466,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-7",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 78.20000004768372,
+      "learnerReadyMs": 268,
+      "shifts": [
+        {
+          "time": 340.10000002384186,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 361,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-8",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 72.19999992847443,
+      "learnerReadyMs": 237,
+      "shifts": [
+        {
+          "time": 293.59999990463257,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 313.6999999284744,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-6.1-source-example-9",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.006901018778488524,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 76.40000009536743,
+      "learnerReadyMs": 241,
+      "shifts": [
+        {
+          "time": 288.2000000476837,
+          "value": 0.002176563861009227,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 618.703125,
+                "width": 814.8125,
+                "height": 89.296875,
+                "top": 618.703125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 661.703125,
+                "width": 816.8125,
+                "height": 46.296875,
+                "top": 661.703125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 303.2000000476837,
+          "value": 0.004724454917479297,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 544.0625,
+                "width": 850.8125,
+                "height": 163.9375,
+                "top": 544.0625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 526.0625,
+                "width": 930.8125,
+                "height": 181.9375,
+                "top": 526.0625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-4.4-source-example-7",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.007153235336649596,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 1,
+      "readingCSSLoads": 1,
+      "dcl": 88.29999995231628,
+      "learnerReadyMs": 246,
+      "shifts": [
+        {
+          "time": 294.39999997615814,
+          "value": 0.002298987701657131,
+          "sources": [
+            {
+              "tag": "DIV",
+              "cls": "native-graph__board",
+              "previous": {
+                "x": 376.59375,
+                "y": 613.78125,
+                "width": 814.8125,
+                "height": 94.21875,
+                "top": 613.78125,
+                "right": 1191.40625,
+                "bottom": 708,
+                "left": 376.59375
+              },
+              "current": {
+                "x": 375.59375,
+                "y": 656.78125,
+                "width": 816.8125,
+                "height": 51.21875,
+                "top": 656.78125,
+                "right": 1192.40625,
+                "bottom": 708,
+                "left": 375.59375
+              }
+            }
+          ]
+        },
+        {
+          "time": 306.39999997615814,
+          "value": 0.004854247634992466,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-2.3-source-example-1",
+      "width": 1366,
+      "height": 768,
+      "cls": 0.008697825742855641,
+      "overflow": false,
+      "mathErrors": 0,
+      "graphCount": 1,
+      "mainCount": 1,
+      "pdfLoads": 0,
+      "graphLoads": 0,
+      "readingCSSLoads": 1,
+      "dcl": 73.5,
+      "learnerReadyMs": 248.79999995231628,
+      "shifts": [
+        {
+          "time": 233.39999997615814,
+          "value": 0.008697825742855641,
+          "sources": [
+            {
+              "tag": "FIGURE",
+              "cls": "",
+              "previous": {
+                "x": 358.59375,
+                "y": 539.140625,
+                "width": 850.8125,
+                "height": 168.859375,
+                "top": 539.140625,
+                "right": 1209.40625,
+                "bottom": 708,
+                "left": 358.59375
+              },
+              "current": {
+                "x": 318.59375,
+                "y": 521.140625,
+                "width": 930.8125,
+                "height": 186.859375,
+                "top": 521.140625,
+                "right": 1249.40625,
+                "bottom": 708,
+                "left": 318.59375
+              }
+            },
+            {
+              "previous": {
+                "x": 335.59375,
+                "y": 606.515625,
+                "width": 106.4375,
+                "height": 23,
+                "top": 606.515625,
+                "right": 442.03125,
+                "bottom": 629.515625,
+                "left": 335.59375
+              },
+              "current": {
+                "x": 335.59375,
+                "y": 606.515625,
+                "width": 116.859375,
+                "height": 23,
+                "top": 606.515625,
+                "right": 452.453125,
+                "bottom": 629.515625,
+                "left": 335.59375
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "fixtureApplyRollback": true,
+  "realRuntimeWrites": 0
+}

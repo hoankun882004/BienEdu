@@ -1,0 +1,7 @@
+[V6.2] test:mobile: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> test:mobile
+> node scripts/source-first/compat-suites-v61.mjs test:mobile
+
+{"states":96,"errors":[],"overflow":[]}
+{"mode":"mobile","passed":true,"states":140,"errors":0,"maxLocalCLS":0.08056261052843183,"realRuntimeWrites":0}

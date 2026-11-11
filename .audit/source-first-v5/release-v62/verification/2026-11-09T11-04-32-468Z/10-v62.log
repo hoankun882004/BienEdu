@@ -1,0 +1,44 @@
+[V6.2] test:canonical: unchanged historical assertions in isolated V5.5 benchmark; real active release is untouched.
+
+> test:canonical
+> node scripts/source-first/compat-suites-v61.mjs test:canonical
+
+
+> content:canonical:preview
+> node scripts/source-first/canonical-build.mjs
+
+{"sources":[{"id":"cd12-cd14-calculus","topics":["CD12","CD13","CD14"],"sections":26},{"id":"cd01-cd07-functions","topics":["CD01","CD02","CD03","CD04","CD05","CD06","CD07"],"sections":71},{"id":"cd20-cd21-theory","topics":["CD20","CD21"],"sections":25},{"id":"cd08-cd11-exponential-logarithm","topics":["CD08","CD09","CD10","CD11"],"sections":50},{"id":"cd20-cd23-native-latex","topics":["CD20","CD21","CD22","CD23"],"sections":46}],"records":7172,"pilotFields":35,"mathNodes":62,"unresolved":6941}
+✔ canonical math preserves \frac{x}{x^2-1} (9.0614ms)
+✔ canonical math preserves \frac{1}{\frac{2}{3}} (1.5583ms)
+✔ canonical math preserves x^{-3/2} (2.2002ms)
+✔ canonical math preserves \sqrt{x^2+1} (1.8226ms)
+✔ canonical math preserves \sqrt[3]{x} (0.8645ms)
+✔ canonical math preserves \log_2 x (0.9801ms)
+✔ canonical math preserves f'(2)=-\frac{5}{9} (1.2728ms)
+✔ canonical math preserves \int_a^b f(x)\,dx (2.3134ms)
+✔ canonical math preserves \lim_{x\to0}\frac{\sin x}{x} (1.3028ms)
+✔ canonical math preserves x\ne\pm1 (2.0009ms)
+✔ canonical math preserves D=(-\infty;\frac{3}{2}] (0.976ms)
+✔ canonical math preserves \begin{cases}x&x>0\\-x&x\le0\end{cases} (3.4499ms)
+✔ canonical math preserves \begin{aligned}a&=b\\c&=d\end{aligned} (1.7826ms)
+✔ canonical math preserves \left|x\right| (0.8031ms)
+✔ canonical math preserves \binom{n}{k} (0.7109ms)
+✔ canonical math preserves P(A\mid B)=\frac{P(A\cap B)}{P(B)},\quad P(B)>0 (1.9467ms)
+✔ invalid expressions fail visibly without untrusted HTML injection (1.1844ms)
+✔ mixed Vietnamese math boundaries, environments and malformed delimiters (2.3172ms)
+✔ bounded explicit native macros; unsupported document commands remain separate (2.3444ms)
+✔ independent identities and deterministic serialization; no cross-source repair (0.6799ms)
+✔ V5.5 nine applied fields and V5.6 26 prepared fields retain exact math and conditions (6472.7631ms)
+✔ inventory keeps five independent sources and 39 honest topic statuses (8.3397ms)
+✔ multiline inline math and TeX comments preserve command boundaries (1.2395ms)
+✔ generated crop replacement is atomic and deterministic without rewriting originals (2841.5341ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9589.5708
+{"passed":true,"states":58,"realRuntimeWrites":0}
+{"passed":true,"viewportStates":2,"scoring":true,"duplicateRendering":false}

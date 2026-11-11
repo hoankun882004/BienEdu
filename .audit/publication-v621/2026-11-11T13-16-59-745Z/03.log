@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "states": 6,
+  "productionHostname": true,
+  "corruptPayloadRejected": true
+}
+
