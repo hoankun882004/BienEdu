@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "bienedu.pdf-knowledge.local-activation.v1",
+  "scope": "local only; no commit/push/deploy",
+  "parent": "7F4339543BA48E17F0408ACEB5D6AE635BA40DFFEDB3F988B563FACB7BFC2C6B",
+  "bundle": "assets/content/pdf-knowledge/803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826.json",
+  "sha256": "803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826",
+  "sources": [
+    {
+      "sourceId": "cd12-cd14-calculus",
+      "file": "39 chuyên đề/C12-CD13-CD14.pdf",
+      "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+      "pageCount": 49,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd17-cd19-sequences-2026",
+      "file": "39 chuyên đề/Day-so-Cap-so-CD17-CD19.pdf",
+      "sha256": "46ECFCD53189EAD5F9964FB4F8943E09EAC7FF667322221698F2CC47E5546E5E",
+      "pageCount": 21,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd01-cd07-functions",
+      "file": "39 chuyên đề/Hàm số-Đạo Hàm-CD01-CD07.pdf",
+      "sha256": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+      "pageCount": 98,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd15-cd16-trigonometry-2026",
+      "file": "39 chuyên đề/Luong-giac-CD15-CD16.pdf",
+      "sha256": "AF0BE0528550ECC43B2000809F8F50C2A0E2C41326D71F57A9FBBCBB02C7A154",
+      "pageCount": 22,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd20-cd21-theory",
+      "file": "39 chuyên đề/Lý_thuyết_Tổ_hợp_Xác_suất_Thống_kê_CD20_CD23 (2).pdf",
+      "sha256": "66B1D93392F834CA8659902CE7F1020F7CB3220C758DF1D697837340840E9293",
+      "pageCount": 18,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd08-cd11-exponential-logarithm",
+      "file": "39 chuyên đề/Mũ-Logarit CD08-CD11.pdf",
+      "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+      "pageCount": 78,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd12-cd14-calculus-2026",
+      "file": "39 chuyên đề/Nguyen-ham-Tich-phan-CD12-CD14.pdf",
+      "sha256": "AF0D521E8C595C7879E1D272784BAD6F2907198126B0D9A1E37D892238669C22",
+      "pageCount": 49,
+      "sourceKind": "pdf"
+    },
+    {
+      "sourceId": "cd28-cd33-vector-2026",
+      "file": "39 chuyên đề/Vecto-Oxyz-CD28-CD33 (1).pdf",
+      "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+      "pageCount": 59,
+      "sourceKind": "pdf"
+    }
+  ],
+  "dependencies": [
+    {
+      "file": "assets/js/data/knowledge-pdf.js",
+      "sha256": "15FF56942525BB884059EEDDD2F9CE7A7663AECA9A8BCB683AD4C8C1D7CE9293"
+    },
+    {
+      "file": "assets/js/data/pdf-knowledge-model.js",
+      "sha256": "C8E3FF0E22628ED6896C7288E10F49F78A25E8999A6EF748FD37D1AB375C19FF"
+    },
+    {
+      "file": "assets/js/components/pdf-knowledge-renderer.js",
+      "sha256": "DE1E8C2E62F21C376A73152DCF1B266575E76902A1D82469F32A4D91442E0865"
+    },
+    {
+      "file": "assets/pdf-knowledge.css",
+      "sha256": "5D14638FCEFC359B55A3C3C65C2FE00BBC6D01DA173B049B869EFFF00FA4D348"
+    },
+    {
+      "file": "scripts/source-first/knowledge-pdf.py",
+      "sha256": "7296F5230A7E46457C97A93830966108557B0350D34DB92AF35FFE7A2FA22053"
+    },
+    {
+      "file": "scripts/source-first/knowledge-transcriptions.mjs",
+      "sha256": "035D0E56E5730788DF300E59DC3CC19B180581281830EE20DB38A54938E595CE"
+    },
+    {
+      "file": "scripts/source-first/import-pdf-knowledge.mjs",
+      "sha256": "A32AD70BCC406A6032BC50254038A5E1E490865F22E7F7EC7C28B43CB78381A3"
+    }
+  ],
+  "files": [
+    {
+      "file": "documents.html",
+      "beforeHash": "8D2DBB825FCDAA33D52B0FE4DFAB59B8580B0623D84D2A19E874527B0AB7BBAD",
+      "afterHash": "8D2DBB825FCDAA33D52B0FE4DFAB59B8580B0623D84D2A19E874527B0AB7BBAD"
+    },
+    {
+      "file": "assets/js/data/pdf-knowledge-release.js",
+      "beforeHash": "12ED279960128633FE1D7C13CA48D2D999E1F91A1D18ACCA7AC1FF0CC2A284B1",
+      "afterHash": "261DB398DAD318E3EA4ECD0CB8C0E5F0BEE5B7EBEC0FB3BE198668E8E23A230F"
+    }
+  ],
+  "preserved": {
+    "exampleBundleHash": "976076AF726183443F57716EF2D92C50BC4C5AA006BAE2DF034DF494F894C55E",
+    "progressKeys": true,
+    "practiceScoring": true,
+    "sourcePdfs": true,
+    "historicalManifests": true
+  },
+  "summary": {
+    "sources": 8,
+    "pages": 394,
+    "records": 370,
+    "complete": 340,
+    "blocks": 760,
+    "formulasChecked": 1358,
+    "sourceTranscriptions": 22,
+    "unresolvedBlocks": 30,
+    "unresolvedTextBlocks": 0,
+    "unresolvedFigureBlocks": 30,
+    "bySource": [
+      {
+        "sourceId": "cd12-cd14-calculus",
+        "records": 53,
+        "complete": 52,
+        "issues": 1
+      },
+      {
+        "sourceId": "cd17-cd19-sequences-2026",
+        "records": 17,
+        "complete": 17,
+        "issues": 0
+      },
+      {
+        "sourceId": "cd01-cd07-functions",
+        "records": 78,
+        "complete": 78,
+        "issues": 0
+      },
+      {
+        "sourceId": "cd15-cd16-trigonometry-2026",
+        "records": 17,
+        "complete": 17,
+        "issues": 0
+      },
+      {
+        "sourceId": "cd20-cd21-theory",
+        "records": 27,
+        "complete": 27,
+        "issues": 0
+      },
+      {
+        "sourceId": "cd08-cd11-exponential-logarithm",
+        "records": 101,
+        "complete": 100,
+        "issues": 1
+      },
+      {
+        "sourceId": "cd12-cd14-calculus-2026",
+        "records": 27,
+        "complete": 27,
+        "issues": 0
+      },
+      {
+        "sourceId": "cd28-cd33-vector-2026",
+        "records": 50,
+        "complete": 22,
+        "issues": 28
+      }
+    ]
+  },
+  "planHash": "B9BB029BB1233532E122EEB012533D2D24BC7A4E71A4C7DE925EA566833C7AB4",
+  "status": "APPLIED_LOCAL_ONLY",
+  "backup": ".content-work/pdf-knowledge/B9BB029BB1233532E122EEB012533D2D24BC7A4E71A4C7DE925EA566833C7AB4/documents.before.html",
+  "previousPublicationAuthorization": "Preserved but stale for these new runtime additions; a fresh preview is required before future publication."
+}

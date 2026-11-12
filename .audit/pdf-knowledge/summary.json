@@ -1,0 +1,62 @@
+{
+  "sources": 8,
+  "pages": 394,
+  "records": 370,
+  "complete": 340,
+  "blocks": 760,
+  "formulasChecked": 1358,
+  "sourceTranscriptions": 22,
+  "unresolvedBlocks": 30,
+  "unresolvedTextBlocks": 0,
+  "unresolvedFigureBlocks": 30,
+  "bySource": [
+    {
+      "sourceId": "cd12-cd14-calculus",
+      "records": 53,
+      "complete": 52,
+      "issues": 1
+    },
+    {
+      "sourceId": "cd17-cd19-sequences-2026",
+      "records": 17,
+      "complete": 17,
+      "issues": 0
+    },
+    {
+      "sourceId": "cd01-cd07-functions",
+      "records": 78,
+      "complete": 78,
+      "issues": 0
+    },
+    {
+      "sourceId": "cd15-cd16-trigonometry-2026",
+      "records": 17,
+      "complete": 17,
+      "issues": 0
+    },
+    {
+      "sourceId": "cd20-cd21-theory",
+      "records": 27,
+      "complete": 27,
+      "issues": 0
+    },
+    {
+      "sourceId": "cd08-cd11-exponential-logarithm",
+      "records": 101,
+      "complete": 100,
+      "issues": 1
+    },
+    {
+      "sourceId": "cd12-cd14-calculus-2026",
+      "records": 27,
+      "complete": 27,
+      "issues": 0
+    },
+    {
+      "sourceId": "cd28-cd33-vector-2026",
+      "records": 50,
+      "complete": 22,
+      "issues": 28
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+/* Source readings retain BienEdu typography and the existing workspace shell. */
+.learning-workspace:has(.pdf-theory){grid-template-rows:auto minmax(0,1fr) auto}
+@media(max-width:1120px){.learning-workspace:not(.topic-knowledge-workspace):has(.pdf-theory){grid-template-rows:auto auto minmax(0,1fr) auto}}
+.pdf-theory{width:min(100%,76rem);min-width:0;margin-inline:auto;padding:clamp(1rem,2.2vw,2rem);color:var(--ink,#16263e)}
+.pdf-theory__heading{margin-bottom:1.3rem}
+.pdf-theory__heading>p{margin:0 0 .4rem;color:#315de5;font-size:.78rem;font-weight:700;letter-spacing:.05em}
+.pdf-theory__heading h2{margin:0;font-size:clamp(1.4rem,2vw,2rem);line-height:1.3}
+.pdf-theory__edition{min-width:0;padding:clamp(1rem,2vw,1.8rem);background:#fff;border:1px solid #dce4ef;border-radius:12px}
+.pdf-theory__source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem 1rem;padding-bottom:.9rem;margin-bottom:1rem;border-bottom:1px solid #e5eaf1;font-size:.75rem;color:#596b82}
+.pdf-theory__source>span{overflow-wrap:anywhere}
+.pdf-theory__paragraph{min-width:0;max-width:100%;margin:0 0 1em;font-size:clamp(.95rem,1.2vw,1.08rem);line-height:1.85;white-space:normal;overflow-wrap:break-word}
+.pdf-theory__paragraph:last-child{margin-bottom:0}
+.pdf-theory__paragraph .canonical-math{max-width:100%;vertical-align:middle}
+.pdf-theory__paragraph .katex{font-size:1.08em}
+.pdf-theory__table-scroll{max-width:100%;overflow-x:auto;margin:1rem 0 1.4rem;border:1px solid #dce4ef;border-radius:8px}
+.pdf-theory table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.65}
+.pdf-theory th,.pdf-theory td{padding:.7rem .85rem;text-align:left;border:1px solid #e3e9f0;white-space:normal;vertical-align:middle}
+.pdf-theory th{background:#eef3ff;color:#183f7e}
+.pdf-theory__alternative{margin-top:1rem;border:1px solid #dce4ef;border-radius:10px;background:#fff;min-width:0}
+.pdf-theory__alternative>summary{cursor:pointer;padding:1rem;font-size:.9rem;font-weight:600;line-height:1.6}
+.pdf-theory__alternative>summary>span{font-size:.75rem;color:#596b82;font-weight:400;overflow-wrap:anywhere}
+.pdf-theory__alternative>.pdf-theory__edition{border:0;border-top:1px solid #e5eaf1;border-radius:0 0 10px 10px}
+.pdf-theory__notice,.pdf-theory__figure-note{padding:.8rem 1rem;background:#fff8d9;border-left:3px solid #c69a37;font-size:.83rem;line-height:1.65}
+@media(max-width:600px){.pdf-theory{padding:1rem .75rem}.pdf-theory__edition{padding:1rem .8rem}.pdf-theory th,.pdf-theory td{padding:.5rem .65rem}.pdf-theory__paragraph{line-height:1.8}}

@@ -8,3 +8,7 @@ __pycache__/
 .env.*
 !.env.example
 /.audit/source-first-v5/release-v62/legacy-v62/
+/.audit/pdf-knowledge/evidence.json
+/.audit/pdf-knowledge/source-pages/
+/.audit/pdf-knowledge/screenshots/
+/.audit/pdf-knowledge/logs/

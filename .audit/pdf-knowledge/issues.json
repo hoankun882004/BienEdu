@@ -1,0 +1,332 @@
+[
+  {
+    "recordId": "cd12-cd14-calculus:13.6:knowledge",
+    "key": "13.6",
+    "sourceId": "cd12-cd14-calculus",
+    "page": 28,
+    "blockId": "cd12-cd14-calculus:13.6:knowledge:block:4",
+    "original": "x\ny\n2 5\n3",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge",
+    "key": "CD08-CD11",
+    "sourceId": "cd08-cd11-exponential-logarithm",
+    "page": 6,
+    "blockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:24",
+    "original": "3 2 1 0 1 2 3 x\n0\n1\n2\n3\n4\n5\ny\ny = 2x\ny = (1/2)x\n0 1 2 3 4 5 x\n4\n3\n2\n1\n0\n1\n2\n3\n4\ny\ny = log2 x\ny = log1/2 x",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:28.1:knowledge",
+    "key": "28.1",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 2,
+    "blockId": "cd28-cd33-vector-2026:28.1:knowledge:block:2",
+    "original": "u\nv\nu + v\nO\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:28.7:knowledge",
+    "key": "28.7",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 5,
+    "blockId": "cd28-cd33-vector-2026:28.7:knowledge:block:2",
+    "original": "u\nv\nθ\nH\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:28.8:knowledge",
+    "key": "28.8",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 6,
+    "blockId": "cd28-cd33-vector-2026:28.8:knowledge:block:2",
+    "original": "A B\nC D\nA′ B′\nC′ D′\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:29.1:knowledge",
+    "key": "29.1",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 7,
+    "blockId": "cd28-cd33-vector-2026:29.1:knowledge:block:2",
+    "original": "x\ny\nz\nM(x; y; z)\nO\nH\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:29.3:knowledge",
+    "key": "29.3",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 8,
+    "blockId": "cd28-cd33-vector-2026:29.3:knowledge:block:2",
+    "original": "A\nI\nB\nI = (A + B)/2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:29.4:knowledge",
+    "key": "29.4",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 9,
+    "blockId": "cd28-cd33-vector-2026:29.4:knowledge:block:2",
+    "original": "A\nB C I\nG\nAG : GI = 2 : 1\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:29.5:knowledge",
+    "key": "29.5",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 10,
+    "blockId": "cd28-cd33-vector-2026:29.5:knowledge:block:2",
+    "original": "M\nM′\nH\n(P)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:30.1:knowledge",
+    "key": "30.1",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 12,
+    "blockId": "cd28-cd33-vector-2026:30.1:knowledge:block:2",
+    "original": "n\nA (P)\nn · (X − A) = 0\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:30.4:knowledge",
+    "key": "30.4",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 14,
+    "blockId": "cd28-cd33-vector-2026:30.4:knowledge:block:2",
+    "original": "d\n(P)\n(Q)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:30.5:knowledge",
+    "key": "30.5",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 15,
+    "blockId": "cd28-cd33-vector-2026:30.5:knowledge:block:2",
+    "original": "d\nnP\nnQ\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:30.6:knowledge",
+    "key": "30.6",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 16,
+    "blockId": "cd28-cd33-vector-2026:30.6:knowledge:block:2",
+    "original": "d(M, P)\nH\nM\nA (P)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:31.2:knowledge",
+    "key": "31.2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 18,
+    "blockId": "cd28-cd33-vector-2026:31.2:knowledge:block:2",
+    "original": "d\nA\nX\ntu\nX = A + tu\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:31.4:knowledge",
+    "key": "31.4",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 20,
+    "blockId": "cd28-cd33-vector-2026:31.4:knowledge:block:2",
+    "original": "d1\nd2\nHK\nH\nK\nHK ⊥ d1, HK ⊥ d2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:31.6:knowledge",
+    "key": "31.6",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 21,
+    "blockId": "cd28-cd33-vector-2026:31.6:knowledge:block:2",
+    "original": "α\nA\nH K(P)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:31.8:knowledge",
+    "key": "31.8",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 22,
+    "blockId": "cd28-cd33-vector-2026:31.8:knowledge:block:2",
+    "original": "d\nM\nH A\n(M − H) · u = 0\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:31.9:knowledge",
+    "key": "31.9",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 23,
+    "blockId": "cd28-cd33-vector-2026:31.9:knowledge:block:2",
+    "original": "d1\nd2\nHK\nH\nK\nHK ⊥ d1, HK ⊥ d2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:32.1:knowledge",
+    "key": "32.1",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 24,
+    "blockId": "cd28-cd33-vector-2026:32.1:knowledge:block:2",
+    "original": "I\nR M\n|X − I|2 = R2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:32.4:knowledge",
+    "key": "32.4",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 26,
+    "blockId": "cd28-cd33-vector-2026:32.4:knowledge:block:2",
+    "original": "I\nd H\nr\nr2 = R2 − d2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:32.5:knowledge",
+    "key": "32.5",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 27,
+    "blockId": "cd28-cd33-vector-2026:32.5:knowledge:block:2",
+    "original": "I\nd A B\nAB = 2\n√\nR2 − d2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:32.6:knowledge",
+    "key": "32.6",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 28,
+    "blockId": "cd28-cd33-vector-2026:32.6:knowledge:block:2",
+    "original": "M\nI\nT\nMT 2 = MI2 − R2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:32.7:knowledge",
+    "key": "32.7",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 29,
+    "blockId": "cd28-cd33-vector-2026:32.7:knowledge:block:2",
+    "original": "I\nM\nA\nB\n−−→ MA · −−→ MB = MI2 − R2\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.1:knowledge",
+    "key": "33.1",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 30,
+    "blockId": "cd28-cd33-vector-2026:33.1:knowledge:block:2",
+    "original": "A B\nC D\nA′ B′\nC′ D′\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.3:knowledge",
+    "key": "33.3",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 32,
+    "blockId": "cd28-cd33-vector-2026:33.3:knowledge:block:2",
+    "original": "y\nz\nx\nA\nB\n(P)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.4:knowledge",
+    "key": "33.4",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 33,
+    "blockId": "cd28-cd33-vector-2026:33.4:knowledge:block:2",
+    "original": "v\nM\nh\nz = 0\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.5:knowledge",
+    "key": "33.5",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 34,
+    "blockId": "cd28-cd33-vector-2026:33.5:knowledge:block:2",
+    "original": "t1 t2\nI\n|X(t) − I| ≤ R\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.7:knowledge",
+    "key": "33.7",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 36,
+    "blockId": "cd28-cd33-vector-2026:33.7:knowledge:block:2",
+    "original": "r\nK\nh\nH\nr = h tan(θ/2)\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.8:knowledge",
+    "key": "33.8",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 37,
+    "blockId": "cd28-cd33-vector-2026:33.8:knowledge:block:2",
+    "original": "Oxy\nA\nB\nA∗\nM\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  },
+  {
+    "recordId": "cd28-cd33-vector-2026:33.9:knowledge",
+    "key": "33.9",
+    "sourceId": "cd28-cd33-vector-2026",
+    "page": 38,
+    "blockId": "cd28-cd33-vector-2026:33.9:knowledge:block:2",
+    "original": "t\nD2\nt0\nD2 = at2 + bt + c, a > 0\nSơ đồ minh họa phương pháp; không theo tỉ lệ.",
+    "errors": [
+      "NATIVE_DIAGRAM_SPEC_REQUIRED"
+    ]
+  }
+]
