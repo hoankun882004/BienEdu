@@ -12,3 +12,6 @@ __pycache__/
 /.audit/pdf-knowledge/source-pages/
 /.audit/pdf-knowledge/screenshots/
 /.audit/pdf-knowledge/logs/
+/.audit/geometry-v1/source-pages/
+/.audit/geometry-v1/screenshots/
+/.audit/geometry-v1/logs/

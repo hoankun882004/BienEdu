@@ -1,0 +1,2 @@
+// Authorized native geometry continuation. Original knowledge pointer unchanged.
+export const geometryActivation={"bundle":"assets/content/geometry/F77647AA90230356DBD52E94CC75BABACDA22FAD0C8B10FF5EEFF872AAF76ECD.json","sha256":"F77647AA90230356DBD52E94CC75BABACDA22FAD0C8B10FF5EEFF872AAF76ECD"};

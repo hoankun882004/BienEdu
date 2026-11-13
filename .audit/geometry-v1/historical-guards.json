@@ -1,0 +1,16 @@
+[
+  {
+    "command": "npm.cmd run verify",
+    "exitCode": 1,
+    "testsExecuted": 0,
+    "blocker": "Historical publication refuses current documents.html bytes",
+    "log": ".audit/geometry-v1/logs/guard-verify.log"
+  },
+  {
+    "command": "npm.cmd run test:source-first",
+    "exitCode": 1,
+    "testsExecuted": 0,
+    "blocker": "Historical publication refuses current documents.html bytes",
+    "log": ".audit/geometry-v1/logs/guard-test-source-first.log"
+  }
+]

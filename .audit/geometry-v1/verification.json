@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-13",
+  "status": "COMPLETE_LOCAL_PREPARED",
+  "activeRuntime": {
+    "planHash": "2A5734E156FBA4ACF550226F67D9ADE9B5D27B85E16AA7804E77F34209EDAED3",
+    "status": "PREPARED",
+    "files": [
+      {
+        "file": "documents.html",
+        "state": "BEFORE"
+      },
+      {
+        "file": "assets/js/curriculum.js",
+        "state": "BEFORE"
+      },
+      {
+        "file": "assets/js/data/geometry-activation.js",
+        "state": "BEFORE"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "command": "node --test tests/geometry.test.mjs",
+      "exitCode": 0,
+      "tests": 54,
+      "pass": 54,
+      "fail": 0,
+      "log": ".audit/geometry-v1/logs/final-geometry.log"
+    },
+    {
+      "command": "node --test tests/pdf-knowledge.test.mjs tests/learning-progress.test.js tests/lesson-workspace.test.js tests/latex-rendering.test.js tests/practice-bank.test.js",
+      "exitCode": 0,
+      "tests": 45,
+      "pass": 45,
+      "fail": 0,
+      "log": ".audit/geometry-v1/logs/final-current-runtime.log"
+    }
+  ],
+  "browser": {
+    "command": "node --test tests/geometry-browser.test.mjs",
+    "exitCode": 0,
+    "nodeTests": 1,
+    "viewportStates": 240,
+    "figures": 30,
+    "physicalDeviceCertified": false
+  },
+  "interactions": {
+    "command": "node --test tests/geometry-interactions.test.mjs",
+    "exitCode": 0,
+    "nodeTests": 2,
+    "pointerCaptureRelease": true,
+    "pointerCancel": true,
+    "touchScroll": true,
+    "mouseRotation": true,
+    "rapidHistory": true
+  },
+  "activation": {
+    "command": "node --test tests/geometry-activation-browser.test.mjs",
+    "exitCode": 0,
+    "nodeTests": 1,
+    "passed": true,
+    "planHash": "2A5734E156FBA4ACF550226F67D9ADE9B5D27B85E16AA7804E77F34209EDAED3",
+    "realRuntimeWrites": 0,
+    "normalHtml": true,
+    "activation": true,
+    "rollback": true,
+    "practiceProgressPreserved": true
+  },
+  "actualRuntimeBrowser": {
+    "command": "node --test tests/pdf-knowledge-browser.test.mjs",
+    "exitCode": 0,
+    "nodeTests": 1,
+    "viewportStates": 28,
+    "articleRenders": 740
+  },
+  "symbolic": {
+    "engine": "sympy",
+    "version": "1.14.0",
+    "checks": 79,
+    "passed": true
+  },
+  "sourceGlyphs": 1678,
+  "credentialRevocationConfirmed": false
+}

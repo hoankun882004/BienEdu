@@ -1,0 +1,646 @@
+{
+  "engine": "sympy",
+  "version": "1.14.0",
+  "results": [
+    {
+      "id": "geometry-cd12-cd14-calculus-13-6",
+      "inputHash": "0BD514A40693C9EABF20799E2673540296F72C5B6ECA8EEAE263ECA6ACD36648",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "area",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "area",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "upper",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "lower",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd08-cd11-exponential-logarithm-CD08-CD11",
+      "inputHash": "9B9E544D3B1E7505ECF3DDC29741F4E77762CD4139C66B1AB31CAF408EDD6380",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "length",
+          "passed": true
+        },
+        {
+          "type": "function-domain",
+          "id": "expRise",
+          "passed": true,
+          "actual": "Reals"
+        },
+        {
+          "type": "declared-function-value",
+          "id": "expRise",
+          "passed": true
+        },
+        {
+          "type": "function-domain",
+          "id": "expFall",
+          "passed": true,
+          "actual": "Reals"
+        },
+        {
+          "type": "declared-function-value",
+          "id": "expFall",
+          "passed": true
+        },
+        {
+          "type": "function-domain",
+          "id": "logRise",
+          "passed": true,
+          "actual": "Interval.open(0, oo)"
+        },
+        {
+          "type": "declared-function-value",
+          "id": "logRise",
+          "passed": true
+        },
+        {
+          "type": "function-domain",
+          "id": "logFall",
+          "passed": true,
+          "actual": "Interval.open(0, oo)"
+        },
+        {
+          "type": "declared-function-value",
+          "id": "logFall",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-28-1",
+      "inputHash": "4774B189B8C880604103187EEFD8682BDD360BD493903B6770413CBD553FDEF4",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "vectorSum",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-28-7",
+      "inputHash": "C9D22779C30143EFB10D42C6059757DBC3D559B3784EB80E8F470B8BA3AB0CEB",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-28-8",
+      "inputHash": "8CC18C4C930AD0CE0CE783FDB7494C2F210A24146007E865F708CE58068C94E1",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "base",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "top",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "side",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-29-1",
+      "inputHash": "57730845CE5FA0138631445E03F83BA3EB5AB8ACD388C1ED5F54EA4B939C709A",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-29-3",
+      "inputHash": "C19E0EE7EAC3CFFFB6E3F21CA0839F8570C45EE16713F256662555803115E7B5",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "midpoint",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-29-4",
+      "inputHash": "BE9A347BACE6F0AFACBD1317A3B350D3A7F049230308998E0B73C208FCB65153",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "midpoint",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "centroid",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "ratio",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "triangle",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-29-5",
+      "inputHash": "96C00049CD81A184FC8D7F020D569E80820DBDDE11F48D075E83E91CC9A16BFB",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "reflection",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "midpoint",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-30-1",
+      "inputHash": "26E8FD56D9E0940D5DAF8D344FCC88B8B243D11C8249783A95246BC69E5D6B43",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "planeNormal",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnPlane",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-30-4",
+      "inputHash": "9497281123363C56B6E8A5824817E2B81E2DD3CE04FE5158F3C0658E259585E8",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnPlane",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-30-5",
+      "inputHash": "1CFF76F05A9C85BC90D054E37C5492AC063A9000D7241AB0C5AE94A51DDB2705",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "planeNormal",
+          "passed": true
+        },
+        {
+          "index": 3,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-30-6",
+      "inputHash": "5873D94CB52D620873820390DA58583C1B7368BD59B6CC78C9230357A814F633",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-31-2",
+      "inputHash": "D92ED2D49BAB051275E84B74F2886E62390FA5FA3AA985541DA390DF1A7EA923",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "linearPoint",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-31-4",
+      "inputHash": "A77ACA5B01ED877D6ABC6015416CCDF411CB54780EA52CA33438289E48F0BB9F",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "perpendicular",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-31-6",
+      "inputHash": "A16DD3495EC721C8DB209AA10DFD57FE92576B5A90256A1257B10284B6F6FAE2",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-31-8",
+      "inputHash": "BEF11AB24F81320DF820EB3743BA83C887DFD37C7370E243368F95257A03C2EB",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnLine",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-31-9",
+      "inputHash": "3CE65A25CA93B29FA1D503F30FD069B29DA39C9EE40B63D0AC8B39762EFD7CA9",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "perpendicular",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-32-1",
+      "inputHash": "2662838C5EA7750417D575248C0E98C52EE2CD2D1877A175472E19E8E1240495",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnRound",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-32-4",
+      "inputHash": "F7B66E10BB3D6835DC3D4A650C0A41382E1B67B9A6F6D667F5D018DABE0B632B",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnPlane",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-32-5",
+      "inputHash": "228E6C737E79EB851FA2FA9CCC0473364392E3DED78A42568CCA90F41D2CA8AE",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "perpendicular",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-32-6",
+      "inputHash": "2F8D303FE7713CF7A7062FA11109B3D1260256E3002BCAEF99E79AE636901092",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "tangent",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-32-7",
+      "inputHash": "1EF5B21757557216D9B3B3DFF00334DEC114FF7FCBBB55C43F01604CB0839E4F",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "power",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-1",
+      "inputHash": "EAF7347E89EB0E56C702AD7406AAB6F2E89A6725C7185C01ED3A1476EB8C1E9D",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "index": 2,
+          "type": "parallel",
+          "passed": true
+        },
+        {
+          "index": 3,
+          "type": "perpendicular",
+          "passed": true
+        },
+        {
+          "index": 4,
+          "type": "perpendicular",
+          "passed": true
+        },
+        {
+          "index": 5,
+          "type": "perpendicular",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "base",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "top",
+          "passed": true
+        },
+        {
+          "type": "polygon-planarity",
+          "id": "side",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-3",
+      "inputHash": "67A6798F0402E6D063A9A1DD39CD32A889783554BBABB469806AF12BF6A6BC4C",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "linePlaneIntersection",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-4",
+      "inputHash": "2A6E6DD0BD49068CE5A547063305942A2957806BBDE3C7A91909126CA2B45E5E",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-5",
+      "inputHash": "577B4F6F1AA2B21CFF13D0509C8DB9EA3248A178496876A32421F0144B19BD63",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "pointOnRound",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "pointOnRound",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-7",
+      "inputHash": "F2D74E9959A46CC3873A071604C26A792ABDA5374F08398ED3FD978CC28B47C7",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "coneRightSection",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "planeNormal",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-8",
+      "inputHash": "F65FF04CB38786A3E311D8F90FA0DFE4AFC4C6B1C795D9584899BA70711F078C",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "reflection",
+          "passed": true
+        },
+        {
+          "index": 1,
+          "type": "linePlaneIntersection",
+          "passed": true
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    },
+    {
+      "id": "geometry-cd28-cd33-vector-2026-33-9",
+      "inputHash": "6BA6A0F4948AC2B13063E930805DC7B067F2251469F458986915862DA6310E04",
+      "passed": true,
+      "checks": [
+        {
+          "index": 0,
+          "type": "minimum",
+          "passed": true
+        },
+        {
+          "type": "function-domain",
+          "id": "distanceSquared",
+          "passed": true,
+          "actual": "Reals"
+        }
+      ],
+      "scope": "Exact validation of source-determined geometry or explicitly free constrained realization; not recovery of unspecified numerical measurements."
+    }
+  ]
+}

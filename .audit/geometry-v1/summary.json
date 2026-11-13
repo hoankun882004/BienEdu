@@ -1,0 +1,29 @@
+{
+  "examined": 30,
+  "ready": 30,
+  "blocked": 0,
+  "jsxgraphVersion": "1.14.2",
+  "threeJsRequired": 0,
+  "sourceDetermined": 2,
+  "constrainedSchematics": 28,
+  "dimensions": {
+    "2": 10,
+    "3": 20
+  },
+  "categories": {
+    "GEOMETRY_2D": 6,
+    "FUNCTION_GRAPH": 2,
+    "VECTOR_DIAGRAM": 3,
+    "SPATIAL_FIGURE": 4,
+    "COORDINATE_SYSTEM": 2,
+    "GEOMETRY_3D": 13
+  },
+  "symbolicChecks": 79,
+  "sourceGlyphsMatched": 1678,
+  "runtimePropertyChecks": 61,
+  "activation": "PREPARED_ONLY",
+  "knowledgeParent": {
+    "bundle": "assets/content/pdf-knowledge/803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826.json",
+    "sha256": "803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826"
+  }
+}

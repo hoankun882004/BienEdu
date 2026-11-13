@@ -1,0 +1,26 @@
+{
+  "mode": "actual",
+  "realRuntimeWrites": 0,
+  "assertionsUnmodified": true,
+  "results": [
+    {
+      "command": "npm.cmd test",
+      "exitCode": 1,
+      "totals": [
+        {
+          "type": "tests",
+          "count": 253
+        },
+        {
+          "type": "pass",
+          "count": 228
+        },
+        {
+          "type": "fail",
+          "count": 25
+        }
+      ],
+      "log": ".audit/geometry-v1/logs/actual-0.log"
+    }
+  ]
+}

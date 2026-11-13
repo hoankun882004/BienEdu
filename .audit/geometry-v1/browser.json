@@ -1,0 +1,1698 @@
+{
+  "passed": true,
+  "bundleHash": "F77647AA90230356DBD52E94CC75BABACDA22FAD0C8B10FF5EEFF872AAF76ECD",
+  "runtimeHashes": {
+    "assets/js/components/geometry-spec.js": "A9C4C1DDA9614ACF18C172B958E34625E473EC8046956C42B99BC3B209F1C956",
+    "assets/js/components/geometry-renderer.js": "B8764BCA64DF478B5FDE4796F0B2B3DE5899F8BE3ED7BD522BAD0FC8A043E2DF",
+    "assets/js/geometry-learner.js": "35694B82A815622F03BC810EC6516A965B45011EDEF5828A580F6EE85CE36353",
+    "assets/js/geometry-loader.js": "08B2917058F079CDC7846F40F014C3F975D0A1D7D7CADE833FA0F184DCB6DE8E",
+    "assets/geometry.css": "4D71359A30511F17FCD389E285A20464EEE41EB713F241133F9988B2168ACE08",
+    "assets/js/curriculum.js": "A481E9C8784EE306B1822D86764E97B1106A32367240275E5DC1C5478F4BA985",
+    "scripts/source-first/geometry-navigation.mjs": "219CC1F9A1D839B8604A8BDC89103A4D8E33EF5678A2E4F7CF36BE4821870AF7"
+  },
+  "states": [
+    {
+      "width": 320,
+      "height": 568,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "13.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "CD08-CD11",
+      "boards": 2,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "28.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "28.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "28.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "29.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "29.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "29.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "29.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "30.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "30.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "30.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "30.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "31.2",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "31.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "31.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "31.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "31.9",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "32.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "32.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "32.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "32.6",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "32.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.1",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.3",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.4",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.5",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.7",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.8",
+      "boards": 1,
+      "properties": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "key": "33.9",
+      "boards": 1,
+      "properties": true
+    }
+  ],
+  "unactivatedRuntimePreserved": true,
+  "progressReload": true,
+  "lifecycle": true
+}

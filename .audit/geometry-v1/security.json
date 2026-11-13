@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "bienedu.geometry-security.v1",
+  "scannedFiles": 1498,
+  "findings": [],
+  "reportValuesRedacted": true,
+  "previousChatDiagnosticExposure": true,
+  "credentialRevocationConfirmed": false,
+  "scope": "Generated audit reports, docs/content and this continuation manifests; no credential values are printed or copied"
+}

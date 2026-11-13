@@ -1,0 +1,272 @@
+[
+  {
+    "blockId": "cd12-cd14-calculus:13.6:knowledge:block:4",
+    "sourceId": "cd12-cd14-calculus",
+    "sourceHash": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+    "page": 28,
+    "glyphsMatched": 5,
+    "sourceContext": "BIỂN EDU – NGUYÊN HÀM, TÍCH PHÂN\nCD13-06\nx\ny\n2\n5\n3\n−2\nS+ = 3\nS−= 3\n2. Phương pháp giải\n1. Xác định giao điểm với Ox và dấu của f.\n2. Tính diện tích từng miền bằng công thức hình học.\n3. Cộng có dấu với tích phân f; cộng trịtuyệt đối nếu là |f|.\n3. Ví dụcó lời giải\nVí dụ1.\nĐồthịgồm một tam giác phía trên Ox trên [0, 2] có chiều cao 3 và một tam giác phía dưới\nOx trên [2, 5] có chiều cao 2. Tính\nR 5\n0 f(x) dx và\nR 5\n0 |f(x)| dx.\nS+ = 1\n2 · 2 · 3 = 3,\nS−= 1\n2 · 3 · 2 = 3.\nZ 5\n0\nf(x) dx = 3 −3 = 0,\nZ 5\n0\n|f(x)| dx = 3 + 3 = 6.\nVí dụ2.\nĐồthịđường thẳng y = x−1 trên [0, 3]. Tính tích phân theo diện tích. Phần dưới Ox: tam\ngiác đáy 1, cao 1, diện tích 1\n2. Phần trên Ox: tam giác đáy 2, cao 2, diện tích 2.\nZ 3\n0\n(x −1) dx = 2 −1\n2 = 3\n2.\n4. Bài tập tựluyện\n1. Đồthịtạo hình chữnhật phía trên Ox, rộng 4, cao 2. Tính tích phân trên đoạn đó.\n2. Hai tam giác: phía trên có đáy 3, cao 2; phía dưới có đáy 2, cao 4. Tính tích phân trên toàn đoạn.\n3. Với dữkiện bài 2, tính tích phân của |f|.\n4. Đồthịy = 2 −x trên [0, 4]. Tính\nR 4\n0 f(x) dx.\n5. Với bài 4, tính\nR 4\n0 |f(x)| dx.\n6. Đồthịy = f(x) là tam giác có các đỉnh (0, 0), (2, 2), (4, 0). Tính\nZ 4\n0\nf(x) dx.\n27\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:24",
+    "sourceId": "cd08-cd11-exponential-logarithm",
+    "sourceHash": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+    "page": 6,
+    "glyphsMatched": 70,
+    "sourceContext": "MŨ VÀ LÔGARIT\nBiennobiengioi\n3. Hàm số\nTrong bảng dưới, luôn có a > 0, a̸ = 1.\nTính chất\ny = ax\ny = loga x\nTập xác định\nR\n(0; +∞)\nTập giá trị\n(0; +∞)\nR\nKhi a > 1\nĐồng biến trên R\nĐồng biến trên (0; +∞)\nKhi 0 < a < 1\nNghịch biến trên R\nNghịch biến trên (0; +∞)\nĐiểm đi qua\n(0; 1), (1; a)\n(1; 0), (a; 1)\nVịtrí\nPhía trên trục hoành\nBên phải trục tung\nHai hàm liên tục trên tập xác định tương ứng.\n3\n2\n1\n0\n1\n2\n3\nx\n0\n1\n2\n3\n4\n5\ny\ny = 2x\ny = (1/2)x\n0\n1\n2\n3\n4\n5\nx\n4\n3\n2\n1\n0\n1\n2\n3\n4\ny\ny = log2 x\ny = log1/2 x\n4. Phương trình, bất phương trình\nVới a > 0, a̸ = 1:\nau = av ⇐⇒u = v.\nax = b :\nb > 0 ⇒x = loga b;\nb ≤0 ⇒vô nghiệm.\nloga x = b ⇐⇒x = ab.\nVới u, v > 0: loga u = loga v ⇐⇒u = v.\nNếu a > 1, bỏcùng cơ sốgiữchiều bất đẳng thức. Nếu 0 < a < 1, bỏcùng cơ sốphải đổi chiều.\nVới lôgarit, luôn giao với điều kiện đối sốdương.\na > 1 :\nau > av ⇐⇒u > v,\n0 < a < 1 :\nau > av ⇐⇒u < v,\na > 1 :\nloga u > loga v ⇐⇒u > v > 0,\n0 < a < 1 :\nloga u > loga v ⇐⇒0 < u < v.\nCác dấu ≥, <, ≤xửlý tương tự, chú ý điểm biên. Nếu b ≤0, ax > b đúng với mọi x, còn ax ≤b vô\nnghiệm.\n6\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:28.1:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 2,
+    "glyphsMatched": 51,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD28 · VECTƠ TRONG KHÔNG GIAN\nDạng 28.1 · Các phép toán vectơ\nKiến thức và cách làm. Tính theo từng tọa độ. Với hình học dùng hệthức Chasles\n−−→\nAB + −−→\nBC = −→\nAC; chú ý hướng.\nu\nv\nu + v\nO\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ28.1.1\nu = (1; −2; 3), v = (2; 1; −1). Tính u + v.\nVí dụ28.1.2\nu = (3; 0; −2), v = (−1; 4; 1). Tính u −v.\nVí dụ28.1.3\nCho 2u −v = (1; 3; 5), v = (3; −1; 1). Tìm u.\nVí dụ28.1.4\nu = (1; 1; 0), v = (0; 1; 1). Biểu diễn (2; 5; 3) theo u, v.\nVí dụ28.1.5\nu = (1; 0; 0), v = (0; 1; 0), w = (0; 0; 1). Tìm a, b, c đểau + bv + cw = (2; −3; 4).\nVí dụ28.1.6\nVới tứdiện ABCD, rút gọn −−→\nAB + −−→\nBC + −−→\nCD.\nVí dụ28.1.7\nTrong hình hộp ABCD.A′B′C′D′, biểu diễn −−→\nAC′ theo ba cạnh xuất phát từ\nA.\nVí dụ28.1.8\nG là trọng tâm tam giác ABC. Chứng minh −→\nGA + −−→\nGB + −−→\nGC = 0.\nVí dụ28.1.9\nu = (1; 2; 3), v = (−1; 0; 1). Tìm m đểu + mv có tọa độthứba bằng 0.\nVí dụ28.1.10\nCó đúng |u + v| = |u| + |v| với mọi vectơ? Nêu phản ví dụ.\nDạng 28.2 · Hai vectơ bằng nhau\nKiến thức và cách làm. −−→\nAB = −−→\nCD ⇔B −A = D −C. Giải đủba tọa độrồi kiểm tra.\nVí dụ28.2.1\nTìm x, y, z để(x + 1; 2y; z −3) = (4; −2; 5).\nVí dụ28.2.2\nA = (1; 2; 0), B = (3; 1; 4), C = (−1; 0; 2). Tìm D để−−→\nAB = −−→\nCD.\nVí dụ28.2.3\nA = (0; 1; 2), B = (2; 3; 0). Tìm M để−−→\nAM = −−→\nMB.\nVí dụ28.2.4\nCho A = (1; 0; 0), B = (2; 1; 0), D = (0; 2; 1). Hoàn thành hình bình hành ABCD.\nVí dụ28.2.5\nA = (m; 0; 1), B = (2; 1; 3), C = (0; 0; 0), D = (1; 1; 2). Tìm m đểAB và CD bằng\nnhau vềvectơ.\nVí dụ28.2.6\nMột vật dịch chuyển từP = (2; −1; 3) tới Q = (5; 1; 4). Vật khác xuất phát\nR = (−2; 0; 1) có cùng vectơ dịch chuyển. Tìm điểm đến.\nVí dụ28.2.7\nVới A̸ = B, có thể−−→\nAB = −−→\nBA không?\nVectơ · Tọa độ· Hình học không gian\n2\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:28.7:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 5,
+    "glyphsMatched": 47,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 28.7 · Góc giữa hai vectơ\nKiến thức và cách làm. cos θ = (u · v)/(|u||v|) với 0 ≤θ ≤π. Không lấy trịtuyệt đối\nkhi tính góc vectơ.\nu\nv\nθ\nH\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ28.7.1\nTính góc giữa (1; 0; 0) và (1; 1; 0).\nVí dụ28.7.2\nTính góc giữa (1; 0; 0) và (−1; 1; 0).\nVí dụ28.7.3\nTính góc giữa (1; 2; 3) và (2; −1; 0).\nVí dụ28.7.4\nTìm m đểgóc giữa (1; 0; 0) và (m; 1; 0) bằng 60◦.\nVí dụ28.7.5\nu, v tạo góc 30◦. Tính góc giữa −u và v.\nVí dụ28.7.6\nHai vectơ khác 0 đều đổi dấu. Góc có thay đổi không?\nVí dụ28.7.7\nCho |u| = |v| = 2, |u + v| = 2\n√\n3. Tìm góc.\nVí dụ28.7.8\nVectơ (1; 1; 1) tạo cùng một góc với ba trục dương. Tính cos góc đó.\nVí dụ28.7.9\nGóc vectơ có thểbằng 180◦không? Nêu ví dụ.\nVí dụ28.7.10\nNếu ba cos chỉphương đều bằng c > 0, tìm c.\nVectơ · Tọa độ· Hình học không gian\n5\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:28.8:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 6,
+    "glyphsMatched": 55,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 28.8 · Song song, vuông góc bằng vectơ\nKiến thức và cách làm. Chứng minh song song bằng cùng phương; chứng minh\nvuông góc bằng tích vô hướng. Với mặt phẳng cần hai hướng độc lập.\nA\nB\nC\nD\nA′\nB′\nC′\nD′\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ28.8.1\nA = O, B = (1; 2; 0), C = (2; −1; 3). Chứng minh AB ⊥AC.\nVí dụ28.8.2\nA = O, B = (1; 0; 0), C = (0; 1; 0), D = (0; 0; 2). Chứng minh AD ⊥(ABC).\nVí dụ28.8.3\nCho hình hộp có AB = u, AD = v, AA′ = w theo vectơ. Chứng minh AC′\nsong song u + v + w.\nVí dụ28.8.4\nu = (1; 0; 1), v = (0; 1; 1). Tìm pháp tuyến của mặt phẳng chứa hai hướng này.\nVí dụ28.8.5\nCho tứdiện ABCD, M, N là trung điểm AB, CD. Biểu diễn 2−−→\nMN.\nVí dụ28.8.6\nTrong hình bình hành ABCD có AB = AD. Chứng minh hai đường chéo\nvuông góc bằng vectơ.\nVí dụ28.8.7\nHai đường có hướng vuông góc nhưng không có điểm chung. Có gọi là hai\nđường vuông góc theo góc không gian không?\nVí dụ28.8.8\nA = (1; 0; 0), B = (2; 1; 0), C = (0; 2; 1), D = (1; 3; 1). Chứng minh AB ∥CD.\nVí dụ28.8.9\nMột đường vuông góc một đường nằm trong mặt phẳng có đủđểvuông\ngóc mặt phẳng không?\nVí dụ28.8.10\nu, v, w là ba vectơ đôi một vuông góc, độdài lần lượt 1, 2, 2. Tính góc giữa\nu + v + w và u.\nVectơ · Tọa độ· Hình học không gian\n6\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:29.1:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 7,
+    "glyphsMatched": 58,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD29 · TỌA ĐỘĐIỂM\nDạng 29.1 · Tọa độđiểm\nKiến thức và cách làm. Điểm thuộc Oxy khi z = 0, thuộc Oz khi x = y = 0. Phân biệt\nđiều kiện một mặt phẳng và một trục.\nx\ny\nz\nM(x; y; z)\nO\nH\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ29.1.1\nXác định hoành độ, tung độ, cao độcủa M = (−2; 3; 5).\nVí dụ29.1.2\nTìm m đểM = (1; m −2; 3m −6) thuộc Oxy.\nVí dụ29.1.3\nTìm điểm trên Ox có hoành độâm và cách O bằng 4.\nVí dụ29.1.4\nTìm giao của hai điều kiện M ∈Oxy và M ∈Oyz.\nVí dụ29.1.5\nM = (t; t −1; 2t + 1). Có thểnằm trên Oz không?\nVí dụ29.1.6\nTọa độA theo gốc O là (3; 4; 2); gốc mới O′ = (1; 1; 0), các trục cùng hướng.\nTìm tọa độmới.\nVí dụ29.1.7\nGốc không đổi nhưng đổi chiều trục Oy. Điểm (1; −2; 3) có tọa độmới thế\nnào?\nVí dụ29.1.8\nTrục Ox hướng Đông, Oy hướng Bắc. Một điểm cách gốc 2 km vềTây, 1\nkm vềBắc, cao 500 m. Viết tọa độkm.\nVí dụ29.1.9\nĐiểm M cách cảba mặt phẳng tọa độlần lượt 1, 2, 3. Có bao nhiêu điểm?\nVí dụ29.1.10\nĐiểm ởphía trên mặt đất Oxy và cách đều ba mặt phẳng tọa độ2 đơn vị.\nTìm các điểm.\nVectơ · Tọa độ· Hình học không gian\n7\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:29.3:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 8,
+    "glyphsMatched": 59,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 29.2 · Khoảng cách hai điểm\nKiến thức và cách làm. AB = |B −A|. Khi điểm chạy trên trục, bình phương khoảng\ncách cho phương trình một ẩn.\nVí dụ29.2.1\nTính AB với A = (1; 2; 3), B = (4; 6; 3).\nVí dụ29.2.2\nA = (2; 1; 2), M = (t; 0; 0). Tìm M đểAM = 3.\nVí dụ29.2.3\nA = (1; 0; 0), B = (3; 2; 0). Tìm điểm trên Oy cách đều A, B.\nVí dụ29.2.4\nTìm điểm trên Oxy gần A = (2; −1; 4) nhất.\nVí dụ29.2.5\nQuỹtích M thỏa MA = MB với A = (−2; 0; 0), B = (2; 0; 0) là gì?\nVí dụ29.2.6\nCho M = (t; 2t; 0) và A = (1; 0; 0). Tìm min AM.\nVí dụ29.2.7\nA = (0; 0; 1), B = (2; 0; 3). Tính khoảng cách hai hình chiếu lên Oxy, so với\nAB.\nVí dụ29.2.8\nMỗi đơn vịlà 100 m. A = (0; 0; 0), B = (1; 2; 2). Độdài thực bao nhiêu?\nVí dụ29.2.9\nTìm m đểA = (m; 0; 0) cách B = (1; 2; 2) đúng 4 đơn vị.\nVí dụ29.2.10\nMA = 2, MB = 3. Khoảng giá trịcó thểcó của AB là gì?\nDạng 29.3 · Trung điểm\nKiến thức và cách làm. I = (A + B)/2; bài toán ngược B = 2I −A.\nA\nI\nB\nI = (A + B)/2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ29.3.1\nTìm trung điểm A = (1; −2; 3), B = (3; 4; −1).\nVí dụ29.3.2\nA = (2; 0; 1), trung điểm I = (−1; 2; 3). Tìm B.\nVí dụ29.3.3\nA = (m; 1; 0), B = (2; 3; 4). Tìm m đểtrung điểm thuộc Oyz.\nVí dụ29.3.4\nAB có trung điểm I. Chứng minh −−→\nMA + −−→\nMB = 2−−→\nMI.\nVí dụ29.3.5\nTam giác A = (0; 0; 0), B = (4; 0; 0), C = (0; 6; 0). Tìm đoạn trung bình nối\ntrung điểm AB, AC và độdài.\nVí dụ29.3.6\nA, B đối xứng qua O. Nếu A = (2; −3; 1), tìm B và trung điểm.\nVí dụ29.3.7\nCho A = (0; 0; 0), B = (2; 2; 2), C = (0; 2; 0). Tìm D đểAC, BD có cùng trung\nđiểm.\nVectơ · Tọa độ· Hình học không gian\n8\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:29.4:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 9,
+    "glyphsMatched": 63,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nVí dụ29.3.8\nTrung điểm I của AB nằm trong Oxy. Có chắc cảA, B thuộc Oxy không?\nVí dụ29.3.9\nA = (1; 0; 0), B = (3; 2; 0), M = (t; 0; 0). Tìm min MA2 + MB2 bằng trung điểm.\nVí dụ29.3.10\nHai điểm A, B chạy sao cho trung điểm cốđịnh I = (1; 1; 1) và A = (t; 0; 2).\nTìm quỹtích B.\nDạng 29.4 · Trọng tâm\nKiến thức và cách làm. Tam giác G = (A + B + C)/3; tứdiện G = (A + B + C + D)/4.\nKhông dùng nhầm sốđiểm.\nA\nB\nC\nI\nG\nAG : GI = 2 : 1\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ29.4.1\nTìm trọng tâm tam giác A = (3; 0; 0), B = (0; 6; 0), C = (0; 0; 9).\nVí dụ29.4.2\nA = (1; 0; 0), B = (0; 2; 0) và trọng tâm G = (1; 1; 1). Tìm C.\nVí dụ29.4.3\nTứdiện có O, A = (4; 0; 0), B = (0; 4; 0), C = (0; 0; 4). Tìm trọng tâm tứdiện.\nVí dụ29.4.4\nG là trọng tâm tam giác, I là trung điểm BC. Biểu diễn −→\nAG theo −→\nAI.\nVí dụ29.4.5\nA = (m; 0; 1), B = (1; 2; 0), C = (2; 1; 2). Tìm m đểtrọng tâm thuộc Oyz.\nVí dụ29.4.6\nChứng minh MA2 + MB2 + MC2 = 3MG2 + GA2 + GB2 + GC2.\nVí dụ29.4.7\nTìm điểm làm MA2+MB2+MC2 nhỏnhất với A = (1; 0; 0), B = (0; 1; 0), C = O.\nVí dụ29.4.8\nTam giác trên có M bịràng buộc thuộc Oz. Tìm min tổng ba bình phương\nkhoảng cách.\nVí dụ29.4.9\nBa chất điểm khối lượng 1, 2, 3 ở(0; 0; 0), (3; 0; 0), (0; 2; 0). Tìm tâm khối.\nVí dụ29.4.10\nNếu G là trọng tâm ABC và A′, B′, C′ là ảnh qua cùng phép tịnh tiến vectơ\nu, trọng tâm mới ởđâu?\nVectơ · Tọa độ· Hình học không gian\n9\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:29.5:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 10,
+    "glyphsMatched": 50,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 29.5 · Điểm đối xứng\nKiến thức và cách làm. Qua điểm I: M∗= 2I −M. Qua mặt phẳng tọa độđổi dấu\nđúng tọa độvuông góc mặt đó.\nM\nM′\nH\n(P)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ29.5.1\nTìm ảnh của M = (1; −2; 3) qua O.\nVí dụ29.5.2\nTìm ảnh của M = (2; 1; −3) qua I = (1; 0; 2).\nVí dụ29.5.3\nTìm ảnh của M = (1; 2; 3) qua Oxy.\nVí dụ29.5.4\nTìm ảnh của M = (1; 2; 3) qua Oz.\nVí dụ29.5.5\nA = (1; 0; 2), B = (−3; 4; 0) đối xứng nhau qua I. Tìm I.\nVí dụ29.5.6\nTìm ảnh của M = (2; 0; 0) qua mặt phẳng x = 1.\nVí dụ29.5.7\nTìm ảnh của M = (1; 2; 3) qua đường x = y, z = 0.\nVí dụ29.5.8\nHợp hai phép đối xứng qua Oxy rồi Oyz tác động lên (a; b; c) thếnào?\nVí dụ29.5.9\nĐiểm nào bất động khi đối xứng qua Oxy? Qua Oz?\nVí dụ29.5.10\nM = (t; 1; 2) có ảnh qua Oyz thuộc đường x + y + z = 0. Tìm t.\nDạng 29.6 · Điểm chia đoạn\nKiến thức và cách làm. M = A + t(B −A). Thuộc đoạn khi 0 ≤t ≤1; chia trong\nAM : MB = p : q thì t = p/(p + q).\nVí dụ29.6.1\nA = O, B = (6; 3; 0). Tìm điểm chia trong AM : MB = 1 : 2.\nVí dụ29.6.2\nA = (1; 0; 0), B = (4; 3; 0). Tìm M sao cho −−→\nAM = 2−−→\nMB.\nVí dụ29.6.3\nA = O, B = (2; 0; 0). Tìm điểm chia ngoài thỏa MA = 2MB.\nVí dụ29.6.4\nA = (1; 1; 1), B = (3; 5; 7), M = A + t(B −A). Khi nào M thuộc đoạn, tia AB,\nphần kéo dài quá B?\nVí dụ29.6.5\nA = (0; 0; 1), B = (4; 0; −1). Tìm giao đoạn AB với Oxy và tỉsốchia.\nVí dụ29.6.6\nBiết M = (2; 1; 0) chia trong AB theo AM : MB = 2 : 1 và A = O. Tìm B.\nVí dụ29.6.7\nA = (1; 2; 0), B = (4; 2; 0), M = (0; 2; 0). Tính tham sốt và tỉsốđộdài MA : MB.\nVí dụ29.6.8\nBa điểm trên đường có tham sốtA = 1, tB = 5, tM = 2. Tính AM/AB.\nVectơ · Tọa độ· Hình học không gian\n10\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:30.1:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 12,
+    "glyphsMatched": 62,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD30 · MẶT PHẲNG\nDạng 30.1 · Vectơ pháp tuyến\nKiến thức và cách làm. Với ax + by + cz + d = 0, pháp tuyến (a; b; c)̸ = 0. Mọi bội khác\n0 đều là pháp tuyến.\nn\nA\n(P)\nn · (X −A) = 0\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ30.1.1\nTìm một pháp tuyến của 2x −y + 3z −4 = 0.\nVí dụ30.1.2\nCho P : x + 2y −z = 0. Trong các vectơ (2; 4; −2), (1; 2; 1), (0; 0; 0), vectơ nào\nlà pháp tuyến?\nVí dụ30.1.3\nMặt phẳng chứa hai hướng u = (1; 0; 1), v = (0; 1; 2). Tìm pháp tuyến.\nVí dụ30.1.4\nTìm m để(1; m; 2) là pháp tuyến của P : 2x −4y + 4z + 1 = 0.\nVí dụ30.1.5\nMặt phẳng song song Oxy nhận vectơ nào làm pháp tuyến đơn vị?\nVí dụ30.1.6\nTìm một hướng nằm trong P : 3x + 2y −z = 0 và có tọa độthứba bằng 0.\nVí dụ30.1.7\nCho P có pháp tuyến (1; 2; 3). Có thểlấy (2; 4; 6) đểlập phương trình qua\nđiểm mới không?\nVí dụ30.1.8\nHai hướng u = (1; 2; 3), v = (2; 4; 6) có cho pháp tuyến bằng tích có hướng\nkhông?\nVí dụ30.1.9\nMặt phẳng là tập điểm M thỏa −−→\nAM · (1; −1; 2) = 0. Đọc pháp tuyến và điểm\nđi qua.\nVí dụ30.1.10\nPhương trình 0x + 0y + 0z + 5 = 0 có pháp tuyến không?\nDạng 30.2 · Lập phương trình mặt phẳng\nKiến thức và cách làm. Qua A, pháp tuyến n: n · (X −A) = 0. Kiểm tra điểm và\nhướng sau khi lập.\nVí dụ30.2.1\nLập mặt phẳng qua A = (1; 2; −1) nhận n = (2; 1; −3).\nVí dụ30.2.2\nLập mặt phẳng qua M = (2; −1; 3) song song Oyz.\nVí dụ30.2.3\nLập trung trực đoạn AB với A = (0; 0; 0), B = (2; 4; 0).\nVí dụ30.2.4\nLập mặt phẳng qua O và chứa hai hướng (1; 1; 0), (0; 1; 1).\nVectơ · Tọa độ· Hình học không gian\n12\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:30.4:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 14,
+    "glyphsMatched": 50,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 30.4 · Vịtrí hai mặt phẳng\nKiến thức và cách làm. Pháp tuyến không cùng phương: cắt nhau. Cùng phương:\nkiểm tra toàn bộhệsốđểphân biệt trùng/song song.\nd\n(P)\n(Q)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ30.4.1\nXét P : x + y + z −1 = 0, Q : 2x + 2y + 2z −2 = 0.\nVí dụ30.4.2\nXét P : x −2y + z = 0, Q : 2x −4y + 2z + 3 = 0.\nVí dụ30.4.3\nXét P : x + y = 0, Q : y + z = 1. Tìm giao tuyến.\nVí dụ30.4.4\nTìm m đểP : x + y + z = 1, Q : mx + y + z = 2 song song.\nVí dụ30.4.5\nTìm m đểP : x + 2y −z = 3, Q : 2x + 4y −2z = m trùng nhau.\nVí dụ30.4.6\nHai mặt phẳng có một pháp tuyến chung khác 0. Có thểcắt nhau không?\nVí dụ30.4.7\nTìm giao tuyến x = 1 và y = 2; xét nó với Oz.\nVí dụ30.4.8\nP : x + y + z = 0, Q : x −y + z = 0. Chứng minh chúng cắt nhau nhưng không\nvuông góc.\nVí dụ30.4.9\nVới Pm : mx+y +z = 0, Qm : x+my +z = 1, khi nào hai mặt phẳng cắt nhau?\nVí dụ30.4.10\nTìm khoảng cách giữa P : 2x −y + 2z −3 = 0 và Q : 4x −2y + 4z + 6 = 0.\nVectơ · Tọa độ· Hình học không gian\n14\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:30.5:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 15,
+    "glyphsMatched": 48,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 30.5 · Góc giữa hai mặt phẳng\nKiến thức và cách làm. cos φ = |n1 · n2|/(|n1||n2|), 0 ≤φ ≤90◦.\nd\nnP\nnQ\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ30.5.1\nTính góc giữa P : x = 0 và Q : x + y = 0.\nVí dụ30.5.2\nTính góc giữa P : x + y = 0 và Q : x −y + z = 0.\nVí dụ30.5.3\nTính góc giữa P : x + 2y + 2z = 1 và Oxy.\nVí dụ30.5.4\nTìm m đểP : x + my = 0 tạo với Q : x = 0 góc 60◦.\nVí dụ30.5.5\nTìm m đểP : mx + y + z = 0 vuông góc Q : x −2y + 3z = 1.\nVí dụ30.5.6\nNếu góc giữa hai pháp tuyến bằng 120◦, góc giữa hai mặt phẳng là bao\nnhiêu?\nVí dụ30.5.7\nNhân phương trình một mặt phẳng với −2 có đổi góc với mặt khác không?\nVí dụ30.5.8\nHai mặt phẳng P, Q song song. Góc giữa chúng bao nhiêu?\nVí dụ30.5.9\nMặt mái có phương trình z = x/\n√\n3; tính góc nghiêng so với mặt đất Oxy.\nVí dụ30.5.10\nQua O, tìm các mặt phẳng dạng x + by = 0 có góc với Oyz bằng 45◦.\nVectơ · Tọa độ· Hình học không gian\n15\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:30.6:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 16,
+    "glyphsMatched": 56,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 30.6 · Khoảng cách điểm - mặt phẳng\nKiến thức và cách làm. d(M, P) = |axM + byM + czM + d|/\n√\na2 + b2 + c2. Tìm tham số\ncần giữhai nhánh trịtuyệt đối.\nd(M, P)\nH\nM\nA\n(P)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ30.6.1\nTính d(M, P) với M = (1; 2; 3), P : 2x −y + 2z −3 = 0.\nVí dụ30.6.2\nTìm điểm trên Oz cách P : z = 2 đúng 3 đơn vị.\nVí dụ30.6.3\nM = (2; 1; 0) có hình chiếu vuông góc lên mặt phẳng P là H = (1; 0; −1). Lập\nP.\nVí dụ30.6.4\nTìm ảnh đối xứng của M = (2; 1; 0) qua P : x + y + z = 0.\nVí dụ30.6.5\nMặt phẳng P : x + 2y + 2z + d = 0 cách A = (1; 0; 0) đúng 2. Tìm d.\nVí dụ30.6.6\nTính khoảng cách từO đến mặt phẳng đoạn chắn x/2 + y/3 + z/6 = 1.\nVí dụ30.6.7\nTìm điểm trên P : x + y + z = 3 gần O nhất.\nVí dụ30.6.8\nĐiểm M chạy trên đoạn A = (0; 0; 0), B = (0; 0; 5). Khoảng cách tới z = 2 lớn\nnhất khi nào?\nVí dụ30.6.9\nA = (0; 0; 1), B = (0; 0; −2). Có điểm trên đoạn cách Oxy bằng 0 không? Tìm\ntỉsốchia.\nVí dụ30.6.10\nVới M = (t; 0; 0), khoảng cách đến P : x + y + z = 0 và Q : x + y + z = 6 bằng\nnhau khi nào?\nDạng 30.7 · Mặt phẳng song song, vuông góc\nKiến thức và cách làm. Song song: pháp tuyến cùng phương. Vuông góc: tích vô\nhướng hai pháp tuyến bằng 0. Chỉvuông góc một mặt phẳng chưa xác định duy nhất\nmặt phẳng.\nVí dụ30.7.1\nQua A = (1; 0; 2) lập mặt phẳng song song P : x −y + z = 0.\nVí dụ30.7.2\nQua O lập mặt phẳng vuông góc P : x + y + z = 0 và chứa Oz.\nVí dụ30.7.3\nLập mặt phẳng chứa Ox và song song đường hướng (0; 1; 1).\nVí dụ30.7.4\nTìm mặt phẳng qua M = (1; 2; 3) vuông góc cảP : x + y = 0 và Q : y + z = 0.\nVectơ · Tọa độ· Hình học không gian\n16\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:31.2:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 18,
+    "glyphsMatched": 58,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD31 · ĐƯỜNG THẲNG\nDạng 31.1 · Vectơ chỉphương\nKiến thức và cách làm. Đọc hệsốcủa tham số; một vectơ khác không nhân với\nhằng khác 0 cho cùng hướng đường thẳng.\nVí dụ31.1.1\nĐọc vectơ chỉphương của x = 1 + 2t, y = 3 −t, z = 4t.\nVí dụ31.1.2\nĐường qua A = (1; 0; 2), B = (3; 4; 1) nhận chỉphương nào?\nVí dụ31.1.3\nVới d : x−1\n2\n= y+2\n−3 = z, tìm một chỉphương và điểm trên đường.\nVí dụ31.1.4\nĐường x = 2, y = 1, z = t có chỉphương nào?\nVí dụ31.1.5\nTìm m để(1; m; 2) là chỉphương của đường có hướng (2; 6; 4).\nVí dụ31.1.6\nĐường giao của x + y = 0 và y + z = 0 có một chỉphương là gì?\nVí dụ31.1.7\nMột đường vuông góc P : x −2y + 3z = 0. Đọc hướng của đường.\nVí dụ31.1.8\nMột vật chuyển động X(t) = (1 + 3t; 2 + 4t; 5). Tìm hướng đơn vịvà tốc độ\nnếu đơn vịm, s.\nVí dụ31.1.9\nHai đường lần lượt có hướng u và −5u, u̸ = 0. Có kết luận trùng nhau\nkhông?\nVí dụ31.1.10\nPhương trình X = A + t(0; 0; 0) có biểu diễn đường thẳng không?\nDạng 31.2 · Phương trình tham số\nKiến thức và cách làm. Qua A, hướng u̸ = 0: X = A+tu. Qua hai điểm dùng u = B−A.\nd\nA\nX\ntu\nX = A + tu\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ31.2.1\nLập đường qua A = (1; 2; 3) hướng (2; 0; −1).\nVí dụ31.2.2\nLập đường qua A = O, B = (2; 4; 6) bằng chỉphương tối giản.\nVí dụ31.2.3\nLập đường qua M = (1; 0; 0) và song song Oz.\nVí dụ31.2.4\nLập đường qua M = (1; 1; 1) vuông góc P : x + 2y −z = 0.\nVí dụ31.2.5\nViết tham sốcủa giao tuyến x + y = 1, z = 2.\nVí dụ31.2.6\nTìm m đểA = (m; 1; 0) thuộc d : X = (1; 0; 2) + t(2; 1; −2).\nVí dụ31.2.7\nX = A + t(B −A) mô tảtoàn đường hay đoạn AB? Chọn miền t cho đoạn.\nVectơ · Tọa độ· Hình học không gian\n18\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:31.4:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 20,
+    "glyphsMatched": 64,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 31.4 · Vịtrí hai đường thẳng\nKiến thức và cách làm. Xét hướng trước. Nếu không cùng phương, giải hệgiao\nđiểm; vô nghiệm là chéo nhau. Hai hướng vuông góc chưa đảm bảo hai đường cắt\nnhau.\nd1\nd2\nHK\nH\nK\nHK ⊥d1,\nHK ⊥d2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ31.4.1\nXét d1 : X = (t; 0; 0) và d2 : X = (s; 1; 0).\nVí dụ31.4.2\nXét d1 : X = (t; 2t; 3t) và d2 : X = (1 + 2s; 2 + 4s; 3 + 6s).\nVí dụ31.4.3\nXét d1 : X = (t; t; 0) và d2 : X = (s; 1 −s; 0).\nVí dụ31.4.4\nXét d1 : X = (t; 0; 0) và d2 : X = (0; s; 1).\nVí dụ31.4.5\nTìm m đểd1 : X = (t; t; 0) và d2 : X = (s; 1 −s; m) cắt nhau.\nVí dụ31.4.6\nHai đường có cùng một chỉphương khác 0 và có một điểm chung. Có bao\nnhiêu điểm chung?\nVí dụ31.4.7\nu = (1; 0; 0), v = (0; 1; 0), hai điểm gốc A = O, B = (0; 0; 2). Dùng tích hỗn tạp\nxét hai đường.\nVí dụ31.4.8\nA = O, B = (0; 1; 0), hướng u = (1; 0; 0), v = (1; 1; 0). Xét hai đường.\nVí dụ31.4.9\nMột bạn chỉgiải hai tọa độđầu của hệgiao đường trong không gian. Vì\nsao chưa đủ?\nVí dụ31.4.10\nTìm m đểcác đường có hướng (1; m; 0) và (2; 4; 1) song song.\nDạng 31.5 · Đường thẳng - mặt phẳng\nKiến thức và cách làm. ThếX = A + tu vào mặt phẳng. Hệsốt khác 0: cắt; hệsố0\nthì xét hằng sốđểphân biệt chứa/song song.\nVí dụ31.5.1\nTìm giao d : X = (1; 0; 0) + t(1; 1; 1) với P : x + y + z = 4.\nVí dụ31.5.2\nXét d : X = (t; 1; 0) với P : y = 2.\nVí dụ31.5.3\nXét d : X = (t; 1; 0) với P : y + z = 1.\nVí dụ31.5.4\nXét d : X = (0; 0; t) với P : z = 3.\nVí dụ31.5.5\nTìm m đểd : X = (1; 0; 0) + t(1; 1; 0) song song và không nằm trong Pm :\nx + my = 0.\nVectơ · Tọa độ· Hình học không gian\n20\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:31.6:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 21,
+    "glyphsMatched": 50,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nVí dụ31.5.6\nTìm m đểđường trên nằm trong Qm : x −y + mz −1 = 0.\nVí dụ31.5.7\nĐường qua A = (0; 0; 1), B = (0; 0; −2) cắt Oxy ởđâu trên đoạn?\nVí dụ31.5.8\nĐường qua A = (0; 0; 1) hướng (1; 0; 1) có giao Oxy trên tia t ≥0 không?\nVí dụ31.5.9\nĐường d song song cảhai mặt phẳng cắt nhau P, Q vềhướng. Hướng d\nliên hệvới giao tuyến thếnào?\nVí dụ31.5.10\nTìm m đểd : X = (t; 2t; 3t) vuông góc Pm : x + my + 3z = 1.\nDạng 31.6 · Góc trong Oxyz\nKiến thức và cách làm. Góc đường-đường dùng trịtuyệt đối tích vô hướng; góc\nđường-mặt dùng sin α = |u · n|/(|u||n|).\nα\nA\nH\nK(P)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ31.6.1\nTính góc giữa đường hướng (1; 1; 0) và Ox.\nVí dụ31.6.2\nTính góc giữa hai đường hướng (1; 0; 0), (−1;\n√\n3; 0).\nVí dụ31.6.3\nTính góc đường hướng (1; 1; 1) với Oxy.\nVí dụ31.6.4\nĐường hướng (1; 2; 0) có góc với Oxy bằng bao nhiêu?\nVí dụ31.6.5\nĐường có hướng là pháp tuyến mặt phẳng. Góc đường - mặt bằng bao\nnhiêu?\nVí dụ31.6.6\nTìm m đểđường hướng (1; 0; m) tạo với Oxy góc 45◦.\nVí dụ31.6.7\nMột đường tạo với pháp tuyến mặt phẳng góc nhọn 20◦. Góc với mặt phẳng\nlà gì?\nVí dụ31.6.8\nTìm đường qua O trong Oxy, hướng (1; m; 0), tạo góc 60◦với Ox.\nVí dụ31.6.9\nĐường giao x + y = 0, z = 0 tạo với Oy góc bao nhiêu?\nVí dụ31.6.10\nHướng u = (0; 3; −2) được chiếu lên mặt phẳng pháp tuyến n = (1; 1; −1).\nTính cos góc nhỏnhất giữa u và một hướng trong mặt phẳng.\nVectơ · Tọa độ· Hình học không gian\n21\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:31.8:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 22,
+    "glyphsMatched": 61,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 31.7 · Giao điểm\nKiến thức và cách làm. Giao hai đường cần giải đủba tọa độ; không kết luận chỉtừ\nhai phương trình.\nVí dụ31.7.1\nTìm giao d1 : X = (t; 2t; 0) và d2 : X = (1; s; 0).\nVí dụ31.7.2\nTìm giao đường X = (1; 2; 3) + t(1; −1; 2) với x = 0.\nVí dụ31.7.3\nTìm giao đường trên với Oxy.\nVí dụ31.7.4\nĐường X = (t; 1; 2) có giao Oyz và Oxz không?\nVí dụ31.7.5\nTìm m đểd1 : X = (t; t; t) và d2 : X = (1; s; m) có giao điểm.\nVí dụ31.7.6\nTìm giao tuyến x + y + z = 1, x −y + z = 3 với Oxy.\nVí dụ31.7.7\nĐường qua A = (1; 0; 0), hướng (1; 1; 0) cắt đường qua B = (0; 1; 0), hướng\n(1; −1; 0) ởđâu?\nVí dụ31.7.8\nMột đường có hai giao điểm phân biệt với cùng mặt phẳng. Kết luận gì?\nVí dụ31.7.9\nX = (1 + t; 2 −t; 3) giao mặt cầu tâm (1; 2; 3) bán kính 2 ởđâu?\nVí dụ31.7.10\nĐường X = (t; t; 0) và X = (2s; 2s; 0) có một hay vô sốgiao điểm?\nDạng 31.8 · Hình chiếu\nKiến thức và cách làm. Hình chiếu H = A + tu trên đường thỏa (M −H) · u = 0. Trên\nmặt phẳng: H = M −f(M)n/|n|2.\nd\nM\nH\nA\n(M −H) · u = 0\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ31.8.1\nTìm hình chiếu của M = (2; 3; 4) lên Ox.\nVí dụ31.8.2\nTìm hình chiếu của M = (2; 3; 4) lên Oxy.\nVí dụ31.8.3\nTìm hình chiếu của M = (2; 0; 1) lên d : X = t(1; 1; 0).\nVí dụ31.8.4\nTìm hình chiếu của O lên d : X = (1; 1; 0) + t(1; 0; 1).\nVí dụ31.8.5\nTìm điểm đối xứng của M = (2; 0; 1) qua d : X = t(1; 1; 0).\nVí dụ31.8.6\nTìm hình chiếu của M = (1; 2; 3) lên P : x + y + z = 0.\nVí dụ31.8.7\nHình chiếu của M = (t; 2; 0) lên Ox bằng (3; 0; 0). Tìm t.\nVectơ · Tọa độ· Hình học không gian\n22\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:31.9:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 23,
+    "glyphsMatched": 64,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nVí dụ31.8.8\nHình chiếu của A, B lên đường d trùng nhau. Có chắc A = B không?\nVí dụ31.8.9\nTìm điểm trên đoạn A = (0; 0; 0), B = (1; 0; 0) gần M = (2; 1; 0) nhất.\nVí dụ31.8.10\nChiếu u = (1; 2; 3) lên hướng v = (1; 1; 1). Tìm hình chiếu vectơ và thành\nphần vuông góc.\nDạng 31.9 · Khoảng cách trong Oxyz\nKiến thức và cách làm. d(M, d) = |(M −A) × u|/|u|. Với hai đường chéo dùng tích hỗn\ntạp hoặc tìm đoạn vuông góc chung.\nd1\nd2\nHK\nH\nK\nHK ⊥d1,\nHK ⊥d2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ31.9.1\nTính khoảng cách M = (1; 2; 2) tới Ox.\nVí dụ31.9.2\nTính khoảng cách từM = (1; 0; 0) tới d : X = t(1; 1; 0).\nVí dụ31.9.3\nTính khoảng cách hai đường X = (t; 0; 0) và X = (s; 3; 4).\nVí dụ31.9.4\nTính khoảng cách hai đường chéo X = (t; 0; 0) và X = (0; s; 2).\nVí dụ31.9.5\nTính khoảng cách hai đường X = (t; t; 0) và X = (s; 1 −s; 0).\nVí dụ31.9.6\nTìm đoạn vuông góc chung của d1 : X = (t; 0; 0), d2 : X = (1; s; 2).\nVí dụ31.9.7\nTính khoảng cách từđường X = (t; 0; 1) tới P : z = 3.\nVí dụ31.9.8\nĐường X = (t; t; t) cắt mặt phẳng z = 1. Khoảng cách đường - mặt phẳng\nlà bao nhiêu?\nVí dụ31.9.9\nĐiểm M = (m; 1; 0) cách đường x = y, z = 0 đúng 1. Tìm m.\nVí dụ31.9.10\nTìm khoảng cách giữa d1 : X = (t; 0; 0) và d2 : X = (0; 1; 1) + s(0; 1; 1).\nVectơ · Tọa độ· Hình học không gian\n23\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:32.1:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 24,
+    "glyphsMatched": 58,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD32 · MẶT CẦU\nDạng 32.1 · Tâm - bán kính\nKiến thức và cách làm. x2 + y2 + z2 −2ax −2by −2cz + d = 0 có tâm (a; b; c), R2 =\na2 + b2 + c2 −d > 0.\nI\nR\nM\n|X −I|2 = R2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ32.1.1\nĐọc tâm, bán kính (x −1)2 + (y + 2)2 + (z −3)2 = 16.\nVí dụ32.1.2\nTìm tâm, bán kính x2 + y2 + z2 −2x + 4y −6z + 5 = 0.\nVí dụ32.1.3\nPhương trình x2 + y2 + z2 + 2x −4y + 6z + 14 = 0 có là mặt cầu không?\nVí dụ32.1.4\nPhân loại x2 + y2 + z2 −2x + 2 = 0.\nVí dụ32.1.5\nTìm tâm, bán kính 2x2 + 2y2 + 2z2 −4x + 8y −12z = 0.\nVí dụ32.1.6\nXét A = (0; 0; 0) nằm trong, trên hay ngoài mặt cầu tâm (1; 2; 2) bán kính 3.\nVí dụ32.1.7\nMặt cầu x2 + y2 + z2 = 25 có đường kính và diện tích bao nhiêu?\nVí dụ32.1.8\nCùng mặt cầu trên, tính thểtích khối cầu; phân biệt mặt cầu và khối cầu.\nVí dụ32.1.9\nPhương trình x2 + y2 + 2z2 = 1 có là mặt cầu trong hệtrực chuẩn không?\nVí dụ32.1.10\nMặt cầu tâm I = (1; 0; 0) bán kính 2. Tính phương tích của M = (4; 0; 0).\nVectơ · Tọa độ· Hình học không gian\n24\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:32.4:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 26,
+    "glyphsMatched": 58,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 32.4 · Mặt cầu - mặt phẳng\nKiến thức và cách làm. So sánh d(I, P) với R: lớn hơn không giao, bằng tiếp xúc,\nnhỏhơn cắt theo đường tròn r =\n√\nR2 −d2.\nI\nd\nH\nr\nr2 = R2 −d2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ32.4.1\nXét mặt cầu S : x2 + y2 + z2 = 9 với P : z = 1; tìm giao tuyến.\nVí dụ32.4.2\nVới mặt cầu trên, xét z = 3.\nVí dụ32.4.3\nMột mặt phẳng cách tâm cầu 4 đơn vị, bán kính cầu bằng 3. Có thểđịnh\nnghĩa bán kính đường tròn giao là √9 −16 trong hình học thực không?\nVí dụ32.4.4\nTìm m đểz = m cắt x2 + y2 + z2 = 25 theo đường tròn bán kính 3.\nVí dụ32.4.5\nTâm I = (1; 2; 3), R = 4; mặt phẳng P : x + y + z = 6. Tìm bán kính giao\ntuyến.\nVí dụ32.4.6\nMặt cầu tâm I = (1; 0; 0), R = 2, mặt phẳng P : x + y = 0. Tìm tâm giao\ntuyến.\nVí dụ32.4.7\nTìm diện tích hình tròn giao giữa khối cầu x2 + y2 + z2 ≤16 và z = 2.\nVí dụ32.4.8\nCó bao nhiêu mặt phẳng qua tâm mặt cầu tạo giao tuyến bán kính bằng\nbán kính cầu?\nVí dụ32.4.9\nMặt cầu tâm (0; 0; 2) bán kính 3. Phần giao với mặt đất z = 0 có đường kính\nbao nhiêu?\nVí dụ32.4.10\nMột mặt phẳng cắt mặt cầu thành đường tròn tâm H. Đường IH có quan\nhệgì với mặt phẳng?\nVectơ · Tọa độ· Hình học không gian\n26\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:32.5:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 27,
+    "glyphsMatched": 60,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 32.5 · Mặt cầu - đường thẳng\nKiến thức và cách làm. Tính khoảng cách từtâm đến đường hoặc thếtham sốvào\nphương trình cầu. Chỉgiữnghiệm trong khoảng thời gian nếu là chuyển động.\nI\nd\nA\nB\nAB = 2\n√\nR2 −d2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nMởrộng theo tài liệu mẫu. Phương tích PM/S = −−→\nMA · −−→\nMB = MI2 −R2. Với M ngoài\ncầu và A, B trên cùng tia xuất phát từM, có MA · MB = MI2 −R2. Tiếp tuyến MT thỏa\nMT 2 = MI2 −R2. Với M trong cầu, tích vô hướng âm; không thay bằng tích hai độdài\ndương.\nVí dụ32.5.1\nTìm giao đường X = (t; 0; 0) với mặt cầu x2 + y2 + z2 = 4.\nVí dụ32.5.2\nXét đường X = (t; 2; 0) với mặt cầu trên.\nVí dụ32.5.3\nĐường X = (t; 3; 0) và họmặt cầu tâm O, bán kính R > 0. Tìm điều kiện để\nđường hoàn toàn ởngoài khối cầu.\nVí dụ32.5.4\nĐường X = (t; 1; 0) cắt mặt cầu bán kính 3, tâm O. Tính độdài dây.\nVí dụ32.5.5\nTừđiểm M = (5; 0; 0), tính độdài tiếp tuyến đến mặt cầu tâm O, bán kính\n3.\nVí dụ32.5.6\nVới cùng M, S, một cát tuyến có MA = 2 và hai giao điểm nằm cùng phía\nM. Tìm MB.\nVí dụ32.5.7\nM = O nằm trong mặt cầu bán kính 3. Tính −−→\nMA · −−→\nMB cho cát tuyến qua M.\nVí dụ32.5.8\nM = (t; 0; 0) chuyển động với t ≥0, mặt cầu tâm (3; 0; 0) bán kính 1. Tìm thời\ngian trong khối cầu.\nVí dụ32.5.9\nMột đường qua tâm mặt cầu có bán kính R. Chiều dài dây luôn bao nhiêu?\nVí dụ32.5.10\nTìm m đểđường X = (t; m; 1) tiếp xúc x2 + y2 + z2 = 9.\nVectơ · Tọa độ· Hình học không gian\n27\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:32.6:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 28,
+    "glyphsMatched": 60,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 32.6 · Tiếp diện\nKiến thức và cách làm. Tại M thuộc mặt cầu tâm I, tiếp diện có pháp tuyến M −I.\nKiểm tra M thuộc cầu trước.\nM\nI\nT\nMT 2 = MI2 −R2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ32.6.1\nLập tiếp diện của x2 + y2 + z2 = 9 tại M = (1; 2; 2).\nVí dụ32.6.2\nCầu tâm I = (1; 2; 3) bán kính 2, điểm M = (3; 2; 3). Lập tiếp diện.\nVí dụ32.6.3\nLập các tiếp diện của x2 + y2 + z2 = 4 song song x + y + z = 0.\nVí dụ32.6.4\nTìm tiếp điểm của x + 2y + 2z = 9 với mặt cầu tâm O bán kính 3.\nVí dụ32.6.5\nM = (1; 0; 0) có là tiếp điểm của cầu x2 + y2 + z2 = 4 không?\nVí dụ32.6.6\nTìm tiếp diện của cầu tâm O, R = 1 đi qua A = (2; 0; 0) và song song Oz.\nVí dụ32.6.7\nLập mặt phẳng các tiếp điểm của tiếp tuyến từA = (5; 0; 0) đến cầu R = 3,\ntâm O.\nVí dụ32.6.8\nVới bài trên, tính bán kính đường tròn tiếp điểm.\nVí dụ32.6.9\nTại tiếp điểm T, một đường nằm trong tiếp diện có nhất thiết tiếp xúc mặt\ncầu không?\nVí dụ32.6.10\nCó tiếp diện đi qua tâm mặt cầu bán kính dương không?\nVectơ · Tọa độ· Hình học không gian\n28\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:32.7:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 29,
+    "glyphsMatched": 70,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 32.7 · Tham sốvềmặt cầu\nKiến thức và cách làm. Hoàn thành bình phương; yêu cầu R2 > 0. Tiếp xúc mặt\nphẳng tương đương d2 = R2, nhưng vẫn phải kiểm tra điều kiện cầu.\nI\nM\nA\nB\n−−→\nMA · −−→\nMB = MI2 −R2\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ32.7.1\nTìm m đểx2 + y2 + z2 −2x + 4y + m = 0 là mặt cầu.\nVí dụ32.7.2\nTìm m đểmặt cầu trên có bán kính 3.\nVí dụ32.7.3\nTrong họtrên, có mặt cầu tiếp xúc Oxy không?\nVí dụ32.7.4\nTìm m đểSm : x2 + y2 + z2 −2mx + 2y + 1 = 0 là mặt cầu.\nVí dụ32.7.5\nVới họSm trên, xét vịtrí với Oyz.\nVí dụ32.7.6\nTìm m đểcầu tâm O, R = 2 tiếp xúc Pm : x + y + z = m.\nVí dụ32.7.7\nTìm m đểđường dm : X = (t; m; 0) cắt cầu R = 2, tâm O tại hai điểm.\nVí dụ32.7.8\nMặt cầu tâm I = (t; 0; 0) qua A = (0; 1; 0). Tìm bán kính nhỏnhất trong họ.\nVí dụ32.7.9\nHọcầu Sm : x2 + y2 + z2 −2mz = 4. Chứng minh có một đường tròn cốđịnh\nchung.\nVí dụ32.7.10\nTìm m đểhai cầu tâm O, bán kính 1 và tâm (m; 0; 0), bán kính 2 tiếp xúc\nngoài.\nVectơ · Tọa độ· Hình học không gian\n29\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.1:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 30,
+    "glyphsMatched": 55,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nCD33 · OXYZ THỰC TẾ\nDạng 33.1 · Chọn hệtrục tọa độ\nKiến thức và cách làm. Chọn gốc ởmột đỉnh, ba trục theo ba cạnh vuông góc của\nhình hộp. Ghi rõ đơn vị, chiều dương và điểm nào nằm trên trục.\nA\nB\nC\nD\nA′\nB′\nC′\nD′\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.1.1\nKho hình hộp 8 × 6 × 4 m. Chọn gốc ởgóc sàn, trục theo ba cạnh. Viết tọa\nđộđỉnh đối diện và tâm kho.\nVí dụ33.1.2\nMái chóp vuông đều đáy cạnh 6 m, cao 4 m. Đặt gốc tâm đáy, trục Oz qua\nđỉnh. Chọn tọa độbốn chân và đỉnh.\nVí dụ33.1.3\nMột cột nghiêng không vuông góc mặt sân. Có dùng nó làm Oz của hệ\ntrực chuẩn với hai trục trên sân không?\nVí dụ33.1.4\nSân bóng 90 × 120 m, cột bốn góc cao 30 m. Đặt gốc một góc sàn; ghi tọa\nđộbốn đầu cột.\nVí dụ33.1.5\nTháp vuông đáy cạnh 10 m, cao 20 m. Chọn gốc tâm đáy thay cho góc đáy\ncó lợi gì khi tìm trục đối xứng?\nVí dụ33.1.6\nMột đường hầm thẳng nằm ngang dài 100 m. Chọn trục sao cho vịtrí dọc\nhầm chỉdùng một tọa độ.\nVí dụ33.1.7\nBểhình cầu tâm cao 5 m trên mặt đất, bán kính 2 m. Nên đặt gốc thếnào\nđểphương trình cầu đơn giản mà mặt đất vẫn là mặt phẳng tọa độ?\nVí dụ33.1.8\nMột hình lập phương cạnh a được đặt với tâm tại O, các mặt song song\nmặt phẳng tọa độ. Tọa độcác đỉnh là gì?\nVí dụ33.1.9\nTại giao lộvuông góc, chọn Ox dọc đường Đông, Oy dọc đường Bắc. Xe\ntrên hai đường có dạng tọa độnào?\nVí dụ33.1.10\nMột mặt đất nghiêng được mô tảz = x/2. Có thểdùng đồng thời Oxy làm\nmặt đất trong cùng hệkhông?\nVectơ · Tọa độ· Hình học không gian\n30\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.3:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 32,
+    "glyphsMatched": 51,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.3 · Bài toán máy bay\nKiến thức và cách làm. Vận tốc là vectơ, tốc độlà độdài. X(t) = X0 + tv chỉđúng\nkhi t và v dùng đơn vịtương thích.\ny\nz\nx\nA\nB\n(P)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.3.1\nMáy bay ởA = (1; 2; 3) km, vận tốc (120; 160; 0) km/h. Tìm vịtrí sau 15 phút.\nVí dụ33.3.2\nMáy bay bay từA = (0; 0; 1) đến B = (3; 4; 1) km trong 2 phút. Tìm tốc độ\nkm/h.\nVí dụ33.3.3\nMáy bay ở(0; 0; 2) km, bay lên theo hướng (3; 0; 4) tốc độ250 km/h. Bao lâu\nđạt cao độ12 km?\nVí dụ33.3.4\nMáy bay vận tốc không khí (300; 0; 0) km/h, gió (0; 40; 0). Sau nửa giờbịlệch\nngang bao xa?\nVí dụ33.3.5\nĐểbay đúng hướng Đông với vận tốc so đất (300; 0; 0), biết gió (0; 40; 0)\nkm/h, máy bay phải có vận tốc không khí nào?\nVí dụ33.3.6\nHai máy bay A(t) = (10t; 0; 1), B(t) = (0; 10t; 1) km, t ≥0 phút. Khi nào cách\nnhau 5\n√\n2 km?\nVí dụ33.3.7\nMáy bay X(t) = (3; −2; 1) + t(0; 4; −1) km, t phút. Tìm thời điểm hạtới z = 0\nvà vịtrí.\nVí dụ33.3.8\nMáy bay đi từA = (0; 0; 1) tới B = (0; 4; 0) theo đoạn thẳng. Có xuyên mặt\nmây z = 2 không?\nVí dụ33.3.9\nVận tốc máy bay được ghi theo km/h nhưng thời gian t = 600 s. Viết vectơ\ndịch chuyển theo v.\nVí dụ33.3.10\nMáy bay bay đều cùng độcao theo hướng (1; 2; 0). Hình chiếu lên mặt\nđất có cùng tốc độvới máy bay không?\nVectơ · Tọa độ· Hình học không gian\n32\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.4:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 33,
+    "glyphsMatched": 51,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.4 · Bài toán UAV\nKiến thức và cách làm. Bay từA đến B trong T giây: X(t) = A+(t/T)(B−A), 0 ≤t ≤T.\nKhông kéo dài hành trình ngoài miền này.\nv\nM\nh\nz = 0\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.4.1\nUAV từA = (0; 0; 4) đến B = (6; 8; 4) m trong 20 s. Viết vịtrí theo thời gian.\nVí dụ33.4.2\nUAV ởM = (1; 2; 4) m, bay ngang hướng (2; a; b). Tìm a, b đểkhoảng cách từ\nO tới đường bay lớn nhất.\nVí dụ33.4.3\nUAV cao 4 m có vận tốc (3; 4; −1) m/s. Bao lâu chạm đất và đi được bao xa\ntrước đó?\nVí dụ33.4.4\nUAV từA = (0; 0; 2) bay theo (1; 0; 0) tốc độ3 m/s; gió (0; 1; 0) m/s. Tìm vịtrí\nsau 5 s.\nVí dụ33.4.5\nHai UAV A(t) = (t; 0; 3) và B(t) = (0; t −2; 3) m. Quỹđạo giao nhau có đồng\nnghĩa va chạm không?\nVí dụ33.4.6\nUAV đi từA tới B trong 10 s rồi đứng yên. Viết công thức đúng cho mọi\nt ≥0.\nVí dụ33.4.7\nUAV giữx = 2, y = 3 và độcao giảm theo z = 10 −2t, m và s. Viết đường\nbay và miền thời gian trước chạm đất.\nVí dụ33.4.8\nUAV đứng ở(3; 4; 12) m. Dây điều khiển thẳng nối với O cần dài ít nhất bao\nnhiêu?\nVí dụ33.4.9\nUAV ở(3; 4; 0) được yêu cầu bay tới điểm trên Oz cách vịtrí đầu 13 m và\nphía trên mặt đất. Tìm điểm đến.\nVí dụ33.4.10\nUAV theo tia X(t) = (1; 0; 2) + t(1; 0; 1), t ≥0. Khi nào khoảng cách tới mặt\nđất nhỏnhất?\nVectơ · Tọa độ· Hình học không gian\n33\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.5:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 34,
+    "glyphsMatched": 60,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.5 · Bài toán radar\nKiến thức và cách làm. Vùng radar là khối cầu: giải bất phương trình khoảng cách\nkhông vượt bán kính, rồi giao với khoảng thời gian quan sát.\nt1\nt2\nI\n|X(t) −I| ≤R\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.5.1\nRadar tâm O, bán kính 5 km. Xét mục tiêu A = (3; 4; 0) và B = (3; 4; 1).\nVí dụ33.5.2\nMục tiêu M(t) = (t −6; 3; 0) km, t ≥0 phút. Tìm thời gian trong radar bán\nkính 5.\nVí dụ33.5.3\nMục tiêu M(t) = (t; 5; 0) km. Radar bán kính 5 ghi nhận trong khoảng thời\ngian dài bao nhiêu?\nVí dụ33.5.4\nRadar đặt tại I = (1; 2; 3) km, bán kính 4. Viết ranh giới và toàn vùng phát\nhiện.\nVí dụ33.5.5\nRadar ởđộcao 2 km, bán kính 5 km. Bán kính vùng trên mặt đất là bao\nnhiêu?\nVí dụ33.5.6\nMáy bay chuyển động trên đường cách tâm radar 3 km, tốc độ4 km/phút;\nbán kính radar 5 km. Thời gian đi qua toàn vùng?\nVí dụ33.5.7\nRadar có bán kính 5 km, mục tiêu M(t) = (6 + t; 0; 0), t ≥0. Có lúc nào được\nphát hiện không?\nVí dụ33.5.8\nMột radar ghi tín hiệu đi-vềtrong 20 microgiây. Tính khoảng cách với\nc = 3 · 108 m/s.\nVí dụ33.5.9\nHai radar cùng bán kính 5, tâm cách nhau 6 km. Bán kính đường tròn giao\nhai mặt biên là bao nhiêu?\nVí dụ33.5.10\nRadar muốn phủmọi điểm của đoạn từ(2; 0; 0) đến (4; 3; 0), tâm O. Bán\nkính nhỏnhất?\nVectơ · Tọa độ· Hình học không gian\n34\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.7:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 36,
+    "glyphsMatched": 61,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.7 · Khoảng cách thực tế\nKiến thức và cách làm. Nếu một đơn vịtọa độbằng a mét, nhân độdài tọa độvới\na; diện tích nhân a2, thểtích nhân a3.\nr\nK\nh\nH\nr = h tan(θ/2)\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.7.1\nCamera nối bốn đầu cột (0; 0; 30), (90; 0; 30), (90; 120; 30), (0; 120; 30), cao độ25\nm và cách đều bốn đầu. Tìm vịtrí và độdài mỗi cáp.\nVí dụ33.7.2\nMột người ở(0; 0; 0), máy bay ở(6; 8; 6) km. Khoảng cách nhìn thẳng và\nkhoảng cách hình chiếu ngang?\nVí dụ33.7.3\nMỗi đơn vịtọa độlà 10 m. Khoảng cách từ(1; 2; 3) đến mặt z = 1 là bao\nnhiêu mét?\nVí dụ33.7.4\nMỗi đơn vịlà 10 m. Hình tròn bán kính 2 đơn vịcó diện tích bao nhiêu m2?\nVí dụ33.7.5\nỐng thẳng d : X = (t; 0; 0) m; cảm biến ởM = (1; 3; 4). Dây ngắn nhất nối\ncảm biến tới ống dài bao nhiêu?\nVí dụ33.7.6\nHai tuyến ống d1 : X = (t; 0; 0) và d2 : X = (0; s; 3) m. Đoạn nối ngắn nhất\ndài bao nhiêu?\nVí dụ33.7.7\nMặt cầu tâm (1; 1; 3) m, bán kính 3 m; đèn ởM = (15; 1; 6) m. Tính độdài\ntia tới tiếp điểm.\nVí dụ33.7.8\nVới đèn và quảcầu trên, khoảng cách lớn nhất tới mọi điểm trên mặt cầu\nlà bao nhiêu? So với điểm nhìn thấy trực tiếp.\nVí dụ33.7.9\nTrạm tại (0; 0; 2) km, bán kính phủ3 km. Người ở(4; 0; 0) cần đi ít nhất bao\nxa trên mặt đất đểvào vùng?\nVí dụ33.7.10\nMột mặt mái z = x/2 m, thiết bịtại (2; 0; 4) m. Khoảng cách vuông góc tới\nmái bao nhiêu?\nVectơ · Tọa độ· Hình học không gian\n36\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.8:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 37,
+    "glyphsMatched": 51,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.8 · Vịtrí tối ưu\nKiến thức và cách làm. Với MA + MB qua điểm trên mặt phẳng, phản xạmột điểm\nnếu hai điểm cùng phía. Đường thẳng nối ảnh với điểm kia cho điểm chạm tối ưu.\nOxy\nA\nB\nA∗\nM\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.8.1\nHai trạm A = (0; 0; 2), B = (6; 0; 4) m. Chọn M ∈Oxy đểAM + MB nhỏnhất.\nVí dụ33.8.2\nHai trạm A = (0; 0; 2), B = (6; 0; −4) m khác phía Oxy. Tìm min AM + MB,\nM ∈Oxy.\nVí dụ33.8.3\nHai điểm A = (0; 0; 1), B = (4; 0; 1). Chọn M ∈Oxy tối thiểu MA2 + MB2.\nVí dụ33.8.4\nChọn trạm M trên Oz đểgần điểm A = (3; 4; 5) nhất.\nVí dụ33.8.5\nMột dây nối từA = (0; 0; 3) tới điểm M trên mép sàn Ox, rồi tới B = (4; 2; 0).\nViết hàm độdài cần tối ưu.\nVí dụ33.8.6\nTâm đặt radar nằm trên mặt đất. Cần phủhai điểm A = (−3; 0; 4), B =\n(3; 0; 4). Tìm tâm và bán kính tối thiểu.\nVí dụ33.8.7\nCần đặt trạm trên Oxy gần nhất tới đường thẳng đứng qua (2; 3; 0). Có duy\nnhất nghiệm không?\nVí dụ33.8.8\nChọn điểm M trong khối cầu tâm O, R = 2 đểgần A = (5; 0; 0) nhất.\nVí dụ33.8.9\nNếu A = (1; 0; 0) nằm trong khối cầu trên, điểm trong khối cầu gần A nhất\nlà gì? Nếu chỉtrên mặt cầu thì sao?\nVí dụ33.8.10\nMột trạm nằm trên đoạn M = (t; 0; 0), 0 ≤t ≤1, cần gần A = (3; 2; 0) nhất.\nVectơ · Tọa độ· Hình học không gian\n37\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  },
+  {
+    "blockId": "cd28-cd33-vector-2026:33.9:knowledge:block:2",
+    "sourceId": "cd28-cd33-vector-2026",
+    "sourceHash": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+    "page": 38,
+    "glyphsMatched": 72,
+    "sourceContext": "TOÁN 12\n|\nCD28–CD33\nBiennobiengioi\nDạng 33.9 · Tối ưu khoảng cách theo thời gian\nKiến thức và cách làm.\nTối ưu bình phương khoảng cách.\nCực tiểu tựdo t0 =\n−r0 · v/|v|2, sau đó chặn vào miền thời gian.\nt\nD2\nt0\nD2 = at2 + bt + c, a > 0\nSơ đồminh họa phương pháp; không theo tỉlệ.\nVí dụ33.9.1\nMục tiêu M(t) = (t −3; 2; 1) m, t ≥0 s. Khi nào gần O nhất?\nVí dụ33.9.2\nMục tiêu M(t) = (t + 2; 1; 0), t ≥0. Tối ưu khoảng cách tới O.\nVí dụ33.9.3\nM(t) = (t −10; 2; 0), 0 ≤t ≤5. Tìm thời điểm gần O nhất.\nVí dụ33.9.4\nHai vật A(t) = (t; 0; 0) và B(t) = (0; 2 −t; 1), t ≥0. Tìm khoảng cách nhỏnhất.\nVí dụ33.9.5\nHai vật có hiệu vận tốc bằng 0. Công thức thời điểm tối ưu có chia cho\nbình phương tốc độtương đối được không?\nVí dụ33.9.6\nM(t) = (t; 0; 1), 0 ≤t ≤4. Tìm khoảng cách lớn nhất tới O.\nVí dụ33.9.7\nHai mục tiêu có vịtrí tương đối r(t) = (6 −3t; 4; 0) km, t giờ. Tìm khoảng\nthời gian cách nhau dưới 5 km, t ≥0.\nVí dụ33.9.8\nMột mục tiêu có D2(t) = 4t2 −8t + 13 km2. Tính khoảng cách và thời điểm\ngần nhất.\nVí dụ33.9.9\nHai vật có r0 = (1; 2; 0), v = (2; −1; 0) theo đơn vịm, s. Tìm khoảng cách nhỏ\nnhất với t ≥0.\nVí dụ33.9.10\nVới r0 = (4; 0; 0), v = (−1; 1; 0), tìm thời điểm gần nhau nhất trên [0; 1] và\ntrên [0; +∞).\nDạng 33.10 · Oxyz kết hợp hàm sốmột biến\nKiến thức và cách làm. Chuyển hàm mục tiêu vềmột biến, ghi miền, xét đạo hàm\nvà cảbiên. Tối thiểu bình phương độdài chỉdùng được vì căn bậc hai tăng.\nVí dụ33.10.1\nM = (t; 0; 0), 0 ≤t ≤4; A = O, B = (3; 0; 2). Tối thiểu F = MA2 + 2MB2.\nVí dụ33.10.2\nM = (t; 0; 0), 1 ≤t ≤3. Tối thiểu OM + MA với A = (0; 0; 2).\nVí dụ33.10.3\nChọn M = (t; 0; 0), 0 ≤t ≤2; A = (1; 2; 0). Tìm min MA bằng đạo hàm.\nVectơ · Tọa độ· Hình học không gian\n38\n",
+    "policy": "PDF vector/glyph structure is evidence, not a measurement of unspecified coordinates."
+  }
+]

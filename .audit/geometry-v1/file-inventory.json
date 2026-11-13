@@ -1,0 +1,75 @@
+{
+  "versionControlVisibleFiles": [
+    ".audit/geometry-v1/activation-browser.json",
+    ".audit/geometry-v1/activation-plan.json",
+    ".audit/geometry-v1/browser.json",
+    ".audit/geometry-v1/file-inventory.json",
+    ".audit/geometry-v1/historical-actual.json",
+    ".audit/geometry-v1/historical-baseline-corrected.json",
+    ".audit/geometry-v1/historical-guards.json",
+    ".audit/geometry-v1/interactions.json",
+    ".audit/geometry-v1/inventory.json",
+    ".audit/geometry-v1/preview.json",
+    ".audit/geometry-v1/security.json",
+    ".audit/geometry-v1/source-evidence.json",
+    ".audit/geometry-v1/summary.json",
+    ".audit/geometry-v1/symbolic.json",
+    ".audit/geometry-v1/verification.json",
+    ".gitignore",
+    "assets/content/geometry/F77647AA90230356DBD52E94CC75BABACDA22FAD0C8B10FF5EEFF872AAF76ECD.json",
+    "assets/content/geometry/F8ABC1AF14F291C6DCADC4A8203520BA304553106DBBAD099883EAA4B010C7BC.json",
+    "assets/geometry.css",
+    "assets/js/components/geometry-renderer.js",
+    "assets/js/components/geometry-spec.js",
+    "assets/js/data/geometry-activation.js",
+    "assets/js/geometry-learner.js",
+    "assets/js/geometry-loader.js",
+    "assets/js/geometry-preview.js",
+    "docs/content/geometry-engine-v1-finalization-2026-11-13.md",
+    "geometry-preview.html",
+    "scripts/source-first/geometry-build.mjs",
+    "scripts/source-first/geometry-guards.mjs",
+    "scripts/source-first/geometry-historical.mjs",
+    "scripts/source-first/geometry-models.mjs",
+    "scripts/source-first/geometry-navigation.mjs",
+    "scripts/source-first/geometry-release.mjs",
+    "scripts/source-first/geometry-report.mjs",
+    "scripts/source-first/geometry-security.mjs",
+    "scripts/source-first/geometry-server.mjs",
+    "scripts/source-first/geometry-source.py",
+    "scripts/source-first/geometry-symbolic.py",
+    "tests/geometry-activation-browser.test.mjs",
+    "tests/geometry-browser.test.mjs",
+    "tests/geometry-interactions.test.mjs",
+    "tests/geometry.test.mjs"
+  ],
+  "unchangedActiveTargets": [
+    {
+      "file": "documents.html",
+      "sha256": "8D2DBB825FCDAA33D52B0FE4DFAB59B8580B0623D84D2A19E874527B0AB7BBAD"
+    },
+    {
+      "file": "assets/js/curriculum.js",
+      "sha256": "A481E9C8784EE306B1822D86764E97B1106A32367240275E5DC1C5478F4BA985"
+    },
+    {
+      "file": "assets/js/data/geometry-activation.js",
+      "sha256": "ECBD8FFBD49E518CB050AC94DF9845BCA7E680CADD26F0CB5899DE14E36E3CF9"
+    },
+    {
+      "file": "assets/js/data/pdf-knowledge-release.js",
+      "sha256": "261DB398DAD318E3EA4ECD0CB8C0E5F0BEE5B7EBEC0FB3BE198668E8E23A230F"
+    },
+    {
+      "file": "assets/js/data/foundation-lessons.generated.js",
+      "sha256": "5B7A039D213A289809C42B159C7EACC017F5890F638A72E19A22F499CFF6CE5E"
+    }
+  ],
+  "newImmutablePlan": ".content-work/geometry-v1/2A5734E156FBA4ACF550226F67D9ADE9B5D27B85E16AA7804E77F34209EDAED3/manifest.json",
+  "ignoredArtifacts": [
+    ".audit/geometry-v1/logs/",
+    ".audit/geometry-v1/screenshots/",
+    ".audit/geometry-v1/source-pages/"
+  ],
+  "realActivationWrites": 0
+}

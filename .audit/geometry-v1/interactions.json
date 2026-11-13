@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "runtimeHashes": {
+    "assets/js/components/geometry-spec.js": "A9C4C1DDA9614ACF18C172B958E34625E473EC8046956C42B99BC3B209F1C956",
+    "assets/js/components/geometry-renderer.js": "B8764BCA64DF478B5FDE4796F0B2B3DE5899F8BE3ED7BD522BAD0FC8A043E2DF",
+    "assets/js/geometry-learner.js": "35694B82A815622F03BC810EC6516A965B45011EDEF5828A580F6EE85CE36353",
+    "assets/js/geometry-loader.js": "08B2917058F079CDC7846F40F014C3F975D0A1D7D7CADE833FA0F184DCB6DE8E",
+    "assets/geometry.css": "4D71359A30511F17FCD389E285A20464EEE41EB713F241133F9988B2168ACE08",
+    "assets/js/curriculum.js": "A481E9C8784EE306B1822D86764E97B1106A32367240275E5DC1C5478F4BA985",
+    "scripts/source-first/geometry-navigation.mjs": "219CC1F9A1D839B8604A8BDC89103A4D8E33EF5678A2E4F7CF36BE4821870AF7"
+  },
+  "loadingShiftPx": 0,
+  "resizes": [
+    {
+      "width": 232,
+      "overflow": false
+    },
+    {
+      "width": 651,
+      "overflow": false
+    },
+    {
+      "width": 960,
+      "overflow": false
+    },
+    {
+      "width": 302,
+      "overflow": false
+    }
+  ],
+  "spaAndHistory": true,
+  "rapidHistory": true,
+  "forwardNavigation": true,
+  "bfcache": true,
+  "coexistingGraph": true,
+  "safeRejection": true,
+  "previewCandidates": 30,
+  "touchRotation": true,
+  "touchDefaultScroll": true,
+  "touchLandscape": true,
+  "pointerCaptureRelease": true,
+  "pointerCancel": true,
+  "mouseRotation": true,
+  "zoomReset": true,
+  "physicalDeviceCertified": false
+}

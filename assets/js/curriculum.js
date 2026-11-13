@@ -104,6 +104,7 @@ if (currentGradeId && progressState !== loadedProgressState) {
 }
 let confirmExamSubmit = false;
 let lessonTransitionLock = false;
+let pendingLessonHistory = null;
 let lastRenderedRoute = null;
 const contextualPanelState = new Map();
 const HISTORY_MARKER = "bienedu-learning-v4";
@@ -797,7 +798,10 @@ async function transitionLessonRoute(href, {
   historyState = null,
   restoreState = null
 } = {}) {
-  if (lessonTransitionLock) return;
+  if (lessonTransitionLock) {
+    if (!updateHistory) pendingLessonHistory = { href, restoreState };
+    return;
+  }
   lessonTransitionLock = true;
 
   try {
@@ -826,6 +830,11 @@ async function transitionLessonRoute(href, {
     if (nextStage) nextStage.style.minHeight = "";
   } finally {
     lessonTransitionLock = false;
+    const pending = pendingLessonHistory;
+    pendingLessonHistory = null;
+    if (pending && new URL(pending.href, location.href).href === location.href) {
+      await transitionLessonRoute(pending.href, { updateHistory: false, restoreState: pending.restoreState });
+    }
   }
 }
 
