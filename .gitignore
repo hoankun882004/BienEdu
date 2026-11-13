@@ -15,3 +15,5 @@ __pycache__/
 /.audit/geometry-v1/source-pages/
 /.audit/geometry-v1/screenshots/
 /.audit/geometry-v1/logs/
+/.audit/hosting-fix/screenshots/
+/.audit/hosting-fix/logs/

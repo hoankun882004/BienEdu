@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "check:hosting": "node scripts/check-hosting.mjs",
+    "test:hosting": "node --test tests/hosting.test.mjs tests/hosting-browser.test.mjs",
     "check": "node scripts/check-source.mjs",
     "content:scan": "node scripts/content-pipeline.mjs scan",
     "content:import": "node scripts/content-pipeline.mjs import",

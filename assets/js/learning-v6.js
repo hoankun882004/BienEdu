@@ -1,4 +1,4 @@
-import {refineSourceContext} from '../../scripts/source-first/runtime-v62/learner.mjs';
+import {refineSourceContext} from './runtime/learner.js';
 // Small behavioral refinements around the existing renderer, not a new router.
 export function initializeLearningAccessibility(){
   if(!document.querySelector('link[data-learning-v62-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='assets/learning-v6.css?v=6.0';document.head.append(style);}

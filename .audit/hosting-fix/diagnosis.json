@@ -1,0 +1,25 @@
+{
+  "observedDate": "2026-11-13",
+  "productionOrigin": "https://bienedu.vercel.app",
+  "deployedFixVerified": false,
+  "productionResponses": [
+    {
+      "path": "/scripts/source-first/runtime-v62/learner.mjs",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/scripts/source-first/runtime-v62/registry.mjs",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/scripts/source-first/runtime-v62/lesson-workspace.mjs",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8"
+    }
+  ],
+  "screenshotDeploymentURLIsVersionSpecific": true,
+  "providedPreviewRequiresVercelLoginForAnonymousClient": true,
+  "fix": "Browser-only adapters relocated to assets/js/runtime; private tooling remains excluded"
+}

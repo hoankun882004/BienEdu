@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const sourceRoot = resolve(projectRoot, "assets/js");
-const htmlEntries = ["index.html", "course.html", "documents.html", "quiz.html", "contact.html", ".audit/source-first-v5/release-v61/preview.html"];
+const htmlEntries = ["index.html", "course.html", "documents.html", "quiz.html", "contact.html", "geometry-preview.html", ".audit/source-first-v5/release-v61/preview.html"];
 const errors = [];
 
 function walk(directory, extension) {
@@ -18,8 +18,10 @@ function walk(directory, extension) {
 }
 
 function localPath(specifier, importer) {
-  if (!specifier.startsWith(".")) return null;
-  return resolve(importer, "..", specifier.split(/[?#]/, 1)[0]);
+  const path = specifier.split(/[?#]/, 1)[0];
+  if (path.startsWith("/")) return resolve(projectRoot, "." + path);
+  if (!path.startsWith(".")) return null;
+  return resolve(importer, "..", path);
 }
 
 function moduleSpecifiers(source) {
@@ -79,7 +81,8 @@ for (const htmlEntry of htmlEntries) {
   }
 
   for (const match of source.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css)(?:\?[^"']*)?)["']/g)) {
-    const asset = resolve(dirname(file), match[1].split(/[?#]/, 1)[0]);
+    const path = match[1].split(/[?#]/, 1)[0];
+    const asset = path.startsWith("/") ? resolve(projectRoot, "." + path) : resolve(dirname(file), path);
     if (!existsSync(asset)) errors.push(`${htmlEntry}: missing asset ${match[1]}`);
     if (extname(asset) === ".js") entryModules.add(asset);
   }

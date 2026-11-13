@@ -1,9 +1,5 @@
-scripts/source-first/*
-!scripts/source-first/runtime-v62/
-scripts/source-first/runtime-v62/*
-!scripts/source-first/runtime-v62/learner.mjs
-!scripts/source-first/runtime-v62/registry.mjs
-!scripts/source-first/runtime-v62/lesson-workspace.mjs
+# Learner modules live in assets/js/runtime; source preparation stays private.
+scripts/source-first/
 .content-work/
 .audit/
 content/review/

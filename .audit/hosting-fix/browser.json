@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "simulatedProductionOrigin": "https://bienedu-host-test.vercel.app",
+  "externalDeploymentVerified": false,
+  "states": [
+    {
+      "width": 1366,
+      "entry": "/?grade=12"
+    },
+    {
+      "width": 1366,
+      "entry": "/course.html?grade=12"
+    },
+    {
+      "width": 1366,
+      "entry": "/quiz.html?grade=12"
+    },
+    {
+      "width": 1366,
+      "entry": "/contact.html?grade=12"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12&topic=CD12&type=12.1&section=knowledge&item=1&releasePreview=v6"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12&topic=CD17&type=17.4&section=example&item=6&releasePreview=v6"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12&topic=CD28&type=28.1&section=example&item=1&releasePreview=v6"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=8&releasePreview=v6"
+    },
+    {
+      "width": 1366,
+      "entry": "/documents.html?grade=12&topic=CD33&type=33.8&section=knowledge&item=1&releasePreview=v6"
+    },
+    {
+      "width": 390,
+      "entry": "/?grade=12"
+    },
+    {
+      "width": 390,
+      "entry": "/course.html?grade=12"
+    },
+    {
+      "width": 390,
+      "entry": "/quiz.html?grade=12"
+    },
+    {
+      "width": 390,
+      "entry": "/contact.html?grade=12"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12&topic=CD12&type=12.1&section=knowledge&item=1&releasePreview=v6"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12&topic=CD17&type=17.4&section=example&item=6&releasePreview=v6"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12&topic=CD28&type=28.1&section=example&item=1&releasePreview=v6"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12&topic=CD06&type=6.1&section=example&item=8&releasePreview=v6"
+    },
+    {
+      "width": 390,
+      "entry": "/documents.html?grade=12&topic=CD33&type=33.8&section=knowledge&item=1&releasePreview=v6"
+    }
+  ],
+  "toolingPathsDenied": true,
+  "practiceReload": true,
+  "progressPreserved": true
+}

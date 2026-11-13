@@ -1,4 +1,6 @@
 # These filenames and runtime checks are SHA-256 bound to exact bytes.
 assets/content/local-learning/*.json -text
 assets/content/native-graphs/*.json -text
+assets/content/pdf-knowledge/*.json -text
+assets/content/geometry/*.json -text
 "file tài liệu latex/*.tex" -text
