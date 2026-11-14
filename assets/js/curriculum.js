@@ -185,6 +185,25 @@ function routeUrl({ topicId = "", typeCode = "", section = "", item = "", exam =
   return `documents.html${query ? `?${query}` : ""}`;
 }
 
+// A direct, grade-aware destination, independent of the learner's history.
+function roadmapLinkMarkup() {
+  return `<a class="learner-roadmap-link" href="${routeUrl()}" data-route data-learner-roadmap>← Lộ trình</a>`;
+}
+
+function prepareLessonScrollRegions() {
+  // Presentation/accessibility only: don't parse math, rerender KaTeX or scan
+  // the whole page. Hidden solutions become focusable when opened natively.
+  const stage = app.querySelector('[data-lesson-content]');
+  if (!stage) return;
+  for (const region of stage.querySelectorAll('.canonical-math, .math-expression--display, .math-markdown__display, .math-markdown__table-wrap')) {
+    if (region.closest('[data-math-scroll]')) continue;
+    region.dataset.mathScroll = '';
+    region.tabIndex = 0;
+    region.setAttribute('role', 'region');
+    region.setAttribute('aria-label', 'Nội dung toán học, cuộn ngang khi cần');
+  }
+}
+
 function readRoute(url = location.href) {
   const parameters = new URL(url, location.href).searchParams;
   const requestedSection = parameters.get("section");
@@ -274,7 +293,7 @@ function renderTopicDetail(topic) {
   const topicProgress = supported ? getTopicProgress(progressState, topic, knowledgeCounts) : null;
   document.body.classList.remove("learning-mode");
   app.innerHTML = `<section class="topic-detail" aria-labelledby="topic-detail-title">
-    <a class="back-link" href="documents.html" data-route>← Lộ trình</a>
+    ${roadmapLinkMarkup()}
     <header class="topic-detail__header"><span>${topic.id}</span><div><h1 id="topic-detail-title">${escapeHtml(topic.title)}</h1><p>${topic.exerciseTypes.length} dạng bài</p></div></header>
     ${topicProgress ? `<div class="topic-progress"><span>Đã hoàn thành</span><strong>${topicProgress.completedLessons}/${topicProgress.availableLessons} bài</strong></div>` : ""}
     ${source && !supported ? `<section class="topic-source-card" aria-labelledby="topic-source-title"><div><p>Nội dung đang được cập nhật</p><h2 id="topic-source-title">Bài học của ${topic.id} chưa sẵn sàng</h2><span>BienEdu chỉ xuất bản bài đọc đã được chuyển đổi và kiểm chứng.</span></div></section>` : ""}
@@ -349,7 +368,7 @@ function renderTopicKnowledge(topic, route) {
   const exercise = { code: topic.id, title: topic.title };
   document.body.classList.add("learning-mode");
   app.innerHTML = `<article class="learning-workspace topic-knowledge-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-section="knowledge" data-item="${view.position.current}">
-    <header class="workspace-top"><div class="workspace-heading"><button type="button" data-history-back data-fallback="${escapeHtml(routeUrl({ topicId: topic.id }))}" aria-label="Quay lại trang trước; nếu không có lịch sử thì về ${topic.id}">←</button><div><h1 id="lesson-title">Kiến thức cần nhớ</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div></header>
+    <header class="workspace-top">${roadmapLinkMarkup()}<div class="workspace-heading"><button type="button" data-history-back data-fallback="${escapeHtml(routeUrl({ topicId: topic.id }))}" aria-label="Quay lại trang trước; nếu không có lịch sử thì về ${topic.id}">←</button><div><h1 id="lesson-title">Kiến thức cần nhớ</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div></header>
     <div class="workspace-frame"><main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${renderKnowledgeMarkdown({ slide: view.active, position: view.position, exercise })}</main></div>
     <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng kiến thức bằng nút hoặc phím mũi tên trái và phải">${topicKnowledgeNavigationMarkup(topic, view)}</footer>
     <p class="sr-only" aria-live="polite" aria-atomic="true">Trang kiến thức ${view.position.current} trên ${view.position.total}.</p>
@@ -361,6 +380,7 @@ function renderUnavailable(topic, exercise) {
   const availability = getSubtopicAvailability(exercise.code);
   const presentation = statusPresentation(availability?.status);
   app.innerHTML = `<section class="topic-detail lesson-unavailable" aria-labelledby="unavailable-title">
+    ${roadmapLinkMarkup()}
     <a class="back-link" href="${routeUrl({ topicId: topic.id })}" data-route>← ${topic.id}</a>
     <p class="lesson-kicker">${escapeHtml(exercise.code)} · Toán 12</p>
     <h1 id="unavailable-title">${escapeHtml(exercise.title)}</h1>
@@ -664,7 +684,7 @@ function renderWorkspace(topic, exercise, route, options = {}) {
   if (updateLessonWorkspace(view, options)) return;
 
   app.innerHTML = `<article class="learning-workspace" aria-labelledby="lesson-title" data-topic="${topic.id}" data-type="${exercise.code}" data-section="${view.active.section}" data-item="${view.position.current}">
-    <header class="workspace-top"><div class="workspace-heading workspace-heading--lesson"><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · Dạng ${escapeHtml(exercise.code)}</p></div></div></header>
+    <header class="workspace-top">${roadmapLinkMarkup()}<div class="workspace-heading workspace-heading--lesson"><div><h1 id="lesson-title">${escapeHtml(exercise.title)}</h1><p>${topic.id} · Dạng ${escapeHtml(exercise.code)}</p></div></div></header>
     <nav class="workspace-phase-nav" data-phase-navigation aria-label="Các phần của bài học">${phaseNavigationMarkup(view)}</nav>
     <div class="workspace-frame"><nav class="lesson-sidebar" data-lesson-sidebar aria-label="Nội dung bài học">${lessonSidebarMarkup(view)}</nav>
       <main class="lesson-content lesson-stage" tabindex="-1" data-lesson-content data-lesson-stage>${lessonStageMarkup(view)}</main>
@@ -696,7 +716,7 @@ function renderFinalExam(topic, route) {
   const result = exam.submitted ? (exam.result || gradeFinalExam(questions, exam.answers)) : null;
   document.body.classList.add("learning-mode");
   app.innerHTML = `<article class="learning-workspace exam-workspace" data-topic="${topic.id}">
-    <header class="workspace-top"><div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route>←</a><div><h1>Kiểm tra cuối chuyên đề</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div><div class="lesson-progress"><span><b>${exam.submitted ? "Kết quả" : "Đã trả lời"}</b><strong>${exam.submitted ? `${result.score}/${result.total}` : `${answered}/20`}</strong></span><progress value="${exam.submitted ? result.score : answered}" max="20"></progress><small>${exam.submitted ? `${result.percent}% chính xác` : "Cần trả lời đủ 20 câu"}</small></div></header>
+    <header class="workspace-top">${roadmapLinkMarkup()}<div class="workspace-heading"><a href="${routeUrl({ topicId: topic.id })}" data-route aria-label="Về chuyên đề ${topic.id}">←</a><div><h1>Kiểm tra cuối chuyên đề</h1><p>${topic.id} · ${escapeHtml(topic.title)}</p></div></div><div class="lesson-progress"><span><b>${exam.submitted ? "Kết quả" : "Đã trả lời"}</b><strong>${exam.submitted ? `${result.score}/${result.total}` : `${answered}/20`}</strong></span><progress value="${exam.submitted ? result.score : answered}" max="20"></progress><small>${exam.submitted ? `${result.percent}% chính xác` : "Cần trả lời đủ 20 câu"}</small></div></header>
     <div class="exam-frame"><aside class="exam-navigator"><p>${exam.submitted ? "Xem lại bài" : "Danh sách câu"}</p><div>${questions.map((_item, questionIndex) => `<a href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: questionIndex + 1 })}" data-route class="${questionIndex === index ? "is-current" : ""} ${Object.hasOwn(exam.answers, questionIndex) ? "is-answered" : ""}">${questionIndex + 1}</a>`).join("")}</div>${exam.submitted ? `<button type="button" class="text-button" data-action="reset-exam">Làm lại bài</button>` : ""}</aside>
       <main class="lesson-content exam-content" tabindex="-1" data-lesson-content>${exam.submitted && index === 0 ? `<div class="exam-result"><span>${result.percent}%</span><div><p>Kết quả</p><h2>${result.score}/${result.total} câu đúng</h2><small>Xem từng câu để đọc lời giải và ôn lại bài cần cải thiện.</small></div></div>` : ""}${examQuestionMarkup(question, selected, exam.submitted)}</main></div>
     <footer class="lesson-navigation" data-lesson-navigation aria-label="Điều hướng câu hỏi bằng nút hoặc phím mũi tên trái và phải"><a class="nav-button ${index === 0 ? "is-disabled" : ""}" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: Math.max(1, index) })}" data-route aria-keyshortcuts="ArrowLeft" ${index === 0 ? 'aria-disabled="true" tabindex="-1"' : ""}>← Trước</a><p><strong>${index + 1} / 20</strong><span>${exam.submitted ? "Xem lời giải" : "Bài kiểm tra"}</span></p>${index < 19 ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id, exam: FINAL_EXAM_ID, question: index + 2 })}" data-route aria-keyshortcuts="ArrowRight">Tiếp theo →</a>` : exam.submitted ? `<a class="nav-button nav-button--primary" href="${routeUrl({ topicId: topic.id })}" data-route>Về chuyên đề</a>` : `<button type="button" data-action="request-submit" ${answered < 20 ? "disabled" : ""}>Nộp bài</button>`}</footer>
@@ -754,6 +774,7 @@ function renderRoute({ scrollToTop = false, announce = false } = {}) {
     renderCatalog();
   }
 
+  prepareLessonScrollRegions();
   lastRenderedRoute = route;
   if (scrollToTop) resetRouteScroll();
 }
@@ -974,7 +995,7 @@ function getAdjacentLessonUrl(direction) {
 }
 
 function isTypingTarget(target) {
-  return target instanceof Element && Boolean(target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="combobox"], [role="listbox"], [role="menu"], [role="slider"], [role="spinbutton"], [role="tablist"], [role="grid"], [data-math-scroll], [data-practice-answer], [data-practice-reveal], [data-exam-answer]'));
+  return target instanceof Element && Boolean(target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="combobox"], [role="listbox"], [role="menu"], [role="slider"], [role="spinbutton"], [role="tablist"], [role="grid"], [data-math-scroll], .native-variation, [data-native-graph], [data-source-geometry], [data-practice-answer], [data-practice-reveal], [data-exam-answer]'));
 }
 
 function handleLessonKeyboardNavigation(event) {

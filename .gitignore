@@ -20,3 +20,4 @@ __pycache__/
 /.audit/conversion-recovery/
 /.audit/quality-recovery/
 /.audit/stabilization-v2/
+.audit/learner-ui/

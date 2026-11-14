@@ -1,26 +1,13 @@
 /* Source readings retain BienEdu typography and the existing workspace shell. */
-/* Knowledge is a document, not a viewport-sized slide. Keep its ONE vertical
-   scroll owner on the page; examples/practice retain their existing shell. */
-html:has(.learning-workspace[data-section="knowledge"]),
-body.learning-mode:has(.learning-workspace[data-section="knowledge"]){height:auto;overflow:visible}
-html:has(body.learning-mode.menu-open .learning-workspace[data-section="knowledge"]),
-body.learning-mode.menu-open:has(.learning-workspace[data-section="knowledge"]){overflow:hidden}
-.learning-mode:has(.learning-workspace[data-section="knowledge"]) :is(.curriculum-app-shell,[data-curriculum-app],.learning-workspace,.workspace-frame,.lesson-content,.knowledge-reader,.math-lesson){height:auto;min-height:0;overflow:visible}
-.learning-mode:has(.learning-workspace[data-section="knowledge"]) .learning-workspace{grid-template-rows:none;grid-auto-rows:auto;align-content:start}
-.learning-workspace[data-section="knowledge"] .workspace-frame{align-items:start}
-.learning-workspace[data-section="knowledge"] .lesson-content{scroll-padding:0}
-.learning-workspace[data-section="knowledge"] .workspace-phase-nav,
-.learning-workspace[data-section="knowledge"] .math-lesson__bar{position:static}
-.learning-workspace[data-section="knowledge"] .lesson-navigation{position:static;box-shadow:none;grid-template-columns:minmax(0,13.5rem) minmax(3.5rem,auto) minmax(0,13.5rem);padding-block:.75rem calc(.75rem + env(safe-area-inset-bottom))}
-.learning-workspace[data-section="knowledge"] .math-lesson{grid-template-rows:auto auto}
-.pdf-theory{width:min(100%,68rem);min-width:0;margin-inline:auto;padding:clamp(1rem,2.2vw,2rem);color:var(--ink,#16263e)}
+/* Shared document scroll ownership lives in learning-v6.css for ALL sections. */
+.pdf-theory{width:100%;min-width:0;margin-inline:auto;padding:var(--lesson-gutter,1rem);color:var(--ink,#16263e)}
 .pdf-theory__heading{margin-bottom:1.3rem}
 .pdf-theory__heading>p{margin:0 0 .4rem;color:#315de5;font-size:.78rem;font-weight:700;letter-spacing:.05em}
 .pdf-theory__heading h2{margin:0;font-size:clamp(1.4rem,2vw,2rem);line-height:1.3}
 .pdf-theory__edition{min-width:0;padding:clamp(1rem,2vw,1.8rem);background:#fff;border:1px solid #dce4ef;border-radius:12px}
 .pdf-theory__source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem 1rem;padding-bottom:.9rem;margin-bottom:1rem;border-bottom:1px solid #e5eaf1;font-size:.75rem;color:#596b82}
 .pdf-theory__source>span{overflow-wrap:anywhere}
-.pdf-theory__paragraph{min-width:0;max-width:74ch;margin:0 0 1em;font-size:clamp(.95rem,1.2vw,1.08rem);line-height:1.85;white-space:normal;overflow-wrap:break-word}
+.pdf-theory__paragraph{min-width:0;margin:0 0 1em;font-size:clamp(.95rem,1.2vw,1.08rem);line-height:1.85;white-space:normal;overflow-wrap:break-word}
 .pdf-theory__paragraph:last-child{margin-bottom:0}
 .pdf-theory__paragraph .canonical-math{max-width:100%;vertical-align:middle}
 .pdf-theory__paragraph .katex{font-size:1.08em}
@@ -41,6 +28,4 @@ body.learning-mode.menu-open:has(.learning-workspace[data-section="knowledge"]){
 .pdf-theory__alternative>summary>span{font-size:.75rem;color:#596b82;font-weight:400;overflow-wrap:anywhere}
 .pdf-theory__alternative>.pdf-theory__edition{border:0;border-top:1px solid #e5eaf1;border-radius:0 0 10px 10px}
 .pdf-theory__notice,.pdf-theory__figure-note{padding:.8rem 1rem;background:#fff8d9;border-left:3px solid #c69a37;font-size:.83rem;line-height:1.65}
-@media(min-width:1121px){.learning-workspace[data-section="knowledge"] .lesson-sidebar{position:sticky;top:5.5rem;height:auto;min-height:16rem}}
-@media(max-width:900px){.learning-workspace[data-section="knowledge"] .lesson-navigation{grid-template-columns:minmax(0,1fr) 3.5rem minmax(0,1fr)}}
 @media(max-width:600px){.pdf-theory{padding:1rem .75rem}.pdf-theory__edition{padding:1rem .8rem}.pdf-theory th,.pdf-theory td{padding:.5rem .65rem}.pdf-theory__paragraph{line-height:1.8}.pdf-theory__formula-row{padding-inline:.5rem}}

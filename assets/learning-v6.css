@@ -87,3 +87,53 @@ html{scrollbar-gutter:stable}
 .learning-workspace .example-card{grid-template-columns:minmax(0,1fr)}
 .source-edition-note,.source-edition-note details,.source-edition-note details>div{min-width:0;max-width:100%}
 .source-edition-note[data-native-source] details>div{white-space:pre-line;line-height:1.7}
+
+/* Shared learner document layout. One vertical scroll owner for Knowledge,
+   methods, examples/solutions, practice and exams; only wide math scrolls locally. */
+html:has(body.learning-mode),body.learning-mode{height:auto;overflow:visible}
+html:has(body.learning-mode.menu-open),body.learning-mode.menu-open{overflow:hidden}
+body.learning-mode{--lesson-gutter:clamp(.75rem,1.5vw,1.5rem)}
+body.learning-mode :is(.curriculum-app-shell,[data-curriculum-app],.learning-workspace,.workspace-frame,.lesson-content,.math-lesson,.knowledge-reader,.example-reader,.problem-type-reader,.practice-stage,.exam-content){height:auto;min-height:0;min-width:0;overflow:visible}
+body.learning-mode .learning-workspace{width:min(100%,100rem);grid-template-rows:none;grid-auto-rows:auto;align-content:start}
+body.learning-mode .workspace-frame{align-items:start}
+body.learning-mode .lesson-content{scroll-padding:0}
+body.learning-mode :is(.workspace-phase-nav,.math-lesson__bar,.lesson-navigation){position:static}
+body.learning-mode .lesson-navigation{grid-template-columns:minmax(0,13.5rem) minmax(3.5rem,auto) minmax(0,13.5rem);box-shadow:none;padding-block:.75rem calc(.75rem + env(safe-area-inset-bottom))}
+body.learning-mode .workspace-top{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;padding:.75rem var(--lesson-gutter)}
+body.learning-mode .workspace-heading{flex:1 1 14rem}
+body.learning-mode .workspace-heading :is(h1,p){white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip}
+body.learning-mode .lesson-progress{flex:0 1 20rem;min-width:0}
+.learner-roadmap-link{display:inline-flex;min-height:2.75rem;align-items:center;gap:.4rem;padding:.5rem .8rem;border:1px solid #c6d8f6;border-radius:.5rem;background:#edf4ff;color:var(--accent-strong,#2456c5);font-size:.875rem;font-weight:650;line-height:1.3;white-space:nowrap;text-decoration:none}
+.learner-roadmap-link:hover{background:#dfeaff;border-color:#93b6ed}
+.learner-roadmap-link:focus-visible{outline:3px solid #5c91eb;outline-offset:3px}
+body.learning-mode :is(.math-lesson__content,.knowledge-reader__content,.example-reader__content,.problem-type-reader,.practice-stage,.exam-content){width:100%;max-width:none;margin-inline:0;padding:var(--lesson-gutter)}
+body.learning-mode .problem-type-reader>*{width:100%;max-width:none}
+body.learning-mode :is(.practice-card,.source-practice-stage){width:100%;max-width:none;min-width:0}
+body.learning-mode .practice-stage{align-content:start}
+body.learning-mode .math-lesson{grid-template-rows:auto auto}
+body.learning-mode :is(.math-markdown__body,.knowledge-reader__lead,.example-reader__question>p){max-width:none}
+/* Keep equation scroll ownership on the existing canonical wrapper. */
+body.learning-mode .canonical-math--display>.math-markdown__display{width:100%;max-width:100%;margin-inline:0;overflow:visible}
+body.learning-mode :is([data-math-scroll],.native-variation):focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+body.learning-mode :is(.source-edition-note,.problem-type-reader__method,.practice-feedback,.exam-question){min-width:0;overflow-wrap:break-word}
+/* Analysis bullets are prose, not the numbered two-column solution steps. */
+body.learning-mode .example-reader__solution .example-reader__analysis li{display:block;grid-template-columns:none;font-size:.9375rem;line-height:1.6}
+body.learning-mode .example-reader__solution li :is(p,small){font-size:.875rem;line-height:1.6}
+body.learning-mode .example-reader__solution li strong{font-size:1.05rem;line-height:1.5}
+body.learning-mode :is(.native-geometry,.native-graph,.native-variation){min-width:0;max-width:100%}
+@media(min-width:1121px){
+  body.learning-mode .workspace-frame{grid-template-columns:14rem minmax(0,1fr)}
+  body.learning-mode .topic-knowledge-workspace .workspace-frame{grid-template-columns:minmax(0,1fr)}
+  body.learning-mode .lesson-sidebar{position:sticky;top:5.5rem;height:auto;min-height:16rem}
+}
+@media(max-width:1120px){
+  body.learning-mode .workspace-frame{grid-template-columns:minmax(0,1fr)}
+  body.learning-mode .lesson-sidebar{display:none}
+  body.learning-mode .lesson-navigation{grid-template-columns:minmax(0,1fr) 3.5rem minmax(0,1fr)}
+}
+@media(max-width:600px){
+  body.learning-mode .workspace-top{gap:.55rem}
+  body.learning-mode .workspace-heading{flex-basis:100%}
+  body.learning-mode .lesson-progress{flex-basis:100%}
+  body.learning-mode .lesson-navigation{gap:.5rem;padding-inline:.75rem}
+}
