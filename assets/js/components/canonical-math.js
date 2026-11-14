@@ -122,7 +122,11 @@ export function parseRichText(value, options = {}) {
     const begin = env?.[0] ?? opening;
     const close = env ? `\\end{${env[1]}}` : { '\\(': '\\)', '\\[': '\\]', '$$': '$$', '$': '$' }[opening];
     let end = i + begin.length;
-    while (end < text.length && !(text.startsWith(close, end) && !escaped(text, end))) end++;
+    while (end < text.length && !(text.startsWith(close, end) && !escaped(text, end))) {
+      if (text[end] === '%' && !escaped(text,end)) {
+        while (end < text.length && text[end] !== '\n') end++;
+      } else end++;
+    }
     if (end === text.length) { segments.push({ type: 'unresolved', original: text.slice(i), reason: 'Unclosed mathematical delimiter' }); start = text.length; break; }
     let body = text.slice(i + begin.length, end);
     if (env && /^align/u.test(env[1])) body = `\\begin{aligned}${body}\\end{aligned}`;

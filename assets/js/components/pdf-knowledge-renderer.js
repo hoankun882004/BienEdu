@@ -5,8 +5,18 @@ export * from './canonical-math-renderer.js';
 const escape = value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 
 function blockMarkup(block) {
-  if(block.kind==='paragraph') return `<div class="pdf-theory__paragraph" data-source-block="${escape(block.id)}">${common.mathContentMarkup(block.content)}</div>`;
-  if(block.kind==='table') return `<div class="pdf-theory__table-scroll" tabindex="0" role="region" aria-label="Bảng kiến thức từ tài liệu"><table><tbody>${block.rows.map((row,index)=>`<tr>${row.map(cell=>`<${index?'td':'th'}${index?'':' scope="col"'}>${common.mathContentMarkup(cell)}</${index?'td':'th'}>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  if(block.kind==='paragraph') {
+    const segments=block.content?.type==='rich-text'?block.content.segments:[block.content];
+    // Only existing explicit math nodes with whitespace between them qualify.
+    // These boundaries already exist in canonical source rows. Never split a
+    // formula on commas, simplify it, or move a condition into another row.
+    const formulas=segments.some(n=>n?.type==='math')&&segments.every(n=>n?.type==='math'||n?.type==='text'&&!n.value.trim());
+    const body=formulas?segments.map((node,index)=>node.type==='math'
+      ?`<div class="pdf-theory__formula-row" data-source-equation-index="${index}">${common.mathContentMarkup({...node,display:true},{scrollable:true})}</div>`
+      :escape(node.value)).join(''):common.mathContentMarkup(block.content,{scrollable:true});
+    return `<div class="pdf-theory__paragraph${formulas?' pdf-theory__formulas':''}" data-source-block="${escape(block.id)}"${formulas?' role="group" aria-label="Công thức từ tài liệu"':''}>${body}</div>`;
+  }
+  if(block.kind==='table') return `<div class="pdf-theory__table-scroll" data-source-block="${escape(block.id)}" data-math-scroll tabindex="0" role="region" aria-label="Bảng kiến thức từ tài liệu"><table><tbody>${block.rows.map((row,index)=>`<tr>${row.map(cell=>`<${index?'td':'th'}${index?'':' scope="col"'}>${common.mathContentMarkup(cell)}</${index?'td':'th'}>`).join('')}</tr>`).join('')}</tbody></table></div>`;
   return '';
 }
 

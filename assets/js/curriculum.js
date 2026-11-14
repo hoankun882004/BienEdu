@@ -974,7 +974,7 @@ function getAdjacentLessonUrl(direction) {
 }
 
 function isTypingTarget(target) {
-  return target instanceof Element && Boolean(target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="combobox"], [role="listbox"], [role="menu"], [role="slider"], [role="spinbutton"], [role="tablist"], [role="grid"], [data-practice-answer], [data-practice-reveal], [data-exam-answer]'));
+  return target instanceof Element && Boolean(target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="combobox"], [role="listbox"], [role="menu"], [role="slider"], [role="spinbutton"], [role="tablist"], [role="grid"], [data-math-scroll], [data-practice-answer], [data-practice-reveal], [data-exam-answer]'));
 }
 
 function handleLessonKeyboardNavigation(event) {

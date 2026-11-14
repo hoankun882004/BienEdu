@@ -1,0 +1,5706 @@
+{
+  "schemaVersion": "bienedu.geometry-bundle.v1",
+  "knowledgeParent": {
+    "bundle": "assets/content/pdf-knowledge/B07C393393BE093FA11B9DA118C5F291FB7DD65C259B6061DBE393E025CCAA62.json",
+    "sha256": "B07C393393BE093FA11B9DA118C5F291FB7DD65C259B6061DBE393E025CCAA62"
+  },
+  "summary": {
+    "examined": 30,
+    "ready": 30,
+    "blocked": 0,
+    "jsxgraphVersion": "1.14.2",
+    "threeJsRequired": 0,
+    "sourceDetermined": 2,
+    "constrainedSchematics": 28,
+    "dimensions": {
+      "2": 10,
+      "3": 20
+    },
+    "categories": {
+      "GEOMETRY_2D": 6,
+      "FUNCTION_GRAPH": 2,
+      "VECTOR_DIAGRAM": 3,
+      "SPATIAL_FIGURE": 4,
+      "COORDINATE_SYSTEM": 2,
+      "GEOMETRY_3D": 13
+    },
+    "symbolicChecks": 79,
+    "sourceGlyphsMatched": 1678,
+    "runtimePropertyChecks": 61,
+    "activation": "PREPARED_ONLY",
+    "knowledgeParent": {
+      "bundle": "assets/content/pdf-knowledge/803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826.json",
+      "sha256": "803050D0CEAC942E1C172C48FCCD7FFBB5D21C05407D5001C7110E7FE46B2826"
+    }
+  },
+  "candidates": [
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd12-cd14-calculus-13-6",
+        "recordId": "cd12-cd14-calculus:13.6:knowledge",
+        "source": {
+          "sourceId": "cd12-cd14-calculus",
+          "sha256": "4E65F476DA0A1B817A05B6E829737100B753A2E5219236F719ACAB016F221E59",
+          "page": 28,
+          "rect": [
+            207.3769989013672,
+            54.022804260253906,
+            402.8620910644531,
+            141.94005126953124
+          ],
+          "blockId": "cd12-cd14-calculus:13.6:knowledge:block:4",
+          "glyphHash": "72D92924F20B3B0E58F7326CDF7AF4F439B4BBAA20F46F3C6C356103F5016EA4"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "Hai miền tam giác của đồ thị: miền trên Ox có đáy [0,2], cao 3; miền dưới có đáy [2,5], cao 2. Không nối thành một hàm liên tục tại x=2.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "T",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              3
+            ],
+            "visible": false
+          },
+          {
+            "id": "J",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "N",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              5,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              5,
+              -2
+            ],
+            "visible": false
+          },
+          {
+            "id": "upper",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "O",
+              "J",
+              "T"
+            ]
+          },
+          {
+            "id": "lower",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "vertices": [
+              "J",
+              "N",
+              "B"
+            ]
+          },
+          {
+            "id": "rise",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "O",
+            "to": "T",
+            "dashed": false
+          },
+          {
+            "id": "fall",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "J",
+            "to": "B",
+            "dashed": false
+          },
+          {
+            "id": "positiveAreaAnchor",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              1.25,
+              0.7
+            ],
+            "visible": false
+          },
+          {
+            "id": "positiveArea",
+            "type": "annotation",
+            "view": "main",
+            "label": "S+ = 3",
+            "color": "blue",
+            "at": "positiveAreaAnchor"
+          },
+          {
+            "id": "negativeAreaAnchor",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              3.5,
+              -0.5
+            ],
+            "visible": false
+          },
+          {
+            "id": "negativeArea",
+            "type": "annotation",
+            "view": "main",
+            "label": "S− = 3",
+            "color": "blue",
+            "at": "negativeAreaAnchor"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "area",
+            "polygon": "upper",
+            "value": 3
+          },
+          {
+            "type": "area",
+            "polygon": "lower",
+            "value": 3
+          }
+        ],
+        "formulae": [
+          "S_+=\\frac12\\times2\\times3=3",
+          "S_-=\\frac12\\times3\\times2=3"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -0.6,
+                5.8
+              ],
+              [
+                -2.8,
+                3.8
+              ]
+            ],
+            "axes": true,
+            "title": "Diện tích đại số — hai miền riêng biệt"
+          }
+        ],
+        "realization": {
+          "kind": "source-determined",
+          "freeChoices": [],
+          "notice": "Dựng theo biểu thức hoặc dữ kiện hình học ghi rõ trong PDF."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "830150E5E06ED2CD372E111EC25DC87A5F521317FCFD58ED4AEA5B1B49E8DBC1"
+        }
+      },
+      "target": {
+        "recordId": "cd12-cd14-calculus:13.6:knowledge",
+        "blockId": "cd12-cd14-calculus:13.6:knowledge:block:4",
+        "key": "13.6",
+        "topicId": "CD13",
+        "precedingBlockId": "cd12-cd14-calculus:13.6:knowledge:block:3",
+        "followingBlockId": "cd12-cd14-calculus:13.6:knowledge:block:5",
+        "route": "documents.html?grade=12&topic=CD13&type=13.6&section=knowledge&item=1&geometryRecord=cd12-cd14-calculus%3A13.6%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd12-cd14-calculus:13.6:knowledge:block:4",
+        "glyphsMatched": 5,
+        "interpretation": "Explicit functions or stated triangle base/height data, with original source labels."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd08-cd11-exponential-logarithm-CD08-CD11",
+        "recordId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge",
+        "source": {
+          "sourceId": "cd08-cd11-exponential-logarithm",
+          "sha256": "27508DB2AA3E2C691E723D70BD2A05BCD1C0F892D42D4CA13F96E855FCA7A6E7",
+          "page": 6,
+          "rect": [
+            66.61058044433594,
+            316.397611618042,
+            526.6524047851562,
+            463.57965126037595
+          ],
+          "blockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:24",
+          "glyphHash": "9BC0127A6AB4F5038CFF8B2C61467BF5620849DD0E1AD584CF8DDCAAC70F6981"
+        },
+        "dimension": 2,
+        "classification": "FUNCTION_GRAPH",
+        "description": "Đồ thị của y=2^x, y=(1/2)^x và y=log₂x, y=log₁/₂x. Lôgarit chỉ được vẽ trên x>0.",
+        "objects": [
+          {
+            "id": "expRise",
+            "type": "function",
+            "view": "exponential",
+            "label": "y = 2ˣ",
+            "color": "blue",
+            "expression": "2^x",
+            "domain": {
+              "min": "-inf",
+              "max": "inf",
+              "minIncluded": false,
+              "maxIncluded": false
+            }
+          },
+          {
+            "id": "expFall",
+            "type": "function",
+            "view": "exponential",
+            "label": "y = (1/2)ˣ",
+            "color": "teal",
+            "expression": "(1/2)^x",
+            "domain": {
+              "min": "-inf",
+              "max": "inf",
+              "minIncluded": false,
+              "maxIncluded": false
+            }
+          },
+          {
+            "id": "logRise",
+            "type": "function",
+            "view": "logarithmic",
+            "label": "y = log₂x",
+            "color": "blue",
+            "expression": "ln(x)/ln(2)",
+            "domain": {
+              "min": 0,
+              "max": "inf",
+              "minIncluded": false,
+              "maxIncluded": false
+            }
+          },
+          {
+            "id": "logFall",
+            "type": "function",
+            "view": "logarithmic",
+            "label": "y = log₁/₂x",
+            "color": "teal",
+            "expression": "ln(x)/ln(1/2)",
+            "domain": {
+              "min": 0,
+              "max": "inf",
+              "minIncluded": false,
+              "maxIncluded": false
+            }
+          },
+          {
+            "id": "origin",
+            "type": "point",
+            "view": "exponential",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "one",
+            "type": "point",
+            "view": "exponential",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              1,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "unit",
+            "type": "segment",
+            "view": "exponential",
+            "label": "",
+            "color": "blue",
+            "from": "origin",
+            "to": "one",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "length",
+            "a": "origin",
+            "b": "one",
+            "value": 1
+          }
+        ],
+        "formulae": [
+          "y=2^x,\\quad y=(1/2)^x",
+          "y=\\log_2x,\\quad y=\\log_{1/2}x,\\quad x>0"
+        ],
+        "views": [
+          {
+            "id": "exponential",
+            "bounds": [
+              [
+                -3.5,
+                3.5
+              ],
+              [
+                -0.5,
+                6
+              ]
+            ],
+            "axes": true,
+            "title": "Hàm số mũ"
+          },
+          {
+            "id": "logarithmic",
+            "bounds": [
+              [
+                -0.4,
+                5.5
+              ],
+              [
+                -4,
+                4
+              ]
+            ],
+            "axes": true,
+            "title": "Hàm số lôgarit"
+          }
+        ],
+        "realization": {
+          "kind": "source-determined",
+          "freeChoices": [],
+          "notice": "Dựng theo biểu thức hoặc dữ kiện hình học ghi rõ trong PDF."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "9A4DE80FAC2BB6431A99FAFE047FD2C62649FCB40AC77C0A491486FF2823CDDD"
+        }
+      },
+      "target": {
+        "recordId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge",
+        "blockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:24",
+        "key": "CD08-CD11",
+        "topicId": "CD11",
+        "precedingBlockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:23",
+        "followingBlockId": "cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:25",
+        "route": "documents.html?grade=12&topic=CD08&section=knowledge&item=1&geometryRecord=cd08-cd11-exponential-logarithm%3ACD08-CD11%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd08-cd11-exponential-logarithm:CD08-CD11:knowledge:block:24",
+        "glyphsMatched": 70,
+        "interpretation": "Explicit functions or stated triangle base/height data, with original source labels."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-28-1",
+        "recordId": "cd28-cd33-vector-2026:28.1:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 2,
+          "rect": [
+            199.24627685546875,
+            183.89413261413574,
+            392.4605407714844,
+            286.9390212059021
+          ],
+          "blockId": "cd28-cd33-vector-2026:28.1:knowledge:block:2",
+          "glyphHash": "A0BE4E968DD081DF0A2837FC8EF8B3883E38B55F0A5C3EDD12B8971489D1D2BE"
+        },
+        "dimension": 2,
+        "classification": "VECTOR_DIAGRAM",
+        "description": "Quy tắc hình bình hành: hai vectơ u, v cùng gốc O và vectơ tổng u+v.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "O",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "U",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              3,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "V",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              1,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "W",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              4,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "u",
+            "type": "vector",
+            "view": "main",
+            "label": "u",
+            "color": "blue",
+            "from": "O",
+            "to": "U"
+          },
+          {
+            "id": "v",
+            "type": "vector",
+            "view": "main",
+            "label": "v",
+            "color": "blue",
+            "from": "O",
+            "to": "V"
+          },
+          {
+            "id": "sum",
+            "type": "vector",
+            "view": "main",
+            "label": "u + v",
+            "color": "blue",
+            "from": "O",
+            "to": "W"
+          },
+          {
+            "id": "sideU",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "V",
+            "to": "W",
+            "dashed": true
+          },
+          {
+            "id": "sideV",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "U",
+            "to": "W",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "vectorSum",
+            "first": "u",
+            "second": "v",
+            "result": "sum"
+          }
+        ],
+        "formulae": [
+          "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.1,
+                5.1
+              ],
+              [
+                -1.1,
+                3.1
+              ]
+            ],
+            "axes": false,
+            "title": "Quy tắc hình bình hành: hai vectơ u, v cùng gốc O và vectơ tổng u+v"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "FC9CE2E29B7F5F8CF71636061876AFE5E91D6CC172B582D99AB15F13E9940D06"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:28.1:knowledge",
+        "blockId": "cd28-cd33-vector-2026:28.1:knowledge:block:2",
+        "key": "28.1",
+        "topicId": "CD28",
+        "precedingBlockId": "cd28-cd33-vector-2026:28.1:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD28&type=28.1&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A28.1%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:28.1:knowledge:block:2",
+        "glyphsMatched": 51,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-28-7",
+        "recordId": "cd28-cd33-vector-2026:28.7:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 5,
+          "rect": [
+            202.8040008544922,
+            140.1058692932129,
+            395.64697265625,
+            297.761012172699
+          ],
+          "blockId": "cd28-cd33-vector-2026:28.7:knowledge:block:2",
+          "glyphHash": "E75ED52456582666AC3FC097DD0B57AE0E4E6375773E67044244682AE22C95D8"
+        },
+        "dimension": 2,
+        "classification": "VECTOR_DIAGRAM",
+        "description": "Góc θ giữa hai vectơ có cùng gốc; H là hình chiếu đầu mút của v lên hướng u. Góc vectơ không lấy trị tuyệt đối tích vô hướng.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "U",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              3,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "V",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              1,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "u",
+            "type": "vector",
+            "view": "main",
+            "label": "u",
+            "color": "blue",
+            "from": "O",
+            "to": "U"
+          },
+          {
+            "id": "v",
+            "type": "vector",
+            "view": "main",
+            "label": "v",
+            "color": "blue",
+            "from": "O",
+            "to": "V"
+          },
+          {
+            "id": "projection",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "V",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "id": "angleThetaAnchor",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0.5,
+              0.35
+            ],
+            "visible": false
+          },
+          {
+            "id": "angleTheta",
+            "type": "annotation",
+            "view": "main",
+            "label": "θ",
+            "color": "blue",
+            "at": "angleThetaAnchor"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "perpendicular",
+            "a": "projection",
+            "b": "u"
+          }
+        ],
+        "formulae": [
+          "\\cos\\theta=\\frac{u\\cdot v}{|u||v|},\\quad0\\le\\theta\\le\\pi"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.1,
+                4.1
+              ],
+              [
+                -1.1,
+                3.1
+              ]
+            ],
+            "axes": false,
+            "title": "Góc θ giữa hai vectơ có cùng gốc; H là hình chiếu đầu mút của v lên hướng u"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "6E1FDA0723692BE37AF34CD50786C0883F06036977C8A2D18C41EC1A938DDF33"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:28.7:knowledge",
+        "blockId": "cd28-cd33-vector-2026:28.7:knowledge:block:2",
+        "key": "28.7",
+        "topicId": "CD28",
+        "precedingBlockId": "cd28-cd33-vector-2026:28.7:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD28&type=28.7&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A28.7%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:28.7:knowledge:block:2",
+        "glyphsMatched": 47,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-28-8",
+        "recordId": "cd28-cd33-vector-2026:28.8:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 6,
+          "rect": [
+            199.98797607421875,
+            143.78808307647705,
+            394.17095947265625,
+            343.4830275535584
+          ],
+          "blockId": "cd28-cd33-vector-2026:28.8:knowledge:block:2",
+          "glyphHash": "AB3A0C197DE33AC72627B697EA03B8580D819218636D6425BB8F258A3302B118"
+        },
+        "dimension": 3,
+        "classification": "SPATIAL_FIGURE",
+        "description": "Hình hộp xiên ABCD.A′B′C′D′: các cạnh đối song song. Không giả thiết các cạnh kề vuông góc.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "D",
+            "type": "point",
+            "view": "main",
+            "label": "D",
+            "color": "blue",
+            "coords": [
+              1,
+              2,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "C",
+            "type": "point",
+            "view": "main",
+            "label": "C",
+            "color": "blue",
+            "coords": [
+              4,
+              2,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "Ap",
+            "type": "point",
+            "view": "main",
+            "label": "A′",
+            "color": "blue",
+            "coords": [
+              0.5,
+              0.5,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Bp",
+            "type": "point",
+            "view": "main",
+            "label": "B′",
+            "color": "blue",
+            "coords": [
+              3.5,
+              0.5,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Dp",
+            "type": "point",
+            "view": "main",
+            "label": "D′",
+            "color": "blue",
+            "coords": [
+              1.5,
+              2.5,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Cp",
+            "type": "point",
+            "view": "main",
+            "label": "C′",
+            "color": "blue",
+            "coords": [
+              4.5,
+              2.5,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "base",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "top",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "Ap",
+              "Bp",
+              "Cp",
+              "Dp"
+            ]
+          },
+          {
+            "id": "side",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "B",
+              "C",
+              "Cp",
+              "Bp"
+            ]
+          },
+          {
+            "id": "AAp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "Ap",
+            "dashed": false
+          },
+          {
+            "id": "DDp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "D",
+            "to": "Dp",
+            "dashed": false
+          },
+          {
+            "id": "AB",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "B",
+            "dashed": false
+          },
+          {
+            "id": "AD",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "D",
+            "dashed": false
+          },
+          {
+            "id": "ApBp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "Ap",
+            "to": "Bp",
+            "dashed": false
+          },
+          {
+            "id": "ApDp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "Ap",
+            "to": "Dp",
+            "dashed": false
+          },
+          {
+            "id": "BC",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "B",
+            "to": "C",
+            "dashed": false
+          },
+          {
+            "id": "DC",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "D",
+            "to": "C",
+            "dashed": false
+          },
+          {
+            "id": "BBp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "B",
+            "to": "Bp",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "parallel",
+            "a": "AB",
+            "b": "ApBp"
+          },
+          {
+            "type": "parallel",
+            "a": "AD",
+            "b": "BC"
+          },
+          {
+            "type": "parallel",
+            "a": "AAp",
+            "b": "BBp"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                6.3
+              ],
+              [
+                -1.8,
+                4.3
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Hình hộp xiên ABCD",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "A67CA86F0C993B57ADB0428B2A668F8A15253BC20061C879EAB8D60D4A9A669B"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:28.8:knowledge",
+        "blockId": "cd28-cd33-vector-2026:28.8:knowledge:block:2",
+        "key": "28.8",
+        "topicId": "CD28",
+        "precedingBlockId": "cd28-cd33-vector-2026:28.8:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD28&type=28.8&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A28.8%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:28.8:knowledge:block:2",
+        "glyphsMatched": 55,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-29-1",
+        "recordId": "cd28-cd33-vector-2026:29.1:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 7,
+          "rect": [
+            198.19329833984375,
+            175.76798343658447,
+            397.0815124511719,
+            365.5950270652771
+          ],
+          "blockId": "cd28-cd33-vector-2026:29.1:knowledge:block:2",
+          "glyphHash": "5BBBE6FC96BB2C4AD927E98341819EDC7405441649A526B273E6F9196DC3A119"
+        },
+        "dimension": 3,
+        "classification": "COORDINATE_SYSTEM",
+        "description": "Hệ trục Oxyz và điểm M(x;y;z); H là hình chiếu M trên Oxy. Tọa độ dùng để dựng hình không phải số liệu đề bài.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "O",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M(x; y; z)",
+            "color": "blue",
+            "coords": [
+              2,
+              1.5,
+              2.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              2,
+              1.5,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "MH",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "M",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "id": "basis",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              1,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "xDirection",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "O",
+            "to": "basis",
+            "dashed": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "Oxy",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -3,
+              3
+            ]
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnPlane",
+            "point": "H",
+            "plane": "P"
+          },
+          {
+            "type": "perpendicular",
+            "a": "MH",
+            "b": "xDirection"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.3
+              ],
+              [
+                -1.8,
+                4.3
+              ]
+            ],
+            "axes": true,
+            "title": "Hệ trục Oxyz và điểm M(x;y;z); H là hình chiếu M trên Oxy",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "7EC5AF073BE287956D26528B5E8686628ACAFF1F8E83CA5565BB4C5A38BBA173"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:29.1:knowledge",
+        "blockId": "cd28-cd33-vector-2026:29.1:knowledge:block:2",
+        "key": "29.1",
+        "topicId": "CD29",
+        "precedingBlockId": "cd28-cd33-vector-2026:29.1:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD29&type=29.1&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A29.1%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:29.1:knowledge:block:2",
+        "glyphsMatched": 58,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-29-3",
+        "recordId": "cd28-cd33-vector-2026:29.3:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 8,
+          "rect": [
+            202.8040008544922,
+            417.7100315093994,
+            392.4605407714844,
+            580.8580580711365
+          ],
+          "blockId": "cd28-cd33-vector-2026:29.3:knowledge:block:2",
+          "glyphHash": "ADCC36C1FD3B19AD34095B6DF16FAA1B0F3E1CC0F51594B90B6DADA7BCFD1717"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "Trung điểm I của đoạn AB.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -3,
+              -1
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              3,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "AB",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "B",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "midpoint",
+            "point": "I",
+            "a": "A",
+            "b": "B"
+          }
+        ],
+        "formulae": [
+          "I=\\frac{A+B}{2}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.1,
+                4.1
+              ],
+              [
+                -2.1,
+                2.1
+              ]
+            ],
+            "axes": false,
+            "title": "Trung điểm I của đoạn AB"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "F0D0A355CA6ACA16844938FAFB8EBD15C82D8C2299D55E81533EFB88EEDBA1D1"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:29.3:knowledge",
+        "blockId": "cd28-cd33-vector-2026:29.3:knowledge:block:2",
+        "key": "29.3",
+        "topicId": "CD29",
+        "precedingBlockId": "cd28-cd33-vector-2026:29.3:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD29&type=29.3&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A29.3%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:29.3:knowledge:block:2",
+        "glyphsMatched": 59,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-29-4",
+        "recordId": "cd28-cd33-vector-2026:29.4:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 9,
+          "rect": [
+            199.2068328857422,
+            225.25232887268066,
+            395.0733947753906,
+            392.78402242660525
+          ],
+          "blockId": "cd28-cd33-vector-2026:29.4:knowledge:block:2",
+          "glyphHash": "D7B256E3F1732927B20076B6AF53D3BCDC6FD0F042F3DDAAAA5D977E430C6E3F"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "G là trọng tâm tam giác ABC, I là trung điểm BC; AG:GI=2:1.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              0,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              -3,
+              -1.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "C",
+            "type": "point",
+            "view": "main",
+            "label": "C",
+            "color": "blue",
+            "coords": [
+              3,
+              -1.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              -1.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "G",
+            "type": "point",
+            "view": "main",
+            "label": "G",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "triangle",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "id": "median",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "I",
+            "dashed": false
+          },
+          {
+            "id": "AG",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "G",
+            "dashed": false
+          },
+          {
+            "id": "GI",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "G",
+            "to": "I",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "midpoint",
+            "point": "I",
+            "a": "B",
+            "b": "C"
+          },
+          {
+            "type": "centroid",
+            "point": "G",
+            "vertices": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "ratio",
+            "first": "AG",
+            "second": "GI",
+            "value": 2
+          }
+        ],
+        "formulae": [
+          "AG:GI=2:1"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.1,
+                4.1
+              ],
+              [
+                -2.6,
+                4.1
+              ]
+            ],
+            "axes": false,
+            "title": "G là trọng tâm tam giác ABC, I là trung điểm BC; AG:GI=2:1"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "44FF7349653370C750EA27F48AF5EA70E0422844A23174D104A7CC7A600B5EFD"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:29.4:knowledge",
+        "blockId": "cd28-cd33-vector-2026:29.4:knowledge:block:2",
+        "key": "29.4",
+        "topicId": "CD29",
+        "precedingBlockId": "cd28-cd33-vector-2026:29.4:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD29&type=29.4&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A29.4%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:29.4:knowledge:block:2",
+        "glyphsMatched": 63,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-29-5",
+        "recordId": "cd28-cd33-vector-2026:29.5:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 10,
+          "rect": [
+            199.35720825195312,
+            144.56919479370117,
+            392.4605407714844,
+            301.0070143699646
+          ],
+          "blockId": "cd28-cd33-vector-2026:29.5:knowledge:block:2",
+          "glyphHash": "83F0BF68B125770E557191BC84A5D8BE50B0189AAE62C02910E070A3C8D1465F"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "M và M′ đối xứng qua mặt phẳng (P), H là trung điểm MM′ và chân vuông góc.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              1,
+              1,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Mp",
+            "type": "point",
+            "view": "main",
+            "label": "M′",
+            "color": "blue",
+            "coords": [
+              1,
+              1,
+              -2
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              1,
+              1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "mirrorSegment",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "from": "M",
+            "to": "Mp",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "reflection",
+            "point": "M",
+            "image": "Mp",
+            "plane": "P"
+          },
+          {
+            "type": "midpoint",
+            "point": "H",
+            "a": "M",
+            "b": "Mp"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                2.8
+              ],
+              [
+                -1.8,
+                2.8
+              ],
+              [
+                -3.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "M và M′ đối xứng qua mặt phẳng (P), H là trung điểm MM′ và chân vuông góc",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "1CA012227CF6E6999C1251B321E0CC2AB3FE554870FCF651BCF7CB97DE106728"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:29.5:knowledge",
+        "blockId": "cd28-cd33-vector-2026:29.5:knowledge:block:2",
+        "key": "29.5",
+        "topicId": "CD29",
+        "precedingBlockId": "cd28-cd33-vector-2026:29.5:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD29&type=29.5&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A29.5%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:29.5:knowledge:block:2",
+        "glyphsMatched": 50,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-30-1",
+        "recordId": "cd28-cd33-vector-2026:30.1:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 12,
+          "rect": [
+            202.8040008544922,
+            175.14354705810547,
+            396.1663818359375,
+            328.83700094223025
+          ],
+          "blockId": "cd28-cd33-vector-2026:30.1:knowledge:block:2",
+          "glyphHash": "15D22F70B82AE69E8F496755728547C2CB02E078DF423E000B8CF40E91D8828A"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Vectơ pháp tuyến n tại A vuông góc mặt phẳng (P). Điểm X thuộc (P) thỏa n·(X−A)=0.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -1,
+              -1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "N",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              -1,
+              -1,
+              3
+            ],
+            "visible": false
+          },
+          {
+            "id": "X",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              1,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "A",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "n",
+            "type": "vector",
+            "view": "main",
+            "label": "n",
+            "color": "blue",
+            "from": "A",
+            "to": "N"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "n"
+          },
+          {
+            "type": "pointOnPlane",
+            "point": "X",
+            "plane": "P"
+          }
+        ],
+        "formulae": [
+          "n\\cdot(X-A)=0"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -2.8,
+                3.8
+              ],
+              [
+                -2.8,
+                2.8
+              ],
+              [
+                -1.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Vectơ pháp tuyến n tại A vuông góc mặt phẳng (P)",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "FFBEFC5B93E9AEF1717B2618EA9FB55A5BD3E966988E13E22A266D740FB60E80"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:30.1:knowledge",
+        "blockId": "cd28-cd33-vector-2026:30.1:knowledge:block:2",
+        "key": "30.1",
+        "topicId": "CD30",
+        "precedingBlockId": "cd28-cd33-vector-2026:30.1:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD30&type=30.1&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A30.1%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:30.1:knowledge:block:2",
+        "glyphsMatched": 62,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-30-4",
+        "recordId": "cd28-cd33-vector-2026:30.4:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 14,
+          "rect": [
+            202.8040008544922,
+            150.3590545654297,
+            392.4605407714844,
+            295.167018032074
+          ],
+          "blockId": "cd28-cd33-vector-2026:30.4:knowledge:block:2",
+          "glyphHash": "4556AA57EC6C9A6579DD8DBB2957FEC211A902B68E515EAC03FC25559F55FD5F"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Hai mặt phẳng (P), (Q) cắt nhau theo đường d.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "X",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "NP",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "NQ",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              -1.6,
+              1.2
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "Q",
+            "type": "plane",
+            "view": "main",
+            "label": "(Q)",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0.6,
+              0.8
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "d",
+            "type": "line",
+            "view": "main",
+            "label": "d",
+            "color": "blue",
+            "from": "O",
+            "to": "X"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnPlane",
+            "point": "X",
+            "plane": "P"
+          },
+          {
+            "type": "pointOnPlane",
+            "point": "X",
+            "plane": "Q"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -3.4000000000000004,
+                1.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Hai mặt phẳng (P), (Q) cắt nhau theo đường d",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "EE24E6D4BBC6237CBA1305928E94033B199BD04EF867FC6ECE7FCDE834B86160"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:30.4:knowledge",
+        "blockId": "cd28-cd33-vector-2026:30.4:knowledge:block:2",
+        "key": "30.4",
+        "topicId": "CD30",
+        "precedingBlockId": "cd28-cd33-vector-2026:30.4:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD30&type=30.4&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A30.4%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:30.4:knowledge:block:2",
+        "glyphsMatched": 50,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-30-5",
+        "recordId": "cd28-cd33-vector-2026:30.5:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 15,
+          "rect": [
+            199.59634399414062,
+            127.37330627441406,
+            392.4605407714844,
+            298.36300191879275
+          ],
+          "blockId": "cd28-cd33-vector-2026:30.5:knowledge:block:2",
+          "glyphHash": "23E445D5372A8CEE9AB680F498B6B3307386348B0D5E63B0E7D0528A52CCB4C8"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Góc giữa hai mặt phẳng được xác định từ các vectơ pháp tuyến nP, nQ, lấy góc không vượt 90°.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "X",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "NP",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "NQ",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              -1.6,
+              1.2
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "Q",
+            "type": "plane",
+            "view": "main",
+            "label": "(Q)",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0.6,
+              0.8
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "d",
+            "type": "line",
+            "view": "main",
+            "label": "d",
+            "color": "blue",
+            "from": "O",
+            "to": "X"
+          },
+          {
+            "id": "nP",
+            "type": "vector",
+            "view": "main",
+            "label": "nP",
+            "color": "blue",
+            "from": "O",
+            "to": "NP"
+          },
+          {
+            "id": "nQ",
+            "type": "vector",
+            "view": "main",
+            "label": "nQ",
+            "color": "blue",
+            "from": "O",
+            "to": "NQ"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnPlane",
+            "point": "X",
+            "plane": "P"
+          },
+          {
+            "type": "pointOnPlane",
+            "point": "X",
+            "plane": "Q"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "nP"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "Q",
+            "vector": "nQ"
+          }
+        ],
+        "formulae": [
+          "\\cos\\varphi=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -3.4000000000000004,
+                1.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Góc giữa hai mặt phẳng được xác định từ các vectơ pháp tuyến nP, nQ, lấy góc không vượt 90°",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "7988C1A6DB15483D17A20305F8093135067E6498E1740031036C0F37F8ACB55E"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:30.5:knowledge",
+        "blockId": "cd28-cd33-vector-2026:30.5:knowledge:block:2",
+        "key": "30.5",
+        "topicId": "CD30",
+        "precedingBlockId": "cd28-cd33-vector-2026:30.5:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD30&type=30.5&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A30.5%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:30.5:knowledge:block:2",
+        "glyphsMatched": 48,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-30-6",
+        "recordId": "cd28-cd33-vector-2026:30.6:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 16,
+          "rect": [
+            202.8040008544922,
+            145.13795471191406,
+            392.4605407714844,
+            317.96102437973025
+          ],
+          "blockId": "cd28-cd33-vector-2026:30.6:knowledge:block:2",
+          "glyphHash": "92581A1B82B97C3B25562F9F0DEDA58C2735B3843263FB6AAE34DF2F5AE35C53"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Đoạn MH vuông góc (P); khoảng cách từ M đến (P) là độ dài MH.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -1,
+              -1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              1,
+              1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              1,
+              1,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "A",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "height",
+            "type": "segment",
+            "view": "main",
+            "label": "d(M, P)",
+            "color": "amber",
+            "from": "H",
+            "to": "M",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnPlane",
+            "point": "H",
+            "plane": "P"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "height"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -2.8,
+                2.8
+              ],
+              [
+                -2.8,
+                2.8
+              ],
+              [
+                -1.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Đoạn MH vuông góc (P); khoảng cách từ M đến (P) là độ dài MH",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "25C7D869C7DCBD87C32E7A8EFDE54D34AD0110B7D9FB11D042B5504B882D2483"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:30.6:knowledge",
+        "blockId": "cd28-cd33-vector-2026:30.6:knowledge:block:2",
+        "key": "30.6",
+        "topicId": "CD30",
+        "precedingBlockId": "cd28-cd33-vector-2026:30.6:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD30&type=30.6&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A30.6%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:30.6:knowledge:block:2",
+        "glyphsMatched": 56,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-31-2",
+        "recordId": "cd28-cd33-vector-2026:31.2:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 18,
+          "rect": [
+            202.8040008544922,
+            466.71076107025146,
+            395.89398193359375,
+            608.6190443992615
+          ],
+          "blockId": "cd28-cd33-vector-2026:31.2:knowledge:block:2",
+          "glyphHash": "4FD8DB8290F4A8168307ED3943E4AA834C461A0E87572373A41157D34D15C888"
+        },
+        "dimension": 3,
+        "classification": "VECTOR_DIAGRAM",
+        "description": "Đường d qua A có hướng u; X=A+tu. Vectơ từ A tới X được ghi tu.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -2,
+              -1,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "X",
+            "type": "point",
+            "view": "main",
+            "label": "X",
+            "color": "blue",
+            "coords": [
+              0,
+              1,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "U",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              -1,
+              0,
+              1
+            ],
+            "visible": false
+          },
+          {
+            "id": "d",
+            "type": "line",
+            "view": "main",
+            "label": "d",
+            "color": "blue",
+            "from": "A",
+            "to": "U"
+          },
+          {
+            "id": "u",
+            "type": "vector",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "U"
+          },
+          {
+            "id": "tu",
+            "type": "vector",
+            "view": "main",
+            "label": "tu",
+            "color": "blue",
+            "from": "A",
+            "to": "X"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "linearPoint",
+            "origin": "A",
+            "direction": "u",
+            "point": "X",
+            "parameter": 2
+          }
+        ],
+        "formulae": [
+          "X=A+tu"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -3.8,
+                1.8
+              ],
+              [
+                -2.8,
+                2.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Đường d qua A có hướng u; X=A+tu",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "F4ECA9E7CD600274A7A9C38125C74D1B83EB6E18DD7225628328243A4BEB9E9A"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:31.2:knowledge",
+        "blockId": "cd28-cd33-vector-2026:31.2:knowledge:block:2",
+        "key": "31.2",
+        "topicId": "CD31",
+        "precedingBlockId": "cd28-cd33-vector-2026:31.2:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD31&type=31.2&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A31.2%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:31.2:knowledge:block:2",
+        "glyphsMatched": 58,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-31-4",
+        "recordId": "cd28-cd33-vector-2026:31.4:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 20,
+          "rect": [
+            202.8040008544922,
+            155.6744441986084,
+            395.2777404785156,
+            328.15401754379275
+          ],
+          "blockId": "cd28-cd33-vector-2026:31.4:knowledge:block:2",
+          "glyphHash": "001213912D8D41CAE32A0C48AE949808BF5D33D3C60B60C2E77F43E19A448BD9"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Hai đường chéo nhau d₁, d₂ có đoạn vuông góc chung HK. HK vuông góc cả hai hướng, không làm hai đường trở thành cắt nhau.",
+        "objects": [
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "K",
+            "type": "point",
+            "view": "main",
+            "label": "K",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "U",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "V",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              2,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "d1",
+            "type": "line",
+            "view": "main",
+            "label": "d₁",
+            "color": "blue",
+            "from": "H",
+            "to": "U"
+          },
+          {
+            "id": "d2",
+            "type": "line",
+            "view": "main",
+            "label": "d₂",
+            "color": "blue",
+            "from": "K",
+            "to": "V"
+          },
+          {
+            "id": "HK",
+            "type": "segment",
+            "view": "main",
+            "label": "HK",
+            "color": "amber",
+            "from": "H",
+            "to": "K",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "perpendicular",
+            "a": "HK",
+            "b": "d1"
+          },
+          {
+            "type": "perpendicular",
+            "a": "HK",
+            "b": "d2"
+          }
+        ],
+        "formulae": [
+          "HK\\perp d_1,\\quad HK\\perp d_2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Hai đường chéo nhau d₁, d₂ có đoạn vuông góc chung HK",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "152321B5F39EEA346D10A7968594529C0BDF177D4B39E98A6055853741376367"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:31.4:knowledge",
+        "blockId": "cd28-cd33-vector-2026:31.4:knowledge:block:2",
+        "key": "31.4",
+        "topicId": "CD31",
+        "precedingBlockId": "cd28-cd33-vector-2026:31.4:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD31&type=31.4&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A31.4%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:31.4:knowledge:block:2",
+        "glyphsMatched": 64,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-31-6",
+        "recordId": "cd28-cd33-vector-2026:31.6:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 21,
+          "rect": [
+            201.76963806152344,
+            262.79341411590576,
+            392.4605407714844,
+            419.42501363754275
+          ],
+          "blockId": "cd28-cd33-vector-2026:31.6:knowledge:block:2",
+          "glyphHash": "E25094AB8CFADBFA9A9216791CA598C73B0C3F64FB82FBD2B1B7CE2741D3E615"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Góc α giữa đường AK và mặt phẳng (P) là góc giữa AK và hình chiếu HK. AH vuông góc (P).",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "K",
+            "type": "point",
+            "view": "main",
+            "label": "K",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "H",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "AK",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "K",
+            "dashed": false
+          },
+          {
+            "id": "HK",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "H",
+            "to": "K",
+            "dashed": true
+          },
+          {
+            "id": "AH",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "from": "A",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "id": "angleAlphaAnchor",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2.15,
+              0,
+              0.25
+            ],
+            "visible": false
+          },
+          {
+            "id": "angleAlpha",
+            "type": "annotation",
+            "view": "main",
+            "label": "α",
+            "color": "blue",
+            "at": "angleAlphaAnchor"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnPlane",
+            "point": "K",
+            "plane": "P"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "AH"
+          }
+        ],
+        "formulae": [
+          "\\sin\\alpha=\\frac{|u\\cdot n|}{|u||n|}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                4.8
+              ],
+              [
+                -1.8,
+                1.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Góc α giữa đường AK và mặt phẳng (P) là góc giữa AK và hình chiếu HK",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "07E5509F1E015B34162E35E0C3DBDABA7EAB0CF5EC56C5052769F7B66B286E5C"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:31.6:knowledge",
+        "blockId": "cd28-cd33-vector-2026:31.6:knowledge:block:2",
+        "key": "31.6",
+        "topicId": "CD31",
+        "precedingBlockId": "cd28-cd33-vector-2026:31.6:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD31&type=31.6&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A31.6%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:31.6:knowledge:block:2",
+        "glyphsMatched": 50,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-31-8",
+        "recordId": "cd28-cd33-vector-2026:31.8:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 22,
+          "rect": [
+            202.8040008544922,
+            430.65134620666504,
+            395.8214111328125,
+            599.3770400047302
+          ],
+          "blockId": "cd28-cd33-vector-2026:31.8:knowledge:block:2",
+          "glyphHash": "A4A8D1DD33A9DE1F5BF974850ED2AE76D8A34D11DD78E03625524168141BF948"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "H là hình chiếu của M trên đường d qua A có hướng u: (M−H)·u=0.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -2,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              1,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              1,
+              2,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "d",
+            "type": "line",
+            "view": "main",
+            "label": "d",
+            "color": "blue",
+            "from": "A",
+            "to": "H"
+          },
+          {
+            "id": "MH",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "from": "M",
+            "to": "H",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnLine",
+            "point": "H",
+            "line": "d"
+          },
+          {
+            "type": "perpendicular",
+            "a": "MH",
+            "b": "d"
+          }
+        ],
+        "formulae": [
+          "(M-H)\\cdot u=0"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -3.8,
+                2.8
+              ],
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "H là hình chiếu của M trên đường d qua A có hướng u: (M−H)·u=0",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "46FAFBA0453D6C411DA39CEE9B321FC57AA7089A3C5D76C18CF474FB4E16EC16"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:31.8:knowledge",
+        "blockId": "cd28-cd33-vector-2026:31.8:knowledge:block:2",
+        "key": "31.8",
+        "topicId": "CD31",
+        "precedingBlockId": "cd28-cd33-vector-2026:31.8:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD31&type=31.8&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A31.8%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:31.8:knowledge:block:2",
+        "glyphsMatched": 61,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-31-9",
+        "recordId": "cd28-cd33-vector-2026:31.9:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 23,
+          "rect": [
+            202.8040008544922,
+            225.41461753845215,
+            395.2777404785156,
+            397.8950148582459
+          ],
+          "blockId": "cd28-cd33-vector-2026:31.9:knowledge:block:2",
+          "glyphHash": "6431BAC23982C7C2702E5EEB37D933B3FED2CA5A7A7CCCC50161DFA68D65757C"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Hai đường chéo nhau d₁, d₂ có đoạn vuông góc chung HK. HK vuông góc cả hai hướng, không làm hai đường trở thành cắt nhau.",
+        "objects": [
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "K",
+            "type": "point",
+            "view": "main",
+            "label": "K",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "U",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "V",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              2,
+              2
+            ],
+            "visible": false
+          },
+          {
+            "id": "d1",
+            "type": "line",
+            "view": "main",
+            "label": "d₁",
+            "color": "blue",
+            "from": "H",
+            "to": "U"
+          },
+          {
+            "id": "d2",
+            "type": "line",
+            "view": "main",
+            "label": "d₂",
+            "color": "blue",
+            "from": "K",
+            "to": "V"
+          },
+          {
+            "id": "HK",
+            "type": "segment",
+            "view": "main",
+            "label": "HK",
+            "color": "amber",
+            "from": "H",
+            "to": "K",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "perpendicular",
+            "a": "HK",
+            "b": "d1"
+          },
+          {
+            "type": "perpendicular",
+            "a": "HK",
+            "b": "d2"
+          }
+        ],
+        "formulae": [
+          "HK\\perp d_1,\\quad HK\\perp d_2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": false,
+            "title": "Hai đường chéo nhau d₁, d₂ có đoạn vuông góc chung HK",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "14FDD58D6E41F1CB7CD74ADBC303B0AB3CF40AF202BEC8704BF1F9BCB2DF6FAE"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:31.9:knowledge",
+        "blockId": "cd28-cd33-vector-2026:31.9:knowledge:block:2",
+        "key": "31.9",
+        "topicId": "CD31",
+        "precedingBlockId": "cd28-cd33-vector-2026:31.9:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD31&type=31.9&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A31.9%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:31.9:knowledge:block:2",
+        "glyphsMatched": 64,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-32-1",
+        "recordId": "cd28-cd33-vector-2026:32.1:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 24,
+          "rect": [
+            202.8040008544922,
+            188.80813217163086,
+            392.4605407714844,
+            430.85702047348025
+          ],
+          "blockId": "cd28-cd33-vector-2026:32.1:knowledge:block:2",
+          "glyphHash": "44A3B7AC5D6EE435ED1E2B679FE5CF8F3E5F29E4379001AD5766D9FC105674F1"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Mặt cầu tâm I bán kính R và điểm M trên mặt cầu, IM=R.",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "S",
+            "type": "sphere",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 3
+          },
+          {
+            "id": "radius",
+            "type": "segment",
+            "view": "main",
+            "label": "R",
+            "color": "amber",
+            "from": "I",
+            "to": "M",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnRound",
+            "point": "M",
+            "round": "S"
+          }
+        ],
+        "formulae": [
+          "|X-I|^2=R^2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.8,
+                4.8
+              ],
+              [
+                -4.8,
+                4.8
+              ],
+              [
+                -4.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Mặt cầu tâm I bán kính R và điểm M trên mặt cầu, IM=R",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "4A208330926D84ADB793E946E20553A6CA81B00CE806C9B1CE89E73C0678BC5E"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:32.1:knowledge",
+        "blockId": "cd28-cd33-vector-2026:32.1:knowledge:block:2",
+        "key": "32.1",
+        "topicId": "CD32",
+        "precedingBlockId": "cd28-cd33-vector-2026:32.1:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD32&type=32.1&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A32.1%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:32.1:knowledge:block:2",
+        "glyphsMatched": 58,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-32-4",
+        "recordId": "cd28-cd33-vector-2026:32.4:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 26,
+          "rect": [
+            202.8040008544922,
+            162.94703483581543,
+            392.4605407714844,
+            422.7550307273865
+          ],
+          "blockId": "cd28-cd33-vector-2026:32.4:knowledge:block:2",
+          "glyphHash": "B511D854730C5F8C2CC82E159E46F5C2724DEED173FE1D82DFF5BE4DCE7BD7D9"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Mặt phẳng (P) cắt mặt cầu tâm I theo đường tròn tâm H, bán kính r; IH=d và r²=R²−d². Các số dùng để dựng chỉ là một hiện thực minh họa.",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              1.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "S",
+            "type": "sphere",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 2.5
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "H",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -3,
+              3
+            ]
+          },
+          {
+            "id": "section",
+            "type": "circle",
+            "view": "main",
+            "label": "r",
+            "color": "blue",
+            "center": "H",
+            "radius": 2,
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "IH",
+            "type": "segment",
+            "view": "main",
+            "label": "d",
+            "color": "amber",
+            "from": "I",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "id": "HA",
+            "type": "segment",
+            "view": "main",
+            "label": "r",
+            "color": "blue",
+            "from": "H",
+            "to": "A",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnRound",
+            "point": "A",
+            "round": "S"
+          },
+          {
+            "type": "pointOnPlane",
+            "point": "A",
+            "plane": "P"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "IH"
+          }
+        ],
+        "formulae": [
+          "r^2=R^2-d^2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.3,
+                4.3
+              ],
+              [
+                -4.3,
+                4.3
+              ],
+              [
+                -3.8,
+                5.8
+              ]
+            ],
+            "axes": false,
+            "title": "Mặt phẳng (P) cắt mặt cầu tâm I theo đường tròn tâm H, bán kính r; IH=d và r²=R²−d²",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "006DFC05A54ED82F27D7DFC366F80C05937DCCD961D29D03C24D7D251B52F9E1"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:32.4:knowledge",
+        "blockId": "cd28-cd33-vector-2026:32.4:knowledge:block:2",
+        "key": "32.4",
+        "topicId": "CD32",
+        "precedingBlockId": "cd28-cd33-vector-2026:32.4:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD32&type=32.4&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A32.4%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:32.4:knowledge:block:2",
+        "glyphsMatched": 58,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-32-5",
+        "recordId": "cd28-cd33-vector-2026:32.5:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 27,
+          "rect": [
+            202.8040008544922,
+            156.95811557769775,
+            395.6923828125,
+            317.0380202293396
+          ],
+          "blockId": "cd28-cd33-vector-2026:32.5:knowledge:block:2",
+          "glyphHash": "9B11E5DECECE8C377CEB96FB5E9DF3A9107ABD8CA4AD1D8912D552DF3DBBE42F"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "Mặt cắt qua tâm I của mặt cầu: đường d cách I một đoạn d, cắt cầu tại A,B; dây AB=2√(R²−d²).",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -4,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              4,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              3
+            ],
+            "visible": false
+          },
+          {
+            "id": "S",
+            "type": "circle",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 5
+          },
+          {
+            "id": "d",
+            "type": "line",
+            "view": "main",
+            "label": "d",
+            "color": "blue",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "id": "distance",
+            "type": "segment",
+            "view": "main",
+            "label": "d",
+            "color": "amber",
+            "from": "I",
+            "to": "H",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnRound",
+            "point": "A",
+            "round": "S"
+          },
+          {
+            "type": "pointOnRound",
+            "point": "B",
+            "round": "S"
+          },
+          {
+            "type": "perpendicular",
+            "a": "distance",
+            "b": "d"
+          }
+        ],
+        "formulae": [
+          "AB=2\\sqrt{R^2-d^2}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -6.1,
+                6.1
+              ],
+              [
+                -6.1,
+                6.1
+              ]
+            ],
+            "axes": false,
+            "title": "Mặt cắt qua tâm I của mặt cầu: đường d cách I một đoạn d, cắt cầu tại A,B; dây AB=2√(R²−d²)"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "EDCA0FE7ECDA22187A20325F35A4B317F6422E438523F07CD39D5695A7FCEC84"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:32.5:knowledge",
+        "blockId": "cd28-cd33-vector-2026:32.5:knowledge:block:2",
+        "key": "32.5",
+        "topicId": "CD32",
+        "precedingBlockId": "cd28-cd33-vector-2026:32.5:knowledge:block:1",
+        "followingBlockId": "cd28-cd33-vector-2026:32.5:knowledge:block:3",
+        "route": "documents.html?grade=12&topic=CD32&type=32.5&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A32.5%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:32.5:knowledge:block:2",
+        "glyphsMatched": 60,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-32-6",
+        "recordId": "cd28-cd33-vector-2026:32.6:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 28,
+          "rect": [
+            199.63714599609375,
+            143.55065250396729,
+            392.4605407714844,
+            328.39803609848025
+          ],
+          "blockId": "cd28-cd33-vector-2026:32.6:knowledge:block:2",
+          "glyphHash": "7CEE7DEF5FEADC5FF570C441A9ECC3947589F7BFCC180160A71C03436841E3A7"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "Mặt cắt qua tâm I: tiếp tuyến MT từ điểm M ngoài cầu; IT vuông góc MT và MT²=MI²−R². Trong hình này T là tiếp điểm.",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              5,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "T",
+            "type": "point",
+            "view": "main",
+            "label": "T",
+            "color": "blue",
+            "coords": [
+              1.8,
+              2.4
+            ],
+            "visible": true
+          },
+          {
+            "id": "S",
+            "type": "circle",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 3
+          },
+          {
+            "id": "IT",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "I",
+            "to": "T",
+            "dashed": true
+          },
+          {
+            "id": "MT",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "from": "M",
+            "to": "T",
+            "dashed": false
+          },
+          {
+            "id": "IM",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "I",
+            "to": "M",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "tangent",
+            "round": "S",
+            "external": "M",
+            "contact": "T"
+          }
+        ],
+        "formulae": [
+          "MT^2=MI^2-R^2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.1,
+                6.1
+              ],
+              [
+                -4.1,
+                4.1
+              ]
+            ],
+            "axes": false,
+            "title": "Mặt cắt qua tâm I: tiếp tuyến MT từ điểm M ngoài cầu; IT vuông góc MT và MT²=MI²−R²"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "B8915B15F19921B2205618E7551457B5355BB014819A26B548D6990815A0EA60"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:32.6:knowledge",
+        "blockId": "cd28-cd33-vector-2026:32.6:knowledge:block:2",
+        "key": "32.6",
+        "topicId": "CD32",
+        "precedingBlockId": "cd28-cd33-vector-2026:32.6:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD32&type=32.6&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A32.6%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:32.6:knowledge:block:2",
+        "glyphsMatched": 60,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-32-7",
+        "recordId": "cd28-cd33-vector-2026:32.7:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 29,
+          "rect": [
+            198.65235900878906,
+            143.5866994857788,
+            395.9906311035156,
+            296.583033657074
+          ],
+          "blockId": "cd28-cd33-vector-2026:32.7:knowledge:block:2",
+          "glyphHash": "C5B0DAE6F2E3D13A9AFAAF3FB26DCA2EFF0DE514CB890B6F6A74A880DEB633E1"
+        },
+        "dimension": 2,
+        "classification": "GEOMETRY_2D",
+        "description": "Mặt cắt qua tâm I: cát tuyến từ M ngoài cầu gặp A,B; tích vô hướng MA·MB bằng MI²−R².",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              5,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              3,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              -3,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "S",
+            "type": "circle",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 3
+          },
+          {
+            "id": "secant",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "M",
+            "to": "B",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnRound",
+            "point": "A",
+            "round": "S"
+          },
+          {
+            "type": "pointOnRound",
+            "point": "B",
+            "round": "S"
+          },
+          {
+            "type": "power",
+            "point": "M",
+            "a": "A",
+            "b": "B",
+            "center": "I",
+            "radius": 3
+          }
+        ],
+        "formulae": [
+          "\\overrightarrow{MA}\\cdot\\overrightarrow{MB}=MI^2-R^2"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.1,
+                6.1
+              ],
+              [
+                -4.1,
+                4.1
+              ]
+            ],
+            "axes": false,
+            "title": "Mặt cắt qua tâm I: cát tuyến từ M ngoài cầu gặp A,B; tích vô hướng MA·MB bằng MI²−R²"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "686EB66BA40E233EAA7900E085BBD4AAAC4E0BAFD1727591673034821C023213"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:32.7:knowledge",
+        "blockId": "cd28-cd33-vector-2026:32.7:knowledge:block:2",
+        "key": "32.7",
+        "topicId": "CD32",
+        "precedingBlockId": "cd28-cd33-vector-2026:32.7:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD32&type=32.7&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A32.7%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:32.7:knowledge:block:2",
+        "glyphsMatched": 70,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-1",
+        "recordId": "cd28-cd33-vector-2026:33.1:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 30,
+          "rect": [
+            199.98797607421875,
+            176.99181842803955,
+            394.17095947265625,
+            376.68502340316775
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.1:knowledge:block:2",
+          "glyphHash": "5F15FA10473478673C2239ECC61A7D1965CA6568C59022C84C8F87B23B5A9A53"
+        },
+        "dimension": 3,
+        "classification": "SPATIAL_FIGURE",
+        "description": "Hình hộp chữ nhật ABCD.A′B′C′D′; gốc tại A, ba hướng cạnh đôi một vuông góc.",
+        "objects": [
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "D",
+            "type": "point",
+            "view": "main",
+            "label": "D",
+            "color": "blue",
+            "coords": [
+              0,
+              2,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "C",
+            "type": "point",
+            "view": "main",
+            "label": "C",
+            "color": "blue",
+            "coords": [
+              3,
+              2,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "Ap",
+            "type": "point",
+            "view": "main",
+            "label": "A′",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Bp",
+            "type": "point",
+            "view": "main",
+            "label": "B′",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Dp",
+            "type": "point",
+            "view": "main",
+            "label": "D′",
+            "color": "blue",
+            "coords": [
+              0,
+              2,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "Cp",
+            "type": "point",
+            "view": "main",
+            "label": "C′",
+            "color": "blue",
+            "coords": [
+              3,
+              2,
+              2
+            ],
+            "visible": true
+          },
+          {
+            "id": "base",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "top",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "Ap",
+              "Bp",
+              "Cp",
+              "Dp"
+            ]
+          },
+          {
+            "id": "side",
+            "type": "polygon",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "vertices": [
+              "B",
+              "C",
+              "Cp",
+              "Bp"
+            ]
+          },
+          {
+            "id": "AAp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "Ap",
+            "dashed": false
+          },
+          {
+            "id": "DDp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "D",
+            "to": "Dp",
+            "dashed": false
+          },
+          {
+            "id": "AB",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "B",
+            "dashed": false
+          },
+          {
+            "id": "AD",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "D",
+            "dashed": false
+          },
+          {
+            "id": "ApBp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "Ap",
+            "to": "Bp",
+            "dashed": false
+          },
+          {
+            "id": "ApDp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "Ap",
+            "to": "Dp",
+            "dashed": false
+          },
+          {
+            "id": "BC",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "B",
+            "to": "C",
+            "dashed": false
+          },
+          {
+            "id": "DC",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "D",
+            "to": "C",
+            "dashed": false
+          },
+          {
+            "id": "BBp",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "B",
+            "to": "Bp",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "parallel",
+            "a": "AB",
+            "b": "ApBp"
+          },
+          {
+            "type": "parallel",
+            "a": "AD",
+            "b": "BC"
+          },
+          {
+            "type": "parallel",
+            "a": "AAp",
+            "b": "BBp"
+          },
+          {
+            "type": "perpendicular",
+            "a": "AB",
+            "b": "AD"
+          },
+          {
+            "type": "perpendicular",
+            "a": "AB",
+            "b": "AAp"
+          },
+          {
+            "type": "perpendicular",
+            "a": "AD",
+            "b": "AAp"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                4.8
+              ],
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                3.8
+              ]
+            ],
+            "axes": true,
+            "title": "Hình hộp chữ nhật ABCD",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "CCA655E6A903A4EEFB30AC6EFCBC3FEECB6081940FAD47DC255A70F6D0043552"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.1:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.1:knowledge:block:2",
+        "key": "33.1",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.1:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.1&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.1%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.1:knowledge:block:2",
+        "glyphsMatched": 55,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-3",
+        "recordId": "cd28-cd33-vector-2026:33.3:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 32,
+          "rect": [
+            198.12881469726562,
+            140.479811668396,
+            396.7284851074219,
+            317.26302633285525
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.3:knowledge:block:2",
+          "glyphHash": "ED47B182075D58516A906C1DB792BE9A0CC451EA18E553226E07636F2AD2903A"
+        },
+        "dimension": 3,
+        "classification": "COORDINATE_SYSTEM",
+        "description": "Vectơ chuyển động từ A đến B trong Oxyz, với mặt phẳng (P) làm mốc tham chiếu. Dựng một đường bay cắt (P), không dùng số liệu của bài tập.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -1,
+              -1,
+              2.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              1.5,
+              1.5,
+              0.5
+            ],
+            "visible": true
+          },
+          {
+            "id": "P0",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              1.5
+            ],
+            "visible": false
+          },
+          {
+            "id": "J",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0.25,
+              0.25,
+              1.5
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "(P)",
+            "color": "blue",
+            "origin": "P0",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "flight",
+            "type": "vector",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "B"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "linePlaneIntersection",
+            "line": "flight",
+            "plane": "P",
+            "point": "J"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -2.8,
+                3.3
+              ],
+              [
+                -2.8,
+                3.3
+              ],
+              [
+                -1.8,
+                4.3
+              ]
+            ],
+            "axes": true,
+            "title": "Vectơ chuyển động từ A đến B trong Oxyz, với mặt phẳng (P) làm mốc tham chiếu",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "16DB850C29D1988F3C781D73EC0E70737E93BBF68EF59938F4D86FE0C5E6E4CD"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.3:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.3:knowledge:block:2",
+        "key": "33.3",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.3:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.3&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.3%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.3:knowledge:block:2",
+        "glyphsMatched": 51,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-4",
+        "recordId": "cd28-cd33-vector-2026:33.4:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 33,
+          "rect": [
+            202.8040008544922,
+            143.84899234771729,
+            392.4605407714844,
+            288.4680129051209
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.4:knowledge:block:2",
+          "glyphHash": "3FC8DA6EF92F50BD1CCC33695B8313EB4E719BEE3C61BA1FA5B584A49876AC56"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "Điểm bay M có vectơ vận tốc v; đoạn vuông góc xuống mặt phẳng z=0 biểu diễn độ cao h. Không suy ra số đo từ sơ đồ.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "V",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              1,
+              3
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "z = 0",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "velocity",
+            "type": "vector",
+            "view": "main",
+            "label": "v",
+            "color": "blue",
+            "from": "M",
+            "to": "V"
+          },
+          {
+            "id": "height",
+            "type": "segment",
+            "view": "main",
+            "label": "h",
+            "color": "amber",
+            "from": "O",
+            "to": "M",
+            "dashed": true
+          }
+        ],
+        "relationships": [
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "height"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                2.8
+              ],
+              [
+                -1.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Điểm bay M có vectơ vận tốc v; đoạn vuông góc xuống mặt phẳng z=0 biểu diễn độ cao h",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "BCC049AA7319AF53BA20603B3467E4A2852B6D2B41622779E1E2F0A18AB9E737"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.4:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.4:knowledge:block:2",
+        "key": "33.4",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.4:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.4&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.4%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.4:knowledge:block:2",
+        "glyphsMatched": 51,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-5",
+        "recordId": "cd28-cd33-vector-2026:33.5:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 34,
+          "rect": [
+            202.8040008544922,
+            155.74000549316406,
+            392.4605407714844,
+            337.5050307273865
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.5:knowledge:block:2",
+          "glyphHash": "83A07C1C325D231CF4A82D2A2D0AC9B0BA95FEAB51E3AC349C3BF66157408B08"
+        },
+        "dimension": 3,
+        "classification": "SPATIAL_FIGURE",
+        "description": "Đường bay cắt khối cầu radar tại hai thời điểm t₁,t₂. Vùng nhận tín hiệu thỏa |X(t)−I|≤R; không gán thời gian đo từ PDF.",
+        "objects": [
+          {
+            "id": "I",
+            "type": "point",
+            "view": "main",
+            "label": "I",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "E",
+            "type": "point",
+            "view": "main",
+            "label": "t₁",
+            "color": "blue",
+            "coords": [
+              -3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "F",
+            "type": "point",
+            "view": "main",
+            "label": "t₂",
+            "color": "blue",
+            "coords": [
+              3,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "S",
+            "type": "sphere",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "center": "I",
+            "radius": 3
+          },
+          {
+            "id": "trajectory",
+            "type": "line",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "id": "inside",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "amber",
+            "from": "E",
+            "to": "F",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "pointOnRound",
+            "point": "E",
+            "round": "S"
+          },
+          {
+            "type": "pointOnRound",
+            "point": "F",
+            "round": "S"
+          }
+        ],
+        "formulae": [
+          "|X(t)-I|\\le R"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -4.8,
+                4.8
+              ],
+              [
+                -4.8,
+                4.8
+              ],
+              [
+                -4.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Đường bay cắt khối cầu radar tại hai thời điểm t₁,t₂",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "0A8330F120782BC56E11B7E9335500495C095E65EB168C74E8DF92878EEF0022"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.5:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.5:knowledge:block:2",
+        "key": "33.5",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.5:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.5&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.5%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.5:knowledge:block:2",
+        "glyphsMatched": 60,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-7",
+        "recordId": "cd28-cd33-vector-2026:33.7:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 36,
+          "rect": [
+            202.8040008544922,
+            143.6340217590332,
+            395.5408630371094,
+            305.7340346336365
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.7:knowledge:block:2",
+          "glyphHash": "76CEE3ED4C6773CC64741C48055A7E6859163EC9799EAFAD03E8C050F0C69518"
+        },
+        "dimension": 3,
+        "classification": "SPATIAL_FIGURE",
+        "description": "Nón tròn xoay đỉnh K, chân đường cao H, chiều cao h và bán kính đáy r. Quan hệ r=h tan(θ/2); góc không được đo từ ảnh.",
+        "objects": [
+          {
+            "id": "K",
+            "type": "point",
+            "view": "main",
+            "label": "K",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "H",
+            "type": "point",
+            "view": "main",
+            "label": "H",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "E",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "origin": "H",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -3,
+              3
+            ]
+          },
+          {
+            "id": "cone",
+            "type": "cone",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "apex": "K",
+            "center": "H",
+            "radius": 2
+          },
+          {
+            "id": "height",
+            "type": "segment",
+            "view": "main",
+            "label": "h",
+            "color": "muted",
+            "from": "K",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "id": "radius",
+            "type": "segment",
+            "view": "main",
+            "label": "r",
+            "color": "amber",
+            "from": "H",
+            "to": "E",
+            "dashed": false
+          }
+        ],
+        "relationships": [
+          {
+            "type": "coneRightSection",
+            "cone": "cone"
+          },
+          {
+            "type": "planeNormal",
+            "plane": "P",
+            "vector": "height"
+          }
+        ],
+        "formulae": [
+          "r=h\\tan(\\theta/2)"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -1.8,
+                3.8
+              ],
+              [
+                -1.8,
+                1.8
+              ],
+              [
+                -1.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "Nón tròn xoay đỉnh K, chân đường cao H, chiều cao h và bán kính đáy r",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "A5B99082E5C6285697FEB8D3DB69A8462FCC4F3C32C7E5D7677E034136386F7D"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.7:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.7:knowledge:block:2",
+        "key": "33.7",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.7:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.7&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.7%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.7:knowledge:block:2",
+        "glyphsMatched": 61,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-8",
+        "recordId": "cd28-cd33-vector-2026:33.8:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 37,
+          "rect": [
+            202.8040008544922,
+            144.26587772369385,
+            396.4657287597656,
+            323.885035610199
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.8:knowledge:block:2",
+          "glyphHash": "D92FECEEB0828087422C2681234574933CF642156F6181657FC3C3115949D11A"
+        },
+        "dimension": 3,
+        "classification": "GEOMETRY_3D",
+        "description": "A,B cùng phía Oxy; phản xạ A thành A*, đường A*B cắt Oxy tại M. Khi đó MA+MB=A*B.",
+        "objects": [
+          {
+            "id": "O",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "A",
+            "type": "point",
+            "view": "main",
+            "label": "A",
+            "color": "blue",
+            "coords": [
+              -2,
+              0,
+              3
+            ],
+            "visible": true
+          },
+          {
+            "id": "B",
+            "type": "point",
+            "view": "main",
+            "label": "B",
+            "color": "blue",
+            "coords": [
+              2,
+              0,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "id": "As",
+            "type": "point",
+            "view": "main",
+            "label": "A*",
+            "color": "blue",
+            "coords": [
+              -2,
+              0,
+              -3
+            ],
+            "visible": true
+          },
+          {
+            "id": "M",
+            "type": "point",
+            "view": "main",
+            "label": "M",
+            "color": "blue",
+            "coords": [
+              1,
+              0,
+              0
+            ],
+            "visible": true
+          },
+          {
+            "id": "P",
+            "type": "plane",
+            "view": "main",
+            "label": "Oxy",
+            "color": "blue",
+            "origin": "O",
+            "u": [
+              1,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              1,
+              0
+            ],
+            "extent": [
+              -3,
+              3,
+              -2,
+              2
+            ]
+          },
+          {
+            "id": "mirror",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "muted",
+            "from": "A",
+            "to": "As",
+            "dashed": true
+          },
+          {
+            "id": "AM",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "A",
+            "to": "M",
+            "dashed": false
+          },
+          {
+            "id": "MB",
+            "type": "segment",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "M",
+            "to": "B",
+            "dashed": false
+          },
+          {
+            "id": "imageLine",
+            "type": "line",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "from": "As",
+            "to": "B"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "reflection",
+            "point": "A",
+            "image": "As",
+            "plane": "P"
+          },
+          {
+            "type": "linePlaneIntersection",
+            "line": "imageLine",
+            "plane": "P",
+            "point": "M"
+          }
+        ],
+        "formulae": [],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -3.8,
+                3.8
+              ],
+              [
+                -1.8,
+                1.8
+              ],
+              [
+                -4.8,
+                4.8
+              ]
+            ],
+            "axes": false,
+            "title": "A,B cùng phía Oxy; phản xạ A thành A*, đường A*B cắt Oxy tại M",
+            "camera": {
+              "azimuth": 0.8,
+              "elevation": 0.38,
+              "projection": "parallel"
+            }
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "FCF3BC6AD14651A8EDBF7C3C4441C94D2D05A24520443ED99819ABFEF3F63A44"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.8:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.8:knowledge:block:2",
+        "key": "33.8",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.8:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.8&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.8%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.8:knowledge:block:2",
+        "glyphsMatched": 51,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    },
+    {
+      "spec": {
+        "schemaVersion": "bienedu.geometry.v1",
+        "renderer": "jsxgraph",
+        "units": null,
+        "id": "geometry-cd28-cd33-vector-2026-33-9",
+        "recordId": "cd28-cd33-vector-2026:33.9:knowledge",
+        "source": {
+          "sourceId": "cd28-cd33-vector-2026",
+          "sha256": "98C0C21CC5D42D246938AADB4A0AE48C7DF488B113BF6B2551414C965CBA2114",
+          "page": 38,
+          "rect": [
+            198.98077392578125,
+            145.02061939239502,
+            396.2880554199219,
+            332.2650099754334
+          ],
+          "blockId": "cd28-cd33-vector-2026:33.9:knowledge:block:2",
+          "glyphHash": "D4F75F01C7F5D56D75ABF6C0EA10FD9FC8EA8CC98F1054074FE93D946D2EA044"
+        },
+        "dimension": 2,
+        "classification": "FUNCTION_GRAPH",
+        "description": "Sơ đồ một parabol D²=at²+bt+c, a>0, có cực tiểu tại t₀. Các hệ số dựng là tự do, không phải hệ số được suy ra từ hình PDF.",
+        "objects": [
+          {
+            "id": "distanceSquared",
+            "type": "function",
+            "view": "main",
+            "label": "D²",
+            "color": "blue",
+            "expression": "(x-2)^2+1",
+            "domain": {
+              "min": "-inf",
+              "max": "inf",
+              "minIncluded": false,
+              "maxIncluded": false
+            }
+          },
+          {
+            "id": "minimum",
+            "type": "point",
+            "view": "main",
+            "label": "t₀",
+            "color": "blue",
+            "coords": [
+              2,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "id": "axisOrigin",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "timeAxis",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              4.25,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "id": "squareAxis",
+            "type": "point",
+            "view": "main",
+            "label": "",
+            "color": "blue",
+            "coords": [
+              0,
+              5.2
+            ],
+            "visible": false
+          },
+          {
+            "id": "tAxis",
+            "type": "vector",
+            "view": "main",
+            "label": "t",
+            "color": "blue",
+            "from": "axisOrigin",
+            "to": "timeAxis"
+          },
+          {
+            "id": "dAxis",
+            "type": "vector",
+            "view": "main",
+            "label": "D²",
+            "color": "blue",
+            "from": "axisOrigin",
+            "to": "squareAxis"
+          }
+        ],
+        "relationships": [
+          {
+            "type": "minimum",
+            "curve": "distanceSquared",
+            "x": 2,
+            "value": 1
+          }
+        ],
+        "formulae": [
+          "D^2=at^2+bt+c,\\ a>0",
+          "t_0=-\\frac{r_0\\cdot v}{|v|^2}"
+        ],
+        "views": [
+          {
+            "id": "main",
+            "bounds": [
+              [
+                -0.5,
+                4.5
+              ],
+              [
+                -0.3,
+                6
+              ]
+            ],
+            "axes": false,
+            "title": "Bình phương khoảng cách — sơ đồ dạng hàm"
+          }
+        ],
+        "realization": {
+          "kind": "constrained-schematic",
+          "freeChoices": [
+            "Tọa độ và kích thước dựng được chọn để thỏa quan hệ nguồn; không phải số đo đề bài."
+          ],
+          "notice": "Sơ đồ minh họa, không theo tỉ lệ. Không đọc số đo từ vị trí các điểm."
+        },
+        "unresolvedConditions": [],
+        "validation": {
+          "status": "passed",
+          "evidenceHash": "A3EFC67F8F17D81C06CDA494A7B706F1AC4748B6EA6DC5D66D627544336A5D8F"
+        }
+      },
+      "target": {
+        "recordId": "cd28-cd33-vector-2026:33.9:knowledge",
+        "blockId": "cd28-cd33-vector-2026:33.9:knowledge:block:2",
+        "key": "33.9",
+        "topicId": "CD33",
+        "precedingBlockId": "cd28-cd33-vector-2026:33.9:knowledge:block:1",
+        "followingBlockId": null,
+        "route": "documents.html?grade=12&topic=CD33&type=33.9&section=knowledge&item=1&geometryRecord=cd28-cd33-vector-2026%3A33.9%3Aknowledge"
+      },
+      "evidence": {
+        "reference": ".audit/pdf-knowledge/issues.json#cd28-cd33-vector-2026:33.9:knowledge:block:2",
+        "glyphsMatched": 72,
+        "interpretation": "Only stated relationships are reconstructed; coordinate values are free choices, not recovered measurements."
+      }
+    }
+  ]
+}

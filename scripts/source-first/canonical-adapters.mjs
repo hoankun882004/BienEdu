@@ -45,14 +45,23 @@ export function adaptTex(source, identity) {
     // Existing source dialect uses textbf/textsubscript instead of math delimiters.
     // Reuse its parser, but retain its candidate status (not source approval).
     if (element.environment === 'formulabox' && !content.segments.some((node) => node.type === 'math')) {
-      const bold = commands(element.rawSource, 'textbf')[0]?.args[0];
-      if (bold) {
-        const original = bold.value;
-        const node = mathNode(sourceFormulaToLatex(original), true, { macros });
-        content = { type: 'rich-text', segments: [
-          { type: 'text', value: element.rawSource.slice(0, bold.start + 1) }, node,
-          { type: 'text', value: element.rawSource.slice(bold.end - 1) }
-        ] };
+      const bold = commands(element.rawSource, 'textbf');
+      if (bold.length) {
+        const segments = [];
+        let cursor = 0;
+        for (const call of bold) {
+          if (call.start < cursor) continue; // Nested formatting is owned by its outer call.
+          if (call.start > cursor) segments.push({type:'text',value:element.rawSource.slice(cursor,call.start)});
+          const original=call.args[0].value;
+          // Literal Vietnamese verbal rules are not mathematical expressions.
+          // Do not paraphrase them or force them into unsupported math-mode text.
+          const prose=/\p{M}|[đĐ]/u.test(original.normalize('NFD')) && !/[∩∪ΩΣ₀-₉]|[A-Za-z]\(|\\(?:text|textsubscript|textsuperscript|frac|sqrt|int|sum)\b/u.test(original);
+          segments.push(prose ? {type:'text',value:original,sourceRole:'literal-prose'}
+            : mathNode(sourceFormulaToLatex(original),true,{macros}));
+          cursor=call.end;
+        }
+        if(cursor<element.rawSource.length)segments.push({type:'text',value:element.rawSource.slice(cursor)});
+        content = {type:'rich-text',segments};
         origin = 'existing-native-dialect-candidate';
       }
     }

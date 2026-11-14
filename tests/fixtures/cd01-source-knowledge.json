@@ -1,0 +1,14 @@
+{
+  "sourceId": "cd01-cd07-functions",
+  "sourceHash": "2EBC6F3ABB4558E84237FC2C45DBBC20353B0A6C435E193D6B4A264A17433CA0",
+  "page": 4,
+  "basis": "Independent transcription checked against original full source page and positioned glyphs, not inferred from parser output or graph pixels. No human editorial approval.",
+  "blocks": [
+    {"suffix":1,"glyphHash":"02CFE8DE4BFC1E0FBDCFEC7424EEAFE2FDD183786576B36F1A9C172B9DBED62C","math":["x_{0}","f^{'}(x_{0})=\\lim _{h\\to 0}\\frac{f(x_{0}+h)-f(x_{0})}{h}"]},
+    {"suffix":2,"glyphHash":"A59370B831F9CB57EB7E2DF63675C259F8B7418A8439A013922C4DEBD8214D9D","math":["(c)^{'}=0,(x^{n})^{'}=nx^{n-1},(u+v)^{'}=u^{'}+v^{'},"]},
+    {"suffix":3,"glyphHash":"980C23510676AFDA538C74DD03F4E497BE7B5ADD3FEECC9C9C5B2CA844C41604","math":["(uv)^{'}=u^{'}v+uv^{'},(\\frac{u}{v})^{'}=\\frac{u^{'}v-uv^{'}}{v^{2}},[f(u)]^{'}=f^{'}(u)u^{'},","(\\sqrt{u})^{'}=\\frac{u^{'}}{2\\sqrt{u}}(u>0),(\\sin u)^{'}=u^{'}\\cos u,(\\cos u)^{'}=-u^{'}\\sin u,","(\\tan u)^{'}=\\frac{u^{'}}{\\cos ^{2}u},(\\cot u)^{'}=-\\frac{u^{'}}{\\sin ^{2}u},(e^{u})^{'}=u^{'}e^{u},","(a^{u})^{'}=u^{'}a^{u}\\ln a,(\\ln u)^{'}=\\frac{u^{'}}{u},(\\log _{a}u)^{'}=\\frac{u^{'}}{u\\ln a}."]},
+    {"suffix":4,"glyphHash":"6C5B8B5D4585A33C108E5C0B036B2E1C800AD7AAAFFCC4A73B93CC368413EDB3","math":["a>0","a\\ne 1","u>0","y^{''}=(y^{'})^{'}","v(t)=s^{'}(t)","a(t)=v^{'}(t)=s^{''}(t)","|v(t)|","v(t)"]},
+    {"suffix":5,"glyphHash":"E07867F08812CA33AB0D181F458B3C6D1AE2CEBF5BD3F7DC06F712A109181C69","math":["n\\in \\mathbb{N}^{*}","(u^{n})^{'}=nu^{n-1}u^{'}","(u^{\\alpha})^{'}=\\alpha u^{\\alpha -1}u^{'}","u>0","y=(ax+b)/(cx+d)","y^{'}=(ad-bc)/(cx+d)^{2}"]},
+    {"suffix":6,"glyphHash":"DEDA89EB863444216379AA0563AA4B41F25C3BEB404EE625E41B4D4936599732","math":["u=0","u>0","\\ln |u|","u^{'}/u","u\\ne 0"]}
+  ]
+}

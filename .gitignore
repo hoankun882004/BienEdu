@@ -17,3 +17,6 @@ __pycache__/
 /.audit/geometry-v1/logs/
 /.audit/hosting-fix/screenshots/
 /.audit/hosting-fix/logs/
+/.audit/conversion-recovery/
+/.audit/quality-recovery/
+/.audit/stabilization-v2/

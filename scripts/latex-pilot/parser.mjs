@@ -109,7 +109,7 @@ function environmentBlocks(source, offset = 0) {
 
 function replaceTextCommands(value) {
   let output = String(value ?? "");
-  for (const commandName of ["textbf", "emph", "textrm", "textsf"]) {
+  for (const commandName of ["textbf", "emph", "textrm", "textsf", "ensuremath"]) {
     for (let pass = 0; pass < 8; pass += 1) {
       const calls = commandCalls(output, commandName);
       if (!calls.length) break;
@@ -184,6 +184,7 @@ function protectVietnameseProbabilityLabels(value) {
         const symbolicRemainder = trimmed
           .replace(/[_^]\{[A-Za-z0-9 +\-]+\}/gu, "")
           .replace(/\\(?:cap|cup|mid)\s*/gu, "")
+          .replace(/\.\.\./gu, "")
           .replace(/[A-Zijkn0-9+_\-[\]{}\s∩∪ΩΣ₀-₉ᵢⱼₖₙₓ⁰-⁹ⁿˣ]/gu, "");
         if (!symbolicRemainder) return trimmed;
         return `\\text{${trimmed}}`;

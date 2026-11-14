@@ -172,10 +172,13 @@ def structures(chars, bars):
             if not inside or any(not basic.MATH.match(c['font']) for c in inside):
                 unresolved.append('RADICAL_RADICAND_BOUNDARY_UNRESOLVED'); continue
             index=[c for c in items if c['size']<root['size']*.75 and root['x']-3<c['x']<x0
-                   and y-4<c['y']<y+2]
+                   and y-4<c['y']<y+root['size']*(1.3 if root['font'].startswith('CMEX') else .6)]
             if len(index)>1:
                 unresolved.append('RADICAL_INDEX_AMBIGUOUS'); continue
-            if index and any(c not in index and c is not root and c['right']<=index[0]['x']+.5
+            # A small index printed inside the radical's own left glyph cannot
+            # belong to a preceding letter. Outside that footprint, keep the
+            # competing-script guard (do not infer index ownership).
+            if index and not all(root['x']-.2<=c['x'] and c['right']<=root['right']+.2 for c in index) and any(c not in index and c is not root and c['c'] not in '=<>+-,;:' and c['right']<=index[0]['x']+.5
                              and index[0]['x']-c['right']<root['size']*.8 and c['size']>=root['size']*.9
                              and abs(c['y']-max(inside,key=lambda n:n['size'])['y'])<.8 for c in items):
                 unresolved.append('RADICAL_INDEX_COMPETING_SCRIPT_OWNER');continue
@@ -221,6 +224,31 @@ def _convert(chunks, bars):
         return {'type':'rich-text','segments':[]}, []
     try:
         items=structures(flat,bars)
+        # An upright differential is frequently printed in the prose font.
+        # Font identity alone must not split an explicitly printed integral's
+        # dx into prose 'd' and a new mathematical expression starting with x.
+        # Require a literal isolated d, a touching mathematical variable, and
+        # an integral earlier on the SAME source baseline with no prose between.
+        for char in list(items):
+            if char['c'] != 'd' or basic.MATH.match(char['font']):
+                continue
+            row=sorted([c for c in items if abs(c['y']-char['y'])<.5],key=lambda c:c['x'])
+            index=row.index(char)
+            if index==0 or index+1>=len(row):
+                continue
+            following=row[index+1]
+            if not (basic.MATH.match(following['font']) and re.fullmatch('[A-Za-z]',following['c'])
+                    and -.3 <= following['x']-char['right'] <= char['size']*.2):
+                continue
+            left=[]
+            for previous in reversed(row[:index]):
+                if not basic.MATH.match(previous['font']):
+                    break
+                left.append(previous)
+            if not any(r'\int' in c.get('latex','') or c['c']=='∫' for c in left):
+                continue
+            replacement=atom([char],r'\mathrm{d}','Differential',char['y'],char['size'])
+            items=[replacement if c is char else c for c in items]
         # Stable source body size, not a global fixed superscript threshold.
         body=Counter(round(c['size'],2) for c in items if c['size']>9 and not c['font'].startswith('CMEX')).most_common(1)
         size=body[0][0] if body else max(c['size'] for c in items)
